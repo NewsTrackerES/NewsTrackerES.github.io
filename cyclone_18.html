@@ -17,21 +17,16 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
-            values: [ 7 ],
+            max: 1,
+            values: [ 1 ],
             slide: function( event, ui ) {
               var table = document.getElementById("MyTable");
               for (var i = 1, row; row = table.rows[i]; i++) {
-                if ($(row.cells[1]).html() <= ui.values[ 0 ]) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
                   $(row).show();
                 } else {
                   $(row).hide();
                 }
-              }
-              if ( ui.values[ 0 ] < ui.max ) {
-                 $('#MyTable2').hide();
-              } else {
-                 $('#MyTable2').show();
               }
             }
           });

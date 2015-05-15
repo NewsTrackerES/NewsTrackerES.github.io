@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<style>img { width: 150px; height: auto; }</style>
-</head>
-<body role="document">
-<div class="container theme-showcase" role="main">
-<h3>800 lost departments</h3>
-<table>
-<tr><td>T</td><td colspan=2>800 lost departments</td></tr>
-</table><hr><table>
-<tr><td>2015-03-20 10:11:05</td><td>The group were among more than 800 people who took shelter from Cyclone Pam in Freswota School, in the capital Port Vila.</td></tr>
-<tr><td>2015-03-20 10:11:05</td><td>"After the cyclone, about a week now, we haven't received any urgent relief from the government or any NGOs or any other departments," said Charlie Nirua, who lost his family home in the storm.</td></tr>
-<tr><td>2015-03-20 10:11:05</td><td>"People came in on the evening of the cyclone with their own food, water and whatever they need for the night of the cyclone," Regina said.</td></tr>
-<table></body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ 3 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 1, row; row = table.rows[i]; i++) {
+                if ($(row.cells[1]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+              if ( ui.values[ 0 ] < ui.max ) {
+                 $('#MyTable2').hide();
+              } else {
+                 $('#MyTable2').show();
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+    <h3>cyclone</h3>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>Cyclone Pam may have exceeded both measures.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>The physical processes that lead to a cyclone forming also tend to limit its intensity.</td></tr>
+</table></body></html>

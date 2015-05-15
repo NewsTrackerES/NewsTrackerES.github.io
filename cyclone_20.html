@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<style>img { width: 150px; height: auto; }</style>
-</head>
-<body role="document">
-<div class="container theme-showcase" role="main">
-<h3>knowing agencies trees</h3>
-<table>
-<tr><td>T</td><td colspan=2>knowing agencies trees</td></tr>
-</table><hr><table>
-<tr><td>2015-03-20 16:00:32</td><td>People living on hard-hit Tanna and many of the other islands may have survived the cyclone, but they have no way of knowing how their relatives or friends are faring elsewhere.</td></tr>
-<tr><td>2015-03-20 16:00:32</td><td>The cyclone has knocked down fruit-bearing trees and destroyed crops across the country.</td></tr>
-<tr><td>2015-03-20 16:00:32</td><td>Aid agencies, many of which were active in Vanuatu before the cyclone, have arrived in sometimes overwhelming numbers.</td></tr>
-<tr><td>2015-03-20 16:00:32</td><td>The agencies do much-needed work by getting supplies to those affected by the cyclone.</td></tr>
-<tr><td>2015-03-20 16:00:32</td><td>Cyclone Pam transformed much of Vanuatu from a tropical green to a dirty brown overnight, as coconut trees were stripped of their foliage and snapped like matchsticks and even some mighty banyan trees were toppled.</td></tr>
-<table></body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 1, row; row = table.rows[i]; i++) {
+                if ($(row.cells[1]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+              if ( ui.values[ 0 ] < ui.max ) {
+                 $('#MyTable2').hide();
+              } else {
+                 $('#MyTable2').show();
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+    <h3>cyclone</h3>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>Australia's Bureau of Meteorology lists category-5 as its highest severity for a tropical cyclone.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>However, Blair Trewin, a senior bureau climatologist, said there was no plan for the agency to extend its cyclone categories.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>"In a category-5 cyclone there aren't any leaves left on the trees and the trees themselves are not standing."</td></tr>
+</table></body></html>

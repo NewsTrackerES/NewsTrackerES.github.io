@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<style>img { width: 150px; height: auto; }</style>
-</head>
-<body role="document">
-<div class="container theme-showcase" role="main">
-<h3>australia landfall strength</h3>
-<table>
-<tr><td>T</td><td colspan=2>australia landfall strength</td></tr>
-</table><hr><table>
-<tr><td>2015-03-19 22:52:41</td><td>SYDNEY - A powerful tropical cyclone was losing strength after crossing Australia's north-east coast on Friday, with no immediate reports of injuries.</td></tr>
-<tr><td>2015-03-19 22:52:41</td><td>Cyclone Nathan made landfall shortly before dawn as a category four system, the second highest intensity rating, and was expected to continue its westward movement inland while weakening, according to Australia's Bureau of Meteorology.</td></tr>
-<tr><td>2015-03-20 01:50:49</td><td>Australian cyclone makes landfall, loses strength</td></tr>
-<table></body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 1, row; row = table.rows[i]; i++) {
+                if ($(row.cells[1]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+              if ( ui.values[ 0 ] < ui.max ) {
+                 $('#MyTable2').hide();
+              } else {
+                 $('#MyTable2').show();
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+    <h3>cyclone</h3>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>Cyclone Pam: Is it time for a category-6 cyclone rating?</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>Cyclone Pam left debris scattered across Port Vila with residents now beginning the massive clean-up effort.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>The unusual strength of Cyclone Pam, which devastated Vanuatu over the weekend, may stir debate about the need for a category-6 rating for storms to reflect their increasing severity.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>Residents stand near a bridge damaged by Cyclone Pam near Port Vila.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>A University of South Pacific sign bent by the ferocity of Cyclone Pam.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-16 06:39:10</td><td>Based on the differences between category-3 and -4 cyclones, a category-6 cyclone would signal mean wind speeds of about 240 km/h or stronger, with a central pressure of less than 915 hPa.</td></tr>
+</table></body></html>

@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<style>img { width: 150px; height: auto; }</style>
-</head>
-<body role="document">
-<div class="container theme-showcase" role="main">
-<h3>presidents robust global</h3>
-<table>
-<tr><td>T</td><td colspan=2>presidents robust global</td></tr>
-</table><hr><table>
-<tr><td>2015-03-17 07:52:18</td><td>The presidents of Vanuatu and Kiribati both drew a clear link between global warming and the cyclone.</td></tr>
-<tr><td>2015-03-17 07:52:18</td><td>"There is low confidence that long-term changes in tropical cyclone activity are robust, and there is low confidence in the attribution of global changes to any particular cause," it said.</td></tr>
-<table></body></html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ 3 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 1, row; row = table.rows[i]; i++) {
+                if ($(row.cells[1]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+              if ( ui.values[ 0 ] < ui.max ) {
+                 $('#MyTable2').hide();
+              } else {
+                 $('#MyTable2').show();
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+    <h3>cyclone</h3>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td>2015-03-19 04:46:56</td><td>A month ago, Cyclone Marcia slammed into the southern part of the same coast, causing billions of dollars in damage and leaving thousands homeless or without electricity.</td></tr>
+  <tr><td style='display:none'>0</td><td>2015-03-19 22:52:41</td><td>The cyclone is expected to lose much of its punch over land, but meteorologists warned it could reform again if it reaches the warm waters of the Gulf of Carpentaria, 250 km (155 miles) from the coast.</td></tr>
+</table></body></html>

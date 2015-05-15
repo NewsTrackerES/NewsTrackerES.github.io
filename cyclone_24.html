@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 19,
+            values: [ 19 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 1, row; row = table.rows[i]; i++) {
+                if ($(row.cells[1]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+              if ( ui.values[ 0 ] < ui.max ) {
+                 $('#MyTable2').hide();
+              } else {
+                 $('#MyTable2').show();
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <div class="container theme-showcase" role="main">
+    <h3>cyclone</h3>
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td>2015-03-14 05:01:22</td><td><a href='cyclone_7.html'>In this March 15, 2015 photo provided by UNICEF Pacific, residents work to recover from Cyclone Pam in Mele village, on the outskirts of the capital Port Vila, Vanuatu.</a></td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-14 05:01:22</td><td>The cyclone has already destroyed some homes and caused damage to other Pacific islands including Kiribati and the Solomon Islands.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-14 05:05:23</td><td>"I am speaking to you today with a heart that is so heavy. I do not really know what impact the cyclone has had on Vanuatu," Vanuatu's president, Baldwin Lonsdale, told the U.N. World Conference on Disaster Risk Reduction in the northeastern Japanese city of Sendai.</td></tr>
+  <tr><td style='display:none'>3</td><td>2015-03-14 05:43:17</td><td><a href='cyclone_3.html'>By Saturday morning, early reports of Cyclone Pam's devastation began trickling in as residents emerged from shelters to survey the scene and begin the emergency response operation.</a></td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-14 21:23:58</td><td>Aid workers say 8 people confirmed dead after cyclone hits Vanuatu in South Pacific</td></tr>
+  <tr><td style='display:none'>5</td><td>2015-03-15 02:24:34</td><td><a href='cyclone_5.html'>A Nasa satellite image of cyclone Pam as the eye of the storm passes just east of Vanuatu.</a></td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-15 02:33:26</td><td>U.N. Secretary General Ban Ki-moon said the impact and scope of the disaster caused by the cyclone wasn't yet clear, but he feared the damage and destruction could be widespread.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-15 09:10:57</td><td>A woman carrying a baby stands with children outside homes damaged by Cyclone Pam in Port Vila.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-15 09:10:57</td><td>Cyclone Pam: 'It was like a velociraptor', as Australians survive Vanuatu cyclone</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-15 15:34:39</td><td>Cyclone Pam: Australia gives Vanuatu $5 million in aid</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-16 02:30:26</td><td>A: "Cyclone Pam has devastated Port Vila. More than 90 percent of the buildings and houses in Port Vila have been destroyed or damaged. The state of emergency that has been issued is only for Port Vila. Once we receive an update on the extent of the damage in the provinces then another state of emergency will be issued for the outer islands."</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-16 04:14:08</td><td>Vanuatu struggles to account for cyclone damage, deaths</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-16 05:55:35</td><td>Radio and telephone communications with the outer islands were just beginning to be restored, but remained patchy four days after Cyclone Pam tore through the islands.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-16 06:39:10</td><td>In the case of Cyclone Pam, Professor Nott said the worst of the storm missed Port Vila, with islands to the south, such as Erromango, likely to have received a direct hit.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-16 06:39:10</td><td>According to the New Zealand's MetService, satellites indicate Cyclone Pam reached mean wind speeds of 270 km/h, with gusts even higher as it passed over the Pacific island nation.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-17 07:03:04</td><td>Adrian Banga surveys his destroyed house in Port Vila, Vanuatu in the aftermath of Cyclone Pam, Monday, March 16, 2015.</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-18 11:19:49</td><td>Vanuatu after Cyclone Pam: Risk of hunger and disease rises</td></tr>
+  <tr><td style='display:none'>8</td><td>2015-03-20 16:01:01</td><td>This aerial view of a small island in Vanuatu's north shows the extent to which the island has been denuded by Cyclone Pam, on Friday, March 20, 2015.</td></tr>
+</table></body></html>

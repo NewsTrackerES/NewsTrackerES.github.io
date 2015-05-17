@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2PCZeZB_L1cq_lAZ1zgnpQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/732e3e1a0ef4bc16760f6a706700300f.jpg'></td><td>2015-05-17 14:09:46</td><td>Both the transfer and municipal court bills "were spurred out of concerns surrounding the events in Ferguson," said House Speaker Todd Richardson, R-Poplar Bluff.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2PCZeZB_L1cq_lAZ1zgnpQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/732e3e1a0ef4bc16760f6a706700300f.jpg'></td><td>2015-05-17 14:09:46</td><td>The Ferguson-related measure that came closest to passing would have limited police officers' use of deadly force in a way supporters said would comply with longstanding U.S. Supreme Court precedent.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 14:15:08</td><td>It ended Friday with the Senate again shut down - this time because of its own partisan divisions- and without action on a Ferguson-inspired bill that would have rewritten the laws police using deadly force.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 14:15:08</td><td>- Missouri's legislative session began with hundreds of protesters shutting down the Senate, demanding changes to state law in response to the fatal shooting of Michael Brown by a Ferguson police officer.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 14:20:05</td><td>Missouri lawmakers pass on dozens of Ferguson-inspired bills</td></tr>
+</table></body></html>

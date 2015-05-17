@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://gdb.rferl.org/8DBBF9D4-D14C-476F-8A68-96F61A52E0CC_cx0_cy19_cw0_w113_h64.jpg'></td><td>2015-04-30 05:46:25</td><td>U.S. Now Sees Russia As Directing Rebels In Ukraine</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 05:59:00</td><td>The uprising began after protesters chased Ukraine's pro-Russia president out of power and Moscow responded by annexing the Ukrainian region of Crimea.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 07:39:19</td><td>Associated Press reporting in eastern Ukraine this spring showed Russia expanding its training of separatist fighters to improve their capabilities to operate sophisticated Russian weaponry and defend territory.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 07:39:19</td><td>Ukraine's government still controls the territory, but a separatist takeover would establish a land bridge between mainland Russia and Crimea.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 07:39:19</td><td>Russian forces in Ukraine, he said, peaked at about 9,000 in late February.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-30 16:24:07</td><td>"Some Russian military exercises have caught us by surprise and our textured feel for Russian involvement on the ground in Ukraine has been quite limited."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-30 16:24:07</td><td>The shift in U.S. perceptions could have wide-ranging ramifications, even if the Obama administration has cited close linkages between the pro-Russian separatists and Putin's government in Moscow since violence flared up in Ukraine a year ago.</td></tr>
+</table></body></html>

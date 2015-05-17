@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ 10 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 05:10:15</td><td>WHO's Ebola response leader, Dr. Bruce Aylward, couldn't say whether an earlier declaration would have made a difference, noting that "the overall response slowed down" after the emergency was declared.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 05:10:15</td><td>The Ebola outbreak erupted at a difficult time for the agency.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 05:10:15</td><td>In mid-April, an experienced Ebola expert with WHO's Africa office wrote to Geneva, with disturbing news that many staffers at a leading hospital in Guinea had been exposed to the virus.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 05:10:15</td><td>WHO has acknowledged acting too slowly to control the Ebola epidemic.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 10:00:00</td><td>"I told her, 'Dr. Chan, the Ebola epidemic in West Africa is out of control,'" Liu recalled telling Chan in a July 30 meeting in Geneva.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 10:00:00</td><td>The emergency was eventually declared on August 8, by which point nearly 1,000 people had already died from Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 15:49:11</td><td>By the end of August, the biggest Ebola hospital run by Doctors Without Borders in the Liberian capital could only open for 30 minutes every morning and people were dying on the ground outside the gates.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 15:49:11</td><td>Britain, China, the U.S. and others all built Ebola clinics in West Africa, but many weren't ready until late fall - after the epidemic's peak.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 15:49:11</td><td>It was the first time the organization has ever had to write guidelines for how to turn away Ebola patients because there were simply too many to treat.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 16:08:06</td><td>"The Ebola outbreak could restart at any time."</td></tr>
+</table></body></html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z392-6Y6i74E7l-HSK1-756_634x421.jpg'></td><td>2015-04-27 18:02:28</td><td>Sierra Leone marked the 54th anniversary of its independence on Monday by setting out a four-point "post-Ebola plan" to put the devastated country on the road to recovery from the deadly epidemic.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z392-6Y6i74E7l-HSK1-756_634x421.jpg'></td><td>2015-04-27 18:02:28</td><td>S. Leone marks low-key independence day with post-Ebola plan</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z392-6Y6i74E7l-HSK1-756_634x421.jpg'></td><td>2015-04-27 18:02:28</td><td>"But with the Ebola outbreak, fewer mothers have been taking their children to health facilities to get free treatment."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693640141_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-28 18:58:28</td><td>DALLAS - Thomas Eric Duncan became the face of a crisis when he was diagnosed with Ebola in the United States, but he was simply "Eric" to his fiancee, Louise Troh, who said she has endured threats and battled nightmares since his death in October.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 18:31:23</td><td>They got death threats, they said, and some even called Duncan a terrorist intent on spreading Ebola across the country.</td></tr>
+</table></body></html>

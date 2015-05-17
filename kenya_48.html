@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>President Uhuru Kenyatta has been criticised in Kenya's media for failing to meet with grieving parents or surviving students in the wake of the attack.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>Another government official expressed irritation that Kenya's media were "negative" in their accounts of the handling of the attack.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>Information, Communication and Technology Cabinet Secretary Fred Matiangi said Kenya's media should be more "patriotic".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>They included 13 Somali remittance companies and bus transport companies operating routes in northeastern Kenya.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>Kenya official compares Garissa University terror victims to 'cockroaches'</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 14:12:48</td><td>Kenya orders U.N. to move massive Somali refugee camp after attack</td></tr>
+</table></body></html>

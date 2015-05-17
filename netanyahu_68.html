@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:58:39</td><td>Netanyahu denied he was coordinating with House of Representatives Speaker John Boehner, who visited Israel last week, and with other Republicans to block the Iran deal.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:58:39</td><td>Netanyahu, in the first of several appearances on U.S. Sunday news programs, said he has spoken with both Democrats and Republicans in Congress - nearly two thirds of House of Representatives members and a similar number in the U.S. Senate - about the Iran nuclear issue.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 17:21:59</td><td>Netanyahu angered the White House and alienated some Democrats when he accepted a Republican invitation to address Congress on March 3, two weeks before the Israeli elections that returned him to office.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 23:01:30</td><td>In appearances on U.S. television on Sunday, Netanyahu did not repeat his assertion on Friday that any final agreement should include a commitment by Iran recognizing Israel's right to exist.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/03/03/102473193-RTR4RWMQ.530x298.jpg?v=1425401630'></td><td>2015-04-05 23:43:00</td><td>Obama, whose relations with Netanyahu have frayed badly over the Iran issue, sought to assure Israelis he understands their concerns.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/03/03/102473193-RTR4RWMQ.530x298.jpg?v=1425401630'></td><td>2015-04-05 23:43:00</td><td>Asked on CNN if he trusted Obama, Netanyahu said he was sure the president was doing what he thought was good for his country, but they disagreed about the best policy on Iran.</td></tr>
+</table></body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03289/boko-haram-4_3289995b.jpg'></td><td>2015-05-04 10:26:17</td><td>Those on foot were told to walk in the tire tracks made by the convoy because Boko Haram militants had mined much of the forest.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03289/boko-haram-4_3289995b.jpg'></td><td>2015-05-04 10:26:17</td><td>She described trekking for two days from Nbitha to Boko Haram's hideout in the Sambisa Forest with two-year-old Matthew and four-year-old Elija Yohanna strapped to her back and four-year-old Maryam Samaila clinging to her waist.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03289/boko-haram-4_3289995b.jpg'></td><td>2015-05-04 10:26:17</td><td>As gunshots rang out, "Boko Haram came and told us they were moving out and that we should run away with them. But we said no," she said from a bed in the camp clinic, a blanket wrapped around ankles so swollen that each step had been agony.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/04/09/2847EAF100000578-3066992-image-a-1_1430727601874.jpg'></td><td>2015-05-04 12:44:44</td><td>Another survivor, Binta Ibrahim, was 16 years old and accompanying her sister-in-law to the dressmaker when Boko Haram insurgents rode into their village of Izghe, firing randomly at civilians.</td></tr>
+</table></body></html>

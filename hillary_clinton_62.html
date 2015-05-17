@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 27,
+            values: [ 27 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 05:55:00</td><td><a href='hillary_clinton_1.html'>Former U.S. Secretary of State Hillary Clinton may have violated federal records laws by using a personal email account for all of her work messages, the New York Times reported on Monday. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 23:35:47</td><td><a href='hillary_clinton_2.html'>Washington: Democrats scrambled on Tuesday to contain the fallout for Hillary Clinton, their favoured 2016 presidential candidate, after allegations she inappropriately used her personal email for work while secretary of state. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:08:53</td><td><a href='hillary_clinton_3.html'>"Everything I've seen so far has led me to believe that this is an effort to go after Hillary Clinton, period," said Rep. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 08:10:54</td><td><a href='hillary_clinton_4.html'>On Wednesday, Clinton broke her silence over a budding controversy involving her use of personal e-mail for work when she was secretary of state, saying she wanted the U.S. State Department to release them swiftly. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 06:00:21</td><td><a href='hillary_clinton_5.html'>The White House legal counsel's office was not aware of Clinton's private email account until the committee sought her communications during an earlier exchange with the department, according to a person familiar with the matter. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 08:06:38</td><td><a href='hillary_clinton_6.html'>WASHINGTON (AP) - Once again, Hillary Rodham Clinton did it her way, and it could cost her. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 21:40:49</td><td><a href='hillary_clinton_7.html'>A spokesman for Hillary Clinton declined to comment. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 20:17:34</td><td><a href='hillary_clinton_8.html'>MANCHESTER, N.H. (AP) - Sen. Rand Paul on Friday urged Hillary Rodham Clinton to return donations several foreign governments made to her family's philanthropic foundation. (3)</a></td></tr>
+</table></body></html>

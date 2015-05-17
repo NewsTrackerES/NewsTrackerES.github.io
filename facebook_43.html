@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297615617024_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 23:31:21</td><td>Facebook had never made clear its virtual reality plans, Vlada Bortnik, the founder of app-maker Happy Bits, said at the conference.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297615617024_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 23:31:21</td><td>Facebook said it had recently conducted the first test flight of a solar-powered drone prototype.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297615617024_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 23:31:21</td><td>Events such as a birthday party or a child's first bike ride could be shared on Facebook so that users in different parts of the world felt as if they were taking part.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297615617024_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 23:31:21</td><td>While virtual reality headsets such as the Oculus Rift suggest video games and entertainment, the gadgets could transform how people communicate on Facebook, they said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 11:58:58</td><td>"Aircraft like these will help connect the whole world because they can affordably serve the 10 percent of the world's population that live in remote communities without existing internet infrastructure," Zuckerberg wrote on his Facebook page today.</td></tr>
+</table></body></html>

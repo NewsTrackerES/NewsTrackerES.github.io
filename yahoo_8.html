@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ 10 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>The spinoff of the Alibaba stake and the potential spinoff of the Yahoo Japan holdings will increase pressure on Mayer to rejuvenate the company.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>Yahoo's stock gained 25 percent in 2014.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>Earlier this month, Yahoo reported its first-quarter results and pleased investors by saying it will cut costs and consider spinning off its stake in Yahoo Japan.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 23:23:04</td><td>But even though advertisers are shifting more of their spending to the Internet and mobile devices, Yahoo is still struggling to increase its revenue and it lags behind Google and Facebook in mobile revenue.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 23:23:04</td><td>Those awards were worth $15 million when they were approved, but Yahoo says their value has risen to about $40 million.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/02/33/7874244/3/628x471.jpg'></td><td>2015-04-29 23:23:04</td><td>Yahoo CEO's pay package climbs in 2014 due to stock gains</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 04:44:14</td><td>The value of Yahoo CEO Marissa Mayer's pay package surged last year, mostly due to gains in the Internet company's stock price that came despite concerns about the overall health of Yahoo's business.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/OBmjD7raLv9bQEbJ0Io3Qg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMxMjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504301050390290479'></td><td>2015-04-30 16:47:23</td><td>Auburn DE Elijah Daniel arrested on burglary, theft charges (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 09:48:52</td><td>Yahoo is marking the opening of its second data center in upstate New York.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/T8EK5SYYo6WWUu7QIFyhLA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQwNjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504291239455838517'></td><td>2015-04-30 09:12:47</td><td>Ex-Louisville basketball player cleared of rape charge (Yahoo Sports)</td></tr>
+</table></body></html>

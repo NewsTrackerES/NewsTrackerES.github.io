@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 15:02:01</td><td>"There is a world of difference between an Islamic State base and a music festival."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 15:02:01</td><td>Tunisians assure Star Wars sets safe from Islamic State</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 06:31:36</td><td>Al-Jabouri Sunni tribesmen allied with Iraqi troops and Shiite militiamen took back the town from the Islamic State group in December.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/9/a/9/s/image.related.articleLeadwide.620x349.1m90zw.png/1427425981143.jpg'></td><td>2015-03-27 03:14:55</td><td>Washington: A US Army National Guard soldier and his cousin have been arrested on charges of conspiring to support Islamic State in a plot that included an attack on a military installation in Illinois, the US Department of Justice said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.npr.org/images/shop_300x150-04.jpg'></td><td>2015-03-26 21:50:00</td><td>National Guardsman, Cousin Arrested For Trying To Join Islamic State</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/8/v/o/x/image.related.articleLeadwide.620x349.1m8uq2.png/1427438280129.jpg'></td><td>2015-03-26 20:49:06</td><td>Since March 2, Islamic State forces in Tikrit have been under attack by the Iraqi militias, collectively known as the Popular Mobilisation Committees, and regular Iraqi military forces, together numbering more than 30,000 fighters.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 17:02:28</td><td>CHICAGO - A member of the Illinois Army National Guard and another suburban Chicago man have been arrested on charges of conspiring to provide material support to the Islamic State group in Syria and Iraq.</td></tr>
+</table></body></html>

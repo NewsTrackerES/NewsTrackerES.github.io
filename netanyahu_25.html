@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/77/66/7601565/5/square_gallery_thumb.jpg'></td><td>2015-03-04 05:47:31</td><td>He presented Israel as peace-loving and progressive and stressed its deep bonds to the U.S. He even produced Nobel laureate and Holocaust survivor Elie Wiesel, who waved as Netanyahu intoned "Never Again."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/77/66/7601565/5/square_gallery_thumb.jpg'></td><td>2015-03-04 05:47:31</td><td>After speech, White House could determine Netanyahu's fate</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/77/66/7601565/5/square_gallery_thumb.jpg'></td><td>2015-03-04 05:47:31</td><td>Polls show Netanyahu's Likud party slightly trailing the Zionist Union, which is the main grouping of the center-left opposition.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/77/66/7601565/5/square_gallery_thumb.jpg'></td><td>2015-03-04 05:47:31</td><td>The event was engineered by the Republican House speaker, John Boehner, and Netanyahu's ambassador to Washington, U.S.-born Ron Dermer, who once worked as a Republican operative.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/fuC7S.ZY3d.OCTq4HwHrPQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/97a6edaffe1db9096f0f6a7067006b7e.jpg'></td><td>2015-03-04 05:54:13</td><td>"Netanyahu remains alone and Israel remains isolated," Herzog said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/01/25/7607678/3/square_gallery_thumb.jpg'></td><td>2015-03-04 23:27:53</td><td>Which way it goes for Netanyahu may hinge on whether Israel is in some perceptible way punished by the White House for its leader's extraordinary offensive against a U.S. president.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/95b/video/article23269929.ece/ALTERNATES/w140/Obama%3A+Netanyahu+Didn%27t+Offer+Iran+Alternatives'></td><td>2015-03-04 11:27:22</td><td>"(It) also proposes not to automatically lift sanctions on Iran, until it stops spreading terrorism in the world, its aggression against its neighbors and its threats to annihilate Israel," Netanyahu said in a written statement.</td></tr>
+</table></body></html>

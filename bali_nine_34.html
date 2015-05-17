@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 21,
+            values: [ 21 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 09:59:22</td><td><a href='bali_nine_2.html'>Two Australian Bali Nine members on death row in Indonesia will be transferred this week to the most notorious prison on Nusakambangan island, known as Indonesia's Alcatraz. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 11:29:42</td><td><a href='bali_nine_3.html'>Crowds gathered to attend mercy vigils for the Bali nine pair facing death row condemning the Indonesian President's decision to deny the convicted drug smugglers clemency. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 08:17:42</td><td><a href='bali_nine_4.html'>The Australians were members of the Bali nine drug smuggling ring that was intercepted at Denpasar airport in April 2005 after a tip-off from the Australian Federal Police. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 13:15:00</td><td><a href='bali_nine_5.html'>Indonesia's President Joko Widodo refused clemency for the Bali nine duo facing execution without all the documentation of their cases due to the chaotic handover to his office from his predecessor. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 07:10:51</td><td><a href='bali_nine_6.html'>At the same time, the lawyers' complaints against the original six judges in the Bali Nine pair's trial are being examined. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 07:30:24</td><td><a href='bali_nine_7.html'>Bali nine executions: Firm-minded President Joko Widodo will push... (5)</a></td></tr>
+</table></body></html>

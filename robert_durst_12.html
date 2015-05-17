@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>robert durst</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 19:50:02</td><td>The following Wednesday, a Los Angeles judge issued a warrant for Durst's arrest on first-degree murder in connection with Berman's killing.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 19:50:02</td><td>At 6 a.m. the next day, one of the detectives and a prosecutor conducted a three-hour recorded interview of Durst before his attorneys had arrived and without their consent, Houston-based lead attorney Dick DeGuerin said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:13:20</td><td>We are aware of the connection between Robert Durst and the disappearance of Lynne Schulze," Hanley's statement read. "</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 13:51:19</td><td>Robert Durst linked to 1971 missing college student: police</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 18:38:15</td><td>Robert Durst denied bail, called flight risk by judge</td></tr>
+</table></body></html>

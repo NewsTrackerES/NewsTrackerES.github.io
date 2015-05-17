@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ 12 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td>Egyptian runners participate in Cairo's annual Half Marathon in the Heliopolis district in Cairo, Egypt, Friday, April 17, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td>In this Friday, April 10, 2015 picture, Egyptian runs cross a street in the Mohandiseen district in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td>But when the runners describe how the sport has brought them together, and how they have reclaimed their city's squares and streets, one hears an echo of the early days of Egypt's 2011 uprising, when a spirit of inclusiveness prevailed in Cairo's Tahrir Square.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/18/a957fd376244fb11730f6a7067007359_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-18 07:56:35</td><td>Egypt runners defy Cairo mayhem as sport's popularity grows</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 07:56:35</td><td>"Whenever I traveled outside Egypt I saw that people had the opportunity to run outside in their own country, and I thought it was a pity that we didn't have this in Egypt."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 07:56:35</td><td>The group began organizing runs nearly two years after Egypt's popular uprising toppled longtime autocrat Hosni Mubarak.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/18/05/27B01AAA00000578-0-image-m-19_1429331437744.jpg'></td><td>2015-04-18 08:02:07</td><td>FILE - In this Friday, April 10, 2015 file photo, runners take advantage of Cairo's empty streets during an organized run in the Mohandisseen district of Egypt's capital.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 17:03:32</td><td>Egypt court sentences Armenian belly dancer to six months for 'insulting' flag Add to...</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/20/article-doc-1u3hj-6XvVRd2O0HSK2-217_634x418.jpg'></td><td>2015-04-20 10:02:16</td><td>Egypt has been battling jihadists in the Sinai Peninsula who have pledged allegiance to the Islamic State group which controls swathes of Iraq and Syria.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 10:14:32</td><td>Egypt court seeks death for 11 in soccer riot case</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/19/article-doc-1t7io-6XtxBBgLPHSK2-915_634x433.jpg'></td><td>2015-04-19 09:02:55</td><td>The Archbishop of Canterbury Justin Welby, leader of the Church of England, arrived in Egypt on Sunday to offer his condolences over the beheadings of 21 Egyptian Coptic Christians by jihadists in Libya.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/16/article-doc-1q888-6Xp42fVcs-HSK1-760_634x463.jpg'></td><td>2015-04-16 04:26:24</td><td>Saudi Arabia and Egypt are considering holding large-scale military exercises after launching air strikes on Yemeni rebels who have been slapped with a UN arms embargo and sanctions.</td></tr>
+</table></body></html>

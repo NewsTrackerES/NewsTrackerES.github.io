@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>Netanyahu appears poised to set up a coalition with Kulanu and several religious and ultra-Orthodox parties.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>Rivlin is scheduled to meet with Netanyahu later this week and officially set the coalition talks into motion.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>It became a formality after the new centrist party Kulanu gave its nod to Netanyahu as well, giving him 61 backers out of the 120 in parliament.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 03:32:00</td><td>"Netanyahu's regret is no more than an empty gesture intended to legitimize the continued racist rule of Netanyahu and his people."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 22:44:43</td><td>It was midway through last Tuesday's balloting that Mr. Netanyahu posted a video on his Facebook page expressing alarm that Arabs were "being bused to the polling stations in droves" by left-wing organizations.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 21:58:57</td><td>Since his re-election Netanyahu has tried to row back on his election eve remarks dismissing a two-state solution, long a cornerstone of U.S. peacemaking efforts.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/1/9/190315m_BenjaminNetanyahu_800x600.jpg?itok=nQ6UdRz6'></td><td>2015-03-23 19:25:07</td><td>Netanyahu will have four weeks to complete the task, although Rivlin can extend the deadline by another 14 days if necessary.</td></tr>
+</table></body></html>

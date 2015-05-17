@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47064558,width-300,resizemode-4/Ukraine-Chernobyl-Anniversary.jpg'></td><td>2015-04-26 22:46:29</td><td>SLAVUTYCH (Ukraine): Ukrainians have marked 29 years since the Chernobyl nuclear disaster, placing wreaths and candles near the plant where work to lay a new seal over the reactor site has been delayed.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47064558,width-300,resizemode-4/Ukraine-Chernobyl-Anniversary.jpg'></td><td>2015-04-26 22:46:29</td><td>The explosion of reactor number four on April 26, 1986, spewed poisonous radiation over large parts of Europe, particularly Ukraine, Belarus and Russia.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47064558,width-300,resizemode-4/Ukraine-Chernobyl-Anniversary.jpg'></td><td>2015-04-26 22:46:29</td><td>At the site of the plant itself, around 100 kilometres from Kiev, Ukraine's President Petro Poroshenko laid a wreath at a monument to the victims.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 11:56:21</td><td>Emergency services deployed more than 300 firefighters, three planes and one helicopter to tackle the fire which Yatseniuk said was the largest in Ukraine since 1992.</td></tr>
+</table></body></html>

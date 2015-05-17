@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-02-13 11:14:56</td><td><a href='boko_haram_1.html'>In a bid to contain Boko Haram, which has killed thousands and kidnapped hundreds in its five-year revolt, President Idriss Deby's government mediated peace talks between the Nigerian government and the group last October. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-02-14 20:12:42</td><td><a href='boko_haram_80.html'>What is Boko Haram? (29)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-07 22:11:36</td><td><a href='boko_haram_83.html'>Nigeria's Boko Haram pledges allegiance to Islamic State (52)</a></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.dw.de/image/0,,18241332_303,00.jpg'></td><td>2015-03-13 01:43:00</td><td>Islamic State accepts Boko Haram allegiance</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 22:27:57</td><td><a href='boko_haram_81.html'>"Boko Haram has no future, Boko Haram will be defeated, God willing." (267)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 22:40:46</td><td><a href='boko_haram_82.html'>Student Shot in Boko Haram School Attack Dies in Nigeria (15)</a></td></tr>
+</table></body></html>

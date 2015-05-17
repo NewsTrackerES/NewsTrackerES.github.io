@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431319431304.jpg'></td><td>2015-05-11 04:45:24</td><td>An industrial hub of half a million people, Mariupol sits on the fringe of Ukraine's year-long insurgency, which has killed more than 6000 people and ruined Russia's ties with its Cold War foes.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431319431304.jpg'></td><td>2015-05-11 04:45:24</td><td>While Russia blames Ukraine for breaking the truce, US Defence Secretary Ashton Carter said last week that the separatists may be readying a new offensive.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431356655145.jpg'></td><td>2015-05-11 15:06:19</td><td>To prepare for the worst, Ukraine's army is giving classes at schools and universities and taking people on training drills, said Dmytro Horbunov, a military spokesman in Mariupol.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431356655145.jpg'></td><td>2015-05-11 15:06:19</td><td>Ukraine port of Mariupol braces for war</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431356655145.jpg'></td><td>2015-05-11 15:06:19</td><td>Ukraine's armoured personnel carriers en route to a front-line position east of Mariupol in March.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431356655145.jpg'></td><td>2015-05-11 15:06:19</td><td>It could also reignite calls to arm Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 12:07:18</td><td>KIEV, Ukraine - The Ukrainian parliament has given preliminary approval to allowing foreigners to serve in its army.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 07:26:15</td><td>Hammer and Sick of It: Ukraine tries to ditch communist past</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/bSV2KvZ.Mhs7ucWKg.sj6g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/75d76f4eb38a2faf73b37df43944956cb8822908.jpg'></td><td>2015-05-11 13:14:51</td><td>Kerry's visit would come after US President Barack Obama skipped Russia's celebrations of the 70th anniversary of the Soviet victory over Nazi Germany in what was widely seen as a snub over Moscow's meddling in Ukraine.</td></tr>
+</table></body></html>

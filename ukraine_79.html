@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ 10 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 13:00:13</td><td>In this photo taken on Thursday, March 26, 2015 prisoners of Zhdanivskaya prison are having lunch in the village of Zhdanivka, eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 13:00:13</td><td>MSF works on both sides of the front line between rebel and government forces, giving them better access to patients than either Ukraine or rebel authorities have.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/GGPsN4SbB8EJjl8PTImP.w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ea85f8e0c83b140f730f6a706700bfd7.jpg'></td><td>2015-04-08 12:57:34</td><td>The minder rushed up to flip it around, as he did with other signs, because it shows allegiance to Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:56:49</td><td>MSF says that while the official death rate from tuberculosis in Ukraine is 15 per 100,000 people, the number is 10 times higher among prisoners.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:56:49</td><td>ZHDANIVKA, Ukraine (AP) - The colony of cats living on the grounds of the Zhdanivka penitentiary disappeared when battles in east Ukraine peaked.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:56:49</td><td>Misery, tuberculosis in prisons of war-torn east Ukraine</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 13:02:03</td><td>In this photo taken on Thursday, March 26, 2015 Zhdanivka prison guard guards the prisoner, background, who waits for the tuberculosis test to be taken in the village of Zhdanivka, eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:57:39</td><td>Ukraine-Russia Gas Talks Postponed</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 16:01:21</td><td>BERLIN - The German military plans to bring 100 mothballed tanks back into service as it deals with increased demands from the Ukraine crisis.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 09:13:15</td><td>BERLIN (Reuters) - Germany hopes that the foreign ministers of France, Germany, Russia and Ukraine will meet in Berlin early next week to discuss the implementation of the Minsk ceasefire agreement, an official from the German foreign ministry said on Thursday.</td></tr>
+</table></body></html>

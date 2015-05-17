@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b5a/news/world/article23240900.ece/ALTERNATES/w220/XVG105-Ukraine.JPG'></td><td>2015-03-02 08:34:32</td><td>More than 6,000 people have died in eastern Ukraine since the start of the conflict almost a year ago that has led to a "merciless devastation of civilian lives and infrastructure," the U.N. human rights office said Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b5a/news/world/article23240900.ece/ALTERNATES/w220/XVG105-Ukraine.JPG'></td><td>2015-03-02 08:34:32</td><td>While Russia denies its troops are fighting in Ukraine, the U.N. cited "credible reports (that) indicate a continuing flow of heavy weaponry and foreign fighters" from Russia.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:00:17</td><td>Both Ukraine and the Russian-backed rebels have accused each other of violating the truce and the meeting comes as the U.S. and its European allies contemplate additional sanctions on Russia for its actions in Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 09:00:05</td><td>KIEV, Ukraine (AP) " Ukraine parliament speaker says 32 killed in mine blast in war-torn eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2011/7/29/201172945845896734_20.jpg'></td><td>2015-03-04 08:00:50</td><td>Mine officials said the explosion was most likely caused by gas and not linked to fighting at the nearby frontline in the war between pro-Moscow rebels and Ukraine government forces.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://gdb.rferl.org/176f7b24-cd0a-41ed-8a8e-11fa2765b025_tv_w113_h64.jpg'></td><td>2015-03-03 04:03:54</td><td>Under the agreement, Kyiv and Moscow agreed the supply issue in eastern Ukraine "is highly complex in legal, technical and political terms," and that more talks would be required.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:25:11</td><td>"More than 6,000 lives have now been lost in less than a year due to the fighting in eastern Ukraine," UN High Commissioner for Human Rights Zeid Ra'ad Al Hussein said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a3d3d-642.jpg'></td><td>2015-03-02 14:10:29</td><td>Nonetheless, Ukraine reported a sharp drop in attacks from pro-Russian separatists over the weekend and said it was continuing to pull back heavy weapons from the front line.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 08:17:46</td><td>UN Says Death Toll In 'Merciless' Ukraine War Exceeds 6,000</td></tr>
+</table></body></html>

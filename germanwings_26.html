@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 230,
+            values: [ 230 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 11:25:06</td><td><a href='germanwings_1.html'>A Germanwings Airbus A320 operated by Lufthansa's Germanwings budget airline crashed in southern France on Tuesday en route from Barcelona to Duesseldorf, police and aviation officials said. (18)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 11:04:04</td><td><a href='germanwings_2.html'>Lufthansa's Germanwings unit said it was as yet unable to verify reports of the crash. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:07:14</td><td><a href='germanwings_3.html'>PARIS, March 24 (Reuters) - A Germanwings jetliner that crashed in the French Alps on Tuesday did not issue a distress call during its rapid descent, France's aviation regulator said. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:52:49</td><td><a href='germanwings_4.html'>He said Airbus delivered the plane to Lufthansa in 1991, after which it flew exclusively for the German flagship carrier until it was transferred to Germanwings' fleet last year. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td><a href='germanwings_5.html'>The Germanwings brand will be merged into Eurowings later this year for sales purposes, the airline says, although passengers will still see planes painted with Germanwings markings for the time being and Germanwings flight codes will remain. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:54:17</td><td><a href='germanwings_6.html'>The State Department is reviewing whether any U.S. citizens were on the flight operated by Germanwings, Lufthansa's budget airline. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:01:32</td><td><a href='germanwings_7.html'>Germanwings Flight 9525 from Barcelona, Spain, to Duesseldorf, Germany, was flown on an Airbus A320, a workhorse of modern aviation, similar to the Boeing 737. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:54:13</td><td><a href='germanwings_8.html'>Students and teachers at a small-town German high school broke down in tears once they realised that 16 classmates and two teachers were on board a Germanwings airplane that crashed in France on Tuesday on a flight to Dusseldorf. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 22:45:06</td><td><a href='germanwings_9.html'>At Barcelona airport, passenger Marcel Hemmeldr said he felt "very strange" to check in for Germanwings' evening flight to Duesseldorf. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 10:24:07</td><td><a href='germanwings_10.html'>Germanwings crash: Terrorism unlikely as cause of plane crash, says interior minister Bernard Cazeneuve (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 16:26:48</td><td><a href='germanwings_11.html'>The players of Swedish soccer team Dalkurd narrowly escaped boarding the budget airline Germanwings' A320 that crashed in the French Alps killing all 150 people on board. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 18:03:27</td><td><a href='germanwings_12.html'>NEW YORK (AP) - Cockpit voice recordings and, hopefully, flight data will provide the main clues to investigators trying to understand what caused Germanwings Flight 9525 to crash. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 23:23:12</td><td><a href='germanwings_13.html'>A Spanish opera house said Tuesday, March 24, 2015 German contralto Maria Radner along with her husband and baby, were among the 150 victims of the Germanwings plane crash in the French Alps. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 05:08:59</td><td><a href='germanwings_14.html'>Germanwings plane crash: A320 pilot says co-pilot can be locked out of cockpit Is Andrew 'Twiggy' Forrest offering to throw himself in front off Gina Rinehart's train? (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 16:46:50</td><td><a href='germanwings_15.html'>A sign reading'Crash landing path' stands next to field at the LSC Westerwald flight club in Montabaur where the Germanwings co-pilot Andreas Lubitz had been a member. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 23:25:49</td><td><a href='germanwings_16.html'>Pilot's actions may add to Germanwings' liability in mountain crash: lawyers (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 18:07:09</td><td><a href='germanwings_17.html'>The crash initially raised questions about whether Lufthansa should continue with its budget expansion, which involved Germanwings taking over short haul flights from all but its two main German hubs, Frankfurt and Munich. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 10:57:16</td><td><a href='germanwings_18.html'>FRANKFURT (Reuters) - A Germanwings flight to Venice was diverted to Stuttgart on Saturday as the Airbus A319 aircraft appeared to be losing oil, the airline said in a statement. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 18:40:14</td><td><a href='germanwings_19.html'>"The circumstances of the investigation of the Germanwings accident have been highly unusual, and something that began as an accident investigation morphed into a highly public criminal investigation in which it seemed that every day new revelations were coming out," Tyler said. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:35:21</td><td><a href='germanwings_20.html'>Germanwings parent Lufthansa organized special flights for victims' relatives after the March 24 crash, which killed all 150 people on board. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 23:01:32</td><td><a href='germanwings_21.html'>Lufthansa has faced questions about its pilot screening process since the March 24 Germanwings crash which appears to have been caused by a co-pilot who suffered from depression and deliberately steered the plane into a mountain. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 18:11:05</td><td><a href='germanwings_22.html'>BERLIN (AP) - Germanwings says a plane headed for Milan was evacuated at Cologne-Bonn airport after German police received a bomb threat against the flight. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 18:20:21</td><td><a href='germanwings_23.html'>It was Germanwings? (118)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 15:21:13</td><td><a href='germanwings_24.html'>FRANKFURT: Families of the victims of the Germanwings crash are considering filing a claim for damages in the United States if they cannot reach agreement with parent airline Lufthansa in Germany, a lawyer representing the families said on Sunday. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 17:29:01</td><td><a href='germanwings_25.html'>He and another lawyer, Christof Wellens, said they hoped to resolve the case through negotiations with Germanwings' parent company Lufthansa rather than go to court. (4)</a></td></tr>
+</table></body></html>

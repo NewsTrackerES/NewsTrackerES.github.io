@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ 13 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>obamacare</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>6</td><td></td><td>2015-02-21 04:34:36</td><td>Feds send wrong tax info to 800,000 ObamaCare customers</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-03 00:30:03</td><td>Obamacare in court again as opponents seize on wording</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-03 15:43:07</td><td>Obamacare Affordable Care Act King v.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-04 20:04:58</td><td>Supreme court divided over challenge to Obamacare - video</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-23 22:18:47</td><td><a href='obamacare_16.html'>The GAO also said its findings on the first year of the Obamacare insurance exchanges could not be generalized to future years because other factors, including health care costs, could affect the affordability of insurance going forward. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 20:04:16</td><td><a href='obamacare_19.html'>Obamacare. (25)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-09 21:00:13</td><td><a href='obamacare_18.html'>(Reuters) - A legislative push in Montana to extend Obamacare health coverage to the working poor got a last-minute reprieve this week thanks to a procedural play by supporters, and similar efforts in other conservative states are flagging. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 15:05:33</td><td><a href='obamacare_11.html'>Obama's healthcare law, known as Obamacare, requires employers to provide health insurance policies that cover preventive services for women including access to contraception and sterilization. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 21:30:35</td><td><a href='obamacare_17.html'>But Republicans are focused more on repealing so-called "Obamacare" than they are cutting spending elsewhere in the budget and following through on their promise to balance the budget within a decade. (7)</a></td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.gannett-cdn.com/-mm-/9e87116f54a93114e415cd1bcd302f7663d1c06f/c=220-0-3667-2592&amp;r=x404&amp;c=534x401/local/-/media/2015/04/30/USATODAY/USATODAY/635660024577349375-XXX-140904HOSPITALSCLOSING017.jpg'></td><td>2015-05-04 14:49:53</td><td>Contrary to goals, ER visits rise under Obamacare</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 22:02:41</td><td><a href='obamacare_15.html'>According to the report, 22.8 million uninsured people became insured and 5.9 million lost coverage from September 2013 to February 2015, when the second open enrollment period ended for Obamacare. (5)</a></td></tr>
+</table></body></html>

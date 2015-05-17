@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 13:34:19</td><td>The military source said Syrian forces had inflicted heavy losses on what it said were many Islamic State fighters targeting al-Sukhna.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 14:02:41</td><td>The Observatory reported heavy casualties on both sides in fighting near al-Sukhna on Wednesday, with at least 70 troops and 40 Islamic State fighters killed.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 14:02:41</td><td>Islamic State fighters reached online said the group was shelling an air base near Tadmur, an oasis in the desert north-east of Damascus also known as Palmyra.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?d=20150516&i=108002009&w=240&r=108002009-1&t=2'></td><td>2015-05-16 13:55:16</td><td>The White House said President Barack Obama ordered the raid that killed the Islamic State figure identified as Abu Sayyaf.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 12:41:00</td><td>The leader, known as Abu Sayyaf, was involved in the Islamic State's military operations and helped direct the group's' illicit oil, gas and financial operations, Carter said in a statement.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 12:02:17</td><td>A news flash on state TV identified Islamic State's "oil minister" as Abu al-Taym al-Saudi.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 21:28:47</td><td>He said his command had seen Islamic State social media postings of photos that depict a successful Ramadi offensive.</td></tr>
+</table></body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 25,
+            values: [ 25 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 13:34:57</td><td><a href='apple_73.html'>"Many factors can affect the performance of the Apple Watch heart rate sensor," the Apple page states. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:11:03</td><td><a href='apple_74.html'>Tests of the watch found a reliability issue with the part made by AAC Technologies Holdings Inc., one of the two suppliers of Apple's taptic engine, the newspaper said. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:51:43</td><td><a href='apple_75.html'>NEW YORK (AP) - Apple, IBM and Japanese insurance and bank holding company Japan Post have formed a partnership to improve the lives of elderly people in the country. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:36:56</td><td><a href='apple_76.html'>He touted the iPad as an integral tool for improving care of elderly family members and patients, and said Apple has seen a "significant uptake" of the iPhone and iPad in Japan. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 20:29:26</td><td><a href='apple_77.html'>Shipments of the highly anticipated Apple Watch are reportedly being slowed by a faulty component manufactured by one of Apple's suppliers in China. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 15:53:35</td><td><a href='apple_78.html'>MOSCOW (AP) - A member of Russia's parliament has asked prosecutors to determine whether Apple violated Russia's ban on gay "propaganda" when it delivered U2's latest album to a half-billion iTunes users for free last year. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:28:58</td><td><a href='apple_79.html'>April 30 (Reuters) - Wall Street was lower in afternoon trading on Thursday as Apple weighed on major indexes and investors digested a mixed batch of economic data. (2)</a></td></tr>
+</table></body></html>

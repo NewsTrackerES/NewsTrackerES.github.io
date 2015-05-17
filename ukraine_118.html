@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 18:03:09</td><td>One Ukrainian serviceman was killed and two were wounded when separatists shelled Ukraine's National Guard on Saturday at Shyrokyne, a village east of the port of Mariupol on the Sea of Azov in Ukraine's southeast, Kiev's military said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 20:25:56</td><td>He said the rebels were not opposed to the deployment of international peacekeepers in eastern Ukraine - a long-standing demand by Kiev - but accused Ukraine of violating the Minsk deal by failing to discuss constitutional changes with the rebels.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 20:25:56</td><td>Attending military exercises in southwestern Ukraine, President Petro Poroshenko said: "Ukraine is strictly implementing the Minsk agreements, therefore the Ukrainian armed forces will never attack first."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 20:25:56</td><td>Ukraine and pro-Russian separatists trade accusations as Minsk deal frays</td></tr>
+</table></body></html>

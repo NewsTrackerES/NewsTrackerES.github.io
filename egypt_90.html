@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 36,
+            values: [ 36 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 18:43:05</td><td><a href='egypt_33.html'>"Egypt is facing a housing shortage and serious population growth pressures, so the move to meet that demand in new urban areas outside of Cairo is a good idea," Cairo-based urban planner Josh Drake said. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 10:39:49</td><td><a href='egypt_34.html'>CAIRO (AP) - An Egyptian security official says a shark killed a German citizen on Egypt's Red Sea Coast. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:42:17</td><td><a href='egypt_35.html'>Sinai is home to Egypt's most dangerous Islamist group, Sinai Province. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:05:46</td><td><a href='egypt_36.html'>Militant attacks in Egypt's restive Sinai kill 2 soldiers, police conscript, officials say (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 13:52:22</td><td><a href='egypt_37.html'>CAIRO (AP) - Egypt's forensics authority has dismissed its spokesman, a doctor who said last weekend that a female protester killed by police in January died because she did not have enough fat on her body to protect against shotgun pellets. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:15:07</td><td><a href='egypt_38.html'>A summit of Arab leaders being held this weekend in Egypt is due to address a proposal to create a joint Arab defense force, an idea promoted by Saudi Arabia and Egypt to intervene in regional crises. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 07:47:48</td><td><a href='egypt_39.html'>SOHAG, Egypt (AP) - A senior Egyptian security official says 14 people have been killed and seven injured in a car crash involving three vehicles in the southern province of Sohag. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 19:34:47</td><td><a href='egypt_40.html'>Saudi Arabia, Egypt show discord over Syria (7)</a></td></tr>
+</table></body></html>

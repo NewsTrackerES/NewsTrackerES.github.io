@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:30:22</td><td>Originally, the deal also included a revenue-sharing agreement where Microsoft paid Yahoo a percentage of Bing ads revenue delivered from Yahoo searches.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:30:22</td><td>Earlier, Microsoft controlled how Bing displayed search results on Yahoo websites accessed on PCs.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:30:22</td><td>The 10-year search partnership, crafted by former Microsoft CEO Steve Ballmer and former Yahoo CEO Carol Bartz, allowed the companies to amend or terminate it after five years.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:30:22</td><td>Microsoft Corp and Yahoo Inc amended a 2009 search partnership, giving Yahoo more control over how search results are displayed on desktops and mobile devices.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:45:09</td><td>Yahoo was responsible for sales for Bing search ads.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:45:09</td><td>Microsoft and Yahoo plan to transition sales responsibilities starting this summer.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:45:09</td><td>Yahoo and Microsoft shares were down marginally in late-morning trading.</td></tr>
+</table></body></html>

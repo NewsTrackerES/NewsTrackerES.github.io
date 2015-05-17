@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/02/537429190.jpg?w=620'></td><td>2015-02-13 15:12:32</td><td>Chad, Niger, Cameroon and Benin all have pledged to send military support though Chadian soldiers are already fighting Boko Haram militants inside Cameroon and Nigeria.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/02/537429190.jpg?w=620'></td><td>2015-02-13 15:12:32</td><td>Boko Haram's insurgency has forced some 157,000 people to seek refuge in Niger, while 40,000 others have gone to Cameroon and 17,000 are in Chad, the U.N. said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/02/537429190.jpg?w=620'></td><td>2015-02-13 15:12:32</td><td>Boko Haram has threated any nation contributing to the fight against them.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/02/537429190.jpg?w=620'></td><td>2015-02-13 15:12:32</td><td>Boko Haram targets village in Chad in attack on third country outside of home base Nigeria</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-13 18:24:00</td><td>Ngouboua is already home to nearly 3,300 refugees who had fled Boko Haram-related violence back home in Nigeria, according to the United Nations.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6104484-3x2-340x227.jpg'></td><td>2015-02-14 20:12:42</td><td>What is Boko Haram?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81007000/jpg/_81007540_81007296.jpg'></td><td>2015-02-14 17:05:43</td><td>Boko Haram city attack repelled</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 13:44:30</td><td>A video still shows Boko Haram leader Abubakar Shekau speaking to the camera.</td></tr>
+</table></body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>The fact that Islamic State militants are menacing the region does not help, and was exploited by Netanyahu during a campaign in which he portrayed the militants in one TV ad as charging toward Jerusalem, with naive Israeli leftists even helpfully pointing the way.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>Analysis: Why Netanyahu?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>Analysis: Why Netanyahu? It's more than just nationalism</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>It's a mystery to many: Benjamin Netanyahu's campaign gained steam when he ruled out the creation of a Palestinian state, and he seems determined to continue settling occupied land with Jews.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e0fzLYHeuKsvRjq1NJ6eyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T004343Z_640852806_GM1EB3I0MJG01_RTRMADP_3_ISRAEL-ELECTION.JPG'></td><td>2015-03-21 14:45:47</td><td>Activists at the headquarters of V-15, an initiative that called to unseat Netanyahu, silently bundled dozens of banners on Thursday, and one activist asked a journalist to leave.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 22:43:42</td><td>In a pre-election interview with an Israeli news site, Netanyahu answered "indeed" when asked directly whether there would be no Palestinian state if he were to win another term as prime minister.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Qk9CwrG1KDmfElDKAC1tkg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T222230Z_1_LYNXMPEB2J122_RTROPTP_2_ISRAEL-ELECTION.JPG'></td><td>2015-03-20 22:22:30</td><td>Netanyahu row casts doubt on Obama pledge to 'have Israel's back'</td></tr>
+</table></body></html>

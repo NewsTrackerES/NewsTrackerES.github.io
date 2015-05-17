@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 18,
+            values: [ 18 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>cia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/3/k/z/image.related.articleLeadwide.620x349.1ms3jw.png/1429790672481.jpg'></td><td>2015-04-23 11:31:38</td><td>WASHINGTON: Former US military commander and CIA director David Petraeus will appear in federal court in North Carolina to face sentencing for allegedly leaking secrets to a mistress who was writing his biography.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/3/k/z/image.related.articleLeadwide.620x349.1ms3jw.png/1429790672481.jpg'></td><td>2015-04-23 11:31:38</td><td>General Petraeus, who served stints as the top US commander in the wars in Iraq and Afghanistan, resigned from the CIA in 2012 after it was revealed that he was having an affair with the biographer, Army Reserve officer Paula Broadwell.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/3/k/z/image.related.articleLeadwide.620x349.1ms3jw.png/1429790672481.jpg'></td><td>2015-04-23 11:31:38</td><td>A court document signed by General Petraeus and prosecutors says that, in 2011, before he became the CIA director, the four-star general illegally gave Broadwell access to binders, known as "black books," that included classified information.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/3/k/z/image.related.articleLeadwide.620x349.1ms3jw.png/1429790672481.jpg'></td><td>2015-04-23 11:31:38</td><td>Other leak case defendants have received harsher punishments, such as former CIA officer John Kiriakou, who was sent to prison.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HxGxtgpzeN9B_jPF6Up6.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c4e82f45fdf9b9096f0f6a7067009f10.jpg'></td><td>2015-03-03 16:37:29</td><td>Petraeus admitted to the affair when he resigned as CIA director in November 2012.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/16/13/15/3715943/3/square_gallery_thumb.jpg'></td><td>2015-03-03 22:12:53</td><td>Petraeus held the CIA post less than a year, not long enough to leave a significant mark on the spy agency.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/16/13/15/3715943/3/square_gallery_thumb.jpg'></td><td>2015-03-03 22:12:53</td><td>Prosecutors said that after resigning from the CIA, Petraeus signed a form falsely attesting he had no classified material.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HxGxtgpzeN9B_jPF6Up6.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c4e82f45fdf9b9096f0f6a7067009f10.jpg'></td><td>2015-03-04 10:47:42</td><td>Then the CIA director, Petraeus hailed the conviction as a victory for the agency.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HxGxtgpzeN9B_jPF6Up6.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c4e82f45fdf9b9096f0f6a7067009f10.jpg'></td><td>2015-03-04 10:47:42</td><td>By comparison, former CIA officer John Kiriakou pleaded guilty in 2012 to one count of intentionally disclosing the identity of a covert agent to a reporter and was sentenced to 30 months in prison.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/00/05/7864685/3/920x920.jpg'></td><td>2015-04-23 08:50:57</td><td>Ex-CIA chief will be sentenced for leaking military secrets</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-23 08:53:03</td><td>Former CIA Director David Petraeus, whose career was destroyed by an extramarital affair with his biographer, was expected to be sentenced Thursday in federal court in Charlotte for giving her classified material while she was working on the book.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:47:24</td><td>Both have publicly apologized and said their romantic relationship began only after he retired from the military and started at the CIA.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/david-petraeus.jpg?w=620'></td><td>2015-03-03 18:17:35</td><td>When Petraeus resigned from the CIA, he signed a security exit form indicating he had no classified material in his possession.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/03/03/102473092-138013347.530x298.jpg?v=1425399833'></td><td>2015-03-03 18:18:00</td><td>David Petraeus, the former CIA director and top Army general whose affair with his biographer brought down what many considered a bright political future, has agreed to plead guilty to mishandling classified materials.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 21:48:05</td><td>Ex-general, CIA chief Petraeus gets probation, $100,000 fine in leak case</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 19:14:28</td><td>Ex-CIA Chief Petraeus Gets 2 Years' Probation, Fine for Sharing Military Secrets With Mistress</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:45:18</td><td>Justice Department: Ex-CIA chief Petraeus to plead guilty to mishandling classified materials</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/add/news/world/article23261432.ece/ALTERNATES/w220/NYET256-Petraeus-Biographer.JPG'></td><td>2015-03-03 16:37:26</td><td>Former CIA director Petraeus pleads guilty to federal charge</td></tr>
+</table></body></html>

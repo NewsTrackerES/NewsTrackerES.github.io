@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 23:10:23</td><td>They were among a group of 275 children and women rescued from Boko Haram extremists, the first to arrive at a refugee camp Saturday after a three-day journey to safety, brought by Nigeria's military.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 23:10:23</td><td>For nearly a year, Nigeria's President Goodluck Jonathan had been promising to bring home all the people kidnapped by Boko Haram home - especially 219 schoolgirls abducted from their boarding school in the town of Chibok.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 23:10:23</td><td>Tears came to her eyes when she was asked if she has other children: "Three of them. Boko Haram killed my husband and grabbed me. I have no idea where my other children are."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 23:10:23</td><td>The women were exhausted, too traumatized to realize they were safe, or be questioned about their experiences under Boko Haram.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47135974,width-300,resizemode-4/Nearly-300-freed-women-children-led-to-safety-in-Nigeria.jpg'></td><td>2015-05-03 01:19:26</td><td>He lost March 28 elections, in part because of the military failures against Boko Haram and his handling of the hostage situation.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47135974,width-300,resizemode-4/Nearly-300-freed-women-children-led-to-safety-in-Nigeria.jpg'></td><td>2015-05-03 01:19:26</td><td>Former military dictator Muhammadu Buhari won the election and has promised to wipe out Boko Haram.</td></tr>
+</table></body></html>

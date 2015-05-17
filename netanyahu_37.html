@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Mr Netanyahu was.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Mr Netanyahu was.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Soaring housing costs, in particular, became a prominent issue in this campaign, but Mr Netanyahu infuriated many voters by appearing to brush off their concerns in favour of a relentless focus on the Iranian nuclear threat.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>For Mr Netanyahu's main competition, a centre-left party known as the Zionist Union, the message was simple: It's time for the Prime Minister to go.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Mr Netanyahu was.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 23:35:20</td><td>Under Netanyahu, Israel has deepened its hold on the West Bank, adding Jewish settlers to the point where the territory may soon become inseparable from Israel proper.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gen/2733192/images/n-NETANYAHU-large570.jpg'></td><td>2015-03-17 23:17:53</td><td>"Reality does not take a break," Netanyahu said in a speech to supporters after two television exit polls gave Likud a narrow lead over his center-left challenger in the ballot.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/hk9w7eLKehcmJNufqLk0NA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T204841Z_1421125006_GM1EB3I0D8401_RTRMADP_3_ISRAEL-ELECTION-EXITPOLLS.JPG'></td><td>2015-03-17 20:50:56</td><td>"Against all odds: a great victory for Likud, a great victory for the national camp led by Likud, a great victory for the people of Israel," Netanyahu wrote on his official Twitter account.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:46:59</td><td>Israel's Netanyahu declares victory in tight election</td></tr>
+</table></body></html>

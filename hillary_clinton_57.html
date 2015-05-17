@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ 11 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 07:40:21</td><td>On Thursday, Saban hosted a fundraiser for Hillary Clinton's campaign at his Beverly Hills home, raising at least $1.2 million from 450 attendees.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-12 07:40:06</td><td>More than 220 paid events earned the family nearly $50 million, according to a review of State Department documents and Hillary Clinton's financial disclosure forms by The Associated Press.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-12 07:40:06</td><td>State Department spokesman Jeff Rathke said last week the agency was unaware of any actions taken by Hillary Clinton that were influenced by Clinton Foundation donations or by Bill Clinton's event or consultancy fees.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-12 07:40:06</td><td>When Hillary Rodham Clinton was secretary of state, her husband won hasty approval from her department to make a lucrative series of speeches to companies, organizations and governments around the world.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://global.fncstatic.com/static/v/fn2/img/politics/approval-president.png'></td><td>2015-05-12 21:36:54</td><td>Cheryl Mills was Hillary Clinton's chief of staff at the State Department and was frequently included on the other end of emails during the State Department review of the requests.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://global.fncstatic.com/static/v/fn2/img/politics/approval-president.png'></td><td>2015-05-12 21:36:54</td><td>Mills was a former White House deputy counsel who collaborated with Kendall on Bill Clinton's impeachment legal defense before working for Hillary Clinton at the State Department.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 23:00:09</td><td>AP Source: Hillary and Bill Clinton report earning more than $25M from speeches since Jan 2014</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 21:02:32</td><td>Hillary Clinton woos donors visiting campaign headquarters</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 02:02:28</td><td>Bill Clinton says if Hillary wins, he'll move back to White House -'if asked'</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 19:30:25</td><td>Hillary Clinton speaks at Rancho High School on May 5, 2015 in Las Vegas.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 18:40:54</td><td>ATLANTA - The campaign for Hillary Rodham Clinton says the Democratic presidential candidate plans to be in the early voting state of South Carolina on May 27.</td></tr>
+</table></body></html>

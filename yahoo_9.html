@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/W.X5rfCGGRSLb3cYSYq88A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQxMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504292156789650052'></td><td>2015-04-30 04:47:51</td><td>AP Source: Thunder, Donovan in talks about coaching vacancy (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/W.X5rfCGGRSLb3cYSYq88A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQxMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504292156789650052'></td><td>2015-04-30 04:47:51</td><td>Yahoo Sports reported Donovan is ''enthusiastic'' about the possibility of coaching the Thunder and is seeking an annual salary around $6 million.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-05-01 03:04:23</td><td>Dunleavy scores 20, Bulls clobber Bucks 120-66 to advance (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/uQ.2jNvZNiaeDz6b35ixZA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nflhighlights.com/6a4cd3c45d8701c6249e3d4af1b71cf8'></td><td>2015-05-01 01:03:17</td><td>Buccaneers select Jameis Winston with top pick in NFL draft (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/_r.RUkdxMSoJBsCPqCji.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504301415513440784'></td><td>2015-04-30 21:07:24</td><td>Ex-NFL star Plaxico Burress accused of failing to pay taxes (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-30 20:23:08</td><td>Baffert aiming at 1st 1-2 Kentucky Derby finish since 1948 (Yahoo Sports)</td></tr>
+</table></body></html>

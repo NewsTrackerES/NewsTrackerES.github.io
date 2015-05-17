@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 16:51:14</td><td>A report Friday detailed the case of a Liberian woman whose infection likely came from a man who had Ebola symptoms last September.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:38:31</td><td>NEW YORK -- Health officials now think Ebola survivors can spread the disease through unprotected sex nearly twice as long as previously believed.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:38:31</td><td>Based on the case, officials are now telling male Ebola survivors to avoid unprotected sex indefinitely.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:53:00</td><td>5 months after infection, man spreads Ebola via sex</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:24:59</td><td>The Ebola virus spreads through direct contact with an Ebola patient's blood or other bodily fluids like urine, saliva, semen and sweat.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 23:15:20</td><td>In Guinea, Dr. Sakoba Keita, the national coordinator for Ebola response, said a woman in the southeastern town of Macenta contracted Ebola after having unprotected sex with her husband.</td></tr>
+</table></body></html>

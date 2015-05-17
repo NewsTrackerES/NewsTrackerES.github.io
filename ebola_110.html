@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ 11 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 14:12:00</td><td><a href='ebola_97.html'>But two experimental Ebola vaccines - developed by GlaxoSmithKline and jointly by Merck and NewLink Genetics - being tested on volunteers may not yield sufficient data on efficacy as case numbers fall, Ms Kieny said. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 14:58:30</td><td><a href='ebola_98.html'>The cash injection is another boost for the young pharmaceutical company which struck milestone deals with giants Johnson & Johnson in October for the development of the Ebola vaccine, and with Bristol-Mayers Squibb for the prostate cancer treatment. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 17:35:42</td><td><a href='ebola_99.html'>ROME An Italian nurse who returned to Italy last week after working in Sierra Leone has tested positive for Ebola, the health ministry said on Tuesday. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 17:46:48</td><td><a href='ebola_100.html'>The nurse, who wasn't identified to protect his privacy, worked for the non-governmental aid group Emergency in Sierra Leone, one of the African countries hardest hit by often-fatal Ebola. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 06:57:43</td><td><a href='ebola_101.html'>He had been working at Ebola treatment centers as an administrator, said Paul Skolnik, chief of medicine at the University of Connecticut Health Center's Ebola Task Force. (2)</a></td></tr>
+</table></body></html>

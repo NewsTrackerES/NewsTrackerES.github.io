@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 20,
+            values: [ 20 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>"Apple, being Apple, will force its way in," said Andrew Gardiner, European technology hardware analyst for Barclays.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>Analysts say Apple is likely to go after markets where iPhones are already popular and where wireless payment readers using technology on which Apple relies are widely available.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>Credit card companies such as Visa (V.N) and MasterCard (MA.N) - which provided crucial early backing to Apple Pay and are gearing up to support its international expansion - are also looking to hedge their bets and back viable alternatives.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>"Apple doesn't need blanket coverage to start," Morgan Stanley's Humphrey said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>Apple itself is not giving any clues about where it might move next.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>"Apple Pay is available in the U.S.," the official site simply states.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/SfARQ5785rOGawYTzdJCcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-08T124941Z_1_LYNXMPEB370HR_RTROPTP_3_APPLE-USA_original.jpg'></td><td>2015-04-08 12:49:41</td><td>Its potential global customer base is huge: the 800 million Apple users who have already connected credit and debit cards to iTunes accounts.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:49:41</td><td>"The expectation in the industry is that Apple will be launching in new markets in the next quarter or two," he says, citing conversations he has had with credit card companies and major banks in Europe.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297684956713_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-08 14:59:50</td><td>FRANKFURT - Apple has made mobile payments look easy, after a decade of mostly failed experiments by banks, telecom operators and retailers to woo consumers away from cards and cash.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 21:04:48</td><td>Apple's iOS 8.3 Update Is Here</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/cd/resizer/2.0/FIT_TO_WIDTH-w540/332d1e5ee2c95cb0d0c9f4dfddaff53ae9d64e47.png'></td><td>2015-04-08 19:05:18</td><td>Get the New, Diverse Emoji Set With Apple?s Latest iOS Update</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.mos.techradar.com/art/Watches/Apple%20Watch/Third%20option/Apple%20Watch%20review022-320-80.jpg'></td><td>2015-04-08 18:41:00</td><td>"Apple Watch is light-years better than any of the feeble, clunky efforts that have come before it."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 16:30:45</td><td>CNET: "The Apple Watch is the most ambitious, well-constructed smartwatch ever seen, but first-gen shortfalls make it feel more like a fashionable toy than a necessary tool."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HT839_STERN__H_20150407151750.jpg'></td><td>2015-04-08 15:59:11</td><td>After over a week of living with Apple's latest gadget on my wrist, I realized the company isn't just selling some wrist-worn computer, it's selling good looks and coolness, with some bonus computer features.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/02/23/102447924-455062904.530x298.jpg?v=1428504950'></td><td>2015-04-08 15:12:00</td><td>"Isn't the promise of the Apple Watch to help me stay in the moment, focused on the people around me and undisturbed by the mesmerizing void of my iPhone? So why do I suddenly feel so distracted?"</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/09/2676E1D100000578-2986641-The_Apple_Watch_is_available_in_three_models_the_Apple_Watch_App-a-33_1425926709082.jpg'></td><td>2015-04-08 15:01:57</td><td>Apple says over 1,000 apps have now been submitted for the Watch.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:40:32</td><td>So Apple has succeeded in its first big task with its watch.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/04/29906170001_4160369361001_AplWatch-3Up-Communication-PR-PRINT.jpg'></td><td>2015-04-08 14:34:43</td><td>It's almost here! First look at the Apple Watch</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.bizj.us/view/img/3919381/10108001h1507017*304xx4000-2667-0-105.jpg'></td><td>2015-04-08 13:48:53</td><td>"It took three days - three long, often confusing and frustrating days - for me to fall for the Apple Watch. But once I fell, I fell hard," wrote New York Times technology critic Farhad Manjoo.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/9b5/technology/gadgets-and-gear/article23830844.ece/ALTERNATES/w220/web-applewatch-0408.JPG'></td><td>2015-04-08 12:57:59</td><td>The Apple Watch is cool, it's beautiful, it's powerful, and it's easy to use.</td></tr>
+</table></body></html>

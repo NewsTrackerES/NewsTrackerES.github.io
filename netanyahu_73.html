@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 07:58:27</td><td>Under Israeli election rules, if Netanyahu fails to form a coalition after that time, Rivlin can task someone else to do so.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 07:58:27</td><td>JERUSALEM (AP) - Israeli Prime Minister Benjamin Netanyahu has received a two-week extension to form a new governing coalition following his election victory last month.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 07:58:27</td><td>Netanyahu told the Israeli president he has made progress in negotiations with potential partners but needs more time to form a stable coalition.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/9/k/x/image.related.articleLeadwide.620x349.1mpnj4.png/1429582416406.jpg'></td><td>2015-04-21 02:13:57</td><td>Mr Netanyahu is pursuing a government with hawkish, religious and centrist parties that will give him a coalition representing at least 61 members of Israel's 120-seat parliament, or Knesset, though he hopes for the more comfortable backing of 67 lawmakers.</td></tr>
+</table></body></html>

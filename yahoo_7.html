@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td>NEW YORK (AP) - Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td>In January, Yahoo Inc. said it will spin off its stake in Alibaba Group Holding Ltd. later this year.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td>Investors were pushing Yahoo to use some of the proceeds from the Alibaba spinoff to buy back stock, and the company had said it would keep buying back stock to return cash to shareholders.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td>Yahoo owns 384 million shares of Alibaba, and as of Thursday's close its stake is worth about $32 billion.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:43:30</td><td>The move will allow the new entity to pay lower taxes on Alibaba stock sales than Yahoo would have.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:43:30</td><td>Yahoo has $726 million remaining on previous stock buyback plan, which was approved in 2013 and expires at the end of 2016.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:43:30</td><td>More recently it has called for Yahoo to spin off its Japanese business, cut costs, and get cash for its intellectual property and real estate holdings.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 23:58:48</td><td>Yahoo Boosts Share Buyback by $2 Billion</td></tr>
+</table></body></html>

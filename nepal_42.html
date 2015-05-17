@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 09:58:57</td><td>Israel evacuates surrogate-born babies and Israeli parents from Nepal</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 10:10:16</td><td>Israel has begun evacuating surrogate-born babies and their Israeli parents from Nepal, on the return legs of flights sent to provide earthquake relief.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 10:10:16</td><td>Israel's foreign ministry said preparations were under way to bring back a further 22 infants, their parents who had travelled to Nepal before the disaster and four surrogate mothers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 10:10:16</td><td>Filiba said Israeli parents usually spend a month in Nepal for their child's birth and to make final arrangements to bring the infant home.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 10:10:16</td><td>The Israeli military has already sent an 80-member search-and-rescue team to Nepal and planned to send other aircraft with a field hospital and medical personnel later on Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 10:10:16</td><td>Yossi Filiba, from Tel Aviv, said he had gone to Nepal more than three weeks ago for the birth of his baby girl, Na'ama.</td></tr>
+</table></body></html>

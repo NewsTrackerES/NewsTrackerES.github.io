@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/44958d7/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fe7%2F4e%2F2c9367cc4172bcc09000bdf07b9b%2Fresizes%2F500%2F150324-germanwings-1-editorial.jpg'></td><td>2015-04-08 17:49:07</td><td>Airline official: Germanwings probe shouldn't set precedent</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 18:22:01</td><td>Airline industry official expresses concern about the handling of Germanwings investigation</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 18:37:35</td><td>The subsequent investigation has focused in large part on the pilot's history of depression and procedures at Germanwings and its parent company, Lufthansa, for screening pilots for mental health issues.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 18:40:14</td><td>"The circumstances of the investigation of the Germanwings accident have been highly unusual, and something that began as an accident investigation morphed into a highly public criminal investigation in which it seemed that every day new revelations were coming out," Tyler said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 17:31:05</td><td>European Union authorities were looking in to German airline safety procedures on "a number of issues" well ahead of the March 24 Germanwings crash after a standard inspection by its aviation safety agency questioned some procedures.</td></tr>
+</table></body></html>

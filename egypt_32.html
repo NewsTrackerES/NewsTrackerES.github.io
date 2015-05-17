@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ 11 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Egypt's chief prosecutor has referred a police officer to trial for the deadly shooting of a female protester killed earlier this year during a peaceful demonstration.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>The two cases had renewed accusations from rights groups and political activists that Egypt's powerful police force enjoys almost blanket impunity.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Amnesty International said authorities in Egypt are covering up excessive use of force by police, taking no action to rein in abuse.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/q6PA9bwNF7dIFQzA6sV.MA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/02de284e3d91030c710f6a70670083f0.jpg'></td><td>2015-03-17 15:06:36</td><td>Almost all of the over 100 policemen tried for killing protesters during Egypt's 2011 revolution were acquitted, with judges citing shoddy investigation or lax evidence in cases largely probed by the police themselves.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/q6PA9bwNF7dIFQzA6sV.MA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/02de284e3d91030c710f6a70670083f0.jpg'></td><td>2015-03-17 15:06:36</td><td>The uproar over el-Sabbagh's death prompted Egypt's President Abdel-Fattah el-Sissi to urge an investigation but he hinted that individual mistakes should not undermine public confidence in the police.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Sunday, Feb. 8, 2015 file photo, a man looks at a burning vehicle during a riot outside an air defense stadium in a suburb east of Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Monday, Feb. 9, 2015 file photo, an Ultras White Knights soccer fan, mourns over his friends who were killed in a riot, outside Zeinhom morgue, in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 22:12:05</td><td>Egypt's state prosecutor referred on Tuesday a police officer to trial for allegedly shooting dead a leftist female protester during a peaceful rally in central Cairo.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/466184680.jpg?w=620'></td><td>2015-03-17 16:19:12</td><td>Cairo, Egypt's teeming capital of 18 million people, is routinely criticized for its creaking infrastructure and horrendous traffic.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 14:41:12</td><td>Egypt's state prosecutor Tuesday referred to trial 16 suspects accused of clashing with police that led to a deadly Cairo football stadium stampede, blaming the Islamist opposition for the violence.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/fVkVZnczOXSCdUT7Ilg.iw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T114234Z_1_LYNXMPEB2G0K6_RTROPTP_2_EGYPT-RIOTS-SOCCER.JPG'></td><td>2015-03-17 10:45:21</td><td>Egypt charges Muslim Brotherhood, Ultras over soccer violence deaths</td></tr>
+</table></body></html>

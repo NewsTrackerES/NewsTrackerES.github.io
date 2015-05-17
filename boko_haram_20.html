@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 11:14:57</td><td>Nigeria acknowledged on Thursday that it is getting help from regional security operatives amid reports that South Africa and other foreign contractors are involved in the fight against Boko Haram.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 11:14:57</td><td>Cameroon's northern region was repeatedly targeted by Boko Haram before the country signed up to participate in a multinational force that has dislodged the group from a score of northeastern Nigerian towns in recent weeks.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-14 11:15:02</td><td>Boko Haram has been fighting a nearly 6-year insurgency against the Nigerian government, killing thousands and carrying out mass kidnappings, including of schoolgirls.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-14 11:15:02</td><td>Also on Thursday, Islamic State militants in the Middle East accepted a pledge of allegiance from Boko Haram, though it is unclear how the groups might be able to cooperate effectively.</td></tr>
+</table></body></html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ 12 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>Thanks largely to its Facebook ties, Messenger already has more than 600 million users, Zuckerberg said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>Facebook CEO Mark Zuckerberg touted the Messenger expansion Wednesday to about 2,000 app developers at the opening of a two-day conference in San Francisco.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>SAN FRANCISCO (AP) - Facebook's Messenger app is evolving into a multitasking tool equipped to send an animated fist bump to a friend at one moment and then get a little business done in the next.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>The decision to allow outside applications to operate within Messenger mirrors a pivotal decision that Zuckerberg made eight years ago when he opened Facebook to other programmers.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>Younger people, in particular, are increasingly using a wide range of mobile messaging apps to communicate while spending less time broadcasting their activities on Facebook's more expansive social network.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>The growing popularity of mobile messaging, though, could result in less time spent on social networks, a shift that would give Facebook fewer opportunities to learn about its users' interests and show the digital ads that make most of the company's money.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>In an effort to pull off the transformation, Facebook Inc. is opening Messenger so outside programmers can build features tailored for the service.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td>The push to diversify Messenger addresses a potential threat to Facebook's ubiquitous social network posed by a variety of mobile messaging maps offering more intimate and direct ways to connect with friends.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/33/44/7715090/3/square_gallery_thumb.jpg'></td><td>2015-03-25 23:29:24</td><td>Facebook's Messenger app to mix business with more pleasure</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 01:00:49</td><td>Facebook is trying to mold its Messenger app into a more versatile communications channel as smartphones create new ways for people to connect with friends and businesses beyond the walls of the company's ubiquitous social network.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 01:00:49</td><td>CEO Mark Zuckerberg delivers the keynote address during the Facebook F8 Developer Conference Wednesday, March 25, 2015, in San Francisco.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297679560455_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 18:04:44</td><td>Facebook talks virtual reality at F8 conference</td></tr>
+</table></body></html>

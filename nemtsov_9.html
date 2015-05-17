@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:50:49</td><td>Nemtsov's killing was the biggest political assassination in Russia since 2006, when another Kremlin foe, journalist Anna Politkovskaya, was shot to death in the elevator of her Moscow apartment building on Putin's birthday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:50:49</td><td>Many opposition supporters suspect the killing was ordered by the Kremlin in retaliation for Nemtsov's ardent criticism of President Vladimir Putin, while authorities have suggested several possible motives, including a provocation aimed at tarnishing Putin's image.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:50:49</td><td>Some observers speculated that certain members of a hawkish, isolationist wing of the government could have had a hand in Nemtsov's death, possibly counting on it to provoke outrage abroad and further strain Russia's ties with the West.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:50:49</td><td>Many commentators said that, like other key opposition leaders, Nemtsov was constantly being shadowed by police, so it would be hard to imagine that his killing could go unnoticed by them.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:50:49</td><td>Nemtsov was shot to death late Friday while walking on a bridge near the Kremlin with a companion.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 12:58:53</td><td>In Moscow, thousands of mourners and dignitaries filed past the white-lined coffin of Nemtsov, many offering flowers as they paid their last respects to one of the most prominent figures of Russia?s beleaguered opposition.</td></tr>
+</table></body></html>

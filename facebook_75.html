@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 47,
+            values: [ 47 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 19:15:54</td><td><a href='facebook_51.html'>Facebook Inc said it started testing its mobile calling app Hello on Android, which allows users to connect with Facebook to see the identity and information about callers even if the number is not saved on the phone. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 23:57:50</td><td><a href='facebook_52.html'>But based on Facebook's inability to persuade users to install its Home app, which lets Facebook take over the home screen on Android, users may not be too keen on replacing existing smartphone tools with Facebook-branded versions. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 08:56:09</td><td><a href='facebook_53.html'>Facebook revenue growth slows, costs weigh on profit (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 20:50:00</td><td><a href='facebook_54.html'>The number of users who accessed Facebook on mobile devices at least once a month grew 24 per cent to 1.25 billion. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 21:00:07</td><td><a href='facebook_55.html'>"This was a strong start to the year," Facebook's CEO Mark Zuckerberg said in a statement. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 14:22:34</td><td><a href='facebook_56.html'>The brokerage expects Facebook's revenue from video advertising to reach about $1 billion this year. (12)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 20:08:47</td><td><a href='facebook_57.html'>At Facebook's annual developer conference in March, Chief Executive Mark Zuckerburg said the social network would introduce myriad features within Messenger. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:47:34</td><td><a href='facebook_58.html'>Facebook has also launched its Safety Check tool https://www.facebook.com/safetycheck/nepalearthquake for Nepal, drawing praise from Facebook members. (5)</a></td></tr>
+</table></body></html>

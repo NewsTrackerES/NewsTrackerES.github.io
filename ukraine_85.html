@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 11:54:08</td><td>Ukraine military, rebels accuse each other of increased attacks</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 11:01:41</td><td>"The rebels have not stopped firing at Ukrainian positions ... Over the past day the enemy used weapons banned under the Minsk agreements," Ukraine military spokesman, Oleksandr Motuzyanyk, said in a televised briefing.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 11:01:41</td><td>Violence escalates in east Ukraine ahead of talks</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46914513,width-300,resizemode-4/ukrn.jpg'></td><td>2015-04-14 00:28:40</td><td>Speaking ahead of the four-way talks, French Foreign Minister Laurent Fabius said he and his German counterpart Frank-Walter Steinmeier were concerned by the ceasefire violations and a lack of political progress in Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/4/15/1429134579036/c1b3f17e-42f0-465d-b601-511ddd950fda-300x180.jpeg'></td><td>2015-04-15 21:59:39</td><td>Kalashnikov was a deputy for the Party of Regions in Ukraine's previous parliament.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 19:56:47</td><td>The former G-8 decided last year to exclude Russia over its support for armed separatists in eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/DQxANXJIYgGeiHtaCHqgDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-14T145235Z_2_LYNXMPEB3D0OF_RTROPTP_2_CANADA-POLITICS.JPG'></td><td>2015-04-14 15:47:58</td><td>Harper has taken a hard line in public against President Vladimir Putin over what he calls blatant Russian interference in Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/04/ukraine_32232437.jpg?w=620'></td><td>2015-04-14 13:59:44</td><td>As well, some of the training will occur at the Ukrainian Ministry of Defence Demining Centre in Kamyanets-Podilsky, in western Ukraine.</td></tr>
+</table></body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ 11 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 06:14:01</td><td>The continued fighting comes as concern remains about whether the United States will decide to send lethal weapons to Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 06:14:01</td><td>Ukraine's defense ministry said government soldiers had been ambushed and taken prisoner as street battles continued in Debaltseve Tuesday, but gave no details on how many were seized.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 06:14:01</td><td>He did not elaborate but said the consequences of new weapons for Ukraine would be "the number of victims, of course, can increase. But the result will be the same as it is today. This is unavoidable."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-18 02:48:08</td><td>Vice President Joe Biden condemned violations of the cease-fire in eastern Ukraine which the White House is blaming on pro-Russian separatists and Russian forces.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-18 02:48:08</td><td>He said if Russia keeps violating the agreements reached with Ukraine, costs for Russia will increase.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 02:47:47</td><td>Ukrainian government troops and Russia-backed rebels failed Tuesday to start pulling back heavy weaponry from the front line in eastern Ukraine as a deadline passed to do so.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 02:47:47</td><td>The Ukrainian presidential office called on the European Union and NATO to condemn the Russia-backed rebels for violating the cease-fire brokered by the leaders of Ukraine, Russia, Germany and France last week.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/02/17/ukrainejpeg-0c548_c0-94-4402-2659_s561x327.jpg?0bc2fd31a94e0a7df96e39816540ce1a8a855ee8'></td><td>2015-02-17 10:23:11</td><td>The war in eastern Ukraine has already killed more than 5,600 people and displaced more than a million, the United Nations said on Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/02/17/ukrainejpeg-0c548_c0-94-4402-2659_s561x327.jpg?0bc2fd31a94e0a7df96e39816540ce1a8a855ee8'></td><td>2015-02-17 10:23:11</td><td>Ukraine says some soldiers taken prisoner in Debaltseve</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 18:30:56</td><td>Fighting has stopped or subsided in some parts of war-torn eastern Ukraine, however.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/02/19/ukraine_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-02-19 14:20:10</td><td>The leaders of Germany, France, Ukraine and Russia agreed in a telephone call to make a new attempt to enforce the ceasefire and ensure other terms of the peace deal are implemented.</td></tr>
+</table></body></html>

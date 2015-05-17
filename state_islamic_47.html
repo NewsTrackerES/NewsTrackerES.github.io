@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/v_VesSHTTtoiWPiXe6bCRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-13T231348Z_2_LYNXMPEB2C0YL_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-13 23:13:48</td><td>A victory in Tikrit would give Iraqi forces momentum for the next stage of the campaign to retake Mosul, the largest city under control of Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/v_VesSHTTtoiWPiXe6bCRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-13T231348Z_2_LYNXMPEB2C0YL_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-13 23:13:48</td><td>A source in the military command said Iraqi forces would not move forward until reinforcements reached Tikrit, of which Islamic State still holds around half.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/v_VesSHTTtoiWPiXe6bCRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-13T231348Z_2_LYNXMPEB2C0YL_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-13 23:13:48</td><td>Islamic State spokesman Abu Mohammad al-Adnani said in an audio-recording published on Thursday that its fighters remained "steadfast" and were growing in strength, dismissing its enemies claims of gains in Tikrit as "fake".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/v_VesSHTTtoiWPiXe6bCRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-13T231348Z_2_LYNXMPEB2C0YL_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-13 23:13:48</td><td>Islamic State fighters overran the city last June during a lightning offensive that was halted just outside Baghdad.</td></tr>
+</table></body></html>

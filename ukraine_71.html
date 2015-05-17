@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/03/30/876/493/Ukraine Netherlands Plane-1.jpg?ve=1&tl=1'></td><td>2015-03-30 13:17:22</td><td>THE HAGUE, Netherlands - An international investigation into the Malaysia Airlines Flight 17 disaster is officially looking into a scenario that the plane was downed by a missile fired from conflict-ridden eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 13:17:22</td><td>Ukraine and Western governments say Russia-backed separatist fighters are responsible for downing the plane, while Russian state-run television has claimed Ukraine's air force was to blame.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 13:17:22</td><td>Probe into Ukraine plane disaster eyes Buk missile launchers</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 14:07:36</td><td>The plane was brought down by a surface-to-air missile last July over pro-Russian rebel-held territory in eastern Ukraine, killing all 298 passengers and crew on board.</td></tr>
+</table></body></html>

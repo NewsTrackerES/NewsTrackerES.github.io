@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 29,
+            values: [ 29 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>9</td><td></td><td>2015-02-16 01:58:45</td><td><a href='netanyahu_87.html'>But expressing the unease felt by many Jews abroad over such comments, Jair Melchior, Denmark's chief rabbi, said he was "disappointed" by Mr Netanyahu's call. (10)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-02-16 19:12:00</td><td><a href='netanyahu_5.html'>Netanyahu asked. (8)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-02-17 16:59:03</td><td><a href='netanyahu_3.html'>Netanyahu said expenses have dropped significantly in the two years since the departure of Naftali, a man he described as "an embittered former public employee." (8)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-02-20 21:45:54</td><td><a href='netanyahu_6.html'>Administration officials have discarded the idea of President Barack Obama himself giving an Iran-related address to rebut the two speeches Netanyahu is to deliver during his early March visit. (8)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-10 19:58:03</td><td><a href='netanyahu_4.html'>In them, Windslowe says she has a crush on Israeli Prime Minister Benjamin Netanyahu and on her prosecutor. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:27:42</td><td><a href='netanyahu_91.html'>like Netanyahu? (242)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 18:22:53</td><td><a href='netanyahu_90.html'>Areikat said the government he represents understands why Obama gave Netanyahu the benefit of the doubt until now, but that just looking at domestic Israeli politics, it was clear he was never serious about peace talks -- which have started and stopped twice since Obama and Netanyahu took office. (14)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 13:21:27</td><td><a href='netanyahu_89.html'>NETANYAHU: -- but it has to be the right one. (45)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-20 07:58:27</td><td><a href='netanyahu_92.html'>Under Israeli election rules, if Netanyahu fails to form a coalition after that time, Rivlin can task someone else to do so. (9)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-30 08:16:30</td><td><a href='netanyahu_76.html'>Netanyahu's Likud party won a surprise victory in a March 17 election but its 30 parliamentary seats, although the most of any single party, still left him the task of forging a majority in the 120-member legislature in order to govern. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 23:37:53</td><td><a href='netanyahu_93.html'>That left Netanyahu dependent on Jewish Home leader Naftali Bennett, a former aide who has a rocky relationship with Netanyahu. (32)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 14:04:41</td><td><a href='netanyahu_88.html'>JERUSALEM (AP) - Israel's parliament has approved a contentious legislation that expands the number of government ministers - clearing the way for Prime Minister Benjamin Netanyahu's new government to take office. (6)</a></td></tr>
+</table></body></html>

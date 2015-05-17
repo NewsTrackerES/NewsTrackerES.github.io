@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/sJGZXQ_llWrDXF6HPY88jQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIxNztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T170027Z_1_LYNXMPEB2H0XW_RTROPTP_2_USA-SECURITY-ISLAMICSTATE-PLEA.JPG'></td><td>2015-03-18 15:24:04</td><td>U.S. veteran pleads not guilty to trying to help Islamic State</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 18:31:43</td><td>Prosecutors allege that Pugh, once an avionics instrument system specialist in the U.S. Air Force, attempted to join Islamic State in January by traveling from Egypt to Turkey and trying to cross the border into Syria.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 18:34:10</td><td>U.S. Air Force veteran accused of trying to assist Islamic State</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 18:34:10</td><td>WASHINGTON/NEW YORK (Reuters) - A U.S. Air Force veteran has been charged with trying to provide support for the Islamic State militant group, U.S. prosecutors said on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 18:34:10</td><td>In the United States, federal agents searched his laptop computer and other devices and found recent Internet searches for "borders controlled by Islamic State" and a propaganda video by the group.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:39:15</td><td>A U.S. Air Force veteran who was recently fired from his job as an airplane mechanic plotted to travel to Syria to join the Islamic State group and was arrested on terrorism charges, federal prosecutors said Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:39:15</td><td>The Department of Justice has charged roughly 20 people in the past year with planning to travel to the Middle East to fight alongside militants like the Islamic State group, which controls parts of Syria and Iraq.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 22:40:53</td><td>Feds: US Air Force vet tried to join Islamic State group</td></tr>
+</table></body></html>

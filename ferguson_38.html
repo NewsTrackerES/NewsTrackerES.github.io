@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 32,
+            values: [ 32 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/d59/news/world/article23282275.ece/ALTERNATES/w220/TOR603-USA-MISSOURI+SHOOTIN.JPG'></td><td>2015-03-04 18:05:32</td><td>"It is time for Ferguson's leaders to take immediate, wholesale and structural corrective action," Holder said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>In Ferguson, scathing US report brings pressure for change</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>In pairing the announcements, the Obama administration sought to offset community disappointment over the conclusion that the shooting of Michael Brown was legally justified with a message of hope for Ferguson's majority-black citizens.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>Ferguson Mayor James Knowles III said the city had cooperated with the Justice Department and has made some changes, including a diversity training program for city employees.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>"It is not difficult to imagine how a single tragic incident set off the city of Ferguson like a powder keg," Holder said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>Federal officials say they hope to avoid a court fight with Ferguson to force change.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/0_PwDcLCaqzCwKYmlblgjA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-03T230404Z_1_LYNXMPEB22135_RTROPTP_2_USA-MISSOURI-SHOOTING.JPG'></td><td>2015-03-03 22:04:06</td><td>But they are unlikely to restore full trust in the Ferguson police by citizens who were angered when a grand jury decided not to indict Brown's killer, officer Darren Wilson.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 21:35:46</td><td>Civil rights attorney Jerryl Christmas, who has represented people who have clashed with Ferguson police and city officials, said he was not surprised by the findings, and he hopes to see Ferguson Police Chief Tom Jackson fired.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670696194_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 20:36:19</td><td>The investigation into the police department began in August after the shooting of unarmed African-American teen Michael Brown by a white police officer in Ferguson sparked national protests.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/03/article-urn:publicid:ap.org:3bdac292f2e84d448dae53005837bf63-6WlAXYZND-HSK1-953_634x424.jpg'></td><td>2015-03-03 21:13:43</td><td>The U.S. Justice Department has concluded that the Ferguson, Missouri, police department routinely engages in racially biased practices, a law enforcement official familiar with the department's findings said on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/03/article-urn:publicid:ap.org:3bdac292f2e84d448dae53005837bf63-6WlAXYZND-HSK1-953_634x424.jpg'></td><td>2015-03-03 21:13:43</td><td>Justice Department officials found from 2012 to 2014 that black motorists in Ferguson, Missouri, were more than twice as likely as whites to be searched in traffic stops, even though they were 26 per cent less likely to be found carrying contraband.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/03/article-urn:publicid:ap.org:3bdac292f2e84d448dae53005837bf63-6WlAXYZND-HSK1-953_634x424.jpg'></td><td>2015-03-03 21:13:43</td><td>John Gaskin III, a St. Louis community activist, praised the findings, saying 'Ferguson police have to see the light in how they deal with people of color.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/03/article-urn:publicid:ap.org:3bdac292f2e84d448dae53005837bf63-6WlAXYZND-HSK1-953_634x424.jpg'></td><td>2015-03-03 21:13:43</td><td>The department will use the findings to negotiate policy changes with Ferguson officials and enter a consent decree, or to sue the city to force change.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/03/article-urn:publicid:ap.org:3bdac292f2e84d448dae53005837bf63-6WlAXYZND-HSK1-953_634x424.jpg'></td><td>2015-03-03 21:13:43</td><td>The official said that in Ferguson's court system, African-Americans were less likely to have their cases dismissed by a municipal judge and made up 95 percent of people held longer than two days in the Ferguson jail.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/xp3n1nz0G1ubgZyE02cYYA--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbstv.com/a318dcd19289129813282658a788629c'></td><td>2015-03-03 15:40:23</td><td>Overall, African-Americans make up 67 percent of the population of Ferguson, about 10 miles north of downtown St. Louis.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 21:07:50</td><td>WASHINGTON - A U.S. Justice Department investigation will allege sweeping patterns of discrimination within the Ferguson, Missouri, police department and at the municipal jail and court, a law enforcement official familiar with the report said Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 21:41:31</td><td>Jim Salter and Jim Suhr in St. Louis and Alan Scher Zagier in Ferguson contributed to this report.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.2865397.1418101347!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/michael-brown-sr.jpg'></td><td>2015-03-03 22:51:19</td><td>Several messages seeking comment from Ferguson Police Chief Tom Jackson and Mayor James Knowles III were not returned.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 00:21:34</td><td>Ferguson reviewing federal report on police force</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 19:12:00</td><td>A separate report said blacks in Ferguson are disproportionately subject to excessive police force, baseless traffic stops and citations for infractions as petty as walking down the middle of the street.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 20:32:34</td><td>"I'm confident," Holder said of the Ferguson report last month, "that people will be satisfied with the results that we announce."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/05/b48f3e044dd4dd0a6f0f6a706700dd72_c0-180-3474-2204_s561x327.jpg?9b0408f58b04eb4cb498ff01a06bb1307a1a6392'></td><td>2015-03-05 13:48:16</td><td>About 30 protesters braved sub-freezing weather Wednesday night to gather outside Ferguson's police station.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 14:40:07</td><td>It also found Ferguson relies heavily on fines for petty offenses, such as jaywalking, to raise revenue.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 16:39:00</td><td>While the federal government declined to prosecute Wilson, it raised grave concerns about the operation of Ferguson's police department and municipal court.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/5nwF8ZCaq3mlcLNEWrsbwQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/94e00704304a7312740f6a706700b295.jpg'></td><td>2015-04-23 15:55:29</td><td>Messages seeking comment from Ferguson Mayor James Knowles III, city spokesman Jeff Small and an attorney for Darren Wilson, the officer who shot Brown, were not immediately returned.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:38:31</td><td>The department's report did find racial bias and a pattern of illegal actions against African-Americans by the Ferguson Police Department.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:38:31</td><td>The civil lawsuit filed on Thursday listed incidents of alleged unlawful stops and arrests of African-Americans in Ferguson.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:38:31</td><td>"We have not had a chance to read through (the lawsuit), but because it is pending litigation, the city won't be able to make any comment," Jeff Small, a spokesman for Ferguson, said in a telephone interview.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:38:31</td><td>It asked for the court to assign a monitor to the city's police force for five years or until "the city of Ferguson has fully and effectually trained all of its police officers on the constitutional requirements of the use of deadly force."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 20:50:30</td><td>Wilson and former Ferguson Police Chief Tom Jackson were also named in the complaint.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/23/15/27E7526D00000578-0-image-m-16_1429798227254.jpg'></td><td>2015-04-23 21:51:54</td><td>The parents of Michael Brown filed a wrongful-death lawsuit Thursday against the city of Ferguson over the fatal shooting of their son by a white police officer, a confrontation that sparked a protest movement across the United States.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/23/15/27E7526D00000578-0-image-m-16_1429798227254.jpg'></td><td>2015-04-23 21:51:54</td><td>FILE - In this Friday, Nov. 28, 2014, file photo, police and Missouri National Guardsmen stand guard as protesters gather in front of the Ferguson Police Department, in Ferguson, Mo.</td></tr>
+</table></body></html>

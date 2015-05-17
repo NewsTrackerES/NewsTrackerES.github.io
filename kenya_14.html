@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 12:30:07</td><td>Al-Shabab, an Islamic extremist group, has vowed to inflict violent attacks on Kenya because it has contributed troops to the African Union force supporting the western-backed government in Somalia.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 12:30:07</td><td>Hundreds of teachers in parts of northern Kenya that borders Somalia have refused to return to work, fearing attacks by the Islamic extremists despite government reassurance of increased security.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 12:30:07</td><td>NAIROBI, Kenya (AP) " Islamic militants attacked a governor's convoy in north Kenya on Friday for the second time in five months, killing three people, a police official said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 16:11:28</td><td>Kenya Police: 3 people killed in attack on governor's convoy</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:40:15</td><td>Kenya has experienced a string of attacks since it sent troops into Somalia in October 2011.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:40:15</td><td>"If you wish to, we shall send you elders, religious leaders and politicians. We shall come, tell us your whereabouts. Leave Kenya alone," Duale said in a statement that many in Kenya interpreted as a call for negotiations with al-Shabab.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:40:15</td><td>But Duale said Sunday on his Twitter account that Kenya will never negotiate with "terrorists."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:40:19</td><td>Adan Duale, a Kenyan Somali who is majority leader in parliament, was quoted on the BBC Somali Service on Saturday telling al-Shabab to leave Kenya alone.</td></tr>
+</table></body></html>

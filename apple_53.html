@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-P-d9ebe874-4bac-4bc9-9f7b-ab331dc82a26-6Y0zPDZNQ-HSK1-759_634x356.jpg'></td><td>2015-04-24 00:01:58</td><td>Apple retail chief Angela Ahrendts has previously stated the selling process would be different for the watch than the huge queues normally seen outside the company's store for other products.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-P-d9ebe874-4bac-4bc9-9f7b-ab331dc82a26-6Y0zPDZNQ-HSK1-759_634x356.jpg'></td><td>2015-04-24 00:01:58</td><td>Apple Watch buyers will not be able to walk out of an Apple Store with the new wearable when it launches today, but that does not mean you cannot get it elsewhere.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-P-d9ebe874-4bac-4bc9-9f7b-ab331dc82a26-6Y1K9IhYK-HSK1-331_634x356.jpg'></td><td>2015-04-24 05:52:39</td><td>Will Findlater, editor-in-chief of gadget magazine Stuff, said: "In many ways the Apple Watch is the ultimate gadget. Beautifully made and finished, hugely desirable and capable of a host of clever things, none of which you need, but many of which are nice to have.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a451d-642.jpg'></td><td>2015-04-24 17:37:49</td><td>The Apple Watch App Store has opened with more than 3,000 apps in it, far more than other wearables have had at launch and already rivalling the Android Wear platform in terms of size.</td></tr>
+</table></body></html>

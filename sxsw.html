@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 24,
+            values: [ 24 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>sxsw</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>6</td><td></td><td>2015-03-15 19:59:16</td><td><a href='sxsw_2.html'>LOS ANGELES - The seventh installment of the "Fast & Furious" franchise, "Furious 7," will get a surprise screening Sunday night at the SXSW Film Festival, sources confirm. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-15 21:02:05</td><td><a href='sxsw_1.html'>Gore called upon SXSW attendees to get involved in supporting climate change legislation ahead of environmental talks in Paris in December. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 20:18:55</td><td><a href='sxsw_3.html'>Festival goers needing a break from the hubbub of SXSW can take a trip back in time with an immersive audio tour from startup Detour that lets listeners discover Austin in 1885, "the year that broke Austin." (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/26B786BE00000578-2996946-image-a-22_1426557823399.jpg'></td><td>2015-03-17 02:16:35</td><td>In the film, Vin Diesel's character says 'those who are lost go on in the hearts of the living' and that was how it felt for many attending the SXSW midnight screening.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-17 15:13:04</td><td><a href='sxsw_4.html'>With so many demands on attendees' ears, SXSW rewards savvy recyclers: artists who don't need long to get an idea across precisely because the idea is so familiar. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-17 19:48:04</td><td><a href='sxsw_5.html'>Before the Will Ferrell-Kevin Hart comedy "Get Hard" was unveiled at SXSW Monday night, the crowd inside the Paramount Theater was in good spirits. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 23:03:30</td><td><a href='sxsw_6.html'>The music portion of SXSW kicked off Tuesday until Sunday. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-18 06:55:00</td><td>Mary J. Blige shines at unofficial SXSW event</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 00:38:11</td><td><a href='sxsw_7.html'>Madisen Ward and the Mama Bear, a mother and son duo consisting of Madisen Ward, left, and Ruth Ward, pose for a photograph during the SXSW Music Festival on Wednesday, March 18, 2015 in Austin, Texas. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-20 07:25:13</td><td>Miley Cyrus surprises crowd at SXSW event starring rappers</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-20 19:35:22</td><td><a href='sxsw_8.html'>Andrea Wasse of The Weeknd performs during the SXSW Music Festival on Thursday, March 19, 2015 in Austin, Texas. (5)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-20 19:37:46</td><td>Snoop Dogg, right, and his manager, Ted Chung, take part in the "Keynote Conversation with Snoop Dogg" during the SXSW Music Festival on Friday, March 20, 2015 in Austin, Texas.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-23 20:52:06</td><td>But this year, SXSW offered a reminder of what's still as hard as ever: getting people to care.</td></tr>
+</table></body></html>

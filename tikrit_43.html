@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 283,
+            values: [ 283 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 11:05:00</td><td><a href='tikrit_1.html'>Government forces backed by allied Shia and Sunni fighters have begun a large-scale military operation to recapture Saddam Hussein's hometown of Tikrit from the Islamic State in Iraq and the Levant (ISIL). (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:27:54</td><td><a href='tikrit_2.html'>Iraqi forces have tried and failed several times to wrest back Tikrit, a Sunni Arab city on the Tigris river about 160 kilometres (100 miles) north of Baghdad. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:37:56</td><td><a href='tikrit_3.html'>Iraq's military says some 2,000 Shiite militia fighters have arrived near the town of Tikrit in preparation for a major operation. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 13:36:01</td><td><a href='tikrit_4.html'>They have yet to enter Tikrit, best known as the hometown of executed former president Saddam Hussein, or the nearby Tigris river town of al-Dour, which officials describe as a major center for the Islamic State fighters. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 13:13:41</td><td><a href='tikrit_5.html'>A senior army commander said the operation was focused on preventing IS from launching more attacks, and cutting supply lines to stop reinforcements and weapons reaching Tikrit. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 14:17:11</td><td><a href='tikrit_6.html'>Iraqi soldiers gather near their vehicles as smoke rises from oil wells in the Ajil field, east of the city of Tikrit. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 04:18:46</td><td><a href='tikrit_7.html'>A volunteer Shiite fighter prepares to join the battle against IS for control of the Iraqi city of Tikrit. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 06:56:10</td><td><a href='tikrit_8.html'>But in the Tikrit offensive, which began Monday, the U.S. is on the sidelines, watching as Iran asserts influence by providing training, weapons and leadership for Iraqi Shiite militias leading the charge on Tikrit. (13)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-11 12:52:47</td><td><a href='tikrit_9.html'>If Iraq's Shiite-led government is able to retake Tikrit it would be the first city clawed back from the Sunni insurgents and would give it momentum in the next, pivotal stage of the campaign - to recapture Mosul from IS militants, the largest city in the north. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 18:22:00</td><td><a href='tikrit_10.html'>Shiite Iran's role and the prominence of Shiite militias has given rise to fears of possible sectarian cleansing should Tikrit - which is overwhelmingly Sunni - fall to the government troops. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 23:13:48</td><td><a href='tikrit_11.html'>Hadi al-Amiri, the head of the Shi'ite paramilitary Badr Organization and now one of the most powerful men in Iraq, said the outcome of the battle for Tikrit was in no doubt, but Iraqi forces needed time. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 18:21:15</td><td><a href='tikrit_12.html'>In Tikrit, which lies about 160 km north of Baghdad, the extremist group still controls central districts and a complex of palaces built by Saddam Hussein, the executed former Iraqi leader. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:08:00</td><td><a href='tikrit_13.html'>OUJA, Iraq -- The tomb of Iraq's late dictator Saddam Hussein was virtually levelled in heavy clashes between militants from the Islamic State group and Iraqi forces in a fight for control of the city of Tikrit. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:14:46</td><td><a href='tikrit_14.html'>Fighting intensified to the north and south of Saddam's hometown Sunday as Iraqi security forces vowed to reach the center of Tikrit within 48 hours. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 16:19:21</td><td><a href='tikrit_15.html'>Al-Mousawi said the Peace Brigade are looking to fight alongside Tikrit's Sunni tribes to liberate the city, saying: "It's them who should lead this fight, since Tikrit is where their homes and families are." (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 22:55:32</td><td><a href='tikrit_16.html'>Local Sunni tribal fighters have formed uneasy alliances with the Iraqi army and Shiite militias in the battle for Tikrit, which Iraqi and U.S. officials believe is essential for defeating the Sunni militant group. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 15:06:09</td><td><a href='tikrit_17.html'>Adnan Yunis, spokesman for the Red Crescent in Salaheddin, said only a maximum 20 percent of Tikrit's pre-conflict population is believed to remain in the city. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 21:34:15</td><td><a href='tikrit_18.html'>U.S. Army Colonel Steve Warren, a Pentagon spokesman, said Iraqis initially had made statements indicating the fight to retake Tikrit was almost complete. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 22:21:24</td><td><a href='tikrit_19.html'>The offensive to push back the Islamic State group (IS) from Tikrit began on March 2, and Iraqi forces have only recently reached the city limits where they have been stalled by bombs and entrenched fighters. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 06:01:47</td><td><a href='tikrit_20.html'>BAGHDAD: Washington is considering launching air strikes, possibly within days, to back up Iraqi and Shia forces battling to recapture Tikrit from the Islamic State jihadist group, US officials said. (13)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 17:11:15</td><td><a href='tikrit_21.html'>"We do not normally telegraph future operations, so I will not comment on that. He also mentioned that we were providing ISR over Tikrit. I am prepared to confirm that," Warren told a news briefing at the Pentagon. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 11:49:47</td><td><a href='tikrit_22.html'>BAGHDAD (Reuters) - Iraq's request to the U.S.-led coalition for air strikes in the campaign to retake Tikrit from Islamic State insurgents is "imminent", a senior diplomat from a Western nation that is part of the coalition told Reuters on Tuesday. (14)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 15:47:15</td><td><a href='tikrit_23.html'>"The ongoing Iraqi and coalition air strikes are setting the conditions for offensive action to be conducted by Iraqi forces currently surrounding Tikrit," Terry said. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 16:58:00</td><td><a href='tikrit_24.html'>Washington had expressed strong reservations over the leading role played in the Tikrit operation by Shiite militia groups, some of which have been accused of serious abuses. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 17:00:59</td><td><a href='tikrit_25.html'>The coalition joined the fray in Tikrit at the request of Iraqi military commanders, but Shi'ite militia commanders publicly rejected any U.S. role in the campaign to retake the jihadist bastion. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 19:46:51</td><td><a href='tikrit_26.html'>Iraqi Defence Minister Khaled al-Obeidi said Iraqi Sukhoi fighter jets also pounded Tikrit Thursday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:49:06</td><td><a href='tikrit_27.html'>Since March 2, Islamic State forces in Tikrit have been under attack by the Iraqi militias, collectively known as the Popular Mobilisation Committees, and regular Iraqi military forces, together numbering more than 30,000 fighters. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:10:43</td><td><a href='tikrit_28.html'>The following is a selection of photos taken in Tikrit by AP photographer Khalid Mohammed, who is embedded with Iraqi forces. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 06:04:12</td><td><a href='tikrit_29.html'>Iraq's Tikrit, free of the Islamic State, is a city in ruins (88)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 15:25:12</td><td><a href='tikrit_30.html'>April 1 " Iraq declares a "magnificent victory" over the Islamic State group in Tikrit, its biggest gain yet against the militants. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 23:07:05</td><td><a href='tikrit_31.html'>Iraqi forces which retook Tikrit from the Islamic State group found burial sites Wednesday believed to hold victims of a June massacre in which hundreds of army cadets were executed. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 17:20:20</td><td><a href='tikrit_32.html'>"The street linking the city center to the Tikrit University has been secured," he said. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 11:04:02</td><td><a href='tikrit_33.html'>BAGHDAD (AP) - Iraqi prime minister Haider al-Abadi says the military will begin arresting and prosecuting anyone who loots abandoned properties in the newly-recaptured city of Tikrit. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 15:13:19</td><td><a href='tikrit_34.html'>Abadi also called on "forces located in Tikrit to arrest everyone who carries out such acts, and preserve properties and facilities in Salaheddin province," of which Tikrit is the capital. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 20:32:53</td><td><a href='tikrit_35.html'>If Sunnis dislike what they see in Tikrit, they may not back the government's efforts against Islamic State. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 17:01:29</td><td><a href='tikrit_36.html'>"As of this afternoon, the (paramilitaries) started to leave the city towards the surrounding areas outside," said Ahmed al-Kraim, the head of the council of Tikrit and its province Salahuddin. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 18:39:35</td><td><a href='tikrit_37.html'>BAGHDAD (Reuters) - Almost all Shi'ite paramilitaries had left Tikrit on Saturday after locals complained that some fighters had spent several days looting the Sunni city after helping retake it from Islamic State. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:06:54</td><td><a href='tikrit_38.html'>Prime Minister Haider al-Abadi has called on security forces to halt looting and vandalism in Tikrit, promising a fund would be established to help residents return to Tikrit. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 17:11:45</td><td><a href='tikrit_39.html'>Iraq's prime minister said Monday that "only" 152 homes and shops were burned in Tikrit, where pro-government forces have been accused of carrying out abuses after retaking the city. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 09:09:00</td><td><a href='tikrit_40.html'>Other videos showed masked gunmen bringing the soldiers to a bloodstained concrete river waterfront inside the presidential palaces complex in Tikrit, shooting them in the head and throwing them into the Tigris River. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 22:33:03</td><td><a href='tikrit_41.html'>So far, he said, officials had found 11 mass graves, each containing dozens of bodies, all located in the sprawling complex of palaces in Tikrit, along the Tigris River, north of Baghdad. (3)</a></td></tr>
+</table></body></html>

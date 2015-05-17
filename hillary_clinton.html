@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ 3 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-03-03 05:42:21</td><td><a href='hillary_clinton_62.html'>Hillary Clinton. (27)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-04 00:42:00</td><td>A woman who threw a shoe at Hillary Rodham Clinton during a speech the former secretary of state made in Las Vegas last April has been sentenced to one year of federal supervision in her home state of Arizona, her defense attorney said.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww1.hdnux.com/photos/35/22/04/7676212/3/landscape_32.jpg'></td><td>2015-03-23 22:33:51</td><td>WASHINGTON (AP) - President Barack Obama and Hillary Rodham Clinton met privately at the White House Monday afternoon.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 13:46:16</td><td><a href='hillary_clinton_67.html'>Hillary Clinton used her iPad for email at State (32)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 23:51:15</td><td><a href='hillary_clinton_66.html'>(Reuters) - Democrat Hillary Clinton will announce her 2016 presidential run on Sunday, the New York Daily News reported on Thursday, quoting an unidentified source close to Clinton. (18)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 17:51:43</td><td><a href='hillary_clinton_63.html'>White House Brief: Things to know about Hillary Clinton (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:00:04</td><td><a href='hillary_clinton_65.html'>Hillary Clinton: Just Do You (150)</a></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-07 01:49:11</td><td>Democratic presidential candidate Hillary Rodham Clinton and San Francisco Mayor Ed Lee sample tea from Alice Luong at Red Blossom Tea Company in Chinatown in San Francisco on Wednesday.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 23:40:19</td><td><a href='hillary_clinton_64.html'>WASHINGTON - Hillary Rodham Clinton and former President Bill Clinton reported Friday they earned more than $25 million combined in speaking fees since January 2014. (20)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/2/7/n/i/image.related.articleLeadwide.620x349.gh26yx.png/1431653675228.jpg'></td><td>2015-05-15 01:35:22</td><td>"There was an attempt to present eastern Ukraine as part of the new Russia, 'Novorossiya' but it didn't really work," Mr Kulesa said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/2/7/n/i/image.related.articleLeadwide.620x349.gh26yx.png/1431653675228.jpg'></td><td>2015-05-15 01:35:22</td><td>But he expects that, if Russia plays ball in eastern Ukraine, "there would be an attempt to divide the sanctions currently in place between those connected to the Crimea takeover and keep them in place, basically indefinitely, and the others which could be scaled down."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/2/7/n/i/image.related.articleLeadwide.620x349.gh26yx.png/1431653675228.jpg'></td><td>2015-05-15 01:35:22</td><td>There are worrying parallels between Crimea and eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/2/7/n/i/image.related.articleLeadwide.620x349.gh26yx.png/1431653675228.jpg'></td><td>2015-05-15 01:35:22</td><td>However Lukasz Kulesa, research director at the European Leadership network, doesn't think Ukraine's 'Donbas' is Crimea Mark II.</td></tr>
+</table></body></html>

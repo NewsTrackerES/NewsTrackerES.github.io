@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 52,
+            values: [ 52 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:35:07</td><td><a href='boko_haram_8.html'>MAIDUGURI, Nigeria (AP) - The latest video from Nigeria's Boko Haram Islamic extremist group shows the bodies of two beheaded men accused of spying, and copies some of the hallmarks of propaganda from the Islamic State group. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:39:58</td><td><a href='boko_haram_9.html'>Nigeria?s Boko Haram releases beheading video echoing Islamic State (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 10:06:35</td><td><a href='boko_haram_10.html'>Suspected Boko Haram militants have killed at least 45 people in a village in Borno state, north-east Nigeria, witnesses have said. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 07:55:57</td><td><a href='boko_haram_11.html'>Nigerians who fled Boko Haram to Chad sit outside their tent at the Baga Solo refugee camp in Chad, Wednesday March 4, 2015. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 13:52:27</td><td><a href='boko_haram_12.html'>An intelligence officer said security forces are moving slowly for fear of harming civilians, and especially since Boko Haram is surrounding Gwoza with land mines. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 16:04:17</td><td><a href='boko_haram_13.html'>"The Boko Haram are against Islam." (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 20:56:50</td><td><a href='boko_haram_14.html'>On Saturday, four bomb blasts killed at least 50 people in the northeastern Nigerian city of Maiduguri in the worst attacks there since Boko Haram militants tried to seize the town in two major assaults earlier this year. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 23:01:01</td><td><a href='boko_haram_15.html'>With Boko Haram's wide network in North Africa, the Islamic State's projection of creating an Islamic Caliphate is gaining headway. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-08 01:29:43</td><td><a href='boko_haram_16.html'>MAIDUGURI, Nigeria (AP) - Nigeria's home-grown Boko Haram group, newly weakened by a multinational force that has dislodged it from a score of northeastern towns, reportedly pledged formal allegiance to the Islamic State group. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-08 06:20:18</td><td><a href='boko_haram_17.html'>In the message published on his Twitter account on Saturday, Abubakar Shekau, Boko Haram's leader, announced that he had sworn allegiance to the Islamic State, also known as ISIS. (3)</a></td></tr>
+</table></body></html>

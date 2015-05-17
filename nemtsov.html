@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ 23 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-01 01:56:42</td><td><a href='nemtsov_27.html'>Russian opposition leader Boris Nemtsov was shot dead in Moscow at the age of 55. (112)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 10:06:00</td><td><a href='nemtsov_22.html'>MALGOBEK, Russia (AP) - The mother of two suspects in the slaying of Russian opposition leader Boris Nemtsov says is certain they didn't do it. (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/.tYy5TqEq7Q84jmtV9HmIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f8ae03f602ae0b0e720f6a706700ae39.jpg'></td><td>2015-04-01 14:42:26</td><td>Nemtsov suspects tells court he was pressured to confess</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i.huffpost.com/gen/2808654/images/n-NEMTSOV-large570.jpg'></td><td>2015-04-07 12:18:53</td><td>The bridge where Nemtsov was gunned down was packed Tuesday morning with his supporters, who brought flowers and candles to the spot where he was killed.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 08:50:13</td><td><a href='nemtsov_23.html'>Osmayev said he has few doubts that the perpetrators of Nemtsov's killing have ties to Kadyrov, but that the security services now need a convenient scapegoat whose guilt would be easily acceptable to the Russian general public. (5)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-18 04:34:00</td><td><a href='nemtsov_24.html'>RPR-Parnas, co-founded by Nemtsov, and Party of Progress, led by anti-graft blogger Alexei Navalny, said they would also run together in local elections due in some regions this year. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-30 14:25:13</td><td><a href='nemtsov_25.html'>The main suspect in the Feb. 27 killing is an officer in Ramzan Kadyrov's security force, and Nemtsov's children have asked for Kadyrov to be questioned. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-12 09:57:35</td><td><a href='nemtsov_26.html'>Nemtsov report: 220 Russian soldiers died in Ukraine battles (7)</a></td></tr>
+</table></body></html>

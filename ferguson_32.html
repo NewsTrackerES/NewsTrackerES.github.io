@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 14:28:59</td><td>They were sent and received by Mary Ann Twitty, who was Ferguson's court clerk, as well as former Ferguson police Captain Rick Henke and former police Sergeant William Mudd.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 14:28:59</td><td>Ferguson Mayor James Knowles condemned the emails when the Justice Department report was released, saying, "These actions taken by these individuals are in no way representative of the employees of the city of Ferguson."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46807059,width-300,resizemode-4/Ferguson.jpg'></td><td>2015-04-04 14:35:01</td><td>The emails, although dating back years before the shooting, were among evidence presented by the Justice Department in a report in March that concluded that racism pervaded the Ferguson Police Department.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/k/b/2/image.related.articleLeadwide.620x349.1mer7m.png/1426395787685.jpg'></td><td>2015-04-05 03:18:15</td><td>A protester wears tape over her mouth during a silent demonstration against what they say is police brutality after the Ferguson shooting of Michael Brown, an unarmed black teenager, by a white police officer, in March.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/03/05/us/05POLICEJP1/05POLICEJP1-thumbStandard.jpg'></td><td>2015-04-04 23:39:33</td><td>The effort has transformed the normally sleepy races for City Council in Ferguson, a community of 21,000 people just outside St. Louis.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 15:56:41</td><td>Focus in Ferguson shifts to election of City Council members</td></tr>
+</table></body></html>

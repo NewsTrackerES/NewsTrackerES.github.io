@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0007aa41-642.jpg'></td><td>2015-03-18 15:46:27</td><td>Tunisia today saw its first deadly attack on foreigners since the 2010-2011 uprising that toppled president Zine El Abidine Ben Ali after 23 years in power.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4505312-3x2-700x467.jpg'></td><td>2015-03-18 21:22:08</td><td>December 21: Essebsi wins Tunisia's first free presidential election.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4505312-3x2-700x467.jpg'></td><td>2015-03-18 21:22:08</td><td>October 27-28: Violence erupts in Sidi Bouzid after results of Tunisia's first free election are announced, in which the Islamist Ennahda party wins most seats in a constituent assembly.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4505312-3x2-700x467.jpg'></td><td>2015-03-18 21:22:08</td><td>Timeline of unrest in Tunisia since the popular revolt</td></tr>
+</table></body></html>

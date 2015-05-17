@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ 13 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 08:45:13</td><td>Egypt sentences Muslim Brotherhood leader, 13 others to death</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 09:01:40</td><td>The sentences can be appealed before Egypt's highest civilian court.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 09:01:40</td><td>The sentences can be appealed before Egypt's highest civilian court in a process that could take years to reach a final verdict.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/03Is9k0ijxfpHfrNu8QCgQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIxODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-11T095527Z_2_LYNXMPEB3A03S_RTROPTP_2_EGYPT-BROTHERHOOD.JPG'></td><td>2015-04-11 09:55:27</td><td>Egypt's mass trials of Brotherhood supporters have drawn international criticism of the country's judicial system.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 10:56:48</td><td>The group says it is committed to peaceful activism and had nothing to do with Islamist militant violence in Egypt since Morsi's fall following mass protests against his rule.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/QOXxXA3002dh6mIFEMGsqQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwNjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-12T184206Z_2_LYNXMPEB3B0E1_RTROPTP_2_CNEWS-US-EGYPT-COURT-BROTHERHOOD.JPG'></td><td>2015-04-12 18:42:06</td><td>Egypt Muslim Brotherhood verdicts 'blatantly unjust': Human Rights Watch</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/QOXxXA3002dh6mIFEMGsqQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwNjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-12T184206Z_2_LYNXMPEB3B0E1_RTROPTP_2_CNEWS-US-EGYPT-COURT-BROTHERHOOD.JPG'></td><td>2015-04-12 18:42:06</td><td>Officials in Egypt's foreign ministry were not immediately available for comment.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:01:36</td><td>HRW also criticised a recent U.S. decision to end a freeze on military aid to Cairo at the same time as the Egypt judiciary had been passing sentences against journalists and the political opposition.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:01:36</td><td>"The fact that those who publicized the mass killings of 2013 could go to prison for life while those who did the killings receive official accolades perfectly symbolizes the abject failure of transitional justice in Egypt," she said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 18:31:29</td><td>Egypt Court Upholds Ban on Libyan From Country for Being Gay</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/13/07/6Xk0seDHDHSK2-3035623-Deadly_bomb_attack_L_Saubadu_J_Jacobsen_AFP_-m-1_1428907214374.jpg'></td><td>2015-04-13 07:01:41</td><td>Egypt is also facing a threat on its western border from a chaotic Libya where the influence of IS -- which has seized chunks of Syria and Iraq -- is growing.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/l/5/0/image.related.articleLeadwide.620x349.1mjl51.png/1428854704765.jpg'></td><td>2015-04-12 16:05:17</td><td>Cairo: A suicide car bomb targeting a police station in Egypt's restive Sinai Peninsula has killed two people and wounded 30 others, police and medics say.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-12 14:23:08</td><td>Egypt Security Officials: Large Explosion Hits a Main Sinai Police Station</td></tr>
+</table></body></html>

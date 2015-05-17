@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 376,
+            values: [ 376 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 22:58:50</td><td><a href='baltimore_6.html'>A black man died in a Baltimore hospital on Sunday, a week after he was arrested and dragged into a police van by white patrol officers, authorities said on Sunday, raising questions about how he sustained his injuries and prompting an investigation. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:25:59</td><td><a href='baltimore_7.html'>(Reuters) - Baltimore's mayor promised on Tuesday officials would conduct a thorough, transparent investigation to answer questions about the death of a black man in police custody. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 13:05:32</td><td><a href='baltimore_8.html'>Mayor Stephanie Rawlings-Blake said she too is "angry that we are here again" after trying to overcome decades of distrust between police and citizens in Baltimore's inner city. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 16:10:21</td><td><a href='baltimore_9.html'>BALTIMORE (AP) - Baltimore police have released the names of six officers who have been suspended with pay after the death of a man who was critically injured during an arrest. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 23:22:52</td><td><a href='baltimore_10.html'>Unlike in Ferguson, where police turned to paramilitary tactics, donning riot helmets and vests and rolling out armored vehicles to confront protesters, Baltimore police have remained in patrol uniforms and given protesters a wide berth. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 15:12:29</td><td><a href='baltimore_11.html'>BALTIMORE (AP) - Baltimore's mayor and police commissioner came in making big promises to the inner-city residents and police who spent decades staring each other down in neighborhoods ravaged by crack and heroin. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 01:17:17</td><td><a href='baltimore_13.html'>WASHINGTON (AP) - The White House says the head of President Barack Obama's initiative for minority males will attend the funeral of a Baltimore man who died after sustaining serious injuries while in police custody. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:58:16</td><td><a href='baltimore_14.html'>The recent case of Freddie Gray, a 25-year-old black man who died after sustaining serious injuries while in the custody of Baltimore police, has intensified a national debate over police treatment of African-Americans. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 01:39:45</td><td><a href='baltimore_17.html'>On way to #Baltimore. (13)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 01:22:41</td><td><a href='baltimore_18.html'>"I condemn the senseless acts of violence by some individuals in Baltimore that have resulted in harm to law enforcement officers, destruction of property and a shattering of the peace in the city of Baltimore," said Lynch, who was sworn in on Monday. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 01:56:03</td><td><a href='baltimore_19.html'>Its unemployment rate is higher than the U.S. average - according to the U.S. Bureau of Labor Statistics, Baltimore city's unemployment rate in February was 8.4 percent versus the U.S. rate of 5.8 percent in that month. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 21:21:49</td><td><a href='baltimore_20.html'>In addition, Baltimore's Friday-to-Sunday series against Tampa Bay was shifted from Camden Yards to Tropicana Field in St. Petersburg, Florida, with Baltimore remaining the home team and batting last. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 21:36:03</td><td><a href='baltimore_21.html'>And I think everyone in Baltimore. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 23:42:54</td><td><a href='baltimore_23.html'>An investigation by The Baltimore Sun last year revealed that between 2011 and September 2014 the Baltimore Police had paid out $US5.7 million ($7.2 million) over lawsuits stemming from police assaults. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 03:08:00</td><td><a href='baltimore_24.html'>In a paper published last year, Raj Chetty of Harvard University and his co-authors found the Baltimore area ranked near the bottom of major U.S. cities in terms of mobility. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:08:55</td><td><a href='baltimore_25.html'>Senator Rand Paul of Kentucky, a libertarian who launched his bid for the Republican nomination by condemning the "Washington machine that gobbles up our freedoms," said answers to the violence in Baltimore have to be found locally. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 23:59:56</td><td><a href='baltimore_26.html'>Graham received wide praise from people on social media and even the Baltimore police commissioner, who said more parents should have taken charge of their children like Graham after the riots started. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 15:08:37</td><td><a href='baltimore_27.html'>"All of the decisions in Baltimore were driven first by the desire to insure the safety of fans, players, umpires and stadium workers," MLB Commissioner Rob Manfred wrote in an email to The Associated Press. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 08:26:32</td><td><a href='baltimore_29.html'>Reforming Baltimore police will be expensive, costly (13)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 20:44:50</td><td><a href='baltimore_30.html'>Orioles: Chris Tillman (2-2, 7.58 ERA) will open the series Friday against the Rays, which has been moved to Tropicana Field from Baltimore. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 21:24:14</td><td><a href='baltimore_31.html'>PITTSBURGH (AP) - A Pittsburgh radio station has suspended a disc jockey over his online posting about the arrest record of a Baltimore man whose fatal injury in police custody led to rioting. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 23:57:36</td><td><a href='baltimore_32.html'>Miles, who was on the recreation center task force, said that only 4,000 of Baltimore's 81,000 students were in after-school programs. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 19:20:06</td><td><a href='baltimore_33.html'>An empty Oriole Park is photographed from the outside before the Chicago White Sox and Baltimore Orioles baseball game, Wednesday, April 29, 2015, in Baltimore. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:29:21</td><td><a href='baltimore_34.html'>Former Baltimore Ravens NFL football player Ray Lewis talks to students at Frederick Douglass High School as Ravens C.J. Mosley looks on Thursday, April 30, 2015, in Baltimore. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:04:51</td><td><a href='baltimore_35.html'>His West Baltimore liquor store and bar, the Oxford Tavern, was hit by looters during a riot over the police-involved death of neighborhood resident Freddie Gray. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 23:08:48</td><td><a href='baltimore_36.html'>WASHINGTON (AP) - Jeb Bush says the Baltimore mother who chased her son away from a riot has a lot in common with his own mother, former first lady Barbara Bush. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 12:00:31</td><td><a href='baltimore_37.html'>BALTIMORE, May 1 (Reuters) - The view from Lenny Clay's barbershop in a neighborhood just west of downtown Baltimore is bleak. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 07:20:51</td><td><a href='baltimore_38.html'>Baltimore police were made aware of worries that Rice might pose a risk to himself or others, according to the April 2012 sheriff's report. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 18:46:18</td><td><a href='baltimore_39.html'>Speaking shortly after charges were announced in Freddie Gray's death in Baltimore, Bush said "the process works, and it will go forward from here on out. People are innocent until proven guilty." (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:39:59</td><td><a href='baltimore_40.html'>Paul told radio host Laura Ingraham that he had traveled through Baltimore by train on the night riots broke out following the death of an African-American man in police custody and that he was glad the train did not stop. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 22:50:07</td><td><a href='baltimore_41.html'>But Paul's comments about the riots in Baltimore following the death of an African-American man while in police custody have been criticized as out of touch for someone who has spent so much time seeking inroads with the black community. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 01:33:40</td><td><a href='baltimore_42.html'>Baltimore infielder Steve Pearce, from nearby Lakeland, Florida., not only is playing the unusual home game, but is making his pro debut at second base. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 16:47:58</td><td><a href='baltimore_43.html'>Warren Brown, a veteran Baltimore defense attorney who supported Mosby's opponent, said Mosby's handling of the Gray case would be inextricably linked to her and her husband's political aspirations. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 06:42:17</td><td><a href='baltimore_44.html'>Baltimore relieved by charges, weary of curfew (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:09:55</td><td><a href='baltimore_45.html'>Asked whether the charges against the officers in the Baltimore case would have a chilling effect on law enforcement, Cohen said he thought there might be some but that it would be short-lived. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:59:47</td><td><a href='baltimore_46.html'>A message reading "All Lives Matter" is written on the pavement as police in riot gear cast shadows while standing in line ahead of a curfew Friday, May 1, 2015, in Baltimore. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 13:35:15</td><td><a href='baltimore_47.html'>Following the Baltimore turmoil, Hillary Rodham Clinton made a plea for criminal justice changes that could aid urban communities. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:30:08</td><td><a href='baltimore_48.html'>Former Baltimore Ravens linebacker Ray Lewis and New York Knicks star Carmelo Anthony, who was raised in Baltimore, marched with the protesters this week. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 11:54:40</td><td><a href='baltimore_49.html'>But it was when a grand jury concluded that too many arrests were being made in black neighborhoods without merit, and when the city settled a lawsuit from people who said they were wrongly arrested for minor offenses - the sort of concerns driving some of the anger in Baltimore today. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 00:22:21</td><td><a href='baltimore_51.html'>Baltimore. (162)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 04:02:25</td><td><a href='baltimore_52.html'>May 4 (Reuters) - Following a week of racially charged protests in Baltimore, U.S. President Barack Obama on Monday said that the residual effects of racism have built up over time and created inequality. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 03:32:21</td><td><a href='baltimore_53.html'>LOS ANGELES - Fox News Channel anchorman Shepard Smith says the channel mistakenly reported that a Baltimore, Maryland, police officer shot a black man during a chase. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 09:27:35</td><td><a href='baltimore_54.html'>The mayor and Police Commissioner Anthony Batts asked for the Justice Department review last year after The Baltimore Sun tallied $5.7 million in payouts to resolve more than 100 police misconduct lawsuits since 2011. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 20:40:42</td><td><a href='baltimore_55.html'>CVS Health says it will rebuild its store locations that were badly damaged by fire last week during protests in Baltimore. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 14:47:04</td><td><a href='baltimore_56.html'>In Sunday's 6-2 loss to the Yankees in the finale of a four-game set, J.J. Hardy and Adam Jones each had two hits and an RBI for Baltimore, which halted a four-game skid with Saturday's 6-2 decision. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 09:12:06</td><td><a href='baltimore_57.html'>Longtime fan Luther Washington, stationed at Ft Meade, shows off his Prince tattoo while waiting for the doors to open for Prince's Baltimore concert Sunday, May 10, 2015. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:46:49</td><td><a href='baltimore_58.html'>Ushers check fans' tickets as they enter Orioles Park at Camden Yards before a baseball game between the Baltimore Orioles and the Toronto Blue Jays, Monday, May 11, 2015, in Baltimore. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 01:58:07</td><td><a href='baltimore_59.html'>Baltimore, MD (SportsNetwork.com) - Jered Weaver pitched into the eighth inning to help the LA Angels of Anaheim to a 3-1 win over the Baltimore Orioles in the opener of a three-game set. (2)</a></td></tr>
+</table></body></html>

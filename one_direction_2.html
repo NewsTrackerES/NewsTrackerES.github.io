@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 20,
+            values: [ 20 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>one direction</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/22/67/11/4944463/5/square_gallery_thumb.jpg'></td><td>2015-03-25 18:17:33</td><td>Chart-topping boy band One Direction says Zayn Malik has left the group.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/22/67/11/4944463/5/square_gallery_thumb.jpg'></td><td>2015-03-25 18:17:33</td><td>Malik, who quit the band's world tour last week citing stress, said in a statement that his time with One Direction "has been more than I could ever have imagined."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://news.sky.com/story/1452523/data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></td><td>2015-03-25 16:36:17</td><td>Zayn Malik Has Left One Direction</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://timedotcom.files.wordpress.com/2015/03/zayn-malik.jpg?quality=65&amp;strip=color&amp;w=407'></td><td>2015-03-25 16:47:51</td><td>Zayn Malik Leaves One Direction</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://p1cdn05.thewrap.com/images/2014/12/the-tonight-show-starring-jimmy-fallon-141223-one-direction-160x105.jpg'></td><td>2015-03-25 16:49:34</td><td>Zayn Malik Quits Boy Band One Direction: ?I Want to Be a Normal 22 Year Old?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://p1cdn05.thewrap.com/images/2014/12/the-tonight-show-starring-jimmy-fallon-141223-one-direction-160x105.jpg'></td><td>2015-03-25 16:49:34</td><td>"I have seen him grow in confidence and I am truly sorry to see him leave. As for One Direction, fans can rest assured that Niall, Liam, Harry and Louis are hugely excited about the future of the band."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://p1cdn05.thewrap.com/images/2014/12/the-tonight-show-starring-jimmy-fallon-141223-one-direction-160x105.jpg'></td><td>2015-03-25 16:49:34</td><td>"We're really sad to see Zayn go, but we totally respect his decision and send him all our love for the future," One Direction said in a joint statement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://p1cdn05.thewrap.com/images/2014/12/the-tonight-show-starring-jimmy-fallon-141223-one-direction-160x105.jpg'></td><td>2015-03-25 16:49:34</td><td>"I would like to say thank you to Zayn for everything he has done for One Direction. Since I first met Zayn in 2010, I have grown very, very fond - and immensely proud - of him," Cowell said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81902000/jpg/_81902917_pa_onedirection.jpg'></td><td>2015-03-25 16:57:12</td><td>Zayn Malik is leaving One Direction</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0325/20150325__MALIK-0325-01~1_200.JPG'></td><td>2015-03-25 17:53:05</td><td>Zayn Malik has quit One Direction after five years.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 17:05:00</td><td>Malik said: "My life with One Direction has been more than I could ever have imagined. But, after five years, I feel like it is now the right time for me to leave the band. I'd like to apologize to the fans if I've let anyone down, but I have to do what feels right."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/cbae03b/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Ff4%2Fc9142286f19498807d2e7a5e0ab26b%2Fmedia%3Af4ee96954686487da61125f679985a3dOneDirectionGallery.JPEG'></td><td>2015-03-25 23:45:48</td><td>One Direction formed in 2010 after five teenagers - Harry Styles, Liam Payne, Niall Horan, Tomlinson and Malik - auditioned individually for the British TV talent show "The X Factor."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/cbae03b/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Ff4%2Fc9142286f19498807d2e7a5e0ab26b%2Fmedia%3Af4ee96954686487da61125f679985a3dOneDirectionGallery.JPEG'></td><td>2015-03-26 01:04:38</td><td>The (former) Fab Five: A look at One Direction as they were</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/l4Uw0MMsuin98LMOmO2yrg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2fac26558937cd0d710f6a7067008fd2.jpg'></td><td>2015-03-26 01:04:51</td><td>In the wake of Malik's departure, The Associated Press offers a look at One Direction's best moments in pictures.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/l4Uw0MMsuin98LMOmO2yrg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2fac26558937cd0d710f6a7067008fd2.jpg'></td><td>2015-03-26 01:04:51</td><td>Zayn Malik delivered a shocker to his fans when he announced he was quitting the chart-topping band One Direction.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/23/26FEA74900000578-0-image-m-40_1427325044207.jpg'></td><td>2015-03-26 01:06:11</td><td>Malik said Wednesday, March 25, 2015, he is leaving chart-topping boy band One Direction "to be a normal 22-year-old."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 06:58:00</td><td>Is this the end of One Direction?!</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 03:42:20</td><td>He's going in a different direction.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/03/29906170001_4134512808001_thumb-7a9a8c808992ce0d710f6a706700f7cd.jpg'></td><td>2015-03-25 22:57:34</td><td>Fans react to Zayn Malik quitting One Direction</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 10:39:04</td><td>One Direction is one man down on its world tour.</td></tr>
+</table></body></html>

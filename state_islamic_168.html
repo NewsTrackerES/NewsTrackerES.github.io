@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 17:25:11</td><td>13 " The Islamic State group releases a video showing a jihadi behead British aid worker David Haines.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 17:25:11</td><td>Oct. 3 " The Islamic State group releases a video showing a jihadi behead British hostage Alan Henning.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 17:25:11</td><td>Feb. 15 " Libyan militants who earlier pledged their loyalty to the Islamic State group behead a group of Coptic Christians from Egypt in an online video.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/01/40efa14c80685d0e720f6a7067003f00_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-01 14:21:21</td><td>June 29 - The group declares the establishment of an Islamic state, or caliphate, in territories it controls in Iraq and Syria and demands allegiance from Muslims worldwide.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/01/40efa14c80685d0e720f6a7067003f00_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-01 14:21:21</td><td>Early February 2014 - Al-Qaida breaks with al-Baghdadi's group, now known as the Islamic State of Iraq and the Levant.</td></tr>
+</table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ 13 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a6a/sports/baseball/article24146983.ece/ALTERNATES/w220/538578187_471374728.JPG'></td><td>2015-04-27 22:53:30</td><td>The Baltimore Orioles' home game at Camden Yards has been postponed because of safety concerns.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a6a/sports/baseball/article24146983.ece/ALTERNATES/w220/538578187_471374728.JPG'></td><td>2015-04-27 22:53:30</td><td>Rioters have looted stores and thrown rocks and bricks at Baltimore police in the wake of the mysterious spinal injury of Freddie Gray, who died in police custody.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-27 23:22:34</td><td>The White Sox were in Baltimore for the start of a three-game series.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/08/2816816000000578-3058509-image-a-2_1430205148983.jpg'></td><td>2015-04-28 08:02:48</td><td>If you can't seek redress and demand reform without a brick in your hand, you risk losing this moment for all of us in Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 05:35:58</td><td>"To my Beloved city Baltimore..I feel your pain. Stand up..rise UP without breaking down! Discipline not Destruction. #VictorynotVictims," wrote Andre Royo, who played Bubbles.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/02/2811E31F00000578-3058426-image-a-57_1430186056501.jpg'></td><td>2015-04-28 04:02:21</td><td>'In the days ahead, I intend to work with leaders throughout Baltimore to ensure that we can protect the security and civil rights of all residents.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://timedotcom.files.wordpress.com/2015/04/baltimore-protest-27apr-police.jpg?quality=65&amp;strip=color&amp;w=550'></td><td>2015-04-28 03:31:39</td><td>"The anger and the selfishness and the brutality of those claiming the right to violence in Freddie Gray's name needs to cease," David Simon, a former Baltimore Sun police reporter, wrote on his website, where he also engaged with commenters.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-28 01:39:45</td><td>On way to #Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 23:45:00</td><td>White Sox-Orioles game postponed due to Baltimore riots</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 23:23:00</td><td>Maryland Governor Declares State Of Emergency In Baltimore</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 23:18:45</td><td>Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-27 22:46:03</td><td>BALTIMORE (Reuters) - The Baltimore Orioles said they would postpone a Monday night game after consulting with police, on a day the city was torn by the worst rioting the United States has seen since last year's unrest in Ferguson, Missouri.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/04/29906170001_4200187746001_thumb-d385a295d8f2e512740f6a7067009a45.jpg'></td><td>2015-04-27 22:15:08</td><td>Hundreds of youths outside a mall in northwest Baltimore are clashing violently with police in riot gear, throwing rocks, bricks and bottles at the officers.</td></tr>
+</table></body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/4/2/1427981471451/8eeb9d97-4da5-4907-a2a6-11a247160157-300x180.jpeg'></td><td>2015-04-02 17:14:44</td><td>Kenyan Interior Minister Joseph Nkaissery says that more than 70 people have been killed in an attack by Somali-based Islamic extremists on a college in northeast Kenya.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/4/2/1427981471451/8eeb9d97-4da5-4907-a2a6-11a247160157-300x180.jpeg'></td><td>2015-04-02 17:14:44</td><td>From Kenya's interior ministry.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/4/2/1427981471451/8eeb9d97-4da5-4907-a2a6-11a247160157-300x180.jpeg'></td><td>2015-04-02 17:14:44</td><td>Just hours before the latest attack began, the country's president, Uhuru Kenyatta, said Kenya was "safe as any country in the world".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-05 10:57:49</td><td>Alarm bells rang at Kenya's elite Recce Company in Nairobi as soon as the first reports of Thursday's pre-dawn attack emerged.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/04/16/2746FC0600000578-3025476-A_total_of_148_people_were_killed_in_the_six_hour_siege_with_the-a-61_1428161278531.jpg'></td><td>2015-04-04 22:01:27</td><td>Kenya's President Uhuru Kenyatta said today that those behind the attack were 'deeply embedded' in Kenya, and called on Kenyan Muslims to help prevent radicalisation.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46810509,width-300,resizemode-4/kenya-s.jpg'></td><td>2015-04-04 22:53:04</td><td>Kenya declares three days of national mourning</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://resources1.news.com.au/images/2015/04/05/1227291/754609-4563d9b6-daf1-11e4-90d8-bc21b5c83438.jpg'></td><td>2015-04-04 19:15:00</td><td>POLICE have paraded the naked corpses of Somali al-Qaeda-linked al-Shabab gunmen who slaughtered almost 150 people in one of Kenya's worst massacres, hours after the militants threatened "another bloodbath".</td></tr>
+</table></body></html>

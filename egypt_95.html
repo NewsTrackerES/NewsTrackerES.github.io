@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 24,
+            values: [ 24 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 11:51:00</td><td><a href='egypt_14.html'>It was the first time Egypt confirmed launching air strikes against the group in Libya, suggesting President Abdel Fattah al-Sisi is ready to escalate his battle against militants seeking to topple his government. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 15:02:56</td><td><a href='egypt_15.html'>At the same time, Egypt called for international intervention in Libya against the Islamic State group. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 18:01:08</td><td><a href='egypt_16.html'>Fears the crisis in Libya could spill across the border had already prompted Egypt, the Arab world's most populous nation, to upgrade its military hardware. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:26:19</td><td><a href='egypt_18.html'>U.S. ally Egypt, which has for decades received up to $1.3 billion annually in military aid from Washington, is seeking to diversify its arms providers. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 22:59:11</td><td><a href='egypt_19.html'>Egypt already has military advisers on the Saudi-Yemeni border tasked mainly with developing a joint strategy with the Saudis to confront future hostilities, according to the officials, who have first-hand knowledge of Egypt's plans. (2)</a></td></tr>
+</table></body></html>

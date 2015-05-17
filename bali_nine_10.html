@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/c/g/w/image.related.articleLeadwide.620x349.13uc9e.png/1425444535571.jpg'></td><td>2015-03-03 21:38:35</td><td>Indonesian police block the street near the entrance of Kerobokan prison where Bali nine duo Myuran Sukumaran and Andrew Chan will be transferred to Nusakambangan prison island for their executions.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/c/g/w/image.related.articleLeadwide.620x349.13uc9e.png/1425444535571.jpg'></td><td>2015-03-03 21:38:35</td><td>A Wolf armoured vehicle carrying Bali nine duo Andrew Chan and Myuran Sukumaran leaves Kerobokan prison to begin the transfer to Nusakambangan prison island where they are to be executed.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/c/g/w/image.related.articleLeadwide.620x349.13uc9e.png/1425444535571.jpg'></td><td>2015-03-03 21:38:35</td><td>Indonesian police stand in front of a water cannon that has been positioned outside Kerobokan prison ahead of the transfer of Bali nine duo Myuran Sukumaran and Andrew Chan.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/c/g/w/image.related.articleLeadwide.620x349.13uc9e.png/1425444535571.jpg'></td><td>2015-03-03 21:38:35</td><td>Bali nine prisoners transferred from Kerobokan to execution island under heavy military guard</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/g/w/image.related.articleLeadwide.620x349.13uc9e.png/1425444535571.jpg'></td><td>2015-03-03 21:38:35</td><td>Bali nine death row inmates Andrew Chan and Myuran Sukumaran have been transported by ferry to Nusakambangan island, the place where they are to be executed by firing squad.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/h/a/0/image.related.articleLeadwide.620x349.13v6oa.png/1425477517251.jpg'></td><td>2015-03-04 10:46:27</td><td>Cilacap: Bali nine ringleaders Myuran Sukumaran and Andrew Chan are waiting to die on Nusakambangan island, with the Indonesian Attorney-General expected to announce they will be killed as early as this weekend.</td></tr>
+</table></body></html>

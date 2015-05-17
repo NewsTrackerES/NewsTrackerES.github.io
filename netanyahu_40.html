@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>In 2009 - the election in which Mr Netanyahu took the prime ministership for a second time - the centrist Kadima party won the most seats but was unable to form a coalition and in the end, Mr Netanyahu took power.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>In an election eve about-face, Benjamin Netanyahu has vowed there will never be a Palestinian state as long as he is prime minister, contradicting a previous commitment in a bid to woo wavering right-wing voters back to his Likud Party.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 00:17:20</td><td>White House chief of staff Denis McDonough will give a speech Monday to a major advocacy group that opposes Netanyahu.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-19 23:50:02</td><td>The White House official said in the phone call Obama "also discussed Prime Minister Netanyahu's comments about Israeli Arabs" but gave no details.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/3/19/24564a777e8e4143934146ff24f45058_18.jpg'></td><td>2015-03-19 22:44:06</td><td>"You can't impose peace. And in any case, if you want to get peace, you've got to get the Palestinian leadership to abandon their pact with Hamas and engage in genuine negotiations with Israel for an achievable peace," Netanyahu said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 18:31:26</td><td>Speaking with NBC television, Netanyahu insisted he was "proud to be the prime minister of all Israeli citizens, Arabs and Jews alike" after triggering outrage for warning supporters that Israeli Arabs were "turning out in droves" to the polls.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/pUuaiVvbjU3ahulVYySghA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/gma/us.abcnews.go.com/AP_netanyahu_2_jtm_150323_16x9_992.jpg.cf.jpg'></td><td>2015-03-19 17:03:39</td><td>JERUSALEM (AP) - Israel's Netanyahu says still committed to Palestinian statehood if circumstances improve.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 13:47:32</td><td>Herzog also accused Netanyahu of running a campaign based on "lies, fear-mongering, hostility" and said the premier's earlier claim that foreign governments were working to oust him was a "complete lie."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 21:48:41</td><td>Two weeks ago Netanyahu defied Obama with a politically divisive speech to Congress attacking U.S.-led nuclear talks with Iran.</td></tr>
+</table></body></html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 00:28:12</td><td>Several of Saddam's palaces remain there, and supporters of the deceased dictator are believed to have played a key role in the Islamic State group's seizure of the city last year.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 00:28:12</td><td>Soleimani and other Iranian advisers have played a key role in Iraq in pushing the Islamic State back in recent months.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 23:34:17</td><td>TRIPOLI (Reuters) - Clashes erupted in central Libya on Saturday between Islamic State fighters and a force loyal to a Tripoli-based faction, a military official and residents said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/3/z/y/l/image.related.articleLeadwide.620x349.143zhr.png/1426396021107.jpg'></td><td>2015-03-14 05:33:12</td><td>The body of Australian army reservist Ashley Johnston, who was killed on the frontline in Syria fighting with Kurdish forces against Islamic State militants, has been handed over to family representatives in Turkey, Kurdish officials said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/C2SRMG.6oM8YwGwJpfwPqA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_US/News/TheWrap/Fired_Univision_Reporter_s_Lawyer_Takes-7f50132ea104b580df462d18b06f93e4.cf.jpg'></td><td>2015-03-13 21:37:43</td><td>PHOENIX (AP) - President Barack Obama is paying his condolences to the family of the American aid worker who died after being taken hostage by the Islamic State group.</td></tr>
+</table></body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 20,
+            values: [ 20 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 03:14:55</td><td><a href='state_islamic_89.html'>Washington: A US Army National Guard soldier and his cousin have been arrested on charges of conspiring to support Islamic State in a plot that included an attack on a military installation in Illinois, the US Department of Justice said. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:14:44</td><td><a href='state_islamic_90.html'>The United States military dropped 60,000 copies of a graphic leaflet near the northern Syrian city of Raqqah that depict potential Islamic State recruits being fed into a meat grinder. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:53:39</td><td><a href='state_islamic_91.html'>WASHINGTON (Reuters) - The United States has dropped tens of thousands of graphic leaflets southwest of the Syrian city of Raqqa aimed at discouraging Islamic State recruitment, officials said on Thursday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 17:19:43</td><td><a href='state_islamic_92.html'>BEIRUT (AP) - A new video released by the Islamic State group on Sunday shows its fighters cutting off the heads of eight men said to be Shiite Muslims. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 03:30:59</td><td><a href='state_islamic_93.html'>Washington is seeking a negotiated settlement to Syria's civil war that excludes Assad, but has made clear its top priority in Syria is the fight against Islamic State militants. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 06:20:48</td><td><a href='state_islamic_94.html'>Jordan's involvement in the anti-Islamic State coalition drew worldwide attention earlier this year, when it stepped up airstrikes against targets in Syria after the militants burned to death a Jordanian fighter pilot in a cage. (3)</a></td></tr>
+</table></body></html>

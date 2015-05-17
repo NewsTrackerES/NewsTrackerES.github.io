@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/56/45/7792983/5/square_gallery_thumb.jpg'></td><td>2015-04-10 13:43:20</td><td>"You have to be there," whether it means embracing a grieving parent, talking or just being present without saying anything, said Sammy Mwangi, a worker with the Kenya Red Cross.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/56/45/7792983/5/square_gallery_thumb.jpg'></td><td>2015-04-10 13:43:20</td><td>Unsung heroes: Kenya counselors help relatives of the dead</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 16:19:52</td><td>Some of her friends who attended said the government should do more to protect Kenya's students.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/mcIfMQKCNNa0YdzCSaLiWQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/69655eb21a044110730f6a706700947a.jpg'></td><td>2015-04-10 16:20:06</td><td>A small army of counselors, many in Kenya Red Cross vests, were deployed to the Chiromo Funeral Parlour to lend support after the attack by al-Shabab, a Somalia-based extremist group that killed 148 people.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/mcIfMQKCNNa0YdzCSaLiWQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/69655eb21a044110730f6a706700947a.jpg'></td><td>2015-04-10 16:20:06</td><td>Grief counselors on hand to help families after Kenya attack</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/mcIfMQKCNNa0YdzCSaLiWQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/69655eb21a044110730f6a706700947a.jpg'></td><td>2015-04-10 16:20:06</td><td>NAIROBI, Kenya (AP) - There was sobbing and silent grief.</td></tr>
+</table></body></html>

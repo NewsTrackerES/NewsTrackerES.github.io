@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 04:17:37</td><td>Facebook ready to test news project</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 04:17:37</td><td>Facebook is also permitting the news companies to collect data about readers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 04:17:37</td><td>For publishers, the Facebook initiative represents the latest in a series of existential balancing acts.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 04:17:37</td><td>Publishers have little choice but to cooperate with Facebook, said Vivian Schiller, a former executive at NBC, the New York Times and Twitter who now advises media companies and brands.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 04:17:37</td><td>But Facebook's role as a powerful distributor of news makes many people in the industry uneasy.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/1/j/j/x/image.related.articleLeadwide.620x349.gh15sy.png/1431576215064.jpg'></td><td>2015-05-14 04:06:36</td><td>The presidency then issued a statement on Facebook, declaring the coup to be "fanciful" and announcing those responsible would be arrested and face justice.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82985000/jpg/_82985676_e5405339-835a-4fea-8faa-074bf358e7a5.jpg'></td><td>2015-05-13 19:26:48</td><td>White House backs Facebook wage policy</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 13:26:52</td><td>"We're participating in Instant Articles to explore ways of growing the number of Times users on Facebook, improving their experience of our journalism and deepening their engagement," said Mark Thompson, president of the New York Times Company.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.mos.techradar.com/art/internet/Facebook/facebookINstantarticles-320-80.jpg'></td><td>2015-05-13 08:16:00</td><td>"They will not want to put on Facebook's servers anything that is not available on their own sites."</td></tr>
+</table></body></html>

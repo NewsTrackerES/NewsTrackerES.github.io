@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671195643_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-04 21:03:01</td><td>"He was in Dikwa two days ago. He managed to get away but we know where he is. It's in his interests to surrender," Deby said, referring to a town in northeastern Nigeria held by Boko Haram that fell to Chad's army earlier this week.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/04/chad.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-05 04:39:38</td><td>On Wednesday, a bomb planted and remotely detonated by Boko Haram militants near the southeastern Niger town of Diffa killed two soldiers and wounded a third, Niger military sources said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/04/chad.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-05 04:39:38</td><td>It first deployed to help Cameroon fend off Boko Haram and is now pressing southwest into Nigerian territory after capturing the border town of Gambaru last month.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/04/chad.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-05 04:39:38</td><td>Boko Haram, a Sunni militant group, has killed thousands of people in Nigeria during a six-year insurgency to carve out an Islamic caliphate.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81429000/jpg/_81429949_026159020.jpg'></td><td>2015-03-06 10:06:35</td><td>Suspected Boko Haram militants have killed at least 45 people in a village in Borno state, north-east Nigeria, witnesses have said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 22:15:25</td><td>Nigeria's neighbor, Chad, has spearheaded a regional offensive and seized back major towns bordering Cameroon from Boko Haram in recent weeks.</td></tr>
+</table></body></html>

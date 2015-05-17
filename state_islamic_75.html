@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 09:38:08</td><td>BEIRUT, March 24 (Reuters) - Islamic State has recruited at least 400 children in Syria in the past three months and given these so-called "Cubs of the Caliphate" military training and hardline indoctrination, a monitoring group said on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>Islamic State has encouraged parents to send children to training camps or has recruited them without their parents' consent, often luring them with money, said the Observatory, which tracks the conflict using sources on the ground.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>The Syrian Observatory for Human Rights said the children, all aged under 18, were recruited near schools, mosques and in public areas where Islamic State carries out killings and brutal punishments on local people.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>Islamic State recruits 400 children since January: Syria monitor</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>Islamic State also recruits children as informants and as guards for its headquarters as well as welcoming children with birth defects into its ranks, the Observatory added.</td></tr>
+</table></body></html>

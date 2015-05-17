@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 26,
+            values: [ 26 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 17:27:06</td><td><a href='state_islamic_106.html'>Mohaqiq, Afghanistan's senior Shiite community leader, said on Saturday the Islamic State group is responsible for the abduction of 31 members of the minority Shiite Hazara community on Feb. 24 in the southern Zabul province. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 13:55:08</td><td><a href='state_islamic_107.html'>In the Philadelphia case, Keonna Thomas was arrested Friday and held without bail on charges she attempted to travel overseas to join the Islamic State group before she could use an airline ticket she bought Tuesday to fly overseas. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 15:39:24</td><td><a href='state_islamic_108.html'>The Islamic militants said the attack on Garissa college was in retaliation for killings carried out by Kenyan troops fighting the rebels in Somalia. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 08:01:13</td><td><a href='state_islamic_109.html'>The Australian government has increasingly been sounding the alarm over radicalised citizens, with about 90 thought to be fighting with the Islamic State group in Iraq and Syria. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:02:25</td><td><a href='state_islamic_110.html'>With Tikrit taken, Sunni residents in Islamic State-held Anbar province, home to Fallujah, and Nineveh province, home to Mosul, Iraq's second-largest city, expect the Iraqi offensive to now turn its attention to their regions. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 07:45:19</td><td><a href='state_islamic_111.html'>BEIRUT (Reuters) - Islamic State insurgents blew up an 80-year-old church in Syria's northeastern province of Hassaka on Easter Sunday, Syrian state news agency SANA said. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 08:11:16</td><td><a href='state_islamic_112.html'>DHAKA, Bangladesh (AP) - Bangladesh's Appellate Division of the Supreme Court has turned down a petition by an Islamic party official and upheld his death sentence for war crimes. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 11:04:37</td><td><a href='state_islamic_113.html'>TEHRAN, Iran - As Iran's nuclear negotiators returned home with the framework of a deal with world powers, joyous revelers joked that "still, there is no whiskey" in the Islamic Republic, a jab at its theocratic government. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:36:10</td><td><a href='state_islamic_114.html'>JOHANNESBURG (AP) - South African security authorities say a teenager was taken off an airline flight because the 15-year-old girl was suspected to be leaving her home in Cape Town to join the Islamic State group. (2)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ 3 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/bwO3Cp8YK4trxhNiJTTeZg--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.reutersnews.com/2015-03-18T021418Z_1_LOVEB2H067TE9_RTRMADP_BASEIMAGE-960X540_ISRAEL-ELECTION-UPDATE-O.JPG'></td><td>2015-03-18 00:43:36</td><td>Clearly the result that many of Obama's supporters had hoped for - a repudiation by Israeli voters of Netanyahu's hard-line approach - was not to be.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/bwO3Cp8YK4trxhNiJTTeZg--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.reutersnews.com/2015-03-18T021418Z_1_LOVEB2H067TE9_RTRMADP_BASEIMAGE-960X540_ISRAEL-ELECTION-UPDATE-O.JPG'></td><td>2015-03-18 00:43:36</td><td>With Israeli vote in, Netanyahu could remain thorn in Obama's side</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 06:50:19</td><td>That prospect may not bode well for repairing US-Israeli ties after Netanyahu's congressional speech, which he delivered at the invitation of Obama's Republican opponents despite strong objections from the president and many of Obama's fellow Democrats.</td></tr>
+</table></body></html>

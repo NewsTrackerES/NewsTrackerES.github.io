@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>obamacare</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>In Texas, Perry took in at least $148 million in Obamacare grants while refusing money tied to the insurance exchange and the Medicaid expansion.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>Some of these programs were established by Obamacare, while others had existed in other forms and were expanded by the law.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>"Most of these grant funds are used for state initiatives that existed long before Obamacare ever became law," Jindal spokesman Mike Reed said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>In Louisiana, Jindal's administration has accepted $60 million in Obamacare grants while refusing to expand Medicaid and set up a state exchange.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>Exclusive: Republican White House hopefuls attack Obamacare but take money</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>He expanded the state's own Medicaid program to cover more residents without federal money, in part by moving 80,000 participants onto private insurance plans subsidized by Obamacare.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 05:10:03</td><td>WASHINGTON (Reuters) - Several Republican governors likely to run for president have secured hundreds millions of dollars under Obamacare while working to dismantle the healthcare law, according to a Reuters review of federal spending records.</td></tr>
+</table></body></html>

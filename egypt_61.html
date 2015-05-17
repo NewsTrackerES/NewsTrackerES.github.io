@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 23:01:48</td><td>Egypt said it and Saudi Arabia had discussed holding a "major military manoeuvre" in Saudi Arabia with other Gulf states, following talks on the progress of the three-week-old Saudi-led campaign of air strikes against the Houthis in Yemen.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/l/m/h/n/image.related.articleLeadwide.620x349.1mle82.png/1429076191983.jpg'></td><td>2015-04-15 05:36:55</td><td>Egypt and Saudi Arabia discuss manoeuvres as Yemen battles rage</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 21:40:10</td><td>Egypt, a member of the anti-Houthi coalition, has said in the past that it would send ground forces into Yemen if the military deemed it necessary.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 19:03:33</td><td>Egypt's government on Wednesday approved the demolition of the headquarters of the once-dominant party of toppled president Hosni Mubarak that was torched during the 2011 uprising.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/15/10/27972F2400000578-0-image-m-45_1429089885758.jpg'></td><td>2015-04-15 18:26:23</td><td>Egypt to demolish headquarters of Mubarak's old party</td></tr>
+</table></body></html>

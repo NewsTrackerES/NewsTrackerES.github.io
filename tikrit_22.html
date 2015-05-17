@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ 14 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 02:00:11</td><td>U.S.-led coalition, Iraqis pound Islamic State in Tikrit</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 02:00:11</td><td>Reuters first reported the U.S.-led coalition's expected entry into the Tikrit campaign, disclosed by Iraq's president in an interview and later confirmed by a U.S. official.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 02:00:11</td><td>The decision to give air support to the Tikrit campaign pulls the United States into a messy battle that puts the U.S.-led coalition, however reluctantly, on the same side of a fight as Iranian-backed militia in a bid to support Iraqi forces and opens a new chapter in the war.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-25 19:43:40</td><td>Any strikes by the coalition in Tikrit would represent the biggest collaboration so far against the militants by Iraqi forces, Iranian-backed paramilitaries and their Iranian advisers on the ground, and the United States and its allies.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-25 19:43:40</td><td>But the Pentagon and White House earlier on Wednesday confirmed that the U.S.-led coalition had started carrying out intelligence, surveillance and reconnaissance flights over Tikrit.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-25 19:43:40</td><td>The mainly Sunni city of Tikrit was seized by Islamic State in the first days of their lightning strike across northern Iraq last June.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-24 11:49:47</td><td>BAGHDAD (Reuters) - Iraq's request to the U.S.-led coalition for air strikes in the campaign to retake Tikrit from Islamic State insurgents is "imminent", a senior diplomat from a Western nation that is part of the coalition told Reuters on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-24 11:49:47</td><td>A military official within the coalition told Reuters on Tuesday that the coalition began providing intelligence, surveillance and reconnaissance for the Tikrit operation on March 21 after a request from the Iraq government.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-24 11:49:47</td><td>The coalition has been absent so far from the Tikrit campaign launched three weeks ago, the largest to be undertaken by the Iraqi forces and Iranian-backed Shi'ite Muslim militias since Islamic State overran a third of the country last year.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/8FBUKZ9F3bZ4C5V5d3CdDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T101432Z_1_LYNXMPEB2N0D4_RTROPTP_2_MIDEAST-CRISIS.JPG'></td><td>2015-03-24 11:49:47</td><td>The diplomat added any strikes in Tikrit would be based on the model in the north where the coalition has carried out air strikes in tandem with the Kurdish pershmerga forces.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/gYJvmWjbWTg1dg5WDY_jpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T222322Z_2_LYNXMPEB2O10V_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-25 23:28:42</td><td>As coalition aircraft entered the fray, Iraqi forces pounded Islamic State positions in Tikrit, resuming an offensive that had stalled for almost two weeks.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/gYJvmWjbWTg1dg5WDY_jpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T222322Z_2_LYNXMPEB2O10V_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-25 23:28:42</td><td>"Military operations in Tikrit started at around 9 pm local time by pounding Islamic State positions with artillery, mortars and Katyusha rockets," said provincial council member Hadi al-Khazraji.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/gYJvmWjbWTg1dg5WDY_jpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T222322Z_2_LYNXMPEB2O10V_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-25 23:28:42</td><td>A U.S. defense official, speaking on condition of anonymity, said American warplanes and aircraft from allied nations were striking up to a dozen targets in Tikrit, selected after coalition surveillance flights.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 08:10:57</td><td>BAGHDAD (Reuters) - Coalition and Iraqi planes struck a sprawling complex of palaces in the city of Tikrit on Thursday where Islamic State militants have been holding out for more than three weeks, officials said.</td></tr>
+</table></body></html>

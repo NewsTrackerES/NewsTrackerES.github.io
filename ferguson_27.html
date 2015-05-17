@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ 12 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-03-24 16:55:12</td><td>Ron Johnson, in charge of security in Ferguson in the weeks after the shooting, said some journalists were repeatedly asked to return to sidewalks or safe areas for their own well-being.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-03-24 16:55:12</td><td>Timm said there are ample witnesses, along with plenty of video evidence, showing that most of the journalists arrested in Ferguson were simply trying to do their jobs.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-03-24 16:55:12</td><td>A Ferguson spokesman did not return messages seeking comment.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Missouri's online court reporting system does not show state charges against any of the arrested journalists, but Ferguson city charges would not appear there.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Moore is one of an estimated two dozen journalists from around the world and among the hundreds of people who've been arrested in Ferguson.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Moore was charged with municipal violations after an arrest on Oct. 3., while covering a demonstration outside Ferguson police headquarters.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>(AP) - A video journalist arrested while covering the unrest in Ferguson, Missouri, after Michael Brown was fatally shot last summer plans to fight the charges at trial.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Forty-eight media organizations, including the AP, sent a letter to Ferguson law enforcement officials in August, criticizing treatment of reporters.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Trial set for videographer arrested covering Ferguson</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Freelance journalist Mary Moore poses for a portrait before entering Ferguson Municipal Court Tuesday, March 24, 2015, in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>Ferguson's city attorney said Tuesday that Moore was "was participating in the protest and attempted to interfere ... by locking arms with other protesters."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td>The Missouri Supreme Court appointed a state appeals court judge to hear cases in Ferguson's courtroom following the ouster of the private-practice attorney who previously presided there.</td></tr>
+</table></body></html>

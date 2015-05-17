@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 07:56:54</td><td>IS militants overran Saddam Hussein's hometown last June, capturing around 1,700 soldiers as they were trying to leave Camp Speicher, an air base previously used by U.S. troops on the outskirt of Tikrit.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 07:56:54</td><td>Kamil Amin, from Iraq's Human Rights Ministry, says work started on Monday on eight locations inside Tikrit's complex of presidential palaces, where much of the killing is believed to have taken place.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 09:09:00</td><td>Other videos showed masked gunmen bringing the soldiers to a bloodstained concrete river waterfront inside the presidential palaces complex in Tikrit, shooting them in the head and throwing them into the Tigris River.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 09:09:00</td><td>The fall of Tikrit was part of the IS onslaught that stunned Iraqi security forces and the military, which melted away as the militants advanced and captured key cities and towns in the country's north and west.</td></tr>
+</table></body></html>

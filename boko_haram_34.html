@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 11:43:00</td><td>ABUJA, Nigeria (AP) - Hundreds of civilians, including many children, have been abducted and are being used as human shields by Boko Haram extremists, a top Nigerian official confirmed Wednesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 13:50:39</td><td>Damasak, near the border with Niger, was recaptured from Boko Haram on March 16.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 13:50:39</td><td>Damasak had been held for months by Boko Haram, who used the trading town as an administrative center.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 14:55:13</td><td>"Boko Haram ... rushed to primary schools they took children and adults that they are using as shields to protect themselves from the menacing advance of troops," said Omeri.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-25 18:51:03</td><td>When troops from Chad and Niger advanced toward Damasak, Boko Haram began taking captives, said Omeri, speaking in Nigeria's capital, Abuja.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/03/f-bokoshields-a-20150327-200x200.jpg'></td><td>2015-03-25 23:44:00</td><td>Boko Haram has killed thousands of civilians and kidnapped unknown hundreds in its fight to create an Islamic state.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/03/f-bokoshields-a-20150327-200x200.jpg'></td><td>2015-03-25 23:44:00</td><td>Instead, he said that as troops advanced, Boko Haram rushed to a school where people had been held after the insurgents had seized the town late last year.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 17:09:10</td><td>Nigeria is preparing for critical presidential elections Saturday that Boko Haram is threatening to disrupt because it opposes democracy.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn3.belfasttelegraph.co.uk/incoming/article31099380.ece/5743a/ALTERNATES/h342/Par8130858_2.jpg'></td><td>2015-03-27 11:45:19</td><td>The destruction and devastation was clear in the north-eastern Nigerian town of Bama, when dead bodies and burnt out buildings greeted government forces as they liberated the town once held by Islamic extremist group Boko Haram.</td></tr>
+</table></body></html>

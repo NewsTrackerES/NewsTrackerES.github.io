@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ 11 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/uQ5WiaFpYHZJZ9BOBDokTQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-01T090947Z_2_LYNXMPEB301CO_RTROPTP_2_NIGERIA-ELECTION.JPG.cf.jpg'></td><td>2015-04-01 20:20:59</td><td>N'DJAMENA (Reuters) - Chad's army said its forces had killed hundreds of Boko Haram militants and lost nine of its own troops in clashes in northern Nigeria on Wednesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 21:20:39</td><td>"There was fighting and we recorded nine dead and 16 injured. There were hundreds of dead on Boko Haram's side," said Colonel Azem Bermandoa, a spokesman for Chad's army.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/1/4826e9612bb44bf2ba5dc2160f415b30_18.jpg'></td><td>2015-04-02 03:48:51</td><td>Soldiers from Chad and Niger drove the group from Malam Fatori, one of Boko Haram's last major footholds near Nigeria's border with Niger, earlier this week.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 00:26:52</td><td>"I assure you that Boko Haram will soon know the strength of our collective will and commitment to rid this nation of terror and bring back peace," Buhari said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 15:08:30</td><td>"Boko Haram will soon know the strength of our collective will. We should spare no effort," Buhari said in his first formal speech since winning the election.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 23:12:28</td><td>Borno state in northeast Nigeria, worst-hit by six years of Boko Haram violence, voted overwhelmingly in favour of opposition candidate Muhammadu Buhari, results showed on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 22:30:31</td><td>On Saturday, troops from Niger and Chad destroyed a Boko Haram base inside Nigeria, also close to the Niger border, killing 54 militants, the statement said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 20:07:25</td><td>Despite a handful of isolated attacks, Boko Haram largely failed to deliver on threats to disrupt the polls in the north.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/EiV_89IGFna.gM1wDqgVuw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/ac794abd96c4b81834bc2610b70cbce248f08bbe.jpg.cf.jpg'></td><td>2015-03-30 17:55:55</td><td>Chambas said that Boko Haram's announcement that it had pledged allegiance to the Islamic State group, "whether for publicity reasons or to tap into ISIL support," shows that "Boko Haram's agenda goes well beyond Nigeria."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 14:07:36</td><td>Eight suspected Boko Haram fighters were killed on Monday during fighting in Gombe and Bauchi states, northeast Nigeria, police, residents and local hunters said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 00:44:29</td><td>International outrage has grown over another failure - the government's inability to rescue 219 schoolgirls kidnapped by Boko Haram nearly a year ago.</td></tr>
+</table></body></html>

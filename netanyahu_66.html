@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 12:53:36</td><td>Israel's Netanyahu says his Cabinet united in 'strongly opposing' proposed Iran nuclear deal</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 14:08:29</td><td>Netanyahu vehemently opposes the negotiations, demanding instead that Iran's nuclear program be dismantled.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 06:06:06</td><td>Many had pledged to turn their back on Likud to protest its economic policies or because of disdain for Netanyahu's lengthy rule and perceived decadent lifestyle.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 06:06:06</td><td>Mizrahi, or Middle Eastern, Jews heavily backed Prime Minister Benjamin Netanyahu's Likud Party, while Ashkenazi, or European, Jews mostly identified with the opposition Zionist Union.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 17:34:04</td><td>Netanyahu said after the session that "Israel will not accept an agreement which allows a country that vows to annihilate us to develop nuclear weapons, period."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 15:25:20</td><td>Today, on the eve of the Jewish week-long festival Passover, Netanyahu convened his Cabinet for a special session to discuss the emerging framework, reached after a week of gruelling negotiations in Lausanne, Switzerland.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2809/a4d9b0e34d954f7c83ce38442bfa1237.jpg'></td><td>2015-04-03 14:30:02</td><td>"Israel demands that any final agreement with Iran will include a clear and unambiguous Iranian commitment of Israel's right to exist," Netanyahu said in a statement.</td></tr>
+</table></body></html>

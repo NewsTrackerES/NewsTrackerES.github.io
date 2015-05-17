@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-03-24 22:31:36</td><td>Last month, Facebook's chief product officer, Chris Cox, said at a media conference that the social network had early conversations with publishers about hosting their content.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-03-24 22:31:36</td><td>Facebook has been working to increase the quality of the news content on its feed, weeding out posts that it deems to be click bait or link bait.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-03-24 22:31:36</td><td>Facebook is in talks with the New York Times, BuzzFeed and National Geographic about hosting their articles or videos directly on the social network, the New York Times reported Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/03/24/102530597-453248108-1.80x60.jpg?v=1427205395'></td><td>2015-03-24 22:30:00</td><td>Facebook is in talks with several media organizations to host articles within the social network, according to the New York Times.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:42:36</td><td>Facebook said that revenue-sharing ideas are still in flux, but they are trying to work on different options.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/e76a7f8ebe6afd0248b0aca673c8564ed296d4f2/c=127-0-4500-3288&amp;r=x404&amp;c=534x401/local/-/media/2015/03/23/USATODAY/USATODAY/635627026928931929-AP-Facebook-Payments.jpg'></td><td>2015-03-24 17:12:27</td><td>The Times is moving closer to a deal with Facebook, the report said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 07:41:00</td><td>Nothing attracts news organizations like Facebook.</td></tr>
+</table></body></html>

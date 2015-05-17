@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 12:02:28</td><td>April 27 (Reuters) - U.S. stock index futures were up slightly on Monday after the Nasdaq Composite and S&P 500 chalked up record high closes on Friday and ahead of Apple's results after the close.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 12:02:28</td><td>US STOCKS-Futures up ahead of Apple earnings, Fed meeting later this week</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:03:01</td><td>Apple trades at 14.3 times forward 12-month earnings, while the S&P 500 trades at 16.7 times, according to Thomson Reuters StarMine data.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-27 14:05:34</td><td>Analysts expect Apple's quarterly revenue to rise 23 percent to $56.07 billion, according to Thomson Reuters data.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-27 23:10:56</td><td>"This is a revolutionary company that threatens to change healthcare the same way that Amazon changed retail or Intel and Microsoft changed computing, or Apple changed the cellphone," the "Mad Money" host said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:51:00</td><td>As of March 28, Apple had $194 billion in cash and marketable securities.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static01.nyt.com/images/2015/03/10/business/10APPLE1jp/10APPLE1jp-thumbStandard-v2.jpg'></td><td>2015-04-27 20:50:46</td><td>That also far exceeded the 43.7 million iPhones that Apple sold in the period a year ago.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 13:24:46</td><td>With Apple Pay, credit card numbers are not stored on the device or on Apple servers.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/c47091c8828618d27419ca736a504ad495a72629/c=306-0-5094-3600&amp;r=x404&amp;c=534x401/local/-/media/2015/04/14/USATODAY/USATODAY/635646012736056437-AP-Apple.jpg'></td><td>2015-04-27 13:09:15</td><td>Apple.</td></tr>
+</table></body></html>

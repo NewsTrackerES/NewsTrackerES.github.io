@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 22,
+            values: [ 22 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>10</td><td></td><td>2015-02-16 14:08:53</td><td><a href='ebola_61.html'>As Ebola is being brought under control, Sierra Leone plans to re-open its schools at the end of March. (6)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-02-18 15:57:54</td><td><a href='ebola_71.html'>WASHINGTON (AP) - The president of Liberia will visit the United States later this month, her first trip to the country since the Ebola outbreak in West Africa. (3)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-02-20 14:45:04</td><td><a href='ebola_102.html'>World Health Organization approves 1st quick test for Ebola (11)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-02-20 19:35:35</td><td><a href='ebola_104.html'>"This is not what you want to see with Ebola." (27)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-03-01 20:38:37</td><td><a href='ebola_3.html'>Despite his quarantine, Sam-Sumana is set to become acting president later Sunday when President Ernest Bai Koroma leaves Sierra Leone to attend a EU conference on Ebola in Belgium. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-02 19:41:17</td><td><a href='ebola_107.html'>DALLAS - The first person infected with Ebola in the United States, nurse Nina Pham, sued a Texas hospital on Monday, saying it did not do enough to prevent her from contracting the deadly virus and invaded her privacy after she was diagnosed with it. (17)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-03 00:21:09</td><td><a href='ebola_4.html'>Nancy Writebol last summer became the second American infected with the Ebola virus while working at a hospital SIM supports in the Liberian capital of Monrovia. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-03 01:29:24</td><td><a href='ebola_103.html'>TOKYO (AP) - North Korea has lifted severe restrictions on foreign travel it imposed last year to keep the Ebola virus from crossing its borders. (7)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 09:21:17</td><td><a href='ebola_106.html'>After causing nearly 10,000 recorded deaths, the Ebola epidemic is waning in the three worst-hit countries, Guinea, Liberia and Sierra Leone. (30)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-03 11:46:45</td><td><a href='ebola_7.html'>AKRON, Ohio (AP) - A northeast Ohio bridal shop that was linked to an Ebola survivor and later announced plans to close has put its building up for sale. (2)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-03-05 12:43:02</td><td>MONROVIA, Liberia (AP) " Liberia releases last Ebola patient; Countdown to being declared Ebola free begins.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 20:01:23</td><td><a href='ebola_109.html'>The National Institutes of Health said it has no other pending admissions of additional patients with the Ebola virus or who have been exposed to Ebola. (209)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-03-20 04:03:17</td><td>GENEVA (AP) - Emails show UN health agency resisted declaring Ebola emergency on economic, political grounds.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 15:02:42</td><td><a href='ebola_108.html'>Sakoba Keita, national coordinator for the fight against Ebola in the West African country, said authorities had also detected 10 suspicious deaths in the community but only one of these had been confirmed as Ebola. (47)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 19:54:25</td><td><a href='ebola_105.html'>Graaff had been serving since October as the U.N.'s Ebola crisis manager in Liberia, which has recorded more Ebola deaths than any other country. (54)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-11 18:37:21</td><td><a href='ebola_96.html'>People display a representation of the Liberian flag as they celebrate Liberia being an Ebola free nation in Monrovia, Liberia, Monday, May 11, 2015. (5)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-12 17:35:42</td><td><a href='ebola_110.html'>ROME An Italian nurse who returned to Italy last week after working in Sierra Leone has tested positive for Ebola, the health ministry said on Tuesday. (11)</a></td></tr>
+</table></body></html>

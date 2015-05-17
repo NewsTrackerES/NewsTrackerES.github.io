@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:15:15</td><td>AP Interview: UNESCO chief says Nepal sites 'huge disaster'</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:15:15</td><td>Bokova said another of Nepal's World Heritage sites, Sagarmatha National Park around Mount Everest, is damaged, but the extent is not yet known.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:31:33</td><td>UNITED NATIONS: The head of the United Nations cultural agency says a preliminary assessment of the famed World Heritage site around Nepal's capital is a "huge disaster" after this weekend's earthquake.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/18/2811ADC700000578-3057879-Put_to_work_-a-62_1430156298133.jpg'></td><td>2015-04-27 22:03:06</td><td>CNN's Dr Sanjay Gupta heads to Nepal and ends up performing brain surgery</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-27 21:47:34</td><td>Another application, the Google Person Finder https://google.org/personfinder/2015-nepal-earthquake/, first launched after the 2010 Haiti earthquake, uses SMS to allow anyone to search or update information on missing people.</td></tr>
+</table></body></html>

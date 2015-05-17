@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:00:11</td><td>All 150 people who received vaccine developed antibodies to Ebola with higher responses to higher doses.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:00:11</td><td>There is currently no vaccine or specific treatment for Ebola, which has killed over 10,000 people in West Africa since last spring, according to the World Health Organization.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:00:11</td><td>Merck, NewLink Ebola vaccine appears safe, effective in new studies</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/EQCS43bNVv6lKscDqhmhyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-02T060704Z_1007970001_LYNXMPEB3107Y_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-LEONE.JPG.cf.jpg'></td><td>2015-04-02 09:31:27</td><td>(Reuters) - A patient was being evaluated for Ebola in isolation at a Colorado hospital on Thursday after experiencing symptoms of the disease, health officials said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 01:08:50</td><td>Guinea, which appears to be the worst affected at this time, saw an increase in the number of areas recording Ebola, with seven prefectures reporting at last one confirmed case.</td></tr>
+</table></body></html>

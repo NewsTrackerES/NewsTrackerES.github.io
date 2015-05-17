@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-02-13 14:12:29</td><td><a href='ukraine_156.html'>DONETSK, Ukraine - Ukraine and Russian-backed rebels fought fiercely across the east of the country on Friday despite a new peace deal brokered by Germany and France. (21)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-02-20 15:59:24</td><td><a href='ukraine_158.html'>The two heads of state, along with the leaders of Ukraine and Russia, signed accords on Feb. 12 in a last-ditch effort to stabilize and bring peace to Ukraine - starting with a cease-fire that both Ukraine and rebels now say has been violated. (93)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-03 14:52:42</td><td><a href='ukraine_1.html'>Ukraine's central bank has sharply hiked its benchmark rate to 30 percent, from 19.5 percent, as financial authorities seek to reverse the rapid devaluation of the national currency. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-04 09:00:05</td><td><a href='ukraine_161.html'>KIEV, Ukraine (AP) " Ukraine parliament speaker says 32 killed in mine blast in war-torn eastern Ukraine. (67)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-04 14:30:07</td><td><a href='ukraine_2.html'>Ablyazov's lawyers say he is being pursued because of his activities as an opposition leader in autocratic Kazakhstan, and fear that he won't get a free trial in Russia or Ukraine. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-25 15:36:52</td><td><a href='ukraine_155.html'>MADRID (Reuters) - Spain coach Vicente del Bosque has called up several new faces for Friday's Euro 2016 qualifier at home to Ukraine with forward Juanmi and midfielder Vitolo among those keen to make a mark. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 15:32:02</td><td><a href='ukraine_157.html'>DONETSK, Ukraine (AP) - Russia-backed rebel authorities in eastern Ukraine on Wednesday started paying pensions in Russian rubles. (140)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 14:40:35</td><td><a href='ukraine_160.html'>MORE: What next for Ukraine? (256)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 12:01:52</td><td><a href='ukraine_159.html'>Relations between Russia and the West are at their lowest ebb since the end of the Cold War due to Moscow's annexation of Ukraine's Crimea peninsula in March 2014 and its backing for the rebels in Ukraine. (93)</a></td></tr>
+</table></body></html>

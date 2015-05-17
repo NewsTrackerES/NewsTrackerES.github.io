@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 07:15:52</td><td>Earthquake of 7.5 Magnitude Shakes Nepal, Tremors Felt in India</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 07:15:52</td><td>A 7.5 magnitude earthquake struck Nepal, centred 77 kilometres north-west of Kathmandu, the US Geological Survey said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 10:45:49</td><td>A government official in the eastern state of Bihar says at least 14 deaths were reported in seven districts that share a border with Nepal.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AP150317043827_140x93.jpg'></td><td>2015-04-25 10:35:16</td><td>Indian officials say at least 20 dead, dozens injured in India after Nepal earthquake</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 10:33:04</td><td>"We have received reports that there is a big loss of property and life in Nepal," Krishna Prasad Dhakal, the deputy chief of mission at Nepal's Embassy in New Delhi, told AFP.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/25/17eed04383f2a912740f6a7067001818_r142x90.JPEG?a4c645db5e0d43838ff6d631be583dfe8b15e757'></td><td>2015-04-25 09:35:28</td><td>Nepal's Home Ministry says at least 71 people killed in the earthquake</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/25/082490cb24bf489d8e73318b375de723_18.jpg'></td><td>2015-04-25 07:44:45</td><td>An earthquake measuring 7.9 magnitude has struck 80 km east of Pokhara in Nepal about half way between the town and the capital Kathmandu, the US Geological Survey says.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47048218,width-300,resizemode-4/Capture.jpg'></td><td>2015-04-25 07:16:38</td><td>He said that they were in the process of finding more information and "are working to reach out to those affected, both at home & in Nepal".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.dw.de/image/0,,18407885_404,00.jpg'></td><td>2015-04-25 07:14:00</td><td>National radio in Nepal warned people to stay outdoors and maintain calm because more aftershocks were feared.</td></tr>
+</table></body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 05:01:32</td><td>In a new report published on Tuesday, Amnesty quoted a senior military officer as saying the girls were being held at different Boko Haram camps, including in Cameroon and possibly Chad.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>The kidnapped girls were in their thoughts and prayers every day, they said, but they did not blame Boko Haram foot soldiers.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>"I forgive Boko Haram for what they have done and I pray God forgives them, too," said one.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>Nigeria marks first anniversary of Boko Haram schoolgirl kidnappings</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>LAGOS: Nigeria on Tuesday marks the first anniversary of Boko Haram's abduction of 219 schoolgirls from the northeastern town of Chibok, as part of a series of events planned around the world.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>Fifty-seven escaped but nothing has been heard of the 219 others since May last year, when about 100 of them appeared in a Boko Haram video, dressed in Muslim attire and reciting the Koran.</td></tr>
+</table></body></html>

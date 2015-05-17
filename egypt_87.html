@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 17:31:23</td><td>- Oct. 9, 2013: The U.S. suspends delivery of tanks, helicopters and fighter jets to Egypt in a show of disapproval over the anti-Brotherhood crackdown.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 17:31:23</td><td>- March 12, 2013: Egypt rejects an offer of a $750 million rescue loan from the International Monetary Fund.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 17:31:23</td><td>Key events in Egypt since the 2011 uprising</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/CaacvjQ684MT4fpL1Hzp0A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0b3d46ffe6bea915760f6a70670094e8.jpg'></td><td>2015-05-16 17:31:38</td><td>- June 3, 2014: Egypt's Election Commission officially announces that el-Sissi has won with 96.9 percent of the vote.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-16 17:34:18</td><td>-March 13-15: Egypt hosts an international investor conference that sees billions pledged to boost the battered economy.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-16 17:34:18</td><td>- Nov. 10, 2014: A Sinai-based jihadi organization called Ansar Beit al-Maqdis pledges allegiance to the Islamic State group, giving the organization a foothold in Egypt.</td></tr>
+</table></body></html>

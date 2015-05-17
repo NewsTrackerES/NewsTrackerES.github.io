@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>The 21 Egyptian Coptic Christians, who had gone to Libya in search of jobs, were marched to a beach, forced to kneel and then beheaded, according to the video, broadcast via a website that supports Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>CAIRO: Egypt said it bombed Islamic State targets inside Libya, a day after the group released a video appearing to show the beheading of 21 Egyptians there.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>Egypt strikes back at Islamic State militants after beheading video, killing dozens</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>Security officials say militants based in Libya have established ties with Sinai Province, a group operating from Egypt's Sinai Peninsula that has pledged allegiance to Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>Egypt, the most populous Arab state, has not taken part directly in the US-led air strikes against Islamic State targets in Iraq and Syria, focusing instead on the increasingly complex insurgency within its own borders.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>Egypt's military said the dawn strike hit Islamic State camps, training sites and weapons storage areas.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td>A few have declared ties to the radical Islamic State and claimed high-profile attacks over recent weeks in what appears to be an intensifying campaign.</td></tr>
+</table></body></html>

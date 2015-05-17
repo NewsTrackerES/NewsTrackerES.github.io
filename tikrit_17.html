@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ 3 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>Staff Lieutenant General Abdulwahab al-Saadi, commander for Salaheddin, told AFP Sunday his forces in Tikrit needed air support from the US-led coalition.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>Iraq's offensive to retake Tikrit from the Islamic State group was stalled Tuesday because of streets and buildings rigged with booby trap bombs and by the several hundred jihadists still holding out there.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>Adnan Yunis, spokesman for the Red Crescent in Salaheddin, said only a maximum 20 percent of Tikrit's pre-conflict population is believed to remain in the city.</td></tr>
+</table></body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 17:50:19</td><td>When Hillary Clinton became President Barack Obama's secretary of state in 2009, the foundation agreed to stop raising money from foreign governments but the Washington Post reported in February that some foreign governments continued to donate while she was in the Obama administration.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 17:50:19</td><td>WASHINGTON - Former President Bill Clinton says in an interview he plans to be a "backstage adviser" in Hillary Rodham Clinton's expected presidential campaign and intends to spend the year working on his family's philanthropic foundation.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:02:21</td><td>"I think it's important, and Hillary does too, that she go out there as if she's never run for anything before and establish her connection with the voters," Clinton said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:02:21</td><td>Asked about his role if Hillary Clinton is elected president, Bill Clinton said he would "have to assess what she wants me to do" but "we might have to change the (foundation) rules again."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039227760&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3812L'></td><td>2015-04-09 23:51:15</td><td>(Reuters) - Democrat Hillary Clinton will announce her 2016 presidential run on Sunday, the New York Daily News reported on Thursday, quoting an unidentified source close to Clinton.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:58</td><td>Elizabeth Warren has little to say about Hillary Clinton in 2016</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 17:16:29</td><td>UPDATE 1-Hillary Clinton hires Google executive as tech chief</td></tr>
+</table></body></html>

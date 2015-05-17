@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 35,
+            values: [ 35 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 13:09:15</td><td><a href='apple_57.html'>Apple. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 13:24:46</td><td><a href='apple_58.html'>Discover customers will also be able to use Apple Pay with iPad Air 2 and iPad mini 3 when paying for goods and services within apps starting in the fall. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 16:13:10</td><td><a href='apple_59.html'>NEW YORK (AP) - U.S. stocks are barely higher at midday as investors look ahead to Apple's results later today and a meeting by the Federal Reserve on interest rates. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:02:14</td><td><a href='apple_60.html'>After the bell, Apple shares gained 1.1 percent as the iPhone maker reported a 27 percent jump in quarterly revenue. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:32:00</td><td><a href='apple_61.html'>"We're seeing a higher rate of people switching to iPhone than we've experienced in previous cycles, and we're off to an exciting start to the June quarter with the launch of Apple Watch." (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 06:34:20</td><td><a href='apple_62.html'>Apple gave no sales figures for its recently released Apple Watch, but did say the current quarter was off to "an exciting start". (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:03:06</td><td><a href='apple_63.html'>Apple said its board has increased its share repurchase authorization to $140 billion from the $90 billion level announced last year. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 00:08:00</td><td><a href='apple_64.html'>FILE - In this May 11, 2012 file photo, travelers pass the Apple store at New York's Grand Central Terminal. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 00:33:46</td><td><a href='apple_65.html'>After markets closed, Apple Inc beat Wall Street's revenue and profit forecasts. (2)</a></td></tr>
+</table></body></html>

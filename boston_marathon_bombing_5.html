@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>boston marathon bombing</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 16:51:20</td><td>BOSTON - Police are searching for a thief who stole nearly a dozen pairs of donated sneakers and athletic items from two Boston Marathon bombing survivors.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 17:30:56</td><td>After 'One Boston Day' ceremony, marathon bombing survivors become victims of sneaker theft</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 06:52:05</td><td>Subdued remembrance will mark 2 years since marathon bombing</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.boston.com//p.o0bc.com/rf/image_700w/Boston/2011-2020/2015/04/08/Boston.com/ReceivedContent/Images/IMG_3555A.jpg'></td><td>2015-04-15 03:44:36</td><td>2 Years After Marathon Bombing, We Are ?One Boston?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 15:15:34</td><td>- Tight security will be in place again for the Boston Marathon - the second since the deadly 2013 bombing at the finish line.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/07/us/boston-marathon-bombing-trial/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-07 12:41:30</td><td>Boston bombing trial: Jurors set to begin deliberations</td></tr>
+</table></body></html>

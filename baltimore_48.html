@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ 6 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-02 18:49:11</td><td>Cedric the Entertainer posted on Twitter: "Hate to see Baltimore going thru what my hometown of Ferguson went thru. Change is necessary, but violence and destruction is not the answer."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-02 18:49:11</td><td>"Don't give the very system that has been using violence to terrorize and exterminate us any justification to use that very violence upon us to keep us in order," Baltimore native Pinkett Smith wrote on Facebook Wednesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:35:45</td><td>LOS ANGELES - As the events in Baltimore continue to grip the nation, a few celebrities are raising their voices for the city and the cause.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:35:15</td><td>Some of the celebrity voices heard in the wake of the Baltimore unrest have been simple pleas for peace, and from stars with direct connections to the issue.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:30:08</td><td>Former Baltimore Ravens linebacker Ray Lewis and New York Knicks star Carmelo Anthony, who was raised in Baltimore, marched with the protesters this week.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:30:08</td><td>Prince recorded a song about Baltimore and "the slew of killings of young black men," said a spokeswoman.</td></tr>
+</table></body></html>

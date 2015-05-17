@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>Germanwings' parent company, Lufthansa, has not recorded a passenger fatality since 1993, when another Airbus A320 overshot a runway in Warsaw, Poland, killing one crew and one of 64 passengers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>Lufthansa says stronger earnings at Germanwings, along with lower fuel costs, should boost earnings for its airlines division - which also includes Swiss, Eurowings, Lufthansa CityLine, Air Dolomiti and Austrian Airlines - this year.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>Lufthansa says Germanwings' lower operating costs helped reduce those losses last year, and that the unit may break even this year.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>Germanwings, which has a fleet of around 78 aircraft flying to 130 destinations, plays a key role in Lufthansa's effort to compete against low-cost carriers such as Easyjet and Ryanair.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>FRANKFURT, Germany - Germanwings, a low-cost unit of Lufthansa, had recorded no accidents involving passenger deaths until one of its planes crashed in the French Alps on Tuesday, killing all 150 on board.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>The Germanwings brand will be merged into Eurowings later this year for sales purposes, the airline says, although passengers will still see planes painted with Germanwings markings for the time being and Germanwings flight codes will remain.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:47:16</td><td>Germanwings, which is based in Cologne, offers customers choice of three seat categories: Basic, Smart and Best, under the motto: "Reasonably priced but not cheap."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/1a1bde7/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fb5%2F1850cb75db48b2acf74b05c394229b%2Fmedia%3Aed1c7103662e4782b8805ce3a8f8db2cFrancePlaneCrash.JPEG'></td><td>2015-03-24 18:14:56</td><td>Crash is Germanwings' first fatal accident since 2002 start</td></tr>
+</table></body></html>

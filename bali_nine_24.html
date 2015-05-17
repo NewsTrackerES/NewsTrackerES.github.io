@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ 10 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/i/image.related.articleLeadwide.620x349.1mt4eo.png/1429953029033.jpg'></td><td>2015-04-25 07:07:18</td><td>Bali nine pair given 72 hours notice of deaths Earthquake of 7.9 magnitude shakes Nepal, tremors felt in India Are the Taliban and their leader becoming yesterday's men?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/i/image.related.articleLeadwide.620x349.1mt4eo.png/1429960603898.jpg'></td><td>2015-04-25 07:07:18</td><td>Jakarta: Bali nine organisers Andrew Chan and Myuran Sukumaran may have just three days left to live after they were officially given 72 hours notification of their executions on Saturday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/s/e/e/a/image.related.articleLeadwide.620x349.1mscp5.png/1429849807998.jpg'></td><td>2015-04-24 04:30:17</td><td>"Speechless. Really, really, really sad," Tan Duc Thanh Nguyen told Fairfax Media from Malang prison in East Java, where he is incarcerated with fellow Bali nine drug mule Martin Stephens.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/s/4/t/i/image.related.articleLeadwide.620x349.1msqsq.png/1429868408003.jpg'></td><td>2015-04-24 09:34:11</td><td>The last legal hurdle preventing the death of Bali nine organisers Myuran and Andrew Chan and eight other drug felons will be resolved on Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 12:04:15</td><td>"For the Bali Nine (pair), we have the constitutional court appeal, we have the registration number and we have the schedule fixed on 12 May," Leonard Arpan, lawyer for Myuran Sukumaran and Andrew Chan, told reporters on Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/5/m/k/6/image.related.articleLeadwide.620x349.1mu618.png/1430123064050.jpg'></td><td>2015-04-27 08:24:36</td><td>Bali nine pair Chan and Sukumaran choose their execution witnesses</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:02:37</td><td>Corruption allegations over Bali Nine trial sets Australia-Indonesia row</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/t/q/5/image.related.articleLeadwide.620x349.1mu1gh.png/1430106133342.jpg'></td><td>2015-04-27 02:22:51</td><td>Indonesian police and security guard the fence line at Ngurah Rai International airport when Bali Nine duo Myuran Sukumaran and Andrew Chan were transferred Nusakambangan.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/w/f/u/image.related.articleLeadwide.620x349.1mtwc1.png/1430075489626.jpg'></td><td>2015-04-26 18:35:16</td><td>But he says he is now going public because the matter is extremely urgent given the Bali nine pair will soon be shot dead by a firing squad.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/i/image.related.articleLeadwide.620x349.1mtr7q.png/1430045989842.jpg'></td><td>2015-04-26 10:55:38</td><td>The eerie painting, brought back from Nusakambangan by their lawyer Julian McMahon, is a portent of Bali nine pair's ghastly fate - death by firing squad.</td></tr>
+</table></body></html>

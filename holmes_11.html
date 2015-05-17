@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 42,
+            values: [ 42 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 15:44:07</td><td>It took 22 hours for a second sanity evaluation of Holmes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 15:38:10</td><td>It was the first time in the trial that a witness described Holmes as the gunman.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 15:38:10</td><td>Previous witnesses either didn't see Holmes at all or only saw a masked gunman.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/41/7891071/5/square_gallery_thumb.jpg'></td><td>2015-04-29 15:38:10</td><td>The trial will determine if Holmes will be executed, spend his life in prison or be committed to an institution.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/41/7891071/5/square_gallery_thumb.jpg'></td><td>2015-04-29 15:38:10</td><td>Sgt. Gerald Jonsgaard identified James Holmes as that person in court on Wednesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/41/7891071/5/square_gallery_thumb.jpg'></td><td>2015-04-29 15:38:10</td><td>FILE - In this July 23, 2012, file photo, James E. Holmes appears in Arapahoe County District Court in Centennial, Colo.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/41/7891071/5/square_gallery_thumb.jpg'></td><td>2015-04-29 15:38:10</td><td>Sergeant is 1st witness to identify James Holmes as gunman</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/18/2811E59600000578-0-image-m-13_1430156546388.jpg'></td><td>2015-04-27 20:02:25</td><td>A steady stream of people walked into the courthouse on a gray and drizzly morning on the opening day of the trial of James Holmes in the 2012 Colorado theater shooting.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/18/2811E59600000578-0-image-m-13_1430156546388.jpg'></td><td>2015-04-27 20:02:25</td><td>Some victims' family members and survivors of the Colorado theater shooting have arrived at court in advance of opening statements in James Holmes' trial.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/04/63/7883971/3/gallery_thumb.jpg'></td><td>2015-04-27 17:04:22</td><td>The parents of Colorado theater shooter James Holmes have been seen waiting in line to get into the suburban Denver courthouse where Holmes' long-awaited death penalty trial is getting underway.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/04/63/7883971/3/gallery_thumb.jpg'></td><td>2015-04-27 17:04:22</td><td>James Holmes' parents sat in the second row in the courtroom in the Denver suburb of Centennial.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/04/63/7883971/3/gallery_thumb.jpg'></td><td>2015-04-27 17:04:22</td><td>Holmes acknowledges killing 12 people and wounding 70 more inside the packed theater, but he has pleaded not guilty by reason of insanity.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 17:14:05</td><td>Many of the people who attended a morning hearing in the trial of Colorado theater shooter James Holmes have dispersed while court is in recess, including Holmes' parents.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/LVIWOEFg_eLQmu02kKC0wg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/89801ffed7bee012740f6a70670049c7.jpg.cf.jpg'></td><td>2015-04-27 19:41:48</td><td>The judge in the Colorado theater shooting trial is explaining to the jury that they must decide whether or not James Holmes was sane at the time of the attack.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 19:42:43</td><td>The prosecutor in the Colorado movie theater shooting trial has played a video recording of one of James Holmes' psychiatric evaluations in which Holmes says he "only counts fatalities" in the attack and those wounded were "collateral damage."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 19:42:43</td><td>District Attorney George Brauchler says Holmes felt differently about the people he killed and those he injured in the 2012 shooting in suburban Denver.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 19:44:04</td><td>Opening statements in James Holmes' death penalty trial are set for later Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 19:47:25</td><td>Judge Carlos A. Samour Jr., top right, presides over the opening of the trial of Colorado theater shooter James Holmes, far left, in Centennial, Colo., Monday, April 27, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 19:47:25</td><td>As the trial begins, the question isn't whether Holmes killed 12 people and wounded 70, but whether he was sane at the time of the killings.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/U.S./876/493/james-holmes-trial.jpg?ve=1&tl=1'></td><td>2015-04-27 15:38:01</td><td>Holmes faces trial starting on April 27, 2015, in the mass shooting in an Aurora, Colo., movie theater that left 12 dead and 70 wounded.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:47:00</td><td>Defense lawyers say Holmes was in the grips of a psychotic episode and could not tell right from wrong when he went on the rampage.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/04/63/7884017/3/square_gallery_thumb.jpg'></td><td>2015-04-27 19:47:30</td><td>Television journalists work on platforms in the parking lot of the Arapahoe County Justice Center, on the first day of the trial of James Holmes, in Centennial, Colo., Monday, April 27, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 00:12:11</td><td>Court has adjourned for the day in the Colorado theater shooting trial after James Holmes' attorneys completed their opening statement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 00:12:11</td><td>A public defender says James Holmes was insane when he opened fire in a crowded Colorado movie theater in 2012.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 02:01:34</td><td>James Holmes' defense attorney, Daniel King, says his client "now regrets what took place in the theater."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/41/7891071/5/square_gallery_thumb.jpg'></td><td>2015-04-29 16:32:06</td><td>The trial will determine if Holmes, who murdered 12 people during a midnight screening of a Batman movie, will be executed, spend his life in prison or be committed to an institution.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/29/08/2820B73C00000578-0-image-m-14_1430292016994.jpg'></td><td>2015-04-29 17:34:11</td><td>Holmes' lawyers did not question Jonsgaard, just as they did not question any of the 10 witnesses who testified Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>"It sounded like Mr. Brauchler was suggesting that Mr. Holmes might have done this for notoriety," King told jurors.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>Insane or evil? Trial fills in details of Colorado movie gunman Holmes</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>Attorney Daniel King said both the defendants' grandfathers and an aunt suffered from serious mental illness, and that as an 11-year-old Holmes attempted suicide.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>Both sides painted starkly different pictures of Holmes in Arapahoe County District Court in the Denver suburb of Centennial.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>In his opening statement, Arapahoe County District Attorney George Brauchler depicted Holmes as a craven killer of superior intellect who planned and carried out the massacre because of his "longstanding hatred of mankind."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>Gesturing at his client, King told jurors Holmes' "aloof or distracted" demeanor is caused by the drugs he is being given, which King said treat but do not cure his schizophrenia.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>Holmes has been expressionless in court, wearing a pale blue shirt and glasses, and tethered to the floor beneath his attorneys' desk.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1045005999&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401VR'></td><td>2015-05-01 19:56:50</td><td>The public defender showed his own videos, including one of a naked Holmes running headlong into his jail cell wall, and another of him standing on his bed before toppling back and slamming his head on the floor.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 20:02:30</td><td>Holmes suffers delusions to this day, King said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Jk0Ju25YNPmsnkoDksQBEQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a08128adcef97013750f6a706700e285.jpg'></td><td>2015-05-04 23:45:42</td><td>(AP) - A video played for jurors in the trial of Colorado theater shooter James Holmes includes a dazed-sounding Holmes asking detectives "There weren't any children hurt, were there?"</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Jk0Ju25YNPmsnkoDksQBEQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a08128adcef97013750f6a706700e285.jpg'></td><td>2015-05-04 23:45:42</td><td>The video shows detectives interviewing Holmes at the Aurora Police Department about two hours after the July 2012 attack, which killed 12 people and injured 70 others.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 05:24:16</td><td>Arlene Holmes then left the courtroom with her husband, Bob, and defense attorney Tamara Brady.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/18/281C331500000578-0-image-a-28_1430243683477.jpg'></td><td>2015-04-28 22:02:18</td><td>District Attorney George Brauchler revealed that two court-appointed psychiatrists both found that Holmes was sane when he opened fire, chasing moviegoers up and down the aisles, shooting at them when they tried to flee.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 06:36:52</td><td>Jury seated in death penalty trial of Colorado theater shooter James Holmes</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 19:25:57</td><td>Prosecutor: 2 mental evaluations found Colorado movie theater gunman James Holmes was sane.</td></tr>
+</table></body></html>

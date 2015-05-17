@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297664844418_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-16 15:27:54</td><td>Battle rages for town where Ukraine rebels reject ceasefire</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td>Moscow denies this and accuses the West of waging a proxy war in Ukraine to seek "regime change" in Russia.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td>Fighting began in east Ukraine after the overthrow of a Moscow-backed president in Ukraine last February and Russia's annexation of the Crimea peninsula a month later.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td>The West says Putin, who has called parts of Ukraine "New Russia," has sent troops and weapons to back the rebels.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2979/7d4523ca6159454a9313b97b0087ae09.jpg'></td><td>2015-02-17 07:02:45</td><td>Merkel, along with the leaders of France and Ukraine, expressed concern about continued fighting in Debaltseve and said observers from the Organisation for Security and Cooperation in Europe (OSCE) must have "free access" for their work in eastern Ukraine.</td></tr>
+</table></body></html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ 3 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/3/4/egypt-court-banspalestinianhamasgroup/_jcr_content/image.adapt.480.low.morsi_hamas_030414.jpg'></td><td>2015-02-28 18:37:00</td><td>Badie has already been sentenced to multiple life terms, and was one of hundreds given the death sentence in a mass trial that drew international criticism of Egypt's judicial system.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/3/4/egypt-court-banspalestinianhamasgroup/_jcr_content/image.adapt.480.low.morsi_hamas_030414.jpg'></td><td>2015-02-28 18:37:00</td><td>After the January decision against Hamas' Qassem Brigades, a source close to the armed wing signaled the group would no longer accept Egypt as a broker between it and Israel.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/28/262FF31500000578-2973721-image-m-30_1425155014615.jpg'></td><td>2015-03-01 12:58:27</td><td>Hamas is an offshoot of the Brotherhood, which the authorities have also declared a terrorist group in Egypt and have repressed systematically since the coup against Morsi.</td></tr>
+</table></body></html>

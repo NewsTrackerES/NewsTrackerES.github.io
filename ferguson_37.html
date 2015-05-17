@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ 11 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 12:03:20</td><td>APRIL 22 -- Lawyers for Brown's family say they will file a civil lawsuit April 23 against the city of Ferguson.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:37:11</td><td>OCT. 10 - Protesters from across the country descend on the St. Louis region for "Ferguson October," four days of coordinated and spontaneous protests.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:32:53</td><td>AUG. 12 - Ferguson Police Chief Thomas Jackson cancels plans to release the name of the officer who shot Brown, citing death threats against the police department and City Hall.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:32:53</td><td>AUG. 16 - Missouri Gov. Jay Nixon declares a state of emergency and imposes a curfew in Ferguson.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:33:29</td><td>AUG. 19 - Nixon says he will not seek the removal of Ferguson prosecutor Bob McCulloch from the investigation into Brown's death.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:33:29</td><td>A timeline of key events following the fatal police shooting of an unarmed, black 18-year-old in the St. Louis suburb of Ferguson.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:32:46</td><td>AUG. 20 - Holder visits Ferguson to offer assurances about the investigation into Brown's death and to meet with investigators and Brown's family.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:32:46</td><td>AUG. 18 - Nixon calls the National Guard to Ferguson to help restore order and lifts the curfew.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-23 12:53:04</td><td>FILE - In this Monday, Aug. 18, 2014, file photo, a man bends down in prayer as police try to disperse a small group of protesters in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 21:39:18</td><td>Activists seek probe of prosecutor's role in Ferguson case</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-24 17:14:51</td><td>Man pleads guilty to attempted arson during Ferguson riots</td></tr>
+</table></body></html>

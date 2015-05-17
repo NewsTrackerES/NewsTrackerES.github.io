@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 25,
+            values: [ 25 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 20:18:56</td><td>Authorities in southern Chile say rain over the weekend could cause problems related to the Calbuco volcano's eruptions over the last week.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 20:18:56</td><td>Rainfall in Area of Chile Volcano Could Cause Mudslides</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-23 13:33:03</td><td>Authorities have evacuated 4,000 people and closed access to the area around the volcano, which lies near the cities of Puerto Varas and Puerto Montt, some 1,000 kilometers (620 miles) south of Santiago.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-23 13:33:03</td><td>Calbuco volcano erupts anew; ash causing concern</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-23 13:33:03</td><td>The volcano erupted Wednesday afternoon for the first time in more than four decades, then had another outburst early Thursday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 21:52:07</td><td>The National Mining and Geology Service has issued a high alert, barring access to the mountainous area around the volcano in southern Chile.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 21:52:07</td><td>The volcano's last eruption was in 1972 and it is considered one of the top three most potentially dangerous among Chile's 90 active volcanos.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 21:52:37</td><td>SANTIAGO, Chile (AP) - Chile's Calbuco volcano has erupted for the first time in more than 42 years, and Chilean authorities have ordered the evacuation of the few thousand people living in a town a few miles away.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 22:00:33</td><td>SANTIAGO, Chile (AP) " The Calbuco volcano erupted Wednesday for the first time in more than 42 years, billowing a huge ash cloud over a sparsely populated, mountainous area in southern Chile.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/TkNpGrckymyFTWTpKPhGdQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/8db1a0f90b606f12740f6a706700808f.jpg'></td><td>2015-04-22 23:53:14</td><td>The Education Ministry canceled school in communities near the volcano and at least three flights to Puerto Montt were canceled.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-23 15:43:05</td><td>Twin blasts from the Calbuco volcano in southern Chile have sent vast clouds of ash into the sky, increasing concerns that it could contaminate water, cause respiratory illnesses and ground more flights.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:33:13</td><td>President Michelle Bachelet declared a state of emergency, saying the eruption of Calbuco is "more serious and unpredictable" than the one last month at the Villarica volcano, which also forced the evacuation of thousands.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:33:13</td><td>In 2011, a volcano in the Caulle Cordon of southern Chile erupted violently, forcing the cancellation of hundreds of flights and the evacuation of more than 3,500 people.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/00/15/7865208/5/square_gallery_thumb.jpg'></td><td>2015-04-23 17:56:44</td><td>By Thursday afternoon, much ash had made its way to Villa La Angostura, Argentina, a small town about 56 miles (90 kilometers) northeast of the volcano.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/00/15/7865208/5/square_gallery_thumb.jpg'></td><td>2015-04-23 17:56:44</td><td>The volcano erupted Wednesday afternoon for the first time in more than four decades, sending a towering plume of ash more than 6 miles (10 kilometers) into the air.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/23/04/27E2BBFF00000578-0-image-m-72_1429758660252.jpg'></td><td>2015-04-23 18:02:39</td><td>A man walks in a park full of volcanic ash, spewed from the Chile's Calbuco volcano, in Villa La Angostura, southern Argentina, Thursday, April 23, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 21:13:56</td><td>As the ash cloud spread Wednesday, "people went into a state of panic," said Miguel Silva Diaz, an engineer who lives in Puerto Montt, a city about 14 miles (22 kilometers) from the volcano.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/23/15/27E7526D00000578-0-image-m-16_1429798227254.jpg'></td><td>2015-04-23 23:14:00</td><td>A woman holds a mask to her face as she stands with her belongings before evacuating the town of Ensenada, Chile after the Calbuco volcano erupted, Thursday, April 23, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/media/2015/04/23/USATODAY/USATODAY/635653795724954035-AP-APTOPIX-Chile-Volcano-Erupts.jpg'></td><td>2015-04-24 02:32:27</td><td>An image taken by the Moderate Resolution Imaging Spectroradiometer on NASA's Terra satellite of the ash plume coming from the Calbuco volcano in Chile.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-24 03:03:04</td><td>ALTERNATE CROP - Children watch the Calbuco volcano erupt, from Puerto Varas, Chile, Wednesday, April 22, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:06:36</td><td>The Calbuco volcano erupted again on Wednesday, sending dark burst of ash and hot rock billowing into the air and prompting Chilean officials to order new evacuation of nearby residents.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/ec4de7a7002beda141cd301f3126693c70d7d55f/201_258_2059_3095/333.jpg'></td><td>2015-04-30 18:58:36</td><td>"We're talking about a plume that is about 4km and that is directed toward the southern part of the volcano, so we shouldn't have major problems except for those who live in the south of the volcano and who will be hit by ash."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:09:11</td><td>The surrounding area was evacuated after the volcano first erupted last Wednesday afternoon, but many people had begun to return to their ash-drowned homes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 23:45:00</td><td>Volcano expert Moyra Gardeweg said the wet weather also could mean acid rain that damages metal and plant life and pollutes water sources.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/4Toeaz7RbADwAouwNBP5Qw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3e377f7053d02a13750f6a706700cbb0.jpg'></td><td>2015-05-01 20:17:48</td><td>Thursday's eruption was smaller, but the National Geology and Mineral Service warns that more eruptions are possible and says the volcano could be spewing some ash and smoke for months.</td></tr>
+</table></body></html>

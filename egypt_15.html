@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/16/egypt-strikes-isil-group-in-libya-after-video-of-mass-beheading/_jcr_content/rightupperpar/listwiththumbnail/links/item_1.adapt.480.low.egyptian_coptic_libya_isil_0215.jpg'></td><td>2015-02-16 14:31:00</td><td>It also called on the U.S.-led coalition staging airstrikes against ISIL in Iraq and Syria to offer Egypt political and material support to counter the threat posed by the group's affiliates in Libya.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/16/egypt-strikes-isil-group-in-libya-after-video-of-mass-beheading/_jcr_content/rightupperpar/listwiththumbnail/links/item_1.adapt.480.low.egyptian_coptic_libya_isil_0215.jpg'></td><td>2015-02-16 14:31:00</td><td>Egypt's Foreign Ministry said the international community must adopt "immediate and effective" moves against such groups in Libya.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 15:02:56</td><td>Egypt's military announced the strikes on state radio, marking the first time Cairo has publicly acknowledged military action in Libya.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 15:02:56</td><td>At the same time, Egypt called for international intervention in Libya against the Islamic State group.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/playBackIcon.png'></td><td>2015-02-16 22:35:20</td><td>Egypt now faces threats on two fronts - a growing stronghold of radicals on its western border and a militant insurgency of Islamic State allies on its eastern flank in the Sinai Peninsula - as well as its own internal challenges.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/playBackIcon.png'></td><td>2015-02-16 22:35:20</td><td>Thirteen of the 21 came from Egypt's tiny Christian-majority village of el-Aour, where relatives wept in church and shouted the names of the dead on Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/60/20/7537673/5/square_gallery_thumb.jpg'></td><td>2015-02-17 23:17:17</td><td>CAIRO - Egypt's president said in a radio interview aired on Tuesday that creating a U.N.-backed coalition was the best course of action to rid Libya of Islamic extremists.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/6a0/news/world/article23023198.ece/ALTERNATES/w220/Mideast+Islamic+State+Timel.JPG'></td><td>2015-02-17 08:27:57</td><td>Egyptian President Abdel-Fattah el-Sissi called for a United Nations resolution mandating an international coalition to intervene in Libya after Egypt's air force bombed Islamic State targets there.</td></tr>
+</table></body></html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/BCGUIPSpVsA.nKv.TbK35A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/596d141c3585a1086e0f6a70670068ee.jpg'></td><td>2015-02-20 05:33:55</td><td>Ferguson officials: No word on federal investigations</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/BCGUIPSpVsA.nKv.TbK35A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/596d141c3585a1086e0f6a70670068ee.jpg'></td><td>2015-02-20 05:33:55</td><td>FILE - In this Dec. 9, 2014, file photo, Ferguson mayor James Knowles III listens during a meeting of the Ferguson City Council in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-19 14:16:12</td><td>The Justice Department will likely sue the Ferguson, Missouri, police department over what the government says is racial discrimination, CNN reported.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-19 10:56:31</td><td>In August, Ferguson was thrust into the limelight when white police officer Darren Wilson shot and killed unarmed black teen Michael Brown.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/19/25C6444200000578-2959454-image-a-9_1424327502330.jpg'></td><td>2015-02-19 10:46:58</td><td>The outlet said Justice Department officials are, however, planning to sue the Ferguson Police Department for racially discriminatory practices unless the department agrees to make changes.</td></tr>
+</table></body></html>

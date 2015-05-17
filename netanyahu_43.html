@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ 4 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/20/61/7670884/3/square_gallery_thumb.jpg'></td><td>2015-03-17 23:44:32</td><td>Netanyahu, who already has a testy relationship with President Obama, took a sharp turn to the right in the final days of the campaign, staking out a series of hard-line positions that will put him at odds with the international community.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 09:00:56</td><td>To craft a coalition, Netanyahu will still need the support of Moshe Kahlon, whose upstart Kulanu party captured 10 seats and whose campaign focused almost entirely on bread-and-butter economic issues.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0318/20150318__israel~2_300.JPG'></td><td>2015-03-18 15:01:09</td><td>Netanyahu appears to have 67 backers who would join a right-wing nationalist government, but he could still surprise and try to reach out to centrist rivals in order to present a more moderate face to the world.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 18:04:53</td><td>Netanyahu focused his campaign primarily on security issues, while his opponents pledged to address the high cost of living and housing crisis while accusing him of being out of touch.</td></tr>
+</table></body></html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/51/30/7771660/5/square_gallery_thumb.jpg'></td><td>2015-04-06 00:36:52</td><td>HOUSTON - J.B. Holmes used a strong start Sunday for a Houston Open victory in a three-way playoff against Jordan Spieth and Johnson Wagner.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/51/30/7771660/5/square_gallery_thumb.jpg'></td><td>2015-04-06 00:36:52</td><td>Wagner and Holmes hit perfect drives on the first playoff hole - both were on No.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/51/30/7771660/5/square_gallery_thumb.jpg'></td><td>2015-04-06 00:36:52</td><td>Although Holmes' missed birdie putt gave Wagner another chance, Wagner's short putt for par lipped out.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>Although he birdied the first hole, the tournament's 2011 winner never made a serious move and posted a 71 to wind up in a 17th-place tie, seven shots behind Holmes.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>Holmes' final-day rally was the biggest on the Tour since Matt Jones also came from six down to beat Matt Kuchar in a playoff last April.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>"I've been working on taking it one shot at a time," Holmes said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>Holmes began the day as an after-thought, tied for 18.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>The 32-year-old Holmes birdied the first five holes and nine of the first 12 after starting the day six shots back of Jordan Spieth.</td></tr>
+</table></body></html>

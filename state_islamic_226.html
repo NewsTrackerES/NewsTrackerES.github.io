@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 22:02:23</td><td>ICC prosecutor says could investigate Islamic State in Libya</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 22:02:23</td><td>"I recall however the principle that states, in the first instance, bear the primary responsibility to investigate and prosecute their nationals who have joined forces with (Islamic State) and are alleged to be committing ... crimes."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/l/n/q/k/image.related.articleLeadwide.620x349.gh0phw.png/1431498144500.jpg'></td><td>2015-05-13 06:22:38</td><td>ICC prosecutor Fatou Bensouda told the UN Security Council on Tuesday that she had noted the 15-member body's calls for accountability for alleged crimes against civilians committed by groups claiming allegiance to Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/l/n/q/k/image.related.articleLeadwide.620x349.gh0phw.png/1431498144500.jpg'></td><td>2015-05-13 06:22:38</td><td>France said in March it would push the Security Council to refer Islamic State to the international courts.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/l/n/q/k/image.related.articleLeadwide.620x349.gh0phw.png/1431498144500.jpg'></td><td>2015-05-13 06:22:38</td><td>New York: The International Criminal Court can investigate alleged crimes by Islamic State militants in Libya, but it is first up to individual states to prosecute their citizens accused of offences, The Hague-based court's prosecutor said on Tuesday.</td></tr>
+</table></body></html>

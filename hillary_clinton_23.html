@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:56:14</td><td>Hillary Clinton surprised Obama by winning the 2008 New Hampshire primary.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s4rVKqG8tag2y8hK9DghUw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/70ab85281ac94510730f6a70670044bf.jpg'></td><td>2015-04-10 17:51:43</td><td>In Arkansas, she worked as an attorney at one of the state's top law firms while Bill Clinton served as governor.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s4rVKqG8tag2y8hK9DghUw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/70ab85281ac94510730f6a70670044bf.jpg'></td><td>2015-04-10 17:51:43</td><td>White House Brief: Things to know about Hillary Clinton</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 19:46:26</td><td>GOP speakers at NRA event take aim at Hillary Clinton</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 18:19:55</td><td>Hillary Clinton will announce her second run for the presidency on Sunday, starting her campaign as the Democrats' best hope of fending off a crowded field of lesser-known Republican rivals and retaining the White House.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:00:00</td><td>"From the East Wing to the State Department, Hillary Clinton has left a trail of secrecy, scandal and failed liberal policies that no image consultant can erase," he said in a statement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-10 14:46:50</td><td>"I think it's important, and Hillary does too, that she go out there as if she's never run for anything before and establish her connection with the voters," he said in a recent interview with Town & Country magazine.</td></tr>
+</table></body></html>

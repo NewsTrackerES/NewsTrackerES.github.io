@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 20:01:44</td><td>Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 21:58:47</td><td>Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 11:35:11</td><td>WASHINGTON - Hillary Rodham Clinton says a wave of unrest in Baltimore shows the need to "restore order and security" and find ways to reform the criminal justice system.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03284/baltimore-riots-th_3284567g.jpg'></td><td>2015-04-29 08:23:57</td><td>A night-time curfew restored a semblance of order to badly scarred Baltimore a day after riots dragged it into the national debate over how US police treat young black men.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-29 01:56:03</td><td>Its unemployment rate is higher than the U.S. average - according to the U.S. Bureau of Labor Statistics, Baltimore city's unemployment rate in February was 8.4 percent versus the U.S. rate of 5.8 percent in that month.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 00:02:38</td><td>Some experts say the frustration and discontent among Baltimore residents stems from the lack of educational opportunities.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/40/7890995/3/square_gallery_thumb.jpg'></td><td>2015-04-28 22:10:24</td><td>A 2011 Baltimore Health Department report found that 55 percent of families there lived on less than $25,000 a year, and 30 percent were mired in poverty, roughly twice the rate of the rest of the city.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 21:58:00</td><td>Baltimore on edge: National Guardsmen take up positions</td></tr>
+</table></body></html>

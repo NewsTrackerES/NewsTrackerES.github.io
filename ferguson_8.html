@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ 10 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/13/7594712/9/920x920.jpg'></td><td>2015-03-02 18:53:55</td><td>WASHINGTON (AP) - The federal investigation of the police shooting in Ferguson, Missouri, is expected to allege patterns of racial bias in the city's mostly white department.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/13/7594712/9/920x920.jpg'></td><td>2015-03-02 18:53:55</td><td>Holder has repeatedly signaled that federal officials have identified problems with the Ferguson Police Department.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/13/7594712/9/920x920.jpg'></td><td>2015-03-02 18:53:55</td><td>Along with the police chokehold death of a New York City man suspected of selling untaxed cigarettes and the December killings of two New York police officers, the Ferguson case became part of a national conversation about race and policing.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/13/7594712/9/920x920.jpg'></td><td>2015-03-02 18:53:55</td><td>FILE - In this Aug. 15, 2014, file photo, a car drives past a memorial in the middle of the street where Michael Brown was shot by police in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/13/7594712/9/920x920.jpg'></td><td>2015-03-02 18:53:55</td><td>These investigations usually turn up substantial problems, and the Ferguson probe is expected to be no different.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/13/7594712/9/920x920.jpg'></td><td>2015-03-02 18:53:55</td><td>The shooting touched off weeks of "hands up, don't shoot" protests in the streets of Ferguson and other cities.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 22:26:45</td><td>Our investigation showed that Ferguson police officers routinely violate the Fourth Amendment and stopping people without reasonable suspicion.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gadgets/slideshows/362659/slide_362659_4354132_sq50.jpg'></td><td>2015-03-04 21:17:25</td><td>Eric Holder: Ferguson Police Created A 'Toxic' Environment</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/45E23yrp_SXCsvyP02UQ3A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5dc495ecfebabc096f0f6a706700af80.jpg'></td><td>2015-03-03 21:43:15</td><td>Some critics, including St. Louis County Executive Charlie Dooley, questioned McCulloch's ability to be objective in the Ferguson case.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 02:55:40</td><td>Either way, the result is likely to be significant changes inside the Ferguson Police Department, which is at the center of a national debate over race and policing.</td></tr>
+</table></body></html>

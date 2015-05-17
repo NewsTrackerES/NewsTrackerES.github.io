@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ 16 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:12:20</td><td><a href='kenya_1.html'>NAIROBI, Kenya (AP) - Kenya's president set fire to 15 tons of elephant tusks during World Wildlife Day Tuesday to discourage poaching and trade in ivory. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 20:34:05</td><td><a href='kenya_2.html'>"As part of Kenya's continued policy to put ivory beyond economic use ... I will today burn 15 tonnes of ivory at this historic site in Nairobi National Park," President Uhuru Kenyatta said during a ceremony at the park. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 01:58:18</td><td><a href='kenya_3.html'>Poachers killed 164 elephants in Kenya last year, compared with 302 in 2013 and 384 in 2012, while 53 rhinos were killed in 2014 compared with 59 and 30 in the previous two years, according to the Kenya Wildlife Service. (7)</a></td></tr>
+</table></body></html>

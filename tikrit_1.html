@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2978/ed01b029384645478577279cdc50d187.jpg'></td><td>2015-03-02 10:22:47</td><td>Al-Iraqiya television said on Monday that the forces were attacking the city of Tikrit, backed by artillery and airstrikes by Iraqi fighter jets.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2978/ed01b029384645478577279cdc50d187.jpg'></td><td>2015-03-02 10:22:47</td><td>Tikrit, some 130km north of Baghdad, fell into the hands of ISIS last summer along with the country's second-largest city of Mosul and other areas in Sunni heartland.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81374000/jpg/_81374002_025378419-1.jpg'></td><td>2015-03-03 12:11:59</td><td>How Iran is involved in battle for Tikrit</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/3/1/bb6ade7b3092488a8d7cc02062801295_19.jpg'></td><td>2015-03-03 10:19:18</td><td>Government forces have battled their way north for months, notching up key victories against ISIL, but Tikrit has been their toughest target yet, with the fighters having resisted them several times.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:39:18</td><td>Artillery gunners in a military base just north of Tikrit also bombarded Islamic State positions in the city, another Iraqi source said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150313085525-01-isis-0313-super-169.jpg'></td><td>2015-03-02 14:35:11</td><td>Why is Tikrit important?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/9/18/isil-threat-explained/_jcr_content/image.adapt.480.low.isil4_091514.jpg'></td><td>2015-03-02 11:05:00</td><td>Government forces backed by allied Shia and Sunni fighters have begun a large-scale military operation to recapture Saddam Hussein's hometown of Tikrit from the Islamic State in Iraq and the Levant (ISIL).</td></tr>
+</table></body></html>

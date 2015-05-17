@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 22,
+            values: [ 22 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/gloria-borger-reports-hillary-clinton/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 04:02:08</td><td>Who is Hillary Clinton?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/gloria-borger-reports-hillary-clinton/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 09:36:03</td><td>Who is Hillary Clinton?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/gloria-borger-reports-hillary-clinton/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 11:45:50</td><td>Who is Hillary Clinton?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-video-launch/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 20:22:19</td><td>Clinton waves as she speaks to supporters at the National Building Museum on June 7, 2008, in Washington.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-video-launch/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 20:22:19</td><td>Before she married Bill Clinton, she was Hillary Rodham.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-social-media-reax-feat/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 22:44:40</td><td>Hillary Clinton has stolen our innovative WikiLeaks twitter logo design.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-social-media-reax-feat/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 22:44:40</td><td>She also is a member of the Clinton Foundation board of directors.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150410133757-04-hillary-clinton-homepage-large-169.jpg'></td><td>2015-04-16 11:50:39</td><td>Who is Hillary Clinton?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201504/941/1745097732_4176749831001_7cfde8ff87bbe1013c67669a1167d617-tmb1.jpg?pubId=1745097732'></td><td>2015-04-20 02:36:15</td><td>"Also, the family respectfully asks that you do not vote for Hillary Clinton in 2016. R.I.P. Grandaddy," the obituary read.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 12:26:02</td><td>He later said: "We can win, we must win, we will win. It is critical we beat Hillary Clinton."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-17 18:42:02</td><td>Carly Fiorina, the lone Republican woman eying the White House, wants to block Hillary Rodham Clinton from playing the "gender card" in the 2016 presidential race.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/876/493/DEM 2016 Clinton_Cham(9)640360.jpg?ve=1&tl=1'></td><td>2015-04-17 06:45:45</td><td>"There is something wrong when hedge fund managers pay lower tax rates than nurses or the truckers that I saw on I-80 as I was driving here over the last two days," Clinton said Tuesday during an appearance in Iowa.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 00:01:19</td><td>Hillary Clinton heads to New Hampshire after Iowa kickoff</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 18:36:27</td><td>Hillary Clinton to visit New Hampshire next week</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/141229162900-clintons-split-story-top.png'></td><td>2015-04-16 02:12:17</td><td>Clinton Foundation to continue accepting foreign money during Hillary's run</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 01:13:08</td><td>Her campaign spokesperson, Adrienne Elrod, told Buzzfeed Wednesday, "Hillary Clinton supports marriage equality and hopes the Supreme Court will come down on the side of same-sex couples being guaranteed that constitutional right."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 10:58:57</td><td>Hillary Clinton Was Asked About Email 2 Years Ago</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 00:24:32</td><td>(AP) - The gravestone of Hillary Rodham Clinton's father has been found toppled over at a Pennsylvania cemetery.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/cmsmedia/c0/d2/d36674df4e07872258adfed322c9/the-run-2016.jpg'></td><td>2015-04-14 21:13:00</td><td>Hillary Clinton participates in a roundtable discussion with students and educators during a campaign event at the Kirkwood Community College April 14 in Monticello, Iowa.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-14 14:53:25</td><td>Hillary Clinton?s campaign comes back to Iowa, hoping for better result</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:17:46</td><td>Among them is Hillary Clinton.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/13/23/278A078200000578-3036527-image-a-17_1428963949012.jpg'></td><td>2015-04-14 05:01:34</td><td>Hillary Clinton spotted in Ohio Chipotle, but NO ONE recognized her</td></tr>
+</table></body></html>

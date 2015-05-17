@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 36,
+            values: [ 36 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 11:05:00</td><td><a href='apple_49.html'>Trader Joe's Sweet Apple Chicken Sausage is recalled (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 23:55:00</td><td><a href='apple_50.html'>Some Apple Watch buyers who thought they would have to wait until June to receive their new gadgets will get them sooner, Apple said on Wednesday. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 00:17:58</td><td><a href='apple_51.html'>But Apple Inc. is now contacting some customers who were originally told to expect a lengthy wait time and letting them know their watches could arrive sooner. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 21:09:14</td><td><a href='apple_52.html'>Apple Watch goes on sale worldwide amid supply shortage (15)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 00:01:58</td><td><a href='apple_53.html'>Apple Watch buyers will not be able to walk out of an Apple Store with the new wearable when it launches today, but that does not mean you cannot get it elsewhere. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 09:00:51</td><td><a href='apple_54.html'>Researcher IHS expects shipments of more than 19 million Apple Watches this year, more than five times the number of all smartwatches shipped globally in 2014. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 15:10:37</td><td><a href='apple_55.html'>Go to "Passbook & Apple Pay" on the phone app to enable mobile payments at retail stores. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 02:02:33</td><td><a href='apple_56.html'>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging. (4)</a></td></tr>
+</table></body></html>

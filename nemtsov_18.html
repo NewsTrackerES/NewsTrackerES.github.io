@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/9df7353532af727958ae811bca7ce1f80ed93be8_140x93.jpg'></td><td>2015-03-07 10:35:15</td><td>Many believe that Nemtsov's death in a tightly secured area near the Kremlin wouldn't have been possible without official involvement, and could be an attempt to scare other government foes.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/9df7353532af727958ae811bca7ce1f80ed93be8_140x93.jpg'></td><td>2015-03-07 10:35:15</td><td>Putin, who had dubbed Nemtsov's killing a "provocation," made no comment on the detentions announced Saturday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/9df7353532af727958ae811bca7ce1f80ed93be8_140x93.jpg'></td><td>2015-03-07 10:35:15</td><td>He said they were "suspected of carrying out this crime," but it wasn't clear if either of the suspects was believed to have fired the shots that killed Nemtsov as he and a companion walked over a bridge near the Kremlin on Feb. 27.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 13:14:30</td><td>One of Nemtsov's closest allies in the opposition, Ilya Yashin, said on Fcebook after the announcement that "It's hard to judge whether these are the real performers of if the investigation went down a false track."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/nemtsov2-e1425386613209.jpg?w=620'></td><td>2015-03-07 14:07:51</td><td>He blamed Western security services for Nemtsov's killing.</td></tr>
+</table></body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 20,
+            values: [ 20 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-26 16:47:07</td><td>WASHINGTON (Reuters) - A U.S. patient being treated for the Ebola virus at a National Institutes of Health facility in Maryland has improved to serious condition from critical, the NIH said on Thursday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 20:32:31</td><td>That person has shown no symptoms, is not diagnosed with Ebola and is expected to "voluntarily self-isolate" for a 21-day incubation period.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 20:32:31</td><td>The patient is the 11th person with Ebola to be treated in the U.S. and the second admitted to the NIH Clinical Center.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 20:32:31</td><td>None of the volunteers in Sierra Leone who had contact with the NIH patient have tested positive for Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 20:32:31</td><td>Like Emory, NIH has one of the few specialized isolation units nationwide set up to treat Ebola patients.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/17/25/7664964/3/622x350.jpg'></td><td>2015-03-16 20:01:23</td><td>The National Institutes of Health said it has no other pending admissions of additional patients with the Ebola virus or who have been exposed to Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/17/25/7664964/3/622x350.jpg'></td><td>2015-03-16 20:01:23</td><td>The latest NIH patient is the 11th person with Ebola to be treated in the U.S. Two patients in the U.S. have died: a man treated in Dallas after contracting the virus in Africa and a doctor evacuated from Africa to Nebraska when he was already critically ill.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/17/25/7664964/3/622x350.jpg'></td><td>2015-03-16 20:01:23</td><td>One of those being monitored in Nebraska has developed symptoms of Ebola and was being moved to an isolation unit, hospital officials said in a news release Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s1.yimg.com/bt/api/res/1.2/g0ju0lZzB262Q6jVYAHQpw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://l.yimg.com/os/publish-images/news/2015-03-16/eda5e270-cc02-11e4-a9fe-4556b2e965b1_AP220148595177crop.jpg'></td><td>2015-03-16 20:01:43</td><td>American who contracted Ebola now in critical condition</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 21:00:51</td><td>Since last summer, several U.S. aid workers have gotten Ebola and have been flown back to the U.S. for care.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/aCyi3dWFCNde5TsNkC..vg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/bf6e20523f5c0b0c710f6a70670054fd.jpg'></td><td>2015-03-17 21:44:44</td><td>On Tuesday, March 17, 2015, health officials said four more medical aid workers have been flown from West Africa to the United States, for monitoring for Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/B6XoNPyDSIIGi.USqNQVjA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6f4c10e09090774b7306c58a80c185f635d3a919.jpg.cf.jpg'></td><td>2015-03-19 01:36:43</td><td>NEW YORK (AP) - Health officials say two more American aid workers arrived in the United States on Wednesday night to be monitored for Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/B6XoNPyDSIIGi.USqNQVjA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6f4c10e09090774b7306c58a80c185f635d3a919.jpg.cf.jpg'></td><td>2015-03-19 01:36:43</td><td>All are connected to an unidentified American who returned to the U.S. last week after he came down with Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:20:18</td><td>American who caught Ebola improves to fair condition</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/30/article-doc-1g2xt-6XQ3WUJ7BHSK2-740_634x421.jpg'></td><td>2015-03-30 17:08:58</td><td>An American nurse, Nina Pham, was treated at the NIH Clinical Center after she was infected with the Ebola virus at a Texas hospital by a Liberian, Thomas Eric Duncan, who had initially been misdiagnosed.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 21:30:57</td><td>Sheila Davis, chief of Ebola response for Boston-based Partners In Health, said the group is "heartened by the news that our colleague is heading home, free of Ebola, and making his way toward a full recovery."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 16:02:41</td><td>Such measures not only interfere with international travel and impact local economies, but also hamper Ebola response and recovery efforts because they make it more difficult for aid workers to move in and out of the affected countries, Aylward said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 13:26:32</td><td>The WHO believes West Africa's Ebola epidemic still poses a threat to other countries, but the risk of it spreading internationally appears to be diminishing.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 11:27:49</td><td>The Ebola virus outbreak in West Africa created a rare opportunity: New vaccines could be tested, and if they worked, serve as a firewall in future epidemics.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/dpawrewOVLzI5cWf3zq3Ag--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5MztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-09T192549Z_1_LYNXMPEB380WW_RTROPTP_2_HEALTH-EBOLA-VACCINES.JPG'></td><td>2015-04-09 19:25:49</td><td>The General Auditing Commission (GAC) report covering the period from August to October 2014 analyzed more than $13 million spent by the National Ebola Trust Fund (NETF).</td></tr>
+</table></body></html>

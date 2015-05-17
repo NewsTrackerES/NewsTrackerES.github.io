@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ 7 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 18:00:25</td><td>NEW YORK - Facebook is pushing for higher pay and improved benefits for the janitors, cooks and other workers who support its employees.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 18:00:25</td><td>Facebook pushes to improve benefits, pay for contractors</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 18:00:25</td><td>The world's largest online social network says it is implementing a set of new standards for its U.S.-based contractors who do a "substantial amount of work" with Facebook.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-05-13 19:03:55</td><td>Facebook had originally planned to announce the changes last Monday, as the standards are already in place for some workers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 21:51:33</td><td>"Facebook did the right thing in making sure that workers are paid a minimum of $15 an hour," said Kendall Fells, National Organizing Director of the Fight for $15.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 21:51:33</td><td>" If Facebook can raise pay to $15, so can McDonald's."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 21:51:33</td><td>The changes went into effect April 1, a month before Facebook's.</td></tr>
+</table></body></html>

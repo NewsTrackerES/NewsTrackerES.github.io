@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>The Iraqi national was reportedly killed in a firefight with Syrian rebels in January 2014, but not before he had helped secure swathes of Syria, which in turn strengthened Islamic State's position in neighboring Iraq.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>In 2010 however, it was Bakr and a small group of former Iraqi intelligence officers who made Abu Bakr al-Baghdadi the official leader of Islamic State, with the goal of giving the group a "religious face", the story says.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>"It was not a manifesto of faith, but a technically precise plan for an 'Islamic Intelligence State' -- a caliphate run by an organization that resembled East Germany's notorious Stasi domestic intelligence agency."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>Spiegel said it had obtained the papers after lengthy negotiations with rebels in the Syrian city of Aleppo, who had seized them when Islamic State was forced to abandon its headquarters there in early 2014.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>The story argues that the secret to Islamic State's success lies in its combination of opposites - the fanatical beliefs of one group and the strategic calculations of another, led by Bakr.</td></tr>
+</table></body></html>

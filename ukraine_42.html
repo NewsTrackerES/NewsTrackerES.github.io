@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/ukraine_ceasefire_holds_march_7_2015.jpg'></td><td>2015-03-07 22:08:10</td><td>Alexander Zakharchenko, the head of the self-proclaimed Donetsk People's Republic, accused Ukraine's government of failing to live up to its side of the agreement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/y/8/k/q/image.related.articleLeadwide.620x349.13y83g.png/1425788655373.jpg'></td><td>2015-03-08 02:49:25</td><td>The accord also commits Kiev and the rebels to exchange all prisoners and to negotiate a change to Ukraine's constitution by the end of 2015, in order to give rebel-held areas more autonomy.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/y/8/k/q/image.related.articleLeadwide.620x349.13y83g.png/1425788655373.jpg'></td><td>2015-03-08 02:49:25</td><td>After a blood-soaked start to the truce - as the rebels fought on to seize the transport hub of Debaltseve - eastern Ukraine regained a measure of peace in the past two weeks.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/y/8/k/q/image.related.articleLeadwide.620x349.13y83g.png/1425788655373.jpg'></td><td>2015-03-08 02:49:25</td><td>"We have fully removed heavy weapons from the line of contact. Ukraine has not yet done it," he told the separatist news agency DAN, threatening to redeploy the arms if Kiev did not match the de-escalation.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/0/j/3/2/image.related.articleLeadwide.620x349.140j09.png/1425991978986.jpg'></td><td>2015-03-10 12:53:18</td><td>British Foreign Secretary Philip Hammond on Tuesday accused Russian President Vladimir Putin of undermining other former Soviet republics, besides Ukraine.</td></tr>
+</table></body></html>

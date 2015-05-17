@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ 10 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:42:04</td><td>OTTAWA (Reuters) - Canada will expand its military mission against Islamic State by launching air strikes against its positions in Syria as well as Iraq, Prime Minister Stephen Harper said on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:42:04</td><td>Harper told legislators that Canada must strike at the Syrian power base of the Islamic State, formally known as the Islamic State of Iraq and the Levant (ISIL).</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:42:04</td><td>Canada now has around 70 special forces troops operating in northern Iraq and six Canadian jets are taking part in U.S.-led bombing missions against Islamic State in Iraq.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:42:04</td><td>That will make Canada the second NATO member nation after the United States to attack Islamic State positions in Syria, which have also been hit by jets from Jordan and the United Arab Emirates.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 01:05:00</td><td>TORONTO (Reuters) - Canadian legislators on Monday voted to back the government's plans to bomb Islamic State positions in Syria, a move that opposition parties say threatens to drag Canada into a long war.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/30/22/2725E94D00000578-0-image-m-18_1427752554062.jpg'></td><td>2015-03-31 02:02:46</td><td>Prime Minister Stephen Harper, who has made security a main plank of his platform in the run-up to an October election, last week said Canada needed to strike against Islamic State safe havens in Syria.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:30:06</td><td>Bombers, fighters and attack aircraft hit Islamic State targets near several cities, including Mosul and Tikrit in seven strikes during a 24-hour period, it said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 13:46:12</td><td>The Syrian Observatory for Human Rights, which uses a network of contacts to monitor the four-year-old civil war, said Islamic State fighters had killed entire families and the dead included people who had been burnt to death.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 10:06:04</td><td>Syrian media: Islamic State attacks government-held village</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46753063,width-300,resizemode-4/Stephen-Harper.jpg'></td><td>2015-03-31 02:38:31</td><td>OTTAWA: Canadian lawmakers voted on Monday to extend a campaign of airstrikes against the Islamic State group and for the first time strike at them in Syria as well as in Iraq.</td></tr>
+</table></body></html>

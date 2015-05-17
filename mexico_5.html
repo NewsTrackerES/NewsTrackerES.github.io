@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 13:58:50</td><td>Official: Mexico arrests Zetas leader Omar Trevino Morales</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 14:03:00</td><td>The suspect is the brother of Miguel Angel Trevino Morales, described as the most bloodthirsty leader of Mexico's most violent cartel.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 14:03:00</td><td>"The truth is that this is a group that has been fragmented," Javier Oliva, an expert on the drug war at Mexico's National Autonomous University, said of the Zetas.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 14:03:00</td><td>But much of the violence along Mexico's northeast border now is due to internal battles among Gulf cartel factions.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 15:49:05</td><td>Founded by army deserters in the late 1990s, the Zetas initially acted as enforcers for the Gulf Cartel, based along the border with Texas and one of the oldest organized crime groups in Mexico.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 15:49:05</td><td>But the group struck out on its own in early 2010, setting off the most violent phase in Mexico's drug war.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 16:14:00</td><td>Authorities from Mexico and the US blame the Zetas for several atrocities carried out by gangs in a wave of violence that has claimed more than 100,000 lives since 2007.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 16:03:28</td><td>The group, founded by former elite soldiers, was originally the armed enforcer of the Gulf Cartel until the two groups split in 2010, unleashing a wave of violence in northern Mexico.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdnph.upi.com/sv/em/i/UPI-3111425475335/2015/1/14254754567806/Los-Zetas-drug-cartel-leader-Omar-Trevino-Morales-arrested-in-Mexico.jpg'></td><td>2015-03-04 13:46:41</td><td>The Los Zetas group is believed to be behind rising violence in Mexico.</td></tr>
+</table></body></html>

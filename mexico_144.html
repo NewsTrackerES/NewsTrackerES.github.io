@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ 12 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:50:13</td><td><a href='mexico_16.html'>MEXICO CITY (AP) " A violent attempted jailbreak and the discovery of two hacked-up bodies is once again raising fears that provincial drug cartel violence is finding its way into Mexico City. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 21:30:50</td><td><a href='mexico_17.html'>The government said it would divide 50 million pesos ($3.31 million) between 13 families over the killings last June in Tlatlaya, on the southern fringes of the State of Mexico. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 03:25:13</td><td><a href='mexico_18.html'>Mayoral candidate shot to death in Mexico's restive Michoacan state; 2nd killing this month (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 20:55:29</td><td><a href='mexico_19.html'>MEXICO CITY (AP) - A candidate for mayor was shot to death in western Mexico and a man running for city council was gunned downed in southern Mexico, bringing to at least three the number of candidates killed in the run-up to the June 7 midterm elections. (2)</a></td></tr>
+</table></body></html>

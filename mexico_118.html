@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ 5 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:01:22</td><td>Ramirez-Granados was allegedly part of a family group that tricked, threatened, beat and abused at least 25 women from Mexico to force them to work as prostitutes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:01:22</td><td>Mexico Arrests Suspect in Forced-Prostitution Ring</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:01:22</td><td>U.S. Immigration and Customs Enforcement said Thursday that Paulino Ramirez-Granados had been arrested in the small town of Tenancingo in central Mexico.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:05:13</td><td>MEXICO CITY (AP) " U.S. officials say they have joined with Mexican authorities to arrest one of the leaders of a forced-prostitution ring that operated in the New York City area.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/02/2827725000000578-0-image-m-113_1430359016476.jpg'></td><td>2015-04-30 21:50:42</td><td>According to ICE, the gang would befriend or romance young, uneducated women and then pressure or coerce them into prostitution in Mexico.</td></tr>
+</table></body></html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td>New Mexico is touting a rural area in the southeastern part of the state as an interim storage site for the country's high-level nuclear waste, according to a letter issued by Gov. Susana Martinez earlier this month.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td>New Mexico is not the only state competing to be the interim dumping ground for nuclear waste.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td>Others, however, have reservations about opening New Mexico to radioactive waste.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td>He also expressed concern that Martinez seems to be focused on just bolstering southeastern New Mexico.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td>"Time and time again, the citizens of southeastern New Mexico have impressed me with their hard work ethic and willingness to tackle national problems that many others consider to be unsolvable," Martinez wrote.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td>With no plans for a permanent repository facility, a site in New Mexico could end up being the final destination for spent fuel.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:16:10</td><td>Martinez also praised southeastern New Mexico residents for being able to "carve out a niche in the nuclear industry."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 05:08:51</td><td>Two counties in southeastern New Mexico have joined the race to build an interim storage site to house spent nuclear fuel from the nation's reactors.</td></tr>
+</table></body></html>

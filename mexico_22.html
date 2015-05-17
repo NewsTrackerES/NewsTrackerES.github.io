@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ 8 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674862231_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-13 18:39:28</td><td>Mexico, a strongly Roman Catholic nation, has been wracked by drug violence in the past decade.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674862231_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-13 18:39:28</td><td>MEXICO CITY - The devil is punishing Mexico with criminal violence, Pope Francis said, just a few weeks after the Mexican government complained that the Pontiff had stigmatized the country as a breeding ground for gangland chaos.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674862231_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-13 18:39:28</td><td>Arguing that the devil was angry with Mexico for its Christian faith, Francis said "everyone had to put their back into resolving" the criminal malaise afflicting the country.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674862231_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-13 18:39:28</td><td>"I think the devil is punishing Mexico with great fury," the 78-year-old Francis told Mexican television in an interview broadcast late on Thursday when discussing the disappearance and apparent massacre of 43 Mexican students last year.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/13/PopeFrancis1_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-13 18:43:04</td><td>The disappearance of the 43 trainee teachers in the southwestern city of Iguala in late September sparked international condemnation of the security situation in Mexico.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/13/PopeFrancis1_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-13 18:43:04</td><td>"Clearly it is a technical term. It has nothing to do with the dignity of Mexico. Like when we talk about Balkanization, neither the Serbs, nor Macedonians nor Croats get angry," Francis said, referring to his use of the word Mexicanization.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/13/PopeFrancis1_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-13 18:43:04</td><td>Mexico said the young men were abducted by corrupt police, handed over to a local drug gang, then incinerated, triggering President Enrique Pena Nieto's deepest political crisis.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/13/PopeFrancis1_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-13 18:43:04</td><td>Mexico quickly sent a letter of protest to the Vatican, which said it had not meant to offend the country.</td></tr>
+</table></body></html>

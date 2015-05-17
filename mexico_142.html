@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ 16 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:33:35</td><td><a href='mexico_13.html'>GUADALAJARA, Mexico (AP) - Authorities in western Mexico are asking residents to stay at home as they scramble to extinguish burning vehicles blocking roads in various parts of Guadalajara. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 00:02:18</td><td><a href='mexico_14.html'>Though the official homicide toll in Jalisco has fallen since Pena Nieto took office in December 2012, the president identified the state as one of the areas most at risk when he set out plans to improve security in Mexico last November. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-07 00:00:49</td><td><a href='mexico_15.html'>HERMOSILLO, Mexico (AP) - Authorities in the northern Mexican state of Sonora say drug cartel groups are behind a string of murders in a disputed corridor along the U.S. border. (2)</a></td></tr>
+</table></body></html>

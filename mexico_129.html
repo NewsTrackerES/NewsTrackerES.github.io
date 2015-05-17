@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ 9 ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 19:03:14</td><td>MEXICO CITY (AP) " Mexico is marking six months since 43 students disappeared after being taken into police custody, events that captured national and international attention.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 19:03:14</td><td>Parents and their supporters plan to march Thursday in Mexico City.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:19:56</td><td>MEXICO CITY - Parents of 43 missing students marked the six-month anniversary of their disappearance Thursday by marching to the federal elections office in Mexico City to ask that elections scheduled for June in the southwestern state of Guerrero be suspended.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:20:07</td><td>26, to collect money and hijack buses - a common practice - so that they could attend upcoming commemoration events in Mexico City.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/35/31/7722591/5/square_gallery_thumb.jpg'></td><td>2015-03-27 01:25:09</td><td>A protester destroys an election campaign poster, during a march in Chilpancingo, Mexico, Thursday, March 26, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/35/31/7722591/5/square_gallery_thumb.jpg'></td><td>2015-03-27 01:25:09</td><td>An emergency worker tries to extinguish a burning passenger van after protesters set it ablaze in the city of Chilpancingo, Mexico, Thursday, March 26, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/LXiq6OZywPKynB3p3mYYPw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f4cec7b7b2e6e70d710f6a7067001738.jpg'></td><td>2015-03-27 01:25:19</td><td>Mexico march marks 6 months since 43 students disappeared</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/International/WireAP_52fdeeace7b743c3b1a01417b102db27_16x9_992.jpg'></td><td>2015-03-27 01:26:05</td><td>At the march's conclusion, Maria Elena Guerrero, the mother of a missing student, stood atop a stage and said her pain had turned to fury against Mexico's government in the months since her son disappeared.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/14/27041D5A00000578-0-image-m-121_1427381409462.jpg'></td><td>2015-03-27 01:26:35</td><td>MEXICO CITY (AP) - Parents of 43 missing students marked the six-month anniversary of their disappearance with a march of a few thousand supporters Thursday, urging the country not to abandon them but drawing far smaller numbers than rallies last year.</td></tr>
+</table></body></html>

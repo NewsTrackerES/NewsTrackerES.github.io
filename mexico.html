@@ -18,7 +18,7 @@
             range: false,
             min: 0,
             max: 424,
-            value: pos,
+            value: 4,
             slide: function( event, ui ) {
               var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
@@ -30,6 +30,7 @@
               }
             }
           });
+          $( "#slider-range" ).slider("value", 2);
         });
       });
 
@@ -41,7 +42,7 @@
       }
     </script>
   </head>
-  <body role="document" onLoad='$( "#slider-range" ).slider("value", 2);'>
+  <body role="document">
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">

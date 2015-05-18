@@ -20,26 +20,22 @@
             max: 424,
             values: [getParameterByName("pos")],
             slide: function( event, ui ) {
-              var table = document.getElementById("MyTable");
-              for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
-                  $(row).show();
-                } else {
-                  $(row).hide();
-                }
-              }
+              threshold( ui.values[0] );
             }
           });
         });
-              var table = document.getElementById("MyTable");
+      });
+
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= getParameterByName("pos")) {
+                if ($(row.cells[0]).html() <= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
                 }
               }
-      });
+      }
 
       function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");

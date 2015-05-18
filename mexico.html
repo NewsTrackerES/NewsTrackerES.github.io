@@ -28,8 +28,8 @@
                   $(row).hide();
                 }
               }
-            },
-            create: function( event, ui ) {
+            }
+          });
               var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
                 if ($(row.cells[0]).html() <= getParameterByName("pos")) {
@@ -38,9 +38,7 @@
                   $(row).hide();
                 }
               }
-            }
-          });
-          //$( "#slider-range" ).slider("values", getParameterByName("pos"));
+
         });
       });
 

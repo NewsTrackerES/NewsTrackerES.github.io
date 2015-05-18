@@ -31,7 +31,19 @@
             }
           });
         });
+
+        var pos = getParameterByName("pos");
+        if (pos != "") {
+           $("#slider-range").slider("values", pos);
+        }
       });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
     </script>
   </head>
   <body role="document">

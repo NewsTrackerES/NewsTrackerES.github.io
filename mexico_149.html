@@ -13,32 +13,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        var pos = getParameterByName("pos");
         $(function() {
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
             max: 34,
-            values: [  ],
+            values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
-              var table = document.getElementById("MyTable");
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
-                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                if ($(row.cells[0]).html() <= threshold ) {
                   $(row).show();
                 } else {
                   $(row).hide();
                 }
               }
-            }
-          });
-        });
-      });
-
+      }
       function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 34 : decodeURIComponent(results[1].replace(/\+/g, " "));
+        return results === null ? 34 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>

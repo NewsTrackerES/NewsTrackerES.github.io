@@ -18,7 +18,7 @@
             range: false,
             min: 0,
             max: 424,
-            values: [ getParameterByName("pos") ],
+            values: [getParameterByName("pos")],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
             }
@@ -26,6 +26,7 @@
           showRows(getParameterByName("pos"));
         });
       });
+
       function showRows( threshold ) {
         var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
@@ -36,6 +37,7 @@
                 }
               }
       }
+
       function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),

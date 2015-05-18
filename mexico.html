@@ -12,7 +12,6 @@
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      var pos = 2;//getParameterByName("pos");
       $(document).ready(function() {
         $(function() {
           $( "#slider-range" ).slider({
@@ -42,7 +41,7 @@
       }
     </script>
   </head>
-  <body role="document">
+  <body role="document" onLoad='$( "#slider-range" ).slider("value", 2);'>
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">

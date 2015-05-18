@@ -18,7 +18,7 @@
             range: false,
             min: 0,
             max: 424,
-            values: [40],
+            values: [getParameterByName("pos")],
             slide: function( event, ui ) {
               var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
@@ -30,7 +30,7 @@
               }
             }
           });
-          $( "#slider-range" ).slider("values", getParameterByName("pos"));
+          //$( "#slider-range" ).slider("values", getParameterByName("pos"));
         });
       });
 

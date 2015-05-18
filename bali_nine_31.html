@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 05:46:03</td><td>Probe bribery claim: Bali Nine lawyer</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:02:37</td><td>Muhammad Rifan, the lawyer who represented the Bali Nine pair when they were sentenced to death in 2006, has told Fairfax Media judges asked for more than $130,000 for a lighter sentence.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 17:35:10</td><td>Bali Nine execution U-turn urged</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 17:35:10</td><td>The Bali Nine pair was told on Saturday they will be executed as soon as Tuesday, a moment preserved by Sukumaran who signed one of three self-portraits "72 hours just started".</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 00:02:34</td><td>As Bali Nine ringleaders Myuran Sukumaran and Andrew Chan face imminent execution, Australia is urging Indonesia to make sure all judicial processes are cleared of corruption.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/26/10/280509AB00000578-3055919-image-a-1_1430041561618.jpg'></td><td>2015-04-27 05:05:31</td><td>Bali-based lawyer Muhammad Rifan said he had meetings with judges, who allegedly started demanding more money to deliver a prison sentence of 20 years or less saying it was 'risky', Fairfax reported.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/u/6/m/u/image.related.articleLeadwide.620x349.1mul9h.png/1430128152622.jpg'></td><td>2015-04-27 09:49:24</td><td>Desperate claims by the former lawyer of the Bali nine pair, Muhammad Rifan, were revealed by Fairfax Media on Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/i/o/5/0/image.related.articleLeadwide.620x349.13inpv.png/1424329400520.jpg'></td><td>2015-02-18 11:29:42</td><td>Hundreds gather in Melbourne for mercy for Bali nine death row prisoners</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/14/6439058/Article%20Lead%20-%20wide983688771mkdz2image.related.articleLeadwide.729x410.1mkdwt.png1428960425383.jpg-620x349.jpg'></td><td>2015-04-13 21:27:13</td><td>Russell Brand speaks out about the death penalty handed to the Bali nine pair in his web series The Trews.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/n/k/1/m/image.related.articleLeadwide.620x349.1mniuk.png/1429254858823.jpg'></td><td>2015-04-17 07:14:34</td><td>April 17 is the 10th anniversary of the Bali nine's arrest for attempting to smuggle 8.3 kilograms of heroin into Australia.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/j/h/z/image.related.articleLeadwide.620x349.1mx9oa.png/1430406386659.jpg'></td><td>2015-04-30 15:06:34</td><td>Bali nine duo's last wish - renewed global push to abolish the death penalty</td></tr>
+</table></body></html>

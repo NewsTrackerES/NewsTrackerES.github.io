@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:01:10</td><td>The WHO said that 17 confirmed Ebola cases had been detected in Forecariah in the week to April 12.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/17/11/27A8DFA100000578-0-image-m-83_1429266918131.jpg'></td><td>2015-04-16 15:02:42</td><td>Sakoba Keita, national coordinator for the fight against Ebola in the West African country, said authorities had also detected 10 suspicious deaths in the community but only one of these had been confirmed as Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/17/11/27A8DFA100000578-0-image-m-83_1429266918131.jpg'></td><td>2015-04-16 15:02:42</td><td>"We have been able to find nine sick people (with Ebola) hiding in Forecariah," Keita told a news conference.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/876/493/660_ebola_guinea_tents.jpg?ve=1&tl=1'></td><td>2015-04-16 15:19:08</td><td>Guinean authorities have confirmed at least nine new cases of Ebola in the southwest region of Forecariah near the border with Sierra Leone, the area hardest hit by the year-old outbreak, a senior health official said on Thursday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/876/493/660_ebola_guinea_tents.jpg?ve=1&tl=1'></td><td>2015-04-16 15:19:08</td><td>Authorities launched a four day, door-to-door campaign in Forecariah on April 12 to improve community participation in reporting suspected cases and as part of an emergency 45-day drive to tackle Ebola in the west of the country.</td></tr>
+</table></body></html>

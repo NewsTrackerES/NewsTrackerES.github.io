@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 21,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 21 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/4hpHe4Qo.s1SRZ50oj05ew--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-02-16T151134Z_1_LYNXMPEB1F0J6_RTROPTP_2_MIDEAST-ISRAEL.JPG'></td><td>2015-02-16 19:09:50</td><td>Netanyahu asked.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/24/wsj-israel-spies-on-us-iran-nuclear-talks/_jcr_content/image.adapt.480.low.Israel_Netanyahu_032415.jpg'></td><td>2015-02-16 19:12:00</td><td>Israeli election chief puts curbs on Netanyahu speech to Congress</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/24/wsj-israel-spies-on-us-iran-nuclear-talks/_jcr_content/image.adapt.480.low.Israel_Netanyahu_032415.jpg'></td><td>2015-02-16 19:12:00</td><td>Netanyahu asked.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/24/wsj-israel-spies-on-us-iran-nuclear-talks/_jcr_content/image.adapt.480.low.Israel_Netanyahu_032415.jpg'></td><td>2015-02-16 19:12:00</td><td>President Barack Obama, at odds with Netanyahu over the Israeli prime minister's criticism of the nuclear talks, will not meet him during his visit, saying it is a breach of protocol to receive a foreign leader before an election.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:49:43</td><td>Overall, however, Netanyahu's Likud party remains marginally ahead, with most polls expecting it to win 24 or 25 seats in the 120-seat parliament, just ahead of the centre-left opposition.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:49:43</td><td>Even if the centre-left wins, most analysts expect Netanyahu will be the only one able to form a workable coalition among right-wing and religious parties, allowing him to return as prime minister for a fourth term.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:49:43</td><td>In Israel, Netanyahu has been roundly criticised even by some of his right-wing allies, mostly for appearing to put his ties to the Republican Party ahead of the close relationship Israel has always had with the United States.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:49:43</td><td>Netanyahu asked.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:49:43</td><td>A survey by Army Radio showed 47% thought Netanyahu should cancel the address, while 34% said he should go ahead with it.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 20:49:43</td><td>But Netanyahu appeared to rule out to any change of plans, saying he was determined to honour the invitation.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/7335172/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F86%2F59%2F7a8e4f3648ea916fd5d23da8b8b3%2F150302-bibiaipac-editorial.jpg'></td><td>2015-03-02 17:26:00</td><td>"I deeply appreciate all that President Obama has done for Israel - security cooperation, intelligence sharing, support at the U.N. and much more," Netanyahu said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 07:15:05</td><td>Republicans loudly cheered Netanyahu in the packed chamber, repeatedly standing.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/a/k/a/image.related.articleLeadwide.620x349.13uai6.png/1425411065027.jpg'></td><td>2015-03-03 20:12:15</td><td>Hold out for a "better" nuclear deal with Iran urges Israeli PM Benjamin Netanyahu, during his much anticipated speech to the US Congress.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/hk9w7eLKehcmJNufqLk0NA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T204841Z_1421125006_GM1EB3I0D8401_RTRMADP_3_ISRAEL-ELECTION-EXITPOLLS.JPG'></td><td>2015-03-17 20:50:56</td><td>"Against all odds: a great victory for Likud, a great victory for the national camp led by Likud, a great victory for the people of Israel," Netanyahu wrote on his official Twitter account.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/17/efdb55c33fdb0e0c710f6a7067009049_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-17 23:23:26</td><td>Some say Netanyahu has a better chance than Herzog of cobbling together a government, by courting his "natural allies," rightist and religious parties.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 04:30:00</td><td>"It is clear that Prime Minister Benjamin Netanyahu will form the next government, so we say clearly that we will go to the International Criminal Court in the Hague and we will speed up, pursue and intensify," all diplomatic efforts, chief negotiator Saeb Erakat said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 14:23:04</td><td>Netanyahu's right-wing Likud Party scored a resounding victory in Israel's election, final results showed Wednesday, a stunning turnaround after a tight race that had put his lengthy rule in jeopardy.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.dw.de/image/0,,17128650_303,00.jpg'></td><td>2015-03-19 23:00:00</td><td>Benjamin Netanyahu says the Palestinian Authority should cut out Gaza Strip rulers Hamas and engage Israel in "genuine" peace talks.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-19 23:50:02</td><td>The White House official said in the phone call Obama "also discussed Prime Minister Netanyahu's comments about Israeli Arabs" but gave no details.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 22:43:42</td><td>In a pre-election interview with an Israeli news site, Netanyahu answered "indeed" when asked directly whether there would be no Palestinian state if he were to win another term as prime minister.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 03:32:00</td><td>"Netanyahu's regret is no more than an empty gesture intended to legitimize the continued racist rule of Netanyahu and his people."</td></tr>
+</table></body></html>

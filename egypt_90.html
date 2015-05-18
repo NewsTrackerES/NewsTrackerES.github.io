@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 30,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 30 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 06:45:54</td><td><a href='egypt_34.html'>ISMAILIA, Egypt (Reuters) - Gunmen attacked several checkpoints in Egypt's Sinai Peninsula on Thursday, killing at least five soldiers, security sources said. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:05:46</td><td><a href='egypt_35.html'>Militant attacks in Egypt's restive Sinai kill 2 soldiers, police conscript, officials say (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 08:46:00</td><td><a href='egypt_46.html'>Gunmen opened fire on the soldiers at security checkpoints in Sheikh Zuweid and Rafah, the crossing point between Egypt and the Gaza Strip. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 10:01:42</td><td><a href='egypt_47.html'>Egypt is gradually recovering from years of political turmoil following the ouster of autocrat Hosni Mubarak in 2011 and foreign investors are starting to return. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 20:51:18</td><td><a href='egypt_48.html'>On Tuesday, President Barack Obama released military aid to Egypt suspended after Morsi's 2013 ouster, in an effort to boost Cairo's ability to combat the extremist threat in the region. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 09:59:20</td><td><a href='egypt_61.html'>EL-ARISH, Egypt (AP) - Military officials say a roadside bomb has hit an armored vehicle in Egypt's restive northern Sinai, killing five soldiers, including an officer. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 15:03:31</td><td><a href='egypt_62.html'>ISMAILIA, Egypt (Reuters) - Egypt's military said a bomb detonated by militants killed six soldiers and wounded two others in Egypt's North Sinai on Sunday, a region beset by Islamist insurgents. (4)</a></td></tr>
+</table></body></html>

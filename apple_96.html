@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 178,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 178 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 15:11:32</td><td><a href='apple_3.html'>Get on that, Apple. (28)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 12:17:04</td><td><a href='apple_4.html'>Some 46% of respondents said that the Apple Watch had a "cool factor." (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 17:33:49</td><td><a href='apple_8.html'>You'll need a smart TV with the right apps included or a streaming device such as Roku, Apple TV, Xbox or PlayStation. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 19:59:14</td><td><a href='apple_9.html'>Social media chatter about the Apple watch was 15% positive and 5% negative in the week following Apple's event, according to an analysis that the firm Networked Insights conducted for Reuters. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:34:43</td><td><a href='apple_27.html'>It's almost here! First look at the Apple Watch (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 20:29:26</td><td><a href='apple_28.html'>Shipments of the highly anticipated Apple Watch are reportedly being slowed by a faulty component manufactured by one of Apple's suppliers in China. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 15:59:57</td><td><a href='apple_29.html'>The Apple Watch is a computer built to spend it better. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 18:41:00</td><td><a href='apple_30.html'>"Once you get to know the watch, you realize that Apple carefully observed its rivals' failures and adjusted its product accordingly," says David Pogue at Yahoo. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 06:00:53</td><td><a href='apple_31.html'>Consumers will have their first chance to see and hold the Apple Watch on Friday, April 10, 2015, as Apple stores in the U.S. and eight other markets start previews of Apple's latest product. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 13:00:44</td><td><a href='apple_32.html'>The Apple Watch could make life easier for people on the move, but the gadget got poor marks for battery life and slow-loading apps from reviewers. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:01:32</td><td><a href='apple_33.html'>Based on a survey in the United States on consumer interest in buying the Apple Watch, BMO Capital Markets has cut its estimate for sales to 39 million units though September 2016. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td><a href='apple_35.html'>Apple's device will likely account for 55 percent of global smartwatch shipments this year in a market worth about $11 billion, according to market analysis group Societe Generale. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 07:01:29</td><td><a href='apple_37.html'>Customers will be able to order a Watch while in a store, but this will be done through an Apple store employee and via the company's internal online store. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 08:45:37</td><td><a href='apple_38.html'>Customers demonstrate Apple products in front of the advertisement wall of Apple Watch at an Apple Store in Tokyo as Apple Watch made its debut Friday, April 10, 2015. (16)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 04:47:05</td><td><a href='apple_39.html'>An Apple Watch is displayed at 'Apple Watch at Isetan Shinjuku' inside Isetan Shinjuku department store in Tokyo April 10, 2015. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 12:01:19</td><td><a href='apple_40.html'>NEW YORK - Of the 13 Apple Watch models I tried over two sessions, the one I liked most cost $15,000. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 15:42:23</td><td><a href='apple_41.html'>FILE - In this March 9, 2015 file photo, event attendees get a look at varieties of Apple Watch on display in the demo room after an Apple event in San Francisco. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 08:39:00</td><td><a href='apple_42.html'>Slice Intelligence said that U.S. customers spent an average of $382.83 on the Apple Watch Sport and $707.04 on the Apple Watch. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 11:11:35</td><td><a href='apple_43.html'>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 18:16:01</td><td><a href='apple_49.html'>The Apple Watch, priced from $349 for a basic Sport model to a $17,000 gold timepiece, lets users check email, listen to music and make phone calls when paired with an iPhone. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 20:57:30</td><td><a href='apple_51.html'>Also make sure they know that, wherever they buy, Apple will provide them with a great Personal Setup experience - either online or in our stores. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 23:55:00</td><td><a href='apple_55.html'>In a note to clients on Wednesday, FDR analyst Daniel Ives estimated Apple would take over 2 million pre-orders for the watch and ship 20 million of them in 2015. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 00:35:09</td><td><a href='apple_57.html'>In fact, the only watches on sale on Friday will be at a handful of upscale boutiques and department stores that Apple courted to help position the watch as a fashion item. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 05:52:39</td><td><a href='apple_58.html'>Apple Watch buyers will not be able to walk out of an Apple Store with the new wearable when it launches today, but that does not mean you cannot get it elsewhere. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 02:02:33</td><td><a href='apple_61.html'>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 06:34:20</td><td><a href='apple_67.html'>Apple gave no sales figures for its recently released Apple Watch, but did say the current quarter was off to "an exciting start". (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:03:06</td><td><a href='apple_68.html'>Apple said its board has increased its share repurchase authorization to $140 billion from the $90 billion level announced last year. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 00:08:00</td><td><a href='apple_69.html'>FILE - In this May 11, 2012 file photo, travelers pass the Apple store at New York's Grand Central Terminal. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 17:13:37</td><td><a href='apple_71.html'>But few analysts expressed any doubts about Apple's prospects on Tuesday after the company comfortably beat Wall Street's revenue and profit forecasts. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 13:34:57</td><td><a href='apple_77.html'>"Many factors can affect the performance of the Apple Watch heart rate sensor," the Apple page states. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:27:58</td><td><a href='apple_82.html'>The Apple Watch's heart rate monitor might not work if there is a tattoo on the wearer's wrist. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 12:44:06</td><td><a href='apple_85.html'>9, 2014 file photo, Apple Watches displaying various modes of its exercise tracker app, Activity, are on display during an event in Cupertino, Calif. (2)</a></td></tr>
+</table></body></html>

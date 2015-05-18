@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 20:01:43</td><td>Hillary Clinton has jumped back into US presidential politics, announcing she will again seek the White House in 2016 with a promise to serve as the champion of "everyday Americans".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gen/2826922/images/n-HILLARY-large570.jpg'></td><td>2015-04-11 20:38:10</td><td>Hillary Clinton Campaign To Focus On Economic Security, Opportunity</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gen/2826922/images/n-HILLARY-large570.jpg'></td><td>2015-04-11 20:38:10</td><td>Clinton's husband, Bill, and daughter, Chelsea, are unlikely to appear at her early events.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/playBackIcon.png'></td><td>2015-04-11 21:00:25</td><td>CHICAGO - Hillary Rodham Clinton's presidential campaign will center on boosting middle-class economic security and broadening opportunities for working families.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 22:40:46</td><td>"All Hillary Clinton is offering is a continuation of the same big government ideas that have grown Washington instead of the middle class," RNC spokesman Michael Short said in a statement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c664701/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F31%2F12%2Fefb873234c6f8055960f1f4360f0%2Fresizes%2F500%2Fthumb-3.jpg'></td><td>2015-04-11 23:52:58</td><td>Supporters listen to a speech during the Last Hillary Clinton Rally in New York, Saturday, April 11, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-12 01:00:06</td><td>Rep. Carolyn Maloney, D-N.Y., left, speaks to members of the media during an event called the Last Hillary Clinton Rally in New York, Saturday, April 11, 2015, as part of the "Ready for Hillary" campaign.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-12 01:00:06</td><td>Dozens of supporters, elected officials and Democratic leaders gathered at the fundraiser the day before Hillary Clinton is expected to officially announce her presidential campaign.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/03/2779134C00000578-3035413-image-a-6_1428805528728.jpg'></td><td>2015-04-12 03:01:34</td><td>Hillary Clinton would make a fine US president, Barack Obama told reporters on Saturday, on the eve of the expected launch of her candidacy for the Democratic Party's nod in 2016.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/61/17/7803850/3/920x920.jpg'></td><td>2015-04-12 17:11:19</td><td>FILE - In this March 10, 2015 file photo, Hillary Rodham Clinton speaks to the reporters at United Nations headquarters.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/12/b4/5d/ee04f949c5054149aa3ccdaca2f84565-50105175cc7d470aa1b0467ac5f2367b-2.jpg'></td><td>2015-04-12 17:11:19</td><td>"I would expect Hillary Clinton if she believes in women's rights, she should be calling for a boycott of Saudi Arabia," Paul said on NBC's "Meet the Press."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/62/06/7807387/11/920x920.jpg'></td><td>2015-04-12 23:32:34</td><td>"It would do her well electorally to be firmly on the side of average working people who are working harder than ever and still not getting ahead," said economist Robert Reich, a former labor secretary during the Clinton administration who has known Hillary Clinton for nearly five decades.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 18:19:55</td><td>Hillary Clinton will announce her second run for the presidency on Sunday, starting her campaign as the Democrats' best hope of fending off a crowded field of lesser-known Republican rivals and retaining the White House.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 18:40:54</td><td>ATLANTA - The campaign for Hillary Rodham Clinton says the Democratic presidential candidate plans to be in the early voting state of South Carolina on May 27.</td></tr>
+</table></body></html>

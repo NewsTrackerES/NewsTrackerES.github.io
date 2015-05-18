@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 54,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 54 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 13:52:05</td><td><a href='boko_haram_26.html'>LAGOS, Nigeria (AP) - Nigeria's military says it has no news of the more than 200 schoolgirls kidnapped by Islamic extremists nearly a year ago, despite liberating dozens of towns from the girls' Boko Haram abductors. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 07:01:35</td><td><a href='boko_haram_47.html'>Deborah and 20 other girls from Chibok who escaped Boko Haram captivity are now studying at the American University of Nigeria (AUN) in the northeastern city of Yola. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 23:11:51</td><td><a href='boko_haram_49.html'>At least 2,000 women and girls kidnapped by Boko Haram: Amnesty (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 01:01:35</td><td><a href='boko_haram_50.html'>Amnesty's report said that Boko Haram, meaning Western education is sinful in Hausa, routinely rounded up women and girls after taking control of a town and held them in houses or prisons. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 06:06:03</td><td><a href='boko_haram_51.html'>LAGOS: Nigeria on Tuesday marks the first anniversary of Boko Haram's abduction of 219 schoolgirls from the northeastern town of Chibok, as part of a series of events planned around the world. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 06:12:21</td><td><a href='boko_haram_52.html'>Amnesty International said in a report on Tuesday that Boko Haram has kidnapped at least 2,000 Nigerian women and girls since the start of 2014, many of whom were sexually abused or trained to fight. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 18:02:29</td><td><a href='boko_haram_58.html'>The Sambisa forest in northeast Nigeria is about 100 km (60 miles) from the village of Chibok from where Boko Haram abducted more than 200 secondary school girls a year ago. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 23:11:48</td><td><a href='boko_haram_65.html'>(Reuters) - Nigeria's military rescued another set of women and children who had been kidnapped by Boko Haram militia and were being detained in Sambisa forest where the Islamist group has been holed up, an army spokesman said on Thursday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 21:04:49</td><td><a href='boko_haram_66.html'>Boko Haram battle: Nigerian army rescues 200 girls, 93 women (21)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 21:57:31</td><td><a href='boko_haram_73.html'>Economic strife has been one of the root causes for the rise of Boko Haram, which has exploited the feelings of exclusion among the unemployed and disaffected men in predominantly Muslim northern Nigeria. (3)</a></td></tr>
+</table></body></html>

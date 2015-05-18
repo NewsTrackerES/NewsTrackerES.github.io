@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 13:45:05</td><td>U.S. and Arab forces have been carrying out almost daily air raids against hardline Islamist militant groups in Syria including Islamic State since last September, and U.S.-led forces are also targeting the group in Iraq.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 13:45:05</td><td>This was the first known U.S. special forces operation inside Syria apart from a failed secret effort to rescue a number of U.S. and other foreign hostages held by Islamic State in northeastern Syria last year.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/9ac/news/world/article24466132.ece/ALTERNATES/w220/TOR900_MIDEAST_CRISIS_USA.JPG'></td><td>2015-05-16 13:40:59</td><td>Shortly before the U.S. announcement, Syrian state television said the Syrian army killed an Islamic State leader responsible for oil-related affairs, identifying him as Abu al-Taym al-Saudi.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 13:30:00</td><td>The Pentagon says U.S. commandos have mounted a rare raid in eastern Syria, killing the Islamic State commander in charge of oil fields in a firefight and capturing his wife.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 12:41:00</td><td>The leader, known as Abu Sayyaf, was involved in the Islamic State's military operations and helped direct the group's' illicit oil, gas and financial operations, Carter said in a statement.</td></tr>
+</table></body></html>

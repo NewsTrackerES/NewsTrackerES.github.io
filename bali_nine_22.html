@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 07:55:18</td><td>Bali Nine lawyers lodge new court battle</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 17:33:20</td><td>The administrative court had rejected the Bali Nine pair's challenge in February, determining the decrees by Mr Joko were not within its jurisdiction.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pnfivXJABg0lkJ2uHCV1Ew--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwOTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-01T033607Z_1007000001_LYNXMPEB301A1_RTROPTP_2_CNEWS-US-INDONESIA-EXECUTIONS.JPG'></td><td>2015-04-01 03:36:07</td><td>Sukumaran and Chan were convicted in 2005 of being the ringleaders in a plot by a group called the Bali Nine to smuggle heroin out of Indonesia.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 04:01:31</td><td>Indonesian court to decide on Bali Nine execution appeal on April 6</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/full/public/chan_sukumaran02_1.jpg?itok=ekcIUDnv&amp;mtime=1425496164'></td><td>2015-03-18 10:11:33</td><td>With Jakarta indicating it would prefer to wait all the legal appeals to be heard before killing 10 drug convicts, it means the Bali Nine pair could avoid the firing squad for months.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 17:33:20</td><td>The state administrative court on Monday rejected an appeal for the Bali Nine pair, upholding its earlier decision that presidential clemency isn't within its jurisdiction.</td></tr>
+</table></body></html>

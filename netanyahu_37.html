@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 21:15:01</td><td>Netanyahu infuriated the White House early this month when he delivered a speech to the U.S. Congress criticizing an emerging nuclear deal with Iran.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 21:15:01</td><td>Netanyahu, who already has a testy relationship with President Barack Obama, took a sharp turn to the right in the final days of the campaign, staking out a series of hard-line positions that will put him at odds with the international community.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 09:00:56</td><td>To craft a coalition, Netanyahu will still need the support of Moshe Kahlon, whose upstart Kulanu party captured 10 seats and whose campaign focused almost entirely on bread-and-butter economic issues.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 18:04:53</td><td>On Wednesday, Netanyahu visited the Western Wall in Jerusalem's Old City, a remnant of the biblical Jewish Temple and the holiest site where Jews can pray.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 18:04:53</td><td>Netanyahu surged ahead after a last-minute lurch to the right in which he opposed Palestinian statehood and vowed continued settlement construction.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ufWE32mGTRwCyARe2Z0euw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-NIC-Nic6429750-1-1-0.jpg'></td><td>2015-03-18 18:50:31</td><td>It said Netanyahu had already spoken with rightwing and religious party leaders whose support he will need to form a coalition.</td></tr>
+</table></body></html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 15:54:40</td><td>There is alarm in New Delhi that China's increasing role in the affairs of Nepal, Pakistan, the Maldives and Sri Lanka is a deliberate strategy to encircle India.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 15:54:40</td><td>"A proposed extension of the Qinghai-Tibet Railway to the China-Nepal border through Tibet would boost bilateral trade and tourism as there is currently no rail line linking the two countries," the state-run China Daily reported.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/09/12/276595CE00000578-0-image-a-50_1428580196756.jpg'></td><td>2015-04-09 13:00:45</td><td>A tunnel could be built under Mount Everest as part of a new railway between China and Nepal, it has been revealed.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/04/nepal_cleaning_everest.jpg?w=620'></td><td>2015-04-10 14:33:40</td><td>The proposal underscores China?s influence in Nepal, where Beijing has for some years been building roads and investing billions of pounds in hydropower and telecommunications.</td></tr>
+</table></body></html>

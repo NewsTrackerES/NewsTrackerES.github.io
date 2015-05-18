@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 22:46:29</td><td><a href='ukraine_115.html'>SLAVUTYCH (Ukraine): Ukrainians have marked 29 years since the Chernobyl nuclear disaster, placing wreaths and candles near the plant where work to lay a new seal over the reactor site has been delayed. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 19:19:13</td><td><a href='ukraine_120.html'>Earlier, the interior ministry had warned that high winds were blowing the fire in northern Ukraine towards Chernobyl, where in 1986 a reactor fire led to the world's worst nuclear disaster. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 20:25:07</td><td><a href='ukraine_122.html'>Ukraine's president Petro Poroshenko on Sunday inspected ongoing work on a new 20,000-tonne steel cover - a project estimated to cost more than two billion euros ($2.7 billion). (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 12:33:12</td><td><a href='ukraine_123.html'>An aerial view of a forest fire in the Chernobyl area, Ukraine, Tuesday, April 28, 2015, as fire has engulfed a large sector of woods in the exclusion zone around the destroyed Chernobyl nuclear power plant. (3)</a></td></tr>
+</table></body></html>

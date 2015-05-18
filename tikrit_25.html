@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 17:00:59</td><td>Speaking at an air base where Iraqi planes were taking off to fly sorties over Tikrit, Iraq's Defence Minister Khaled al-Obeidi played down the role of Iranian advisers in the battle.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 17:00:59</td><td>The coalition joined the fray in Tikrit at the request of Iraqi military commanders, but Shi'ite militia commanders publicly rejected any U.S. role in the campaign to retake the jihadist bastion.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150326&i=105962895&w=240&r=105962895-1&t=2'></td><td>2015-03-26 17:57:00</td><td>The mayor of Tikrit said coalition and Iraqi planes were striking the palace complex as well as the northern Qadisiya district, part of which is still held by insurgents, and the Shisheen neighborhood in the south.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150326&i=105962895&w=240&r=105962895-1&t=2'></td><td>2015-03-26 17:57:00</td><td>A spokesman for Iraq's Defense Ministry said the coalition had carried out 17 strikes in Tikrit so far, in addition to 24 by Iraq's own airforce.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150326&i=105962895&w=240&r=105962895-1&t=2'></td><td>2015-03-26 17:57:00</td><td>Two officers in the Tikrit operations center said coalition and Iraqi strikes had targeted parts of the complex used by the militants to store weapons and ammunition.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-26 20:04:19</td><td>Iraqi forces retook the area surrounding Tikrit in the first week of the campaign early this month and entered some districts of the city itself, which had been overrun last June by Islamic State.</td></tr>
+</table></body></html>

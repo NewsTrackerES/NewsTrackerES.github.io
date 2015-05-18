@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td>Bali nine executions: Firm-minded President Joko Widodo will push...</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td>Bali nine executions: Julie Bishop phones Indonesia to ease tensions</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td>Bali nine: Tsunami aid reference a reminder and not a threat,...</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:05:56</td><td>Ms Bishop appealed directly to Mr Kalla for an indefinite stay of execution for the Bali nine ringleaders, unveiling a fresh diplomatic push for the two countries to work together on tackling drug syndicates.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:08:11</td><td>Joko Widodo says execution of Bali Nine pair Andrew Chan and Myuran Sukumaran will not be delayed</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/b/r/a/image.related.articleLeadwide.620x349.13ih55.png/1424294846546.jpg'></td><td>2015-02-18 07:00:16</td><td>Bali nine executions: Indonesian government warns it will not respond to threats</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/k/a/m/m/image.related.articleLeadNarrow.300x0.1m8cgp.png/1427348850478.jpg'></td><td>2015-03-26 05:47:43</td><td>Indonesian President Joko Widodo has been too busy to return Tony Abbott's phone call about the fate of the Bali nine pair on death row, Jakarta's envoy in Australia has said.</td></tr>
+</table></body></html>

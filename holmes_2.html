@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 23:54:07</td><td>J.B. Holmes used a strong start Sunday for a Houston Open victory in a three-way playoff against Jordan Spieth and Johnson Wagner.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 23:54:07</td><td>Although Holmes' missed birdie putt had given Wagner another chance, his short putt for par lipped out.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 23:54:07</td><td>The 32-year-old Holmes birdied the first five holes and nine of the first 12 after starting the day six shots back of Jordan Spieth.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/906678205def2f8e07e47a520d9d7d491108578c/c=481-0-2742-3015&amp;r=537&amp;c=0-0-534-712/local/-/media/2015/04/05/USATODAY/USATODAY/635638612265717336-2015-04-05-JB-Holmes.jpg'></td><td>2015-04-06 00:08:24</td><td>Wagner and Holmes hit perfect drives on the first playoff hole - both were on No.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>Meanwhile, Holmes was shuffling the leaderboard deck, negating a birdie on the third hole with a bogey on the sixth, then stringing together six pars together.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>"I've been working on taking it one shot at a time," Holmes said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>Holmes began the day as an after-thought, tied for 18.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/211/sports/golf/article23801204.ece/ALTERNATES/w220/527751895_468692996.JPG'></td><td>2015-04-06 01:48:39</td><td>But he began the day, like Holmes, six strokes back, having shot 75 Saturday with three consecutive closing birdies.</td></tr>
+</table></body></html>

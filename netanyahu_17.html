@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:39:06</td><td>"Iran has proven time and again that it cannot be trusted," Netanyahu said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:39:06</td><td>"He tweets that Israel must be annihilated. He tweets," Netanyahu said in a tone of disbelief.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://gdb.rferl.org/77D044C0-CDC7-4BF5-BE46-334BA9C264E1_w113_h64.jpg'></td><td>2015-03-03 08:12:36</td><td>"Netanyahu made all sorts of claims -- this was going to be a terrible deal, this was going to result in Iran getting $50 billion worth of relief, Iran would not abide by the agreement," Obama said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:40:48</td><td>The officials said earlier they expected the talks would resume and likely continue through Netanyahu's address to Congress, delivered in the late afternoon local time in Montreux.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6278636-16x9-340x191.jpg'></td><td>2015-03-03 20:03:35</td><td>The absence of so many could raise political heat on Mr Netanyahu at home two weeks before an Israeli general election.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/339fb69/2147483647/thumbnail/225x150/quality/85/?url=%2Fcmsmedia%2Fd6%2Fbe%2F7d6f1696482583bc5e9dea501e82%2Fresizes%2F500%2F150303-netanyahu-editorial.jpg'></td><td>2015-03-03 21:50:00</td><td>"Well, nuclear know-how without nuclear infrastructure doesn't get you very much," Netanyahu said Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gen/2802752/images/n-NETANYAHU-large570.jpg'></td><td>2015-04-05 16:24:53</td><td>Netanyahu asked.</td></tr>
+</table></body></html>

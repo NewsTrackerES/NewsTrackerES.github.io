@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 11:34:17</td><td>(AP) - A former CIA officer convicted of leaking details of a secret mission to thwart Iran's nuclear ambitions is making his final pitch for a lenient sentence.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:05:12</td><td>The defense said his punishment should be more in line with that of former CIA Director David Petraeus.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:05:12</td><td>Sterling, who is African-American, had sued the agency for racial discrimination but had a lawsuit tossed out after the CIA invoked a state-secrets privilege.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/gallery_thumb.jpg'></td><td>2015-05-11 19:09:50</td><td>The classified operation at the heart of the trial involved using a CIA asset nicknamed Merlin, who had been a Russian nuclear engineer.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/gallery_thumb.jpg'></td><td>2015-05-11 19:09:50</td><td>Former CIA officer sentenced to 3? years in Iran leaks case</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 13:39:07</td><td>FILE - In this Jan. 26, 2015 file photo, former CIA officer Jeffrey Sterling leaves federal court in Alexandria, Va.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-29210-6YS8p9e5XHSK2-604_634x454.jpg'></td><td>2015-05-11 21:01:59</td><td>Former CIA officer Jeffrey Sterling was sentenced Monday to 3.5 years in prison for leaking classified information to a New York Times journalist.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/square_gallery_thumb.jpg'></td><td>2015-05-12 09:24:46</td><td>(AP) - The list of leakers sent to prison for exposing government secrets is one name longer with Monday's 3 -year sentence for former CIA officer Jeffrey Sterling.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/square_gallery_thumb.jpg'></td><td>2015-05-12 09:24:46</td><td>The disparity, they say, was reflected clearly by the fact that former CIA Director David Petraeus's name is not on the list of those going to prison, despite his conviction just last month for disclosing classified information.</td></tr>
+</table></body></html>

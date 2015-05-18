@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>sxsw</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 19:35:22</td><td>Andrea Wasse of The Weeknd performs during the SXSW Music Festival on Thursday, March 19, 2015 in Austin, Texas.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-urn:publicid:ap.org:e5682bfffe4a4669873bec49c67ede1b-6XB14YSr2HSK2-963_634x424.jpg'></td><td>2015-03-20 19:36:14</td><td>The R&B singer performed Thursday on the second night of the "YouTube at SXSW" event at the Coppertank Events Center.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-urn:publicid:ap.org:e5682bfffe4a4669873bec49c67ede1b-6XB14YSr2HSK2-963_634x424.jpg'></td><td>2015-03-20 19:36:14</td><td>R&B singer The Weeknd, in sultry mood, performs during SXSW</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-urn:publicid:ap.org:e5682bfffe4a4669873bec49c67ede1b-6XB14YSr2HSK2-963_634x424.jpg'></td><td>2015-03-20 19:36:14</td><td>"YouTube at SXSW" is a pre-party for Monday's YouTube Music Awards.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-urn:publicid:ap.org:e5682bfffe4a4669873bec49c67ede1b-6XB14YSr2HSK2-963_634x424.jpg'></td><td>2015-03-20 19:36:14</td><td>"Can I ask you something, Austin, Texas? I want to ask you a question, SXSW. Can I get sexy for you, SXSW?" he asked the feverish crowd of a few hundred.</td></tr>
+</table></body></html>

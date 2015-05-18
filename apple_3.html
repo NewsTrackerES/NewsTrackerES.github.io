@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 28,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 28 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>Is the Apple Watch going to be able to do the same?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>Cook will make his case for the Apple Watch at a press event Monday, where he's expected to show off more features and apps.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>Of the Apple Watch, he says, "people need to understand more about what this product is, and what it does, and I think that will evolve over time."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>The stakes are big for Apple CEO Tim Cook: the watch is the first brand-new Apple product to be launched without legendary co-founder Steve Jobs.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>Apple is working with outside companies to create more apps; Cook has talked about using the watch as an electronic "key" for hotel doors or even cars.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>A recent Forrester survey found some respondents didn't see a reason to buy one because they already owned a less-expensive fitness band or a full-featured smartphone (although it also found Apple fans ready to buy the new watch).</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>While affluent consumers might pay that for a watch they can wear for years, or even hand down to their children, it's a lot of money for something that could become outdated if Apple releases a new model every year or so - as it does with smartphones.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>And Siri and Apple Pay will be built in.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>WHAT'S THE NEED?: Most smartwatches - including Apple's - only work with a smartphone nearby, so you can't swap one expensive gadget for the other.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>Will the Apple Watch finally move the needle in the smartwatch industry?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td>By comparison, Apple sold 74.6 million iPhones in just the last quarter.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td>Apple plans to sell three models, starting at $349, but Piper Jaffray's Gene Munster predicts the average buyer will pay $550 for a watch and extra, interchangeable bands.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td>MORE FEATURES THAN RIVALS: Along with email, texts and phone calls, Apple says its watch will present news, health readings and other notifications in creative ways that can be read at a glance.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td>APPLE'S TRACK RECORD: This wouldn't be the first Apple product that revolutionized a market where rivals had struggled to break through.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td>Most of those products failed to catch on until Apple made devices so appealing they set new standards and created new demand, said Forrester Research analyst J.P. Gownder.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td>Apple's high-fashion "Edition" model, made with 18-karat gold, is expected to cost thousands.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td>SAN FRANCISCO (AP) - No one can argue that Apple has changed the way people live their lives.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 16:32:00</td><td>Apple watch: hype or not?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:23:20</td><td>On that day, people will be able to try on the Apple Watch for 15 minutes.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn0.mos.techradar.futurecdn.net//art/Watches/Apple%20Watch/styles/apple-watch-link-bracelet-colors-50-80.jpg'></td><td>2015-04-02 02:01:00</td><td>Why Apple Watch costs so much?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/97cfbab16e0a740feb5a77c3a23ed8cec2e2342a/c=295-191-1860-1367&amp;r=x404&amp;c=534x401/local/-/media/2015/04/08/USATODAY/USATODAY/635640846522207595-watchxDMSKKx010.jpg'></td><td>2015-04-08 14:34:23</td><td>Let's review the reviews of Apple Watch</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/02/23/102447924-455062904.530x298.jpg?v=1428504950'></td><td>2015-04-08 15:12:00</td><td>"Isn't the promise of the Apple Watch to help me stay in the moment, focused on the people around me and undisturbed by the mesmerizing void of my iPhone? So why do I suddenly feel so distracted?"</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 16:30:45</td><td>CNET: "The Apple Watch is the most ambitious, well-constructed smartwatch ever seen, but first-gen shortfalls make it feel more like a fashionable toy than a necessary tool."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 02:01:21</td><td>The Apple Watch starts at $549 for the smaller version and goes as high as $1,049 depending on the watch band.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-doc-1x3nn-6Y2HDxSlAHSK2-282_634x756.jpg'></td><td>2015-04-24 20:03:43</td><td>Strategy Analytics predicts Apple will sell 15.4 million units worldwide in 2015, giving Apple a 55 percent market share.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-urn:publicid:ap.org:7cfe4958f90046049865b64d6a869a8a-6Y21TQ4Ut-HSK1-780_634x828.jpg'></td><td>2015-04-24 16:03:39</td><td>Go to the phone's Apple Watch app to choose playlists and albums to sync.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.mos.techradar.com/art/Watches/Apple%20Watch/Apple%20Watch%20face%20angle-320-80.jpg'></td><td>2015-04-27 22:03:00</td><td>He also said he thinks the company is "in a good position" and that by sometime in late June Apple anticipates launching the Watch in additional countries.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693967906_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 15:11:32</td><td>Get on that, Apple.</td></tr>
+</table></body></html>

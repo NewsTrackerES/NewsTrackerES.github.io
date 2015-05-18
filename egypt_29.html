@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Egypt's chief prosecutor has referred a police officer to trial for the deadly shooting of a female protester killed earlier this year during a peaceful demonstration.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>The two cases had renewed accusations from rights groups and political activists that Egypt's powerful police force enjoys almost blanket impunity.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Amnesty International said authorities in Egypt are covering up excessive use of force by police, taking no action to rein in abuse.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Sunday, Feb. 8, 2015 file photo, a man looks at a burning vehicle during a riot outside an air defense stadium in a suburb east of Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Monday, Feb. 9, 2015 file photo, an Ultras White Knights soccer fan, mourns over his friends who were killed in a riot, outside Zeinhom morgue, in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 22:12:05</td><td>Egypt's state prosecutor referred on Tuesday a police officer to trial for allegedly shooting dead a leftist female protester during a peaceful rally in central Cairo.</td></tr>
+</table></body></html>

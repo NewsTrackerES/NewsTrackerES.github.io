@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4987942-3x2-340x227.jpg'></td><td>2015-03-07 20:56:50</td><td>On Saturday, four bomb blasts killed at least 50 people in the northeastern Nigerian city of Maiduguri in the worst attacks there since Boko Haram militants tried to seize the town in two major assaults earlier this year.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297672491795_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 22:11:36</td><td>Boko Haram has killed thousands and kidnapped hundreds during its six-year campaign to carve out an Islamist state in northern Nigeria.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297672491795_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 22:11:36</td><td>Nigeria's Boko Haram pledges allegiance to Islamic State</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 22:30:04</td><td>The pledge of allegiance was attributed to Boko Haram leader Abubakar Shekau.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.dw.de/image/0,,18241332_303,00.jpg'></td><td>2015-03-13 01:43:00</td><td>Islamic State accepts Boko Haram allegiance</td></tr>
+</table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 02:37:50</td><td>NEW YORK (AP) - A New York judge says Facebook and its founder must release documents to a defense lawyer whose client has fled from criminal charges that he falsely claimed a majority ownership in the social media giant.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 02:37:50</td><td>Manhattan federal Judge Vernon Broderick issued an order Friday against Facebook and Mark Zuckerberg.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-04-04 03:17:16</td><td>Facebook and Zuckerberg ordered to turn over documents by Monday in case against fugitive</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-04-04 03:52:13</td><td>Zuckerberg has said he didn't come up with the idea for Facebook until months after he responded to Ceglia's online help-wanted ad and signed a contract agreeing to create some software for him.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 03:52:13</td><td>U.S. District Judge Vernon Broderick ordered Facebook and Mark Zuckerberg to relinquish documents by Monday that were requested by Paul Ceglia's lawyer, Robert Ross Fogg.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 03:52:13</td><td>The judge said he received a letter Thursday from lawyers for Facebook Inc. and Zuckerberg asking that an order he issued earlier in the week to promptly turn over requested documents be suspended until Ceglia is caught.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 03:52:13</td><td>A lawyer for Facebook and Zuckerberg did not immediately respond to a request for comment Friday on the judge's order.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 03:52:13</td><td>Ceglia's father told Broderick at a hearing last week that he believed his son might have fled because he believed Facebook and Zuckerberg were working together with prosecutors against him, jeopardizing his chance for a fair trial.</td></tr>
+</table></body></html>

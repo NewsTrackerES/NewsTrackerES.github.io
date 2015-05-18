@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:01:44</td><td>Facebook to let users send money to friends via Messenger</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:00:42</td><td>Facebook will likely expand internationally after the service becomes available to U.S. users over the coming months.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:00:42</td><td>Facebook's entry, announced Tuesday, is free, works with debit cards and is available on Apple and Android mobile devices and on desktop computers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:00:42</td><td>To help allay concerns about security, Facebook noted that it handles more than a million payments transactions on its site every day for its advertisers and game players.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/20/51/7670356/3/622x350.jpg'></td><td>2015-03-17 20:39:14</td><td>NEW YORK (AP) - Facebook's Messenger app will soon let you send your friends money, the latest in a crowded field of services aimed at an increasingly wireless and cashless generation.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/M2e59qA9uNIWx_Cf45Nu7Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/da031a503f4d0b0c710f6a7067003b07.jpg'></td><td>2015-03-17 20:39:34</td><td>Facebook users in the U.S. will soon be able to send their friends money using the social network?s Messenger app, the company announced Tuesday, March 17, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 21:19:04</td><td>Its payments systems are stored separately from other parts of the Facebook network and receive additional monitoring and control, the company said in a blog post Tuesday.</td></tr>
+</table></body></html>

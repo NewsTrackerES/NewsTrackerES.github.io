@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 13:18:41</td><td>Russia denies all suggestions it is directly involved in the war in Ukraine, but the sheer amount of heavy weapons the rebels have belies that claim.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 13:18:41</td><td>Ukraine and the West accuse Russia of arming and supplying manpower to the separatists and have imposed a range of economic sanctions to pressure Moscow into changing course.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 13:18:41</td><td>Ukraine, however, blamed that attack on the rebels.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 13:18:41</td><td>But Ukraine and rebel officials have already traded multiple accusations of attacks since then.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 13:18:41</td><td>Under the agreement negotiated by the leaders of Ukraine, Russia, Germany and France, the warring sides were to begin withdrawing heavy weapons from the front line Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/8f7/video/article22941340.ece/ALTERNATES/w140/2015-02-12T132347Z_1_LOVEB1B117MJ3_RTRMADP_0_UKRAINE-CRISIS-IMF-O.XML'></td><td>2015-02-16 19:53:44</td><td>Nataliya Vasilyeva in Moscow, Geir Moulson in Berlin, Sylvie Corbet in Paris, Balint Szlanko in Artemivsk, Ukraine, and Peter Leonard in Kyiv, Ukraine, contributed to this report.</td></tr>
+</table></body></html>

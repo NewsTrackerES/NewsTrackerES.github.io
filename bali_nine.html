@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 62,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 62 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>6</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/g/i/l/d/image.related.articleLeadwide.620x349.13gik8.png/1424195871614.jpg'></td><td>2015-02-16 11:29:35</td><td>Lawyers for the Bali nine duo on death row have begged the Attorney-General not to transfer the condemned men to Nusakambangan island ahead of a court appearance on February 24.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/b/r/a/image.related.articleLeadwide.620x349.13ih55.png/1424294846546.jpg'></td><td>2015-02-18 07:00:16</td><td>Bali nine executions: Indonesian government warns it will not respond to threats</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/o/5/0/image.related.articleLeadwide.620x349.13inpv.png/1424329400520.jpg'></td><td>2015-02-18 11:29:42</td><td>Crowds gathered to attend mercy vigils for the Bali nine pair facing death row condemning the Indonesian President's decision to deny the convicted drug smugglers clemency.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/i/o/5/0/image.related.articleLeadwide.620x349.13inpv.png/1424329400520.jpg'></td><td>2015-02-18 11:29:42</td><td>Hundreds gather in Melbourne for mercy for Bali nine death row prisoners</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/t/2/x/9/image.related.articleLeadNarrow.300x0.13sxpt.png/1425345828712.jpg'></td><td>2015-03-02 07:37:52</td><td>Bali nine executions: Andrew Robb shelves trade delegation to Indonesia</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/t/p/9/v/image.related.articleLeadwide.620x349.13tlfi.png/1425354600087.jpg'></td><td>2015-03-03 02:49:27</td><td>Bali nine executions: spiritual advisers ready for final hours</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81049000/jpg/_81049903_025433743-1.jpg'></td><td>2015-03-04 21:36:17</td><td>Bishop offers Bali Nine prisoner swap</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/1/m/p/image.related.articleLeadwide.620x349.13w6iv.png/1425568316462.jpg'></td><td>2015-03-05 05:39:00</td><td>This is a cultural difference that goes some way to explaining why the executions of Bali nine ringleaders Myuran Sukumaran and Andrew Chan have been treated so differently in the Indonesian and Australian media.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/y/f/o/image.related.articleLeadNarrow.300x0.13wf4p.png/1425621928957.jpg'></td><td>2015-03-05 13:44:14</td><td>Execution as spectacle: why the Bali nine duo were treated like the world's most dangerous men</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/1/2/c/a/image.related.articleLeadwide.620x349.140nhf.png/1426135478938.jpg'></td><td>2015-03-10 23:02:54</td><td>Sir Richard Branson pleads for lives of Bali nine duo Andrew Chan and Myuran Sukumaran and other drug convicts on death row</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/v/o/q/image.related.articleLeadwide.620x349.140zyw.png/1426045158544.jpg'></td><td>2015-03-11 02:57:38</td><td>Febyanti Herewila, fiancee of Bali nine member Andrew Chan, walks towards the boat at Wijaya Pura wharf that will take her to Nusakambangan prison island.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/0/d/image.related.articleLeadwide.620x349.141jib.png/1426099860326.jpg'></td><td>2015-03-11 09:55:41</td><td>Australia's most senior Muslim cleric, the Grand Mufti, has flown to Jakarta to plead for the lives of Bali nine ringleaders Myuran Sukumaran and Andrew Chan.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-16 07:51:35</td><td><a href='bali_nine_16.html'>Indonesian parliamentarians are publicly questioning the fact that 10 prisoners on death row, including Bali nine organisers Andrew Chan and Myuran Sukumaran, have not yet been killed. (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/g/p/t/image.related.articleLeadwide.620x349.1m27z2.png/1426716622005.jpg'></td><td>2015-03-18 09:03:22</td><td>He says Sukumaran and fellow Bali nine organiser Andrew Chan, who helped guide him at church every Sunday, are good people.</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/k/a/m/m/image.related.articleLeadNarrow.300x0.1m8cgp.png/1427348850478.jpg'></td><td>2015-03-26 05:47:43</td><td>Indonesian President Joko Widodo has been too busy to return Tony Abbott's phone call about the fate of the Bali nine pair on death row, Jakarta's envoy in Australia has said.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-03-31 16:33:20</td><td>The state administrative court last month threw out a challenge against the clemency rejections for the Bali Nine pair, deciding it didn't have the authority to examine the decrees by President Joko Widodo.</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/d/x/t/image.related.articleLeadwide.620x349.1mg4tz.png/1428398188827.jpg'></td><td>2015-04-07 09:16:36</td><td>Bali nine executions: Constitutional Court has no power to alter death sentences</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 17:30:13</td><td><a href='bali_nine_35.html'>Who are the 'Bali Nine'? (107)</a></td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150123022819-chan-sukumaran-indonesia-bali-nine-large-169.jpg'></td><td>2015-04-08 17:30:13</td><td>Who are the 'Bali Nine'?</td></tr>
+  <tr><td style='display:none'>23</td><td><img src='http://images.brisbanetimes.com.au/2015/04/14/6439058/Article%20Lead%20-%20wide983688771mkdz2image.related.articleLeadwide.729x410.1mkdwt.png1428960425383.jpg-620x349.jpg'></td><td>2015-04-13 21:27:13</td><td>Russell Brand speaks out about the death penalty handed to the Bali nine pair in his web series The Trews.</td></tr>
+  <tr><td style='display:none'>24</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/n/l/q/image.related.articleLeadwide.620x349.1mlym1.png/1429092087248.jpg'></td><td>2015-04-15 10:01:32</td><td>The Indonesian lawyer for the Bali nine men on death row has vowed to push ahead with a Constitutional Court challenge even if the two Australians are executed.</td></tr>
+  <tr><td style='display:none'>25</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/n/k/1/m/image.related.articleLeadwide.620x349.1mniuk.png/1429254858823.jpg'></td><td>2015-04-17 07:14:34</td><td>April 17 is the 10th anniversary of the Bali nine's arrest for attempting to smuggle 8.3 kilograms of heroin into Australia.</td></tr>
+  <tr><td style='display:none'>26</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/j/image.related.articleLeadwide.620x349.1ms4p1.png/1429831894739.jpg'></td><td>2015-04-23 18:02:24</td><td>Jakarta: The Bali nine duo are expected to be killed within days with the Australian Embassy summoned to Nusakambangan - the island where the executions will take place - on Saturday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 13:45:00</td><td><a href='bali_nine_27.html'>Indonesian police made little effort to catch the Bali Nine's suspected drug supplier alive, fatally shooting him shortly after entering his home, a police report reveals. (2)</a></td></tr>
+  <tr><td style='display:none'>27</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/i/image.related.articleLeadwide.620x349.1mtr7q.png/1430045989842.jpg'></td><td>2015-04-26 10:55:38</td><td>The eerie painting, brought back from Nusakambangan by their lawyer Julian McMahon, is a portent of Bali nine pair's ghastly fate - death by firing squad.</td></tr>
+  <tr><td style='display:none'>28</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/w/f/u/image.related.articleLeadwide.620x349.1mtwc1.png/1430075489626.jpg'></td><td>2015-04-26 18:35:16</td><td>But he says he is now going public because the matter is extremely urgent given the Bali nine pair will soon be shot dead by a firing squad.</td></tr>
+  <tr><td style='display:none'>29</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/t/q/5/image.related.articleLeadwide.620x349.1mu1gh.png/1430106133342.jpg'></td><td>2015-04-27 02:22:51</td><td>Indonesian police and security guard the fence line at Ngurah Rai International airport when Bali Nine duo Myuran Sukumaran and Andrew Chan were transferred Nusakambangan.</td></tr>
+  <tr><td style='display:none'>30</td><td></td><td>2015-04-27 06:02:37</td><td>Corruption allegations over Bali Nine trial sets Australia-Indonesia row</td></tr>
+  <tr><td style='display:none'>31</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/5/m/k/6/image.related.articleLeadwide.620x349.1mu618.png/1430123064050.jpg'></td><td>2015-04-27 08:24:36</td><td>Bali nine pair Chan and Sukumaran choose their execution witnesses</td></tr>
+  <tr><td style='display:none'>32</td><td></td><td>2015-04-27 12:04:15</td><td>"For the Bali Nine (pair), we have the constitutional court appeal, we have the registration number and we have the schedule fixed on 12 May," Leonard Arpan, lawyer for Myuran Sukumaran and Andrew Chan, told reporters on Monday.</td></tr>
+  <tr><td style='display:none'>33</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/u/r/a/7/image.related.articleLeadNarrow.300x0.1murbm.png/1430186516988.jpg'></td><td>2015-04-27 23:51:32</td><td>Bali nine case: Boxing superstar Manny Pacquiao pleads for Filipina Mary Jane Veloso's life</td></tr>
+  <tr><td style='display:none'>34</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/o/h/2/t/image.related.articleLeadwide.620x349.1mv4pr.png/1430198118663.jpg'></td><td>2015-04-28 05:15:24</td><td>Lawyers for a schizophrenic Brazilian man scheduled to be executed with the Bali nine pair on Tuesday night will file a last ditch appeal in the Administrative Court in a bid to save his life.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-28 19:12:13</td><td><a href='bali_nine_28.html'>The Bali Nine: where are they now? (17)</a></td></tr>
+  <tr><td style='display:none'>35</td><td></td><td>2015-04-28 22:02:21</td><td>Reactions to the Bali Nine executions</td></tr>
+  <tr><td style='display:none'>36</td><td></td><td>2015-04-28 22:02:22</td><td>The Abbott government will recall Australia's ambassador to Indonesia Paul Grigson following the executions of Bali Nine drug smugglers Andrew Chan and Myuran Sukumaran on Wednesday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 02:53:03</td><td><a href='bali_nine_34.html'>AFP &#039;will have further to say on Bali Nine&#039; (8)</a></td></tr>
+  <tr><td style='display:none'>37</td><td></td><td>2015-04-29 04:02:26</td><td>Plibersek keeps questions to Bali Nine</td></tr>
+  <tr><td style='display:none'>38</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/j/h/z/image.related.articleLeadwide.620x349.1mx9oa.png/1430406386659.jpg'></td><td>2015-04-30 15:06:34</td><td>Bali nine duo's last wish - renewed global push to abolish the death penalty</td></tr>
+  <tr><td style='display:none'>39</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/o/5/g/8/image.related.articleLeadwide.620x349.1my9rx.png/1430475475103.jpg'></td><td>2015-05-01 10:18:01</td><td>Former candidate Prabowo urged Indonesian President to indefinitely postpone Bali nine executions</td></tr>
+  <tr><td style='display:none'>40</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/v/j/h/v/image.related.articleLeadwide.620x349.1mxom8.png/1430492350379.jpg'></td><td>2015-05-01 14:15:16</td><td>Chan and Sukumaran execution 'illegal', but Indonesia ignores Australia again Bodies of Bali nine pair Andrew Chan and Myuran Sukumaran head to Jakarta airport for flight to Australia Bali nine executions illegal, but will Australia push the point?</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-02 01:02:11</td><td><a href='bali_nine_32.html'>Former Bali Nine lawyer Muhammad Rifan has not been arrested despite reports in the Australian media. (3)</a></td></tr>
+  <tr><td style='display:none'>41</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/387fa2caf42db68ea1858e99b1fe06de31e397ab/455_340_1181_709/500.jpg'></td><td>2015-05-03 06:18:52</td><td>Pressure has been mounting on the AFP to explain its role in tipping off Indonesia about the Bali Nine drug-smuggling operation in 2005.</td></tr>
+  <tr><td style='display:none'>42</td><td><img src='http://www.smh.com.au/content/dam/images/1/n/a/7/q/w/image.related.articleLeadwide.620x349.1na6yl.png/1430739791004.jpg'></td><td>2015-05-04 05:13:16</td><td>AFP Commissioner Andrew Colvin said on Monday that the authority was not in a position to arrest any of the Bali Nine before their ill-fated trip in 2005.</td></tr>
+  <tr><td style='display:none'>43</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/x/0/s/6/image.related.articleLeadwide.620x349.ggz1wv.png/1431343211611.jpg'></td><td>2015-05-11 11:22:36</td><td>The Australian government may have first announced its cuts to foreign aid six months ago, but in Indonesia they are widely perceived as a reprisal for the Bali nine executions.</td></tr>
+</table></body></html>

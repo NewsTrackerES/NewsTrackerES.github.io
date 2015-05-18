@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>snowden</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/64/75/7819074/5/landscape_32.jpg'></td><td>2015-04-14 20:53:55</td><td>For now, downtown Manhattan gallery Postmasters hopes to show the Snowden bust next month.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 20:54:04</td><td>Parks activist Geoffrey Croft feels the bust deserves a place in the city's public space, regardless how viewers may feel about Snowden.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 20:55:23</td><td>The mysterious artists who planted a bust of Edward Snowden on a Revolutionary War monument now want to free their sculpture from police custody and display it again, saying it was intended as a thought-provoking "gift to the city."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 19:43:29</td><td>Artists who put Ed Snowden bust on NYC monument are ticketed</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 20:00:32</td><td>NEW YORK (AP) - The mystery artists who put a bust of Edward Snowden on a Revolutionary War memorial have been ticketed but not criminally charged, and the city has given back their confiscated statue, their lawyer said Wednesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 20:00:32</td><td>Snowden is living in exile in Russia after divulging the secret U.S. government collection of phone records, among other intelligence gathering.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/06/12/285EAD9E00000578-0-image-m-66_1430912584603.jpg'></td><td>2015-05-06 21:26:26</td><td>The bust's creators said in a statement Wednesday that they wanted to "help the public have an important national debate about mass surveillance" and provide an alternative view of Snowden, whom they feel the media have vilified.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-07 01:49:39</td><td>"The ideal that Snowden seemed to be fighting for with his actions seemed to be in line with the ideals the revolutionaries, who might also have been called traitors, were fighting for," Tider said by phone.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-07 02:54:07</td><td>Two activists who put a bust of Edward Snowden on a Revolutionary War memorial were ticketed and got their confiscated sculpture back Wednesday, saying they felt the episode had sparked conversation about freedom.</td></tr>
+</table></body></html>

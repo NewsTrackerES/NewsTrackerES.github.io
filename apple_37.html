@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/uk/article31131257.ece/19c27/ALTERNATES/h342/PANews%20BT_P-497611f8-5e8f-4fc5-be4a-41fb509c7432_I1.jpg'></td><td>2015-04-10 01:55:59</td><td>"To provide the best experience and selection to as many customers as we can, we will be taking orders for Apple Watch exclusively online during the initial launch period."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 07:01:29</td><td>Customers will be able to order a Watch while in a store, but this will be done through an Apple store employee and via the company's internal online store.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/cd/resizer/2.0/FIT_TO_WIDTH-w540/d0e4544a164f18f13e5d10d68fffaace0a808fe8.jpg'></td><td>2015-04-07 19:45:15</td><td>The Apple Store app and our online store make it much easier to purchase Apple Watch and the new MacBook.</td></tr>
+</table></body></html>

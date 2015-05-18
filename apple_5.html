@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 14:10:13</td><td>Other fund managers with large stakes in Apple who aren't selling say that they didn't set out to have an oversized position in the company.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 14:10:13</td><td>Burham didn't set out to have such a big stake in Apple, he said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 14:10:13</td><td>Mark Mulholland, whose Matthew 25 fund is classified as a non-diversified fund, has 15.3% of his portfolio's assets in Apple.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 14:10:13</td><td>Burnham and the 174 fund managers like him who hold large stakes of their diversified portfolios in Apple are pulled in two directions: hoping to prevent an unforeseen drop in Apple shares from upending their portfolios, while also benefiting from a company whose shares are up 12% this year so far.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/2136/1745097732_4131551703001_5e91846569b6d1692fa3e01bcc98c7a6-tmb1.jpg?pubId=1745097732'></td><td>2015-03-16 16:44:39</td><td>David Chiueh, the manager of the Upright Growth fund, has 13.4% in Apple, the second-largest among diversified funds tracked by Lipper, mostly because shares he bought in 2008 have appreciated, he said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/2136/1745097732_4131551703001_5e91846569b6d1692fa3e01bcc98c7a6-tmb1.jpg?pubId=1745097732'></td><td>2015-03-16 16:44:39</td><td>"Your positioning in Apple may hold a big sway in how your fund does overall, particularly in categories like large blend where every basis point counts," said Laura Lutton, who oversees equity fund research at fund tracker Morningstar.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/2136/1745097732_4131551703001_5e91846569b6d1692fa3e01bcc98c7a6-tmb1.jpg?pubId=1745097732'></td><td>2015-03-16 16:44:39</td><td>In 2014, for instance, funds that underweighed Apple compared to broad market indexes were the most likely to underperform their peers, she said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/2136/1745097732_4131551703001_5e91846569b6d1692fa3e01bcc98c7a6-tmb1.jpg?pubId=1745097732'></td><td>2015-03-16 16:44:39</td><td>Other large holders of Apple have started to trim their positions.</td></tr>
+</table></body></html>

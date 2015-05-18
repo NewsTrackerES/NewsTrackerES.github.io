@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/f/x/8/image.related.articleLeadwide.620x349.1mefww.png/1428108890008.jpg'></td><td>2015-04-03 21:00:00</td><td>Peter Aling'o, senior researcher with the Institute for Security Studies in Nairobi, said al-Shabaab was taking advantage of "gaps" in Kenya's intelligence-led security planning.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>The gunmen, from the Somali Islamist terrorist group al-Shabaab, stormed Garissa University in north-east Kenya.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>So far, 147 people have been confirmed dead and 79 injured in Kenya's worst terrorist attack in two decades, but officials have admitted that the number killed could rise as piles of bodies are recounted.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>Islamist militants storm Kenya's Garissa...</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>A day before the attack, President Uhuru Kenyatta dismissed the warning as well as one from Australia, saying: "Kenya is safe as any country in the world. The travel advisories being issued by our friends are not genuine."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>Joseph Nkaissery, Kenya's interior minister, confirmed that the gunmen had been strapped with explosives and blew up "like bombs" as they were shot by a special forces squad.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>Kenya massacre victims were lined up and shot as they phoned parents</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/x/n/h/image.related.thumbnail.90x60.1mdpbt.png/1428010478446.jpg'></td><td>2015-04-03 21:00:00</td><td>Kenya's government, which has faced criticism for its failure to act on intelligence to combat threats, said it would not be "intimidated or humiliated" by what happened.</td></tr>
+</table></body></html>

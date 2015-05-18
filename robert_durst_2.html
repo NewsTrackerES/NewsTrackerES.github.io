@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>robert durst</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s56xKyjah3OfINtYWsF5aA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/2625fca06018b50d710f6a706700fe77.jpg.cf.jpg'></td><td>2015-03-15 21:24:37</td><td>Timeline of events in life of wealthy eccentric Robert Durst</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s56xKyjah3OfINtYWsF5aA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/2625fca06018b50d710f6a706700fe77.jpg.cf.jpg'></td><td>2015-03-15 21:24:37</td><td>HBO airs the first episode of a six-week documentary, "''The Jinx: The Life and Deaths of Robert Durst."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 15:04:07</td><td>Real estate heir Robert Durst arrested in New Orleans</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 18:00:36</td><td>Robert Durst of HBO's "The Jinx" arrested in New Orleans</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 19:11:45</td><td>"Years in the making, their thorough research and dogged reporting reignited interest in Robert Durst's story with the public and law enforcement."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 06:03:44</td><td>Who is Robert Durst?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 18:50:31</td><td>Millionaire Robert Durst was illegally arrested on charges that he murdered a woman in California, as well as drug and weapons charges filed in New Orleans, attorneys said in court papers Friday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/11/us/robert-durst-gun-charge/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-11 11:15:29</td><td>Robert Durst charged in handgun case</td></tr>
+</table></body></html>

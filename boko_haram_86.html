@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 35,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 35 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 13:44:30</td><td><a href='boko_haram_1.html'>Chad's army, one of the best in the region, has joined a regional offensive against Boko Haram and says it has killed hundreds of fighters in the past fortnight. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-13 11:31:15</td><td><a href='boko_haram_2.html'>Boko Haram stages first attack on Chad (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 01:46:39</td><td><a href='boko_haram_4.html'>In a translation published by the SITE Intelligence Group, Boko Haram sharply criticized Niger for joining the effort and said the country was being dragged into a "swamp of darkness." (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 04:39:38</td><td><a href='boko_haram_9.html'>On Wednesday, a bomb planted and remotely detonated by Boko Haram militants near the southeastern Niger town of Diffa killed two soldiers and wounded a third, Niger military sources said. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 22:30:31</td><td><a href='boko_haram_39.html'>On Saturday, troops from Niger and Chad destroyed a Boko Haram base inside Nigeria, also close to the Niger border, killing 54 militants, the statement said. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:20:34</td><td><a href='boko_haram_60.html'>A similar attack on Karamga Island in February killed seven Niger soldiers, and 14 Boko Haram fighters were also killed, military officials said at the time. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 04:05:12</td><td><a href='boko_haram_64.html'>Niamey: A regional governor in southern Niger has ordered the evacuation of the West African nation's inhabited islands on Lake Chad following a deadly attack there by Boko Haram militants last week. (3)</a></td></tr>
+</table></body></html>

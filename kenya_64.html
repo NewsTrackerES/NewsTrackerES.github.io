@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:27:22</td><td>Kenya: Court orders government to register gay rights group</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:27:22</td><td>NAIROBI, Kenya (AP) - A Kenyan court has ordered a government agency that regulates non-governmental organizations to recognize and register a human rights group seeking to protect the rights of gay people in the country.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:27:22</td><td>The Non-Governmental Organization Co-ordination Board had refused to register Lesbian Gay Bisexual Transsexual Intersex Queer-Kenya rights group on religious and moral grounds.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:54:44</td><td>"In Kenya, the Constitution is supreme," stated the ruling of the ruling of Judges Isaac Lenaola, Mumbi Ngugi and George Odunga.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:54:44</td><td>In Kenya, homosexuality is not a crime, but the law forbids sodomy and same sex partners are likely to receive extra attention from police.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:54:44</td><td>The Kenya gay community has complained of harassment, which in some cases is violent.</td></tr>
+</table></body></html>

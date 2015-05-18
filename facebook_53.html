@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td>The brokerage expects Facebook's revenue from video advertising to reach about $1 billion this year.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td>"More than 75 percent of global video views on Facebook occur on mobile, and we believe mobile video will become more important to marketers over time," she said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td>As YouTube marks tenth year, Facebook emerges as video threat</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>That was enough for at least nine brokerages to raise their price targets on Facebook's stock on Thursday despite the company's slowest quarterly revenue growth in two years.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>Facebook Inc said on Wednesday that its users were watching 4 billion videos a day, compared with 3 billion in January and just 1 billion in September.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>Facebook launched auto-play video ads in March 2014.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>Almost all analysts saw video advertising as one of Facebook's most promising areas for revenue growth.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://usatmarkets.files.wordpress.com/2014/04/afp-517031089.jpg?w=1000'></td><td>2015-04-23 18:56:39</td><td>Bottom line: "The Internet is experiencing something of an inflection point in terms of demand for Video and Mobile Advertising, and Facebook may well be the single biggest beneficiary of this inflection."</td></tr>
+</table></body></html>

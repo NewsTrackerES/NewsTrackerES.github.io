@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/13/45/7649650/5/square_gallery_thumb.jpg'></td><td>2015-03-13 12:00:31</td><td>Officers from the St. Louis Police Department walk through a crowd of protesters outside the Ferguson Police Department, Thursday, March 12, 2015, in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/US/WireAP_5380b4f619b244d68c9449d421e3da83_16x9_992.jpg'></td><td>2015-03-13 12:02:30</td><td>Two police officers were shot early Thursday morning in front of the Ferguson Police Department during a protest following the resignation of the city's police chief in the wake of damning U.S. Justice Department report.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/US/WireAP_5380b4f619b244d68c9449d421e3da83_16x9_992.jpg'></td><td>2015-03-13 12:02:30</td><td>Calm Prevails in Ferguson After Shooting of Police Officers</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-14 12:48:39</td><td>Dozens of protesters gathered again Thursday night in Ferguson, expressing sympathy for the wounded officers and praying for peace during a candlelight vigil.</td></tr>
+</table></body></html>

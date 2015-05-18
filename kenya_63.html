@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 05:22:24</td><td>Thailand seizes 3 tons of elephant tusks smuggled from Kenya</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 05:22:24</td><td>He said Monday that the ivory was shipped out of Kenya last month and arrived at the Thai port on Saturday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:39:28</td><td>The bust came after customs officials received a tip-off in Laos and Thailand and tracked the containers from Kenya, Customs Department Director-General Somchai Sujjapongse told reporters.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:39:28</td><td>Thailand seized 3 tons of ivory hidden in tea leaf sacks from Kenya in the second-biggest bust in the country's history, one week after the biggest seizure, customs officials said Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:39:28</td><td>The ivory, hidden among tea leaves, was shipped out of Kenya on March 24 and went through ports in Sri Lanka, Malaysia and Singapore before coming to Thailand, he said.</td></tr>
+</table></body></html>

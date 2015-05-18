@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/e/l/m/6/image.related.articleLeadwide.620x349.13elm4.png/1423826087666.jpg'></td><td>2015-02-13 11:14:56</td><td>The talks sought to secure the release of 200 schoolgirls from Nigeria's Chibok but Boko Haram later said it had married off the schoolgirls to its fighters.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/e/l/m/6/image.related.articleLeadwide.620x349.13elm4.png/1423826087666.jpg'></td><td>2015-02-13 11:14:56</td><td>Nigeria has postponed for six weeks a presidential election that had been due on Saturday, citing the security threat from Boko Haram.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/e/l/m/6/image.related.articleLeadwide.620x349.13elm4.png/1423826087666.jpg'></td><td>2015-02-13 11:14:56</td><td>In a bid to contain Boko Haram, which has killed thousands and kidnapped hundreds in its five-year revolt, President Idriss Deby's government mediated peace talks between the Nigerian government and the group last October.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/e/l/m/6/image.related.articleLeadwide.620x349.13elm4.png/1423826087666.jpg'></td><td>2015-02-13 11:14:56</td><td>Boko Haram attacks Chadian village as revolt spreads</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 13:44:30</td><td>Chad's army, one of the best in the region, has joined a regional offensive against Boko Haram and says it has killed hundreds of fighters in the past fortnight.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 13:44:30</td><td>A video still shows Boko Haram leader Abubakar Shekau speaking to the camera.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/0X4hRkjwn1PiT0d9FaYwuQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-03T213837Z_1_LYNXMPEB320LU_RTROPTP_2_HARVARD-NIGER.JPG.cf.jpg'></td><td>2015-04-03 23:43:36</td><td>Ngouboua, a fishing village on the shores of Lake Chad, was targeted in February in the first known lethal attack by Boko Haram on Chadian territory.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 16:02:36</td><td>Boko Haram, hardline Islamists who want to establish a caliphate in the region, attacked the island of Karamga at dawn on Saturday, their second attempt to capture it since February, army and government sources said.</td></tr>
+</table></body></html>

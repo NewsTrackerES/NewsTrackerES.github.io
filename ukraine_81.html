@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 11:54:08</td><td>Ukraine military, rebels accuse each other of increased attacks</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 11:01:41</td><td>"The rebels have not stopped firing at Ukrainian positions ... Over the past day the enemy used weapons banned under the Minsk agreements," Ukraine military spokesman, Oleksandr Motuzyanyk, said in a televised briefing.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 11:01:41</td><td>Violence escalates in east Ukraine ahead of talks</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46914513,width-300,resizemode-4/ukrn.jpg'></td><td>2015-04-14 00:28:40</td><td>Speaking ahead of the four-way talks, French Foreign Minister Laurent Fabius said he and his German counterpart Frank-Walter Steinmeier were concerned by the ceasefire violations and a lack of political progress in Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/5724160-3x2-340x227.jpg'></td><td>2015-02-20 10:27:22</td><td>The foreign ministers of Russia, France, Germany and Ukraine will meet in Paris on Tuesday to discuss the conflict.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 17:11:28</td><td>"We are very concerned about the increased violence in eastern Ukraine and we have seen more violations of the ceasefire," Stoltenberg told reporters during a visit to Iceland.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 12:02:11</td><td>The deaths came ahead of a meeting later on Wednesday of envoys from Russia, Ukraine, the OSCE rights watchdog and pro-Russian separatists.</td></tr>
+</table></body></html>

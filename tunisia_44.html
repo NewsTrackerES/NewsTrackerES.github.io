@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 63,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 63 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:22:43</td><td><a href='tunisia_3.html'>19 killed in Tunis museum attack, including 17 foreigners: Tunisia PM (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:28:29</td><td><a href='tunisia_4.html'>Tunisia's prime minister says a total of 21 people have died in the attack against the Bardo museum, including 17 tourists, two Tunisians and two gunmen. (21)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 02:58:49</td><td><a href='tunisia_6.html'>Tunis (AFP) - Gunmen stormed Tunisia's national museum, killing 17 tourists of various nationalities and two Tunisians in an attack that raised fears for the birthplace of the Arab Spring. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 02:07:31</td><td><a href='tunisia_7.html'>After a crisis between secular leaders and the Islamist party which won the country's first post-revolt election, Tunisia has emerged as a model of compromise politics and transition to democracy for the region. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 20:19:26</td><td><a href='tunisia_8.html'>The US secretary of state, John Kerry, said Washington condemned the attack and continued "to support the Tunisian government's efforts to advance a secure, prosperous, and democratic Tunisia". (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:08:07</td><td><a href='tunisia_11.html'>A woman cries as she demonstrates in front of the National Bardo Museum a day after gunmen attacked the museum and killed scores of people in Tunis, Tunisia, Thursday, March 19, 2015. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 22:19:57</td><td><a href='tunisia_15.html'>The Islamic State jihadist group claimed responsibility Thursday for an attack on foreign tourists at Tunisia's national museum that killed 21 people, as the security forces swooped on suspects. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 09:42:47</td><td><a href='tunisia_18.html'>The terror attack in Tunisia that killed 21 people is a fresh blow to the North African nation's tourism industry, which has been struggling since the country's revolution of 2011. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 15:45:41</td><td><a href='tunisia_30.html'>Tunisian protesters unleashed revolts across the region known as the Arab Spring, and Tunisia is the only country to have built a democratic system as a result. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 13:27:02</td><td><a href='tunisia_38.html'>Tunisia's military has been carrying out operations in the area since last month's Islamist militant attack on the Bardo museum in Tunis where gunmen killed more than 20 foreign tourists. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 08:03:00</td><td><a href='tunisia_42.html'>"This generation has to deal with this image of Tunisia that is liberal, secular, that gives freedoms to women. Now a young Tunisian in Iraq and Syria desperately wants to show there is another side to Tunisia, one even more attached to that form of extreme Islam," he said. (3)</a></td></tr>
+</table></body></html>

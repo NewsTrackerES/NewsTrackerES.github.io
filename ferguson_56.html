@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 255,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 255 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-19 14:16:12</td><td><a href='ferguson_1.html'>The Justice Department will likely sue the Ferguson, Missouri, police department over what the government says is racial discrimination, CNN reported. (21)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 21:35:46</td><td><a href='ferguson_2.html'>Civil rights attorney Jerryl Christmas, who has represented people who have clashed with Ferguson police and city officials, said he was not surprised by the findings, and he hopes to see Ferguson Police Chief Tom Jackson fired. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 18:18:19</td><td><a href='ferguson_3.html'>The report said blacks in Ferguson are disproportionately subject to excessive police force, baseless traffic stops and citations for infractions as petty as walking down the middle of the street. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 08:03:51</td><td><a href='ferguson_4.html'>Federal officials on Wednesday described Ferguson city leaders as cooperative and seemingly open to change, saying there were already some signs of improvement. (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 22:54:30</td><td><a href='ferguson_5.html'>The report shows that 85 per cent of people subject to vehicle stops by Ferguson police were African-American; 90 percent of those who received citations were black; and 93 percent of people arrested were black. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 00:10:37</td><td><a href='ferguson_6.html'>- Ferguson Mayor James Knowles says one police department employee was fired and two others are on administrative leave over racist emails uncovered in a Justice Department investigation into the city's law enforcement practices. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 07:07:48</td><td><a href='ferguson_7.html'>At a brief news conference Wednesday, the mayor tried to show that Ferguson is serious about reform, saying the city has been working for some time to find more black officers. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 11:07:18</td><td><a href='ferguson_8.html'>Lesley McSpadden and Michael Brown Sr, parents of the slain teen, said the decision not to pursue federal charges against Wilson disappointed them but they hoped the report could cause changes in Ferguson and other parts of the country. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:32:36</td><td><a href='ferguson_9.html'>In his most expansive comments yet about the Justice Department's report on bias against blacks in Ferguson, Obama said it was striking that investigators merely had to look at email sent by police officials to find evidence. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 04:00:49</td><td><a href='ferguson_10.html'>But Ferguson city spokesman Jeff Small identified one of the employees as court clerk Mary Ann Twitty, who was fired. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 02:12:32</td><td><a href='ferguson_11.html'>A Missouri appeals court judge was appointed Monday to take over Ferguson?s municipal court and make ?needed reforms? (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 20:01:15</td><td><a href='ferguson_12.html'>"I believe that the city of Ferguson has the resolve to overcome the challenges it faces in the coming months and emerge as a stronger community for it," Shaw, 39, said in a statement included with the release. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-12 13:55:58</td><td><a href='ferguson_13.html'>The shots were fired shortly after midnight as protesters were gathered following the resignation of embattled Ferguson Police Chief Thomas Jackson on Wednesday. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 05:10:21</td><td><a href='ferguson_14.html'>Police shine a light on a helmet as they investigate the scene where two police officers were shot outside the Ferguson Police Department. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 12:00:31</td><td><a href='ferguson_15.html'>Officers from the St. Louis Police Department walk through a crowd of protesters outside the Ferguson Police Department, Thursday, March 12, 2015, in Ferguson, Mo. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 15:54:21</td><td><a href='ferguson_17.html'>They marked the first time in more than seven months of tension in Ferguson that officers were shot at a protest, and the bloodshed threatened to inflame the already fraught relationship between police and demonstrators. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 03:05:16</td><td><a href='ferguson_19.html'>Ferguson: Nearly 48 hours after two officers were shot in racially charged Ferguson, Missouri, investigators had dozens of leads but no arrests to report in the hunt for the gunman. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 18:35:01</td><td><a href='ferguson_20.html'>Despite calls for him to go, Knowles is the last man standing in Ferguson city government after a Justice Department report highly critical of the city's police force and court system prompted six officials to resign. (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 01:25:55</td><td><a href='ferguson_22.html'>It also faulted Ferguson for issuing an excessive number of arrest warrants when traffic-court offenders failed to pay their fines on time or missed court dates, with relatively minor violations then leading to jail time. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 05:02:17</td><td><a href='ferguson_26.html'>KSDK-TV (http://on.ksdk.com/1FUcpdY ) reports the Ferguson City Council voted Tuesday night to appoint Pam Hylton to temporarily replace John Shaw. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:00</td><td><a href='ferguson_28.html'>Three Missouri police agencies will restrict their use of tear gas and other chemical agents on crowds as part of a lawsuit settlement with six Ferguson protesters, according to court documents released Thursday. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 19:57:48</td><td><a href='ferguson_31.html'>Four journalists arrested during last summer's protests over the Ferguson shooting death of Michael Brown are suing St. Louis County's police department for civil rights violations and unlawful detention. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:46:36</td><td><a href='ferguson_32.html'>Clayton, Missouri: A 20-year-old man has been charged with first-degree assault in the shooting of two police officers in front of the Ferguson Police Department prosecuting attorney for St Louis County Robert McCulloch said.. (25)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 07:37:42</td><td><a href='ferguson_33.html'>The lawsuit, which was filed in US District Court for the Eastern District of Missouri, names as defendants the St Louis County Police Department, and 20 of its officers who were sent into Ferguson to help provide security, as well as St Louis County. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 14:35:01</td><td><a href='ferguson_35.html'>The emails, although dating back years before the shooting, were among evidence presented by the Justice Department in a report in March that concluded that racism pervaded the Ferguson Police Department. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 06:49:24</td><td><a href='ferguson_37.html'>In this photo made in March 2015, Ferguson Ward 1 city council candidate Ella Jones poses for a portrait in Ferguson, Mo. (43)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 19:17:42</td><td><a href='ferguson_38.html'>Ferguson's former municipal court clerk who was fired last month over racially charged emails linked to her says she's not a bigot and that she shared the messages as funny items she didn't consider offensive. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 19:47:01</td><td><a href='ferguson_39.html'>Standoff at Ferguson home after reports of shooting (8)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 11:33:29</td><td><a href='ferguson_40.html'>AUG. 19 - Nixon says he will not seek the removal of Ferguson prosecutor Bob McCulloch from the investigation into Brown's death. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 17:11:05</td><td><a href='ferguson_41.html'>It asked for the court to assign a monitor to the city's police force for five years or until "the city of Ferguson has fully and effectually trained all of its police officers on the constitutional requirements of the use of deadly force." (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 21:51:54</td><td><a href='ferguson_42.html'>FILE - In this Friday, Nov. 28, 2014, file photo, police and Missouri National Guardsmen stand guard as protesters gather in front of the Ferguson Police Department, in Ferguson, Mo. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 04:55:11</td><td><a href='ferguson_43.html'>The death of 25-year-old Freddie Gray has renewed a national debate on law enforcement and race that was sparked by police killing unarmed black men last year in Ferguson, Missouri; New York City and elsewhere. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 11:53:14</td><td><a href='ferguson_44.html'>(AP) - Gunshots, fires and looting rocked Ferguson overnight, as protests erupted following the death of a black man in police custody in Baltimore. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 04:10:00</td><td><a href='ferguson_45.html'>It is unclear if the shootings were linked to the demonstration, where some 50 people gathered and intermittently blocked traffic near where white Ferguson officer Darren Wilson fatally shot Brown in August. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 00:44:13</td><td><a href='ferguson_47.html'>A Ferguson police officer stands on West Florissant Avenue as protesters block traffic in Ferguson, Mo., Tuesday night, April 28, 2015. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 03:19:03</td><td><a href='ferguson_48.html'>Protesters Wednesday first rallied in Manhattan's Union Square, where they chanted "no justice, no peace" and "hands up, don't shoot," a reference to the police killing of Michael Brown in Ferguson, Missouri, last year. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:44:13</td><td><a href='ferguson_49.html'>Several dozen people marched down Ferguson's West Florissant Avenue on Wednesday night to protest the recent death of 25-year-old Freddie Gray while he was in Baltimore police custody. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 14:48:00</td><td><a href='ferguson_50.html'>But the Justice Department released a scathing report citing racial bias and racial profiling in the Ferguson Police Department and a profit-driven municipal court system that frequently targeted black residents. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 00:59:01</td><td><a href='ferguson_53.html'>The report said Ferguson appears to have violated the Supreme Court's procedural rules by having police file a citation - and court staff open a file - before a prosecutor reviews the case. (5)</a></td></tr>
+</table></body></html>

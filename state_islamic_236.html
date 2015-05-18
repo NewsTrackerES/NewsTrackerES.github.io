@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 11:22:35</td><td>U.S. officials said the raid killed a senior Islamic State leader identified as a Tunisian who helped to manage its black-market sales of oil and gas to raise funds.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 11:22:35</td><td>Islamic State dead in U.S. Syria raid climbs to 32 -monitoring group</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 17:19:38</td><td>Islamic State group beheads 8 Shiites in Syria's Hama</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/7e5/news/world/article23854277.ece/ALTERNATES/w220/BEI505-Mideast+Syria+Fight-1.JPG'></td><td>2015-04-09 09:34:59</td><td>The International Committee of the Red Cross called on Thursday for immediate access to a Palestinian refugee camp in Syria which has largely been seized by Islamic State and where 18,000 people are caught up in fighting.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47319297,width-300,resizemode-4/Syria.jpg'></td><td>2015-05-17 14:22:15</td><td>The UK-based Syrian Observatory for Human Rights, which reports on the Syrian conflict, put the Islamic State death toll from the US raid at 32 including four leaders, three of whom it identified as north African.</td></tr>
+</table></body></html>

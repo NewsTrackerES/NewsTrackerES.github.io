@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td>Ebola, one of the deadliest pathogens known to man, is spread through direct contact with the bodily fluids of an infected person showing symptoms such as fever or vomiting.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td>Countries around the world have so far pledged $5.1 billion to fight Ebola, with $2.4 billion disbursed until now, according to the statement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td>The conference's lead participants stressed in their closing statements the "importance of maintaining international engagement with the recovery and development process in the Ebola-affected countries."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td>U.N. Ebola envoy David Nabarro said Monday that the number of new cases had declined from around 900 a week to 100 - but that cases appeared to be climbing back up in the coastal regions of Sierra Leone and Guinea.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td>In addition, their health sectors have been partially wiped out by the epidemic, or forced to divert resources to fighting Ebola at the expense of other diseases like measles, malaria and AIDS.</td></tr>
+</table></body></html>

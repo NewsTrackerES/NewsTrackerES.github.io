@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 17:52:55</td><td>Apple's "Start Something New" marketing campaign was cited in the lawsuit as one recent example of misuse of Britto art.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td>The lawsuit seeks unspecified damages from Cupertino, California-based Apple and the design duo Craig Redman of New York and Karl Maier of London, whose company is called Craig & Karl.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td>Artist Britto sues Apple, design firm over use of art, style</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td>Officials at Apple and Craig & Karl did not immediately respond Monday to emails seeking comment.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:09:12</td><td>MIAMI -- Artist Romero Britto is suing Apple Inc. and a design firm in Miami federal court for allegedly misusing his colour-splashed images and distinctive style in marketing campaigns.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 20:13:06</td><td>After investigating the source of the Apple image, according to the lawsuit, Britto's lawyers noticed apparent similarities between Craig & Karl's work and that of Britto.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 21:02:45</td><td>One image, an outstretched hand with colorful designs flowing from a fingertip, was licensed from Craig & Karl by Apple.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 21:02:45</td><td>In fact, when the Apple "Start Something New" campaign appeared, Britto received messages congratulating him, incorrectly, for what appeared to be a new business deal with Apple.</td></tr>
+</table></body></html>

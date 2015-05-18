@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 07:55:00</td><td>They became separated when Boko Haram attacked the Nigerian town of Baga, and she knows how worried they must be.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 07:55:00</td><td>800,000 children forced from homes in Boko Haram violence</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 09:44:00</td><td>800,000 children forced from homes by Boko Haram suffer abuse: UNICEF</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 09:44:00</td><td>Boko Haram has targeted schools, destroying or severely damaging more than 300 and killing 314 students and 196 teachers, UNICEF says.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 09:44:00</td><td>The disturbing images come from some of an estimated 800,000 children forced from the homes by Boko Haram extremists, according to a UNICEF report published Monday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 09:44:00</td><td>The nickname of Nigeria's home-grown Islamic extremist group, Boko Haram, means "Western education is forbidden" or sinful.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-13 11:55:54</td><td>Boko Haram's nearly 6-year-old Islamic uprising in northeast Nigeria that has killed thousands - a reported 10,000 just last year - and forced more than 1.5 million from their homes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 09:29:18</td><td>Children account for about half of all the 1.5 million made homeless in the Boko Haram conflict that has spilled across the borders of northeast Nigeria.</td></tr>
+</table></body></html>

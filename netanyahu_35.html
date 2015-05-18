@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/16/Mideast_Israel_Election.JPEG-08757_c0-6-3606-2107_s561x327.jpg?724e71e3baa25d347f12a3256b7f13931e05f269'></td><td>2015-03-16 17:31:01</td><td>He accused both Netanyahu and Herzog of working outside deals with special interest groups and said that only he was tackling the real issues facing the Israeli middle class.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/16/Mideast_Israel_Election.JPEG-08757_c0-6-3606-2107_s561x327.jpg?724e71e3baa25d347f12a3256b7f13931e05f269'></td><td>2015-03-16 17:31:01</td><td>Lapid has so far refused to commit to either Herzog or Netanyahu, though he is widely seen as a logical ally of Herzog's in a future coalition.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/mideast_israel_election.jpg?w=620'></td><td>2015-03-16 19:10:05</td><td>Kahlon, who broke off from Netanyahu's Likud, is demanding to become finance minister in the next government and has given no indication as to whom he would prefer as prime minister.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 20:12:36</td><td>JERUSALEM - Embattled Israeli Prime Minister Benjamin Netanyahu pledged Monday that a Palestinian state will not be established if he is re-elected, as part of frantic last-minute campaigning ahead of parliamentary elections.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 07:07:21</td><td>While Netanyahu could still end up in the best position to cobble together a ruling coalition, the slipping support has rattled Likud -- which began the campaign all but assured that it would stay in office.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 07:07:21</td><td>In recent days, Netanyahu has been on a get-out-the-vote blitz, saying a dovish government would spell disaster for the country and complaining of an international conspiracy to oust him.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>In 2009 - the election in which Mr Netanyahu took the prime ministership for a second time - the centrist Kadima party won the most seats but was unable to form a coalition and in the end, Mr Netanyahu took power.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>In an election eve about-face, Benjamin Netanyahu has vowed there will never be a Palestinian state as long as he is prime minister, contradicting a previous commitment in a bid to woo wavering right-wing voters back to his Likud Party.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 13:16:40</td><td>Netanyahu's pledge of no Palestinian state while he is in charge puts him on a collision course with the United States and the European Union at a time when both are desperate to breathe new life into the moribund peace process.</td></tr>
+</table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/08/09/275B0F8C00000578-0-image-m-61_1428480922748.jpg'></td><td>2015-04-08 20:13:03</td><td>30 new Ebola cases, lowest weekly figure in nearly a year - WHO</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>The Ebola epidemic, which began in December 2013, has claimed 10,572 lives among 25,515 known cases, according to the United Nations health agency.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>Each country would retain a core capacity of high-quality Ebola treatment centres, strategically located to ensure complete geographic coverage, with additional rapid-response capacity held in reserve.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>The last known Ebola case in Liberia was a patient who died on March 27, and whose 332 contacts are being monitored but none have shown symptoms so far, it said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>Ebola is still spreading in western Guinea, including the capital Conakry, but detection of the disease has improved, the WHO said.</td></tr>
+</table></body></html>

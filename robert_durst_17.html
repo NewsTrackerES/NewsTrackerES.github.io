@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>robert durst</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691626366_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 18:46:32</td><td>Durst has long been estranged from his family, which is known for its significant New York real estate holdings.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 19:37:45</td><td>Robert Durst.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150408&t=2&i=1038862784&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB370P6'></td><td>2015-04-08 16:07:51</td><td>Durst, recently featured in the HBO documentary "The Jinx: The Life and Deaths of Robert Durst," has been charged with the 2000 murder of a longtime friend in Los Angeles County and has sought a swift extradition to face that charge.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297678717978_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-23 19:37:41</td><td>The HBO documentary broadcast Durst being presented with evidence that his handwriting appeared to match that of Berman's likely killer.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/Crime/2015/03/23/Robert-Durst.png&amp;size=650x366&amp;quality=85'></td><td>2015-03-23 19:45:24</td><td>NEW ORLEANS - Robert Durst, the real estate scion awaiting extradition to California to face a murder charge, was denied bail on Monday after a judge deemed him to be a potential danger to others and a likely flight risk.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/Crime/2015/03/23/Robert-Durst.png&amp;size=650x366&amp;quality=85'></td><td>2015-03-23 19:45:24</td><td>New Orleans judge declares Robert Durst major flight risk, denies bail</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 21:19:00</td><td>Durst, recently featured in the HBO documentary The Jinx: The Life and Deaths of Robert Durst, must remain in Louisiana on local weapons charges at least until his next court date on 2 April.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150323&t=2&i=1034741013&w=&fh=&fw=&ll=580&pl=378&r=LYNXMPEB2M0VZ'></td><td>2015-03-23 22:23:31</td><td>Murder suspect Robert Durst is seen with a newly shaved head as he sits in a hearing in this court sketch in New Orleans, Louisiana March 23, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Px3E4Km7pDhwSEoww3Q5sw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIzNjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T014347Z_2_LYNXMPEB2M0VZ_RTROPTP_2_USA-DURST.JPG'></td><td>2015-03-24 01:43:47</td><td>Also on Monday, police in Middlebury, Vermont, said they were probing a link between Lynne Schulze, a college student who vanished 44 years ago, and Durst, who owned a health food store in town.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150324&t=2&i=1034807531&w=&fh=&fw=&ll=580&pl=378&r=LYNXMPEB2M0VZ'></td><td>2015-03-24 12:20:27</td><td>Robert Durst denied bail in New Orleans, linked to Vermont cold case</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/7KGCIsSuUokai1KmfXi2qg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/nola.curbed.vox.com/9282c91e99e5c1ab13173bdaa6206391.cf.jpg'></td><td>2015-04-14 20:28:11</td><td>NEW ORLEANS (Reuters) - Real estate scion Robert Durst, who has been charged with murder in California, pleaded not guilty on Tuesday to a federal gun charge stemming from his arrest last month in New Orleans.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 23:03:52</td><td>Lawyers for jailed millionaire Robert Durst say he wants authorities to return more than $161,000 in cash now held by New Orleans police.</td></tr>
+</table></body></html>

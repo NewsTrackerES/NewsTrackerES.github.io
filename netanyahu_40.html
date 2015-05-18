@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6330370-3x2-340x227.jpg'></td><td>2015-03-18 06:37:29</td><td>The critical party for Likud to get on-side will be centrist Kulanu, led by former Likud member Moshe Kahlon, who won 10 seats, making him a kingmaker given his ability to side with either Mr Netanyahu or the centre-left opposition.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6330370-3x2-340x227.jpg'></td><td>2015-03-18 06:37:29</td><td>In a statement, Likud said Mr Netanyahu intended to form a new government within weeks, with negotiations already underway with the pro-settler Jewish Home party led by Naftali Bennett, as well as with religious groups.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-17 22:22:23</td><td>TEL AVIV (Reuters) - Prime Minister Benjamin Netanyahu's main challenger, Zionist Union chief Isaac Herzog, disputed Netanyahu's victory claim in Israel's election on Tuesday, saying "everything is open".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-170zu-6X7ZZUJFLHSK2-284_634x449.jpg'></td><td>2015-03-18 13:16:00</td><td>Prime Minister Benjamin Netanyahu vowed on Wednesday to ensure the "welfare and security" of Israelis, after his rightwing Likud party won a resounding general election victory.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 17:29:51</td><td>In recent days, Netanyahu has said that he would not allow the creation of a Palestinian state if elected.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e0fzLYHeuKsvRjq1NJ6eyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T004343Z_640852806_GM1EB3I0MJG01_RTRMADP_3_ISRAEL-ELECTION.JPG'></td><td>2015-03-21 14:45:47</td><td>Activists at the headquarters of V-15, an initiative that called to unseat Netanyahu, silently bundled dozens of banners on Thursday, and one activist asked a journalist to leave.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/1/9/190315m_BenjaminNetanyahu_800x600.jpg?itok=nQ6UdRz6'></td><td>2015-03-23 19:25:07</td><td>Netanyahu will have four weeks to complete the task, although Rivlin can extend the deadline by another 14 days if necessary.</td></tr>
+</table></body></html>

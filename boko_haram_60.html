@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k.iumdWTQX4iqi_CsYKOfA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/893f46e9403ca15d4e771d83cff708ff91c03119.jpg'></td><td>2015-04-26 09:53:13</td><td>NIAMEY, Niger (AP) - Niger's defense ministry says suspected Boko Haram fighters attacked an army base on the island of Karamga in Lake Chad.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 09:53:53</td><td>It said operations are ongoing "with the help of allies" to defeat Boko Haram.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:20:34</td><td>A similar attack on Karamga Island in February killed seven Niger soldiers, and 14 Boko Haram fighters were also killed, military officials said at the time.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:20:34</td><td>Niger joined a regional offensive earlier this year that is credited with retaking large swaths of territory in Nigeria from Boko Haram.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:41:16</td><td>Military forces started retaking towns in February from Boko Haram, whose fighters had months of gains.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:42:12</td><td>Niger Army Retakes Control of Island From Boko Haram</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/WQN7CIql3X7UUmHbkcKXGg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8135662-1-1-0.jpg'></td><td>2015-04-28 23:25:50</td><td>Niger says 46 soldiers, 28 civilians killed in weekend Boko Haram attack</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:23:28</td><td>Niger Governor Orders Evacuations Due to Boko Haram</td></tr>
+</table></body></html>

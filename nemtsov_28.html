@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 93,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 93 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-01 14:19:00</td><td><a href='nemtsov_2.html'>Putin has been Russia's dominant leader since 2000, when ailing President Boris Yeltsin chose the former KGB spy as his successor, a role Nemtsov had once been destined to play. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-01 21:34:38</td><td><a href='nemtsov_3.html'>They say they are pursuing several lines of inquiry, including the possibility that Nemtsov, a Jew, was killed by radical Islamists or that the opposition killed him to blacken Putin's name. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 15:29:02</td><td><a href='nemtsov_5.html'>TV Center, a station controlled by the Moscow city government, broadcast a poor-resolution video from a web camera that it said showed Nemtsov and Duritskaya shortly before he was killed. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 15:29:20</td><td><a href='nemtsov_6.html'>Investigators said they are looking into several possible links for Nemtsov's slaying, including an attempt to destabilize the state, Islamic extremism, the Ukraine conflict and his personal life. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:23:27</td><td><a href='nemtsov_7.html'>WARSAW, Poland (AP) - Poland's Senate speaker said Monday that Russia's authorities have denied him entry into the country for the funeral of slain Kremlin critic Boris Nemtsov. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 06:58:36</td><td><a href='nemtsov_9.html'>Mourners view body of slain opposition leader Boris Nemtsov (14)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:50:49</td><td><a href='nemtsov_10.html'>Nemtsov's killing was the biggest political assassination in Russia since 2006, when another Kremlin foe, journalist Anna Politkovskaya, was shot to death in the elevator of her Moscow apartment building on Putin's birthday. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 12:55:55</td><td><a href='nemtsov_11.html'>Mr Nemtsov's coffin stood in the centre of a hall at a human rights centre named after Soviet dissident Andrei Sakharov. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 13:00:00</td><td><a href='nemtsov_12.html'>Nemtsov's former partner, Yekaterina Odintsova, second from left, their children Anton, right, and Dina, left, and his mother Dina Eidman, second from right, at the funeral. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 00:55:09</td><td><a href='nemtsov_15.html'>Zhanna, a daughter of murdered Russian opposition figure Boris Nemtsov, farewells her father in Moscow. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 10:26:52</td><td><a href='nemtsov_16.html'>Russian security service chief says several suspects in Nemtsov case: report (11)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 13:37:25</td><td><a href='nemtsov_17.html'>The Kremlin has denied any involvement, saying that the killing was a "provocation" designed to discredit Putin and strengthen his opponents, but Nemtsov's friends say the Kremlin is to blame for fomenting an atmosphere of hatred towards its opponents. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 10:35:15</td><td><a href='nemtsov_19.html'>He said they were "suspected of carrying out this crime," but it wasn't clear if either of the suspects was believed to have fired the shots that killed Nemtsov as he and a companion walked over a bridge near the Kremlin on Feb. 27. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 15:22:46</td><td><a href='nemtsov_20.html'>Separately, Russia's Interfax news agency, quoting a Chechen law enforcement source, said a man killed in a standoff with police in the Chechen capital Grozny late on Saturday had also been wanted by police in connection with Nemtsov's killing. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-11 12:59:41</td><td><a href='nemtsov_22.html'>A former Chechen police officer who admitted to taking part in the murder of Russian opposition figure Boris Nemtsov "likely confessed under torture", a member of the Kremlin's rights council says. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 04:34:00</td><td><a href='nemtsov_25.html'>RPR-Parnas, co-founded by Nemtsov, and Party of Progress, led by anti-graft blogger Alexei Navalny, said they would also run together in local elections due in some regions this year. (2)</a></td></tr>
+</table></body></html>

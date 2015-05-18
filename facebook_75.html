@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:05:02</td><td>"Facebook is already regulated in Europe and complies with European data protection law, so the applicability of the CBPL's efforts is unclear," she said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:05:02</td><td>"Facebook tramples on European and Belgian privacy laws", the Commission said after publishing a report analysing changes that the company made to its privacy policies in January.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:16:31</td><td>Brussels - Facebook tramples on European privacy laws by tracking people online without their consent and dodges questions from national regulators, Belgium's privacy watchdog said on Friday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:16:31</td><td>It said Facebook had refused to recognise Belgian and other EU national jurisdictions, with the company insisting it was subject only to the law in Ireland, the site of its European headquarters.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:16:31</td><td>It urged internet users to install privacy software to shield themselves from Facebook's tracking systems, whether they have an account with the social network or not.</td></tr>
+</table></body></html>

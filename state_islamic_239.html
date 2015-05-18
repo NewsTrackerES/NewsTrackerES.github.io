@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 56,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 56 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-15 20:55:11</td><td><a href='state_islamic_2.html'>Video purports to show Islamic State militants in Libya beheading Christian hostages (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 11:51:00</td><td><a href='state_islamic_3.html'>CAIRO: Egypt said it bombed Islamic State targets inside Libya, a day after the group released a video appearing to show the beheading of 21 Egyptians there. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 19:58:15</td><td><a href='state_islamic_5.html'>Grief ... A man is comforted as he mourns the Egyptian Coptic Christians who were captured in Libya and beheaded by Islamic State jihadists, outside of the Virgin Mary church in the village of el-Aour, Egypt. (10)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 16:51:59</td><td><a href='state_islamic_12.html'>Cairo: Militants pledging allegiance to the Islamic State have claimed responsibility for three car bombs that killed at least 42 people in a town in eastern Libya in the latest escalation in a surge of violence linked to the group. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 12:05:19</td><td><a href='state_islamic_23.html'>TRIPOLI, Libya - Militants purportedly from the Islamic State group attacked an oil field near Libya's central coast, prompting a counterattack by the country's Islamist-backed government that included airstrikes, an official said Wednesday. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td><a href='state_islamic_48.html'>TUNIS, Tunisia (AP) - One of Tunisia's most wanted militants and a top field commander for the Islamic State group died fighting in Libya, the Tunisian government confirmed on Tuesday. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 10:25:12</td><td><a href='state_islamic_49.html'>TRIPOLI, Libya - An attack by militants from Libya's Islamic State affiliate on Wednesday killed 12 fighters loyal to the militia-backed government based in the country's capital, Tripoli, according to a militia statement. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 22:04:49</td><td><a href='state_islamic_62.html'>U.S. officials said Libya Dawn, an Islamist, but non-Jihadist, movement based in the city of Misurata, was mounting a counter-attack against Islamic State forces, a development which the United States considered encouraging. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 15:04:31</td><td><a href='state_islamic_79.html'>In the central city of Sirte on Wednesday, Islamic State fighters killed five in clashes with a militia from the western city of Misrata, a militia commander said, speaking on condition of anonymity because he was not authorized to brief journalists. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 12:51:01</td><td><a href='state_islamic_160.html'>The video bore the logo of Islamic State's (IS) media arm and was similar to footage released in the past, including of a group of 21 Coptic Christians, mainly Egyptians, beheaded on a Libyan beach in February. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 12:43:23</td><td><a href='state_islamic_161.html'>Reuters was not able to verify the authenticity of the video but the killings were similar to past violence carried out by Islamic State, which has expanded its reach from strongholds in Iraq and Syria to chaotic Libya. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 14:45:09</td><td><a href='state_islamic_162.html'>EDS NOTE: GRAPHIC CONTENT - This undated image made from a video released by Islamic State militants, Sunday, April 19, 2015, appears to show the killing of a group of captured Ethiopian Christians in Libya. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 06:22:38</td><td><a href='state_islamic_220.html'>New York: The International Criminal Court can investigate alleged crimes by Islamic State militants in Libya, but it is first up to individual states to prosecute their citizens accused of offences, The Hague-based court's prosecutor said on Tuesday. (5)</a></td></tr>
+</table></body></html>

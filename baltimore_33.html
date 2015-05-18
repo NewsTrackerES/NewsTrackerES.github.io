@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:36:47</td><td>Harbaugh, Lewis, Ravens visit schools in riot-torn Baltimore</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:36:47</td><td>The contingent included around 55 players, several Ravens coaches and Lewis, who played 17 seasons with Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:36:47</td><td>The coach says, "We've got a bunch of guys on our team that care deeply for the city and believe in Baltimore."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:38:29</td><td>Ravens coach John Harbaugh, his players and former star linebacker Ray Lewis visited Baltimore schools to help quell tension in the city following days of rioting.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/30/65/86/458965abab2a4b86911fc55200853a12-c8103b66c40d4fee95013fa5cc177808-0.jpg'></td><td>2015-04-30 20:14:44</td><td>Former Baltimore Ravens NFL football player Ray Lewis talks to students at Frederick Douglass High School as Ravens C.J. Mosley looks on Thursday, April 30, 2015, in Baltimore.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/30/65/86/458965abab2a4b86911fc55200853a12-c8103b66c40d4fee95013fa5cc177808-0.jpg'></td><td>2015-04-30 20:14:44</td><td>Ravens players visited schools in downtown Baltimore in the aftermath of riots that ravaged the city.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/30/65/86/458965abab2a4b86911fc55200853a12-c8103b66c40d4fee95013fa5cc177808-0.jpg'></td><td>2015-04-30 20:14:44</td><td>"There were some hard questions. The young people of Frederick Douglass, the elementary school we went to, even people on the street walking back and forth, these are talented, good people that care about Baltimore and want to make a difference and do things right."</td></tr>
+</table></body></html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/1/6/s/n/image.related.articleLeadwide.620x349.gh1655.png/1431553326032.jpg'></td><td>2015-05-13 21:42:15</td><td>Al-Afari, who also goes by several other assumed names, was recently added to a US government list offering rewards for information leading to the death or capture of top Islamic State leaders.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/1/6/s/n/image.related.articleLeadwide.620x349.gh1655.png/1431553326032.jpg'></td><td>2015-05-13 21:42:15</td><td>The death of al-Afari, if true, would represent a serious blow to the leadership of the Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/1/6/s/n/image.related.articleLeadwide.620x349.gh1655.png/1431553326032.jpg'></td><td>2015-05-13 21:42:15</td><td>A previous leader of al-Qaeda in Iraq, the predecessor to the Islamic State, was claimed to have been killed several times, and his supposed death became a running joke in the Iraqi media.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/1/6/s/n/image.related.articleLeadwide.620x349.gh1655.png/1431553326032.jpg'></td><td>2015-05-13 21:42:15</td><td>The US Central Command acknowledged that airstrikes were conducted against the Islamic State near Tal Afar on Tuesday and Wednesday but could not verify the government's claim.</td></tr>
+</table></body></html>

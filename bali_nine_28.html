@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 17,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 17 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://images.smh.com.au/2015/04/26/6477805/vd-bali_9-92x52.jpg'></td><td>2015-04-28 19:12:13</td><td>The Bali Nine: where are they now?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.smh.com.au/2015/04/26/6477805/vd-bali_9-92x52.jpg'></td><td>2015-04-28 19:12:13</td><td>The Bali Nine: where are they now?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.smh.com.au/2015/04/26/6477805/vd-bali_9-92x52.jpg'></td><td>2015-04-28 19:12:13</td><td>He was the youngest member of the Bali Nine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/26/6477805/vd-bali_9-92x52.jpg'></td><td>2015-04-28 19:12:13</td><td>The Bali Nine: where are they now?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/26/6477805/vd-bali_9-92x52.jpg'></td><td>2015-04-28 19:12:13</td><td>The Bali Nine: where are they now?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/26/6477805/vd-bali_9-92x52.jpg'></td><td>2015-04-28 19:12:13</td><td>He was the youngest member of the Bali Nine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Bali nine: where are the other members of the group?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Bali nine: where are the other members of the group?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>He was the youngest member of the Bali nine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>The other seven members of the Bali nine group are also in Indonesia, most serving life sentences.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Bali nine: where are the other members of the group?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Bali nine: where are the other members of the group?</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>He was the youngest member of the Bali nine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Now: Serving life in Karangasem, Bali.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 20:01:43</td><td>The Bali Nine: where are they now?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 20:01:43</td><td>The Bali Nine: where are they now?</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 20:01:43</td><td>He was the youngest member of the Bali Nine.</td></tr>
+</table></body></html>

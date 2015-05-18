@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/9zgCZMre5f1KhV45UOd71w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T002047Z_2_LYNXMPEB3812L_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-04-10 00:20:47</td><td>Hillary Clinton expected to announce presidential run as soon as this weekend</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/9zgCZMre5f1KhV45UOd71w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T002047Z_2_LYNXMPEB3812L_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-04-10 00:20:47</td><td>A variety of sources in the Clinton orbit said they were anticipating an imminent announcement but would not confirm a report in the New York Daily News that the announcement was expected on Sunday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 00:46:49</td><td>Hillary Clinton is expected to announce her campaign for the Democratic presidential nomination in 2016 as early as this weekend, facing no substantial competition but needing to get her organization in place for the long battle to come.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 13:25:12</td><td>WASHINGTON (AP) " Hillary Rodham Clinton will end months of speculation about her political future and launch her long-awaited 2016 presidential campaign on Sunday, according to people familiar with her plans.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-10 14:46:50</td><td>"I think it's important, and Hillary does too, that she go out there as if she's never run for anything before and establish her connection with the voters," he said in a recent interview with Town & Country magazine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdnph.upi.com/sv/em/upi/UPI-2011428845604/2015/1/97989e9dee53cd9b82566c22ac07a927/Hillary-Clinton-set-to-announce-presidential-campaign.jpg'></td><td>2015-04-12 16:55:33</td><td>Secretary of State John Kerry, who succeeded Clinton, said she "did a terrific job of rebuilding alliances that had been shredded over the course of the prior years."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 18:55:28</td><td>It's official: Hillary Clinton is running for president.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/hillary-clinton-2014.jpg'></td><td>2015-04-12 19:38:20</td><td>Hillary Clinton Announces Presidential Campaign</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/4/11/1428789034757/d74800e8-77b1-4cb2-a9e5-730025e8d5d4-300x180.jpeg'></td><td>2015-04-12 19:07:54</td><td>"This campaign is not about Hillary Clinton and not about us - it's about the everyday Americans who are trying to build a better life for themselves and their families."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/09/6426603/Baker169-92x52.jpg'></td><td>2015-04-12 19:45:21</td><td>Hillary Clinton has launched her bid to become the first woman to win the White House, and announced a campaign tour to showcase her support for "everyday Americans".</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 00:01:19</td><td>Hillary Clinton heads to New Hampshire after Iowa kickoff</td></tr>
+</table></body></html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 22:47:08</td><td><a href='volcano_9.html'>HONOLULU - A lake of lava on Hawaii's Kilauea volcano has been rising over the past week and, at times, overflowing in a spectacular show. (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:36:12</td><td><a href='volcano_12.html'>HONOLULU - Molten lava and rocks went flying through the air on Hawaii's Kilauea (kih-luh-WAY'-uh) volcano after an explosion caused by the partial collapse of a crater wall. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 15:01:24</td><td><a href='volcano_13.html'>Lava explodes from Hawaii?s Kilauea volcano after crater collapses (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 02:26:06</td><td><a href='volcano_14.html'>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour, and scientists' tilt meters detected that the ground was deforming. (7)</a></td></tr>
+</table></body></html>

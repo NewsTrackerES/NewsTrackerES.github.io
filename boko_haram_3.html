@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 17:32:56</td><td>Boko Haram's Islamic extremist insurgency killed 10,000 people last year compared to 2,000 in the four previous years, according to the U.S. Council on Foreign Relations.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 17:32:56</td><td>The United Nations special representative for West Africa said Friday that Nigeria's military needs to show "greater resolve" in the widening fight against Boko Haram.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 17:32:56</td><td>The Associated Press obtained a copy of the message in which Boko Haram warned that its fighters will attack all polling stations in the March 28 elections.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 17:32:56</td><td>Nigerian military repels Boko Haram attack on northeast town</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/11/article-urn:publicid:ap.org:fe896bdaf6c1432daa5e6f637b6a810e-6WGkf2JRA-HSK1-938_87x84.jpg'></td><td>2015-02-15 05:51:07</td><td>Along with Benin, they have vowed to contribute to a regional force against Boko Haram that is expected to be launched in the coming weeks, though funding questions remain unsettled.?</td></tr>
+</table></body></html>

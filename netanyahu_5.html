@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 05:27:45</td><td>Netanyahu will press his opposition to a diplomatic accommodation of Iran's program in his speech Tuesday to Congress.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 05:27:45</td><td>By consenting to speak, Netanyahu angered the White House, which was not consulted in advance, and Democrats, who were forced to choose between showing support for Israel and backing the president.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 05:27:45</td><td>The congressional speech also has sparked criticism in Israel, where Netanyahu is seeking re-election on March 17.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/3/3/27f938637d0c4211b0598d671feed668_18.jpg'></td><td>2015-03-02 15:38:08</td><td>"We are concerned by reports that suggest selective details of the ongoing negotiations will be discussed publicly in the coming days," he said, apparently alluding to Netanyahu's planned Tuesday speech to US lawmakers.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c664701/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F31%2F12%2Fefb873234c6f8055960f1f4360f0%2Fresizes%2F500%2Fthumb-3.jpg'></td><td>2015-03-02 15:49:47</td><td>Obama views the prospect of a nuclear accord with Iran as a central component of his foreign policy legacy - as much as Netanyahu views blocking such a deal as a component of his own.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6275796-3x2-340x227.jpg'></td><td>2015-03-02 19:57:00</td><td>Mr Netanyahu is expected to press US politicians to block a deal with Iran that he contends would endanger Israel's existence but which Mr Obama's aides believe could be a signature foreign policy achievement for the president.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-03-03 08:08:06</td><td>Netanyahu to use Congress' bully pulpit to assail Iran talks</td></tr>
+</table></body></html>

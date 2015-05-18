@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 14:25:59</td><td>NAIROBI, Kenya - Somalia's al-Shabab Islamic extremists claimed responsibility Wednesday for an attack that killed four people in Kenya's volatile northern region, bringing to 12 the number of those killed by the militants since Friday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 14:25:59</td><td>Al-Shabab has been attacking Kenya since Kenyan troops were deployed to Somalia in Oct 2011 to fight the militants.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:02:56</td><td>Police statistics show that 312 people have been killed in al-Shabab attacks in Kenya from 2012 to 2014.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:02:56</td><td>Kenya's northern and eastern region border Somalia and a significant number of inhabitants there are Kenyan-Somalis.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:02:56</td><td>Al-Shabab claim responsibility for 4 dead in Kenya</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:11:11</td><td>"The attack is part of a series of attacks targeting the Northern Frontier District region under Kenya's occupation," said al-Shabab's radio Andulus."The Mujahideen forces who carried out the attack safely returned to base."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82080000/jpg/_82080272_026589623-1.jpg'></td><td>2015-04-02 18:37:31</td><td>Kenya attack death toll rises to 147</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 12:12:18</td><td>Outside of Somalia, Kenya sends more fighters to the Shabab than does any other country.</td></tr>
+</table></body></html>

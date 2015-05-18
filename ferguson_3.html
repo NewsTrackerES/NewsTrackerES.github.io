@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/00/05/7602517/5/920x920.jpg'></td><td>2015-03-03 22:04:15</td><td>Associated Press writers Jim Salter and Jim Suhr in St. Louis and Alan Scher Zagier in Ferguson contributed to this report.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.2865397.1418101347!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/michael-brown-sr.jpg'></td><td>2015-03-03 22:51:19</td><td>Several messages seeking comment from Ferguson Police Chief Tom Jackson and Mayor James Knowles III were not returned.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 00:21:34</td><td>Ferguson reviewing federal report on police force</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/michael_brown.jpg?w=300&#038;h=450'></td><td>2015-03-04 18:18:19</td><td>The report said blacks in Ferguson are disproportionately subject to excessive police force, baseless traffic stops and citations for infractions as petty as walking down the middle of the street.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/45E23yrp_SXCsvyP02UQ3A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5dc495ecfebabc096f0f6a706700af80.jpg'></td><td>2015-03-04 20:45:18</td><td>Feds: Evidence backs Ferguson officer's account in shooting</td></tr>
+</table></body></html>

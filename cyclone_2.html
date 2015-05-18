@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 17:45:54</td><td>The cyclone has already destroyed some homes and caused damage to other Pacific islands including Kiribati and the Solomon Islands.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:25:00</td><td>Cyclone Pam hits small Pacific nation of Vanuatu</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/3024/cdbab4a0201d4c5eaf652b95ae07e147.jpg'></td><td>2015-03-13 10:42:41</td><td>Cyclone-Pam.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6327390-3x2-700x467.jpg'></td><td>2015-03-13 12:02:05</td><td>He said they could be more destructive than Cyclone Uma, which killed at least 30 people when it sank two ferries off Port Vila.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/3/15/98283b6acc0140fb8f45d55cc40d6ea3_18.jpg'></td><td>2015-03-17 03:24:52</td><td>Disaster management officials and relief workers are still struggling to establish contact with remote outer islands that bore the brunt of Cyclone Pam's winds of more than 300 kph on Friday and Saturday.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/f/3/g/image.related.articleLeadwide.620x349.1m2c2h.png/1426823984253.jpg'></td><td>2015-03-18 09:42:14</td><td>Cyclone Pam: At least eight Australians missing in Vanuatu</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 14:22:44</td><td>Vanuatu provides lessons in cyclone survival</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 05:45:03</td><td>The cyclone wiped out gardens, killed livestock and contaminated the water supply in many areas, and agricultural experts estimate that those displaced by the storm will run out of food in less than a week.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-21 03:06:08</td><td>"Around 166,000 people, more than half of Vanuatu's population, have been affected by Tropical Cyclone Pam on 22 islands," the Office for the Coordination of Humanitarian Affairs (OCHA) said in a situation report.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150324&t=2&i=1035004509&w=580&fh=&fw=&ll=&pl=&r=LYNXMPEB2N0XF'></td><td>2015-03-24 18:17:04</td><td>U.N. targets shelter, water in $29.9 million appeal for cyclone-hit Vanuatu</td></tr>
+</table></body></html>

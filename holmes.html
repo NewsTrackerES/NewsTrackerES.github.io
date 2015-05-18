@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 49,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 49 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>holmes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>11</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/269E9B2F00000578-2999245-image-a-41_1426613388520.jpg'></td><td>2015-03-18 15:16:17</td><td>Katie Holmes has been 'seeing Jamie Foxx for more than a year'?</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 18:04:44</td><td><a href='holmes_7.html'>Tom Cruise and Katie Holmes are no longer speaking to each other, according to TMZ. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-31 03:47:00</td><td><a href='holmes_8.html'>In a cut-out dress that hugged in all the right places, Katie Holmes has stunned onlookers at the New York City premiere of her new film "Woman in Gold". (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-31 17:49:04</td><td><a href='holmes_9.html'>Arlene Holmes wrote in "When The Focus Shifts: The Prayer Book of Arlene Holmes 2013-2014," that she can never forgive herself for not predicting the shooting that killed 12 and injured 70. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 23:01:28</td><td><a href='holmes_1.html'>Spieth, Holmes, Wagner in playoff at Houston Open (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 23:54:07</td><td><a href='holmes_2.html'>J.B. Holmes used a strong start Sunday for a Houston Open victory in a three-way playoff against Jordan Spieth and Johnson Wagner. (8)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-06 00:00:52</td><td>J.B. Holmes wins Houston Open in three-way playoff</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-06 00:01:27</td><td><a href='holmes_3.html'>Holmes collected $1.188 million for his fourth PGA Tour victory. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-06 06:04:17</td><td><a href='holmes_4.html'>Holmes' birdie effort trickled right, but his par proved good enough when Wagner's five-foot par putt failed to drop. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 03:01:45</td><td><a href='holmes_6.html'>Other winners on the final night were Thomas Fraser-Holmes (men's 400m IM), Keryn McMaster (women's 400m IM), Leiston Pickett (50m breaststroke) and Ben Treffers (50m backstroke). (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 03:01:48</td><td><a href='holmes_5.html'>All Fraser-Holmes has to show for the titles to date is a 4x200m freestyle relay berth for July's world titles in Kazan, Russia. (9)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 00:09:42</td><td><a href='holmes_10.html'>Prosecutors insist Holmes was sane and will ask jurors to convict him and sentence him to death. (5)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-25 16:48:59</td><td>When Holmes opened fire inside a packed movie theater in July 2012, killing 12 and injuring 70, it did more than spread fear and heartbreak across the Denver suburbs.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/02282/witness-denver-sho_2282779g.jpg'></td><td>2015-04-27 15:01:16</td><td>Holmes has pleaded not guilty by reason of insanity to opening fire with a handgun, shotgun and semi-automatic rifle inside a crowded midnight screening of the Batman film The Dark Knight Rises.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:14:05</td><td><a href='holmes_13.html'>Many of the people who attended a morning hearing in the trial of Colorado theater shooter James Holmes have dispersed while court is in recess, including Holmes' parents. (71)</a></td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-27 19:14:53</td><td>Opening statements begin in death penalty trial of Colorado movie theater gunman James Holmes</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-27 19:25:57</td><td>Prosecutor: 2 Mental Evaluations Found Colorado Movie Theater Gunman James Holmes Was Sane</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-04-27 22:40:09</td><td>"The law commands that you decide one thing and one thing only: that you fairly and rationally decide all the evidence in the case or lack of evidence, and that you decide whether Brauchler has ... proven beyond a reasonable doubt that Mr Holmes was not insane."</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-05-01 05:24:16</td><td>Arlene Holmes then left the courtroom with her husband, Bob, and defense attorney Tamara Brady.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-05-06 15:39:54</td><td>Prosecutors say Holmes knew what he was doing.</td></tr>
+</table></body></html>

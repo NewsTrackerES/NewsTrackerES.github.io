@@ -13,12 +13,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        var pos = getParameterByName("pos");
         $(function() {
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
             max: 16,
-            values: [ getParameterByName("pos") ],
+            values: [  ],
             slide: function( event, ui ) {
               var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {

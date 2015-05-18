@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/30/11/51/6330980/5/landscape_32.jpg'></td><td>2015-04-22 20:43:01</td><td>Net income declined as Facebook's expenses grew 83 percent from a year earlier.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 20:50:00</td><td>The number of users who accessed Facebook on mobile devices at least once a month grew 24 per cent to 1.25 billion.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 20:50:00</td><td>He said Facebook will continue to experiment with apps for mobile.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 20:50:00</td><td>NEW YORK -- Nearly three-quarters of Facebook's advertising revenue now comes from mobile ads, as many more users access the social network on smartphones and other handheld gadgets.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-04-22 20:51:18</td><td>Facebook had 1.44 billion monthly active users as of March, up 13 percent from a year earlier.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/30/11/51/6330980/5/landscape_32.jpg'></td><td>2015-04-22 21:30:40</td><td>Facebook, which bought the popular photo-sharing app Instagram and the messaging service WhatsApp, has been coming out with its own stand-alone mobile apps to capture more of the time people spend on phones.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/77/50/7862799/3/square_gallery_thumb.jpg'></td><td>2015-04-22 23:07:58</td><td>Facebook's share of the $42.6 billion worldwide mobile advertising market was 17.4 percent last year, according to research firm eMarketer, up from 16.4 percent a year earlier.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-04-22 23:07:58</td><td>Shares in Facebook Inc. fell $1.76 to $82.87 in extended trading after the earnings report.</td></tr>
+</table></body></html>

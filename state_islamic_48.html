@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td>Ben Hassine and Al-Rouissi fled to Libya where they began fighting under the banner of the Islamic State group, which already controls about a third of Syria and Iraq in a self-declared caliphate.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td>TUNIS, Tunisia (AP) - One of Tunisia's most wanted militants and a top field commander for the Islamic State group died fighting in Libya, the Tunisian government confirmed on Tuesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td>Islamic State group reports Tunisian leader killed in Libya</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td>The Islamic State group posted a eulogy on a militant website for Ahmed al-Rouissi after he was killed in clashes around the Libyan city of Sirte - a stronghold for the Islamic State affiliate.</td></tr>
+</table></body></html>

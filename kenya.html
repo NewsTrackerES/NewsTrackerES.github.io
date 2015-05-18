@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 121,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 121 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td></td><td>2015-03-03 16:12:20</td><td><a href='kenya_78.html'>NAIROBI, Kenya (AP) - Kenya's president set fire to 15 tons of elephant tusks during World Wildlife Day Tuesday to discourage poaching and trade in ivory. (15)</a></td></tr>
+  <tr><td style='display:none'>31</td><td></td><td>2015-03-03 22:45:10</td><td>The ivory, with a black market value of $30m ( 19.4m), is the largest consignment to be destroyed in Kenya.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-03-04 14:00:26</td><td><a href='kenya_1.html'>Al-Shabab extremists from Somalia have carried out 129 attacks in Kenya since Oct. 2011 saying its retribution for the Kenyan troop presence in Somalia. (2)</a></td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-03-18 09:21:08</td><td><a href='kenya_4.html'>Four people died in a gun and grenade attack on Wajir town in northeast Kenya, the latest in a series of cross-border raids by Somalia's Shebab militants, officials said Wednesday. (2)</a></td></tr>
+  <tr><td style='display:none'>32</td><td></td><td>2015-03-20 19:25:57</td><td>Materials recovered from the home of a British terrorism suspect in Kenya were capable of making explosives, a court in Mombasa heard Friday.</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-03-25 08:30:57</td><td><a href='kenya_13.html'>Reports said the restaurant's Chinese owners and managers had also been summoned by Kenya's immigration authorities. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-26 17:04:33</td><td><a href='kenya_2.html'>NAIROBI, Kenya - Kenya's president has apologized to the Kenyan people for past wrongs committed both by his government and past regimes. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-30 13:48:44</td><td><a href='kenya_75.html'>WASHINGTON (AP) - President Barack Obama will make his first trip as president to Kenya, the country of his father's birth. (13)</a></td></tr>
+  <tr><td style='display:none'>30</td><td></td><td>2015-03-30 14:07:36</td><td><a href='kenya_6.html'>The group says the attacks are in response to Kenya's deployment of troops in an African Union-led force that has been beating back the militants in Somalia. (3)</a></td></tr>
+  <tr><td style='display:none'>33</td><td></td><td>2015-04-02 05:50:12</td><td>NAIROBI, Kenya (AP) " Police: Heavy gunfire reported as masked gunmen attack Garrisa university in Kenya's northeast.</td></tr>
+  <tr><td style='display:none'>34</td><td></td><td>2015-04-02 08:51:42</td><td>Kenya Says 29 People Wounded in Attack on University, Most With Gunshot Wounds</td></tr>
+  <tr><td style='display:none'>35</td><td></td><td>2015-04-02 17:54:31</td><td>NAIROBI, Kenya (AP) - Kenya officials: Security op over, 4 attackers killed, death toll may be high as about 150.</td></tr>
+  <tr><td style='display:none'>36</td><td></td><td>2015-04-02 18:33:33</td><td>Kenya disaster operations center, interior minister: 147 fatalities in attack on college.</td></tr>
+  <tr><td style='display:none'>37</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82080000/jpg/_82080272_026589623-1.jpg'></td><td>2015-04-02 18:37:31</td><td>Kenya attack death toll rises to 147</td></tr>
+  <tr><td style='display:none'>38</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150403114627-kenya-students-gather-super-169.jpg'></td><td>2015-04-03 14:27:04</td><td>"Kenya badly needs additional officers," he said, "and I will not keep the nation waiting."</td></tr>
+  <tr><td style='display:none'>39</td><td></td><td>2015-04-03 14:35:34</td><td>Pope condemns Kenya school attack as 'senseless brutality'</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-03 23:36:36</td><td><a href='kenya_77.html'>Rome: Pope Francis presided at two Good Friday services, praying for persecuted Christians a day after Islamist militants attacked a university in Kenya, killing at least 147 people. (7)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 07:37:57</td><td><a href='kenya_74.html'>The al Qaeda aligned group said the attack was retribution for Kenya's presence in Somalia and mistreatment of Muslims within Kenya. (226)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-04-04 15:39:24</td><td><a href='kenya_26.html'>Kenya's president vows harsh action against Somali rebels (3)</a></td></tr>
+  <tr><td style='display:none'>40</td><td><img src='http://resources1.news.com.au/images/2015/04/05/1227291/754609-4563d9b6-daf1-11e4-90d8-bc21b5c83438.jpg'></td><td>2015-04-04 19:15:00</td><td>POLICE have paraded the naked corpses of Somali al-Qaeda-linked al-Shabab gunmen who slaughtered almost 150 people in one of Kenya's worst massacres, hours after the militants threatened "another bloodbath".</td></tr>
+  <tr><td style='display:none'>41</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46810509,width-300,resizemode-4/kenya-s.jpg'></td><td>2015-04-04 22:53:04</td><td>Kenya declares three days of national mourning</td></tr>
+  <tr><td style='display:none'>42</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-05 10:57:49</td><td>Alarm bells rang at Kenya's elite Recce Company in Nairobi as soon as the first reports of Thursday's pre-dawn attack emerged.</td></tr>
+  <tr><td style='display:none'>43</td><td></td><td>2015-04-06 12:12:18</td><td>Outside of Somalia, Kenya sends more fighters to the Shabab than does any other country.</td></tr>
+  <tr><td style='display:none'>44</td><td></td><td>2015-04-06 14:01:30</td><td>Kenya to compile list of suspected al Shabaab members- government source</td></tr>
+  <tr><td style='display:none'>45</td><td></td><td>2015-04-06 14:59:37</td><td>The Vatican's official preacher, Father Raniero Cantalamessa, said on Friday there was a "disturbing indifference" among world institutions and in public opinion to the killing of Christians, mentioning the bloodshed in Kenya and Libya.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 16:48:37</td><td><a href='kenya_36.html'>NAIROBI, Kenya (AP) - He was a soccer player with a fighting spirit, a talented keyboard player with "golden fingers" who was intent on succeeding in life, his guardian said. (2)</a></td></tr>
+  <tr><td style='display:none'>46</td><td></td><td>2015-04-07 15:20:23</td><td>The raucous crowd of about 250 jogged down main thoroughfares in Kenya's capital, sometimes sitting in traffic circles and intersections, backing up traffic for blocks and attracting bystanders.</td></tr>
+  <tr><td style='display:none'>29</td><td></td><td>2015-04-08 11:52:00</td><td><a href='kenya_39.html'>"It's going to hurt Somalis in Kenya more than Somalis in Somalia. The amount of money sent from abroad to Kenya is huge," Ali said, pointing out that many Somalis in Kenya rely on relatives abroad for basics including school fees. (2)</a></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-04-08 13:56:25</td><td><a href='kenya_40.html'>NAIROBI, Kenya - A senior Kenyan official says the government is freezing assets of dozens of organizations and individuals that he said are suspected of financing Islamic extremist activities. (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-09 09:53:59</td><td><a href='kenya_42.html'>Nganyi RANET - it stands for "Radio Internet" - is a community radio station set up by the Kenya Meteorological Service to target communities particularly vulnerable to climate extremes. (2)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-10 15:04:28</td><td><a href='kenya_45.html'>Mass security sweeps also breed radicalisation and help al Shabaab portray itself as the protector of Muslims in Kenya, Muslim groups say. (10)</a></td></tr>
+  <tr><td style='display:none'>47</td><td></td><td>2015-04-11 14:12:48</td><td>Kenya orders U.N. to move massive Somali refugee camp after attack</td></tr>
+  <tr><td style='display:none'>48</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/iAbkhL92v62JjCJQhu8WIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/cceb90156cca7310730f6a70670081bd.jpg'></td><td>2015-04-12 12:10:05</td><td>NAIROBI, Kenya (AP) - One Kenyan student was killed and 141 injured in a stampede Sunday on the campus of the University of Nairobi when students mistook several accidental explosions for an extremist attack, according to an official.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-13 16:08:05</td><td><a href='kenya_50.html'>"While Kenya boasts one of the most progressive legal and policy frameworks for addressing sexual violence, Liz's case and countless others have revealed significant failures of local authorities to adequately address sexual violence." (4)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-13 17:28:07</td><td><a href='kenya_51.html'>Kiplagat said Athletics Kenya would work with the international athletics body, the IAAF, and would meet promoters of the Diamond League to agree on how to manage athletes handled by the two agencies to ensure they did not miss competitions. (4)</a></td></tr>
+  <tr><td style='display:none'>49</td><td></td><td>2015-04-14 13:58:48</td><td>The U.N. refugee agency UNHCR urged Kenya on Tuesday to reconsider the demand.</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-04-16 09:07:42</td><td><a href='kenya_53.html'>By tapping into Kenya's fast-evolving mobile culture, the company can also instantly communicate with its customers, sending text reminders when users' accounts are running low so they can top up. (3)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-20 17:26:56</td><td><a href='kenya_55.html'>Kenya's Rotich had a more dramatic finish, besting Ethiopia's Mare DiBaba in a sprint down Boylston Street, turning in a time of 2 hours, 24 minutes and 55 seconds. (2)</a></td></tr>
+  <tr><td style='display:none'>50</td><td></td><td>2015-04-22 11:01:54</td><td>Kenya: 9 security chiefs suspended over al-Shabab attack</td></tr>
+  <tr><td style='display:none'>51</td><td></td><td>2015-04-22 11:05:04</td><td>The suspension, imposed by Athletics Kenya's anti-doping commission, was the minimum mandatory punishment under international anti-doping regulations in place when she was caught in an out-of competition test last year.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-04-22 15:10:14</td><td><a href='kenya_57.html'>Kenya security forces have increased the frequency of arrests of people suspected of involvement in extremism since four gunmen from the Somali extremist group al-Shabab killed 148 people earlier this month at a college in Garissa, Kenya. (2)</a></td></tr>
+  <tr><td style='display:none'>52</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/0/2015-04-22T161044Z_1_LYNXMPEB3L0UX_RTROPTP_2_ATHLETICS-KENYA-DOPING.JPG?itok=Qvuj94G0'></td><td>2015-04-22 16:21:03</td><td>Kenya &#039;open-minded&#039; on appeal to increase Jeptoo ban</td></tr>
+  <tr><td style='display:none'>53</td><td></td><td>2015-04-23 09:10:58</td><td>Kenya's top anti-corruption officials were suspended Thursday following a bitter stand-off with parliament and after they alleged widespread graft in the east African nation.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-24 13:41:45</td><td><a href='kenya_76.html'>Doping cases cast shadow on Kenya rivalry in London Marathon (6)</a></td></tr>
+  <tr><td style='display:none'>54</td><td></td><td>2015-04-24 13:41:45</td><td>Doping cases cast shadow on Kenya rivalry in London Marathon</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 06:39:28</td><td><a href='kenya_63.html'>Thailand seized 3 tons of ivory hidden in tea leaf sacks from Kenya in the second-biggest bust in the country's history, one week after the biggest seizure, customs officials said Monday. (5)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-27 15:27:22</td><td><a href='kenya_64.html'>Kenya: Court orders government to register gay rights group (6)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-04-27 19:33:54</td><td><a href='kenya_65.html'>WASHINGTON (Reuters) - Secretary of State John Kerry will travel to Sri Lanka, Kenya and Djibouti from May 2, the State Department said on Monday. (2)</a></td></tr>
+  <tr><td style='display:none'>55</td><td></td><td>2015-04-27 22:25:44</td><td>"Black-ish" creator Kenya Barris has been set to write the screenplay for a "Good Times" film based on the hit '70s sitcom, his manager confirmed to The Associated Press.</td></tr>
+  <tr><td style='display:none'>56</td><td></td><td>2015-05-03 10:32:59</td><td>Felix Kipchirchir Kandie of Kenya won the Prague International Marathon on Sunday while Yebrgual Melese of Ethiopia claimed the women's race.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-03 11:32:56</td><td><a href='kenya_66.html'>"It's about reinforcing and deepening the relationship that we have had with Kenya, and it's also partially in preparation for President Obama's trip that's going to take place at the end of July." (7)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-04 13:06:49</td><td><a href='kenya_68.html'>"Kenya's deputy president joins an important tradition by Africans in power to spread hate in church on a Sunday," Binyavanga Wainana, a prominent Kenyan writer who is openly gay, said on his Twitter account. (6)</a></td></tr>
+  <tr><td style='display:none'>57</td><td></td><td>2015-05-04 15:20:21</td><td>US gives $45 million to help Kenya with refugee crisis</td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-05-04 16:02:08</td><td><a href='kenya_70.html'>Kenya's deputy president, William Ruto, has told worshippers at a church service in Nairobi that homosexuality had no place in the east African nation, reports said Monday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 17:53:25</td><td><a href='kenya_69.html'>US Secretary of State John Kerry pauses as he speaks at a news conference at the Nairobi Sankara Hotel, Monday, May 4, 2015, in Nairobi, Kenya. (8)</a></td></tr>
+  <tr><td style='display:none'>58</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/04/17/284C50E500000578-0-image-a-23_1430756666268.jpg'></td><td>2015-05-04 17:57:39</td><td>John Kerry takes selfie with baby elephant in Kenya</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-05-05 07:15:06</td><td><a href='kenya_71.html'>At least 14 people also died in a fight between two pastoralist communities on Monday, on the borders of Kenya's northern Samburu and Marsabit counties, the regional manager for the Kenya Red Cross, Mugambi Gitonga, said. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-05-06 15:35:26</td><td><a href='kenya_72.html'>Livestock-keeping nomadic tribes in Kenya's north routinely engage in the traditional practice of cattle raids which experts say has become more deadly because the tribes have moved from using spear and arrows to guns. (3)</a></td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-05-13 15:39:19</td><td><a href='kenya_73.html'>Well dayummnn #ToxicTrick Kenya Moore strikes again! (2)</a></td></tr>
+</table></body></html>

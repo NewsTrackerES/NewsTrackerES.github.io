@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 51,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 51 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 08:50:07</td><td><a href='state_islamic_22.html'>Dozens of foreign fighters have traveled to Syria and neighboring Iraq to fight with Kurdish militias battling the Islamic State group. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 15:37:45</td><td><a href='state_islamic_46.html'>Three male British teenagers suspected of planning to join Islamic State militants in Syria have been arrested by London police after being deported from Turkey, officials said. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 22:16:02</td><td><a href='state_islamic_66.html'>TORONTO (AP) - Canada's prime minister will talk about his plan to extend and expand Canada's military mission against the Islamic State group at a meeting with NATO's secretary general. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 06:00:58</td><td><a href='state_islamic_70.html'>Nusra Front quietly rises in Syria as Islamic State targeted (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:42:04</td><td><a href='state_islamic_73.html'>OTTAWA (Reuters) - Canada will expand its military mission against Islamic State by launching air strikes against its positions in Syria as well as Iraq, Prime Minister Stephen Harper said on Tuesday. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 01:00:21</td><td><a href='state_islamic_74.html'>Canadian Parliament approves extension and expansion of mission against the Islamic State (4)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 03:30:59</td><td><a href='state_islamic_88.html'>Washington is seeking a negotiated settlement to Syria's civil war that excludes Assad, but has made clear its top priority in Syria is the fight against Islamic State militants. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:23:49</td><td><a href='state_islamic_126.html'>In addition to IS militants, the new recruits would likely face attacks from a Syrian government wary of a Western-backed force, as well as Islamic militants such as the al-Qaida-linked Nusra Front. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 18:54:03</td><td><a href='state_islamic_178.html'>All eight air strikes in Syria targeted Islamic State fighting positions, tactical units and a vehicle near Kobani. (9)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 13:45:05</td><td><a href='state_islamic_233.html'>This was the first known U.S. special forces operation inside Syria apart from a failed secret effort to rescue a number of U.S. and other foreign hostages held by Islamic State in northeastern Syria last year. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 14:22:15</td><td><a href='state_islamic_236.html'>The UK-based Syrian Observatory for Human Rights, which reports on the Syrian conflict, put the Islamic State death toll from the US raid at 32 including four leaders, three of whom it identified as north African. (5)</a></td></tr>
+</table></body></html>

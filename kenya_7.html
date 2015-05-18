@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-02 05:14:14</td><td>Somali Islamist militant group al Shabaab has carried out several attacks in Garissa and across Kenya in the past, including the 2013 attack on an upscale shopping mall in the capital Nairobi.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 05:24:21</td><td>Al-Qaeda-linked al-Shabaab has vowed to punish Kenya for sending troops into Somalia alongside African Union peacekeepers to fight the group.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6368852-3x2-700x467.jpg'></td><td>2015-04-02 05:26:08</td><td>The stand-off was ongoing at the Garissa University College, Kenya's Daily Nation newspaper and Capital FM radio station said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 15:20:23</td><td>The raucous crowd of about 250 jogged down main thoroughfares in Kenya's capital, sometimes sitting in traffic circles and intersections, backing up traffic for blocks and attracting bystanders.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/iAbkhL92v62JjCJQhu8WIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/cceb90156cca7310730f6a70670081bd.jpg'></td><td>2015-04-12 12:10:05</td><td>NAIROBI, Kenya (AP) - One Kenyan student was killed and 141 injured in a stampede Sunday on the campus of the University of Nairobi when students mistook several accidental explosions for an extremist attack, according to an official.</td></tr>
+</table></body></html>

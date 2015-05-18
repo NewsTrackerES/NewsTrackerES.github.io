@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/publish-images/news/2013-08-26/d19448d6-6aaa-4359-a768-eadacf5fbca9_afp-gif_new.gif'></td><td>2015-04-09 01:10:40</td><td>"We are no longer able to broadcast any of our channels. Our websites and social media sites are no longer under our control and are all displaying claims of responsibility by Islamic State," the broadcaster's director general Yves Bigot told AFP.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 02:56:43</td><td>"Soldiers of France, stay away from the Islamic State! You have the chance to save your families, take advantage of it," read one message on TV5Monde's Facebook page.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6382322-3x2-340x227.jpg'></td><td>2015-04-09 14:41:19</td><td>"The CyberCaliphate continues its cyberjihad against the enemies of Islamic State," the message added.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6382322-3x2-340x227.jpg'></td><td>2015-04-09 14:41:19</td><td>French television network TV5Monde was forced to broadcast only pre-recorded programs on Thursday after an "unprecedented" hack by self-proclaimed Islamic State militants, who also hijacked its websites and social networks.</td></tr>
+</table></body></html>

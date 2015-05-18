@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 20,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 20 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 05:05:49</td><td>Toll climbs after powerful quake hits Nepal: Things to Know</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:21:44</td><td>Image from the quake: Heavy damage in Nepal ancient city</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 16:37:29</td><td>No time to lose: Global response to Nepal quake gears up</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 20:11:33</td><td>Pentagon: US military sending aid to quake-ravaged Nepal</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 23:27:23</td><td>Shocks terrify survivors of Nepal quake that killed 2,500</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 04:47:52</td><td>Rescuers struggle to reach many in Nepal quake, fear worst</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:14:32</td><td>Deaths rise, aid flown in after Nepal quake: Things to Know</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 08:42:38</td><td>Modern tragedy: Quake-ravaged Nepal tower a site for selfies</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 11:40:13</td><td>Quake-aid need acute in Nepal capital, more so in villages</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 06:18:55</td><td>Nepal quake survivor drank urine while trapped for 82 hours</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 13:15:37</td><td>'We are hungry:' Aid reaches epicenter, Nepal toll tops 5000</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 06:10:57</td><td>Tent cities thin out in Nepal capital but residents on edge</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 03:58:55</td><td>Moments of joy in Nepal as 2 are rescued 5 days after quake</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 07:45:31</td><td>Life crawling back to normal in Nepal's quake-hit capital</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 09:03:52</td><td>Aid still scarce in Nepal's remote villages as anger grows</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 12:48:48</td><td>Damaged by deadly quake, fate of Nepal heritage unsure</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 12:13:04</td><td>Engineers inspect quake-damaged homes in Nepal's capital</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 15:45:05</td><td>Another deadly earthquake spreads fear and misery in Nepal</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 04:33:05</td><td>Thousands spend night outdoors as death toll rises in Nepal</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 16:39:25</td><td>UN: After 2nd quake, many in Nepal cut off by blocked roads</td></tr>
+</table></body></html>

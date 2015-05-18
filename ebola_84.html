@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 17:03:08</td><td>Although other experimental treatments appeared to help Ebola patients last year, especially in the United States, those one-time uses cannot prove efficacy against the "Makona" strain, since patients' recovery might be due to other causes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 17:03:08</td><td>Tekmira Ebola drug succeeds in small monkey study</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 18:00:31</td><td>This month scientists reported that an improved version of a vaccine from NewLink Genetics Corp and Merck & Co Inc protected all eight lab monkeys injected with Ebola.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0009a60b-642.jpg'></td><td>2015-04-23 06:32:32</td><td>The drug, from Tekmira Pharmaceuticals Corp, is the first such success against the strain of Ebola in West Africa's 2014-2015 outbreak.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/4/12/ebola-survivors-liberia-struggle-to-cope/_jcr_content/image.adapt.480.low.ebola_survivor.jpg'></td><td>2015-04-23 15:37:00</td><td>Similarly, drugs, including one known as ZMapp, cured monkeys in lab experiments, but in a strain of Ebola different from that responsible for the current outbreak.</td></tr>
+</table></body></html>

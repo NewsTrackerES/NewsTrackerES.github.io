@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/394/video/article23254016.ece/ALTERNATES/w140/2015-03-02T215116Z_1_LOVEB211OPFYI_RTRMADP_0_USA-OBAMA-RUSSIA-PUTIN-ROUGH-CUT-O.XML'></td><td>2015-03-04 10:26:52</td><td>Russian security service chief says several suspects in Nemtsov case: report</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>Nemtsov, 55, one of Putin's most vehement critics, was killed just hours after a radio interview in which he denounced the president for his "mad, aggressive" policies in Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>Opposition activist Ilya Yashin said police had seized computers and documents during searches in Nemtsov's apartment in Moscow and his office in Yaroslavl, where he worked as a regional lawmaker.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>But Yashin told The Associated Press that he and other Nemtsov's friends have found some fragments related to the report and hope to work on them and publish a report.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>On his Facebook page, Yashin posted a picture of what he said was Nemtsov's handwritten note, saying he was contacted by paratroopers from a unit that lost 17 men but who were afraid to speak publicly on the issue.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>The Russian leader had sent his condolences to Nemtsov's mother, but his comments Wednesday were his first public remarks on the subject.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>"We must finally rid Russia of the disgrace and tragedy of the kinds of things we recently saw and experienced: I mean the audacious murder of Boris Nemtsov in the very center of the capital."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:20:11</td><td>Asked about any possible suspects in Nemtsov's killing, Alexander Bortnikov, the head of the Federal Security Service, the main KGB successor, told Russian news agencies that "there are always suspects."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/28/2631A74100000578-0-image-m-3_1425164339894.jpg'></td><td>2015-03-01 13:40:32</td><td>Nemtsov was working on a report highlighting Russia's involvement in the separatist revolt in eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/06/26463D1700000578-2982194-image-a-19_1425624841465.jpg'></td><td>2015-03-06 11:34:14</td><td>Now it has emerged that the day before his death, Mr Nemtsov and close aide Olga Shorina were discussing a sensitive investigation he was preparing into Moscow's backing for separatist fighters in eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/external/2015/3/mourners-honor-russianoppositionleadernemtsov/_jcr_content/image.adapt.480.low.Russia_Nemtsov_mourners_030215.jpg'></td><td>2015-05-12 11:21:00</td><td>The report, which Nemtsov started after families of Russian troops killed in east Ukraine asked for his help, said at least 150 Russian servicemen were killed in fighting around the village of Ilovaisk and elsewhere in the region last summer.</td></tr>
+</table></body></html>

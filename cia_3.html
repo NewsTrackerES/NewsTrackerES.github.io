@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var pos = getParameterByName("pos");
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [  ],
+            slide: function( event, ui ) {
+              var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= ui.values[ 0 ]) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+            }
+          });
+        });
+      });
+
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>CIA Director John Brennan has outlined a plan for the reorganisation of the agency.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>An overhaul of the CIA will be the most ambitious since the agency was founded in 1947, experts and veterans say.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>CIA plans major reorganisation and a focus on digital espionage</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>The Directorate of Digital Innovation will rank alongside the agency's operations and analysis branches, and be responsible for missions ranging from cyber-espionage to the security of the CIA's internal email.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>The head of the CIA's clandestine service recently decided to retire abruptly in part because of opposition to a plan that would strip his position of much of its authority over the agency's covert operations overseas and the teams of spies that it deploys.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>The plans were unveiled by CIA director John Brennan to a workforce in which thousands of employees are likely to see changes in which departments they work for, the lines of authority they report to and even where they sit.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>After the reorganisation, Mr Brennan said, the CIA should be in position to "cover the entire universe, regionally and functionally, and so something that's going on in the world falls into one of those buckets".</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>"This is a major reorganisation, one of the largest and most fundamental they've had," said Mark Lowenthal, a former senior CIA officer and an expert on the history of the US intelligence community.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>"Some who grew up in the old structure will have heartburn with this, but those costs will be short-term," said Michael Morell, former deputy director of the CIA.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/x/w/o/a/image.related.articleLeadwide.620x349.13xsjx.png/1425700381605.jpg'></td><td>2015-03-07 03:53:16</td><td>The CIA will also create a new directorate focused exclusively on exploiting advances in computer technology and communications.</td></tr>
+</table></body></html>

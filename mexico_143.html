@@ -18,7 +18,7 @@
             range: false,
             min: 0,
             max: 17,
-            values: [ 17 ],
+            values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               var table = document.getElementById("MyTable");
               for (var i = 0, row; row = table.rows[i]; i++) {
@@ -31,18 +31,13 @@
             }
           });
         });
-
-        var pos = getParameterByName("pos");
-        if (pos != "") {
-           $("#slider-range").slider("values", pos);
-        }
       });
 
       function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        return results === null ? 17 : decodeURIComponent(results[1].replace(/\+/g, " "));
       }
     </script>
   </head>

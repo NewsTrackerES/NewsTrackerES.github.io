@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-02 17:35:07</td><td>MAIDUGURI, Nigeria (AP) - The latest video from Nigeria's Boko Haram Islamic extremist group shows the bodies of two beheaded men accused of spying, and copies some of the hallmarks of propaganda from the Islamic State group.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-02 17:35:07</td><td>Boko Haram began emulating the Islamic State group last August, declaring it had established an Islamic caliphate in territory it controls in northeastern Nigeria.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:38:28</td><td>The SITE intelligence group said the video called "Harvest of Spies" was posted Monday on Twitter by Boko Haram's new media arm.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:38:28</td><td>Boko Haram has said in social media messages last month that it is considering swearing allegiance to IS.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 17:38:28</td><td>Boko Haram previously published only one beheading, of a Nigerian fighter pilot whose plane went missing in September.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 03:27:19</td><td>"The death of a large number of terrorists has been recorded while many others are also scampering all over the forest," defence spokesman Major-General Chris Olukolade said on Thursday, later adding that an attack was under way on parts of Gwoza, the town where Boko Haram first declared an Islamic state last year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 03:27:19</td><td>Sambisa gained notoriety last year when more than 200 girls kidnapped by Boko Haram from a secondary school in nearby Chibok were taken there.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 03:27:19</td><td>Nigerian planes bomb Boko Haram camps, military says</td></tr>
 </table></body></html>

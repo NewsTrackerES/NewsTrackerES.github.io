@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 12:50:47</td><td>He called on the Taliban to join with the Kabul government, and said that any Taliban who switched allegiance to Islamic State group would earn the wrath of Afghanistan's religious leaders.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 12:50:47</td><td>Ghani warned before that the Islamic State group was starting to establish a presence in Afghanistan.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 12:51:11</td><td>A motorcycle-riding suicide bomber attacked a bank branch Saturday in eastern Afghanistan, killing at least 33 people in a deadly attack the country's president said was claimed by the Islamic State group.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 12:51:11</td><td>Hours after the attack, President Ashraf Ghani blamed the Islamic State group for the attack.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 15:36:00</td><td>Analysts and officials say the number of Islamic State supporters in the Afghan-Pakistan region remains small and that the group faces resistance from militants with strong tribal links.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 15:36:00</td><td>Taliban fighters and Islamic State supporters even have battled each other.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 15:36:00</td><td>In recent days, Ismail Khan, long a dominant figure in Afghanistan's western province of Herat, told The Associated Press that the numbers of Islamic State supporters are growing because of divisions in Ghani's government.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/72/04/7840041/3/920x920.jpg'></td><td>2015-04-18 19:36:08</td><td>Local Afghan media quoted a previously unknown man who identified himself as a spokesman for the Islamic State group's affiliate in the country, claiming responsibility for the attack.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 23:16:52</td><td>However, the rise of even a small Islamic State affiliate could further destabilize the region and complicate U.S. and NATO efforts to end the 13-year Afghan war.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 12:16:24</td><td>Tehran: Afghanistan and Iran on Sunday announced plans for enhanced security cooperation to combat threats from the Islamic State group, including possible joint military operations.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 05:33:26</td><td>Australia's government says the combined force isn't being deployed in a combat role but rather to train Iraqi forces to fight the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 05:33:26</td><td>Another 400 Australian air force personnel are supporting air strikes against Islamic State targets from a base outside Dubai.</td></tr>
 </table></body></html>

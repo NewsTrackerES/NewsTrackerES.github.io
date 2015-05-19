@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 11:32:34</td><td>Nigeria's military, with support of troops and military aircraft from neighboring countries, in the past two months has retaken dozens of towns from Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 11:32:34</td><td>The forest starts about 30 kilometers (20 miles) from Gwoza town, which is 130 kilometers (80 miles) southeast of Maiduguri, the capital of Borno state and birthplace of Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 11:32:34</td><td>This comes after months of defeat at the hands of Boko Haram, with soldiers fleeing the battlefield after they ran out of ammunition.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 11:32:34</td><td>Nigerian military claim to destroy Boko Haram headquarters</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 16:58:29</td><td>In shadow of Boko Haram, Cameroon combats extremism at home</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 21:37:33</td><td>Nigerian army rescues 293 females from Boko Haram</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 20:41:00</td><td>Girls, women rescued from Boko Haram need psychological care</td></tr>
 </table></body></html>

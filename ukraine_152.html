@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-15 08:50:05</td><td><a href='ukraine_6.html'>German Foreign Minister Frank-Walter Steinmeier said failure to maintain the peace would cost the region and the people of eastern Ukraine "a high price." (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-15 16:05:41</td><td><a href='ukraine_7.html'>LUHANSKE, Ukraine (AP) - A cease-fire that went into effect Sunday in eastern Ukraine appeared largely to be holding, although continued fighting over a bitterly contested railway hub is threatening to upend the delicate settlement. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 10:09:21</td><td><a href='ukraine_111.html'>KIEV, Ukraine - A leading politician in Ukraine has accused the country's richest man of inciting public unrest to ensure the government steers clear of reforms that would hurt his businesses. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 12:42:06</td><td><a href='ukraine_112.html'>DTEK has since its creation in 2006 steadily acquired large chunks of Ukraine's power and coal production sector. (3)</a></td></tr>
 </table></body></html>

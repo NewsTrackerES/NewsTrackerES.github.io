@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,7 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 05:04:38</td><td><a href='cia_11.html'>After the release of the Senate report, former Polish president Aleksander Kwasniewski and former Prime Minister Leszek Miller acknowledged for the first time that they knew the CIA had been holding people on Polish soil. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 17:01:40</td><td><a href='cia_12.html'>Two former leaders only recently admitted they had allowed the secret CIA prison to operate in Poland, but said they never authorized harsh treatment of inmates. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-02-18 05:04:38</td><td><a href='cia_11.html'>After the release of the Senate report, former Polish president Aleksander Kwasniewski and former Prime Minister Leszek Miller acknowledged for the first time that they knew the CIA had been holding people on Polish soil. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-18 17:01:40</td><td><a href='cia_12.html'>Two former leaders only recently admitted they had allowed the secret CIA prison to operate in Poland, but said they never authorized harsh treatment of inmates. (2)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-05-15 10:06:50</td><td><a href='cia_26.html'>Poland is now the only country in the world to face legal repercussions for the secret rendition and detention program which the CIA operated under then-President George W. Bush in several countries across the world after the 9/11 attacks. (5)</a></td></tr>
 </table></body></html>

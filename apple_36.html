@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HU646_MacBoo_P_20150409105931.jpg'></td><td>2015-04-09 22:57:47</td><td>Same here... no more Apple for me.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HU646_MacBoo_P_20150409105931.jpg'></td><td>2015-04-09 23:28:45</td><td>Same here... no more Apple for me.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td>Apple's device will likely account for 55 percent of global smartwatch shipments this year in a market worth about $11 billion, according to market analysis group Societe Generale.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 22:01:54</td><td>Starting Friday, the Apple Watch will be available for preview in stores and preorder on the Internet ahead of its April 24 on-sale date.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 22:01:54</td><td>Nevertheless, Apple is out-spending other smartwatch makers like Samsung Electronics and has a history of getting a big return from its TV advertising spending.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-09 22:01:54</td><td>"The iPhone 6 was a barn burner from the get-go. But with the Apple Watch, which is new product category with less familiarity, it makes sense that they'd go after it with more intensity," said JMP analyst Alex Gauna.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039208859&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3810P'></td><td>2015-04-09 22:03:22</td><td>With primetime TV, Apple hopes to hook customers for new Watch</td></tr>
 </table></body></html>

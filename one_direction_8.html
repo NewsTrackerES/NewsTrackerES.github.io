@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.skynews.com/media/images/generated/2015/4/14/384054/default/v1/460199068-1-91x68.jpg'></td><td>2015-04-27 08:55:35</td><td>The final question of the evening was: "What do you think is the cosmological effect of Zayn leaving One Direction and consequently breaking the hearts of millions of teenage girls across the world?"</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.independent.co.uk/incoming/article9313694.ece/alternates/w140/stephen-hawking.jpg'></td><td>2015-04-27 08:21:29</td><td>"It would not be beyond the realms of possibility that somewhere outside of our own universe lies another different universe - and in that universe, Zayn is still in One Direction."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.independent.co.uk/incoming/article9313694.ece/alternates/w140/stephen-hawking.jpg'></td><td>2015-04-27 08:21:29</td><td>Stephen Hawking: Zayn Malik is still in One Direction in a parallel universe</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 11:34:30</td><td>Scientist Hawking tells upset fans Malik may be in parallel One Direction</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/0UKY2Q65x7zk4uXpdoVLrg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_US/News/The%20Verge/GettyImages-459496616.0.jpg.cf.jpg'></td><td>2015-04-27 13:31:40</td><td>(Reuters) - What is the cosmological effect of singer Zayn Malik leaving the best-selling boy band One Direction and consequently disappointing millions of teenage girls around the world?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-05-06 17:56:35</td><td>But "The D Train" and "Bernie" point toward a new direction.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 18:00:21</td><td>Shifting in a new direction, Jack Black rides 'The D Train'</td></tr>
 </table></body></html>

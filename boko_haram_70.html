@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,10 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 22:42:42</td><td>It does not appear that any of those released are from the group of nearly 300 Chibok schoolgirls kidnapped by Boko Haram a year ago in a mass abduction that outraged many around the world.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 22:42:42</td><td>Musa said her husband, the father of the new baby, was killed by Boko Haram when they abducted her from her village of Lassa in December.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 22:42:42</td><td>Many said they had been taken captive in the past nine months, when Boko Haram had seized a large swath of northeastern Nigeria and declared it an Islamic caliphate.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-03 17:36:33</td><td>A child rescued by Nigerian soldiers waits to receive treatment at a refugee camp in Yola, Nigeria Sunday, May 3, 2015, after being rescued from captivity by Boko Haram fighters.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-03 17:36:33</td><td>Boko Haram fighters stoned some of their captives to death as Nigeria's military approached to rescue the women, survivors told The Associated Press on Sunday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-03 17:36:33</td><td>"Boko Haram came and told us they were moving out and said that we should run away with them. But we said no," she explained from a bed in the camp clinic.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-03 15:39:03</td><td>With Rescuers Near, Girls Stoned to Death by Boko Haram</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 14:24:01</td><td>Saturday night, when the women arrived at the camp, they appeared exhausted and too distressed to realize they were safe, or to be questioned about their experiences under Boko Haram.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 23:10:23</td><td>They were among a group of 275 children and women rescued from Boko Haram extremists, the first to arrive at a refugee camp Saturday after a three-day journey to safety, brought by Nigeria's military.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-02 23:10:23</td><td>For nearly a year, Nigeria's President Goodluck Jonathan had been promising to bring home all the people kidnapped by Boko Haram home - especially 219 schoolgirls abducted from their boarding school in the town of Chibok.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-02 23:10:23</td><td>Tears came to her eyes when she was asked if she has other children: "Three of them. Boko Haram killed my husband and grabbed me. I have no idea where my other children are."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-02 23:10:23</td><td>The women were exhausted, too traumatized to realize they were safe, or be questioned about their experiences under Boko Haram.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47135974,width-300,resizemode-4/Nearly-300-freed-women-children-led-to-safety-in-Nigeria.jpg'></td><td>2015-05-03 01:19:26</td><td>He lost March 28 elections, in part because of the military failures against Boko Haram and his handling of the hostage situation.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47135974,width-300,resizemode-4/Nearly-300-freed-women-children-led-to-safety-in-Nigeria.jpg'></td><td>2015-05-03 01:19:26</td><td>Former military dictator Muhammadu Buhari won the election and has promised to wipe out Boko Haram.</td></tr>
 </table></body></html>

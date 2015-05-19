@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:39:36</td><td>Libya's branch of the Islamic State group said in a statement on its Twitter account that "soldiers of the caliphate" targeted the building but gave no motive.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:39:36</td><td>Islamic State militants target Moroccan Embassy in Libya</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 14:20:05</td><td>A bomb placed in a garbage bin targeted the Moroccan Embassy in the Libyan capital, Tripoli, early Monday without killing or wounding anyone, in an attack claimed by a local Islamic State affiliate.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 01:26:43</td><td>Islamic State militants have exploited chaos in the North African country where two governments allied to a host of armed groups fight for control four years after the ousting of Muammar Gaddafi.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 13:09:49</td><td>A senior Russian intelligence official has warned of the potential influence of the Islamic State group inside Russia.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 13:09:49</td><td>Smirnov says intelligence agencies estimate that about 1,700 Russian nationals have gone to join the Islamic State group to fight in Syria and Iraq.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 13:10:15</td><td>MOSCOW (AP) " A senior Russian intelligence official on Friday warned of the potential influence of the Islamic State group inside Russia, primarily among the Muslims in the North Caucasus provinces.</td></tr>
 </table></body></html>

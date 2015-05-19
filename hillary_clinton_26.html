@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/gloria-borger-reports-hillary-clinton/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 04:02:08</td><td>Who is Hillary Clinton?</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/gloria-borger-reports-hillary-clinton/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 09:36:03</td><td>Who is Hillary Clinton?</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/gloria-borger-reports-hillary-clinton/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 11:45:50</td><td>Who is Hillary Clinton?</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-video-launch/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 20:22:19</td><td>Before she married Bill Clinton, she was Hillary Rodham.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-social-media-reax-feat/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 22:44:40</td><td>Hillary Clinton has stolen our innovative WikiLeaks twitter logo design.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/12/politics/hillary-clinton-social-media-reax-feat/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-12 22:44:40</td><td>She also is a member of the Clinton Foundation board of directors.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150410133757-04-hillary-clinton-homepage-large-169.jpg'></td><td>2015-04-16 11:50:39</td><td>Who is Hillary Clinton?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 18:55:28</td><td>It's official: Hillary Clinton is running for president.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://www.canoe.ca/Canoe/Includes/TopHeadlines/2015/04/12/clinton650.jpg&amp;size=234x132&amp;quality=85'></td><td>2015-04-12 19:08:52</td><td>NEW YORK/WASHINGTON - Hillary Clinton promised to be a champion for everyday Americans on Sunday as she kicked off a long-awaited second run for the White House as the commanding Democratic front runner.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46900825,width-300,resizemode-4/Hillary-Clinton.jpg'></td><td>2015-04-12 19:23:32</td><td>"It's official: Hillary's running for president," John Podesta, a top aide to Clinton, said in an email sent to supporters of her failed 2008 bid.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/hillary-clinton-2014.jpg'></td><td>2015-04-12 19:38:20</td><td>Hillary Clinton Announces Presidential Campaign</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://images.brisbanetimes.com.au/2015/04/09/6426603/Baker169-92x52.jpg'></td><td>2015-04-12 19:45:21</td><td>Hillary Clinton has launched her bid to become the first woman to win the White House, and announced a campaign tour to showcase her support for "everyday Americans".</td></tr>
 </table></body></html>

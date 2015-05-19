@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 39,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 39 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 22:06:53</td><td><a href='baltimore_9.html'>WASHINGTON - The U.S. Justice Department said on Tuesday that it is gathering information on the death of a man who died after being arrested by the Baltimore police to determine whether it can bring civil rights charges. (9)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 13:05:32</td><td><a href='baltimore_10.html'>Mayor Stephanie Rawlings-Blake said she too is "angry that we are here again" after trying to overcome decades of distrust between police and citizens in Baltimore's inner city. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 16:10:21</td><td><a href='baltimore_11.html'>BALTIMORE (AP) - Baltimore police have released the names of six officers who have been suspended with pay after the death of a man who was critically injured during an arrest. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 20:36:06</td><td><a href='baltimore_14.html'>BALTIMORE (AP) - A photo editor for a Baltimore newspaper says he was beaten by police at a protest over the death of Freddie Gray. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 01:17:17</td><td><a href='baltimore_15.html'>WASHINGTON (AP) - The White House says the head of President Barack Obama's initiative for minority males will attend the funeral of a Baltimore man who died after sustaining serious injuries while in police custody. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:58:16</td><td><a href='baltimore_16.html'>The recent case of Freddie Gray, a 25-year-old black man who died after sustaining serious injuries while in the custody of Baltimore police, has intensified a national debate over police treatment of African-Americans. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:09:55</td><td><a href='baltimore_44.html'>Asked whether the charges against the officers in the Baltimore case would have a chilling effect on law enforcement, Cohen said he thought there might be some but that it would be short-lived. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:59:47</td><td><a href='baltimore_45.html'>A message reading "All Lives Matter" is written on the pavement as police in riot gear cast shadows while standing in line ahead of a curfew Friday, May 1, 2015, in Baltimore. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 08:26:32</td><td><a href='baltimore_51.html'>Baltimore's leaders should welcome federal oversight, because it's doubtful any police department can fix itself from within, said Erwin Chemerinsky, the dean of the University of California-Irvine School of Law. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 19:39:59</td><td><a href='baltimore_37.html'>Paul told radio host Laura Ingraham that he had traveled through Baltimore by train on the night riots broke out following the death of an African-American man in police custody and that he was glad the train did not stop. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 21:20:59</td><td><a href='baltimore_39.html'>"I came through the train on Baltimore last night, and I'm glad the train didn't stop," the Kentucky senator told radio host Laura Ingraham this week, with a slight chuckle. (3)</a></td></tr>
 </table></body></html>

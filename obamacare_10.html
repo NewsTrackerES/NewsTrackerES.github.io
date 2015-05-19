@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>The refundable tax credits in both their plans would be available to those who pay little or no tax, similar to the Obamacare subsidies for low-income Americans.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>There is renewed interest in producing one now, however, to be ready if the Court rules for the plaintiffs in the current Obamacare case and disallows tax subsidies through the federal exchange in a ruling expected in June.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>If the Court rules against the administration, Wisconsin Senator Ron Johnson wants to make the Obamacare taxpayer subsidies available through August 2017, while repealing the individual and employer mandates.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>WASHINGTON (Reuters) - If the U.S. Supreme Court blows up the tax subsidies at the heart of Obamacare in June, Republicans hope to deliver on their promise to offer an alternative healthcare plan.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>"It's not going to be like Obamacare, in my opinion," said Senate Finance Committee Chairman Orrin Hatch, whose plan includes a refundable tax credit for low-and middle-income Americans.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:05:33</td><td>Obama's healthcare law, known as Obamacare, requires employers to provide health insurance policies that cover preventive services for women including access to contraception and sterilization.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 15:05:33</td><td>U.S. top court throws out Obamacare contraception ruling</td></tr>
 </table></body></html>

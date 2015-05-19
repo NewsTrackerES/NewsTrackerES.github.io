@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:08:55</td><td>Senator Rand Paul of Kentucky, a libertarian who launched his bid for the Republican nomination by condemning the "Washington machine that gobbles up our freedoms," said answers to the violence in Baltimore have to be found locally.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:08:55</td><td>He called the Baltimore violence a symbol of the "breakdown of the family structure, the lack of fathers, the lack of sort of a moral code."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:08:55</td><td>Clinton, Republican presidential hopefuls, address Baltimore violence</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 15:38:23</td><td>Pointing to a wave of violence in Baltimore, Hillary Rodham Clinton said Wednesday that the nation's criminal justice system has gotten "out of balance" and must be restored through steps such as the use of body cameras by every police department in the country.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 20:44:50</td><td>The gates at Camden Yards were locked because of concern for fan safety following recent rioting in Baltimore after a 25-year-old black man died in police custody.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 20:44:50</td><td>In a crisp 2 hours, 3 minutes, Baltimore won its third straight since snapping a five-game losing streak.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 20:44:50</td><td>Orioles: Chris Tillman (2-2, 7.58 ERA) will open the series Friday against the Rays, which has been moved to Tropicana Field from Baltimore.</td></tr>
 </table></body></html>

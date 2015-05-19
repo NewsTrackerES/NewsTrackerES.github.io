@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Li6lRbBD3FRdvo_7QJR0og--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-us/homerun/deadline.com/adde87c4064f35058ab176d5e7d9c789.cf.jpg'></td><td>2015-04-16 17:39:45</td><td>WASHINGTON (Reuters) - A Columbus, Ohio, man who trained with Islamic militants in Syria has been arrested and charged with supporting terrorism and making false statements, the U.S. Justice Department said on Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 18:01:18</td><td>Before leaving for Syria, Mohamud had posted material on social media promoting symbols of the Islamic State militant group, the indictment said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 17:02:46</td><td>Ohio man who trained with Islamic State charged with supporting terrorism</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 01:26:43</td><td>Islamic State militants have exploited chaos in the North African country where two governments allied to a host of armed groups fight for control four years after the ousting of Muammar Gaddafi.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 12:39:36</td><td>Libya's branch of the Islamic State group said in a statement on its Twitter account that "soldiers of the caliphate" targeted the building but gave no motive.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 12:39:36</td><td>Islamic State militants target Moroccan Embassy in Libya</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 14:20:05</td><td>A bomb placed in a garbage bin targeted the Moroccan Embassy in the Libyan capital, Tripoli, early Monday without killing or wounding anyone, in an attack claimed by a local Islamic State affiliate.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 21:03:00</td><td>Islamic State in Yemen has claimed responsibility for attacks before, and has issued an online film showing it conducting training, but Thursday's video, attributed to the group's branch in Shabwa province, is its first to show killings.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 21:03:00</td><td>RIYADH - A new branch of the Islamic State group in Yemen on Thursday issued a video showing what it said was the beheading of four Yemeni soldiers and the shooting of 10 others, the SITE Intelligence group reported.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 08:25:15</td><td>The principal of an Islamic college in Victoria has denied allegations that the school banned girls from running out of concerns they could lose their virginity.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 09:10:58</td><td>Omar Hallak said all students at the Islamic college in Melbourne's west are able to participate in a range of sport such as athletics, including running over distances.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-23 09:10:58</td><td>Islamic principal says reports untrue</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 12:09:48</td><td>Hillary Clinton's father's tombstone toppled</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687961670_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 14:30:30</td><td>Police in Pennsylvania said on Tuesday that the tombstone of Hillary Clinton's father had been knocked over in a possible case of vandalism, the Scranton Times-Tribune newspaper reported, days after she announced her presidential bid.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 00:24:32</td><td>(AP) - The gravestone of Hillary Rodham Clinton's father has been found toppled over at a Pennsylvania cemetery.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/4c1c9fc/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fe1%2F48e7defbeb4f4dffa950e2892c05e0%2Fmedia%3A410382c646ea4cdaacb30f1be59af38dDEM2016Clinton.JPEG'></td><td>2015-04-16 18:36:27</td><td>CONCORD, N.H. (AP) - Hillary Rodham Clinton will make her first trip as a presidential candidate to the early voting state of New Hampshire next week.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4c1c9fc/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fe1%2F48e7defbeb4f4dffa950e2892c05e0%2Fmedia%3A410382c646ea4cdaacb30f1be59af38dDEM2016Clinton.JPEG'></td><td>2015-04-16 18:36:27</td><td>Hillary Clinton last visited New Hampshire in November to stump for Democratic Sen. Jeanne Shaheen and Gov. Maggie Hassan.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 21:36:30</td><td>Nigeria's offensive against Boko Haram slowed by landmines</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 21:36:30</td><td>Olukolade said hunting for Shekau was "not the major element" of Nigeria's collaboration with Chad, which retook Baga from Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 21:36:30</td><td>Nigeria launched a ground offensive into Sambisa last month following aerial bombardments and says over 13 Boko Haram camps have since been dismantled.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 21:36:30</td><td>ABUJA, May 2 (Reuters) - Nigeria's military is confident it has Boko Haram cornered, but a final push to clear the Islamist militants from their forest hideouts is being hampered by landmines, it said on Saturday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/article-doc-215xu-6YAloNZZVHSK2-561_634x425.jpg'></td><td>2015-04-30 10:02:41</td><td>Nigerian troops have rescued about 160 more hostages from Boko Haram's Sambisa Forest stronghold, the army said on Thursday, taking the total number liberated this week alone to nearly 500.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/article-doc-215xu-6YAloNZZVHSK2-561_634x425.jpg'></td><td>2015-04-30 10:02:41</td><td>On Thursday, Usman said about 160 more hostages were freed in an operation involving troops from the army's 7th Division, which has been tasked with fighting Boko Haram.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 23:11:48</td><td>(Reuters) - Nigeria's military rescued another set of women and children who had been kidnapped by Boko Haram militia and were being detained in Sambisa forest where the Islamist group has been holed up, an army spokesman said on Thursday.</td></tr>
 </table></body></html>

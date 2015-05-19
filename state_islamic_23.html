@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 12:00:58</td><td>The clashes at al-Dhahra are among the first known instances of Libya's Islamist-allied militias battling the Islamic State affiliate.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 12:00:58</td><td>It has denied the existence of the Islamic State affiliate.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 12:05:19</td><td>TRIPOLI, Libya - Militants purportedly from the Islamic State group attacked an oil field near Libya's central coast, prompting a counterattack by the country's Islamist-backed government that included airstrikes, an official said Wednesday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 12:05:19</td><td>That's worsened militia violence and allowed militants allied with the Islamic State group to gain control of Sirte and Libya's eastern city of Darna.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 12:05:19</td><td>These Islamic State-affiliated militants carried out a deadly attack on a luxury hotel in Tripoli in January, and in February released a video showing them behead 21 Egyptian Christians.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 22:34:22</td><td>Both Saidakhmetov and Juraboev threatened attacks in the U.S. and planned to travel to Syria to join the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 22:34:22</td><td>JACKSONVILLE, Florida (AP) - One of three men arrested in the U.S. on charges of plotting to help the Islamic State group wage war against the U.S. was ordered transferred from Florida to New York on Tuesday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 23:15:05</td><td>Islamic State plot suspect to be transferred to NY</td></tr>
 </table></body></html>

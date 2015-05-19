@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 14,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 04:26:31</td><td><a href='mexico_32.html'>MEXICO CITY (AP) - A huge blaze twisted and blackened an oil platform in the Gulf of Mexico, but the state-run Pemex oil company said it managed to avert any significant oil spill. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 02:40:04</td><td><a href='mexico_44.html'>MEXICO CITY (Reuters) - At least four people died after a fire broke out on a Pemex oil processing platform in the Gulf of Mexico early on Wednesday, leading to the evacuation of 302 workers, the Mexican state-run oil company said. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:30:19</td><td><a href='mexico_117.html'>MEXICO CITY (AP) - An accident on an oil maintenance platform Tuesday killed two workers and injured another in the Gulf of Mexico, state oil company Petroleos Mexicanos reported. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 09:06:47</td><td><a href='mexico_45.html'>New Mexico's top prosecutor is following through with a lawsuit against one of the nation's largest nursing home chains over inadequate care. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 17:27:08</td><td><a href='mexico_46.html'>Preferred Care Management Partners has argued that New Mexico is targeting practices at facilities that occurred before the company bought them. (4)</a></td></tr>
 </table></body></html>

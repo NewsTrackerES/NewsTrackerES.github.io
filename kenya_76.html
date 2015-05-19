@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 13:42:10</td><td><a href='kenya_58.html'>Wilson Kipsang, the 2014 winner in London, acknowledged that Kenya's reputation in athletics has been damaged by the positive doping tests, even though he says 99 percent of its athletes are clean. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 13:42:10</td><td><a href='kenya_58.html'>Wilson Kipsang, the 2014 winner in London, acknowledged that Kenya's reputation in athletics has been damaged by the positive doping tests, even though he says 99 percent of its athletes are clean. (3)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-04-26 13:04:17</td><td><a href='kenya_59.html'>The 28-year-old Tufa won her first major marathon in 2 hours, 23 minutes, 22 seconds, with two-time winner Mary Keitany of Kenya 18 seconds adrift. (3)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1044951481&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401P0'></td><td>2015-05-01 15:16:53</td><td>U.S. CDC cautions against unprotected sex with Ebola survivors</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1044951481&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401P0'></td><td>2015-05-01 15:16:53</td><td>In a report issued on Friday, the U.S. Centers for Disease Control and Prevention said a review of the 44-year-old woman's case now suggests that the Ebola virus persists longer in semen that previously thought.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/876/493/660_ebola_survivor_with_bible.jpg?ve=1&tl=1'></td><td>2015-05-01 15:35:51</td><td>U.S. health officials are now recommending people avoid contact with the semen of Ebola survivors after a woman in Liberia contracted Ebola through sexual intercourse with a survivor of the disease.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 12:43:02</td><td>MONROVIA, Liberia (AP) " Liberia releases last Ebola patient; Countdown to being declared Ebola free begins.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 16:52:23</td><td>MONROVIA, Liberia (AP) - American officials are shutting down a special treatment unit they set up in Liberia at the height of the Ebola crisis last year.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 16:52:23</td><td>Liberia has gone 32 days now without a new Ebola case.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 16:52:23</td><td>The United States government last year deployed more than 2,000 troops to fight Ebola in Liberia, setting up about 15 treatment centers.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-30 16:52:23</td><td>It's the latest sign that life is returning to normal in the West African country where more than 4,600 people have died from Ebola.</td></tr>
 </table></body></html>

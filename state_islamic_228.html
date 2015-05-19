@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 23:45:00</td><td>The complaint said that when FBI agents last month went to Abood's residence to return the computer, he denied ever pledging allegiance to the Islamic State leader but acknowledged that it was a crime to lie to the FBI.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 23:45:00</td><td>When the FBI, armed with a search warrant, seized his computer last year, it discovered that Abood had "pledged an oath to Islamic State leader Abu Bakr al-Baghdadi," according to the complaint.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 23:45:00</td><td>WASHINGTON (Reuters) - An Iraqi immigrant who has been described as a former U.S. military translator was arrested by federal agents on Thursday for allegedly lying about pledging allegiance to the leader of Islamic State, a court document said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 00:04:31</td><td>It said that on July 19, 2014, using an Islamic pseudonym, Abood tweeted: "I pledge obedience to the Caliphate Abu Bakr al-Baghdadi."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-06 09:35:09</td><td>BEIRUT (AP) - A Norwegian humanitarian group says a record 38 million people have been internally displaced in their countries worldwide, with 2.2 million Iraqis alone forced to flee from their homes in 2014 after the Islamic State group overrun their areas.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/36/20/76/7933859/7/square_gallery_thumb.jpg'></td><td>2015-05-06 13:22:58</td><td>FILE - In this Saturday, April 18, 2015, file photo, Kurdish citizens walk over the rubble of their houses which were destroyed during the battle between the U.S. backed Kurdish forces and the Islamic State fighters, in Kobani, north Syria.</td></tr>
 </table></body></html>

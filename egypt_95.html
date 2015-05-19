@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 27,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 27 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:44:07</td><td><a href='egypt_43.html'>White House: Obama releases military aid to Egypt suspended after 2013 coup (17)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 19:54:09</td><td><a href='egypt_44.html'>Obama also said that the United States would discontinue starting in fiscal 2018 Egypt's use of cash flow financing, a financial mechanism that allows Egypt to buy equipment on credit, the White House said. (10)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:38:01</td><td><a href='egypt_37.html'>Egypt, Ethiopia and Sudan on Monday signed an initial agreement on sharing Nile waters as Ethiopia continues to build a contentious new dam. (8)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 19:21:01</td><td><a href='egypt_39.html'>Ethiopia had said the project would not adversely affect Egypt's share of Nile water, but Egypt had maintained its "historic rights" to the Nile, which it said were guaranteed by treaties from 1929 and 1959. (4)</a></td></tr>
 </table></body></html>

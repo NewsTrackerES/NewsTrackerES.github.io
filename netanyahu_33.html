@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Mr Netanyahu was.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Mr Netanyahu was.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Mr Netanyahu was.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 14:26:16</td><td>JERUSALEM (AP) - The last polls just days before Israel's election show Prime Minister Benjamin Netanyahu's Likud party trailing behind the center-left opposition.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 14:26:16</td><td>Poll results in the Yediot Ahronot newspaper on Friday gave the Zionist Union, comprised of labor and a center-left party, 26 seats over 22 for Netanyahu's hawkish Likud party.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 14:50:40</td><td>In a sign of internal discontent in Likud, Dan Meridor, a former leading Likud politician, told Yediot he will not vote for Netanyahu.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-13 14:50:40</td><td>The March 17 election is widely seen as a vote of confidence in Netanyahu, whose campaign mainly focuses on security.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-13 14:50:40</td><td>Netanyahu showed concern over the declining numbers in local media this week and called on his supporters to turn out.</td></tr>
 </table></body></html>

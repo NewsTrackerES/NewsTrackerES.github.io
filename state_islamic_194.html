@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>As the militant group lost ground in northern Iraq towards the end of 2014, Mohanad was put in charge of a small unit of four men at an outpost along the frontline southeast of Mosul, where Islamic State was confronting Kurdish security forces.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>Last June, the day Islamic State fighters swept in from Syria and captured Mosul, Mohanad was at home not far away in the village of Danich.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>For the next five months, Mohanad guarded an Islamic State office in a village southwest of Mosul.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>At a local Islamic State headquarters in the Shora district near Mosul, Mohanad was sworn into the group by a man known as Abu Saleh: "I held his hand and said: 'I pledge allegiance', and I joined the organisation," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 13:48:58</td><td>Islamic State behind Riyadh police deaths say Saudi authorities</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 13:48:58</td><td>Mohammed Abdulrahman Abu Niyan, 23, has confessed to carrying out the shootings on behalf of Islamic State, after meeting a representative of the group in the Saudi capital, the ministry said in a statement carried by state media.</td></tr>
 </table></body></html>

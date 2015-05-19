@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:11:31</td><td>The next Netanyahu government would not be a nationalist one, "but the personification of opportunism", he charged.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:11:31</td><td>Mr Netanyahu still has a good chance of presenting his fourth government by the deadline.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:11:31</td><td>Defying predictions, Mr Netanyahu's right-wing, nationalist Likud won 30 seats in the March 17 election, paving the way for him to serve a fourth term in office as premier.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:11:31</td><td>The coalition Mr Netanyahu was building with two ultra-Orthodox parties, another right-wing party and the centre-right Kulanu party of finance minister-designate Moshe Kahlon "is not to our taste, to say the least", Mr Lieberman said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:11:31</td><td>Israel's Foreign Minister Avigdor Lieberman snubs Netanyahu coalition invite</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:31:10</td><td>Obama: Netanyahu statements don't clarify two-state solution</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 19:31:58</td><td>He acknowledged that Netanyahu later pointed out that he did not say a Palestinian state would "never" be created.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 19:31:58</td><td>Obama noted a tendency in reporting to frame the current dispute as a personal issue between Netanyahu and Obama.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 20:09:45</td><td>He said he has a "businesslike" relationship with Netanyahu, and has met with him more than any other world leader.</td></tr>
 </table></body></html>

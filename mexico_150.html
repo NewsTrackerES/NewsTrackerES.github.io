@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 16,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 17:02:28</td><td><a href='mexico_90.html'>Lured by low wages and tax-saving free trade agreements, auto companies from the U.S. and overseas are accelerating plans to build new factories and add jobs in Mexico. (8)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 16:37:59</td><td><a href='mexico_91.html'>Low wages, trade deals luring auto plants and jobs to Mexico (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 21:17:43</td><td><a href='mexico_94.html'>"In whatever form, they will try to sue whoever is found to be responsible," Nunez told reporters in the airport in Leon, Mexico, after the girl's arrival. (6)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 18:55:12</td><td><a href='mexico_100.html'>Alondra had asked for DNA tests in Mexico before she was sent to the United States, and her parents presented more than a dozen documents including her baptismal records, family photographs and a copy of her birth certificate. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 05:41:50</td><td><a href='mexico_138.html'>Jose Martin Godoy Castro says tests show that Alondra is the daughter of Houston woman Dorotea Garcia, who has searched for the girl since Alondra's father took her to Mexico without her consent. (23)</a></td></tr>
 </table></body></html>

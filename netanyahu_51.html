@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/03/20/876/493/Mideast Israel Arabs-1.jpg?ve=1&tl=1'></td><td>2015-03-20 17:57:05</td><td>Netanyahu, defending his record amid widespread criticism of his election-day remarks, told NBC that his government has spent "billions" in Arab towns to upgrade infrastructure and schools.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/03/20/876/493/Mideast Israel Arabs-1.jpg?ve=1&tl=1'></td><td>2015-03-20 17:57:05</td><td>After initially trailing in opinion polls, Netanyahu's Likud Party did well in traditional strongholds, including working class towns with large numbers of Sephardic Jews of Middle Eastern descent.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/03/20/876/493/Mideast Israel Arabs-1.jpg?ve=1&tl=1'></td><td>2015-03-20 17:57:05</td><td>Netanyahu has signaled he will set up a government of right-wing and religious parties.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 17:57:05</td><td>In what was seen as an attempt to galvanize his hard-line supporters during Tuesday's election, Netanyahu had warned that "Arab voters are going in droves to the polls," with the help of "left-wing" activists.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 17:57:05</td><td>The election, in which Netanyahu eventually secured his fourth term, highlighted the fraught relationship between Israel's Arab citizens and the Jewish state.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 12:30:47</td><td>If they did participate, they may also not have been honest about the way they voted and as exit polls close earlier than the real polls, a last-minute surge in Likud votes, in response to a call from Netanyahu, may have been missed, he said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 12:30:47</td><td>Netanyahu's shock re-election leaves Israel's pollsters red-faced</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,5 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 19:46:26</td><td>(AP) - The expected announcement of Hillary Rodham Clinton's presidential campaign has quickly become a center of attention at the National Rifle Association's annual convention.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 19:46:26</td><td>Wisconsin Gov. Scott Walker told the crowd that Clinton measures "success in government by how many people are dependent on the government."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 19:46:26</td><td>Wisconsin Gov. Scott Walker told the crowd that Clinton measures "success in government by how many people are dependent on the government."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 19:46:26</td><td>GOP speakers at NRA event take aim at Hillary Clinton</td></tr>
 </table></body></html>

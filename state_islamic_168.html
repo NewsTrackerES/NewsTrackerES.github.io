@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/21/876/493/Mideast Israel Migrants Journey-2.jpg?ve=1&tl=1'></td><td>2015-04-21 18:36:16</td><td>He was apparently arrested by Islamic State militants on his way to Tripoli, where he hope to make the harrowing trip by sea to Europe.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/21/876/493/Mideast Israel Migrants Journey-2.jpg?ve=1&tl=1'></td><td>2015-04-21 18:36:16</td><td>Islamic State militants are just the latest challenge for African migrants seeking opportunity in Europe.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/21/16/50/865b1a3ddb7748f596383b15bd62607d-3e22274feff340cbb02555e42094692d-0.jpg'></td><td>2015-04-21 18:36:16</td><td>Facing the new threat of Islamic State militants, Beyene said that Holot detainees are terrified and prefer to stay locked up than leave to an uncertain fate in Africa.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/21/16/50/865b1a3ddb7748f596383b15bd62607d-3e22274feff340cbb02555e42094692d-0.jpg'></td><td>2015-04-21 18:36:16</td><td>Kidane, who was about 30, is believed to have been among dozens of Christian Africans who were shot or beheaded on a Libyan beach in a video released by the Islamic State group this week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 09:55:12</td><td>In Iraq's western Anbar province, meanwhile, Iraqi special forces maintained control of the provincial capital, Ramadi, after days of intense clashes with the Islamic State group left the city at risk.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 09:57:02</td><td>Iraqi officials say they believe government forces have killed Saddam Hussein's former deputy who later allied himself with Islamic State militants - Izzat Ibrahim al-Douri.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-18 11:25:00</td><td>BAGHDAD (AP) - Iraqi soldiers surrounded and entered the country's biggest oil refinery Saturday, which has been besieged for days by Islamic State militants, a senior official said.</td></tr>
 </table></body></html>

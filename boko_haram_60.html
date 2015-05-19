@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k.iumdWTQX4iqi_CsYKOfA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/893f46e9403ca15d4e771d83cff708ff91c03119.jpg'></td><td>2015-04-26 09:53:13</td><td>NIAMEY, Niger (AP) - Niger's defense ministry says suspected Boko Haram fighters attacked an army base on the island of Karamga in Lake Chad.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 09:53:53</td><td>It said operations are ongoing "with the help of allies" to defeat Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:20:34</td><td>A similar attack on Karamga Island in February killed seven Niger soldiers, and 14 Boko Haram fighters were also killed, military officials said at the time.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:20:34</td><td>Niger joined a regional offensive earlier this year that is credited with retaking large swaths of territory in Nigeria from Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:41:16</td><td>Military forces started retaking towns in February from Boko Haram, whose fighters had months of gains.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:42:12</td><td>Niger Army Retakes Control of Island From Boko Haram</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/WQN7CIql3X7UUmHbkcKXGg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8135662-1-1-0.jpg'></td><td>2015-04-28 23:25:50</td><td>Niger says 46 soldiers, 28 civilians killed in weekend Boko Haram attack</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:23:28</td><td>Niger Governor Orders Evacuations Due to Boko Haram</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 18:02:29</td><td>The Sambisa forest in northeast Nigeria is about 100 km (60 miles) from the village of Chibok from where Boko Haram abducted more than 200 secondary school girls a year ago.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/_mx0d7g4FCZQx6cx8jIxxA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8106194-1-1-0.jpg.cf.jpg'></td><td>2015-04-22 20:51:06</td><td>BAUCHI, Nigeria (Reuters) - Nigerian forces backed by warplanes invaded Islamist group Boko Haram's last known stronghold, the Sambisa forest, on Wednesday, in an effort to finally defeat their six-year-old insurgency, two military sources said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 22:08:00</td><td>U.N. Special Representative for West Africa Mohamed Ibn Chambas said this month that Boko Haram militants seeking shelter in the Sambisa Forest may be using some of the captured girls as human shields.</td></tr>
 </table></body></html>

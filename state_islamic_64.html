@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 10:56:16</td><td>The US Marine Corps on Sunday urged "vigilance" among staff after the Islamic State group listed what it said were the names and addresses of military personnel, urging supporters to kill them.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 10:56:16</td><td>Islamic State urge murder of US military personnel</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:45:45</td><td>The strikes targeted 408 Islamic State staging areas, 1,003 fighting positions and 87 oil collection points, Warren said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 19:45:45</td><td>Coalition strikes have hit 73 tanks, some of them U.S.-made Iraqi M1A1 Abrams tanks seized when Islamic State militants overran northwestern parts Iraq last year.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 19:45:45</td><td>The Pentagon has said that as a result of the strikes oil sales are no longer the primary source of revenue for Islamic State.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 19:45:45</td><td>More than 60 countries are in the coalition against Islamic State.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 12:14:05</td><td>UN cites alleged war crimes, genocide by Islamic State group</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 21:46:27</td><td>Officials react after concerns over Islamic law nix proposal</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 19:36:08</td><td>Islamic State blamed for Afghan suicide bombing killing 35</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 07:50:14</td><td>Iraq sends troops to Ramadi, largely held by Islamic State</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 19:36:51</td><td>SIRTE, Libya (AP) - Violent clashes erupted between Islamic State-affiliated militants and militias aligned with the Islamist self-declared government near Sirte in north-central Libya.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-15 19:36:51</td><td>Fighting between militias and Libyan Islamic State branch</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-15 19:36:51</td><td>The Libyan turmoil has provided fertile ground for militants allied with the Islamic State group, which is fighting in Iraq and Syria to expand its self-styled caliphate.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-15 19:36:51</td><td>Field commander Mohammed Abdullah said that the fighting started when an Islamic State-affiliated suicide car bomber killed a solider from Battalion 166.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-15 19:36:51</td><td>He said that they have information that the Islamic State affiliate has taken over a hotel, the main conference center and a prison inside Sirte.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-15 19:36:56</td><td>After surrounding the Islamic State-controlled city of Sirte for several weeks, the militias were about 16 kilometers (10 miles) west of the center of the city on Sunday.</td></tr>
 </table></body></html>

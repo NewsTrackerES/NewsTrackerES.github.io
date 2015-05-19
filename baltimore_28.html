@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 14:27:01</td><td>Schools reopen in Baltimore, streets quiet after curfew</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 17:18:43</td><td>Tensions ease in Baltimore as curfew lifts, schools reopen</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/VbPL6kxOKzf1rZy1AmkMYw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-us/homerun/video.wpvi.abc.news.com/dccaeee94560bd2d38da07c50a7ec58f'></td><td>2015-04-29 19:52:43</td><td>Schools reopened across the city and tensions seemed to ease Wednesday after Baltimore made it through the first night of its curfew without the widespread violence many had feared.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 23:57:36</td><td>Most of the recreation centers were built in the 1960s and 1970s, when Baltimore's population was well above its current 620,000.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 23:57:36</td><td>Miles, who was on the recreation center task force, said that only 4,000 of Baltimore's 81,000 students were in after-school programs.</td></tr>
 </table></body></html>

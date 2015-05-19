@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,10 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 21:24:08</td><td>Station suspends DJ over posting in Baltimore man's death</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-29 21:24:14</td><td>PITTSBURGH (AP) - A Pittsburgh radio station has suspended a disc jockey over his online posting about the arrest record of a Baltimore man whose fatal injury in police custody led to rioting.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-29 21:24:14</td><td>He posted on Instagram a list of criminal charges he said Freddie Gray had faced in recent years and the comment, "He was pretty busy before he was unjustly killed at the hands of Baltimore PD. #prayforbaltimore."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-30 02:33:55</td><td>Baltimore police say they chased Gray when he fled at the sight of an officer in a drug-infested neighborhood this month.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:36:47</td><td>Harbaugh, Lewis, Ravens visit schools in riot-torn Baltimore</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 17:36:47</td><td>The contingent included around 55 players, several Ravens coaches and Lewis, who played 17 seasons with Baltimore.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 17:36:47</td><td>The coach says, "We've got a bunch of guys on our team that care deeply for the city and believe in Baltimore."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 17:38:29</td><td>Ravens coach John Harbaugh, his players and former star linebacker Ray Lewis visited Baltimore schools to help quell tension in the city following days of rioting.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/30/65/86/458965abab2a4b86911fc55200853a12-c8103b66c40d4fee95013fa5cc177808-0.jpg'></td><td>2015-04-30 20:14:44</td><td>Former Baltimore Ravens NFL football player Ray Lewis talks to students at Frederick Douglass High School as Ravens C.J. Mosley looks on Thursday, April 30, 2015, in Baltimore.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/30/65/86/458965abab2a4b86911fc55200853a12-c8103b66c40d4fee95013fa5cc177808-0.jpg'></td><td>2015-04-30 20:14:44</td><td>"There were some hard questions. The young people of Frederick Douglass, the elementary school we went to, even people on the street walking back and forth, these are talented, good people that care about Baltimore and want to make a difference and do things right."</td></tr>
 </table></body></html>

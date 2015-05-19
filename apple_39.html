@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td>The Apple Watch, which also marks the Cupertino, California company's debut in a fledgling wearable technology market, will be available for pre-order online and to try out in stores - but not take home.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td>Underscoring its strategy to market the watch as a fashion accessory, Apple is selling it through a handful of high-end stores including Selfridges in London, Galeries Lafayette in Paris and Tokyo's Isetan department store.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/09/10/101988298-455056638.80x60.jpg?v=1427905450'></td><td>2015-04-10 03:14:00</td><td>Consumers in Australia flocked to Apple's retail store in Sydney on Friday to get the world's first up-close look at the tech giant's new smartwatch, which the company expects will be its next runaway hit.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 04:47:05</td><td>An Apple Watch is displayed at 'Apple Watch at Isetan Shinjuku' inside Isetan Shinjuku department store in Tokyo April 10, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/04/10/applewatchgold650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-10 15:22:45</td><td>The Apple Watch, CEO Tim Cook's first new major product and the company's first foray into the personal luxury goods market, was available for preorder online and to try out in stores -- but not to take home.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 11:21:28</td><td>In Hong Kong, the official Apple Store preview of the Watch was quiet.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 11:21:28</td><td>Some weren't impressed with the imitation Apple Watches.</td></tr>
 </table></body></html>

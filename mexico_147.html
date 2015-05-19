@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 22,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 22 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 04:02:03</td><td><a href='mexico_48.html'>MEXICO CITY (AP) - An ambush that killed 15 state police officers in western Mexico appears to be a drug cartel's revenge attack and could herald a military-style offensive against government authorities. (11)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 00:02:18</td><td><a href='mexico_110.html'>Though the official homicide toll in Jalisco has fallen since Pena Nieto took office in December 2012, the president identified the state as one of the areas most at risk when he set out plans to improve security in Mexico last November. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:33:35</td><td><a href='mexico_112.html'>GUADALAJARA, Mexico (AP) - Authorities in western Mexico are asking residents to stay at home as they scramble to extinguish burning vehicles blocking roads in various parts of Guadalajara. (9)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 02:40:04</td><td><a href='mexico_44.html'>MEXICO CITY (Reuters) - At least four people died after a fire broke out on a Pemex oil processing platform in the Gulf of Mexico early on Wednesday, leading to the evacuation of 302 workers, the Mexican state-run oil company said. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 04:26:31</td><td><a href='mexico_32.html'>MEXICO CITY (AP) - A huge blaze twisted and blackened an oil platform in the Gulf of Mexico, but the state-run Pemex oil company said it managed to avert any significant oil spill. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-05 22:11:27</td><td><a href='mexico_117.html'>State oil company Petroleos Mexicanos, or Pemex, said the Troll Solution rig was maneuvering to perform offshore maintenance at the time of the accident in the Bay of Campeche, in the Gulf of Mexico. (3)</a></td></tr>
 </table></body></html>

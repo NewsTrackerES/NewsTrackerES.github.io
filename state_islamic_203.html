@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/g/u/2/8/m/image.related.articleLeadwide.620x349.ggu26d.png/1430772668632.jpg'></td><td>2015-05-04 19:39:03</td><td>Australian Twitter user encouraged Islamic State fighters to attack prophet Mohammad cartoon contest in Texas: report</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/g/u/2/8/m/image.related.articleLeadwide.620x349.ggu26d.png/1430798611435.jpg'></td><td>2015-05-04 19:39:03</td><td>The tweeter posted a map of the community centre where the shooting happened and shared calls for Islamic State fighters and supporters to attack "with your weapons, bombs or with knifes", The Australian has reported.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>KUALA LUMPUR, Malaysia (AP) - Malaysian police said Sunday that they have detained 12 men with suspected links to the Islamic state group who are believed to be plotting attacks on strategic government targets in the country.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>Malaysia has now detained 104 suspected supporters of the Islamic State group in the past two years.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>"The plan by the cell members to launch attacks is in response to calls by IS leaders in Syria to attack secular Islamic countries deemed to be their enemies," he said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>Police also seized Islamic State group flags and various items that could be used to make explosives, including ammonium nitrate, potassium nitrate, kerosene and wires, Khalid said in a statement.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:32:00</td><td>"We're seeing a higher rate of people switching to iPhone than we've experienced in previous cycles, and we're off to an exciting start to the June quarter with the launch of Apple Watch."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 21:32:00</td><td>"We are thrilled by the continued strength of iPhone, Mac and the App Store, which drove our best March quarter results ever," said Tim Cook, Apple's CEO.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/60/01/7798860/3/gallery_thumb.jpg'></td><td>2015-04-24 15:10:37</td><td>Go to "Passbook & Apple Pay" on the phone app to enable mobile payments at retail stores.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/60/01/7798860/3/gallery_thumb.jpg'></td><td>2015-04-24 15:10:37</td><td>Double click this button to use Apple Pay at retail stores.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/60/01/7798860/3/gallery_thumb.jpg'></td><td>2015-04-24 15:10:37</td><td>Select your language on the watch and open the Apple Watch app on the iPhone.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/35/60/01/7798860/3/gallery_thumb.jpg'></td><td>2015-04-24 15:10:37</td><td>Visit an Apple store.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/60/01/7798860/3/mosaic_2.jpg'></td><td>2015-04-24 22:22:31</td><td>To add apps, visit the phone's Apple Watch app.</td></tr>
 </table></body></html>

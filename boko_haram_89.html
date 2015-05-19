@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-18 13:52:24</td><td><a href='boko_haram_27.html'>The admission of lack of progress on the missing schoolgirls comes as the Nigerian military, bolstered by forces from neighboring countries, is regaining towns and cities held by Boko Haram in northeastern Nigeria. (5)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-12 07:01:35</td><td><a href='boko_haram_49.html'>Deborah and 20 other girls from Chibok who escaped Boko Haram captivity are now studying at the American University of Nigeria (AUN) in the northeastern city of Yola. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-14 01:01:35</td><td><a href='boko_haram_52.html'>Amnesty's report said that Boko Haram, meaning Western education is sinful in Hausa, routinely rounded up women and girls after taking control of a town and held them in houses or prisons. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-14 02:24:34</td><td><a href='boko_haram_51.html'>Amnesty reports provides fresh testimony to Boko Haram's use of mass kidnapping, cataloguing the frequent abduction of young women and girls, as well as the forced conscription of men and boys. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 06:06:03</td><td><a href='boko_haram_53.html'>LAGOS: Nigeria on Tuesday marks the first anniversary of Boko Haram's abduction of 219 schoolgirls from the northeastern town of Chibok, as part of a series of events planned around the world. (6)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-14 06:12:21</td><td><a href='boko_haram_54.html'>The document, which includes scores of victim testimonies, accuses Boko Haram of rape, forced marriages and coercing them into armed attacks, sometimes on their own villages. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-22 22:08:00</td><td><a href='boko_haram_60.html'>U.N. Special Representative for West Africa Mohamed Ibn Chambas said this month that Boko Haram militants seeking shelter in the Sambisa Forest may be using some of the captured girls as human shields. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 20:45:33</td><td><a href='boko_haram_68.html'>Some of the nearly 300 girls and women freed by Nigeria's military from the forest stronghold of Boko Haram were so transformed by their captivity that they opened fire on their rescuers, and experts said Wednesday they would need intensive psychological treatment. (19)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-30 10:02:41</td><td><a href='boko_haram_67.html'>Nigerian troops have rescued about 160 more hostages from Boko Haram's Sambisa Forest stronghold, the army said on Thursday, taking the total number liberated this week alone to nearly 500. (3)</a></td></tr>
+</table></body></html>

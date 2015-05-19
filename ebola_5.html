@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,8 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/24/Obama_US_Afghanistan.JPEG-0f7e9_c0-154-4329-2667_s236x137.jpg?c920aae69721c0865ee1c85ba25085bb2cac5246'></td><td>2015-02-18 15:57:54</td><td>WASHINGTON (AP) - The president of Liberia will visit the United States later this month, her first trip to the country since the Ebola outbreak in West Africa.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/24/Obama_US_Afghanistan.JPEG-0f7e9_c0-154-4329-2667_s236x137.jpg?c920aae69721c0865ee1c85ba25085bb2cac5246'></td><td>2015-02-18 15:57:54</td><td>Since an Ebola outbreak began in December 2013 in the West African country of Guinea, there have been about 7,900 deaths, mostly in Liberia, Guinea and Sierra Leone.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/24/Obama_US_Afghanistan.JPEG-0f7e9_c0-154-4329-2667_s236x137.jpg?c920aae69721c0865ee1c85ba25085bb2cac5246'></td><td>2015-02-18 15:57:54</td><td>Liberia leader to visit US, 1st visit since Ebola outbreak</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 22:05:24</td><td>"This is not what you want to see with Ebola."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-02-20 22:40:58</td><td>Liberia lifts Ebola curfew and re-opens borders</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/24/Obama_US_Afghanistan.JPEG-0f7e9_c0-154-4329-2667_s236x137.jpg?c920aae69721c0865ee1c85ba25085bb2cac5246'></td><td>2015-02-18 15:57:54</td><td>Since an Ebola outbreak began in December 2013 in the West African country of Guinea, there have been about 7,900 deaths, mostly in Liberia, Guinea and Sierra Leone.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/24/Obama_US_Afghanistan.JPEG-0f7e9_c0-154-4329-2667_s236x137.jpg?c920aae69721c0865ee1c85ba25085bb2cac5246'></td><td>2015-02-18 15:57:54</td><td>Liberia leader to visit US, 1st visit since Ebola outbreak</td></tr>
 </table></body></html>

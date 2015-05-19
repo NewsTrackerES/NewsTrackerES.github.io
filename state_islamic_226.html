@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,12 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 21:15:00</td><td>Islamic State issues audio of Baghdadi calling supporters to join him</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/2/5/5/v/image.related.articleLeadwide.620x349.gh24zh.png/1431644615965.jpg'></td><td>2015-05-14 23:03:55</td><td>Thought to be wounded and incapacitated, this is an image of the militant leader of Islamic State, Abu Bakr al-Baghdadi, taken from a propaganda video.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 19:03:51</td><td>BEIRUT (AP) - Islamic State group releases new audio message purportedly from leader al-Baghdadi.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 19:23:00</td><td>"No one should believe that the war that we are waging is the war of the Islamic State. It is the war of all Muslims, but the Islamic State is spearheading it. It is the war of Muslims against infidels."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-05-14 21:15:00</td><td>BEIRUT (Reuters) - The leader of the Islamic State militant group that controls swathes of Syria and Iraq issued an audio statement on Thursday in which he called on supporters to join him or to take up arms wherever they live in the world.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/20/10/7930380/3/square_gallery_thumb.jpg'></td><td>2015-05-05 19:45:53</td><td>PHOENIX (AP) - The Islamic State group claimed responsibility Tuesday for the assault on a Texas cartoon contest that featured images of the Prophet Muhammad, marking the first time the terror group has taken credit for an attack in the United States.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/36/20/10/7930380/3/square_gallery_thumb.jpg'></td><td>2015-05-05 19:45:53</td><td>White House press secretary Josh Earnest said it's too early to say whether the Islamic State group played a role in the attack.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/36/20/10/7930380/3/square_gallery_thumb.jpg'></td><td>2015-05-05 19:45:53</td><td>Islamic State group takes credit for suburban Dallas assault</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-05 21:04:15</td><td>The Islamic State group claimed responsibility Tuesday for the assault on a Texas cartoon contest that featured images of the Prophet Muhammad, but counterterrorism experts said IS has a history of asserting involvement in attacks in which it had no operational role.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-05 21:57:13</td><td>"The debate after 9/11 was whether too many resources were being focused on New York, Washington and not in the small towns. Now that's very much a real issue because of the volumes of recruitment being done by the Islamic State throughout the United States, Europe, and Canada," Venzke said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 00:14:06</td><td>This photo shows the Islamic Community Center of Phoenix, Monday, May 4, 2015, in Phoenix.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 00:14:06</td><td>The evidence does not indicate the attack was directed by the Islamic State group "but rather inspired by them," said McCaul, who was briefed on the investigation by federal law enforcement officials.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 00:14:06</td><td>Doubts raised about Islamic State's claim in Texas attack</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 22:47:16</td><td>Top Obama aide: US can't ignore Netanyahu's comments</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 22:36:44</td><td>Netanyahu, Putin on same 'businesslike' level with Obama</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 17:55:50</td><td>Secretary of State John Kerry spoke to Netanyahu shortly after the election to congratulate him, Earnest said, and Obama was to do the same in the days ahead.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 17:55:50</td><td>A spokesman said President Barack Obama still believes in Palestinian statehood - even if Netanyahu no longer does.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 17:55:50</td><td>Netanyahu railed against those talks earlier this month in a speech to Congress that was perceived as a rebuke to Obama.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 17:55:50</td><td>Netanyahu drew criticism as Israelis were voting Tuesday after a midday post on his Facebook page contended high Arab voter turnout was endangering his Likud Party's rule.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 17:55:50</td><td>US chides Netanyahu?s party after Israeli election win</td></tr>
 </table></body></html>

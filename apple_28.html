@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,12 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HT839_STERN__H_20150407151750.jpg'></td><td>2015-04-08 15:59:11</td><td>After over a week of living with Apple's latest gadget on my wrist, I realized the company isn't just selling some wrist-worn computer, it's selling good looks and coolness, with some bonus computer features.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HT839_STERN__H_20150407151750.jpg'></td><td>2015-04-08 15:59:11</td><td>When was the last time Apple didn't improve first-gen hardware's performance while making it sleeker?</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:13:00</td><td>Why You Don't Really Want An Apple Watch (Yet)</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 11:21:28</td><td>In Hong Kong, the official Apple Store preview of the Watch was quiet.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-30 20:29:26</td><td>Shipments of the highly anticipated Apple Watch are reportedly being slowed by a faulty component manufactured by one of Apple's suppliers in China.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/IKCqgvzK6smEwwN4nRMhtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-08T142000Z_2_LYNXMPEB370KG_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-08 14:20:00</td><td>The Apple Watch Sport will start at $349 for the smaller, 38-mm model.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/IKCqgvzK6smEwwN4nRMhtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-08T142000Z_2_LYNXMPEB370KG_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-08 14:20:00</td><td>"For now, the Apple Watch is for pioneers," the Wall Street Journal's Geoffrey Fowler wrote.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/04/29906170001_4160369361001_AplWatch-3Up-Communication-PR-PRINT.jpg'></td><td>2015-04-08 14:34:43</td><td>It's almost here! First look at the Apple Watch</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 15:01:58</td><td>Apple Watch sleek and stylish but not for everyone, reviewers say</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/03/09/turlington_cook650.jpg&size=104x59&quality=85'></td><td>2015-04-08 18:15:07</td><td>But, according to New York Times tech columnist Farhad Manjoo, while he generally liked the Apple Watch after a "steep" learning curve, the third-party apps available for the device are "mostly useless right now."</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/03/09/turlington_cook650.jpg&size=104x59&quality=85'></td><td>2015-04-08 18:15:07</td><td>As Manjoo concluded: "The first Apple Watch may not be for you -- but someday soon, it will change your world."</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297685025447_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-08 18:17:11</td><td>But, he said, "the Apple Watch isn't quite the gatekeeper to my digital life that I wanted. Take app alerts -- there's a fine line between being in the know and having your wrist jiggle all day."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/24/102618805-20150424-3618-1200.80x60.jpg?v=1429896904'></td><td>2015-05-01 11:47:00</td><td>The hardware cost of an Apple Watch Sport model was about 24 percent of the suggested retail price compared with 29-38 percent for the iPhone maker's other products, IHS said on Thursday.</td></tr>
 </table></body></html>

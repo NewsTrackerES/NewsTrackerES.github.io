@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 11:55:37</td><td><a href='snowden_8.html'>"You will never be completely free from risk if you if you're free. The only time you can be free from risk are if you're in prison," Snowden said. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 23:01:29</td><td><a href='snowden_10.html'>Snowden: That is a problem. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 17:40:59</td><td><a href='snowden_15.html'>NEW YORK - The mysterious artists who planted a bust of Edward Snowden on a Revolutionary War monument in a New York City park want the sculpture back. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-07 02:54:07</td><td><a href='snowden_14.html'>Two activists who put a bust of Edward Snowden on a Revolutionary War memorial were ticketed and got their confiscated sculpture back Wednesday, saying they felt the episode had sparked conversation about freedom. (9)</a></td></tr>
 </table></body></html>

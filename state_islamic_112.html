@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 13:34:35</td><td>Islamic State launches English-language radio bulletins</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 13:34:35</td><td>BAGHDAD - The Islamic State group has launched English-language radio news bulletins on its al-Bayan radio network.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 15:25:11</td><td>Kenyan president vows harsh moves against Islamic militants after Garissa college attack.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 15:39:24</td><td>A survivor of the killings at Garissa University College was found on Saturday, two days after the attack by Islamic extremists killed 148 people.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-04 15:39:24</td><td>The Islamic militants said the attack on Garissa college was in retaliation for killings carried out by Kenyan troops fighting the rebels in Somalia.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-04 15:39:24</td><td>He said the three are associates of Mohamed Mohamud, also known as Dulyadin Gamadhere, a former teacher at a Kenyan Madrassa Islamic school who authorities say coordinated the Garissa attack.</td></tr>
 </table></body></html>

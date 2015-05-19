@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 19,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 19 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 03:52:48</td><td><a href='apple_12.html'>In the memoir, which was released this week, Tim Cook did not miss an opportunity to take a swipe at the unauthorized Steve Jobs biography by Walter Isaacson, which debuted just weeks after the Apple co-founder's death. (7)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:03:40</td><td><a href='apple_14.html'>Apple's Tim Cook to donate his wealth - Fortune (7)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 16:58:49</td><td><a href='apple_15.html'>Most of Cook's wealth is tied up in an Apple stock grant he received in 2011 when he succeeded Steve Jobs as Apple Inc.'s CEO. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 16:15:00</td><td><a href='apple_16.html'>Apple CEO Tim Cook speaks at the Apple Worldwide Developers Conference event in San Francisco on June 2, 2014. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/lq75JPtG5jAypvguR2qnkQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-13T214254Z_1_LYNXMPEB4C18W_RTROPTP_3_USA-APPLE_original.jpg'></td><td>2015-05-13 21:42:54</td><td>The case in U.S. District Court, District of Massachusetts is A123 Systems LLC vs. Apple Inc et al., 15-10438.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82994000/jpg/_82994027_495316187.jpg'></td><td>2015-05-14 11:36:37</td><td>Apple denied the claims.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82994000/jpg/_82994027_495316187.jpg'></td><td>2015-05-14 11:36:37</td><td>A123 claimed that, in about June 2014, Apple began aggressively poaching its engineers who were leading some of the company's most critical projects.</td></tr>
 </table></body></html>

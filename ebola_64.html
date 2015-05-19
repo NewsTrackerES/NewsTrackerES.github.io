@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>During a press briefing in Geneva on Friday, Aylward said WHO's Ebola emergency committee believes the risk of the virus spreading globally appears to be dropping even though officials still don't know where the virus is spreading in most cases in Guinea and Sierra Leone.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>He said the designation of Ebola as a global emergency is also necessary to speed up paperwork for the ongoing experimental drug and vaccine trials in West Africa.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>"It is just that we are used to (seeing) large numbers of cases and deaths," said Oyewale Tomori, a Nigerian virologist who sits on WHO's Ebola emergency committee.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>Dr. Bruce Aylward, who is leading WHO's Ebola response, said the decline appeared to be real, rather than just "a pothole on the bumpy road to get to zero cases."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>Other experts agreed it's too early for WHO to downgrade the status of the biggest-ever Ebola outbreak and warned the recent fall in cases may be deceptive.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>"The three countries had declared themselves (Ebola-free) at one time, only to find dead bodies all over the place later," he wrote in an email.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/57/43/7796959/3/622x350.jpg'></td><td>2015-04-10 12:07:44</td><td>UN: Ebola still global emergency despite big drop in cases</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-10 08:01:33</td><td>ACT Health Acting Chief Health Officer Dr Andrew Pengilley said he worked as a medical professional in Liberia where there had been a large number of Ebola cases.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-10 08:01:33</td><td>Dr Pengilley said he would be treated for Ebola and until that proved negative, it would be handled as a worst-case scenario.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-10 08:01:33</td><td>"Due to the low number of cases in Liberia recently, the person did not treat any cases of Ebola," he said in a statement.</td></tr>
 </table></body></html>

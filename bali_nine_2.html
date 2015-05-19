@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,13 +49,9 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>December: Prime minister Kevin Rudd tells Mr Yudhoyono that if any of the Bali Nine still faced the death penalty when all legal avenues had been pursued, he would plead for clemency.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>Bali Nine's Andrew Chan and Myuran Sukumaran to be moved to Nusakambangan island this week, authorities say</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>Two Australian Bali Nine members on death row in Indonesia will be transferred this week to the most notorious prison on Nusakambangan island, known as Indonesia's Alcatraz.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>September, 2006: Prime Minister John Howard refuses to intervene on behalf of the "Bali Nine".</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/1/2/c/a/image.related.articleLeadwide.620x349.140nhf.png/1426135478938.jpg'></td><td>2015-03-10 23:02:54</td><td>Sir Richard Branson pleads for lives of Bali nine duo Andrew Chan and Myuran Sukumaran and other drug convicts on death row</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150123022819-chan-sukumaran-indonesia-bali-nine-large-169.jpg'></td><td>2015-04-08 17:30:13</td><td>Who are the 'Bali Nine'?</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/i/image.related.articleLeadwide.620x349.1mtr7q.png/1430045989842.jpg'></td><td>2015-04-26 10:55:38</td><td>The eerie painting, brought back from Nusakambangan by their lawyer Julian McMahon, is a portent of Bali nine pair's ghastly fate - death by firing squad.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/t/q/5/image.related.articleLeadwide.620x349.1mu1gh.png/1430106133342.jpg'></td><td>2015-04-27 02:22:51</td><td>Indonesian police and security guard the fence line at Ngurah Rai International airport when Bali Nine duo Myuran Sukumaran and Andrew Chan were transferred Nusakambangan.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/5/m/k/6/image.related.articleLeadwide.620x349.1mu618.png/1430123064050.jpg'></td><td>2015-04-27 08:24:36</td><td>Bali nine pair Chan and Sukumaran choose their execution witnesses</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/v/j/h/v/image.related.articleLeadwide.620x349.1mxom8.png/1430492350379.jpg'></td><td>2015-05-01 14:15:16</td><td>Chan and Sukumaran execution 'illegal', but Indonesia ignores Australia again Bodies of Bali nine pair Andrew Chan and Myuran Sukumaran head to Jakarta airport for flight to Australia Bali nine executions illegal, but will Australia push the point?</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>Bali Nine's Andrew Chan and Myuran Sukumaran to be moved to Nusakambangan island this week, authorities say</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>Two Australian Bali Nine members on death row in Indonesia will be transferred this week to the most notorious prison on Nusakambangan island, known as Indonesia's Alcatraz.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/d/n/o/d/image.related.articleLeadwide.620x349.13gbn0.png/1425445008113.jpg'></td><td>2015-02-16 09:59:22</td><td>September, 2006: Prime Minister John Howard refuses to intervene on behalf of the "Bali Nine".</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/1/2/c/a/image.related.articleLeadwide.620x349.140nhf.png/1426135478938.jpg'></td><td>2015-03-10 23:02:54</td><td>Sir Richard Branson pleads for lives of Bali nine duo Andrew Chan and Myuran Sukumaran and other drug convicts on death row</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/v/j/h/v/image.related.articleLeadwide.620x349.1mxom8.png/1430492350379.jpg'></td><td>2015-05-01 14:15:16</td><td>Chan and Sukumaran execution 'illegal', but Indonesia ignores Australia again Bodies of Bali nine pair Andrew Chan and Myuran Sukumaran head to Jakarta airport for flight to Australia Bali nine executions illegal, but will Australia push the point?</td></tr>
 </table></body></html>

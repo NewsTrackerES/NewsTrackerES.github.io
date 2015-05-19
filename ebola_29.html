@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,8 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/TdG_0FtxYQ3MxZGPdbZs2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T001049Z_1_LYNXMPEB2M002_RTROPTP_2_HEALTH-EBOLA-AFRICA.JPG.cf.jpg'></td><td>2015-03-19 15:57:52</td><td>Liberia: Families of health workers killed by Ebola get $5k</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/TdG_0FtxYQ3MxZGPdbZs2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T001049Z_1_LYNXMPEB2M002_RTROPTP_2_HEALTH-EBOLA-AFRICA.JPG.cf.jpg'></td><td>2015-03-19 15:57:52</td><td>MONROVIA, Liberia (AP) - Liberia's government has begun making payments to the families of health workers who died of Ebola in the world's worst ever outbreak, an official said Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 16:01:07</td><td>Ebola, often called the caregivers' disease, has decimated the ranks of doctors and nurses in the three countries hardest hit in this outbreak: Liberia, Guinea and Sierra Leone.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 16:36:32</td><td>So far, 11 families have received $5,000 each, said Tolbert Nyenswah, who leads the government's Ebola response; dozens more payments are in the works.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/TdG_0FtxYQ3MxZGPdbZs2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T001049Z_1_LYNXMPEB2M002_RTROPTP_2_HEALTH-EBOLA-AFRICA.JPG.cf.jpg'></td><td>2015-03-19 15:57:52</td><td>MONROVIA, Liberia (AP) - Liberia's government has begun making payments to the families of health workers who died of Ebola in the world's worst ever outbreak, an official said Thursday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 16:01:07</td><td>Ebola, often called the caregivers' disease, has decimated the ranks of doctors and nurses in the three countries hardest hit in this outbreak: Liberia, Guinea and Sierra Leone.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 16:01:07</td><td>So far, 11 families have received $5,000 each, said Tolbert Nyenswah, who leads the government's Ebola response; dozens more payments are in the works.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 16:01:07</td><td>Liberia currently has no Ebola cases, but it must still wait several weeks before it is officially declared free of the disease.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 17:52:55</td><td>Apple's "Start Something New" marketing campaign was cited in the lawsuit as one recent example of misuse of Britto art.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td>The lawsuit seeks unspecified damages from Cupertino, California-based Apple and the design duo Craig Redman of New York and Karl Maier of London, whose company is called Craig & Karl.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td>Artist Britto sues Apple, design firm over use of art, style</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td>Officials at Apple and Craig & Karl did not immediately respond Monday to emails seeking comment.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:09:12</td><td>MIAMI -- Artist Romero Britto is suing Apple Inc. and a design firm in Miami federal court for allegedly misusing his colour-splashed images and distinctive style in marketing campaigns.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 20:13:06</td><td>After investigating the source of the Apple image, according to the lawsuit, Britto's lawyers noticed apparent similarities between Craig & Karl's work and that of Britto.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 21:02:45</td><td>One image, an outstretched hand with colorful designs flowing from a fingertip, was licensed from Craig & Karl by Apple.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 21:02:45</td><td>In fact, when the Apple "Start Something New" campaign appeared, Britto received messages congratulating him, incorrectly, for what appeared to be a new business deal with Apple.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td>Apple likely to boost watch production quickly: analysts</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 12:01:41</td><td>Analysts widely expect the Apple Watch to outsell similar watches offered by Samsung Electronics Co Ltd, Sony Corp and LG Electronics, which have attracted lukewarm interest from consumers.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 16:05:54</td><td>Munster, who thinks Apple will sell 2.3 million watches in the April-June quarter, expects the company to ramp up production between mid-May and June.</td></tr>
 </table></body></html>

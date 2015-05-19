@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,12 +49,11 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>The Islamic State has tweeted warnings they are coming to Rome.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>What's to stop the Islamic State?</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>In a recently released video that showed the killing of 21 Christians in Libya, all but one of them Egyptian, the Islamic State issued an ominous warning: "Today we are south of Rome," one masked militant said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>As word of #We_Are_Coming_O_Rome spread across the Italian media, Rome residents took the opportunity to respondto the Islamic State.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>The Islamic State threatens to come to Rome; Italians respond with travel advice</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>To make matters worse, Rita Katz, director of SITE Intelligence Group, pointed out that supporters of the Islamic State have begun using a hashtag to warn of their plan to reach "Rome."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>Exactly what "Rome" means to the Islamic State is unclear -- some experts say it may actually be a reference to the United States or Turkey, or even the West in general.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>By this point, the Italian responses to the hashtag far outweigh any from Islamic State supporters, and some Italian publications are beginning to wonder how notable the hashtag was to begin with.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>But the response does serve as a useful reminder: Italians may be scared of apocalyptic Islamic State warnings, but in their day-to-day life, they have many other issues on their minds.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>In a recently released video that showed the killing of 21 Christians in Libya, all but one of them Egyptian, the Islamic State issued an ominous warning: "Today we are south of Rome," one masked militant said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>As word of #We_Are_Coming_O_Rome spread across the Italian media, Rome residents took the opportunity to respondto the Islamic State.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>The Islamic State threatens to come to Rome; Italians respond with travel advice</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>To make matters worse, Rita Katz, director of SITE Intelligence Group, pointed out that supporters of the Islamic State have begun using a hashtag to warn of their plan to reach "Rome."</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>Exactly what "Rome" means to the Islamic State is unclear -- some experts say it may actually be a reference to the United States or Turkey, or even the West in general.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>By this point, the Italian responses to the hashtag far outweigh any from Islamic State supporters, and some Italian publications are beginning to wonder how notable the hashtag was to begin with.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/5/o/l/b/image.related.articleLeadwide.620x349.13l02r.png/1424498770292.png'></td><td>2015-02-21 01:11:01</td><td>But the response does serve as a useful reminder: Italians may be scared of apocalyptic Islamic State warnings, but in their day-to-day life, they have many other issues on their minds.</td></tr>
 </table></body></html>

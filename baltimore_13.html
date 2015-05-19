@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 03:41:04</td><td>Tillman (2-2) turned in a second straight dud against Toronto, which rocked the righty for seven runs in 2 2/3 innings in Baltimore on April 12.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 03:41:04</td><td>Recap: Toronto vs. Baltimore</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 03:41:04</td><td>The right-hander needed just 28 pitches his first time through the Baltimore lineup and threw only 56 while still perfect after five.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 02:18:00</td><td>Edwin Encarnacion bashed two home runs in the Toronto Blue Jays' 13-6 rout of the Baltimore Orioles on Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 03:41:04</td><td>Recap: Toronto vs. Baltimore</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 03:41:04</td><td>The right-hander needed just 28 pitches his first time through the Baltimore lineup and threw only 56 while still perfect after five.</td></tr>
 </table></body></html>

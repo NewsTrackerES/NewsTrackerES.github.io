@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://images.smh.com.au/2014/12/02/6050581/90418-_BeachVilla-172x115.jpg'></td><td>2015-04-19 12:03:58</td><td>Islamic State executes Ethiopian Christians in Libya</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6404586-3x2-340x227.jpg'></td><td>2015-04-19 12:51:01</td><td>The video bore the logo of Islamic State's (IS) media arm and was similar to footage released in the past, including of a group of 21 Coptic Christians, mainly Egyptians, beheaded on a Libyan beach in February.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 06:39:04</td><td>Indonesian Islamic parties seek ban on alcohol consumption</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 08:01:46</td><td>Jakarta - Two Islamic parties have proposed legislation that would ban all consumption of alcoholic drinks and bring jail terms of up to two years for offenders in Indonesia, home to the world's largest Muslim population.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-14 08:01:46</td><td>"What is ironic is that our neighbour Malaysia has sharia [Islamic] law, but they do not ban the selling of alcohol."</td></tr>
 </table></body></html>

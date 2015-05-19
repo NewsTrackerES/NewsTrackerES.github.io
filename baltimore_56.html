@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5175&amp;contextPath=3179-5151-5175-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=21140508&amp;type=article&amp;title=Recap%3a++Baltimore+vs.+LA+Angels&amp;url=http%3a%2f%2fwww.miamiherald.com%2fsports%2fmlb%2farticle21140508.html'></td><td>2015-05-16 01:58:07</td><td>Recap: Baltimore vs. LA Angels</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5175&amp;contextPath=3179-5151-5175-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=21140508&amp;type=article&amp;title=Recap%3a++Baltimore+vs.+LA+Angels&amp;url=http%3a%2f%2fwww.miamiherald.com%2fsports%2fmlb%2farticle21140508.html'></td><td>2015-05-16 01:58:07</td><td>Baltimore, MD (SportsNetwork.com) - Jered Weaver pitched into the eighth inning to help the LA Angels of Anaheim to a 3-1 win over the Baltimore Orioles in the opener of a three-game set.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>Carrollton Avenue in the Sandtown-Winchester neighborhood in Baltimore May 5, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>A woman walks down Riggs Avenue in the Sandtown- Windchester neighborhood of Baltimore on May 4, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>Goldie said he does feel that Baltimore is "kind of changing," though he said it shouldn't have taken Gray's death to shine a light on the problems that he's seen every day of his life.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>One man from East Baltimore warned the other attendees that the public pool in his neighborhood would be closed for the fourth summer in a row, a symbol of the lack of recreational activities in poor neighborhoods.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>The Baltimore Sun recently reported that from 1989 to 1999, at least $130 million in public and private money was spent to build or refurbish houses in Sandtown-Winchester.</td></tr>
 </table></body></html>

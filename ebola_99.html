@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 13:41:03</td><td>DAKAR, Senegal (AP) - An independent panel of experts studying what went wrong in the World Health Organization's response to the Ebola crisis says it's still not clear why it took so long for the body to take action.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 13:41:03</td><td>Panel questions why WHO response slow to Ebola</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/25/30/7951931/9/622x350.jpg'></td><td>2015-05-11 15:37:23</td><td>Internal documents obtained by The Associated Press earlier this year detail how WHO resisted declaring the Ebola outbreak a public health emergency until months after staff considered raising the alarm.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/25/30/7951931/9/622x350.jpg'></td><td>2015-05-11 15:37:23</td><td>Panel calls for change at WHO after slow response to Ebola</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-287oz-6YRqVhDRGHSK2-260_634x422.jpg'></td><td>2015-05-11 16:02:33</td><td>The experts stressed that it took WHO "until August or September 2014 to recognise that Ebola transmission would be brought under control only when surveillance, community mobilisation and the delivery of appropriate health care to affected communities were all put in place simultaneously."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 17:37:00</td><td>"Ebola is a tragedy that has taught the world, including WHO, many lessons also about how to prevent similar events in the future," she said, adding: "Never again should the world be caught by surprise, unprepared."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/25/41/7952457/7/622x350.jpg'></td><td>2015-05-10 15:21:43</td><td>Liberia churches celebrate end of Ebola</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/O..g.hTL0174rMmtNrOIzg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f84a75d6c60aff14750f6a7067007dea.jpg'></td><td>2015-05-10 15:21:48</td><td>The traditional round of hugs and handshakes at the end of the Sunday service - which was stopped last year out of fear it could spread Ebola - was not reinstated, and Reverend Venicious Reeves said he was "not in any rush" to resume it.</td></tr>
 </table></body></html>

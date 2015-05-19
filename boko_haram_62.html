@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,12 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 19:11:29</td><td>Gujba is one of a handful of districts in Yobe that Boko Haram captured during its sweeping offensive last year.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td>On Friday, suspected Boko Haram fighters disguised as soldiers intercepted a group of people trying to return to their homes to collect abandoned food supplies in northeastern Yobe state.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td>Many experts agree that Boko Haram is likely to transition from capturing and holding territory to reverting to a pattern of hit-and-run attacks.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td>"Unfortunately, they were killed by (the) same Boko Haram we ran away from."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k.iumdWTQX4iqi_CsYKOfA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/893f46e9403ca15d4e771d83cff708ff91c03119.jpg'></td><td>2015-04-26 09:53:13</td><td>NIAMEY, Niger (AP) - Niger's defense ministry says suspected Boko Haram fighters attacked an army base on the island of Karamga in Lake Chad.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 09:53:53</td><td>It said operations are ongoing "with the help of allies" to defeat Boko Haram.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-26 11:20:34</td><td>A similar attack on Karamga Island in February killed seven Niger soldiers, and 14 Boko Haram fighters were also killed, military officials said at the time.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-26 11:20:34</td><td>Niger joined a regional offensive earlier this year that is credited with retaking large swaths of territory in Nigeria from Boko Haram.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-27 21:41:16</td><td>Military forces started retaking towns in February from Boko Haram, whose fighters had months of gains.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 21:42:12</td><td>Niger Army Retakes Control of Island From Boko Haram</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/WQN7CIql3X7UUmHbkcKXGg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8135662-1-1-0.jpg'></td><td>2015-04-28 23:25:50</td><td>Niger says 46 soldiers, 28 civilians killed in weekend Boko Haram attack</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-01 17:23:28</td><td>Niger Governor Orders Evacuations Due to Boko Haram</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,8 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td>At one point, Prince invited onstage Baltimore State's Attorney Marilyn Mosby, who has charged six officers in Gray's death.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td>Longtime fan Luther Washington, stationed at Ft Meade, shows off his Prince tattoo while waiting for the doors to open for Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 11:07:30</td><td>Prince took the stage in Baltimore before thousands of fans who were dressed in gray in tribute to a man whose death in police custody prompted riots and drew international attention.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6dAB_EscFMwkujd0BDLczw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/17404ba2151f2015760f6a706700ec91.jpg'></td><td>2015-05-11 11:07:43</td><td>The pop star announced Sunday's "Rally 4 Peace" concert at the Royal Farms Arena Baltimore after weeks of protests over the death of Freddie Gray.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 11:09:06</td><td>Karen Howard of Washington, DC purchases a t-shirt prior to Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/d72a7fd2009866ead21530f99cc5eff0fba1dec9/c=45-0-1454-1879&amp;r=537&amp;c=0-0-534-712/local/-/media/2015/05/01/USATODAY/USATODAY/635660636602721309-PRINCE-.jpg'></td><td>2015-05-01 13:26:28</td><td>Prince has recorded a song in response to the unrest in Baltimore.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 21:14:41</td><td>"Nobody got in nobody's way, so I guess you could say it was a good day, at least a little better than the day in Baltimore," he sang.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:46:49</td><td>Ushers check fans' tickets as they enter Orioles Park at Camden Yards before a baseball game between the Baltimore Orioles and the Toronto Blue Jays, Monday, May 11, 2015, in Baltimore.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 22:46:49</td><td>As the Baltimore Orioles prepared to play before their home fans for the first time in two weeks, the sights and sounds around Camden Yards on a lovely Monday afternoon were all about baseball.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 22:46:49</td><td>It was a stark contrast to their last game in Baltimore.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-12 01:14:07</td><td>Inside the stadium, the home team wore jerseys with the script word "Baltimore" across the front instead of the customary "Orioles."</td></tr>
 </table></body></html>

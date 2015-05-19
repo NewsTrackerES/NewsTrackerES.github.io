@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 16,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 23:30:03</td><td><a href='mexico_70.html'>MEXICO CITY (AP) " Mexican authorities said Tuesday they staged 153 raids over the last year on a train known as "La Bestia" that rolled toward the U.S. border crowded with hundreds of Central American migrants. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 01:33:17</td><td><a href='mexico_72.html'>MEXICO CITY (AP) - Activists for migrants and rights groups in Mexico say about 200 Central American migrants hope to restart their journey to hold a "Viacrucis" protest in Mexico City that has been stymied by highway immigration checkpoints. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 00:12:58</td><td><a href='mexico_84.html'>Migrants' Protest Convoy Reaches Mexico City With Complaints (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 23:30:03</td><td><a href='mexico_70.html'>MEXICO CITY (AP) " Mexican authorities said Tuesday they staged 153 raids over the last year on a train known as "La Bestia" that rolled toward the U.S. border crowded with hundreds of Central American migrants. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 01:33:06</td><td><a href='mexico_72.html'>For several years, migrants have carried wooden crosses in protest marches in Mexico around Easter week to illustrate their suffering at the hands of criminals and corrupt police. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 00:12:58</td><td><a href='mexico_84.html'>About 200 participants in a protest convoy of Central American migrants arrived in Mexico's capital Saturday and filed abuse complaints with the government's National Human Rights Commission. (5)</a></td></tr>
 </table></body></html>

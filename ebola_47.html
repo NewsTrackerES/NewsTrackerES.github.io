@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/40/37/7735287/7/mosaic_2.jpg'></td><td>2015-03-29 17:30:54</td><td>However, he was released from treatment about six months ago, and Ebola has not been detected in the semen of a survivor for longer than about three months.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/40/37/7735287/7/mosaic_2.jpg'></td><td>2015-03-29 17:30:54</td><td>The statement was prompted by continued confusion over how the country's latest Ebola patient - its first in weeks - came down with the disease.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-03-29 17:30:54</td><td>In Liberia, the government issued a statement Sunday warning survivors of Ebola to abstain from unprotected sex even beyond the 90-day period earlier recommended.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 17:20:28</td><td>LONDON (Reuters) - A 25-year-old British military nurse who was the first person in the world to be treated for Ebola with the experimental drug MIL 77 was discharged from hospital on Friday, London's Royal Free Hospital said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 17:20:28</td><td>The Chinese-made MIL 77 is a close relative of another experimental medicine ZMapp - which British nurse William Pooley received when he was treated at the Royal Free for Ebola last year.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/8e2/news/world/article23664469.ece/ALTERNATES/w220/-539237870.JPG'></td><td>2015-03-27 17:26:06</td><td>She was brought back to Britain and successfully treated at the Royal Free in north London, Britain's main centre for Ebola treatment.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 17:57:13</td><td>British Ebola patient cured after experimental treatment</td></tr>
 </table></body></html>

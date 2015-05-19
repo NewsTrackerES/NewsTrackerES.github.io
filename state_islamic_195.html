@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,13 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/12/52/7908019/7/square_gallery_thumb.jpg'></td><td>2015-05-01 13:13:27</td><td>Iraq's Sunnis have chafed under the rule of the Shiite-dominated government, which they say unfairly discriminates against them, while Shiites suspect Sunnis of sympathizing with the Islamic State group, which grew out of al-Qaida's Iraq branch.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/12/52/7908019/7/square_gallery_thumb.jpg'></td><td>2015-05-01 13:13:27</td><td>There are 2.7 million people internally displaced in Iraq, where government forces are struggling to wrest back vast areas of the north and west seized by the Islamic State group last year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-20 12:08:58</td><td>U.S., allies launch eight airstrikes against Islamic State: task force</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-23 18:54:03</td><td>All eight air strikes in Syria targeted Islamic State fighting positions, tactical units and a vehicle near Kobani.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-23 18:54:03</td><td>U.S., allies conduct 14 air strikes against Islamic State: task force</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-24 14:48:36</td><td>WASHINGTON (Reuters) - The United States and its allies staged 14 air strikes on Islamic State targets in Syria and Iraq in the latest round of daily attacks, the Combined Joint Task Force said on Tuesday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 18:30:06</td><td>Bombers, fighters and attack aircraft hit Islamic State targets near several cities, including Mosul and Tikrit in seven strikes during a 24-hour period, it said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 18:50:49</td><td>In Iraq, eight air strikes near Fallujah destroyed Islamic State fighting positions, mortar tubes, an excavator and a vehicle, and hit seven tactical units.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-30 17:55:06</td><td>In Iraq, 15 strikes targeted Islamic State positions near seven cities, including Ramadi and Mosul, and struck numerous buildings, vehicles and units of militants, the task force said.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-05-01 13:23:55</td><td>In Syria, 11 strikes near al Hasaka, Dayr az Zawr and Kobani also struck eight Islamic State fighting units as well as two vehicles and other targets, the statement said.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-11 17:49:09</td><td>Most of the Syrian strikes, six, hit targets near Al Hasakah, where they destroyed Islamic State fighting positions, vehicles, mortar positions, heavy machine guns and a supply point.</td></tr>
 </table></body></html>

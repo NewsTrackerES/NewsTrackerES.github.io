@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/05/article-doc-1k2ke-6XZ74TXJGHSK2-315_634x460.jpg'></td><td>2015-04-05 16:06:06</td><td>When asked if he trusts President Barack Obama, Netanyahu replied: "I trust that the president is doing what he thinks is good for the United States, but I think that we can have a legitimate difference of opinion on this because I think Iran has shown to be completely distrustful."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 16:06:10</td><td>"It doesn't roll back Iran's nuclear program," Netanyahu said, one of several US networks he appeared on to slam the deal.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46819317,width-300,resizemode-4/Netanyahu.jpg'></td><td>2015-04-06 01:59:23</td><td>Relations between Israel and its traditionally staunch US ally are at a low and were hugely damaged when Netanyahu took the unprecedented step of addressing Congress last month to attack the nuclear negotiations with Iran.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46819317,width-300,resizemode-4/Netanyahu.jpg'></td><td>2015-04-06 01:59:23</td><td>Netanyahu told ABC News that the money that will flow back into Iran as sanctions ease will not be used to help the population.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/06/article-doc-1k2ke-6XZjpZZcy-HSK1-969_634x627.jpg'></td><td>2015-04-06 02:01:33</td><td>Ben Rhodes, the US deputy national security adviser for strategic communications, said Netanyahu was wrong because no deal could be reached that involved Iran dismantling its nuclear program.</td></tr>
+</table></body></html>

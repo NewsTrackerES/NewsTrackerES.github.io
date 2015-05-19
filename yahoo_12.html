@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>Earlier this month, Yahoo reported its first-quarter results and pleased investors by saying it will cut costs and consider spinning off its stake in Yahoo Japan.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>But even though advertisers are shifting more of their spending to the Internet and mobile devices, Yahoo is still struggling to increase its revenue and it lags behind Google and Facebook in mobile revenue.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>Yahoo's stock gained 25 percent in 2014.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 04:44:14</td><td>The value of Yahoo CEO Marissa Mayer's pay package surged last year, mostly due to gains in the Internet company's stock price that came despite concerns about the overall health of Yahoo's business.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 04:44:14</td><td>Those awards were worth $15 million when they were approved, but Yahoo says their value has risen to about $40 million.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 22:12:00</td><td>Yahoo's stock gained 25 percent in 2014.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>But even though advertisers are shifting more of their spending to the Internet and mobile devices, Yahoo is still struggling to increase its revenue and it lags behind Google and Facebook in mobile revenue.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/01/72/7872186/5/landscape_32.jpg'></td><td>2015-04-29 23:23:04</td><td>Those awards were worth $15 million when they were approved, but Yahoo says their value has risen to about $40 million.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-29 23:23:04</td><td>Earlier this month, Yahoo reported its first-quarter results and pleased investors by saying it will cut costs and consider spinning off its stake in Yahoo Japan.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-29 23:23:04</td><td>Yahoo CEO's pay package climbs in 2014 due to stock gains</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-30 04:44:14</td><td>The value of Yahoo CEO Marissa Mayer's pay package surged last year, mostly due to gains in the Internet company's stock price that came despite concerns about the overall health of Yahoo's business.</td></tr>
 </table></body></html>

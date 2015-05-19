@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,10 +49,8 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 03:32:47</td><td>Hillary Rodham Clinton exclusively used a personal email account to conduct government business as secretary of state, State Department officials said, and may have violated federal requirements that officials' correspondence be retained as part of the agency's record.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 03:32:47</td><td>A spokesman for Clinton, Nick Merrill, defended her use of the personal email account and said she has been complying with the "letter and spirit of the rules."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/3002/45dd7d44e8de4e11b6f150e9c4ce35e7.jpg'></td><td>2015-03-03 05:42:21</td><td>Hillary Clinton.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/1ef20197c082e5eb0f8b09dd63d00a1c97c51e94/0_0_3000_1803/500.jpg'></td><td>2015-03-03 06:03:03</td><td>Former US secretary of state Hillary Clinton may have violated federal records laws by using a personal email account for all of her work messages, the New York Times reported on Monday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670480998_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 06:09:15</td><td>Hillary Clinton may have broken federal record-keeping laws</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 10:58:57</td><td>Hillary Clinton Was Asked About Email 2 Years Ago</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/3966cb7/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F41%2F53%2Ffe6414eb412a916bb200c1e89633%2F150410-hillaryclinton-editorial.jpg'></td><td>2015-05-06 16:20:54</td><td>State Official: Hillary Clinton Email Practices 'Not Acceptable'</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 03:32:47</td><td>A spokesman for Clinton, Nick Merrill, defended her use of the personal email account and said she has been complying with the "letter and spirit of the rules."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/1ef20197c082e5eb0f8b09dd63d00a1c97c51e94/0_0_3000_1803/500.jpg'></td><td>2015-03-03 06:03:03</td><td>Former US secretary of state Hillary Clinton may have violated federal records laws by using a personal email account for all of her work messages, the New York Times reported on Monday.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670480998_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 06:09:15</td><td>Hillary Clinton may have broken federal record-keeping laws</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 10:58:57</td><td>Hillary Clinton Was Asked About Email 2 Years Ago</td></tr>
 </table></body></html>

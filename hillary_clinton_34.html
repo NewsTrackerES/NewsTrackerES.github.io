@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 02:25:10</td><td>Clinton takes road trip to Iowa for first campaign event</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 02:25:16</td><td>"When Hillary first told us that she was ready to hit the road for Iowa, we literally looked at her and said, 'Seriously?' And she said, 'Seriously, " said longtime aide Huma Abedin in a conference call with Clinton alumni.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.huffpost.com/gen/2828614/images/n-HILLARY-CLINTON-large570.jpg'></td><td>2015-04-13 02:25:16</td><td>Longtime aide Huma Abedin tells Clinton alumni during a Sunday night conference call that it was Clinton's idea to make the roughly 1,000-mile trip to Iowa by van.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/k/d/t/8/image.related.articleLeadwide.620x349.1mkdsx.png/1428944114197.jpg'></td><td>2015-04-13 16:55:22</td><td>During a conference call with donors, Rubio criticised Democratic front-runner Hillary Clinton as a leader from yesterday and said the 2016 race will be a choice between the past and the future, the source said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/k/d/t/8/image.related.articleLeadwide.620x349.1mkdsx.png/1428944114197.jpg'></td><td>2015-04-13 16:55:22</td><td>Tea Party Republican Marco Rubio starts White House bid, takes aim at Hillary Clinton</td></tr>
 </table></body></html>

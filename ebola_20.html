@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,10 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/nwtjNvK0pcnsMg6KHMfvyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ac9f3af2fca7b2096f0f6a706700d2d8.jpg'></td><td>2015-03-03 10:25:36</td><td>BRUSSELS (AP) - Liberia's president on Tuesday called for an Ebola "Marshall Plan" to help rebuild economies in West African nations devastated by the virus.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/nwtjNvK0pcnsMg6KHMfvyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ac9f3af2fca7b2096f0f6a706700d2d8.jpg'></td><td>2015-03-03 10:25:36</td><td>"We are talking about a Marshall Plan because Ebola is like a war," Guinea President Alpha Conde said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/nwtjNvK0pcnsMg6KHMfvyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ac9f3af2fca7b2096f0f6a706700d2d8.jpg'></td><td>2015-03-03 10:25:36</td><td>About $4.9 billion has been pledged internationally to the Ebola effort, but only around $2.4 billion has actually been disbursed.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:00:06</td><td>Even if the number of new Ebola cases in Liberia, Guinea and Sierra Leone has dropped markedly, bringing it down to zero will still take a significant effort.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/nwtjNvK0pcnsMg6KHMfvyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ac9f3af2fca7b2096f0f6a706700d2d8.jpg'></td><td>2015-03-03 10:25:36</td><td>"We are talking about a Marshall Plan because Ebola is like a war," Guinea President Alpha Conde said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/nwtjNvK0pcnsMg6KHMfvyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ac9f3af2fca7b2096f0f6a706700d2d8.jpg'></td><td>2015-03-03 10:25:36</td><td>About $4.9 billion has been pledged internationally to the Ebola effort, but only around $2.4 billion has actually been disbursed.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 11:00:06</td><td>Even if the number of new Ebola cases in Liberia, Guinea and Sierra Leone has dropped markedly, bringing it down to zero will still take a significant effort.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-03 11:00:06</td><td>Sirleaf told fellow regional leaders and delegates at an international conference on Ebola in Brussels that restoring economic growth in Liberia, Guinea and Sierra Leone is a long-term and costly task.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-03 11:00:06</td><td>Ebola has undermined the three countries' already fragile economies, shifting resources resulting in other health care problems and hurting business as people grew scared to leave their homes or go to markets.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-03 11:00:06</td><td>Nevertheless, important progress has been made as the number of new cases of Ebola has dropped to about 100 per week, down from 800-900 at the height of the outbreak in August and September.</td></tr>
 </table></body></html>

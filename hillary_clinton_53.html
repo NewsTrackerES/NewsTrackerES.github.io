@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 19:30:15</td><td>House Benghazi panel calls Clinton to testify</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:19:24</td><td>Hillary Clinton has agreed to testify on Capitol Hill later this month about the attacks in Benghazi, Libya, and about her email practices.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:30:00</td><td>Hillary Clinton Agrees To Testify In Congress About Benghazi, Lawyer Says</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:30:19</td><td>WASHINGTON (AP) " Hillary Rodham Clinton is willing to testify on Capitol Hill later this month about the attacks in Benghazi, Libya, and about her email practices, her attorney told lawmakers in a letter Monday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 19:38:34</td><td>Trey Gowdy, R-S.C., made the request in a letter sent Tuesday to Clinton's lawyer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 19:38:34</td><td>Trey Gowdy, R-S.C., made the request in a letter sent Tuesday to Clinton's lawyer.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/23/d6b6ada50a0f6912740f6a706700a361_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-23 19:19:34</td><td>House Benghazi panel calls Clinton to testify</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/04/531d938fcedb6f13750f6a70670097ba_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-04 20:16:17</td><td>Clinton agrees to testify on Benghazi, emails this month</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-04 20:19:24</td><td>Hillary Clinton has agreed to testify on Capitol Hill later this month about the attacks in Benghazi, Libya, and about her email practices.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-04 20:30:00</td><td>Hillary Clinton Agrees To Testify In Congress About Benghazi, Lawyer Says</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-04 20:30:19</td><td>WASHINGTON (AP) " Hillary Rodham Clinton is willing to testify on Capitol Hill later this month about the attacks in Benghazi, Libya, and about her email practices, her attorney told lawmakers in a letter Monday.</td></tr>
 </table></body></html>

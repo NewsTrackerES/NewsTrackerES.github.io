@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 15:45:41</td><td>Tunisian protesters unleashed revolts across the region known as the Arab Spring, and Tunisia is the only country to have built a democratic system as a result.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HQ302_tunisi_P_20150329110830.jpg'></td><td>2015-03-29 18:56:17</td><td>The international visitors are showing solidarity with Tunisia, whose fragile new democracy was deeply shaken by the museum attack, for which Islamic State claimed responsibility.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XqzbsyrnxGrpW1JrbEy1rg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/ed87e35795c3fbd87637b320a953e5a09320d20c.jpg'></td><td>2015-03-26 18:00:16</td><td>The attack dealt a heavy blow to Tunisia's vital tourism industry as the country looks to rebuild its economy.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d1t0-6XK3AxX2m-HSK1-544_634x394.jpg'></td><td>2015-03-26 18:06:15</td><td>AQIM has not responded since IS claimed responsibility for the attack, which would be its first in Tunisia.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d1t0-6XK3AxX2m-HSK1-544_634x394.jpg'></td><td>2015-03-26 18:06:15</td><td>Tunisia arrests 23 in 'terror cell' over museum attack</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d1t0-6XK3AxX2m-HSK1-544_634x394.jpg'></td><td>2015-03-26 18:06:15</td><td>"I am calling on all Tunisians young and old... to take part in this march to show Tunisia's strength and its willingness to fight terrorism," he said in a televised address.</td></tr>
 </table></body></html>

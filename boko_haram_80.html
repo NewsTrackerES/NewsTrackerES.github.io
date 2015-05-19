@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/37/10/7991833/3/270x0.jpg'></td><td>2015-05-16 12:46:58</td><td>But the Nigerians appear to have bogged down in the Sambisa Forest, where Boko Haram has laid land mines and booby traps.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 12:57:02</td><td>Boko Haram suicide bomber kills himself, 4 others at Nigerian bus station</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 11:43:54</td><td>Maiduguri has suffered several attacks, including a March 14, 2014 assault in which Boko Haram invaded Giwa Barracks and freed hundreds of detainees.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 11:43:54</td><td>Tukur Gusau, spokesman for the army's 7th Division that is leading the fight against Boko Haram.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-14 11:43:54</td><td>"Many of them (Boko Haram) were killed outside the trenches while some fled back," said another civilian fighter, Ibrahim Musa.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-14 14:44:44</td><td>Hundreds of Boko Haram extremists tried to attack the biggest army base in northeast Nigeria overnight but met fierce resistance from soldiers who fired artillery throughout the night.</td></tr>
 </table></body></html>

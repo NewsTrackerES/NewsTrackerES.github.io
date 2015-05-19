@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,8 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 17:01:00</td><td>LONDON -- One Direction is one man down on its world tour.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 17:45:14</td><td>Zayn Malik flies home from One Direction tour with stress</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 06:58:00</td><td>Is this the end of One Direction?!</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 12:55:12</td><td>A song which has been touted as Zayn Malik's first solo offering since his exit from One Direction has been posted online.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 17:45:14</td><td>Zayn Malik flies home from One Direction tour with stress</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/FUtKDs6EVa_B.ZXYmbxufQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/deb07c46892fcc0d710f6a706700b002.jpg'></td><td>2015-03-26 05:52:26</td><td>Unlike Van Halen, which started over when it replaced Roth with a new lead singer (Sammy Hagar); or Oasis, which essentially disbanded when Gallagher left, One Direction is all vocalists, making it easier to absorb a loss.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 12:55:12</td><td>A song which has been touted as Zayn Malik's first solo offering since his exit from One Direction has been posted online.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000a746f-84.jpg'></td><td>2015-04-19 08:14:50</td><td>Zayn Malik thanks One Direction bandmates</td></tr>
 </table></body></html>

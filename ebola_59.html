@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/08/09/275B0F8C00000578-0-image-m-61_1428480922748.jpg'></td><td>2015-04-08 20:13:03</td><td>30 new Ebola cases, lowest weekly figure in nearly a year - WHO</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>The Ebola epidemic, which began in December 2013, has claimed 10,572 lives among 25,515 known cases, according to the United Nations health agency.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>Each country would retain a core capacity of high-quality Ebola treatment centres, strategically located to ensure complete geographic coverage, with additional rapid-response capacity held in reserve.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>The last known Ebola case in Liberia was a patient who died on March 27, and whose 332 contacts are being monitored but none have shown symptoms so far, it said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td>Ebola is still spreading in western Guinea, including the capital Conakry, but detection of the disease has improved, the WHO said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 19:50:08</td><td>WASHINGTON (AP) - President Barack Obama has received a briefing about the Ebola outbreak in West Africa and has made clear to aides the urgency of reducing the number of cases to zero.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 19:50:08</td><td>Obama discusses Ebola outbreak in West Africa with advisers</td></tr>
 </table></body></html>

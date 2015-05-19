@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 22:57:57</td><td>KINGSTON, Jamaica - A Jamaican teenager has been detained in the South American country of Suriname on suspicion of being a would-be militant hoping to join Islamic extremists.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 22:57:57</td><td>An intelligence agency Suriname police did not identify informed them that the Jamaican apparently intended to slip into Syria to join Islamic State militants.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 23:00:17</td><td>Last month, the ministry insisted there was "no evidence" of Jamaicans joining the Islamic State group or other terrorist groups a few days after a U.S. general identified the island as one of the Caribbean nations that have produced roughly 100 would-be militants fighting with Islamic extremists in Syria.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 23:00:17</td><td>A recent U.N. report said the number of fighters leaving home to join al-Qaida and the Islamic State group has spiked to more than 25,000 from over 100 nations.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 23:00:17</td><td>Gen. John Kelly, who heads the U.S. Southern Command, has said Iran and Islamic extremist groups were doing a "fair amount" of recruiting in the region, and said some people have become radicalized through the Internet and others through radical mosques.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:39:26</td><td>While there, he exchanged a series of Facebook messages with friends and interacted through the social network with other alleged Islamic State supporters, according to prosecutors.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 19:11:48</td><td>Vaudreuil said prosecutors do not have evidence that Van Haften made physical contact with Islamic State militants.</td></tr>
 </table></body></html>

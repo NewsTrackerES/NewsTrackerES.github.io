@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 10:06:04</td><td>TIKRIT, Iraq (AP) - Iraqi forces battled Islamic State militants Tuesday holed up in downtown Tikrit as the country's prime minister announced security forces had reached the city's center.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 10:06:04</td><td>An Iraqi soldier searches a for fighters of Islamic State group in Tikrit, 80 miles (130 kilometers) north of Baghdad, Iraq, Monday, March 30, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 10:06:04</td><td>Militiamen make up more than two-thirds of the force fighting the Islamic State group in Tikrit.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:18:20</td><td>The Iraqi military has struggled to recover from its collapse against the Islamic State group in June, when commanders disappeared in the face of the extremists' advance.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:18:20</td><td>Extremists from the Islamic State group seized Saddam Hussein's hometown last summer during its lightning advance across northern and western Iraq.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 04:22:05</td><td>Dutch Defense Chief Gen. Tom Middendorp told an international military conference this week, referring to the Islamic State group's emergence this year on Libya's shore.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 04:22:05</td><td>They face growing threats from groups like the Islamic State that have little regard for traditional ideas of war and peace.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 04:22:05</td><td>The Islamic State group's sudden rise in the south.</td></tr>
 </table></body></html>

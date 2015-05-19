@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:43:45</td><td><a href='apple_24.html'>Apple's new Photos app for Mac computers, available Wednesday as a free software update, makes it easy to organize and edit your pictures. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:03:49</td><td><a href='apple_25.html'>You can also access your photos on Windows computers with Apple's free iCloud for Windows software. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 01:31:22</td><td>Apple's statement followed a report from Fortune that the first HomeKit-enabled devices would not be available until August or September.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 01:31:22</td><td>"HomeKit has been available for just a few months and we already have dozens of partners who have committed to bringing HomeKit accessories to market and we're looking forward to the first ones coming next month," Apple spokeswoman Trudy Muller said in a statement.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 01:31:22</td><td>HomeKit is a set of tools in Apple's iOS 8 software designed to work with smart home devices.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 01:31:22</td><td>The first batch of home automation accessories, such as thermostats and garage door openers, compatible with Apple's software platform will go on sale in June, the tech company said Thursday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 01:01:35</td><td>Many men who refuse to join Boko Haram's ranks have also been killed.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 01:01:35</td><td>Amnesty's report said that Boko Haram, meaning Western education is sinful in Hausa, routinely rounded up women and girls after taking control of a town and held them in houses or prisons.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 07:55:00</td><td>They became separated when Boko Haram attacked the Nigerian town of Baga, and she knows how worried they must be.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 07:55:00</td><td>800,000 children forced from homes in Boko Haram violence</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 09:29:18</td><td>Children account for about half of all the 1.5 million made homeless in the Boko Haram conflict that has spilled across the borders of northeast Nigeria.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 09:44:00</td><td>800,000 children forced from homes by Boko Haram suffer abuse: UNICEF</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-13 09:44:00</td><td>Boko Haram has targeted schools, destroying or severely damaging more than 300 and killing 314 students and 196 teachers, UNICEF says.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-13 09:44:00</td><td>The disturbing images come from some of an estimated 800,000 children forced from the homes by Boko Haram extremists, according to a UNICEF report published Monday.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-13 09:44:00</td><td>The nickname of Nigeria's home-grown Islamic extremist group, Boko Haram, means "Western education is forbidden" or sinful.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-13 11:55:54</td><td>Boko Haram's nearly 6-year-old Islamic uprising in northeast Nigeria that has killed thousands - a reported 10,000 just last year - and forced more than 1.5 million from their homes.</td></tr>
 </table></body></html>

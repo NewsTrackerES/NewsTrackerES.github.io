@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>MAKHMOUR, Iraq - When Islamic State militants swept across northern Iraq last summer, the Sunni al-Lehib tribe welcomed them as revolutionaries fighting the Shiite-led government in Baghdad.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>Like many Sunnis in northern Iraq, they initially welcomed the Islamic State group as liberators.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>The Islamic State group has massacred the men, women and children of Sunni tribes who rise up against it.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 03:15:39</td><td>In seeking to dismiss the charges, Khan's attorneys contend the desire he expressed to "emigrate" to an "Islamic state" was just an expression of his religious freedom.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/lyt1dZCW3vzKMJC5JLaPIA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/b24c861b6e4989d5ccdb9753e12b1d1c.cf.jpg'></td><td>2015-04-18 03:15:44</td><td>Attorneys seek dismissal of charges in Islamic State case</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,6 +49,11 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/07/57/7896049/3/square_gallery_thumb.jpg'></td><td>2015-04-29 16:41:16</td><td>As with the main Facebook app, you can use Groups to discuss topics or plan events.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 16:41:16</td><td>Facebook employees.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 19:39:14</td><td>You probably already use Facebook on your phone, along with its Messenger app for chatting with Facebook friends.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 16:41:16</td><td>Facebook employees.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 16:41:16</td><td>Facebook's answer is Slingshot.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-29 16:41:16</td><td>Nonetheless, Facebook is unlikely to give up.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-29 16:41:16</td><td>Think of Hello as Facebook's overlay for your various calling apps.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-29 16:41:16</td><td>Review: Little-known Facebook apps might remain just that</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-29 16:41:16</td><td>The Groups app brings together various group features so you don't have to dig around the main Facebook app on your phone.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 19:39:14</td><td>You probably already use Facebook on your phone, along with its Messenger app for chatting with Facebook friends.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:39:26</td><td><a href='state_islamic_121.html'>While there, he exchanged a series of Facebook messages with friends and interacted through the social network with other alleged Islamic State supporters, according to prosecutors. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:24:02</td><td><a href='state_islamic_122.html'>A Wisconsin man is accused of traveling to the Middle East in an attempt to join the Islamic State group. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/4i_DMBxhHwv.Hld3Lsk20A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-05-14T133419Z_1_LYNXMPEB4D0N4_RTROPTP_2_SYRIA.JPG.cf.jpg'></td><td>2015-05-14 17:38:24</td><td>"We know what they will do... From experience with this Islamic State group in Nimrud and Mosul there will be a crime (in Tadmur) if they seize it."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/4i_DMBxhHwv.Hld3Lsk20A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-05-14T133419Z_1_LYNXMPEB4D0N4_RTROPTP_2_SYRIA.JPG.cf.jpg'></td><td>2015-05-14 17:38:24</td><td>Syria says Islamic State will destroy ancient ruins if it takes Tadmur</td></tr>
 </table></body></html>

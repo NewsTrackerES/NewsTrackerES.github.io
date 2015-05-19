@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td>U.S. officials said Libya Dawn, an Islamist, but non-Jihadist, movement based in the city of Misurata, was mounting a counter-attack against Islamic State forces, a development which the United States considered encouraging.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td>U.S. officials said that because of its strategic position, Libya had become a springboard for would-be fighters from across North Africa wanting to link up with the Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 18:56:56</td><td>"We tell the apostates who sit on the chest of Muslim Tunisia: Wait for the glad tidings of what will harm you, o impure ones, for what you have seen today is the first drop of the rain," the Islamic State audio said in Arabic.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 18:56:56</td><td>An earlier Islamic State news broadcast distributed online also mentioned the Tunis attack, describing the perpetrators as Mujahideen and asking God to receive them as martyrs in paradise.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 18:56:56</td><td>A former commander in Tunisia's Ansar al Sharia was killed last week fighting for Islamic State in Libyan city of Sirte.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 18:56:56</td><td>The United States said it could not confirm Islamic State was responsible but that the attacks were consistent with the group's actions.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 18:56:56</td><td>But that group has also issued conflicting statements in the past about its position on Islamic State.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297677106344_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-19 19:13:49</td><td>Islamic State, which has declared a caliphate in large parts of Iraq and Syria and is active in Tunisia's chaotic neighbour Libya, praised the two attackers in an audio recording as "knights of the Islamic State" armed with machineguns and bombs.</td></tr>
 </table></body></html>

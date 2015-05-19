@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 18:49:38</td><td>MAIDUGURI, Nigeria (Reuters) - Boko Haram militants have slit the throats of 12 people in northeast Nigeria as the army was trying to evacuate civilians from the area, a military source and a witness said on Friday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 18:49:38</td><td>"Just as troops were trying to evacuate some civilians from the hills so as to safeguard them from a planned air strike ... some Boko Haram attacked them and slit the throats of 12 people," a military source said of Wednesday's attack.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 19:04:46</td><td>Failure to crush Boko Haram or protect civilians was one reason President Goodluck Jonathan lost an election on March 28 to Muhammadu Buhari.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 19:04:46</td><td>The town of Gwoza, in mountainous terrain, was one of the last places to fall, on March 27, and there remain pockets of Boko Haram activity in the area, security sources say.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 20:37:19</td><td>Nigeria's outgoing president told the United Nations on Thursday not to focus on deploying an international force to fight Boko Haram but instead help victims of its terror.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/ek_z0rA6SlPx6QUVpxJe5w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/fa593a27ceff87a320b0132f53405d59528f855e.jpg.cf.jpg'></td><td>2015-04-16 20:37:26</td><td>Chad began the offensive at the end of January and Nigerian security forces announced this week that they have driven Boko Haram from all major northeastern towns and communities except a forest stronghold.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 20:38:43</td><td>In a story April 16 about negotiations for a U.N. mandate for a multination force to fight Boko Haram, The Associated Press incorrectly stated that a Chapter 7 mandate requires military enforcement.</td></tr>
 </table></body></html>

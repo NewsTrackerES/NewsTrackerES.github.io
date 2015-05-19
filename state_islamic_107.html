@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:36:10</td><td>JOHANNESBURG (AP) - South African security authorities say a teenager was taken off an airline flight because the 15-year-old girl was suspected to be leaving her home in Cape Town to join the Islamic State group.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:36:10</td><td>South Africa's State Security Minister David Mahlobo said in local media that the girl's social media accounts showed she was interested in joining the Islamic extremist group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/03/2ed75907faf7a00e720f6a7067004b25_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-04 06:04:12</td><td>He also urged security forces to quickly ensure that normalcy is restored so that Tikrit's residents, most of whom fled the Islamic State onslaught, can return home.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/03/2ed75907faf7a00e720f6a7067004b25_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-04 06:04:12</td><td>Iraq's Tikrit, free of the Islamic State, is a city in ruins</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/04/876/493/Mideast Iraq Islamic State-3.jpg?ve=1&tl=1'></td><td>2015-04-04 06:04:12</td><td>So much about life in Tikrit under the Islamic State group's rule remains unknown.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/04/876/493/Mideast Iraq Islamic State-3.jpg?ve=1&tl=1'></td><td>2015-04-04 06:04:12</td><td>TIKRIT, Iraq - In Iraq's Tikrit, liberation from the Islamic State group comes at a heavy price, both in loss of life and in the sheer devastation the militants leave in their wake.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/04/876/493/Mideast Iraq Islamic State-3.jpg?ve=1&tl=1'></td><td>2015-04-04 06:04:12</td><td>After a nearly 10-month Islamic State occupation, it took Iraqi forces and their allies, including Iranian-backed Shiite militias, a month of ferocious street battles to win the city back.</td></tr>
 </table></body></html>

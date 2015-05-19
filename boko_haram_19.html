@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 19:23:43</td><td>France supports the offensive led by Chad in cooperation with Cameroon, Niger and Nigeria - Boko Haram's base.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 19:23:43</td><td>France Increases Its Efforts in the Fight Against Boko Haram</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 19:23:43</td><td>France's defense minister said this week that the country would "slightly" increase its number of troops in the Sahel region by the end of the year, but does not intend to take active part in the fighting against Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 19:29:48</td><td>PARIS - France has reoriented its military efforts in West Africa to focus more on the fight against Boko Haram, especially by providing intelligence to the African countries that are at war against the extremist movement.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 19:29:48</td><td>The operation to fight Boko Haram is "flexible," which means that some troops can be redeployed from one country to another, one of the officials said without giving more details.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 03:57:50</td><td>Al-Adnani also urged foreign fighters from around the world to migrate and join Boko Haram.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/13/24/7648522/9/square_gallery_thumb.jpg'></td><td>2015-03-13 09:48:48</td><td>Also Thursday, Nigeria acknowledged it is getting help from regional security operatives following reports that South African and other foreign contractors are assisting in the fight against Boko Haram.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 10:59:02</td><td>BEIRUT-Islamic State militants have accepted a pledge of allegiance by the Nigerian-grown Boko Haram extremist group, a spokesman for the Islamic State movement said Thursday.</td></tr>
 </table></body></html>

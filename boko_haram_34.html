@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297679148795_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-24 18:20:54</td><td>DAMASAK, Nigeria - Boko Haram militants have kidnapped more than 400 women and children from the northern Nigerian town of Damasak that was freed this month by troops from Niger and Chad, residents said on Tuesday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 18:25:48</td><td>"Two of them were supposed to get married this year. (Boko Haram) said 'They are slaves so we're taking them because they belong to us'," he said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:04:26</td><td>Boko Haram wants to carve out a caliphate in northern Nigeria and a sharp increase in violence forced a delay in planned elections last month in Africa's most populous country.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 21:33:33</td><td>Boko Haram's abduction last April of nearly 300 schoolgirls in the region stirred international outrage and drew global attention to the group's six-year insurgency.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/23/article-doc-1a9rr-6XFU93QB1HSK2-503_634x421.jpg'></td><td>2015-03-23 18:06:44</td><td>Displaced fear Boko Haram violence as elections approach</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/23/article-doc-1a9rr-6XFU93QB1HSK2-503_634x421.jpg'></td><td>2015-03-23 18:06:44</td><td>Now, it is feared that internally displaced people (IDP) could be next, after Boko Haram leader Abubakar Shekau vowed to disrupt this Saturday's elections, which the group views as "un-Islamic".</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/23/article-doc-1a9rr-6XFU93QB1HSK2-503_634x421.jpg'></td><td>2015-03-23 18:06:44</td><td>Scores of IDP camps dot Maiduguri following a huge influx of people fleeing towns and villages seized by Boko Haram, doubling the population of the Borno state capital to at least two million.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/23/article-doc-1a9rr-6XFU93QB1HSK2-503_634x421.jpg'></td><td>2015-03-23 18:06:44</td><td>Boko Haram appears to have been weakened by a sustained regional fight-back, but there are growing fears the group could target vulnerable people displaced by the violence as elections approach.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/23/article-doc-1a9rr-6XFU93QB1HSK2-503_634x421.jpg'></td><td>2015-03-23 18:06:44</td><td>"One cannot dismiss the political element in the Boko Haram insurgency and the planting of bombs in an IDP camp could be a ploy by politicians averse to holding elections in camps because it doesn't favour their political interest," said Wase.</td></tr>
 </table></body></html>

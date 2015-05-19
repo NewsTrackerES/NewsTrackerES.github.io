@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,9 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4987942-3x2-340x227.jpg'></td><td>2015-03-03 12:01:13</td><td>The Boko Haram film's use of graphics, the footage of black-clad militants with a black flag, and the editing to show only the aftermath of the beheading, were particularly reminiscent of footage from IS, which has seized large parts of Iraq and Syria and killed several hostages.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4987942-3x2-340x227.jpg'></td><td>2015-03-03 12:01:13</td><td>In the film, one of the men says he comes from Baga in Borno state, and the other says he is from Michika in Adamawa state, both areas where the army says it has recently recaptured territory from Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:10:47</td><td>The Nigerian Islamist sect Boko Haram has released a video that purportedly shows militants beheading two men, its first online posting using the advanced graphics and editing techniques associated with Islamic State.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/24/how-i-escaped-marrying-a-boko-haram-fighter/_jcr_content/image.adapt.480.low.Ladi_032115.jpg'></td><td>2015-03-03 13:19:00</td><td>The film, released Monday, shows Boko Haram fighters standing behind the two men who are on their knees, their hands tied behind their backs, with one man standing over them, holding a knife.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:39:58</td><td>Nigeria's President Goodluck Jonathan has said Boko Haram is allied to both al Qaeda and its offshoot Islamic State, though that has not been confirmed by the group itself.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:39:58</td><td>Nigeria?s Boko Haram releases beheading video echoing Islamic State</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:39:58</td><td>Past Boko Haram films have been much cruder affairs, often featuring a man identified as leader Abubakar Shekau talking more about local gripes than global jihad.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670542775_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 15:49:55</td><td>Previously, Boko Haram would leak videos to selected journalists.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 15:57:56</td><td>The group previously had links to al Qaeda and though Boko Haram and IS have acknowledged each other, the Nigerian militants have not officially pledged allegiance to IS leader Abu Bakr al-Baghdadi.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-02 17:35:07</td><td>MAIDUGURI, Nigeria (AP) - The latest video from Nigeria's Boko Haram Islamic extremist group shows the bodies of two beheaded men accused of spying, and copies some of the hallmarks of propaganda from the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-02 17:35:07</td><td>Boko Haram began emulating the Islamic State group last August, declaring it had established an Islamic caliphate in territory it controls in northeastern Nigeria.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-02 17:38:28</td><td>The SITE intelligence group said the video called "Harvest of Spies" was posted Monday on Twitter by Boko Haram's new media arm.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-02 17:38:28</td><td>Boko Haram has said in social media messages last month that it is considering swearing allegiance to IS.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-02 17:38:28</td><td>Boko Haram previously published only one beheading, of a Nigerian fighter pilot whose plane went missing in September.</td></tr>
 </table></body></html>

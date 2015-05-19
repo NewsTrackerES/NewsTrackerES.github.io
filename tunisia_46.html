@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>8</td><td></td><td>2015-03-18 15:22:43</td><td><a href='tunisia_3.html'>"The EU is determined to mobilize all the tools it has to fully support Tunisia in the fight against terrorism," she added. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 15:28:29</td><td><a href='tunisia_4.html'>Tunisia's prime minister says a total of 21 people have died in the attack against the Bardo museum, including 17 tourists, two Tunisians and two gunmen. (21)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-18 20:19:26</td><td><a href='tunisia_8.html'>The US secretary of state, John Kerry, said Washington condemned the attack and continued "to support the Tunisian government's efforts to advance a secure, prosperous, and democratic Tunisia". (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-18 22:51:36</td><td><a href='tunisia_7.html'>The local stock exchange dropped nearly 2.5% and two German tour operators said they were cancelling trips from Tunisia's beach resorts to Tunis for a few days. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 02:58:49</td><td><a href='tunisia_6.html'>Tunis (AFP) - Gunmen stormed Tunisia's national museum, killing 17 tourists of various nationalities and two Tunisians in an attack that raised fears for the birthplace of the Arab Spring. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:08:07</td><td><a href='tunisia_11.html'>Spanish tourist Cristina Rubio, who is four months pregnant, rests at the maternity ward of the Charles Nicolle hospital in Tunis, Tunisia, Thursday March 19, 2015. (10)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-19 22:19:57</td><td><a href='tunisia_15.html'>As international outrage grew over Tunisia's worst post-revolution attack, President Beji Caid Essebsi said his country would not be cowed by extremism. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 09:42:47</td><td><a href='tunisia_18.html'>A little more than 6 million people visited Tunisia last year, down 3 percent from the previous year and 12 percent lower from the nearly 7 million who visited in 2010. (8)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-29 15:45:41</td><td><a href='tunisia_31.html'>Tunisian protesters unleashed revolts across the region known as the Arab Spring, and Tunisia is the only country to have built a democratic system as a result. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 14:16:39</td><td><a href='tunisia_34.html'>TUNIS, Tunisia (AP) - Tunisia's army spokesman says an ambush by extremists in a mountainous region near the Algerian border has killed two soldiers and wounded three others. (5)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-24 13:27:02</td><td><a href='tunisia_39.html'>Tunisia's military has been carrying out operations in the area since last month's Islamist militant attack on the Bardo museum in Tunis where gunmen killed more than 20 foreign tourists. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-17 08:03:00</td><td><a href='tunisia_43.html'>"This generation has to deal with this image of Tunisia that is liberal, secular, that gives freedoms to women. Now a young Tunisian in Iraq and Syria desperately wants to show there is another side to Tunisia, one even more attached to that form of extreme Islam," he said. (3)</a></td></tr>
+</table></body></html>

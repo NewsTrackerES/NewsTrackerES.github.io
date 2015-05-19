@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,12 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 21:00:13</td><td>(Reuters) - A legislative push in Montana to extend Obamacare health coverage to the working poor got a last-minute reprieve this week thanks to a procedural play by supporters, and similar efforts in other conservative states are flagging.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 21:00:13</td><td>That would require providing coverage to working adults who fall into a so-called coverage gap under Obamacare - too poor to purchase plans under its health insurance exchanges, but unable to qualify for traditional state Medicaid programs.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 21:00:13</td><td>The group helped defeat the Medicaid expansion plan championed by Tennessee's Republican Governor, Bill Haslam, by linking it to Obamacare.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 21:00:13</td><td>"Tennessee is a red state and there is a reaction to anything that is associated with Obamacare," said Charlie Howorth, spokesman for the pro-expansion Coalition for a Healthy Tennessee, which is backed by business groups and hospitals.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/YvbdytJ7zh9w8vwUDi4Lyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T030005Z_1_LYNXMPEB39031_RTROPTP_2_USA.JPG'></td><td>2015-04-10 03:00:05</td><td>At one point, experts had predicted that up to a dozen of them could reverse course this year and open up to Obamacare.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>The refundable tax credits in both their plans would be available to those who pay little or no tax, similar to the Obamacare subsidies for low-income Americans.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>There is renewed interest in producing one now, however, to be ready if the Court rules for the plaintiffs in the current Obamacare case and disallows tax subsidies through the federal exchange in a ruling expected in June.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>If the Court rules against the administration, Wisconsin Senator Ron Johnson wants to make the Obamacare taxpayer subsidies available through August 2017, while repealing the individual and employer mandates.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>WASHINGTON (Reuters) - If the U.S. Supreme Court blows up the tax subsidies at the heart of Obamacare in June, Republicans hope to deliver on their promise to offer an alternative healthcare plan.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>"It's not going to be like Obamacare, in my opinion," said Senate Finance Committee Chairman Orrin Hatch, whose plan includes a refundable tax credit for low-and middle-income Americans.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td>But Obamacare itself remains divisive.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/yfxpzEXv0ICOeURn1_jVGg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-20T052935Z_1_LYNXMPEB3J05K_RTROPTP_2_USA-COURT-HEALTHCARE.JPG'></td><td>2015-04-20 05:29:35</td><td>Two front-running Republican options at an early stage in Congress include a refundable tax credit that experts say is virtually the same thing as the Obamacare tax subsidy being challenged before the Supreme Court.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/bt/api/res/1.2/yfxpzEXv0ICOeURn1_jVGg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-20T052935Z_1_LYNXMPEB3J05K_RTROPTP_2_USA-COURT-HEALTHCARE.JPG'></td><td>2015-04-20 05:29:35</td><td>Seeking Obamacare alternative, Republicans eye tax credits</td></tr>
 </table></body></html>

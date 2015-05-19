@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 15:58:12</td><td>Netanyahu hit a snag Monday when a key ally, Foreign Minister Avigdor Lieberman, unexpectedly resigned and announced his party is joining the opposition.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 16:00:24</td><td>Netanyahu has had a tough time striking deals with potential partners to form a majority coalition in the 120-seat parliament.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 17:15:56</td><td>By late Tuesday, Netanyahu had deals with three partners controlling 53 seats.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 08:43:21</td><td>With a little over 24 hours to go, Israeli Prime Minister Benjamin Netanyahu is scrambling to get his governing coalition together.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 08:50:13</td><td>Netanyahu was holding furious consultations Wednesday with the hawkish Jewish Home Party in order to secure a narrow 61-seat majority in the 120-seat parliament.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 11:07:11</td><td>The Jewish Home party is linked to the West Bank settler movement and unlikely to push for Netanyahu's ouster, a move that could open a potential path to government of the more dovish Zionist Union.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 11:07:11</td><td>Likud officials concede such a government would not be effective or last long, raising speculation that Netanyahu will ultimately reach out to the Zionist Union and its leader, Isaac Herzog.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 20:13:01</td><td>The talks with Bennett stretched throughout the day and well into the night before Netanyahu called President Reuven Rivlin, as required by law, to announce the deal.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 23:37:53</td><td>That left Netanyahu dependent on Jewish Home leader Naftali Bennett, a former aide who has a rocky relationship with Netanyahu.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 17:06:09</td><td>"We believe that two states is the best path forward for Israel's security, for Palestinian aspirations and for regional stability... Prime Minister Netanyahu has a different approach."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 17:06:09</td><td>In a bid to ramp up votes, Netanyahu veered sharply to the right, vowing there would be no Palestinian state on his watch, promising to increase settlement construction and warning that Arab Israeli voters were going "in droves" to the polls.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 17:06:09</td><td>Har Homa was where Netanyahu pledged to build thousands of new homes on the eve of the election.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-25 17:06:09</td><td>Several hours before Obama's remarks, the Wall Street Journal published a report in which US officials accused Israel of spying on nuclear negotiations with Iran aimed at reaching a deal that Netanyahu opposes.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-25 17:06:09</td><td>Netanyahu to form next government after US spat</td></tr>
 </table></body></html>

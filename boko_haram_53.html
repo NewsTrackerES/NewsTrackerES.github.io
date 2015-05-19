@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:23:05</td><td>"Forced marriage, enslavement and the 'sale' of kidnapped women and girls are central to Boko Haram's modus operandi and ideology," it said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/04/haram.jpg?w=620'></td><td>2015-04-14 14:40:29</td><td>Secretary-General Ban Ki-moon said 2014 was marked by harrowing accounts of rape, sexual slavery and forced marriage being used by extremists including the Islamic State group and Boko Haram.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 05:01:32</td><td>In a new report published on Tuesday, Amnesty quoted a senior military officer as saying the girls were being held at different Boko Haram camps, including in Cameroon and possibly Chad.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>The kidnapped girls were in their thoughts and prayers every day, they said, but they did not blame Boko Haram foot soldiers.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>"I forgive Boko Haram for what they have done and I pray God forgives them, too," said one.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>Nigeria marks first anniversary of Boko Haram schoolgirl kidnappings</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>LAGOS: Nigeria on Tuesday marks the first anniversary of Boko Haram's abduction of 219 schoolgirls from the northeastern town of Chibok, as part of a series of events planned around the world.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916748,width-300,resizemode-4/boko-haram-afp.jpg'></td><td>2015-04-14 06:06:03</td><td>Fifty-seven escaped but nothing has been heard of the 219 others since May last year, when about 100 of them appeared in a Boko Haram video, dressed in Muslim attire and reciting the Koran.</td></tr>
 </table></body></html>

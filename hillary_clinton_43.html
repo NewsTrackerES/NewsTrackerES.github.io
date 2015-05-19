@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297688456374_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 13:23:41</td><td>Because Hillary Clinton stole this toddler's chance to become President of the United States of America.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297688456374_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 13:23:41</td><td>Toddler in hysterics he can't be president thanks to Hillary Clinton</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:15:13</td><td>Hillary Clinton says she's running for president in 2016, wants to be country's 'champion'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 00:07:42</td><td>He later said: "We can win, we must win, we will win. It is critical we beat Hillary Clinton."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 13:38:52</td><td>I?m sorry, this is Hillary Clinton?s speech, not my speech,?</td></tr>
 </table></body></html>

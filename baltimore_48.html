@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>But it was when a grand jury concluded that too many arrests were being made in black neighborhoods without merit, and when the city settled a lawsuit from people who said they were wrongly arrested for minor offenses - the sort of concerns driving some of the anger in Baltimore today.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>BALTIMORE (AP) - Martin O'Malley often casts Baltimore as the comeback city that overcame the ravages of drugs and violence when he was mayor.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>Baltimore unrest puts spotlight on O'Malley's stint as mayor</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2GFqL829iB2TkIP7TLPuew--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0d1f991d6b236115760f6a70670049e9.jpg'></td><td>2015-05-15 01:53:08</td><td>O'Malley, mayor from 1999 until he was elected governor in 2006, has defended his work to curb violent crime in Baltimore and signaled it would play a leading role in a presidential campaign.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:27:40</td><td>Baltimore police said on Monday that a Fox News report of a black man being shot by police in the city was not true, and the cable news network quickly issued an apology.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 03:32:21</td><td>LOS ANGELES - Fox News Channel anchorman Shepard Smith says the channel mistakenly reported that a Baltimore, Maryland, police officer shot a black man during a chase.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-05 03:32:21</td><td>Baltimore police say officers were pursuing a man who was spotted on surveillance cameras and appeared to be armed with a handgun.</td></tr>
 </table></body></html>

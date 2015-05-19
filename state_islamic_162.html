@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 14:45:09</td><td>EDS NOTE: GRAPHIC CONTENT - This undated image made from a video released by Islamic State militants, Sunday, April 19, 2015, appears to show the killing of a group of captured Ethiopian Christians in Libya.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 14:45:09</td><td>It shows one group of captives, identified as Ethiopian Christians, purportedly held by an Islamic State affiliate in eastern Libya known as Barqa Province.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-19 11:03:49</td><td>A video released by the Islamic State group on Sunday appears to show the killing of two different groups of captured Ethiopian Christians by the extremist group's Libyan affiliates.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 18:27:14</td><td>"The Islamic State in Libya is still focused on this consolidation phase of announcing its presence through these very high-profile executions," said Frederic Wehrey, a senior associate for the Middle East Program at the Carnegie Endowment for International Peace.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/VDNM_ikHW4K4O.WsyK9IhA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_US/News/TheWrap/Washington_Post_Bureau_Chief_Charged-4f24f9230cc081a4bbc463846c7d4099.cf.jpg'></td><td>2015-04-14 09:16:30</td><td>Iran to appoint first female ambassador since Islamic Revolution in 1979 -reports</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 09:46:00</td><td>DUBAI - Iran will appoint its first female ambassador abroad since the Islamic Revolution in 1979, the semi-official Fars and Mehr news agencies said late on Monday, citing unspecified reports.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-14 09:46:00</td><td>His predecessor Mahmoud Ahmadinejad appointed the Islamic Republic's first female minister in 2009.</td></tr>
 </table></body></html>

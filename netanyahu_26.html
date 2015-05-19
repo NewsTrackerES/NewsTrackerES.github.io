@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:30:12</td><td>Although Obama is somewhat unpopular in Israel, if Netanyahu is perceived as having truly unsettled relations with the U.S., it could boomerang.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:30:12</td><td>And some in Israel fret that if Netanyahu is re-elected, relations with the White House will be poisonous for the remaining two years of Obama's term.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:30:12</td><td>He presented Israel as peace-loving and progressive and stressed its deep bonds to the U.S. He even produced Nobel laureate and Holocaust survivor Elie Wiesel, who waved as Netanyahu intoned "Never Again."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:30:12</td><td>Israel's opposition will try to turn attention back toward domestic issues, where Netanyahu is more vulnerable, and away from both Iran and the Palestinian issue.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:30:12</td><td>Under these circumstances, while Netanyahu's speech was delivered to the U.S. Congress, his primary audience may well have been Israel's voters.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 11:30:12</td><td>And Avraham Diskin, a political scientist at Hebrew University, said that to an Israeli audience Netanyahu's speech was "so exciting, so powerful" that "it will definitely help him in the campaign."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/fuC7S.ZY3d.OCTq4HwHrPQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/97a6edaffe1db9096f0f6a7067006b7e.jpg'></td><td>2015-03-04 05:54:13</td><td>Under these circumstances, while Netanyahu's speech was delivered to the U.S. Congress, his primary audience may well have been Israel's voters half a world away.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 06:15:04</td><td>After speech, White House could determine Netanyahu's fate</td></tr>
 </table></body></html>

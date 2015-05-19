@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:42:01</td><td>Afghanistan could face a war with the Islamic State group if the government does not resolve internal differences and improve the security situation, one of the country's most powerful warlords warned in an interview with the AP.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:42:01</td><td>AP Interview: Afghan warlord warns of Islamic State rise</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/64/22/7816343/3/square_gallery_thumb.jpg'></td><td>2015-04-14 14:42:01</td><td>"The differences that exist in the national unity government . are helping to boost the enemies' morale, the morale of Daesh and the Taliban," Khan told the AP, using an acronym for the Islamic State group.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/64/22/7816343/3/square_gallery_thumb.jpg'></td><td>2015-04-14 14:42:01</td><td>The Islamic State group, based in Iraq and Syria, is believed to have a small presence in Afghanistan, where the Taliban are the most powerful militant group and have been waging an insurgency against the government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/13/876/493/Mideast Iran Saudi Arabia-2.jpg?ve=1&tl=1'></td><td>2015-04-13 08:55:19</td><td>TEHRAN, Iran - Iranian state television is reporting that the Islamic Republic has suspended all minor hajj trips to Saudi Arabia amid growing diplomatic tensions between the two countries.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/35/62/61/7810129/7/square_gallery_thumb.jpg'></td><td>2015-04-13 09:23:10</td><td>The U.S., Western countries and Sunni Arab nations involved in the Saudi-led coalition have accused Iran of supporting the Houthis militarily, something both the rebels and the Islamic Republic deny.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 09:45:23</td><td>TEHRAN, Iran (AP) - The head of Iran's Revolutionary Guard has accused Saudi Arabia of treachery against the Islamic world and compared the kingdom to Israel.</td></tr>
 </table></body></html>

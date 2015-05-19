@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 10:22:48</td><td>In Libya, clash with Islamic State militants kills 10 troops</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 10:25:12</td><td>TRIPOLI, Libya - An attack by militants from Libya's Islamic State affiliate on Wednesday killed 12 fighters loyal to the militia-backed government based in the country's capital, Tripoli, according to a militia statement.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 10:25:12</td><td>The power struggle and fierce fighting has plunged the country into chaos and paved the way for the Islamic State group's expansion.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 19:04:15</td><td>Iraqi Kurds claim Islamic State group used chemical weapons</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 19:04:15</td><td>In October, Iraqi officials claimed Islamic State militants may have used chlorine-filled cylinders during clashes in late September in the towns of Balad and Duluiya.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-14 19:04:15</td><td>Kurdish authorities in Iraq said Saturday they have evidence that the Islamic State group used chlorine gas as a chemical weapon against peshmerga fighters, the latest alleged atrocity carried out by the extremist organization now under attack in Tikrit.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-14 19:10:23</td><td>Those bombers belonged to al-Qaida in Iraq, which later became the Islamic State group.</td></tr>
 </table></body></html>

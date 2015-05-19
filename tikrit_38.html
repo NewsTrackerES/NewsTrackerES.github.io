@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-05 13:06:54</td><td>Efforts to merge small, but symbolic Sunni battalions with the Iraqi military were tested in the Tikrit battle, with as many as 200 men, mainly from al-Jabour tribe, joining government-backed forces.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-05 13:06:54</td><td>Prime Minister Haider al-Abadi has called on security forces to halt looting and vandalism in Tikrit, promising a fund would be established to help residents return to Tikrit.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/05/4560f5ec4c40cb0f720f6a7067009ad9_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-05 13:02:25</td><td>In Tikrit, fighting damaged many homes.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:02:25</td><td>With Tikrit taken, Sunni residents in Islamic State-held Anbar province, home to Fallujah, and Nineveh province, home to Mosul, Iraq's second-largest city, expect the Iraqi offensive to now turn its attention to their regions.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:02:25</td><td>But as Tikrit now sits in ruins, still patrolled by fractious Shiite militias, the powerful Sunni tribes remain as distrustful as ever as further offensives in their heartland loom.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/04/f-sunnis-a-20150407-200x200.jpg'></td><td>2015-04-06 02:34:00</td><td>The objective is ultimately to plant the seed for a local national guard force that would remain in Tikrit and other recaptured cities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:02:25</td><td>With Tikrit taken, Sunni residents in Islamic State-held Anbar province, home to Fallujah, and Nineveh province, home to Mosul, Iraq's second-largest city, expect the Iraqi offensive to now turn its attention to their regions.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 13:02:25</td><td>But as Tikrit now sits in ruins, still patrolled by fractious Shiite militias, the powerful Sunni tribes remain as distrustful as ever as further offensives in their heartland loom.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-05 13:06:54</td><td>Efforts to merge small, but symbolic Sunni battalions with the Iraqi military were tested in the Tikrit battle, with as many as 200 men, mainly from al-Jabour tribe, joining government-backed forces.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-05 13:06:54</td><td>Prime Minister Haider al-Abadi has called on security forces to halt looting and vandalism in Tikrit, promising a fund would be established to help residents return to Tikrit.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/04/f-sunnis-a-20150407-200x200.jpg'></td><td>2015-04-06 02:34:00</td><td>The objective is ultimately to plant the seed for a local national guard force that would remain in Tikrit and other recaptured cities.</td></tr>
 </table></body></html>

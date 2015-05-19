@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,8 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 05:46:03</td><td>Probe bribery claim: Bali Nine lawyer</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:02:37</td><td>Muhammad Rifan, the lawyer who represented the Bali Nine pair when they were sentenced to death in 2006, has told Fairfax Media judges asked for more than $130,000 for a lighter sentence.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 17:35:10</td><td>Bali Nine execution U-turn urged</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 17:35:10</td><td>The Bali Nine pair was told on Saturday they will be executed as soon as Tuesday, a moment preserved by Sukumaran who signed one of three self-portraits "72 hours just started".</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 00:02:34</td><td>As Bali Nine ringleaders Myuran Sukumaran and Andrew Chan face imminent execution, Australia is urging Indonesia to make sure all judicial processes are cleared of corruption.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/26/10/280509AB00000578-3055919-image-a-1_1430041561618.jpg'></td><td>2015-04-27 05:05:31</td><td>Bali-based lawyer Muhammad Rifan said he had meetings with judges, who allegedly started demanding more money to deliver a prison sentence of 20 years or less saying it was 'risky', Fairfax reported.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/u/6/m/u/image.related.articleLeadwide.620x349.1mul9h.png/1430128152622.jpg'></td><td>2015-04-27 09:49:24</td><td>Desperate claims by the former lawyer of the Bali nine pair, Muhammad Rifan, were revealed by Fairfax Media on Monday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/i/o/5/0/image.related.articleLeadwide.620x349.13inpv.png/1424329400520.jpg'></td><td>2015-02-18 11:29:42</td><td>Hundreds gather in Melbourne for mercy for Bali nine death row prisoners</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/14/6439058/Article%20Lead%20-%20wide983688771mkdz2image.related.articleLeadwide.729x410.1mkdwt.png1428960425383.jpg-620x349.jpg'></td><td>2015-04-13 21:27:13</td><td>Russell Brand speaks out about the death penalty handed to the Bali nine pair in his web series The Trews.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/n/k/1/m/image.related.articleLeadwide.620x349.1mniuk.png/1429254858823.jpg'></td><td>2015-04-17 07:14:34</td><td>April 17 is the 10th anniversary of the Bali nine's arrest for attempting to smuggle 8.3 kilograms of heroin into Australia.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/j/h/z/image.related.articleLeadwide.620x349.1mx9oa.png/1430406386659.jpg'></td><td>2015-04-30 15:06:34</td><td>Bali nine duo's last wish - renewed global push to abolish the death penalty</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/full/public/afp_balinine_0.jpg?itok=TdA-r33m&amp;mtime=1430719568'></td><td>2015-05-04 00:59:17</td><td>AFP Commissioner Andrew Colvin will on Monday front the media over the organisation's role in the Bali Nine arrests.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/full/public/afp_balinine_0.jpg?itok=TdA-r33m&amp;mtime=1430719568'></td><td>2015-05-04 01:30:15</td><td>Federal police imported the death penalty into Australia when they arranged for the Bali Nine to be arrested in Indonesia, the barrister who tipped them off says.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 04:07:00</td><td>Australian federal police let Bali Nine mule Scott Rush leave for Indonesia hoping he would lead them to the drug ring's kingpins.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/n/a/7/q/w/image.related.articleLeadwide.620x349.1na6yl.png/1430739791004.jpg'></td><td>2015-05-04 05:13:16</td><td>AFP Commissioner Andrew Colvin said on Monday that the authority was not in a position to arrest any of the Bali Nine before their ill-fated trip in 2005.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 05:16:39</td><td>New York: Hillary Clinton's campaign rollout on social media set Twitter abuzz as she likely hoped, but part of the discussion quickly veered away from the candidate herself to her new logo, and it got a hearty "thumbs down."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 05:16:39</td><td>"Hillary Clinton has stolen our innovative WikiLeaks twitter logo design," the tweet to Wikileaks' two and a half million followers read.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 05:16:39</td><td>Twitter turns Hillary Clinton's 'H' logo into target for ridicule</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/m/0/8/image.related.articleLeadwide.620x349.1mjmfs.png/1428878963974.jpg'></td><td>2015-04-12 22:49:33</td><td>So what lucky 3rd grader won the Design the Hillary Clinton Campaign Logo contest?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/13/bd3b15f894c68610730f6a7067001645_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-13 16:59:45</td><td>WASHINGTON (AP) - Hillary Rodham Clinton spent nearly two years tiptoeing around a decision to run for president that much of the political world assumed was a done deal.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this July 7, 2012, file photo, U.S. Secretary of State Hillary Rodham Clinton, left, speaks during a news conference with then-President of Afghanistan Hamid Karzai, at the Presidential Palace in Kabul.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this Dec. 1, 2008, file photo, then-Secretary of State-designate Sen. Hillary Rodham Clinton speaks during a news conference with President-elect Barack Obama in Chicago.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this April 2, 2013, file photo Vice President Joe Biden and former Secretary of State Hillary Rodham Clinton are seen in Washington.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this Dec. 3, 2014 file photo, former Secretary of State Hillary Rodham Clinton speaks in Gaston Hall at Georgetown University, in Washington.</td></tr>
 </table></body></html>

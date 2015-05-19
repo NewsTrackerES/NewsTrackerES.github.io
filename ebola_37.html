@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 23:32:04</td><td>A June 10 memo sent to WHO Director-General Dr. Margaret Chan says declaring an emergency - or convening a committee to discuss the issue - could be seen as a "hostile act" by Ebola-affected countries.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 23:32:04</td><td>Ebola was judged to have become a health emergency with international implications nearly a month earlier by the U.S. Centers for Disease Prevention and Control.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 23:32:04</td><td>A year after WHO declared that Ebola had been found in Guinea, the agency is on the defensive over reports that it dragged its feet when raising the international alarm over the disease.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/30/37/7702483/7/square_gallery_thumb.jpg'></td><td>2015-03-23 23:47:01</td><td>In this photo taken on Wednesday, March 11, 2015, health workers walk past graves after they buried a person that they suspect died from the Ebola virus on the outskirts of Monrovia, Liberia.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/30/37/7702483/7/square_gallery_thumb.jpg'></td><td>2015-03-23 23:47:01</td><td>In this photo taken on Friday, Feb. 27, 2015, Health workers carry the remains of a person that they suspect died from the Ebola virus near the village of Gbah on the outskirts of Monrovia, Liberia.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/30/37/7702483/7/square_gallery_thumb.jpg'></td><td>2015-03-23 23:47:01</td><td>In this photo taken on Friday, Feb. 27, 2015, a man holds a poster showing symptoms of the Ebola virus in Kambia, Sierra Leone.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:55:26</td><td>CONAKRY, Guinea - The trial of people accused of killing eight Ebola health workers and journalists opened Monday in a remote region of Guinea.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 11:55:26</td><td>The killings happened when a delegation of health care workers, including top health officials from the nearby town, visited Womey last September to raise awareness about how to combat Ebola.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 11:55:26</td><td>The current Ebola outbreak, which was officially confirmed exactly a year ago.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-23 12:59:46</td><td>Guinea trial begins for suspected killers of Ebola workers</td></tr>
 </table></body></html>

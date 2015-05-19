@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>Netanyahu appears poised to set up a coalition with Kulanu and several religious and ultra-Orthodox parties.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>Rivlin is scheduled to meet with Netanyahu later this week and officially set the coalition talks into motion.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>It became a formality after the new centrist party Kulanu gave its nod to Netanyahu as well, giving him 61 backers out of the 120 in parliament.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 13:15:21</td><td>Seeking to shore up right-wing votes and saying that Islamist militants would move into any territory relinquished by Israel, Netanyahu also vowed to keep building settlements on occupied land Palestinians seek for a state.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 13:15:21</td><td>Though Israeli officials have indicated no imminent change, Gaza-based political analyst Hani Habeeb said Netanyahu may unfreeze the funds, which cover around two-thirds of the Palestinian budget, now that the election is over.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 13:15:21</td><td>Netanyahu's stand against a Palestinian state had already threatened to strain ties with the United States and Europe.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 14:38:01</td><td>In his new coalition, Netanyahu is expected to include his natural allies, religious and far-right parties, as well as one centrist party which campaigned on internal social-economic issues rather than on matters of war and peace.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>The iFixit team, which travelled from San Luis Obispo to Australia to get its hands on one of the first Apple Watch deliveries after the gadget's global launch on Friday, began by blasting the screen with a heat gun to pry it off.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>iFixit had anticipated that the resin module, which Apple has said is to protect the electronics from the elements, would have a lid that could be opened rather than be a solid block.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>It also revealed that Apple has used tri-wing screws, a relatively uncommon type of screw, making it more difficult to access the electronics.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/13/102581901-RTR4WTY9.80x60.jpg?v=1429544480'></td><td>2015-04-22 23:55:00</td><td>Some Apple Watch buyers who thought they would have to wait until June to receive their new gadgets will get them sooner, Apple said on Wednesday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/13/102581901-RTR4WTY9.80x60.jpg?v=1429544480'></td><td>2015-04-22 23:55:00</td><td>In a note to clients on Wednesday, FDR analyst Daniel Ives estimated Apple would take over 2 million pre-orders for the watch and ship 20 million of them in 2015.</td></tr>
 </table></body></html>

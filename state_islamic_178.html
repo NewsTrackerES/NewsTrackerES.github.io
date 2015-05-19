@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-20 12:08:58</td><td>U.S., allies launch eight airstrikes against Islamic State: task force</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-23 18:54:03</td><td>All eight air strikes in Syria targeted Islamic State fighting positions, tactical units and a vehicle near Kobani.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-23 18:54:03</td><td>U.S., allies conduct 14 air strikes against Islamic State: task force</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-24 14:48:36</td><td>WASHINGTON (Reuters) - The United States and its allies staged 14 air strikes on Islamic State targets in Syria and Iraq in the latest round of daily attacks, the Combined Joint Task Force said on Tuesday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:30:06</td><td>Bombers, fighters and attack aircraft hit Islamic State targets near several cities, including Mosul and Tikrit in seven strikes during a 24-hour period, it said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 18:50:49</td><td>In Iraq, eight air strikes near Fallujah destroyed Islamic State fighting positions, mortar tubes, an excavator and a vehicle, and hit seven tactical units.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-05-01 13:23:55</td><td>In Syria, 11 strikes near al Hasaka, Dayr az Zawr and Kobani also struck eight Islamic State fighting units as well as two vehicles and other targets, the statement said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 17:49:09</td><td>Most of the Syrian strikes, six, hit targets near Al Hasakah, where they destroyed Islamic State fighting positions, vehicles, mortar positions, heavy machine guns and a supply point.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 16:28:29</td><td>The US and its allies conducted 15 air strikes against Islamic State militants in Iraq and Syria during the past 24 hours, a US military statement said on Saturday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 07:51:00</td><td>(AP) - When Guled Ali Omar made up his mind to join the Islamic State group, he wasn't easily deterred.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 11:51:46</td><td>They are among the latest Westerners accused of traveling or attempting to travel to Syria to join the Islamic State group, which has carried out a host of attacks including beheading Americans.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/74/70/7851570/3/square_gallery_thumb.jpg'></td><td>2015-04-21 11:51:46</td><td>Abdurahman is one off six Minnesota men charged with terrorism in a criminal complaint unsealed Monday, April 20, 2015, the latest Westerners accused of traveling or attempting to travel to Syria to join the Islamic State group.</td></tr>
 </table></body></html>

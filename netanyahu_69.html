@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/05/article-doc-1k2ke-6XZ74TXJGHSK2-315_634x460.jpg'></td><td>2015-04-05 16:06:06</td><td>When asked if he trusts President Barack Obama, Netanyahu replied: "I trust that the president is doing what he thinks is good for the United States, but I think that we can have a legitimate difference of opinion on this because I think Iran has shown to be completely distrustful."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 16:06:10</td><td>"It doesn't roll back Iran's nuclear program," Netanyahu said, one of several US networks he appeared on to slam the deal.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46819317,width-300,resizemode-4/Netanyahu.jpg'></td><td>2015-04-06 01:59:23</td><td>Relations between Israel and its traditionally staunch US ally are at a low and were hugely damaged when Netanyahu took the unprecedented step of addressing Congress last month to attack the nuclear negotiations with Iran.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46819317,width-300,resizemode-4/Netanyahu.jpg'></td><td>2015-04-06 01:59:23</td><td>Netanyahu told ABC News that the money that will flow back into Iran as sanctions ease will not be used to help the population.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/06/article-doc-1k2ke-6XZjpZZcy-HSK1-969_634x627.jpg'></td><td>2015-04-06 02:01:33</td><td>Ben Rhodes, the US deputy national security adviser for strategic communications, said Netanyahu was wrong because no deal could be reached that involved Iran dismantling its nuclear program.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>Netanyahu appears poised to set up a coalition with Kulanu and several religious and ultra-Orthodox parties.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 11:15:31</td><td>Rivlin is scheduled to meet with Netanyahu later this week and officially set the coalition talks into motion.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 11:15:31</td><td>It became a formality after the new centrist party Kulanu gave its nod to Netanyahu as well, giving him 61 backers out of the 120 in parliament.</td></tr>
 </table></body></html>

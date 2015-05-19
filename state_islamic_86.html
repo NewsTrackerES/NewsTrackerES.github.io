@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-27 01:39:29</td><td>"The message of this leaflet is that if you allow yourself to be recruited by Daesch (Islamic State), you will find yourself in a meat grinder," said Pentagon spokesman Colonel Steve Warren.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:53:39</td><td>WASHINGTON (Reuters) - The United States has dropped tens of thousands of graphic leaflets southwest of the Syrian city of Raqqa aimed at discouraging Islamic State recruitment, officials said on Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:53:39</td><td>U.S. drops graphic anti-Islamic State leaflets over Syria's Raqqa</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 00:41:49</td><td>Islamic State claimed responsibility for the checkpoint suicide bombing in a statement posted on Twitter.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 00:41:49</td><td>Militants claiming affiliation to Islamic State, the group that controls much of Syria and Iraq, have exploited the turmoil by expanding in several parts of the oil producer.</td></tr>
 </table></body></html>

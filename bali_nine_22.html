@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 07:55:18</td><td>Bali Nine lawyers lodge new court battle</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 17:33:20</td><td>The administrative court had rejected the Bali Nine pair's challenge in February, determining the decrees by Mr Joko were not within its jurisdiction.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pnfivXJABg0lkJ2uHCV1Ew--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwOTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-01T033607Z_1007000001_LYNXMPEB301A1_RTROPTP_2_CNEWS-US-INDONESIA-EXECUTIONS.JPG'></td><td>2015-04-01 03:36:07</td><td>Sukumaran and Chan were convicted in 2005 of being the ringleaders in a plot by a group called the Bali Nine to smuggle heroin out of Indonesia.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 04:01:31</td><td>Indonesian court to decide on Bali Nine execution appeal on April 6</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/full/public/chan_sukumaran02_1.jpg?itok=ekcIUDnv&amp;mtime=1425496164'></td><td>2015-03-18 10:11:33</td><td>With Jakarta indicating it would prefer to wait all the legal appeals to be heard before killing 10 drug convicts, it means the Bali Nine pair could avoid the firing squad for months.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 17:33:20</td><td>The state administrative court on Monday rejected an appeal for the Bali Nine pair, upholding its earlier decision that presidential clemency isn't within its jurisdiction.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/g/p/t/image.related.articleLeadwide.620x349.1m27z2.png/1426716622005.jpg'></td><td>2015-03-18 09:03:22</td><td>He says Sukumaran and fellow Bali nine organiser Andrew Chan, who helped guide him at church every Sunday, are good people.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/c/u/y/4/image.related.articleLeadwide.620x349.1mct6o.png/1427897081909.jpg'></td><td>2015-04-01 14:04:53</td><td>This is disputed by the Bali nine duo's lawyers, who earlier this week produced an expert legal witness who said there was no public policy that could not be challenged.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/c/u/y/4/image.related.articleLeadwide.620x349.1mct6o.png/1427897081909.jpg'></td><td>2015-04-01 14:04:53</td><td>A panel of judges will on Monday rule on whether the State Administrative Court of Jakarta can hear an appeal against the rejection of the Bali nine duo's clemency pleas.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/c/u/y/4/image.related.articleLeadwide.620x349.1mct6o.png/1427897081909.jpg'></td><td>2015-04-01 14:04:53</td><td>However, on February 24 the court ruled it did not have the authority to rule on a presidential decree - a decision that was then appealed by the Bali nine's lawyers.</td></tr>
 </table></body></html>

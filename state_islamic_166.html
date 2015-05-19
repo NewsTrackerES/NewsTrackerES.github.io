@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 11:51:51</td><td>Protest held in Ethiopia over killings by Islamic extremists</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 11:51:51</td><td>ADDIS ABABA, Ethiopia (AP) - Hundreds of Ethiopians in Addis Ababa protested the killings of dozens of Ethiopian Christians by Islamic extremists in Libya while parliament weighed a response to the killings.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:19:09</td><td>The Islamic State video starts with what it called a history of Christian-Muslim relations, followed by scenes of militants destroying churches, graves and icons.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:19:09</td><td>After the Islamic State video showing the Ethiopian victims was released on Sunday, some here recognized the faces of two men who left an Addis Ababa slum two months ago hoping to reach Europe.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:19:09</td><td>Most of the dozens of Ethiopians shot or beheaded by the extremists linked to the so-called Islamic State were migrants.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 17:02:46</td><td>Ohio man who trained with Islamic State charged with supporting terrorism</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Li6lRbBD3FRdvo_7QJR0og--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-us/homerun/deadline.com/adde87c4064f35058ab176d5e7d9c789.cf.jpg'></td><td>2015-04-16 17:39:45</td><td>WASHINGTON (Reuters) - A Columbus, Ohio, man who trained with Islamic militants in Syria has been arrested and charged with supporting terrorism and making false statements, the U.S. Justice Department said on Thursday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 18:01:18</td><td>Before leaving for Syria, Mohamud had posted material on social media promoting symbols of the Islamic State militant group, the indictment said.</td></tr>
 </table></body></html>

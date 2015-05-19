@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,12 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 12:50:05</td><td>April 9 (Reuters) - Apple Inc said on Thursday demand for its new smartwatch would exceed supply when the gadget hits stores on April 24.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 13:00:44</td><td>The Apple Watch could make life easier for people on the move, but the gadget got poor marks for battery life and slow-loading apps from reviewers.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/09/10/101988298-455056638.80x60.jpg?v=1427905450'></td><td>2015-04-09 13:35:00</td><td>Apple said it saw "tremendous interest" for the watch from people visiting its stores and website.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 04:02:19</td><td>Apple store employees will show you the range of options, including different watch cases, bands and sizes.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 06:00:53</td><td>Consumers will have their first chance to see and hold the Apple Watch on Friday, April 10, 2015, as Apple stores in the U.S. and eight other markets start previews of Apple's latest product.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>Initially, it's available only to owners of an Apple TV, iPhone or iPad, or to Cablevision's Internet-access subscribers.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>Apple borrowed many design techniques from the iPad, including eliminating the fan.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>The new MacBook comes in silver, gold or gray - the first time there has been a color choice since Apple ditched plastic for metal on its laptops.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>Apple's new laptop, simply called MacBook, debuts Friday.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-09 12:59:43</td><td>NEW YORK (AP) - The public will have its first chance to see, touch and buy the Apple Watch on Friday, as Apple stores in the U.S. and eight markets abroad start previews and online orders commence.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-09 14:01:04</td><td>Thus product image provided by HBO shows the HBO Now Apple TV app.</td></tr>
 </table></body></html>

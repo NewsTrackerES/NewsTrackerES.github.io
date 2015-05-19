@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 12:42:49</td><td>It is one of the largest cities held by the Islamic State group and lies on the road connecting Baghdad to militant-held Mosul, the country's second-largest city.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/03/f-tikrit-b-20150326-200x200.jpg'></td><td>2015-03-24 20:04:00</td><td>Steve Warren said Tuesday that the Iraqi ground operation against the Islamic State group has "stalled" and that the Tikrit operation "has not moved forward recently."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/03/f-tikrit-b-20150326-200x200.jpg'></td><td>2015-03-24 20:04:00</td><td>Iraqi forces have made progress in driving the Islamic State group out of rural areas and small villages, but populated areas like Tikrit could prove a greater challenge.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-21 01:03:06</td><td>The White House said Friday there's no indication the Islamic State group had any operational link to a string of suicide bombings in Yemen that killed at least 137 people.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-21 01:03:06</td><td>White House spokesman Josh Earnest said the U.S. is still investigating the claim of responsibility by the Yemeni branch of Islamic State.</td></tr>
 </table></body></html>

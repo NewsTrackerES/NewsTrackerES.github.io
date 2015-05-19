@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46916643,width-300,resizemode-4/Islamic-State.jpg'></td><td>2015-04-14 05:57:06</td><td>Critics say Obama's drawdown of US troops in Iraq was a strategic blunder that allowed the Islamic State to flourish.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/14/article-doc-1p8np-6XmAautnj-HSK1-435_634x422.jpg'></td><td>2015-04-14 06:00:43</td><td>Iraq's prime minister will plead for more US military support in the war against insurgent Islamic State jihadists during a first White House meeting with President Barack Obama on Tuesday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 11:20:48</td><td>Islamic State's arrival in Yarmouk has given the jihadist group a significant foothold a few kilometers (miles) from President Bashar al-Assad's seat of power.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 11:20:48</td><td>Islamic State, which has already seized wide areas of eastern and northern Syria, has in recent weeks mounted several big attacks on regions closer to the main population centers of western Syria, both in government- and rebel-held areas.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 11:20:48</td><td>The Syrian Observatory for Human Rights, a Britain-based group that monitors the four-year-old civil war via sources on the ground, has reported army air strikes on the camp since Islamic State moved in.</td></tr>
 </table></body></html>

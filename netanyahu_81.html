@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150506&t=2&i=1046259870&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB450ZA'></td><td>2015-05-06 19:37:13</td><td>Israel's Netanyahu clinches deal for new coalition government - sources</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 20:04:11</td><td>The sources, speaking on condition of anonymity, said Netanyahu's Likud party and the Jewish Home had plans to announce the deal shortly and then sign it.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:24:00</td><td>Although his party does not control a majority, party leaders controlling a total of 67 seats recommended that Netanyahu lead the next government for what would be his third consecutive term.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 19:24:00</td><td>Netanyahu spoke at a ceremony where the country's president, Reuven Rivlin, officially handed him the task of forming the next government.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 19:24:00</td><td>Netanyahu is all but guaranteed of forming a governing coalition.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-25 19:24:00</td><td>Netanyahu's comments appeared to be aimed at repairing the damage caused by comments he made in the final days of the campaign that strained relations with the U.S. and drew accusations of racism from the country's Arab minority.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-25 19:24:00</td><td>Rivlin, whose job is largely ceremonial, urged Netanyahu to repair ties with the U.S. and heal the wounds caused by the campaign.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 01:31:07</td><td>"I will work to mend the rifts opened between different parts of society during these elections," Netanyahu said.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:54:52</td><td>(AP) - A Wisconsin man traveled to the Middle East in a failed attempt to join the Islamic State group, federal authorities said Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:24:02</td><td>A Wisconsin man is accused of traveling to the Middle East in an attempt to join the Islamic State group.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:47:26</td><td>Van Haften, accused of traveling to Turkey as part of a failed attempt to join the Islamic State in Syria, was ordered held without bond Thursday for trying to aid a terrorist group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 08:30:58</td><td>The Islamic State's onslaught last June plunged Iraq into its worst crisis since the 2011 U.S. troop withdrawal from the country.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 08:36:47</td><td>An Iraqi official says teams in the newly liberated city of Tikrit have started exhuming bodies from a mass grave believed to contain hundreds of soldiers killed by Islamic State militants last year.</td></tr>
 </table></body></html>

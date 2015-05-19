@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 09:10:22</td><td>"We made progress and we are on the way to forming a government, but I need additional time for it to be stable and to reach agreements on important issues that will help us meet all the challenges facing Israel," Netanyahu said during a meeting with President Reuven Rivlin.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 09:10:22</td><td>If Netanyahu fails to win the support of at least 61 legislators in the next two weeks - a scenario political commentators see as unlikely - Rivlin can ask another member of parliament to try to put together a government.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 09:10:22</td><td>Their slow pace has raised speculation that Netanyahu, who would serve a fourth term as prime minister, could opt for a broader coalition with Zionist Union.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/7J9XzYOitzgmjFfD6j8OSw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/gma/us.abcnews.go.com/AP_netanyahu_2_jtm_150323_16x9_992.jpg'></td><td>2015-03-24 18:22:53</td><td>Areikat said the government he represents understands why Obama gave Netanyahu the benefit of the doubt until now, but that just looking at domestic Israeli politics, it was clear he was never serious about peace talks -- which have started and stopped twice since Obama and Netanyahu took office.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/7J9XzYOitzgmjFfD6j8OSw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/gma/us.abcnews.go.com/AP_netanyahu_2_jtm_150323_16x9_992.jpg'></td><td>2015-03-24 18:22:53</td><td>But the Palestinian ambassador to the U.N., Riyad Mansour, suggested that was one way the U.S. could register its disillusionment with Netanyahu.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 22:07:30</td><td>The Jewish Home party, one of Netanyahu's key coalition partners, is linked to the West Bank settler movement and adamantly opposes withdrawing from territory for the establishment of a Palestinian state.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 22:07:30</td><td>His narrow coalition, dominated by nationalists and religious parties, sets Netanyahu's government on a collision course on many fronts.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d4rn-6XK9PPlZs-HSK1-277_634x478.jpg'></td><td>2015-03-26 19:41:23</td><td>Representatives of the four other parties met with Likud's negotiating team throughout the day, with statements from Netanyahu's party providing no details.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d4rn-6XK9PPlZs-HSK1-277_634x478.jpg'></td><td>2015-03-26 19:41:23</td><td>For now, Netanyahu's focus is likely to be squarely on the marathon talks between his right-wing Likud and the five parties endorsing his premiership.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d4rn-6XK9PPlZs-HSK1-277_634x478.jpg'></td><td>2015-03-26 19:41:23</td><td>Since the election, Netanyahu has sought to backtrack on his remarks on a Palestinian state, and issued a public apology to the Arab community.</td></tr>
 </table></body></html>

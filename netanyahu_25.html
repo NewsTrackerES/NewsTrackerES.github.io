@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 10:10:47</td><td>Wednesday night, a poll broadcast on Israel's Channel 10 showed Netanyahu's Likud party picking up two seats to 23, which puts it neck and neck with the dovish opposition, the Zionist Union.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 10:10:47</td><td>In a statement released after he landed in Israel, Netanyahu said the alternative deal he presented in Congress would make it harder for Iran to build a nuclear bomb.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/c/4/2/image.related.articleLeadwide.620x349.13ukij.png/1425443042584.jpg'></td><td>2015-03-04 01:10:51</td><td>A source identified by CNN only as an angry senior White House official said Netanyahu had proposed "literally not one new idea; not one single concrete alternative; all rhetoric, no action".</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/4/2/image.related.articleLeadwide.620x349.13ukij.png/1425443042584.jpg'></td><td>2015-03-04 01:10:51</td><td>Barack Obama, Benjamin Netanyahu relationship frankly, transparently poisonous</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/4/2/image.related.articleLeadwide.620x349.13ukij.png/1425443042584.jpg'></td><td>2015-03-04 01:10:51</td><td>Though the tension between Obama and Netanyahu has never been secret, the angry theatre of the two leaders trading insults in the US capital is unprecedented, says Ziv.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/4/2/image.related.articleLeadwide.620x349.13ukij.png/1425443042584.jpg'></td><td>2015-03-04 01:10:51</td><td>Netanyahu may not now have the rapid open-door access to the White House that Israel's leaders have depended on in emergencies, he says.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/4/2/image.related.articleLeadwide.620x349.13ukij.png/1425443042584.jpg'></td><td>2015-03-04 01:10:51</td><td>Obama's chief diplomat, John Kerry, was labelled "obsessive" and "messianic" by Netanyahu's defence minister, Moshe Yaalon, for his pursuit of peace between Israel and the Palestinians.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/4/2/image.related.articleLeadwide.620x349.13ukij.png/1425443042584.jpg'></td><td>2015-03-04 01:10:51</td><td>But Obama went further, saying that in the past Netanyahu had been wrong in suggesting that Iran had failed to abide by the terms of an interim deal.</td></tr>
 </table></body></html>

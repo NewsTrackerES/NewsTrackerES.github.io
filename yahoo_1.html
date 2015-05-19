@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 14,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,16 +49,17 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 10:00:32</td><td>Yahoo closing last China operation in Beijing</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 11:02:51</td><td>That $1 billion deal gave Yahoo a lucrative stake in Alibaba that is currently worth $33 billion.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 11:02:51</td><td>Yahoo's revenue declined by 1 percent to $4.6 billion last year.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 11:02:51</td><td>Yahoo didn't specify how many people will lose their jobs in China, but pledged to treat all the workers "with respect and fairness."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 11:02:51</td><td>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td>Smith is also among the Yahoo shareholders who called upon Mayer to spin off the Alibaba stake to avoid triggering a huge tax bill from sale of the stake.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td>In a January conference call, Mayer emphasized that Yahoo's payroll has remained roughly the same size since she arrived, even though the company had inherited more than 1,000 employees through acquisitions completed during her reign.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td>Yahoo hired Mayer in July 2012 to engineer a turnaround, but so far she hasn't been able to boost the company's revenue even though advertisers have been shifting more of their spending to the Internet and mobile devices.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td>New York hedge fund Starboard Value, an activist investor that owns a 0.8 percent stake in Yahoo, is among the shareholders who believe Mayer needs to trim expenses.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td>Yahoo is preparing to spin off its Alibaba holdings into a separately traded company later this year, removing an asset that deflected attention from the challenges facing Yahoo's own businesses.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td>She also pointed out that Yahoo had closed about a dozen offices while phasing out about 75 products during her tenure.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:16:05</td><td>Yahoo is closing its research and development center in China as CEO Marissa Mayer tries to placate shareholders pressuring the Internet company to cut costs while it struggles to bring in more revenue.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/04/11/101576654-107936635r.530x298.jpg?v=1429284179'></td><td>2015-04-21 22:08:00</td><td>The tax-free deal would spin off Yahoo's 384 million shares in the Chinese e-commerce giant into a new company, with its shareholders receiving stock pro rata.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 11:02:51</td><td>That $1 billion deal gave Yahoo a lucrative stake in Alibaba that is currently worth $33 billion.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 11:02:51</td><td>Yahoo's revenue declined by 1 percent to $4.6 billion last year.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 11:02:51</td><td>Yahoo didn't specify how many people will lose their jobs in China, but pledged to treat all the workers "with respect and fairness."</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 11:02:51</td><td>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 19:15:39</td><td>Smith is also among the Yahoo shareholders who called upon Mayer to spin off the Alibaba stake to avoid triggering a huge tax bill from sale of the stake.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 19:15:39</td><td>In a January conference call, Mayer emphasized that Yahoo's payroll has remained roughly the same size since she arrived, even though the company had inherited more than 1,000 employees through acquisitions completed during her reign.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-19 19:15:39</td><td>Yahoo hired Mayer in July 2012 to engineer a turnaround, but so far she hasn't been able to boost the company's revenue even though advertisers have been shifting more of their spending to the Internet and mobile devices.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-19 19:15:39</td><td>New York hedge fund Starboard Value, an activist investor that owns a 0.8 percent stake in Yahoo, is among the shareholders who believe Mayer needs to trim expenses.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-19 19:15:39</td><td>Yahoo is preparing to spin off its Alibaba holdings into a separately traded company later this year, removing an asset that deflected attention from the challenges facing Yahoo's own businesses.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-19 19:15:39</td><td>She also pointed out that Yahoo had closed about a dozen offices while phasing out about 75 products during her tenure.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-19 19:15:39</td><td>The Beijing operation's responsibilities will be shifted to other Yahoo Inc. offices, according to a company statement released late Wednesday.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-19 19:16:05</td><td>Yahoo is closing its research and development center in China as CEO Marissa Mayer tries to placate shareholders pressuring the Internet company to cut costs while it struggles to bring in more revenue.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/04/11/101576654-107936635r.530x298.jpg?v=1429284179'></td><td>2015-04-21 22:08:00</td><td>The tax-free deal would spin off Yahoo's 384 million shares in the Chinese e-commerce giant into a new company, with its shareholders receiving stock pro rata.</td></tr>
 </table></body></html>

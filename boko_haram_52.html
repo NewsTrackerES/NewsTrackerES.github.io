@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://beta.images.theglobeandmail.com/576/video/article23890582.ece/ALTERNATES/w140/2015-04-12T183925Z_1_LOVEB3B1FTOJI_RTRMADP_0_NIGERIA-VIOLENCE-GIRLS-PRAYERS-O.XML'></td><td>2015-04-14 06:12:21</td><td>Nigeria's President-elect Muhammadu Buhari vowed on Tuesday to make every effort to free more than 200 schoolgirls abducted by Boko Haram militants a year ago but admitted it was not clear whether they would ever be found.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://beta.images.theglobeandmail.com/576/video/article23890582.ece/ALTERNATES/w140/2015-04-12T183925Z_1_LOVEB3B1FTOJI_RTRMADP_0_NIGERIA-VIOLENCE-GIRLS-PRAYERS-O.XML'></td><td>2015-04-14 06:12:21</td><td>Amnesty International said in a report on Tuesday that Boko Haram has kidnapped at least 2,000 Nigerian women and girls since the start of 2014, many of whom were sexually abused or trained to fight.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://beta.images.theglobeandmail.com/576/video/article23890582.ece/ALTERNATES/w140/2015-04-12T183925Z_1_LOVEB3B1FTOJI_RTRMADP_0_NIGERIA-VIOLENCE-GIRLS-PRAYERS-O.XML'></td><td>2015-04-14 06:12:21</td><td>The document, which includes scores of victim testimonies, accuses Boko Haram of rape, forced marriages and coercing them into armed attacks, sometimes on their own villages.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 01:01:35</td><td>Many men who refuse to join Boko Haram's ranks have also been killed.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 01:01:35</td><td>Amnesty's report said that Boko Haram, meaning Western education is sinful in Hausa, routinely rounded up women and girls after taking control of a town and held them in houses or prisons.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:25:13</td><td>CAIRO (AP) " A Nile Delta prosecutor said Sunday he referred 40 people to trial on charges of belonging to the Islamic State group and planning to carry out terrorist attacks in Egypt.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:25:13</td><td>Bilal Abu Khadra, a prosecutor in Egypt's Sharqiya province, said that those charged communicated with Islamic State militants in Syria.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:25:13</td><td>The Islamic State group gained a foothold in Egypt last November when a Sinai-based militant group declared itself an affiliate of the extremists.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:54:00</td><td>Amid the burgeoning Islamic insurgency in Egypt, thousands have been arrested in the course of a sweeping crackdown on Islamists since the military's 2013 ouster of Islamist President Mohammed Morsi.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 12:29:41</td><td>Islamic State takes military barracks, dam in Iraq's Anbar: sources</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 13:25:56</td><td>A video posted online on Saturday by Islamic State's official media organisation appeared to show its fighters moving about freely at al-Thirthar dam, which serves as a flood control for Baghdad and other cities.</td></tr>
 </table></body></html>

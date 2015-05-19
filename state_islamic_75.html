@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:24:25</td><td>UNITED NATIONS - A new U.N. report says the delivery of aid to millions inside Syria is becoming even more difficult as the Islamic State group closes down humanitarian efforts and Syria's government puts more obstacles in the way.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:24:25</td><td>The U.N. secretary-general's latest monthly report says 700,000 people in areas controlled by the Islamic State group again went without food assistance in February after the World Food Program had to halt deliveries.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:24:58</td><td>The report expresses concern that global attention is focused on the threat of groups like the Islamic State while the Syrian people feel increasingly abandoned.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 18:16:00</td><td>Canada to expand mission against "Islamic State" in Iraq</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-22 22:16:02</td><td>TORONTO (AP) - Canada's prime minister will talk about his plan to extend and expand Canada's military mission against the Islamic State group at a meeting with NATO's secretary general.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-22 22:20:08</td><td>Canada PM to talk with NATO chief about expanding mission against Islamic State group</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 17:26:16</td><td>"In our view, ISIL must cease to have any safe haven in Syria," Harper said, using his government's preferred acronym for the Islamic State group.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 03:42:35</td><td>Canadian lawmakers voted Monday to extend a campaign of airstrikes against the Islamic State group and for the first time strike at them in Syria as well as in Iraq.</td></tr>
 </table></body></html>

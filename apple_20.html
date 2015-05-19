@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td>A February 2015 IDC report placed Android at 81.5% global market share in 2014 against Apple's 14.8%.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td>Last week, Apple had announced a buyback program for China, with manufacturer Foxconn to oversee the resale of used handsets, initially through a selection of e-commerce websites and then other physical stores.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td>Apple Store trade-ins are run in partnership with an external company.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/o/a/3/5/image.related.thumbnail.90x60.1m9x2j.png/1427693916700.jpg'></td><td>2015-03-31 06:57:45</td><td>That's why, on behalf of Apple, I'm standing up to oppose this new wave of legislation - wherever it emerges.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/o/a/3/5/image.related.thumbnail.90x60.1m9x2j.png/1427693916700.jpg'></td><td>2015-03-31 06:57:45</td><td>Our message, to people around the country and around the world, is this: Apple is open.</td></tr>
 </table></body></html>

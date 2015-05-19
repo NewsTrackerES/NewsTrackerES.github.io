@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 04:22:05</td><td>Dutch Defense Chief Gen. Tom Middendorp told an international military conference this week, referring to the Islamic State group's emergence this year on Libya's shore.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 04:22:05</td><td>They face growing threats from groups like the Islamic State that have little regard for traditional ideas of war and peace.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:42:04</td><td>OTTAWA (Reuters) - Canada will expand its military mission against Islamic State by launching air strikes against its positions in Syria as well as Iraq, Prime Minister Stephen Harper said on Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 14:42:04</td><td>Harper told legislators that Canada must strike at the Syrian power base of the Islamic State, formally known as the Islamic State of Iraq and the Levant (ISIL).</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 14:42:04</td><td>Canada now has around 70 special forces troops operating in northern Iraq and six Canadian jets are taking part in U.S.-led bombing missions against Islamic State in Iraq.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 14:42:04</td><td>That will make Canada the second NATO member nation after the United States to attack Islamic State positions in Syria, which have also been hit by jets from Jordan and the United Arab Emirates.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 01:05:00</td><td>TORONTO (Reuters) - Canadian legislators on Monday voted to back the government's plans to bomb Islamic State positions in Syria, a move that opposition parties say threatens to drag Canada into a long war.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/30/22/2725E94D00000578-0-image-m-18_1427752554062.jpg'></td><td>2015-03-31 02:02:46</td><td>Prime Minister Stephen Harper, who has made security a main plank of his platform in the run-up to an October election, last week said Canada needed to strike against Islamic State safe havens in Syria.</td></tr>
 </table></body></html>

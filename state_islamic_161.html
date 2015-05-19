@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/04/19/h8t8dudj.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-19 12:43:23</td><td>Reuters was not able to verify the authenticity of the video but the killings were similar to past violence carried out by Islamic State, which has expanded its reach from strongholds in Iraq and Syria to chaotic Libya.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297689791180_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-19 14:50:25</td><td>The killings of the Egyptians prompted Egyptian President Abdel Fattah al-Sisi to order air strikes on Islamic State targets in Libya.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_oCHT4rcsqkvz8VnlqDCAQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE2NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-19T194800Z_1_LYNXMPEB3I0G1_RTROPTP_2_MIDEAST-CRISIS-ISLAMICSTATE-KILLINGS.JPG'></td><td>2015-04-19 17:51:29</td><td>Islamic State shoots and beheads 30 Ethiopian Christians in Libya: video</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 07:27:34</td><td>The U.S. blamed the lack of inclusiveness by al-Abadi's predecessor, Nouri al-Maliki, for giving the Islamic State a recruiting tool and had made the formation of a new government a condition for deeper military action to stop the militant group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 07:27:34</td><td>Al-Abadi told reporters Monday that the increase in U.S. airstrikes, weapons deliveries and training has helped roll back Islamic State forces, but he needs greater support from the international coalition to "finish" them.</td></tr>
 </table></body></html>

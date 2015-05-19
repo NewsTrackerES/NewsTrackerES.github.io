@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 18:14:58</td><td>ARBIL, Iraq - Iraqi Kurdish authorities said on Saturday they had evidence that Islamic State had used chlorine gas as a chemical weapon against their peshmerga fighters in northern Iraq in January.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297675192199_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-14 20:02:41</td><td>No international organization has documented the use of chemical weapons on Iraqi territory in the war with Islamic State.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297675192199_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-14 20:02:41</td><td>When he joined Islamic State, it gave the insurgent force a chemical weapons capability, it added.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 00:28:12</td><td>Several of Saddam's palaces remain there, and supporters of the deceased dictator are believed to have played a key role in the Islamic State group's seizure of the city last year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 00:28:12</td><td>Soleimani and other Iranian advisers have played a key role in Iraq in pushing the Islamic State back in recent months.</td></tr>
 </table></body></html>

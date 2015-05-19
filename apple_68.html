@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z718-6Y6y9pMZF-HSK1-533_634x413.jpg'></td><td>2015-04-27 22:03:06</td><td>Apple said its board has increased its share repurchase authorization to $140 billion from the $90 billion level announced last year.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z718-6Y6y9pMZF-HSK1-533_634x413.jpg'></td><td>2015-04-27 22:03:06</td><td>"We believe Apple has a bright future ahead, and the unprecedented size of our capital return program reflects that strong confidence," said Cook.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 12:02:28</td><td>April 27 (Reuters) - U.S. stock index futures were up slightly on Monday after the Nasdaq Composite and S&P 500 chalked up record high closes on Friday and ahead of Apple's results after the close.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 12:02:28</td><td>US STOCKS-Futures up ahead of Apple earnings, Fed meeting later this week</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 14:03:01</td><td>Apple trades at 14.3 times forward 12-month earnings, while the S&P 500 trades at 16.7 times, according to Thomson Reuters StarMine data.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 14:03:01</td><td>"Apple is an undervalued growth stock and has been for many, many years," Sarhan said.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-27 14:05:34</td><td>Analysts expect Apple's quarterly revenue to rise 23 percent to $56.07 billion, according to Thomson Reuters data.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 15:05:03</td><td>Apple shares rose 1.69 percent to $132.48 in early trading.</td></tr>
 </table></body></html>

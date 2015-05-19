@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,8 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 21:13:49</td><td>"Hillary Clinton has already made it clear she'll be on the side of elitism."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td>"Hillary Rodham Clinton will bring a permanent darkness of deceit and despair forced upon the American people to endure," LaPierre said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td>Former Florida Gov. Jeb Bush decried the "liberal, progressive worldview of Barack Obama and Hillary Clinton and Eric Holder, and all of the other people who want to take the guns out of the hands of the good guys."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td>(AP) - The specter of Hillary Rodham Clinton's imminent presidential campaign dropped like a gift from the heavens at the National Rifle Association's annual convention Friday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td>"Hillary Rodham Clinton will bring a permanent darkness of deceit and despair forced upon the American people to endure," LaPierre said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td>Former Florida Gov. Jeb Bush decried the "liberal, progressive worldview of Barack Obama and Hillary Clinton and Eric Holder, and all of the other people who want to take the guns out of the hands of the good guys."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td>(AP) - The specter of Hillary Rodham Clinton's imminent presidential campaign dropped like a gift from the heavens at the National Rifle Association's annual convention Friday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 22:35:39</td><td>GOP hopefuls give NRA event an earful on Hillary Clinton</td></tr>
 </table></body></html>

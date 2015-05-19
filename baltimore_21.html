@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 17:44:04</td><td>The Orioles will play the Chicago White Sox on Wednesday afternoon at Camden Yards in a rare Major League Baseball game closed to the public, a decision that followed rioting in Baltimore.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/j/assets/i/us/sp/v/mlb/teams/83/70x70/bal.png'></td><td>2015-04-28 16:57:34</td><td>In addition, the Friday-to-Sunday series against Tampa Bay was shifted from Camden Yards to Tropicana Field in St. Petersburg, Florida, with Baltimore remaining the home team and batting last.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 19:28:00</td><td>Also Tuesday, the uneasy situation also caused the Baltimore Ravens to cancel an NFL draft party for fans at M&T Bank Stadium on Thursday night.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/13bae823f10f831d3598fe3eef2cb3739d9c58ee/c=245-0-4012-2832&amp;r=x513&amp;c=680x510/local/-/media/2015/04/27/USATODAY/USATODAY/635657658644556962-USATSI-8541509.jpg'></td><td>2015-04-28 02:41:44</td><td>"We feel like we made the decision that would provide us the greatest possible security, in terms of protecting the fans, the players, the umpires, everybody involved," Manfred told reporters in Baltimore.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 21:06:04</td><td>"Our thoughts are with all those who have been affected by violence in Baltimore, and everyone in our game hopes for peace and the safety of a great American city."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/13bae823f10f831d3598fe3eef2cb3739d9c58ee/c=245-0-4012-2832&amp;r=x513&amp;c=680x510/local/-/media/2015/04/27/USATODAY/USATODAY/635657658644556962-USATSI-8541509.jpg'></td><td>2015-04-28 02:41:44</td><td>"We feel like we made the decision that would provide us the greatest possible security, in terms of protecting the fans, the players, the umpires, everybody involved," Manfred told reporters in Baltimore.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/j/assets/i/us/sp/v/mlb/teams/83/70x70/bal.png'></td><td>2015-04-28 16:57:34</td><td>In addition, the Friday-to-Sunday series against Tampa Bay was shifted from Camden Yards to Tropicana Field in St. Petersburg, Florida, with Baltimore remaining the home team and batting last.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 17:44:04</td><td>The Orioles will play the Chicago White Sox on Wednesday afternoon at Camden Yards in a rare Major League Baseball game closed to the public, a decision that followed rioting in Baltimore.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-28 19:28:00</td><td>Also Tuesday, the uneasy situation also caused the Baltimore Ravens to cancel an NFL draft party for fans at M&T Bank Stadium on Thursday night.</td></tr>
 </table></body></html>

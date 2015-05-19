@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/11/22/7902383/5/square_gallery_thumb.jpg'></td><td>2015-04-30 19:04:51</td><td>BALTIMORE (AP) - Richard Sung Kang's American dream came crashing down in a shower of broken glass.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/11/22/7902383/5/square_gallery_thumb.jpg'></td><td>2015-04-30 19:04:51</td><td>Baltimore riot damage adds burden to small businesses</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:04:51</td><td>His West Baltimore liquor store and bar, the Oxford Tavern, was hit by looters during a riot over the police-involved death of neighborhood resident Freddie Gray.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 05:52:17</td><td>Lenny Clay (R) sits at his barber shop in Baltimore, Maryland April 29, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 05:52:17</td><td>In 2013, Baltimore paid Clay $63,000 to settle a lawsuit over the incident.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 05:52:17</td><td>"Most people under 50 have never seen this before," he said of the clashes between young Baltimore residents and police.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 05:52:17</td><td>What did surprise them was the intensity of the media attention focused on the violence that shook Baltimore Monday night.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-01 12:00:31</td><td>As Baltimore's economy declined, the men said, its poorest black residents grew more and more isolated, and their relations with police and city officials worsened.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-01 12:00:31</td><td>BALTIMORE, May 1 (Reuters) - The view from Lenny Clay's barbershop in a neighborhood just west of downtown Baltimore is bleak.</td></tr>
 </table></body></html>

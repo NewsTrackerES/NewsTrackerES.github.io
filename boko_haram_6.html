@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 03:27:19</td><td>"The death of a large number of terrorists has been recorded while many others are also scampering all over the forest," defence spokesman Major-General Chris Olukolade said on Thursday, later adding that an attack was under way on parts of Gwoza, the town where Boko Haram first declared an Islamic state last year.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 03:27:19</td><td>Sambisa gained notoriety last year when more than 200 girls kidnapped by Boko Haram from a secondary school in nearby Chibok were taken there.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 03:27:19</td><td>Nigerian planes bomb Boko Haram camps, military says</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 17:19:40</td><td>The military says it's killed 300 Boko Haram fighters in an operation to recapture 11 towns and villages.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-18 17:19:40</td><td>On Tuesday, Boko Haram leader Abubakar Shekau appeared in a video monitored by the U.S.-based SITE Intelligence Group in which he threatened to disrupt the upcoming vote.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/12/01/102228057-20141123-6193-903.530x298.jpg?v=1431709873'></td><td>2015-05-15 20:23:00</td><td>Top US hedge funds continue to dump Apple stakes</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 22:50:39</td><td>In the fourth quarter, David Einhorn's Greenlight Capital and Coatue Management reduced their stakes in Apple, which was a big winner in 2014, with its shares rising nearly 38 percent.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 22:50:39</td><td>At the end of 2014, Apple was one of the hedge fund community's favored positions, according to Goldman Sachs.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/taK99DaC2Ejq8wvbR_vZXA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-15T191847Z_1_LYNXMPEB4E0YP_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-05-15 22:53:13</td><td>Omega Advisors sold all of its 383,790 shares in Apple during the first quarter, while Rothschild Asset Management cut its stake by 107,953 to 938,693 shares, filings showed on Friday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 22:53:13</td><td>Apple shares rose 12.7 percent in the first quarter and have continued to increase.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 15:53:35</td><td>Russian lawmaker sees Apple's U2 album as gay 'propaganda'</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 15:53:35</td><td>MOSCOW (AP) - A member of Russia's parliament has asked prosecutors to determine whether Apple violated Russia's ban on gay "propaganda" when it delivered U2's latest album to a half-billion iTunes users for free last year.</td></tr>
 </table></body></html>

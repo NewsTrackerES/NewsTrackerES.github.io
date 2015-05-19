@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 17:59:04</td><td>"Daesh (Islamic State) is already sending advance guards to southern and western Afghanistan to test for vulnerabilities," Ghani said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/gU0df3nbIGkJX4UkYCWxzQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIxMTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T180233Z_1_LYNXMPEB2O0Y3_RTROPTP_2_AFGHANISTAN-USA-GHANI.JPG'></td><td>2015-03-25 18:02:33</td><td>WASHINGTON (Reuters) - Afghanistan's new president, Ashraf Ghani, warned U.S. lawmakers on Wednesday of the "terrible threat" the Islamic State poses in central and western Asia, and said the militant group is already sending fighters to his country.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/gU0df3nbIGkJX4UkYCWxzQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIxMTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T180233Z_1_LYNXMPEB2O0Y3_RTROPTP_2_AFGHANISTAN-USA-GHANI.JPG'></td><td>2015-03-25 18:02:33</td><td>New Afghan president warns of 'terrible threat' from Islamic State</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 09:38:08</td><td>BEIRUT, March 24 (Reuters) - Islamic State has recruited at least 400 children in Syria in the past three months and given these so-called "Cubs of the Caliphate" military training and hardline indoctrination, a monitoring group said on Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>Islamic State has encouraged parents to send children to training camps or has recruited them without their parents' consent, often luring them with money, said the Observatory, which tracks the conflict using sources on the ground.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>The Syrian Observatory for Human Rights said the children, all aged under 18, were recruited near schools, mosques and in public areas where Islamic State carries out killings and brutal punishments on local people.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>Islamic State recruits 400 children since January: Syria monitor</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>Islamic State also recruits children as informants and as guards for its headquarters as well as welcoming children with birth defects into its ranks, the Observatory added.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td>One such young boy appeared in a video early this month shooting dead an Israeli Arab accused by Islamic State of being as spy.</td></tr>
 </table></body></html>

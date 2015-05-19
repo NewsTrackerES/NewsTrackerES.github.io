@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 15:59:48</td><td>It was a chilling reminder that Boko Haram extremists still are in northeast Nigeria with all sorts of weapons even as Nigeria's military officials boast that they have ousted them from all major towns and forest camps.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 15:59:48</td><td>Boko Haram has been left "marauding from place to place," he told The Associated Press.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 15:59:48</td><td>Olukolade did not respond directly to questions about border towns that have been seized by Chadian troops who then withdraw, leaving Boko Haram to return.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/60/00/7798814/7/square_gallery_thumb.jpg'></td><td>2015-04-10 18:22:36</td><td>In this photo taken Wednesday, April 8, 2015, Nigerian Soldiers man a check point in Gwoza, Nigeria, a town newly liberated from Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/9c905c0/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F4e%2F811cb7b4fd5b630bc2048bab3e6151%2Fmedia%3Ad925f10c79364fdd8d91a07ab905cdb6NigeriaBokoHaram.JPEG'></td><td>2015-04-10 18:22:36</td><td>Boko Haram still killing and burning in face of offensive despite ouster from towns, camps.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/10/16/276FA01500000578-0-image-m-171_1428679592455.jpg'></td><td>2015-04-10 19:12:01</td><td>EDS NOTE GRAPHIC CONTENT - In this photo taken Wednesday, April 8, 2015, decomposed bodies of civilians reportedly killed by Boko Haram lie around on the ground in Gwoza, Nigeria.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 16:11:53</td><td>Nigeria, Chad, Niger and Cameroon last month launched an unprecedented joint campaign against Boko Haram after the militants widened their offensive with attacks in the neighbouring countries.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 16:11:53</td><td>UN in $174 mn appeal for Nigeria's Boko Haram refugees</td></tr>
 </table></body></html>

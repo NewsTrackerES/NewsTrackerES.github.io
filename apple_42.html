@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/e0OhLik5DNnAqNc2Y2_4Pg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/2076c3d08835d5c61f280d664fd1716f'></td><td>2015-04-13 07:51:35</td><td>Slice Intelligence looked at sample data from 9,080 online shoppers, and said each Apple Watch buyer ordered an average of 1.3 watches and spent an average of $503.83 per device.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/e0OhLik5DNnAqNc2Y2_4Pg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/2076c3d08835d5c61f280d664fd1716f'></td><td>2015-04-13 07:51:35</td><td>Using e-receipt data, the company said that 957,000 people in the U.S. placed orders for an Apple Watch on the first day it became available.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/e0OhLik5DNnAqNc2Y2_4Pg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/2076c3d08835d5c61f280d664fd1716f'></td><td>2015-04-13 07:51:35</td><td>Apple (NASDAQ: AAPL)'s first foray into the world of the smartwatch generated nearly 1 million pre-orders in the United States on Friday, according to early estimates by the research firm Slice Intelligence.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/10/102576384-RTR4WS9H.80x60.jpg?v=1428670536'></td><td>2015-04-13 08:39:00</td><td>Slice Intelligence said that U.S. customers spent an average of $382.83 on the Apple Watch Sport and $707.04 on the Apple Watch.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/10/102576384-RTR4WS9H.80x60.jpg?v=1428670536'></td><td>2015-04-13 08:39:00</td><td>Apple Watch US pre-orders estimated at 1M</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>NEW YORK - Of the 13 Apple Watch models I tried over two sessions, the one I liked most cost $15,000.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>I didn't have good answers as my Apple Watch try-on visits started - at first modestly, with models that cost about the same as an iPhone.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>Review: Many choices, indecision with Apple Watch</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>Both sessions at the Apple store began with indecision: What size do I want?</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>I bypassed the appointments because Apple's media reps in Cupertino, California, had arranged my sessions.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/11/07/277385B500000578-0-image-m-88_1428734830435.jpg'></td><td>2015-04-11 13:02:59</td><td>A child looks at a display of Apple Watches at an Apple retail store in Beijing Friday, April 10, 2015.</td></tr>
 </table></body></html>

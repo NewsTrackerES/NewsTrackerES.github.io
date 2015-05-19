@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,5 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 18:31:23</td><td>DALLAS (Reuters) - Thomas Eric Duncan became the face of a crisis when he was diagnosed with Ebola in the United States, but he was simply "Eric" to his fiancee, Louise Troh, who said she has endured threats and battled nightmares since his death in October.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 18:31:23</td><td>They got death threats, they said, and some even called Duncan a terrorist intent on spreading Ebola across the country.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 18:31:23</td><td>They got death threats, they said, and some even called Duncan a terrorist intent on spreading Ebola across the country.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-28 18:31:23</td><td>Fianc?e chronicles love, life with man who died of Ebola in Texas</td></tr>
 </table></body></html>

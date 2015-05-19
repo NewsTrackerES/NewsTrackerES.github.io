@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 22:35:12</td><td>(AP) " A man has been charged with threatening law enforcement officials and an informant after authorities charged six men earlier this week with trying to travel to Syria to join the Islamic State group.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 22:35:12</td><td>A judge on Thursday had ordered four of the men accused of trying to join the Islamic State group to remain in custody as their case proceeds, provoking an angry reaction from an overflow courtroom that included many members of Minnesota's large Somali community.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 11:56:14</td><td>The video suggests Islamic State, which controls much of Syria and Iraq, has managed to further expand in the North African country after establishing a limited presence in the eastern town of Derna as well as in western and central Libya.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 11:56:14</td><td>But Islamic State may struggle to expand as it has in Syria and Iraq because Libya has no Sunni-Shi'ite divide the group could exploit to draw in supporters.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 11:56:14</td><td>Unlike in Iraq and Syria, Islamic State insurgents have not occupied any oilfields in Libya to generate revenues, and selling oil outside official channels would anyway be more complicated in Libya than in the two other Arab countries.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 11:56:14</td><td>But the biggest security headache for Western powers would be an Islamic State expansion into Libya's southern Sahara, the apparent location for part of Sunday's video.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 11:56:14</td><td>The militants also benefit from the reluctance of Libya's warring governments to tackle them, analysts say, as each wants Islamic State to keep the other busy.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 11:56:14</td><td>Analysts say recruiting in the south would help Islamic State co-operate with other militant groups, such as Tuaregs fighting in Mali or Nigeria's Boko Haram as it tries to take its battle to Libya's neighbours Chad and Niger.</td></tr>
 </table></body></html>

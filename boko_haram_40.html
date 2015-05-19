@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/uQ5WiaFpYHZJZ9BOBDokTQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-01T090947Z_2_LYNXMPEB301CO_RTROPTP_2_NIGERIA-ELECTION.JPG.cf.jpg'></td><td>2015-04-01 20:20:59</td><td>N'DJAMENA (Reuters) - Chad's army said its forces had killed hundreds of Boko Haram militants and lost nine of its own troops in clashes in northern Nigeria on Wednesday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 21:20:39</td><td>"There was fighting and we recorded nine dead and 16 injured. There were hundreds of dead on Boko Haram's side," said Colonel Azem Bermandoa, a spokesman for Chad's army.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/1/4826e9612bb44bf2ba5dc2160f415b30_18.jpg'></td><td>2015-04-02 03:48:51</td><td>Soldiers from Chad and Niger drove the group from Malam Fatori, one of Boko Haram's last major footholds near Nigeria's border with Niger, earlier this week.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 20:07:25</td><td>Despite a handful of isolated attacks, Boko Haram largely failed to deliver on threats to disrupt the polls in the north.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 22:30:31</td><td>Niger: Troops prevent Boko Haram attack, destroy base</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 22:30:31</td><td>On Saturday, troops from Niger and Chad destroyed a Boko Haram base inside Nigeria, also close to the Niger border, killing 54 militants, the statement said.</td></tr>
 </table></body></html>

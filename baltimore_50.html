@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 03:32:21</td><td>LOS ANGELES - Fox News Channel anchorman Shepard Smith says the channel mistakenly reported that a Baltimore, Maryland, police officer shot a black man during a chase.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 03:32:21</td><td>Baltimore police say officers were pursuing a man who was spotted on surveillance cameras and appeared to be armed with a handgun.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:27:40</td><td>Baltimore police said on Monday that a Fox News report of a black man being shot by police in the city was not true, and the cable news network quickly issued an apology.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 20:40:42</td><td>CVS Health says it will rebuild its store locations that were badly damaged by fire last week during protests in Baltimore.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 20:45:16</td><td>CVS has nearly 30 stores and more than 500 employees in Baltimore.</td></tr>
 </table></body></html>

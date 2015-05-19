@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 12:03:32</td><td><a href='state_islamic_231.html'>The observatory reported that Islamic State had seized a gas field to the east of Palmyra - a report denied by the military source. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 17:59:55</td><td><a href='state_islamic_234.html'>BEIRUT -- Activists say Islamic State fighters have pushed into the Syrian town of Palmyra, home to famed 2,000-year-old ruins. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 19:03:51</td><td>BEIRUT (AP) - Islamic State group releases new audio message purportedly from leader al-Baghdadi.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 19:23:00</td><td>"No one should believe that the war that we are waging is the war of the Islamic State. It is the war of all Muslims, but the Islamic State is spearheading it. It is the war of Muslims against infidels."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-14 21:15:00</td><td>Islamic State issues audio of Baghdadi calling supporters to join him</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-05-14 21:15:00</td><td>BEIRUT (Reuters) - The leader of the Islamic State militant group that controls swathes of Syria and Iraq issued an audio statement on Thursday in which he called on supporters to join him or to take up arms wherever they live in the world.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/2/5/5/v/image.related.articleLeadwide.620x349.gh24zh.png/1431644615965.jpg'></td><td>2015-05-14 23:03:55</td><td>"They claim that they are defending the Sunnis ... they are lying. It is a desperate attempt to deter Muslims from joining the Islamic State."</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/2/5/5/v/image.related.articleLeadwide.620x349.gh24zh.png/1431644615965.jpg'></td><td>2015-05-14 23:03:55</td><td>Islamic State considers all those who oppose it as infidels.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/2/5/5/v/image.related.articleLeadwide.620x349.gh24zh.png/1431644615965.jpg'></td><td>2015-05-14 23:03:55</td><td>Thought to be wounded and incapacitated, this is an image of the militant leader of Islamic State, Abu Bakr al-Baghdadi, taken from a propaganda video.</td></tr>
 </table></body></html>

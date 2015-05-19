@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,7 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/17/102098490-493360985.80x60.jpg?v=1413575309'></td><td>2015-04-22 02:24:00</td><td>The advisers will help Yahoo "determine the most promising opportunities to maximize value" for the Yahoo Japan stake, said Mayer.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/17/102098490-493360985.80x60.jpg?v=1413575309'></td><td>2015-04-22 02:24:00</td><td>Investors have been urging Mayer to monetize the Yahoo Japan stake separately, after she announced plans to spin off the Alibaba stake in January, which could be worth $40 billion.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/17/102098490-493360985.80x60.jpg?v=1413575309'></td><td>2015-04-22 02:24:00</td><td>Yahoo shares rose after the announcement, following disappointing earnings results, trading up about 1 percent from their close at $44.49 on Nasdaq.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/17/102098490-493360985.80x60.jpg?v=1413575309'></td><td>2015-04-22 02:24:00</td><td>Yahoo!</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/17/102098490-493360985.80x60.jpg?v=1413575309'></td><td>2015-04-22 02:24:00</td><td>Investors have been urging Mayer to monetize the Yahoo Japan stake separately, after she announced plans to spin off the Alibaba stake in January, which could be worth $40 billion.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/10/17/102098490-493360985.80x60.jpg?v=1413575309'></td><td>2015-04-22 02:24:00</td><td>Yahoo shares rose after the announcement, following disappointing earnings results, trading up about 1 percent from their close at $44.49 on Nasdaq.</td></tr>
 </table></body></html>

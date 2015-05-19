@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,9 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s56xKyjah3OfINtYWsF5aA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/2625fca06018b50d710f6a706700fe77.jpg.cf.jpg'></td><td>2015-03-15 21:24:37</td><td>Timeline of events in life of wealthy eccentric Robert Durst</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s56xKyjah3OfINtYWsF5aA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/2625fca06018b50d710f6a706700fe77.jpg.cf.jpg'></td><td>2015-03-15 21:24:37</td><td>HBO airs the first episode of a six-week documentary, "''The Jinx: The Life and Deaths of Robert Durst."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 15:04:07</td><td>Real estate heir Robert Durst arrested in New Orleans</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 18:00:36</td><td>Robert Durst of HBO's "The Jinx" arrested in New Orleans</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 19:11:45</td><td>"Years in the making, their thorough research and dogged reporting reignited interest in Robert Durst's story with the public and law enforcement."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 06:03:44</td><td>Who is Robert Durst?</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 18:50:31</td><td>Millionaire Robert Durst was illegally arrested on charges that he murdered a woman in California, as well as drug and weapons charges filed in New Orleans, attorneys said in court papers Friday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/04/11/us/robert-durst-gun-charge/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-11 11:15:29</td><td>Robert Durst charged in handgun case</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 18:00:36</td><td>Robert Durst of HBO's "The Jinx" arrested in New Orleans</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s56xKyjah3OfINtYWsF5aA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/2625fca06018b50d710f6a706700fe77.jpg.cf.jpg'></td><td>2015-03-15 21:24:37</td><td>Timeline of events in life of wealthy eccentric Robert Durst</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/s56xKyjah3OfINtYWsF5aA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/ap_webfeeds/2625fca06018b50d710f6a706700fe77.jpg.cf.jpg'></td><td>2015-03-15 21:24:37</td><td>HBO airs the first episode of a six-week documentary, "''The Jinx: The Life and Deaths of Robert Durst."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 18:50:31</td><td>Millionaire Robert Durst was illegally arrested on charges that he murdered a woman in California, as well as drug and weapons charges filed in New Orleans, attorneys said in court papers Friday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://edition.cnn.com/2015/04/11/us/robert-durst-gun-charge/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-11 11:15:29</td><td>Robert Durst charged in handgun case</td></tr>
 </table></body></html>

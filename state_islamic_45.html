@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/16/10/7660053/3/square_gallery_thumb.jpg'></td><td>2015-03-15 13:50:39</td><td>Former hostage Javier Espinosa who had been held in Syria by Islamic State extremists has described mock executions and other forms of psychological torture.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/OxTRiGGnSyuNhZqolwD6MQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/27a03ea9eba0d50b700f6a706700e39a.jpg'></td><td>2015-03-15 13:50:47</td><td>Espinosa said he and the other hostages dubbed three English jihadis who were part of the Islamic Stage group "The Beatles" - even though the world-famous Liverpool band had four members.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/iraqi-fighters-tikrit-2015-3-13.jpg'></td><td>2015-03-13 16:12:00</td><td>Islamic State is on the back foot in the north, where Shi'ite militia and Kurdish forces known as peshmerga went on the offensive around the oil-rich city of Kirkuk on Friday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/iraqi-fighters-tikrit-2015-3-13.jpg'></td><td>2015-03-13 16:12:00</td><td>The Shi'ite militia are accused of committing abuses against Sunnis in other territory they have retaken from Islamic State - charges they deny.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/iraqi-fighters-tikrit-2015-3-13.jpg'></td><td>2015-03-13 16:12:00</td><td>Islamic State fighters overran Tikrit last June during a lightning offensive that was halted just outside Baghdad.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/v_VesSHTTtoiWPiXe6bCRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-13T231348Z_2_LYNXMPEB2C0YL_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-13 23:13:48</td><td>Islamic State spokesman Abu Mohammad al-Adnani said in an audio-recording published on Thursday that its fighters remained "steadfast" and were growing in strength, dismissing its enemies claims of gains in Tikrit as "fake".</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/v_VesSHTTtoiWPiXe6bCRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-13T231348Z_2_LYNXMPEB2C0YL_RTROPTP_2_MIDEAST-CRISIS-IRAQ.JPG'></td><td>2015-03-13 23:13:48</td><td>A source in the military command said Iraqi forces would not move forward until reinforcements reached Tikrit, of which Islamic State still holds around half.</td></tr>
 </table></body></html>

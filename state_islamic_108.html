@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 21:50:33</td><td>NEW YORK - Prosecutors have charged a fourth man in a New York City terrorism case involving recruitment by the Islamic State.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 21:52:16</td><td>NEW YORK - A fourth man was charged on Monday in a terrorism case accusing him and others with plotting to have U.S. residents travel overseas to fight for the Islamic state.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/7N0CX1MiQbRdqj.UJDdOkw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/ny.curbed.vox.com/e5db82352b315bff730bc44afdd4ca37.cf.jpg'></td><td>2015-04-06 21:52:23</td><td>4th man charged in NYC over Islamic State recruitment plot</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 00:46:28</td><td>The charges against Kasimov come amid a spate of recent terrorism cases related to the Islamic State's efforts to attract foreign fighters or encourage sympathizers to launch an attack in America.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 00:46:28</td><td>Prosecutors accused Kasimov of working closely with another man, Abror Habibov, to raise $1,600 for a third, Akhror Saidakhmetov, to travel to Syria to join the Islamic State militant group, also known as ISIS or ISIL.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 05:20:20</td><td>NEW YORK (AP) - A terror suspect is set to face charges he helped raise $1,600 in a plot to have U.S. residents travel overseas to fight for the Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/04/article-doc-1j6se-6XX4yzP8LHSK2-690_634x421.jpg'></td><td>2015-04-04 08:01:38</td><td>In Sydney, hundreds braved the rain to rally in Martin Place, near the site of a deadly siege in which a lone gunman inspired by the Islamic State group took customers and staff hostage in a cafe in December.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/04/article-doc-1j6se-6XX4yzP8LHSK2-690_634x421.jpg'></td><td>2015-04-04 08:01:38</td><td>Protesters waving Australian flags and carrying signs such as "Yes Australia. No Sharia" rallied around the country on Saturday in events organisers said were against Islamic extremism.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/04/article-doc-1j6se-6XX4yzP8LHSK2-690_634x421.jpg'></td><td>2015-04-04 08:01:38</td><td>Hundreds protest Islamic law in Australia</td></tr>
 </table></body></html>

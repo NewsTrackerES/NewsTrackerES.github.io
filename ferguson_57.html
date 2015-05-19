@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 17:01:19</td><td><a href='ferguson_51.html'>(AP) - Leaders of the St. Louis suburb of Ferguson, Missouri, are considering removing or replacing a makeshift shrine to Michael Brown that has lined the middle of the street where he was killed since last summer. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:14:38</td><td><a href='ferguson_52.html'>"The way we deal with this memorial is how we move forward in Ferguson, because that memorial represents the best and the worst of Ferguson." (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 17:01:19</td><td><a href='ferguson_51.html'>(AP) - Leaders of the St. Louis suburb of Ferguson, Missouri, are considering removing or replacing a makeshift shrine to Michael Brown that has lined the middle of the street where he was killed since last summer. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:14:38</td><td><a href='ferguson_52.html'>Ferguson Mayor James Knowles III, while appreciative of what the memorial's status as a nexus of protests and prayers, said it is now a public safety issue that comes with "any time you leave items in the middle of the roadway." (3)</a></td></tr>
 </table></body></html>

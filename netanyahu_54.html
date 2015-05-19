@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/8aaMvEolkbn526y897FRCA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T181558Z_1007000001_LYNXMPEB2M0U4_RTROPTP_2_CNEWS-US-ISRAEL-NETANYAHU-ARABS.JPG'></td><td>2015-03-23 18:15:58</td><td>Netanyahu tells Israel's Arabs he 'regrets' election-day rallying call</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:04:44</td><td>In a video clip posted on his Facebook page, Netanyahu told representatives of Israel's Arab community: "I know that the things I said a few days ago offended Israel's Arabs. I had no intention for this to happen, I regret this."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:06:28</td><td>JERUSALEM (Reuters) - Israeli Prime Minister Benjamin Netanyahu said on Monday he regretted offending Israel's Arabs during a rallying call on election day last week that his critics had denounced as racist.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:06:28</td><td>Speaking to the group of Israeli Arabs at his official residence in Jerusalem on Monday, Netanyahu said: "I consider myself as prime minister of each one of you, of all Israel's citizens, regardless of religion, race or gender."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:41:02</td><td>Earlier this year, House Speaker John Boehner caused a political uproar when, without consulting the White House, he invited Netanyahu to address a joint meeting of Congress.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 15:41:02</td><td>US Republicans hail Netanyahu comeback win in Israel</td></tr>
 </table></body></html>

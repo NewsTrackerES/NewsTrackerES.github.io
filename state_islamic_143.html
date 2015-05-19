@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 19:01:49</td><td>Large parts of Anbar had slipped from the government's grasp even before Islamic State overran the northern city of Mosul last June and proclaimed a caliphate straddling the border between Iraq and Syria.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 21:00:46</td><td>Prime Minister Haider al-Abadi announced the new Anbar offensive last week, but Islamic State (IS) then overran two districts on the northern outskirts of the provincial capital Ramadi.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 21:00:46</td><td>Islamic State has reinforced its ranks with fighters from elsewhere in the province and planted bombs to hinder the advance, said Anbar provincial council member, Athal al-Fahdawi.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297686146709_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-10 19:43:49</td><td>On March 10, Booker, accompanied by the two undercover agents, made an Islamic State propaganda video near Marshall Army Airfield at Fort Riley, prosecutors said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297686146709_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-10 19:43:49</td><td>Booker has been charged with three criminal counts including attempting to use a weapon of mass destruction and attempting to provide material support to Islamic State, a militant group that has captured parts of Iraq and Syria over the past year and has symphathizers in several countries.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297686146709_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-10 19:43:49</td><td>Since October, he had unknowingly been in contact with an undercover FBI agent and in March of this year was introduced to another undercover agent who posed as a high-ranking Islamic sheik planning attacks on the United States.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297686146709_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-10 19:43:49</td><td>WASHINGTON/KANSAS CITY - A U.S. man was arrested on Friday as part of a sting operation by the FBI in which he was plotting a suicide car bombing at Fort Riley army base in Kansas in support of the Islamic State militant group, prosecutors said.</td></tr>
 </table></body></html>

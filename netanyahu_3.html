@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,11 +49,10 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>But expressing the unease felt by many Jews abroad over such comments, Jair Melchior, Denmark's chief rabbi, said he was "disappointed" by Mr Netanyahu's call.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Benjamin Netanyahu tells Europe's Jews Israel is home, Denmark rabbi says terror no reason to move</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Israeli Prime Minister Benjamin Netanyahu arrives to chair the weekly cabinet meeting at his Jerusalem office on Sunday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>For some Israeli experts, though, Mr Netanyahu's call was a natural expression of the nation's ethos.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>"Jews have been murdered again on European soil only because they were Jews," Mr Netanyahu said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Shlomo Avineri, an Israeli professor of political science, described Mr Netanyahu's call as "an intellectual and moral mistake" and accused him of taking a populist stance for electoral purposes.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:24:00</td><td>Israel's Netanyahu takes conciliatory tone</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150403105408-sot-netanyahu-iran-nuclear-deal-grave-danger-00010905-large-169.jpg'></td><td>2015-04-03 17:04:25</td><td>" ... I want to make clear to all: The survival of Israel is non-negotiable," Netanyahu said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Benjamin Netanyahu tells Europe's Jews Israel is home, Denmark rabbi says terror no reason to move</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Israeli Prime Minister Benjamin Netanyahu arrives to chair the weekly cabinet meeting at his Jerusalem office on Sunday.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>For some Israeli experts, though, Mr Netanyahu's call was a natural expression of the nation's ethos.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>"Jews have been murdered again on European soil only because they were Jews," Mr Netanyahu said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Shlomo Avineri, an Israeli professor of political science, described Mr Netanyahu's call as "an intellectual and moral mistake" and accused him of taking a populist stance for electoral purposes.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 20:46:59</td><td>Israel's Netanyahu declares victory in tight election</td></tr>
 </table></body></html>

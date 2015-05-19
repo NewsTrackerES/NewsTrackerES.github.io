@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/.sviomfE58KS.q5qhAaD3A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/afp.com/d45b62e1644c3c9c9a31a2109d1627953f3490f9.jpg.cf.jpg'></td><td>2015-04-10 12:23:57</td><td>US plans for anti-Islamic State training drawing skepticism</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:23:49</td><td>ISTANBUL - The fight against the Islamic State group received a jolt of energy when the United States and Turkey sealed a pact to train and arm Syrian rebels.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:23:49</td><td>In addition to IS militants, the new recruits would likely face attacks from a Syrian government wary of a Western-backed force, as well as Islamic militants such as the al-Qaida-linked Nusra Front.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 13:34:00</td><td>BAGHDAD (AP) - An Iraqi Kurdish security official says the Islamic State group has released more than 200 Yazidi elderly and children after eight months of captivity.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 13:34:00</td><td>Islamic State group releases 216 Yazidi prisoners in Iraq</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 13:34:00</td><td>Tens of thousands of Yazidi people fled in August last year when the Islamic State group captured the town of Sinjar.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 19:01:31</td><td>Yazidis released by Islamic State militants arrive in Kirkuk, 180 miles (290 kilometers) north of Baghdad, Iraq, Wednesday, April 8, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-08 19:01:31</td><td>BAGHDAD (AP) - The Islamic State group released more than 200 Yazidis on Wednesday after holding them for eight months, the latest mass release of captives by the extremists targeted by U.S.-led airstrikes and an Iraqi ground offensive.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-02 20:20:14</td><td>Lawmaker: Islamic State kills some 25 captive Iraqi Yazidis</td></tr>
 </table></body></html>

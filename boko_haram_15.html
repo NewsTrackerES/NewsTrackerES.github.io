@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/07/266CE69600000578-2984470-image-a-1_1425768305156.jpg'></td><td>2015-03-07 23:01:01</td><td>With Boko Haram's wide network in North Africa, the Islamic State's projection of creating an Islamic Caliphate is gaining headway.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/07/266CE69600000578-2984470-image-a-1_1425768305156.jpg'></td><td>2015-03-07 23:01:01</td><td>Rita Katz, from terrorism monitor SITE Intelligence Group, said: 'Boko Haram is now being elevated from a local jihadi group to an important arm of the Islamic State.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a43b5-642.jpg'></td><td>2015-03-07 23:18:57</td><td>Nigeria's militant Islamist group Boko Haram has pledged allegiance to the Islamic State group, which rules a self-declared caliphate in parts of Iraq and Syria, according to a video posted online.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/4987942-3x2-340x227.jpg'></td><td>2015-03-07 20:56:50</td><td>On Saturday, four bomb blasts killed at least 50 people in the northeastern Nigerian city of Maiduguri in the worst attacks there since Boko Haram militants tried to seize the town in two major assaults earlier this year.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297672491795_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 22:11:36</td><td>Boko Haram has killed thousands and kidnapped hundreds during its six-year campaign to carve out an Islamist state in northern Nigeria.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297672491795_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 22:11:36</td><td>Nigeria's Boko Haram pledges allegiance to Islamic State</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-07 22:30:04</td><td>The pledge of allegiance was attributed to Boko Haram leader Abubakar Shekau.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>Retreating Boko Haram militants have murdered their so-called "wives" - women and girls they held as slaves - and other captives as military offensives by Nigeria and its neighbours advanced, Zeid said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>The current dry season has intensified Boko Haram incursions into Cameroon, Chad and Niger, spreading bloodshed and desolation even more widely, the rights chief said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>It called for those who have committed crimes on behalf of Boko Haram to be brought before competent courts of the affected states and held accountable.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>Boko Haram has been attacking towns and villages in northern Nigeria and border regions of neighbouring Cameroon, Chad and Niger.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 09:01:08</td><td>UN rights chief: Boko Haram fighters murdered captive women</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 20:07:25</td><td>Despite a handful of isolated attacks, Boko Haram largely failed to deliver on threats to disrupt the polls in the north.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/uQ5WiaFpYHZJZ9BOBDokTQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-01T090947Z_2_LYNXMPEB301CO_RTROPTP_2_NIGERIA-ELECTION.JPG.cf.jpg'></td><td>2015-04-01 20:20:59</td><td>N'DJAMENA (Reuters) - Chad's army said its forces had killed hundreds of Boko Haram militants and lost nine of its own troops in clashes in northern Nigeria on Wednesday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 21:20:39</td><td>"There was fighting and we recorded nine dead and 16 injured. There were hundreds of dead on Boko Haram's side," said Colonel Azem Bermandoa, a spokesman for Chad's army.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/1/4826e9612bb44bf2ba5dc2160f415b30_18.jpg'></td><td>2015-04-02 03:48:51</td><td>Soldiers from Chad and Niger drove the group from Malam Fatori, one of Boko Haram's last major footholds near Nigeria's border with Niger, earlier this week.</td></tr>
 </table></body></html>

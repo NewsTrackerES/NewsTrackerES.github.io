@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,14 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 13:35:15</td><td>Following the Baltimore turmoil, Hillary Rodham Clinton made a plea for criminal justice changes that could aid urban communities.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 13:35:15</td><td>Former Maryland Gov. Martin O'Malley, who is expected to challenge Clinton for the Democratic nomination, has been at the center of the discussions about Baltimore's issues.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 13:35:15</td><td>Paul, who has made a point of reaching out to black communities, has drawn criticism for comments he made during the Baltimore unrest.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>But it was when a grand jury concluded that too many arrests were being made in black neighborhoods without merit, and when the city settled a lawsuit from people who said they were wrongly arrested for minor offenses - the sort of concerns driving some of the anger in Baltimore today.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>BALTIMORE (AP) - Martin O'Malley often casts Baltimore as the comeback city that overcame the ravages of drugs and violence when he was mayor.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>Baltimore unrest puts spotlight on O'Malley's stint as mayor</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 11:54:40</td><td>"The people of Baltimore were given ample opportunities to express at the ballot box their satisfaction or dissatisfaction with the direction that our city took to reduce violent crime, to reduce homicides, to make our city more livable," O'Malley said.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-03 11:55:00</td><td>But O'Malley says those judging him in hindsight should remember the crime and despair of the Baltimore he inherited as mayor.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-03 11:55:00</td><td>In 2005, a Baltimore grand jury found excessive arrests in black neighborhoods and recommended retraining so officers would use better judgment.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XLE803km0_odvgVTbhfI9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a2e5fd64cd496813750f6a706700667a.jpg'></td><td>2015-05-03 15:52:40</td><td>O'Malley's record as Baltimore mayor under scrutiny</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-03 15:53:01</td><td>In the 1990s, more than 300 people were murdered each year in Baltimore.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-15 01:53:00</td><td>BOSTON (AP) - Martin O'Malley plans to announce his presidential intentions on May 30 in Baltimore, a move that could present another Democratic challenger to Hillary Rodham Clinton.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2GFqL829iB2TkIP7TLPuew--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0d1f991d6b236115760f6a70670049e9.jpg'></td><td>2015-05-15 01:53:08</td><td>O'Malley, mayor from 1999 until he was elected governor in 2006, has defended his work to curb violent crime in Baltimore and signaled it would play a leading role in a presidential campaign.</td></tr>
 </table></body></html>

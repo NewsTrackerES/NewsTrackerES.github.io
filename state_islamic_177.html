@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 13:48:58</td><td>Islamic State behind Riyadh police deaths say Saudi authorities</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 14:03:28</td><td>Mohammed Abdulrahman Abu Niyan, 23, has confessed to carrying out the shootings in March and April on behalf of Islamic State, after meeting a representative of the group in the Saudi capital, the ministry said in a statement carried by state media.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 03:36:31</td><td>(AP) - A spokesman for a Muslim couple in Alabama on Monday said their 20-year-old daughter fled a Birmingham suburb to join Islamic State militants in Syria after being recruited via the Internet.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 03:36:31</td><td>The family and the Birmingham Islamic Society have spoken out against violent extremism.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 03:36:31</td><td>There have been other reports of young people leaving or attempting to leave the U.S. for the Islamic State in recent months.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 03:47:00</td><td>Shibly, an attorney and chief executive director for the Florida chapter of the Council on American-Islamic Relations, said Hoda left in November.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 03:47:00</td><td>Shibly said he's talked with families who have also lost their children to the Islamic State group have similar stories.</td></tr>
 </table></body></html>

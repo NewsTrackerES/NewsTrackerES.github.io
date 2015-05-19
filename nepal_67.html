@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 10:02:42</td><td><a href='nepal_18.html'>A New Zealand woman in Nepal has described the "rolling and rumbling" of a powerful earthquake she believes has extensively damaged Kathmandu. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 22:44:04</td><td><a href='nepal_26.html'>The New Zealand Ministry of Foreign Affairs and Trade has confirmed just over 100 New Zealanders in Nepal are safe but is still checking on others. (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 23:46:54</td><td><a href='nepal_30.html'>Caritas teams in Nepal are focusing on rescue operations and providing food and shelter to people who have lost their homes. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 14:45:44</td><td><a href='nepal_22.html'>"Please help find my baby sister. She was working in an orphanage in Nepal," her sister, Amanda-Sue Markham, posted on Twitter. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 18:47:56</td><td><a href='nepal_24.html'>Fairfax Media journalist Angela Macdonald-Smith was visiting Nepal when a 7.9 magnitude earthquake struck near the capital, Kathmandu on Saturday, here she reflects on what she experienced. (2)</a></td></tr>
 </table></body></html>

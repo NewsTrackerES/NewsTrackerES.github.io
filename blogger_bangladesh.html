@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -51,5 +51,5 @@
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-27 15:36:02</td><td>American blogger hacked to death in Bangladesh</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-03-02 10:59:37</td><td>Dhaka: Bangladesh's anti-terrorism unit said it had arrested on Monday the main suspect in the killing of a U.S. blogger who died in Dhaka last week in the latest attack on critics of religious extremism in the Muslim-majority nation.</td></tr>
   <tr><td style='display:none'>2</td><td><img src='http://cbsnews2.cbsistatic.com/hub/i/r/2015/02/27/a8b9efe1-6ceb-42e7-b086-73dbc908b921/thumbnail/620x350/298baa0803945182bc885f9977e1223f/avijit-roy-killed.jpg'></td><td>2015-03-02 16:00:17</td><td>Arrest in case of U.S. blogger murdered in Bangladesh</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 09:52:08</td><td><a href='blogger_bangladesh_1.html'>A court in Bangladesh's capital on Wednesday indicted a leader of a hard-line Islamist group and seven students in the hacking death of an atheist blogger two years ago. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 09:52:08</td><td><a href='blogger_bangladesh_1.html'>The Metropolitan Sessions court issued the indictments after accepting the police investigation into the killing of blogger Ahmed Rajib Haider in front of his house in Dhaka's Mirpur area. (4)</a></td></tr>
 </table></body></html>

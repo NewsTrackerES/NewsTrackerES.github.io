@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:39:59</td><td><a href='baltimore_39.html'>Paul told radio host Laura Ingraham that he had traveled through Baltimore by train on the night riots broke out following the death of an African-American man in police custody and that he was glad the train did not stop. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 22:50:07</td><td><a href='baltimore_41.html'>But Paul's comments about the riots in Baltimore following the death of an African-American man while in police custody have been criticized as out of touch for someone who has spent so much time seeking inroads with the black community. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 03:40:08</td><td>BALTIMORE - A senior at Washington College has been awarded a $62,900 literary prize.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-16 03:40:08</td><td>Alexander Vidiani, who grew up in Hunt Valley, a Baltimore suburb, was named the Sophie Kerr winner Friday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 17:55:38</td><td>Prime Minister Benjamin Netanyahu has been a leading critic of the nuclear talks, which aim to curb Iran's suspect nuclear program.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/45/43/7755978/5/920x920.jpg'></td><td>2015-04-02 17:55:38</td><td>Netanyahu has said he believes the deal, which must be finalized in the coming months, will leave too much of Iran's nuclear infrastructure intact.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/45/43/7755978/5/920x920.jpg'></td><td>2015-04-02 17:55:38</td><td>"Any deal must significantly roll back Iran's nuclear capabilities and stop its terrorism and aggression," Netanyahu said on Twitter, minutes before the announcement from Lausanne.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 18:31:26</td><td>Speaking with NBC television, Netanyahu insisted he was "proud to be the prime minister of all Israeli citizens, Arabs and Jews alike" after triggering outrage for warning supporters that Israeli Arabs were "turning out in droves" to the polls.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 18:31:26</td><td>Netanyahu denies abandoning two-state solution</td></tr>
 </table></body></html>

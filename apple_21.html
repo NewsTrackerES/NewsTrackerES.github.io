@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 10:25:20</td><td>SEOUL, South Korea (AP) - A consumer survey showed the popularity of the iPhone 6 has driven Apple's market share in China to its highest ever while Samsung has continued to lose ground.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 10:25:20</td><td>That was a record for Apple in the world's largest smartphone market, but not enough to catch up Chinese maker Xiaomi, which claimed 27.6 percent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td>A February 2015 IDC report placed Android at 81.5% global market share in 2014 against Apple's 14.8%.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td>Last week, Apple had announced a buyback program for China, with manufacturer Foxconn to oversee the resale of used handsets, initially through a selection of e-commerce websites and then other physical stores.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td>Apple Store trade-ins are run in partnership with an external company.</td></tr>
 </table></body></html>

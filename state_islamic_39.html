@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/tikrit-iraq-islamic-state-offensive.jpg'></td><td>2015-03-11 10:27:36</td><td>Mosul in the far north is the largest city held by the ultra-radical Islamic State, who now rule a self-declared cross-border caliphate in Sunni regions of Syria and Iraq.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/tikrit-iraq-islamic-state-offensive.jpg'></td><td>2015-03-11 10:27:36</td><td>Security officials said Islamic State fighters blew up a bridge over the Tigris on Tuesday, aiming to hinder any advance.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/tikrit-iraq-islamic-state-offensive.jpg'></td><td>2015-03-11 10:27:36</td><td>A Reuters photographer saw dozens of families, who earlier fled al-Alam to escape Islamic State rule, return to the town, celebrating and slaughtering sheep for the victorious forces.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/0/p/g/q/image.related.articleLeadwide.620x349.140o7g.png/1426074861799.jpg'></td><td>2015-03-11 03:45:29</td><td>'Israeli spy' Musallam executed by child, according to Islamic State video</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/0/p/g/q/image.related.articleLeadwide.620x349.140o7g.png/1426074861799.jpg'></td><td>2015-03-11 03:45:29</td><td>The mother and father of Muhammad Musallam, an Israeli Arab held by Islamic State in Syria as an alleged spy, hold pictures of him in their Jerusalem home in February.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/0/p/g/q/image.related.articleLeadwide.620x349.140o7g.png/1426074861799.jpg'></td><td>2015-03-11 03:45:29</td><td>"I tell my father and my son: Repent to God. I say to the spies who spy on Islamic State: You will not be successful, they will expose you," Musallam said in the latest video, in Arabic.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/0/p/g/q/image.related.articleLeadwide.620x349.140o7g.png/1426074861799.jpg'></td><td>2015-03-11 03:45:29</td><td>An image from a video reportedly released by the Islamic State through Al-Furqan, one of the Jihadist platforms used by the militant organisation on the web, shows a youth identifying himself as 19-year-old Mohammed Said Ismail Musallam from Jerusalem.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/0/p/g/q/image.related.articleLeadwide.620x349.140o7g.png/1426074861799.jpg'></td><td>2015-03-11 03:45:29</td><td>Video posted online by Islamic State shows a boy killing an Israeli Arab accused by IS as working for Mossad.</td></tr>
 </table></body></html>

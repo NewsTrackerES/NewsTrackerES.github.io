@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 17:46:48</td><td>The nurse, who wasn't identified to protect his privacy, worked for the non-governmental aid group Emergency in Sierra Leone, one of the African countries hardest hit by often-fatal Ebola.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 17:46:48</td><td>He will soon be transferred to Rome's Spallanzani infectious disease hospital, which last year successfully treated an Italian doctor who contracted Ebola after working in Sierra Leone, also for Emergency.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 13:29:29</td><td>But two experimental Ebola vaccines - developed by GlaxoSmithKline and jointly by Merck and NewLink Genetics - being tested on volunteers may not yield sufficient data on efficacy as case numbers fall, Kieny said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-12 13:29:29</td><td>The U.N. agency this week hosted a two-day experts' meeting on Ebola research and development after the world's largest epidemic that has killed more than 11,000 since December 2013.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-12 13:29:29</td><td>As Ebola disappears, no useful data seen from vaccine trials -WHO</td></tr>
 </table></body></html>

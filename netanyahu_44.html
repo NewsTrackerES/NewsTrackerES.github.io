@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,14 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1721g-6X7gGRFak-HSK1-577_634x478.jpg'></td><td>2015-03-18 14:56:14</td><td>Netanyahu swept to a stunning triumph, securing a third straight term despite a tenure of deepening tensions with the Palestinians and shaky relations with US President Barack Obama.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1721g-6X7gGRFak-HSK1-577_634x478.jpg'></td><td>2015-03-18 14:56:14</td><td>Earlier this month, Iran's President Hassan Rouhani said Israel posed the "greatest danger" in the region, after Netanyahu made a speech to the US Congress arguing against a nuclear deal with Tehran.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 23:35:20</td><td>Under Netanyahu, Israel has deepened its hold on the West Bank, adding Jewish settlers to the point where the territory may soon become inseparable from Israel proper.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 23:35:20</td><td>In recent days, Netanyahu has said that he would not allow the creation of a Palestinian state if elected.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 23:35:20</td><td>With Likud as well as rightist and religious allies, Netanyahu still only commands 57 out of 120 parliament seats.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>Breaking away from Netanyahu's nationalist Likud two years ago after a falling out with the premier, he adopted a vaguely centrist platform and flirted with Isaac Herzog's more moderate Zionist Union.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>If Kahlon does go with Netanyahu, it would give the hard-liner a fourth term that, if completed, would make him Israel's longest-serving leader, on par with the nation's founder David Ben Gurion.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>Kahlon seems to dislike Netanyahu intensely, and he certainly has the power to crown Herzog, a mild-mannered lawyer and scion of a venerable family of Zionist founders.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>Netanyahu knows the complications of all this and may try to draw in Herzog, to give his government a more moderate character.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/x/5/t/image.related.articleLeadwide.620x349.1m3srb.png/1426835267076.jpg'></td><td>2015-03-20 07:07:59</td><td>Copies of ballot papers and campaign posters for Israeli Prime Minister Benjamin Netanyahu's Likud Party abandoned after the nation's elections on Wednesday.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Qk9CwrG1KDmfElDKAC1tkg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T222230Z_1_LYNXMPEB2J122_RTROPTP_2_ISRAEL-ELECTION.JPG'></td><td>2015-03-20 22:22:30</td><td>Netanyahu row casts doubt on Obama pledge to 'have Israel's back'</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150403105408-sot-netanyahu-iran-nuclear-deal-grave-danger-00010905-large-169.jpg'></td><td>2015-04-03 17:04:25</td><td>" ... I want to make clear to all: The survival of Israel is non-negotiable," Netanyahu said.</td></tr>
 </table></body></html>

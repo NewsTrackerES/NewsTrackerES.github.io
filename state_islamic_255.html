@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:36:10</td><td><a href='state_islamic_107.html'>JOHANNESBURG (AP) - South African security authorities say a teenager was taken off an airline flight because the 15-year-old girl was suspected to be leaving her home in Cape Town to join the Islamic State group. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 07:01:53</td><td><a href='state_islamic_110.html'>The teenager was intercepted at Cape Town airport on Sunday after evidence was found in her bedroom indicating that she had been in contact with Islamic State recruiters, the ministry added. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 08:48:10</td><td><a href='state_islamic_113.html'>South African authorities have detained a 15-year-old girl who was travelling to join Islamic State, the state security ministry has said - the country's first known arrest linked to the militant group. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 10:56:19</td><td><a href='state_islamic_59.html'>The report said that ISIL's Islamic sharia courts in Mosul had also meted out cruel punishments including stoning and amputation. (6)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 12:14:12</td><td><a href='state_islamic_57.html'>The report also details alleged crimes committed against Iraq's minority Yazidi community, viewed as apostates by the Islamic State extremists. (5)</a></td></tr>
 </table></body></html>

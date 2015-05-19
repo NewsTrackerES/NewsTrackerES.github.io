@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 16:16:56</td><td><a href='apple_34.html'>Due to the thinness of the panel, Apple created a new mechanism under the keys to help with their feedback and bounce. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:57:47</td><td><a href='apple_36.html'>Same here... no more Apple for me. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 16:27:35</td><td>(Reuters) - General Electric Co on Monday announced collaborations with Qualcomm Inc and Apple Inc as it uses digital technology and the growing appetite for data to reinvigorate its 130-year-old lighting business.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 16:27:35</td><td>GE ties up with Qualcomm, Apple in new lighting business bet</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 16:27:35</td><td>GE also said it will produce an LED bulb compatible with Apple's yet-to-launch connected-device platform HomeKit.</td></tr>
 </table></body></html>

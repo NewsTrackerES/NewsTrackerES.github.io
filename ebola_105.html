@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:00:11</td><td><a href='ebola_50.html'>All 40 participants who received vaccine produced anti-Ebola antibodies within 28 days, with most responding sooner. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:07:48</td><td><a href='ebola_52.html'>There is no licensed treatment or vaccine for Ebola, and the World Health Organization last year endorsed rushing potential ones through trials in a bid to stem the epidemic still simmering in west Africa. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:00:06</td><td><a href='ebola_20.html'>Sirleaf told fellow regional leaders and delegates at an international conference on Ebola in Brussels that restoring economic growth in Liberia, Guinea and Sierra Leone is a long-term and costly task. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 19:15:00</td><td><a href='ebola_21.html'>In addition, their health sectors have been partially wiped out by the epidemic, or forced to divert resources to fighting Ebola at the expense of other diseases like measles, malaria and AIDS. (5)</a></td></tr>
 </table></body></html>

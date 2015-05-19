@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 19:21:26</td><td>NC man's obituary urges readers to reject Hillary Clinton</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 19:21:26</td><td>She says that recollection prompted his family to ask obituary readers to reject Clinton's presidential bid.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 19:22:13</td><td>And don't vote for Hillary Rodham Clinton in 2016.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201504/941/1745097732_4176749831001_7cfde8ff87bbe1013c67669a1167d617-tmb1.jpg?pubId=1745097732'></td><td>2015-04-20 02:36:15</td><td>"Also, the family respectfully asks that you do not vote for Hillary Clinton in 2016. R.I.P. Grandaddy," the obituary read.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/o/v/k/j/image.related.articleLeadwide.620x349.1mom1d.png/1429503006667.jpg'></td><td>2015-04-20 04:10:27</td><td>Hillary Clinton talks to small business owners in Iowa.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/o/v/k/j/image.related.articleLeadwide.620x349.1mom1d.png/1429503006667.jpg'></td><td>2015-04-20 04:10:27</td><td>Supporters of Hillary Clinton await her arrival in Monticello, Iowa.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/o/v/k/j/image.related.articleLeadwide.620x349.1mom1d.png/1429503006667.jpg'></td><td>2015-04-20 04:10:27</td><td>New York: They're not in it to win it themselves - not yet, at least - but possible Democratic primary challengers to Hillary Clinton have plenty to say about the newly announced presidential candidate.</td></tr>
 </table></body></html>

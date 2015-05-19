@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,13 +49,11 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 20:30:04</td><td>WHO: Sharp decline in Ebola cases has now leveled off</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 20:30:04</td><td>"This is not what you want to see with Ebola."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 20:30:04</td><td>UNITED NATIONS (AP) " The steep decline in Ebola case numbers has leveled off over the past month and the development is a cause for concern, the official leading the World Health Organization's response to the outbreak said Friday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 20:30:04</td><td>More than 23,300 have been infected by Ebola, and almost 9,500 people have died.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Aylward was meeting Friday with the United Nations Ebola chief, Dr. David Nabarro, on how to end the outbreak that began in December, 2013.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Health officials have expressed optimism in recent weeks that the tide seems to be turning in the fight against the deadliest Ebola outbreak in history.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>"This is not what you want to see with Ebola."</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Now, for the final push to zero, the focus must swing to finding cases and tracing the personal contacts of each person infected with Ebola.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>The United Nations has said 10 times fewer people are being diagnosed with Ebola each week than in September.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 16:02:41</td><td>Such measures not only interfere with international travel and impact local economies, but also hamper Ebola response and recovery efforts because they make it more difficult for aid workers to move in and out of the affected countries, Aylward said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 20:30:04</td><td>UNITED NATIONS (AP) " The steep decline in Ebola case numbers has leveled off over the past month and the development is a cause for concern, the official leading the World Health Organization's response to the outbreak said Friday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 20:30:04</td><td>More than 23,300 have been infected by Ebola, and almost 9,500 people have died.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Aylward was meeting Friday with the United Nations Ebola chief, Dr. David Nabarro, on how to end the outbreak that began in December, 2013.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Health officials have expressed optimism in recent weeks that the tide seems to be turning in the fight against the deadliest Ebola outbreak in history.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Now, for the final push to zero, the focus must swing to finding cases and tracing the personal contacts of each person infected with Ebola.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>The United Nations has said 10 times fewer people are being diagnosed with Ebola each week than in September.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 16:02:41</td><td>Such measures not only interfere with international travel and impact local economies, but also hamper Ebola response and recovery efforts because they make it more difficult for aid workers to move in and out of the affected countries, Aylward said.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,8 +49,5 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81346000/jpg/_81346883_81346878.jpg'></td><td>2015-03-02 15:41:28</td><td>"I have a moral obligation to speak up in the face of these dangers while there is still time to avert them" Mr Netanyahu told the American Israel Public Affairs Committee (Aipac) conference in Washington.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81346000/jpg/_81346883_81346878.jpg'></td><td>2015-03-02 15:41:28</td><td>'No disrespect' in Netanyahu speech</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:00:05</td><td>Netanyahu: Iran nuclear deal could threaten Israel's survival, says Israel won't be passive</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 21:15:16</td><td>NETANYAHU: The days when the Jewish people are passive in the face of threats to annihilate us - those days are over.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 22:44:43</td><td>It was midway through last Tuesday's balloting that Mr. Netanyahu posted a video on his Facebook page expressing alarm that Arabs were "being bused to the polling stations in droves" by left-wing organizations.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81346000/jpg/_81346883_81346878.jpg'></td><td>2015-03-02 15:41:28</td><td>'No disrespect' in Netanyahu speech</td></tr>
 </table></body></html>

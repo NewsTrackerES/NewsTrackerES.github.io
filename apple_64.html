@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 13:45:13</td><td>More than 150 companies in the S&P 500 will report their results this week, including Apple, Ford and Exxon Mobil.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 13:50:50</td><td>US stock market rises early as investors look ahead to earnings from Apple, other big names</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/a6e97e2/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F21%2F7c%2F942036bc4dfea7736325ea8baa21%2Fresizes%2F500%2F150401-dip-aprilfools-editorial.jpg'></td><td>2015-04-27 16:13:10</td><td>NEW YORK (AP) - U.S. stocks are barely higher at midday as investors look ahead to Apple's results later today and a meeting by the Federal Reserve on interest rates.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:45:53</td><td>Apple rose 1 percent early Friday after it was announced that the company would be joining the Dow Jones industrial average, replacing AT&T.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 09:00:51</td><td>Researcher IHS expects shipments of more than 19 million Apple Watches this year, more than five times the number of all smartwatches shipped globally in 2014.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 11:30:04</td><td>Apple's offering is still expected to sell much better than any rival products to date.</td></tr>
 </table></body></html>

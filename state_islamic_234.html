@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 17:59:55</td><td>BEIRUT -- Activists say Islamic State fighters have pushed into the Syrian town of Palmyra, home to famed 2,000-year-old ruins.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/37/50/7993858/5/square_gallery_thumb.jpg'></td><td>2015-05-16 23:40:28</td><td>A video circulated on social media shows a man raising a black Islamic State flag on a building allegedly in northern Palmyra.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>What appears to be different this time is the sheer scale and systematic nature of the looting, especially in the parts of Syria controlled by the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>While there is no firm evidence of the amount of money being made by the Islamic State group from looting antiquities, satellite photos and anecdotal evidence confirm widespread plundering of archaeological sites in areas under IS control.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>As a number of experts point out, though, most sites in Iraq have not been completely excavated and there are likely more winged bull statues and stelae waiting to be found under the earthen mounds scattered throughout this country - assuming the Islamic State group and its diggers don't find them first.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>The Iraqi government is now rushing to document the remaining sites in the country, especially in the disputed province of Salahuddin, just south of the Islamic State stronghold in Nineweh province.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>Britain and the United States remain the biggest markets for antiquities, though wealthy collectors are emerging in China and the Gulf - especially for Islamic-era artifacts.</td></tr>
 </table></body></html>

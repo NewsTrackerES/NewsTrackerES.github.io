@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 18:14:12</td><td>(JERUSALEM) - Prime Minister Benjamin Netanyahu has apologized to Israel's Arab citizens for remarks he made during last week's parliament election and which offended members of the community.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 18:14:12</td><td>Israel?s Netanyahu Apologizes to Country?s Arab Minority</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 18:14:12</td><td>Netanyahu drew accusations of racism in Israel, especially from its Arab minority, and a White House rebuke when, just a few hours before polling stations were to close across the country, he warned that Arab citizens were voting "in droves."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:50:00</td><td>In the final days of the campaign, Netanyahu angered the U.S. by taking a tough stance toward the Palestinians and by saying a Palestinian state will not be established on his watch in the current climate of regional chaos and violence.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:50:00</td><td>Odeh also accused Netanyahu of "zigzagging" by saying one thing one day and a different another.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 20:52:29</td><td>The tough talk was part of a last-ditch attempt by Netanyahu to spur his more hard-line supporters to the polls after it appeared he was losing voters to a more hawkish party.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 20:52:29</td><td>Earlier Monday, Netanyahu secured a majority of backers in the new parliament and will later be tasked with forming the next government.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/netanyahu-1.jpg?w=620'></td><td>2015-03-23 23:49:42</td><td>In Washington, State Department spokeswoman Marie Harf told reporters Monday that she had not seen the Netanyahu apology but that the Israeli prime minister is hard to read because ?he said diametrically opposing things in the matter of a week.?</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 04:53:43</td><td>Netanyahu defended his election-day remarks in the days after the vote.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 01:31:07</td><td>"I will work to mend the rifts opened between different parts of society during these elections," Netanyahu said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1721g-6X7gGRFak-HSK1-577_634x478.jpg'></td><td>2015-03-18 14:56:14</td><td>Netanyahu swept to a stunning triumph, securing a third straight term despite a tenure of deepening tensions with the Palestinians and shaky relations with US President Barack Obama.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1721g-6X7gGRFak-HSK1-577_634x478.jpg'></td><td>2015-03-18 14:56:14</td><td>Earlier this month, Iran's President Hassan Rouhani said Israel posed the "greatest danger" in the region, after Netanyahu made a speech to the US Congress arguing against a nuclear deal with Tehran.</td></tr>
 </table></body></html>

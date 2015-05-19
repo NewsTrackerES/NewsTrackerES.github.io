@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31099092.ece/76ae1/ALTERNATES/h342/PANews%20BT_P-43096483-5197-4b29-b890-4bc8cc33795d_I1.jpg'></td><td>2015-03-27 09:31:11</td><td>Sierra Leone's six million people are being confined to their homes for three days from today as the West African nation resorts again to a sweeping shutdown in a final push to stamp out Ebola.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31099092.ece/76ae1/ALTERNATES/h342/PANews%20BT_P-43096483-5197-4b29-b890-4bc8cc33795d_I1.jpg'></td><td>2015-03-27 09:31:11</td><td>Alfred Palo Conteh, the head of Sierra Leone's Ebola response, said a major goal of the campaign is to fight complacency, more than a year after the outbreak was declared in West Africa.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 10:12:54</td><td>Ebola has infected nearly 12,000 people in Sierra Leone, more than in any other country, and it has resorted to some of the most stringent measures to stop the disease.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/36/01/7725169/7/920x920.jpg'></td><td>2015-03-27 17:37:12</td><td>The National Ebola Response Center said there were no major incidents.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/36/01/7725169/7/920x920.jpg'></td><td>2015-03-27 17:37:12</td><td>Thousands of teams were out reminding people how Ebola is spread and how to prevent it.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/36/01/7725169/7/920x920.jpg'></td><td>2015-03-27 17:37:12</td><td>A Sierra Leone Policeman guards a road block forming part of a three day country wide lockdown on movement of people due to the Ebola virus in the city of Freetown, Sierra Leone, Friday, March.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:15:41</td><td>"Now we must move forward to adapt and expand the study so that ultimately we can determine whether these experimental vaccines can protect against Ebola virus disease and therefore be used in future Ebola outbreaks."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:15:41</td><td>Two experimental Ebola vaccines pass safety test in African trial</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.nytimes.com/2015/03/27/world/africa/<%= promo_image.thumbStandard.url %>'></td><td>2015-03-27 03:57:12</td><td>Two experimental Ebola vaccines, one from GlaxoSmithKline and the other from the NewLink Genetics Corporation, "appear to be safe" partway through a clinical trial being conducted in Liberia, the National Institutes of Health said Thursday.</td></tr>
 </table></body></html>

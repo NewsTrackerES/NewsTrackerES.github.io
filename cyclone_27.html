@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 80,
+            max: 16,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 80 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,20 +48,20 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 10:42:41</td><td><a href='cyclone_2.html'>Cyclone-Pam. (10)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 05:43:17</td><td><a href='cyclone_3.html'>Cyclone Pam: Dozens feared dead in Vanuatu (7)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 00:18:32</td><td><a href='cyclone_4.html'>Koop said Pam was not the strongest storm ever to hit the South Pacific -- Tropical Cyclone Zoe, which hit in 2002, was stronger -- but that it was packing gusts of 320 kilometres per hour and sustained winds of 250 kilometres per hour. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 16:13:59</td><td><a href='cyclone_5.html'>Unicef spokeswoman Alice Clements described the cyclone as "15-30 minutes of absolute terror" as it passed over Port Vila. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 02:24:34</td><td><a href='cyclone_6.html'>"It's an absolutely devastating sight. We're seeing whole buildings and structures blown away. And those were large buildings - the smaller structures people are living in just didn't have a chance in category five cyclone. (4)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 10:27:57</td><td><a href='cyclone_7.html'>The first shipments of aid headed for Vanuatu on Sunday as authorities declared a state of emergency and global relief agencies geared up after a powerful cyclone tore through the vulnerable Pacific island nation. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 09:10:57</td><td><a href='cyclone_8.html'>Cyclone Pam: 'It was like a velociraptor', as Australians survive Vanuatu cyclone (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 15:34:39</td><td><a href='cyclone_9.html'>Cyclone Pam left a trail of devastation across the Pacific island nation on Saturday, with 250 km/h winds levelling entire villages in the capital, Port Vila. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 01:16:28</td><td><a href='cyclone_10.html'>'Most of the buildings have been destroyed, many houses have been destroyed, school, health facilities have been destroyed,' he told the BBC from Japan, where he was attending a disaster management conference when the cyclone hit. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 02:30:26</td><td><a href='cyclone_11.html'>A: "Cyclone Pam has devastated Port Vila. More than 90 percent of the buildings and houses in Port Vila have been destroyed or damaged. The state of emergency that has been issued is only for Port Vila. Once we receive an update on the extent of the damage in the provinces then another state of emergency will be issued for the outer islands." (4)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 03:03:14</td><td><a href='cyclone_12.html'>Cyclone Pam Leaves Trail of Destruction in Pacific's Vanuatu (13)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 06:59:21</td><td><a href='cyclone_13.html'>In this March 15, 2015 photo provided by UNICEF Pacific, residents work to recover from Cyclone Pam in Mele village, on the outskirts of the capital Port Vila, Vanuatu. (8)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 00:35:50</td><td><a href='cyclone_15.html'>Food concerns mount in Vanuatu after cyclone Pam (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 10:11:05</td><td><a href='cyclone_20.html'>"People came in on the evening of the cyclone with their own food, water and whatever they need for the night of the cyclone," Regina said. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 16:00:32</td><td><a href='cyclone_21.html'>A radio station is destroyed by Cyclone Pam, Thursday, March 19, 2015, on Tanna Island, Vanuatu. (7)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 19:00:00</td><td><a href='cyclone_26.html'>More than 100,000 people in Vanuatu have no clean drinking water, a month after a monster cyclone struck the tiny Pacific nation, the United Nations Children's Fund (UNICEF) said Wednesday. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 04:00:37</td><td><a href='cyclone_12.html'>WELLINGTON, New Zealand -- Winds from an extremely powerful cyclone that blew through the Pacific's Vanuatu archipelago were beginning to subside Saturday, revealing widespread destruction and unconfirmed reports of dozens of deaths. (13)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-14 05:43:17</td><td><a href='cyclone_3.html'>RAW VISION: Dozens are feared dead as Cyclone Pam brings devastating winds, torrential rain and huge waves destroyed much of Efate and surrounding islands. (7)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-14 16:13:59</td><td><a href='cyclone_5.html'>Unicef spokeswoman Alice Clements described the cyclone as "15-30 minutes of absolute terror" as it passed over Port Vila. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-15 00:18:32</td><td><a href='cyclone_4.html'>Koop said Pam was not the strongest storm ever to hit the South Pacific -- Tropical Cyclone Zoe, which hit in 2002, was stronger -- but that it was packing gusts of 320 kilometres per hour and sustained winds of 250 kilometres per hour. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-15 02:24:34</td><td><a href='cyclone_6.html'>"It's an absolutely devastating sight. We're seeing whole buildings and structures blown away. And those were large buildings - the smaller structures people are living in just didn't have a chance in category five cyclone. (4)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-15 09:10:57</td><td><a href='cyclone_8.html'>While the worst of the storm lasted for just twelve hours, the cyclone has left a lasting mark on the people and infrastructure of Vanuatu, Mr Ang told Fairfax Media while he queued for petrol on the Kumul Highway. (5)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-15 10:27:57</td><td><a href='cyclone_7.html'>The first shipments of aid headed for Vanuatu on Sunday as authorities declared a state of emergency and global relief agencies geared up after a powerful cyclone tore through the vulnerable Pacific island nation. (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-15 15:34:39</td><td><a href='cyclone_9.html'>Cyclone Pam left a trail of devastation across the Pacific island nation on Saturday, with 250 km/h winds levelling entire villages in the capital, Port Vila. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-16 01:16:28</td><td><a href='cyclone_10.html'>'Most of the buildings have been destroyed, many houses have been destroyed, school, health facilities have been destroyed,' he told the BBC from Japan, where he was attending a disaster management conference when the cyclone hit. (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-16 02:30:26</td><td><a href='cyclone_11.html'>A: "Cyclone Pam has devastated Port Vila. More than 90 percent of the buildings and houses in Port Vila have been destroyed or damaged. The state of emergency that has been issued is only for Port Vila. Once we receive an update on the extent of the damage in the provinces then another state of emergency will be issued for the outer islands." (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 05:21:15</td><td><a href='cyclone_15.html'>Relief workers were still battling to reach many of the islands pummel by Cyclone Pam's gusts of more than 300 kph (185 mph) on Friday and Saturday. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:12:00</td><td><a href='cyclone_13.html'>Relief workers saw a flattened landscape and widespread destruction in their first views of Vanuatu's outer islands after struggling for days to assess the areas of the South Pacific nation hardest hit by a fierce cyclone. (8)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-20 05:45:03</td><td><a href='cyclone_2.html'>The cyclone wiped out gardens, killed livestock and contaminated the water supply in many areas, and agricultural experts estimate that those displaced by the storm will run out of food in less than a week. (10)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-03-20 10:11:05</td><td><a href='cyclone_20.html'>"People came in on the evening of the cyclone with their own food, water and whatever they need for the night of the cyclone," Regina said. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 16:00:32</td><td><a href='cyclone_21.html'>Cyclone Pam transformed much of Vanuatu from a tropical green to a dirty brown overnight, as coconut trees were stripped of their foliage and snapped like matchsticks and even some mighty banyan trees were toppled. (7)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-22 19:00:00</td><td><a href='cyclone_26.html'>On Tuesday, the United Nations Development Program launched a cash-for-work debris removal project to provide short-term jobs for up to 100 of the most vulnerable people in cyclone-affected communities. (5)</a></td></tr>
 </table></body></html>

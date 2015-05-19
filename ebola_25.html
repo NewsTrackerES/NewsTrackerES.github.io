@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,10 +49,12 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 11:40:14</td><td>The 10 have not shown signs of Ebola and Partners in Health said the evacuations were ordered "out of an abundance of caution."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 11:40:14</td><td>On Feb. 28, state media reported that Sam-Sumana had placed himself under voluntary quarantine for 21 days after one of his security personnel died of Ebola.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 11:40:14</td><td>In both countries there are still regular attacks against Western aid workers and officials are unable to track where the Ebola virus is spreading.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>On March 11, a Partners in Health medical worker in Sierra Leone tested positive for Ebola, and the 10 fellow workers "came to the aid of their ailing colleague," the organization's statement said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>Both countries are still reporting dozens of new cases every week and the number of Ebola deaths taking place outside of hospitals remains high, suggesting that people are wary of seeking help or are hiding cases.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>"They will remain in isolation near designated U.S. Ebola treatment facilities to ensure access to rapid testing and treatment in the unlikely instance that any become symptomatic," the group's statement said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/16/06/7659954/11/920x920.jpg'></td><td>2015-03-15 17:07:48</td><td>Partners in Health said in a statement Saturday that the 10, the largest group to be evacuated to the United States over possible Ebola exposure, would travel on non-commercial aircraft and be isolated in Ebola treatment facilities.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-15 11:40:14</td><td>On Feb. 28, state media reported that Sam-Sumana had placed himself under voluntary quarantine for 21 days after one of his security personnel died of Ebola.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-15 11:40:14</td><td>In both countries there are still regular attacks against Western aid workers and officials are unable to track where the Ebola virus is spreading.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>On March 11, a Partners in Health medical worker in Sierra Leone tested positive for Ebola, and the 10 fellow workers "came to the aid of their ailing colleague," the organization's statement said.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>Both countries are still reporting dozens of new cases every week and the number of Ebola deaths taking place outside of hospitals remains high, suggesting that people are wary of seeking help or are hiding cases.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>"They will remain in isolation near designated U.S. Ebola treatment facilities to ensure access to rapid testing and treatment in the unlikely instance that any become symptomatic," the group's statement said.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td>It has more than 2,000 employees working in West Africa, including foreigners and locals and 600 Ebola survivors.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/35/16/06/7659954/11/920x920.jpg'></td><td>2015-03-15 17:07:48</td><td>Partners in Health said in a statement Saturday that the 10, the largest group to be evacuated to the United States over possible Ebola exposure, would travel on non-commercial aircraft and be isolated in Ebola treatment facilities.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/35/16/06/7659954/11/920x920.jpg'></td><td>2015-03-15 17:07:48</td><td>10 US charity staff to leave Sierra Leone amid Ebola scare</td></tr>
 </table></body></html>

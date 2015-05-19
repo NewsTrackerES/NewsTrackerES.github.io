@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 07:01:53</td><td>The teenager was intercepted at Cape Town airport on Sunday after evidence was found in her bedroom indicating that she had been in contact with Islamic State recruiters, the ministry added.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 07:01:53</td><td>South Africa detains teenage girl trying to join Islamic State</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 13:51:06</td><td>Afghan Shiite leader: Islamic State behind Shiite kidnapping</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 13:51:06</td><td>The predominantly ethnic Pashtun and Sunni Taliban persecuted the Hazara minority during their 1996-2001 rule, when they imposed a harsh version of Islamic law on the country.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-04 13:51:06</td><td>Muhaqiq says the two prominent Islamic militants have simply "changed their white flag" of the Taliban for the black IS flag.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-04 13:51:06</td><td>It is the first time an Afghan leader has confirmed Islamic State group involvement in the kidnappings.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-04 13:51:06</td><td>KABUL, Afghanistan (AP) - Afghanistan's senior Shiite community leader said on Saturday the Islamic State group is responsible for kidnapping dozens of Shiite men and boys in February.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-04 13:51:06</td><td>The presence in Afghanistan of the Islamic State group, which controls about a third of Iraq and Syria and is known for its extreme violence, is widely acknowledged but officials have been reluctant to confirm the involvement of the group in the Hazara kidnappings.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-04 17:27:06</td><td>Mohaqiq, Afghanistan's senior Shiite community leader, said on Saturday the Islamic State group is responsible for the abduction of 31 members of the minority Shiite Hazara community on Feb. 24 in the southern Zabul province.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/07/o72fh804.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-07 14:25:23</td><td>But a resident told Reuters he heard a powerful explosion at Hatra early on Saturday and said that other people nearby had reported that Islamic State militants had destroyed some buildings there and were bulldozing other parts.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 20:07:35</td><td>The antiquities ministry said the lack of tough international response to earlier Islamic State attacks on Iraq's historic sites had encouraged the group to continue its campaign.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 20:07:35</td><td>Hatra lies about 110 km south of Mosul, the largest city under Islamic State control.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 20:07:35</td><td>Islamic State, which rules a self-declared caliphate in parts of Iraq and Syria, promotes a fiercely purist interpretation of Sunni Islam which draws its inspiration from early Islamic history.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 21:52:00</td><td>BAGHDAD -- Islamic State militants "bulldozed" the renowned archaeological site of the ancient city of Nimrud in northern Iraq on Thursday using heavy military vehicles, the government said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 21:52:00</td><td>The city, which was destroyed in 612 B.C., is located on the Tigris River just south of Iraq's second largest city, Mosul, which was captured by the Islamic State group in June.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-05 21:52:00</td><td>Earlier this week, a video emerged on militant websites showing Islamic State militants with sledgehammers destroying ancient artifacts at the Mosul museum, sparking global outrage.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-05 23:57:57</td><td>The Islamic State group has imposed a harsh and violent version of Islamic law in the territories it controls and has terrorized religious minorities.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-06 01:59:00</td><td>The Islamic State extremists, who control a third of Iraq and Syria, have attacked other archaeological and religious sites, claiming that they promote apostasy.</td></tr>
 </table></body></html>

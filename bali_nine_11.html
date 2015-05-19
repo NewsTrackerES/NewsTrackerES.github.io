@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/v/u/5/w/image.related.articleLeadwide.620x349.13vtw0.png/1425599805902.jpg'></td><td>2015-03-05 01:33:34</td><td>The families of Bali nine death row duo Andrew Chan and Myuran Sukumaran have flown into Yogyakarta as they prepare for their final visits with the condemned men.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/u/5/w/image.related.articleLeadwide.620x349.13vtw0.png/1425599805902.jpg'></td><td>2015-03-05 01:33:34</td><td>Australian Consulate staff assist Helen Chan, the mother of Bali Nine member Andrew Chan, followed by his brother Michael Chan as they arrived at Yogyarkarta airport on Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/w/4/2/s/image.related.articleLeadwide.620x349.13w2da.png/1425967196560.jpg'></td><td>2015-03-05 03:51:14</td><td>They will be permitted to visit the Bali nine pair on Nusakambangan, where the men are being held in isolation cells.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>The other seven members of the Bali nine group are also in Indonesia, most serving life sentences.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Now: Serving life in Karangasem, Bali.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>It seems his role in the Bali nine was running errands for them.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/j/x/f/image.related.articleLeadwide.620x349.13ui3j.png/1425429669601.jpg'></td><td>2015-03-04 00:06:34</td><td>Then: From Wollongong, former barman Stephens worked at Eurest and took part in the Bali nine operation as a mule with Lawrence.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-28 20:01:43</td><td>THEN: Sukumaran was a uni drop-out working in a Sydney mailroom when the opportunity for a "big pay cheque" - the Bali Nine plan - came up.</td></tr>
 </table></body></html>

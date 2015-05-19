@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 116,
+            max: 32,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 116 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 32 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,10 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-02-18 05:04:38</td><td><a href='cia_27.html'>After the release of the Senate report, former Polish president Aleksander Kwasniewski and former Prime Minister Leszek Miller acknowledged for the first time that they knew the CIA had been holding people on Polish soil. (9)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:40:20</td><td><a href='cia_9.html'>Former CIA chief David Petraeus pleads guilty to federal charge after giving mistress biographer classified secrets (18)</a></td></tr>
-  <tr><td style='display:none'>21</td><td></td><td>2015-03-03 16:45:18</td><td>Justice Department: Ex-CIA chief Petraeus to plead guilty to mishandling classified materials</td></tr>
-  <tr><td style='display:none'>20</td><td></td><td>2015-03-07 00:12:38</td><td><a href='cia_2.html'>Briefing reporters with Cohen at CIA headquarters this week, Brennan said the changes are necessary to address intelligence gaps that the CIA is not covering. (2)</a></td></tr>
-  <tr><td style='display:none'>18</td><td></td><td>2015-03-07 03:53:16</td><td><a href='cia_3.html'>CIA Director John Brennan has outlined a plan for the reorganisation of the agency. (10)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-07 04:11:05</td><td><a href='cia_4.html'>The system of CIA stations, headed by a CIA station chief, will remain in place, Brennan said. (13)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>21</td><td></td><td>2015-03-03 16:45:18</td><td>Justice Department: Ex-CIA chief Petraeus to plead guilty to mishandling classified materials</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-03-07 00:12:38</td><td><a href='cia_2.html'>Most stations are in U.S. embassies, and various CIA case officers in embassies may be working on different missions for different centers. (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-03-07 03:53:16</td><td><a href='cia_3.html'>The head of the CIA's clandestine service recently decided to retire abruptly in part because of opposition to a plan that would strip his position of much of its authority over the agency's covert operations overseas and the teams of spies that it deploys. (10)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-07 04:51:06</td><td><a href='cia_4.html'>The changes come against a backdrop of evidence that the CIA's focus on hunting and killing terrorists since the September 11 attacks has led to an erosion of the espionage and analytic capabilities the agency built during the Cold War. (13)</a></td></tr>
   <tr><td style='display:none'>16</td><td></td><td>2015-03-07 09:33:14</td><td><a href='cia_1.html'>Gansa later told the PaleyFest audience that CIA officer Carrie Mathison, played by series star Claire Danes, will no longer be an intelligence officer. (2)</a></td></tr>
   <tr><td style='display:none'>22</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/10/2648CF8E00000578-2987851-image-a-22_1426012260351.jpg'></td><td>2015-03-10 19:14:55</td><td>The CIA did not immediately reply to a request for comment.</td></tr>
   <tr><td style='display:none'>23</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2013/2/7/201327223134345734_20.jpg'></td><td>2015-03-14 12:50:53</td><td>John Brennan, the CIA director, said such communications only added to the difficulty of dealing with diffuse threats and attacks across the world from groups like the Islamic State of Iraq and the Levant (ISIL) and others.</td></tr>
@@ -66,18 +64,20 @@
   <tr><td style='display:none'>27</td><td></td><td>2015-04-08 03:26:51</td><td>CIA Director John Brennan defended the framework nuclear deal with Iran and said some criticism of it is "disingenuous."</td></tr>
   <tr><td style='display:none'>28</td><td><img src='http://ww4.hdnux.com/photos/35/54/66/7785887/5/landscape_32.jpg'></td><td>2015-04-08 22:55:44</td><td>CIA director says Iran?s economic peril helped drive nuke deal</td></tr>
   <tr><td style='display:none'>14</td><td></td><td>2015-04-19 19:30:20</td><td><a href='cia_7.html'>Egyptian President Abdel-Fattah el-Sissi, right, meets with CIA director John Brennan, center, and the director of Egypt?s General Intelligence Directorate Khaled Fawzy in Cairo. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 14:57:15</td><td><a href='cia_29.html'>- A former CIA officer convicted of leaking classified details of an operation to derail Iran's nuclear ambitions would spend 20 years in prison if a judge follows federal sentencing guidelines. (18)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 08:53:03</td><td><a href='cia_9.html'>Former CIA Director David Petraeus, whose career was destroyed by an extramarital affair with his biographer, was expected to be sentenced Thursday in federal court in Charlotte for giving her classified material while she was working on the book. (18)</a></td></tr>
   <tr><td style='display:none'>29</td><td></td><td>2015-04-23 19:14:28</td><td>Ex-CIA Chief Petraeus Gets 2 Years' Probation, Fine for Sharing Military Secrets With Mistress</td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-04-27 12:55:50</td><td><a href='cia_13.html'>Ion Iliescu, president from 2000 to 2004, suggested he believed Romania had hosted CIA "black sites" - prisons outside the U.S. where suspected terrorists were held and subjected to harsh interrogation. (9)</a></td></tr>
-  <tr><td style='display:none'>15</td><td></td><td>2015-04-27 15:37:54</td><td><a href='cia_14.html'>The paper also reports that the CIA's Pakistan drone strike program was initially exempted from the "imminent threat" requirement until the end of U.S. and NATO combat operations in Afghanistan. (4)</a></td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-04-28 17:02:59</td><td><a href='cia_15.html'>Bank also served at CIA stations in the Balkans, Moscow and Baghdad, former agency officials said. (7)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-27 15:37:54</td><td><a href='cia_14.html'>If the "imminent threat" requirement had been extended to Pakistan, the Journal reports, the CIA would have had to carry out more surveillance of the suspected militants, possibly preventing the fatal Jan. 15 mission from being launched. (4)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-28 18:02:07</td><td><a href='cia_15.html'>In a move officials said was without precedent, Bank was sent home from CIA headquarters in Langley, Virginia, and transferred to a liaison job at the Pentagon. (7)</a></td></tr>
   <tr><td style='display:none'>9</td><td></td><td>2015-04-30 07:19:00</td><td><a href='cia_16.html'>ISLAMABAD - Pakistani police dropped a case that was recently registered against a former CIA station chief and a former agency lawyer over a 2009 drone strike that killed two people in a tribal region, police said Thursday. (3)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-05-04 12:26:00</td><td><a href='cia_17.html'>A former CIA deputy director says Republicans repeatedly distorted the agency's analysis of the Benghazi attack in 2012 that killed the U.S. ambassador to Libya and three other Americans. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 18:55:09</td><td><a href='cia_18.html'>But former CIA official Michael Morell says the reason was that that many of the key operatives involved in the plot were killed by U.S. air strikes. (7)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-04 12:26:00</td><td><a href='cia_17.html'>But he also wrote that the White House embellished some of the talking points provided by the CIA about the Benghazi attack, which killed Ambassador Christopher Stevens and three other Americans in September 2012. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 18:55:09</td><td><a href='cia_18.html'>Morell, who retired in 2013 as deputy CIA director after years in leadership posts, offers the most detailed account of the episode to date in a book obtained by The Associated Press ahead of its May 12 publication. (7)</a></td></tr>
   <tr><td style='display:none'>30</td><td></td><td>2015-05-04 18:55:09</td><td>Former CIA leader defends drone strikes, torture</td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-05-05 21:07:35</td><td><a href='cia_28.html'>CIA officers had been on the lookout for her, because she told the NSA officer as she was leaving that she planned to go to CIA next, it added. (9)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 21:01:59</td><td><a href='cia_29.html'>Former CIA officer Jeffrey Sterling was sentenced Monday to 3.5 years in prison for leaking classified information to a New York Times journalist. (18)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-05 15:46:28</td><td><a href='cia_28.html'>(AP) - A federal magistrate has ordered a psychiatric evaluation for an ex-FBI agent arrested at CIA headquarters after a confrontation with security officers. (9)</a></td></tr>
   <tr><td style='display:none'>17</td><td></td><td>2015-05-11 21:12:05</td><td><a href='cia_21.html'>The Justice Department said that in 2000, Sterling, at the time a CIA employee, tried to take administrative and civil actions against the agency. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 23:09:31</td><td><a href='cia_23.html'>"Former CIA Deputy Director Michael Morell's new book repeats the same false charges made by other former CIA personnel when the Senate Intelligence Committee's CIA torture report was made public in December 2014," Feinstein said. (7)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 16:39:07</td><td><a href='cia_25.html'>The negotiations are aimed in part at resolving a lawsuit against the CIA and the State Department brought by the mother of Glen Doherty, a former Navy SEAL who died in a mortar attack while defending the agency's building as a CIA contractor. (6)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 23:09:31</td><td><a href='cia_23.html'>Feinstein disputed that the study's findings were pre-ordained, and she noted that the Senate report "reached many of the same conclusions as the CIA's own internal study." (7)</a></td></tr>
   <tr><td style='display:none'>31</td><td></td><td>2015-05-13 16:39:07</td><td>Benghazi prompts CIA to look at expanding survivor benefits</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 18:25:06</td><td><a href='cia_25.html'>Separately, Doherty's family and Lake recently settled a lawsuit they filed in state court in California over the death benefit policy Doherty was required to take out as a CIA contractor who performed security work overseas in hazardous areas. (6)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 10:15:17</td><td><a href='cia_27.html'>"This secret rendition program was generated by the CIA, but it could not have taken place without the active collaboration of states like Poland," said Amrit Singh, a lawyer with the Open Society Justice Initiative, who represented al-Nashiri before the European court. (9)</a></td></tr>
 </table></body></html>

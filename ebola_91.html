@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 16:51:14</td><td>A report Friday detailed the case of a Liberian woman whose infection likely came from a man who had Ebola symptoms last September.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:38:31</td><td>NEW YORK -- Health officials now think Ebola survivors can spread the disease through unprotected sex nearly twice as long as previously believed.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:38:31</td><td>Based on the case, officials are now telling male Ebola survivors to avoid unprotected sex indefinitely.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:53:00</td><td>5 months after infection, man spreads Ebola via sex</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:24:59</td><td>The Ebola virus spreads through direct contact with an Ebola patient's blood or other bodily fluids like urine, saliva, semen and sweat.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 23:15:20</td><td>In Guinea, Dr. Sakoba Keita, the national coordinator for Ebola response, said a woman in the southeastern town of Macenta contracted Ebola after having unprotected sex with her husband.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1044951481&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401P0'></td><td>2015-05-01 15:16:53</td><td>U.S. CDC cautions against unprotected sex with Ebola survivors</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150501&t=2&i=1044951481&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB401P0'></td><td>2015-05-01 15:16:53</td><td>In a report issued on Friday, the U.S. Centers for Disease Control and Prevention said a review of the 44-year-old woman's case now suggests that the Ebola virus persists longer in semen that previously thought.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/876/493/660_ebola_survivor_with_bible.jpg?ve=1&tl=1'></td><td>2015-05-01 15:35:51</td><td>U.S. health officials are now recommending people avoid contact with the semen of Ebola survivors after a woman in Liberia contracted Ebola through sexual intercourse with a survivor of the disease.</td></tr>
 </table></body></html>

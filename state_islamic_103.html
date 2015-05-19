@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>Sunni tribes played a key role during the U.S. occupation fighting back al-Qaida in Iraq, the Islamic State group's predecessor, and their distrust of Baghdad's Shiite-led government eased the extremists' takeover last summer.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>With Tikrit taken, Sunni residents in Islamic State-held Anbar province, home to Fallujah, and Nineveh province, home to Mosul, Iraq's second-largest city, expect the Iraqi offensive to now turn its attention to their regions.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 06:31:36</td><td>Al-Jabouri Sunni tribesmen allied with Iraqi troops and Shiite militiamen took back the town from the Islamic State group in December.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/43/74/7749432/3/square_gallery_thumb.jpg'></td><td>2015-04-01 14:03:48</td><td>TIKRIT, Iraq (AP) - Iraq declared a "magnificent victory" Wednesday over the Islamic State group in Tikrit, a key step in driving the militants out of their biggest strongholds.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/79mAmnM1lABeBADiwJhmyQ--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.associatedpressfree.com/fe60e935b412f6952d2680af75ba241b'></td><td>2015-04-01 14:04:00</td><td>Aziz Jaber, a political science professor at Baghdad's Mustansiriyah University, said retaking Tikrit could be seen as the "beginning of the end" for the Islamic State group in Iraq.</td></tr>
 </table></body></html>

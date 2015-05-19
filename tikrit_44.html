@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 17:01:29</td><td><a href='tikrit_36.html'>"As of this afternoon, the (paramilitaries) started to leave the city towards the surrounding areas outside," said Ahmed al-Kraim, the head of the council of Tikrit and its province Salahuddin. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 17:01:29</td><td><a href='tikrit_36.html'>"As of this afternoon, the (paramilitaries) started to leave the city towards the surrounding areas outside," said Ahmed al-Kraim, the head of the council of Tikrit and its province Salahuddin. (2)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-04-04 18:39:35</td><td><a href='tikrit_37.html'>BAGHDAD (Reuters) - Almost all Shi'ite paramilitaries had left Tikrit on Saturday after locals complained that some fighters had spent several days looting the Sunni city after helping retake it from Islamic State. (5)</a></td></tr>
 </table></body></html>

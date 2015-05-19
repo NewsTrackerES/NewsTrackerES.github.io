@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-06 09:35:09</td><td>BEIRUT (AP) - A Norwegian humanitarian group says a record 38 million people have been internally displaced in their countries worldwide, with 2.2 million Iraqis alone forced to flee from their homes in 2014 after the Islamic State group overrun their areas.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/20/76/7933859/7/square_gallery_thumb.jpg'></td><td>2015-05-06 13:22:58</td><td>FILE - In this Saturday, April 18, 2015, file photo, Kurdish citizens walk over the rubble of their houses which were destroyed during the battle between the U.S. backed Kurdish forces and the Islamic State fighters, in Kobani, north Syria.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>As the militant group lost ground in northern Iraq towards the end of 2014, Mohanad was put in charge of a small unit of four men at an outpost along the frontline southeast of Mosul, where Islamic State was confronting Kurdish security forces.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>Last June, the day Islamic State fighters swept in from Syria and captured Mosul, Mohanad was at home not far away in the village of Danich.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>For the next five months, Mohanad guarded an Islamic State office in a village southwest of Mosul.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>At a local Islamic State headquarters in the Shora district near Mosul, Mohanad was sworn into the group by a man known as Abu Saleh: "I held his hand and said: 'I pledge allegiance', and I joined the organisation," he said.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>Jailed Islamic State militant still longs for martyrdom</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>The mention of Islamic State leader Abu Bakr al-Baghdadi still inspires reverence in Mohanad, though he has only ever seen him on TV: "He is on the path of the righteous, God willing".</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47120031,width-300,resizemode-4/IS.jpg'></td><td>2015-05-01 08:34:26</td><td>"It (Islamic State) will continue to fight until it advances."</td></tr>
 </table></body></html>

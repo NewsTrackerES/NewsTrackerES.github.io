@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:32:44</td><td>UN hails progress on Ebola as new weekly cases below 20</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 14:04:54</td><td>Nabarro said he was optimistic that Liberia would be declared Ebola-free on May 9, when it is due to reach the official World Health Organization (WHO) standard of 42 days without a new Ebola case.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 14:04:54</td><td>Nabarro said the share of new cases which have come into contact with previous identified Ebola victims - a key marker of how well health officials have isolated the epidemic - now exceeded 50 percent and was headed towards 75 percent.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 14:04:54</td><td>The U.N. mission for Ebola Emergency Response, established in September, is due to wind up at the end of July and Nabarro said its responsibilities would be handed over to other agencies of the United Nations.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 14:04:54</td><td>The WHO said in its latest update on Tuesday that the world's worst recorded Ebola outbreak - which erupted in remote southeastern Guinea in December 2013 - had killed a total of 10,980 people and infected more than 26,500.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:55:13</td><td>Earlier, in a meeting with Liberian officials and health care workers, Chelsea called for a moment of silence for people who died from Ebola.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 20:55:13</td><td>Clinton praised Liberia's post-Ebola recovery plan and called for a global support, pledging backing from his foundation.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 20:55:13</td><td>If no new cases are identified there by May 9, the country could be declared Ebola-free, though some experts warn no country will be safe until the entire region wipes out Ebola.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/16/64/7925045/5/headline_list_thumb137.jpg'></td><td>2015-05-04 21:43:25</td><td>He said when all the Ebola bans are lifted, "I want to say to all the people of Liberia you can redeem your suffering" by accepting those who came down with and survived the epidemic.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-04 21:43:25</td><td>Former US leader Clinton praises Liberia progress on Ebola</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47156746,width-300,resizemode-4/Former-US-President-Bill-Clinton-praises-Liberia-progress-on-Ebola.jpg'></td><td>2015-05-05 01:58:53</td><td>Former President Bill Clinton said Monday he was pleased to see Liberia's progress in the fight against the deadly Ebola disease, and urged residents of the West African nation to support those who survived.</td></tr>
 </table></body></html>

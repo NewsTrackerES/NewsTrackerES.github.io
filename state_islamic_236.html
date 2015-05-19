@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 11:22:35</td><td>U.S. officials said the raid killed a senior Islamic State leader identified as a Tunisian who helped to manage its black-market sales of oil and gas to raise funds.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 11:22:35</td><td>Islamic State dead in U.S. Syria raid climbs to 32 -monitoring group</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 17:19:38</td><td>Islamic State group beheads 8 Shiites in Syria's Hama</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/7e5/news/world/article23854277.ece/ALTERNATES/w220/BEI505-Mideast+Syria+Fight-1.JPG'></td><td>2015-04-09 09:34:59</td><td>The International Committee of the Red Cross called on Thursday for immediate access to a Palestinian refugee camp in Syria which has largely been seized by Islamic State and where 18,000 people are caught up in fighting.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47319297,width-300,resizemode-4/Syria.jpg'></td><td>2015-05-17 14:22:15</td><td>The UK-based Syrian Observatory for Human Rights, which reports on the Syrian conflict, put the Islamic State death toll from the US raid at 32 including four leaders, three of whom it identified as north African.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/0/8/6/s/image.related.articleLeadwide.620x349.gh086d.png/1431450107336.jpg'></td><td>2015-05-12 17:04:12</td><td>Young Islamic activists reacted with fury to the Shahbag movement, dividing young people on the question of whether Bangladesh should be a secular or Islamic state.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/0/8/6/s/image.related.articleLeadwide.620x349.gh086d.png/1431450107336.jpg'></td><td>2015-05-12 17:04:12</td><td>Bangladeshi blogger Ananta Bijoy Das, who promoted secularism, hacked to death by suspected Islamic extremists</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 13:10:00</td><td>"Niger and Chad's troops have discovered a mass grave at Damasak, which appears to contain the bodies of Boko Haram's victims," said one of the military sources, who asked not to be identified.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 13:10:00</td><td>Shops and businesses were looted and Boko Haram's black and white insignia were scrawled on buildings around the town.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-188oo-6XAU231hwHSK2-211_634x435.jpg'></td><td>2015-03-20 11:11:37</td><td>The Nigeria Security Network of analysts on Thursday meanwhile warned that Boko Haram would revert to its guerrilla campaign of bombings and suicide attacks in the face of military pressure.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-188oo-6XAU231hwHSK2-211_634x435.jpg'></td><td>2015-03-20 11:11:37</td><td>A Boko Haram attack on the border town of Gamboru on Wednesday and Thursday killed 11 civilians and gave an indication of the difficulties in bringing a definitive end to the violence.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-188oo-6XAU231hwHSK2-211_634x435.jpg'></td><td>2015-03-20 11:11:37</td><td>Jonathan, who is seeking re-election on March 28, said Boko Haram was "getting weaker and weaker every day".</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 11:31:14</td><td>Fears remain about the safety of voters on polling day, after a spate of suicide attacks in the north in recent weeks and after Boko Haram's leader, Abubakar Shekau, vowed to disrupt the election.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03160/boko_haram_3160853g.jpg'></td><td>2015-03-20 12:03:21</td><td>Nigeria's military hopes to recapture all towns seized by Boko Haram within a month, said Goodluck Jonathan, Nigeria's president, on Friday.</td></tr>
 </table></body></html>

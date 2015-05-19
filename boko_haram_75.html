@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 16:57:05</td><td>On Monday, Niger said it was planning a military operation in the area to rout Boko Haram extremists and ordered its citizens to move further inland.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/16/03/7921898/5/landscape_32.jpg'></td><td>2015-05-06 16:57:05</td><td>Niger is hosting more than 100,000 other Nigerian refugees who have fled Boko Haram and who apparently are being allowed to remain in camps outside the Lake Chad area.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 20:10:24</td><td>Nigeria and its African partners say they want to eradicate Boko Haram.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 21:57:31</td><td>Economic strife has been one of the root causes for the rise of Boko Haram, which has exploited the feelings of exclusion among the unemployed and disaffected men in predominantly Muslim northern Nigeria.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-05 21:57:31</td><td>Boko Haram has forced a change in that strategy.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-05 21:57:31</td><td>Unless Buhari can root it out, it will affect the military's capability to prevent the rise of another group like Boko Haram.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-05 21:57:31</td><td>Soldiers on the battlefront around the hills and caves of Gwoza, which Boko Haram had declared the capital of its caliphate, told The Associated Press this week that many improvements have led to the turnaround against the insurgents.</td></tr>
 </table></body></html>

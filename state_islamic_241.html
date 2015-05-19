@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 18:02:33</td><td><a href='state_islamic_80.html'>WASHINGTON (Reuters) - Afghanistan's new president, Ashraf Ghani, warned U.S. lawmakers on Wednesday of the "terrible threat" the Islamic State poses in central and western Asia, and said the militant group is already sending fighters to his country. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 12:51:11</td><td><a href='state_islamic_158.html'>A motorcycle-riding suicide bomber attacked a bank branch Saturday in eastern Afghanistan, killing at least 33 people in a deadly attack the country's president said was claimed by the Islamic State group. (10)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 13:34:19</td><td>The military source said Syrian forces had inflicted heavy losses on what it said were many Islamic State fighters targeting al-Sukhna.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 14:02:41</td><td>Islamic State fighters reached online said the group was shelling an air base near Tadmur, an oasis in the desert north-east of Damascus also known as Palmyra.</td></tr>
 </table></body></html>

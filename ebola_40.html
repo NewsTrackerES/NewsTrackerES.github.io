@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 18:59:33</td><td>ABIDJAN (Reuters) - The three nations hardest hit by West Africa's Ebola epidemic recorded the lowest weekly total of new cases so far this year in the week leading up to March 22, the World Health Organization (WHO) said on Wednesday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 18:59:33</td><td>New Ebola infections continue to drop, Guinea still a concern</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 18:59:33</td><td>Seventy-nine new confirmed cases of Ebola were reported in the three countries during the week.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-22 11:31:25</td><td>Eleven handed life sentences over Guinea Ebola worker murders</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-25 15:01:36</td><td>"Someone arriving with a syringe in their hand might be taken as confirmation of all the rumors going around. It's going to be very complicated," said Jerome Mouton, Guinea country director for leading anti-Ebola charity Medicins Sans Frontieres.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-25 15:01:36</td><td>Health workers will immunize the high-risk contacts around Ebola patients, thereby creating a "ring of immunity" around them.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-25 15:01:36</td><td>This may trigger a fever, one of the early symptoms of Ebola.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-25 15:01:36</td><td>But some worry about violent reactions from communities fearful about healthcare workers' intentions in a country where resistance to the anti-Ebola campaign has been strongest.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-25 15:01:36</td><td>Guinea starts testing Merck vaccine in Ebola hotspots</td></tr>
 </table></body></html>

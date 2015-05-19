@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5175&amp;contextPath=3179-5151-5175-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=20662530&amp;type=article&amp;title=Toronto+Blue+Jays+(16-16)+at+Baltimore+Orioles+(13-16)%2c+7%3a05+p.m.+(ET)&amp;url=http%3a%2f%2fwww.miamiherald.com%2fsports%2fmlb%2farticle20662530.html'></td><td>2015-05-11 14:47:04</td><td>(SportsNetwork.com) - A pair of AL East foes tangle Monday night as the Toronto Blue Jays open a three-game series with the Baltimore Orioles.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5175&amp;contextPath=3179-5151-5175-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=20662530&amp;type=article&amp;title=Toronto+Blue+Jays+(16-16)+at+Baltimore+Orioles+(13-16)%2c+7%3a05+p.m.+(ET)&amp;url=http%3a%2f%2fwww.miamiherald.com%2fsports%2fmlb%2farticle20662530.html'></td><td>2015-05-11 14:47:04</td><td>In Sunday's 6-2 loss to the Yankees in the finale of a four-game set, J.J. Hardy and Adam Jones each had two hits and an RBI for Baltimore, which halted a four-game skid with Saturday's 6-2 decision.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5175&amp;contextPath=3179-5151-5175-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=20662530&amp;type=article&amp;title=Toronto+Blue+Jays+(16-16)+at+Baltimore+Orioles+(13-16)%2c+7%3a05+p.m.+(ET)&amp;url=http%3a%2f%2fwww.miamiherald.com%2fsports%2fmlb%2farticle20662530.html'></td><td>2015-05-11 14:47:04</td><td>Baltimore is only 1-5 against Toronto this season.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 12:56:39</td><td>"In a spirit of healing, the event is meant to be a catalyst for pause and reflection following the outpouring of violence that has gripped Baltimore and areas throughout the U.S.," the press release stated.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-09 16:43:08</td><td>"Nobody got in nobody's way / So I guess you could say it was a good day / at least a little better than the day in Baltimore," Prince sings.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td>At one point, Prince invited onstage Baltimore State's Attorney Marilyn Mosby, who has charged six officers in Gray's death.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td>Longtime fan Luther Washington, stationed at Ft Meade, shows off his Prince tattoo while waiting for the doors to open for Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 11:07:30</td><td>Prince took the stage in Baltimore before thousands of fans who were dressed in gray in tribute to a man whose death in police custody prompted riots and drew international attention.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 11:09:06</td><td>Karen Howard of Washington, DC purchases a t-shirt prior to Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
 </table></body></html>

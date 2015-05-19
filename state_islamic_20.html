@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKYL7u5t9SjxvWmc1ThPVQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2ba73a91fe63ba096f0f6a70670037c0.jpg'></td><td>2015-03-03 21:56:24</td><td>Glaringly absent are the U.S.-led coalition forces whose air campaign since last summer has nearly halted the Islamic State rampage across Iraq.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/NKYL7u5t9SjxvWmc1ThPVQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2ba73a91fe63ba096f0f6a70670037c0.jpg'></td><td>2015-03-03 21:56:24</td><td>However, more of a concern for the U.S.-led coalition is Iran's prominent role in the fight against the Islamic State militants.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a4d/news/world/article23259924.ece/ALTERNATES/w220/Mideast+Iraq+Islamic+State.JPG'></td><td>2015-03-03 13:36:01</td><td>They have yet to enter Tikrit, best known as the hometown of executed former president Saddam Hussein, or the nearby Tigris river town of al-Dour, which officials describe as a major center for the Islamic State fighters.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/a4d/news/world/article23259924.ece/ALTERNATES/w220/Mideast+Iraq+Islamic+State.JPG'></td><td>2015-03-03 13:36:01</td><td>The Tikrit battle will have a major impact on plans to move further north and recapture Mosul, the largest city under Islamic State rule.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/a4d/news/world/article23259924.ece/ALTERNATES/w220/Mideast+Iraq+Islamic+State.JPG'></td><td>2015-03-03 13:36:01</td><td>Iranian military commander Qassem Soleimani, who has helped coordinate Baghdad's counter-attacks against Islamic State since it seized much of northern Iraq in June, was overseeing at least part of the operation, witnesses told Reuters.</td></tr>
 </table></body></html>

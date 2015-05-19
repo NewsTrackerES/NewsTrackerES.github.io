@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 08:11:11</td><td><a href='ukraine_91.html'>KIEV, Ukraine (AP) - An international rights group says growing numbers of disabled children in Ukraine are being condemned to life in orphanages and institutions blighted by neglect and abuse. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 10:34:10</td><td><a href='ukraine_92.html'>WITH STORY UKRAINE DISABLED CHILDREN - In this photo taken April 14, 2015, disabled children attend a class with a teacher in the Center for Children with Disabilities, Rodyna, (Family) in Kiev, Ukraine. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 14:45:04</td><td><a href='ukraine_24.html'>PARIS (AP) " France and Germany held out the possibility on Friday of sanctions if the Minsk accords to stabilize Ukraine are not respected. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 09:25:07</td><td><a href='ukraine_51.html'>Ukrainian Prime Minister Arseniy Yatsenyuk met Thursday with Tusk ahead of the summit and accused Russian President Vladimir Putin of trying to divide Europe over Ukraine. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 22:59:23</td><td><a href='ukraine_53.html'>But the link to the Ukraine peace agreement effectively extends economic sanctions until the end of the year because the Minsk accord sets a year-end deadline for Kiev to recover full control over its border. (2)</a></td></tr>
 </table></body></html>

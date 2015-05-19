@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,11 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 13:42:44</td><td>Iraqi officials believe the Islamic State group is coming under increasing pressure and does not have the same strength, funds or resources as last June when the militants launched their lighting offensive across northern Iraq and captured the city of Mosul.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 13:42:44</td><td>In an interview with The Associated Press in January, al-Abadi said that Iraq was battling the Islamic State militants "almost on our own," adding that "there is a lot being said and spoken, but very little on the ground."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 13:42:44</td><td>Both the United States and Iran are helping Iraq battle the Islamic State group, but insist they are not coordinating their actions on the battlefield.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-25 20:05:17</td><td>The U.S. and Iraq have been discussing possible U.S. airstrikes in support of a stalled Iraqi ground offensive against a dug-in Islamic State force in the northern city of Tikrit, U.S. officials said Wednesday.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 07:40:28</td><td>Sweden to send troops to Iraq to support fight against Islamic State</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150415&t=2&i=1040753794&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3E15J'></td><td>2015-04-15 22:56:52</td><td>Iraq says Islamic State still fierce; eyes Baiji, Anbar fights</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 13:55:29</td><td>BEIRUT (Reuters) - Islamic State has bolstered its forces north of Syria's second city Aleppo, where it is attacking rivals as part of a broader push beyond its eastern strongholds, a rebel leader and a monitoring group said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 13:55:29</td><td>On Friday, it reported overnight fighting between government forces backed by a Palestinian faction and "Islamic factions".</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 13:55:29</td><td>As recently as February, Islamic State had withdrawn forces and hardware from Aleppo province in a redeployment seen linked to the pressure it was under elsewhere in Syria.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 13:55:29</td><td>A rebel commander with fighters in that area said Islamic State had called in reinforcements.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 13:55:29</td><td>The Observatory said on Friday that Islamic State was still holding 50 people seized in the raid.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-10 14:14:49</td><td>The latest drive follows attacks by Islamic State fighters further south in government-held areas, including Hama province where last week the group massacred some 40 people during an assault on a village.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-10 14:17:52</td><td>After Damascus move, Islamic State attacks rivals near Aleppo</td></tr>
 </table></body></html>

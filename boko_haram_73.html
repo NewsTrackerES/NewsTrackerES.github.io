@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 20:10:24</td><td>Nigeria and its African partners say they want to eradicate Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 21:57:31</td><td>Economic strife has been one of the root causes for the rise of Boko Haram, which has exploited the feelings of exclusion among the unemployed and disaffected men in predominantly Muslim northern Nigeria.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 21:57:31</td><td>Boko Haram has forced a change in that strategy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03289/boko-haram-4_3289995b.jpg'></td><td>2015-05-04 10:26:17</td><td>Those on foot were told to walk in the tire tracks made by the convoy because Boko Haram militants had mined much of the forest.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03289/boko-haram-4_3289995b.jpg'></td><td>2015-05-04 10:26:17</td><td>She described trekking for two days from Nbitha to Boko Haram's hideout in the Sambisa Forest with two-year-old Matthew and four-year-old Elija Yohanna strapped to her back and four-year-old Maryam Samaila clinging to her waist.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03289/boko-haram-4_3289995b.jpg'></td><td>2015-05-04 10:26:17</td><td>As gunshots rang out, "Boko Haram came and told us they were moving out and that we should run away with them. But we said no," she said from a bed in the camp clinic, a blanket wrapped around ankles so swollen that each step had been agony.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/04/09/2847EAF100000578-3066992-image-a-1_1430727601874.jpg'></td><td>2015-05-04 12:44:44</td><td>Another survivor, Binta Ibrahim, was 16 years old and accompanying her sister-in-law to the dressmaker when Boko Haram insurgents rode into their village of Izghe, firing randomly at civilians.</td></tr>
 </table></body></html>

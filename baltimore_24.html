@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/06/40/7890995/3/square_gallery_thumb.jpg'></td><td>2015-04-28 22:10:24</td><td>A 2011 Baltimore Health Department report found that 55 percent of families there lived on less than $25,000 a year, and 30 percent were mired in poverty, roughly twice the rate of the rest of the city.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/.Y5rmDzyfTVGngyhjfBpXA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5e2d01fb01fdfd13740f6a706700fcd6.jpg'></td><td>2015-04-28 22:10:36</td><td>Baltimore is a majority black city; the city's mayor, state's attorney, police chief and city council president are all African-American, as well as 63 percent of its population.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 00:02:38</td><td>Some experts say the frustration and discontent among Baltimore residents stems from the lack of educational opportunities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/10/28180D5B00000578-0-image-m-42_1430211858604.jpg'></td><td>2015-04-28 23:53:23</td><td>During the July 1967 riots in Detroit, the Tigers postponed one game and rescheduled two others to be played in Baltimore.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/10/28180D5B00000578-0-image-m-42_1430211858604.jpg'></td><td>2015-04-28 23:53:23</td><td>Baseball's Orioles to play in empty stadium as Baltimore reels from rioting</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 00:55:00</td><td>Baltimore and other major U.S. cities experienced rioting after the civil rights leader's assassination.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-29 00:55:00</td><td>Baltimore Mayor Stephanie Rawlings-Blake set a week-long curfew in the city beginning on Tuesday.</td></tr>
 </table></body></html>

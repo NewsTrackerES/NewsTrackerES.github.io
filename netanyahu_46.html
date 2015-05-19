@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>It's a mystery to many: Benjamin Netanyahu's campaign gained steam when he ruled out the creation of a Palestinian state, and he seems determined to continue settling occupied land with Jews.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>Analysis: Why Netanyahu?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676421579_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 01:08:28</td><td>Isaac Herzog, Netanyahu's chief opponent and head of the center-left Zionist Union, said "everything is still open" and that he already had spoken to party leaders about forming a government.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676421579_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 01:08:28</td><td>Rivlin has called for national unity, signaling he favors a government that would pair both Likud and Zionist Union - a partnership Netanyahu rejected during the campaign.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676421579_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 01:08:28</td><td>In the last days of campaigning as he sought to persuade supporters of smaller right-wing parties to "come home" to Likud, Netanyahu promised more building of Jewish settlements.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676421579_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 01:08:28</td><td>Saeb Erekat, chief Palestinian negotiator in peace talks with Israel that collapsed in April, told Reuters it appeared Netanyahu would form the next government.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676421579_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 01:08:28</td><td>"Against all odds: a great victory for Likud," a beaming Netanyahu told cheering supporters in a speech at party election headquarters in Tel Aviv.</td></tr>
 </table></body></html>

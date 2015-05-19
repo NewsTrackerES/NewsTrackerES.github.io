@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td>You won't find it in Apple's advertisements, but the new MacBook is a time machine.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td>Apple MacBook Isn't Ready for the Present</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td>Due to the thinness of the panel, Apple created a new mechanism under the keys to help with their feedback and bounce.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 14:01:32</td><td>Based on a survey in the United States on consumer interest in buying the Apple Watch, BMO Capital Markets has cut its estimate for sales to 39 million units though September 2016.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 14:01:32</td><td>Apple said it would take orders for the watch exclusively online during the initial launch period.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/Features/2015/04/08/applewatch650f.jpg&size=104x59&quality=85'></td><td>2015-04-09 16:00:47</td><td>Apple shares were up 0.3% at US$125.98 in early trading on Thursday.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/Features/2015/04/08/applewatch650f.jpg&size=104x59&quality=85'></td><td>2015-04-09 16:00:47</td><td>Apple is among several companies, including Samsung Electronics Co Ltd and Sony Corp, that are jumping into the nascent market for wearable devices.</td></tr>
 </table></body></html>

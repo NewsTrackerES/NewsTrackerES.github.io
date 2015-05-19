@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 05:52:17</td><td>Lenny Clay (R) sits at his barber shop in Baltimore, Maryland April 29, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 12:00:31</td><td>As Baltimore's economy declined, the men said, its poorest black residents grew more and more isolated, and their relations with police and city officials worsened.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 12:00:31</td><td>BALTIMORE, May 1 (Reuters) - The view from Lenny Clay's barbershop in a neighborhood just west of downtown Baltimore is bleak.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/11/21/7902306/3/square_gallery_thumb.jpg'></td><td>2015-05-01 07:16:43</td><td>Rice lived in the county, about 35 miles northwest of Baltimore.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-05-01 07:16:56</td><td>Records show worries over Baltimore officer's mental health</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 07:20:51</td><td>Baltimore police were made aware of worries that Rice might pose a risk to himself or others, according to the April 2012 sheriff's report.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 07:20:51</td><td>"The only thing I'd comment on is, any issues similar to this had nothing to do with his ability to perform his duties as a Baltimore police officer."</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-01 07:59:42</td><td>The official, whose name is twice misspelled, appeared to be James Handley, a police major who now heads Baltimore police's property division.</td></tr>
 </table></body></html>

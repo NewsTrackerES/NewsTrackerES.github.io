@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,10 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:15:41</td><td>"Now we must move forward to adapt and expand the study so that ultimately we can determine whether these experimental vaccines can protect against Ebola virus disease and therefore be used in future Ebola outbreaks."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:15:41</td><td>Two experimental Ebola vaccines pass safety test in African trial</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.nytimes.com/2015/03/27/world/africa/<%= promo_image.thumbStandard.url %>'></td><td>2015-03-27 03:57:12</td><td>Two experimental Ebola vaccines, one from GlaxoSmithKline and the other from the NewLink Genetics Corporation, "appear to be safe" partway through a clinical trial being conducted in Liberia, the National Institutes of Health said Thursday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:02:45</td><td>The routine genetic changes observed indicate the viral mutations are not likely to affect diagnostic testing or the effectiveness of experimental Ebola vaccines or drugs, the researchers said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 18:02:45</td><td>Study finds no sign Ebola virus is mutating out of control</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 18:02:45</td><td>WASHINGTON (Reuters) - There is no sign the Ebola virus is mutating in an accelerated way that could make it more virulent or thwart vaccines or drugs under development despite some earlier fears to the contrary, researchers said on Thursday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 18:02:45</td><td>Fauci said the findings also allay concerns raised by some last year that a rapidly changing virus could change how Ebola is transmitted, becoming airborne or respiratory.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 18:02:45</td><td>They called it a safe, inactivated whole-virus vaccine that primes the recipient's immune system with the full complement of Ebola viral proteins and genes.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 18:02:45</td><td>There are no approved vaccines or medicines for Ebola.</td></tr>
 </table></body></html>

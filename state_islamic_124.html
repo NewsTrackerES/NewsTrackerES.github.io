@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039164291&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB380V8'></td><td>2015-04-09 17:38:00</td><td>WASHINGTON (Reuters) - The Islamic State brought Iraqi leaders together in a common fight since the militant group declared a "caliphate" in northern Iraq last summer, U.S. Vice President Joe Biden said on Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039164291&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB380V8'></td><td>2015-04-09 17:38:00</td><td>Iraqi security forces launched a new offensive against Islamic State insurgents in the Sunni Muslim heartland of Anbar on Wednesday, seeking to build on a victory over the jihadist group last week in the city of Tikrit.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 08:48:10</td><td>South African authorities have detained a 15-year-old girl who was travelling to join Islamic State, the state security ministry has said - the country's first known arrest linked to the militant group.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 15:01:28</td><td>The ministry did not give her name or say where she was heading after that, but the Star newspaper reported she had been planning to fly to Turkey before travelling by road to join Islamic State in Syria.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 15:01:28</td><td>The ministry said in a statement it was investigating whether Islamic State, which has overrun large areas of Syria and Iraq, had a recruitment network in South Africa.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 15:01:28</td><td>Local media reports said the girl had confided to friends that she planned to join Islamic State, which is also known as ISIS, and relatives had noticed she had become increasingly politicised in the last month.</td></tr>
 </table></body></html>

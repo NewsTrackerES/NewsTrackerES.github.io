@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 15,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,10 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 15:01:56</td><td><a href='apple_44.html'>Gains on the Nasdaq outpaced the two other major Wall Street indexes, buoyed by gains in Qualcomm, up 1.6 percent at $70.28, and Apple, up 0.8 percent at $128.16. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:03:01</td><td><a href='apple_62.html'>Apple trades at 14.3 times forward 12-month earnings, while the S&P 500 trades at 16.7 times, according to Thomson Reuters StarMine data. (4)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 16:13:10</td><td><a href='apple_64.html'>NEW YORK (AP) - U.S. stocks are barely higher at midday as investors look ahead to Apple's results later today and a meeting by the Federal Reserve on interest rates. (4)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:02:14</td><td><a href='apple_65.html'>After the bell, Apple shares gained 1.1 percent as the iPhone maker reported a 27 percent jump in quarterly revenue. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:28:58</td><td><a href='apple_81.html'>April 30 (Reuters) - Wall Street was lower in afternoon trading on Thursday as Apple weighed on major indexes and investors digested a mixed batch of economic data. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/05/29/101715911-489010565.530x298.jpg?v=1401393879'></td><td>2015-03-26 13:44:00</td><td>Apple, Beats gear up to compete with Spotify</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/16/276824FA00000578-0-image-a-6_1428851668812.jpg'></td><td>2015-04-12 18:01:36</td><td>Apple bought audio equipment and music streaming company Beats for about $3 billion in May 2014, hoping to catch up in fast-growing music streaming industry.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 02:39:28</td><td>Apple's Beats Music deals under U.S. scrutiny: Bloomberg</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>The Federal Trade Commission (FTC) is examining if Apple is using its position as the top seller of music downloads through its iTunes store to put rival music services like Spotify at a disadvantage, according to Bloomberg.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>Apple and the FTC did not immediately respond to requests seeking comment outside regular business hours.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>Apple bought Beats last year hoping to win points with the music industry and turn Beats Music into a strong competitor to Spotify and other streaming services.</td></tr>
 </table></body></html>

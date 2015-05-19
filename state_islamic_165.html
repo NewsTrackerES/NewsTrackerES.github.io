@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,12 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 07:51:00</td><td>(AP) - When Guled Ali Omar made up his mind to join the Islamic State group, he wasn't easily deterred.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 11:51:46</td><td>They are among the latest Westerners accused of traveling or attempting to travel to Syria to join the Islamic State group, which has carried out a host of attacks including beheading Americans.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/74/70/7851570/3/square_gallery_thumb.jpg'></td><td>2015-04-21 11:51:46</td><td>Abdurahman is one off six Minnesota men charged with terrorism in a criminal complaint unsealed Monday, April 20, 2015, the latest Westerners accused of traveling or attempting to travel to Syria to join the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 12:03:09</td><td>The Islamic State's push comes as IS was dealt a major blow this month, when Iraqi troops pushed the group out of Tikrit, Saddam Hussein's hometown.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>In late 2013, however, militants of the Islamic State group used the Syrian civil war to their advantage and began to push back into Iraq through Anbar province.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>Gen. Tahseen Ibrahim acknowledged that Islamic State militants "gained a foothold in some areas" in Anbar.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k0wzVvuQ2YkSYzf0F.gRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/088b5eafe88ebc10730f6a7067004695.jpg'></td><td>2015-04-15 18:53:34</td><td>Al-Abadi said Iraqi forces will follow their victory in Tikrit with campaigns against Islamic State in the oil town of Beiji and western Anbar province.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>As Islamic State pushes on Iraq's Ramadi, 2000 families flee</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>Al-Bayan, the Islamic State group's English-language radio station, claimed IS fighters had seized control of at least six areas and most of a seventh to the east of Ramadi since Wednesday, according to the SITE Intelligence Group, which monitors militant websites.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-19 10:46:13</td><td>More than 90,000 people have fled the Islamic State group's advance in Iraq's western Anbar province, which has set off fierce fighting in and around the provincial capital Ramadi, a United Nations humanitarian agency said.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/16/876/493/Mideast Iraq Islamic State-1.jpg?ve=1&tl=1'></td><td>2015-05-16 07:50:14</td><td>Ibrhaim didn't give details on the ongoing battles, but vowed that the Islamic State group would be pushed out of the city "in the coming hours."</td></tr>
 </table></body></html>

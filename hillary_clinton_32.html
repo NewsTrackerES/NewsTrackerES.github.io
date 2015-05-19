@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/l/f/h/image.related.articleLeadwide.620x349.1mjlzq.png/1428878568042.jpg'></td><td>2015-04-12 21:57:54</td><td>Former First Lady and former Secretary of State Hillary Clinton announces her presidential candidacy for the upcoming 2016 election.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/l/f/h/image.related.articleLeadwide.620x349.1mjlzq.png/1428878568042.jpg'></td><td>2015-04-12 21:57:54</td><td>Former US President Bill Clinton and daughter Chelsea listen as his wife US presidential candidate Senator Hillary Clinton speaks at a fundraising rally in New York.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:45:21</td><td>The Republican National Committee said Clinton "has left a trail of secrecy, scandal and failed policies that can't be erased from voters' minds."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 02:25:10</td><td>Clinton takes road trip to Iowa for first campaign event</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 02:25:10</td><td>Longtime aide Huma Abedin tells Clinton alumni during a Sunday night conference call that it was Clinton's idea to make the roughly 1,000-mile trip to Iowa by van.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 02:25:16</td><td>"When Hillary first told us that she was ready to hit the road for Iowa, we literally looked at her and said, 'Seriously?' And she said, 'Seriously, " said longtime aide Huma Abedin in a conference call with Clinton alumni.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/HKYZXGZM3TENzwdfeOxWxw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-NIC-Nic6443715-1-1-0.jpg'></td><td>2015-04-20 08:48:27</td><td>"I am giving you another 14 days to put together a government," Rivlin told Netanyahu in remarks broadcast live on Israel's main radio stations after the premier formally requested an extension.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/HKYZXGZM3TENzwdfeOxWxw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-NIC-Nic6443715-1-1-0.jpg'></td><td>2015-04-20 08:48:27</td><td>Israel's Rivlin gives Netanyahu extra 14 days to form govt</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 09:33:00</td><td>Arab-Israeli politician Ahmed Tibi told Israel Radio Tuesday that Netanyahu's attempt to defuse the dispute was "not an honest apology."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 09:35:11</td><td>Arab politicians said his election victory was illegitimate, claiming Netanyahu won the vote by pandering to anti-Arab fears.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 09:35:11</td><td>His sudden turnaround victory came as Netanyahu made his remark about Arab voters in the final hours of voting.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 10:35:14</td><td>Emilie Moatti, a spokeswoman for the Joint List, said the Arab dignitaries who gathered at Netanyahu's home where the apology was filmed were all Likud supporters, with no Joint List representatives invited.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/bMuu1ei2QN6Kl6waDHnl1g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/76eb811e5c11a20d710f6a70670088a1.jpg'></td><td>2015-03-24 12:22:43</td><td>In the Arab village of Abu Ghosh, a symbol of coexistence with its famous hummus restaurants packed with Jewish visitors, Arab residents were not impressed by Netanyahu's kind words.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-24 13:38:43</td><td>Arab-Israeli leaders reject Netanyahu's apology for offending Arabs</td></tr>
 </table></body></html>

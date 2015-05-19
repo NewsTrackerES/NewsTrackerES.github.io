@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 00:28:12</td><td>Several of Saddam's palaces remain there, and supporters of the deceased dictator are believed to have played a key role in the Islamic State group's seizure of the city last year.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 00:28:12</td><td>Soleimani and other Iranian advisers have played a key role in Iraq in pushing the Islamic State back in recent months.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/3/7/1425711053115/4e6d510a-0e0e-47c1-91bd-f4dd8d04d882-300x180.jpeg'></td><td>2015-03-07 06:37:47</td><td>The combined force of Iranian-backed militias and Iraqi government troops is likely to prevail against Islamic State forces in the unfolding battle for Tikrit, America's top general has said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/fa0/news/world/article23402419.ece/ALTERNATES/w220/XAW112-China+Xinjiang.JPG'></td><td>2015-03-11 06:41:28</td><td>The Global Times, a newspaper affiliated with the ruling Communist Party, said in December that about 300 Chinese are fighting alongside the Islamic State group in Iraq and Syria.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/fa0/news/world/article23402419.ece/ALTERNATES/w220/XAW112-China+Xinjiang.JPG'></td><td>2015-03-11 06:41:28</td><td>"There are Uighurs that have fled overseas and joined the Islamic State," Zhang Chunxian, Communist Party secretary of Xinjiang, said Tuesday.</td></tr>
 </table></body></html>

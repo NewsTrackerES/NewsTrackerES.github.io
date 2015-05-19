@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,11 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-04-06 07:45:19</td><td>BEIRUT (Reuters) - Islamic State insurgents blew up an 80-year-old church in Syria's northeastern province of Hassaka on Easter Sunday, Syrian state news agency SANA said.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-06 07:45:19</td><td>Islamic State controls the village, the news agency said on Monday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-06 07:45:19</td><td>SANA, which did not report any casualties, said the militants had planted explosives inside the Church of the Virgin Mary in Tel Nasri, an Assyrian village in an area where Christian and Kurdish militia have been battling Islamic State.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:07:48</td><td>He urged employees of essential facilities including bakeries to go back to work and said an Islamic court should be set up to settle disputes.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td>Mirroring the way Islamic State has grown elsewhere in Syria, its fighters seized control of areas of the camp from other insurgents, helped by rebels from the rival al Qaeda-linked Nusra Front who switched sides, a political activist in the area said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td>"They pushed from the Hajar Aswad area and Nusra fighters have joined them, they have pledged loyalty to Daesh (Islamic State)," the activist said, speaking via Skype.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td>Nusra Front shares Islamic State's jihadist ideology but does not recognize its rival's declaration last year of its leader Abu Bakr al-Baghdadi as "caliph", or ruler of all Muslims.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td>Idlib, around 30 km (20 miles) from the Turkish border is only the second provincial capital to slip from government hands after Raqqa in the east, which Islamic State has turned into its de facto capital.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td>Hassan Hassan, an analyst and author of a book about Islamic State, said the group had long wanted a foothold close to the capital but that it was unlikely to be able to storm the center.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td>Anwar Abdel Hadi, the Palestine Liberation Organisation representative in Damascus, said: "(Islamic State) went into Yarmouk today. There are clashes between the militants at the moment."</td></tr>
 </table></body></html>

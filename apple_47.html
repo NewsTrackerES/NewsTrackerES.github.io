@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IYKRC7bELfTRxoFi1.s26Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_US/News/US-AFPRelax/000_was3699279.fc552100622.original.jpg'></td><td>2015-04-14 08:42:40</td><td>IBM on Monday announced alliances with Apple and others to put artificial intelligence to work drawing potentially life-saving insights from the booming amount of health data generated on personal devices.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 12:54:41</td><td>Under the partnership it will be able to handle data collected using health applications from Apple mobile devices, according to IBM.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 17:52:55</td><td>Apple's "Start Something New" marketing campaign was cited in the lawsuit as one recent example of misuse of Britto art.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 18:00:18</td><td>The lawsuit seeks unspecified damages from Cupertino, California-based Apple and the design duo Craig Redman of New York and Karl Maier of London, whose company is called Craig & Karl.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 18:00:18</td><td>Artist Britto sues Apple, design firm over use of art, style</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 18:00:18</td><td>Officials at Apple and Craig & Karl did not immediately respond Monday to emails seeking comment.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-13 18:09:12</td><td>MIAMI -- Artist Romero Britto is suing Apple Inc. and a design firm in Miami federal court for allegedly misusing his colour-splashed images and distinctive style in marketing campaigns.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 19:15:17</td><td>After investigating the source of the Apple image, according to the lawsuit, Britto's lawyers noticed apparent similarities between Craig & Karl's work and that of Britto.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-13 20:13:06</td><td>In fact, when the Apple "Start Something New" campaign appeared, Britto received messages congratulating him, incorrectly, for what appeared to be a new business deal with Apple.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-13 20:13:06</td><td>One image, an outstretched hand with colorful designs flowing from a fingertip, was licensed from Craig & Karl by Apple.</td></tr>
 </table></body></html>

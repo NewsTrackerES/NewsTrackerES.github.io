@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 20,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 20 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 15:58:12</td><td>Netanyahu hit a snag Monday when a key ally, Foreign Minister Avigdor Lieberman, unexpectedly resigned and announced his party is joining the opposition.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 17:15:56</td><td>By late Tuesday, Netanyahu had deals with three partners controlling 53 seats.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-05 17:28:08</td><td>JERUSALEM - With the clock ticking, Israeli Prime Minister Benjamin Netanyahu raced to put together a governing coalition Tuesday or face the prospect of being forced out of office by a former ally.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-05 17:28:08</td><td>With the deadline approaching, Netanyahu negotiated Tuesday with the hawkish Jewish Home Party.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-05 17:28:08</td><td>The party, linked to the West Bank settler movement, is led by Naftali Bennett, a former Netanyahu aide who now has a rocky relationship with him.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-05 17:28:08</td><td>Israeli media reported Bennett is fuming over Netanyahu's deals with the ultra-Orthodox parties giving them ministerial power over religious services.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-05 17:28:08</td><td>Even if they reach a deal, Netanyahu would have the slimmest of majorities, with just 61 seats, leaving him vulnerable.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-05 17:28:08</td><td>He recommended that Netanyahu reach out to the dovish Zionist Union list to stabilize it.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-06 08:43:21</td><td>With a little over 24 hours to go, Israeli Prime Minister Benjamin Netanyahu is scrambling to get his governing coalition together.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 08:48:47</td><td>Netanyahu was holding furious consultations Wednesday with the hawkish Jewish Home Party in order to secure a narrow 61-seat majority in the 120-seat parliament.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-05-06 11:07:11</td><td>The Jewish Home party is linked to the West Bank settler movement and unlikely to push for Netanyahu's ouster, a move that could open a potential path to government of the more dovish Zionist Union.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-06 11:07:11</td><td>Likud officials concede such a government would not be effective or last long, raising speculation that Netanyahu will ultimately reach out to the Zionist Union and its leader, Isaac Herzog.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-06 11:07:11</td><td>Even if, as expected, they reach a deal, Netanyahu would have a thin majority, leaving him vulnerable to extortion from any individual coalition lawmaker.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww4.hdnux.com/photos/36/17/64/7929099/11/square_gallery_thumb.jpg'></td><td>2015-05-06 17:33:20</td><td>Israeli TV stations said Netanyahu's Likud and the Jewish Home were closing in on a deal that would give the Jewish Home control of the influential Justice Ministry.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 17:34:11</td><td>A last-minute deal with the hawkish Jewish Home Party was necessary to prevent an almost-unimaginable scenario by which Netanyahu would be forced out of office.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-05-06 20:13:01</td><td>The talks with Bennett stretched throughout the day and well into the night before Netanyahu called President Reuven Rivlin, as required by law, to announce the deal.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-05-06 20:27:13</td><td>The late-night deal saved Netanyahu from the unthinkable scenario of being forced from office.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-06 20:27:13</td><td>The talks stalled this week when Foreign Minister Avigdor Lieberman, a longtime partner of Netanyahu's, unexpectedly stepped down and announced his secular nationalist Yisrael Beitenu party was joining the opposition.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-05-06 22:07:56</td><td>Netanyahu reached a deal with the nationalist Jewish Home party shortly before a midnight deadline, clinching a slim parliamentary majority and averting an embarrassing scenario that would have forced him from office.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-05-06 23:57:17</td><td>Netanyahu's Likud Party is dominated by hard-liners opposed to Palestinian independence, a position that is shared by the Jewish Home.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>KUALA LUMPUR, Malaysia (AP) - Malaysian police said Sunday that they have detained 12 men with suspected links to the Islamic state group who are believed to be plotting attacks on strategic government targets in the country.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>Malaysia has now detained 104 suspected supporters of the Islamic State group in the past two years.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-26 11:44:06</td><td>"The plan by the cell members to launch attacks is in response to calls by IS leaders in Syria to attack secular Islamic countries deemed to be their enemies," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>The Islamic State group has massacred the men, women and children of Sunni tribes who rise up against it.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>Sakhar says he is second on an Islamic State hit list and has survived numerous assassination attempts, including one last week.</td></tr>
 </table></body></html>

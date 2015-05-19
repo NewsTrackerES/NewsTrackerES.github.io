@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 15:59:57</td><td>The Apple Watch is a computer built to spend it better.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 19:33:21</td><td>With the Apple Watch, smartwatches finally make sense.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:13:00</td><td>Why You Don't Really Want An Apple Watch (Yet)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://si.wsj.net/public/resources/images/BN-HT839_STERN__H_20150407151750.jpg'></td><td>2015-04-08 15:59:11</td><td>After over a week of living with Apple's latest gadget on my wrist, I realized the company isn't just selling some wrist-worn computer, it's selling good looks and coolness, with some bonus computer features.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://si.wsj.net/public/resources/images/BN-HT839_STERN__H_20150407151750.jpg'></td><td>2015-04-08 15:59:11</td><td>When was the last time Apple didn't improve first-gen hardware's performance while making it sleeker?</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 09:45:23</td><td>"I feel naked without a watch. I think I will buy the Apple watch with the sports band... I'm working very hard right now so I can buy this watch," Bock said.</td></tr>
 </table></body></html>

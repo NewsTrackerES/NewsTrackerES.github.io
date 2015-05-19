@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 12:13:32</td><td>Clashes between Iraqi forces and Islamic State militants pressing their offensive for Ramadi, the capital of western Anbar province, has forced more than 2,000 families to flee from their homes in the area, an Iraqi official said Thursday.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>As Islamic State pushes on Iraq's Ramadi, 2000 families flee</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>Al-Bayan, the Islamic State group's English-language radio station, claimed IS fighters had seized control of at least six areas and most of a seventh to the east of Ramadi since Wednesday, according to the SITE Intelligence Group, which monitors militant websites.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>The advance is widely seen as a counteroffensive after the Islamic State group lost the city of Tikrit, Saddam Hussein's hometown, earlier this month.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 12:03:09</td><td>The Islamic State's push comes as IS was dealt a major blow this month, when Iraqi troops pushed the group out of Tikrit, Saddam Hussein's hometown.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>Security forces arrive to Ramadi to join the battle against Islamic State extremists in Ramadi, 70 miles (115 kilometers) west of Baghdad, Iraq, Wednesday, April 15, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>In late 2013, however, militants of the Islamic State group used the Syrian civil war to their advantage and began to push back into Iraq through Anbar province.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>Gen. Tahseen Ibrahim acknowledged that Islamic State militants "gained a foothold in some areas" in Anbar.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 10:46:13</td><td>More than 90,000 people have fled the Islamic State group's advance in Iraq's western Anbar province, which has set off fierce fighting in and around the provincial capital Ramadi, a United Nations humanitarian agency said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 11:30:16</td><td>Police Colonel Mahdi Abbas said Iraqi troops were engaged in intense clashes Tuesday in an offensive to regain control of Soufiya, one of three villages that fell into the hands of the Islamic State group last week.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 13:20:45</td><td>Iraq forces recapture a bridge in Ramadi from Islamic State</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:34:18</td><td>Islamic State militants breach Iraq refinery perimeter, repelled</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 12:34:18</td><td>BAGHDAD (Reuters) - Islamic State militants breached the security perimeter around Iraq's largest refinery in Baiji early on Monday but were beaten back by security forces and coalition air strikes, local officials said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 12:34:18</td><td>The refinery was under siege for five months after Islamic State militants tore through Iraq last summer.</td></tr>
 </table></body></html>

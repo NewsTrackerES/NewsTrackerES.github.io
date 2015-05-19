@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td>"All these declarations are quite disturbing," Amna Guellali director of the Human Rights Watch Tunisia.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td>Since its transition to democracy, Tunisia has been praised by the West as a symbol of democratic hope for a region where other "Arab Spring" nations are caught up in division, intolerance and outright war.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td>Four years after its revolt, Tunisia is unlikely to slide back to the days of Ben Ali's oppressive state.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td>"Yes, Tunisia has been hit hard, but we can't let that hurt our rights and freedoms."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td>Security is key for Tunisia's vital tourism industry.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 15:01:58</td><td>But last month's attack is testing Tunisia's tricky balance between security and the new liberties since the revolt, which ousted long-running autocrat Zine El-Abidine Ben Ali.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 15:01:58</td><td>Fear of repression falls mostly on conservative Salafists and Islamists who were long oppressed by Ben Ali and by his predecessor Habib Bourguiba, seen as the founder of much of Tunisia's secular tradition.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 14:16:39</td><td>TUNIS, Tunisia (AP) - Tunisia's army spokesman says an ambush by extremists in a mountainous region near the Algerian border has killed two soldiers and wounded three others.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 14:16:39</td><td>Militant ambush kills 2 soldiers in Tunisia near border</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 14:50:24</td><td>TUNIS, Tunisia - Tunisia's defense spokesman said a fifth soldier has died from wounds suffered in an ambush Tuesday that also wounded eight people.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 14:55:12</td><td>5th Tunisia soldier dies of wounds after ambush</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-24 17:32:12</td><td>TUNIS,Tunisia (AP) - Tunisia's defense ministry says 10 militants have been killed in fighting along the border with Algeria.</td></tr>
 </table></body></html>

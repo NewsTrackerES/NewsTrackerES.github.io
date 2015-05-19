@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,11 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 02:04:53</td><td>Inside the stadium, the home team wore jerseys with the script word "Baltimore" across the front instead of the customary "Orioles."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:46:49</td><td>Ushers check fans' tickets as they enter Orioles Park at Camden Yards before a baseball game between the Baltimore Orioles and the Toronto Blue Jays, Monday, May 11, 2015, in Baltimore.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:46:49</td><td>As the Baltimore Orioles prepared to play before their home fans for the first time in two weeks, the sights and sounds around Camden Yards on a lovely Monday afternoon were all about baseball.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 01:14:07</td><td>It was a stark contrast to the Orioles' last game in Baltimore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Baltimore has added nearly 4,000 upper middle-class families since 2010.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>The Census Bureau shows that Baltimore has added 3,700 families with incomes above $100,000 since 2010, gains that have helped pull many neighborhoods out of a decades-long slide.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Eric Hontz, a 33-year-old lawyer, moved from Washington two years ago to buy a home in the West Baltimore neighborhood of Reservoir Hill.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Nearly 43 percent of families in Washington proper earn at least $100,000, for example, compared with just 16 percent in Baltimore.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Baltimore is actively seeking to bring these people back, since their spending power could help restore neighborhoods, expand the economic base and energize what has been a tentative comeback for the 620,000-person city.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Compared with rival cities that have enjoyed a renaissance, Baltimore's upper-middle class remains a relatively small slice of the city.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>"What's missing in a lot of these neighborhoods is real retail - opportunities to go shopping without having to get on two buses or walking a mile," said William H. Cole, president of the Baltimore Development Corporation.</td></tr>
 </table></body></html>

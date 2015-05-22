@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/03/34/7616271/7/920x920.jpg'></td><td>2015-03-06 15:21:14</td><td>The Feb. 1 incidents, which took place in two neighboring districts, went largely unnoticed in Egypt.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-06 15:21:14</td><td>Silence in Egypt over police abuses amid "war on terror"</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-03-06 13:27:46</td><td>BP said in a statement that the investment is "a vote of confidence in Egypt's investment climate."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-03-06 13:27:46</td><td>Egypt has already attracted some $1.3 billion in foreign investment in the first quarter of the fiscal year, Salman said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-03-06 13:27:46</td><td>BP Group Chief Executive Bob Dudley says the project is his company's "largest foreign direct investment in Egypt."</td></tr>
 </table></body></html>

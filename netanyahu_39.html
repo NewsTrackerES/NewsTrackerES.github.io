@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -52,5 +52,4 @@
   <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>"I think that anyone who moves to establish a Palestinian state and evacuate territory gives territory away to radical Islamist attacks against Israel," Mr Netanyahu told NRG.</td></tr>
   <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>"Netanyahu has done everything possible to bury the two-state solution," Palestine Liberation Organisation committee member Saeb Erekat said, adding that the Israeli prime minister's latest statement counted on "full impunity from the international community".</td></tr>
   <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>No Palestinian state while I am PM, says faltering Netanyahu</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td>In an election eve about-face, Benjamin Netanyahu has vowed there will never be a Palestinian state as long as he is prime minister, contradicting a previous commitment in a bid to woo wavering right-wing voters back to his Likud Party.</td></tr>
 </table></body></html>

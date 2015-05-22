@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cannes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 13:43:01</td><td>Maiwenn was previously at Cannes with her ensemble drama "Polisse" (2011), which won a jury prize.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 13:43:01</td><td>Kore-eda received a jury prize and an ecumenical prize at Cannes just two years ago for "Like Father, Like Son," and he was also in competition with "Nobody Knows" (2004) and "Distance" (2001).</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 13:43:01</td><td>Van Sant was previously at Cannes with "Restless," which opened Un Certain Regard in 2011.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 13:43:01</td><td>Docter was previously in Cannes with "Up," the first animated film ever to open the festival.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 13:43:01</td><td>The filmmaker has had three prior films in competition at Cannes: "Unknown Pleasures" (2002), "24 City" (2008) and "A Touch of Sin" (2013), which won a screenplay prize.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 13:43:01</td><td>Osborne is no stranger to Cannes, having co-directed "Kung Fu Panda" (with John Stevenson), which screened out of competition in 2008.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 13:43:01</td><td>Only 17 films were announced for competition and 14 in Un Certain Regard, both lower than the likely eventual totals, and Cannes delegate general Thierry Fremaux assured those in attendance that more pictures would be added to the lineup in the coming days.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-16 13:43:01</td><td>The Canadian director is no stranger to Cannes, which screened his films "Cosmos" (1996, Directors' Fortnight), "August 32nd on Earth" (1998, Un Certain Regard) and "Polytechnique" (2009, Directors' Fortnight).</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-16 13:43:01</td><td>The film will screen May 15 in Cannes; Sony Classics will release the film July 24 Stateside.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-16 13:43:01</td><td>The film, which also stars Charlize Theron, is set for a second-day May 14 slot in Cannes, one day before its worldwide release through Warner Bros.</td></tr>
+</table></body></html>

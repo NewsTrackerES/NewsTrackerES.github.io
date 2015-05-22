@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>As Explorer loses ground, Microsoft readies new web browser</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft has built a new web browser designed for the modern web and mobile devices to go with its new Windows 10 operating system that's coming later this year.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft didn't invent the web browser, but it has invested heavily to promote Explorer since it was first launched in 1995.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Explorer will still be available, but Microsoft hinted this week that its new - and as-yet unnamed - browser will get top billing in the future.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft will likely support both Explorer and the new browser for several more years, so it doesn't alienate business customers by forcing them to rebuild their systems from scratch, Hilwa said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft is betting heavily that its new Windows 10 software will appeal to computer users who are increasingly using mobile devices.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft unveiled the new browser, known inside the company as "Project Spartan," at a January press event.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>In an industry that values the new and looks down on the old, Microsoft appears to be signaling Explorer's diminished status as a "legacy" product.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>After 20 years of competing against rival web browsers, Microsoft is gearing up to launch its own alternative to its once-dominant Internet surfing program.</td></tr>
+</table></body></html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 20:39:15</td><td>Google Becomes a Mobile Carrier With Project Fi</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 21:58:25</td><td>Similar motives prompted Google to begin building high-speed, hard-wired networks capable of navigating the Internet at speeds up to 100 times faster than existing broadband services.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 21:58:25</td><td>Although Google is only selling its broadband service in a handful of U.S. cities so far, AT&T and Comcast are now offering options with comparable speeds in a few communities.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-22 21:58:25</td><td>T-Mobile CEO John Legere, whose company already has been cutting its prices and rolling out new options, said it was a "no-brainer" to work with Google on Project Fi.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-22 21:58:25</td><td>The Mountain View, California, company believes most people will visit those services more frequently if they are enticed to stay online for longer periods, giving Google more opportunities to show the digital ads that generate most of its revenue.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-22 21:58:25</td><td>Google's pricing setup makes Project Fi less expensive than most of the comparable plans offering by the four biggest wireless phone carriers - Verizon, AT&T, T-Mobile and Sprint.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-22 21:58:25</td><td>Besides trying to bring down the prices of wireless phone plans, Google is promising subscribers that their Nexus 6 model will automatically connect with the fastest network available.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-22 21:58:25</td><td>The service, called "Project Fi," debuted Wednesday, about two months after Google revealed its plans to expand its ever-growing empire into providing wireless connections for smartphones.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-22 21:58:25</td><td>Rather than building its own network, Google is leasing space on cellular towers built by Sprint and T-Mobile, which are hoping the deals will boost their profits without costing them too many customers tempted to defect to Project Fi.</td></tr>
+</table></body></html>

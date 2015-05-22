@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cannes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 17:55:03</td><td>Rise of Netflix met warily at Cannes Film Festival</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 17:55:03</td><td>The confrontation illustrated the unease felt by some at the Cannes Film Festival about the encroachment of digital operators into an art form seen as hallowed in France, the birthplace of cinema.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 17:55:03</td><td>Ted Sarandos, chief content officer of Netflix, appeared Friday as part of Cannes' NEXT conference to tout Netflix's global strategy and its desire to upend the traditional window release schedules of movies.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 17:55:03</td><td>Cannes is a place where a trailer for Quentin Tarantino's latest film, "Hateful Eight," drew applause when it advertises itself as shot "in glorious 70mm."</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 17:55:03</td><td>Netflix hasn't announced any purchases at Cannes yet, but it is shopping.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 17:55:03</td><td>Its growing prominence in the movie industry is now seen everywhere from the Academy Awards to Cannes.</td></tr>
+</table></body></html>

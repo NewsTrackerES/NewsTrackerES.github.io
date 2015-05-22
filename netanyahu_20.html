@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81376000/jpg/_81376125_89827dc2-c89d-49a6-bd50-76335eeb4335.jpg'></td><td>2015-03-03 15:49:27</td><td>But Mr Netanyahu said: "We've been told that no deal is better than a bad deal. Well this is a bad deal, a very bad deal."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670601828_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 17:32:37</td><td>Obama refused to meet Netanyahu, saying that doing so just ahead of Israel's March 17 general election would be seen as interference.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670601828_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 17:32:37</td><td>Netanyahu entered the chamber to a cacophony of cheers, shaking hands with lawmakers, including House Speaker John Boehner.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670601828_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 17:32:37</td><td>Netanyahu's speech culminated a diplomatic storm triggered by his acceptance in January of a Republican invitation that bypassed the White House.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.abc.net.au/news/image/6278636-16x9-340x191.jpg'></td><td>2015-03-03 20:03:35</td><td>The absence of so many could raise political heat on Mr Netanyahu at home two weeks before an Israeli general election.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670601828_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 17:32:37</td><td>Obama refused to meet Netanyahu, saying that doing so just ahead of Israel's March 17 general election would be seen as interference.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670601828_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 17:32:37</td><td>Netanyahu entered the chamber to a cacophony of cheers, shaking hands with lawmakers, including House Speaker John Boehner.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670601828_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 17:32:37</td><td>Netanyahu's speech culminated a diplomatic storm triggered by his acceptance in January of a Republican invitation that bypassed the White House.</td></tr>
 </table></body></html>

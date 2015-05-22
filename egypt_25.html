@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 20:37:39</td><td>Kuwait's Emir Sheikh Sabah Al Ahmad Al Sabah announced that his oil-rich nation would invest $4 billion in Egypt.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/14/22/7652543/7/square_gallery_thumb.jpg'></td><td>2015-03-13 20:37:39</td><td>Egypt's Gulf Arab allies promised it $12 billion in new investment and aid on Friday, as El-Sissi opened the conference to promote an ambitious recovery plan for his country's ailing economy.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/14/22/7652543/7/square_gallery_thumb.jpg'></td><td>2015-03-13 20:37:39</td><td>Egypt rakes billions in Gulf aid that boosts its president</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/vKsrzATbGI6RxttCh0Q3_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c29979059a3aaa0b700f6a706700c979.jpg'></td><td>2015-03-13 20:38:47</td><td>President Abdel-Fattah el-Sissi made his case for the world's support, depicting Egypt as vital to regional stability and a bulwark against Islamic militancy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/14/17/7652304/3/square_gallery_thumb.jpg'></td><td>2015-03-13 20:34:45</td><td>It must do one or other under the 2015 federal budget to unblock hundreds of millions of dollars in military aid for Egypt.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 20:37:39</td><td>Kuwait's Emir Sheikh Sabah Al Ahmad Al Sabah announced that his oil-rich nation would invest $4 billion in Egypt.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/14/22/7652543/7/square_gallery_thumb.jpg'></td><td>2015-03-13 20:37:39</td><td>Egypt's Gulf Arab allies promised it $12 billion in new investment and aid on Friday, as El-Sissi opened the conference to promote an ambitious recovery plan for his country's ailing economy.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/14/22/7652543/7/square_gallery_thumb.jpg'></td><td>2015-03-13 20:37:39</td><td>Egypt rakes billions in Gulf aid that boosts its president</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/vKsrzATbGI6RxttCh0Q3_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c29979059a3aaa0b700f6a706700c979.jpg'></td><td>2015-03-13 20:38:47</td><td>President Abdel-Fattah el-Sissi made his case for the world's support, depicting Egypt as vital to regional stability and a bulwark against Islamic militancy.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,4 +55,5 @@
   <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>"Jews have been murdered again on European soil only because they were Jews," Mr Netanyahu said.</td></tr>
   <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/t/v/1/image.related.articleLeadwide.620x349.13fsws.png/1424051916304.jpg'></td><td>2015-02-16 01:58:45</td><td>Shlomo Avineri, an Israeli professor of political science, described Mr Netanyahu's call as "an intellectual and moral mistake" and accused him of taking a populist stance for electoral purposes.</td></tr>
   <tr><td style='display:none'>6</td><td></td><td>2015-03-17 20:46:59</td><td>Israel's Netanyahu declares victory in tight election</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150403105408-sot-netanyahu-iran-nuclear-deal-grave-danger-00010905-large-169.jpg'></td><td>2015-04-03 17:04:25</td><td>" ... I want to make clear to all: The survival of Israel is non-negotiable," Netanyahu said.</td></tr>
 </table></body></html>

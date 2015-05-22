@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 12,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -59,4 +59,5 @@
   <tr><td style='display:none'>8</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297663947180_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-13 14:12:29</td><td>Fighting rages in run-up to Ukraine ceasefire</td></tr>
   <tr><td style='display:none'>9</td><td><img src='http://img.rasset.ie/000a29a5-219.jpg'></td><td>2015-02-13 14:47:51</td><td>Ukraine said pro-Russian rebels had built up their forces across separatist-held zones since the deal and both sides accused each other of killing civilians.</td></tr>
   <tr><td style='display:none'>10</td><td><img src='http://img.rasset.ie/000a29a5-219.jpg'></td><td>2015-02-13 14:47:51</td><td>"The town's heating system is broken, power lines are damaged as well as the water supply ... So this is how a comprehensive ceasefire is prepared for," the head of the Ukraine-controlled administration, Hennadiy Moskal, said online.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/XYvOVgKOHtHXIkBEaqWhRg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/video/video.wochit.com/550f8bd85759838f2988d9008dffa579.cf.jpg'></td><td>2015-04-28 09:51:01</td><td>U.S. State Department spokesman Jeff Rathke said in Washington that Russia has deployed more air defense systems into eastern Ukraine and positioned several near the front lines.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,7 +55,5 @@
   <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>If Kahlon does go with Netanyahu, it would give the hard-liner a fourth term that, if completed, would make him Israel's longest-serving leader, on par with the nation's founder David Ben Gurion.</td></tr>
   <tr><td style='display:none'>5</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>Kahlon seems to dislike Netanyahu intensely, and he certainly has the power to crown Herzog, a mild-mannered lawyer and scion of a venerable family of Zionist founders.</td></tr>
   <tr><td style='display:none'>6</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/AFP150319031859_140x93.jpg'></td><td>2015-03-18 00:01:31</td><td>Netanyahu knows the complications of all this and may try to draw in Herzog, to give his government a more moderate character.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/x/5/t/image.related.articleLeadwide.620x349.1m3srb.png/1426835267076.jpg'></td><td>2015-03-20 07:07:59</td><td>Copies of ballot papers and campaign posters for Israeli Prime Minister Benjamin Netanyahu's Likud Party abandoned after the nation's elections on Wednesday.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Qk9CwrG1KDmfElDKAC1tkg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T222230Z_1_LYNXMPEB2J122_RTROPTP_2_ISRAEL-ELECTION.JPG'></td><td>2015-03-20 22:22:30</td><td>Netanyahu row casts doubt on Obama pledge to 'have Israel's back'</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://i2.cdn.turner.com/cnnnext/dam/assets/150403105408-sot-netanyahu-iran-nuclear-deal-grave-danger-00010905-large-169.jpg'></td><td>2015-04-03 17:04:25</td><td>" ... I want to make clear to all: The survival of Israel is non-negotiable," Netanyahu said.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-14 23:00:38</td><td>Obama not enthused by some members of Netanyahu's government</td></tr>
 </table></body></html>

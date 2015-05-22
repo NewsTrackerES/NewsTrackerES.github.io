@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 19,
+            max: 18,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 19 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -66,5 +66,4 @@
   <tr><td style='display:none'>15</td><td></td><td>2015-03-17 07:07:21</td><td>"We will preserve Jerusalem's unity in all its parts. We will continue to build and fortify Jerusalem so that its division won't be possible and it will stay united forever," Netanyahu said.</td></tr>
   <tr><td style='display:none'>16</td><td></td><td>2015-03-17 09:45:19</td><td>"Whoever wants to follow Bibi's (Netanyahu's) path of despair and disappointment will vote for him," Herzog said after casting his vote.</td></tr>
   <tr><td style='display:none'>17</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 13:16:40</td><td>Netanyahu's pledge of no Palestinian state while he is in charge puts him on a collision course with the United States and the European Union at a time when both are desperate to breathe new life into the moribund peace process.</td></tr>
-  <tr><td style='display:none'>18</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 14:23:04</td><td>Netanyahu's right-wing Likud Party scored a resounding victory in Israel's election, final results showed Wednesday, a stunning turnaround after a tight race that had put his lengthy rule in jeopardy.</td></tr>
 </table></body></html>

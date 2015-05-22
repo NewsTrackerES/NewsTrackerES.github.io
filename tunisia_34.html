@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -52,5 +52,4 @@
   <tr><td style='display:none'>1</td><td></td><td>2015-04-07 14:16:39</td><td>Militant ambush kills 2 soldiers in Tunisia near border</td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-04-08 14:50:24</td><td>TUNIS, Tunisia - Tunisia's defense spokesman said a fifth soldier has died from wounds suffered in an ambush Tuesday that also wounded eight people.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-04-08 14:55:12</td><td>5th Tunisia soldier dies of wounds after ambush</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-24 17:32:12</td><td>TUNIS,Tunisia (AP) - Tunisia's defense ministry says 10 militants have been killed in fighting along the border with Algeria.</td></tr>
 </table></body></html>

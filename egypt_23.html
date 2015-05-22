@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,5 +53,4 @@
   <tr><td style='display:none'>2</td><td></td><td>2015-03-13 14:58:03</td><td>The administration is likewise uncomfortable with a national security declaration that would recall the decades of American support for Egypt's former autocrat Hosni Mubarak despite his government's obvious shortcomings.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-03-13 14:58:03</td><td>In the Red Sea resort of Sharm el-Sheikh, America's top diplomat said investment was needed to restore confidence in Egypt and provide stability for the region.</td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-03-13 14:58:03</td><td>Egypt's economy was rocked after Arab Spring protesters chased Mubarak from power in 2011.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/35/14/17/7652304/3/square_gallery_thumb.jpg'></td><td>2015-03-13 20:34:45</td><td>It must do one or other under the 2015 federal budget to unblock hundreds of millions of dollars in military aid for Egypt.</td></tr>
 </table></body></html>

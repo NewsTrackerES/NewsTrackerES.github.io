@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -51,5 +51,4 @@
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 17:30:37</td><td>FREETOWN, Sierra Leone -- Sierra Leone is planning another three-day, countrywide shutdown March 27 through 29 to ferret out Ebola cases, remind people how to protect themselves from the disease and control its transmission.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-03-18 17:43:27</td><td>In what Sierra Leone hopes will be a final push to zero cases, Alfred Palo Conteh, head of the country's Ebola response, said Wednesday that the government will again ask residents to stay in their homes for three days.</td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-03-18 17:43:27</td><td>Sierra Leone is "hoping it will be the last push to end Ebola outbreak. We want it to be community-owned and for people to do the proper things," said Fatoma.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 11:25:12</td><td>Ebola lockdown leaves Sierra Leone capital Freetown eerily quiet</td></tr>
 </table></body></html>

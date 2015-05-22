@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -54,5 +54,4 @@
   <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/33/44/7715090/3/mosaic_2.jpg'></td><td>2015-03-25 23:29:24</td><td>Facebook's Messenger app to mix business with more pleasure</td></tr>
   <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/33/44/7715090/3/mosaic_2.jpg'></td><td>2015-03-25 23:29:24</td><td>The push to diversify Messenger addresses a potential threat to Facebook's ubiquitous social network posed by a variety of mobile messaging maps offering more intimate and direct ways to connect with friends.</td></tr>
   <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 01:00:49</td><td>Facebook is trying to mold its Messenger app into a more versatile communications channel as smartphones create new ways for people to connect with friends and businesses beyond the walls of the company's ubiquitous social network.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82200000/jpg/_82200492_pamessenger.jpg'></td><td>2015-04-09 08:16:39</td><td>Facebook Messenger app for browsers</td></tr>
 </table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 161,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 161 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>40</td><td></td><td>2015-03-03 20:50:44</td><td><a href='apple_or_microsoft_16.html'>NEW YORK (AP) - As a major wireless show continues this week in Barcelona, Spain, Apple is highlighting the capabilities of its iPhone cameras with a gallery of photos taken by its users around the world. (7)</a></td></tr>
+  <tr><td style='display:none'>78</td><td><img src='http://ww2.hdnux.com/photos/34/77/55/7600993/3/square_gallery_thumb.jpg'></td><td>2015-03-03 20:50:44</td><td>Apple is featuring 57 photos and three videos from those users at http://apple.com/worldgallery.</td></tr>
+  <tr><td style='display:none'>57</td><td></td><td>2015-03-04 01:52:32</td><td><a href='apple_or_microsoft_1.html'>Apple Inc. and Google Inc. both said Tuesday they have created software updates to fix the "FREAK attack" flaw, which derives its name from an acronym of technical terms. (3)</a></td></tr>
+  <tr><td style='display:none'>79</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/277_QpkpICSk6Dpg1_8HJQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-us/homerun/video.wpvi.abc.news.com/155fbed42b9a05e46ddb90734fe95cac'></td><td>2015-03-04 03:35:30</td><td>Apple, Android browsers vulnerable to 'FREAK attack'</td></tr>
+  <tr><td style='display:none'>80</td><td></td><td>2015-03-04 09:35:07</td><td>Microsoft co-founder Paul Allen says he's found sunken Japan WWII battleship off Philippines</td></tr>
+  <tr><td style='display:none'>53</td><td></td><td>2015-03-05 03:35:32</td><td><a href='apple_or_microsoft_78.html'>"Our goal with gaming at Microsoft is to allow people to play games wherever they are," Spencer told game makers Wednesday at the Game Developers Conference. (7)</a></td></tr>
+  <tr><td style='display:none'>67</td><td></td><td>2015-03-05 10:25:20</td><td><a href='apple_or_microsoft_34.html'>SEOUL, South Korea (AP) - A consumer survey showed the popularity of the iPhone 6 has driven Ap

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 19:36:00</td><td>A man walks by broken glass at a bus stop near Mondawmin Mall in Baltimore.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/n/n/5/image.related.articleLeadwide.620x349.1mvngb.png/1430264550021.jpg'></td><td>2015-04-28 23:42:54</td><td>An investigation by The Baltimore Sun last year revealed that between 2011 and September 2014 the Baltimore Police had paid out $US5.7 million ($7.2 million) over lawsuits stemming from police assaults.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/n/n/5/image.related.articleLeadwide.620x349.1mvngb.png/1430264550021.jpg'></td><td>2015-04-28 23:42:54</td><td>Members of the community hold hands in front of police officers in riot gear outside a recently looted and burned CVS store in Baltimore, Maryland.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/n/n/5/image.related.articleLeadwide.620x349.1mvngb.png/1430264550021.jpg'></td><td>2015-04-28 23:42:54</td><td>Women walk past blighted row houses in Baltimore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/n/n/5/image.related.articleLeadwide.620x349.1mvngb.png/1430264550021.jpg'></td><td>2015-04-28 23:42:54</td><td>An investigation by The Baltimore Sun last year revealed that between 2011 and September 2014 the Baltimore Police had paid out $US5.7 million ($7.2 million) over lawsuits stemming from police assaults.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/n/n/5/image.related.articleLeadwide.620x349.1mvngb.png/1430264550021.jpg'></td><td>2015-04-28 23:42:54</td><td>Members of the community hold hands in front of police officers in riot gear outside a recently looted and burned CVS store in Baltimore, Maryland.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/n/n/5/image.related.articleLeadwide.620x349.1mvngb.png/1430264550021.jpg'></td><td>2015-04-28 23:42:54</td><td>Women walk past blighted row houses in Baltimore.</td></tr>
 </table></body></html>

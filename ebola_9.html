@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -55,5 +55,4 @@
   <tr><td style='display:none'>4</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Health officials have expressed optimism in recent weeks that the tide seems to be turning in the fight against the deadliest Ebola outbreak in history.</td></tr>
   <tr><td style='display:none'>5</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>Now, for the final push to zero, the focus must swing to finding cases and tracing the personal contacts of each person infected with Ebola.</td></tr>
   <tr><td style='display:none'>6</td><td><img src='http://static.theglobeandmail.ca/865/news/world/article23132189.ece/ALTERNATES/w220/aylward.JPG'></td><td>2015-02-20 21:31:13</td><td>The United Nations has said 10 times fewer people are being diagnosed with Ebola each week than in September.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 16:02:41</td><td>Such measures not only interfere with international travel and impact local economies, but also hamper Ebola response and recovery efforts because they make it more difficult for aid workers to move in and out of the affected countries, Aylward said.</td></tr>
 </table></body></html>

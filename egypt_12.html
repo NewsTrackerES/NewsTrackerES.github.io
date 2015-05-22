@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/3/4/egypt-court-banspalestinianhamasgroup/_jcr_content/image.adapt.480.low.morsi_hamas_030414.jpg'></td><td>2015-02-28 18:37:00</td><td>Badie has already been sentenced to multiple life terms, and was one of hundreds given the death sentence in a mass trial that drew international criticism of Egypt's judicial system.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/3/4/egypt-court-banspalestinianhamasgroup/_jcr_content/image.adapt.480.low.morsi_hamas_030414.jpg'></td><td>2015-02-28 18:37:00</td><td>After the January decision against Hamas' Qassem Brigades, a source close to the armed wing signaled the group would no longer accept Egypt as a broker between it and Israel.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/28/262FF31500000578-2973721-image-m-30_1425155014615.jpg'></td><td>2015-03-01 12:58:27</td><td>Hamas is an offshoot of the Brotherhood, which the authorities have also declared a terrorist group in Egypt and have repressed systematically since the coup against Morsi.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-18 07:46:18</td><td>The Committee to Protect Journalists listed Egypt in 2014 as one of the 10 worst jailers of journalists around the world, along with China, Iran, Turkey and Ethiopia.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-18 07:46:18</td><td>There are at least nine other journalists in detention in Egypt.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-02-18 07:46:18</td><td>Al-Jazeera producer hopes to be cleared in Egypt retrial</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/5iNFNi2KwApbztF0L70HtQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3e9e0788bd2768076e0f6a7067000958.jpg'></td><td>2015-02-18 07:46:35</td><td>The journalists and their network said they were caught in a political dispute between Egypt and Qatar, which sponsors Al-Jazeera and had been a strong backer of Morsi during his divisive year in power.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/5iNFNi2KwApbztF0L70HtQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3e9e0788bd2768076e0f6a7067000958.jpg'></td><td>2015-02-18 07:46:35</td><td>Mohammed said he spent 411 days in three different prisons in Egypt, including a maximum security facility where he had to sleep on a damp cement floor in a cell six and a half feet wide.</td></tr>
 </table></body></html>

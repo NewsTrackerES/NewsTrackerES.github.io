@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 13:48:44</td><td><a href='kenya_18.html'>The White House says Obama will visit Kenya in July for the Global Entrepreneurship Summit, which brings together business leaders, international organizations and governments. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 15:11:43</td><td><a href='kenya_19.html'>Barack Obama will make a long-awaited trip to Kenya later this year, visiting his father's homeland for the first time since becoming US president six years ago, the White House said Monday. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-03 23:04:06</td><td><a href='kenya_20.html'>"The two leaders will discuss how to strengthen counterterrorism cooperation and continue to work together to build a safer and more prosperous future for Kenya and the broader region." (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-20 20:26:52</td><td>Oldest Known Stone Tools Discovered in Kenya</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/6/e/p/1/image.related.articleLeadwide.620x349.gh69wu.png/1432171083546.jpg'></td><td>2015-05-21 01:18:14</td><td>One of the ancient stone tools found in Kenya.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/6/e/p/1/image.related.articleLeadwide.620x349.gh69wu.png/1432171083546.jpg'></td><td>2015-05-21 01:18:14</td><td>New York: By taking a wrong turn in a dry riverbed in Kenya, scientists discovered a trove of stone tools far older than any ever found before.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/6/e/p/1/image.related.articleLeadwide.620x349.gh69wu.png/1432171083546.jpg'></td><td>2015-05-21 01:18:14</td><td>Sonia Harmand and Jason Lewis with stone tools found in the West Turkana area of Kenya.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/6/e/p/1/image.related.articleLeadwide.620x349.gh69wu.png/1432171083546.jpg'></td><td>2015-05-21 01:18:14</td><td>The Nature paper describes 149 stones and stone flakes found west of Lake Turkana in a remote area of northern Kenya.</td></tr>
 </table></body></html>

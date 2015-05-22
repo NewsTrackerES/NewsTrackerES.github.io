@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 13:20:17</td><td><a href='google_11.html'>Morgan Stanley chief financial officer Ruth Porat is leaving the bank to join Google Inc. in the same position, the companies said on Tuesday. (7)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 14:15:06</td><td><a href='google_12.html'>Google, based in Mountain View, California, said Porat also advised the New York Federal Reserve Bank on how to deal with insurance company AIG during the financial crisis. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:14:35</td><td><a href='google_13.html'>SAN FRANCISCO (AP) - Google has hired Morgan Stanley's chief financial officer, Ruth Porat, as its CFO, at a time when Silicon Valley is under fire for hiring and promoting too few women. (16)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 20:56:48</td><td><a href='google_14.html'>Total compensation to Google's departing CFO was twice as much as Porat's for the three years through 2013 - US$62.2 million vs. $29.6 million, according to public filings by the companies. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 21:56:21</td><td><a href='google_20.html'>The lucrative pay package disclosed in a Thursday regulatory filing underscored how much Google prized Porat, who is considered to be among the most powerful women on Wall Street. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 22:26:41</td><td><a href='google_19.html'>Mountain View, California-based Google said it would stop annual cash bonuses for senior vice presidents from next year and shift to a system that includes annual base salary and biennial equity grants. (4)</a></td></tr>
+</table></body></html>

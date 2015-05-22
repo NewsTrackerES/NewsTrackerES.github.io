@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -51,4 +51,6 @@
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:22:43</td><td>19 killed in Tunis museum attack, including 17 foreigners: Tunisia PM</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-03-18 15:22:43</td><td>"The EU is determined to mobilize all the tools it has to fully support Tunisia in the fight against terrorism," she added.</td></tr>
   <tr><td style='display:none'>2</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/df65e422b932cbad4bb83b0da9c9f6b4202f6e38/0_185_3887_2331/500.jpg'></td><td>2015-03-18 18:13:08</td><td>The French foreign minister Laurent Fabius has said Tunisia was targeted because it represents hope.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 09:06:29</td><td>"I want the people of Tunisia to understand firstly and lastly that we are in a war with terror, and these savage minority groups will not frighten us," said Essebsi in a televised address to the nation.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 08:51:20</td><td>Tunisia's national museum on Tuesday delayed a planned reopening after last week's attack on foreign tourists due to security concerns, its head of communications Hanene Srarfi told AFP.</td></tr>
 </table></body></html>

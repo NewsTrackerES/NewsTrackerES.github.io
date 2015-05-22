@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -57,4 +57,5 @@
   <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zR9qJsd.NSS0SroUla68OA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e0593df092b24a076e0f6a706700837a.jpg'></td><td>2015-02-16 13:38:03</td><td>Liberia schools reopen after 6-month Ebola closure</td></tr>
   <tr><td style='display:none'>7</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zR9qJsd.NSS0SroUla68OA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e0593df092b24a076e0f6a706700837a.jpg'></td><td>2015-02-16 13:38:03</td><td>Since Ebola is spread through direct contact with bodily fluids, administrators want to minimize the potential spread.</td></tr>
   <tr><td style='display:none'>8</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/TdG_0FtxYQ3MxZGPdbZs2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T001049Z_1_LYNXMPEB2M002_RTROPTP_2_HEALTH-EBOLA-AFRICA.JPG.cf.jpg'></td><td>2015-03-05 14:14:29</td><td>Massive efforts and funds have been poured into the fight to rid the three west African countries of the Ebola scourge, and a main focus has been to ensure that all those infected are isolated and cared for in treatment centres.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l.yimg.com/bt/api/res/1.2/W0it6bnKUdmhlQIo_.lPSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8116428-1-1-0.jpg'></td><td>2015-04-22 22:33:05</td><td>"The decline in confirmed cases of Ebola virus disease has halted over the last three weeks," the WHO said in its latest report.</td></tr>
 </table></body></html>

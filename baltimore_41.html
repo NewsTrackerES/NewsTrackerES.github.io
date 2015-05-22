@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,17 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 07:24:39</td><td>Wyndal Gordon, a longtime defense attorney in Baltimore who has litigated against officers in excessive-force cases.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 07:24:39</td><td>Practically speaking, she is almost certain to seek an indictment, said Andrew Levy, a Baltimore defense attorney and an adjunct professor at the University of Maryland School of Law.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 07:24:39</td><td>Warren Brown, a veteran Baltimore defense attorney who supported Mosby's opponent, said the prosecutor's decision would be inextricably linked to her and her husband's political aspirations.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 07:24:39</td><td>She accused him of being too cozy with officers and too out of touch with the citizens of Baltimore.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-01 07:24:39</td><td>Juries in Baltimore criminal trials tend to be distrustful of police officers, an attitude that could work in Mosby's favor if she decides the officers committed crimes.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-01 07:24:39</td><td>Mosby and her husband, a Baltimore city councilman, are black and live just blocks from the poverty-stricken community where riots broke out Monday following Gray's funeral.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-01 07:24:39</td><td>After clerking at U.S. Attorney's offices in Boston and Washington, she joined the Baltimore State's Attorney's Office in 2005 and moved up the ranks before leaving to work for an insurance company.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-05-01 07:25:22</td><td>Brown and Ivan Bates, a former prosecutor and a current defense attorney in Baltimore, both expressed concerns about Mosby's ties to the attorney representing Gray's family, Billy Murphy.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-05-01 07:59:42</td><td>In this Feb, 6, 2015 photo, State's Attorney Marilyn Mosby speaks at a news conference, in Baltimore.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-05-01 07:59:42</td><td>In this Feb. 3, 2015 photo, Marilyn Mosby, right, Baltimore City State's Attorney, holds a press conference regarding the Phylicia Barnes case.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-05-01 07:59:42</td><td>Baltimore's chief prosecutor is 35 years old, has been on the job for less than four months, and is about to take on the biggest challenge of her career weighing the evidence against six police officers in the death of Freddie Gray and deciding whether they deserve to be criminally charged.</td></tr>
-  <tr><td style='display:none'>11</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/01/12/2834166500000578-3063807-image-m-10_1430480793835.jpg'></td><td>2015-05-01 13:05:52</td><td>'The conventional wisdom would be that a Baltimore city grand jury would not be reluctant to indict a police officer,' Levy said.</td></tr>
-  <tr><td style='display:none'>12</td><td><img src='http://ww1.hdnux.com/photos/36/12/66/7908740/3/920x920.jpg'></td><td>2015-05-01 16:48:04</td><td>Mosby ousted an established white opponent last year, accusing him of being too cozy with police officers and too out of touch with the citizens of Baltimore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/O7aslQDRqUw31nMHliVW_g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a0f98a51a3234c13750f6a706700a55d.jpg'></td><td>2015-05-02 07:09:55</td><td>Asked whether the charges against the officers in the Baltimore case would have a chilling effect on law enforcement, Cohen said he thought there might be some but that it would be short-lived.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/O7aslQDRqUw31nMHliVW_g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a0f98a51a3234c13750f6a706700a55d.jpg'></td><td>2015-05-02 07:09:55</td><td>Across country, police scrutinized after Baltimore arrests</td></tr>
 </table></body></html>

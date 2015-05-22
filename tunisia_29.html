@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 08:51:20</td><td>Tunisia's national museum on Tuesday delayed a planned reopening after last week's attack on foreign tourists due to security concerns, its head of communications Hanene Srarfi told AFP.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td>With feeble growth and graduate unemployment at 30 percent, there are fears the attack could impact Tunisia's shaky economy by discouraging visitors.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td>Officials have admitted there were security failures on the day of the attack on the complex, which is next to Tunisia's parliament.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td>Tunisia ups massacre museum security, reopening delayed</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td>With feeble growth and graduate unemployment at 30 percent, there are fears the attack could impact Tunisia's shaky economy by discouraging visitors.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td>Officials have admitted there were security failures on the day of the attack on the complex, which is next to Tunisia's parliament.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td>Tunisia ups massacre museum security, reopening delayed</td></tr>
 </table></body></html>

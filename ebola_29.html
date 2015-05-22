@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,4 +53,5 @@
   <tr><td style='display:none'>2</td><td></td><td>2015-03-19 16:01:07</td><td>Ebola, often called the caregivers' disease, has decimated the ranks of doctors and nurses in the three countries hardest hit in this outbreak: Liberia, Guinea and Sierra Leone.</td></tr>
   <tr><td style='display:none'>3</td><td></td><td>2015-03-19 16:01:07</td><td>So far, 11 families have received $5,000 each, said Tolbert Nyenswah, who leads the government's Ebola response; dozens more payments are in the works.</td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-03-19 16:01:07</td><td>Liberia currently has no Ebola cases, but it must still wait several weeks before it is officially declared free of the disease.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-11 17:22:44</td><td>Liberia recorded 10,564 cases of Ebola, with 4,716 deaths.</td></tr>
 </table></body></html>

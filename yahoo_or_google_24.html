@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>Google, Microsoft battle drives down prices for PCs, tablets</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>SAN FRANCISCO (AP) - Google is releasing its cheapest Chromebook laptops yet, two versions priced at $149 aimed at undercutting Microsoft's Windows franchise and gaining ground in even more classrooms.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>Besides the $149 laptops, Google also is attacking Microsoft on other fronts.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>"We cannot be happier that Microsoft is helping drive down the prices of PCs," said Caesar Sengupta, Google's vice president of product management for Chromebooks.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>The Chromebook has served a dual purpose for Google.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>Later this spring, Google and Asus are releasing a hybrid Chromebook that can use used as either a laptop or tablet with a 10-inch screen.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>In the summer, Asus and Google will start selling a new Chrome device that will provide people a cheaper way to upgrade an old PC.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td>Like the company's Android software for mobile devices, the Chrome system is set up so users will automatically begin using Google's search engine and other services, such as Gmail and YouTube.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/628x471.jpg'></td><td>2015-03-31 18:00:15</td><td>Various PC manufacturers have been working with Google to design lightweight laptops running on the Chrome operating system since 2011.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/628x471.jpg'></td><td>2015-03-31 18:00:15</td><td>Google has used the Chromebooks as a prod to bring down the prices of all PCs, something the company wanted to do because it has more opportunities to show the digital ads that bring in most of its revenue when more people can afford to buy an Internet-connected device.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 18:54:06</td><td>Google is releasing two $149 laptops in an effort to undercut Microsoft's Windows franchise and drive down already falling personal computer prices.</td></tr>
+</table></body></html>

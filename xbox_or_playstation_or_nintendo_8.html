@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>xbox or playstation or nintendo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 09:03:15</td><td>PlayStation Gets Spotify, Replacing Sony's Own Music Service</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 09:03:15</td><td>Its music app is available on some Internet-connected TVs and set-top boxes, but Spotify says it worked closely with Sony to optimize its service for the PlayStation.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 09:03:15</td><td>Spotify is coming to the PlayStation, replacing Sony's own Music Unlimited service, as the company continues to expand the game console into an entertainment hub beyond video games.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 09:03:15</td><td>Customers who do not already have a Spotify account can sign up on the PlayStation.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-30 09:03:15</td><td>Existing Spotify customers will get access to the PlayStation app with their usual sign-in.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-30 09:03:15</td><td>Spotify hits the PlayStation 3 and 4 on Monday, with a new app adapted for large television screens.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-30 09:03:15</td><td>Just two weeks ago, Sony launched an online television service, PlayStation Vue, offering more than 50 over-the-air and cable channels starting at $50 a month.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-30 09:03:15</td><td>PlayStation users have long been able to watch DVDs and stream Netflix, Amazon and YouTube shows with the console.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-30 09:03:15</td><td>Although free users aren't allowed to choose specific songs on mobile devices, they will be able to on the PlayStation, just as they now do on traditional computers.</td></tr>
+</table></body></html>

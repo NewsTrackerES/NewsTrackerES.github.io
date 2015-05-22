@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -54,6 +54,4 @@
   <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/e/l/m/6/image.related.articleLeadwide.620x349.13elm4.png/1423826087666.jpg'></td><td>2015-02-13 11:14:56</td><td>Boko Haram attacks Chadian village as revolt spreads</td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-02-14 13:44:30</td><td>Chad's army, one of the best in the region, has joined a regional offensive against Boko Haram and says it has killed hundreds of fighters in the past fortnight.</td></tr>
   <tr><td style='display:none'>5</td><td></td><td>2015-02-14 13:44:30</td><td>A video still shows Boko Haram leader Abubakar Shekau speaking to the camera.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/0X4hRkjwn1PiT0d9FaYwuQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-03T213837Z_1_LYNXMPEB320LU_RTROPTP_2_HARVARD-NIGER.JPG.cf.jpg'></td><td>2015-04-03 23:43:36</td><td>Ngouboua, a fishing village on the shores of Lake Chad, was targeted in February in the first known lethal attack by Boko Haram on Chadian territory.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-26 16:02:36</td><td>Boko Haram, hardline Islamists who want to establish a caliphate in the region, attacked the island of Karamga at dawn on Saturday, their second attempt to capture it since February, army and government sources said.</td></tr>
 </table></body></html>

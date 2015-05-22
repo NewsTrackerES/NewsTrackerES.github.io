@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Baltimore has added nearly 4,000 upper middle-class families since 2010.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>The Census Bureau shows that Baltimore has added 3,700 families with incomes above $100,000 since 2010, gains that have helped pull many neighborhoods out of a decades-long slide.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Eric Hontz, a 33-year-old lawyer, moved from Washington two years ago to buy a home in the West Baltimore neighborhood of Reservoir Hill.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Nearly 43 percent of families in Washington proper earn at least $100,000, for example, compared with just 16 percent in Baltimore.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Baltimore is actively seeking to bring these people back, since their spending power could help restore neighborhoods, expand the economic base and energize what has been a tentative comeback for the 620,000-person city.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>Compared with rival cities that have enjoyed a renaissance, Baltimore's upper-middle class remains a relatively small slice of the city.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww1.hdnux.com/photos/36/32/33/7972548/3/gallery_thumb.jpg'></td><td>2015-05-13 16:31:31</td><td>"What's missing in a lot of these neighborhoods is real retail - opportunities to go shopping without having to get on two buses or walking a mile," said William H. Cole, president of the Baltimore Development Corporation.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>Carrollton Avenue in the Sandtown-Winchester neighborhood in Baltimore May 5, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>A woman walks down Riggs Avenue in the Sandtown- Windchester neighborhood of Baltimore on May 4, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>Goldie said he does feel that Baltimore is "kind of changing," though he said it shouldn't have taken Gray's death to shine a light on the problems that he's seen every day of his life.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>One man from East Baltimore warned the other attendees that the public pool in his neighborhood would be closed for the fourth summer in a row, a symbol of the lack of recreational activities in poor neighborhoods.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td>The Baltimore Sun recently reported that from 1989 to 1999, at least $130 million in public and private money was spent to build or refurbish houses in Sandtown-Winchester.</td></tr>
 </table></body></html>

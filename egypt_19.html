@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -49,5 +49,6 @@
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/868/multimedia/camera-club/in-photos/article11590176.ece/ALTERNATES/w220/web-AMR108-APTOPIX+Mideast+Egyp.jpg'></td><td>2015-03-07 14:35:31</td><td>Egypt is investigating how foreign tourists managed to film a pornographic video near the Giza pyramids, the government said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/1203936-3x2-340x227.jpg'></td><td>2015-03-07 23:36:55</td><td>Tourism is a main source of revenue and foreign currency for Egypt, but four years of political turmoil since the Arab Spring uprising that ousted Hosni Mubarak has scared away most foreign tourists.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/868/multimedia/camera-club/in-photos/article11590176.ece/ALTERNATES/w220/web-AMR108-APTOPIX+Mideast+Egyp.jpg'></td><td>2015-03-07 14:35:31</td><td>Egypt investigates explicit video filmed at the pyramids</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.abc.net.au/news/image/1203936-3x2-340x227.jpg'></td><td>2015-03-07 23:36:55</td><td>Tourism is a main source of revenue and foreign currency for Egypt, but four years of political turmoil since the Arab Spring uprising that ousted Hosni Mubarak has scared away most foreign tourists.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -57,5 +57,4 @@
   <tr><td style='display:none'>6</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>Facebook launched auto-play video ads in March 2014.</td></tr>
   <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>Almost all analysts saw video advertising as one of Facebook's most promising areas for revenue growth.</td></tr>
   <tr><td style='display:none'>8</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691528473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-23 15:30:28</td><td>Facebook shares were down about 1% at $83.92 in early trading on Thursday.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='https://usatmarkets.files.wordpress.com/2014/04/afp-517031089.jpg?w=1000'></td><td>2015-04-23 18:56:39</td><td>Bottom line: "The Internet is experiencing something of an inflection point in terms of demand for Video and Mobile Advertising, and Facebook may well be the single biggest beneficiary of this inflection."</td></tr>
 </table></body></html>

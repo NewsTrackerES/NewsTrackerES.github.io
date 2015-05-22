@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,5 +53,4 @@
   <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Amnesty International said authorities in Egypt are covering up excessive use of force by police, taking no action to rein in abuse.</td></tr>
   <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Sunday, Feb. 8, 2015 file photo, a man looks at a burning vehicle during a riot outside an air defense stadium in a suburb east of Cairo, Egypt.</td></tr>
   <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Monday, Feb. 9, 2015 file photo, an Ultras White Knights soccer fan, mourns over his friends who were killed in a riot, outside Zeinhom morgue, in Cairo, Egypt.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-17 22:12:05</td><td>Egypt's state prosecutor referred on Tuesday a police officer to trial for allegedly shooting dead a leftist female protester during a peaceful rally in central Cairo.</td></tr>
 </table></body></html>

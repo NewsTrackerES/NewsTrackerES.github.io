@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,4 +53,5 @@
   <tr><td style='display:none'>2</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/1ef20197c082e5eb0f8b09dd63d00a1c97c51e94/0_0_3000_1803/500.jpg'></td><td>2015-03-03 06:03:03</td><td>Former US secretary of state Hillary Clinton may have violated federal records laws by using a personal email account for all of her work messages, the New York Times reported on Monday.</td></tr>
   <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670480998_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 06:09:15</td><td>Hillary Clinton may have broken federal record-keeping laws</td></tr>
   <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 10:58:57</td><td>Hillary Clinton Was Asked About Email 2 Years Ago</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03120/Hillary_Clinton_3120474b.jpg'></td><td>2015-05-19 12:16:43</td><td>The US State Department has proposed a mid-January deadline to finish its review and release 55,000 pages of former Secretary of State Hillary Clinton's work emails that she sent through a private server and has since turned over to the department.</td></tr>
 </table></body></html>

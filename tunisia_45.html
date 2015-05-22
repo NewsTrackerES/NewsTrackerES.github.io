@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-03 16:02:05</td><td><a href='tunisia_41.html'>Tunisia said Sunday security measures have already been taken to protect Jewish pilgrims at a religious festival next week on the island of Djerba, after Israel warned of "concrete threats". (6)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 19:49:14</td><td><a href='tunisia_42.html'>Tunisian Jew Chantal Dabi lights a candle at the Ghriba synagogue in Djerba, south Tunisia, Wednesday, May 6, 2015. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 07:40:25</td><td>WASHINGTON (AP) - President Barack Obama is showing support for Tunisia's transition to democracy by welcoming the North African country's newly elected president to the White House.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-21 07:40:25</td><td>The U.S. has committed more than $570 million to Tunisia since the revolution to help it pursue political, economic and security reforms, and has proposed $134 million in assistance next year, the presidents noted.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-21 07:46:05</td><td>Both leaders pledged that Tunisia can count on continued U.S. support as Tunisians endeavor to build the Arab world's newest democracy.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-21 07:46:05</td><td>The U.S. is working to double its military financing to Tunisia to help its forces keep ahead of evolving threats.</td></tr>
 </table></body></html>

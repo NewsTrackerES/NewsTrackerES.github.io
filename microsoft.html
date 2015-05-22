@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 41,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 41 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>24</td><td></td><td>2015-03-04 09:35:07</td><td>Microsoft co-founder Paul Allen says he's found sunken Japan WWII battleship off Philippines</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-05 03:35:32</td><td><a href='microsoft_22.html'>"Our goal with gaming at Microsoft is to allow people to play games wherever they are," Spencer told game makers Wednesday at the Game Developers Conference. (7)</a></td></tr>
+  <tr><td style='display:none'>25</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/InternetExplorer_620x310.jpg'></td><td>2015-03-17 20:56:55</td><td>Microsoft retiring Internet Explorer</td></tr>
+  <tr><td style='display:none'>26</td><td><img src='http://i.cbc.ca/1.2999012.1426628381!/fileImage/httpImage/image.jpg_gen/derivatives/original_620/internet-explorer-most-hated.jpg'></td><td>2015-03-17 22:45:54</td><td>"We're now researching what the new brand, or the new name, for our browser should be in Windows 10," said Microsoft's marketing chief Chris Capossela at the Microsoft Convergence conference Monday.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-18 17:37:04</td><td><a href='microsoft_1.html'>Microsoft countered that class certification was improper because just 0.4 percent of Xbox owners reported disc scratches, and that misuse was the cause. (5)</a></td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-03-18 22:17:00</td><td>Microsoft Windows 10 Will Be Available In 190 Countries And 111 Languages By This Summer</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-23 18:30:44</td><td><a href='microsoft_2.html'>NEW YORK - The singer Taylor Swift, Microsoft Corp. and Harvard University are among those buying up .porn and .adult Web suffixes as a pre-emptive move before those domain names become available this summer. (4)</a></td></tr>
+  <tr><td style='display:none'>28</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0302/20150302__0303samsung~4.JPG'></td><td>2015-03-23 21:20:24</td><td>Microsoft apps coming to Samsung phones, tablets</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-03-24 10:14:23</td><td><a href='microsoft_5.html'>Washington - Microsoft on Monday unveiled partnerships with Samsung and other manufacturers to install its services including Word and Skype on devices powered by the rival Google Android system. (5)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-03-26 15:10:55</td><td><a href='microsoft_6.html'>Contractors would like to see parity on different forms of compensation, said Les French, the director of a chapter of the Communications Workers of America that has tried to organize Microsoft contractors over the years. (9)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-26 19:32:28</td><td><a href='microsoft_7.html'>Microsoft Corp. said suppliers with 50 or more employees will be asked to provide at least 15 days of paid time off for employees that mainly work with the Redmond, Washington, company. (5)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-26 20:51:04</td><td><a href='microsoft_8.html'>For the first time, Microsoft will mandate a basic level of benefits for the tens of thousands of contract workers employed on the software giant's behalf. (8)</a></td></tr>
+  <tr><td style='display:none'>29</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82027000/jpg/_82027547_f09037fb-7b15-4d4a-8645-d251bb44f02f.jpg'></td><td>2015-03-31 13:00:50</td><td>Microsoft unveils Surface 3 tablet</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 13:02:05</td><td><a href='microsoft_10.html'>NEW YORK (AP) - Microsoft is making a cheaper version of its Surface Pro 3 tablet computer in an effort to reach students and budget-conscious families. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 18:54:06</td><td><a href='microsoft_9.html'>Google is releasing two $149 laptops in an effort to undercut Microsoft's Windows franchise and drive down already falling personal computer prices. (7)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-04-03 10:00:00</td><td><a href='microsoft_11.html'>SEATTLE - Microsoft Corp said on Thursday it is bringing one of its most popular apps, which lets people take photos of a document and turn it into a editable file, to Apple Inc's iPhone and Google Inc's Android. (2)</a></td></tr>
+  <tr><td style='display:none'>30</td><td><img src='http://blogs-images.forbes.com/gordonkelly/files/2015/01/Windows10_Phone_Laptop-3C.png'></td><td>2015-04-05 16:10:00</td><td>I like Microsoft under Satya Nadella.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-07 07:36:39</td><td><a href='microsoft_12.html'>Obama on Tuesday was to announce a series of steps that private entities like Google and Microsoft are taking to better prepare the nation's health systems for the inevitable effects of a warmer, more erratic climate. (2)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-07 14:40:28</td><td><a href='microsoft_13.html'>"Some have amazing ability to retain information, think at a level of detail and depth or excel in math or code. It's a talent pool that we want to continue to bring to Microsoft." (2)</a></td></tr>
+  <tr><td style='display:none'>31</td><td></td><td>2015-04-07 16:01:34</td><td>Microsoft to hire more autistic workers</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-08 08:51:34</td><td><a href='microsoft_37.html'>Microsoft's Bill Sample said there had been $2 billion in software product and service revenue booked in Singapore but only $100 million in Australia. (5)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-08 19:24:06</td><td><a href='microsoft_15.html'>After the 2012 trial before U.S. District Judge James Robart, the judge said the appropriate royalty rate was about $1.8 million, slightly above Microsoft's estimate, but well below Motorola's demand for as much as $4 billion a year. (4)</a></td></tr>
+  <tr><td style='display:none'>32</td><td></td><td>2015-04-08 21:34:53</td><td>He's taking back the reins from Don Mattrick, the former head of Microsoft's Xbox division who took over from Pincus two years ago.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-13 17:28:05</td><td><a href='microsoft_16.html'>Microsoft hires back Kurt DelBene for corporate strategy job; will report to CEO Nadella (4)</a></td></tr>
+  <tr><td style='display:none'>33</td><td><img src='http://wpmedia.business.financialpost.com/2015/04/datazen-microsoft.jpg?w=620'></td><td>2015-04-15 19:23:42</td><td>Datazen will complement Microsoft's cloud-based business analytics service, Power BI, the companies said in a blog.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 12:55:12</td><td><a href='microsoft_38.html'>Yahoo Inc and Microsoft Corp added a termination clause to the terms of their search partnership agreement under which either company can end the deal on or after Oct. 1, 2015, according to a regulatory filing by Yahoo on Monday. (17)</a></td></tr>
+  <tr><td style='display:none'>34</td><td><img src='http://i2.cdn.turner.com/money/dam/assets/150317072153-microsoft-satya-nadella-interview-00015015-1024x576.jpg'></td><td>2015-04-23 21:14:27</td><td>Shares of Microsoft rose 3% after hours.</td></tr>
+  <tr><td style='display:none'>35</td><td></td><td>2015-04-23 21:35:28</td><td>Nadella said in a statement that "customers continue to choose Microsoft to transform their business and as a result we saw incredible growth across our cloud services this quarter."</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-24 06:53:18</td><td><a href='microsoft_23.html'>Microsoft last night reported revenue and profit above Wall Street expectations, as sales of its hardware and cloud-computing services helped to offset a decline in the company's core Windows business. (7)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-04-24 14:04:57</td><td><a href='microsoft_25.html'>To combat the strong dollar, Microsoft (NASDAQ: MSFT) engaged in about $15 billion in currency hedging in the latest quarter, longtime Microsoft analyst Rick Sherlund said Friday. (6)</a></td></tr>
+  <tr><td style='display:none'>36</td><td></td><td>2015-04-24 17:21:42</td><td>(Reuters) - The Nasdaq Composite extended its gains in early afternoon trading on Friday, hitting a 15-year intraday high, propelled by strong results from tech behemoths Google, Amazon and Microsoft.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-24 20:09:12</td><td><a href='microsoft_26.html'>NEW YORK (AP) - Big gains by Amazon, Microsoft and Google sending technology stocks to a higher close. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-27 20:35:31</td><td><a href='microsoft_27.html'>The judge, Theodore Essex, said that Microsoft infringed two wireless cellular patents owned by InterDigital, a patent licenser, and said it would not be against the public interest to ban the Microsoft devices from being imported into the United States. (6)</a></td></tr>
+  <tr><td style='display:none'>37</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03057/mobile_3057615g.jpg'></td><td>2015-04-29 13:05:54</td><td>Even in the PC market, an area Microsoft has been synonymous with for 20 years, the firm's Windows software is being outgrown by Apple's Mac laptop and desktop line, which run Mac OS X software.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 20:36:36</td><td><a href='microsoft_39.html'>To win over consumers who use competing software, Microsoft needs to persuade outside developers, who create software for consumers and corporate clients, it's worth their time to create new apps and programs for Windows 10. (60)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-04-29 22:30:30</td><td><a href='microsoft_30.html'>Microsoft said last week that its total commercial cloud revenue, which includes online versions of its Office and Dynamics applications, is running at $6.3 billion per year. (2)</a></td></tr>
+  <tr><td style='display:none'>38</td><td></td><td>2015-04-30 20:19:38</td><td>Microsoft thinks it can guess your age</td></tr>
+  <tr><td style='display:none'>39</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/Grey-Emoji-By-Default-In-Windows-10-Microsoft-Windows-10-Preview-Update-On-Microsoft-284783.jpg'></td><td>2015-05-05 13:42:00</td><td>MICROSOFT has confirmed it will include a middle finger emoji in its upcoming Windows 10 operating system.</td></tr>
+  <tr><td style='display:none'>40</td><td></td><td>2015-05-05 19:31:59</td><td>Report: Microsoft weighing Salesforce.com bid</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-05 19:54:00</td><td><a href='microsoft_36.html'>Microsoft is evaluating a bid after Salesforce was approached by another potential buyer, Bloomberg reported, citing people with knowledge of the matter. (10)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-05-06 01:22:36</td><td><a href='microsoft_34.html'>An attendee at the Microsoft Ignite technology conference is seen next to the Microsoft logo in Chicago, Illinois, May 4, 2015. (2)</a></td></tr>
+</table></body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:14:00</td><td>Kleiner Perkins, a venture capital firm that has financed Google and other prominent technology companies, is currently embroiled in a San Francisco trial that is airing embarrassing allegations of sexual discrimination.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 15:14:00</td><td>Google has been at the forefront of upheaval during the past 15 years.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 15:14:00</td><td>Google's shares rose $12.25 to $577.62 in Tuesday's afternoon trading.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 15:14:00</td><td>Porat also sits on Stanford's board of trustees with two members of Google's board, K.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 17:02:00</td><td>Her investor-friendly attitude fed speculation that Google may be more apt to return some of its $64 billion in cash to shareholders, either through dividends or by buying back stock.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-24 17:02:00</td><td>The terms of Porat's contract at Google weren't immediately disclosed.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>Google Inc. and other Silicon Valley heavyweights, including Apple Inc. and Facebook Inc., are trying to add more women to their payrolls.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>Google, which started in 1998 in a Silicon Valley garage after raising $100,000, now has a market value of nearly $400 billion.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>SAN FRANCISCO (AP) - Google has hired Morgan Stanley's chief financial officer, Ruth Porat, as its CFO, at a time when Silicon Valley is under fire for hiring and promoting too few women.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>Porat, 58, will become Google's highest-ranking female executive when she starts her new job on May 26.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>Porat has California roots and connections on Google's board of directors.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>Thousands of other Google employees, including its former chef and masseuse, have become millionaires.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>Hennessy, who is also Stanford's president, is Google's lead independent director.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td>The success has spawned three multibillionaires - Google CEO Larry Page, co-founder Sergey Brin and Executive Chairman Eric Schmidt.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://ww4.hdnux.com/photos/35/31/50/7707199/3/920x920.jpg'></td><td>2015-03-24 21:02:38</td><td>Morgan Stanley on Tuesday, March 24, 2015 announced that Porat is leaving the New York investment bank for the same job at Google.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://ww4.hdnux.com/photos/35/31/50/7707199/3/622x350.jpg'></td><td>2015-03-24 21:02:38</td><td>Google imports new CFO Ruth Porat from Wall Street</td></tr>
+</table></body></html>

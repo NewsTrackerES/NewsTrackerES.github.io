@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/02/ukraine-6.jpg?w=620'></td><td>2015-02-14 23:01:00</td><td>The deal was hammered out in a marathon talks this week between Merkel and her counterparts from Ukraine, Russia and France in the Belarusian capital, Minsk.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cbsnews2.cbsistatic.com/hub/i/2015/02/15/557ee392-9503-45ca-a557-e7f985e3daa8/78e6f711290669c8974abcc9607f84f5/ukraine-satellite.jpg'></td><td>2015-02-15 08:50:05</td><td>German Foreign Minister Frank-Walter Steinmeier said failure to maintain the peace would cost the region and the people of eastern Ukraine "a high price."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cbsnews2.cbsistatic.com/hub/i/2015/02/15/557ee392-9503-45ca-a557-e7f985e3daa8/78e6f711290669c8974abcc9607f84f5/ukraine-satellite.jpg'></td><td>2015-02-15 08:50:05</td><td>"If we miss this opportunity, the chance to defuse the serious conflict in eastern Ukraine by way of negotiations will be gone for a long time," Steinmeier said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cbsnews2.cbsistatic.com/hub/i/2015/02/15/557ee392-9503-45ca-a557-e7f985e3daa8/78e6f711290669c8974abcc9607f84f5/ukraine-satellite.jpg'></td><td>2015-02-15 08:50:05</td><td>German Foreign Minister Frank-Walter Steinmeier said failure to maintain the peace would cost the region and the people of eastern Ukraine "a high price."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cbsnews2.cbsistatic.com/hub/i/2015/02/15/557ee392-9503-45ca-a557-e7f985e3daa8/78e6f711290669c8974abcc9607f84f5/ukraine-satellite.jpg'></td><td>2015-02-15 08:50:05</td><td>"If we miss this opportunity, the chance to defuse the serious conflict in eastern Ukraine by way of negotiations will be gone for a long time," Steinmeier said.</td></tr>
 </table></body></html>

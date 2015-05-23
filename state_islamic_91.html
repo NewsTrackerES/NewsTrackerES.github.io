@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 02:00:11</td><td>As coalition aircraft entered the fray, Iraqi forces pounded Islamic State positions in Tikrit, resuming an offensive that had stalled for almost two weeks.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 02:00:11</td><td>"Military operations in Tikrit started at around 9 pm local time by pounding Islamic State positions with artillery, mortars and Katyusha rockets," said provincial council member Hadi al-Khazraji.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 02:00:11</td><td>It also appeared to represent at least a tacit acknowledgement by Baghdad that such airpower was necessary to wrest control of the hometown of former Iraqi dictator Saddam Hussein from Islamic State fighters, after its attempts to go it alone stalled.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 02:00:11</td><td>"These strikes are intended to destroy ISIL strongholds with precision, thereby saving innocent Iraqi lives while minimizing collateral damage to infrastructure," Terry said, using an acronym for Islamic State.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 02:00:11</td><td>U.S.-led coalition, Iraqis pound Islamic State in Tikrit</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/7/4/u/image.related.articleLeadwide.620x349.1m8403.png/1427337755892.jpg'></td><td>2015-03-26 02:48:10</td><td>The commander of the Quds Force of Iran's Islamic Revolutionary Guards Corps, Qassem Suleimani, has been photographed and videotaped around the Tikrit front.</td></tr>
+</table></body></html>

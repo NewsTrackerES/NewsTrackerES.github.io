@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 01:33:06</td><td>For several years, migrants have carried wooden crosses in protest marches in Mexico around Easter week to illustrate their suffering at the hands of criminals and corrupt police.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 01:33:06</td><td>Mexico's National Immigration Institute has said its agents are unarmed and human rights observers are present in the area.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-15 01:33:06</td><td>Mexico's immigration agency said Monday it was respecting the migrants' rights, and that its nearest checkpoint was 5.5 kms (3 miles) from the shelter.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-15 01:33:17</td><td>MEXICO CITY (AP) - Activists for migrants and rights groups in Mexico say about 200 Central American migrants hope to restart their journey to hold a "Viacrucis" protest in Mexico City that has been stymied by highway immigration checkpoints.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-15 01:33:17</td><td>Migrants hope to re-start protest convoy in Mexico</td></tr>
+</table></body></html>

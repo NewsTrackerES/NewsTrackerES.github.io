@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 19:44:54</td><td>"One evening in April, Boko Haram followers stood before us and said 'Our leaders don't want to give us enough fuel and guns and now the soldiers are encroaching on us in Sambisa. We will leave you.'" one of the women, 18-year old Binta Ibrahim from northern Adamawa state said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 19:44:54</td><td>The women said the men frequently threatened to sell them or bring them to Boko Haram's elusive leader, Abubakar Shekau, deep in the forest.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 19:44:54</td><td>Towards evening, as the army approached, the captives refused to flee with Boko Haram fighters, who began stoning them but then ran away.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.abc.net.au/news/image/6444904-3x2-340x227.jpg'></td><td>2015-05-04 22:32:36</td><td>Boko Haram seemed almost unstoppable and fast became a regional threat after it gained control of an area larger than Belgium last year and increased cross-border attacks on Chad, Cameroon and Niger.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.abc.net.au/news/image/6444904-3x2-340x227.jpg'></td><td>2015-05-04 22:32:36</td><td>The children were left to run around or do errands for Boko Haram while those of the fighters were trained to shoot guns.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://static.theglobeandmail.ca/576/video/article23890582.ece/ALTERNATES/w140/2015-04-12T183925Z_1_LOVEB3B1FTOJI_RTRMADP_0_NIGERIA-VIOLENCE-GIRLS-PRAYERS-O.XML'></td><td>2015-05-05 07:19:55</td><td>Boko Haram is fracturing as shortages of weapons and fuel foment tensions between its foot soldiers and leaders, women rescued from the Islamist jihadi fighters by Nigerian troops told Reuters.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://static.theglobeandmail.ca/576/video/article23890582.ece/ALTERNATES/w140/2015-04-12T183925Z_1_LOVEB3B1FTOJI_RTRMADP_0_NIGERIA-VIOLENCE-GIRLS-PRAYERS-O.XML'></td><td>2015-05-05 07:19:55</td><td>Boko Haram in disarray as Nigerian forces advance</td></tr>
+</table></body></html>

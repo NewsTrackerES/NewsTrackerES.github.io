@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>"Anything can happen, but I'm going with the bet that this won't impact spin-off of Alibaba shares for Yahoo," Axiom Capital analyst Victor Anthony told Reuters.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>If taxed at the full 40 percent rate, Yahoo shares would be worth just about $20 billion, SunTrust Robinson Humphrey analyst Robert Peck wrote.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>Scare on Yahoo's Alibaba Spin-Off Seen Premature</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>Yahoo plans to spin off a $34 billion stake in Alibaba into a public company along with Yahoo Small Business that provides domain names and local marketing.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>Yahoo can get a similar result by spinning out its core business, leaving behind the so-called active business with its untaxed Asian assets, Nomura analyst Anthony DiClemente wrote.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>Alibaba CEO Jack Ma could buy Yahoo in a cash-and-stock deal, claw back the stock and essentially cancel the shares that he just issued, BGC Partners analyst Colin Gillis told Reuters.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td>Yahoo Small Business has about $50 million in earnings before interest, taxes, depreciation, and amortization.</td></tr>
+</table></body></html>

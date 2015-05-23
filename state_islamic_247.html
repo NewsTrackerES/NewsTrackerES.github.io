@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/16/876/493/Mideast Iraq Islamic State-1.jpg?ve=1&tl=1'></td><td>2015-05-16 07:50:14</td><td>Ibrhaim didn't give details on the ongoing battles, but vowed that the Islamic State group would be pushed out of the city "in the coming hours."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 14:35:19</td><td>Meanwhile, Iraqi warplanes launched airstrikes on Islamic State positions inside Ramadi on Sunday, the Iraqi Defense Ministry said, without elaborating.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-17 14:35:19</td><td>Subsequently, Islamic State militants seized the Malaab area after government forces withdrew.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-17 14:44:00</td><td>U.S. troops were able to improve security in the province starting in 2006 when powerful tribes and former militants turned against al-Qaida in Iraq, a precursor to the Islamic State group, and allied with the Americans.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-17 19:13:37</td><td>The retreat recalled the collapse of Iraqi police and military forces last summer, when the Islamic State group's initial blitz into Iraq saw it capture about a third of the country.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-17 19:13:37</td><td>On a militant website frequented by Islamic State members, a message from the group claimed its fighters held the 8th Brigade army base, as well as tanks and missile launchers left behind by fleeing soldiers.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-17 19:15:22</td><td>The Islamic State group seized control of the city of Ramadi on Sunday, sending Iraqi forces racing out of the city in a major loss despite the support of U.S.-led airstrikes targeting the extremists.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww4.hdnux.com/photos/36/41/33/8001259/7/square_gallery_thumb.jpg'></td><td>2015-05-18 06:31:21</td><td>Muhannad Haimour, a spokesman for the governor of Iraq's Anbar province, said Sunday, "Ramadi has fallen," to the Islamic State group.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.usnews.com/dims4/USNEWS/2c2ecaa/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F9f%2Fbcd4b9316bb9937401d822b0022ed7%2Fmedia%3A7773210cbbe6446d801c19d08a7e558cMideastIraqIslamicState.JPEG'></td><td>2015-05-18 10:16:29</td><td>The figures could not be independently confirmed, but Islamic State militants have in the past killed hundreds of civilians and soldiers in the aftermath of their major victories.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww2.hdnux.com/photos/36/42/16/8004489/3/square_gallery_thumb.jpg'></td><td>2015-05-18 10:16:29</td><td>But Abu Ammar, another Anbar native who owns a grocery store in Ramadi, said he saw no difference between the Islamic State group's brutal practices and those of Shiite militiamen.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://ww2.hdnux.com/photos/36/42/16/8004489/3/square_gallery_thumb.jpg'></td><td>2015-05-18 10:16:29</td><td>In the face of the Islamic State group's brutality, some Sunnis appeared ready to accept help even from the Shiite militiamen.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-19 13:05:24</td><td>Islamic State militants launched an attack shortly before midnight Monday to try and capture the town of Khaldiya, which lies between Fallujah and Ramadi, Sheikh Rafie al-Fahdawi said.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-19 13:49:33</td><td>On Monday, the Islamic State militants searched door-to-door for policemen and pro-government fighters in Ramadi and threw bodies in the Euphrates River in a bloody purge.</td></tr>
+</table></body></html>

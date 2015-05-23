@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 09:59:20</td><td>EL-ARISH, Egypt (AP) - Military officials say a roadside bomb has hit an armored vehicle in Egypt's restive northern Sinai, killing five soldiers, including an officer.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 13:35:00</td><td>Egypt is currently a main member of the Saudi-led military coalition launching airstrikes against Shiite rebels who have conquered the Yemeni capital, Sanaa, and forced out the Western-backed president.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 13:35:00</td><td>The attacks took place as Egypt's defense minister carried out a limited military reshuffle, replacing the commander of the army division responsible for securing northern Sinai.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-12 13:35:00</td><td>Gen. Mohammed el-Shahat, who only commanded Egypt's second field army for about a year, was promoted to head of military intelligence; el-Shahat's deputy, Maj.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-12 15:17:17</td><td>Sunday is eastern orthodox Easter in Egypt, and police have been on high alert against attacks.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/61/20/7803910/7/landscape_32.jpg'></td><td>2015-04-12 15:27:00</td><td>Egyptians gather around the crater following a bombing that struck a main police station in the capital of the northern Sinai province in el-Arish, Egypt, Sunday, April 11, 2015.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/62/63/7810287/3/square_gallery_thumb.jpg'></td><td>2015-04-13 11:44:15</td><td>EL-ARISH, Egypt (AP) - An Egyptian security official says a sniper using a silenced weapon has killed a soldier in the restive northern part of the Sinai Peninsula.</td></tr>
+</table></body></html>

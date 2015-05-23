@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 20:07:25</td><td>The United States also will target its aid toward equipment used for counterterrorim, border security, maritime security and Sinai security, and for sustaining weapons systems already used by Egypt, the White House said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 23:12:28</td><td>Obama has been reviewing military aid to Egypt since 2013 when the Egyptian army ousted former president Mohamed Mursi.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 00:19:03</td><td>The White House said President Barack Obama was freeing up the equipment and making other changes to military ties with Washington's long-time ally to support U.S. interests while encouraging Egypt's political reforms.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-01 00:19:03</td><td>WASHINGTON (Reuters) - The United States announced on Tuesday it was lifting its hold on the supply of military equipment to Egypt, which was frozen when the military took power in Cairo nearly two years ago.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-01 00:19:03</td><td>Egypt, which has worked with the United States on Middle East peace moves, is emerging from a period of domestic upheaval and is engaged in several regional conflicts, including in neighboring Libya, and fighting Islamic State militants at home.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-01 00:19:03</td><td>Some restrictions were relaxed last year, but Congress made aid dependent on the U.S. Secretary of State certifying that Egypt was taking certain steps to govern democratically, a delay which angered the Egyptian government.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-01 00:19:03</td><td>"We encourage the government of Egypt to continue its democratic process. But Egypt is also a strong regional ally. Maintaining that relationship must be a priority for the U.S.," Thornberry said in a statement.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-01 00:19:03</td><td>Egypt has been the second-largest recipient of U.S. foreign aid since its peace treaty with Israel in 1979.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/1/2c509786bd0f4509a8bdf9c83a97bf53_18.jpg'></td><td>2015-04-01 04:28:50</td><td>US lifts arms embargo on Egypt</td></tr>
+</table></body></html>

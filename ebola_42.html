@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 47,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 47 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 09:07:05</td><td>The patient will be the 11th person with Ebola to be treated in the US, which has more than 50 hospitals designated as Ebola treatment centres.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 09:07:05</td><td>The treatment facility at the NIH is staffed by specialists in infectious disease and critical care and is designed to prevent the spread of highly contagious viruses, including Ebola.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 11:38:07</td><td>American who contracted Ebola arrives at Maryland hospital</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-13 11:45:18</td><td>The patient is the 11th person with Ebola to be treated in the U.S. and the second admitted to the NIH Clinical Center.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-13 11:45:18</td><td>Like Emory, NIH has one of the few specialized isolation units nationwide set up to treat Ebola patients.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-13 19:29:04</td><td>That person has shown no symptoms, is not diagnosed with Ebola and is expected to "voluntarily self-isolate" for a 21-day incubation period.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-13 19:29:04</td><td>None of the volunteers in Sierra Leone who had contact with the NIH patient have tested positive for Ebola.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td>CDC spokesman Thomas Skinner said 10 people who may have been exposed to the unidentified Ebola patient or who had a similar exposure to the virus as the patient were being flown to the United States.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td>At least 10 Americans possibly exposed to the deadly Ebola virus were being flown to the United States from Sierra Leone for observation, the U.S. Centers for Disease Control and Prevention said on Saturday.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td>A U.S. healthcare worker who tested positive for Ebola while in Sierra Leone arrived at the NIH on Friday and was in serious condition, the NIH said.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td>The CDC said one patient was being sent to Emory University Hospital's special isolation unit, where several Ebola patients have already been treated.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td>If someone shows symptoms, they will be transported to an Ebola treatment center for evaluation and care, the CDC said.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-14 21:54:53</td><td>Americans returning from Africa for Ebola monitoring</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-14 22:05:54</td><td>ATLANTA (AP) - Public health officials said Saturday that a number of Americans will return from west Africa to be monitored after possibly being exposed to Ebola.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-03-14 22:05:54</td><td>Earlier this week, an American health care worker who contracted Ebola while volunteering in Sierra Leone was brought to the National Institutes of Health in Bethesda, Maryland, for treatment.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/g/8/b/image.related.articleLeadwide.620x349.144euk.png/1426386476141.jpg'></td><td>2015-03-15 02:28:11</td><td>The World Health Organisation says its tally of Ebola deaths has passed 10,000, mostly in West Africa.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/g/8/b/image.related.articleLeadwide.620x349.144euk.png/1426386476141.jpg'></td><td>2015-03-15 02:28:11</td><td>Another aid worker, who was showing signs of illness, arrived in the US on Friday evening, hours after a colleague with Ebola was flown from Sierra Leone to the clinical centre of the National Institutes of Health in Bethesda, Maryland.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/g/8/b/image.related.articleLeadwide.620x349.144euk.png/1426386476141.jpg'></td><td>2015-03-15 02:28:11</td><td>A health care worker prepares a colleague's protective gear at an Ebola virus clinic operated by the International Medical Corps in Makeni, Sierra Leone.</td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/g/8/b/image.related.articleLeadwide.620x349.144euk.png/1426386476141.jpg'></td><td>2015-03-15 02:28:11</td><td>The workers served at an Ebola treatment unit run by the US charity Partners in Health in the Port Loko district in northern Sierra Leone.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-03-16 12:13:20</td><td>Four Americans arrive in Nebraska for Ebola monitoring</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://www.usnews.com/dims4/USNEWS/4f71b3c/2147483647/crop/367x330%2B60%2B0/resize/300x270/quality/85/?url=%2Fcmsmedia%2F3e%2Fd1%2Fd0171ee44dcab92626dedabf76d1%2Fresizes%2F500%2F150122-hippacomposite-stock.jpg'></td><td>2015-03-16 20:00:00</td><td>American With Ebola Now in Critical Condition</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://ww1.hdnux.com/photos/35/17/25/7664964/3/622x350.jpg'></td><td>2015-03-16 20:01:23</td><td>The National Institutes of Health said it has no other pending admissions of additional patients with the Ebola virus or who have been exposed to Ebola.</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-03-16 21:44:46</td><td>"At this point, this person has not tested positive for the Ebola virus," Phil Smith, M.D., medical director of the Biocontainment Unit at Nebraska Medicine, said in a press statement Monday.</td></tr>
+  <tr><td style='display:none'>23</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-17 20:42:50</td><td>That includes a healthcare worker in critical condition who is being treated for Ebola in a Maryland biocontainment unit run by the National Institutes of Health.</td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-03-17 20:57:05</td><td>At that time, nobody knew it was Ebola, so they assisted him,?</td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-03-17 20:57:05</td><td>George said it?s likely the man also worked at a nearby Ebola treatment center, which George also manages.</td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-03-17 21:00:51</td><td>4 more aid workers flown back to US for Ebola monitoring</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-03-17 21:00:51</td><td>Since last summer, several U.S. aid workers have gotten Ebola and have been flown back to the U.S. for care.</td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-03-17 21:00:51</td><td>But all are connected to " or had direct physical contact with " another American who came down with Ebola last week in Africa.</td></tr>
+  <tr><td style='display:none'>29</td><td></td><td>2015-03-17 21:00:51</td><td>None of them have been diagnosed with Ebola, but they will be isolated and monitored during the next three weeks for signs of the disease.</td></tr>
+  <tr><td style='display:none'>30</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/aCyi3dWFCNde5TsNkC..vg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/bf6e20523f5c0b0c710f6a70670054fd.jpg'></td><td>2015-03-17 21:44:44</td><td>On Tuesday, March 17, 2015, health officials said four more medical aid workers have been flown from West Africa to the United States, for monitoring for Ebola.</td></tr>
+  <tr><td style='display:none'>31</td><td></td><td>2015-03-19 01:36:34</td><td>NEW YORK (AP) - Health officials say two more American aid workers arrived in the United States on Wednesday night to be monitored for Ebola.</td></tr>
+  <tr><td style='display:none'>32</td><td></td><td>2015-03-19 01:36:34</td><td>All are connected to an unidentified American who returned to the U.S. last week after he came down with Ebola.</td></tr>
+  <tr><td style='display:none'>33</td><td></td><td>2015-03-19 04:29:26</td><td>Neither of the two healthcare workers brought back Wednesday has tested positive for Ebola, but they are being monitored because they might have been exposed to a colleague who has contracted it.</td></tr>
+  <tr><td style='display:none'>34</td><td></td><td>2015-03-19 04:29:26</td><td>Two more U.S. healthcare workers repatriated for Ebola monitoring</td></tr>
+  <tr><td style='display:none'>35</td><td></td><td>2015-03-19 18:55:04</td><td>CHICAGO (Reuters) - A U.S. healthcare worker who was admitted to the biocontainment unit at Nebraska Medicine on Sunday has been released after testing negative for Ebola, the hospital said on Thursday.</td></tr>
+  <tr><td style='display:none'>36</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-26 16:47:07</td><td>WASHINGTON (Reuters) - A U.S. patient being treated for the Ebola virus at a National Institutes of Health facility in Maryland has improved to serious condition from critical, the NIH said on Thursday.</td></tr>
+  <tr><td style='display:none'>37</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-03-26 19:39:44</td><td>American who contracted Ebola improves, in serious condition</td></tr>
+  <tr><td style='display:none'>38</td><td></td><td>2015-03-30 15:20:18</td><td>American who caught Ebola improves to fair condition</td></tr>
+  <tr><td style='display:none'>39</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/30/article-doc-1g2xt-6XQ3WUJ7BHSK2-740_634x421.jpg'></td><td>2015-03-30 17:08:58</td><td>An American nurse, Nina Pham, was treated at the NIH Clinical Center after she was infected with the Ebola virus at a Texas hospital by a Liberian, Thomas Eric Duncan, who had initially been misdiagnosed.</td></tr>
+  <tr><td style='display:none'>40</td><td></td><td>2015-03-31 23:09:24</td><td>(AP) - All five American aid workers being monitored in Nebraska for exposure to Ebola have completed their quarantine periods free from symptoms of the deadly virus.</td></tr>
+  <tr><td style='display:none'>41</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/EQCS43bNVv6lKscDqhmhyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-02T060704Z_1007970001_LYNXMPEB3107Y_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-LEONE.JPG.cf.jpg'></td><td>2015-04-02 09:31:27</td><td>(Reuters) - A patient was being evaluated for Ebola in isolation at a Colorado hospital on Thursday after experiencing symptoms of the disease, health officials said.</td></tr>
+  <tr><td style='display:none'>42</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/EQCS43bNVv6lKscDqhmhyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-02T060704Z_1007970001_LYNXMPEB3107Y_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-LEONE.JPG.cf.jpg'></td><td>2015-04-02 09:31:27</td><td>Only two people are known to have contracted the virus in the United States - both of them nurses who treated an Ebola patient from Liberia who became sick while visiting Dallas.</td></tr>
+  <tr><td style='display:none'>43</td><td></td><td>2015-04-09 21:30:57</td><td>Sheila Davis, chief of Ebola response for Boston-based Partners In Health, said the group is "heartened by the news that our colleague is heading home, free of Ebola, and making his way toward a full recovery."</td></tr>
+  <tr><td style='display:none'>44</td><td></td><td>2015-04-09 21:30:57</td><td>According to the group, their colleague was declared Ebola-free after two consecutive negative tests, and has been declared no longer contagious and able to return home.</td></tr>
+  <tr><td style='display:none'>45</td><td></td><td>2015-05-12 17:35:42</td><td>ROME An Italian nurse who returned to Italy last week after working in Sierra Leone has tested positive for Ebola, the health ministry said on Tuesday.</td></tr>
+  <tr><td style='display:none'>46</td><td></td><td>2015-05-12 17:35:42</td><td>Italy's only other Ebola patient, who had also been working in Sierra Leone, recovered and was released from hospital in January.</td></tr>
+</table></body></html>

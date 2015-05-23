@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-20 23:51:25</td><td>Syrian state TV acknowledged that pro-government forces had withdrawn from Palmyra, and the IS-affiliated Aaamaq News Agency reported the town was "under the complete control of the Islamic State fighters."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-20 23:51:25</td><td>The fall of the town to the Islamic State group after a week of fighting was an enormous loss to the government, not only because of its cultural significance, but because it opens the way for the extremists to advance to key government-held areas, including Damascus and the Syrian coast to the south.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47365460,width-300,resizemode-4/palmyras.jpg'></td><td>2015-05-21 00:24:32</td><td>Residents still left in Ramadi told The Associated Press by telephone Wednesday that Islamic State militants were urging them over loudspeakers not to be afraid and to stay in the city.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/36/46/11/8020590/3/square_gallery_thumb.jpg'></td><td>2015-05-21 08:05:02</td><td>The Syrian army is now outside the town, from where it is targeting Islamic State reinforcements, he said.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-21 08:36:00</td><td>In this picture released on Wednesday, May 20, 2015 by the website of Islamic State militants, an Islamic State fighter aims his weapon during a battle against the Syrian government forces on a road between Homs and Palmyra, Syria.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/a4r.qklxy6ke5ePHM9zGhw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1aaafc938ad10516770f6a706700d460.jpg'></td><td>2015-05-21 10:53:32</td><td>Barzai, the governor of the central province of Homs, which includes Palmyra, told The Associated Press that the Syrian army is now outside the town, from where it is targeting Islamic State reinforcements.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/36/46/11/8020590/3/square_gallery_thumb.jpg'></td><td>2015-05-21 12:36:43</td><td>Despite Islamic State's stunning victories in Palmyra and Iraq, the extremists suffered a setback in Syria's northeastern province of Hassakeh, where they have come under attack by Kurdish fighters.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/36/46/11/8020590/3/square_gallery_thumb.jpg'></td><td>2015-05-21 12:36:43</td><td>A Facebook page close to IS published a statement Thursday, purportedly from the group, saying "the soldiers of the Islamic State" completed their control of Palmyra as well as the town's airport and prison.</td></tr>
+</table></body></html>

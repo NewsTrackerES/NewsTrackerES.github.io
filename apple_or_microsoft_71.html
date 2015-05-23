@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 22:41:09</td><td>Bromwich also had good things to say about Apple.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 22:41:09</td><td>Court monitor: Apple antitrust cooperation has 'declined'</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:41:09</td><td>Theodore J. Boutrous Jr., an Apple attorney, told appeals judges in December that Seattle-based Amazon was the monopoly in the e-book market before Apple arrived on the scene.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 22:41:09</td><td>Apple's program still lacked an independent antitrust compliance officer and adequate board oversight, he said.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 22:41:09</td><td>He said Apple has conducted interviews and distributed a survey to employees to collect feedback to improve its antitrust compliance program.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 22:41:09</td><td>"Apple is to be commended for the progress it has made over the past 18 months," Bromwich said.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 22:41:09</td><td>Bromwich was appointed to review the Cupertino, California company's antitrust compliance policies and training after the judge concluded in a case in New York that Apple violated antitrust laws when it entered the e-book market in 2010.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-16 22:41:09</td><td>Bromwich said Apple was making progress before significant setbacks arose since October.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-16 22:41:09</td><td>NEW YORK - A court-appointed monitor says Apple Inc.'s cooperation with efforts in a New York federal case to improve its compliance with antitrust laws took on an "adversarial tone" recently.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-16 22:41:09</td><td>The monitor, Michael Bromwich, says in a report made public Thursday that Apple's cooperation with the monitoring team "sharply declined" this year.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1310813158649_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-17 12:44:02</td><td>Apple Inc, U.S. District Court, Southern District of New York, No.</td></tr>
+</table></body></html>

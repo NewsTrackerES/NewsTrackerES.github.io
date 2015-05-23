@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/0DW0y_Qfk0RjC6y2BCTfAw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQwODtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7cafdcd611e1d511730f6a706700128d.jpg'></td><td>2015-04-16 11:50:30</td><td>Pro-Russian journalist gunned down in Ukraine's capital</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/0DW0y_Qfk0RjC6y2BCTfAw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQwODtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7cafdcd611e1d511730f6a706700128d.jpg'></td><td>2015-04-16 11:50:30</td><td>Sukhobok worked for a Donetsk-based news website that focused on business affairs in eastern Ukraine and had criticized the tycoon Akhmetov.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/images/International/WireAP_11b10354de534157b37160228cb3a3b3_16x9_992.jpg'></td><td>2015-04-16 11:51:36</td><td>Russian President Vladimir Putin, during his annual televised call-in show, was informed by the moderator of reports of Buzyna's death and immediately said "this is not the first political killing in Ukraine, there's a series of such killings."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/images/International/WireAP_11b10354de534157b37160228cb3a3b3_16x9_992.jpg'></td><td>2015-04-16 11:51:36</td><td>He had a three-month stint as the editor-in-chief of Segodnya, a newspaper owned by Rinat Akhmetov - a Russia-leaning tycoon believed to be Ukraine's richest man - before he resigned in March citing censorship pressures.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a.abcnews.com/images/International/WireAP_11b10354de534157b37160228cb3a3b3_16x9_992.jpg'></td><td>2015-04-16 11:51:36</td><td>The minister said the killings "could be" orchestrated by Russia in order to "destabilize the situation in Ukraine from within."</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a.abcnews.com/images/International/WireAP_11b10354de534157b37160228cb3a3b3_16x9_992.jpg'></td><td>2015-04-16 11:51:36</td><td>"How many more victims will it take for the world to realize that in Ukraine there are deliberate political killings time after time," said Konstantin Kosachev.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/m/v/s/g/image.related.articleLeadwide.620x349.1mmvgl.png/1429194488316.jpg'></td><td>2015-04-16 12:29:03</td><td>Russian President Vladimir Putin: "This is not the first political assassination. Ukraine is dealing with a whole string of such murders."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/m/v/s/g/image.related.articleLeadwide.620x349.1mmvgl.png/1429194488316.jpg'></td><td>2015-04-16 12:29:03</td><td>Oles Buzina, 45, was known for his pro-Russian opinion pieces published in Ukraine's Sevodnya daily newspaper, which is part of the media empire of Ukraine's richest businessman Rinat Akhmetov.</td></tr>
+</table></body></html>

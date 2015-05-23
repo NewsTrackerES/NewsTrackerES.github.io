@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Oracle sued Google in 2010, claiming that Google had improperly incorporated parts of Java into Android.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Oracle won a federal appeals court ruling last year that allows it to copyright parts of Java, while Google argues it should be free to use Java without paying a licensing fee.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Google, which used Java to design its Android smartphone operating system, appealed to the U.S. Supreme Court.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Meanwhile the U.S. Copyright Office, a division of the Library of Congress, is known as being pro-copyright which could make it more likely to back Oracle, according to a lawyer for groups that support Google.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>"Google's argument - that the code lost all copyright protection because it became popular and Google wanted Android to be popular, too - would not fly for any other work," Oracle's attorneys wrote.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Google versus Oracle case exposes differences within Obama administration</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>A San Francisco federal judge decided that the Java APIs replicated by Google were not subject to copyright protection and were free for all to use.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Legal teams from both Oracle and Google made separate presentations to government officials in March, a third source familiar with the meetings said.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Google's Android operating system is the world's best-selling smartphone platform.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>A Google representative declined to comment.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Some of the administration's technology advisers have been advocating the pro-Google position as well, the second source said.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>According to Google, an Oracle victory would obstruct "an enormous amount of innovation" because software developers would not be able to freely build on each others' work.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Another source briefed on the discussions said the solicitor general's office has pushed back on pro-Google arguments.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ROXrJMXVVoCR90bQsFkueA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-05-15T120446Z_1_LYNXMPEB4E0IC_RTROPTP_3_CHINA-BUSINESS_original.jpg'></td><td>2015-05-15 12:04:46</td><td>Felten, a computer scientist, signed onto a legal brief last November urging the Supreme Court to hear Google's appeal.</td></tr>
+</table></body></html>

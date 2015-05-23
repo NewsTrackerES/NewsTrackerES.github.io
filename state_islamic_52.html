@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/k/f/8/o/image.related.articleLeadwide.620x349.13jza2.png/1424402952247.jpg'></td><td>2015-02-20 03:29:26</td><td>Cairo: Militants claiming loyalty to Islamic State have seized the university in the central Libyan city of Sirte, residents said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-15 19:36:51</td><td>SIRTE, Libya (AP) - Violent clashes erupted between Islamic State-affiliated militants and militias aligned with the Islamist self-declared government near Sirte in north-central Libya.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-15 19:36:51</td><td>Fighting between militias and Libyan Islamic State branch</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-15 19:36:51</td><td>The Libyan turmoil has provided fertile ground for militants allied with the Islamic State group, which is fighting in Iraq and Syria to expand its self-styled caliphate.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-15 19:36:51</td><td>Field commander Mohammed Abdullah said that the fighting started when an Islamic State-affiliated suicide car bomber killed a solider from Battalion 166.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-15 19:36:51</td><td>He said that they have information that the Islamic State affiliate has taken over a hotel, the main conference center and a prison inside Sirte.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-15 19:36:56</td><td>After surrounding the Islamic State-controlled city of Sirte for several weeks, the militias were about 16 kilometers (10 miles) west of the center of the city on Sunday.</td></tr>
+</table></body></html>

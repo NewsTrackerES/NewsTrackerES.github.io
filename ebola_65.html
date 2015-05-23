@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:04:00</td><td>During a press briefing in Geneva on Friday, Aylward said WHO's Ebola emergency committee believes the risk of the virus spreading globally appears to be dropping even though officials still don't know where the virus is spreading in most cases in Guinea and Sierra Leone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 12:04:00</td><td>He said the designation of Ebola as a global emergency is also necessary to speed up paperwork for the ongoing experimental drug and vaccine trials in West Africa.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 12:04:00</td><td>"It is just that we are used to (seeing) large numbers of cases and deaths," said Oyewale Tomori, a Nigerian virologist who sits on WHO's Ebola emergency committee.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 12:04:00</td><td>Dr. Bruce Aylward, who is leading WHO's Ebola response, said the decline appeared to be real, rather than just "a pothole on the bumpy road to get to zero cases."</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 12:04:00</td><td>Other experts agreed it's too early for WHO to downgrade the status of the biggest-ever Ebola outbreak and warned the recent fall in cases may be deceptive.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-10 12:04:00</td><td>"The three countries had declared themselves (Ebola-free) at one time, only to find dead bodies all over the place later," he wrote in an email.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-10 12:05:13</td><td>UN: Ebola still global emergency despite big drop in cases</td></tr>
+</table></body></html>

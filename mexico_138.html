@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201518/SCCZEN_280415NZHMMBANKS4_140x93.jpg'></td><td>2015-05-11 18:45:15</td><td>The whereabouts of Alondra Diaz have been unknown since 2007, when her father allegedly took her to Mexico without her mother's consent.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201518/SCCZEN_280415NZHMMBANKS4_140x93.jpg'></td><td>2015-05-11 18:45:15</td><td>MEXICO CITY (AP) " A girl claiming to be a Houston woman's daughter illegally taken to Mexico eight years ago has turned herself in to a court that mistakenly sent another girl to the United States against her will last month, an official said Monday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 22:02:37</td><td>Associated Press writer Peter Orsi in Mexico City contributed.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/12/06/289351DD00000578-3077244-image-a-69_1431410291576.jpg'></td><td>2015-05-12 05:53:52</td><td>Authorities may have located a girl taken by her father from Houston to Mexico eight years ago in a cross-border custody case that exploded into international headlines recently with a case of mistaken identity, an official said Monday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-13 02:27:44</td><td>Garcia traveled to Mexico on Monday and told local reporters: "I'm dying to hold her in my arms, and I hope to return with her."</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 02:27:44</td><td>MEXICO CITY (AP) - A teenage girl at the center of a U.S. custody case appeared in a Mexican court Tuesday, two weeks after authorities mistakenly seized another girl with a similar name and sent her across the border.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-13 02:27:44</td><td>Girl sought in US custody case gets hearing in Mexico</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-13 02:27:44</td><td>Alondra Luna traveled with Garcia to Texas, but DNA tests done days later revealed the mistake and she was returned to her family in Mexico.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-13 02:27:44</td><td>The 13-year-old girl is believed to have been taken by her father to Mexico in 2007 without Garcia's consent.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-13 16:58:22</td><td>Garcia traveled to Mexico on Monday and has met with Alondra Diaz, according to the woman's lawyer, Pedro de la Rosa.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-05-13 20:02:22</td><td>MEXICO CITY (AP) - A Texas woman whose 8-year search for her missing daughter in Mexico led her to be handed the wrong girl now believes she has found the right one.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-15 05:41:50</td><td>Jose Martin Godoy Castro says tests show that Alondra is the daughter of Houston woman Dorotea Garcia, who has searched for the girl since Alondra's father took her to Mexico without her consent.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-15 05:41:50</td><td>MORELIA, Mexico (AP) - A Mexican prosecutor says DNA tests on Alondra Diaz match the U.S. mother who has been searching for her for eight years.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://a.abcnews.com/images/International/WireAP_2b8effc02c474e12a0489015162a84cf_16x9_992.jpg'></td><td>2015-05-15 23:25:19</td><td>Mexico Judge Returns Girl to Custody of US Mom After 8 Years</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://ww1.hdnux.com/photos/36/32/73/7974620/11/square_gallery_thumb.jpg'></td><td>2015-05-16 04:00:27</td><td>Alondra Diaz Garcia arrives for a court hearing in Los Reyes, Mexico, Tuesday, May 12, 2015.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-05-16 17:44:13</td><td>Houston resident Dorotea Garcia and 13-year-old Alondra Diaz arrived at Bush Intercontinental Airport on Saturday morning from Guadalajara, Mexico.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-05-16 17:44:13</td><td>The case gained attention last month after a judge in Mexico erroneously ruled that 14-year-old Alondra Luna was the missing girl and ordered her turned over to Garcia.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-16 17:44:13</td><td>Diaz, a native-born U.S. citizen, was taken to Mexico in 2007 by her father without her mother's consent and Diaz's whereabouts hadn't been known until recently.</td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://ww2.hdnux.com/photos/36/37/32/7992989/3/square_gallery_thumb.jpg'></td><td>2015-05-16 17:47:31</td><td>Garcia got her long-missing daughter back and headed for home, concluding an eight-year search after Alondra was taken to Mexico in 2007 by her father, Reynaldo Diaz, without her mother's consent, and her whereabouts had not been known until recently.</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-16 17:55:09</td><td>Houston resident Dorotea Garcia and 13-year-old Alondra Diaz, center, speak with a policeman after clearing a security check at the international airport in Guadalajara, Mexico, early Saturday May 16, 2015.</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://l.yimg.com/bt/api/res/1.2/QB2Kb1mT4vbkQHlEkWmR.w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/eb035315e6d2a915760f6a706700a5cd.jpg'></td><td>2015-05-16 19:55:55</td><td>The judge in Mexico in April denied requests from Luna and her family for DNA tests, saying it was not within her authority.</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://l.yimg.com/bt/api/res/1.2/QB2Kb1mT4vbkQHlEkWmR.w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/eb035315e6d2a915760f6a706700a5cd.jpg'></td><td>2015-05-16 19:55:55</td><td>Video recordings circulated widely of Luna screaming and desperately resisting as police dragged her away in Mexico.</td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-16 19:56:56</td><td>The joyful tears shed by a Texas woman and her long-missing daughter after they returned to Houston from Mexico on Saturday signaled the end of an eight-year cross-border custody case that had mistakenly sent another girl to the U.S. against her will.</td></tr>
+</table></body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/27/876/493/Nepal Jockeying for Position-1.jpg?ve=1&tl=1'></td><td>2015-04-27 17:01:42</td><td>BEIJING - Wedged between the two rising Asian powers of China and India, landlocked Nepal watched rescuers and offers of help pour in from both sides within hours of an earthquake that killed more than 4,000 people.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/27/876/493/Nepal Jockeying for Position-1.jpg?ve=1&tl=1'></td><td>2015-04-27 17:01:42</td><td>But recent years have seen Nepal forge closer ties with China as a counterweight, and the Nepalese government has assured Beijing that it will not tolerate any anti-China political activism by Tibetans in Nepal.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/27/876/493/Nepal Jockeying for Position-1.jpg?ve=1&tl=1'></td><td>2015-04-27 17:01:42</td><td>China, increasingly making inroads in Nepal through everything from infrastructure investment to increased tourism, also pledged all-out assistance within hours of the disaster.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/27/876/493/Nepal Jockeying for Position-1.jpg?ve=1&tl=1'></td><td>2015-04-27 17:01:42</td><td>Nepal's population of 27 million traditionally has fallen under India's economic and political sway.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/27/876/493/Nepal Jockeying for Position-1.jpg?ve=1&tl=1'></td><td>2015-04-27 17:01:42</td><td>With nearly $4 trillion in foreign currency reserves and a vast engineering and manufacturing capacity, China is likely to play a major role in Nepal's rebuilding process.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/27/1c10f019d7a4df12740f6a7067002e32_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-27 17:01:42</td><td>In post-quake aid rush, Nepal neighbors jockey for position</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/27/1c10f019d7a4df12740f6a7067002e32_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-27 17:01:42</td><td>India, also a predominantly Hindu nation, considers Nepal within its traditional sphere of influence, and as many as 3 million Nepalese live and work in India.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/27/1c10f019d7a4df12740f6a7067002e32_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-27 17:01:42</td><td>China also has been planning to extend railway tracks to the border with Nepal that may eventually connect to Kathmandu.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-27 17:05:17</td><td>Associated Press writers Christopher Bodeen in Beijing, Ashok Sharma in New Delhi, Asif Shahzad in Islamabad and Binaj Gurubacharya in Kathmandu, Nepal, contributed to this report.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-27 17:05:17</td><td>"The very strategic position of Nepal makes it very important for Pakistan, India and China," Masood said.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-27 17:05:17</td><td>According to Nepal's army, which is involved in the rescue effort, rescuers and medical teams from at least a dozen countries are already in the country and helping.</td></tr>
+</table></body></html>

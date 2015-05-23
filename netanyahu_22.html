@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 20:13:11</td><td>NETANYAHU: "According to the deal, not a single nuclear facility would be demolished. Thousands of centrifuges used to enrich uranium would be left spinning. Thousands more would be temporarily disconnected, but not destroyed."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 20:13:11</td><td>FACT CHECK: Did Netanyahu go too far in US speech?</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 20:13:11</td><td>NETANYAHU: "True, certain restrictions would be imposed on Iran's nuclear program and Iran's adherence to those restrictions would be supervised by international inspectors. But here's the problem. You see, inspectors document violations; they don't stop them."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 20:13:11</td><td>THE FACTS: Though vague, Netanyahu's assessments on facilities and centrifuges are reasonable.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-03 20:13:11</td><td>Still, Netanyahu exaggerated at times for dramatic effect.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/CWzfaPHhKmAHYl5ayWgEFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ee91e80efe63ba096f0f6a7067005074.jpg'></td><td>2015-03-03 22:41:58</td><td>On the whole, Netanyahu largely adhered to what is known about the nuclear negotiations between world powers and Iran, even if he predicted far direr consequences for the Middle East and the world if a deal is reached this month.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/CWzfaPHhKmAHYl5ayWgEFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ee91e80efe63ba096f0f6a7067005074.jpg'></td><td>2015-03-03 22:41:58</td><td>NETANYAHU: "If Iran's intercontinental ballistic missile program is not part of the deal, and so far, Iran refuses to even put it on the negotiating table, well, Iran could have the means to deliver that nuclear arsenal to the far-reach corners of the Earth, including to every part of the United States."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/bt/api/res/1.2/CWzfaPHhKmAHYl5ayWgEFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ee91e80efe63ba096f0f6a7067005074.jpg'></td><td>2015-03-03 22:41:58</td><td>Netanyahu said his government's understanding of the agreement means that window would be narrower.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-04 06:14:36</td><td>And Shiite militias may be "rampaging through Iraq," as Netanyahu says, but they're doing so alongside the Iraqi army and in battle against Islamic State terrorists.</td></tr>
+</table></body></html>

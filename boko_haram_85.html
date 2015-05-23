@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-20 22:12:43</td><td>One young woman, Binta Ibrahim, told how at 16 she rescued three children aged between 2 and 4, cared for them during a year of captivity under Boko Haram and brought them to the safety of the refugee camp.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-20 22:12:43</td><td>They told The Associated Press heartrending stories of their captivity and the trauma of their rescue from a Sambisa Forest camp, where Boko Haram fighters stoned several of them to death.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-20 22:12:43</td><td>An intelligence officer told The Associated Press the move followed fears that some women were communicating at night with Boko Haram.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-20 22:12:43</td><td>"Binta is a Muslim. The three kids she saved are Christian. Tell me a more powerful rejection of Boko Haram's perversion of Islam than Binta's love for those kids," she said.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/36/45/63/8019193/7/square_gallery_thumb.jpg'></td><td>2015-05-21 00:53:28</td><td>Hundreds saved from Boko Haram now in military custody</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-21 18:28:11</td><td>As scores of young Nigerian women and children are rescued from the clutches of Boko Haram, they face suspicions that they may still be in contact with their former captors.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-21 18:28:11</td><td>After creating havoc in northeastern Nigeria for years, Boko Haram militants have suffered a series of defeats this year from an offensive by better-equipped Nigerian troops bolstered by forces from neighboring Chad, Niger and Cameroon.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-21 21:01:22</td><td>In counseling sessions at the Malkohi Camp outside the northeastern city of Yola, witnesses described some women accusing another one of having ties to their former Boko Haram captors.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-21 21:01:22</td><td>YOLA, Nigeria (AP) - The accusations against a woman who was rescued from Boko Haram abductors came from fellow former captives during a group counseling session.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-21 21:01:22</td><td>Relations between soldiers guarding the camp and some of the rescued women had been tense after a fracas witnessed May 17 by a reporter in which a soldier falsely claimed that one of the women tried to grab his gun and told him she was a Boko Haram member.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://stmedia.stimg.co/ows_143225536378343.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-05-22 00:49:30</td><td>A counselor who worked with the rescued group at Malkohi said they told him that Christians among the captives had been forced by Boko Haram to convert to Islam, and some were forced to marry fighters.</td></tr>
+</table></body></html>

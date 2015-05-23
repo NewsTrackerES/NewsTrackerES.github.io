@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:44:07</td><td>White House: Obama releases military aid to Egypt suspended after 2013 coup</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 18:54:11</td><td>US releases military aid to Egypt, cites national security</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 18:54:18</td><td>The White House says Obama is lifting the hold on sending F-16 fighter jets, tanks and other material to Egypt.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 18:54:18</td><td>But the White House says it is not issuing a certification that Egypt has made progress toward democracy.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://global.fncstatic.com/static/v/fn2/img/politics/approval-president.png'></td><td>2015-03-31 19:07:02</td><td>The funds were suspended 21 months ago when el-Sissi, then military chief, overthrew Egypt's first democratically elected leader, Islamist President Mohammed Morsi.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://global.fncstatic.com/static/v/fn2/img/politics/approval-president.png'></td><td>2015-03-31 19:07:02</td><td>Egypt has been arguing it needs the money to face growing threats from extremists creeping over the border from lawless Libya or operating in the Sinai Peninsula, and the U.S. sees the funds as critical for stability in the volatile Middle East.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-31 19:22:52</td><td>The White House said that would make Egypt will remain the second-largest recipient of U.S. foreign military financing worldwide.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-31 19:22:52</td><td>The aid comes as Egypt is trying to play a leading role in forming an Arab military alliance that can fight terrorism in the region.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-31 19:22:52</td><td>The White House said Obama also reiterated U.S. concerns about Egypt's continued imprisonment of activists and encouraged increased respect for freedom of speech and assembly.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-31 21:17:28</td><td>White House spokeswoman Bernadette Meehan said the assistance will help address the growth of a group in Egypt, affiliated with Islamic State militants, that has attacked Egyptian soldiers and civilians.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-31 21:17:28</td><td>And it comes at a time when Arab nations have expressed concern about Washington's negotiations with Iran over its nuclear program, questioning whether the U.S. is aligning itself with Tehran instead of its long-standing allies in the region, like Egypt.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-04-01 12:57:59</td><td>Egypt president welcomes release of withheld US military aid</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/01/02/272E9D3500000578-0-image-m-65_1427852791861.jpg'></td><td>2015-04-01 13:59:49</td><td>FILE - In this Sunday, Oct. 6, 2013 file photo, Egyptian military helicopters fly overhead as army soldiers stand guard at an entrance to Tahrir Square, in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/01/02/272E9D3500000578-0-image-m-65_1427852791861.jpg'></td><td>2015-04-01 13:59:49</td><td>The offices of both leaders said the two also discussed human rights in Sissi's Egypt, which Washington says it is concerned about and Cairo says it is addressing.</td></tr>
+</table></body></html>

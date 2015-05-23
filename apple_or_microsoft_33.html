@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 13:01:11</td><td>Microsoft Corp. expects to ship the new device around May 5.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 13:01:11</td><td>Microsoft bills the Surface line as a laptop replacement when used with the cover.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 13:02:05</td><td>NEW YORK (AP) - Microsoft is making a cheaper version of its Surface Pro 3 tablet computer in an effort to reach students and budget-conscious families.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 13:02:05</td><td>The new Surface model is thinner and lighter, partly because it gets rid of the fan - similar to Apple's new MacBook laptop.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 13:02:05</td><td>And Microsoft will sell a stylus separately for $49.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-31 13:02:05</td><td>Microsoft Corp. expects to ship the new device around May 5, with advance orders starting immediately.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-31 13:02:05</td><td>In the past, Microsoft has used a lightweight version called RT in its cheaper tablets.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i.cbc.ca/1.2648249.1400601998!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/microsoft-surface.jpg'></td><td>2015-03-31 15:22:06</td><td>This product image provided by Microsoft shows the company's new Surface 3 tablet.</td></tr>
+</table></body></html>

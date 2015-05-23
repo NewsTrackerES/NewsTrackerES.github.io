@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b5a/news/world/article23240900.ece/ALTERNATES/w220/XVG105-Ukraine.JPG'></td><td>2015-03-02 08:34:32</td><td>More than 6,000 people have died in eastern Ukraine since the start of the conflict almost a year ago that has led to a "merciless devastation of civilian lives and infrastructure," the U.N. human rights office said Monday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/b5a/news/world/article23240900.ece/ALTERNATES/w220/XVG105-Ukraine.JPG'></td><td>2015-03-02 08:34:32</td><td>While Russia denies its troops are fighting in Ukraine, the U.N. cited "credible reports (that) indicate a continuing flow of heavy weaponry and foreign fighters" from Russia.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-02 16:00:17</td><td>Both Ukraine and the Russian-backed rebels have accused each other of violating the truce and the meeting comes as the U.S. and its European allies contemplate additional sanctions on Russia for its actions in Ukraine.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-02 16:00:17</td><td>The pair last met in February on the sidelines of an international security conference in Munich shortly before a new Ukraine ceasefire agreement was agreed upon.</td></tr>
+</table></body></html>

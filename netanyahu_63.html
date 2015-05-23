@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-19 23:50:02</td><td>The White House official said in the phone call Obama "also discussed Prime Minister Netanyahu's comments about Israeli Arabs" but gave no details.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-19 23:50:02</td><td>White House spokesman Josh Earnest warned earlier that there would be "consequences" for Israel as the Obama administration monitors the formation of Netanyahu's new ruling coalition.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-19 23:50:02</td><td>Netanyahu denied he had been trying to suppress the votes of Arab citizens or that his comments were racist.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 23:57:30</td><td>Obama's telephone call to Netanyahu followed a television interview in which the Israeli leader backed away from his pre-election declaration that there would be no Palestinian state on his watch, an about-face apparently aimed at quelling U.S. criticism triggered by his comments.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 23:57:30</td><td>An official statement put out later in the day said Obama called Netanyahu to congratulate him on his election win and used the opportunity to reaffirm his commitment to a two-state solution, a longtime cornerstone of U.S. policy on the Middle East conflict.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 23:57:30</td><td>U.S. officials scolded Netanyahu not only for abandoning his commitment to a Palestinian state but also for his election-day accusation that left-wingers were working to get Israel's minority Arab voters out "in droves" to sway the election.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 23:57:30</td><td>Even as he backed away from his pre-election statement rejecting Palestinian statehood, Netanyahu made clear that he believed for now political and security conditions were not amenable.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-19 23:57:30</td><td>Netanyahu touched off the diplomatic storm with his comments on the eve of Tuesday's election that he would not allow a Palestinian state, widely seen as intended to mobilize his right-wing base when his electoral hopes were flagging.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/j/o/0/image.related.articleLeadwide.620x349.1m3krg.png/1426821247783.jpg'></td><td>2015-03-20 03:14:22</td><td>US to 'reassess' options with Israel, Barack Obama tells Benjamin Netanyahu</td></tr>
+</table></body></html>

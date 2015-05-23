@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td>How rooted in Islam is the ideology embraced by the Islamic State group that has inspired so many to fight and die?</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td>But these are often taken far out of context, said Joas Wagemakers, an assistant professor of Islamic Studies at Radboud University Nijmegen in the Netherlands, who specializes in Islamic militant thought.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td>It would be a mistake to conclude the Islamic State group's extremism is the "true Islam" that emerges from the Quran and Hadith, he added.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td>Ahmed al-Dawoody, an assistant professor at the Institute for Islamic World Studies at Zayed University in Dubai, agreed.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td>"This is not Islamic terror, this is terror committed by Muslims," he said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td>Despite its claim to the contrary, the Islamic State group is largely political, borne out of the conflicts in Syria and Iraq, said Khaled Abou El Fadl, an Islamic law scholar at the University of California, Los Angeles.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-02 14:16:29</td><td>But the Islamic State goes "further than any other scholars have done. They represent the extreme," he said.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-02 14:16:29</td><td>U.S. President Barack Obama has insisted the militants behind a brutal campaign of beheadings, kidnappings and enslavement are "not Islamic" and only use a veneer of Islam for their own ends.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-02 14:16:29</td><td>Three young men charged in New York with plotting to join the Islamic State group and carry out attacks on American soil.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-02 14:16:29</td><td>And while moderate clerics counter the Islamic State group's interpretation point-by-point, at times they accept the same tenets.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-02 14:16:29</td><td>They are among tens of thousands of Muslims eager to pledge allegiance to the Islamic State group.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-02 15:56:28</td><td>The Islamic State group "appears to have adopted violent ideas first, then searched books of religious interpretation to find a cover for their actions," said Sheikh Hamadah Nassar, a cleric in the ultraconservative Salafi movement.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-02 15:56:28</td><td>One Islamic State cleric, Sheikh Hussein bin Mahmoud, wrote a vehement defense of beheadings after the killing of American journalist James Foley.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-02 15:56:28</td><td>Pivoting off these, the Islamic State group contends that anyone who rejects beheadings or enslavement is not a real Muslim and has been corrupted by modern Western ideas.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-03-02 15:56:28</td><td>The Islamic State group denies that, but it draws heavily from 20th-century theories of "takfir" developed by hard-liners.</td></tr>
+</table></body></html>

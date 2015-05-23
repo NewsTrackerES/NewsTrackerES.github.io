@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>NEW YORK - Of the 13 Apple Watch models I tried over two sessions, the one I liked most cost $15,000.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>I didn't have good answers as my Apple Watch try-on visits started - at first modestly, with models that cost about the same as an iPhone.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>Review: Many choices, indecision with Apple Watch</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>Both sessions at the Apple store began with indecision: What size do I want?</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>I bypassed the appointments because Apple's media reps in Cupertino, California, had arranged my sessions.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/11/07/277385B500000578-0-image-m-88_1428734830435.jpg'></td><td>2015-04-11 13:02:59</td><td>A child looks at a display of Apple Watches at an Apple retail store in Beijing Friday, April 10, 2015.</td></tr>
+</table></body></html>

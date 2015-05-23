@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150519&t=2&i=1049546295&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4I0KB'></td><td>2015-05-19 13:02:47</td><td>There are fears that weapons provided to Sunni tribes could end up with Islamic State.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150519&t=2&i=1049546295&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4I0KB'></td><td>2015-05-19 13:02:47</td><td>Islamic State has also worked to prevent the emergence of a new Awakening movement by killing off sheikhs and weakening the tribes.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150519&t=2&i=1049546295&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4I0KB'></td><td>2015-05-19 13:02:47</td><td>Witnesses said the black flag of Islamic State was now flying over the main mosque, government offices and other prominent buildings in Ramadi.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-19 14:02:45</td><td>Witnesses in Ramadi said Islamic State fighters had set up defensive positions and laid landmines.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-19 14:02:45</td><td>Islamic State gains in Ramadi mean it will take longer for Iraqi forces to move against them in Mosul, where militants celebrated victory in Anbar by firing shots into the air, sounding car horns and playing Islamic anthems, residents said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-19 14:02:45</td><td>Experts have warned of the danger to the wider Middle East posed by Islamic State's gains in Ramadi and Anbar province.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-19 14:02:45</td><td>"I think they (Islamic State) are trying to win the sympathy of people in Ramadi and give them moments of peace and freedom.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-19 14:02:45</td><td>Sami Abed Saheb, 37, a Ramadi restaurant owner, said Islamic State found 30 women and 71 men in the detention centre.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-19 14:02:45</td><td>Dulaimi saw Islamic State fighters using cranes to lift blast walls from the streets and bulldozers to shovel away sand barriers built by security forces before they fled.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-19 15:38:06</td><td>Iraq deploys tanks as Islamic State tightens grip on Ramadi</td></tr>
+</table></body></html>

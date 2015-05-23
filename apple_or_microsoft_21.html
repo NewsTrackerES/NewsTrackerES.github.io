@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>Microsoft might be the first large tech company to require its suppliers to offer paid leave, but the movement to improve conditions for contracted service workers has been percolating in Silicon Valley as well.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>The public policy front is already changing, and Microsoft's move may be a recognition of the fact that suppliers could be required to offer more paid leave at some point in the future anyway.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>"What I hear almost daily is that a large number of Microsoft vendors do not offer these benefits or that they offer substantially less," French wrote in an email.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>Taking aim at tech industry inequality, Microsoft extends paid leave</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>Now Microsoft is taking one small step toward narrowing that gap: requiring all its vendors with more than 50 workers to offer those detailed to Microsoft contracts no fewer than 15 days of paid leave.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>"I think this step reflects a recognition that we want people who do substantial work for Microsoft to enjoy good benefits, even if they don't work for Microsoft."</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>More recently, the inequality between employees and contractors made headlines when a group of workers at a Massachusetts contractor called Lionbridge formed a union - the first of Microsoft's contractors to do so.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>"The research shows that employees who get this kind of benefits are not just happier personally, but more productive," Microsoft general counsel Brad Smith said in an interview.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>But this isn't the first time Microsoft has asked vendors to treat employees better.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td>Contractors would like to see parity on different forms of compensation, said Les French, the director of a chapter of the Communications Workers of America that has tried to organize Microsoft contractors over the years.</td></tr>
+</table></body></html>

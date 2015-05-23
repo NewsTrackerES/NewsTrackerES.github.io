@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 05:20:18</td><td>Ariana Calderon scored on a header for Mexico late in the first half, snapping Hope Solo's shutout streak at five matches.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 05:20:18</td><td>It was the first goal the U.S. conceded to Mexico since November 2010, when Las Tri surprised the Americans with a 2-1 victory in World Cup qualifying.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 05:20:18</td><td>She has scored 24 goals against Mexico, the most has against any nation.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 05:20:18</td><td>Leroux and Wambach each score twice, US beats Mexico 5-1</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-18 05:31:20</td><td>Leroux made her first start of the year and scored twice in a 5-1 victory for the United States over Mexico on Sunday night.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://static.theglobeandmail.ca/7ae/sports/soccer/world-cup/article24478464.ece/ALTERNATES/w220/so-usa18sp2.JPG'></td><td>2015-05-18 22:45:55</td><td>Mexico goalkeeper Cecilia Santiago was the star early on, fending off two tremendous attempts by Megan Rapinoe in the 14th minute.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://static.theglobeandmail.ca/7ae/sports/soccer/world-cup/article24478464.ece/ALTERNATES/w220/so-usa18sp2.JPG'></td><td>2015-05-18 22:45:55</td><td>Mexico coach Leo Cuellar told The Associated Press that he will likely wait to announce his World Cup roster until closer to the May 25 deadline, because of injuries that have impacted his squad.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://static.theglobeandmail.ca/7ae/sports/soccer/world-cup/article24478464.ece/ALTERNATES/w220/so-usa18sp2.JPG'></td><td>2015-05-18 22:45:55</td><td>Samarzich, who played for USC, was apparently injured in one of Mexico's closed-door matches.</td></tr>
+</table></body></html>

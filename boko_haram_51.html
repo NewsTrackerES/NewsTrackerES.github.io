@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 23:11:51</td><td>At least 2,000 women and girls kidnapped by Boko Haram: Amnesty</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 23:11:51</td><td>Boko Haram leader Abubakar Shekau has said all of the teenagers had converted to Islam and been "married off".</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/li4hoorXt3rO3G1itGQggw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8145393-1-1-0.jpg'></td><td>2015-04-14 02:24:34</td><td>Amnesty reports provides fresh testimony to Boko Haram's use of mass kidnapping, cataloguing the frequent abduction of young women and girls, as well as the forced conscription of men and boys.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/li4hoorXt3rO3G1itGQggw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8145393-1-1-0.jpg'></td><td>2015-04-14 02:24:34</td><td>On the Chibok girls, Amnesty quoted a senior military source as saying they had been split into three or four groups and held at different Boko Haram camps.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/bt/api/res/1.2/li4hoorXt3rO3G1itGQggw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8145393-1-1-0.jpg'></td><td>2015-04-14 02:24:34</td><td>Amnesty, which wants Boko Haram investigated for war crimes and crimes against humanity, estimates that more than 4,000 people were killed in 2014.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/li4hoorXt3rO3G1itGQggw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8145393-1-1-0.jpg'></td><td>2015-04-14 02:24:34</td><td>"It is difficult to estimate how many people have been abducted by Boko Haram," Amnesty said in the report, "'Our job is to shoot, slaughter and kill': Boko Haram's reign of terror".</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/li4hoorXt3rO3G1itGQggw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8145393-1-1-0.jpg'></td><td>2015-04-14 02:24:34</td><td>The 219 teenagers have not been seen since Boko Haram released a video message in May last year, showing about 100 of the girls in Muslim dress and reciting verses of the Koran.</td></tr>
+</table></body></html>

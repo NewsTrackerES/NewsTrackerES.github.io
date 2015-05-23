@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 09:17:32</td><td>But pockets of Turkish social media hum with pro-Islamic State activity and at least six websites provide daily updates on its self-declared caliphate, carved out in Syria and Iraq.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 10:03:27</td><td>This sympathy is of growing concern to officials in Ankara, diplomats and security experts say, as they fear a network of fighters, recruiters and facilitators is being cultivated in Turkey to support Islamic State operations over the border.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 10:03:27</td><td>Turkey, a Sunni Muslim nation with a secular constitution, is a member, albeit reluctantly, of the U.S.-led coalition against Islamic State.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-22 10:03:27</td><td>"From the beginning Turkey didn't fully appreciate the danger of the Islamic State networks. Now it has become riskier to dismantle them," said Bahadir Dincer, Middle East Expert at the Ankara-based think-tank USAK.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-22 10:03:27</td><td>"A Daesh (Islamic State) attack is the number one threat for Turkey at the moment ... This is a huge risk for the government before the elections."</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-22 10:03:27</td><td>He vehemently denies that his small community of followers, many of whom read his sermons and articles online, has links to either al Qaeda or Islamic State.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-22 10:03:27</td><td>Foreign Minister Mevlut Cavusoglu has estimated that the number of Turks who have joined Islamic State is around 500-700, lower than from some European countries, although some diplomats put the number of Turks in the thousands.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-22 10:03:27</td><td>There have been dozens of detentions and deportations in recent months, most recently a British couple with four young children suspected of trying to travel to an Islamic State-controlled part of Syria.</td></tr>
+</table></body></html>

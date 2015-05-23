@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 17,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 17 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-05-11 19:42:19</td><td>LOS ANGELES (AP) - Google Inc. says its self-driving cars have been in 11 minor traffic accidents since it began experimenting with the technology six years ago.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/mosaic_2.jpg'></td><td>2015-05-11 19:42:19</td><td>FILE - This May 13, 2014 file photo shows a row of Google self-driving Lexus cars at a Google event outside the Computer History Museum in Mountain View, Calif.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/mosaic_2.jpg'></td><td>2015-05-11 19:42:19</td><td>Three accidents involved Lexus SUVs run by Google Inc. The fourth was an Audi retrofitted by the parts supplier Delphi Automotive.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/square_gallery_thumb.jpg'></td><td>2015-05-11 19:42:19</td><td>Google co-founder Sergey Brin stands in front of a self-driving car at the Google headquarters on September 25, 2012 in Mountain View, California.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/square_gallery_thumb.jpg'></td><td>2015-05-11 19:42:19</td><td>Google co-founder Sergey listens to California Gov. Edmund G Brown Jr. during a bill signing for driverless cars at Google headquarters in Mountain View, Calif., Tuesday, Sept.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/square_gallery_thumb.jpg'></td><td>2015-05-11 19:42:19</td><td>Google, which has been developing autonomous car technology and lobbying for the legislation has a fleet of driverless cars that has logged more than 300,000 miles of self-driving on California roads.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/square_gallery_thumb.jpg'></td><td>2015-05-11 19:42:19</td><td>Brown visited Google to sign legislation for driverless cars.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-11 19:51:00</td><td>"Not once was the self-driving car the cause of the accident," wrote Google's Chris Urmson.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-11 20:27:00</td><td>"Cause" is a key word: Like Delphi Automotive, a parts supplier which suffered an accident in October with one of its two test cars, Google says it was not at fault.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-11 20:27:00</td><td>That left Google, which has outfitted 23 Lexus SUVs with driverless technology.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-05-11 21:06:36</td><td>Delphi sent AP an accident report showing its car was hit, but Google has not made public any records, so both enthusiasts and critics of the emerging technology have only the company's word on what happened.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-05-11 21:06:36</td><td>He also described instances in which Google's cars avoided hitting other cars or bicyclists as they drove on streets near the company's Silicon Valley headquarters.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/square_gallery_thumb.jpg'></td><td>2015-05-12 00:46:08</td><td>The Google cars have been rear-ended seven times, often when stopped "but also on the freeway," wrote Urmson, director of Google's self-driving car program.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww3.hdnux.com/photos/15/27/76/3506086/3/square_gallery_thumb.jpg'></td><td>2015-05-12 00:46:08</td><td>Google's Chris Urmson (right) shows a Google self-driving car to U.S. Transportation Secretary Anthony Foxx (L) and Google Chairman Eric Schmidt (C) at the Google headquarters on February 2, 2015 in Mountain View, California.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-05-12 03:12:42</td><td>John Simpson, privacy project director of the nonprofit Consumer Watchdog, notes that Google's ultimate goal is a car without a steering wheel or pedals.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://stmedia.stimg.co/ows_143139662623195.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-05-12 08:40:23</td><td>Google has modified 23 Lexus SUVs registered with DMV.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/Google-Self-Driving-Cars-Have-Crashed-11-Times-Google-Self-Driving-Car-Crashes-287804.jpg'></td><td>2015-05-12 11:34:00</td><td>Other Google cars had been side-swiped or "hit by a car rolling through a stop sign."</td></tr>
+</table></body></html>

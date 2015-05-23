@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 17:20:22</td><td>Icahn says 'dramatically undervalued' Apple should trade at $240</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 17:20:22</td><td>Billionaire investor Carl Icahn said on Monday Apple Inc's (AAPL.O) stock was "still dramatically undervalued" and that it should be trading at $240, nearly double its current price.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 17:20:22</td><td>Icahn, one of Apple's top 10 investors, has long urged the world's most valuable company to buy back more shares and boost its dividend.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 17:20:22</td><td>Apple has yet to officially acknowledge that it is developing what would likely be an electric, self-driving car.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-18 17:20:22</td><td>It has also long been expected to enter the consumer television market with a more wide-ranging product than its current Apple TV box that allows users to stream programs from iTunes and other sources, but has said little about those plans.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/Cook-Icahn-apple.jpg?ve=1&tl=1'></td><td>2015-05-18 19:27:39</td><td>Icahn: Apple Worth More than $1 Trillion</td></tr>
+</table></body></html>

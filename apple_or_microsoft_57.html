@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 18,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td>The Apple Watch, which also marks the Cupertino, California company's debut in a fledgling wearable technology market, will be available for pre-order online and to try out in stores - but not take home.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 22:01:54</td><td>Underscoring its strategy to market the watch as a fashion accessory, Apple is selling it through a handful of high-end stores including Selfridges in London, Galeries Lafayette in Paris and Tokyo's Isetan department store.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 00:35:36</td><td>Still, Apple's watch is widely expected to outsell those by Samsung, Sony (6758.T) and Fitbit, that have attracted modest interest from consumers.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 00:35:36</td><td>The Apple Watch sport starts at $349 and the standard version of the watch starts at $549.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 00:35:36</td><td>Apple shares closed 0.76 percent higher at $126.56 on Thursday.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-10 00:35:36</td><td>By comparison, Apple sold nearly 200 million iPhones last year.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/09/10/101988298-455056638.80x60.jpg?v=1427905450'></td><td>2015-04-10 03:14:00</td><td>Consumers in Australia flocked to Apple's retail store in Sydney on Friday to get the world's first up-close look at the tech giant's new smartwatch, which the company expects will be its next runaway hit.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 04:47:05</td><td>An Apple Watch is displayed at 'Apple Watch at Isetan Shinjuku' inside Isetan Shinjuku department store in Tokyo April 10, 2015.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-10 17:00:40</td><td>Consumers were allowed to pre-order the Apple Watch starting at 3 a.m. Eastern time on Friday.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/10/07/276BD0AA00000578-0-image-m-4_1428648154723.jpg'></td><td>2015-04-10 17:02:03</td><td>"Apple will outsell its wearable rivals by a very wide margin but it will do this on the power of its brand and its design alone," independent technology analyst Richard Windsor said.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/10/07/276BD0AA00000578-0-image-m-4_1428648154723.jpg'></td><td>2015-04-10 17:02:03</td><td>But soon after online preorders opened on Friday, Apple's website listed shipping times in June for some models of the watch and four to six weeks for others, raising questions about whether Apple underestimated demand for its newest product.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td>Apple likely to boost watch production quickly: analysts</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td>The brokerage expects Apple to likely have about 5 million Apple Watches available for delivery by April 24.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/news/apple2.jpg'></td><td>2015-04-13 11:33:35</td><td>Munster, who expects Apple to sell 2.3 million watches in the April-June quarter, expects Apple to ramp production between mid-May and June.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-13 12:01:41</td><td>Analysts widely expect the Apple Watch to outsell similar watches offered by Samsung Electronics Co Ltd, Sony Corp and LG Electronics, which have attracted lukewarm interest from consumers.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-13 14:48:14</td><td>The analysts said their checks showed that Apple appeared to be ordering components for the watch that would allow it to build well over 20 million watches this year.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150413&i=106739636&w=240&r=106739636-2&t=2'></td><td>2015-04-14 03:47:43</td><td>However, analysts said Apple could sell between 2.3 million and 4 million watches in the quarter ending June.Apple was widely expected to disclose pre-orders on Monday, following its usual pattern after a product launch.</td></tr>
+</table></body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-179wu-6X9LbSUAdHSK2-533_634x650.jpg'></td><td>2015-03-19 17:16:13</td><td>Authorities hope the lockdown will set the country back on course for a mid-April deadline for eradicating Ebola announced by the leaders of Liberia, Guinea and Sierra Leone in February.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-179wu-6X9LbSUAdHSK2-533_634x650.jpg'></td><td>2015-03-19 17:16:13</td><td>The country reported 55 new confirmed cases, the lowest weekly total since late June 2014, and WHO chief Margaret Chan said on Wednesday it had made "tremendous progress" in combating Ebola.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-179wu-6X9LbSUAdHSK2-533_634x650.jpg'></td><td>2015-03-19 17:16:13</td><td>"The lockdown will be conducted from March 27 to March 29 and will be like the one we conducted in September last year," said Palo Conteh, head of the National Ebola Response Centre.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-179wu-6X9LbSUAdHSK2-533_634x650.jpg'></td><td>2015-03-19 17:16:13</td><td>"We are determined to bring Ebola to an end and meet the deadline set by the... presidents for April 15. This is what we are working towards."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-179wu-6X9LbSUAdHSK2-533_634x650.jpg'></td><td>2015-03-19 17:16:13</td><td>A country or region is considered to have eradicated Ebola after 42 days -- double the maximum incubation period for the virus.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 18:01:40</td><td>Sierra Leone has said it will confine around 2.5 million people to their homes across the capital and in the north in a three-day shutdown aimed at stemming the Ebola epidemic.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 18:01:40</td><td>The action, which follows a nationwide lockdown in September, was announced after the World Health Organisation (WHO) said on Wednesday that the death toll from Ebola stood at almost 10,200.</td></tr>
+</table></body></html>

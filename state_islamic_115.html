@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>Sunni tribes played a key role during the U.S. occupation fighting back al-Qaida in Iraq, the Islamic State group's predecessor, and their distrust of Baghdad's Shiite-led government eased the extremists' takeover last summer.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>With Tikrit taken, Sunni residents in Islamic State-held Anbar province, home to Fallujah, and Nineveh province, home to Mosul, Iraq's second-largest city, expect the Iraqi offensive to now turn its attention to their regions.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>But many remain fearful of both the Islamic State group, as well as the Shiite militias involved in the Iraqi offensive.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>The few Sunni tribes that stood up against the Islamic State group have paid a heavy price.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/05/876/493/Mideast Iraq Islamic State After Tikrit-1.jpg?ve=1&tl=1'></td><td>2015-04-05 13:02:25</td><td>When the Islamic State group swept across a third of Iraq last summer, many Sunnis initially greeted them as liberators.</td></tr>
+</table></body></html>

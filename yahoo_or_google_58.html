@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 25,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 25 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 17:08:00</td><td>"Yahoo is amidst a multi-year transformation to return an iconic company to greatness," Mayer said Tuesday in a statement.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 20:59:00</td><td>After accounting for ad commissions, Yahoo's revenue fell 4 percent from the same time last year to $1.04 billion, extending a troubling trend that began before Mayer took over.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 21:08:47</td><td>Mayer has been trying to revive Yahoo since becoming CEO in July 2012, but her efforts have been mostly unsuccessful despite a boom in the digital advertising that generates most of the company's revenue.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 21:08:47</td><td>The Sunnyvale, California, company also poured substantially more money into developing new products, contributing to a steep drop in Yahoo's first-quarter earnings.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 21:08:47</td><td>Most of the increase has been tied to Yahoo's 24 percent stake in Alibaba Group, an e-commerce star in China.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 21:08:47</td><td>Yahoo also owns a 35 percent stake in Yahoo Japan.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 21:08:47</td><td>Yahoo's 1Q shows company remains mired in revenue rut</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-21 21:08:47</td><td>The latest evidence of Yahoo's financial malaise emerged Tuesday with the release the company's first-quarter earnings report.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-21 21:08:47</td><td>But investors appear to be losing faith now that Yahoo's revenue, after ad commissions, has declined from the previous year in eight of the past nine quarters.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-21 21:08:47</td><td>Those expenses, known as "traffic acquisition costs," quadrupled from the same time last year, an indication that Yahoo is paying a steep price to show its advertising.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-21 21:08:47</td><td>Things were supposed to change under Mayer, a respected executive who helped build Google into the Internet's most powerful company during her tenure there.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://ww4.hdnux.com/photos/35/75/74/7855911/3/622x350.jpg'></td><td>2015-04-21 21:08:47</td><td>Although Yahoo's stock has nearly tripled under Mayer's leadership, the run-up hasn't been driven by the company's core business.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://ww4.hdnux.com/photos/35/75/74/7855911/3/622x350.jpg'></td><td>2015-04-21 21:08:47</td><td>Throw in the nearly $7 billion in cash and marketable securities that Yahoo held at the end of March, and the company's current market value of $42 billion implies investors think Yahoo's ongoing business is worth next to nothing.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://wpmedia.business.financialpost.com/2014/11/yahoo-inc-mozilla.jpg?w=620'></td><td>2015-04-21 21:58:08</td><td>While shares have almost tripled under Mayer's leadership, much of that added value is tied to Yahoo's stake in Alibaba Group Holding Ltd., the largest Chinese e-commerce company.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://ww4.hdnux.com/photos/35/75/74/7855911/3/622x350.jpg'></td><td>2015-04-21 22:09:36</td><td>A similar benefit could be achieved with a Yahoo Japan spinoff, to the delight of investors.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-21 22:09:36</td><td>Yahoo's holdings in Alibaba Group and Yahoo Japan are currently worth about $41 billion, before factoring in potential taxes.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-21 22:09:36</td><td>Yahoo's stock rose 66 cents to $45.15 after Mayer's remarks in a webcast reviewing the financial results.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-04-21 22:09:36</td><td>Yet Mayer recently reshuffled Yahoo's top management.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-21 22:09:36</td><td>Yahoo's 1Q disappoints, but stock rises on Yahoo Japan hopes</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://ww4.hdnux.com/photos/35/75/74/7855911/3/square_gallery_thumb.jpg'></td><td>2015-04-21 22:09:36</td><td>The shares initially fell by an additional 2 percent in extended trading, but then rebounded after the cost-cutting pledge and the Yahoo Japan remarks.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-04-21 23:10:13</td><td>Among other things, Yahoo recently struck a deal to be the default search engine on the Mozilla web browser that required a higher payout.</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-04-21 23:10:13</td><td>If the Yahoo Japan is spun off, it would mirror what Mayer has already started to do with an even more valuable stake in Alibaba Group, an e-commerce star in China.</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-04-21 23:10:13</td><td>"There are some good things going on at Yahoo, but it still feels like there's a lot more still to be done," said S&P Capital IQ analyst Scott Kessler.</td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-04-21 23:10:13</td><td>Activist shareholder Starboard Value L.P., which owns a nearly 1 percent stake in Yahoo, has been urging Mayer to slash expenses and spin off the Yahoo Japan stake to lift the company's stock.</td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-04-21 23:30:49</td><td>Yahoo disclosed Tuesday that it already has trimmed its workforce by 1,100 people during the first three months of the year to 11,400 full-time employees.</td></tr>
+</table></body></html>

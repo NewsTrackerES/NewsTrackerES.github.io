@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 06:15:36</td><td>"The tribes of Anbar are ready to fight the Islamic State and eject them but on the condition that the state arms them."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 06:15:36</td><td>But if they were used in Anbar, it would only further alienate the Sunni population in the province, where the Islamic State group has been entrenched since January 2014.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-28 06:15:36</td><td>On Friday, government reports of advances in Anbar were belied by an Islamic State attack on a water control system on a canal north of Islamic State-occupied Fallujah that killed a division commander and at least a dozen soldiers.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/28/876/493/Mideast Iraq Islamic State-1.jpg?ve=1&tl=1'></td><td>2015-04-28 06:15:36</td><td>BAGHDAD - Iraqi forces are on a westward push to retake Anbar, a sprawling Sunni-dominated desert province captured by the Islamic State group in their offensive last year.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-28 06:17:01</td><td>Iraq Faces Huge Challenges Dislodging Islamic State in Anbar</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-28 07:17:01</td><td>With the Islamic State in control of large parts of Ramadi as well as all of Fallujah - a city the U.S. military only retook with difficulty in 2004 - the Iraqi troops have some incredibly difficult urban fighting ahead of them.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-28 07:17:01</td><td>"We are caught between the hammer of the Islamic State and the anvil of the militias and we don't know where to go," al-Rishawi said.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/36/05/53/7887593/3/square_gallery_thumb.jpg'></td><td>2015-04-28 08:14:18</td><td>Iraqi Shiites wave the Iraqi flag as they hold a rally to celebrate the Iraqi security forces victory over the Islamic state group in Tikrit, in Baghdad, Iraq, Saturday, April 25, 2015.</td></tr>
+</table></body></html>

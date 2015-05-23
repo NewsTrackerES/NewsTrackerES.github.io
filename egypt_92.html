@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:36:31</td><td>In Ankara, Turkey's presidential spokesman warned the Middle East would be thrown into turmoil if Egypt carried out its death sentences.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 11:03:34</td><td>Middle East turmoil if Egypt's Mursi executed: Turkish presidency</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 19:31:20</td><td>Turkish President Tayyip Erdogan is a supporter of Mursi, Egypt's first democratically elected president, and relations with Egypt have soured since the army forced Mursi from power in 2013.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3SOGPEAxRtdWJff935PYYw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE4MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-05-18T193120Z_2_LYNXMPEB4H0E7_RTROPTP_2_EGYPT-COURT-MURSI.JPG'></td><td>2015-05-18 19:31:20</td><td>Speaking to Egypt's state news agency, an unidentified Egyptian official said Cairo was not surprised by Turkey's comments.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3SOGPEAxRtdWJff935PYYw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE4MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-05-18T193120Z_2_LYNXMPEB4H0E7_RTROPTP_2_EGYPT-COURT-MURSI.JPG'></td><td>2015-05-18 19:31:20</td><td>The U.S. State Department said Egypt's practice of mass trials and sentences was unjust and often used against members of the opposition or non-violent activists.</td></tr>
+</table></body></html>

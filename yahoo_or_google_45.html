@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 22,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 22 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/67746-3x2-340x227.jpg'></td><td>2015-04-15 12:19:54</td><td>The Commission, whose control of antitrust matters across the wealthy 28-nation bloc gives it a major say in the fate of global corporations, can fine firms up to 10 per cent of their annual sales, in Google's case up to $6.6 billion.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687963130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 15:19:25</td><td>The focus on the ranking of searches for shopping sites - Google has its own service called Google Shopping - did not address all complaints lodged with the Commission by competitors, large and small, in Europe and the United States, which say Google has hurt their business.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687963130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 15:19:25</td><td>"If the investigation confirmed our concerns, Google would have to face the legal consequences and change the way it does business in Europe."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687963130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 15:19:25</td><td>She also said other probes into Google's business practices would continue.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687963130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 15:19:25</td><td>Her findings following nearly five years of investigation and abortive efforts by her Spanish predecessor, Joaquin Almunia, to strike a deal with Google.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687963130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 15:19:25</td><td>The Initiative for a Competitive Online Marketplace, an alliance of businesses, applauded the Commission for taking what it called "decisive action to end Google's years of abusive behaviour in its long-running antitrust case".</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687963130_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-15 15:19:25</td><td>Google has put forward three proposals to resolve the case.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-15 17:01:49</td><td>U.S. authorities that looked at Google's business have taken no action.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-15 17:01:49</td><td>Google could face fines, she warned, if the Commission proves its case that it has used its "near monopoly" in Europe to push Google Shopping ahead of rivals for the past seven years.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-15 17:01:49</td><td>A final resolution - quite possibly involving court action if Google does not choose to settle - is likely to take many months and probably years, legal experts said.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-15 17:01:49</td><td>In a mark of the emotion U.S. tech hegemony evokes among Europeans who fear economic eclipse, the EU parliament last year voted a non-binding resolution urging the Commission to consider breaking up Google.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-15 17:01:49</td><td>She insisted that political pressure had played no part in her decision to accuse Google.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-15 17:01:49</td><td>While Google has over 90 percent of the EU search market, it has only two thirds of its home market.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-15 17:01:49</td><td>Of the investigation into Android, which analysts said could prove a bigger threat to Google's future profitability, Vestager said: "I want to make sure the markets in this area can flourish without anticompetitive constraints imposed by any company."</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-15 17:01:49</td><td>French Socialists Pervenche Beres and Virginie Roziere applauded the Commission for "at long last" taking action against "the threat posed to the European economy" and renewed their call for the breakup of Google.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-15 17:01:49</td><td>She wanted a change in the "principle" underlying searches rather than a redesign of current Web pages or tweaks to algorithms by which Google ranks results.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://img.rasset.ie/000a70e4-642.jpg'></td><td>2015-04-15 22:04:11</td><td>Rather, by firing a shot across Google's bows, it may favour competitors in new areas as technology develops, a priority for the new European Commission led by Jean-Claude Juncker, which wants to foster home-grown enterprise.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150415&i=106839742&w=240&r=106839742-2&t=2'></td><td>2015-04-16 01:01:45</td><td>Google's critics welcomed the decision to pursue the U.S. giant, though many industry experts believe the action is unlikely to markedly shift existing business their way.</td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150415&i=106839742&w=240&r=106839742-2&t=2'></td><td>2015-04-16 01:01:45</td><td>EU accuses Google of hurting consumers, competitors in Web search case</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150415&i=106839742&w=240&r=106839742-2&t=2'></td><td>2015-04-16 01:01:45</td><td>Analysts said the EU charges were unlikely to hurt Google's evaluation because it reflected the regulatory risk.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-04-16 05:55:50</td><td>If recent history of EU probes into tech companies is an indicator, however, Google shares may have trouble moving forward until the issue is resolved.</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-04-16 05:55:50</td><td>Meanwhile, Google's rivals are pushing US antitrust enforcers to investigate the use of Android, two people with knowledge of the matter said.</td></tr>
+</table></body></html>

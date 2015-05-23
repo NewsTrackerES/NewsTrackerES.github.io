@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 07:27:34</td><td>The U.S. blamed the lack of inclusiveness by al-Abadi's predecessor, Nouri al-Maliki, for giving the Islamic State a recruiting tool and had made the formation of a new government a condition for deeper military action to stop the militant group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 07:27:34</td><td>Al-Abadi told reporters Monday that the increase in U.S. airstrikes, weapons deliveries and training has helped roll back Islamic State forces, but he needs greater support from the international coalition to "finish" them.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 07:27:34</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/14/iraqs-al-abadi-making-in-person-appeal-to-obama-for-help'>site</a></td><td><table><tr><td>Al-Abadi told reporters Monday that the increase in U.S. airstrikes, weapons deliveries and training has helped roll back Islamic State forces, but he needs greater support from the international coalition to "finish" them.</td></tr><tr><td>The U.S. blamed the lack of inclusiveness by al-Abadi's predecessor, Nouri al-Maliki, for giving the Islamic State a recruiting tool and had made the formation of a new government a condition for deeper military action to stop the militant group.</td></tr></table></td></tr>
 </table></body></html>

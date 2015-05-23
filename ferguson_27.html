@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 04:46:05</td><td>City Safety Director and former Police Chief Rusty York called any comparison between Fort Wayne and Ferguson "reckless and unfortunate."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 04:46:05</td><td>A candidate for mayor of Fort Wayne is clarifying his remarks comparing that city to Ferguson, Missouri.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 05:56:04</td><td>A candidate for mayor of Fort Wayne tried Wednesday to clarify his remarks comparing the city to Ferguson, Missouri, after the remarks drew criticism from a police union and former police chief.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 05:56:04</td><td>Candidate's comparison of Fort Wayne to Ferguson draws heat</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 04:46:05</td><td><a href='http://www.miamiherald.com/news/politics-government/article16318805.html#storylink=rss'>site</a></td><td><table><tr><td>A candidate for mayor of Fort Wayne is clarifying his remarks comparing that city to Ferguson, Missouri.</td></tr><tr><td>City Safety Director and former Police Chief Rusty York called any comparison between Fort Wayne and Ferguson "reckless and unfortunate."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 05:56:04</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article16318805.html#storylink=rss'>site</a></td><td><table><tr><td>Candidate's comparison of Fort Wayne to Ferguson draws heat</td></tr><tr><td>A candidate for mayor of Fort Wayne tried Wednesday to clarify his remarks comparing the city to Ferguson, Missouri, after the remarks drew criticism from a police union and former police chief.</td></tr></table></td></tr>
 </table></body></html>

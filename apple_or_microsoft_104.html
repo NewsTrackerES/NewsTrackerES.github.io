@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/u/a/a/image.related.articleLeadwide.620x349.1mvtn5.png/1430274037877.jpg'></td><td>2015-04-29 02:20:42</td><td>Samsung Electronics overtook Apple to recapture the title of world's top smartphone maker by volume in the first quarter of 2015, research firm Strategy Analytics said on Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/u/a/a/image.related.articleLeadwide.620x349.1mvtn5.png/1430274037877.jpg'></td><td>2015-04-29 02:20:42</td><td>It said Samsung shipped 83.2 million smartphones worldwide and captured 24 per cent market share in the quarter, down from 31 per cent a year earlier, but better than Apple's 18 per cent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/u/a/a/image.related.articleLeadwide.620x349.1mvtn5.png/1430274037877.jpg'></td><td>2015-04-29 02:20:42</td><td><a href='http://www.smh.com.au/business/world-business/samsung-overtakes-apple-as-biggest-smartphone-maker-but-profits-slump-20150429-1mvtn5.html'>site</a></td><td><table><tr><td>Samsung Electronics overtook Apple to recapture the title of world's top smartphone maker by volume in the first quarter of 2015, research firm Strategy Analytics said on Wednesday.</td></tr><tr><td>It said Samsung shipped 83.2 million smartphones worldwide and captured 24 per cent market share in the quarter, down from 31 per cent a year earlier, but better than Apple's 18 per cent.</td></tr></table></td></tr>
 </table></body></html>

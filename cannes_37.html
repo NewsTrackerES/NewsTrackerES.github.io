@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 10:05:14</td><td>While the show is near Cannes, it wasn't intentional.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 10:05:14</td><td>CANNES WATCH: Sylvester Stallone, the artiste, has a show</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/16/18/28C0B83300000578-0-image-m-34_1431799048114.jpg'></td><td>2015-05-17 11:00:21</td><td>NICE, France (AP) - Last year at the Cannes Film Festival, Sylvester Stallone and his merry band of musclemen were rumbling down the Croisette in tanks to promote their film "The Expendables 3."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 13:35:06</td><td>Sylvester Stallone, the artiste, eschews Cannes this year for his exhibit at the Museum of Modern and Contemporary Art in Nice.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 10:05:14</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11450278&ref=rss'>site</a></td><td><table><tr><td>CANNES WATCH: Sylvester Stallone, the artiste, has a show</td></tr><tr><td>While the show is near Cannes, it wasn't intentional.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/16/18/28C0B83300000578-0-image-m-34_1431799048114.jpg'></td><td>2015-05-17 11:00:21</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3085074/CANNES-WATCH-Sylvester-Stallone-artiste-show.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>NICE, France (AP) - Last year at the Cannes Film Festival, Sylvester Stallone and his merry band of musclemen were rumbling down the Croisette in tanks to promote their film "The Expendables 3."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 13:35:06</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21224262.html#storylink=rss'>site</a></td><td>Sylvester Stallone, the artiste, eschews Cannes this year for his exhibit at the Museum of Modern and Contemporary Art in Nice.</td></tr>
 </table></body></html>

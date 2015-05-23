@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/t/a/b/4/image.related.articleLeadwide.620x349.1mta9r.png/1430009881345.jpg'></td><td>2015-04-25 18:47:56</td><td>Fairfax Media journalist Angela Macdonald-Smith was visiting Nepal when a 7.9 magnitude earthquake struck near the capital, Kathmandu on Saturday, here she reflects on what she experienced.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/t/a/b/4/image.related.articleLeadwide.620x349.1mta9r.png/1430009881345.jpg'></td><td>2015-04-25 18:47:56</td><td>Devastating Nepal earthquake witnessed firsthand</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/t/a/b/4/image.related.articleLeadwide.620x349.1mta9r.png/1430009881345.jpg'></td><td>2015-04-25 18:47:56</td><td><a href='http://www.smh.com.au/world/devastating-nepal-earthquake-witnessed-firsthand-20150426-1mta9r.html'>site</a></td><td><table><tr><td>Devastating Nepal earthquake witnessed firsthand</td></tr><tr><td>Fairfax Media journalist Angela Macdonald-Smith was visiting Nepal when a 7.9 magnitude earthquake struck near the capital, Kathmandu on Saturday, here she reflects on what she experienced.</td></tr></table></td></tr>
 </table></body></html>

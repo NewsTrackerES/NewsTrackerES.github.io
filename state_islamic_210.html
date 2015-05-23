@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 21:03:00</td><td>Islamic State in Yemen has claimed responsibility for attacks before, and has issued an online film showing it conducting training, but Thursday's video, attributed to the group's branch in Shabwa province, is its first to show killings.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 21:03:00</td><td>RIYADH - A new branch of the Islamic State group in Yemen on Thursday issued a video showing what it said was the beheading of four Yemeni soldiers and the shooting of 10 others, the SITE Intelligence group reported.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 21:03:00</td><td><a href='http://www.japantimes.co.jp/news/2015/05/01/world/video-apparently-islamic-state-group-film-shows-yemen-executions-site/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=video-apparently-islamic-state-group-film-shows-yemen-executions-site&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td><table><tr><td>RIYADH - A new branch of the Islamic State group in Yemen on Thursday issued a video showing what it said was the beheading of four Yemeni soldiers and the shooting of 10 others, the SITE Intelligence group reported.</td></tr><tr><td>Islamic State in Yemen has claimed responsibility for attacks before, and has issued an online film showing it conducting training, but Thursday's video, attributed to the group's branch in Shabwa province, is its first to show killings.</td></tr></table></td></tr>
 </table></body></html>

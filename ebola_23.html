@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,9 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 11:35:46</td><td>The agency said the spread of Ebola remains "widespread" in Sierra Leone and noted that cases have jumped both there and in Guinea.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 11:35:46</td><td>LONDON (AP) - The World Health Organization will start large-scale testing of an experimental Ebola vaccine in Guinea on Saturday to see how effective it might be in preventing future outbreaks of the deadly virus.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-05 11:35:46</td><td>Officials also said the number of Ebola deaths taking place outside of hospitals still remains high in Guinea and Sierra Leone, "suggesting that the need for early isolation and treatment is not yet understood, accepted or acted upon."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-05 11:35:46</td><td>In a statement Thursday, the U.N. health agency said the vaccine study will focus on Basse Guinee, the region that has Guinea's most Ebola cases.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-05 11:35:46</td><td>WHO said only about half of new Ebola patients in Guinea are connected to known cases, meaning that health officials are unable to track where the disease is spreading in the other half of cases.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-05 11:35:46</td><td>Authorities in Liberia discharged the country's last Ebola patient on Thursday.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zEg2K.IexfXmnYYpyRPxyQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ec26f61b4f26e30a6f0f6a70670007bf.jpg'></td><td>2015-03-05 11:36:11</td><td>The health agency's vaccination strategy in Guinea aims to create a buffer zone around an Ebola case to prevent its further spread?</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/35/01/74/7610113/9/920x920.jpg'></td><td>2015-03-05 12:40:13</td><td>Officials will vaccinate people who have already been exposed to Ebola cases and are at risk of developing the disease.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://i.cbc.ca/1.3009399.1427311774!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/ebola-vaccination-of-health-care-workers.jpg'></td><td>2015-03-25 19:44:25</td><td>Sakoba Keita, national coordinator of the fight against Ebola in Guinea, said combining control measures already in place with a safe and effective vaccine "will allow us to close this trying chapter and start rebuilding our country."</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-04-10 11:27:49</td><td>The Ebola virus outbreak in West Africa created a rare opportunity: New vaccines could be tested, and if they worked, serve as a firewall in future epidemics.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 11:35:46</td><td><a href='http://www.washingtontimes.com/news/2015/mar/5/who-to-test-ebola-vaccine-in-guinea-might-stop-out/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>LONDON (AP) - The World Health Organization will start large-scale testing of an experimental Ebola vaccine in Guinea on Saturday to see how effective it might be in preventing future outbreaks of the deadly virus.</td></tr><tr><td>In a statement Thursday, the U.N. health agency said the vaccine study will focus on Basse Guinee, the region that has Guinea's most Ebola cases.</td></tr><tr><td>Authorities in Liberia discharged the country's last Ebola patient on Thursday.</td></tr><tr><td>The agency said the spread of Ebola remains "widespread" in Sierra Leone and noted that cases have jumped both there and in Guinea.</td></tr><tr><td>WHO said only about half of new Ebola patients in Guinea are connected to known cases, meaning that health officials are unable to track where the disease is spreading in the other half of cases.</td></tr><tr><td>Officials also said the number of Ebola deaths taking place outside of hospitals still remains high in Guinea and Sierra Leone, "suggesting that the need for early isolation and treatment is not yet understood, accepted or acted upon."</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zEg2K.IexfXmnYYpyRPxyQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ec26f61b4f26e30a6f0f6a70670007bf.jpg'></td><td>2015-03-05 11:36:11</td><td><a href='http://news.yahoo.com/test-ebola-vaccine-guinea-might-stop-outbreaks-102204552.html'>site</a></td><td>The health agency's vaccination strategy in Guinea aims to create a buffer zone around an Ebola case to prevent its further spread?</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/35/01/74/7610113/9/920x920.jpg'></td><td>2015-03-05 12:40:13</td><td><a href='http://www.sfgate.com/news/medical/article/WHO-to-test-Ebola-vaccine-in-Guinea-might-stop-6116247.php'>site</a></td><td>Officials will vaccinate people who have already been exposed to Ebola cases and are at risk of developing the disease.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://i.cbc.ca/1.3009399.1427311774!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/ebola-vaccination-of-health-care-workers.jpg'></td><td>2015-03-25 19:44:25</td><td><a href='http://www.cbc.ca/news/health/guinea-tests-canadian-developed-ebola-vaccine-in-hotspot-1.3009347?cmp=rss'>site</a></td><td>Sakoba Keita, national coordinator of the fight against Ebola in Guinea, said combining control measures already in place with a safe and effective vaccine "will allow us to close this trying chapter and start rebuilding our country."</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-10 11:27:49</td><td><a href='http://www.foxnews.com/health/2015/04/10/squabbles-over-testing-methods-hamper-search-for-ebola-vaccine/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td>The Ebola virus outbreak in West Africa created a rare opportunity: New vaccines could be tested, and if they worked, serve as a firewall in future epidemics.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/h/b/2/p/image.related.articleLeadwide.620x349.13hhbw.png/1424687917412.jpg'></td><td>2015-02-17 08:17:42</td><td>Bali Nine duo receive new hope as transfer to Indonesia's 'Alcatraz' postponed</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/h/b/2/p/image.related.articleLeadwide.620x349.13hhbw.png/1424687917412.jpg'></td><td>2015-02-17 08:17:42</td><td>The Australians were members of the Bali nine drug smuggling ring that was intercepted at Denpasar airport in April 2005 after a tip-off from the Australian Federal Police.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/b/r/a/image.related.articleLeadwide.620x349.13ih55.png/1424294846546.jpg'></td><td>2015-02-18 07:00:16</td><td>Bali nine executions: Indonesian government warns it will not respond to threats</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/n/l/q/image.related.articleLeadwide.620x349.1mlym1.png/1429092087248.jpg'></td><td>2015-04-15 10:01:32</td><td>The Indonesian lawyer for the Bali nine men on death row has vowed to push ahead with a Constitutional Court challenge even if the two Australians are executed.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/j/image.related.articleLeadwide.620x349.1ms4p1.png/1429831894739.jpg'></td><td>2015-04-23 18:02:24</td><td>Jakarta: The Bali nine duo are expected to be killed within days with the Australian Embassy summoned to Nusakambangan - the island where the executions will take place - on Saturday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/h/b/2/p/image.related.articleLeadwide.620x349.13hhbw.png/1424687917412.jpg'></td><td>2015-02-17 08:17:42</td><td><a href='http://www.smh.com.au/world/bali-nine-duo-receive-new-hope-as-transfer-to-indonesias-alcatraz-postponed-20150217-13hhbw.html'>site</a></td><td><table><tr><td>Bali Nine duo receive new hope as transfer to Indonesia's 'Alcatraz' postponed</td></tr><tr><td>The Australians were members of the Bali nine drug smuggling ring that was intercepted at Denpasar airport in April 2005 after a tip-off from the Australian Federal Police.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/b/r/a/image.related.articleLeadwide.620x349.13ih55.png/1424294846546.jpg'></td><td>2015-02-18 07:00:16</td><td><a href='http://www.smh.com.au/world/bali-nine-executions-indonesian-government-warns-it-will-not-respond-to-threats-20150218-13ih55.html'>site</a></td><td>Bali nine executions: Indonesian government warns it will not respond to threats</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/n/l/q/image.related.articleLeadwide.620x349.1mlym1.png/1429092087248.jpg'></td><td>2015-04-15 10:01:32</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-appeal-lawyer-to-push-ahead-with-constitutional-court-challenge-20150415-1mlym1.html'>site</a></td><td>The Indonesian lawyer for the Bali nine men on death row has vowed to push ahead with a Constitutional Court challenge even if the two Australians are executed.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/4/t/j/image.related.articleLeadwide.620x349.1ms4p1.png/1429831894739.jpg'></td><td>2015-04-23 18:02:24</td><td><a href='http://www.smh.com.au/world/bali-nine-duo-andrew-chan-and-myuran-sukumaran-could-be-executed-within-days-lawyer-20150424-1ms4p1.html'>site</a></td><td>Jakarta: The Bali nine duo are expected to be killed within days with the Australian Embassy summoned to Nusakambangan - the island where the executions will take place - on Saturday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,8 @@
     <h3>xbox or playstation or nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 08:50:07</td><td>TOKYO - After years of scoffing at the threat from smartphones, Nintendo Co. is doing an about face and entering an alliance with Japanese mobile game company DeNA Co. to develop games for mobile devices.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 08:50:07</td><td>The alliance will be combining Nintendo's intellectual property and game development skills with DeNA's expertise in mobile games, the announcement said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 08:50:07</td><td>Under the alliance, Kyoto-based Nintendo will acquire about 15 million DeNA shares or a 10 percent stake.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-17 08:50:07</td><td>In return, DeNA will acquire about 1.759 million Nintendo shares, or 1.24 percent of the company.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 08:50:07</td><td>They said the mobile games won't be mere adaptations of the games already out for the Nintendo machines but developed especially for the smartphone experience.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-17 08:50:07</td><td>Such characters have been fiercely protected by Nintendo, appearing only on Nintendo platforms such as the Wii home console and 3DS mobile machines.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 09:16:45</td><td>Nintendo forms alliance with mobile game firm in about face</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-17 11:51:54</td><td>Nintendo has run into trouble in the past few years as people increasingly turned to mobile phones to play games and spend time on social networks.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-03-18 15:07:04</td><td>Both sides said they will build a global membership service for various devices including personal computers, smartphones and Nintendo machines.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 08:50:07</td><td><a href='http://www.startribune.com/world/296534291.html'>site</a></td><td><table><tr><td>TOKYO - After years of scoffing at the threat from smartphones, Nintendo Co. is doing an about face and entering an alliance with Japanese mobile game company DeNA Co. to develop games for mobile devices.</td></tr><tr><td>Such characters have been fiercely protected by Nintendo, appearing only on Nintendo platforms such as the Wii home console and 3DS mobile machines.</td></tr><tr><td>They said the mobile games won't be mere adaptations of the games already out for the Nintendo machines but developed especially for the smartphone experience.</td></tr><tr><td>The alliance will be combining Nintendo's intellectual property and game development skills with DeNA's expertise in mobile games, the announcement said.</td></tr><tr><td>Under the alliance, Kyoto-based Nintendo will acquire about 15 million DeNA shares or a 10 percent stake.</td></tr><tr><td>In return, DeNA will acquire about 1.759 million Nintendo shares, or 1.24 percent of the company.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 09:16:45</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11418797&ref=rss'>site</a></td><td>Nintendo forms alliance with mobile game firm in about face</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-17 11:51:54</td><td><a href='http://www.seattlepi.com/business/technology/article/Nintendo-forms-alliance-with-mobile-game-firm-in-6138331.php'>site</a></td><td>Nintendo has run into trouble in the past few years as people increasingly turned to mobile phones to play games and spend time on social networks.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-18 15:07:04</td><td><a href='http://www.nbcnewyork.com/entertainment/entertainment-news/Nintendo-to-Develop-Games-for-Mobile-Devices-296597581.html'>site</a></td><td>Both sides said they will build a global membership service for various devices including personal computers, smartphones and Nintendo machines.</td></tr>
 </table></body></html>

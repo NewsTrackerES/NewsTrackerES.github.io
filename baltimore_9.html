@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,11 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297690380841_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-21 00:26:46</td><td>It followed a Baltimore Sun newspaper investigation that found the city had paid almost $6 million since 2011 to settle more than 100 lawsuits alleging police brutality and other misconduct.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297690380841_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-21 00:26:46</td><td>The U.S. Justice Department is conducting a separate review of complaints about Baltimore police, at Batts' request.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201504/2795/1745097732_4186139779001_5e2a4a042e04d3559824ae4cc022148e-tmb2.jpg?pubId=1745097732'></td><td>2015-04-21 00:43:28</td><td>Freddie Gray, 27, of Baltimore, was arrested on April 12 and died on Sunday from a spinal injury after slipping into a coma, officials said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 04:44:16</td><td>He said the Baltimore police would institute training and reforms on the transport of suspects and their medical treatment.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 10:39:00</td><td>A Baltimore man who died after his spine was nearly severed while in police custody had been arrested "without force or incident," according to court documents filed Monday.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 14:25:59</td><td>(Reuters) - Baltimore's mayor promised on Tuesday officials would conduct a thorough, transparent investigation to answer questions about the death of a black man in police custody.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297369896653_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-21 22:06:53</td><td>WASHINGTON - The U.S. Justice Department said on Tuesday that it is gathering information on the death of a man who died after being arrested by the Baltimore police to determine whether it can bring civil rights charges.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150422001124581602-original.jpg?itok=X5CUkLQw'></td><td>2015-04-22 00:02:38</td><td>"Freddie Gray's family and the residents of the city of Baltimore deserve to know what happened to him while he was in police custody. We need answers," Sens.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297690380841_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-21 00:26:46</td><td><a href='http://www.torontosun.com/2015/04/20/baltimore-cops-to-probe-death-of-man-who-was-in-custody'>site</a></td><td><table><tr><td>The U.S. Justice Department is conducting a separate review of complaints about Baltimore police, at Batts' request.</td></tr><tr><td>It followed a Baltimore Sun newspaper investigation that found the city had paid almost $6 million since 2011 to settle more than 100 lawsuits alleging police brutality and other misconduct.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201504/2795/1745097732_4186139779001_5e2a4a042e04d3559824ae4cc022148e-tmb2.jpg?pubId=1745097732'></td><td>2015-04-21 00:43:28</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/04/20/22355171.html?cid=rssnewsworld'>site</a></td><td>Freddie Gray, 27, of Baltimore, was arrested on April 12 and died on Sunday from a spinal injury after slipping into a coma, officials said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 04:44:16</td><td><a href='http://www.reuters.com/article/2015/04/21/us-usa-police-baltimore-idUSKBN0NB20M20150421?feedType=RSS&feedName=domesticNews'>site</a></td><td>He said the Baltimore police would institute training and reforms on the transport of suspects and their medical treatment.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 10:39:00</td><td><a href='http://www.nydailynews.com/news/national/baltimore-man-arrested-force-death-cops-article-1.2192233?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>A Baltimore man who died after his spine was nearly severed while in police custody had been arrested "without force or incident," according to court documents filed Monday.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 14:25:59</td><td><a href='http://www.reuters.com/article/2015/04/21/us-usa-police-baltimore-idUSKBN0NC1MC20150421?feedType=RSS&feedName=domesticNews'>site</a></td><td>(Reuters) - Baltimore's mayor promised on Tuesday officials would conduct a thorough, transparent investigation to answer questions about the death of a black man in police custody.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297369896653_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-21 22:06:53</td><td><a href='http://www.torontosun.com/2015/04/21/6-baltimore-cops-suspended-over-suspects-death-idd'>site</a></td><td>WASHINGTON - The U.S. Justice Department said on Tuesday that it is gathering information on the death of a man who died after being arrested by the Baltimore police to determine whether it can bring civil rights charges.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150422001124581602-original.jpg?itok=X5CUkLQw'></td><td>2015-04-22 00:02:38</td><td><a href='http://www.sbs.com.au/news/article/2015/04/22/freddie-gray-us-opens-investigation-death-baltimore-man-police-custody'>site</a></td><td>"Freddie Gray's family and the residents of the city of Baltimore deserve to know what happened to him while he was in police custody. We need answers," Sens.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://assets.rollingstone.com/assets/2014/article/ray-rice-released-by-ravens-suspended-indefinitely-by-nfl-20140908/167577/small_square/100x100-459735313.jpg'></td><td>2015-02-14 19:52:00</td><td>I love you all very much, and I'll always be proud to say I played for the Baltimore Ravens.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://assets.rollingstone.com/assets/2014/article/ray-rice-released-by-ravens-suspended-indefinitely-by-nfl-20140908/167577/small_square/100x100-459735313.jpg'></td><td>2015-02-14 19:52:00</td><td>Thank you, Baltimore Ravens, for all you have done for my family and I.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://assets.rollingstone.com/assets/2014/article/ray-rice-released-by-ravens-suspended-indefinitely-by-nfl-20140908/167577/small_square/100x100-459735313.jpg'></td><td>2015-02-14 19:52:00</td><td>The last seven years that my family and I have spent in Baltimore have by far been the best of our lives.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://assets.rollingstone.com/assets/2014/article/ray-rice-released-by-ravens-suspended-indefinitely-by-nfl-20140908/167577/small_square/100x100-459735313.jpg'></td><td>2015-02-14 19:52:00</td><td><a href='http://www.rollingstone.com/culture/news/ray-rice-apologizes-to-baltimore-for-horrible-mistake-20150214'>site</a></td><td><table><tr><td>The last seven years that my family and I have spent in Baltimore have by far been the best of our lives.</td></tr><tr><td>Thank you, Baltimore Ravens, for all you have done for my family and I.</td></tr><tr><td>I love you all very much, and I'll always be proud to say I played for the Baltimore Ravens.</td></tr></table></td></tr>
 </table></body></html>

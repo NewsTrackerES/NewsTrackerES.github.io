@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 04:31:42</td><td>"We further understand that much of [Microsoft's] Singapore profits are paid out as technology fees and end up in Microsoft Bermuda," Jordan said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 04:31:42</td><td>Tax boss rebukes Google, Apple and Microsoft over Senate inquiry evidence</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 04:31:42</td><td><a href='http://www.theguardian.com/australia-news/2015/apr/22/tax-boss-rebukes-google-apple-and-microsoft-over-senate-inquiry-evidence'>site</a></td><td><table><tr><td>Tax boss rebukes Google, Apple and Microsoft over Senate inquiry evidence</td></tr><tr><td>"We further understand that much of [Microsoft's] Singapore profits are paid out as technology fees and end up in Microsoft Bermuda," Jordan said.</td></tr></table></td></tr>
 </table></body></html>

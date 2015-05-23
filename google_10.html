@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:53:14</td><td>The Nasdaq outperformed other major indexes, boosted by a 2 percent gain in Google shares.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 17:16:18</td><td>US STOCKS-Wall St near unchanged mark; Nasdaq up on Google lift</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 19:18:55</td><td>Declines on the Nasdaq were held in check by a boost from Google, up 2.3 percent to $578.24.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 19:18:55</td><td>US STOCKS-Wall St drifts lower; Google buoys Nasdaq</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 14:53:14</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009522/US-STOCKS-Wall-St-little-changed-Google-boosts-Nasdaq.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Nasdaq outperformed other major indexes, boosted by a 2 percent gain in Google shares.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 17:16:18</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009760/US-STOCKS-Wall-St-near-unchanged-mark-Nasdaq-Google-lift.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>US STOCKS-Wall St near unchanged mark; Nasdaq up on Google lift</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:18:55</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009872/US-STOCKS-Wall-St-drifts-lower-Google-buoys-Nasdaq.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>US STOCKS-Wall St drifts lower; Google buoys Nasdaq</td></tr><tr><td>Declines on the Nasdaq were held in check by a boost from Google, up 2.3 percent to $578.24.</td></tr></table></td></tr>
 </table></body></html>

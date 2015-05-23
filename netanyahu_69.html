@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td>Netanyahu appears poised to set up a coalition with Kulanu and several religious and ultra-Orthodox parties.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 11:15:31</td><td>Rivlin is scheduled to meet with Netanyahu later this week and officially set the coalition talks into motion.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 11:15:31</td><td>It became a formality after the new centrist party Kulanu gave its nod to Netanyahu as well, giving him 61 backers out of the 120 in parliament.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 11:15:31</td><td><a href='http://www.utsandiego.com/news/2015/mar/23/israels-netanyahu-appears-poised-to-build/'>site</a></td><td>It became a formality after the new centrist party Kulanu gave its nod to Netanyahu as well, giving him 61 backers out of the 120 in parliament.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:15:31</td><td><a href='http://www.foxnews.com/world/2015/03/23/israel-netanyahu-appears-poised-to-build-new-coalition-after-securing-majority/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Rivlin is scheduled to meet with Netanyahu later this week and officially set the coalition talks into motion.</td></tr><tr><td>Netanyahu appears poised to set up a coalition with Kulanu and several religious and ultra-Orthodox parties.</td></tr></table></td></tr>
 </table></body></html>

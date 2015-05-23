@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/09/2676E1D100000578-2986641-The_Apple_Watch_is_available_in_three_models_the_Apple_Watch_App-a-33_1425926709082.jpg'></td><td>2015-04-13 19:01:55</td><td>Apple booked pre-orders for about 4 million iPhone 6 and iPhone 6 Plus models when they were released in September.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150413&i=106739636&w=240&r=106739636-2&t=2'></td><td>2015-04-14 03:47:43</td><td>However, analysts said Apple could sell between 2.3 million and 4 million watches in the quarter ending June.Apple was widely expected to disclose pre-orders on Monday, following its usual pattern after a product launch.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150413&i=106739636&w=240&r=106739636-2&t=2'></td><td>2015-04-14 03:47:43</td><td>Apple shares were up 0.7 percent at $127.95 in morning trading on the Nasdaq.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/09/2676E1D100000578-2986641-The_Apple_Watch_is_available_in_three_models_the_Apple_Watch_App-a-33_1425926709082.jpg'></td><td>2015-04-13 19:01:55</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3037400/Apple-Watch-sells-million-day-buyers-flocked-watch-Apple-ramps-production-smart-timepiece.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Apple booked pre-orders for about 4 million iPhone 6 and iPhone 6 Plus models when they were released in September.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150413&i=106739636&w=240&r=106739636-2&t=2'></td><td>2015-04-14 03:47:43</td><td><a href='http://www.reuters.com/article/2015/04/14/us-apple-watch-idUSKBN0N410Z20150414?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>However, analysts said Apple could sell between 2.3 million and 4 million watches in the quarter ending June.Apple was widely expected to disclose pre-orders on Monday, following its usual pattern after a product launch.</td></tr><tr><td>Apple shares were up 0.7 percent at $127.95 in morning trading on the Nasdaq.</td></tr></table></td></tr>
 </table></body></html>

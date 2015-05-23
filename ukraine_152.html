@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:23:47</td><td>Russian soldier said captured in Ukraine admits on video to spying mission</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 10:25:06</td><td>"We welcome the Ukraine government's public statements that they are being well taken care of and that the International Committee of the Red Cross... will be allowed access to them," U.S. Assistant Secretary of State for European and Eurasian Affairs, Victoria Nuland, said in Moscow.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 10:25:06</td><td>He said he had been on a spying mission in Ukraine as part of a 14-member special forces group from the Russian town of Togliatti.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static.euronews.com/articles/306201/606x340_306201.jpg?1431955157'></td><td>2015-05-18 13:19:17</td><td>Captured Russian servicemen to be prosecuted for 'terrorist' acts, says Ukraine</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:23:47</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3086104/Russian-soldier-said-captured-Ukraine-admits-video-spying-mission.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Russian soldier said captured in Ukraine admits on video to spying mission</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:25:06</td><td><a href='http://www.reuters.com/article/2015/05/18/us-ukraine-crisis-military-idUSKBN0O30TE20150518?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>He said he had been on a spying mission in Ukraine as part of a 14-member special forces group from the Russian town of Togliatti.</td></tr><tr><td>"We welcome the Ukraine government's public statements that they are being well taken care of and that the International Committee of the Red Cross... will be allowed access to them," U.S. Assistant Secretary of State for European and Eurasian Affairs, Victoria Nuland, said in Moscow.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.euronews.com/articles/306201/606x340_306201.jpg?1431955157'></td><td>2015-05-18 13:19:17</td><td><a href='http://www.euronews.com/2015/05/18/captured-russian-servicemen-to-be-prosecuted-for-terrorist-acts-says-ukraine/'>site</a></td><td>Captured Russian servicemen to be prosecuted for 'terrorist' acts, says Ukraine</td></tr>
 </table></body></html>

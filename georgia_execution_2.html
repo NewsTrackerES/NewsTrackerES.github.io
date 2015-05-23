@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>georgia execution</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 05:14:29</td><td>(AP) - Georgia postponed its first execution of a woman in 70 years late Monday, as officials cited problems with the lone drug that would be used for the lethal injection.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 05:14:29</td><td>The drug, pentobarbital, had a cloudy appearance, prompting officials to call a pharmacist and then out of an "abundance of caution" to postpone the execution, said Georgia Department of Corrections spokeswoman Gwendolyn Hogan.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 05:14:29</td><td>An appellate court had rejected the lawyers' request for a delay on the grounds that Georgia's lethal-injection procedures aren't transparent enough to be challenged in court.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 05:14:29</td><td><a href='http://www.sfgate.com/news/us/article/Execution-of-Georgia-woman-postponed-problem-6111416.php'>site</a></td><td><table><tr><td>(AP) - Georgia postponed its first execution of a woman in 70 years late Monday, as officials cited problems with the lone drug that would be used for the lethal injection.</td></tr><tr><td>The drug, pentobarbital, had a cloudy appearance, prompting officials to call a pharmacist and then out of an "abundance of caution" to postpone the execution, said Georgia Department of Corrections spokeswoman Gwendolyn Hogan.</td></tr><tr><td>An appellate court had rejected the lawyers' request for a delay on the grounds that Georgia's lethal-injection procedures aren't transparent enough to be challenged in court.</td></tr></table></td></tr>
 </table></body></html>

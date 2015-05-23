@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 02:39:28</td><td>Apple's Beats Music deals under U.S. scrutiny: Bloomberg</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 02:39:28</td><td>Apple and the FTC did not immediately respond to requests seeking comment outside regular business hours.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>The Federal Trade Commission (FTC) is examining if Apple is using its position as the top seller of music downloads through its iTunes store to put rival music services like Spotify at a disadvantage, according to Bloomberg.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>Apple bought Beats last year hoping to win points with the music industry and turn Beats Music into a strong competitor to Spotify and other streaming services.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 02:39:28</td><td><a href='http://www.reuters.com/article/2015/05/06/us-apple-regulator-idUSKBN0NR04Y20150506?feedType=RSS&feedName=technologyNews'>site</a></td><td>Apple and the FTC did not immediately respond to requests seeking comment outside regular business hours.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 02:39:28</td><td><a href='http://www.reuters.com/article/2015/05/06/us-apple-regulator-idUSKBN0NR04Y20150506?feedType=RSS&feedName=businessNews'>site</a></td><td>Apple's Beats Music deals under U.S. scrutiny: Bloomberg</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td><a href='http://www.cnbc.com/id/102653977'>site</a></td><td><table><tr><td>The Federal Trade Commission (FTC) is examining if Apple is using its position as the top seller of music downloads through its iTunes store to put rival music services like Spotify at a disadvantage, according to Bloomberg.</td></tr><tr><td>Apple bought Beats last year hoping to win points with the music industry and turn Beats Music into a strong competitor to Spotify and other streaming services.</td></tr></table></td></tr>
 </table></body></html>

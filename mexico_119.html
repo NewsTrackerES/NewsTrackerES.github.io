@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-07 00:00:49</td><td>HERMOSILLO, Mexico (AP) - Authorities in the northern Mexican state of Sonora say drug cartel groups are behind a string of murders in a disputed corridor along the U.S. border.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-07 00:00:49</td><td>Mexico blames drug gangs for string of killings near border</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-07 00:00:49</td><td><a href='http://news.yahoo.com/mexico-blames-drug-gangs-string-killings-near-border-000049735.html'>site</a></td><td><table><tr><td>Mexico blames drug gangs for string of killings near border</td></tr><tr><td>HERMOSILLO, Mexico (AP) - Authorities in the northern Mexican state of Sonora say drug cartel groups are behind a string of murders in a disputed corridor along the U.S. border.</td></tr></table></td></tr>
 </table></body></html>

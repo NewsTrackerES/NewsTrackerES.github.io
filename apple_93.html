@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/05/29/101715911-489010565.530x298.jpg?v=1401393879'></td><td>2015-03-26 13:44:00</td><td>Apple, Beats gear up to compete with Spotify</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/16/276824FA00000578-0-image-a-6_1428851668812.jpg'></td><td>2015-04-12 18:01:36</td><td>Apple bought audio equipment and music streaming company Beats for about $3 billion in May 2014, hoping to catch up in fast-growing music streaming industry.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 02:39:28</td><td>Apple's Beats Music deals under U.S. scrutiny: Bloomberg</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>The Federal Trade Commission (FTC) is examining if Apple is using its position as the top seller of music downloads through its iTunes store to put rival music services like Spotify at a disadvantage, according to Bloomberg.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>Apple and the FTC did not immediately respond to requests seeking comment outside regular business hours.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td>Apple bought Beats last year hoping to win points with the music industry and turn Beats Music into a strong competitor to Spotify and other streaming services.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/05/29/101715911-489010565.530x298.jpg?v=1401393879'></td><td>2015-03-26 13:44:00</td><td><a href='http://www.cnbc.com/id/102537059'>site</a></td><td>Apple, Beats gear up to compete with Spotify</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/16/276824FA00000578-0-image-a-6_1428851668812.jpg'></td><td>2015-04-12 18:01:36</td><td><a href='http://www.dailymail.co.uk/news/article-3035864/Apple-trying-entice-musicians-including-Taylor-Swift-exclusive-deals-Beats-streaming.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Apple bought audio equipment and music streaming company Beats for about $3 billion in May 2014, hoping to catch up in fast-growing music streaming industry.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 02:39:28</td><td><a href='http://www.reuters.com/article/2015/05/06/us-apple-regulator-idUSKBN0NR04Y20150506?feedType=RSS&feedName=businessNews'>site</a></td><td>Apple's Beats Music deals under U.S. scrutiny: Bloomberg</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/05/102649956-167416729.80x60.jpg?v=1430837020'></td><td>2015-05-06 13:30:00</td><td><a href='http://www.cnbc.com/id/102653977'>site</a></td><td><table><tr><td>The Federal Trade Commission (FTC) is examining if Apple is using its position as the top seller of music downloads through its iTunes store to put rival music services like Spotify at a disadvantage, according to Bloomberg.</td></tr><tr><td>Apple bought Beats last year hoping to win points with the music industry and turn Beats Music into a strong competitor to Spotify and other streaming services.</td></tr><tr><td>Apple and the FTC did not immediately respond to requests seeking comment outside regular business hours.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,10 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/9zgCZMre5f1KhV45UOd71w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T002047Z_2_LYNXMPEB3812L_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-04-10 00:20:47</td><td>Hillary Clinton expected to announce presidential run as soon as this weekend</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/9zgCZMre5f1KhV45UOd71w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T002047Z_2_LYNXMPEB3812L_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-04-10 00:20:47</td><td>A variety of sources in the Clinton orbit said they were anticipating an imminent announcement but would not confirm a report in the New York Daily News that the announcement was expected on Sunday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 00:46:49</td><td>Hillary Clinton is expected to announce her campaign for the Democratic presidential nomination in 2016 as early as this weekend, facing no substantial competition but needing to get her organization in place for the long battle to come.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 13:25:12</td><td>WASHINGTON (AP) " Hillary Rodham Clinton will end months of speculation about her political future and launch her long-awaited 2016 presidential campaign on Sunday, according to people familiar with her plans.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://cdnph.upi.com/sv/em/upi/UPI-2011428845604/2015/1/97989e9dee53cd9b82566c22ac07a927/Hillary-Clinton-set-to-announce-presidential-campaign.jpg'></td><td>2015-04-12 16:55:33</td><td>Secretary of State John Kerry, who succeeded Clinton, said she "did a terrific job of rebuilding alliances that had been shredded over the course of the prior years."</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://news.sky.com/story/1463586/data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></td><td>2015-04-12 18:58:31</td><td>He said: "Hillary Clinton represents the worst of the Washington machine - the arrogance of power, corruption and cover-up, conflicts of interest and failed leadership with tragic consequences."</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/20/277F432900000578-0-image-m-21_1428866796920.jpg'></td><td>2015-04-12 21:01:43</td><td>'Americans need a president they can trust and voters do not trust Hillary Clinton,' Republican National Committee Chairman Reince Priebus said in a statement.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/9zgCZMre5f1KhV45UOd71w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T002047Z_2_LYNXMPEB3812L_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-04-10 00:20:47</td><td><a href='http://news.yahoo.com/hillary-clinton-expected-announce-presidential-run-soon-weekend-002047543.html'>site</a></td><td><table><tr><td>Hillary Clinton expected to announce presidential run as soon as this weekend</td></tr><tr><td>A variety of sources in the Clinton orbit said they were anticipating an imminent announcement but would not confirm a report in the New York Daily News that the announcement was expected on Sunday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 00:46:49</td><td><a href='http://www.cbc.ca/news/world/hillary-clinton-expected-to-announce-2016-presidential-run-this-weekend-1.3027372?cmp=rss'>site</a></td><td>Hillary Clinton is expected to announce her campaign for the Democratic presidential nomination in 2016 as early as this weekend, facing no substantial competition but needing to get her organization in place for the long battle to come.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 13:25:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11431014&ref=rss'>site</a></td><td>WASHINGTON (AP) " Hillary Rodham Clinton will end months of speculation about her political future and launch her long-awaited 2016 presidential campaign on Sunday, according to people familiar with her plans.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdnph.upi.com/sv/em/upi/UPI-2011428845604/2015/1/97989e9dee53cd9b82566c22ac07a927/Hillary-Clinton-set-to-announce-presidential-campaign.jpg'></td><td>2015-04-12 16:55:33</td><td><a href='http://www.upi.com/Top_News/US/2015/04/12/Hillary-Clinton-set-to-announce-presidential-campaign/2011428845604/'>site</a></td><td>Secretary of State John Kerry, who succeeded Clinton, said she "did a terrific job of rebuilding alliances that had been shredded over the course of the prior years."</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://news.sky.com/story/1463586/data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></td><td>2015-04-12 18:58:31</td><td><a href='http://news.sky.com/story/1463586/running-for-president-clintons-champion-hopes'>site</a></td><td>He said: "Hillary Clinton represents the worst of the Washington machine - the arrogance of power, corruption and cover-up, conflicts of interest and failed leadership with tragic consequences."</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/20/277F432900000578-0-image-m-21_1428866796920.jpg'></td><td>2015-04-12 21:01:43</td><td><a href='http://www.dailymail.co.uk/news/article-3035748/Everyday-Americans-need-champion-Wealthy-Hillary-Clinton-enters-race-president.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>'Americans need a president they can trust and voters do not trust Hillary Clinton,' Republican National Committee Chairman Reince Priebus said in a statement.</td></tr>
 </table></body></html>

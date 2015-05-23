@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>The iFixit team, which travelled from San Luis Obispo to Australia to get its hands on one of the first Apple Watch deliveries after the gadget's global launch on Friday, began by blasting the screen with a heat gun to pry it off.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>iFixit had anticipated that the resin module, which Apple has said is to protect the electronics from the elements, would have a lid that could be opened rather than be a solid block.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>It also revealed that Apple has used tri-wing screws, a relatively uncommon type of screw, making it more difficult to access the electronics.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td>Apple did not immediately respond to a request for comment on the design of the watch, or the rationale behind it.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297692001245_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-04-24 14:36:23</td><td><a href='http://www.torontosun.com/2015/04/24/gadget-repair-firm-ifixit-tears-down-apple-watch-with-some-difficulty'>site</a></td><td><table><tr><td>The iFixit team, which travelled from San Luis Obispo to Australia to get its hands on one of the first Apple Watch deliveries after the gadget's global launch on Friday, began by blasting the screen with a heat gun to pry it off.</td></tr><tr><td>iFixit had anticipated that the resin module, which Apple has said is to protect the electronics from the elements, would have a lid that could be opened rather than be a solid block.</td></tr><tr><td>Apple did not immediately respond to a request for comment on the design of the watch, or the rationale behind it.</td></tr><tr><td>It also revealed that Apple has used tri-wing screws, a relatively uncommon type of screw, making it more difficult to access the electronics.</td></tr></table></td></tr>
 </table></body></html>

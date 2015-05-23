@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/s4n73BnCrJC8RvM4_Bf6_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-DV-DV2034909-1-1-0.jpg.cf.jpg'></td><td>2015-05-18 16:23:32</td><td>Pixar celebrates Cannes return with original 'Inside Out'</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/s4n73BnCrJC8RvM4_Bf6_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-DV-DV2034909-1-1-0.jpg.cf.jpg'></td><td>2015-05-18 16:23:32</td><td>The reception to "Inside Out" was so good that some at Cannes wondered whether it should have been included in the festival's prestigious Palme d'Or competition.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 17:14:22</td><td>After a two-year hiatus, Pixar has made a sensational return to the Cannes Film Festival with "Inside Out," the kind of fresh take on animation that the studio built itself on.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 17:14:22</td><td>"Inside Out" premiered Monday at Cannes and was among the most enthusiastically received films of the festival.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 17:14:22</td><td>"It's not up for the ... what do you call it?" said Poehler, referring to Cannes' top film honor.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/s4n73BnCrJC8RvM4_Bf6_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-DV-DV2034909-1-1-0.jpg.cf.jpg'></td><td>2015-05-18 16:23:32</td><td><a href='http://news.yahoo.com/pixar-celebrates-cannes-return-original-inside-162332134.html'>site</a></td><td><table><tr><td>Pixar celebrates Cannes return with original 'Inside Out'</td></tr><tr><td>The reception to "Inside Out" was so good that some at Cannes wondered whether it should have been included in the festival's prestigious Palme d'Or competition.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 17:14:22</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21291666.html#storylink=rss'>site</a></td><td><table><tr><td>After a two-year hiatus, Pixar has made a sensational return to the Cannes Film Festival with "Inside Out," the kind of fresh take on animation that the studio built itself on.</td></tr><tr><td>"Inside Out" premiered Monday at Cannes and was among the most enthusiastically received films of the festival.</td></tr><tr><td>"It's not up for the ... what do you call it?" said Poehler, referring to Cannes' top film honor.</td></tr></table></td></tr>
 </table></body></html>

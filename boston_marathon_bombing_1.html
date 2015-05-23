@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>boston marathon bombing</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/2.6N_FXq_nopcsz4Wtk53g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/1991a844f4a3460a700f6a7067000561.jpg.cf.jpg'></td><td>2015-02-16 15:35:17</td><td>So it goes in the trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/9jFlrhtoB2i.w1de4EdKOA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1cd7b567fecebc096f0f6a7067007b3d.jpg'></td><td>2015-03-03 06:39:22</td><td>Final jury to be chosen in Boston Marathon bombing trial</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 18:10:28</td><td>After two months of jury selection, a panel of 12 jurors and six alternates was seated Tuesday for the federal death penalty trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='https://s.yimg.com/uu/api/res/1.2/nZ.k75hSngnN8VTMR5tJ.A--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/f38b32cccc5071740916476912ffa471'></td><td>2015-03-04 06:46:02</td><td>BOSTON (AP) - The question, for all practical purposes, is no longer whether Dzhokhar Tsarnaev took part in the Boston Marathon bombing.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='https://s.yimg.com/uu/api/res/1.2/nZ.k75hSngnN8VTMR5tJ.A--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/f38b32cccc5071740916476912ffa471'></td><td>2015-03-04 06:46:02</td><td>Different views of bombing suspect to be given at trial</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/17/22/7664782/7/920x920.jpg'></td><td>2015-03-20 18:51:33</td><td>1st phase of Boston Marathon bombing trial winding down</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/2.6N_FXq_nopcsz4Wtk53g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/1991a844f4a3460a700f6a7067000561.jpg.cf.jpg'></td><td>2015-02-16 15:35:17</td><td><a href='http://news.yahoo.com/things-know-boston-marathon-bombing-trial-153517979.html'>site</a></td><td>So it goes in the trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/9jFlrhtoB2i.w1de4EdKOA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1cd7b567fecebc096f0f6a7067007b3d.jpg'></td><td>2015-03-03 06:39:22</td><td><a href='http://news.yahoo.com/final-jury-chosen-boston-marathon-bombing-trial-063922662.html'>site</a></td><td>Final jury to be chosen in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 18:10:28</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article12243920.html#storylink=rss'>site</a></td><td>After two months of jury selection, a panel of 12 jurors and six alternates was seated Tuesday for the federal death penalty trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/uu/api/res/1.2/nZ.k75hSngnN8VTMR5tJ.A--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/f38b32cccc5071740916476912ffa471'></td><td>2015-03-04 06:46:02</td><td><a href='http://news.yahoo.com/different-views-bombing-suspect-given-trial-063434741--spt.html'>site</a></td><td><table><tr><td>Different views of bombing suspect to be given at trial</td></tr><tr><td>BOSTON (AP) - The question, for all practical purposes, is no longer whether Dzhokhar Tsarnaev took part in the Boston Marathon bombing.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/17/22/7664782/7/920x920.jpg'></td><td>2015-03-20 18:51:33</td><td><a href='http://www.sfgate.com/news/crime/article/1st-phase-of-Boston-Marathon-bombing-trial-6148052.php'>site</a></td><td>1st phase of Boston Marathon bombing trial winding down</td></tr>
 </table></body></html>

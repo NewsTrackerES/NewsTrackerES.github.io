@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/34/22/7980166/11/gallery_thumb.jpg'></td><td>2015-05-16 14:24:26</td><td>CANNES, France (AP) - Fan Bing Bing is unapologetic about her bold fashion choices.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/34/22/7980166/11/gallery_thumb.jpg'></td><td>2015-05-16 14:24:26</td><td>She wore a golden dragon gown to Cannes in 2010 and a gown inspired by a Chinese porcelain vase in 2012.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/34/22/7980166/11/gallery_thumb.jpg'></td><td>2015-05-16 14:24:26</td><td>Fan Bing Bing enjoys taking fashion risks at Cannes</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/34/22/7980166/11/gallery_thumb.jpg'></td><td>2015-05-16 14:24:26</td><td><a href='http://www.seattlepi.com/entertainment/article/Fan-Bing-Bing-enjoys-taking-fashion-risks-at-6267748.php'>site</a></td><td><table><tr><td>Fan Bing Bing enjoys taking fashion risks at Cannes</td></tr><tr><td>CANNES, France (AP) - Fan Bing Bing is unapologetic about her bold fashion choices.</td></tr><tr><td>She wore a golden dragon gown to Cannes in 2010 and a gown inspired by a Chinese porcelain vase in 2012.</td></tr></table></td></tr>
 </table></body></html>

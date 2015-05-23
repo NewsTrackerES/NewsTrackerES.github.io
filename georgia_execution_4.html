@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>georgia execution</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297668172307_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 15:53:35</td><td>Her lawyers made an 11th-hour argument to the U.S. Supreme Court after an appeals court rejected her attorneys' request for a delay, saying that Georgia's lethal injection process is not transparent enough to be challenged in court.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297668172307_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 15:53:35</td><td>"Within the hours leading up to the scheduled execution, the Execution Team performed the necessary checks. At that time, the drugs appeared cloudy," Georgia Department of Corrections spokeswoman Gwendolyn Hogan said in a statement.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 16:16:01</td><td>ATLANTA - Georgia halted the planned Monday execution of the only woman on death row in the state due to problems with the drugs to be used in the lethal injection, officials said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 16:16:01</td><td>The Georgia Supreme Court on Monday afternoon turned down Gissendaner's request for a stay of execution.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-03 16:16:01</td><td>Gissendaner's execution by injection was reset for Monday night at a prison in Jackson, Ga., after a winter storm prompted state officials to postpone it last week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297668172307_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 15:53:35</td><td><a href='http://www.torontosun.com/2015/03/03/georgia-halts-execution-of-states-only-female-death-row-inmate'>site</a></td><td><table><tr><td>"Within the hours leading up to the scheduled execution, the Execution Team performed the necessary checks. At that time, the drugs appeared cloudy," Georgia Department of Corrections spokeswoman Gwendolyn Hogan said in a statement.</td></tr><tr><td>Her lawyers made an 11th-hour argument to the U.S. Supreme Court after an appeals court rejected her attorneys' request for a delay, saying that Georgia's lethal injection process is not transparent enough to be challenged in court.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:16:01</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/03/22266026.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>ATLANTA - Georgia halted the planned Monday execution of the only woman on death row in the state due to problems with the drugs to be used in the lethal injection, officials said.</td></tr><tr><td>Gissendaner's execution by injection was reset for Monday night at a prison in Jackson, Ga., after a winter storm prompted state officials to postpone it last week.</td></tr><tr><td>The Georgia Supreme Court on Monday afternoon turned down Gissendaner's request for a stay of execution.</td></tr></table></td></tr>
 </table></body></html>

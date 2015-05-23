@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 22:52:41</td><td>The cyclone is expected to lose much of its punch over land, but meteorologists warned it could reform again if it reaches the warm waters of the Gulf of Carpentaria, 250 km (155 miles) from the coast.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 22:52:41</td><td>SYDNEY - A powerful tropical cyclone was losing strength after crossing Australia's north-east coast on Friday, with no immediate reports of injuries.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 22:52:41</td><td>Cyclone Nathan made landfall shortly before dawn as a category four system, the second highest intensity rating, and was expected to continue its westward movement inland while weakening, according to Australia's Bureau of Meteorology.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 01:50:49</td><td>Australian cyclone makes landfall, loses strength</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 22:52:41</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/19/22297861.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>SYDNEY - A powerful tropical cyclone was losing strength after crossing Australia's north-east coast on Friday, with no immediate reports of injuries.</td></tr><tr><td>Cyclone Nathan made landfall shortly before dawn as a category four system, the second highest intensity rating, and was expected to continue its westward movement inland while weakening, according to Australia's Bureau of Meteorology.</td></tr><tr><td>The cyclone is expected to lose much of its punch over land, but meteorologists warned it could reform again if it reaches the warm waters of the Gulf of Carpentaria, 250 km (155 miles) from the coast.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 01:50:49</td><td><a href='http://news.yahoo.com/australian-cyclone-makes-landfall-loses-strength-015049039.html'>site</a></td><td>Australian cyclone makes landfall, loses strength</td></tr>
 </table></body></html>

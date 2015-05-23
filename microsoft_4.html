@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>As Explorer loses ground, Microsoft readies new web browser</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft has built a new web browser designed for the modern web and mobile devices to go with its new Windows 10 operating system that's coming later this year.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft didn't invent the web browser, but it has invested heavily to promote Explorer since it was first launched in 1995.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Explorer will still be available, but Microsoft hinted this week that its new - and as-yet unnamed - browser will get top billing in the future.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft will likely support both Explorer and the new browser for several more years, so it doesn't alienate business customers by forcing them to rebuild their systems from scratch, Hilwa said.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft is betting heavily that its new Windows 10 software will appeal to computer users who are increasingly using mobile devices.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>Microsoft unveiled the new browser, known inside the company as "Project Spartan," at a January press event.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>In an industry that values the new and looks down on the old, Microsoft appears to be signaling Explorer's diminished status as a "legacy" product.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td>After 20 years of competing against rival web browsers, Microsoft is gearing up to launch its own alternative to its once-dominant Internet surfing program.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td><a href='http://www.chron.com/business/technology/article/As-Explorer-loses-ground-Microsoft-readies-new-6143211.php'>site</a></td><td><table><tr><td>As Explorer loses ground, Microsoft readies new web browser</td></tr><tr><td>After 20 years of competing against rival web browsers, Microsoft is gearing up to launch its own alternative to its once-dominant Internet surfing program.</td></tr><tr><td>Microsoft has built a new web browser designed for the modern web and mobile devices to go with its new Windows 10 operating system that's coming later this year.</td></tr><tr><td>Explorer will still be available, but Microsoft hinted this week that its new - and as-yet unnamed - browser will get top billing in the future.</td></tr><tr><td>Microsoft will likely support both Explorer and the new browser for several more years, so it doesn't alienate business customers by forcing them to rebuild their systems from scratch, Hilwa said.</td></tr><tr><td>Microsoft unveiled the new browser, known inside the company as "Project Spartan," at a January press event.</td></tr><tr><td>Microsoft didn't invent the web browser, but it has invested heavily to promote Explorer since it was first launched in 1995.</td></tr><tr><td>In an industry that values the new and looks down on the old, Microsoft appears to be signaling Explorer's diminished status as a "legacy" product.</td></tr><tr><td>Microsoft is betting heavily that its new Windows 10 software will appeal to computer users who are increasingly using mobile devices.</td></tr></table></td></tr>
 </table></body></html>

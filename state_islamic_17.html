@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/r/r/5/c/image.related.articleLeadwide.620x349.13tbei.png/1425392989146.jpg'></td><td>2015-03-02 22:17:30</td><td>The mother of Mohammed Emwazi knew he was Jihadi John and screamed "that's my son" when he first appeared in an Islamic State video - but it is believed she failed to tip off the authorities.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/r/r/5/c/image.related.articleLeadwide.620x349.13tbei.png/1425392989146.jpg'></td><td>2015-03-02 22:17:30</td><td>Police officers near the home of Islamic State militant Mohammed Emwazi, popularly known as Jihadi John.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/r/r/5/c/image.related.articleLeadwide.620x349.13tbei.png/1425392989146.jpg'></td><td>2015-03-02 22:17:30</td><td>'That's my son!': Jihadi John's mother screams watching Islamic State video</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/r/r/5/c/image.related.articleLeadwide.620x349.13tbei.png/1425392989146.jpg'></td><td>2015-03-02 22:17:30</td><td><a href='http://www.smh.com.au/world/thats-my-son-jihadi-johns-mother-screams-watching-islamic-state-video-20150303-13tbei.html'>site</a></td><td><table><tr><td>'That's my son!': Jihadi John's mother screams watching Islamic State video</td></tr><tr><td>The mother of Mohammed Emwazi knew he was Jihadi John and screamed "that's my son" when he first appeared in an Islamic State video - but it is believed she failed to tip off the authorities.</td></tr><tr><td>Police officers near the home of Islamic State militant Mohammed Emwazi, popularly known as Jihadi John.</td></tr></table></td></tr>
 </table></body></html>

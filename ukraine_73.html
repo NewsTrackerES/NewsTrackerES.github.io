@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 15:32:02</td><td>Ukraine's move in November to halt pensions and other social payments to the rebel-controlled territories in the east has hurt the region hard.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-01 15:32:02</td><td>DONETSK, Ukraine (AP) - Russia-backed rebel authorities in eastern Ukraine on Wednesday started paying pensions in Russian rubles.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 15:32:02</td><td>Yuras Karmanau in Kiev, Ukraine contributed to this report.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 15:32:02</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/01/rebels-in-eastern-ukraine-pay-pension-in-russian-rubles'>site</a></td><td><table><tr><td>DONETSK, Ukraine (AP) - Russia-backed rebel authorities in eastern Ukraine on Wednesday started paying pensions in Russian rubles.</td></tr><tr><td>Ukraine's move in November to halt pensions and other social payments to the rebel-controlled territories in the east has hurt the region hard.</td></tr><tr><td>Yuras Karmanau in Kiev, Ukraine contributed to this report.</td></tr></table></td></tr>
 </table></body></html>

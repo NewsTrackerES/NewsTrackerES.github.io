@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 07:56:35</td><td>"Whenever I traveled outside Egypt I saw that people had the opportunity to run outside in their own country, and I thought it was a pity that we didn't have this in Egypt."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-18 07:56:35</td><td>The group began organizing runs nearly two years after Egypt's popular uprising toppled longtime autocrat Hosni Mubarak.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td>Egyptian runners participate in Cairo's annual Half Marathon in the Heliopolis district in Cairo, Egypt, Friday, April 17, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td>In this Friday, April 10, 2015 picture, Egyptian runs cross a street in the Mohandiseen district in Cairo, Egypt.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td>But when the runners describe how the sport has brought them together, and how they have reclaimed their city's squares and streets, one hears an echo of the early days of Egypt's 2011 uprising, when a spirit of inclusiveness prevailed in Cairo's Tahrir Square.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/18/05/27B01AAA00000578-0-image-m-19_1429331437744.jpg'></td><td>2015-04-18 08:02:07</td><td>FILE - In this Friday, April 10, 2015 file photo, runners take advantage of Cairo's empty streets during an organized run in the Mohandisseen district of Egypt's capital.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 07:56:35</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/18/egypt-runners-defy-cairo-mayhem-as-sports-popularity-grows'>site</a></td><td><table><tr><td>"Whenever I traveled outside Egypt I saw that people had the opportunity to run outside in their own country, and I thought it was a pity that we didn't have this in Egypt."</td></tr><tr><td>The group began organizing runs nearly two years after Egypt's popular uprising toppled longtime autocrat Hosni Mubarak.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article18847224.html#storylink=rss'>site</a></td><td><table><tr><td>But when the runners describe how the sport has brought them together, and how they have reclaimed their city's squares and streets, one hears an echo of the early days of Egypt's 2011 uprising, when a spirit of inclusiveness prevailed in Cairo's Tahrir Square.</td></tr><tr><td>In this Friday, April 10, 2015 picture, Egyptian runs cross a street in the Mohandiseen district in Cairo, Egypt.</td></tr><tr><td>Egyptian runners participate in Cairo's annual Half Marathon in the Heliopolis district in Cairo, Egypt, Friday, April 17, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/18/05/27B01AAA00000578-0-image-m-19_1429331437744.jpg'></td><td>2015-04-18 08:02:07</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3044578/Egypt-runners-defy-Cairo-mayhem-sports-popularity-grows.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>FILE - In this Friday, April 10, 2015 file photo, runners take advantage of Cairo's empty streets during an organized run in the Mohandisseen district of Egypt's capital.</td></tr>
 </table></body></html>

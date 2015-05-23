@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/55/51/7789127/5/square_gallery_thumb.jpg'></td><td>2015-04-09 12:52:53</td><td>9, 2014 file photo, the new Apple Watch is modeled during a media event in Cupertino, Calif.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/55/51/7789127/5/square_gallery_thumb.jpg'></td><td>2015-04-09 12:52:53</td><td>Apple Watch options: 54 combinations of case, band, size</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/55/51/7789127/5/square_gallery_thumb.jpg'></td><td>2015-04-09 12:52:53</td><td>NEW YORK (AP) - Apple Watch comes with a choice of watch case, band and size - there are 54 possible configurations in all.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/square_gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td>FILE - In this March 9, 2015 file photo, event attendees get a look at varieties of Apple Watch on display in the demo room after an Apple event in San Francisco.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td>The Apple Store app also has sizing guides, images of the watch cases in actual size and animation of buckles and clasps, which you can open and close by pinching in and out.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/55/51/7789127/5/square_gallery_thumb.jpg'></td><td>2015-04-09 12:52:53</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td><table><tr><td>Apple Watch options: 54 combinations of case, band, size</td></tr><tr><td>9, 2014 file photo, the new Apple Watch is modeled during a media event in Cupertino, Calif.</td></tr><tr><td>NEW YORK (AP) - Apple Watch comes with a choice of watch case, band and size - there are 54 possible configurations in all.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>The Apple Store app also has sizing guides, images of the watch cases in actual size and animation of buckles and clasps, which you can open and close by pinching in and out.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/square_gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>FILE - In this March 9, 2015 file photo, event attendees get a look at varieties of Apple Watch on display in the demo room after an Apple event in San Francisco.</td></tr>
 </table></body></html>

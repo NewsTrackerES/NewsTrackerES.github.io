@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:28:58</td><td>April 30 (Reuters) - Wall Street was lower in afternoon trading on Thursday as Apple weighed on major indexes and investors digested a mixed batch of economic data.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 17:28:58</td><td>US STOCKS-Wall St falls on mixed economic data; Apple weighs</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 17:28:58</td><td>The company limited the availability of the Apple Watch after a key component was found to be defective, according to the Wall Street Journal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:28:58</td><td><a href='http://www.reuters.com/article/2015/04/30/markets-stocks-usa-idUSL4N0XR7B920150430?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td><table><tr><td>US STOCKS-Wall St falls on mixed economic data; Apple weighs</td></tr><tr><td>April 30 (Reuters) - Wall Street was lower in afternoon trading on Thursday as Apple weighed on major indexes and investors digested a mixed batch of economic data.</td></tr><tr><td>The company limited the availability of the Apple Watch after a key component was found to be defective, according to the Wall Street Journal.</td></tr></table></td></tr>
 </table></body></html>

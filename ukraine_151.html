@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:37:15</td><td>Asked about the new reports Monday, Putin spokesman Dmitry Peskov again denied any Russian involvement in Ukraine's war.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 10:37:15</td><td>Another Ukrainian military spokesman, Andriy Lysenko, told reporters that the men's capture will no longer allow Russia to deny its military presence in Ukraine.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/CZWrD3BOZIQyLJq3oIGT_Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/045491f6b1e09c718633270584194faa1537895e.jpg.cf.jpg'></td><td>2015-05-18 10:37:26</td><td>Valentina Melnikova, head of the Union of Soldier Mothers' Committee, said her group has plenty of evidence showing that Russian soldiers have been sent to Ukraine.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 20:34:59</td><td>Russian troops captured in Ukraine treated in Kiev hospital</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:37:15</td><td><a href='http://www.sfgate.com/news/world/article/Russians-troops-captured-in-Ukraine-on-their-way-6269966.php'>site</a></td><td><table><tr><td>Asked about the new reports Monday, Putin spokesman Dmitry Peskov again denied any Russian involvement in Ukraine's war.</td></tr><tr><td>Another Ukrainian military spokesman, Andriy Lysenko, told reporters that the men's capture will no longer allow Russia to deny its military presence in Ukraine.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/CZWrD3BOZIQyLJq3oIGT_Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/045491f6b1e09c718633270584194faa1537895e.jpg.cf.jpg'></td><td>2015-05-18 10:37:26</td><td><a href='http://news.yahoo.com/russians-troops-captured-ukraine-way-capital-082511144.html'>site</a></td><td>Valentina Melnikova, head of the Union of Soldier Mothers' Committee, said her group has plenty of evidence showing that Russian soldiers have been sent to Ukraine.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 20:34:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/18/russian-troops-captured-in-ukraine-transferred-to-capital'>site</a></td><td>Russian troops captured in Ukraine treated in Kiev hospital</td></tr>
 </table></body></html>

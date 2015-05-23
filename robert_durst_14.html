@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 03:54:00</td><td>A photo appearing in the HBO documentary "The Jinx: The Life and Deaths of Robert Durst" shows writer Susan Berman and Robert Durst.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 03:54:00</td><td>Robert Durst is escorted into prison after his arraignment in New Orleans on Tuesday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 13:51:19</td><td>Robert Durst linked to 1971 missing college student: police</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 14:13:20</td><td>We are aware of the connection between Robert Durst and the disappearance of Lynne Schulze," Hanley's statement read. "</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 03:54:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/chi-robert-durst-vermont-student-20150323-story.html'>site</a></td><td><table><tr><td>Robert Durst is escorted into prison after his arraignment in New Orleans on Tuesday.</td></tr><tr><td>A photo appearing in the HBO documentary "The Jinx: The Life and Deaths of Robert Durst" shows writer Susan Berman and Robert Durst.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 13:51:19</td><td><a href='http://www.nydailynews.com/news/national/robert-durst-linked-1971-missing-college-student-police-article-1.2160348?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td>Robert Durst linked to 1971 missing college student: police</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 14:13:20</td><td><a href='http://www.foxnews.com/us/2015/03/24/authorities-say-robert-durst-linked-to-171-disappearance-vermont-college/'>site</a></td><td>We are aware of the connection between Robert Durst and the disappearance of Lynne Schulze," Hanley's statement read. "</td></tr>
 </table></body></html>

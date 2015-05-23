@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 13:35:15</td><td>Following the Baltimore turmoil, Hillary Rodham Clinton made a plea for criminal justice changes that could aid urban communities.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-02 13:35:15</td><td>Former Maryland Gov. Martin O'Malley, who is expected to challenge Clinton for the Democratic nomination, has been at the center of the discussions about Baltimore's issues.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-02 13:35:15</td><td>Paul, who has made a point of reaching out to black communities, has drawn criticism for comments he made during the Baltimore unrest.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-02 13:39:06</td><td>Associated Press writers Ken Thomas in Washington and Matthew Barakat in Baltimore contributed to this report.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-02 13:39:06</td><td>"Hopefully these protests are something they'll wrap themselves around, and we can make sure these issues get addressed," said Thavy Bullis, a Baltimore college student.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 13:35:15</td><td><a href='http://www.startribune.com/politics/302297711.html'>site</a></td><td><table><tr><td>Paul, who has made a point of reaching out to black communities, has drawn criticism for comments he made during the Baltimore unrest.</td></tr><tr><td>Following the Baltimore turmoil, Hillary Rodham Clinton made a plea for criminal justice changes that could aid urban communities.</td></tr><tr><td>Former Maryland Gov. Martin O'Malley, who is expected to challenge Clinton for the Democratic nomination, has been at the center of the discussions about Baltimore's issues.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-02 13:39:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article20080581.html#storylink=rss'>site</a></td><td><table><tr><td>"Hopefully these protests are something they'll wrap themselves around, and we can make sure these issues get addressed," said Thavy Bullis, a Baltimore college student.</td></tr><tr><td>Associated Press writers Ken Thomas in Washington and Matthew Barakat in Baltimore contributed to this report.</td></tr></table></td></tr>
 </table></body></html>

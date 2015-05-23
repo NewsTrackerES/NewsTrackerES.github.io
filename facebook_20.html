@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:01:44</td><td>Facebook to let users send money to friends via Messenger</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 20:00:42</td><td>Facebook will likely expand internationally after the service becomes available to U.S. users over the coming months.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 20:00:42</td><td>Facebook's entry, announced Tuesday, is free, works with debit cards and is available on Apple and Android mobile devices and on desktop computers.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-17 20:00:42</td><td>To help allay concerns about security, Facebook noted that it handles more than a million payments transactions on its site every day for its advertisers and game players.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/20/51/7670356/3/622x350.jpg'></td><td>2015-03-17 20:39:14</td><td>NEW YORK (AP) - Facebook's Messenger app will soon let you send your friends money, the latest in a crowded field of services aimed at an increasingly wireless and cashless generation.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/35/20/51/7670356/3/square_gallery_thumb.jpg'></td><td>2015-03-17 20:39:14</td><td>Facebook users in the U.S. will soon be able to send their friends money using the social network's Messenger app, the company announced Tuesday, March 17, 2015.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 21:19:04</td><td>Its payments systems are stored separately from other parts of the Facebook network and receive additional monitoring and control, the company said in a blog post Tuesday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:01:44</td><td><a href='http://www.utsandiego.com/news/2015/mar/17/facebook-to-let-users-send-money-to-friends-via/'>site</a></td><td>Facebook to let users send money to friends via Messenger</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:00:42</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11419038&ref=rss'>site</a></td><td><table><tr><td>Facebook's entry, announced Tuesday, is free, works with debit cards and is available on Apple and Android mobile devices and on desktop computers.</td></tr><tr><td>Facebook will likely expand internationally after the service becomes available to U.S. users over the coming months.</td></tr><tr><td>To help allay concerns about security, Facebook noted that it handles more than a million payments transactions on its site every day for its advertisers and game players.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/35/20/51/7670356/3/square_gallery_thumb.jpg'></td><td>2015-03-17 20:39:14</td><td><a href='http://www.sfgate.com/business/technology/article/Facebook-to-let-users-send-money-to-friends-via-6139229.php'>site</a></td><td>Facebook users in the U.S. will soon be able to send their friends money using the social network's Messenger app, the company announced Tuesday, March 17, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/20/51/7670356/3/622x350.jpg'></td><td>2015-03-17 20:39:14</td><td><a href='http://www.chron.com/business/technology/article/Facebook-to-let-users-send-money-to-friends-via-6139229.php'>site</a></td><td>NEW YORK (AP) - Facebook's Messenger app will soon let you send your friends money, the latest in a crowded field of services aimed at an increasingly wireless and cashless generation.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 21:19:04</td><td><a href='http://www.miamiherald.com/news/business/article15107243.html#storylink=rss'>site</a></td><td>Its payments systems are stored separately from other parts of the Facebook network and receive additional monitoring and control, the company said in a blog post Tuesday.</td></tr>
 </table></body></html>

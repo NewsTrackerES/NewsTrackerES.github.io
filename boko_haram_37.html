@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/26/fc5a28cdb17ce00d710f6a706700dedb_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-26 16:27:27</td><td>In recent months, Cameroon has arrested dozens of imams and their followers accused of promoting radical ideology and collaborating with Nigeria's Boko Haram militants.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/26/fc5a28cdb17ce00d710f6a706700dedb_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-26 16:27:27</td><td>Already the influence of Boko Haram can be felt in Cameroon.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/26/fc5a28cdb17ce00d710f6a706700dedb_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-26 16:27:27</td><td>Military operations alone cannot defeat Boko Haram, says Bridgit Ndemba, a sociologist at the University of Yaounde, in the capital.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/26/fc5a28cdb17ce00d710f6a706700dedb_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-26 16:27:27</td><td><a href='http://www.utsandiego.com/news/2015/mar/26/in-shadow-of-boko-haram-cameroon-combats/'>site</a></td><td><table><tr><td>In recent months, Cameroon has arrested dozens of imams and their followers accused of promoting radical ideology and collaborating with Nigeria's Boko Haram militants.</td></tr><tr><td>Military operations alone cannot defeat Boko Haram, says Bridgit Ndemba, a sociologist at the University of Yaounde, in the capital.</td></tr><tr><td>Already the influence of Boko Haram can be felt in Cameroon.</td></tr></table></td></tr>
 </table></body></html>

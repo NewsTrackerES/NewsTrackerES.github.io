@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:34:18</td><td>Islamic State militants breach Iraq refinery perimeter, repelled</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 12:34:18</td><td>BAGHDAD (Reuters) - Islamic State militants breached the security perimeter around Iraq's largest refinery in Baiji early on Monday but were beaten back by security forces and coalition air strikes, local officials said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 12:34:18</td><td>The refinery was under siege for five months after Islamic State militants tore through Iraq last summer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:34:18</td><td><a href='http://news.yahoo.com/islamic-state-militants-breach-iraq-refinery-perimeter-repelled-115334188.html'>site</a></td><td><table><tr><td>BAGHDAD (Reuters) - Islamic State militants breached the security perimeter around Iraq's largest refinery in Baiji early on Monday but were beaten back by security forces and coalition air strikes, local officials said.</td></tr><tr><td>The refinery was under siege for five months after Islamic State militants tore through Iraq last summer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:34:18</td><td><a href='http://www.reuters.com/article/2015/04/13/us-mideast-crisis-iraq-refinery-idUSKBN0N414W20150413?feedType=RSS&feedName=worldNews'>site</a></td><td>Islamic State militants breach Iraq refinery perimeter, repelled</td></tr>
 </table></body></html>

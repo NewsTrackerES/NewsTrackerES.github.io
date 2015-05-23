@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81429000/jpg/_81429949_026159020.jpg'></td><td>2015-03-06 10:06:35</td><td>Suspected Boko Haram militants have killed at least 45 people in a village in Borno state, north-east Nigeria, witnesses have said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81429000/jpg/_81429949_026159020.jpg'></td><td>2015-03-06 10:06:35</td><td>'Boko Haram' kill dozens in Nigeria</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81429000/jpg/_81429949_026159020.jpg'></td><td>2015-03-06 10:06:35</td><td><a href='http://www.bbc.co.uk/news/world-africa-31757272#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td><table><tr><td>'Boko Haram' kill dozens in Nigeria</td></tr><tr><td>Suspected Boko Haram militants have killed at least 45 people in a village in Borno state, north-east Nigeria, witnesses have said.</td></tr></table></td></tr>
 </table></body></html>

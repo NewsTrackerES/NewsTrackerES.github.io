@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:59:47</td><td>A message reading "All Lives Matter" is written on the pavement as police in riot gear cast shadows while standing in line ahead of a curfew Friday, May 1, 2015, in Baltimore.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-02 07:59:47</td><td>Desmera Gatewood, 24, (front) protests through downtown Durham, N.C. in solidarity with Baltimore demonstrators on Friday, May 1, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:59:47</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-05-02-US--Baltimore-Police%20Death-Reaction/id-afe3705e022b4989889260be1a0607b1'>site</a></td><td><table><tr><td>A message reading "All Lives Matter" is written on the pavement as police in riot gear cast shadows while standing in line ahead of a curfew Friday, May 1, 2015, in Baltimore.</td></tr><tr><td>Desmera Gatewood, 24, (front) protests through downtown Durham, N.C. in solidarity with Baltimore demonstrators on Friday, May 1, 2015.</td></tr></table></td></tr>
 </table></body></html>

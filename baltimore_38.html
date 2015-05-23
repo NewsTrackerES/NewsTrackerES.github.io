@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 21:20:59</td><td>"I came through the train on Baltimore last night, and I'm glad the train didn't stop," the Kentucky senator told radio host Laura Ingraham this week, with a slight chuckle.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 21:20:59</td><td>Some blamed the anger on income disparity between Baltimore's poorest neighborhoods, which are mostly black, and wealthier neighborhoods.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 21:20:59</td><td>But Paul's comments about the riots in Baltimore following the death of an African-American man while in police custody have been criticized as out of touch for someone who has spent so much time seeking inroads with the black community.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 21:20:59</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3064681/Paul-says-comments-Baltimore-misinterpreted.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>But Paul's comments about the riots in Baltimore following the death of an African-American man while in police custody have been criticized as out of touch for someone who has spent so much time seeking inroads with the black community.</td></tr><tr><td>"I came through the train on Baltimore last night, and I'm glad the train didn't stop," the Kentucky senator told radio host Laura Ingraham this week, with a slight chuckle.</td></tr><tr><td>Some blamed the anger on income disparity between Baltimore's poorest neighborhoods, which are mostly black, and wealthier neighborhoods.</td></tr></table></td></tr>
 </table></body></html>

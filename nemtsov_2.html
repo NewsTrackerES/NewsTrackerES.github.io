@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td>Nemtsov was one of the leading lights of an opposition struggling to revive its fortunes three years after mass rallies against Putin failed to prevent him from returning to the presidency after four years as prime minister.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td>Putin has been Russia's dominant leader since 2000, when ailing President Boris Yeltsin chose the former KGB spy as his successor, a role Nemtsov had once been destined to play.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td>"It is a blow to Russia. If political views are punished this way, then this country simply has no future," Sergei Mitrokhin, an opposition leader, said of Nemtsov's murder.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td>"Everything will be done so that the organisers and perpetrators of a vile and cynical murder get the punishment they deserve," Putin said in a telegram to Nemtsov's mother published on the Kremlin's website.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td>He said Nemtsov's death was an irreparable loss and that he had "left his trace in Russia's history, in politics and public life".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/1/thousands-march-in-russia-to-mourn-putin-critic-boris-nemtsov.html'>site</a></td><td><table><tr><td>"It is a blow to Russia. If political views are punished this way, then this country simply has no future," Sergei Mitrokhin, an opposition leader, said of Nemtsov's murder.</td></tr><tr><td>"Everything will be done so that the organisers and perpetrators of a vile and cynical murder get the punishment they deserve," Putin said in a telegram to Nemtsov's mother published on the Kremlin's website.</td></tr><tr><td>He said Nemtsov's death was an irreparable loss and that he had "left his trace in Russia's history, in politics and public life".</td></tr><tr><td>Nemtsov was one of the leading lights of an opposition struggling to revive its fortunes three years after mass rallies against Putin failed to prevent him from returning to the presidency after four years as prime minister.</td></tr><tr><td>Putin has been Russia's dominant leader since 2000, when ailing President Boris Yeltsin chose the former KGB spy as his successor, a role Nemtsov had once been destined to play.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 20:05:22</td><td>Obama has said the U.S. must reevaluate its approach to pursuing Mideast peace because of Netanyahu's comments, and has entertained speculation the U.S. will be less willing to come to Israel's defense in the United Nations.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 22:47:16</td><td>Netanyahu said he never intended to offend the country's Arab-Israeli minority, but it wasn't immediately clear whether that apology would placate those in Israel and elsewhere who took offense.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 22:47:16</td><td>Top Obama aide: US can't ignore Netanyahu's comments</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 20:05:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11422065&ref=rss'>site</a></td><td>Obama has said the U.S. must reevaluate its approach to pursuing Mideast peace because of Netanyahu's comments, and has entertained speculation the U.S. will be less willing to come to Israel's defense in the United Nations.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 22:47:16</td><td><a href='http://www.sfgate.com/news/politics/article/Top-Obama-aide-US-can-t-ignore-Netanyahu-s-6153138.php'>site</a></td><td><table><tr><td>Top Obama aide: US can't ignore Netanyahu's comments</td></tr><tr><td>Netanyahu said he never intended to offend the country's Arab-Israeli minority, but it wasn't immediately clear whether that apology would placate those in Israel and elsewhere who took offense.</td></tr></table></td></tr>
 </table></body></html>

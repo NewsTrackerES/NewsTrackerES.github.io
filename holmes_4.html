@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 06:04:17</td><td>Holmes' birdie effort trickled right, but his par proved good enough when Wagner's five-foot par putt failed to drop.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 06:04:17</td><td>Holmes gave himself a 10-foot birdie putt, while Wagner left himself a difficult effort over the ridge.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 06:04:17</td><td>From the 18th tee again, Holmes and Wagner both found the fairway.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 06:04:17</td><td><a href='http://www.sport24.co.za/Golf/PGATour/Holmes-wins-Houston-Open-in-playoff-20150406'>site</a></td><td><table><tr><td>From the 18th tee again, Holmes and Wagner both found the fairway.</td></tr><tr><td>Holmes gave himself a 10-foot birdie putt, while Wagner left himself a difficult effort over the ridge.</td></tr><tr><td>Holmes' birdie effort trickled right, but his par proved good enough when Wagner's five-foot par putt failed to drop.</td></tr></table></td></tr>
 </table></body></html>

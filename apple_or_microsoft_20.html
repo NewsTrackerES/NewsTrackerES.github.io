@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 06:01:01</td><td>Apple plans China iPhone trade-in program with Foxconn -Bloomberg</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 06:01:01</td><td>Chinese demand for larger-screen iPhones helped fuel Apple's record profit of $18 billion in the final quarter last year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 06:01:01</td><td><a href='http://www.reuters.com/article/2015/03/26/apple-foxconn-idUSL3N0WS1UE20150326?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td><table><tr><td>Apple plans China iPhone trade-in program with Foxconn -Bloomberg</td></tr><tr><td>Chinese demand for larger-screen iPhones helped fuel Apple's record profit of $18 billion in the final quarter last year.</td></tr></table></td></tr>
 </table></body></html>

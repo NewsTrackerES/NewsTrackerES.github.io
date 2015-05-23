@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:15:41</td><td>"Now we must move forward to adapt and expand the study so that ultimately we can determine whether these experimental vaccines can protect against Ebola virus disease and therefore be used in future Ebola outbreaks."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:15:41</td><td>Two experimental Ebola vaccines pass safety test in African trial</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.nytimes.com/2015/03/27/world/africa/<%= promo_image.thumbStandard.url %>'></td><td>2015-03-27 03:57:12</td><td>Two experimental Ebola vaccines, one from GlaxoSmithKline and the other from the NewLink Genetics Corporation, "appear to be safe" partway through a clinical trial being conducted in Liberia, the National Institutes of Health said Thursday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:15:41</td><td><a href='http://news.yahoo.com/two-experimental-ebola-vaccines-pass-safety-test-african-214424319--finance.html'>site</a></td><td><table><tr><td>Two experimental Ebola vaccines pass safety test in African trial</td></tr><tr><td>"Now we must move forward to adapt and expand the study so that ultimately we can determine whether these experimental vaccines can protect against Ebola virus disease and therefore be used in future Ebola outbreaks."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.nytimes.com/2015/03/27/world/africa/<%= promo_image.thumbStandard.url %>'></td><td>2015-03-27 03:57:12</td><td><a href='http://www.nytimes.com/2015/03/27/world/africa/ebola-vaccines-pass-initial-safety-tests.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Two experimental Ebola vaccines, one from GlaxoSmithKline and the other from the NewLink Genetics Corporation, "appear to be safe" partway through a clinical trial being conducted in Liberia, the National Institutes of Health said Thursday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 16:00:38</td><td>But after weeks of negotiations with potential partners, Netanyahu is finding the task harder than expected and is flirting with the idea of reaching out to his main dovish rivals to form a unity government.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 16:02:46</td><td>Tsahi Hanegbi, the deputy foreign minister from Netanyahu's Likud Party, said the prospect of Herzog joining the coalition was only becoming a possibility due to the hard-ball approach of the right-wing parties.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-19 16:16:59</td><td>So far Herzog's party rank-and-file seems to oppose joining Netanyahu and appears eager to watch a hard-line government fail.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-20 07:58:27</td><td>But large gaps remain with two nationalist parties led by long-time Netanyahu associates.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-20 07:58:27</td><td>Netanyahu looks close to finalizing deals with two ultra-Orthodox parties and the centrist, economics-focused Kulanu party.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-20 08:00:19</td><td>Israel's Netanyahu gets 2-week extension as he struggles to assemble governing coalition</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 16:00:38</td><td><a href='http://www.startribune.com/world/300587111.html'>site</a></td><td>But after weeks of negotiations with potential partners, Netanyahu is finding the task harder than expected and is flirting with the idea of reaching out to his main dovish rivals to form a unity government.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 16:02:46</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3045904/Despite-victory-Israeli-leader-struggling-form-coalition.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tsahi Hanegbi, the deputy foreign minister from Netanyahu's Likud Party, said the prospect of Herzog joining the coalition was only becoming a possibility due to the hard-ball approach of the right-wing parties.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-19 16:16:59</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article18918429.html#storylink=rss'>site</a></td><td>So far Herzog's party rank-and-file seems to oppose joining Netanyahu and appears eager to watch a hard-line government fail.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-20 07:58:27</td><td><a href='http://news.yahoo.com/israeli-leader-gets-2-week-extension-form-coalition-075827822.html'>site</a></td><td><table><tr><td>Netanyahu looks close to finalizing deals with two ultra-Orthodox parties and the centrist, economics-focused Kulanu party.</td></tr><tr><td>But large gaps remain with two nationalist parties led by long-time Netanyahu associates.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-20 08:00:19</td><td><a href='http://www.startribune.com/world/300624071.html'>site</a></td><td>Israel's Netanyahu gets 2-week extension as he struggles to assemble governing coalition</td></tr>
 </table></body></html>

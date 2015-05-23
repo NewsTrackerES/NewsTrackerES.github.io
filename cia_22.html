@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,10 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 11:34:17</td><td>(AP) - A former CIA officer convicted of leaking details of a secret mission to thwart Iran's nuclear ambitions is making his final pitch for a lenient sentence.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 13:39:07</td><td>FILE - In this Jan. 26, 2015 file photo, former CIA officer Jeffrey Sterling leaves federal court in Alexandria, Va.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 19:05:12</td><td>The defense said his punishment should be more in line with that of former CIA Director David Petraeus.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 19:05:12</td><td>Sterling, who is African-American, had sued the agency for racial discrimination but had a lawsuit tossed out after the CIA invoked a state-secrets privilege.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/gallery_thumb.jpg'></td><td>2015-05-11 19:09:50</td><td>The classified operation at the heart of the trial involved using a CIA asset nicknamed Merlin, who had been a Russian nuclear engineer.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/gallery_thumb.jpg'></td><td>2015-05-11 19:09:50</td><td>Former CIA officer sentenced to 3? years in Iran leaks case</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-29210-6YS8p9e5XHSK2-604_634x454.jpg'></td><td>2015-05-11 21:01:59</td><td>Former CIA officer Jeffrey Sterling was sentenced Monday to 3.5 years in prison for leaking classified information to a New York Times journalist.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/square_gallery_thumb.jpg'></td><td>2015-05-12 09:24:46</td><td>(AP) - The list of leakers sent to prison for exposing government secrets is one name longer with Monday's 3 -year sentence for former CIA officer Jeffrey Sterling.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/square_gallery_thumb.jpg'></td><td>2015-05-12 09:24:46</td><td>The disparity, they say, was reflected clearly by the fact that former CIA Director David Petraeus's name is not on the list of those going to prison, despite his conviction just last month for disclosing classified information.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 11:34:17</td><td><a href='http://news.yahoo.com/former-cia-officer-could-face-long-prison-term-113417055.html'>site</a></td><td>(AP) - A former CIA officer convicted of leaking details of a secret mission to thwart Iran's nuclear ambitions is making his final pitch for a lenient sentence.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 13:39:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20652453.html#storylink=rss'>site</a></td><td>FILE - In this Jan. 26, 2015 file photo, former CIA officer Jeffrey Sterling leaves federal court in Alexandria, Va.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:05:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11447116&ref=rss'>site</a></td><td><table><tr><td>The defense said his punishment should be more in line with that of former CIA Director David Petraeus.</td></tr><tr><td>Sterling, who is African-American, had sued the agency for racial discrimination but had a lawsuit tossed out after the CIA invoked a state-secrets privilege.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/gallery_thumb.jpg'></td><td>2015-05-11 19:09:50</td><td><a href='http://www.seattlepi.com/business/technology/article/Former-CIA-officer-could-face-long-prison-term-in-6255196.php'>site</a></td><td><table><tr><td>Former CIA officer sentenced to 3? years in Iran leaks case</td></tr><tr><td>The classified operation at the heart of the trial involved using a CIA asset nicknamed Merlin, who had been a Russian nuclear engineer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-29210-6YS8p9e5XHSK2-604_634x454.jpg'></td><td>2015-05-11 21:01:59</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3077344/Ex-CIA-officer-3-5-years-NY-Times-leak.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Former CIA officer Jeffrey Sterling was sentenced Monday to 3.5 years in prison for leaking classified information to a New York Times journalist.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/square_gallery_thumb.jpg'></td><td>2015-05-12 09:24:46</td><td><a href='http://www.sfgate.com/news/crime/article/Former-CIA-officer-sentenced-to-3-years-in-Iran-6257442.php'>site</a></td><td><table><tr><td>(AP) - The list of leakers sent to prison for exposing government secrets is one name longer with Monday's 3 -year sentence for former CIA officer Jeffrey Sterling.</td></tr><tr><td>The disparity, they say, was reflected clearly by the fact that former CIA Director David Petraeus's name is not on the list of those going to prison, despite his conviction just last month for disclosing classified information.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/30/53/25/6468935/7/square_gallery_thumb.jpg'></td><td>2015-03-02 13:47:56</td><td>Ahead of the operation, Prime Minister Haider al-Abadi, a Shiite, called on Sunni tribal fighters to abandon the Islamic State extremist group, offering what he described as "the last chance" and promising them a pardon.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/30/53/25/6468935/7/square_gallery_thumb.jpg'></td><td>2015-03-02 13:47:56</td><td>His comments appeared to be targeting former members of Iraq's outlawed Baath party, loyalists to Saddam, who joined the Islamic State group during its offensive, as well as other Sunnis who were dissatisfied with Baghdad's Shiite-led government.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/30/53/25/6468935/7/square_gallery_thumb.jpg'></td><td>2015-03-02 13:47:56</td><td>Past attempts to retake Tikrit have failed, as Iraq struggles with its armed forces, which collapsed in the wake of the Islamic State group's offensive last summer.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-10 17:54:42</td><td>Iraq seizes town on outskirts of Islamic State-held Tikrit</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-15 16:25:20</td><td>BAGHDAD - Dozens of fighters with the militia loyal to radical Shiite cleric Muqtada al-Sadr left Iraq's capital Sunday to take part in an offensive to capture Tikrit from the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/30/53/25/6468935/7/square_gallery_thumb.jpg'></td><td>2015-03-02 13:47:56</td><td><a href='http://www.sfgate.com/news/world/article/Iraq-state-TV-Operation-to-retake-Tikrit-begins-6109425.php'>site</a></td><td><table><tr><td>Past attempts to retake Tikrit have failed, as Iraq struggles with its armed forces, which collapsed in the wake of the Islamic State group's offensive last summer.</td></tr><tr><td>Ahead of the operation, Prime Minister Haider al-Abadi, a Shiite, called on Sunni tribal fighters to abandon the Islamic State extremist group, offering what he described as "the last chance" and promising them a pardon.</td></tr><tr><td>His comments appeared to be targeting former members of Iraq's outlawed Baath party, loyalists to Saddam, who joined the Islamic State group during its offensive, as well as other Sunnis who were dissatisfied with Baghdad's Shiite-led government.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-10 17:54:42</td><td><a href='http://www.daytondailynews.com/ap/ap/international/in-battle-against-is-iraqi-forces-retake-town-near/nkR3j/'>site</a></td><td>Iraq seizes town on outskirts of Islamic State-held Tikrit</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-15 16:25:20</td><td><a href='http://www.startribune.com/world/296363421.html'>site</a></td><td>BAGHDAD - Dozens of fighters with the militia loyal to radical Shiite cleric Muqtada al-Sadr left Iraq's capital Sunday to take part in an offensive to capture Tikrit from the Islamic State group.</td></tr>
 </table></body></html>

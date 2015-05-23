@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/13/26972A2D00000578-2992942-image-a-12_1426235716711.jpg'></td><td>2015-03-13 15:54:21</td><td>Ferguson's court clerk was fired and the municipal judge, two police officers and the city manager voluntarily stepped aside.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/13/26972A2D00000578-2992942-image-a-12_1426235716711.jpg'></td><td>2015-03-13 15:54:21</td><td>They marked the first time in more than seven months of tension in Ferguson that officers were shot at a protest, and the bloodshed threatened to inflame the already fraught relationship between police and demonstrators.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/13/26972A2D00000578-2992942-image-a-12_1426235716711.jpg'></td><td>2015-03-13 15:54:21</td><td>They also prayed for peace as Ferguson moves forward in the wake of a scathing Justice Department report on racial bias in its law-enforcement practices.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/13/26972A2D00000578-2992942-image-a-12_1426235716711.jpg'></td><td>2015-03-13 15:54:21</td><td><a href='http://www.dailymail.co.uk/news/article-2992942/Was-Ferguson-gunman-shot-two-cops-sniper-rifle-Police-looking-suspect-station-officers-rooftops-protests-remain-peaceful.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>They also prayed for peace as Ferguson moves forward in the wake of a scathing Justice Department report on racial bias in its law-enforcement practices.</td></tr><tr><td>They marked the first time in more than seven months of tension in Ferguson that officers were shot at a protest, and the bloodshed threatened to inflame the already fraught relationship between police and demonstrators.</td></tr><tr><td>Ferguson's court clerk was fired and the municipal judge, two police officers and the city manager voluntarily stepped aside.</td></tr></table></td></tr>
 </table></body></html>

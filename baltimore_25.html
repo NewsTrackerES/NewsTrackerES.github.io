@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 02:02:56</td><td>Baltimore's economy has ticked up - traffic is rising at its port, which handles a lot of trade in automobiles among other things - and the unemployment rate has fallen to 8.4 percent in February, down about four percentage points over the past five years.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 03:08:00</td><td>In a paper published last year, Raj Chetty of Harvard University and his co-authors found the Baltimore area ranked near the bottom of major U.S. cities in terms of mobility.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 03:08:00</td><td>According to the study, someone born into the bottom fifth of the population in Baltimore stood 6.4 percent chance of making it to the top one fifth of the income strata.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 03:08:00</td><td>In Baltimore, African Americans make up about two-thirds of the city, one of the largest black populations in absolute and relative terms in cities in the United States.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 03:08:00</td><td>WASHINGTON, April 28 (Reuters) - In the 1950's Baltimore was the sixth largest city in the United States with a peak population of nearly 950,000.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 03:08:00</td><td>But for those who live in one of the areas where people clashed with police on Monday - the Sandtown-Winchester area of Baltimore with the 21217 zipcode - about one third of the people live in poverty, according to census data.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 02:02:56</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3060035/Riot-hit-Baltimore-American-city-divided-income-opportunity.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Baltimore's economy has ticked up - traffic is rising at its port, which handles a lot of trade in automobiles among other things - and the unemployment rate has fallen to 8.4 percent in February, down about four percentage points over the past five years.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 03:08:00</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3060104/Riot-hit-Baltimore-American-city-divided-income-opportunity.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>WASHINGTON, April 28 (Reuters) - In the 1950's Baltimore was the sixth largest city in the United States with a peak population of nearly 950,000.</td></tr><tr><td>In a paper published last year, Raj Chetty of Harvard University and his co-authors found the Baltimore area ranked near the bottom of major U.S. cities in terms of mobility.</td></tr><tr><td>According to the study, someone born into the bottom fifth of the population in Baltimore stood 6.4 percent chance of making it to the top one fifth of the income strata.</td></tr><tr><td>But for those who live in one of the areas where people clashed with police on Monday - the Sandtown-Winchester area of Baltimore with the 21217 zipcode - about one third of the people live in poverty, according to census data.</td></tr><tr><td>In Baltimore, African Americans make up about two-thirds of the city, one of the largest black populations in absolute and relative terms in cities in the United States.</td></tr></table></td></tr>
 </table></body></html>

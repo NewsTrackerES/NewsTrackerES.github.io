@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/google650afp3.jpg&size=104x59&quality=85'></td><td>2015-03-31 02:35:15</td><td>Google said Monday it was updating its mobile Gmail app for Android device users to allow them to manage multiple e-mail accounts from a single program.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 06:10:52</td><td>"Starting today, you'll be able to view all your mail at once, regardless of which account it's from, using the new 'All Inboxes' option," Google software engineer Regis Decamps said in a blog post.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 06:10:52</td><td>The new app will aggregate email from rival services such as Yahoo and Microsoft Outlook, among others.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/google650afp3.jpg&size=104x59&quality=85'></td><td>2015-03-31 02:35:15</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/30/22318121-relaxnews.html?cid=rsstechnology'>site</a></td><td>Google said Monday it was updating its mobile Gmail app for Android device users to allow them to manage multiple e-mail accounts from a single program.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 06:10:52</td><td><a href='http://www.fin24.com/Tech/Companies/Google-unveils-unified-email-for-Android-users-20150330'>site</a></td><td><table><tr><td>"Starting today, you'll be able to view all your mail at once, regardless of which account it's from, using the new 'All Inboxes' option," Google software engineer Regis Decamps said in a blog post.</td></tr><tr><td>The new app will aggregate email from rival services such as Yahoo and Microsoft Outlook, among others.</td></tr></table></td></tr>
 </table></body></html>

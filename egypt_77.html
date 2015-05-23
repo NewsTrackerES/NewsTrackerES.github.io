@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:25:13</td><td>CAIRO (AP) " A Nile Delta prosecutor said Sunday he referred 40 people to trial on charges of belonging to the Islamic State group and planning to carry out terrorist attacks in Egypt.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-03 16:25:13</td><td>Bilal Abu Khadra, a prosecutor in Egypt's Sharqiya province, said that those charged communicated with Islamic State militants in Syria.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-03 16:25:13</td><td>The announcement marks the first time people in Egypt's Nile Delta have been accused of belonging to the group, which holds a third of Iraq and Syria in its self-declared caliphate.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-03 16:25:13</td><td>The Islamic State group gained a foothold in Egypt last November when a Sinai-based militant group declared itself an affiliate of the extremists.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-03 16:53:35</td><td>Amid the burgeoning Islamic insurgency in Egypt, thousands have been arrested in the course of a sweeping crackdown on Islamists since the military's 2013 ouster of Islamist President Mohammed Morsi.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:25:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11442756&ref=rss'>site</a></td><td><table><tr><td>CAIRO (AP) " A Nile Delta prosecutor said Sunday he referred 40 people to trial on charges of belonging to the Islamic State group and planning to carry out terrorist attacks in Egypt.</td></tr><tr><td>The announcement marks the first time people in Egypt's Nile Delta have been accused of belonging to the group, which holds a third of Iraq and Syria in its self-declared caliphate.</td></tr><tr><td>Bilal Abu Khadra, a prosecutor in Egypt's Sharqiya province, said that those charged communicated with Islamic State militants in Syria.</td></tr><tr><td>The Islamic State group gained a foothold in Egypt last November when a Sinai-based militant group declared itself an affiliate of the extremists.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-03 16:53:35</td><td><a href='http://news.yahoo.com/egypt-charges-40-over-allegedly-being-islamic-state-161947880.html'>site</a></td><td>Amid the burgeoning Islamic insurgency in Egypt, thousands have been arrested in the course of a sweeping crackdown on Islamists since the military's 2013 ouster of Islamist President Mohammed Morsi.</td></tr>
 </table></body></html>

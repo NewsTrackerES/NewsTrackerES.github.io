@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-urn:publicid:ap.org:a1423dc318fa47398a8fb0408e13f66c-6XIE8p60u-HSK1-400_634x452.jpg'></td><td>2015-03-25 13:20:21</td><td>KIEV, Ukraine (AP) - Ukrainian police officers charged into a televised government meeting Wednesday and detained two top officials on suspicion of extorting bribes.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-urn:publicid:ap.org:a1423dc318fa47398a8fb0408e13f66c-6XIE8p60u-HSK1-400_634x452.jpg'></td><td>2015-03-25 13:20:21</td><td>Ukraine's economy, already hamstrung by crippling bureaucracy and corruption, has been further burdened by a war in the east with Russian-backed separatists.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-urn:publicid:ap.org:a1423dc318fa47398a8fb0408e13f66c-6XIE8p60u-HSK1-400_634x452.jpg'></td><td>2015-03-25 13:20:21</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3010986/Ukrainian-officials-detained-government-meeting.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>KIEV, Ukraine (AP) - Ukrainian police officers charged into a televised government meeting Wednesday and detained two top officials on suspicion of extorting bribes.</td></tr><tr><td>Ukraine's economy, already hamstrung by crippling bureaucracy and corruption, has been further burdened by a war in the east with Russian-backed separatists.</td></tr></table></td></tr>
 </table></body></html>

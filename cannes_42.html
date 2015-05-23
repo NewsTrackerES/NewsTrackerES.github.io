@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/d7441fd/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F22%2F6c9c7266e6767ddd592f507a14f179%2Fmedia%3A0668ef27ac344d43914c46d5007aea54FranceCannesATaleofLoveandDarknessPhotoCall.JPEG'></td><td>2015-05-17 17:00:58</td><td>Portman's film is playing as a special screening outside of the main competition at Cannes.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/40/57/7998438/3/gallery_thumb.jpg'></td><td>2015-05-17 17:00:58</td><td>The film, adapted from an autobiographical novel by Amos Oz, premiered over the weekend at the Cannes Film Festival.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/40/57/7998438/3/gallery_thumb.jpg'></td><td>2015-05-17 17:00:58</td><td>CANNES, France (AP) - Natalie Portman's directorial debut, "A Tale of Love and Darkness," is set around the time of the formation of Israel, but the Oscar-winning actress says it doesn't have a political agenda.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/36/40/57/7998438/3/gallery_thumb.jpg'></td><td>2015-05-17 17:00:58</td><td>CANNES WATCH: Portman says new Israeli isn't political</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/40/57/7998438/3/gallery_thumb.jpg'></td><td>2015-05-17 17:00:58</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Portman-says-new-Israeli-isn-t-6269107.php'>site</a></td><td><table><tr><td>CANNES WATCH: Portman says new Israeli isn't political</td></tr><tr><td>CANNES, France (AP) - Natalie Portman's directorial debut, "A Tale of Love and Darkness," is set around the time of the formation of Israel, but the Oscar-winning actress says it doesn't have a political agenda.</td></tr><tr><td>The film, adapted from an autobiographical novel by Amos Oz, premiered over the weekend at the Cannes Film Festival.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/d7441fd/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F22%2F6c9c7266e6767ddd592f507a14f179%2Fmedia%3A0668ef27ac344d43914c46d5007aea54FranceCannesATaleofLoveandDarknessPhotoCall.JPEG'></td><td>2015-05-17 17:00:58</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/17/cannes-watch-portman-says-new-israeli-isnt-political'>site</a></td><td>Portman's film is playing as a special screening outside of the main competition at Cannes.</td></tr>
 </table></body></html>

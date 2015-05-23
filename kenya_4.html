@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 09:21:08</td><td>Four people died in a gun and grenade attack on Wajir town in northeast Kenya, the latest in a series of cross-border raids by Somalia's Shebab militants, officials said Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 09:21:08</td><td>The attack is the fourth in five days in Kenya's remote and increasingly lawless northeast, which borders war-torn Somalia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 09:21:08</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3000307/New-Shebab-attack-northeast-Kenya-kills-four.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Four people died in a gun and grenade attack on Wajir town in northeast Kenya, the latest in a series of cross-border raids by Somalia's Shebab militants, officials said Wednesday.</td></tr><tr><td>The attack is the fourth in five days in Kenya's remote and increasingly lawless northeast, which borders war-torn Somalia.</td></tr></table></td></tr>
 </table></body></html>

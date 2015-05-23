@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 21:49:52</td><td>Bilal Abood, 37, of Mesquite, admitted he posted an oath on Twitter to Abu Bakr al-Baghdadi, the leader of the Islamic State, according to a criminal complaint.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 21:49:52</td><td>The Islamic State rules parts of Iraq and Syria and has taken responsibility for attacks including a shooting earlier this month outside a controversial Prophet Muhammad cartoon contest in Garland.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-14 21:49:52</td><td>DALLAS (AP) - A suburban Dallas man was arrested Thursday after FBI agents accused him of lying to them about whether he supported the leader of the Islamic State group.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-14 21:49:52</td><td>The complaint further states that agents searching Abood's computer also found he was watching beheadings carried out by Islamic State fighters.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-14 21:49:52</td><td>FBI accuses North Texas man of lying about Islamic State</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-14 21:49:52</td><td>He denied ever providing financial support to the Islamic State or any other terrorist organization.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 21:49:52</td><td><a href='http://news.yahoo.com/fbi-accuses-north-texas-man-lying-islamic-state-214952046.html'>site</a></td><td><table><tr><td>FBI accuses North Texas man of lying about Islamic State</td></tr><tr><td>DALLAS (AP) - A suburban Dallas man was arrested Thursday after FBI agents accused him of lying to them about whether he supported the leader of the Islamic State group.</td></tr><tr><td>Bilal Abood, 37, of Mesquite, admitted he posted an oath on Twitter to Abu Bakr al-Baghdadi, the leader of the Islamic State, according to a criminal complaint.</td></tr><tr><td>The complaint further states that agents searching Abood's computer also found he was watching beheadings carried out by Islamic State fighters.</td></tr><tr><td>The Islamic State rules parts of Iraq and Syria and has taken responsibility for attacks including a shooting earlier this month outside a controversial Prophet Muhammad cartoon contest in Garland.</td></tr><tr><td>He denied ever providing financial support to the Islamic State or any other terrorist organization.</td></tr></table></td></tr>
 </table></body></html>

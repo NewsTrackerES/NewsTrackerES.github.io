@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:51:04</td><td>For the first time, Microsoft will mandate a basic level of benefits for the tens of thousands of contract workers employed on the software giant's behalf.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 20:51:04</td><td>He emphasized that many Microsoft contractors already have paid time off.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 20:51:04</td><td>Microsoft has had an occasionally testy relationship with its contract workers.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 20:51:04</td><td>Microsoft will work with its vendors to address that as the policy is deployed in the next year, Smith said.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 20:51:04</td><td>Microsoft officials began discussing the shift in vendor policy in December, Smith said.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 20:51:04</td><td>Some of Microsoft's peers in Silicon Valley have taken other steps to shift their vendor policies.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-26 20:51:04</td><td>It's also unclear how many people will be affected by the new policy, which applies to Microsoft vendors with 50 or more employees.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-26 20:51:04</td><td>During the next 12 months, the company will require its U.S. suppliers - which provide workers who do everything from serving food and driving buses to testing software - to give 15 days paid leave a year to their employees who work on Microsoft projects.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-03-26 20:51:04</td><td>The drivers of the Connector, Microsoft's contractor-operated shuttle bus service, are represented by the Communications Workers of America.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:51:04</td><td><a href='http://www.miamiherald.com/news/business/workplace/article16387559.html#storylink=rss'>site</a></td><td><table><tr><td>For the first time, Microsoft will mandate a basic level of benefits for the tens of thousands of contract workers employed on the software giant's behalf.</td></tr><tr><td>During the next 12 months, the company will require its U.S. suppliers - which provide workers who do everything from serving food and driving buses to testing software - to give 15 days paid leave a year to their employees who work on Microsoft projects.</td></tr><tr><td>It's also unclear how many people will be affected by the new policy, which applies to Microsoft vendors with 50 or more employees.</td></tr><tr><td>He emphasized that many Microsoft contractors already have paid time off.</td></tr><tr><td>Microsoft has had an occasionally testy relationship with its contract workers.</td></tr><tr><td>Microsoft will work with its vendors to address that as the policy is deployed in the next year, Smith said.</td></tr><tr><td>Microsoft officials began discussing the shift in vendor policy in December, Smith said.</td></tr><tr><td>Some of Microsoft's peers in Silicon Valley have taken other steps to shift their vendor policies.</td></tr><tr><td>The drivers of the Connector, Microsoft's contractor-operated shuttle bus service, are represented by the Communications Workers of America.</td></tr></table></td></tr>
 </table></body></html>

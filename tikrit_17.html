@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>Staff Lieutenant General Abdulwahab al-Saadi, commander for Salaheddin, told AFP Sunday his forces in Tikrit needed air support from the US-led coalition.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>Iraq's offensive to retake Tikrit from the Islamic State group was stalled Tuesday because of streets and buildings rigged with booby trap bombs and by the several hundred jihadists still holding out there.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>Adnan Yunis, spokesman for the Red Crescent in Salaheddin, said only a maximum 20 percent of Tikrit's pre-conflict population is believed to remain in the city.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td>The longer the operation drags on, the longer civilians remaining in Tikrit twill be caught in the middle.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-160e3-6X6Ab0PKu-HSK1-936_634x422.jpg'></td><td>2015-03-17 15:06:09</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-2998591/Iraqs-Tikrit-offensive-stalled-IS-bombs.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Iraq's offensive to retake Tikrit from the Islamic State group was stalled Tuesday because of streets and buildings rigged with booby trap bombs and by the several hundred jihadists still holding out there.</td></tr><tr><td>Staff Lieutenant General Abdulwahab al-Saadi, commander for Salaheddin, told AFP Sunday his forces in Tikrit needed air support from the US-led coalition.</td></tr><tr><td>The longer the operation drags on, the longer civilians remaining in Tikrit twill be caught in the middle.</td></tr><tr><td>Adnan Yunis, spokesman for the Red Crescent in Salaheddin, said only a maximum 20 percent of Tikrit's pre-conflict population is believed to remain in the city.</td></tr></table></td></tr>
 </table></body></html>

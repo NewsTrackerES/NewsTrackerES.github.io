@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 19:00:52</td><td>MEXICO CITY (AP) " Mexico's federal police say they have arrested one of the men suspected in the 2010 slaying of 72 migrants by a drug cartel.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 19:00:52</td><td>Mexico arrests man wanted in massacre of 72 migrants</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 19:00:52</td><td>In December, Mexico's national human rights commission criticized the government investigation, authorities failed to gather forensic evidence, preserve bodies and perform autopsies on time.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 19:00:52</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11426246&ref=rss'>site</a></td><td><table><tr><td>Mexico arrests man wanted in massacre of 72 migrants</td></tr><tr><td>MEXICO CITY (AP) " Mexico's federal police say they have arrested one of the men suspected in the 2010 slaying of 72 migrants by a drug cartel.</td></tr><tr><td>In December, Mexico's national human rights commission criticized the government investigation, authorities failed to gather forensic evidence, preserve bodies and perform autopsies on time.</td></tr></table></td></tr>
 </table></body></html>

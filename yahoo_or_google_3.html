@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:37:45</td><td>But the crash of one of Google's "Loon" balloons for relaying Internet service was enough to have security forces summoned to a mountain township in central Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 22:37:45</td><td>They found one of the huge, jellyfish-shaped balloons that Google is using to carry antennas to deliver online access in remote areas.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 22:39:28</td><td>It's a Bird! It's a Plane! Google Balloon Crash Alarms Town</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-13 22:39:28</td><td>Veracruz authorities have notified Google to come pick up the remains of the balloon and the transmission equipment.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:37:45</td><td><a href='http://news.yahoo.com/bird-plane-google-balloon-crash-panics-town-223055674.html'>site</a></td><td><table><tr><td>But the crash of one of Google's "Loon" balloons for relaying Internet service was enough to have security forces summoned to a mountain township in central Mexico.</td></tr><tr><td>They found one of the huge, jellyfish-shaped balloons that Google is using to carry antennas to deliver online access in remote areas.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:39:28</td><td><a href='http://abcnews.go.com/International/wireStory/bird-plane-google-balloon-crash-panics-town-29627173'>site</a></td><td><table><tr><td>It's a Bird! It's a Plane! Google Balloon Crash Alarms Town</td></tr><tr><td>Veracruz authorities have notified Google to come pick up the remains of the balloon and the transmission equipment.</td></tr></table></td></tr>
 </table></body></html>

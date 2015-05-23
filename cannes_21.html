@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/33/62/7978123/7/628x471.jpg'></td><td>2015-05-14 14:21:45</td><td>Although Cannes kicked off Wednesday with Emmanuelle Bercot's out-of-competition drama "Standing Tall," only two of the 19 films competing for its top prize, the Palme d'Or, are directed by women.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 14:21:45</td><td>Bercot said she did not think her film had been chosen to open Cannes because she was a woman, and insisted female filmmakers are catching up to their male counterparts.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-14 14:21:45</td><td>CANNES, France (AP) - Women are the talk of the Cannes Film Festival, where debate rages about why they are so plentiful in front of the camera and so scarce behind it.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 14:21:45</td><td><a href='http://www.utsandiego.com/news/2015/may/14/cannes-attendees-debate-dearth-of-female/'>site</a></td><td><table><tr><td>CANNES, France (AP) - Women are the talk of the Cannes Film Festival, where debate rages about why they are so plentiful in front of the camera and so scarce behind it.</td></tr><tr><td>Bercot said she did not think her film had been chosen to open Cannes because she was a woman, and insisted female filmmakers are catching up to their male counterparts.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/33/62/7978123/7/628x471.jpg'></td><td>2015-05-14 14:21:45</td><td><a href='http://www.seattlepi.com/news/world/article/Cannes-attendees-debate-dearth-of-female-6263241.php'>site</a></td><td>Although Cannes kicked off Wednesday with Emmanuelle Bercot's out-of-competition drama "Standing Tall," only two of the 19 films competing for its top prize, the Palme d'Or, are directed by women.</td></tr>
 </table></body></html>

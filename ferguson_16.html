@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-13 03:28:13</td><td>"What had been happening in Ferguson was oppressive and objectionable and was worthy of protest, but there was no excuse for criminal acts," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 04:40:23</td><td>During a more subdued segment, Obama reflected on Wednesday night's shooting of two police officers in racially tense Ferguson, Missouri, just days after he had delivered a speech on racial healing in Selma, Alabama.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 04:40:23</td><td>Obama banters with Kimmel, reflects on Ferguson</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://p1cdn01.thewrap.com/images/2015/03/President-Obama.jpg'></td><td>2015-03-13 04:47:37</td><td>"What had been happening in Ferguson was oppressive and objectionable and was worthy of protest," Obama said on ABC's "Jimmy Kimmel Live."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-13 03:28:13</td><td><a href='https://news.yahoo.com/obama-banters-kimmel-reflects-ferguson-024826936.html'>site</a></td><td>"What had been happening in Ferguson was oppressive and objectionable and was worthy of protest, but there was no excuse for criminal acts," he said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 04:40:23</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11416865&ref=rss'>site</a></td><td><table><tr><td>Obama banters with Kimmel, reflects on Ferguson</td></tr><tr><td>During a more subdued segment, Obama reflected on Wednesday night's shooting of two police officers in racially tense Ferguson, Missouri, just days after he had delivered a speech on racial healing in Selma, Alabama.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://p1cdn01.thewrap.com/images/2015/03/President-Obama.jpg'></td><td>2015-03-13 04:47:37</td><td><a href='http://www.thewrap.com/obama-to-jimmy-kimmel-on-ferguson-shooters-there-are-no-excuses-for-criminal-acts-video/'>site</a></td><td>"What had been happening in Ferguson was oppressive and objectionable and was worthy of protest," Obama said on ABC's "Jimmy Kimmel Live."</td></tr>
 </table></body></html>

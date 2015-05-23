@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-2924n-6YSCECmxJ-HSK1-590_634x437.jpg'></td><td>2015-05-11 21:52:21</td><td>Google self-driving cars, which have "safety drivers" at the wheels to take over when deemed appropriate, have logged some 1.7 million miles, according to the California-based Internet titan.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-2924n-6YSCECmxJ-HSK1-590_634x437.jpg'></td><td>2015-05-11 21:52:21</td><td>Google's fleet of self-driving cars are averaging approximately 10,000 autonomous miles weekly, mostly on city streets.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0511/20150511__0512selfdrive~1.JPG'></td><td>2015-05-11 22:44:14</td><td>"These experiences (and countless others) have only reinforced for us the challenges we all face on our roads today," the Google executive wrote.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://cdn.rt.com/files/news/3f/44/50/00/google__s_self-driving_cars_to_begin_testing__with_drivers.si.jpg'></td><td>2015-05-15 23:00:34</td><td>Google said it is looking forward to learning how the community interacts and perceives the cars.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-16 02:52:04</td><td>Google has long been testing its self-driving car technology with a fleet of Lexus sport-utility vehicles that have driven about 1 million miles on public roads, and that continue to put in 10,000 miles a week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-2924n-6YSCECmxJ-HSK1-590_634x437.jpg'></td><td>2015-05-11 21:52:21</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3077396/Google-self-driving-cars-not-crash-proof.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Google self-driving cars, which have "safety drivers" at the wheels to take over when deemed appropriate, have logged some 1.7 million miles, according to the California-based Internet titan.</td></tr><tr><td>Google's fleet of self-driving cars are averaging approximately 10,000 autonomous miles weekly, mostly on city streets.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0511/20150511__0512selfdrive~1.JPG'></td><td>2015-05-11 22:44:14</td><td><a href='http://www.mercurynews.com/60-second-business-break/ci_28094367/biz-break-google-defends-driverless-cars-discloses-11?source=rss'>site</a></td><td>"These experiences (and countless others) have only reinforced for us the challenges we all face on our roads today," the Google executive wrote.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://cdn.rt.com/files/news/3f/44/50/00/google__s_self-driving_cars_to_begin_testing__with_drivers.si.jpg'></td><td>2015-05-15 23:00:34</td><td><a href='http://rt.com/usa/259141-google-self-driving-cars/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>Google said it is looking forward to learning how the community interacts and perceives the cars.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-16 02:52:04</td><td><a href='http://www.startribune.com/google-to-test-bubble-shaped-self-driving-cars-in-silicon-valley/303968841/'>site</a></td><td>Google has long been testing its self-driving car technology with a fleet of Lexus sport-utility vehicles that have driven about 1 million miles on public roads, and that continue to put in 10,000 miles a week.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 19:11:29</td><td>Gujba is one of a handful of districts in Yobe that Boko Haram captured during its sweeping offensive last year.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td>On Friday, suspected Boko Haram fighters disguised as soldiers intercepted a group of people trying to return to their homes to collect abandoned food supplies in northeastern Yobe state.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td>Many experts agree that Boko Haram is likely to transition from capturing and holding territory to reverting to a pattern of hit-and-run attacks.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td>"Unfortunately, they were killed by (the) same Boko Haram we ran away from."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 19:11:29</td><td><a href='http://news.yahoo.com/suspected-boko-haram-gunmen-kill-21-ne-nigeria-152139218.html'>site</a></td><td>Gujba is one of a handful of districts in Yobe that Boko Haram captured during its sweeping offensive last year.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eYgVoTN8rL3KbgOxAZO51g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8141179-1-1-0.jpg.cf.jpg'></td><td>2015-04-27 23:04:32</td><td><a href='http://news.yahoo.com/hundreds-found-dead-buried-damasak-ne-nigeria-residents-205636631.html'>site</a></td><td><table><tr><td>On Friday, suspected Boko Haram fighters disguised as soldiers intercepted a group of people trying to return to their homes to collect abandoned food supplies in northeastern Yobe state.</td></tr><tr><td>"Unfortunately, they were killed by (the) same Boko Haram we ran away from."</td></tr><tr><td>Many experts agree that Boko Haram is likely to transition from capturing and holding territory to reverting to a pattern of hit-and-run attacks.</td></tr></table></td></tr>
 </table></body></html>

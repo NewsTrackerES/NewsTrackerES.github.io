@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 21:33:44</td><td>Islamic State raises flag over local government HQ in Iraq's Ramadi</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150515001133086619-original.jpg?itok=U5OYWBiw'></td><td>2015-05-15 21:35:37</td><td>"The situation in Ramadi is dire, but the city has not fallen and the battle against criminal Daesh is still ongoing," Anbar governor Sohaib al-Rawi said on Twitter, using an Arabic name for Islamic State.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150515001133086619-original.jpg?itok=U5OYWBiw'></td><td>2015-05-15 21:35:37</td><td>Still, the US military sought to play down the Islamic State gains, telling a Pentagon news conference the militants were broadly "on the defensive" in Iraq.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/3/1/7/7/image.related.articleLeadwide.620x349.gh317e.png/1431727410281.jpg'></td><td>2015-05-15 22:03:49</td><td>Extremists from the Islamic State jihadist group executed at least 23 civilians on Friday as they advanced towards Syria's ancient desert metropolis of Palmyra, a monitoring group said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 21:33:44</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3083303/Islamic-State-raises-flag-local-govt-building-Iraqs-Ramadi.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Islamic State raises flag over local government HQ in Iraq's Ramadi</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150515001133086619-original.jpg?itok=U5OYWBiw'></td><td>2015-05-15 21:35:37</td><td><a href='http://www.sbs.com.au/news/article/2015/05/16/raises-flag-over-government-hq-iraqs-ramadi'>site</a></td><td><table><tr><td>"The situation in Ramadi is dire, but the city has not fallen and the battle against criminal Daesh is still ongoing," Anbar governor Sohaib al-Rawi said on Twitter, using an Arabic name for Islamic State.</td></tr><tr><td>Still, the US military sought to play down the Islamic State gains, telling a Pentagon news conference the militants were broadly "on the defensive" in Iraq.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/3/1/7/7/image.related.articleLeadwide.620x349.gh317e.png/1431727410281.jpg'></td><td>2015-05-15 22:03:49</td><td><a href='http://www.brisbanetimes.com.au/world/we-will-be-slaughtered-islamic-state-fighters-raise-the-flag-over-local-government-hq-in-iraqs-ramadi-20150515-gh317e'>site</a></td><td>Extremists from the Islamic State jihadist group executed at least 23 civilians on Friday as they advanced towards Syria's ancient desert metropolis of Palmyra, a monitoring group said.</td></tr>
 </table></body></html>

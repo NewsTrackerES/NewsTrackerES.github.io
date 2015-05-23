@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:02:45</td><td>The routine genetic changes observed indicate the viral mutations are not likely to affect diagnostic testing or the effectiveness of experimental Ebola vaccines or drugs, the researchers said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 18:02:45</td><td>Study finds no sign Ebola virus is mutating out of control</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 18:02:45</td><td>WASHINGTON (Reuters) - There is no sign the Ebola virus is mutating in an accelerated way that could make it more virulent or thwart vaccines or drugs under development despite some earlier fears to the contrary, researchers said on Thursday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 18:02:45</td><td>Fauci said the findings also allay concerns raised by some last year that a rapidly changing virus could change how Ebola is transmitted, becoming airborne or respiratory.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 18:02:45</td><td>They called it a safe, inactivated whole-virus vaccine that primes the recipient's immune system with the full complement of Ebola viral proteins and genes.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 18:02:45</td><td>There are no approved vaccines or medicines for Ebola.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:02:45</td><td><a href='http://www.reuters.com/article/2015/03/26/us-health-ebola-mutation-idUSKBN0MM2J020150326?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>WASHINGTON (Reuters) - There is no sign the Ebola virus is mutating in an accelerated way that could make it more virulent or thwart vaccines or drugs under development despite some earlier fears to the contrary, researchers said on Thursday.</td></tr><tr><td>There are no approved vaccines or medicines for Ebola.</td></tr><tr><td>Fauci said the findings also allay concerns raised by some last year that a rapidly changing virus could change how Ebola is transmitted, becoming airborne or respiratory.</td></tr><tr><td>They called it a safe, inactivated whole-virus vaccine that primes the recipient's immune system with the full complement of Ebola viral proteins and genes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:02:45</td><td><a href='http://news.yahoo.com/study-finds-no-sign-ebola-virus-mutating-control-180245434.html'>site</a></td><td><table><tr><td>Study finds no sign Ebola virus is mutating out of control</td></tr><tr><td>The routine genetic changes observed indicate the viral mutations are not likely to affect diagnostic testing or the effectiveness of experimental Ebola vaccines or drugs, the researchers said.</td></tr></table></td></tr>
 </table></body></html>

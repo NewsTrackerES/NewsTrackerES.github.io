@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/67/12/7828102/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:34:10</td><td>WITH STORY UKRAINE DISABLED CHILDREN - In this photo taken April 14, 2015, disabled children attend a class with a teacher in the Center for Children with Disabilities, Rodyna, (Family) in Kiev, Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/67/12/7828102/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:34:10</td><td>"When most countries are closing institutions and supporting children to live in communities and with families, Ukraine keeps rebuilding institutions and orphanages," said Eric Mathews, who led the DRI research project.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/67/12/7828102/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:34:10</td><td>"At the Rozdil orphanage in western Ukraine, DRI investigators were told that older residents are used to keep younger children in check. We observed a teenager watching over other children with a pair of brass knuckles in his hand," the report said.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/67/12/7828102/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:34:10</td><td>"With tight government budgets, combined with massive population displacements caused by the conflict in eastern Ukraine, there is a risk that even more children are placed in institutional care," Akimova said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/67/12/7828102/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:34:10</td><td>Rodyna is the kind of facility that organizations like DRI would like to see emulated across Ukraine, and demand is intense.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/67/12/7828102/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:34:10</td><td><a href='http://www.sfgate.com/news/medical/article/Ukraine-s-disabled-condemned-to-life-in-6203364.php'>site</a></td><td><table><tr><td>WITH STORY UKRAINE DISABLED CHILDREN - In this photo taken April 14, 2015, disabled children attend a class with a teacher in the Center for Children with Disabilities, Rodyna, (Family) in Kiev, Ukraine.</td></tr><tr><td>"When most countries are closing institutions and supporting children to live in communities and with families, Ukraine keeps rebuilding institutions and orphanages," said Eric Mathews, who led the DRI research project.</td></tr><tr><td>Rodyna is the kind of facility that organizations like DRI would like to see emulated across Ukraine, and demand is intense.</td></tr><tr><td>"With tight government budgets, combined with massive population displacements caused by the conflict in eastern Ukraine, there is a risk that even more children are placed in institutional care," Akimova said.</td></tr><tr><td>"At the Rozdil orphanage in western Ukraine, DRI investigators were told that older residents are used to keep younger children in check. We observed a teenager watching over other children with a pair of brass knuckles in his hand," the report said.</td></tr></table></td></tr>
 </table></body></html>

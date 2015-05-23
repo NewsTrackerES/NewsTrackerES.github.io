@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/0/6/7/r/image.related.articleLeadwide.620x349.gh04zi.png/1431455243021.jpg'></td><td>2015-05-12 18:27:41</td><td>The Nemstov report is not the only one claiming Russian involvement in Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/0/6/7/r/image.related.articleLeadwide.620x349.gh04zi.png/1431455243021.jpg'></td><td>2015-05-12 18:27:41</td><td>However, the report claimed that Russia had started discharging troops from the army on paper before sending them into Ukraine - then refusing to pay compensation to their families.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/0/6/7/r/image.related.articleLeadwide.620x349.gh04zi.png/1431455243021.jpg'></td><td>2015-05-12 18:27:41</td><td><a href='http://www.smh.com.au/world/vladimir-putin-has-up-to-10000-troops-in-ukraine-russian-opposition-report-claims-20150512-gh04zi.html'>site</a></td><td><table><tr><td>However, the report claimed that Russia had started discharging troops from the army on paper before sending them into Ukraine - then refusing to pay compensation to their families.</td></tr><tr><td>The Nemstov report is not the only one claiming Russian involvement in Ukraine.</td></tr></table></td></tr>
 </table></body></html>

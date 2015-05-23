@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/breakingnews/offbeat/article31189073.ece/886aa/ALTERNATES/h342/PANews%20BT_P-18ba346b-7d9a-42e7-828b-12e4db31c39f_I1.jpg'></td><td>2015-05-01 20:51:03</td><td>The London Eye is to be lit up every night between now and the General Election with data reflecting the conversation taking place on Facebook.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn4.belfasttelegraph.co.uk/breakingnews/offbeat/article31189073.ece/886aa/ALTERNATES/h342/PANews%20BT_P-18ba346b-7d9a-42e7-828b-12e4db31c39f_I1.jpg'></td><td>2015-05-01 20:51:03</td><td>Studies have shown that conversation on Facebook ahead of an election can increase voter turnout.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/xoxY1FbxnklAzKZvASjeNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/c8a724c21ec16b5d17e2069faa3ec82bc02232be.jpg'></td><td>2015-05-02 03:46:42</td><td>"Politics is huge on Facebook -- we expect it to be the most-discussed topic in the UK this year," said Elizabeth Linder, Facebook's politics and government specialist for Europe, the Middle East and Africa.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/breakingnews/offbeat/article31189073.ece/886aa/ALTERNATES/h342/PANews%20BT_P-18ba346b-7d9a-42e7-828b-12e4db31c39f_I1.jpg'></td><td>2015-05-01 20:51:03</td><td><a href='http://www.belfasttelegraph.co.uk/breakingnews/offbeat/eye-lit-up-by-facebook-for-election-31189074.html'>site</a></td><td><table><tr><td>The London Eye is to be lit up every night between now and the General Election with data reflecting the conversation taking place on Facebook.</td></tr><tr><td>Studies have shown that conversation on Facebook ahead of an election can increase voter turnout.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/xoxY1FbxnklAzKZvASjeNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/c8a724c21ec16b5d17e2069faa3ec82bc02232be.jpg'></td><td>2015-05-02 03:46:42</td><td><a href='http://news.yahoo.com/london-eye-lit-facebook-election-chat-034642485.html'>site</a></td><td>"Politics is huge on Facebook -- we expect it to be the most-discussed topic in the UK this year," said Elizabeth Linder, Facebook's politics and government specialist for Europe, the Middle East and Africa.</td></tr>
 </table></body></html>

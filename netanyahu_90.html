@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,10 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:58:39</td><td>Netanyahu denied he was coordinating with House of Representatives Speaker John Boehner, who visited Israel last week, and with other Republicans to block the Iran deal.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 13:58:39</td><td>Netanyahu, in the first of several appearances on U.S. Sunday news programs, said he has spoken with both Democrats and Republicans in Congress - nearly two thirds of House of Representatives members and a similar number in the U.S. Senate - about the Iran nuclear issue.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 13:58:39</td><td>Netanyahu presses U.S. to seek better deal on Iran: CNN</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-05 15:03:42</td><td>"This is not a partisan issue. This is not solely an Israeli issue," Netanyahu said of the interim nuclear agreement, speaking on CNN's "State of the Union" program.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/qKgpiHIAlS.MX4gHsqTrWg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-05T135839Z_1_LYNXMPEB3406I_RTROPTP_2_IRAN-NUCLEAR-NETANYAHU.JPG'></td><td>2015-04-05 15:03:42</td><td>Appearing on CNN, Senator Dianne Feinstein, a leading Democratic voice on foreign affairs, said she did not believe the agreement threatened Israel, and had harsh words for Netanyahu.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 16:01:10</td><td>Asked on CNN if he trusted Obama, Netanyahu said he was sure the American president was doing what he thought was good for his country, but they disagreed about the best policy on Iran.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-05 16:01:10</td><td>In appearances on U.S. television on Sunday, Netanyahu did not repeat his assertion on Friday that any final agreement should include a commitment by Iran recognizing Israel's right to exist.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-05 17:21:59</td><td>Netanyahu angered the White House and alienated some Democrats when he accepted a Republican invitation to address Congress on March 3, two weeks before the Israeli elections that returned him to office.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/03/03/102473193-RTR4RWMQ.530x298.jpg?v=1425401630'></td><td>2015-04-05 23:43:00</td><td>Obama, whose relations with Netanyahu have frayed badly over the Iran issue, sought to assure Israelis he understands their concerns.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:58:39</td><td><a href='http://www.reuters.com/article/2015/04/05/us-iran-nuclear-usa-idUSKBN0MW0HJ20150405?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>Netanyahu presses U.S. to seek better deal on Iran: CNN</td></tr><tr><td>Netanyahu, in the first of several appearances on U.S. Sunday news programs, said he has spoken with both Democrats and Republicans in Congress - nearly two thirds of House of Representatives members and a similar number in the U.S. Senate - about the Iran nuclear issue.</td></tr><tr><td>Netanyahu denied he was coordinating with House of Representatives Speaker John Boehner, who visited Israel last week, and with other Republicans to block the Iran deal.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/qKgpiHIAlS.MX4gHsqTrWg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-05T135839Z_1_LYNXMPEB3406I_RTROPTP_2_IRAN-NUCLEAR-NETANYAHU.JPG'></td><td>2015-04-05 15:03:42</td><td><a href='http://news.yahoo.com/netanyahu-presses-u-seek-better-deal-iran-cnn-135839332.html'>site</a></td><td>Appearing on CNN, Senator Dianne Feinstein, a leading Democratic voice on foreign affairs, said she did not believe the agreement threatened Israel, and had harsh words for Netanyahu.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-05 15:03:42</td><td><a href='http://www.reuters.com/article/2015/04/05/us-iran-nuclear-usa-idUSKBN0MW0HJ20150405?feedType=RSS&feedName=wtMostRead'>site</a></td><td>"This is not a partisan issue. This is not solely an Israeli issue," Netanyahu said of the interim nuclear agreement, speaking on CNN's "State of the Union" program.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 16:01:10</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3026504/Netanyahu-presses-U-S-seek-better-deal-Iran.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>In appearances on U.S. television on Sunday, Netanyahu did not repeat his assertion on Friday that any final agreement should include a commitment by Iran recognizing Israel's right to exist.</td></tr><tr><td>Asked on CNN if he trusted Obama, Netanyahu said he was sure the American president was doing what he thought was good for his country, but they disagreed about the best policy on Iran.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-05 17:21:59</td><td><a href='http://www.sabc.co.za/news/a/c361658047e7e9028abdff4405f77b26/Netanyahu-presses-US-to-seek-better-deal-on-Iran-20150405'>site</a></td><td>Netanyahu angered the White House and alienated some Democrats when he accepted a Republican invitation to address Congress on March 3, two weeks before the Israeli elections that returned him to office.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/03/03/102473193-RTR4RWMQ.530x298.jpg?v=1425401630'></td><td>2015-04-05 23:43:00</td><td><a href='http://www.cnbc.com/id/102561547'>site</a></td><td>Obama, whose relations with Netanyahu have frayed badly over the Iran issue, sought to assure Israelis he understands their concerns.</td></tr>
 </table></body></html>

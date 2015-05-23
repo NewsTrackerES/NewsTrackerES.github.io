@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Egypt's chief prosecutor has referred a police officer to trial for the deadly shooting of a female protester killed earlier this year during a peaceful demonstration.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>The two cases had renewed accusations from rights groups and political activists that Egypt's powerful police force enjoys almost blanket impunity.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td>Amnesty International said authorities in Egypt are covering up excessive use of force by police, taking no action to rein in abuse.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Sunday, Feb. 8, 2015 file photo, a man looks at a burning vehicle during a riot outside an air defense stadium in a suburb east of Cairo, Egypt.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td>FILE - In this Monday, Feb. 9, 2015 file photo, an Ultras White Knights soccer fan, mourns over his friends who were killed in a riot, outside Zeinhom morgue, in Cairo, Egypt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/20/10/7668233/7/square_gallery_thumb.jpg'></td><td>2015-03-17 15:06:19</td><td><a href='http://www.sfgate.com/news/world/article/Egypt-to-try-police-officer-for-killing-female-6138449.php'>site</a></td><td><table><tr><td>Egypt's chief prosecutor has referred a police officer to trial for the deadly shooting of a female protester killed earlier this year during a peaceful demonstration.</td></tr><tr><td>The two cases had renewed accusations from rights groups and political activists that Egypt's powerful police force enjoys almost blanket impunity.</td></tr><tr><td>Amnesty International said authorities in Egypt are covering up excessive use of force by police, taking no action to rein in abuse.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-urn:publicid:ap.org:d4ae3cc35c7547ffb3dcee574193b19b-6X6AeC7e6HSK2-759_634x430.jpg'></td><td>2015-03-17 15:09:27</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-2998678/Egypt-try-police-officer-killing-female-protester.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>FILE - In this Sunday, Feb. 8, 2015 file photo, a man looks at a burning vehicle during a riot outside an air defense stadium in a suburb east of Cairo, Egypt.</td></tr><tr><td>FILE - In this Monday, Feb. 9, 2015 file photo, an Ultras White Knights soccer fan, mourns over his friends who were killed in a riot, outside Zeinhom morgue, in Cairo, Egypt.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td>Empty glass pitchers line a table following a drinking water contest hosted by the New Mexico Rural Water Association in Albuquerque N.M., Wednesday, April 15, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td>Martinez spoke to a room full of water managers gathered for a meeting hosted by the New Mexico Rural Water Association.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td>Gov. Susana Martinez told association members during a luncheon Wednesday that more investment in water infrastructure will ensure economic development is possible in New Mexico.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td>New Mexico has been through four straight years of severe drought and the last decade has seen more dry years than wet ones.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td>Another bill frees up $32 million through the New Mexico Finance Authority for flood prevention and watershed restoration work that's approved by the state Water Trust Board.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td>Extreme drought also dropped off New Mexico's map in March - the first time that's happened in four years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 03:28:07</td><td><a href='http://www.miamiherald.com/news/business/article18641451.html#storylink=rss'>site</a></td><td><table><tr><td>Martinez spoke to a room full of water managers gathered for a meeting hosted by the New Mexico Rural Water Association.</td></tr><tr><td>Another bill frees up $32 million through the New Mexico Finance Authority for flood prevention and watershed restoration work that's approved by the state Water Trust Board.</td></tr><tr><td>New Mexico has been through four straight years of severe drought and the last decade has seen more dry years than wet ones.</td></tr><tr><td>Extreme drought also dropped off New Mexico's map in March - the first time that's happened in four years.</td></tr><tr><td>Empty glass pitchers line a table following a drinking water contest hosted by the New Mexico Rural Water Association in Albuquerque N.M., Wednesday, April 15, 2015.</td></tr><tr><td>Gov. Susana Martinez told association members during a luncheon Wednesday that more investment in water infrastructure will ensure economic development is possible in New Mexico.</td></tr></table></td></tr>
 </table></body></html>

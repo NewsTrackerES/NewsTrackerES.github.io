@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430516284636.jpg'></td><td>2015-05-01 22:00:00</td><td>Cairo: The leader of the Islamic State, Abu Bakr al-Baghdadi, has been so badly wounded by a US air strike in Iraq that he may never resume control of the group he masterminded to power.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430516284636.jpg'></td><td>2015-05-01 22:00:00</td><td>Future in doubt ... The leader of the Islamic State, Abu Bakr al-Baghdadi, was reportedly paralysed by a US air strike in Iraq on March 18.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430515735374.jpg'></td><td>2015-05-01 22:00:00</td><td>Also known as Haji Iman, Mr Afri taught in the northwestern Iraqi city of Tal Afar, and has reportedly built solid respect among Islamic State's senior leadership.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430515735374.jpg'></td><td>2015-05-01 22:00:00</td><td>Protesters carry defaced posters of Islamic State leader Abu Bakr al-Baghdadi, left, and Iraqi Defence Minister Khaled al-Obeidi, right, as they chant slogans against the Islamic State group during a protest in Baghdad.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430515735374.jpg'></td><td>2015-05-01 22:00:00</td><td><a href='http://www.brisbanetimes.com.au/world/wounded-islamic-state-leader-abu-bakr-albaghdadi-may-have-to-give-up-control-of-jihadists-20150502-1mycir.html'>site</a></td><td>Protesters carry defaced posters of Islamic State leader Abu Bakr al-Baghdadi, left, and Iraqi Defence Minister Khaled al-Obeidi, right, as they chant slogans against the Islamic State group during a protest in Baghdad.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430515735374.jpg'></td><td>2015-05-01 22:00:00</td><td><a href='http://www.smh.com.au/world/wounded-islamic-state-leader-abu-bakr-albaghdadi-may-have-to-give-up-control-of-jihadists-20150502-1mycir.html'>site</a></td><td>Also known as Haji Iman, Mr Afri taught in the northwestern Iraqi city of Tal Afar, and has reportedly built solid respect among Islamic State's senior leadership.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430516284636.jpg'></td><td>2015-05-01 22:00:00</td><td><a href='http://www.smh.com.au/world/wounded-islamic-state-leader-abu-bakr-albaghdadi-may-have-to-give-up-control-of-jihadists-20150501-1mycir.html'>site</a></td><td><table><tr><td>Future in doubt ... The leader of the Islamic State, Abu Bakr al-Baghdadi, was reportedly paralysed by a US air strike in Iraq on March 18.</td></tr><tr><td>Cairo: The leader of the Islamic State, Abu Bakr al-Baghdadi, has been so badly wounded by a US air strike in Iraq that he may never resume control of the group he masterminded to power.</td></tr></table></td></tr>
 </table></body></html>

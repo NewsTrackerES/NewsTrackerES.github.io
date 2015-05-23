@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 11:07:59</td><td>"I do not think that any tool of U.S. or any other nation's power should necessarily be off the table," U.S. Air Force General Philip Breedlove told a Brussels conference when asked if he was in favor of sending defensive weapons to Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-22 11:07:59</td><td>BRUSSELS (Reuters) - The West should consider using all its tools to help Ukraine, including sending defensive weapons, NATO's top military commander said on Sunday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-22 11:07:59</td><td>Breedlove also said that NATO intelligence pointed to "disturbing" military developments on the ground in eastern Ukraine and voiced concern about whether a Ukraine ceasefire deal reached in Minsk last month was being complied with.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 11:07:59</td><td><a href='http://www.reuters.com/article/2015/03/22/us-ukraine-crisis-nato-idUSKBN0MI09K20150322?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>BRUSSELS (Reuters) - The West should consider using all its tools to help Ukraine, including sending defensive weapons, NATO's top military commander said on Sunday.</td></tr><tr><td>"I do not think that any tool of U.S. or any other nation's power should necessarily be off the table," U.S. Air Force General Philip Breedlove told a Brussels conference when asked if he was in favor of sending defensive weapons to Ukraine.</td></tr><tr><td>Breedlove also said that NATO intelligence pointed to "disturbing" military developments on the ground in eastern Ukraine and voiced concern about whether a Ukraine ceasefire deal reached in Minsk last month was being complied with.</td></tr></table></td></tr>
 </table></body></html>

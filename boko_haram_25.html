@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:37:37</td><td>The Nigerian army said on Tuesday it had repelled Boko Haram from all but three local government districts in the northeast, claiming victory for its offensive against the Islamist insurgents less than two weeks before a presidential election.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 19:37:37</td><td>Boko Haram kills one in north Cameroon attack: army</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 19:37:37</td><td>Armies from Nigeria, Cameroon, Chad and Niger have launched an offensive to end Boko Haram's six-year insurgency which has killed thousands and threatened the stability of the region.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:37:37</td><td><a href='http://news.yahoo.com/boko-haram-kills-one-north-cameroon-attack-army-193737819.html'>site</a></td><td><table><tr><td>Boko Haram kills one in north Cameroon attack: army</td></tr><tr><td>Armies from Nigeria, Cameroon, Chad and Niger have launched an offensive to end Boko Haram's six-year insurgency which has killed thousands and threatened the stability of the region.</td></tr><tr><td>The Nigerian army said on Tuesday it had repelled Boko Haram from all but three local government districts in the northeast, claiming victory for its offensive against the Islamist insurgents less than two weeks before a presidential election.</td></tr></table></td></tr>
 </table></body></html>

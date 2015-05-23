@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/21/876/493/Mideast Israel Migrants Journey-2.jpg?ve=1&tl=1'></td><td>2015-04-21 18:36:16</td><td>He was apparently arrested by Islamic State militants on his way to Tripoli, where he hope to make the harrowing trip by sea to Europe.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/21/876/493/Mideast Israel Migrants Journey-2.jpg?ve=1&tl=1'></td><td>2015-04-21 18:36:16</td><td>Islamic State militants are just the latest challenge for African migrants seeking opportunity in Europe.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/21/16/50/865b1a3ddb7748f596383b15bd62607d-3e22274feff340cbb02555e42094692d-0.jpg'></td><td>2015-04-21 18:36:16</td><td>Facing the new threat of Islamic State militants, Beyene said that Holot detainees are terrified and prefer to stay locked up than leave to an uncertain fate in Africa.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/21/16/50/865b1a3ddb7748f596383b15bd62607d-3e22274feff340cbb02555e42094692d-0.jpg'></td><td>2015-04-21 18:36:16</td><td>Kidane, who was about 30, is believed to have been among dozens of Christian Africans who were shot or beheaded on a Libyan beach in a video released by the Islamic State group this week.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/21/16/50/865b1a3ddb7748f596383b15bd62607d-3e22274feff340cbb02555e42094692d-0.jpg'></td><td>2015-04-21 18:36:16</td><td>For migrants used to danger, Islamic State poses new threat</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/21/16/50/865b1a3ddb7748f596383b15bd62607d-3e22274feff340cbb02555e42094692d-0.jpg'></td><td>2015-04-21 18:36:16</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/for-migrants-used-to-danger-islamic-state-poses-ne/nkzC9/'>site</a></td><td><table><tr><td>For migrants used to danger, Islamic State poses new threat</td></tr><tr><td>Kidane, who was about 30, is believed to have been among dozens of Christian Africans who were shot or beheaded on a Libyan beach in a video released by the Islamic State group this week.</td></tr><tr><td>Facing the new threat of Islamic State militants, Beyene said that Holot detainees are terrified and prefer to stay locked up than leave to an uncertain fate in Africa.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/21/876/493/Mideast Israel Migrants Journey-2.jpg?ve=1&tl=1'></td><td>2015-04-21 18:36:16</td><td><a href='http://www.foxnews.com/world/2015/04/21/after-perilous-journeys-african-migrants-face-new-threat-in-islamic-state-group/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>He was apparently arrested by Islamic State militants on his way to Tripoli, where he hope to make the harrowing trip by sea to Europe.</td></tr><tr><td>Islamic State militants are just the latest challenge for African migrants seeking opportunity in Europe.</td></tr></table></td></tr>
 </table></body></html>

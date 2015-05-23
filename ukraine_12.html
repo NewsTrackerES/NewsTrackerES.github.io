@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297664844418_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-16 15:27:54</td><td>Battle rages for town where Ukraine rebels reject ceasefire</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td>Moscow denies this and accuses the West of waging a proxy war in Ukraine to seek "regime change" in Russia.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td>Fighting began in east Ukraine after the overthrow of a Moscow-backed president in Ukraine last February and Russia's annexation of the Crimea peninsula a month later.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td>The West says Putin, who has called parts of Ukraine "New Russia," has sent troops and weapons to back the rebels.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2979/7d4523ca6159454a9313b97b0087ae09.jpg'></td><td>2015-02-17 07:02:45</td><td>Merkel, along with the leaders of France and Ukraine, expressed concern about continued fighting in Debaltseve and said observers from the Organisation for Security and Cooperation in Europe (OSCE) must have "free access" for their work in eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 13:01:21</td><td>NATO says intensified drills are aimed at reassuring eastern members worried by Moscow's policies on Ukraine and, more recently, intensified talk of its nuclear capabilities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297664844418_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-16 15:27:54</td><td><a href='http://www.torontosun.com/2015/02/16/battle-rages-for-town-where-ukraine-rebels-reject-ceasefire'>site</a></td><td>Battle rages for town where Ukraine rebels reject ceasefire</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-16 20:02:12</td><td><a href='http://news.yahoo.com/battle-rages-town-where-ukraine-rebels-reject-ceasefire-125913126.html'>site</a></td><td><table><tr><td>Fighting began in east Ukraine after the overthrow of a Moscow-backed president in Ukraine last February and Russia's annexation of the Crimea peninsula a month later.</td></tr><tr><td>The West says Putin, who has called parts of Ukraine "New Russia," has sent troops and weapons to back the rebels.</td></tr><tr><td>Moscow denies this and accuses the West of waging a proxy war in Ukraine to seek "regime change" in Russia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2979/7d4523ca6159454a9313b97b0087ae09.jpg'></td><td>2015-02-17 07:02:45</td><td><a href='http://www.news24.com/World/News/Battle-rages-for-town-where-Ukraine-rebels-reject-ceasefire-20150217'>site</a></td><td>Merkel, along with the leaders of France and Ukraine, expressed concern about continued fighting in Debaltseve and said observers from the Organisation for Security and Cooperation in Europe (OSCE) must have "free access" for their work in eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 13:01:21</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3041798/Russia-blames-U-S-security-crises-turmoil-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>NATO says intensified drills are aimed at reassuring eastern members worried by Moscow's policies on Ukraine and, more recently, intensified talk of its nuclear capabilities.</td></tr>
 </table></body></html>

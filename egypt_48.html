@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 20:51:18</td><td>On Tuesday, President Barack Obama released military aid to Egypt suspended after Morsi's 2013 ouster, in an effort to boost Cairo's ability to combat the extremist threat in the region.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 20:51:18</td><td>In Washington, the State Department condemned Thursday's terrorist attack in Sinai and expressed condolences to the victims' families and Egypt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 20:51:18</td><td><a href='http://www.startribune.com/world/298416951.html'>site</a></td><td><table><tr><td>In Washington, the State Department condemned Thursday's terrorist attack in Sinai and expressed condolences to the victims' families and Egypt.</td></tr><tr><td>On Tuesday, President Barack Obama released military aid to Egypt suspended after Morsi's 2013 ouster, in an effort to boost Cairo's ability to combat the extremist threat in the region.</td></tr></table></td></tr>
 </table></body></html>

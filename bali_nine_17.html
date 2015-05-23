@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/z/s/v/4/h/image.related.articleLeadwide.620x349.143ls0.png/1426262679646.jpg'></td><td>2015-03-13 13:43:52</td><td>Prominent figures in the Indonesian government, including senior cabinet members, have been urging President Joko Widodo to reconsider the executions of the Bali nine duo, Fairfax Media has learned.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/z/s/v/4/h/image.related.articleLeadwide.620x349.143ls0.png/1426262679646.jpg'></td><td>2015-03-13 13:43:52</td><td>Standing firm: Despite government figures urging him to reconsider the execution of the Bali nine duo, President Joko Widodo remains unswayed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/z/s/v/4/h/image.related.articleLeadwide.620x349.143ls0.png/1426262679646.jpg'></td><td>2015-03-13 13:43:52</td><td><a href='http://www.theage.com.au/world/cabinet-members-urge-indonesias-president-joko-widodo-to-show-mercy-to-bali-nine-duo-20150313-143ls0.html'>site</a></td><td><table><tr><td>Standing firm: Despite government figures urging him to reconsider the execution of the Bali nine duo, President Joko Widodo remains unswayed.</td></tr><tr><td>Prominent figures in the Indonesian government, including senior cabinet members, have been urging President Joko Widodo to reconsider the executions of the Bali nine duo, Fairfax Media has learned.</td></tr></table></td></tr>
 </table></body></html>

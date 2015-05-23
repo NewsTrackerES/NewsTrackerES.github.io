@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 09:49:50</td><td>The Defense Ministry has made no comment about the latest Boko Haram surge, which has killed at least 60 civilians in the past 10 days.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 09:49:50</td><td>One soldier was killed by a land mine when troops overran 10 Boko Haram camps, Olukolade said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 09:49:50</td><td>During the government offensive, there has been no word on the fate of boys and young men kidnapped by Boko Haram.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 09:49:50</td><td><a href='http://www.sfgate.com/news/world/article/Nigerian-military-10-Boko-Haram-camps-destroyed-6270027.php'>site</a></td><td><table><tr><td>One soldier was killed by a land mine when troops overran 10 Boko Haram camps, Olukolade said.</td></tr><tr><td>During the government offensive, there has been no word on the fate of boys and young men kidnapped by Boko Haram.</td></tr><tr><td>The Defense Ministry has made no comment about the latest Boko Haram surge, which has killed at least 60 civilians in the past 10 days.</td></tr></table></td></tr>
 </table></body></html>

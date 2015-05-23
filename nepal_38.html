@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 15:41:04</td><td>Those moments and many others in my first hours in Nepal's capital revealed that while much of Kathmandu appears to have been spared physical damage from the earthquake, other signs of trauma are everywhere.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 15:41:04</td><td>KATHMANDU, Nepal (AP) - Soon after landing at Kathmandu airport, the Thai Airways captain made a bizarre announcement to passengers: Nobody is in the control tower.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-26 15:41:04</td><td>Quake agony revealed quietly on trip from Nepal airport</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/JdjGe5U3S9u_EywJ7J9QKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5eaf7689adf0c512740f6a70670057de.jpg'></td><td>2015-04-26 15:41:18</td><td>Another Indian national who had come to Nepal as a tourist sat forlornly on the curb.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 15:41:04</td><td><a href='http://www.utsandiego.com/news/2015/apr/26/quake-agony-revealed-quietly-on-trip-from-nepal/'>site</a></td><td><table><tr><td>Quake agony revealed quietly on trip from Nepal airport</td></tr><tr><td>KATHMANDU, Nepal (AP) - Soon after landing at Kathmandu airport, the Thai Airways captain made a bizarre announcement to passengers: Nobody is in the control tower.</td></tr><tr><td>Those moments and many others in my first hours in Nepal's capital revealed that while much of Kathmandu appears to have been spared physical damage from the earthquake, other signs of trauma are everywhere.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/JdjGe5U3S9u_EywJ7J9QKQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5eaf7689adf0c512740f6a70670057de.jpg'></td><td>2015-04-26 15:41:18</td><td><a href='http://news.yahoo.com/quake-agony-revealed-quietly-trip-nepal-airport-154118892.html'>site</a></td><td>Another Indian national who had come to Nepal as a tourist sat forlornly on the curb.</td></tr>
 </table></body></html>

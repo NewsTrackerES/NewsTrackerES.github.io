@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 23:09:31</td><td>Feinstein disputed that the study's findings were pre-ordained, and she noted that the Senate report "reached many of the same conclusions as the CIA's own internal study."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 23:09:31</td><td>"Former CIA Deputy Director Michael Morell's new book repeats the same false charges made by other former CIA personnel when the Senate Intelligence Committee's CIA torture report was made public in December 2014," Feinstein said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 23:09:31</td><td>WASHINGTON - A new book by a former CIA leader seeks to "justify the CIA's failings" with inaccurate criticisms of the Senate intelligence committee's investigation into the agency's use of torture, the key senator behind the investigation said Monday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 23:09:31</td><td>Morell says waterboarding, sleep deprivation and other brutal techniques used on al-Qaida detainees by the CIA produced reams of crucially important intelligence, disputing the Senate report's conclusion that they didn't.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 23:09:31</td><td>Feinstein was referring to Bill Harlow, a former CIA spokesman who co-authored the memoirs of former CIA director Tenet, who helped create the torture program, and Rodriguez, who supervised it for a time.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-11 23:09:31</td><td>It remains classified, and the CIA says it was merely an internal examination of what the Senate committee might conclude.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-11 23:09:31</td><td>Morell did not address the internal study, which is known as the Panetta Review because it was prepared for then-CIA Director Leon Panetta.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 23:09:31</td><td><a href='http://www.foxnews.com/us/2015/05/11/feinstein-hits-back-against-criticisms-senate-torture-report-in-book-by-former/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td><table><tr><td>WASHINGTON - A new book by a former CIA leader seeks to "justify the CIA's failings" with inaccurate criticisms of the Senate intelligence committee's investigation into the agency's use of torture, the key senator behind the investigation said Monday.</td></tr><tr><td>Morell says waterboarding, sleep deprivation and other brutal techniques used on al-Qaida detainees by the CIA produced reams of crucially important intelligence, disputing the Senate report's conclusion that they didn't.</td></tr><tr><td>Feinstein was referring to Bill Harlow, a former CIA spokesman who co-authored the memoirs of former CIA director Tenet, who helped create the torture program, and Rodriguez, who supervised it for a time.</td></tr><tr><td>Morell did not address the internal study, which is known as the Panetta Review because it was prepared for then-CIA Director Leon Panetta.</td></tr><tr><td>It remains classified, and the CIA says it was merely an internal examination of what the Senate committee might conclude.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 23:09:31</td><td><a href='http://www.sfgate.com/news/politics/article/Lawmaker-attacks-torture-defense-by-former-CIA-6256526.php'>site</a></td><td><table><tr><td>"Former CIA Deputy Director Michael Morell's new book repeats the same false charges made by other former CIA personnel when the Senate Intelligence Committee's CIA torture report was made public in December 2014," Feinstein said.</td></tr><tr><td>Feinstein disputed that the study's findings were pre-ordained, and she noted that the Senate report "reached many of the same conclusions as the CIA's own internal study."</td></tr></table></td></tr>
 </table></body></html>

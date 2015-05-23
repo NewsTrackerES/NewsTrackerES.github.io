@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-05 00:40:54</td><td>Several technology companies, including Facebook Inc., Google Inc., Yahoo Inc. and Microsoft Corp., are backing a campaign that will be punctuated with (hashtag) LeanInTogether.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/04/f9ad17c54d0cd90a6f0f6a706700b5e6_c0-335-3073-2126_s561x327.jpg?73d7f747f38ce2e9b4a59a94ff7b69f8f36cc1ea'></td><td>2015-03-05 00:47:08</td><td>Sandberg, Facebook's second-highest ranking executive behind CEO Mark Zuckerberg, is counting on the NBA's appeal to connect with millions of sports-loving men who haven't read her book.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/04/f9ad17c54d0cd90a6f0f6a706700b5e6_c0-335-3073-2126_s561x327.jpg?73d7f747f38ce2e9b4a59a94ff7b69f8f36cc1ea'></td><td>2015-03-05 00:47:08</td><td>Facebook is among a long list of major Silicon Valley companies with a dearth of women in engineering and other technical positions, where the best-paying jobs are found.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/l3hi8.oweMgcVcugKRKbTA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f9ad17c54d0cd90a6f0f6a706700b5e6.jpg'></td><td>2015-03-05 00:47:18</td><td>Women hold just 15 to 20 percent of the technology jobs at Google, Apple, Facebook and Yahoo, according to company disclosures made during the past nine months.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/bt/api/res/1.2/l3hi8.oweMgcVcugKRKbTA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f9ad17c54d0cd90a6f0f6a706700b5e6.jpg'></td><td>2015-03-05 00:47:18</td><td>Facebook exec, NBA team up to get men to 'lean in' for women</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-05 00:40:54</td><td><a href='http://www.startribune.com/nation/295086541.html'>site</a></td><td>Several technology companies, including Facebook Inc., Google Inc., Yahoo Inc. and Microsoft Corp., are backing a campaign that will be punctuated with (hashtag) LeanInTogether.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/04/f9ad17c54d0cd90a6f0f6a706700b5e6_c0-335-3073-2126_s561x327.jpg?73d7f747f38ce2e9b4a59a94ff7b69f8f36cc1ea'></td><td>2015-03-05 00:47:08</td><td><a href='http://www.washingtontimes.com/news/2015/mar/4/facebook-exec-nba-team-up-to-get-men-to-lean-in-fo/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>Sandberg, Facebook's second-highest ranking executive behind CEO Mark Zuckerberg, is counting on the NBA's appeal to connect with millions of sports-loving men who haven't read her book.</td></tr><tr><td>Facebook is among a long list of major Silicon Valley companies with a dearth of women in engineering and other technical positions, where the best-paying jobs are found.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/l3hi8.oweMgcVcugKRKbTA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f9ad17c54d0cd90a6f0f6a706700b5e6.jpg'></td><td>2015-03-05 00:47:18</td><td><a href='http://news.yahoo.com/facebook-exec-nba-team-men-lean-women-003618536--finance.html'>site</a></td><td><table><tr><td>Facebook exec, NBA team up to get men to 'lean in' for women</td></tr><tr><td>Women hold just 15 to 20 percent of the technology jobs at Google, Apple, Facebook and Yahoo, according to company disclosures made during the past nine months.</td></tr></table></td></tr>
 </table></body></html>

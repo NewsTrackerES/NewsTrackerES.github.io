@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/26/78/91/ec1f5a16de054aed9d5225a084f6dc3b-f43dfef0060045b0a1be7d94e7edc576-0.jpg'></td><td>2015-04-26 20:01:10</td><td>But in the end, Putin said the Russian intelligence agency FSB received a letter from their "American counterparts" who asserted their right to "support all opposition forces in Russia," including the Islamic separatists in the Caucasus.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/26/78/91/ec1f5a16de054aed9d5225a084f6dc3b-f43dfef0060045b0a1be7d94e7edc576-0.jpg'></td><td>2015-04-26 20:01:10</td><td>Following a disastrous war in the 1990s, Russia fought Islamic insurgents in Chechnya and neighboring regions in the volatile North Caucasus.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/26/78/91/ec1f5a16de054aed9d5225a084f6dc3b-f43dfef0060045b0a1be7d94e7edc576-0.jpg'></td><td>2015-04-26 20:01:10</td><td><a href='http://www.daytondailynews.com/ap/ap/international/putin-accuses-us-of-supporting-separatists-in-russ/nk3zd/'>site</a></td><td><table><tr><td>Following a disastrous war in the 1990s, Russia fought Islamic insurgents in Chechnya and neighboring regions in the volatile North Caucasus.</td></tr><tr><td>But in the end, Putin said the Russian intelligence agency FSB received a letter from their "American counterparts" who asserted their right to "support all opposition forces in Russia," including the Islamic separatists in the Caucasus.</td></tr></table></td></tr>
 </table></body></html>

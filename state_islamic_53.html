@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td>Ben Hassine and Al-Rouissi fled to Libya where they began fighting under the banner of the Islamic State group, which already controls about a third of Syria and Iraq in a self-declared caliphate.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 17:36:06</td><td>TUNIS, Tunisia (AP) - One of Tunisia's most wanted militants and a top field commander for the Islamic State group died fighting in Libya, the Tunisian government confirmed on Tuesday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 17:36:06</td><td>Islamic State group reports Tunisian leader killed in Libya</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-17 17:36:06</td><td>The Islamic State group posted a eulogy on a militant website for Ahmed al-Rouissi after he was killed in clashes around the Libyan city of Sirte - a stronghold for the Islamic State affiliate.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 17:36:06</td><td><a href='http://www.sfgate.com/news/world/article/Islamic-State-group-reports-Tunisian-leader-6138420.php'>site</a></td><td><table><tr><td>Islamic State group reports Tunisian leader killed in Libya</td></tr><tr><td>TUNIS, Tunisia (AP) - One of Tunisia's most wanted militants and a top field commander for the Islamic State group died fighting in Libya, the Tunisian government confirmed on Tuesday.</td></tr><tr><td>The Islamic State group posted a eulogy on a militant website for Ahmed al-Rouissi after he was killed in clashes around the Libyan city of Sirte - a stronghold for the Islamic State affiliate.</td></tr><tr><td>Ben Hassine and Al-Rouissi fled to Libya where they began fighting under the banner of the Islamic State group, which already controls about a third of Syria and Iraq in a self-declared caliphate.</td></tr></table></td></tr>
 </table></body></html>

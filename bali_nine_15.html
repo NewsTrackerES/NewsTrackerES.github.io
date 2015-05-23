@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/x/y/n/o/image.related.articleLeadwide.620x349.13xx6i.png/1425792636870.jpg'></td><td>2015-03-07 05:52:25</td><td>Even inside the walls of Nusakambangan's "Iron" prison, Bali nine duo Andrew Chan and Myuran Sukumaran have been able to find opportunities for humour as they await their executions.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/x/y/n/o/image.related.articleLeadwide.620x349.13xx6i.png/1425792636870.jpg'></td><td>2015-03-07 05:52:25</td><td>Australian lawyer Julian McMahon and Australian Consulate General Majell Hind disembark at Nusakambangan Prison Island to meet with Bali Nine duo Andrew Chan and Myuran Sukumaran.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/x/y/n/o/image.related.articleLeadwide.620x349.13xx6i.png/1425792636870.jpg'></td><td>2015-03-07 05:52:25</td><td>Jamiu Owolabi Abashin, aka Raheem Agbaje Salami, has struck up a friendship with the Bali nine duo.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/x/y/n/o/image.related.articleLeadwide.620x349.13xx6i.png/1425792636870.jpg'></td><td>2015-03-07 05:52:25</td><td><a href='http://www.theage.com.au/world/bali-nine-duo-andrew-chan-and-myuran-sukumaran-adjust-to-harsh-new-life-inside-iron-prison-20150307-13xx6i.html'>site</a></td><td><table><tr><td>Australian lawyer Julian McMahon and Australian Consulate General Majell Hind disembark at Nusakambangan Prison Island to meet with Bali Nine duo Andrew Chan and Myuran Sukumaran.</td></tr><tr><td>Even inside the walls of Nusakambangan's "Iron" prison, Bali nine duo Andrew Chan and Myuran Sukumaran have been able to find opportunities for humour as they await their executions.</td></tr><tr><td>Jamiu Owolabi Abashin, aka Raheem Agbaje Salami, has struck up a friendship with the Bali nine duo.</td></tr></table></td></tr>
 </table></body></html>

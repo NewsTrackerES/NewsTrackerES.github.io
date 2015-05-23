@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,10 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 11:43:00</td><td>ABUJA, Nigeria (AP) - Hundreds of civilians, including many children, have been abducted and are being used as human shields by Boko Haram extremists, a top Nigerian official confirmed Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 13:50:39</td><td>Damasak, near the border with Niger, was recaptured from Boko Haram on March 16.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 13:50:39</td><td>Damasak had been held for months by Boko Haram, who used the trading town as an administrative center.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-25 14:55:13</td><td>"Boko Haram ... rushed to primary schools they took children and adults that they are using as shields to protect themselves from the menacing advance of troops," said Omeri.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-25 18:51:03</td><td>When troops from Chad and Niger advanced toward Damasak, Boko Haram began taking captives, said Omeri, speaking in Nigeria's capital, Abuja.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/03/f-bokoshields-a-20150327-200x200.jpg'></td><td>2015-03-25 23:44:00</td><td>Instead, he said that as troops advanced, Boko Haram rushed to a school where people had been held after the insurgents had seized the town late last year.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-26 17:09:10</td><td>Nigeria is preparing for critical presidential elections Saturday that Boko Haram is threatening to disrupt because it opposes democracy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 11:43:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-25-AP-AF--Boko%20Haram/id-8d0edf0093284573ab2bb8e9e8fa6ee9'>site</a></td><td>ABUJA, Nigeria (AP) - Hundreds of civilians, including many children, have been abducted and are being used as human shields by Boko Haram extremists, a top Nigerian official confirmed Wednesday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 13:50:39</td><td><a href='http://www.utsandiego.com/news/2015/mar/25/un-refugee-agency-cameroon-needs-help-to-assist/'>site</a></td><td><table><tr><td>Damasak, near the border with Niger, was recaptured from Boko Haram on March 16.</td></tr><tr><td>Damasak had been held for months by Boko Haram, who used the trading town as an administrative center.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-25 14:55:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11423153&ref=rss'>site</a></td><td>"Boko Haram ... rushed to primary schools they took children and adults that they are using as shields to protect themselves from the menacing advance of troops," said Omeri.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-25 18:51:03</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article16289426.html#storylink=rss'>site</a></td><td>When troops from Chad and Niger advanced toward Damasak, Boko Haram began taking captives, said Omeri, speaking in Nigeria's capital, Abuja.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://jto.s3.amazonaws.com/wp-content/uploads/2015/03/f-bokoshields-a-20150327-200x200.jpg'></td><td>2015-03-25 23:44:00</td><td><a href='http://www.japantimes.co.jp/news/2015/03/26/world/boko-haram-using-civilians-human-shields-nigerian-official-says/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=boko-haram-using-civilians-human-shields-nigerian-official-says&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td>Instead, he said that as troops advanced, Boko Haram rushed to a school where people had been held after the insurgents had seized the town late last year.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-26 17:09:10</td><td><a href='http://www.cbsnews.com/news/boko-haram-has-killed-more-than-1000-civilians-this-year-hrw-says/'>site</a></td><td>Nigeria is preparing for critical presidential elections Saturday that Boko Haram is threatening to disrupt because it opposes democracy.</td></tr>
 </table></body></html>

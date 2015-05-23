@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-13 16:37:49</td><td>Kirby said Islamic State fighters had taken control of al-Baghdadi, a town near the al-Asad air base.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-13 16:37:49</td><td>Kirby said an estimated 20-25 Islamic State militants were involved in the attack on al-Asad air base in Iraq's Anbar province.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-13 16:37:49</td><td>Most of the Islamic State fighters died in the attack, killed either by Iraqi government forces or by detonating their suicide vests, said Navy Rear Adm.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/b/r/b/image.related.articleLeadwide.620x349.1msazq.png/1429852154472.jpg'></td><td>2015-04-24 05:09:51</td><td>Washington: The United States is considering a novel plan to speed up attacks on Islamic State militants - training Iraqi troops to order American air strikes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-13 16:37:49</td><td><a href='http://news.yahoo.com/us-says-islamic-state-attackers-killed-iraqi-forces-160707354.html'>site</a></td><td><table><tr><td>Most of the Islamic State fighters died in the attack, killed either by Iraqi government forces or by detonating their suicide vests, said Navy Rear Adm.</td></tr><tr><td>Kirby said an estimated 20-25 Islamic State militants were involved in the attack on al-Asad air base in Iraq's Anbar province.</td></tr><tr><td>Kirby said Islamic State fighters had taken control of al-Baghdadi, a town near the al-Asad air base.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/s/b/r/b/image.related.articleLeadwide.620x349.1msazq.png/1429852154472.jpg'></td><td>2015-04-24 05:09:51</td><td><a href='http://www.smh.com.au/world/us-ponders-training-iraqi-troops-to-order-american-air-strikes-on-islamic-state-20150424-1msazq.html'>site</a></td><td>Washington: The United States is considering a novel plan to speed up attacks on Islamic State militants - training Iraqi troops to order American air strikes.</td></tr>
 </table></body></html>

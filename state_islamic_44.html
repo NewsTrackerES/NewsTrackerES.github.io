@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/427/video/article22912757.ece/ALTERNATES/w140/Girls+Say+Boko+Haram+Brags+About+Mass+Kidnapping'></td><td>2015-03-13 07:39:35</td><td>Islamic State militants have accepted a pledge of allegiance by the Nigerian-grown Boko Haram extremist group, a spokesman for the Islamic State movement said Thursday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/13/24/7648522/9/square_gallery_thumb.jpg'></td><td>2015-03-13 09:48:48</td><td>Peter Pham, director of the Africa Center at the Atlantic Council, a think tank in Washington, noted the Islamic State group's quick acceptance of Boko Haram's allegiance and said that the bond highlights a new risk.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/12/Islamic_State_Boko_Haram.JPEG-0cbaf_c0-0-5556-3238_s561x327.jpg?86a77fcba965719a818b08b868ba2856f554e725'></td><td>2015-03-13 10:42:38</td><td>"The prompt - one might even say 'fast-tracked' - acceptance by the so-called Islamic State of Boko Haram's pledge of allegiance" underscores that both needed the propaganda boost from the affiliation, Pham added.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/12/Islamic_State_Boko_Haram.JPEG-0cbaf_c0-0-5556-3238_s561x327.jpg?86a77fcba965719a818b08b868ba2856f554e725'></td><td>2015-03-13 10:42:38</td><td>In the past - as was the case with IS affiliates in Egypt, Yemen and Libya - it took weeks for the Islamic State to respond to a pledge of allegiance.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/427/video/article22912757.ece/ALTERNATES/w140/Girls+Say+Boko+Haram+Brags+About+Mass+Kidnapping'></td><td>2015-03-13 07:39:35</td><td><a href='http://www.theglobeandmail.com/news/world/islamic-state-says-it-has-accepted-boko-harams-pledge-of-allegiance/article23443539/?cmpid=rss1'>site</a></td><td>Islamic State militants have accepted a pledge of allegiance by the Nigerian-grown Boko Haram extremist group, a spokesman for the Islamic State movement said Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/13/24/7648522/9/square_gallery_thumb.jpg'></td><td>2015-03-13 09:48:48</td><td><a href='http://www.sfgate.com/news/world/article/IS-accepts-Boko-Haram-pledge-of-allegiance-6131881.php'>site</a></td><td>Peter Pham, director of the Africa Center at the Atlantic Council, a think tank in Washington, noted the Islamic State group's quick acceptance of Boko Haram's allegiance and said that the bond highlights a new risk.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/12/Islamic_State_Boko_Haram.JPEG-0cbaf_c0-0-5556-3238_s561x327.jpg?86a77fcba965719a818b08b868ba2856f554e725'></td><td>2015-03-13 10:42:38</td><td><a href='http://www.washingtontimes.com/news/2015/mar/13/islamic-state-group-accepts-boko-haram-pledge-alle/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>In the past - as was the case with IS affiliates in Egypt, Yemen and Libya - it took weeks for the Islamic State to respond to a pledge of allegiance.</td></tr><tr><td>"The prompt - one might even say 'fast-tracked' - acceptance by the so-called Islamic State of Boko Haram's pledge of allegiance" underscores that both needed the propaganda boost from the affiliation, Pham added.</td></tr></table></td></tr>
 </table></body></html>

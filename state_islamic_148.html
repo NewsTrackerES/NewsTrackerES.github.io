@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 11:20:48</td><td>Islamic State's arrival in Yarmouk has given the jihadist group a significant foothold a few kilometers (miles) from President Bashar al-Assad's seat of power.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 11:20:48</td><td>The Syrian Observatory for Human Rights, a Britain-based group that monitors the four-year-old civil war via sources on the ground, has reported army air strikes on the camp since Islamic State moved in.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 11:20:48</td><td>Islamic State, which has already seized wide areas of eastern and northern Syria, has in recent weeks mounted several big attacks on regions closer to the main population centers of western Syria, both in government- and rebel-held areas.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 11:20:48</td><td><a href='http://www.reuters.com/article/2015/04/12/us-mideast-crisis-syria-yarmouk-idUSKBN0N30D620150412?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Islamic State's arrival in Yarmouk has given the jihadist group a significant foothold a few kilometers (miles) from President Bashar al-Assad's seat of power.</td></tr><tr><td>Islamic State, which has already seized wide areas of eastern and northern Syria, has in recent weeks mounted several big attacks on regions closer to the main population centers of western Syria, both in government- and rebel-held areas.</td></tr><tr><td>The Syrian Observatory for Human Rights, a Britain-based group that monitors the four-year-old civil war via sources on the ground, has reported army air strikes on the camp since Islamic State moved in.</td></tr></table></td></tr>
 </table></body></html>

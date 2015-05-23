@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 14:26:19</td><td>Benjamin Netanyahu has harshly criticized the U.S.-led framework deal with Iran, which offers relief from sanctions in exchange for scaling back its suspect nuclear program.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 14:26:19</td><td>Netanyahu said Sunday that a better deal would tie the lifting of all sanctions, "to an end of Iran's aggression in the region, its worldwide terrorism and its threats to annihilate Israel."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 14:26:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/12/israels-netanyahu-says-sanctions-should-remain-on/'>site</a></td><td><table><tr><td>Benjamin Netanyahu has harshly criticized the U.S.-led framework deal with Iran, which offers relief from sanctions in exchange for scaling back its suspect nuclear program.</td></tr><tr><td>Netanyahu said Sunday that a better deal would tie the lifting of all sanctions, "to an end of Iran's aggression in the region, its worldwide terrorism and its threats to annihilate Israel."</td></tr></table></td></tr>
 </table></body></html>

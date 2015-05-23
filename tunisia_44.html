@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 08:03:00</td><td>It was a time of flux in Tunisia.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 08:03:00</td><td>The middle-class Islamists behind Tunisia's museum attack</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-17 08:03:00</td><td>A senior Tunisian security source said the two young attackers were the product of profound political shifts in Tunisia since the Arab Spring allowed long-oppressed ultra-conservative Islamists to come into the open.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-17 08:03:00</td><td>More than 20 residents of Sbiba, including students and professionals, have left to fight for militant groups outside Tunisia, said Kechini.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-17 08:03:00</td><td>But according to Tunisia's interior ministry, they both spent time in militant camps in Libya late last year before returning to Tunisia, their ideologies fine-tuned and basic military training completed.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-17 08:03:00</td><td>On March 18, they came together to attack Tunisia's Bardo Museum, shooting foreign tourists as they filed off buses outside the museum, and then taking more tourists hostage inside.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-17 08:03:00</td><td>Tunisia is one of the Arab world's most secular nations and has won praise for its democratic progress since the 2011 Arab Spring uprising, which began there.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-05-17 08:03:00</td><td>Their stories show how difficult it will be for Tunisia to stop others making similar journeys.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-05-17 08:03:00</td><td>In December 2014, Abidi left home, his uncle said, telling his family he was on a two-month business trip on Tunisia's coast.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-05-17 08:03:00</td><td>SBIBA, Tunisia, May 17 (Reuters) - One of the young men was a high school literature student who helped his father tend the family olive trees in their isolated farming community near the Algerian border.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-05-17 08:03:00</td><td>The region's roads also sport signs of another source of income: stalls that hawk contraband gasoline and fuel, smuggled across the nearby border with Algeria, Tunisia's wealthy oil-producing neighbour.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 08:03:00</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3084997/The-middle-class-Islamists-Tunisias-museum-attack.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The middle-class Islamists behind Tunisia's museum attack</td></tr><tr><td>SBIBA, Tunisia, May 17 (Reuters) - One of the young men was a high school literature student who helped his father tend the family olive trees in their isolated farming community near the Algerian border.</td></tr><tr><td>On March 18, they came together to attack Tunisia's Bardo Museum, shooting foreign tourists as they filed off buses outside the museum, and then taking more tourists hostage inside.</td></tr><tr><td>But according to Tunisia's interior ministry, they both spent time in militant camps in Libya late last year before returning to Tunisia, their ideologies fine-tuned and basic military training completed.</td></tr><tr><td>Their stories show how difficult it will be for Tunisia to stop others making similar journeys.</td></tr><tr><td>Tunisia is one of the Arab world's most secular nations and has won praise for its democratic progress since the 2011 Arab Spring uprising, which began there.</td></tr><tr><td>A senior Tunisian security source said the two young attackers were the product of profound political shifts in Tunisia since the Arab Spring allowed long-oppressed ultra-conservative Islamists to come into the open.</td></tr><tr><td>The region's roads also sport signs of another source of income: stalls that hawk contraband gasoline and fuel, smuggled across the nearby border with Algeria, Tunisia's wealthy oil-producing neighbour.</td></tr><tr><td>It was a time of flux in Tunisia.</td></tr><tr><td>More than 20 residents of Sbiba, including students and professionals, have left to fight for militant groups outside Tunisia, said Kechini.</td></tr><tr><td>In December 2014, Abidi left home, his uncle said, telling his family he was on a two-month business trip on Tunisia's coast.</td></tr></table></td></tr>
 </table></body></html>

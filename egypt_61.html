@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/QE8oEBInfEIcMxy1VKso3g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/5e8743ab2350e36fb1f6cb98960c9a2dbeaa4415.jpg.cf.jpg'></td><td>2015-04-12 15:03:31</td><td>ISMAILIA, Egypt (Reuters) - Egypt's military said a bomb detonated by militants killed six soldiers and wounded two others in Egypt's North Sinai on Sunday, a region beset by Islamist insurgents.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/l/5/0/image.related.articleLeadwide.620x349.1mjl51.png/1428854704765.jpg'></td><td>2015-04-12 16:05:17</td><td>Cairo: A suicide car bomb targeting a police station in Egypt's restive Sinai Peninsula has killed two people and wounded 30 others, police and medics say.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 17:01:36</td><td>Gunmen also attacked a checkpoint near Rafah, along Egypt's border with the Gaza Strip, wounding at least three soldiers, medical and security sources said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-12 17:01:36</td><td>Two bomb attacks in Egypt's Sinai kill 13, wound dozens</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/QE8oEBInfEIcMxy1VKso3g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/5e8743ab2350e36fb1f6cb98960c9a2dbeaa4415.jpg.cf.jpg'></td><td>2015-04-12 15:03:31</td><td><a href='http://news.yahoo.com/blast-egypts-north-sinai-kills-five-soldiers-security-095317114.html'>site</a></td><td>ISMAILIA, Egypt (Reuters) - Egypt's military said a bomb detonated by militants killed six soldiers and wounded two others in Egypt's North Sinai on Sunday, a region beset by Islamist insurgents.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/l/5/0/image.related.articleLeadwide.620x349.1mjl51.png/1428854704765.jpg'></td><td>2015-04-12 16:05:17</td><td><a href='http://www.brisbanetimes.com.au/world/suicide-attack-kills-two-on-egypts-sinai-peninsula-20150412-1mjl51.html'>site</a></td><td>Cairo: A suicide car bomb targeting a police station in Egypt's restive Sinai Peninsula has killed two people and wounded 30 others, police and medics say.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 17:01:36</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3035596/Bomb-Egypts-North-Sinai-kills-five-soldiers-security-sources.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Two bomb attacks in Egypt's Sinai kill 13, wound dozens</td></tr><tr><td>Gunmen also attacked a checkpoint near Rafah, along Egypt's border with the Gaza Strip, wounding at least three soldiers, medical and security sources said.</td></tr></table></td></tr>
 </table></body></html>

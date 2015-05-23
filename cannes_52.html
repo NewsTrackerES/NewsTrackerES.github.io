@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/42/00/8003614/3/gallery_thumb.jpg'></td><td>2015-05-18 21:05:00</td><td>Though its official red-carpet premiere on Saturday went down better, the Cannes fate of "The Sea of Trees" was already sealed as (at least thus far) the festival's most rudely received film.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/42/00/8003614/3/gallery_thumb.jpg'></td><td>2015-05-18 21:05:00</td><td>"I was, as I always am, cautious," Van Sant said in an interview about showing "The Sea of Trees" at Cannes.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/42/00/8003614/3/gallery_thumb.jpg'></td><td>2015-05-18 21:05:00</td><td>The movie-going public generally has less of an issue with sentimentality than Cannes critics, and McConaughey is one of the most popular stars in film right now.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-18 21:05:24</td><td>After a Cannes drubbing, Van Sant reflects on 'Sea of Trees'</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-18 21:05:24</td><td>CANNES, France (AP) - The full-throated passions of the Cannes Film Festival can elevate, just as they can humble.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/42/00/8003614/3/gallery_thumb.jpg'></td><td>2015-05-18 21:05:00</td><td><a href='http://www.seattlepi.com/entertainment/article/After-a-Cannes-drubbing-Van-Sant-reflects-on-6270861.php'>site</a></td><td><table><tr><td>Though its official red-carpet premiere on Saturday went down better, the Cannes fate of "The Sea of Trees" was already sealed as (at least thus far) the festival's most rudely received film.</td></tr><tr><td>"I was, as I always am, cautious," Van Sant said in an interview about showing "The Sea of Trees" at Cannes.</td></tr><tr><td>The movie-going public generally has less of an issue with sentimentality than Cannes critics, and McConaughey is one of the most popular stars in film right now.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-18 21:05:24</td><td><a href='http://news.yahoo.com/cannes-drubbing-van-sant-reflects-sea-trees-181657672.html'>site</a></td><td><table><tr><td>After a Cannes drubbing, Van Sant reflects on 'Sea of Trees'</td></tr><tr><td>CANNES, France (AP) - The full-throated passions of the Cannes Film Festival can elevate, just as they can humble.</td></tr></table></td></tr>
 </table></body></html>

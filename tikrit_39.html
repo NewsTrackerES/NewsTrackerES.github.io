@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 17:11:45</td><td>Iraq's prime minister said Monday that "only" 152 homes and shops were burned in Tikrit, where pro-government forces have been accused of carrying out abuses after retaking the city.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 17:11:45</td><td>During the visit, pro-government militiamen looted and put graffiti on shops in central Tikrit while journalists looked on.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 18:01:30</td><td>Haider al-Abadi did not specify who burned the structures or when the fires took place, but pro-government militiamen have admitted to torching houses in other recaptured areas and allegedly did so in Tikrit as well.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 05:47:00</td><td>The prime minister's office said Friday he had ordered security forces to "deal with cases of vandalism" in Tikrit, blaming it on "gangs" seeking to tarnish the achievements of government forces and their paramilitary allies.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-07 05:47:00</td><td>He said those figures were confirmed by top officials including the governor and police chief of Salaheddin province, of which Tikrit is the capital.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-07 05:47:00</td><td>Columns of black smoke rose from burning homes and shops even as al-Abadi visited Tikrit last Wednesday to celebrate its recapture from Islamic State militants.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 17:11:45</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3027711/Iraq-PM-says-152-homes-shops-burned-Tikrit.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Iraq's prime minister said Monday that "only" 152 homes and shops were burned in Tikrit, where pro-government forces have been accused of carrying out abuses after retaking the city.</td></tr><tr><td>During the visit, pro-government militiamen looted and put graffiti on shops in central Tikrit while journalists looked on.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 18:01:30</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3027711/Iraq-PM-says-152-homes-shops-burned-Tikrit.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Haider al-Abadi did not specify who burned the structures or when the fires took place, but pro-government militiamen have admitted to torching houses in other recaptured areas and allegedly did so in Tikrit as well.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 05:47:00</td><td><a href='http://www.japantimes.co.jp/news/2015/04/07/world/iraqi-leader-says-only-152-homes-shops-burned-in-tikrit-offensive/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=iraqi-leader-says-only-152-homes-shops-burned-in-tikrit-offensive&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td><table><tr><td>He said those figures were confirmed by top officials including the governor and police chief of Salaheddin province, of which Tikrit is the capital.</td></tr><tr><td>Columns of black smoke rose from burning homes and shops even as al-Abadi visited Tikrit last Wednesday to celebrate its recapture from Islamic State militants.</td></tr><tr><td>The prime minister's office said Friday he had ordered security forces to "deal with cases of vandalism" in Tikrit, blaming it on "gangs" seeking to tarnish the achievements of government forces and their paramilitary allies.</td></tr></table></td></tr>
 </table></body></html>

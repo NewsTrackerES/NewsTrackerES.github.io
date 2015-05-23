@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 22:48:11</td><td>Aid begins arriving in Nepal's villages</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 03:10:11</td><td>Strelcoua and her fellow tourists were just some of the thousands of foreigners to have been caught up in the quake horror, which is known to have killed more than 5000 people across Nepal.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 03:10:11</td><td>Stranded hikers recount Nepal quake ordeal</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 22:48:11</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/stranded-hikers-recount-nepal-quake-ordeal-20150430-3v3nw.html'>site</a></td><td>Aid begins arriving in Nepal's villages</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 03:10:11</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/stranded-hikers-recount-nepal-quake-ordeal-20150430-3v3nw.html'>site</a></td><td><table><tr><td>Stranded hikers recount Nepal quake ordeal</td></tr><tr><td>Strelcoua and her fellow tourists were just some of the thousands of foreigners to have been caught up in the quake horror, which is known to have killed more than 5000 people across Nepal.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 18:14:53</td><td>ST. LOUIS - Two St. Louis men accused of planning to bomb protests in Ferguson, Missouri, have been indicted on federal charges.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 18:14:59</td><td>The indictment says the men were arrested in November, about a week before prosecutors announced they wouldn't charge the white Ferguson police officer who last summer fatally shot 18-year-old Michael Brown, who was black and unarmed.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 18:14:59</td><td>2 men accused of bomb plot during Ferguson protests</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 18:14:53</td><td><a href='http://www.foxnews.com/us/2015/04/02/2-st-louis-men-accused-plot-to-obtain-bombs-for-use-during-ferguson-protests/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>ST. LOUIS - Two St. Louis men accused of planning to bomb protests in Ferguson, Missouri, have been indicted on federal charges.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 18:14:59</td><td><a href='http://news.yahoo.com/2-men-accused-bomb-plot-during-ferguson-protests-181459356.html'>site</a></td><td><table><tr><td>2 men accused of bomb plot during Ferguson protests</td></tr><tr><td>The indictment says the men were arrested in November, about a week before prosecutors announced they wouldn't charge the white Ferguson police officer who last summer fatally shot 18-year-old Michael Brown, who was black and unarmed.</td></tr></table></td></tr>
 </table></body></html>

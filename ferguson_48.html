@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-30 03:19:03</td><td>Protesters have returned to Ferguson a day after looting, fires and gunfire broke out during demonstrations over the death of a black man who died of spinal injuries after his arrest by Baltimore police.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-30 03:19:03</td><td>Protesters Wednesday first rallied in Manhattan's Union Square, where they chanted "no justice, no peace" and "hands up, don't shoot," a reference to the police killing of Michael Brown in Ferguson, Missouri, last year.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-30 03:19:03</td><td>A Ferguson Police Department spokesman says three people were shot during protests Tuesday night and four police cars were damaged by rocks and chunks of asphalt thrown by demonstrators.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-30 03:19:03</td><td><a href='http://news.yahoo.com/latest-police-custody-death-curfew-104242733.html'>site</a></td><td><table><tr><td>Protesters have returned to Ferguson a day after looting, fires and gunfire broke out during demonstrations over the death of a black man who died of spinal injuries after his arrest by Baltimore police.</td></tr><tr><td>A Ferguson Police Department spokesman says three people were shot during protests Tuesday night and four police cars were damaged by rocks and chunks of asphalt thrown by demonstrators.</td></tr><tr><td>Protesters Wednesday first rallied in Manhattan's Union Square, where they chanted "no justice, no peace" and "hands up, don't shoot," a reference to the police killing of Michael Brown in Ferguson, Missouri, last year.</td></tr></table></td></tr>
 </table></body></html>

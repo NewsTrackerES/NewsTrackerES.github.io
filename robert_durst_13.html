@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 19:50:02</td><td>The following Wednesday, a Los Angeles judge issued a warrant for Durst's arrest on first-degree murder in connection with Berman's killing.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 19:50:02</td><td>At 6 a.m. the next day, one of the detectives and a prosecutor conducted a three-hour recorded interview of Durst before his attorneys had arrived and without their consent, Houston-based lead attorney Dick DeGuerin said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 19:50:02</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article16101326.html#storylink=rss'>site</a></td><td><table><tr><td>The following Wednesday, a Los Angeles judge issued a warrant for Durst's arrest on first-degree murder in connection with Berman's killing.</td></tr><tr><td>At 6 a.m. the next day, one of the detectives and a prosecutor conducted a three-hour recorded interview of Durst before his attorneys had arrived and without their consent, Houston-based lead attorney Dick DeGuerin said.</td></tr></table></td></tr>
 </table></body></html>

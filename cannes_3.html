@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,9 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/67/10/7827973/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:37:39</td><td>Cannes Film festival President Pierre Lescure, left, and festival general delegate Thierry Fremaux, give a press conference to announce this year's line up, in Paris, France, Tuesday, April 16, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/35/67/10/7827973/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:37:39</td><td>Announcing the festival lineup Thursday, Cannes director Thierry Fremaux called selfies "ridiculous and grotesque."</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 10:37:39</td><td>Cannes International Film Festival poster for the upcoming 68th edition featuring Swedish actress Ingrid Bergman, is set up, in Paris, France, Thursday, April 16, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 10:37:39</td><td>Jia, Sorrentino, Van Sant in Cannes festival lineup</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 10:37:39</td><td>World cinema heavyweights including China's Jia Zhangke, Italy's Paolo Sorrentino and the United States' Gus Van Sant will compete for prizes at next month's Cannes Film Festival.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://edition.cnn.com/2015/04/16/entertainment/feat-cannes-film-festival-selection-thr/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-16 16:45:05</td><td>"Mad Max: Fury Road" is playing out of competition at the Cannes Film Festival.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 16:55:56</td><td>Cannes organizers have faced criticism for not selecting more films by female directors.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/35/67/10/7827973/3/gallery_thumb.jpg'></td><td>2015-04-16 16:56:03</td><td>He announced a further 14 movies running in Cannes' second competition for up-and-coming filmmakers, "Un Certain Regard."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 10:37:39</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/16/jia-sorrentino-van-sant-in-cannes-festival-lineup'>site</a></td><td><table><tr><td>Jia, Sorrentino, Van Sant in Cannes festival lineup</td></tr><tr><td>Cannes International Film Festival poster for the upcoming 68th edition featuring Swedish actress Ingrid Bergman, is set up, in Paris, France, Thursday, April 16, 2015.</td></tr><tr><td>World cinema heavyweights including China's Jia Zhangke, Italy's Paolo Sorrentino and the United States' Gus Van Sant will compete for prizes at next month's Cannes Film Festival.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/67/10/7827973/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:37:39</td><td><a href='http://www.sfgate.com/entertainment/article/Jia-Sorrentino-Van-Sant-in-Cannes-festival-6203471.php'>site</a></td><td><table><tr><td>Cannes Film festival President Pierre Lescure, left, and festival general delegate Thierry Fremaux, give a press conference to announce this year's line up, in Paris, France, Tuesday, April 16, 2015.</td></tr><tr><td>Announcing the festival lineup Thursday, Cannes director Thierry Fremaux called selfies "ridiculous and grotesque."</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://edition.cnn.com/2015/04/16/entertainment/feat-cannes-film-festival-selection-thr/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-16 16:45:05</td><td><a href='http://edition.cnn.com/2015/04/16/entertainment/feat-cannes-film-festival-selection-thr/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>"Mad Max: Fury Road" is playing out of competition at the Cannes Film Festival.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 16:55:56</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article18659775.html#storylink=rss'>site</a></td><td>Cannes organizers have faced criticism for not selecting more films by female directors.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/35/67/10/7827973/3/gallery_thumb.jpg'></td><td>2015-04-16 16:56:03</td><td><a href='http://www.seattlepi.com/entertainment/article/Jia-Sorrentino-Van-Sant-in-Cannes-festival-6203471.php'>site</a></td><td>He announced a further 14 movies running in Cannes' second competition for up-and-coming filmmakers, "Un Certain Regard."</td></tr>
 </table></body></html>

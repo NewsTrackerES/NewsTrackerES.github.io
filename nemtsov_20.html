@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671631309_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 15:22:46</td><td>Some associates of Nemtsov, a 55-year-old former deputy prime minister who became a Putin critic, say the Kremlin stands to gain from his death.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671631309_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 15:22:46</td><td>Nemtsov was shot dead on the night of Feb. 27 within sight of the Kremlin walls, in the most high-profile killing of an opposition figure in the 15 years that President Vladimir Putin has been in power.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671631309_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 15:22:46</td><td>Separately, Russia's Interfax news agency, quoting a Chechen law enforcement source, said a man killed in a standoff with police in the Chechen capital Grozny late on Saturday had also been wanted by police in connection with Nemtsov's killing.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671631309_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 15:22:46</td><td>But associates of Nemtsov say they will not be satisfied unless prosecutors track down whoever orchestrated the killing, rather than just the people who pulled the trigger.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671631309_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 15:22:46</td><td>Nemtsov, a liberal, had defended the cartoons after Islamist gunmen killed 12 people at the Charlie Hebdo office in Paris in January.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297671631309_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-07 15:22:46</td><td><a href='http://www.torontosun.com/2015/03/07/two-suspects-detained-over-boris-nemtsov-murder'>site</a></td><td><table><tr><td>Nemtsov was shot dead on the night of Feb. 27 within sight of the Kremlin walls, in the most high-profile killing of an opposition figure in the 15 years that President Vladimir Putin has been in power.</td></tr><tr><td>Nemtsov, a liberal, had defended the cartoons after Islamist gunmen killed 12 people at the Charlie Hebdo office in Paris in January.</td></tr><tr><td>Separately, Russia's Interfax news agency, quoting a Chechen law enforcement source, said a man killed in a standoff with police in the Chechen capital Grozny late on Saturday had also been wanted by police in connection with Nemtsov's killing.</td></tr><tr><td>Some associates of Nemtsov, a 55-year-old former deputy prime minister who became a Putin critic, say the Kremlin stands to gain from his death.</td></tr><tr><td>But associates of Nemtsov say they will not be satisfied unless prosecutors track down whoever orchestrated the killing, rather than just the people who pulled the trigger.</td></tr></table></td></tr>
 </table></body></html>

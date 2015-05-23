@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 23:54:18</td><td>New Mexico wildlife officials recently denied the Ladder Ranch's bid to renew its permit for holding wolves in captivity as part of the U.S. Fish and Wildlife Service's wolf reintroduction program.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 23:54:18</td><td>Ranchers said Monday they supported the Martinez administration's position on the wolf program, noting the absence of a recovery plan even though wolves have been on the ground in New Mexico and Arizona since 1998.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 23:54:18</td><td>Now, one of his New Mexico ranches is caught in a dispute between the state and federal wildlife officials over the management of the endangered wolves.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 23:54:18</td><td>Ted Turner Ranch in New Mexico Caught in Wolf Debate</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-18 23:54:18</td><td>Environmentalists say the New Mexico Game Commission's decision raises questions about private property rights.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 23:54:18</td><td><a href='http://abcnews.go.com/Technology/wireStory/ted-turner-ranch-mexico-caught-wolf-debate-31134611'>site</a></td><td><table><tr><td>Ted Turner Ranch in New Mexico Caught in Wolf Debate</td></tr><tr><td>Now, one of his New Mexico ranches is caught in a dispute between the state and federal wildlife officials over the management of the endangered wolves.</td></tr><tr><td>New Mexico wildlife officials recently denied the Ladder Ranch's bid to renew its permit for holding wolves in captivity as part of the U.S. Fish and Wildlife Service's wolf reintroduction program.</td></tr><tr><td>Environmentalists say the New Mexico Game Commission's decision raises questions about private property rights.</td></tr><tr><td>Ranchers said Monday they supported the Martinez administration's position on the wolf program, noting the absence of a recovery plan even though wolves have been on the ground in New Mexico and Arizona since 1998.</td></tr></table></td></tr>
 </table></body></html>

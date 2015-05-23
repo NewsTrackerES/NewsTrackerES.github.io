@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/2/1/e/image.related.articleLeadwide.620x349.1me61i.png/1428073350050.jpg'></td><td>2015-04-03 15:02:48</td><td>Officials at the Australian High Commission in Kenya's capital Nairobi were working to determine whether any Australians had been hurt in the massacre.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/2/1/e/image.related.articleLeadwide.620x349.1me61i.png/1428073350050.jpg'></td><td>2015-04-03 15:02:48</td><td>Medics help an injured person at Kenyatta national Hospital in Nairobi, Kenya, after an attack by gunmen at Garissa University College.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/2/1/e/image.related.articleLeadwide.620x349.1me61i.png/1428073350050.jpg'></td><td>2015-04-03 15:02:48</td><td>Ken Menkhaus, an al-Shabab and terrorism expert at Davidson College in North Carolina, said that though the group was growing weaker in Somalia, it was gaining strength in Kenya.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/2/1/e/image.related.articleLeadwide.620x349.1me61i.png/1428073350050.jpg'></td><td>2015-04-03 15:02:48</td><td>"They have been looking at soft targets in northern Kenya where they can operate more easily than in Nairobi," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/2/1/e/image.related.articleLeadwide.620x349.1me61i.png/1428073350050.jpg'></td><td>2015-04-03 15:02:48</td><td><a href='http://www.smh.com.au/world/horror-in-kenya-somali-militants-massacre-students-20150403-1me61i.html'>site</a></td><td><table><tr><td>Medics help an injured person at Kenyatta national Hospital in Nairobi, Kenya, after an attack by gunmen at Garissa University College.</td></tr><tr><td>Officials at the Australian High Commission in Kenya's capital Nairobi were working to determine whether any Australians had been hurt in the massacre.</td></tr><tr><td>Ken Menkhaus, an al-Shabab and terrorism expert at Davidson College in North Carolina, said that though the group was growing weaker in Somalia, it was gaining strength in Kenya.</td></tr><tr><td>"They have been looking at soft targets in northern Kenya where they can operate more easily than in Nairobi," he said.</td></tr></table></td></tr>
 </table></body></html>

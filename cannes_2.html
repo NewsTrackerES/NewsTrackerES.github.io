@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,13 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 03:00:12</td><td>The 68th Cannes Film Festival will take place between May 13 and 24, with US filmmakers Joel and Ethan Cohen presiding over the jury.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 17:39:35</td><td>NEW YORK (AP) - For the first time, a female director will kick off the Cannes Film Festival.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 17:39:35</td><td>The festival announced Monday that "La Tete Haute," a French drama directed by Emmanuelle Bercot, will open the 68th Cannes Film Festival on May 13.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 17:39:35</td><td>Cannes runs May 13-24.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 17:39:44</td><td>Cannes head Thierry Fremaux said the choice "is a clear reflection of our desire to see the festival start with a different piece, which is both bold and moving."</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-14 13:22:15</td><td>Cannes in the past has often tapped big-budget US productions to kick off the festival and give it some Hollywood glamour, such as "Grace of Monaco" with Nicole Kidman last year, and "The Great Gatsby" with Leonardo DiCaprio the year before.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 19:57:18</td><td>Woody Allen, as usual, refused to be in competition but he will be in Cannes to show "An Irrational Man", starring Joaquin Phoenix and Emma Stone.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-30 17:00:54</td><td>Global warming documentary to close Cannes Film Festival</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/14/12/28AA8B0600000578-0-image-m-84_1431603502466.jpg'></td><td>2015-05-14 13:53:01</td><td>Thierry Fremaux, the director of the Cannes festival, provoked the debate by pointing out in interviews that "the number of female directors in the world is too low".</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 20:15:07</td><td>The first week of the Cannes Film Festival came to an end this weekend with plenty of buzz.</td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://www.gannett-cdn.com/media/2015/05/19/USATODAY/USATODAY/635676038725095641-EPA-FRANCE-CANNES-FILM-FESTIVAL-2015-73143246.JPG'></td><td>2015-05-19 12:03:08</td><td>Mindy Kaling, Amy Poehler and Phyllis Smith pose during a photocall for Pixar's 'Inside Out' at Cannes Film Festival.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 03:00:12</td><td><a href='http://www.channel24.co.za/Movies/News/Mad-Max-to-make-comeback-at-Cannes-Film-Festival-20150327'>site</a></td><td>The 68th Cannes Film Festival will take place between May 13 and 24, with US filmmakers Joel and Ethan Cohen presiding over the jury.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 17:39:35</td><td><a href='http://www.seattlepi.com/news/article/La-Tete-Haute-to-open-Cannes-Film-Festival-6196589.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - For the first time, a female director will kick off the Cannes Film Festival.</td></tr><tr><td>The festival announced Monday that "La Tete Haute," a French drama directed by Emmanuelle Bercot, will open the 68th Cannes Film Festival on May 13.</td></tr><tr><td>Cannes runs May 13-24.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 17:39:44</td><td><a href='http://news.yahoo.com/la-tete-haute-open-cannes-film-festival-173944992.html'>site</a></td><td>Cannes head Thierry Fremaux said the choice "is a clear reflection of our desire to see the festival start with a different piece, which is both bold and moving."</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-14 13:22:15</td><td><a href='http://www.ctvnews.ca/entertainment/catherine-deneuve-film-to-open-cannes-film-festival-1.2326265'>site</a></td><td>Cannes in the past has often tapped big-budget US productions to kick off the festival and give it some Hollywood glamour, such as "Grace of Monaco" with Nicole Kidman last year, and "The Great Gatsby" with Leonardo DiCaprio the year before.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 19:57:18</td><td><a href='http://www.euronews.com/2015/04/16/cannes-film-festival-lineup-unveiled/'>site</a></td><td>Woody Allen, as usual, refused to be in competition but he will be in Cannes to show "An Irrational Man", starring Joaquin Phoenix and Emma Stone.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-30 17:00:54</td><td><a href='http://www.utsandiego.com/news/2015/apr/30/global-warming-documentary-to-close-cannes-film/'>site</a></td><td>Global warming documentary to close Cannes Film Festival</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/14/12/28AA8B0600000578-0-image-m-84_1431603502466.jpg'></td><td>2015-05-14 13:53:01</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3081598/Womens-role-film-red-carpet-Cannes.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Thierry Fremaux, the director of the Cannes festival, provoked the debate by pointing out in interviews that "the number of female directors in the world is too low".</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 20:15:07</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20963643.html#storylink=rss'>site</a></td><td>The first week of the Cannes Film Festival came to an end this weekend with plenty of buzz.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.gannett-cdn.com/media/2015/05/19/USATODAY/USATODAY/635676038725095641-EPA-FRANCE-CANNES-FILM-FESTIVAL-2015-73143246.JPG'></td><td>2015-05-19 12:03:08</td><td><a href='http://www.usatoday.com/story/life/movies/2015/05/18/cannes-film-festival-inside-out/27513831/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycommovies-topstories'>site</a></td><td>Mindy Kaling, Amy Poehler and Phyllis Smith pose during a photocall for Pixar's 'Inside Out' at Cannes Film Festival.</td></tr>
 </table></body></html>

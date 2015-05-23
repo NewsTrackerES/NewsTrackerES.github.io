@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:21:01</td><td>Egypt stresses Nile water rights in Ethiopia dam project</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 19:21:01</td><td>Ethiopia had said the project would not adversely affect Egypt's share of Nile water, but Egypt had maintained its "historic rights" to the Nile, which it said were guaranteed by treaties from 1929 and 1959.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 19:21:01</td><td>Egypt's president called Wednesday for a "new chapter" in relations with Ethiopia, but nevertheless underscored his country's insistence on standing by its rights to tap Nile water.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-25 19:21:01</td><td>Egypt, which is almost totally reliant on the Nile for agriculture and drinking water, fears the Grand Renaissance Dam will hit its water supply.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:21:01</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3011635/Egypt-stresses-Nile-water-rights-Ethiopia-dam-project.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Egypt stresses Nile water rights in Ethiopia dam project</td></tr><tr><td>Egypt's president called Wednesday for a "new chapter" in relations with Ethiopia, but nevertheless underscored his country's insistence on standing by its rights to tap Nile water.</td></tr><tr><td>Egypt, which is almost totally reliant on the Nile for agriculture and drinking water, fears the Grand Renaissance Dam will hit its water supply.</td></tr><tr><td>Ethiopia had said the project would not adversely affect Egypt's share of Nile water, but Egypt had maintained its "historic rights" to the Nile, which it said were guaranteed by treaties from 1929 and 1959.</td></tr></table></td></tr>
 </table></body></html>

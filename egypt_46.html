@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.dw.de/image/0,,18357638_303,00.jpg'></td><td>2015-04-02 08:46:00</td><td>This insurgency has spread to other parts of Egypt, though attacks in bigger cities and towns are usually far less dramatic.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.dw.de/image/0,,18357638_303,00.jpg'></td><td>2015-04-02 08:46:00</td><td>Gunmen opened fire on the soldiers at security checkpoints in Sheikh Zuweid and Rafah, the crossing point between Egypt and the Gaza Strip.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-03 14:15:54</td><td>CAIRO - The Islamic State's branch in Egypt has claimed responsibility for a wave of deadly attacks that killed 15 Egyptian soldiers and three civilians the previous day in volatile northern Sinai.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.dw.de/image/0,,18357638_303,00.jpg'></td><td>2015-04-02 08:46:00</td><td><a href='http://www.dw.de/series-of-deadly-attacks-in-egypts-sinai-peninsula/a-18357743?maca=en-rss-en-world-4025-rdf'>site</a></td><td><table><tr><td>Gunmen opened fire on the soldiers at security checkpoints in Sheikh Zuweid and Rafah, the crossing point between Egypt and the Gaza Strip.</td></tr><tr><td>This insurgency has spread to other parts of Egypt, though attacks in bigger cities and towns are usually far less dramatic.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-03 14:15:54</td><td><a href='http://www.foxnews.com/world/2015/04/03/egypt-islamic-state-branch-claims-responsibility-for-sinai-attack-that-killed/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>CAIRO - The Islamic State's branch in Egypt has claimed responsibility for a wave of deadly attacks that killed 15 Egyptian soldiers and three civilians the previous day in volatile northern Sinai.</td></tr>
 </table></body></html>

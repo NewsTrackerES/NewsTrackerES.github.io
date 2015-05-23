@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3FbTxfhtJbvYzmYo6WATqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T004024Z_1_LYNXMPEB3M00L_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-23 00:35:09</td><td>In fact, the only watches on sale on Friday will be at a handful of upscale boutiques and department stores that Apple courted to help position the watch as a fashion item.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3FbTxfhtJbvYzmYo6WATqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T004024Z_1_LYNXMPEB3M00L_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-23 00:35:09</td><td>And Apple stores will not have any watches to sell on Friday, even though some luxury shops around the world will.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3FbTxfhtJbvYzmYo6WATqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T004024Z_1_LYNXMPEB3M00L_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-23 00:35:09</td><td>"Our team is working to fill orders as quickly as possible based on the available supply and the order in which they were received," Apple said in a statement on Wednesday.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3FbTxfhtJbvYzmYo6WATqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T004024Z_1_LYNXMPEB3M00L_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-23 00:35:09</td><td>Now Apple faces the question of whether confused consumers will swamp Apple Stores on Friday.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3FbTxfhtJbvYzmYo6WATqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T004024Z_1_LYNXMPEB3M00L_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-23 00:35:09</td><td>Apple itself said that some customers will get watches faster than promised.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/3FbTxfhtJbvYzmYo6WATqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T004024Z_1_LYNXMPEB3M00L_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-23 00:35:09</td><td><a href='http://finance.yahoo.com/news/apple-tests-smartwatch-market-quiet-003509165.html'>site</a></td><td><table><tr><td>And Apple stores will not have any watches to sell on Friday, even though some luxury shops around the world will.</td></tr><tr><td>Now Apple faces the question of whether confused consumers will swamp Apple Stores on Friday.</td></tr><tr><td>Apple itself said that some customers will get watches faster than promised.</td></tr><tr><td>"Our team is working to fill orders as quickly as possible based on the available supply and the order in which they were received," Apple said in a statement on Wednesday.</td></tr><tr><td>In fact, the only watches on sale on Friday will be at a handful of upscale boutiques and department stores that Apple courted to help position the watch as a fashion item.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-164ct-6X6PCx30lHSK2-86_634x422.jpg'></td><td>2015-03-17 18:51:12</td><td>Nigeria begins 'final onslaught' against Boko Haram: govt</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-164ct-6X6PCx30lHSK2-86_634x422.jpg'></td><td>2015-03-17 18:51:12</td><td>Nigeria has begun the "final onslaught" against Boko Haram, the country's national security spokesman said on Tuesday, after the militants were ousted from the strategic town of Bama.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/3/17/f5378e3d753e4a559714af9828e8d2c8_18.jpg'></td><td>2015-03-17 20:33:03</td><td>On a visit to London, Mike Omeri said on Tuesday that "significant strategic military successes and gains" had been made against Boko Haram in recent weeks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/17/article-doc-164ct-6X6PCx30lHSK2-86_634x422.jpg'></td><td>2015-03-17 18:51:12</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-2999296/Nigeria-begins-final-onslaught-against-Boko-Haram-govt.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Nigeria begins 'final onslaught' against Boko Haram: govt</td></tr><tr><td>Nigeria has begun the "final onslaught" against Boko Haram, the country's national security spokesman said on Tuesday, after the militants were ousted from the strategic town of Bama.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/3/17/f5378e3d753e4a559714af9828e8d2c8_18.jpg'></td><td>2015-03-17 20:33:03</td><td><a href='http://www.aljazeera.com/news/africa/2015/03/nigeria-final-onslaught-launched-boko-haram-150317175256149.html'>site</a></td><td>On a visit to London, Mike Omeri said on Tuesday that "significant strategic military successes and gains" had been made against Boko Haram in recent weeks.</td></tr>
 </table></body></html>

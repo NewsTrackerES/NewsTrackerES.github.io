@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 23:03:21</td><td>MEXICO CITY (AP) - A moderate 5.3-magnitude earthquake shook central Mexico on Friday, causing buildings to sway in the capital and sending hundreds of people into the streets.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 23:03:21</td><td>5.3 quake shakes central Mexico; some evacuations in capital</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 23:03:21</td><td>A magnitude-8.1 quake in 1985 that killed at least 6,000 people and destroyed many buildings in Mexico City was centered 250 miles (400 kilometers) away on the Pacific Coast.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 23:03:21</td><td>Mexico City Mayor Miguel Angel Mancera said many evacuations were reported in the capital but officials received no reports of damage or injuries.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 23:03:21</td><td><a href='http://www.sfgate.com/news/world/article/Moderate-quake-shakes-buildings-in-Mexico-City-6148697.php'>site</a></td><td><table><tr><td>5.3 quake shakes central Mexico; some evacuations in capital</td></tr><tr><td>MEXICO CITY (AP) - A moderate 5.3-magnitude earthquake shook central Mexico on Friday, causing buildings to sway in the capital and sending hundreds of people into the streets.</td></tr><tr><td>Mexico City Mayor Miguel Angel Mancera said many evacuations were reported in the capital but officials received no reports of damage or injuries.</td></tr><tr><td>A magnitude-8.1 quake in 1985 that killed at least 6,000 people and destroyed many buildings in Mexico City was centered 250 miles (400 kilometers) away on the Pacific Coast.</td></tr></table></td></tr>
 </table></body></html>

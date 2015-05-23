@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>What appears to be different this time is the sheer scale and systematic nature of the looting, especially in the parts of Syria controlled by the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>While there is no firm evidence of the amount of money being made by the Islamic State group from looting antiquities, satellite photos and anecdotal evidence confirm widespread plundering of archaeological sites in areas under IS control.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>As a number of experts point out, though, most sites in Iraq have not been completely excavated and there are likely more winged bull statues and stelae waiting to be found under the earthen mounds scattered throughout this country - assuming the Islamic State group and its diggers don't find them first.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>The Iraqi government is now rushing to document the remaining sites in the country, especially in the disputed province of Salahuddin, just south of the Islamic State stronghold in Nineweh province.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td>Britain and the United States remain the biggest markets for antiquities, though wealthy collectors are emerging in China and the Gulf - especially for Islamic-era artifacts.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/05/12/876/493/Mideast Iraq Looting Heritage-1.jpg?ve=1&tl=1'></td><td>2015-05-12 06:50:22</td><td><a href='http://www.foxnews.com/world/2015/05/12/iraq-says-islamic-state-destruction-historical-sites-is-cover-for-sophisticated/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>While there is no firm evidence of the amount of money being made by the Islamic State group from looting antiquities, satellite photos and anecdotal evidence confirm widespread plundering of archaeological sites in areas under IS control.</td></tr><tr><td>What appears to be different this time is the sheer scale and systematic nature of the looting, especially in the parts of Syria controlled by the Islamic State group.</td></tr><tr><td>Britain and the United States remain the biggest markets for antiquities, though wealthy collectors are emerging in China and the Gulf - especially for Islamic-era artifacts.</td></tr><tr><td>The Iraqi government is now rushing to document the remaining sites in the country, especially in the disputed province of Salahuddin, just south of the Islamic State stronghold in Nineweh province.</td></tr><tr><td>As a number of experts point out, though, most sites in Iraq have not been completely excavated and there are likely more winged bull statues and stelae waiting to be found under the earthen mounds scattered throughout this country - assuming the Islamic State group and its diggers don't find them first.</td></tr></table></td></tr>
 </table></body></html>

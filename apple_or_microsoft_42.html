@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/IKCqgvzK6smEwwN4nRMhtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-08T142000Z_2_LYNXMPEB370KG_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-08 14:20:00</td><td>"For now, the Apple Watch is for pioneers," the Wall Street Journal's Geoffrey Fowler wrote.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/IKCqgvzK6smEwwN4nRMhtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-08T142000Z_2_LYNXMPEB370KG_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-08 14:20:00</td><td>The Apple Watch Sport will start at $349 for the smaller, 38-mm model.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 15:01:58</td><td>Apple Watch sleek and stylish but not for everyone, reviewers say</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 15:53:00</td><td>"I think it will be quite successful, because it is as Apple always does: They rarely lead in a field. They watch how things develop, and then enter it and take it over. They've done that repeatedly, from computers to music players and so on."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://cdn.mos.techradar.com/art/Watches/Apple%20Watch/Apple%20Watch%20face%20angle-320-80.jpg'></td><td>2015-04-27 22:03:00</td><td>He also said he thinks the company is "in a good position" and that by sometime in late June Apple anticipates launching the Watch in additional countries.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/IKCqgvzK6smEwwN4nRMhtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-08T142000Z_2_LYNXMPEB370KG_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-08 14:20:00</td><td><a href='http://finance.yahoo.com/news/apple-watch-sleek-stylish-not-141208902.html'>site</a></td><td><table><tr><td>"For now, the Apple Watch is for pioneers," the Wall Street Journal's Geoffrey Fowler wrote.</td></tr><tr><td>The Apple Watch Sport will start at $349 for the smaller, 38-mm model.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 15:01:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3030501/Apple-Watch-sleek-stylish-not-reviewers-say.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Apple Watch sleek and stylish but not for everyone, reviewers say</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 15:53:00</td><td><a href='http://www.forbes.com/sites/steveolenski/2015/04/10/the-apple-watch-wearables-and-what-it-all-means-for-brands/'>site</a></td><td>"I think it will be quite successful, because it is as Apple always does: They rarely lead in a field. They watch how things develop, and then enter it and take it over. They've done that repeatedly, from computers to music players and so on."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://cdn.mos.techradar.com/art/Watches/Apple%20Watch/Apple%20Watch%20face%20angle-320-80.jpg'></td><td>2015-04-27 22:03:00</td><td><a href='http://www.techradar.com/us/news/wearables/apple-watch-likely-to-launch-in-more-countries-come-june-1292206?src=rss&attr=all'>site</a></td><td>He also said he thinks the company is "in a good position" and that by sometime in late June Apple anticipates launching the Watch in additional countries.</td></tr>
 </table></body></html>

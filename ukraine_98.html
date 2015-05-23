@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:57:39</td><td>Ukraine-Russia Gas Talks Postponed</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 12:11:30</td><td>BRUSSELS (Reuters) - Expert-level talks between Russia, Ukraine and the European Commission made progress toward resolving differences over Russian gas supplies to Ukraine but no date has yet been set for a high-level meeting, the Commission said on Friday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-17 12:11:30</td><td>Russia's Gazprom cut off gas to Ukraine in a row over unpaid bills and only restored supplies late last year after the European Commission brokered a deal that expired on March 31.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:57:39</td><td><a href='http://www.rferl.org/content/ukraine-russia-gas-talks-postponed/26949505.html'>site</a></td><td>Ukraine-Russia Gas Talks Postponed</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 12:11:30</td><td><a href='http://news.yahoo.com/russia-ukraine-made-progress-expert-level-gas-talks-121130114--finance.html'>site</a></td><td><table><tr><td>BRUSSELS (Reuters) - Expert-level talks between Russia, Ukraine and the European Commission made progress toward resolving differences over Russian gas supplies to Ukraine but no date has yet been set for a high-level meeting, the Commission said on Friday.</td></tr><tr><td>Russia's Gazprom cut off gas to Ukraine in a row over unpaid bills and only restored supplies late last year after the European Commission brokered a deal that expired on March 31.</td></tr></table></td></tr>
 </table></body></html>

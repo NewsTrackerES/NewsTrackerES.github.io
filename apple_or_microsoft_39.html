@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:03:49</td><td>Things to know about Apple's new photo-storage service</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 07:03:49</td><td>You can also access your photos on Windows computers with Apple's free iCloud for Windows software.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 07:03:49</td><td>On Wednesday, Apple is expected to release a free update to its Mac operating system.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:03:49</td><td><a href='http://www.miamiherald.com/news/business/article17819504.html#storylink=rss'>site</a></td><td><table><tr><td>On Wednesday, Apple is expected to release a free update to its Mac operating system.</td></tr><tr><td>You can also access your photos on Windows computers with Apple's free iCloud for Windows software.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:03:49</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article17819504.html#storylink=rss'>site</a></td><td>Things to know about Apple's new photo-storage service</td></tr>
 </table></body></html>

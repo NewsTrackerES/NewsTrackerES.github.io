@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 01:15:42</td><td>Cyclone Pam's aftermath in Vanuatu ? in pictures</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/16/seychelles-president-calls-on-world-to-take-climate-change-seriously/_jcr_content/image.adapt.480.low.031615_Vanuatu.jpg'></td><td>2015-04-22 19:00:00</td><td>More than 100,000 people in Vanuatu have no clean drinking water, a month after a monster cyclone struck the tiny Pacific nation, the United Nations Children's Fund (UNICEF) said Wednesday.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/16/seychelles-president-calls-on-world-to-take-climate-change-seriously/_jcr_content/image.adapt.480.low.031615_Vanuatu.jpg'></td><td>2015-04-22 19:00:00</td><td>On Tuesday, the United Nations Development Program launched a cash-for-work debris removal project to provide short-term jobs for up to 100 of the most vulnerable people in cyclone-affected communities.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/16/seychelles-president-calls-on-world-to-take-climate-change-seriously/_jcr_content/image.adapt.480.low.031615_Vanuatu.jpg'></td><td>2015-04-22 19:00:00</td><td>The agency has been providing water purification tablets and plastic sheets for rainwater collection as a temporary substitute for the 68 percent of rainwater harvesting structures that have been damaged by the cyclone.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/16/seychelles-president-calls-on-world-to-take-climate-change-seriously/_jcr_content/image.adapt.480.low.031615_Vanuatu.jpg'></td><td>2015-04-22 19:00:00</td><td>Cyclone damage means that women and children have to walk to shower facilities and toilets further from home, or defecate in the open, lacking privacy and exposing themselves to abuse, said Rajphangthong.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 01:15:42</td><td><a href='http://www.theguardian.com/world/gallery/2015/mar/16/cyclone-pams-aftermath-in-vanuatu-in-pictures'>site</a></td><td>Cyclone Pam's aftermath in Vanuatu ? in pictures</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/16/seychelles-president-calls-on-world-to-take-climate-change-seriously/_jcr_content/image.adapt.480.low.031615_Vanuatu.jpg'></td><td>2015-04-22 19:00:00</td><td><a href='http://america.aljazeera.com/articles/2015/4/22/almost-half-vanuatu-people-lack-clean-water-month-after-cyclone-unicef.html'>site</a></td><td><table><tr><td>More than 100,000 people in Vanuatu have no clean drinking water, a month after a monster cyclone struck the tiny Pacific nation, the United Nations Children's Fund (UNICEF) said Wednesday.</td></tr><tr><td>The agency has been providing water purification tablets and plastic sheets for rainwater collection as a temporary substitute for the 68 percent of rainwater harvesting structures that have been damaged by the cyclone.</td></tr><tr><td>Cyclone damage means that women and children have to walk to shower facilities and toilets further from home, or defecate in the open, lacking privacy and exposing themselves to abuse, said Rajphangthong.</td></tr><tr><td>On Tuesday, the United Nations Development Program launched a cash-for-work debris removal project to provide short-term jobs for up to 100 of the most vulnerable people in cyclone-affected communities.</td></tr></table></td></tr>
 </table></body></html>

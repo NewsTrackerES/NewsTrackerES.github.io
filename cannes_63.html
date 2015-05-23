@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:55:21</td><td>And yet not everyone is so bowled over by the Cannes red carpet.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:55:21</td><td>Cannes red carpet dance is a tightly controlled choreography</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:55:21</td><td>"I felt like I was getting married," said Mara of her first red carpet trip in Cannes.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:55:21</td><td>Cannes rolls its red carpet out for only a highly select few dozen films each festival, and the majority of them come from the most well-regarded directors in international cinema.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:55:21</td><td>And none equals the prestigious red carpet of the Cannes Film Festival, a rigidly organized gauntlet of glamour, a surreal choreography of stage-managed glitz.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:55:21</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21464067.html#storylink=rss'>site</a></td><td><table><tr><td>Cannes red carpet dance is a tightly controlled choreography</td></tr><tr><td>And none equals the prestigious red carpet of the Cannes Film Festival, a rigidly organized gauntlet of glamour, a surreal choreography of stage-managed glitz.</td></tr><tr><td>"I felt like I was getting married," said Mara of her first red carpet trip in Cannes.</td></tr><tr><td>Cannes rolls its red carpet out for only a highly select few dozen films each festival, and the majority of them come from the most well-regarded directors in international cinema.</td></tr><tr><td>And yet not everyone is so bowled over by the Cannes red carpet.</td></tr></table></td></tr>
 </table></body></html>

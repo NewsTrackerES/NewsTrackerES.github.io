@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 00:17:20</td><td>White House chief of staff Denis McDonough will give a speech Monday to a major advocacy group that opposes Netanyahu.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 00:17:20</td><td>Asked by a reporter about the administration lukewarm response to Netanyahu's win, Boehner, R-Ohio, said, "Lukewarm?" and laughed heartily.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-20 00:17:20</td><td>J Street is an Israel advocacy group that often criticizes the Israeli government - and especially Netanyahu.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-20 00:17:20</td><td>The group called Netanyahu's election victory a "deep disappointment" and accused him of winning by shredding U.S. bipartisanship on Israel and "preying on fear and racism at home."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-20 00:17:20</td><td>McDonough's address to the J Street group indicates that the administration will seek to strengthen voices that challenge Netanyahu.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-20 00:17:20</td><td>In an interview Thursday with MSNBC, Netanyahu appeared to walk back from his earlier remarks about a rejecting a two-state solution, saying he could support a demilitarized Palestinian state if conditions in the region change.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-20 00:17:20</td><td>Earnest also criticized anti-Arab rhetoric used by Netanyahu's party in the lead-up to the election as a "cynical election day tactic (that) was a pretty transparent effort to marginalize Arab Israeli votes."</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/18/26F50F0F00000578-0-image-m-42_1427223548449.jpg'></td><td>2015-03-20 00:18:20</td><td>But a White House official said Obama also raised Netanyahu's critical comments about Israeli Arabs ahead of the election, which the White House has denounced as a "cynical" effort to mobilize voters.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/18/26F50F0F00000578-0-image-m-42_1427223548449.jpg'></td><td>2015-03-20 00:18:20</td><td>Tensions between the White House and Netanyahu escalated as the Israeli elections drew nearer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-20 00:17:20</td><td><a href='http://www.sfgate.com/news/politics/article/Top-Obama-aide-to-address-Israel-group-opposing-6144932.php'>site</a></td><td><table><tr><td>In an interview Thursday with MSNBC, Netanyahu appeared to walk back from his earlier remarks about a rejecting a two-state solution, saying he could support a demilitarized Palestinian state if conditions in the region change.</td></tr><tr><td>Earnest also criticized anti-Arab rhetoric used by Netanyahu's party in the lead-up to the election as a "cynical election day tactic (that) was a pretty transparent effort to marginalize Arab Israeli votes."</td></tr><tr><td>McDonough's address to the J Street group indicates that the administration will seek to strengthen voices that challenge Netanyahu.</td></tr><tr><td>J Street is an Israel advocacy group that often criticizes the Israeli government - and especially Netanyahu.</td></tr><tr><td>The group called Netanyahu's election victory a "deep disappointment" and accused him of winning by shredding U.S. bipartisanship on Israel and "preying on fear and racism at home."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 00:17:20</td><td><a href='http://www.usnews.com/news/politics/articles/2015/03/19/top-obama-aide-to-address-israel-group-opposing-netanyahu'>site</a></td><td><table><tr><td>Asked by a reporter about the administration lukewarm response to Netanyahu's win, Boehner, R-Ohio, said, "Lukewarm?" and laughed heartily.</td></tr><tr><td>White House chief of staff Denis McDonough will give a speech Monday to a major advocacy group that opposes Netanyahu.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/18/26F50F0F00000578-0-image-m-42_1427223548449.jpg'></td><td>2015-03-20 00:18:20</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3002785/Boehner-mocks-administration-reaction-Israeli-election.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>But a White House official said Obama also raised Netanyahu's critical comments about Israeli Arabs ahead of the election, which the White House has denounced as a "cynical" effort to mobilize voters.</td></tr><tr><td>Tensions between the White House and Netanyahu escalated as the Israeli elections drew nearer.</td></tr></table></td></tr>
 </table></body></html>

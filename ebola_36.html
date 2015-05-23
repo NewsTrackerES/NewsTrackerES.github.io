@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 12:09:14</td><td>MONROVIA, Liberia (AP) - Liberians are overcoming their fears of Ebola to volunteer for a vaccine trial.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-22 12:09:14</td><td>That will require getting a high-level of participation; about 60 percent compliance is hoped for, said Dr. Marie-Paule Kieny, who leads Ebola vaccine research at the World Health Organization.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-22 12:09:14</td><td>In addition to vaccinating about 1,500 health workers, investigators will test vaccines by offering injections to whole communities around select Ebola cases as early as this week.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-22 12:12:47</td><td>In Liberia, scientists have fanned out across the country to explain the studies and reduce the fear and confusion that have stymied efforts to contain Ebola.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-22 12:12:47</td><td>"I don't want to say that everything is rosy," she said, but recently resistance to Ebola control efforts seems to have been falling off in Guinea.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-22 12:12:47</td><td>Drame Musokulamohadi, a student who cuts hair on the outskirts of the capital, hissed twice when asked about the vaccine before declaring: "I don't get myself associated with anything that is associated with Ebola."</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-22 12:12:47</td><td>Similarly, in Guinea, authorities started the study by injecting a series of prominent officials, including the head of the country's Ebola response.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-22 12:15:09</td><td>A community chalkboard at a busy intersection in Monrovia recently read: "Ebola vaccines 1 vs. Public fear 4."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 12:09:14</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3006359/Liberians-overcome-fear-volunteer-Ebola-vaccine-trial.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>MONROVIA, Liberia (AP) - Liberians are overcoming their fears of Ebola to volunteer for a vaccine trial.</td></tr><tr><td>In addition to vaccinating about 1,500 health workers, investigators will test vaccines by offering injections to whole communities around select Ebola cases as early as this week.</td></tr><tr><td>That will require getting a high-level of participation; about 60 percent compliance is hoped for, said Dr. Marie-Paule Kieny, who leads Ebola vaccine research at the World Health Organization.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-22 12:12:47</td><td><a href='http://www.charlotteobserver.com/living/health-family/article16003076.html#storylink=rss'>site</a></td><td><table><tr><td>In Liberia, scientists have fanned out across the country to explain the studies and reduce the fear and confusion that have stymied efforts to contain Ebola.</td></tr><tr><td>Similarly, in Guinea, authorities started the study by injecting a series of prominent officials, including the head of the country's Ebola response.</td></tr><tr><td>Drame Musokulamohadi, a student who cuts hair on the outskirts of the capital, hissed twice when asked about the vaccine before declaring: "I don't get myself associated with anything that is associated with Ebola."</td></tr><tr><td>"I don't want to say that everything is rosy," she said, but recently resistance to Ebola control efforts seems to have been falling off in Guinea.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-22 12:15:09</td><td><a href='http://www.startribune.com/world/297163801.html'>site</a></td><td>A community chalkboard at a busy intersection in Monrovia recently read: "Ebola vaccines 1 vs. Public fear 4."</td></tr>
 </table></body></html>

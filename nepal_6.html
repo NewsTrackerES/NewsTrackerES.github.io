@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46943296,width-300,resizemode-4/Surya-Bahadur-Thapa.jpg'></td><td>2015-04-16 08:16:38</td><td>An official says Surya Bahadur Thapa, who served as Nepal's prime minister five times, died in a hospital in India where he was being treated for stomach cancer.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/67/02/7827619/3/square_gallery_thumb.jpg'></td><td>2015-04-16 08:29:38</td><td>5-time Nepal Prime Minister Thapa dies at age 87</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/67/02/7827619/3/square_gallery_thumb.jpg'></td><td>2015-04-16 08:29:38</td><td>He served as Nepal's prime minister three times before 1990 when kings ruled the Himalayan state with a rubber-stamp parliament and a ban on political parties.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/67/02/7827619/3/square_gallery_thumb.jpg'></td><td>2015-04-16 08:29:38</td><td>His body will be flown to Nepal's capital, Kathmandu, for cremation on Friday, Sharma said.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 08:29:38</td><td>His son, Sunil Bahadur Thapa, is Nepal's commerce and supply minister.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/16/876/493/Nepal Obit Surya Bahadur Thapa-1.jpg?ve=1&tl=1'></td><td>2015-04-16 08:29:38</td><td>FILE- An April 28, 2006 file photo of Nepal's former prime minister Surya Bahadur Thapa, in Kathmandu, Nepal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46943296,width-300,resizemode-4/Surya-Bahadur-Thapa.jpg'></td><td>2015-04-16 08:16:38</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Former-Nepal-Prime-Minister-Thapa-dies-at-age-87/articleshow/46943254.cms'>site</a></td><td>An official says Surya Bahadur Thapa, who served as Nepal's prime minister five times, died in a hospital in India where he was being treated for stomach cancer.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/16/876/493/Nepal Obit Surya Bahadur Thapa-1.jpg?ve=1&tl=1'></td><td>2015-04-16 08:29:38</td><td><a href='http://www.foxnews.com/world/2015/04/16/5-time-nepal-prime-minister-surya-bahadur-thapa-dies-at-age-87/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>FILE- An April 28, 2006 file photo of Nepal's former prime minister Surya Bahadur Thapa, in Kathmandu, Nepal.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 08:29:38</td><td><a href='http://www.utsandiego.com/news/2015/apr/16/5-time-nepal-prime-minister-thapa-dies-at-age-87/'>site</a></td><td>His son, Sunil Bahadur Thapa, is Nepal's commerce and supply minister.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/67/02/7827619/3/square_gallery_thumb.jpg'></td><td>2015-04-16 08:29:38</td><td><a href='http://www.sfgate.com/news/world/article/5-time-Nepal-Prime-Minister-Thapa-dies-at-age-87-6203384.php'>site</a></td><td><table><tr><td>5-time Nepal Prime Minister Thapa dies at age 87</td></tr><tr><td>He served as Nepal's prime minister three times before 1990 when kings ruled the Himalayan state with a rubber-stamp parliament and a ban on political parties.</td></tr><tr><td>His body will be flown to Nepal's capital, Kathmandu, for cremation on Friday, Sharma said.</td></tr></table></td></tr>
 </table></body></html>

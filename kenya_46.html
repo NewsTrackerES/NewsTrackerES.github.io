@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 14:24:20</td><td>Corporal Benard Kipkemoi Tonui was part of the police department's Recce Company which stopped the April 2 attack on Garissa University College in eastern Kenya in less than half an hour.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-11 14:24:20</td><td>Kenya: Hero's burial for officer who helped stop attack</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-11 14:29:47</td><td>Thousands have gathered in a remote village in Kenya's Rift Valley to give a hero's burial to a police officer who died fighting to end an Islamic extremist attack on a university which killed 148 people.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-11 16:48:26</td><td>Transparency International has ranked the police as Kenya's most corrupt institution.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-11 16:48:34</td><td>CHELEGET, Kenya (AP) - Most walked for several kilometres (miles) on dusty paths to the remote village in southwestern Kenya, others arrived in bicycle taxis, the privileged in cars and even helicopters.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-11 16:48:34</td><td>The success of Recce Company has given a much needed boost to the image of the Kenya police force, which many deride as ineffective and corrupt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 14:24:20</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/11/kenya-heros-burial-for-officer-who-helped-stop-attack'>site</a></td><td><table><tr><td>Kenya: Hero's burial for officer who helped stop attack</td></tr><tr><td>Corporal Benard Kipkemoi Tonui was part of the police department's Recce Company which stopped the April 2 attack on Garissa University College in eastern Kenya in less than half an hour.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-11 14:29:47</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article18263744.html#storylink=rss'>site</a></td><td>Thousands have gathered in a remote village in Kenya's Rift Valley to give a hero's burial to a police officer who died fighting to end an Islamic extremist attack on a university which killed 148 people.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-11 16:48:26</td><td><a href='http://www.sfgate.com/news/world/article/Kenya-Hero-s-burial-for-officer-who-helped-stop-6193364.php'>site</a></td><td>Transparency International has ranked the police as Kenya's most corrupt institution.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-11 16:48:34</td><td><a href='http://news.yahoo.com/kenya-heros-burial-officer-helped-stop-attack-142444085.html'>site</a></td><td><table><tr><td>CHELEGET, Kenya (AP) - Most walked for several kilometres (miles) on dusty paths to the remote village in southwestern Kenya, others arrived in bicycle taxis, the privileged in cars and even helicopters.</td></tr><tr><td>The success of Recce Company has given a much needed boost to the image of the Kenya police force, which many deride as ineffective and corrupt.</td></tr></table></td></tr>
 </table></body></html>

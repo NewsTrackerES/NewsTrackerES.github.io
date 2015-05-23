@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td>A woman in front of a burning building after shelling in Artemivsk, eastern Ukraine on Saturday, hours before the scheduled ceasefire.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td>"As a first step I now give the order to the armed forces of Ukraine . . . to cease fire at 00.00 hours on February 15," he said.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td>And he warned that Ukraine, if it was slapped once, would not offer the other cheek.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td>Shelling halts in Ukraine's Donetsk as Poroshenko orders ceasefire</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td>Residents cautiously rejoice as fighting stops in most of eastern Ukraine except in the beleaguered city of Debaltseve, where periodic shelling continues.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td>The three satellite images, posted on Twitter by US ambassador to Ukraine Geoffrey Pyatt, showed landscapes in tones of grey, tracks in snowy fields and streaking plumes of smoke.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td><a href='http://www.smh.com.au/world/shelling-halts-in-ukraines-donetsk-as-poroshenko-orders-ceasefire-20150215-13f3k2.html'>site</a></td><td><table><tr><td>Shelling halts in Ukraine's Donetsk as Poroshenko orders ceasefire</td></tr><tr><td>Residents cautiously rejoice as fighting stops in most of eastern Ukraine except in the beleaguered city of Debaltseve, where periodic shelling continues.</td></tr><tr><td>The three satellite images, posted on Twitter by US ambassador to Ukraine Geoffrey Pyatt, showed landscapes in tones of grey, tracks in snowy fields and streaking plumes of smoke.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/8/y/p/image.related.articleLeadwide.620x349.13f3k2.png/1424033066552.jpg'></td><td>2015-02-15 04:54:22</td><td><a href='http://www.brisbanetimes.com.au/world/shelling-halts-in-ukraines-donetsk-as-poroshenko-orders-ceasefire-20150215-13f3k2.html'>site</a></td><td><table><tr><td>And he warned that Ukraine, if it was slapped once, would not offer the other cheek.</td></tr><tr><td>"As a first step I now give the order to the armed forces of Ukraine . . . to cease fire at 00.00 hours on February 15," he said.</td></tr><tr><td>A woman in front of a burning building after shelling in Artemivsk, eastern Ukraine on Saturday, hours before the scheduled ceasefire.</td></tr></table></td></tr>
 </table></body></html>

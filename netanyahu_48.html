@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6330370-3x2-340x227.jpg'></td><td>2015-03-18 06:37:29</td><td>The critical party for Likud to get on-side will be centrist Kulanu, led by former Likud member Moshe Kahlon, who won 10 seats, making him a kingmaker given his ability to side with either Mr Netanyahu or the centre-left opposition.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6330370-3x2-340x227.jpg'></td><td>2015-03-18 06:37:29</td><td>In a statement, Likud said Mr Netanyahu intended to form a new government within weeks, with negotiations already underway with the pro-settler Jewish Home party led by Naftali Bennett, as well as with religious groups.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/israel-election-netanyahu-again.jpg'></td><td>2015-03-18 06:58:25</td><td>Citing the Israeli leader's rejection of a Palestinian state, Erekat said: "Mr. Netanyahu has done nothing in his political life but to destroy the two-state solution."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/israel-election-netanyahu-again.jpg'></td><td>2015-03-18 06:58:25</td><td>If Netanyahu follows through on his pledges it would put him on a collision course with the Obama administration and the European Union, which has been weighing steps including trade measures to sanction Israel for its settlements policy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6330370-3x2-340x227.jpg'></td><td>2015-03-18 06:37:29</td><td><a href='http://www.abc.net.au/news/2015-03-18/benjamin-netanyahu-claims-victory-in-israel-election/6329026'>site</a></td><td><table><tr><td>In a statement, Likud said Mr Netanyahu intended to form a new government within weeks, with negotiations already underway with the pro-settler Jewish Home party led by Naftali Bennett, as well as with religious groups.</td></tr><tr><td>The critical party for Likud to get on-side will be centrist Kulanu, led by former Likud member Moshe Kahlon, who won 10 seats, making him a kingmaker given his ability to side with either Mr Netanyahu or the centre-left opposition.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/israel-election-netanyahu-again.jpg'></td><td>2015-03-18 06:58:25</td><td><a href='http://www.globalpost.com/dispatch/news/regions/middle-east/israel-and-palestine/150318/netanyahu-wins-israel-election-after-s'>site</a></td><td><table><tr><td>If Netanyahu follows through on his pledges it would put him on a collision course with the Obama administration and the European Union, which has been weighing steps including trade measures to sanction Israel for its settlements policy.</td></tr><tr><td>Citing the Israeli leader's rejection of a Palestinian state, Erekat said: "Mr. Netanyahu has done nothing in his political life but to destroy the two-state solution."</td></tr></table></td></tr>
 </table></body></html>

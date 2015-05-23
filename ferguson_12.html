@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Kw.GZECXu7Q.soVGIlhy1w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2014-10-11T160939Z_1393463931_TB3EAAB195WZN_RTRMADP_3_USA-MISSOURI-SHOOTING.JPG'></td><td>2015-03-10 20:01:15</td><td>Shaw had been Ferguson's city manager for eight years.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Kw.GZECXu7Q.soVGIlhy1w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2014-10-11T160939Z_1393463931_TB3EAAB195WZN_RTRMADP_3_USA-MISSOURI-SHOOTING.JPG'></td><td>2015-03-10 20:01:15</td><td>Online biographies indicate that he grew up in north St. Louis County and lived in Ferguson before working for the city.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Kw.GZECXu7Q.soVGIlhy1w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2014-10-11T160939Z_1393463931_TB3EAAB195WZN_RTRMADP_3_USA-MISSOURI-SHOOTING.JPG'></td><td>2015-03-10 20:01:15</td><td>"I believe that the city of Ferguson has the resolve to overcome the challenges it faces in the coming months and emerge as a stronger community for it," Shaw, 39, said in a statement included with the release.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/11c/news/world/article23302701.ece/ALTERNATES/w220/us-police04nw1.JPG'></td><td>2015-03-11 01:10:38</td><td>Since Brown's death seven months ago, Mayor James Knowles has been the public face and voice of Ferguson's city government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Kw.GZECXu7Q.soVGIlhy1w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2014-10-11T160939Z_1393463931_TB3EAAB195WZN_RTRMADP_3_USA-MISSOURI-SHOOTING.JPG'></td><td>2015-03-10 20:01:15</td><td><a href='http://news.yahoo.com/missouri-appeals-judge-appointed-over-ferguson-court-055613919.html'>site</a></td><td><table><tr><td>"I believe that the city of Ferguson has the resolve to overcome the challenges it faces in the coming months and emerge as a stronger community for it," Shaw, 39, said in a statement included with the release.</td></tr><tr><td>Shaw had been Ferguson's city manager for eight years.</td></tr><tr><td>Online biographies indicate that he grew up in north St. Louis County and lived in Ferguson before working for the city.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/11c/news/world/article23302701.ece/ALTERNATES/w220/us-police04nw1.JPG'></td><td>2015-03-11 01:10:38</td><td><a href='http://www.theglobeandmail.com/news/world/city-manager-of-ferguson-missouri-removed-after-justice-department-report/article23400455/?cmpid=rss1'>site</a></td><td>Since Brown's death seven months ago, Mayor James Knowles has been the public face and voice of Ferguson's city government.</td></tr>
 </table></body></html>

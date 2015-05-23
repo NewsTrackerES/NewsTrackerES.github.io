@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,5 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Zhanna, a daughter of murdered Russian opposition figure Boris Nemtsov, farewells her father in Moscow.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Candles glow as people gather for a memorial service before the funeral of slain opposition figure Boris Nemtsov in Moscow.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Members of the Nemtsov family embrace as people bring flowers to the grave of the slain Russian opposition figure.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Signs reading "propaganda kills" and "Fight" lie among flowers and photos of slain opposition figure Boris Nemtsov at the site of his death.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Moscow: The murder of Russian opposition leader Boris Nemtsov was the last straw for Dmitry Ostashenko, who decided to give up his life as a logistics manager in Moscow and try to leave Russia with his wife.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Russia's liberal opposition is in despair after the Friday night slaying of Mr Nemtsov in the Kremlin's shadow.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>"We can't live here any more," Mr Ostashenko, 31, an opposition activist like his wife, Inna Malashenko, said at the Sunday march to commemorate Mr Nemtsov, carrying a sign that said "I'm Not Afraid".</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>While he considered opposition rallies a waste of time, Mr Petrenko said he came along to protest Mr Nemtsov's death out of a sense of duty.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td>Mr Nemtsov, 55, was preparing to to publish information about Russia's role in the Ukrainian crisis, allies said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/c/e/o/image.related.articleLeadwide.620x349.13uf2j.png/1425430495762.jpg'></td><td>2015-03-04 00:55:09</td><td><a href='http://www.theage.com.au/world/growing-fear-in-russia-leaves-opposition-in-despair-after-murder-of-boris-nemtsov-20150304-13uf2j.html'>site</a></td><td><table><tr><td>Signs reading "propaganda kills" and "Fight" lie among flowers and photos of slain opposition figure Boris Nemtsov at the site of his death.</td></tr><tr><td>Moscow: The murder of Russian opposition leader Boris Nemtsov was the last straw for Dmitry Ostashenko, who decided to give up his life as a logistics manager in Moscow and try to leave Russia with his wife.</td></tr><tr><td>"We can't live here any more," Mr Ostashenko, 31, an opposition activist like his wife, Inna Malashenko, said at the Sunday march to commemorate Mr Nemtsov, carrying a sign that said "I'm Not Afraid".</td></tr><tr><td>Zhanna, a daughter of murdered Russian opposition figure Boris Nemtsov, farewells her father in Moscow.</td></tr><tr><td>Russia's liberal opposition is in despair after the Friday night slaying of Mr Nemtsov in the Kremlin's shadow.</td></tr><tr><td>Candles glow as people gather for a memorial service before the funeral of slain opposition figure Boris Nemtsov in Moscow.</td></tr><tr><td>Members of the Nemtsov family embrace as people bring flowers to the grave of the slain Russian opposition figure.</td></tr><tr><td>Mr Nemtsov, 55, was preparing to to publish information about Russia's role in the Ukrainian crisis, allies said.</td></tr><tr><td>While he considered opposition rallies a waste of time, Mr Petrenko said he came along to protest Mr Nemtsov's death out of a sense of duty.</td></tr></table></td></tr>
 </table></body></html>

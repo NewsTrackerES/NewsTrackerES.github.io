@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,8 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/s3MVIQ39svG3236bCmSMBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/46f60c9e3835ae086e0f6a7067008ccc.jpg'></td><td>2015-02-20 14:35:21</td><td>KIEV, Ukraine (AP) - The "Heavenly Hundred" is what Ukrainians in Kiev call those who died during months of anti-government protests in 2013-14.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 15:15:05</td><td>AP PHOTOS: A year after Ukraine's Maidan protests in Kiev</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-20 15:56:47</td><td>Poroshenko on Friday claimed Ukraine has evidence that Vladislav Surkov, one of Russian President Vladimir Putin's advisers, organized the snipers.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-02-20 16:45:05</td><td>On Friday evening, Ukraine's current pro-Europe president, Petro Poroshenko, spoke at a gathering of thousands on the square to commemorate the dead and echoed the belief that their deaths were not pointless.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-02-20 16:45:05</td><td>He surfaced the next day in one of his political strongholds in eastern Ukraine and then disappeared again until he turned up in Russia, where he eventually bitterly abandoned any claim to still being president.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-02-20 16:45:05</td><td>As the violence in eastern Ukraine slogs on, the question of who fired the shots a year ago has fallen into the shadows.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-02-20 16:45:05</td><td>"We will stop the war and after a few years everyone will see how Ukraine has changed; we feel with every cell how the people demand that change be accelerated," he said.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-02-20 16:45:05</td><td>He vowed to fight the "fear, panic and mistrust" that he said "a neighboring state" was trying to sow in Ukraine.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-02-20 16:45:05</td><td>Troubled Ukraine marks year since protest bloodbath in Kiev</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/s3MVIQ39svG3236bCmSMBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/46f60c9e3835ae086e0f6a7067008ccc.jpg'></td><td>2015-02-20 14:35:21</td><td><a href='http://news.yahoo.com/ap-photos-ukraines-maidan-protests-kiev-143521635.html'>site</a></td><td>KIEV, Ukraine (AP) - The "Heavenly Hundred" is what Ukrainians in Kiev call those who died during months of anti-government protests in 2013-14.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 15:15:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11405548&ref=rss'>site</a></td><td>AP PHOTOS: A year after Ukraine's Maidan protests in Kiev</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-20 15:56:47</td><td><a href='http://news.yahoo.com/troubled-ukraine-marks-since-protest-bloodbath-kiev-155647472.html'>site</a></td><td>Poroshenko on Friday claimed Ukraine has evidence that Vladislav Surkov, one of Russian President Vladimir Putin's advisers, organized the snipers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 16:45:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11405578&ref=rss'>site</a></td><td><table><tr><td>Troubled Ukraine marks year since protest bloodbath in Kiev</td></tr><tr><td>On Friday evening, Ukraine's current pro-Europe president, Petro Poroshenko, spoke at a gathering of thousands on the square to commemorate the dead and echoed the belief that their deaths were not pointless.</td></tr><tr><td>"We will stop the war and after a few years everyone will see how Ukraine has changed; we feel with every cell how the people demand that change be accelerated," he said.</td></tr><tr><td>He vowed to fight the "fear, panic and mistrust" that he said "a neighboring state" was trying to sow in Ukraine.</td></tr><tr><td>He surfaced the next day in one of his political strongholds in eastern Ukraine and then disappeared again until he turned up in Russia, where he eventually bitterly abandoned any claim to still being president.</td></tr><tr><td>As the violence in eastern Ukraine slogs on, the question of who fired the shots a year ago has fallen into the shadows.</td></tr></table></td></tr>
 </table></body></html>

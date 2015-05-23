@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693198390_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-27 20:35:31</td><td>The judge, Theodore Essex, said that Microsoft infringed two wireless cellular patents owned by InterDigital, a patent licenser, and said it would not be against the public interest to ban the Microsoft devices from being imported into the United States.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693198390_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-27 20:35:31</td><td>Microsoft called Monday's decision one step in the process.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693198390_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-27 20:35:31</td><td>Microsoft phones infringe patents: Judge</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693198390_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-27 20:35:31</td><td>Microsoft acquired Nokia's handset division last year.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/xuNczzFjclIZH0G6Z46q_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_REUTERS-EN_WRAPPER_NEW_1/2015-04-27T202157Z_2_LYNXMPEB3Q0VN_RTROPTP_3_MICROSOFT-NOKIA-DECLINE_original.jpg'></td><td>2015-04-27 21:52:08</td><td>InterDigital Executive Vice President Lawrence Shay said the company looks forward to "continued discussion" with Microsoft to license its patents.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/xuNczzFjclIZH0G6Z46q_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_REUTERS-EN_WRAPPER_NEW_1/2015-04-27T202157Z_2_LYNXMPEB3Q0VN_RTROPTP_3_MICROSOFT-NOKIA-DECLINE_original.jpg'></td><td>2015-04-27 21:52:08</td><td>Microsoft phones infringe patents: U.S. International Trade Commission judge</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693198390_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-27 20:35:31</td><td><a href='http://www.torontosun.com/2015/04/27/microsoft-phones-infringe-patents-judge'>site</a></td><td><table><tr><td>Microsoft phones infringe patents: Judge</td></tr><tr><td>The judge, Theodore Essex, said that Microsoft infringed two wireless cellular patents owned by InterDigital, a patent licenser, and said it would not be against the public interest to ban the Microsoft devices from being imported into the United States.</td></tr><tr><td>Microsoft acquired Nokia's handset division last year.</td></tr><tr><td>Microsoft called Monday's decision one step in the process.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/xuNczzFjclIZH0G6Z46q_A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/SG_AHTTP_REUTERS-EN_WRAPPER_NEW_1/2015-04-27T202157Z_2_LYNXMPEB3Q0VN_RTROPTP_3_MICROSOFT-NOKIA-DECLINE_original.jpg'></td><td>2015-04-27 21:52:08</td><td><a href='http://finance.yahoo.com/news/microsoft-phones-infringe-patents-u-192207786.html'>site</a></td><td><table><tr><td>Microsoft phones infringe patents: U.S. International Trade Commission judge</td></tr><tr><td>InterDigital Executive Vice President Lawrence Shay said the company looks forward to "continued discussion" with Microsoft to license its patents.</td></tr></table></td></tr>
 </table></body></html>

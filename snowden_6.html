@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 21:44:49</td><td>"Snowden's disclosures have absolutely changed the playing field, but the playing field is not level."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-10 21:44:49</td><td>"We believe the Snowden disclosures will make an immense difference in how this case will play out," Toomey said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-10 21:44:49</td><td>Wikipedia was included on an NSA slide Snowden leaked in 2013 that demonstrated the agency's interest in monitoring communications on certain websites.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-10 21:44:49</td><td>Mark Rumold, an attorney for the Electronic Frontier Foundation, said Snowden's disclosures could certainly bolster ACLU's argument, but the state secret privilege remains a challenge.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 21:44:49</td><td><a href='http://www.usnews.com/news/us/articles/2015/03/10/human-rights-media-groups-sue-nsa-over-web-surveillance'>site</a></td><td><table><tr><td>"We believe the Snowden disclosures will make an immense difference in how this case will play out," Toomey said.</td></tr><tr><td>Wikipedia was included on an NSA slide Snowden leaked in 2013 that demonstrated the agency's interest in monitoring communications on certain websites.</td></tr><tr><td>Mark Rumold, an attorney for the Electronic Frontier Foundation, said Snowden's disclosures could certainly bolster ACLU's argument, but the state secret privilege remains a challenge.</td></tr><tr><td>"Snowden's disclosures have absolutely changed the playing field, but the playing field is not level."</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 21:14:33</td><td>Ryan Pate, a helicopter mechanic from Belleair Bluffs, Florida, took to Facebook after a dispute over sick leave with the company he was working for in the United Arab Emirates.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 21:14:33</td><td>"I never even entertained the fact that I would wind up in prison out here for something I put on Facebook in the United States."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-04 21:20:25</td><td>There was disagreement with his bosses about extending his leave to see a doctor, he said, and after a particularly unsatisfactory phone call with them, he took to a Facebook.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-04 21:30:19</td><td>Facebook posts about job land US contractor in Emirates jail</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 21:14:33</td><td><a href='http://news.yahoo.com/facebook-posts-job-land-us-contractor-emirates-jail-210644583.html'>site</a></td><td><table><tr><td>Ryan Pate, a helicopter mechanic from Belleair Bluffs, Florida, took to Facebook after a dispute over sick leave with the company he was working for in the United Arab Emirates.</td></tr><tr><td>"I never even entertained the fact that I would wind up in prison out here for something I put on Facebook in the United States."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-04 21:20:25</td><td><a href='http://www.startribune.com/nation/295051021.html'>site</a></td><td>There was disagreement with his bosses about extending his leave to see a doctor, he said, and after a particularly unsatisfactory phone call with them, he took to a Facebook.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-04 21:30:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11412190&ref=rss'>site</a></td><td>Facebook posts about job land US contractor in Emirates jail</td></tr>
 </table></body></html>

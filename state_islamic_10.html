@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/20/25D8F25700000578-2961044-image-a-12_1424425366914.jpg'></td><td>2015-02-20 09:24:41</td><td>Islamic State militants overtook Mosul last June, as the group marched across large sections of Iraq and Syria, sending Iraqi forces fleeing.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/20/25D8F25700000578-2961044-image-a-12_1424425366914.jpg'></td><td>2015-02-20 09:24:41</td><td>At this point, officials estimate there are between 1,000 to 2,000 Islamic State insurgents in the city of Mosul.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/20/25D8F25700000578-2961044-image-a-12_1424425366914.jpg'></td><td>2015-02-20 09:24:41</td><td>The official also revealed for the first time that Qatar has agreed to host a training site for coalition forces to train moderate Syrian rebels who would return to Syria to fight the Islamic State forces there.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/20/25D8F25700000578-2961044-image-a-12_1424425366914.jpg'></td><td>2015-02-20 09:24:41</td><td>A massive operation to retake Iraq's second-largest city from the Islamic State using up to 25,000 Iraqi troops will likely begin in April or May, a senior U.S. military official said today.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/t/6/z/f/image.related.articleLeadwide.620x349.13t6xt.png/1425351396605.jpg'></td><td>2015-03-02 17:37:56</td><td>Iraq launches major offensive to retake Tikrit from Islamic State</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/6/j/9/image.related.articleLeadwide.620x349.1md6hg.png/1427904336424.jpg'></td><td>2015-04-01 16:01:56</td><td>While Tikrit was largely empty of civilians, hundreds of thousands remain in Mosul, where Islamic State militants have imposed restrictions on residents to keep them from leaving.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/20/25D8F25700000578-2961044-image-a-12_1424425366914.jpg'></td><td>2015-02-20 09:24:41</td><td><a href='http://www.dailymail.co.uk/news/article-2961044/As-25-000-Iraqi-troops-training-retake-Mosul-country-s-second-largest-city-Islamic-State-militants.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>A massive operation to retake Iraq's second-largest city from the Islamic State using up to 25,000 Iraqi troops will likely begin in April or May, a senior U.S. military official said today.</td></tr><tr><td>Islamic State militants overtook Mosul last June, as the group marched across large sections of Iraq and Syria, sending Iraqi forces fleeing.</td></tr><tr><td>At this point, officials estimate there are between 1,000 to 2,000 Islamic State insurgents in the city of Mosul.</td></tr><tr><td>The official also revealed for the first time that Qatar has agreed to host a training site for coalition forces to train moderate Syrian rebels who would return to Syria to fight the Islamic State forces there.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/t/6/z/f/image.related.articleLeadwide.620x349.13t6xt.png/1425351396605.jpg'></td><td>2015-03-02 17:37:56</td><td><a href='http://www.smh.com.au/world/iraq-launches-major-offensive-to-retake-tikrit-from-islamic-state-20150303-13t6xt.html'>site</a></td><td>Iraq launches major offensive to retake Tikrit from Islamic State</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/d/6/j/9/image.related.articleLeadwide.620x349.1md6hg.png/1427904336424.jpg'></td><td>2015-04-01 16:01:56</td><td><a href='http://www.brisbanetimes.com.au/world/iraqi-prime-minister-haider-alabadi-claims-victory-against-islamic-state-in-tikrit-20150401-1md6hg.html'>site</a></td><td>While Tikrit was largely empty of civilians, hundreds of thousands remain in Mosul, where Islamic State militants have imposed restrictions on residents to keep them from leaving.</td></tr>
 </table></body></html>

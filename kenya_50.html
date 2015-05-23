@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/k/d/5/7/image.related.articleLeadwide.620x349.1mkd3z.png/1428927713112.jpg'></td><td>2015-04-13 12:22:02</td><td>Rape is a serious problem in Kenya but is seldom taken seriously by the police, rights groups say.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/k/d/5/7/image.related.articleLeadwide.620x349.1mkd3z.png/1428927713112.jpg'></td><td>2015-04-13 12:22:02</td><td>The then 16-year-old victim, known by the pseudonym Liz, was reportedly attacked, beaten and then raped by six men as she returned from her grandfather's funeral in western Kenya in June, 2013.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 16:08:05</td><td>"While Kenya boasts one of the most progressive legal and policy frameworks for addressing sexual violence, Liz's case and countless others have revealed significant failures of local authorities to adequately address sexual violence."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 16:08:05</td><td>Kenya 'grass cutter' gang rapists jailed for 15 years</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/k/d/5/7/image.related.articleLeadwide.620x349.1mkd3z.png/1428927713112.jpg'></td><td>2015-04-13 12:22:02</td><td><a href='http://www.brisbanetimes.com.au/world/punishment-for-kenyan-gang-rapists-lifted-from-cutting-grass-to-15-years-jail-20150413-1mkd3z.html'>site</a></td><td><table><tr><td>The then 16-year-old victim, known by the pseudonym Liz, was reportedly attacked, beaten and then raped by six men as she returned from her grandfather's funeral in western Kenya in June, 2013.</td></tr><tr><td>Rape is a serious problem in Kenya but is seldom taken seriously by the police, rights groups say.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 16:08:05</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3036824/Kenya-grass-cutter-gang-rapists-jailed-15-years.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Kenya 'grass cutter' gang rapists jailed for 15 years</td></tr><tr><td>"While Kenya boasts one of the most progressive legal and policy frameworks for addressing sexual violence, Liz's case and countless others have revealed significant failures of local authorities to adequately address sexual violence."</td></tr></table></td></tr>
 </table></body></html>

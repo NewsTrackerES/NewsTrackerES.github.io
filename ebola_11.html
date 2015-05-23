@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.npr.org/assets/img/2015/03/02/ap365449530608-e71a07171670b18ebaf7ff3ec62ce655bb871f8b-s800-c15.jpg'></td><td>2015-03-02 10:09:20</td><td>Pham's patient, Thomas Eric Duncan, was the first person in the United States diagnosed with Ebola.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.npr.org/assets/img/2015/03/02/ap365449530608-e71a07171670b18ebaf7ff3ec62ce655bb871f8b-s800-c15.jpg'></td><td>2015-03-02 10:09:20</td><td>Nurse Treated For Ebola To Sue Texas Hospital</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.npr.org/assets/img/2015/03/02/ap365449530608-e71a07171670b18ebaf7ff3ec62ce655bb871f8b-s800-c15.jpg'></td><td>2015-03-02 10:09:20</td><td><a href='http://www.npr.org/blogs/thetwo-way/2015/03/02/390082857/nurse-treated-for-ebola-to-sue-texas-hospital?utm_medium=RSS&utm_campaign=us'>site</a></td><td><table><tr><td>Nurse Treated For Ebola To Sue Texas Hospital</td></tr><tr><td>Pham's patient, Thomas Eric Duncan, was the first person in the United States diagnosed with Ebola.</td></tr></table></td></tr>
 </table></body></html>

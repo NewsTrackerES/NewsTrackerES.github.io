@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/04/02/microsoft650e.jpg&size=104x59&quality=85'></td><td>2015-04-03 10:00:00</td><td>Bringing the app to iOS and Android is the latest sign of Microsoft's new strategy of putting its best software on as many devices as possible, regardless of whether they are running Windows.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/04/02/microsoft650e.jpg&size=104x59&quality=85'></td><td>2015-04-03 10:00:00</td><td>SEATTLE - Microsoft Corp said on Thursday it is bringing one of its most popular apps, which lets people take photos of a document and turn it into a editable file, to Apple Inc's iPhone and Google Inc's Android.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/04/02/microsoft650e.jpg&size=104x59&quality=85'></td><td>2015-04-03 10:00:00</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/04/02/22324296.html?cid=rsstechnology'>site</a></td><td><table><tr><td>SEATTLE - Microsoft Corp said on Thursday it is bringing one of its most popular apps, which lets people take photos of a document and turn it into a editable file, to Apple Inc's iPhone and Google Inc's Android.</td></tr><tr><td>Bringing the app to iOS and Android is the latest sign of Microsoft's new strategy of putting its best software on as many devices as possible, regardless of whether they are running Windows.</td></tr></table></td></tr>
 </table></body></html>

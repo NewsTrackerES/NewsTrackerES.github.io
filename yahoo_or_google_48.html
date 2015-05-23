@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/7461231f172b4a5510d2fd05bdc9b103e12a69e7/c=30-0-989-721&amp;r=x404&amp;c=534x401/local/-/media/2015/04/15/USATODAY/USATODAY/635646676116086111-AX155-01AE-9.JPG'></td><td>2015-04-15 16:45:49</td><td>The commission said Google "may be artificially divert(ing) traffic from rival comparison shopping services (to its Google Shopping) and hinder their ability to compete."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/7461231f172b4a5510d2fd05bdc9b103e12a69e7/c=30-0-989-721&amp;r=x404&amp;c=534x401/local/-/media/2015/04/15/USATODAY/USATODAY/635646676116086111-AX155-01AE-9.JPG'></td><td>2015-04-15 16:45:49</td><td>In a blog post, Amit Singhal, senior vice president of Google search, said: "We respectfully but strongly disagree with the need to issue a Statement of Objections and look forward to making our case over the weeks ahead."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.gannett-cdn.com/-mm-/7461231f172b4a5510d2fd05bdc9b103e12a69e7/c=30-0-989-721&amp;r=x404&amp;c=534x401/local/-/media/2015/04/15/USATODAY/USATODAY/635646676116086111-AX155-01AE-9.JPG'></td><td>2015-04-15 16:45:49</td><td>Part of its defense: that Google offers consumers a quicker, more direct service.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.gannett-cdn.com/-mm-/012c92707abc581ec9d0e996c046221b05aa6fa2/c=45-0-979-702&amp;r=x404&amp;c=534x401/local/-/media/2015/03/02/USATODAY/USATODAY/635609117448160528-google-2.JPG'></td><td>2015-04-16 16:38:22</td><td>The EU has been investigating Google for five years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.gannett-cdn.com/-mm-/7461231f172b4a5510d2fd05bdc9b103e12a69e7/c=30-0-989-721&amp;r=x404&amp;c=534x401/local/-/media/2015/04/15/USATODAY/USATODAY/635646676116086111-AX155-01AE-9.JPG'></td><td>2015-04-15 16:45:49</td><td><a href='http://www.usatoday.com/story/tech/2015/04/15/eu-competition-commission-google-search-abuse-allegation/25805885/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td>Part of its defense: that Google offers consumers a quicker, more direct service.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/7461231f172b4a5510d2fd05bdc9b103e12a69e7/c=30-0-989-721&amp;r=x404&amp;c=534x401/local/-/media/2015/04/15/USATODAY/USATODAY/635646676116086111-AX155-01AE-9.JPG'></td><td>2015-04-15 16:45:49</td><td><a href='http://www.usatoday.com/story/tech/2015/04/15/eu-competition-commission-google-search-abuse-allegation/25805885/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td><table><tr><td>The commission said Google "may be artificially divert(ing) traffic from rival comparison shopping services (to its Google Shopping) and hinder their ability to compete."</td></tr><tr><td>In a blog post, Amit Singhal, senior vice president of Google search, said: "We respectfully but strongly disagree with the need to issue a Statement of Objections and look forward to making our case over the weeks ahead."</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.gannett-cdn.com/-mm-/012c92707abc581ec9d0e996c046221b05aa6fa2/c=45-0-979-702&amp;r=x404&amp;c=534x401/local/-/media/2015/03/02/USATODAY/USATODAY/635609117448160528-google-2.JPG'></td><td>2015-04-16 16:38:22</td><td><a href='http://www.usatoday.com/story/tech/2015/04/16/google-antitrust-probe-european-commission/25836609/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>The EU has been investigating Google for five years.</td></tr>
 </table></body></html>

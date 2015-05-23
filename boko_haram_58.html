@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 18:49:38</td><td>MAIDUGURI, Nigeria (Reuters) - Boko Haram militants have slit the throats of 12 people in northeast Nigeria as the army was trying to evacuate civilians from the area, a military source and a witness said on Friday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 18:49:38</td><td>"Just as troops were trying to evacuate some civilians from the hills so as to safeguard them from a planned air strike ... some Boko Haram attacked them and slit the throats of 12 people," a military source said of Wednesday's attack.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-17 19:04:46</td><td>Failure to crush Boko Haram or protect civilians was one reason President Goodluck Jonathan lost an election on March 28 to Muhammadu Buhari.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-17 19:04:46</td><td>The town of Gwoza, in mountainous terrain, was one of the last places to fall, on March 27, and there remain pockets of Boko Haram activity in the area, security sources say.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-17 19:04:46</td><td>Boko Haram, fighting to establish an Islamic state, has killed thousands and kidnapped hundreds during its six-year-old insurgency in Africa's biggest economy and top oil producer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 18:49:38</td><td><a href='http://www.reuters.com/article/2015/04/17/us-nigeria-violence-idUSKBN0N827320150417?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>MAIDUGURI, Nigeria (Reuters) - Boko Haram militants have slit the throats of 12 people in northeast Nigeria as the army was trying to evacuate civilians from the area, a military source and a witness said on Friday.</td></tr><tr><td>"Just as troops were trying to evacuate some civilians from the hills so as to safeguard them from a planned air strike ... some Boko Haram attacked them and slit the throats of 12 people," a military source said of Wednesday's attack.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 19:04:46</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3044039/Boko-Haram-slit-throats-12-army-tries-save-civilians--sources.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The town of Gwoza, in mountainous terrain, was one of the last places to fall, on March 27, and there remain pockets of Boko Haram activity in the area, security sources say.</td></tr><tr><td>Failure to crush Boko Haram or protect civilians was one reason President Goodluck Jonathan lost an election on March 28 to Muhammadu Buhari.</td></tr><tr><td>Boko Haram, fighting to establish an Islamic state, has killed thousands and kidnapped hundreds during its six-year-old insurgency in Africa's biggest economy and top oil producer.</td></tr></table></td></tr>
 </table></body></html>

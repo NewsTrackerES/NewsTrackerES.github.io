@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/o/a/3/5/image.related.thumbnail.90x60.1m9x2j.png/1427693916700.jpg'></td><td>2015-03-31 06:57:45</td><td>That's why, on behalf of Apple, I'm standing up to oppose this new wave of legislation - wherever it emerges.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/o/a/3/5/image.related.thumbnail.90x60.1m9x2j.png/1427693916700.jpg'></td><td>2015-03-31 06:57:45</td><td>Our message, to people around the country and around the world, is this: Apple is open.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/o/a/3/5/image.related.thumbnail.90x60.1m9x2j.png/1427693916700.jpg'></td><td>2015-03-31 06:57:45</td><td><a href='http://www.smh.com.au/it-pro/it-opinion/apple-ceo-tim-cook-new-laws-enshrine-discrimination-20150331-1mbpuk.html'>site</a></td><td><table><tr><td>That's why, on behalf of Apple, I'm standing up to oppose this new wave of legislation - wherever it emerges.</td></tr><tr><td>Our message, to people around the country and around the world, is this: Apple is open.</td></tr></table></td></tr>
 </table></body></html>

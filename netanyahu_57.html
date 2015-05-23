@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>It's a mystery to many: Benjamin Netanyahu's campaign gained steam when he ruled out the creation of a Palestinian state, and he seems determined to continue settling occupied land with Jews.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>Analysis: Why Netanyahu?</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>Analysis: Why Netanyahu? It's more than just nationalism</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td>The fact that Islamic State militants are menacing the region does not help, and was exploited by Netanyahu during a campaign in which he portrayed the militants in one TV ad as charging toward Jerusalem, with naive Israeli leftists even helpfully pointing the way.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-19 14:55:38</td><td>Netanyahu, known popularly as Bibi, is a brilliant campaigner who not only does and says what it takes to get elected but seems comfortable doing so.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-19 14:55:38</td><td>Also effective was Netanyahu's controversial appearance two weeks ago on Capitol Hill, where he argued against President Barack Obama's supposedly impending nuclear deal with Iran.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-19 14:55:38</td><td>The relatively polite response from the U.S. administration was, to Netanyahu's fans at least, another sign that he has things well in hand.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:03:14</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15329207.html#storylink=rss'>site</a></td><td><table><tr><td>Analysis: Why Netanyahu? It's more than just nationalism</td></tr><tr><td>Analysis: Why Netanyahu?</td></tr><tr><td>It's a mystery to many: Benjamin Netanyahu's campaign gained steam when he ruled out the creation of a Palestinian state, and he seems determined to continue settling occupied land with Jews.</td></tr><tr><td>The fact that Islamic State militants are menacing the region does not help, and was exploited by Netanyahu during a campaign in which he portrayed the militants in one TV ad as charging toward Jerusalem, with naive Israeli leftists even helpfully pointing the way.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/22/57/7678943/9/square_gallery_thumb.jpg'></td><td>2015-03-19 14:55:38</td><td><a href='http://www.sfgate.com/news/world/article/Analysis-Why-Israelis-chose-Netanyahu-not-just-6144214.php'>site</a></td><td><table><tr><td>Netanyahu, known popularly as Bibi, is a brilliant campaigner who not only does and says what it takes to get elected but seems comfortable doing so.</td></tr><tr><td>Also effective was Netanyahu's controversial appearance two weeks ago on Capitol Hill, where he argued against President Barack Obama's supposedly impending nuclear deal with Iran.</td></tr><tr><td>The relatively polite response from the U.S. administration was, to Netanyahu's fans at least, another sign that he has things well in hand.</td></tr></table></td></tr>
 </table></body></html>

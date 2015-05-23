@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/de_YkP.xAZ2mwGhWYAvw5A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-WAS-Was8925158-1-1-0.jpg'></td><td>2015-05-06 22:42:20</td><td>"It does appear that clearly, Russian-backed separatists in eastern Ukraine are preparing for another round of military action that would be inconsistent with the Minsk agreement," Carter told the Senate Appropriations defense subcommittee.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/de_YkP.xAZ2mwGhWYAvw5A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-WAS-Was8925158-1-1-0.jpg'></td><td>2015-05-06 22:42:20</td><td>Ukraine's representative, former president Leonid Kuchma, said after the meeting that it had been a "serious step towards the political resolution" of the conflict but said the shooting had to stop completely.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/de_YkP.xAZ2mwGhWYAvw5A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-WAS-Was8925158-1-1-0.jpg'></td><td>2015-05-06 22:42:20</td><td><a href='http://news.yahoo.com/separatists-poised-offensive-ukraine-us-224220427.html'>site</a></td><td><table><tr><td>"It does appear that clearly, Russian-backed separatists in eastern Ukraine are preparing for another round of military action that would be inconsistent with the Minsk agreement," Carter told the Senate Appropriations defense subcommittee.</td></tr><tr><td>Ukraine's representative, former president Leonid Kuchma, said after the meeting that it had been a "serious step towards the political resolution" of the conflict but said the shooting had to stop completely.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td>"This was not someone trying to bring healing to Ferguson," Mr Holder said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td>Police shine a light on a helmet as they investigate the scene where two police officers were shot outside the Ferguson Police Department.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td>Police take cover after two officers were shot while standing guard in front of the Ferguson Police Station.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td>Protestors demonstrate outside the Ferguson Police Department on Wednesday.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td>The shooting came just hours after the Ferguson police chief, Thomas Jackson, announced that he would resign, a move greeted with praise from protesters.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-15 18:04:12</td><td>Arrest Made In Connection To Ferguson Police Shooting</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td><a href='http://www.theage.com.au/world/shot-ferguson-police-officers-released-from-us-hospital-20150313-142y77.html'>site</a></td><td><table><tr><td>Protestors demonstrate outside the Ferguson Police Department on Wednesday.</td></tr><tr><td>Police take cover after two officers were shot while standing guard in front of the Ferguson Police Station.</td></tr><tr><td>Police shine a light on a helmet as they investigate the scene where two police officers were shot outside the Ferguson Police Department.</td></tr><tr><td>The shooting came just hours after the Ferguson police chief, Thomas Jackson, announced that he would resign, a move greeted with praise from protesters.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td><a href='http://www.brisbanetimes.com.au/world/shot-ferguson-police-officers-released-from-us-hospital-20150313-142y77.html'>site</a></td><td>"This was not someone trying to bring healing to Ferguson," Mr Holder said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-15 18:04:12</td><td><a href='http://www.huffingtonpost.com/2015/03/15/ferguson-police-shooting-arrest_n_6873364.html'>site</a></td><td>Arrest Made In Connection To Ferguson Police Shooting</td></tr>
 </table></body></html>

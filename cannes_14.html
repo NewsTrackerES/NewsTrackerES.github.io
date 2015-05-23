@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 13:26:07</td><td>Gus Van Sant ("Drugstore Cowboy," Good Will Hunting," "Elephant"), arriving in Cannes later this week with "The Sea of Trees" starring Matthew McConaughey and Ken Watanabe. "</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 13:26:07</td><td>And just to balance the scales while asserting the festival's democratic, egalitarian parameters, the new Pixar movie "Inside Out," opening commercially in June, will make its world premiere at Cannes May 18.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 13:26:07</td><td>Whatever the local crime report, each year the Cannes Film Festival sets the stage for the next year's worth of international cinema.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 13:26:07</td><td><a href='http://www.miamiherald.com/entertainment/movies-news-reviews/article20813100.html#storylink=rss'>site</a></td><td><table><tr><td>Whatever the local crime report, each year the Cannes Film Festival sets the stage for the next year's worth of international cinema.</td></tr><tr><td>Gus Van Sant ("Drugstore Cowboy," Good Will Hunting," "Elephant"), arriving in Cannes later this week with "The Sea of Trees" starring Matthew McConaughey and Ken Watanabe. "</td></tr><tr><td>And just to balance the scales while asserting the festival's democratic, egalitarian parameters, the new Pixar movie "Inside Out," opening commercially in June, will make its world premiere at Cannes May 18.</td></tr></table></td></tr>
 </table></body></html>

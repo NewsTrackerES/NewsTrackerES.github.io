@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 09:01:08</td><td>UN rights chief: Boko Haram fighters murdered captive women</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>Retreating Boko Haram militants have murdered their so-called "wives" - women and girls they held as slaves - and other captives as military offensives by Nigeria and its neighbours advanced, Zeid said.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>The current dry season has intensified Boko Haram incursions into Cameroon, Chad and Niger, spreading bloodshed and desolation even more widely, the rights chief said.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td>It called for those who have committed crimes on behalf of Boko Haram to be brought before competent courts of the affected states and held accountable.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 09:01:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/01/un-rights-chief-boko-haram-fighters-murdered-captive-women'>site</a></td><td>UN rights chief: Boko Haram fighters murdered captive women</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/8/3/c/8/image.related.articleLeadwide.620x349.1mddcp.png/1427955517562.jpg'></td><td>2015-04-02 06:18:45</td><td><a href='http://www.brisbanetimes.com.au/world/boko-haram-uses-children-as-human-bombs-commits-heinous-crimes-un-20150402-1mddcp.html'>site</a></td><td><table><tr><td>It called for those who have committed crimes on behalf of Boko Haram to be brought before competent courts of the affected states and held accountable.</td></tr><tr><td>Retreating Boko Haram militants have murdered their so-called "wives" - women and girls they held as slaves - and other captives as military offensives by Nigeria and its neighbours advanced, Zeid said.</td></tr><tr><td>The current dry season has intensified Boko Haram incursions into Cameroon, Chad and Niger, spreading bloodshed and desolation even more widely, the rights chief said.</td></tr></table></td></tr>
 </table></body></html>

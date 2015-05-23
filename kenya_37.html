@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,10 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 09:26:00</td><td>"We targeted the two areas because according to information we have, those (al Shabaab) fellows are coming from there to attack Kenya," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 09:26:00</td><td>Jets pounded the camps in Gondodowe and Ismail, both in the Gedo region bordering Kenya, the military source said on Monday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 09:28:47</td><td>Kenya bombed al Shabaab camps in Somalia on Sunday: military source</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-06 09:28:47</td><td>Kenya has struggled to stop the flow of al Shabaab militants and weapons across its porous 700 km border with Somalia.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.cbc.ca/1.3020328.1428016688!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/kenya-attack.jpg'></td><td>2015-04-06 09:50:55</td><td>The Kenyan air force bombed two al-Shabaab camps in Somalia on Sunday, a Kenya Defence Forces (KDF) source said, in the first major military response to last week's attack by the militant group on a Kenyan university.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/f/1/j/a/image.related.thumbnail.90x60.1mf11b.png/1428291984017.jpg'></td><td>2015-04-06 11:46:31</td><td>"The US used to have many soldiers in Somalia but it recalled them. Kenya should also remove its military officers from Somalia," Mr Odinga said on Sunday, according to comments in Monday's edition of Kenya's Standard newspaper.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/f/1/j/a/image.related.thumbnail.90x60.1mf11b.png/1428291984017.jpg'></td><td>2015-04-06 11:46:31</td><td>Kenya has so far shown no inclination to pull out of Somalia where its troops, part of a UN-backed African Union peacekeeping mission, have wrestled swathes of territory from the Islamist group.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/f/1/j/a/image.related.thumbnail.90x60.1mf11b.png/1428291984017.jpg'></td><td>2015-04-06 11:46:31</td><td>The violence has also damaged Kenya's economy by scaring away tourists and investors.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-04-06 13:01:30</td><td>Jets pounded the camps in the Gedo region on the other side of the border on Sunday, Kenya Defence Forces spokesman David Obonyo said.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297684002925_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-06 13:23:09</td><td>Kenya destroys 2 al Shabaab camps in Somalia</td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297684002925_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-06 13:23:09</td><td>The mission was part of efforts to stop al Shabaab fighters from those camps carrying out cross-border raids into Kenya, Obonyo said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 09:26:00</td><td><a href='http://www.huffingtonpost.com/2015/04/06/kenya-attacks-al-shabaab_n_7009350.html'>site</a></td><td><table><tr><td>Jets pounded the camps in Gondodowe and Ismail, both in the Gedo region bordering Kenya, the military source said on Monday.</td></tr><tr><td>"We targeted the two areas because according to information we have, those (al Shabaab) fellows are coming from there to attack Kenya," he said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 09:28:47</td><td><a href='http://news.yahoo.com/kenya-bombed-two-al-shabaab-camps-somalia-sunday-090433023.html'>site</a></td><td><table><tr><td>Kenya bombed al Shabaab camps in Somalia on Sunday: military source</td></tr><tr><td>Kenya has struggled to stop the flow of al Shabaab militants and weapons across its porous 700 km border with Somalia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.cbc.ca/1.3020328.1428016688!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/kenya-attack.jpg'></td><td>2015-04-06 09:50:55</td><td><a href='http://www.cbc.ca/news/world/kenyan-air-force-bombs-al-shabaab-camps-in-retaliation-for-garissa-attack-1.3022109?cmp=rss'>site</a></td><td>The Kenyan air force bombed two al-Shabaab camps in Somalia on Sunday, a Kenya Defence Forces (KDF) source said, in the first major military response to last week's attack by the militant group on a Kenyan university.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/f/1/j/a/image.related.thumbnail.90x60.1mf11b.png/1428291984017.jpg'></td><td>2015-04-06 11:46:31</td><td><a href='http://www.smh.com.au/world/kenya-bombs-alshabab-camps-in-somalia-after-garissa-attack-20150406-1mfimk.html'>site</a></td><td><table><tr><td>The violence has also damaged Kenya's economy by scaring away tourists and investors.</td></tr><tr><td>"The US used to have many soldiers in Somalia but it recalled them. Kenya should also remove its military officers from Somalia," Mr Odinga said on Sunday, according to comments in Monday's edition of Kenya's Standard newspaper.</td></tr><tr><td>Kenya has so far shown no inclination to pull out of Somalia where its troops, part of a UN-backed African Union peacekeeping mission, have wrestled swathes of territory from the Islamist group.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-06 13:01:30</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3027261/Kenya-bombed-al-Shabaab-camps-Somalia-Sunday--military-source.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Jets pounded the camps in the Gedo region on the other side of the border on Sunday, Kenya Defence Forces spokesman David Obonyo said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297684002925_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-06 13:23:09</td><td><a href='http://www.torontosun.com/2015/04/06/kenya-says-destroys-2-al-shabaab-camps-in-somalia'>site</a></td><td><table><tr><td>Kenya destroys 2 al Shabaab camps in Somalia</td></tr><tr><td>The mission was part of efforts to stop al Shabaab fighters from those camps carrying out cross-border raids into Kenya, Obonyo said.</td></tr></table></td></tr>
 </table></body></html>

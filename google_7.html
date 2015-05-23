@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 10:37:37</td><td>They say Google's ''clandestine'' tracking and collation of internet usage between summer 2011 and early 2012 led to distress and embarrassment among UK users.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 10:37:37</td><td>A group known as Safari Users Against Google's Secret Tracking want to take legal action in the English courts over the internet giant's Apple Safari internet browser.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-27 10:37:37</td><td>Dan Tench, a partner at law firm Olswang, which represents the group, said the landmark case decides "whether British consumers actually have any right to hold Google to account in this country".</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 10:37:37</td><td>Google loses appeal bid over suing</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-27 10:37:37</td><td>They accuse Google of collecting private information without their knowledge and consent by the use of "cookies" - a small string of text saved on the user's device.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-27 10:37:37</td><td>They accuse Google of bypassing security settings in order to track their online browsing and to target them with personalised advertisements.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-27 10:37:37</td><td>Google has lost a Court of Appeal bid to prevent British consumers having the right to sue it in the UK.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 10:37:37</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014439/Google-loses-appeal-bid-suing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Google loses appeal bid over suing</td></tr><tr><td>Google has lost a Court of Appeal bid to prevent British consumers having the right to sue it in the UK.</td></tr><tr><td>A group known as Safari Users Against Google's Secret Tracking want to take legal action in the English courts over the internet giant's Apple Safari internet browser.</td></tr><tr><td>They accuse Google of bypassing security settings in order to track their online browsing and to target them with personalised advertisements.</td></tr><tr><td>They say Google's ''clandestine'' tracking and collation of internet usage between summer 2011 and early 2012 led to distress and embarrassment among UK users.</td></tr><tr><td>They accuse Google of collecting private information without their knowledge and consent by the use of "cookies" - a small string of text saved on the user's device.</td></tr><tr><td>Dan Tench, a partner at law firm Olswang, which represents the group, said the landmark case decides "whether British consumers actually have any right to hold Google to account in this country".</td></tr></table></td></tr>
 </table></body></html>

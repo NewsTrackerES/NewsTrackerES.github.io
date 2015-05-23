@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/45d/news/world/article23467105.ece/ALTERNATES/w220/web-wo-putin-crimea.JPG'></td><td>2015-03-16 01:28:56</td><td>The film, shown across Russia ahead of the first anniversary of Russia's annexation of Crimea, documented the seizure of the peninsula and provided details of Mr. Yanukovich's last hours in Ukraine before he fled to Rostov-on-Don, in southern Russia.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Xnq6nKuRvskdEb01QU2ECQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a7549a411151d211730f6a7067002969.jpg'></td><td>2015-04-16 10:49:26</td><td>Russian President Vladimir Putin has accused Ukraine of violating its obligations under a peace deal by maintaining an economic blockade on rebellious eastern regions.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Xnq6nKuRvskdEb01QU2ECQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a7549a411151d211730f6a7067002969.jpg'></td><td>2015-04-16 10:49:26</td><td>He said Thursday during a live televised call-in show that Ukraine hasn't delivered pensions and other social payments to people in the east and has shut financial services to the region.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Xnq6nKuRvskdEb01QU2ECQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a7549a411151d211730f6a7067002969.jpg'></td><td>2015-04-16 10:49:26</td><td>The Latest: Putin says Ukraine is cutting off east</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/45d/news/world/article23467105.ece/ALTERNATES/w220/web-wo-putin-crimea.JPG'></td><td>2015-03-16 01:28:56</td><td><a href='http://www.theglobeandmail.com/news/world/putin-was-ready-for-nuclear-alert-over-crimea/article23467106/?cmpid=rss1'>site</a></td><td>The film, shown across Russia ahead of the first anniversary of Russia's annexation of Crimea, documented the seizure of the peninsula and provided details of Mr. Yanukovich's last hours in Ukraine before he fled to Rostov-on-Don, in southern Russia.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Xnq6nKuRvskdEb01QU2ECQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a7549a411151d211730f6a7067002969.jpg'></td><td>2015-04-16 10:49:26</td><td><a href='http://news.yahoo.com/latest-putin-hails-iran-nuclear-progress-102415539.html'>site</a></td><td><table><tr><td>The Latest: Putin says Ukraine is cutting off east</td></tr><tr><td>Russian President Vladimir Putin has accused Ukraine of violating its obligations under a peace deal by maintaining an economic blockade on rebellious eastern regions.</td></tr><tr><td>He said Thursday during a live televised call-in show that Ukraine hasn't delivered pensions and other social payments to people in the east and has shut financial services to the region.</td></tr></table></td></tr>
 </table></body></html>

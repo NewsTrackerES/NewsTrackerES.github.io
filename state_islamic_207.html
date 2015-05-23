@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 06:15:36</td><td>"The tribes of Anbar are ready to fight the Islamic State and eject them but on the condition that the state arms them."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 06:15:36</td><td>But if they were used in Anbar, it would only further alienate the Sunni population in the province, where the Islamic State group has been entrenched since January 2014.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-28 06:15:36</td><td>On Friday, government reports of advances in Anbar were belied by an Islamic State attack on a water control system on a canal north of Islamic State-occupied Fallujah that killed a division commander and at least a dozen soldiers.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/28/876/493/Mideast Iraq Islamic State-1.jpg?ve=1&tl=1'></td><td>2015-04-28 06:15:36</td><td>BAGHDAD - Iraqi forces are on a westward push to retake Anbar, a sprawling Sunni-dominated desert province captured by the Islamic State group in their offensive last year.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-28 06:17:01</td><td>Iraq Faces Huge Challenges Dislodging Islamic State in Anbar</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-28 07:17:01</td><td>With the Islamic State in control of large parts of Ramadi as well as all of Fallujah - a city the U.S. military only retook with difficulty in 2004 - the Iraqi troops have some incredibly difficult urban fighting ahead of them.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-28 07:17:01</td><td>"We are caught between the hammer of the Islamic State and the anvil of the militias and we don't know where to go," al-Rishawi said.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/36/05/53/7887593/3/square_gallery_thumb.jpg'></td><td>2015-04-28 08:14:18</td><td>Iraqi Shiites wave the Iraqi flag as they hold a rally to celebrate the Iraqi security forces victory over the Islamic state group in Tikrit, in Baghdad, Iraq, Saturday, April 25, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/28/876/493/Mideast Iraq Islamic State-1.jpg?ve=1&tl=1'></td><td>2015-04-28 06:15:36</td><td><a href='http://www.foxnews.com/world/2015/04/28/iraqi-army-and-militia-allies-face-huge-obstacles-in-dislodging-islamic-state/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>BAGHDAD - Iraqi forces are on a westward push to retake Anbar, a sprawling Sunni-dominated desert province captured by the Islamic State group in their offensive last year.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-28 06:15:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/28/iraq-faces-huge-challenges-dislodging-islamic-state-in-anbar'>site</a></td><td>On Friday, government reports of advances in Anbar were belied by an Islamic State attack on a water control system on a canal north of Islamic State-occupied Fallujah that killed a division commander and at least a dozen soldiers.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 06:15:36</td><td><a href='http://www.utsandiego.com/news/2015/apr/27/iraq-faces-huge-challenges-dislodging-islamic/'>site</a></td><td><table><tr><td>But if they were used in Anbar, it would only further alienate the Sunni population in the province, where the Islamic State group has been entrenched since January 2014.</td></tr><tr><td>"The tribes of Anbar are ready to fight the Islamic State and eject them but on the condition that the state arms them."</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-28 06:17:01</td><td><a href='http://abcnews.go.com/International/wireStory/iraq-faces-huge-challenges-dislodging-islamic-state-anbar-30635023'>site</a></td><td>Iraq Faces Huge Challenges Dislodging Islamic State in Anbar</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 07:17:01</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3058625/Iraq-faces-huge-challenges-dislodging-Islamic-State-Anbar.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>With the Islamic State in control of large parts of Ramadi as well as all of Fallujah - a city the U.S. military only retook with difficulty in 2004 - the Iraqi troops have some incredibly difficult urban fighting ahead of them.</td></tr><tr><td>"We are caught between the hammer of the Islamic State and the anvil of the militias and we don't know where to go," al-Rishawi said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/36/05/53/7887593/3/square_gallery_thumb.jpg'></td><td>2015-04-28 08:14:18</td><td><a href='http://www.sfgate.com/news/world/article/Iraq-faces-huge-challenges-dislodging-Islamic-6227789.php'>site</a></td><td>Iraqi Shiites wave the Iraqi flag as they hold a rally to celebrate the Iraqi security forces victory over the Islamic state group in Tikrit, in Baghdad, Iraq, Saturday, April 25, 2015.</td></tr>
 </table></body></html>

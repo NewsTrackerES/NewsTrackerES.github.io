@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/27/eb63666bd73edd12740f6a70670022df2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-27 14:54:51</td><td>A U.S. diplomat opened her speech on Iranian nuclear negotiations talking about how she grew up going to civil rights marches and says her father once helped baseball star Frank Robinson find a home in an all-white neighborhood of Baltimore.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/27/eb63666bd73edd12740f6a70670022df2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-27 14:54:51</td><td>She says that years ago, her father went house to house to convince homeowners in Baltimore not to flee, saying that Robinson shared their desire for good schools and a safe neighborhood.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 14:58:16</td><td>The recent case of Freddie Gray, a 25-year-old black man who died after sustaining serious injuries while in the custody of Baltimore police, has intensified a national debate over police treatment of African-Americans.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 14:58:16</td><td>US diplomat recalls racial tension in Baltimore</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 15:19:04</td><td>Mourners are filing into New Shiloh Baptist Church to view the body of Freddie Gray, who suffered a critical spinal injury while in Baltimore police custody.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.usnews.com/dims4/USNEWS/a2597f2/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F98%2F7418f38260e23ab740eb2ddf606d3f%2Fmedia%3Ae2fb0fd8e109455cab4cd8d408286b26APTOPIXSuspectDiesBaltimore.JPEG'></td><td>2015-04-27 16:23:49</td><td>Baltimore police say the department believes three notoriously violent gangs are now working together to "take out" law enforcement officers.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/27/eb63666bd73edd12740f6a70670022df2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-27 14:54:51</td><td><a href='http://www.utsandiego.com/news/2015/apr/27/the-latest-diplomat-speaks-of-her-background-in/'>site</a></td><td><table><tr><td>A U.S. diplomat opened her speech on Iranian nuclear negotiations talking about how she grew up going to civil rights marches and says her father once helped baseball star Frank Robinson find a home in an all-white neighborhood of Baltimore.</td></tr><tr><td>She says that years ago, her father went house to house to convince homeowners in Baltimore not to flee, saying that Robinson shared their desire for good schools and a safe neighborhood.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:58:16</td><td><a href='http://www.miamiherald.com/news/politics-government/article19709466.html#storylink=rss'>site</a></td><td><table><tr><td>US diplomat recalls racial tension in Baltimore</td></tr><tr><td>The recent case of Freddie Gray, a 25-year-old black man who died after sustaining serious injuries while in the custody of Baltimore police, has intensified a national debate over police treatment of African-Americans.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 15:19:04</td><td><a href='http://www.miamiherald.com/living/health-fitness/article19706940.html#storylink=rss'>site</a></td><td>Mourners are filing into New Shiloh Baptist Church to view the body of Freddie Gray, who suffered a critical spinal injury while in Baltimore police custody.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.usnews.com/dims4/USNEWS/a2597f2/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F98%2F7418f38260e23ab740eb2ddf606d3f%2Fmedia%3Ae2fb0fd8e109455cab4cd8d408286b26APTOPIXSuspectDiesBaltimore.JPEG'></td><td>2015-04-27 16:23:49</td><td><a href='http://www.usnews.com/news/us/articles/2015/04/27/the-latest-diplomat-speaks-of-her-background-in-baltimore'>site</a></td><td>Baltimore police say the department believes three notoriously violent gangs are now working together to "take out" law enforcement officers.</td></tr>
 </table></body></html>

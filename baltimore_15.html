@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 01:17:17</td><td>WASHINGTON (AP) - The White House says the head of President Barack Obama's initiative for minority males will attend the funeral of a Baltimore man who died after sustaining serious injuries while in police custody.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/_FUjRyueOto48amqX05bTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/video/video.abcnewsplus.com/d49d5750ffed67d5a4a3f7779403945a.cf.jpg'></td><td>2015-04-27 01:17:24</td><td>The White House said Sunday night that Johnson, a Baltimore native, will be accompanied by two other officials.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/_FUjRyueOto48amqX05bTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/video/video.abcnewsplus.com/d49d5750ffed67d5a4a3f7779403945a.cf.jpg'></td><td>2015-04-27 01:17:24</td><td>He is being buried Monday in Baltimore.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 01:17:17</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/26/obama-sends-aide-to-funeral-of-arrested-baltimore-man'>site</a></td><td>WASHINGTON (AP) - The White House says the head of President Barack Obama's initiative for minority males will attend the funeral of a Baltimore man who died after sustaining serious injuries while in police custody.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/_FUjRyueOto48amqX05bTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/video/video.abcnewsplus.com/d49d5750ffed67d5a4a3f7779403945a.cf.jpg'></td><td>2015-04-27 01:17:24</td><td><a href='http://news.yahoo.com/obama-sends-aide-funeral-arrested-baltimore-man-005738837--politics.html'>site</a></td><td><table><tr><td>He is being buried Monday in Baltimore.</td></tr><tr><td>The White House said Sunday night that Johnson, a Baltimore native, will be accompanied by two other officials.</td></tr></table></td></tr>
 </table></body></html>

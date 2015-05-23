@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>NEW YORK - Of the 13 Apple Watch models I tried over two sessions, the one I liked most cost $15,000.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>I didn't have good answers as my Apple Watch try-on visits started - at first modestly, with models that cost about the same as an iPhone.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>Review: Many choices, indecision with Apple Watch</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>Both sessions at the Apple store began with indecision: What size do I want?</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td>I bypassed the appointments because Apple's media reps in Cupertino, California, had arranged my sessions.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/11/07/277385B500000578-0-image-m-88_1428734830435.jpg'></td><td>2015-04-11 13:02:59</td><td>A child looks at a display of Apple Watches at an Apple retail store in Beijing Friday, April 10, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td><a href='http://www.foxbusiness.com/technology/2015/04/11/review-apple-watch-try-on-visits-with-many-choices-lead-to-indecision/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>Review: Many choices, indecision with Apple Watch</td></tr><tr><td>NEW YORK - Of the 13 Apple Watch models I tried over two sessions, the one I liked most cost $15,000.</td></tr><tr><td>Both sessions at the Apple store began with indecision: What size do I want?</td></tr><tr><td>I didn't have good answers as my Apple Watch try-on visits started - at first modestly, with models that cost about the same as an iPhone.</td></tr><tr><td>I bypassed the appointments because Apple's media reps in Cupertino, California, had arranged my sessions.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/11/07/277385B500000578-0-image-m-88_1428734830435.jpg'></td><td>2015-04-11 13:02:59</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3034815/Review-Many-choices-indecision-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A child looks at a display of Apple Watches at an Apple retail store in Beijing Friday, April 10, 2015.</td></tr>
 </table></body></html>

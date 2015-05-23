@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/13/bd3b15f894c68610730f6a7067001645_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-13 16:59:45</td><td>WASHINGTON (AP) - Hillary Rodham Clinton spent nearly two years tiptoeing around a decision to run for president that much of the political world assumed was a done deal.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this July 7, 2012, file photo, U.S. Secretary of State Hillary Rodham Clinton, left, speaks during a news conference with then-President of Afghanistan Hamid Karzai, at the Presidential Palace in Kabul.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this Dec. 1, 2008, file photo, then-Secretary of State-designate Sen. Hillary Rodham Clinton speaks during a news conference with President-elect Barack Obama in Chicago.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this April 2, 2013, file photo Vice President Joe Biden and former Secretary of State Hillary Rodham Clinton are seen in Washington.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td>FILE - In this Dec. 3, 2014 file photo, former Secretary of State Hillary Rodham Clinton speaks in Gaston Hall at Georgetown University, in Washington.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/13/bd3b15f894c68610730f6a7067001645_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-13 16:59:45</td><td><a href='http://www.utsandiego.com/news/2015/apr/13/hillary-clintons-long-road-back-into-presidential/'>site</a></td><td>WASHINGTON (AP) - Hillary Rodham Clinton spent nearly two years tiptoeing around a decision to run for president that much of the political world assumed was a done deal.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article18406703.html#storylink=rss'>site</a></td><td><table><tr><td>FILE - In this Dec. 3, 2014 file photo, former Secretary of State Hillary Rodham Clinton speaks in Gaston Hall at Georgetown University, in Washington.</td></tr><tr><td>FILE - In this April 2, 2013, file photo Vice President Joe Biden and former Secretary of State Hillary Rodham Clinton are seen in Washington.</td></tr><tr><td>FILE - In this Dec. 1, 2008, file photo, then-Secretary of State-designate Sen. Hillary Rodham Clinton speaks during a news conference with President-elect Barack Obama in Chicago.</td></tr><tr><td>FILE - In this July 7, 2012, file photo, U.S. Secretary of State Hillary Rodham Clinton, left, speaks during a news conference with then-President of Afghanistan Hamid Karzai, at the Presidential Palace in Kabul.</td></tr></table></td></tr>
 </table></body></html>

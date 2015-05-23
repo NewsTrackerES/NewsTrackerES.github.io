@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/yaLlnKFmlQKIYrtKdui_sA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/93bd2170b16d1116770f6a70670013fa.jpg'></td><td>2015-05-21 02:24:00</td><td>The contingent of foreigners who have taken up arms on behalf of Islamic State during the past 3 1/2 years is more than twice as big as the French Foreign Legion.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>And there have been many, many more: between 16,000 and 17,000, according to one independent Western estimate, men and a small number of women from 90 countries or more who have streamed to Syria and Iraq to wage Muslim holy war for the Islamic State.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>The conflict in Syria and Iraq has now drawn more volunteer fighters than past Islamist causes in Afghanistan and the former Yugoslavia - and an estimated eight out of 10 enlistees have joined Islamic State.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>The study reported that among people leaving that country for Syria out of "Islamic extremist motives," 65 percent were believed to have prior criminal records.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>Areeb Majeed, 23, from a suburb of Mumbai, India, joined Islamic State in May 2014 and fought for six months, killing up to 55 people and taking a gunshot to the chest.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>But not, according to the Canadian Broadcasting Corp., before he had recruited five others from Toronto to come fight for the Islamic State.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>"Every person can contribute something to the Islamic State," a Canadian enlistee in Islamic State, Andre Poulin, says in a videotaped statement that has been used for online recruitment.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td>Once recruits arrive in areas held by Islamic State, they appear to receive only rudimentary military training - including how to load and fire a Kalashnikov assault rifle.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/yaLlnKFmlQKIYrtKdui_sA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/93bd2170b16d1116770f6a70670013fa.jpg'></td><td>2015-05-21 02:24:00</td><td><a href='http://news.yahoo.com/legion-foreign-fighters-battles-islamic-state-010202623.html'>site</a></td><td>The contingent of foreigners who have taken up arms on behalf of Islamic State during the past 3 1/2 years is more than twice as big as the French Foreign Legion.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47371013,width-300,resizemode-4/ISIS.jpg'></td><td>2015-05-21 10:17:26</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Legion-of-foreign-fighters-battles-for-Islamic-State/articleshow/47370983.cms'>site</a></td><td><table><tr><td>And there have been many, many more: between 16,000 and 17,000, according to one independent Western estimate, men and a small number of women from 90 countries or more who have streamed to Syria and Iraq to wage Muslim holy war for the Islamic State.</td></tr><tr><td>"Every person can contribute something to the Islamic State," a Canadian enlistee in Islamic State, Andre Poulin, says in a videotaped statement that has been used for online recruitment.</td></tr><tr><td>The conflict in Syria and Iraq has now drawn more volunteer fighters than past Islamist causes in Afghanistan and the former Yugoslavia - and an estimated eight out of 10 enlistees have joined Islamic State.</td></tr><tr><td>The study reported that among people leaving that country for Syria out of "Islamic extremist motives," 65 percent were believed to have prior criminal records.</td></tr><tr><td>Once recruits arrive in areas held by Islamic State, they appear to receive only rudimentary military training - including how to load and fire a Kalashnikov assault rifle.</td></tr><tr><td>Areeb Majeed, 23, from a suburb of Mumbai, India, joined Islamic State in May 2014 and fought for six months, killing up to 55 people and taking a gunshot to the chest.</td></tr><tr><td>But not, according to the Canadian Broadcasting Corp., before he had recruited five others from Toronto to come fight for the Islamic State.</td></tr></table></td></tr>
 </table></body></html>

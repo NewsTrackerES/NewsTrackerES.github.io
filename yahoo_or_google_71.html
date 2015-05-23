@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/25/102620184-AP855095418230.530x298.jpg?v=1429996903'></td><td>2015-04-25 21:17:00</td><td>He described himself as an "Inventor, Adventurer, and Energetic Engineer" on his Google+ page.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/25/4794b682869fb612740f6a7067004ff2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-25 21:58:55</td><td>Google says it is committing $1 million to the quake response.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/25/4794b682869fb612740f6a7067004ff2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-25 21:58:55</td><td>He served as product manager and the head of privacy at Google X, the company's secretive arm best known for "moonshot" projects such as the self-driving car.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/25/4794b682869fb612740f6a7067004ff2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-25 21:58:55</td><td>Google confirmed his death.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Fredinburg, a Google executive who described himself as an adventurer, was among the hundreds who died in a massive earthquake that struck Nepal.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Lawrence You, the company's director of privacy, posted online that Fredinburg was in Nepal with three other Google employees climbing Mount Everest.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Fredinburg started at Google in 2007.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Google would not give further details.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>According to the technology blog Re/Code, Fredinburg was an experienced climber who co-founded, in his spare time, Google Adventure.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Google said it has launched a "person finder" tool for Nepal to help people find loved ones in the aftermath of the quake and "is working to get updated satellite imagery to aid in the recovery effort."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/25/102620184-AP855095418230.530x298.jpg?v=1429996903'></td><td>2015-04-25 21:17:00</td><td><a href='http://www.cnbc.com/id/102620183'>site</a></td><td>He described himself as an "Inventor, Adventurer, and Energetic Engineer" on his Google+ page.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td><a href='http://www.foxnews.com/us/2015/04/26/google-executive-dan-fredinburg-among-hundreds-dead-from-nepal-earthquake/'>site</a></td><td><table><tr><td>Fredinburg, a Google executive who described himself as an adventurer, was among the hundreds who died in a massive earthquake that struck Nepal.</td></tr><tr><td>Lawrence You, the company's director of privacy, posted online that Fredinburg was in Nepal with three other Google employees climbing Mount Everest.</td></tr><tr><td>Google would not give further details.</td></tr><tr><td>According to the technology blog Re/Code, Fredinburg was an experienced climber who co-founded, in his spare time, Google Adventure.</td></tr><tr><td>Fredinburg started at Google in 2007.</td></tr><tr><td>Google said it has launched a "person finder" tool for Nepal to help people find loved ones in the aftermath of the quake and "is working to get updated satellite imagery to aid in the recovery effort."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/25/4794b682869fb612740f6a7067004ff2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-25 21:58:55</td><td><a href='http://www.utsandiego.com/news/2015/apr/25/google-executive-among-hundreds-dead-from-nepal/'>site</a></td><td><table><tr><td>Google confirmed his death.</td></tr><tr><td>He served as product manager and the head of privacy at Google X, the company's secretive arm best known for "moonshot" projects such as the self-driving car.</td></tr><tr><td>Google says it is committing $1 million to the quake response.</td></tr></table></td></tr>
 </table></body></html>

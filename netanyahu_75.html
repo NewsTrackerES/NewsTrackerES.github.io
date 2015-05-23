@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 09:33:00</td><td>Arab-Israeli politician Ahmed Tibi told Israel Radio Tuesday that Netanyahu's attempt to defuse the dispute was "not an honest apology."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 09:35:11</td><td>Arab politicians said his election victory was illegitimate, claiming Netanyahu won the vote by pandering to anti-Arab fears.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 09:35:11</td><td>His sudden turnaround victory came as Netanyahu made his remark about Arab voters in the final hours of voting.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 10:35:14</td><td>Emilie Moatti, a spokeswoman for the Joint List, said the Arab dignitaries who gathered at Netanyahu's home where the apology was filmed were all Likud supporters, with no Joint List representatives invited.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/bMuu1ei2QN6Kl6waDHnl1g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/76eb811e5c11a20d710f6a70670088a1.jpg'></td><td>2015-03-24 12:22:43</td><td>In the Arab village of Abu Ghosh, a symbol of coexistence with its famous hummus restaurants packed with Jewish visitors, Arab residents were not impressed by Netanyahu's kind words.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-24 13:38:43</td><td>Arab-Israeli leaders reject Netanyahu's apology for offending Arabs</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 09:33:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-24-ML-Israel-Arabs/id-ad20795818264ab292ac445077ae6a87'>site</a></td><td>Arab-Israeli politician Ahmed Tibi told Israel Radio Tuesday that Netanyahu's attempt to defuse the dispute was "not an honest apology."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 09:35:11</td><td><a href='http://www.startribune.com/world/297351111.html'>site</a></td><td><table><tr><td>Arab politicians said his election victory was illegitimate, claiming Netanyahu won the vote by pandering to anti-Arab fears.</td></tr><tr><td>His sudden turnaround victory came as Netanyahu made his remark about Arab voters in the final hours of voting.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 10:35:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11422452&ref=rss'>site</a></td><td>Emilie Moatti, a spokeswoman for the Joint List, said the Arab dignitaries who gathered at Netanyahu's home where the apology was filmed were all Likud supporters, with no Joint List representatives invited.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/bMuu1ei2QN6Kl6waDHnl1g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/76eb811e5c11a20d710f6a70670088a1.jpg'></td><td>2015-03-24 12:22:43</td><td><a href='http://news.yahoo.com/arab-israeli-political-leaders-reject-netanyahus-apology-093046003.html'>site</a></td><td>In the Arab village of Abu Ghosh, a symbol of coexistence with its famous hummus restaurants packed with Jewish visitors, Arab residents were not impressed by Netanyahu's kind words.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-24 13:38:43</td><td><a href='http://www.ctvnews.ca/world/arab-israeli-leaders-reject-netanyahu-s-apology-for-offending-arabs-1.2294497'>site</a></td><td>Arab-Israeli leaders reject Netanyahu's apology for offending Arabs</td></tr>
 </table></body></html>

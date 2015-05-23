@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 17:57:07</td><td>HBO Now streaming service launches on Apple products</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 18:37:05</td><td>HBO Now, the stand-alone streaming service, launched Tuesday morning on Apple products, HBO said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 18:37:05</td><td>The groundbreaking move has been anticipated since HBO Chief Executive Richard Plepler unveiled the service during an Apple product conference last month in San Francisco.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 18:37:05</td><td>Apple, in an effort to woo new customers, lowered the price of its Apple TV device to $69.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 17:57:07</td><td><a href='http://www.miamiherald.com/entertainment/tv/article17681228.html#storylink=rss'>site</a></td><td>HBO Now streaming service launches on Apple products</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 18:37:05</td><td><a href='http://www.miamiherald.com/entertainment/tv/article17696318.html#storylink=rss'>site</a></td><td><table><tr><td>HBO Now, the stand-alone streaming service, launched Tuesday morning on Apple products, HBO said.</td></tr><tr><td>The groundbreaking move has been anticipated since HBO Chief Executive Richard Plepler unveiled the service during an Apple product conference last month in San Francisco.</td></tr><tr><td>Apple, in an effort to woo new customers, lowered the price of its Apple TV device to $69.</td></tr></table></td></tr>
 </table></body></html>

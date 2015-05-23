@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 15:01:02</td><td>Omaha, NE (SportsNetwork.com) - The second-seeded Kansas Jayhawks will get their 2015 NCAA Tournament underway on Friday afternoon, as they take on the 15th-seeded New Mexico State Aggies in the second round of the Midwest Regional at CentureyLink Center Omaha.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 15:01:02</td><td>Efficiency play at the offensive end and stingy defense have been staples for New Mexico State this season.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 15:01:02</td><td>New Mexico State's tournament resume' isn't quite as illustrious.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 15:01:02</td><td><a href='http://www.miamiherald.com/sports/college/mens-basketball/article15452744.html#storylink=rss'>site</a></td><td><table><tr><td>Omaha, NE (SportsNetwork.com) - The second-seeded Kansas Jayhawks will get their 2015 NCAA Tournament underway on Friday afternoon, as they take on the 15th-seeded New Mexico State Aggies in the second round of the Midwest Regional at CentureyLink Center Omaha.</td></tr><tr><td>New Mexico State's tournament resume' isn't quite as illustrious.</td></tr><tr><td>Efficiency play at the offensive end and stingy defense have been staples for New Mexico State this season.</td></tr></table></td></tr>
 </table></body></html>

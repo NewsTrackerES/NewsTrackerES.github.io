@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/32/22/7971977/3/mosaic_2.jpg'></td><td>2015-05-13 14:32:03</td><td>Stone is hoping his latest change in direction pays off as he heads down a new path at Jelly Industries, a San Francisco startup he launched shortly after leaving Twitter three years ago.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/36/32/22/7971977/3/mosaic_2.jpg'></td><td>2015-05-13 14:32:03</td><td>Twitter founder feeling 'Super' as he heads in new direction</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/32/22/7971977/3/mosaic_2.jpg'></td><td>2015-05-13 14:32:03</td><td><a href='http://www.chron.com/business/technology/article/Twitter-founder-feeling-Super-as-he-heads-in-6260505.php'>site</a></td><td><table><tr><td>Twitter founder feeling 'Super' as he heads in new direction</td></tr><tr><td>Stone is hoping his latest change in direction pays off as he heads down a new path at Jelly Industries, a San Francisco startup he launched shortly after leaving Twitter three years ago.</td></tr></table></td></tr>
 </table></body></html>

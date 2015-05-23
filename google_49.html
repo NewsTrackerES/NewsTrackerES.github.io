@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 17:54:04</td><td>Google rolls out new U.S. cell phone service</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 18:44:36</td><td>Google wireless phone service challenges major carriers</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 18:44:36</td><td>Google's service initially will be available only on the Nexus 6, a Motorola phone made with Google's help.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-22 18:44:36</td><td>SAN FRANCISCO (AP) - Google is offering a wireless phone service designed to pressure major carriers such as AT&T and Verizon Wireless into lowering their prices.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-22 18:50:25</td><td>Google launches low-cost wireless phone services that won't charge customers for unused data</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 17:54:04</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/us-business/google-rolls-out-new-us-cell-phone-service/article24062348/?cmpid=rss1'>site</a></td><td>Google rolls out new U.S. cell phone service</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 18:44:36</td><td><a href='http://www.utsandiego.com/news/2015/apr/22/google-wireless-phone-service-challenges-major/'>site</a></td><td><table><tr><td>Google wireless phone service challenges major carriers</td></tr><tr><td>SAN FRANCISCO (AP) - Google is offering a wireless phone service designed to pressure major carriers such as AT&T and Verizon Wireless into lowering their prices.</td></tr><tr><td>Google's service initially will be available only on the Nexus 6, a Motorola phone made with Google's help.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-22 18:50:25</td><td><a href='http://www.startribune.com/nation/300959871.html'>site</a></td><td>Google launches low-cost wireless phone services that won't charge customers for unused data</td></tr>
 </table></body></html>

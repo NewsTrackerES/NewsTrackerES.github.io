@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 07:21:00</td><td>WASHINGTON - A move to write new war powers to authorize the Obama administration's 9-month-old battle against Islamic State militants has stalled in Congress.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 07:21:00</td><td>In the U.S. battle against the Islamic State group, Obama has been relying on congressional authorizations given to President George W. Bush for the war on al-Qaida and the Iraq invasion.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 07:21:00</td><td>Under Obama's proposal, the use of military force against Islamic State fighters would be authorized for three years, unrestricted by national borders.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 07:21:00</td><td><a href='http://www.startribune.com/push-to-write-new-war-powers-for-obama-stalls-in-congress/304079231/'>site</a></td><td><table><tr><td>WASHINGTON - A move to write new war powers to authorize the Obama administration's 9-month-old battle against Islamic State militants has stalled in Congress.</td></tr><tr><td>In the U.S. battle against the Islamic State group, Obama has been relying on congressional authorizations given to President George W. Bush for the war on al-Qaida and the Iraq invasion.</td></tr><tr><td>Under Obama's proposal, the use of military force against Islamic State fighters would be authorized for three years, unrestricted by national borders.</td></tr></table></td></tr>
 </table></body></html>

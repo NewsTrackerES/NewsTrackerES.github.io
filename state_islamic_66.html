@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/3/z/y/l/image.related.articleLeadwide.620x349.143zhr.png/1426396021107.jpg'></td><td>2015-03-14 05:33:12</td><td>The body of Australian army reservist Ashley Johnston, who was killed on the frontline in Syria fighting with Kurdish forces against Islamic State militants, has been handed over to family representatives in Turkey, Kurdish officials said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 09:50:11</td><td>ERBIL, Iraq (Reuters) - Islamic State has published a video purporting to show the beheading of three Kurdish peshmerga fighters in northern Iraq by militants who threatened to kill "dozens" more of those being held captive.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 09:50:11</td><td>Kurdish forces shelled inside Mosul several days ago in what the peshmerga ministry said was retaliation for an Islamic State missile that landed in a vegetable market outside the regional capital of Erbil on Monday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 09:50:11</td><td>More than 1,000 peshmerga have been killed in combat with Islamic State militants since they overran a third of Iraq last summer, but several hundred Kurds have joined the other side and are fighting against their ethnic kin.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-20 09:50:11</td><td>Another of the militants then directly addressed Kurdish leader Masoud Barzani: "We warned you before that for every rocket you fire on those under the care of the Islamic State, you will kill one of your prisoners with your own hands."</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-20 09:50:11</td><td>Islamic State has previously beheaded Western aid workers and journalists as well as domestic opponents in Syria and Iraq.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/3/z/y/l/image.related.articleLeadwide.620x349.143zhr.png/1426396021107.jpg'></td><td>2015-03-14 05:33:12</td><td><a href='http://www.theage.com.au/world/kurdish-fighters-hold-funeral-for-australian-ashley-johnston-killed-fighting-islamic-state-20150314-143zhr.html'>site</a></td><td>The body of Australian army reservist Ashley Johnston, who was killed on the frontline in Syria fighting with Kurdish forces against Islamic State militants, has been handed over to family representatives in Turkey, Kurdish officials said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 09:50:11</td><td><a href='http://www.reuters.com/article/2015/03/20/us-mideast-crisis-islamicstate-beheading-idUSKBN0MG0VH20150320?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>ERBIL, Iraq (Reuters) - Islamic State has published a video purporting to show the beheading of three Kurdish peshmerga fighters in northern Iraq by militants who threatened to kill "dozens" more of those being held captive.</td></tr><tr><td>Another of the militants then directly addressed Kurdish leader Masoud Barzani: "We warned you before that for every rocket you fire on those under the care of the Islamic State, you will kill one of your prisoners with your own hands."</td></tr><tr><td>Kurdish forces shelled inside Mosul several days ago in what the peshmerga ministry said was retaliation for an Islamic State missile that landed in a vegetable market outside the regional capital of Erbil on Monday.</td></tr><tr><td>Islamic State has previously beheaded Western aid workers and journalists as well as domestic opponents in Syria and Iraq.</td></tr><tr><td>More than 1,000 peshmerga have been killed in combat with Islamic State militants since they overran a third of Iraq last summer, but several hundred Kurds have joined the other side and are fighting against their ethnic kin.</td></tr></table></td></tr>
 </table></body></html>

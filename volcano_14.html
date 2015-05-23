@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 00:28:39</td><td>Earthquakes on Hawaii volcano could signal new eruption</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/22/61/7941226/6/pageart_n.jpg'></td><td>2015-05-17 00:28:39</td><td>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/22/61/7941226/6/pageart_n.jpg'></td><td>2015-05-17 00:28:39</td><td>Volcano scientist Steve Brantley says the lava has been dropping out of sight, and it has to be going somewhere.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/37/76/7995289/3/622x350.jpg'></td><td>2015-05-17 02:26:06</td><td>The earthquake activity had slowed Saturday morning, and scientists were continuing to watch the volcano closely, Brantley said.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-17 02:26:06</td><td>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour, and scientists' tilt meters detected that the ground was deforming.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-17 02:26:06</td><td>"Clearly the lava, by dropping out of sight, it has to be going somewhere," said Steven Brantley, deputy scientist in charge of Hawaiian Volcano Observatory of the U.S. Geological Survey.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 02:35:06</td><td>In this Saturday, May 9, 2015 photo, molten rock spews into a lake of lava near the summit of Kilauea volcano on Hawaii's Big Island.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/22/61/7941226/6/pageart_n.jpg'></td><td>2015-05-17 00:28:39</td><td><a href='http://www.chron.com/news/science/article/Earthquakes-on-Hawaii-volcano-could-signal-new-6268464.php'>site</a></td><td><table><tr><td>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour.</td></tr><tr><td>Volcano scientist Steve Brantley says the lava has been dropping out of sight, and it has to be going somewhere.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 00:28:39</td><td><a href='http://www.daytondailynews.com/ap/ap/earthquakes-on-hawaii-volcano-could-signal-new-eru/nmHwS/'>site</a></td><td>Earthquakes on Hawaii volcano could signal new eruption</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 02:26:06</td><td><a href='http://www.usnews.com/news/science/news/articles/2015/05/16/earthquakes-on-hawaii-volcano-could-signal-new-eruption'>site</a></td><td><table><tr><td>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour, and scientists' tilt meters detected that the ground was deforming.</td></tr><tr><td>"Clearly the lava, by dropping out of sight, it has to be going somewhere," said Steven Brantley, deputy scientist in charge of Hawaiian Volcano Observatory of the U.S. Geological Survey.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/37/76/7995289/3/622x350.jpg'></td><td>2015-05-17 02:26:06</td><td><a href='http://www.chron.com/news/science/article/Earthquakes-on-Hawaii-volcano-could-signal-new-6268464.php'>site</a></td><td>The earthquake activity had slowed Saturday morning, and scientists were continuing to watch the volcano closely, Brantley said.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 02:35:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article21199215.html#storylink=rss'>site</a></td><td>In this Saturday, May 9, 2015 photo, molten rock spews into a lake of lava near the summit of Kilauea volcano on Hawaii's Big Island.</td></tr>
 </table></body></html>

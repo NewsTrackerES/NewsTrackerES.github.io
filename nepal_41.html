@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/w/8/h/image.related.articleLeadwide.620x349.1mufk2.png/1430125626220.jpg'></td><td>2015-04-27 09:07:13</td><td>A Daylesford family feared lost in the Nepal earthquake is safe and well, but hundreds of Australians remain unaccounted for.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/w/8/h/image.related.articleLeadwide.620x349.1mufk2.png/1430125626220.jpg'></td><td>2015-04-27 09:07:13</td><td>Victorian teenagers Grace Graham and Camille Thomas also survived the earthquake despite being injured by falling rocks in an avalanche near the Nepal-Tibet border.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/w/8/h/image.related.articleLeadwide.620x349.1mufk2.png/1430125626220.jpg'></td><td>2015-04-27 09:07:13</td><td>Some Victorians safe, but others still missing in Nepal</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/w/8/h/image.related.articleLeadwide.620x349.1mufk2.png/1430125626220.jpg'></td><td>2015-04-27 09:07:13</td><td><a href='http://www.brisbanetimes.com.au/world/some-victorians-safe-but-others-still-missing-in-nepal-20150427-1mufk2.html'>site</a></td><td><table><tr><td>Some Victorians safe, but others still missing in Nepal</td></tr><tr><td>A Daylesford family feared lost in the Nepal earthquake is safe and well, but hundreds of Australians remain unaccounted for.</td></tr><tr><td>Victorian teenagers Grace Graham and Camille Thomas also survived the earthquake despite being injured by falling rocks in an avalanche near the Nepal-Tibet border.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 12,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,16 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 09:55:14</td><td>Nepal may also lose the rights to host the 2015 Asian weightlifting championships, which were due to be held in Kathmandu from July 24-30.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-19 09:55:14</td><td>The Asian weightlifting federation lists the championships as "to be confirmed" and has encouraged the Nepal organizers to host the 2016 championships instead.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-19 09:55:14</td><td>"He was a dedicated and experienced coach whose demise is a great loss for sports in Nepal."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-19 09:55:14</td><td>Sports in disarray after devastating Nepal earthquakes</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-19 09:55:14</td><td>"The tournament is vital for the future of Nepal's cricket and we plan to go to India for preparations."</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-19 09:55:14</td><td>All Nepal Football Association acting President Lalit Krishna Shrestha said he was uncertain when the league would resume because "we have been experiencing aftershocks every day."</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td>A revered national sports coach is among the thousands of dead, trapped in his rented house when devastating earthquakes rocked Nepal.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td>Two recent earthquakes killed more than 8,300 people and have had a devastating impact on all aspects of life in Nepal, including sports.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td>Nepal Volleyball Association general secretary Jeetendra Bahadur Chand said coach Keshav Lal Shrestha's death in Kathmandu was "irreparable."</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td>"The situation has pushed Nepal's sports a step backward," he said.</td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td>Nepal Olympic Committee chief Dhruba Bahadur Pradhan says it is important for athletes and coaches to be able to turn their attention back to sports to help them overcome traumatic experiences.</td></tr>
-  <tr><td style='display:none'>11</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td>"The AWF has requested us not to host the event and has proposed that we host the next edition in 2016," Partha Sarathi Sen Gupta, general secretary of the Nepal Weightlifting Association, said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 09:55:14</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11451341&ref=rss'>site</a></td><td><table><tr><td>Sports in disarray after devastating Nepal earthquakes</td></tr><tr><td>"He was a dedicated and experienced coach whose demise is a great loss for sports in Nepal."</td></tr><tr><td>"The tournament is vital for the future of Nepal's cricket and we plan to go to India for preparations."</td></tr><tr><td>All Nepal Football Association acting President Lalit Krishna Shrestha said he was uncertain when the league would resume because "we have been experiencing aftershocks every day."</td></tr><tr><td>Nepal may also lose the rights to host the 2015 Asian weightlifting championships, which were due to be held in Kathmandu from July 24-30.</td></tr><tr><td>The Asian weightlifting federation lists the championships as "to be confirmed" and has encouraged the Nepal organizers to host the 2016 championships instead.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:19:31</td><td><a href='http://www.charlotteobserver.com/sports/article21358110.html#storylink=rss'>site</a></td><td><table><tr><td>Two recent earthquakes killed more than 8,300 people and have had a devastating impact on all aspects of life in Nepal, including sports.</td></tr><tr><td>A revered national sports coach is among the thousands of dead, trapped in his rented house when devastating earthquakes rocked Nepal.</td></tr><tr><td>Nepal Volleyball Association general secretary Jeetendra Bahadur Chand said coach Keshav Lal Shrestha's death in Kathmandu was "irreparable."</td></tr><tr><td>"The situation has pushed Nepal's sports a step backward," he said.</td></tr><tr><td>"The AWF has requested us not to host the event and has proposed that we host the next edition in 2016," Partha Sarathi Sen Gupta, general secretary of the Nepal Weightlifting Association, said.</td></tr><tr><td>Nepal Olympic Committee chief Dhruba Bahadur Pradhan says it is important for athletes and coaches to be able to turn their attention back to sports to help them overcome traumatic experiences.</td></tr></table></td></tr>
 </table></body></html>

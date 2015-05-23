@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 20:27:16</td><td>The U.S. government aimed to provide Tunisia with more equipment, weapons and technical support, U.S. deputy secretary of state Antony Blinken said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 20:27:16</td><td>U.S. to triple military aid to Tunisia</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 20:27:16</td><td>Since a 2011 uprising that toppled Zine El-Abidine Ben Ali, Tunisia has, in contrast to much of North Africa and the Middle East, experienced a comparatively trouble-free transition toward democracy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 20:27:16</td><td><a href='http://news.yahoo.com/u-triple-military-aid-tunisia-202716298.html'>site</a></td><td><table><tr><td>U.S. to triple military aid to Tunisia</td></tr><tr><td>The U.S. government aimed to provide Tunisia with more equipment, weapons and technical support, U.S. deputy secretary of state Antony Blinken said.</td></tr><tr><td>Since a 2011 uprising that toppled Zine El-Abidine Ben Ali, Tunisia has, in contrast to much of North Africa and the Middle East, experienced a comparatively trouble-free transition toward democracy.</td></tr></table></td></tr>
 </table></body></html>

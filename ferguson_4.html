@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,11 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/01/56/7609243/5/square_gallery_thumb.jpg'></td><td>2015-03-04 08:03:40</td><td>Ferguson Mayor James Knowles III said the city had cooperated with the Justice Department and has made some changes, including a diversity training program for city employees.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>Federal officials on Wednesday described Ferguson city leaders as cooperative and seemingly open to change, saying there were already some signs of improvement.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>Federal officials say they hope to avoid a court fight with Ferguson to force change.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>In pairing the announcements, the Obama administration sought to offset community disappointment over the conclusion that the shooting of Michael Brown was legally justified with a message of hope for Ferguson's majority-black citizens.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>"It is not difficult to imagine how a single tragic incident set off the city of Ferguson like a powder keg," Holder said.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td>In Ferguson, scathing US report brings pressure for change</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://static.theglobeandmail.ca/d59/news/world/article23282275.ece/ALTERNATES/w220/TOR603-USA-MISSOURI+SHOOTIN.JPG'></td><td>2015-03-04 18:05:32</td><td>"It is time for Ferguson's leaders to take immediate, wholesale and structural corrective action," Holder said.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/05/b48f3e044dd4dd0a6f0f6a706700dd72_c0-180-3474-2204_s561x327.jpg?9b0408f58b04eb4cb498ff01a06bb1307a1a6392'></td><td>2015-03-05 13:48:16</td><td>About 30 protesters braved sub-freezing weather Wednesday night to gather outside Ferguson's police station.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-03-05 14:40:07</td><td>It also found Ferguson relies heavily on fines for petty offenses, such as jaywalking, to raise revenue.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-03-05 16:39:00</td><td>While the federal government declined to prosecute Wilson, it raised grave concerns about the operation of Ferguson's police department and municipal court.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-04-03 23:02:11</td><td>Ferguson releases racist emails from clerk to 2 officers</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/01/56/7609243/5/square_gallery_thumb.jpg'></td><td>2015-03-04 08:03:40</td><td><a href='http://www.sfgate.com/news/politics/article/In-Ferguson-scathing-US-report-brings-pressure-6113784.php'>site</a></td><td>Ferguson Mayor James Knowles III said the city had cooperated with the Justice Department and has made some changes, including a diversity training program for city employees.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-04 08:03:51</td><td><a href='http://news.yahoo.com/ferguson-scathing-us-report-brings-pressure-change-080228142--politics.html'>site</a></td><td><table><tr><td>In Ferguson, scathing US report brings pressure for change</td></tr><tr><td>In pairing the announcements, the Obama administration sought to offset community disappointment over the conclusion that the shooting of Michael Brown was legally justified with a message of hope for Ferguson's majority-black citizens.</td></tr><tr><td>"It is not difficult to imagine how a single tragic incident set off the city of Ferguson like a powder keg," Holder said.</td></tr><tr><td>Federal officials on Wednesday described Ferguson city leaders as cooperative and seemingly open to change, saying there were already some signs of improvement.</td></tr><tr><td>Federal officials say they hope to avoid a court fight with Ferguson to force change.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://static.theglobeandmail.ca/d59/news/world/article23282275.ece/ALTERNATES/w220/TOR603-USA-MISSOURI+SHOOTIN.JPG'></td><td>2015-03-04 18:05:32</td><td><a href='http://www.theglobeandmail.com/news/world/justice-department-wont-prosecute-policeman-in-ferguson-shooting/article23282276/?cmpid=rss1'>site</a></td><td>"It is time for Ferguson's leaders to take immediate, wholesale and structural corrective action," Holder said.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/05/b48f3e044dd4dd0a6f0f6a706700dd72_c0-180-3474-2204_s561x327.jpg?9b0408f58b04eb4cb498ff01a06bb1307a1a6392'></td><td>2015-03-05 13:48:16</td><td><a href='http://www.washingtontimes.com/news/2015/mar/5/ferguson-aftermath-us-finds-racist-profit-driven-p/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>About 30 protesters braved sub-freezing weather Wednesday night to gather outside Ferguson's police station.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-05 14:40:07</td><td><a href='http://nypost.com/2015/03/05/us-finds-racist-profit-driven-practices-in-ferguson/'>site</a></td><td>It also found Ferguson relies heavily on fines for petty offenses, such as jaywalking, to raise revenue.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-05 16:39:00</td><td><a href='http://www.ctvnews.ca/world/u-s-calls-for-sweeping-changes-to-ferguson-police-force-1.2265542'>site</a></td><td>While the federal government declined to prosecute Wilson, it raised grave concerns about the operation of Ferguson's police department and municipal court.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-03 23:02:11</td><td><a href='http://www.utsandiego.com/news/2015/apr/03/ferguson-releases-racist-emails-from-clerk-to-2/'>site</a></td><td>Ferguson releases racist emails from clerk to 2 officers</td></tr>
 </table></body></html>

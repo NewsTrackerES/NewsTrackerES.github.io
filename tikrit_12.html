@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/iraq_tikrit_march_14_2015.jpg'></td><td>2015-03-14 15:18:41</td><td>Military commanders had "reached a decision to halt the operation until a suitable, carefully set plan is in place" to break into central Tikrit, the source said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-14 16:04:25</td><td>More "well-trained forces" were needed for the street-by-street battles that recapturing the city would require, the source said, speaking by phone from Tikrit.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-14 16:04:25</td><td>While the offensive on Tikrit has been put on hold, clashes in the environs continue.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-14 18:21:15</td><td>In Tikrit, which lies about 160 km north of Baghdad, the extremist group still controls central districts and a complex of palaces built by Saddam Hussein, the executed former Iraqi leader.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/iraq_tikrit_march_14_2015.jpg'></td><td>2015-03-14 15:18:41</td><td><a href='http://www.globalpost.com/dispatch/news/regions/middle-east/iraq/150314/iraqi-troops-pause-battle-tikrit-await-reinforcements'>site</a></td><td>Military commanders had "reached a decision to halt the operation until a suitable, carefully set plan is in place" to break into central Tikrit, the source said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-14 16:04:25</td><td><a href='http://news.yahoo.com/iraqi-offensive-tikrit-hold-second-day-104447361.html'>site</a></td><td><table><tr><td>More "well-trained forces" were needed for the street-by-street battles that recapturing the city would require, the source said, speaking by phone from Tikrit.</td></tr><tr><td>While the offensive on Tikrit has been put on hold, clashes in the environs continue.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-14 18:21:15</td><td><a href='http://www.sabc.co.za/news/a/2bf45e0047a481ad81e8e742d945d4b0/Iraqi-troops-await-back-up-in-battle-for-Tikrit--20150314'>site</a></td><td>In Tikrit, which lies about 160 km north of Baghdad, the extremist group still controls central districts and a complex of palaces built by Saddam Hussein, the executed former Iraqi leader.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/13/1DC568BE00000578-2949023-image-a-16_1423828252219.jpg'></td><td>2015-02-13 14:19:53</td><td>Ngouboua is already home to nearly 3,300 refugees who had fled the Boko Haram-related violence back home in Nigeria, according to the United Nations.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 13:52:05</td><td>LAGOS, Nigeria (AP) - Nigeria's military says it has no news of the more than 200 schoolgirls kidnapped by Islamic extremists nearly a year ago, despite liberating dozens of towns from the girls' Boko Haram abductors.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-18 13:52:24</td><td>The admission of lack of progress on the missing schoolgirls comes as the Nigerian military, bolstered by forces from neighboring countries, is regaining towns and cities held by Boko Haram in northeastern Nigeria.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-18 13:52:24</td><td>In early February, Nigeria's air force began bombarding the Sambisa Forest, a stronghold of Boko Haram where the Chibok girls first were taken.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-18 13:52:24</td><td>He said he is in hiding because he has become a wanted man by Boko Haram because of his role as a spokesman for parents of the Chibok girls.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/02/13/1DC568BE00000578-2949023-image-a-16_1423828252219.jpg'></td><td>2015-02-13 14:19:53</td><td><a href='http://www.dailymail.co.uk/news/article-2949023/Boko-Haram-kidnaps-hundreds-tells-stories-Chibok-girls.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Ngouboua is already home to nearly 3,300 refugees who had fled the Boko Haram-related violence back home in Nigeria, according to the United Nations.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 13:52:05</td><td><a href='http://www.sfgate.com/news/crime/article/Nigerian-military-No-news-of-219-kidnapped-6142152.php'>site</a></td><td>LAGOS, Nigeria (AP) - Nigeria's military says it has no news of the more than 200 schoolgirls kidnapped by Islamic extremists nearly a year ago, despite liberating dozens of towns from the girls' Boko Haram abductors.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/b6n9dVEN31tpbFsM9EOvFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/92af1ff1dbcb003182f5c554a322507b.cf.jpg'></td><td>2015-03-18 13:52:24</td><td><a href='http://news.yahoo.com/nigerian-military-no-news-219-kidnapped-schoolgirls-135224712.html'>site</a></td><td><table><tr><td>The admission of lack of progress on the missing schoolgirls comes as the Nigerian military, bolstered by forces from neighboring countries, is regaining towns and cities held by Boko Haram in northeastern Nigeria.</td></tr><tr><td>In early February, Nigeria's air force began bombarding the Sambisa Forest, a stronghold of Boko Haram where the Chibok girls first were taken.</td></tr><tr><td>He said he is in hiding because he has become a wanted man by Boko Haram because of his role as a spokesman for parents of the Chibok girls.</td></tr></table></td></tr>
 </table></body></html>

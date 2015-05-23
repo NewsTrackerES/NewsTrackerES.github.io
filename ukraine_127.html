@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HDs2SVTMamaZ2nuelfWC2A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/d463feb8af033ba0ad073f8f65f7e98ddacb04ce.jpg.cf.jpg'></td><td>2015-04-30 18:43:49</td><td>Breedlove said Putin was concerned about Western sanctions imposed against Russia over the Ukraine crisis "and that may be affecting how he currently does things in eastern Ukraine."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HDs2SVTMamaZ2nuelfWC2A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/d463feb8af033ba0ad073f8f65f7e98ddacb04ce.jpg.cf.jpg'></td><td>2015-04-30 18:43:49</td><td>Breedlove said no options should be taken off the table but that there was no consideration of giving Ukraine the kind of military might needed to defeat Russia.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 19:34:02</td><td>Still, Washington is keen to maintain solidarity with Europe, some of whose leaders, including German Chancellor Angela Merkel, strongly oppose arming Ukraine.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HDs2SVTMamaZ2nuelfWC2A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/d463feb8af033ba0ad073f8f65f7e98ddacb04ce.jpg.cf.jpg'></td><td>2015-04-30 18:43:49</td><td><a href='http://news.yahoo.com/russia-may-readying-ukraine-offensive-nato-commander-184349328.html'>site</a></td><td><table><tr><td>Breedlove said no options should be taken off the table but that there was no consideration of giving Ukraine the kind of military might needed to defeat Russia.</td></tr><tr><td>Breedlove said Putin was concerned about Western sanctions imposed against Russia over the Ukraine crisis "and that may be affecting how he currently does things in eastern Ukraine."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 19:34:02</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3063060/Russia-readying-new-Ukraine-offensive-NATO-commander.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Still, Washington is keen to maintain solidarity with Europe, some of whose leaders, including German Chancellor Angela Merkel, strongly oppose arming Ukraine.</td></tr>
 </table></body></html>

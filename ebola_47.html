@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 17:20:28</td><td>LONDON (Reuters) - A 25-year-old British military nurse who was the first person in the world to be treated for Ebola with the experimental drug MIL 77 was discharged from hospital on Friday, London's Royal Free Hospital said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 17:20:28</td><td>The Chinese-made MIL 77 is a close relative of another experimental medicine ZMapp - which British nurse William Pooley received when he was treated at the Royal Free for Ebola last year.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/8e2/news/world/article23664469.ece/ALTERNATES/w220/-539237870.JPG'></td><td>2015-03-27 17:26:06</td><td>She was brought back to Britain and successfully treated at the Royal Free in north London, Britain's main centre for Ebola treatment.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 17:57:13</td><td>British Ebola patient cured after experimental treatment</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 17:20:28</td><td><a href='http://www.reuters.com/article/2015/03/27/us-health-ebola-britain-idUSKBN0MN27F20150327?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>LONDON (Reuters) - A 25-year-old British military nurse who was the first person in the world to be treated for Ebola with the experimental drug MIL 77 was discharged from hospital on Friday, London's Royal Free Hospital said.</td></tr><tr><td>The Chinese-made MIL 77 is a close relative of another experimental medicine ZMapp - which British nurse William Pooley received when he was treated at the Royal Free for Ebola last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/8e2/news/world/article23664469.ece/ALTERNATES/w220/-539237870.JPG'></td><td>2015-03-27 17:26:06</td><td><a href='http://www.theglobeandmail.com/news/world/british-ebola-patient-cured-following-experimental-treatment/article23664470/?cmpid=rss1'>site</a></td><td>She was brought back to Britain and successfully treated at the Royal Free in north London, Britain's main centre for Ebola treatment.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 17:57:13</td><td><a href='http://www.foxnews.com/health/2015/03/27/british-ebola-patient-cured-after-experimental-treatment-1986060969/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td>British Ebola patient cured after experimental treatment</td></tr>
 </table></body></html>

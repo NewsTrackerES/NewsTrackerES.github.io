@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 13:51:54</td><td>CAIRO (AP) - The leader of an Islamic State affiliate in Egypt has vowed to kill judges and security forces in retaliation for the execution of six suspected militants earlier this week.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-21 13:51:54</td><td>On Sunday, Egypt executed six suspected Islamic militants convicted by a military court last year over the killing of two military officers during a raid north of Cairo in March 2014.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 13:51:54</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3091168/IS-affiliate-Egypt-vows-attack-judges-executions.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>CAIRO (AP) - The leader of an Islamic State affiliate in Egypt has vowed to kill judges and security forces in retaliation for the execution of six suspected militants earlier this week.</td></tr><tr><td>On Sunday, Egypt executed six suspected Islamic militants convicted by a military court last year over the killing of two military officers during a raid north of Cairo in March 2014.</td></tr></table></td></tr>
 </table></body></html>

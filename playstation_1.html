@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>playstation</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/videolib-prod-static/portalen/img/default_still.gif'></td><td>2015-03-18 17:09:02</td><td>For each PlayStation Vue account, users can simultaneously stream content on up to three consoles (although only on one PS4 at any given time) in the same home at no additional charge.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/videolib-prod-static/portalen/img/default_still.gif'></td><td>2015-03-18 17:09:02</td><td>Initially, PlayStation Vue is available only on PlayStation 4s and PS3s; per Sony, there are 35 million of those in use across the U.S. Sony said support for Apple's iPad will be coming shortly, and that additional markets will be added in the coming months.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/videolib-prod-static/portalen/img/default_still.gif'></td><td>2015-03-18 17:09:02</td><td>Sony launches PlayStation Vue online TV service in 3 U.S. cities</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/videolib-prod-static/portalen/img/default_still.gif'></td><td>2015-03-18 17:09:02</td><td><a href='http://technology.canoe.ca/News/2015/03/18/22294511.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Sony launches PlayStation Vue online TV service in 3 U.S. cities</td></tr><tr><td>Initially, PlayStation Vue is available only on PlayStation 4s and PS3s; per Sony, there are 35 million of those in use across the U.S. Sony said support for Apple's iPad will be coming shortly, and that additional markets will be added in the coming months.</td></tr><tr><td>For each PlayStation Vue account, users can simultaneously stream content on up to three consoles (although only on one PS4 at any given time) in the same home at no additional charge.</td></tr></table></td></tr>
 </table></body></html>

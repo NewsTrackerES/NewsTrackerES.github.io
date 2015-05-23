@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,8 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-05 07:53:49</td><td>Prayers, fear mark Easter services in Garissa, Kenya</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 07:55:03</td><td>Reeling from attack, Christians attend emotional Easter services at church in Garissa, Kenya</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 12:30:05</td><td>To prevent an escalation of Islamic radicalization in Kenya, it is important that parents inform authorities if their children go missing or show tendencies of following violent extremism, said Njoka.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-05 19:11:27</td><td>Hundreds of Kenyan youths have trained with al-Shabab and then returned to Kenya, posing a major security threat, according to former police chief Mathew Iteere.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-05 19:11:27</td><td>Police waited seven hours before sending a special tactical unit into the college to fight the gunmen, Kenya's Daily Nation newspaper reported Sunday.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 19:11:27</td><td>The danger comes not only from neighboring Somalia but also from within Kenya.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-05 19:11:27</td><td>Kenya's government has said another source of instability is the country's refugee camps, with more than 423,000 Somali refugees.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-05 19:11:27</td><td>Before the massacre, northeastern Kenya had seen other deadly attacks by al-Shabab against Christians.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-05 07:53:49</td><td><a href='http://news.yahoo.com/prayers-fear-mark-easter-services-garissa-kenya-075349803.html'>site</a></td><td>Prayers, fear mark Easter services in Garissa, Kenya</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 07:55:03</td><td><a href='http://www.startribune.com/world/298701481.html'>site</a></td><td>Reeling from attack, Christians attend emotional Easter services at church in Garissa, Kenya</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 12:30:05</td><td><a href='http://nypost.com/2015/04/05/kenya-massacre-gunman-was-son-of-government-official/'>site</a></td><td>To prevent an escalation of Islamic radicalization in Kenya, it is important that parents inform authorities if their children go missing or show tendencies of following violent extremism, said Njoka.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 19:11:27</td><td><a href='http://time.com/3771689/gunman-kenya-massacre-official-son-garissa/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fworld+%28TIME%3A+Top+World+Stories%29'>site</a></td><td><table><tr><td>The danger comes not only from neighboring Somalia but also from within Kenya.</td></tr><tr><td>Hundreds of Kenyan youths have trained with al-Shabab and then returned to Kenya, posing a major security threat, according to former police chief Mathew Iteere.</td></tr><tr><td>Kenya's government has said another source of instability is the country's refugee camps, with more than 423,000 Somali refugees.</td></tr><tr><td>Police waited seven hours before sending a special tactical unit into the college to fight the gunmen, Kenya's Daily Nation newspaper reported Sunday.</td></tr><tr><td>Before the massacre, northeastern Kenya had seen other deadly attacks by al-Shabab against Christians.</td></tr></table></td></tr>
 </table></body></html>

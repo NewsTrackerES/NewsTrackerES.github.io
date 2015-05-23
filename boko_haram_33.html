@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/2/v/5/v/image.related.articleLeadwide.620x349.1m3lrw.png/1426867321420.jpg'></td><td>2015-03-20 16:02:18</td><td>According to Ms Bakura's account, which was supported by others, Boko Haram fighters received word of a military assault on Bama, formerly an Islamist stronghold in Borno state.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/2/v/5/v/image.related.articleLeadwide.620x349.1m3lrw.png/1426867321420.jpg'></td><td>2015-03-20 16:02:18</td><td>Boko Haram forcibly married scores of women in Bama after seizing it in September.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/2/v/5/v/image.related.articleLeadwide.620x349.1m3lrw.png/1426867321420.jpg'></td><td>2015-03-20 16:02:18</td><td>Maiduguri: Dozens of Nigerian women who were forced to marry Boko Haram fighters have reportedly been slaughtered by their "husbands" before a battle with troops in the northeast town of Bama.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/2/v/5/v/image.related.articleLeadwide.620x349.1m3lrw.png/1426867321420.jpg'></td><td>2015-03-20 16:02:18</td><td><a href='http://www.brisbanetimes.com.au/world/boko-haram-slaughter-wives-in-nigeria-20150320-1m3lrw.html'>site</a></td><td>Maiduguri: Dozens of Nigerian women who were forced to marry Boko Haram fighters have reportedly been slaughtered by their "husbands" before a battle with troops in the northeast town of Bama.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/2/v/5/v/image.related.articleLeadwide.620x349.1m3lrw.png/1426867321420.jpg'></td><td>2015-03-20 16:02:18</td><td><a href='http://www.smh.com.au/world/boko-haram-slaughter-wives-in-nigeria-20150320-1m3lrw.html'>site</a></td><td><table><tr><td>According to Ms Bakura's account, which was supported by others, Boko Haram fighters received word of a military assault on Bama, formerly an Islamist stronghold in Borno state.</td></tr><tr><td>Boko Haram forcibly married scores of women in Bama after seizing it in September.</td></tr></table></td></tr>
 </table></body></html>

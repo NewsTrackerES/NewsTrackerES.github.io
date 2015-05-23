@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-11 10:50:22</td><td>MOSCOW - The main suspect in Russian opposition politician Boris Nemtsov's killing has signs of torture on his body and was forced to confess to the shooting, a human rights activist said Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-11 10:50:22</td><td>"They shouted at me all the time: 'Have you killed Nemtsov?' I told them, 'No,'" he was quoted as saying.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-11 10:50:22</td><td>Five people have been detained in connection with Nemtsov's shooting on Feb. 27.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/.tYy5TqEq7Q84jmtV9HmIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f8ae03f602ae0b0e720f6a706700ae39.jpg'></td><td>2015-04-01 14:42:26</td><td>Nemtsov suspects tells court he was pressured to confess</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-11 10:50:22</td><td><a href='http://www.startribune.com/world/295880381.html'>site</a></td><td><table><tr><td>MOSCOW - The main suspect in Russian opposition politician Boris Nemtsov's killing has signs of torture on his body and was forced to confess to the shooting, a human rights activist said Wednesday.</td></tr><tr><td>Five people have been detained in connection with Nemtsov's shooting on Feb. 27.</td></tr><tr><td>"They shouted at me all the time: 'Have you killed Nemtsov?' I told them, 'No,'" he was quoted as saying.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/.tYy5TqEq7Q84jmtV9HmIw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f8ae03f602ae0b0e720f6a706700ae39.jpg'></td><td>2015-04-01 14:42:26</td><td><a href='http://news.yahoo.com/nemtsov-suspects-tells-court-pressured-confess-133823830.html'>site</a></td><td>Nemtsov suspects tells court he was pressured to confess</td></tr>
 </table></body></html>

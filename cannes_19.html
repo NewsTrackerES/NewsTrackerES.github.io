@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 10:49:43</td><td>Rossellini said she feels both honored and touched by the poster, and by a Cannes premiere for a documentary about Bergman, who died in 1982.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 10:49:43</td><td>CANNES WATCH: Rossellini moved by Ingrid Bergman poster</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-14 10:49:43</td><td>CANNES, France (AP) - Isabella Rossellini says it's a moving experience to see her late mother all over Cannes.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-14 10:49:43</td><td>A giant version of the image towers over the famous red-carpeted steps of Cannes' Palais des Festivals.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 10:49:43</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/14/cannes-watch-rossellini-moved-by-ingrid-bergman-poster'>site</a></td><td><table><tr><td>CANNES WATCH: Rossellini moved by Ingrid Bergman poster</td></tr><tr><td>CANNES, France (AP) - Isabella Rossellini says it's a moving experience to see her late mother all over Cannes.</td></tr><tr><td>A giant version of the image towers over the famous red-carpeted steps of Cannes' Palais des Festivals.</td></tr><tr><td>Rossellini said she feels both honored and touched by the poster, and by a Cannes premiere for a documentary about Bergman, who died in 1982.</td></tr></table></td></tr>
 </table></body></html>

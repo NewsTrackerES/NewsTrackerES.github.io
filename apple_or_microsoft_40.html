@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 08:39:19</td><td>Executives from Apple, Google and Microsoft, under questioning at the hearing in Sydney on Wednesday, confirmed they were being investigated.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428483086797.jpg'></td><td>2015-04-08 08:51:34</td><td>Microsoft global vice president for tax Bill Sample.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428483086797.jpg'></td><td>2015-04-08 08:51:34</td><td>Microsoft's Bill Sample said there had been $2 billion in software product and service revenue booked in Singapore but only $100 million in Australia.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428483086797.jpg'></td><td>2015-04-08 08:51:34</td><td>Apple Australia managing director Tony King.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 08:39:19</td><td><a href='http://www.smh.com.au//breaking-news-national/three-tech-giants-audited-by-ato-20150408-3tpeo.html'>site</a></td><td>Executives from Apple, Google and Microsoft, under questioning at the hearing in Sydney on Wednesday, confirmed they were being investigated.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428483086797.jpg'></td><td>2015-04-08 08:51:34</td><td><a href='http://www.smh.com.au/business/the-economy/apple-google-microsoft-cop-tax-audit-20150408-1mgsma.html'>site</a></td><td><table><tr><td>Apple Australia managing director Tony King.</td></tr><tr><td>Microsoft global vice president for tax Bill Sample.</td></tr><tr><td>Microsoft's Bill Sample said there had been $2 billion in software product and service revenue booked in Singapore but only $100 million in Australia.</td></tr></table></td></tr>
 </table></body></html>

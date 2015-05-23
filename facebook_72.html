@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-05-13 23:05:09</td><td>"As more people get their news on mobile devices, we want to make the experience faster and richer on Facebook," product manager Michael Reckhow said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-05-13 23:05:09</td><td>After months of rumors, Facebook began hosting their news articles on its iPhone app on Wednesday.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-05-13 23:05:09</td><td>Facebook maintains that the platform was designed to keep publishers in charge of their content, brand experience and money-making opportunities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-05-13 23:05:09</td><td><a href='http://www.mercurynews.com/business/ci_28109593/facebook-debuts-instant-articles-9-media-outlets?source=rss'>site</a></td><td><table><tr><td>After months of rumors, Facebook began hosting their news articles on its iPhone app on Wednesday.</td></tr><tr><td>"As more people get their news on mobile devices, we want to make the experience faster and richer on Facebook," product manager Michael Reckhow said.</td></tr><tr><td>Facebook maintains that the platform was designed to keep publishers in charge of their content, brand experience and money-making opportunities.</td></tr></table></td></tr>
 </table></body></html>

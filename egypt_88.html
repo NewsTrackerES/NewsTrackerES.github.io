@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6476410-3x2-340x227.jpg'></td><td>2015-05-17 09:39:40</td><td>In line with all death sentences, the decisions issued on Saturday will be referred to the grand mufti, Egypt's religious authority, for a non-binding opinion.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6476410-3x2-340x227.jpg'></td><td>2015-05-17 09:39:40</td><td>Amid the tensions, Qaradawi's televised Friday sermons have gone off the air, but he continues to criticise Egypt's new rulers in conferences and statements to the press and followers.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.abc.net.au/news/image/6476410-3x2-340x227.jpg'></td><td>2015-05-17 09:39:40</td><td>Influential cleric Qaradawi condemns Egypt death sentences</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6476410-3x2-340x227.jpg'></td><td>2015-05-17 09:39:40</td><td><a href='http://www.abc.net.au/news/2015-05-17/influential-cleric-qaradawi-condemns-egypt-death-sentences/6476372'>site</a></td><td><table><tr><td>Influential cleric Qaradawi condemns Egypt death sentences</td></tr><tr><td>In line with all death sentences, the decisions issued on Saturday will be referred to the grand mufti, Egypt's religious authority, for a non-binding opinion.</td></tr><tr><td>Amid the tensions, Qaradawi's televised Friday sermons have gone off the air, but he continues to criticise Egypt's new rulers in conferences and statements to the press and followers.</td></tr></table></td></tr>
 </table></body></html>

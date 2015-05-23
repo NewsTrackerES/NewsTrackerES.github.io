@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 06:31:36</td><td>Al-Jabouri Sunni tribesmen allied with Iraqi troops and Shiite militiamen took back the town from the Islamic State group in December.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>The Islamic State group has massacred the men, women and children of Sunni tribes who rise up against it.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td>Sakhar says he is second on an Islamic State hit list and has survived numerous assassination attempts, including one last week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 06:31:36</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3014160/Iraqi-Sunni-tribe-wages-costly-battle-against-IS-group.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Al-Jabouri Sunni tribesmen allied with Iraqi troops and Shiite militiamen took back the town from the Islamic State group in December.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/22/876/493/Mideast Iraq Sunni Tribal Splits-1.jpg?ve=1&tl=1'></td><td>2015-04-22 06:36:32</td><td><a href='http://www.foxnews.com/world/2015/04/22/sunni-tribesmen-battle-their-own-after-breaking-with-islamic-state-group-over/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>The Islamic State group has massacred the men, women and children of Sunni tribes who rise up against it.</td></tr><tr><td>Sakhar says he is second on an Islamic State hit list and has survived numerous assassination attempts, including one last week.</td></tr></table></td></tr>
 </table></body></html>

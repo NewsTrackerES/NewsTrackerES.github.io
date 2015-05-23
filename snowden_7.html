@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/04/06/1297683995097.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-06 10:55:07</td><td>Watch: John Oliver discusses NSA, penis pics with Edward Snowden on 'Last Week Tonight'</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/04/06/1297683995097.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-06 10:55:07</td><td>Then Oliver revealed his coup to a delighted audience -- a secretive one-on-one interview with Snowden in Russia, which seemed as if it might not come to pass after Snowden was late to their meeting.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/04/06/1297683995097.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-06 10:55:07</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/04/06/22328986.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>Watch: John Oliver discusses NSA, penis pics with Edward Snowden on 'Last Week Tonight'</td></tr><tr><td>Then Oliver revealed his coup to a delighted audience -- a secretive one-on-one interview with Snowden in Russia, which seemed as if it might not come to pass after Snowden was late to their meeting.</td></tr></table></td></tr>
 </table></body></html>

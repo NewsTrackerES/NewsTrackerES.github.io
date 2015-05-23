@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/j69Xid0_4iS0wikHm4nGCg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fdf734eefeebbd096f0f6a706700e1b0.jpg'></td><td>2015-03-04 08:16:11</td><td>Clinton ran homebrew computer system for official emails</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 06:08:53</td><td>"I want the public to see my email. I asked State to release them," according to the tweet from (at)Hillary Clinton.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-05 06:08:53</td><td>"Everything I've seen so far has led me to believe that this is an effort to go after Hillary Clinton, period," said Rep.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/j69Xid0_4iS0wikHm4nGCg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fdf734eefeebbd096f0f6a706700e1b0.jpg'></td><td>2015-03-04 08:16:11</td><td><a href='http://news.yahoo.com/clinton-ran-homebrew-computer-system-official-emails-081111269--politics.html'>site</a></td><td>Clinton ran homebrew computer system for official emails</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:08:53</td><td><a href='http://www.cbc.ca/news/world/hillary-clinton-promises-to-release-more-emails-1.2982395?cmp=rss'>site</a></td><td><table><tr><td>"I want the public to see my email. I asked State to release them," according to the tweet from (at)Hillary Clinton.</td></tr><tr><td>"Everything I've seen so far has led me to believe that this is an effort to go after Hillary Clinton, period," said Rep.</td></tr></table></td></tr>
 </table></body></html>

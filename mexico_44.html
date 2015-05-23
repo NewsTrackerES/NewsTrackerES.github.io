@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 01:08:15</td><td>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 01:08:15</td><td>Oil platform fire kills 4 in Gulf of Mexico, 302 evacuated</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Ql4pf8PbZIncroK2xjPOog--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6a6d156657eeebe412d128662f8489c81916fce7.jpg.cf.jpg'></td><td>2015-04-02 02:40:04</td><td>MEXICO CITY (Reuters) - At least four people died after a fire broke out on a Pemex oil processing platform in the Gulf of Mexico early on Wednesday, leading to the evacuation of 302 workers, the Mexican state-run oil company said.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Ql4pf8PbZIncroK2xjPOog--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6a6d156657eeebe412d128662f8489c81916fce7.jpg.cf.jpg'></td><td>2015-04-02 02:40:04</td><td>In 2013, at least 37 people were killed by a blast at Pemex's Mexico City headquarters, and another 26 people died in a fire at a Pemex natural gas facility in northern Mexico in September 2012.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-02 02:40:04</td><td>Pemex has had a number of accidents in recent years and the latest one comes as Mexico seeks to lure private investors to revive its flagging oil industry.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 01:08:15</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3021630/Mexicos-Pemex-fights-fire-oil-platform-300-workers-evacuated.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Oil platform fire kills 4 in Gulf of Mexico, 302 evacuated</td></tr><tr><td>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-02 02:40:04</td><td><a href='http://www.reuters.com/article/2015/04/02/us-pemex-fire-idUSKBN0MS4MU20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Pemex has had a number of accidents in recent years and the latest one comes as Mexico seeks to lure private investors to revive its flagging oil industry.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Ql4pf8PbZIncroK2xjPOog--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6a6d156657eeebe412d128662f8489c81916fce7.jpg.cf.jpg'></td><td>2015-04-02 02:40:04</td><td><a href='http://news.yahoo.com/oil-platform-fire-kills-four-gulf-mexico-302-000852717.html'>site</a></td><td><table><tr><td>MEXICO CITY (Reuters) - At least four people died after a fire broke out on a Pemex oil processing platform in the Gulf of Mexico early on Wednesday, leading to the evacuation of 302 workers, the Mexican state-run oil company said.</td></tr><tr><td>In 2013, at least 37 people were killed by a blast at Pemex's Mexico City headquarters, and another 26 people died in a fire at a Pemex natural gas facility in northern Mexico in September 2012.</td></tr></table></td></tr>
 </table></body></html>

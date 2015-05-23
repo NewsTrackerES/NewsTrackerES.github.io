@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td>The lines separating government powers have been blurred among Ferguson's court staff, police and prosecutor, raising concerns about potential conflicts of interest, according to a report released Monday by Missouri's judiciary.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td>The report said Ferguson appears to have violated the Supreme Court's procedural rules by having police file a citation - and court staff open a file - before a prosecutor reviews the case.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td>Ferguson Mayor James Knowles said Monday night that the court clerk staff had been placed under the police chief years ago because their offices are in the police building.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td>Court Report Raises Conflict-of-Interest Concern in Ferguson</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td>After the federal review, the Missouri Supreme Court in March appointed appeals Judge Roy Richter to take over the Ferguson court and asked court administration experts to take a look at how things were working.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td><a href='http://abcnews.go.com/US/wireStory/court-report-raises-conflict-interest-concern-ferguson-30968922'>site</a></td><td><table><tr><td>Court Report Raises Conflict-of-Interest Concern in Ferguson</td></tr><tr><td>The lines separating government powers have been blurred among Ferguson's court staff, police and prosecutor, raising concerns about potential conflicts of interest, according to a report released Monday by Missouri's judiciary.</td></tr><tr><td>After the federal review, the Missouri Supreme Court in March appointed appeals Judge Roy Richter to take over the Ferguson court and asked court administration experts to take a look at how things were working.</td></tr><tr><td>Ferguson Mayor James Knowles said Monday night that the court clerk staff had been placed under the police chief years ago because their offices are in the police building.</td></tr><tr><td>The report said Ferguson appears to have violated the Supreme Court's procedural rules by having police file a citation - and court staff open a file - before a prosecutor reviews the case.</td></tr></table></td></tr>
 </table></body></html>

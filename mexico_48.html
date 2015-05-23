@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,14 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 15:07:35</td><td>MEXICO CITY - An attack on a police convoy in the western Mexico state of Jalisco has left at least some officers wounded, marking the latest in a growing series of confrontations between law enforcement and criminal gangs.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 16:40:57</td><td>Jalisco is home to a drug cartel known as "Jalisco New Generation," which experts say is now among Mexico's most powerful.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 16:44:00</td><td>Such large-scale ambushes of state-level security officials and Mexican army patrols are relatively rare in Mexico outside the border state of Tamaulipas.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03259/BKWF01_3259072b.jpg'></td><td>2015-04-07 18:44:16</td><td>At least 15 police officers were killed in an ambush by a gang in western Mexico, an official said on Tuesday, one day after another attack against authorities in Jalisco state.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-07 19:55:09</td><td>Raul Benitez, a security expert at Mexico's National Autonomous University, "the serious thing about this attack was that it was very well planned and orchestrated, with a military-style strategy."</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-08 04:02:03</td><td>Federal police stand next to a bullet riddled and burned car after a criminal gang ambushed a police convoy near the town of Soyatlan, near Puerto Vallarta, Mexico, Monday, April 6, 2015.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-08 04:02:03</td><td>MEXICO CITY (AP) - An ambush that killed 15 state police officers in western Mexico appears to be a drug cartel's revenge attack and could herald a military-style offensive against government authorities.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/QQYcizmHy41P0bc3t8Ai_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ace77c5ac584080f730f6a706700126f.jpg'></td><td>2015-04-08 19:32:37</td><td>"They now rank among the most powerful drug trafficking organizations in Mexico."</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-08 20:50:06</td><td>The U.S. Treasury Department announced sanctions on Mexico's violent and growing Jalisco New Generation cartel a day after the gang mounted a bloody ambush that killed 15 Mexican police officers.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-04-09 00:32:37</td><td>Mourners comfort each other during a ceremony to honor slain policemen in Tlaquepaque, Mexico, Wednesday, April 8, 2015.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-04-09 00:59:01</td><td>Officers carry a coffin with the body of a slain police officer during a ceremony in Tlaquepaque, Mexico, Wednesday, April 8, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 15:07:35</td><td><a href='http://www.foxnews.com/world/2015/04/07/attack-in-western-mexico-leaves-police-officers-wounded-in-latest-clash-with/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MEXICO CITY - An attack on a police convoy in the western Mexico state of Jalisco has left at least some officers wounded, marking the latest in a growing series of confrontations between law enforcement and criminal gangs.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 16:40:57</td><td><a href='http://www.startribune.com/world/298906111.html'>site</a></td><td>Jalisco is home to a drug cartel known as "Jalisco New Generation," which experts say is now among Mexico's most powerful.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 16:44:00</td><td><a href='http://abcnews.go.com/International/wireStory/attack-western-mexico-leaves-police-officers-wounded-30136873'>site</a></td><td>Such large-scale ambushes of state-level security officials and Mexican army patrols are relatively rare in Mexico outside the border state of Tamaulipas.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03259/BKWF01_3259072b.jpg'></td><td>2015-04-07 18:44:16</td><td><a href='http://www.telegraph.co.uk/news/worldnews/centralamericaandthecaribbean/mexico/11520945/Mexico-ambush-leaves-15-police-dead.html'>site</a></td><td>At least 15 police officers were killed in an ambush by a gang in western Mexico, an official said on Tuesday, one day after another attack against authorities in Jalisco state.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-07 19:55:09</td><td><a href='http://abcnews.go.com/International/wireStory/attack-western-mexico-leaves-police-officers-wounded-30136873'>site</a></td><td>Raul Benitez, a security expert at Mexico's National Autonomous University, "the serious thing about this attack was that it was very well planned and orchestrated, with a military-style strategy."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 04:02:03</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/08/ambush-that-killed-15-police-in-western-mexico-a-rarity'>site</a></td><td><table><tr><td>Federal police stand next to a bullet riddled and burned car after a criminal gang ambushed a police convoy near the town of Soyatlan, near Puerto Vallarta, Mexico, Monday, April 6, 2015.</td></tr><tr><td>MEXICO CITY (AP) - An ambush that killed 15 state police officers in western Mexico appears to be a drug cartel's revenge attack and could herald a military-style offensive against government authorities.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/QQYcizmHy41P0bc3t8Ai_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ace77c5ac584080f730f6a706700126f.jpg'></td><td>2015-04-08 19:32:37</td><td><a href='http://news.yahoo.com/ambush-killed-15-police-western-mexico-rarity-040227061.html'>site</a></td><td>"They now rank among the most powerful drug trafficking organizations in Mexico."</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-08 20:50:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article17817428.html#storylink=rss'>site</a></td><td>The U.S. Treasury Department announced sanctions on Mexico's violent and growing Jalisco New Generation cartel a day after the gang mounted a bloody ambush that killed 15 Mexican police officers.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-09 00:32:37</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/08/ambush-that-killed-15-police-in-western-mexico-a-rarity'>site</a></td><td>Mourners comfort each other during a ceremony to honor slain policemen in Tlaquepaque, Mexico, Wednesday, April 8, 2015.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-09 00:59:01</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-08-LT--Mexico-Violence/id-ac715f59b86546ce9c309f7bc9407e72'>site</a></td><td>Officers carry a coffin with the body of a slain police officer during a ceremony in Tlaquepaque, Mexico, Wednesday, April 8, 2015.</td></tr>
 </table></body></html>

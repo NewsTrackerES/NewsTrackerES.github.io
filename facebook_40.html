@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 13:00:44</td><td>Schrems accused Facebook of engaging in delaying tactics.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 13:00:44</td><td>The suit is the latest of several legal challenges in Europe and the United States to Facebook for the way it shares users' personal data with businesses or governments.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 13:00:44</td><td>Facebook's lawyers did not address the details of the privacy concerns mentioned in his suit and declined to comment further outside of the court room.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://img.rasset.ie/0008759e-642.jpg'></td><td>2015-04-09 13:18:32</td><td>Mr Schrems is claiming damages for alleged data violations by Facebook, including by aiding the US National Security Agency in running its PRISM programme, which mined the personal data of Facebook users.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/0008759e-642.jpg'></td><td>2015-04-09 13:18:32</td><td>Facebook has presented a long list of procedural objections to an Austrian court trying to halt a class action lawsuit for 25,000 users that accuses the social media giant of violating their privacy.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://img.rasset.ie/0008759e-642.jpg'></td><td>2015-04-09 13:18:32</td><td>The first day of hearings began with a four-hour session in which Facebook's lawyers tried to convince the judge not to admit the suit brought by law student Max Schrems.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://img.rasset.ie/0008759e-642.jpg'></td><td>2015-04-09 13:18:32</td><td>In the first hearing, attorneys for Mr Schrems and Facebook battled on technical grounds about whether the student has the status of a private Facebook consumer and if the 25,000 plaintiffs are legally allowed to confer their rights on him.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://img.rasset.ie/0008759e-642.jpg'></td><td>2015-04-09 13:18:32</td><td>"The lawsuit is inadmissible on the procedural level - the court is not responsible," Facebook's lawyer Nikolaus Pitkowitz told the judge.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-04-09 16:03:29</td><td>Austrian data activist Max Schrems talks to the media in the courthouse after his trial against Facebook in Vienna April 9, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 13:00:44</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3031998/Austrian-students-lawsuit-vs-Facebook-bogged-procedure.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The suit is the latest of several legal challenges in Europe and the United States to Facebook for the way it shares users' personal data with businesses or governments.</td></tr><tr><td>Schrems accused Facebook of engaging in delaying tactics.</td></tr><tr><td>Facebook's lawyers did not address the details of the privacy concerns mentioned in his suit and declined to comment further outside of the court room.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0008759e-642.jpg'></td><td>2015-04-09 13:18:32</td><td><a href='http://www.rte.ie/news/2015/0409/693035-facebook-austria/'>site</a></td><td><table><tr><td>Facebook has presented a long list of procedural objections to an Austrian court trying to halt a class action lawsuit for 25,000 users that accuses the social media giant of violating their privacy.</td></tr><tr><td>The first day of hearings began with a four-hour session in which Facebook's lawyers tried to convince the judge not to admit the suit brought by law student Max Schrems.</td></tr><tr><td>"The lawsuit is inadmissible on the procedural level - the court is not responsible," Facebook's lawyer Nikolaus Pitkowitz told the judge.</td></tr><tr><td>In the first hearing, attorneys for Mr Schrems and Facebook battled on technical grounds about whether the student has the status of a private Facebook consumer and if the 25,000 plaintiffs are legally allowed to confer their rights on him.</td></tr><tr><td>Mr Schrems is claiming damages for alleged data violations by Facebook, including by aiding the US National Security Agency in running its PRISM programme, which mined the personal data of Facebook users.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-09 16:03:29</td><td><a href='http://technology.canoe.ca/News/2015/04/09/22335371.html?cid=rsstechnology'>site</a></td><td>Austrian data activist Max Schrems talks to the media in the courthouse after his trial against Facebook in Vienna April 9, 2015.</td></tr>
 </table></body></html>

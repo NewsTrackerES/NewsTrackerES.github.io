@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td>MEXICO CITY (AP) - Activists from Mexico, the United States and Canada are asking the U.N. World Heritage Committee to include the Monarch butterfly wintering reserve on a list of sites considered in danger.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td>UNESCO designated the 139,000-acre (56,259 hectare) reserve in the mountains west of Mexico City a World Heritage site in 2008.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td>But the number of butterflies wintering in Mexico has dropped steeply in recent years, leading to worries the migration might end.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-14 20:35:23</td><td>FILE - In this Jan. 4, 2015, file photo, rabbles of Monarch butterflies cling to tree branches, in the Piedra Herrada sanctuary, near Valle de Bravo, Mexico.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td><a href='http://news.yahoo.com/mexico-groups-ask-un-list-monarch-danger-203414979.html'>site</a></td><td><table><tr><td>MEXICO CITY (AP) - Activists from Mexico, the United States and Canada are asking the U.N. World Heritage Committee to include the Monarch butterfly wintering reserve on a list of sites considered in danger.</td></tr><tr><td>UNESCO designated the 139,000-acre (56,259 hectare) reserve in the mountains west of Mexico City a World Heritage site in 2008.</td></tr><tr><td>But the number of butterflies wintering in Mexico has dropped steeply in recent years, leading to worries the migration might end.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-14 20:35:23</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-groups-list-monarch-reserve-danger-30316999'>site</a></td><td>FILE - In this Jan. 4, 2015, file photo, rabbles of Monarch butterflies cling to tree branches, in the Piedra Herrada sanctuary, near Valle de Bravo, Mexico.</td></tr>
 </table></body></html>

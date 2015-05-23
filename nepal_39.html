@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 20:11:33</td><td>WASHINGTON (AP) - The Pentagon says a U.S. military plane has departed from the Dover Air Force Base in Delaware bound for earthquake-stricken Nepal.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 20:11:33</td><td>More than two dozen Defense Department personnel and a transport plane are currently in Nepal on a training exercise.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 20:11:33</td><td><a href='http://www.utsandiego.com/news/2015/apr/26/pentagon-us-military-sending-aid-to-quake-ravaged/'>site</a></td><td><table><tr><td>WASHINGTON (AP) - The Pentagon says a U.S. military plane has departed from the Dover Air Force Base in Delaware bound for earthquake-stricken Nepal.</td></tr><tr><td>More than two dozen Defense Department personnel and a transport plane are currently in Nepal on a training exercise.</td></tr></table></td></tr>
 </table></body></html>

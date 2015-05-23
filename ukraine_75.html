@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,11 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 06:39:50</td><td>NATO and an independent London-based Russian scholar estimate that Russia has several hundred military trainers in eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-03 06:40:46</td><td>Russia's role in Ukraine seen shifting to training rebels</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-03 06:40:46</td><td>YENAKIEYEVE, Ukraine (AP) - On a recent spring morning, an important visitor watched Russian-backed rebels conduct infantry maneuvers in eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-03 06:40:46</td><td>More recently, as a shaky cease-fire has taken hold, Russia has kept fewer troops in Ukraine but increased rebel training.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-03 06:40:46</td><td>Nearly a year into the Ukraine conflict, the extent of Moscow's direct involvement has become clear: They may wear camouflage, but the Russians' presence in eastern Ukraine is hardly invisible.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-03 06:41:21</td><td>While the Kremlin acknowledges that many Russians have fought in Ukraine as volunteers, and such volunteers are regularly seen at checkpoints in rebel-held areas, Russia firmly denies sending its troops across the border or arming the rebels.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/03/05/273F4B7F00000578-0-image-m-17_1428036414470.jpg'></td><td>2015-04-03 07:07:10</td><td>FILE - In this Wednesday, March 11, 2015, file photo, pro-Russian rebels line up in front of their commander during a military training exercise near Yenakiyeve, eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/876/493/Ukraine Russian Train_Cham640360.jpg?ve=1&tl=1'></td><td>2015-04-03 16:34:48</td><td>"One of the most important tasks now is to keep these republics as possible leverage on Ukraine," he said.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82503000/jpg/_82503014_469166148.jpg'></td><td>2015-04-22 22:24:58</td><td>Russia 'ramping up Ukraine presence'</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/23/ad1ceb23b66a3311740f6a7067003c0e_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-23 17:29:23</td><td>BRUSSELS (AP) - NATO's chief says there is a sizeable Russian military buildup on the border with Ukraine which he said would enable pro-Moscow separatists to launch a new offensive with little warning.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 06:39:50</td><td><a href='http://www.utsandiego.com/news/2015/apr/02/russias-role-in-ukraine-seen-shifting-to-training/'>site</a></td><td>NATO and an independent London-based Russian scholar estimate that Russia has several hundred military trainers in eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 06:40:46</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/03/russias-role-in-ukraine-seen-shifting-to-training-rebels'>site</a></td><td><table><tr><td>Russia's role in Ukraine seen shifting to training rebels</td></tr><tr><td>YENAKIEYEVE, Ukraine (AP) - On a recent spring morning, an important visitor watched Russian-backed rebels conduct infantry maneuvers in eastern Ukraine.</td></tr><tr><td>Nearly a year into the Ukraine conflict, the extent of Moscow's direct involvement has become clear: They may wear camouflage, but the Russians' presence in eastern Ukraine is hardly invisible.</td></tr><tr><td>More recently, as a shaky cease-fire has taken hold, Russia has kept fewer troops in Ukraine but increased rebel training.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-03 06:41:21</td><td><a href='http://abcnews.go.com/International/wireStory/russias-role-ukraine-shifting-training-rebels-30078980'>site</a></td><td>While the Kremlin acknowledges that many Russians have fought in Ukraine as volunteers, and such volunteers are regularly seen at checkpoints in rebel-held areas, Russia firmly denies sending its troops across the border or arming the rebels.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/03/05/273F4B7F00000578-0-image-m-17_1428036414470.jpg'></td><td>2015-04-03 07:07:10</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3024188/Russias-role-Ukraine-seen-shifting-training-rebels.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>FILE - In this Wednesday, March 11, 2015, file photo, pro-Russian rebels line up in front of their commander during a military training exercise near Yenakiyeve, eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/876/493/Ukraine Russian Train_Cham640360.jpg?ve=1&tl=1'></td><td>2015-04-03 16:34:48</td><td><a href='http://www.foxnews.com/world/2015/04/03/russian-military-forces-shift-from-fighting-alongside-ukraine-rebels-to/'>site</a></td><td>"One of the most important tasks now is to keep these republics as possible leverage on Ukraine," he said.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82503000/jpg/_82503014_469166148.jpg'></td><td>2015-04-22 22:24:58</td><td><a href='http://www.bbc.co.uk/news/world-europe-32425602#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Russia 'ramping up Ukraine presence'</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/23/ad1ceb23b66a3311740f6a7067003c0e_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-23 17:29:23</td><td><a href='http://www.utsandiego.com/news/2015/apr/23/nato-big-military-buildup-on-russia-ukraine-border/'>site</a></td><td>BRUSSELS (AP) - NATO's chief says there is a sizeable Russian military buildup on the border with Ukraine which he said would enable pro-Moscow separatists to launch a new offensive with little warning.</td></tr>
 </table></body></html>

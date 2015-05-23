@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/4/g/8/w/image.related.articleLeadwide.620x349.1m4g80.png/1426952764564.jpg'></td><td>2015-03-20 23:19:06</td><td>Towns and cities in Spain are being renamed on Google Maps after their former incarnations as Islamic kingdoms almost 10 centuries ago.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/4/g/8/w/image.related.articleLeadwide.620x349.1m4g80.png/1426952764564.jpg'></td><td>2015-03-20 23:19:06</td><td>Google encourages users to moderate incorrect material and bars those found to have acted maliciously or to have given wrong information three times.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/4/g/8/w/image.related.articleLeadwide.620x349.1m4g80.png/1426952764564.jpg'></td><td>2015-03-20 23:19:06</td><td><a href='http://www.brisbanetimes.com.au/world/spanish-towns-revert-to-islamic-names-on-google-maps-20150321-1m4g80.html'>site</a></td><td><table><tr><td>Towns and cities in Spain are being renamed on Google Maps after their former incarnations as Islamic kingdoms almost 10 centuries ago.</td></tr><tr><td>Google encourages users to moderate incorrect material and bars those found to have acted maliciously or to have given wrong information three times.</td></tr></table></td></tr>
 </table></body></html>

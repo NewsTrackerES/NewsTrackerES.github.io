@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 16:39:07</td><td>The negotiations are aimed in part at resolving a lawsuit against the CIA and the State Department brought by the mother of Glen Doherty, a former Navy SEAL who died in a mortar attack while defending the agency's building as a CIA contractor.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 16:39:07</td><td>The House committee investigating the Benghazi attack has also been pressing the CIA on the matter.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 16:39:07</td><td>Tyrone Woods, the other CIA contractor who died in the mortar attack, was married with a young child, and he had two children from a previous marriage.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 16:58:48</td><td>The family of a CIA operative killed in the 2012 attack on a U.S. diplomatic facility in Libya is in talks with the spy agency to expand survivor benefits for relatives of contractors who die in the line of duty.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-13 18:25:06</td><td>Separately, Doherty's family and Lake recently settled a lawsuit they filed in state court in California over the death benefit policy Doherty was required to take out as a CIA contractor who performed security work overseas in hazardous areas.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-13 18:25:06</td><td>"We continue to have cooperative conversations" with the CIA.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 16:39:07</td><td><a href='http://www.usnews.com/news/politics/articles/2015/05/13/benghazi-prompts-cia-to-look-at-expanding-survivor-benefits'>site</a></td><td><table><tr><td>The negotiations are aimed in part at resolving a lawsuit against the CIA and the State Department brought by the mother of Glen Doherty, a former Navy SEAL who died in a mortar attack while defending the agency's building as a CIA contractor.</td></tr><tr><td>Tyrone Woods, the other CIA contractor who died in the mortar attack, was married with a young child, and he had two children from a previous marriage.</td></tr><tr><td>The House committee investigating the Benghazi attack has also been pressing the CIA on the matter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 16:58:48</td><td><a href='http://www.foxnews.com/politics/2015/05/13/benghazi-prompts-cia-to-look-at-expanding-survivor-benefits/'>site</a></td><td>The family of a CIA operative killed in the 2012 attack on a U.S. diplomatic facility in Libya is in talks with the spy agency to expand survivor benefits for relatives of contractors who die in the line of duty.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-13 18:25:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20804670.html#storylink=rss'>site</a></td><td><table><tr><td>"We continue to have cooperative conversations" with the CIA.</td></tr><tr><td>Separately, Doherty's family and Lake recently settled a lawsuit they filed in state court in California over the death benefit policy Doherty was required to take out as a CIA contractor who performed security work overseas in hazardous areas.</td></tr></table></td></tr>
 </table></body></html>

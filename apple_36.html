@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td>Apple's device will likely account for 55 percent of global smartwatch shipments this year in a market worth about $11 billion, according to market analysis group Societe Generale.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 22:01:54</td><td>Starting Friday, the Apple Watch will be available for preview in stores and preorder on the Internet ahead of its April 24 on-sale date.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 22:01:54</td><td>Nevertheless, Apple is out-spending other smartwatch makers like Samsung Electronics and has a history of getting a big return from its TV advertising spending.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-09 22:01:54</td><td>"The iPhone 6 was a barn burner from the get-go. But with the Apple Watch, which is new product category with less familiarity, it makes sense that they'd go after it with more intensity," said JMP analyst Alex Gauna.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039208859&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3810P'></td><td>2015-04-09 22:03:22</td><td>With primetime TV, Apple hopes to hook customers for new Watch</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:54</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032821/With-primetime-TV-Apple-hopes-hook-customers-new-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>"The iPhone 6 was a barn burner from the get-go. But with the Apple Watch, which is new product category with less familiarity, it makes sense that they'd go after it with more intensity," said JMP analyst Alex Gauna.</td></tr><tr><td>Starting Friday, the Apple Watch will be available for preview in stores and preorder on the Internet ahead of its April 24 on-sale date.</td></tr><tr><td>Apple's device will likely account for 55 percent of global smartwatch shipments this year in a market worth about $11 billion, according to market analysis group Societe Generale.</td></tr><tr><td>Nevertheless, Apple is out-spending other smartwatch makers like Samsung Electronics and has a history of getting a big return from its TV advertising spending.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039208859&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3810P'></td><td>2015-04-09 22:03:22</td><td><a href='http://www.reuters.com/article/2015/04/09/us-apple-watch-advertising-idUSKBN0N02FQ20150409?feedType=RSS&feedName=technologyNews'>site</a></td><td>With primetime TV, Apple hopes to hook customers for new Watch</td></tr>
 </table></body></html>

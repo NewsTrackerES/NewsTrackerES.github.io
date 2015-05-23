@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 17:49:04</td><td>Arlene Holmes wrote in "When The Focus Shifts: The Prayer Book of Arlene Holmes 2013-2014," that she can never forgive herself for not predicting the shooting that killed 12 and injured 70.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 17:49:04</td><td>The mother of Colorado theater shooter James Holmes feels guilty for not knowing her son was mentally ill and needed treatment, she wrote in a book of prayers and reflections compiled since the 2012 attack.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 17:49:04</td><td>Arlene Holmes said her son's defense team had no knowledge of the book.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 17:49:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article16980761.html#storylink=rss'>site</a></td><td><table><tr><td>The mother of Colorado theater shooter James Holmes feels guilty for not knowing her son was mentally ill and needed treatment, she wrote in a book of prayers and reflections compiled since the 2012 attack.</td></tr><tr><td>Arlene Holmes wrote in "When The Focus Shifts: The Prayer Book of Arlene Holmes 2013-2014," that she can never forgive herself for not predicting the shooting that killed 12 and injured 70.</td></tr><tr><td>Arlene Holmes said her son's defense team had no knowledge of the book.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 21:10:34</td><td>MSC chairman Pierfrancesco Vago said the company hoped to return to Tunisia, but that for now tourists view it as a "no-go zone."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 21:13:06</td><td>Two cruise lines suspended visits to Tunisia on Thursday after 17 passengers from their ships were killed in the museum attack, delivering an immediate economic blow to the North African country.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 21:13:06</td><td>On Thursday morning, both the MSC Splendida and Costa's Fascinosa ship left Tunisia with their remaining passengers, bound for Barcelona and Palma de Mallorca, respectively.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 21:13:06</td><td>Separately, Italy announced it was beefing up its military presence in the Mediterranean to better protect against extremist threats from Libya and Tunisia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 21:10:34</td><td><a href='http://abcnews.go.com/International/wireStory/cruise-line-cancels-tunisian-ports-call-attack-29749006'>site</a></td><td>MSC chairman Pierfrancesco Vago said the company hoped to return to Tunisia, but that for now tourists view it as a "no-go zone."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 21:13:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article15334823.html#storylink=rss'>site</a></td><td><table><tr><td>Two cruise lines suspended visits to Tunisia on Thursday after 17 passengers from their ships were killed in the museum attack, delivering an immediate economic blow to the North African country.</td></tr><tr><td>On Thursday morning, both the MSC Splendida and Costa's Fascinosa ship left Tunisia with their remaining passengers, bound for Barcelona and Palma de Mallorca, respectively.</td></tr><tr><td>Separately, Italy announced it was beefing up its military presence in the Mediterranean to better protect against extremist threats from Libya and Tunisia.</td></tr></table></td></tr>
 </table></body></html>

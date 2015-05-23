@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,10 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 19:57:23</td><td>Some houses and schools located close to the volcano have collapsed under the weight of the ash.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 20:03:43</td><td>Most of the mines in top copper exporter Chile are located in the north of the country, far from the volcano.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 20:03:43</td><td>Chile volcano prompts new evacuations, flights to Argentina cancelled</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150425001125553979-original.jpg?itok=wiLG3o0x'></td><td>2015-04-25 02:43:28</td><td>Television images showed residents in a town close to Lake Chapo quickly driving down ash-laden streets away from the smoldering volcano.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 15:50:58</td><td>"The dangerous nature of volcanic activity like this plus the volcano's current instability that could lead to more intense activity in the short term indicates we should maintain the perimeter," Chile's national office of emergency said in its latest report.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-25 17:39:01</td><td>Chile volcano ash cloud reaches Brazil; some flights canceled</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150425001125800805-original.jpg?itok=1vwi-c_u'></td><td>2015-04-25 22:19:17</td><td>Ash from the Chilean volcano Calbuco, which erupted without warning this week, reached as far as southern Brazil on Saturday and prompted some airlines to cancel flights to the capitals of Chile, Argentina and Uruguay.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 19:57:23</td><td><a href='http://www.reuters.com/article/2015/04/24/chile-volcano-idUSL1N0XL1QQ20150424?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Some houses and schools located close to the volcano have collapsed under the weight of the ash.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 20:03:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054508/Chile-volcano-prompts-new-evacuations-flights-Argentina-cancelled.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Chile volcano prompts new evacuations, flights to Argentina cancelled</td></tr><tr><td>Most of the mines in top copper exporter Chile are located in the north of the country, far from the volcano.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150425001125553979-original.jpg?itok=wiLG3o0x'></td><td>2015-04-25 02:43:28</td><td><a href='http://www.sbs.com.au/news/article/2015/04/25/hikers-video-captures-exact-moment-volcanic-eruption'>site</a></td><td>Television images showed residents in a town close to Lake Chapo quickly driving down ash-laden streets away from the smoldering volcano.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 15:50:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3055279/Chile-volcano-ash-cloud-reaches-Brazil-flights-cancelled.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"The dangerous nature of volcanic activity like this plus the volcano's current instability that could lead to more intense activity in the short term indicates we should maintain the perimeter," Chile's national office of emergency said in its latest report.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-25 17:39:01</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3055402/Chile-volcano-ash-cloud-reaches-Brazil-flights-canceled.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Chile volcano ash cloud reaches Brazil; some flights canceled</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150425001125800805-original.jpg?itok=1vwi-c_u'></td><td>2015-04-25 22:19:17</td><td><a href='http://www.sbs.com.au/news/article/2015/04/26/chile-volcano-ash-cloud-reaches-brazil-flights-cancelled'>site</a></td><td>Ash from the Chilean volcano Calbuco, which erupted without warning this week, reached as far as southern Brazil on Saturday and prompted some airlines to cancel flights to the capitals of Chile, Argentina and Uruguay.</td></tr>
 </table></body></html>

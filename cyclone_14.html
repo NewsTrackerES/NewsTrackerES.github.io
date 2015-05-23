@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>Cyclone Pam: Is it time for a category-6 cyclone rating?</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>The unusual strength of Cyclone Pam, which devastated Vanuatu over the weekend, may stir debate about the need for a category-6 rating for storms to reflect their increasing severity.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>A University of South Pacific sign bent by the ferocity of Cyclone Pam.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>Cyclone Pam was "certainly one of the biggest storms to occur in the South Pacific", Kevin Walsh, an associate professor at Melbourne University, said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>Residents stand near a bridge damaged by Cyclone Pam near Port Vila.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>Cyclone Pam left debris scattered across Port Vila with residents now beginning the massive clean-up effort.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td>Cyclone Pam may have exceeded both measures.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>6</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td><a href='http://www.smh.com.au/environment/climate-change/cyclone-pam-is-it-time-for-a-category6-cyclone-rating-20150316-1m04qv.html'>site</a></td><td>Cyclone Pam may have exceeded both measures.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td><a href='http://www.brisbanetimes.com.au/environment/climate-change/cyclone-pam-is-it-time-for-a-category6-cyclone-rating-20150316-1m04qv.html'>site</a></td><td><table><tr><td>Cyclone Pam: Is it time for a category-6 cyclone rating?</td></tr><tr><td>Cyclone Pam left debris scattered across Port Vila with residents now beginning the massive clean-up effort.</td></tr><tr><td>The unusual strength of Cyclone Pam, which devastated Vanuatu over the weekend, may stir debate about the need for a category-6 rating for storms to reflect their increasing severity.</td></tr><tr><td>Residents stand near a bridge damaged by Cyclone Pam near Port Vila.</td></tr><tr><td>Cyclone Pam was "certainly one of the biggest storms to occur in the South Pacific", Kevin Walsh, an associate professor at Melbourne University, said.</td></tr><tr><td>A University of South Pacific sign bent by the ferocity of Cyclone Pam.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/01/46/7870909/5/920x920.jpg'></td><td>2015-04-24 09:16:14</td><td>Recently, niggling anxieties about the potential for such a large ethnic group to pursue a separatist agenda have been rekindled by unrest in Ukraine, where ethnic Russians have been goaded by Moscow into mounting an armed insurrection.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/36/01/46/7870909/5/920x920.jpg'></td><td>2015-04-24 09:16:14</td><td>Moscow currently enjoys warm diplomatic and economic ties with Kazakhstan, as did Ukraine before the president there was toppled in a pro-Western uprising.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/36/01/46/7870909/5/920x920.jpg'></td><td>2015-04-24 09:16:14</td><td>Leonard reported from Kiev, Ukraine.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/01/46/7870909/5/920x920.jpg'></td><td>2015-04-24 09:16:14</td><td>Kazakhstan votes for continuity while keeping eye on Ukraine</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/01/46/7870909/5/920x920.jpg'></td><td>2015-04-24 09:16:14</td><td><a href='http://www.sfgate.com/news/world/article/Kazakhstan-votes-for-continuity-while-keeping-eye-6221173.php'>site</a></td><td><table><tr><td>Kazakhstan votes for continuity while keeping eye on Ukraine</td></tr><tr><td>Recently, niggling anxieties about the potential for such a large ethnic group to pursue a separatist agenda have been rekindled by unrest in Ukraine, where ethnic Russians have been goaded by Moscow into mounting an armed insurrection.</td></tr><tr><td>Moscow currently enjoys warm diplomatic and economic ties with Kazakhstan, as did Ukraine before the president there was toppled in a pro-Western uprising.</td></tr><tr><td>Leonard reported from Kiev, Ukraine.</td></tr></table></td></tr>
 </table></body></html>

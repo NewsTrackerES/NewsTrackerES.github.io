@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pchSTnYq6okgpLV9vkPsCw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T200837Z_1_LYNXMPEB2O11S_RTROPTP_2_ISRAEL-NETANYAHU-GOVERNMENT.JPG'></td><td>2015-03-25 19:22:18</td><td>In addition, centrist Kulanu, with 10 seats, ultra-Orthodox Shas, with seven, and United Torah Judaism, with six, have also backed Netanyahu, whose Likud has 30 legislators of its own.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pchSTnYq6okgpLV9vkPsCw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T200837Z_1_LYNXMPEB2O11S_RTROPTP_2_ISRAEL-NETANYAHU-GOVERNMENT.JPG'></td><td>2015-03-25 19:22:18</td><td>Netanyahu's pre-election promise that there would be no Palestinian state on his watch and his comments about Arab voters further aggravated his testy relationship with U.S. President Barack Obama, who has dismissed his subsequent attempts to backtrack.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pchSTnYq6okgpLV9vkPsCw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T200837Z_1_LYNXMPEB2O11S_RTROPTP_2_ISRAEL-NETANYAHU-GOVERNMENT.JPG'></td><td>2015-03-25 19:22:18</td><td>President Reuven Rivlin had some uncharacteristic criticism of Netanyahu as he went through the formality of handing him a mandate to establish a new government, having verified with party leaders that a majority supported him.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/3999/1745097732_4133932348001_d2f0d16aafe2166a90b64b61dd8c5ff5-tmb1.jpg?pubId=1745097732'></td><td>2015-03-25 19:57:23</td><td>Two far-right parties - Jewish Home, which won eight seats, and Yisrael Beitenu, with six - have pledged their support for Netanyahu in consultations with Rivlin.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/pchSTnYq6okgpLV9vkPsCw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-25T200837Z_1_LYNXMPEB2O11S_RTROPTP_2_ISRAEL-NETANYAHU-GOVERNMENT.JPG'></td><td>2015-03-25 19:22:18</td><td><a href='http://news.yahoo.com/netanyahu-set-ahead-form-israels-next-government-124843241.html'>site</a></td><td><table><tr><td>President Reuven Rivlin had some uncharacteristic criticism of Netanyahu as he went through the formality of handing him a mandate to establish a new government, having verified with party leaders that a majority supported him.</td></tr><tr><td>In addition, centrist Kulanu, with 10 seats, ultra-Orthodox Shas, with seven, and United Torah Judaism, with six, have also backed Netanyahu, whose Likud has 30 legislators of its own.</td></tr><tr><td>Netanyahu's pre-election promise that there would be no Palestinian state on his watch and his comments about Arab voters further aggravated his testy relationship with U.S. President Barack Obama, who has dismissed his subsequent attempts to backtrack.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/3999/1745097732_4133932348001_d2f0d16aafe2166a90b64b61dd8c5ff5-tmb1.jpg?pubId=1745097732'></td><td>2015-03-25 19:57:23</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/25/22307791.html?cid=rssnewsworld'>site</a></td><td>Two far-right parties - Jewish Home, which won eight seats, and Yisrael Beitenu, with six - have pledged their support for Netanyahu in consultations with Rivlin.</td></tr>
 </table></body></html>

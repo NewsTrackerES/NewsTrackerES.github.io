@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:39:58</td><td>Nigeria's Islamist sect Boko Haram released a video purporting to show it beheading two men, its first online posting using advanced graphics and editing techniques reminiscent of footage from Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/boko_haram_nigeria_march_25_2014.jpg'></td><td>2015-03-03 14:38:23</td><td>Nigeria's President Goodluck Jonathan has said Boko Haram is allied to both Al Qaeda and its offshoot Islamic State, though that has not been confirmed by the group itself.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/boko_haram_nigeria_march_25_2014.jpg'></td><td>2015-03-03 14:38:23</td><td>The Boko Haram film's use of graphics, the footage of black-clad militants with a black flag, and the editing to show only the aftermath of the beheading, were particularly reminiscent of footage from Islamic state, which has seized large parts of Iraq and Syria and killed several hostages.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 15:57:56</td><td>After taking over swathes on Iraq and Syria, Islamic State gained further notoriety by posting a video showing the beheading of American journalist James Foley in August followed by several more similar executions.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000a43b5-642.jpg'></td><td>2015-03-07 23:18:57</td><td>Nigeria's militant Islamist group Boko Haram has pledged allegiance to the Islamic State group, which rules a self-declared caliphate in parts of Iraq and Syria, according to a video posted online.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 10:39:58</td><td><a href='http://www.theglobeandmail.com/news/world/nigerias-boko-haram-releases-beheading-video-echoing-islamic-state/article23259611/?cmpid=rss1'>site</a></td><td>Nigeria's Islamist sect Boko Haram released a video purporting to show it beheading two men, its first online posting using advanced graphics and editing techniques reminiscent of footage from Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/boko_haram_nigeria_march_25_2014.jpg'></td><td>2015-03-03 14:38:23</td><td><a href='http://www.globalpost.com/dispatch/news/regions/africa/nigeria/150303/nigerias-boko-haram-releases-beheading-video-echoing-isl'>site</a></td><td><table><tr><td>Nigeria's President Goodluck Jonathan has said Boko Haram is allied to both Al Qaeda and its offshoot Islamic State, though that has not been confirmed by the group itself.</td></tr><tr><td>The Boko Haram film's use of graphics, the footage of black-clad militants with a black flag, and the editing to show only the aftermath of the beheading, were particularly reminiscent of footage from Islamic state, which has seized large parts of Iraq and Syria and killed several hostages.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 15:57:56</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/03/22266016.html?cid=rssnewsworld'>site</a></td><td>After taking over swathes on Iraq and Syria, Islamic State gained further notoriety by posting a video showing the beheading of American journalist James Foley in August followed by several more similar executions.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://img.rasset.ie/000a43b5-642.jpg'></td><td>2015-03-07 23:18:57</td><td><a href='http://www.rte.ie/news/2015/0307/685350-nigeria-explosions/'>site</a></td><td>Nigeria's militant Islamist group Boko Haram has pledged allegiance to the Islamic State group, which rules a self-declared caliphate in parts of Iraq and Syria, according to a video posted online.</td></tr>
 </table></body></html>

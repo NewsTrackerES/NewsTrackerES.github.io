@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:36:10</td><td>JOHANNESBURG (AP) - South African security authorities say a teenager was taken off an airline flight because the 15-year-old girl was suspected to be leaving her home in Cape Town to join the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 18:36:10</td><td>South Africa's State Security Minister David Mahlobo said in local media that the girl's social media accounts showed she was interested in joining the Islamic extremist group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:36:10</td><td><a href='http://www.utsandiego.com/news/2015/apr/06/official-south-african-teen-stopped-from-leaving/'>site</a></td><td><table><tr><td>JOHANNESBURG (AP) - South African security authorities say a teenager was taken off an airline flight because the 15-year-old girl was suspected to be leaving her home in Cape Town to join the Islamic State group.</td></tr><tr><td>South Africa's State Security Minister David Mahlobo said in local media that the girl's social media accounts showed she was interested in joining the Islamic extremist group.</td></tr></table></td></tr>
 </table></body></html>

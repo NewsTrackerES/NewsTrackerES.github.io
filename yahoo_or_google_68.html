@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,8 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-04-23 20:56:58</td><td>Earlier this month, the European Union accused Google of abusing its dominance of Internet searches to push its own products.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-04-23 20:56:58</td><td>Google's ad revenue has been pressured as more consumers access its online services on mobiles devices such as smartphones and tablets, where ad rates are typically lower.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/teFmSz075FnS9x1ym48uiw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T201350Z_4_LYNXMPEB3M0ZO_RTROPTP_3_GOOGLE-RESULTS_original.jpg'></td><td>2015-04-23 21:27:54</td><td>Google shares rise after profit, revenue gains</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/teFmSz075FnS9x1ym48uiw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T201350Z_4_LYNXMPEB3M0ZO_RTROPTP_3_GOOGLE-RESULTS_original.jpg'></td><td>2015-04-23 21:27:54</td><td>"Excluding the net impact of foreign currency headwinds, revenue grew a healthy 17 percent year on year," Google Chief Financial Officer Patrick Pichette said in a statement.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03279/Google_3279162b.jpg'></td><td>2015-04-23 23:07:02</td><td>Google has reported higher revenues and profits as rising ad volume offset the impact of the strong dollar.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/PtL8ZpY8AmaE9FG.KRr84Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-24T014045Z_5_LYNXMPEB3M0ZO_RTROPTP_3_GOOGLE-RESULTS_original.jpg'></td><td>2015-04-24 01:40:45</td><td>The rising dollar took a toll on results at Google, which generates about half of its revenue overseas.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-04-23 20:56:58</td><td><a href='http://finance.yahoo.com/news/google-first-quarter-revenue-rises-200834727.html'>site</a></td><td><table><tr><td>Google's ad revenue has been pressured as more consumers access its online services on mobiles devices such as smartphones and tablets, where ad rates are typically lower.</td></tr><tr><td>Earlier this month, the European Union accused Google of abusing its dominance of Internet searches to push its own products.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/teFmSz075FnS9x1ym48uiw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T201350Z_4_LYNXMPEB3M0ZO_RTROPTP_3_GOOGLE-RESULTS_original.jpg'></td><td>2015-04-23 21:27:54</td><td><a href='http://finance.yahoo.com/news/google-first-quarter-revenue-rises-200830016.html'>site</a></td><td><table><tr><td>Google shares rise after profit, revenue gains</td></tr><tr><td>"Excluding the net impact of foreign currency headwinds, revenue grew a healthy 17 percent year on year," Google Chief Financial Officer Patrick Pichette said in a statement.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03279/Google_3279162b.jpg'></td><td>2015-04-23 23:07:02</td><td><a href='http://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/digital-media/11559954/Google-investors-happy-results-werent-worse.html'>site</a></td><td>Google has reported higher revenues and profits as rising ad volume offset the impact of the strong dollar.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/PtL8ZpY8AmaE9FG.KRr84Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-24T014045Z_5_LYNXMPEB3M0ZO_RTROPTP_3_GOOGLE-RESULTS_original.jpg'></td><td>2015-04-24 01:40:45</td><td><a href='http://finance.yahoo.com/news/google-shares-rise-online-ad-014045090.html'>site</a></td><td>The rising dollar took a toll on results at Google, which generates about half of its revenue overseas.</td></tr>
 </table></body></html>

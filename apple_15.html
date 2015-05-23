@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:03:40</td><td>Fortune estimated Cook's net worth, based on his holdings of Apple stock, at about $120 million.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:03:40</td><td>Apple's Tim Cook to donate his wealth - Fortune</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 22:03:40</td><td>March 26 (Reuters) - Apple Inc Chief Executive Tim Cook said he planned to give away all his wealth, the Fortune magazine reported.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZOaqqlK7hCNaT5Xv8nVsWA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-03-26T220612Z_1_LYNXMPEB2P1CM_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-03-26 23:27:19</td><td>Apple CEO Tim Cook shows the new MacBook during an Apple event in San Francisco, California March 9, 2015.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZOaqqlK7hCNaT5Xv8nVsWA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-03-26T220612Z_1_LYNXMPEB2P1CM_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-03-26 23:27:19</td><td>While Cook's largesse could not begin to approach the scale of a Gates or Zuckerberg, both worth billions of dollars, the Apple CEO told Fortune he hopes to make a difference.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 23:27:19</td><td>(Reuters) - Apple Inc (AAPL.O) Chief Executive Tim Cook is joining the roster of the very rich who are giving away their wealth.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:03:40</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3013710/Apples-Tim-Cook-donate-wealth--Fortune.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Apple's Tim Cook to donate his wealth - Fortune</td></tr><tr><td>March 26 (Reuters) - Apple Inc Chief Executive Tim Cook said he planned to give away all his wealth, the Fortune magazine reported.</td></tr><tr><td>Fortune estimated Cook's net worth, based on his holdings of Apple stock, at about $120 million.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-26 23:27:19</td><td><a href='http://www.reuters.com/article/2015/03/26/us-apple-ceo-tim-cook-idUSKBN0MM2YM20150326?feedType=RSS&feedName=wtMostRead'>site</a></td><td>(Reuters) - Apple Inc (AAPL.O) Chief Executive Tim Cook is joining the roster of the very rich who are giving away their wealth.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZOaqqlK7hCNaT5Xv8nVsWA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-03-26T220612Z_1_LYNXMPEB2P1CM_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-03-26 23:27:19</td><td><a href='http://finance.yahoo.com/news/apples-tim-cook-donate-wealth-220612776.html'>site</a></td><td><table><tr><td>Apple CEO Tim Cook shows the new MacBook during an Apple event in San Francisco, California March 9, 2015.</td></tr><tr><td>While Cook's largesse could not begin to approach the scale of a Gates or Zuckerberg, both worth billions of dollars, the Apple CEO told Fortune he hopes to make a difference.</td></tr></table></td></tr>
 </table></body></html>

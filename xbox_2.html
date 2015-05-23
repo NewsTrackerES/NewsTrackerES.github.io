@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>xbox</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td>Microsoft is investing heavily in training developers on how to create games that work across its platforms this week by sponsoring such GDC sessions as "Developing with Xbox Live for Windows 10" and "Gaming Consumer Experience on Windows 10."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td>Spencer said the marriage of Xbox One and Windows 10 would allow creators to make their games easily accessible to consumers, regardless of whether they switch between devices or where they buy apps.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td>Spencer also teased that Microsoft will release an adapter later this year that will allow PCs to use wireless Xbox One controllers.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td>Microsoft outlines plan to bridge Xbox and PC video gaming</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td><a href='http://news.yahoo.com/microsoft-outlines-plan-bridge-xbox-pc-video-gaming-033532212.html'>site</a></td><td><table><tr><td>Microsoft outlines plan to bridge Xbox and PC video gaming</td></tr><tr><td>Spencer said the marriage of Xbox One and Windows 10 would allow creators to make their games easily accessible to consumers, regardless of whether they switch between devices or where they buy apps.</td></tr><tr><td>Spencer also teased that Microsoft will release an adapter later this year that will allow PCs to use wireless Xbox One controllers.</td></tr><tr><td>Microsoft is investing heavily in training developers on how to create games that work across its platforms this week by sponsoring such GDC sessions as "Developing with Xbox Live for Windows 10" and "Gaming Consumer Experience on Windows 10."</td></tr></table></td></tr>
 </table></body></html>

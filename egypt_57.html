@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 22:43:59</td><td>Prosecutions against members of the security forces are rare in Egypt where the police have reasserted powers eroded since the 2011 popular uprising that ousted autocrat Hosni Mubarak.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 22:43:59</td><td>Foreign governments and rights groups have condemned the use of force to disperse demonstrations at Nahda and Rabaa squares, the bloodiest event in Egypt's recent history.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 22:43:59</td><td>Egypt to try another 379 Brotherhood members over sit-in violence</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 23:02:02</td><td>Egypt's government faces an Islamist insurgency based in that strategic region and growing discontent with what critics perceive as heavy handed security tactics.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 22:43:59</td><td><a href='http://www.reuters.com/article/2015/04/08/us-egypt-court-idUSKBN0MZ2EY20150408?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Egypt to try another 379 Brotherhood members over sit-in violence</td></tr><tr><td>Prosecutions against members of the security forces are rare in Egypt where the police have reasserted powers eroded since the 2011 popular uprising that ousted autocrat Hosni Mubarak.</td></tr><tr><td>Foreign governments and rights groups have condemned the use of force to disperse demonstrations at Nahda and Rabaa squares, the bloodiest event in Egypt's recent history.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 23:02:02</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3031179/Egypt-try-379-Brotherhood-members-sit-violence.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt's government faces an Islamist insurgency based in that strategic region and growing discontent with what critics perceive as heavy handed security tactics.</td></tr>
 </table></body></html>

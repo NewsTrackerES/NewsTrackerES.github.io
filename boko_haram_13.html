@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/03/46/7616927/5/920x920.jpg'></td><td>2015-03-06 13:51:57</td><td>MAIDUGURI, Nigeria (AP) - Boko Haram fighters are massing at their headquarters in the northeast Nigerian town of Gwoza in preparation for a showdown with multinational forces, residents and an intelligence officer said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/fGxCmMNBUFxXqzKxCdoyaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/be47c84f7985000a700f6a706700e778.jpg'></td><td>2015-03-06 13:52:27</td><td>An intelligence officer said security forces are moving slowly for fear of harming civilians, and especially since Boko Haram is surrounding Gwoza with land mines.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/fGxCmMNBUFxXqzKxCdoyaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/be47c84f7985000a700f6a706700e778.jpg'></td><td>2015-03-06 13:52:27</td><td>"She said while being helped by other women to leave through Madagali, they saw many Boko Haram terrorists in trucks and some on bikes moving toward Gwoza."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://images.tvnz.co.nz/tvnz_site_images/world_news/2015/01/boko_haram_continue_violent_attacks_across_african_border_2072887975.jpg'></td><td>2015-03-06 18:17:00</td><td>"She told me that Boko Haram terrorists asked them to leave suddenly, that they were preparing grounds for a major battle," Adama told The Associated Press.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/03/46/7616927/5/920x920.jpg'></td><td>2015-03-06 13:51:57</td><td><a href='http://www.sfgate.com/news/world/article/Residents-Boko-Haram-fighters-gather-in-mass-in-6118620.php'>site</a></td><td>MAIDUGURI, Nigeria (AP) - Boko Haram fighters are massing at their headquarters in the northeast Nigerian town of Gwoza in preparation for a showdown with multinational forces, residents and an intelligence officer said.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/fGxCmMNBUFxXqzKxCdoyaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/be47c84f7985000a700f6a706700e778.jpg'></td><td>2015-03-06 13:52:27</td><td><a href='http://news.yahoo.com/residents-boko-haram-fighters-gather-mass-ne-nigeria-123517685.html'>site</a></td><td><table><tr><td>"She said while being helped by other women to leave through Madagali, they saw many Boko Haram terrorists in trucks and some on bikes moving toward Gwoza."</td></tr><tr><td>An intelligence officer said security forces are moving slowly for fear of harming civilians, and especially since Boko Haram is surrounding Gwoza with land mines.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://images.tvnz.co.nz/tvnz_site_images/world_news/2015/01/boko_haram_continue_violent_attacks_across_african_border_2072887975.jpg'></td><td>2015-03-06 18:17:00</td><td><a href='http://tvnz.co.nz/world-news/boko-haram-gears-up-battle-in-nigeria-6249364?ref=rss'>site</a></td><td>"She told me that Boko Haram terrorists asked them to leave suddenly, that they were preparing grounds for a major battle," Adama told The Associated Press.</td></tr>
 </table></body></html>

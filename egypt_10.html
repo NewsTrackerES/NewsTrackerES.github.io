@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 22:59:11</td><td>Egypt's military has been battling ferociously in Sinai, but has been unable to suppress jihadis who have sworn allegiance to the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-17 22:59:11</td><td>Egypt already has military advisers on the Saudi-Yemeni border tasked mainly with developing a joint strategy with the Saudis to confront future hostilities, according to the officials, who have first-hand knowledge of Egypt's plans.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 22:59:11</td><td><a href='http://www.usnews.com/news/world/articles/2015/02/17/analysis-egypt-embarks-on-ambitious-anti-terror-campaign'>site</a></td><td><table><tr><td>Egypt already has military advisers on the Saudi-Yemeni border tasked mainly with developing a joint strategy with the Saudis to confront future hostilities, according to the officials, who have first-hand knowledge of Egypt's plans.</td></tr><tr><td>Egypt's military has been battling ferociously in Sinai, but has been unable to suppress jihadis who have sworn allegiance to the Islamic State group.</td></tr></table></td></tr>
 </table></body></html>

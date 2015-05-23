@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>In 2010 however, it was Bakr and a small group of former Iraqi intelligence officers who made Abu Bakr al-Baghdadi the official leader of Islamic State, with the goal of giving the group a "religious face", the story says.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>The Iraqi national was reportedly killed in a firefight with Syrian rebels in January 2014, but not before he had helped secure swathes of Syria, which in turn strengthened Islamic State's position in neighboring Iraq.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>Spiegel said it had obtained the papers after lengthy negotiations with rebels in the Syrian city of Aleppo, who had seized them when Islamic State was forced to abandon its headquarters there in early 2014.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>"It was not a manifesto of faith, but a technically precise plan for an 'Islamic Intelligence State' -- a caliphate run by an organization that resembled East Germany's notorious Stasi domestic intelligence agency."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>The story argues that the secret to Islamic State's success lies in its combination of opposites - the fanatical beliefs of one group and the strategic calculations of another, led by Bakr.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td>Iraqi officer under Saddam masterminded rise of Islamic State: Spiegel</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-19 23:02:29</td><td>In the years that followed his influence grew in jihadist circles, Spiegel reported, and in 2010 Bakr and a group of other former Iraqi intelligence officers placed cleric Abu Bakr al-Baghdadi at the head of the Islamic State group.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150419&t=2&i=1041657771&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3I0CS'></td><td>2015-04-19 16:42:15</td><td><a href='http://www.reuters.com/article/2015/04/19/us-mideast-crisis-is-mastermind-idUSKBN0NA0TW20150419?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Iraqi officer under Saddam masterminded rise of Islamic State: Spiegel</td></tr><tr><td>The Iraqi national was reportedly killed in a firefight with Syrian rebels in January 2014, but not before he had helped secure swathes of Syria, which in turn strengthened Islamic State's position in neighboring Iraq.</td></tr><tr><td>"It was not a manifesto of faith, but a technically precise plan for an 'Islamic Intelligence State' -- a caliphate run by an organization that resembled East Germany's notorious Stasi domestic intelligence agency."</td></tr><tr><td>In 2010 however, it was Bakr and a small group of former Iraqi intelligence officers who made Abu Bakr al-Baghdadi the official leader of Islamic State, with the goal of giving the group a "religious face", the story says.</td></tr><tr><td>The story argues that the secret to Islamic State's success lies in its combination of opposites - the fanatical beliefs of one group and the strategic calculations of another, led by Bakr.</td></tr><tr><td>Spiegel said it had obtained the papers after lengthy negotiations with rebels in the Syrian city of Aleppo, who had seized them when Islamic State was forced to abandon its headquarters there in early 2014.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-19 23:02:29</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3046300/Officer-Saddam-Hussein-drew-Islamic-State-master-plan.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In the years that followed his influence grew in jihadist circles, Spiegel reported, and in 2010 Bakr and a group of other former Iraqi intelligence officers placed cleric Abu Bakr al-Baghdadi at the head of the Islamic State group.</td></tr>
 </table></body></html>

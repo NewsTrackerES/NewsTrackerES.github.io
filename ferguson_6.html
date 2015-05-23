@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 00:10:37</td><td>- Ferguson Mayor James Knowles says one police department employee was fired and two others are on administrative leave over racist emails uncovered in a Justice Department investigation into the city's law enforcement practices.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 00:10:37</td><td>Knowles' comments at a press conference Wednesday were the first response from city leaders to the federal investigation that found systemic racial bias in law enforcement in the St. Louis suburb of Ferguson.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 00:10:37</td><td><a href='http://www.startribune.com/nation/295081411.html'>site</a></td><td><table><tr><td>- Ferguson Mayor James Knowles says one police department employee was fired and two others are on administrative leave over racist emails uncovered in a Justice Department investigation into the city's law enforcement practices.</td></tr><tr><td>Knowles' comments at a press conference Wednesday were the first response from city leaders to the federal investigation that found systemic racial bias in law enforcement in the St. Louis suburb of Ferguson.</td></tr></table></td></tr>
 </table></body></html>

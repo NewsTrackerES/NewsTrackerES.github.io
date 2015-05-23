@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 10:08:21</td><td>BERLIN The crisis in Ukraine makes the European Union's partnership with the bloc's eastern neighbors more important than ever, German Chancellor Angela Merkel said on Thursday, insisting that the initiative is not directed against Russia.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-21 10:57:24</td><td>Speaking in parliament before joining a summit in Riga with six of the EU's ex-Soviet neighbours, Merkel said Europe's peaceful order had been shaken in the last 18 months by Russia's "illegal annexation" of Crimea and fighting in eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-21 10:57:24</td><td>The eastern partners include Ukraine, Moldova and Georgia, whose governments are keen to join the EU but also the more pro-Russian Armenia, Azerbaijan and Belarus.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-21 10:57:24</td><td>Russia, pursuing a Eurasian Customs Union, describes the toppling of a pro-Russian president in Ukraine after mass protests and its shift towards the EU as a Western-backed coup.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 10:08:21</td><td><a href='http://www.reuters.com/article/2015/05/21/us-ukraine-crisis-eu-merkel-idUSKBN0O612O20150521?feedType=RSS&feedName=worldNews'>site</a></td><td>BERLIN The crisis in Ukraine makes the European Union's partnership with the bloc's eastern neighbors more important than ever, German Chancellor Angela Merkel said on Thursday, insisting that the initiative is not directed against Russia.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 10:57:24</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3090851/Ukraine-crisis-makes-EU-eastern-partnership-important--Merkel.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Speaking in parliament before joining a summit in Riga with six of the EU's ex-Soviet neighbours, Merkel said Europe's peaceful order had been shaken in the last 18 months by Russia's "illegal annexation" of Crimea and fighting in eastern Ukraine.</td></tr><tr><td>The eastern partners include Ukraine, Moldova and Georgia, whose governments are keen to join the EU but also the more pro-Russian Armenia, Azerbaijan and Belarus.</td></tr><tr><td>Russia, pursuing a Eurasian Customs Union, describes the toppling of a pro-Russian president in Ukraine after mass protests and its shift towards the EU as a Western-backed coup.</td></tr></table></td></tr>
 </table></body></html>

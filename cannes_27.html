@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 17:55:03</td><td>Rise of Netflix met warily at Cannes Film Festival</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 17:55:03</td><td>The confrontation illustrated the unease felt by some at the Cannes Film Festival about the encroachment of digital operators into an art form seen as hallowed in France, the birthplace of cinema.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 17:55:03</td><td>Ted Sarandos, chief content officer of Netflix, appeared Friday as part of Cannes' NEXT conference to tout Netflix's global strategy and its desire to upend the traditional window release schedules of movies.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 17:55:03</td><td>Cannes is a place where a trailer for Quentin Tarantino's latest film, "Hateful Eight," drew applause when it advertises itself as shot "in glorious 70mm."</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 17:55:03</td><td>Netflix hasn't announced any purchases at Cannes yet, but it is shopping.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 17:55:03</td><td>Its growing prominence in the movie industry is now seen everywhere from the Academy Awards to Cannes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 17:55:03</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/15/rise-of-netflix-met-warily-at-cannes-film-festival'>site</a></td><td><table><tr><td>Rise of Netflix met warily at Cannes Film Festival</td></tr><tr><td>Ted Sarandos, chief content officer of Netflix, appeared Friday as part of Cannes' NEXT conference to tout Netflix's global strategy and its desire to upend the traditional window release schedules of movies.</td></tr><tr><td>The confrontation illustrated the unease felt by some at the Cannes Film Festival about the encroachment of digital operators into an art form seen as hallowed in France, the birthplace of cinema.</td></tr><tr><td>Cannes is a place where a trailer for Quentin Tarantino's latest film, "Hateful Eight," drew applause when it advertises itself as shot "in glorious 70mm."</td></tr><tr><td>Its growing prominence in the movie industry is now seen everywhere from the Academy Awards to Cannes.</td></tr><tr><td>Netflix hasn't announced any purchases at Cannes yet, but it is shopping.</td></tr></table></td></tr>
 </table></body></html>

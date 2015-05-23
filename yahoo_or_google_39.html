@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 15:52:55</td><td>(AP) - A federal judge has ruled against Mississippi Attorney General Jim Hood in his effort to keep Google from getting its hands on correspondence between Hood and lobbyists for the movie industry.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-11 19:45:39</td><td>The judge wrote Google had a legitimate fear of Hood coercing it into giving up its First Amendment right to free speech because it feared prosecution, and that Hood's authority appeared to be overridden by federal law.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-11 19:45:39</td><td>Hood said digital piracy, one of his allegations against Google, is a serious part of online crime.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-11 19:46:35</td><td>Google then sued Hood in Wingate's court in Jackson.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-11 19:46:35</td><td>That written opinion was highly critical of Hood, saying he couldn't issue a subpoena to "wage an unduly burdensome fishing expedition into Google's operations."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 15:52:55</td><td><a href='http://www.seattlepi.com/business/technology/article/Judge-rules-against-Mississippi-attorney-general-6193458.php'>site</a></td><td>(AP) - A federal judge has ruled against Mississippi Attorney General Jim Hood in his effort to keep Google from getting its hands on correspondence between Hood and lobbyists for the movie industry.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 19:45:39</td><td><a href='http://www.seattlepi.com/business/technology/article/Judge-rules-against-Mississippi-attorney-general-6193458.php'>site</a></td><td><table><tr><td>The judge wrote Google had a legitimate fear of Hood coercing it into giving up its First Amendment right to free speech because it feared prosecution, and that Hood's authority appeared to be overridden by federal law.</td></tr><tr><td>Hood said digital piracy, one of his allegations against Google, is a serious part of online crime.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 19:46:35</td><td><a href='http://abcnews.go.com/Technology/wireStory/judge-rules-mississippi-attorney-general-google-30247492'>site</a></td><td><table><tr><td>Google then sued Hood in Wingate's court in Jackson.</td></tr><tr><td>That written opinion was highly critical of Hood, saying he couldn't issue a subpoena to "wage an unduly burdensome fishing expedition into Google's operations."</td></tr></table></td></tr>
 </table></body></html>

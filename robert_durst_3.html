@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 01:55:18</td><td>"We are relieved and also grateful to everyone who assisted in the arrest of Robert Durst. We hope he will finally be held accountable for all he has done," said his brother, Douglas Durst, in a statement.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/fugitive_heir.jpg?w=620'></td><td>2015-03-16 12:13:29</td><td>Robert Durst had known tragedy from an early age - he said that when he was seven, his mother committed suicide by jumping off a building.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/fugitive_heir.jpg?w=620'></td><td>2015-03-16 12:13:29</td><td>Durst participated in the documentary, giving an extensive interview to filmmaker Andrew Jarecki for The Jinx: The Life and Deaths of Robert Durst.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site333/2015/0315/20150315__USFugitiveHeir~1_200.jpg'></td><td>2015-03-16 14:21:02</td><td>In 1982, Robert Durst reported that his wife Kathie had suddenly disappeared from their cottage in South Salem, New York.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/09/22/2769696100000578-3032543-image-a-87_1428614491430.jpg'></td><td>2015-04-10 02:08:38</td><td>Robert Durst sends bizarre letter to Los Angeles Times reporter</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 01:55:18</td><td><a href='http://www.huffingtonpost.com/2015/03/15/robert-durst-jinx_n_6875018.html'>site</a></td><td>"We are relieved and also grateful to everyone who assisted in the arrest of Robert Durst. We hope he will finally be held accountable for all he has done," said his brother, Douglas Durst, in a statement.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/fugitive_heir.jpg?w=620'></td><td>2015-03-16 12:13:29</td><td><a href='http://news.nationalpost.com/2015/03/16/hbos-the-jinx-comes-to-a-stunning-conclusion-robert-durst-says-he-killed-them-all/'>site</a></td><td><table><tr><td>Durst participated in the documentary, giving an extensive interview to filmmaker Andrew Jarecki for The Jinx: The Life and Deaths of Robert Durst.</td></tr><tr><td>Robert Durst had known tragedy from an early age - he said that when he was seven, his mother committed suicide by jumping off a building.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site333/2015/0315/20150315__USFugitiveHeir~1_200.jpg'></td><td>2015-03-16 14:21:02</td><td><a href='http://www.mercurynews.com/nation-world/ci_27717094/robert-durst-jinx-murder-hbo?source=rss'>site</a></td><td>In 1982, Robert Durst reported that his wife Kathie had suddenly disappeared from their cottage in South Salem, New York.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/09/22/2769696100000578-3032543-image-a-87_1428614491430.jpg'></td><td>2015-04-10 02:08:38</td><td><a href='http://www.dailymail.co.uk/news/article-3032543/Murder-suspect-Robert-Durst-sends-bizarre-letter-reporter-covering-case-discusses-opera-football-not-upcoming-trial.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Robert Durst sends bizarre letter to Los Angeles Times reporter</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 10:14:23</td><td>"Our partnership with Samsung is emblematic of our efforts to bring the best of Microsoft's productivity services to everyone, on every device, so people can be productive wherever, however and whenever they want," said Peggy Johnson, executive vice president of business development at Microsoft.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 10:14:23</td><td>The deal will provide Microsoft Word, Excel, PowerPoint, OneNote, OneDrive and Skype on "select Samsung Android tablets", a statement from the Redmond, Washington, group said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 10:14:23</td><td>Microsoft said it was expanding a deal with Samsung - which had already agreed on pre-installing Microsoft services on its high-end smartphones - to include some tablets.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 10:14:23</td><td>"More specifically, they help to reach a greater number of other device manufacturers, resulting in even more choice for customers around the world. And for Microsoft, this is part of the company's mobile-first, cloud-first vision."</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 10:14:23</td><td>Washington - Microsoft on Monday unveiled partnerships with Samsung and other manufacturers to install its services including Word and Skype on devices powered by the rival Google Android system.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 10:14:23</td><td><a href='http://www.fin24.com/Tech/Companies/Microsoft-pushes-deep-into-Android-territory-20150324'>site</a></td><td><table><tr><td>Washington - Microsoft on Monday unveiled partnerships with Samsung and other manufacturers to install its services including Word and Skype on devices powered by the rival Google Android system.</td></tr><tr><td>Microsoft said it was expanding a deal with Samsung - which had already agreed on pre-installing Microsoft services on its high-end smartphones - to include some tablets.</td></tr><tr><td>The deal will provide Microsoft Word, Excel, PowerPoint, OneNote, OneDrive and Skype on "select Samsung Android tablets", a statement from the Redmond, Washington, group said.</td></tr><tr><td>"Our partnership with Samsung is emblematic of our efforts to bring the best of Microsoft's productivity services to everyone, on every device, so people can be productive wherever, however and whenever they want," said Peggy Johnson, executive vice president of business development at Microsoft.</td></tr><tr><td>"More specifically, they help to reach a greater number of other device manufacturers, resulting in even more choice for customers around the world. And for Microsoft, this is part of the company's mobile-first, cloud-first vision."</td></tr></table></td></tr>
 </table></body></html>

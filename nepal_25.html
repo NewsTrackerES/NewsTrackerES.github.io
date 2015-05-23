@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>NEW YORK - Dan Fredinburg, a Google executive who described himself as an adventurer, was among the hundreds who died in a massive earthquake that struck Nepal on Saturday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Lawrence You, the company's director of privacy, posted online that Fredinburg was in Nepal with three other Google employees climbing Mount Everest.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td>Google said it has launched a "person finder" tool for Nepal to help people find loved ones in the aftermath of the quake and "is working to get updated satellite imagery to aid in the recovery effort."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td><a href='http://www.foxnews.com/us/2015/04/26/google-executive-dan-fredinburg-among-hundreds-dead-from-nepal-earthquake/'>site</a></td><td><table><tr><td>NEW YORK - Dan Fredinburg, a Google executive who described himself as an adventurer, was among the hundreds who died in a massive earthquake that struck Nepal on Saturday.</td></tr><tr><td>Lawrence You, the company's director of privacy, posted online that Fredinburg was in Nepal with three other Google employees climbing Mount Everest.</td></tr><tr><td>Google said it has launched a "person finder" tool for Nepal to help people find loved ones in the aftermath of the quake and "is working to get updated satellite imagery to aid in the recovery effort."</td></tr></table></td></tr>
 </table></body></html>

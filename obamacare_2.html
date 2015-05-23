@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 20:03:01</td><td>"I campaigned ... with my heart and soul to get rid of Obamacare and it's the one shot that we've got to get something on his desk," said Rep.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 20:03:01</td><td>GOP moves ahead on budget plans; eyes Obamacare repeal bill</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-20 07:07:57</td><td>Senate Republicans have signaled that they prefer a focused attack on the health care law they call "Obamacare" rather than a broader push to tackle deficits.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 15:48:29</td><td>Compromise GOP budget hikes war funds, targets 'Obamacare'</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-01 00:01:20</td><td>Passage of the budget gives Republicans a rare opportunity to use a procedural tool that would ease the repeal or replacement of "Obamacare."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 20:03:01</td><td><a href='http://news.yahoo.com/gop-moves-ahead-budget-plans-eyes-obamacare-repeal-194332399.html'>site</a></td><td><table><tr><td>GOP moves ahead on budget plans; eyes Obamacare repeal bill</td></tr><tr><td>"I campaigned ... with my heart and soul to get rid of Obamacare and it's the one shot that we've got to get something on his desk," said Rep.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-20 07:07:57</td><td><a href='http://www.foxbusiness.com/markets/2015/04/20/talks-to-begin-on-capitol-hill-budget-bill-giving-republicans-chance-to-assault/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Senate Republicans have signaled that they prefer a focused attack on the health care law they call "Obamacare" rather than a broader push to tackle deficits.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 15:48:29</td><td><a href='http://www.utsandiego.com/news/2015/apr/27/compromise-gop-budget-hikes-war-funds-targets/'>site</a></td><td>Compromise GOP budget hikes war funds, targets 'Obamacare'</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-05-01 00:01:20</td><td><a href='http://news.yahoo.com/republicans-pass-deep-spending-cuts-aim-obamacare-000120472--sector.html'>site</a></td><td>Passage of the budget gives Republicans a rare opportunity to use a procedural tool that would ease the repeal or replacement of "Obamacare."</td></tr>
 </table></body></html>

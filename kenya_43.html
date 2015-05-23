@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>President Uhuru Kenyatta has been criticised in Kenya's media for failing to meet with grieving parents or surviving students in the wake of the attack.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>Another government official expressed irritation that Kenya's media were "negative" in their accounts of the handling of the attack.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>Information, Communication and Technology Cabinet Secretary Fred Matiangi said Kenya's media should be more "patriotic".</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>They included 13 Somali remittance companies and bus transport companies operating routes in northeastern Kenya.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td>Kenya official compares Garissa University terror victims to 'cockroaches'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/r/j/5/image.related.articleLeadwide.620x349.1mhy5c.png/1428623947356.jpg'></td><td>2015-04-09 23:59:15</td><td><a href='http://www.brisbanetimes.com.au/world/kenya-official-compares-garissa-university-terror-victims-to-cockroaches-20150409-1mhy5c.html'>site</a></td><td><table><tr><td>Kenya official compares Garissa University terror victims to 'cockroaches'</td></tr><tr><td>Another government official expressed irritation that Kenya's media were "negative" in their accounts of the handling of the attack.</td></tr><tr><td>Information, Communication and Technology Cabinet Secretary Fred Matiangi said Kenya's media should be more "patriotic".</td></tr><tr><td>President Uhuru Kenyatta has been criticised in Kenya's media for failing to meet with grieving parents or surviving students in the wake of the attack.</td></tr><tr><td>They included 13 Somali remittance companies and bus transport companies operating routes in northeastern Kenya.</td></tr></table></td></tr>
 </table></body></html>

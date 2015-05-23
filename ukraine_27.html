@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/8c9/news/world/article17742154.ece/ALTERNATES/w220/XPAG106-Crimea.JPG'></td><td>2015-03-03 09:13:45</td><td>Return of Crimea a must for mending ties with Russia, Ukraine says Add to...</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/8c9/news/world/article17742154.ece/ALTERNATES/w220/XPAG106-Crimea.JPG'></td><td>2015-03-03 09:13:45</td><td>"There could be no slightest way of normalizing or getting back to business in the relations between Ukraine and Russia without returning to status quo and establishing full Ukrainian sovereignty over Crimea," Klimkin told reporters in Tokyo.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/8c9/news/world/article17742154.ece/ALTERNATES/w220/XPAG106-Crimea.JPG'></td><td>2015-03-03 09:13:45</td><td>"We stress from the very beginning that we've been striving for a peaceful solution. But we will use any means for defending Ukraine's territorial integrity and sovereignty," Klimkin said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/8c9/news/world/article17742154.ece/ALTERNATES/w220/XPAG106-Crimea.JPG'></td><td>2015-03-03 09:13:45</td><td><a href='http://www.theglobeandmail.com/news/world/return-of-crimea-a-must-for-mending-ties-with-russia-ukraine-says/article23259541/?cmpid=rss1'>site</a></td><td><table><tr><td>Return of Crimea a must for mending ties with Russia, Ukraine says Add to...</td></tr><tr><td>"There could be no slightest way of normalizing or getting back to business in the relations between Ukraine and Russia without returning to status quo and establishing full Ukrainian sovereignty over Crimea," Klimkin told reporters in Tokyo.</td></tr><tr><td>"We stress from the very beginning that we've been striving for a peaceful solution. But we will use any means for defending Ukraine's territorial integrity and sovereignty," Klimkin said.</td></tr></table></td></tr>
 </table></body></html>

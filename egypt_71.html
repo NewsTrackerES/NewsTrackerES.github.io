@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/03/57/7879678/5/square_gallery_thumb.jpg'></td><td>2015-04-26 10:53:50</td><td>The pyramids at Meroe, some 200 kilometers (125 miles) north of Sudan's capital, Khartoum, are rarely visited despite being a UNESCO World Heritage site like those in Egypt.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/03/57/7879678/5/square_gallery_thumb.jpg'></td><td>2015-04-26 10:53:50</td><td>The pyramids bear decorative elements inspired by Pharaonic Egypt, Greece and Rome, according to UNESCO, making them priceless relics.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/03/57/7879678/5/square_gallery_thumb.jpg'></td><td>2015-04-26 10:53:50</td><td>AL-BERGAWIYA, Sudan (AP) - The small, steep pyramids rising up from the desert hills of northern Sudan resemble those in neighboring Egypt, but unlike the famed pyramids of Giza, the Sudanese site is largely deserted.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/36/03/57/7879678/5/square_gallery_thumb.jpg'></td><td>2015-04-26 10:53:50</td><td>Sudan's pyramids, nearly as grand as Egypt's, go unvisited</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-26 11:04:04</td><td>The steep, small pyramids rise over the desert hills, a stunning reminder of the ancient Nubian kingdom that once ruled Egypt _ and ones not nearly as often visited those of its neighbor.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/03/57/7879678/5/square_gallery_thumb.jpg'></td><td>2015-04-26 10:53:50</td><td><a href='http://www.sfgate.com/news/world/article/Sudan-s-pyramids-nearly-as-grand-as-Egypt-s-go-6224588.php'>site</a></td><td><table><tr><td>Sudan's pyramids, nearly as grand as Egypt's, go unvisited</td></tr><tr><td>AL-BERGAWIYA, Sudan (AP) - The small, steep pyramids rising up from the desert hills of northern Sudan resemble those in neighboring Egypt, but unlike the famed pyramids of Giza, the Sudanese site is largely deserted.</td></tr><tr><td>The pyramids at Meroe, some 200 kilometers (125 miles) north of Sudan's capital, Khartoum, are rarely visited despite being a UNESCO World Heritage site like those in Egypt.</td></tr><tr><td>The pyramids bear decorative elements inspired by Pharaonic Egypt, Greece and Rome, according to UNESCO, making them priceless relics.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-26 11:04:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article19579659.html#storylink=rss'>site</a></td><td>The steep, small pyramids rise over the desert hills, a stunning reminder of the ancient Nubian kingdom that once ruled Egypt _ and ones not nearly as often visited those of its neighbor.</td></tr>
 </table></body></html>

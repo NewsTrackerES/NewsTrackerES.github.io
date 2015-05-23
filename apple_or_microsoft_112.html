@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/30/876/493/baa9adaf4da0d410VgnVCM100000d7c1a8c0____-Apple IBM Aging-1.jpg?ve=1&tl=1'></td><td>2015-04-30 13:51:27</td><td>Apple and IBM formed a partnership last year to create mobile apps for a broad range of industries.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Bg_I6s58PUgXnK6VTPlsBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4a6ac8d852ce2513750f6a7067002359.jpg'></td><td>2015-04-30 13:51:43</td><td>Apple CEO Tim Cook, IBM CEO Ginni Rometty and Japan Post CEO Taizo Nishimuro announced the deal in New York on Thursday.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Bg_I6s58PUgXnK6VTPlsBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4a6ac8d852ce2513750f6a7067002359.jpg'></td><td>2015-04-30 13:51:43</td><td>NEW YORK (AP) - Apple, IBM and Japanese insurance and bank holding company Japan Post have formed a partnership to improve the lives of elderly people in the country.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 19:38:36</td><td>Cook said Apple strives to make its products accessible and easy to use, and noted that a many of the company's recent products have focused on health.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/30/876/493/baa9adaf4da0d410VgnVCM100000d7c1a8c0____-Apple IBM Aging-1.jpg?ve=1&tl=1'></td><td>2015-04-30 13:51:27</td><td><a href='http://www.foxbusiness.com/technology/2015/04/30/apple-ibm-japan-post-team-up-to-improve-elderly-care-in-japan-want-other-places/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Apple and IBM formed a partnership last year to create mobile apps for a broad range of industries.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Bg_I6s58PUgXnK6VTPlsBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4a6ac8d852ce2513750f6a7067002359.jpg'></td><td>2015-04-30 13:51:43</td><td><a href='http://news.yahoo.com/apple-ibm-japan-post-team-improve-elderly-care-132403587.html'>site</a></td><td><table><tr><td>NEW YORK (AP) - Apple, IBM and Japanese insurance and bank holding company Japan Post have formed a partnership to improve the lives of elderly people in the country.</td></tr><tr><td>Apple CEO Tim Cook, IBM CEO Ginni Rometty and Japan Post CEO Taizo Nishimuro announced the deal in New York on Thursday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 19:38:36</td><td><a href='http://abcnews.go.com/Technology/wireStory/apple-ibm-japan-post-team-improve-elderly-care-30698188'>site</a></td><td>Cook said Apple strives to make its products accessible and easy to use, and noted that a many of the company's recent products have focused on health.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 11:10:31</td><td>Lavrov, Kerry to discuss Ukraine on Tuesday in Sochi, Russia: RIA</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 11:10:31</td><td>"We hope he (Kerry) will bring something new, some fresh look at ... (the situation in) Ukraine and bilateral relations," the source told RIA, adding that the talks were "very important" but playing down the prospects for any major breakthrough.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 12:01:52</td><td>Russian President Vladimir Putin said after talks with German Chancellor Angela Merkel in Moscow on Sunday he believed the Ukraine peace process was "moving forward".</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 12:01:52</td><td>Relations between Russia and the West are at their lowest ebb since the end of the Cold War due to Moscow's annexation of Ukraine's Crimea peninsula in March 2014 and its backing for the rebels in Ukraine.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 13:52:42</td><td>In a sign of Western displeasure over Ukraine, the leaders of the United States, Germany, and France skipped a military parade in Moscow on Saturday marking the 70th anniversary of victory over Nazi Germany.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 11:10:31</td><td><a href='http://www.reuters.com/article/2015/05/11/us-ukraine-crisis-russia-usa-idUSKBN0NW0VX20150511?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Lavrov, Kerry to discuss Ukraine on Tuesday in Sochi, Russia: RIA</td></tr><tr><td>"We hope he (Kerry) will bring something new, some fresh look at ... (the situation in) Ukraine and bilateral relations," the source told RIA, adding that the talks were "very important" but playing down the prospects for any major breakthrough.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 12:01:52</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3076624/Lavrov-Kerry-discuss-Ukraine-Tuesday-Sochi-Russia--RIA.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Relations between Russia and the West are at their lowest ebb since the end of the Cold War due to Moscow's annexation of Ukraine's Crimea peninsula in March 2014 and its backing for the rebels in Ukraine.</td></tr><tr><td>Russian President Vladimir Putin said after talks with German Chancellor Angela Merkel in Moscow on Sunday he believed the Ukraine peace process was "moving forward".</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 13:52:42</td><td><a href='http://www.reuters.com/article/2015/05/11/us-ukraine-crisis-russia-usa-idUSKBN0NW0VX20150511?feedType=RSS&feedName=topNews'>site</a></td><td>In a sign of Western displeasure over Ukraine, the leaders of the United States, Germany, and France skipped a military parade in Moscow on Saturday marking the 70th anniversary of victory over Nazi Germany.</td></tr>
 </table></body></html>

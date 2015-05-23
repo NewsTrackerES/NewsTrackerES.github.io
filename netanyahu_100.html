@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 14:17:27</td><td>Last week, Netanyahu signed up his first two partners, the center-right Kulanu party, led by influential newcomer Moshe Kahlon, and the ultra-Orthodox party United Torah Judaism.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 14:17:27</td><td>He later quit Netanyahu's Likud party and was elected to parliament in 1999 as head of Yisrael Beitenu, a secular hawkish party he established to represent the more than 1 million immigrants from the former Soviet Union.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 14:17:27</td><td>Without Yisrael Beitenu, Netanyahu is expected to have a slim majority of just 61 seats, leaving him susceptible to the demands of partners.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 14:17:27</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/04/israeli-foreign-minister-steps-down-to-join-opposition'>site</a></td><td><table><tr><td>Without Yisrael Beitenu, Netanyahu is expected to have a slim majority of just 61 seats, leaving him susceptible to the demands of partners.</td></tr><tr><td>Last week, Netanyahu signed up his first two partners, the center-right Kulanu party, led by influential newcomer Moshe Kahlon, and the ultra-Orthodox party United Torah Judaism.</td></tr><tr><td>He later quit Netanyahu's Likud party and was elected to parliament in 1999 as head of Yisrael Beitenu, a secular hawkish party he established to represent the more than 1 million immigrants from the former Soviet Union.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td>Ukraine pulls troops out of the flashpoint town of Debaltseve</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td>Ukrainian servicemen ride on a tank as they leave the area around Debaltseve in eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td>Ukraine's President Petro Poroshenko says government forces have withdrawn from the flashpoint town of Debaltseve, where pro-Russian rebels have been battling troops for control for weeks.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td>President Petro Poroshenko arrives in eastern Ukraine to thank his fighters who pulled out of Debaltseve following a rebel offensive.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td>Western fury was directed at Russia, which is accused of giving military backing to the separatists in an effort to foil Ukraine's ambitions of moving closer towards the European Union or NATO.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td>Russian President Vladimir Putin, who insists his country plays no direct role in Ukraine, has called on the Ukrainian soldiers fighting in Debaltseve to surrender.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td><a href='http://www.theage.com.au/world/ukraine-pulls-troops-out-of-the-flashpoint-town-of-debaltseve-20150218-13ints.html'>site</a></td><td>Russian President Vladimir Putin, who insists his country plays no direct role in Ukraine, has called on the Ukrainian soldiers fighting in Debaltseve to surrender.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td><a href='http://www.smh.com.au/world/ukraine-pulls-troops-out-of-the-flashpoint-town-of-debaltseve-20150218-13ints.html'>site</a></td><td><table><tr><td>Ukraine pulls troops out of the flashpoint town of Debaltseve</td></tr><tr><td>President Petro Poroshenko arrives in eastern Ukraine to thank his fighters who pulled out of Debaltseve following a rebel offensive.</td></tr><tr><td>Ukraine's President Petro Poroshenko says government forces have withdrawn from the flashpoint town of Debaltseve, where pro-Russian rebels have been battling troops for control for weeks.</td></tr><tr><td>Ukrainian servicemen ride on a tank as they leave the area around Debaltseve in eastern Ukraine.</td></tr><tr><td>Western fury was directed at Russia, which is accused of giving military backing to the separatists in an effort to foil Ukraine's ambitions of moving closer towards the European Union or NATO.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2809/a4d9b0e34d954f7c83ce38442bfa1237.jpg'></td><td>2015-04-03 14:30:02</td><td>"Israel demands that any final agreement with Iran will include a clear and unambiguous Iranian commitment of Israel's right to exist," Netanyahu said in a statement.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-03 17:34:04</td><td>On Friday, the eve of the Jewish Passover holiday, Netanyahu convened his Cabinet for a special session to discuss the emerging framework, reached after a week of grueling negotiations in Lausanne, Switzerland.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-03 17:34:04</td><td>Netanyahu said after the session that "Israel will not accept an agreement which allows a country that vows to annihilate us to develop nuclear weapons, period."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2809/a4d9b0e34d954f7c83ce38442bfa1237.jpg'></td><td>2015-04-03 14:30:02</td><td><a href='http://www.news24.com/World/News/Iran-must-recognise-Israels-right-to-exist-in-final-deal-Netanyahu-20150403'>site</a></td><td>"Israel demands that any final agreement with Iran will include a clear and unambiguous Iranian commitment of Israel's right to exist," Netanyahu said in a statement.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 17:34:04</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-03-ML-Israel-Iran-Nuclear/id-80a788eb53ca4172b51647935546c328'>site</a></td><td><table><tr><td>On Friday, the eve of the Jewish Passover holiday, Netanyahu convened his Cabinet for a special session to discuss the emerging framework, reached after a week of grueling negotiations in Lausanne, Switzerland.</td></tr><tr><td>Netanyahu said after the session that "Israel will not accept an agreement which allows a country that vows to annihilate us to develop nuclear weapons, period."</td></tr></table></td></tr>
 </table></body></html>

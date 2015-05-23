@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/c22513a57dcad38d308c9c54e3c6526688670956/0_169_4096_2458/500.jpg'></td><td>2015-03-18 20:19:26</td><td>The US secretary of state, John Kerry, said Washington condemned the attack and continued "to support the Tunisian government's efforts to advance a secure, prosperous, and democratic Tunisia".</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/c22513a57dcad38d308c9c54e3c6526688670956/0_169_4096_2458/500.jpg'></td><td>2015-03-18 20:19:26</td><td>Overall, though, the violence that Tunisia has seen in recent years has been largely focused on security forces, not foreigners or tourist sites.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/c22513a57dcad38d308c9c54e3c6526688670956/0_169_4096_2458/500.jpg'></td><td>2015-03-18 20:19:26</td><td><a href='http://www.theguardian.com/world/2015/mar/18/tunisia-shock-gunmen-target-tourists-capital-tunis'>site</a></td><td><table><tr><td>Overall, though, the violence that Tunisia has seen in recent years has been largely focused on security forces, not foreigners or tourist sites.</td></tr><tr><td>The US secretary of state, John Kerry, said Washington condemned the attack and continued "to support the Tunisian government's efforts to advance a secure, prosperous, and democratic Tunisia".</td></tr></table></td></tr>
 </table></body></html>

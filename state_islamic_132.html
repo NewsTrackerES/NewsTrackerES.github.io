@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 20:35:30</td><td>Heavy clashes continued in the camp, a week after extremists from the Islamic State group burst in from the Hajar Aswad district south of Damascus.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 20:35:30</td><td>They had settled in that area after being pushed out of regions east of the capital by Islamic rebels last year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 20:35:30</td><td><a href='http://www.startribune.com/world/299098121.html'>site</a></td><td><table><tr><td>Heavy clashes continued in the camp, a week after extremists from the Islamic State group burst in from the Hajar Aswad district south of Damascus.</td></tr><tr><td>They had settled in that area after being pushed out of regions east of the capital by Islamic rebels last year.</td></tr></table></td></tr>
 </table></body></html>

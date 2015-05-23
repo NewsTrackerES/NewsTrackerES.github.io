@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/4/0/v/3/image.related.articleLeadwide.620x349.gh40cj.png/1431918684443.jpg'></td><td>2015-05-18 03:11:42</td><td>It was the first visit by a senior US official since the Ukraine crisis erupted in February 2014.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/4/0/v/3/image.related.articleLeadwide.620x349.gh40cj.png/1431918684443.jpg'></td><td>2015-05-18 03:11:42</td><td>US envoy Victoria Nuland to hold talks with Russians on peace deal for Ukraine</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/4/0/v/3/image.related.articleLeadwide.620x349.gh40cj.png/1431918684443.jpg'></td><td>2015-05-18 03:11:42</td><td>"There is less firing, but none of us should be satisfied with the results," Ms Nuland said on Saturday at a news conference in Kiev, Ukraine.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/4/0/v/3/image.related.articleLeadwide.620x349.gh40cj.png/1431918684443.jpg'></td><td>2015-05-18 03:11:42</td><td><a href='http://www.brisbanetimes.com.au/world/us-envoy-victoria-nuland-to-hold-talks-with-russians-on-peace-deal-for-ukraine-20150518-gh40cj.html'>site</a></td><td><table><tr><td>US envoy Victoria Nuland to hold talks with Russians on peace deal for Ukraine</td></tr><tr><td>"There is less firing, but none of us should be satisfied with the results," Ms Nuland said on Saturday at a news conference in Kiev, Ukraine.</td></tr><tr><td>It was the first visit by a senior US official since the Ukraine crisis erupted in February 2014.</td></tr></table></td></tr>
 </table></body></html>

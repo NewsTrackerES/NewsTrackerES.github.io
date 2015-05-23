@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td>Bali nine executions: Firm-minded President Joko Widodo will push...</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td>Bali nine executions: Julie Bishop phones Indonesia to ease tensions</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td>Bali nine: Tsunami aid reference a reminder and not a threat,...</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:05:56</td><td>Ms Bishop appealed directly to Mr Kalla for an indefinite stay of execution for the Bali nine ringleaders, unveiling a fresh diplomatic push for the two countries to work together on tackling drug syndicates.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:08:11</td><td>Joko Widodo says execution of Bali Nine pair Andrew Chan and Myuran Sukumaran will not be delayed</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td><a href='http://www.smh.com.au/world/bali-nine-executions-julie-bishop-phones-indonesia-to-ease-tensions-20150220-13kkcl.html'>site</a></td><td><table><tr><td>Bali nine executions: Julie Bishop phones Indonesia to ease tensions</td></tr><tr><td>Bali nine executions: Firm-minded President Joko Widodo will push...</td></tr><tr><td>Bali nine: Tsunami aid reference a reminder and not a threat,...</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:05:56</td><td><a href='http://www.theage.com.au/world/joko-widodo-says-execution-of-bali-nine-pair-andrew-chan-and-myuran-sukumaran-will-not-be-delayed-20150220-13kulo.html'>site</a></td><td>Ms Bishop appealed directly to Mr Kalla for an indefinite stay of execution for the Bali nine ringleaders, unveiling a fresh diplomatic push for the two countries to work together on tackling drug syndicates.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:08:11</td><td><a href='http://www.brisbanetimes.com.au/world/joko-widodo-says-execution-of-bali-nine-pair-andrew-chan-and-myuran-sukumaran-will-not-be-delayed-20150220-13kulo.html'>site</a></td><td>Joko Widodo says execution of Bali Nine pair Andrew Chan and Myuran Sukumaran will not be delayed</td></tr>
 </table></body></html>

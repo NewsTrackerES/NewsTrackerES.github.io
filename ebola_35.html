@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/cI.jNiewTzWoVhFE7FfzPA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T181812Z_1_LYNXMPEB2J0Y0_RTROPTP_2_HEALTH-EBOLA-LIBERIA.JPG'></td><td>2015-03-20 21:15:02</td><td>Liberian Information Minister Lewis Brown said that a 44-year-old woman had been transferred to the ELWA Ebola treatment unit in the capital Monrovia after testing positive for the virus.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/cI.jNiewTzWoVhFE7FfzPA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T181812Z_1_LYNXMPEB2J0Y0_RTROPTP_2_HEALTH-EBOLA-LIBERIA.JPG'></td><td>2015-03-20 21:15:02</td><td>Liberia reports first new case of Ebola in weeks</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/cI.jNiewTzWoVhFE7FfzPA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T181812Z_1_LYNXMPEB2J0Y0_RTROPTP_2_HEALTH-EBOLA-LIBERIA.JPG'></td><td>2015-03-20 21:15:02</td><td><a href='http://news.yahoo.com/liberia-reports-first-ebola-case-weeks-181812734.html'>site</a></td><td><table><tr><td>Liberia reports first new case of Ebola in weeks</td></tr><tr><td>Liberian Information Minister Lewis Brown said that a 44-year-old woman had been transferred to the ELWA Ebola treatment unit in the capital Monrovia after testing positive for the virus.</td></tr></table></td></tr>
 </table></body></html>

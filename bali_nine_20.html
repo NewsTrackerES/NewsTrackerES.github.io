@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/6/e/s/image.related.articleLeadwide.620x349.1m2zu8.png/1426744085485.jpg'></td><td>2015-03-19 04:01:12</td><td>Presiding Judge Ujang Abdullah: Adjourned the appeal case of Bali Nine duo Andrew Chan and Myuran Sukumaran till March 25th.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/6/e/s/image.related.articleLeadwide.620x349.1m2zu8.png/1426744085485.jpg'></td><td>2015-03-19 04:01:12</td><td>Jakarta: Bali nine organisers Andrew Chan and Myuran Sukumaran have had their latest appeal against the death penalty adjourned until next week so their lawyers can present evidence to support their argument.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/6/e/s/image.related.articleLeadwide.620x349.1m2zu8.png/1426744085485.jpg'></td><td>2015-03-19 04:01:12</td><td>But a lawyer for the Bali nine pair, Leonard Aritonang, said they were not disputing that the president had the right to grant clemency.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/d/x/t/image.related.articleLeadwide.620x349.1mg4tz.png/1428398188827.jpg'></td><td>2015-04-07 09:16:36</td><td>Bali nine executions: Constitutional Court has no power to alter death sentences</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/6/e/s/image.related.articleLeadwide.620x349.1m2zu8.png/1426744085485.jpg'></td><td>2015-03-19 04:01:12</td><td><a href='http://www.smh.com.au/world/bali-nine-andrew-chan-and-myuran-sukumarans-latest-appeal-adjourned-until-next-week-20150319-1m2zu8.html'>site</a></td><td><table><tr><td>Presiding Judge Ujang Abdullah: Adjourned the appeal case of Bali Nine duo Andrew Chan and Myuran Sukumaran till March 25th.</td></tr><tr><td>Jakarta: Bali nine organisers Andrew Chan and Myuran Sukumaran have had their latest appeal against the death penalty adjourned until next week so their lawyers can present evidence to support their argument.</td></tr><tr><td>But a lawyer for the Bali nine pair, Leonard Aritonang, said they were not disputing that the president had the right to grant clemency.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/d/x/t/image.related.articleLeadwide.620x349.1mg4tz.png/1428398188827.jpg'></td><td>2015-04-07 09:16:36</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-executions-constitutional-court-has-no-power-to-alter-death-sentences-20150407-1mg4tz.html'>site</a></td><td>Bali nine executions: Constitutional Court has no power to alter death sentences</td></tr>
 </table></body></html>

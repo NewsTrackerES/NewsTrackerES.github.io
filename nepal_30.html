@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 23:46:54</td><td>Anyone concerned about a loved on in Nepal should try to reach them directly first then contact MFAT if needed.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 23:46:54</td><td>Caritas teams in Nepal are focusing on rescue operations and providing food and shelter to people who have lost their homes.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-25 23:46:54</td><td>"It was the worst earthquake I have ever experienced in my life," Caritas Nepal director Pius Perumana said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 23:46:54</td><td>The organisation is sending aid to Nepal overland from India as the airport is closed.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 23:46:54</td><td>"It was an ongoing rolling and rumbling and shaking," she told AAP from Nepal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 23:46:54</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3055669/100-NZers-contacted-Nepal.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Anyone concerned about a loved on in Nepal should try to reach them directly first then contact MFAT if needed.</td></tr><tr><td>The organisation is sending aid to Nepal overland from India as the airport is closed.</td></tr><tr><td>"It was the worst earthquake I have ever experienced in my life," Caritas Nepal director Pius Perumana said.</td></tr><tr><td>Caritas teams in Nepal are focusing on rescue operations and providing food and shelter to people who have lost their homes.</td></tr><tr><td>"It was an ongoing rolling and rumbling and shaking," she told AAP from Nepal.</td></tr></table></td></tr>
 </table></body></html>

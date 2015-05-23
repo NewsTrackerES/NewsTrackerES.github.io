@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:01:21</td><td>Facebook exec's husband dies suddenly</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-02 20:38:00</td><td>Family members say tech executive David Goldberg, head of the online SurveyMonkey site and husband of Facebook executive Sheryl Sandberg, died Friday night.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-02 20:38:00</td><td>Goldberg died suddenly Friday night, brother Robert Goldberg wrote on his Facebook page.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-02 20:38:00</td><td>"Dave Goldberg was an amazing person and I am glad I got to know him," Facebook founder Mark Zuckerberg wrote on his own page.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 18:01:21</td><td><a href='http://www.cbsnews.com/news/david-goldberg-husband-facebook-executive-sheryl-sandberg-dies/'>site</a></td><td>Facebook exec's husband dies suddenly</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 20:38:00</td><td><a href='http://www.chicagotribune.com/bluesky/technology/chi-sheryl-sandberg-husband-dies-20150502-story.html'>site</a></td><td><table><tr><td>Family members say tech executive David Goldberg, head of the online SurveyMonkey site and husband of Facebook executive Sheryl Sandberg, died Friday night.</td></tr><tr><td>Goldberg died suddenly Friday night, brother Robert Goldberg wrote on his Facebook page.</td></tr><tr><td>"Dave Goldberg was an amazing person and I am glad I got to know him," Facebook founder Mark Zuckerberg wrote on his own page.</td></tr></table></td></tr>
 </table></body></html>

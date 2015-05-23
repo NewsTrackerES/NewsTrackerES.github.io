@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 10:00:21</td><td>Kerry: Decision soon on unfreezing US military aid to Egypt</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 10:05:11</td><td>Egypt has been trying to get F-16s fighter jets, tanks and other materiel to combat the extremist threat spilling over from Libya and in the Sinai Peninsula.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-14 10:05:11</td><td>SHARM EL-SHEIKH, Egypt - U.S. Secretary of State John Kerry says the U.S. will make a decision "very soon" on how to unfreeze hundreds of millions of dollars in suspended American military assistance to Egypt.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-14 10:45:16</td><td>Kerry spoke at a news conference Saturday in Egypt.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 10:00:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/kerry-decision-soon-on-unfreezing-us-military-aid-/nkWr4/'>site</a></td><td>Kerry: Decision soon on unfreezing US military aid to Egypt</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 10:05:11</td><td><a href='http://www.startribune.com/nation/296309031.html'>site</a></td><td><table><tr><td>SHARM EL-SHEIKH, Egypt - U.S. Secretary of State John Kerry says the U.S. will make a decision "very soon" on how to unfreeze hundreds of millions of dollars in suspended American military assistance to Egypt.</td></tr><tr><td>Egypt has been trying to get F-16s fighter jets, tanks and other materiel to combat the extremist threat spilling over from Libya and in the Sinai Peninsula.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-14 10:45:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417446&ref=rss'>site</a></td><td>Kerry spoke at a news conference Saturday in Egypt.</td></tr>
 </table></body></html>

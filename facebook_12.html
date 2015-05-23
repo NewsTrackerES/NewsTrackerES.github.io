@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Zp.C2bmKaHeQfAq4uXOe9g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM1NjtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T173946Z_1_LYNXMPEB2N0WA_RTROPTP_2_FACEBOOK-TRIAL-CEGLIA.JPG'></td><td>2015-03-24 17:39:46</td><td>Ceglia's father Carmine said he did not know where his son was but expressed sympathy for him, suggesting that Facebook's principal lawyer was unduly influencing federal prosecutors.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Zp.C2bmKaHeQfAq4uXOe9g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM1NjtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T173946Z_1_LYNXMPEB2N0WA_RTROPTP_2_FACEBOOK-TRIAL-CEGLIA.JPG'></td><td>2015-03-24 17:39:46</td><td>Family of alleged Facebook fraud fugitive to forfeit bail: U.S. judge</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Zp.C2bmKaHeQfAq4uXOe9g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM1NjtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T173946Z_1_LYNXMPEB2N0WA_RTROPTP_2_FACEBOOK-TRIAL-CEGLIA.JPG'></td><td>2015-03-24 17:39:46</td><td><a href='http://news.yahoo.com/family-alleged-facebook-fraud-fugitive-forfeit-bail-u-173946860--finance.html'>site</a></td><td><table><tr><td>Family of alleged Facebook fraud fugitive to forfeit bail: U.S. judge</td></tr><tr><td>Ceglia's father Carmine said he did not know where his son was but expressed sympathy for him, suggesting that Facebook's principal lawyer was unduly influencing federal prosecutors.</td></tr></table></td></tr>
 </table></body></html>

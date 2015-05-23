@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,10 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 20:12:29</td><td>Many Iraqis blame the rivalries among the country's political leadership for the humiliating defeat suffered by government forces in the past year at the hands of the Islamic State militants that control large sections of the north and west of the country.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 20:12:29</td><td>Iraqi general, 3 officers killed in Islamic State ambush</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 20:12:29</td><td>The attack represents a setback for the Iraqi army which is embroiled in a fierce battle to reconquer western Anbar province, which has been under the control of the extremist Islamic State group for the past year.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 09:08:38</td><td>In the past weeks, the Iraqi army has been focusing on pushing Islamic State militants out of Anbar province and has been reporting incremental progress.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 09:08:38</td><td>BAGHDAD - Iraqi military authorities say there are fierce clashes northeast of Fallujah between the army and Islamic State militants following an ambush Friday that killed a general and staff officers.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-25 11:47:18</td><td>Residents of Fallujah said that Islamic State militants paraded an officer and three soldiers allegedly captured in the fighting through the streets in a pickup truck on Saturday.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/3D8wjwKdT79bNFVUAuB5Gg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/38e793eb8423aa12740f6a7067004e7c.jpg'></td><td>2015-04-25 13:39:40</td><td>The attack was immediately claimed by the radical Islamic State group on its twitter account, which said the attack was perpetrated by Belgian, French and Senegalese militants and claimed a much higher death toll.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 20:12:29</td><td><a href='http://www.sfgate.com/news/world/article/Iraq-forces-recapture-a-bridge-in-Ramadi-from-6221450.php'>site</a></td><td>The attack represents a setback for the Iraqi army which is embroiled in a fierce battle to reconquer western Anbar province, which has been under the control of the extremist Islamic State group for the past year.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 20:12:29</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/24/iraq-forces-recapture-a-bridge-in-ramadi-from-islamic-state'>site</a></td><td><table><tr><td>Iraqi general, 3 officers killed in Islamic State ambush</td></tr><tr><td>Many Iraqis blame the rivalries among the country's political leadership for the humiliating defeat suffered by government forces in the past year at the hands of the Islamic State militants that control large sections of the north and west of the country.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 09:08:38</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/25/iraqi-army-battles-islamic-state-militants-near-fallujah'>site</a></td><td>In the past weeks, the Iraqi army has been focusing on pushing Islamic State militants out of Anbar province and has been reporting incremental progress.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 09:08:38</td><td><a href='http://www.foxnews.com/world/2015/04/25/iraqi-army-in-fierce-battle-with-islamic-state-militants-after-deadly-ambush/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>BAGHDAD - Iraqi military authorities say there are fierce clashes northeast of Fallujah between the army and Islamic State militants following an ambush Friday that killed a general and staff officers.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-25 11:47:18</td><td><a href='http://abcnews.go.com/International/wireStory/iraqi-army-battles-islamic-state-militants-fallujah-30577925'>site</a></td><td>Residents of Fallujah said that Islamic State militants paraded an officer and three soldiers allegedly captured in the fighting through the streets in a pickup truck on Saturday.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/3D8wjwKdT79bNFVUAuB5Gg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/38e793eb8423aa12740f6a7067004e7c.jpg'></td><td>2015-04-25 13:39:40</td><td><a href='http://news.yahoo.com/iraqi-army-battles-islamic-state-militants-near-fallujah-090849684.html'>site</a></td><td>The attack was immediately claimed by the radical Islamic State group on its twitter account, which said the attack was perpetrated by Belgian, French and Senegalese militants and claimed a much higher death toll.</td></tr>
 </table></body></html>

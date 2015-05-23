@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a79ac-180.jpg'></td><td>2015-04-22 22:53:55</td><td>Chile declares alert as volcano erupts</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000a79ac-180.jpg'></td><td>2015-04-22 22:53:55</td><td>The 2,000 metre volcano had been inactive for 43 years.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47021867,width-300,resizemode-4/Chile-declares-emergency-as-Calbuco-volcano-erupts.jpg'></td><td>2015-04-23 00:58:55</td><td>It is the second volcano in southern Chile to have a substantial eruption since March 3, when the Villarrica volcano emitted a brief but fiery burst of ash and lava.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47021867,width-300,resizemode-4/Chile-declares-emergency-as-Calbuco-volcano-erupts.jpg'></td><td>2015-04-23 00:58:55</td><td>Southern Chile's Calbuco volcano erupted on Wednesday for the first time in nearly half a century, spewing a giant funnel of ash high into the sky and prompting authorities to declare a state of emergency.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a79ac-180.jpg'></td><td>2015-04-22 22:53:55</td><td><a href='http://www.rte.ie/news/2015/0422/696072-chile-volcano/'>site</a></td><td><table><tr><td>Chile declares alert as volcano erupts</td></tr><tr><td>The 2,000 metre volcano had been inactive for 43 years.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47021867,width-300,resizemode-4/Chile-declares-emergency-as-Calbuco-volcano-erupts.jpg'></td><td>2015-04-23 00:58:55</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Chile-declares-emergency-as-Calbuco-volcano-erupts/articleshow/47021863.cms'>site</a></td><td><table><tr><td>Southern Chile's Calbuco volcano erupted on Wednesday for the first time in nearly half a century, spewing a giant funnel of ash high into the sky and prompting authorities to declare a state of emergency.</td></tr><tr><td>It is the second volcano in southern Chile to have a substantial eruption since March 3, when the Villarrica volcano emitted a brief but fiery burst of ash and lava.</td></tr></table></td></tr>
 </table></body></html>

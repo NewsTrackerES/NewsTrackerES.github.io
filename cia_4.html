@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,17 +48,9 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 04:11:05</td><td>The changes come against a backdrop of evidence that the CIA's focus on hunting and killing terrorists since the Sept.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-07 04:11:05</td><td>The agency's greatest public success of recent years - the 10-year effort to locate and kill Osama bin Laden in 2011 - may have taken longer than it should have, according to evidence made public in the recent Senate report on CIA interrogations.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-07 04:11:05</td><td>The changes do not require congressional approval and will be undertaken within the CIA's current budget, CIA officials said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-07 04:11:05</td><td>Internal CIA surveys have cited bad management and bureaucratic frustration as factors in driving talent away from the agency.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-07 04:11:05</td><td>The system of CIA stations, headed by a CIA station chief, will remain in place, Brennan said.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-07 04:15:28</td><td>"Any time we've put analysts and operators together, the result has been a more powerful product," said John McLaughlin, a former CIA analyst who became acting director, and who advised Brennan on the restructuring.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-07 04:15:28</td><td>The CIA will also significantly boost its leadership training and talent development efforts, which have been compared unfavorably to the military, Brennan said.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-07 04:15:28</td><td>Brennan announced the restructuring to the CIA workforce on Friday, including a new directorate devoted to boosting the CIA's computer hacking skills.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31048239.ece/554c2/ALTERNATES/h342/PANews%20BT_P-766d0459-0338-4311-a8f0-83807c377b03_I1.jpg'></td><td>2015-03-07 04:51:06</td><td>The changes come against a backdrop of evidence that the CIA's focus on hunting and killing terrorists since the September 11 attacks has led to an erosion of the espionage and analytic capabilities the agency built during the Cold War.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-03-07 06:15:14</td><td>CIA chief announces sweeping reorganization of US spy agency</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-03-07 10:13:00</td><td>The CIA's mission of human spying now almost always has a digital component -even something so simple as backgrounding a potential asset by hacking into databases - and Brennan said the agency needs to intensify its focus on it.</td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-03-07 10:13:00</td><td>Paul Pillar, a former CIA analyst who famously dissented from the case for war in Iraq, expressed concern that the costs of the changes would outweigh the benefits.</td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-03-07 10:13:00</td><td>Brennan is retaining the old structure of CIA directorates.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 04:11:05</td><td><a href='http://www.usnews.com/news/politics/articles/2015/03/06/cias-brennan-to-overhaul-spy-agencys-management-structure'>site</a></td><td><table><tr><td>The changes come against a backdrop of evidence that the CIA's focus on hunting and killing terrorists since the Sept.</td></tr><tr><td>The agency's greatest public success of recent years - the 10-year effort to locate and kill Osama bin Laden in 2011 - may have taken longer than it should have, according to evidence made public in the recent Senate report on CIA interrogations.</td></tr><tr><td>Internal CIA surveys have cited bad management and bureaucratic frustration as factors in driving talent away from the agency.</td></tr><tr><td>The system of CIA stations, headed by a CIA station chief, will remain in place, Brennan said.</td></tr><tr><td>The changes do not require congressional approval and will be undertaken within the CIA's current budget, CIA officials said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 04:15:28</td><td><a href='http://www.startribune.com/nation/295375611.html'>site</a></td><td><table><tr><td>Brennan announced the restructuring to the CIA workforce on Friday, including a new directorate devoted to boosting the CIA's computer hacking skills.</td></tr><tr><td>"Any time we've put analysts and operators together, the result has been a more powerful product," said John McLaughlin, a former CIA analyst who became acting director, and who advised Brennan on the restructuring.</td></tr><tr><td>The CIA will also significantly boost its leadership training and talent development efforts, which have been compared unfavorably to the military, Brennan said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31048239.ece/554c2/ALTERNATES/h342/PANews%20BT_P-766d0459-0338-4311-a8f0-83807c377b03_I1.jpg'></td><td>2015-03-07 04:51:06</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/cia-chief-orders-sweeping-changes-31048240.html'>site</a></td><td>The changes come against a backdrop of evidence that the CIA's focus on hunting and killing terrorists since the September 11 attacks has led to an erosion of the espionage and analytic capabilities the agency built during the Cold War.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-07 06:15:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11413585&ref=rss'>site</a></td><td>CIA chief announces sweeping reorganization of US spy agency</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 10:13:00</td><td><a href='http://www.cbsnews.com/news/cia-director-announces-major-reorganization-of-spy-agency/'>site</a></td><td><table><tr><td>Brennan is retaining the old structure of CIA directorates.</td></tr><tr><td>The CIA's mission of human spying now almost always has a digital component -even something so simple as backgrounding a potential asset by hacking into databases - and Brennan said the agency needs to intensify its focus on it.</td></tr><tr><td>Paul Pillar, a former CIA analyst who famously dissented from the case for war in Iraq, expressed concern that the costs of the changes would outweigh the benefits.</td></tr></table></td></tr>
 </table></body></html>

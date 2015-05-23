@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:19:11</td><td>That's according to proverb-busting research that found daily apple eaters had just as many doctor visits as those who ate fewer or no apples.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 15:19:11</td><td>A preliminary analysis found apple eaters had slightly fewer visits than apple avoiders - those who ate less than one daily or no apples.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 15:19:11</td><td>An apple a day may not keep the doctor away, study says</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 15:19:11</td><td>Apple eaters had more education and were less likely to smoke than apple shunners, and fewer of them were white.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-30 15:19:11</td><td>Those who ate less than that were considered apple shunners.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-30 15:19:11</td><td>About 9 percent of adults studied ate the equivalent of at least one small apple daily.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-30 15:19:11</td><td>CHICAGO (AP) - An apple a day doesn't necessarily keep the doctor away.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:19:11</td><td><a href='http://health.usnews.com/health-news/news/articles/2015/03/30/an-apple-a-day-may-not-keep-the-doctor-away-study-says'>site</a></td><td><table><tr><td>An apple a day may not keep the doctor away, study says</td></tr><tr><td>CHICAGO (AP) - An apple a day doesn't necessarily keep the doctor away.</td></tr><tr><td>That's according to proverb-busting research that found daily apple eaters had just as many doctor visits as those who ate fewer or no apples.</td></tr><tr><td>A preliminary analysis found apple eaters had slightly fewer visits than apple avoiders - those who ate less than one daily or no apples.</td></tr><tr><td>About 9 percent of adults studied ate the equivalent of at least one small apple daily.</td></tr><tr><td>Those who ate less than that were considered apple shunners.</td></tr><tr><td>Apple eaters had more education and were less likely to smoke than apple shunners, and fewer of them were white.</td></tr></table></td></tr>
 </table></body></html>

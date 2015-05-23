@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,10 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 12:10:57</td><td>TUNIS, Tunisia - One of the gunmen who killed tourists and others at a prominent Tunisian museum was known to the intelligence services but no formal links to a particular extremist group have been established, the prime minister said Thursday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 14:59:00</td><td>A unidentified relative of a victim of the attack, centre, is escorted at the morgue of the Charles Nicolle hospital in Tunis Tunisia, Thursday, March 19, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 15:34:17</td><td>Islamic State group claims responsibility for Tunisia museum attack</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 15:34:17</td><td>Prime Minister Habib Essid told France's RTL radio that Tunisia was working with other countries to learn more about the slain attackers, identified as Yassine Laabidi and Hatem Khachnaoui.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 15:34:17</td><td>The attack spells oceans of trouble for the tourism industry, which brings throngs of foreigners every year to Tunisia's Mediterranean beaches, desert oases and ancient Roman ruins - and which had just started to recover after years of slump.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 15:34:17</td><td>The other four suspects were arrested in central Tunisia and were part of a cell supporting those involved, it said.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 16:47:31</td><td>Defying the extremists, hundreds of Tunisians rallied Thursday at the National Bardo Museum, stepping around trails of blood and broken glass to proclaim their solidarity with the victims and with Tunisia's fledgling democracy.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 19:08:07</td><td>A woman cries as she demonstrates in front of the National Bardo Museum a day after gunmen attacked the museum and killed scores of people in Tunis, Tunisia, Thursday, March 19, 2015.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 19:08:07</td><td>Spanish tourist Cristina Rubio, who is four months pregnant, rests at the maternity ward of the Charles Nicolle hospital in Tunis, Tunisia, Thursday March 19, 2015.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/35/23/23/7681246/5/square_gallery_thumb.jpg'></td><td>2015-03-20 04:14:27</td><td>The attack was the worst at a tourist site in Tunisia in more than a decade and prompted a leading Italian cruise ship line to cancel all stops in the North African nation indefinitely.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 12:10:57</td><td><a href='http://nypost.com/2015/03/19/tunisia-gunmen-known-to-authorities-2-spaniards-hid-all-night-in-fear/'>site</a></td><td>TUNIS, Tunisia - One of the gunmen who killed tourists and others at a prominent Tunisian museum was known to the intelligence services but no formal links to a particular extremist group have been established, the prime minister said Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 14:59:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-03-19-ML--Tunisia-Attack/id-784ab6e0b34e4301b319f518b993cc43'>site</a></td><td>A unidentified relative of a victim of the attack, centre, is escorted at the morgue of the Charles Nicolle hospital in Tunis Tunisia, Thursday, March 19, 2015.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 15:34:17</td><td><a href='http://ibnlive.in.com/news/islamic-state-group-claims-responsibility-for-tunisia-museum-attack/534995-2.html'>site</a></td><td><table><tr><td>Islamic State group claims responsibility for Tunisia museum attack</td></tr><tr><td>The other four suspects were arrested in central Tunisia and were part of a cell supporting those involved, it said.</td></tr><tr><td>Prime Minister Habib Essid told France's RTL radio that Tunisia was working with other countries to learn more about the slain attackers, identified as Yassine Laabidi and Hatem Khachnaoui.</td></tr><tr><td>The attack spells oceans of trouble for the tourism industry, which brings throngs of foreigners every year to Tunisia's Mediterranean beaches, desert oases and ancient Roman ruins - and which had just started to recover after years of slump.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 16:47:31</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3002085/Tunisian-PM-1-gunman-known-intelligence-ahead-attack.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Defying the extremists, hundreds of Tunisians rallied Thursday at the National Bardo Museum, stepping around trails of blood and broken glass to proclaim their solidarity with the victims and with Tunisia's fledgling democracy.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 19:08:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15329921.html#storylink=rss'>site</a></td><td><table><tr><td>Spanish tourist Cristina Rubio, who is four months pregnant, rests at the maternity ward of the Charles Nicolle hospital in Tunis, Tunisia, Thursday March 19, 2015.</td></tr><tr><td>A woman cries as she demonstrates in front of the National Bardo Museum a day after gunmen attacked the museum and killed scores of people in Tunis, Tunisia, Thursday, March 19, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/35/23/23/7681246/5/square_gallery_thumb.jpg'></td><td>2015-03-20 04:14:27</td><td><a href='http://www.sfgate.com/world/article/Islamic-State-claims-Tunisia-attack-that-killed-23-6145771.php'>site</a></td><td>The attack was the worst at a tourist site in Tunisia in more than a decade and prompted a leading Italian cruise ship line to cancel all stops in the North African nation indefinitely.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,9 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:12:56</td><td>It would be a dishonor to those memorialized here to not laud those who protect the ideals they fought for, as Edward Snowden has by bringing the NSA's 4th-Amendment-violating surveillance programs to light.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td>Bust of Edward Snowden Sneaked Into, Removed From NYC Park</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td>Suddenly, in the middle of the New York night, Edward Snowden's face appeared - deep in a public park.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td>At daybreak, police said city parks officials ordered the sculpted Snowden removed.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-06 22:49:05</td><td>Snowden's artistic appearance was short-lived.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-07 00:17:53</td><td>Animal New York, a city news website, reported that the activists sneaked the 4-foot-tall, 100-pound bust of Snowden before dawn Monday.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-07 00:17:53</td><td>After several mysterious artists put a sculpted bust of Snowden on a New York City war memorial, parks officials have ordered the bust removed.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/07/00/2754BC4D00000578-3028098-image-m-23_1428363958315.jpg'></td><td>2015-04-07 02:01:36</td><td>'If you look at history, the people we honor with statues now - certainly the people rebelling against the British rules - were criminals one day,' the creators of the Snowden bust told Mashable.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:12:56</td><td><a href='http://nymag.com/daily/intelligencer/2015/04/artists-put-snowden-bust-on-brooklyn-monument.html'>site</a></td><td>It would be a dishonor to those memorialized here to not laud those who protect the ideals they fought for, as Edward Snowden has by bringing the NSA's 4th-Amendment-violating surveillance programs to light.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td><a href='http://abcnews.go.com/US/wireStory/bust-edward-snowden-sneaked-removed-nyc-park-30126638'>site</a></td><td><table><tr><td>Bust of Edward Snowden Sneaked Into, Removed From NYC Park</td></tr><tr><td>Suddenly, in the middle of the New York night, Edward Snowden's face appeared - deep in a public park.</td></tr><tr><td>At daybreak, police said city parks officials ordered the sculpted Snowden removed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-06 22:49:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article17546378.html#storylink=rss'>site</a></td><td>Snowden's artistic appearance was short-lived.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 00:17:53</td><td><a href='http://www.usnews.com/news/us/articles/2015/04/06/bust-of-edward-snowden-sneaked-into-removed-from-nyc-park'>site</a></td><td><table><tr><td>After several mysterious artists put a sculpted bust of Snowden on a New York City war memorial, parks officials have ordered the bust removed.</td></tr><tr><td>Animal New York, a city news website, reported that the activists sneaked the 4-foot-tall, 100-pound bust of Snowden before dawn Monday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/07/00/2754BC4D00000578-3028098-image-m-23_1428363958315.jpg'></td><td>2015-04-07 02:01:36</td><td><a href='http://www.dailymail.co.uk/news/article-3028098/Bust-Edward-Snowden-sneaked-removed-NYC-park.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>'If you look at history, the people we honor with statues now - certainly the people rebelling against the British rules - were criminals one day,' the creators of the Snowden bust told Mashable.</td></tr>
 </table></body></html>

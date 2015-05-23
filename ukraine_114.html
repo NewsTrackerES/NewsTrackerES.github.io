@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 18:03:09</td><td>One Ukrainian serviceman was killed and two were wounded when separatists shelled Ukraine's National Guard on Saturday at Shyrokyne, a village east of the port of Mariupol on the Sea of Azov in Ukraine's southeast, Kiev's military said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 18:03:09</td><td>Rebel leaders in eastern Ukraine also stepped up accusations.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-25 20:25:56</td><td>He said the rebels were not opposed to the deployment of international peacekeepers in eastern Ukraine - a long-standing demand by Kiev - but accused Ukraine of violating the Minsk deal by failing to discuss constitutional changes with the rebels.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 20:25:56</td><td>Attending military exercises in southwestern Ukraine, President Petro Poroshenko said: "Ukraine is strictly implementing the Minsk agreements, therefore the Ukrainian armed forces will never attack first."</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 20:25:56</td><td>Ukraine and pro-Russian separatists trade accusations as Minsk deal frays</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 18:03:09</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3055129/Ukrainian-serviceman-killed-rebel-attack-near-Mariupol--military.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>One Ukrainian serviceman was killed and two were wounded when separatists shelled Ukraine's National Guard on Saturday at Shyrokyne, a village east of the port of Mariupol on the Sea of Azov in Ukraine's southeast, Kiev's military said.</td></tr><tr><td>Rebel leaders in eastern Ukraine also stepped up accusations.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 20:25:56</td><td><a href='http://www.reuters.com/article/2015/04/25/us-ukraine-crisis-casualties-idUSKBN0NG0B220150425?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Ukraine and pro-Russian separatists trade accusations as Minsk deal frays</td></tr><tr><td>He said the rebels were not opposed to the deployment of international peacekeepers in eastern Ukraine - a long-standing demand by Kiev - but accused Ukraine of violating the Minsk deal by failing to discuss constitutional changes with the rebels.</td></tr><tr><td>Attending military exercises in southwestern Ukraine, President Petro Poroshenko said: "Ukraine is strictly implementing the Minsk agreements, therefore the Ukrainian armed forces will never attack first."</td></tr></table></td></tr>
 </table></body></html>

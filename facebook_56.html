@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47076619,width-300,resizemode-4/Facebook.jpg'></td><td>2015-04-27 20:55:46</td><td>Facebook said that since activating this on Saturday in Nepal as well as areas in Bangladesh, India and Bhutan, "millions of people have been marked safe and tens of millions of people were notified that someone they know has been marked safe."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z6uw-6Y6xp7jIS-HSK1-518_634x422.jpg'></td><td>2015-04-27 22:03:06</td><td>"People are coming together to support those affected by the earthquake that struck Nepal and impacted the populations of Nepal, India and Bangladesh," Facebook said in a blog post.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z6uw-6Y6xp7jIS-HSK1-518_634x422.jpg'></td><td>2015-04-27 22:03:06</td><td>Facebook said that as of Monday, users will see a message at the top of their News Feed with an option to donate to International Medical Corps, which has been operating relief units in the region.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z6uw-6Y6xp7jIS-HSK1-518_634x422.jpg'></td><td>2015-04-27 22:03:06</td><td>Facebook collecting Nepal quake aid donations</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47076619,width-300,resizemode-4/Facebook.jpg'></td><td>2015-04-27 20:55:46</td><td><a href='http://timesofindia.indiatimes.com/world/south-asia/Facebook-collecting-Nepal-quake-aid-donations/articleshow/47076575.cms'>site</a></td><td>Facebook said that since activating this on Saturday in Nepal as well as areas in Bangladesh, India and Bhutan, "millions of people have been marked safe and tens of millions of people were notified that someone they know has been marked safe."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/article-doc-1z6uw-6Y6xp7jIS-HSK1-518_634x422.jpg'></td><td>2015-04-27 22:03:06</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3058207/Facebook-collecting-Nepal-quake-aid-donations.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Facebook collecting Nepal quake aid donations</td></tr><tr><td>"People are coming together to support those affected by the earthquake that struck Nepal and impacted the populations of Nepal, India and Bangladesh," Facebook said in a blog post.</td></tr><tr><td>Facebook said that as of Monday, users will see a message at the top of their News Feed with an option to donate to International Medical Corps, which has been operating relief units in the region.</td></tr></table></td></tr>
 </table></body></html>

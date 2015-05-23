@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,7 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 16:02:46</td><td>Kenya has in the past accused Islamist militants of hiding out in Dadaab camp which it now wants the U.N. refugee agency UNHCR to move across the border to inside Somalia.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-11 16:02:46</td><td>Ruto said Kenya had started building a 700-km (440-mile) wall along the entire length of the border with Somalia to keep out members of the Somali Islamist militant group al Shabaab.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-11 16:02:46</td><td>"The way America changed after 9/11 is the way Kenya will change after Garissa," he said, referring to the university that was attacked on April 2.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-11 16:02:46</td><td>Kenya demands UN removes massive Somali refugee camp</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-11 18:02:14</td><td>The complex of camps hosts more than 600,000 Somali refugees, according to Ruto, in a remote, dry corner in northeast Kenya, about an hour's drive from Garissa town.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-11 18:02:14</td><td>On Tuesday, Kenya closed 13 informal money remittance firms, hawalas, to cut off funding to suspected radicals.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-11 18:02:14</td><td>Emmanuel Nyabera, spokesman for the UNHCR in Kenya, said they were yet to receive formal communication from the government on the relocation of Dadaab and could not comment.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/11/d386e6ba79e14f51aa67392732a71cbe_18.jpg'></td><td>2015-04-11 19:37:28</td><td>Kenya has urged the United Nations to remove a camp housing more than half a million Somali refugees within three months, as part of a response to the recent killing of 148 people by Somali gunmen at a Kenyan university.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/11/d386e6ba79e14f51aa67392732a71cbe_18.jpg'></td><td>2015-04-11 19:37:28</td><td>"Kenya is in an emergency situation... Each country has an obligation to look after its people first," he told Reuters.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 16:02:46</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034933/Kenya-demands-UN-removes-massive-Somali-refugee-camp.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Kenya demands UN removes massive Somali refugee camp</td></tr><tr><td>Kenya has in the past accused Islamist militants of hiding out in Dadaab camp which it now wants the U.N. refugee agency UNHCR to move across the border to inside Somalia.</td></tr><tr><td>"The way America changed after 9/11 is the way Kenya will change after Garissa," he said, referring to the university that was attacked on April 2.</td></tr><tr><td>Ruto said Kenya had started building a 700-km (440-mile) wall along the entire length of the border with Somalia to keep out members of the Somali Islamist militant group al Shabaab.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 18:02:14</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034933/Kenya-demands-UN-removes-massive-Somali-refugee-camp.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Emmanuel Nyabera, spokesman for the UNHCR in Kenya, said they were yet to receive formal communication from the government on the relocation of Dadaab and could not comment.</td></tr><tr><td>The complex of camps hosts more than 600,000 Somali refugees, according to Ruto, in a remote, dry corner in northeast Kenya, about an hour's drive from Garissa town.</td></tr><tr><td>On Tuesday, Kenya closed 13 informal money remittance firms, hawalas, to cut off funding to suspected radicals.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2015/4/11/d386e6ba79e14f51aa67392732a71cbe_18.jpg'></td><td>2015-04-11 19:37:28</td><td><a href='http://www.aljazeera.com/news/africa/2015/04/kenya-orders-move-massive-somali-refugee-camp-150411190428267.html'>site</a></td><td><table><tr><td>Kenya has urged the United Nations to remove a camp housing more than half a million Somali refugees within three months, as part of a response to the recent killing of 148 people by Somali gunmen at a Kenyan university.</td></tr><tr><td>"Kenya is in an emergency situation... Each country has an obligation to look after its people first," he told Reuters.</td></tr></table></td></tr>
 </table></body></html>

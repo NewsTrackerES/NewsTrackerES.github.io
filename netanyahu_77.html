@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:31:10</td><td>Obama: Netanyahu statements don't clarify two-state solution</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 19:31:58</td><td>He acknowledged that Netanyahu later pointed out that he did not say a Palestinian state would "never" be created.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 19:31:58</td><td>Obama noted a tendency in reporting to frame the current dispute as a personal issue between Netanyahu and Obama.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 20:09:45</td><td>He said he has a "businesslike" relationship with Netanyahu, and has met with him more than any other world leader.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:31:10</td><td><a href='http://www.utsandiego.com/news/2015/mar/24/obama-netanyahu-statements-dont-clarify-two-state/'>site</a></td><td>Obama: Netanyahu statements don't clarify two-state solution</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:31:58</td><td><a href='http://abcnews.go.com/Politics/wireStory/obama-netanyahu-statements-clarify-state-solution-29876944'>site</a></td><td><table><tr><td>He acknowledged that Netanyahu later pointed out that he did not say a Palestinian state would "never" be created.</td></tr><tr><td>Obama noted a tendency in reporting to frame the current dispute as a personal issue between Netanyahu and Obama.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 20:09:45</td><td><a href='http://www.sfgate.com/news/politics/article/Obama-Netanyahu-statements-don-t-clarify-6155921.php'>site</a></td><td>He said he has a "businesslike" relationship with Netanyahu, and has met with him more than any other world leader.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td>A student has her body temperature checked as part of an Ebola screening at Don Bosco High School, as schools reopen in the Liberian capital, Monrovia.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td>Monrovia: Thousands of Liberian children in pristine uniforms flocked back to school for the first time in six months, after a after a closure designed to stem the spread of the worst Ebola outbreak in history.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td>"Authorities in the three countries are looking at catchup sessions and cancelling some school vacations. It will be challenging," said Sayo Aoki, education specialist in Ebola Emergencies at the UN Children's Fund.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td>At the peak, last summer, Ebola patients were collapsing outside overflowing hospitals.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td>Liberia reopens schools as Ebola wanes</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td><a href='http://www.brisbanetimes.com.au/world/liberia-reopens-schools-as-ebola-wanes-20150217-13gnip.html'>site</a></td><td><table><tr><td>Liberia reopens schools as Ebola wanes</td></tr><tr><td>A student has her body temperature checked as part of an Ebola screening at Don Bosco High School, as schools reopen in the Liberian capital, Monrovia.</td></tr><tr><td>Monrovia: Thousands of Liberian children in pristine uniforms flocked back to school for the first time in six months, after a after a closure designed to stem the spread of the worst Ebola outbreak in history.</td></tr><tr><td>At the peak, last summer, Ebola patients were collapsing outside overflowing hospitals.</td></tr><tr><td>"Authorities in the three countries are looking at catchup sessions and cancelling some school vacations. It will be challenging," said Sayo Aoki, education specialist in Ebola Emergencies at the UN Children's Fund.</td></tr></table></td></tr>
 </table></body></html>

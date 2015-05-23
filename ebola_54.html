@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 00:05:00</td><td>A total of 256 Cuban medics had been mobilised in the three countries worst hit by Ebola - Sierra Leone, Liberia and Guinea.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 00:05:00</td><td>Last Cuban Ebola medics leave S.Leone, new clampdown for Easter</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 00:05:00</td><td>The latest World Health Organization (WHO) figures published on Wednesday showed that the number of new Ebola infections in Sierra Leone fell for the fourth consecutive week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 00:05:00</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3022331/Last-Cuban-Ebola-medics-leave-S-Leone-new-clampdown-Easter.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Last Cuban Ebola medics leave S.Leone, new clampdown for Easter</td></tr><tr><td>A total of 256 Cuban medics had been mobilised in the three countries worst hit by Ebola - Sierra Leone, Liberia and Guinea.</td></tr><tr><td>The latest World Health Organization (WHO) figures published on Wednesday showed that the number of new Ebola infections in Sierra Leone fell for the fourth consecutive week.</td></tr></table></td></tr>
 </table></body></html>

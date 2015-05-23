@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td>U.S. officials said Libya Dawn, an Islamist, but non-Jihadist, movement based in the city of Misurata, was mounting a counter-attack against Islamic State forces, a development which the United States considered encouraging.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td>U.S. officials said that because of its strategic position, Libya had become a springboard for would-be fighters from across North Africa wanting to link up with the Islamic State.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td>The State Department document said estimates of the number of Islamic State fighters operating in Libya ranged from 1000 to 3000.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td>The report said Islamic State had only had limited success in capturing and holding territory in Libya.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XgwREijEEKS50YX1opIvow--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T220449Z_2_LYNXMPEB2J104_RTROPTP_2_LIBYA-SECURITY.JPG'></td><td>2015-03-20 22:04:49</td><td><a href='http://news.yahoo.com/u-fears-islamic-state-making-serious-inroads-libya-201304508.html'>site</a></td><td><table><tr><td>The State Department document said estimates of the number of Islamic State fighters operating in Libya ranged from 1000 to 3000.</td></tr><tr><td>U.S. officials said that because of its strategic position, Libya had become a springboard for would-be fighters from across North Africa wanting to link up with the Islamic State.</td></tr><tr><td>The report said Islamic State had only had limited success in capturing and holding territory in Libya.</td></tr><tr><td>U.S. officials said Libya Dawn, an Islamist, but non-Jihadist, movement based in the city of Misurata, was mounting a counter-attack against Islamic State forces, a development which the United States considered encouraging.</td></tr></table></td></tr>
 </table></body></html>

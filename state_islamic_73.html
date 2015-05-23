@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 10:56:16</td><td>The US Marine Corps on Sunday urged "vigilance" among staff after the Islamic State group listed what it said were the names and addresses of military personnel, urging supporters to kill them.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-22 10:56:16</td><td>Islamic State urge murder of US military personnel</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-22 10:56:16</td><td><a href='http://www.smh.com.au/world/islamic-state-urge-murder-of-us-military-personnel-after-alleged-hack-attack-20150322-1m564z.html'>site</a></td><td><table><tr><td>Islamic State urge murder of US military personnel</td></tr><tr><td>The US Marine Corps on Sunday urged "vigilance" among staff after the Islamic State group listed what it said were the names and addresses of military personnel, urging supporters to kill them.</td></tr></table></td></tr>
 </table></body></html>

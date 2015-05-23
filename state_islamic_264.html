@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 01:13:57</td><td>Everything changed after the 2003 Casablanca suicide bombings by young Islamic radicals that claimed 45 lives.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/36/45/10/8016412/7/square_gallery_thumb.jpg'></td><td>2015-05-21 01:13:57</td><td>But one day in December 2013, Haloui left behind his wife and children and quit Morocco to join a group linked to the Islamic State.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/36/45/10/8016412/7/square_gallery_thumb.jpg'></td><td>2015-05-21 01:13:57</td><td>Anas majored in Islamic studies at Fez University in 1999, at a time of great intellectual ferment when Moroccan student life was dominated by Islamist groups.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/45/10/8016412/7/square_gallery_thumb.jpg'></td><td>2015-05-21 01:13:57</td><td>Embittered, Moroccan leaves family for Islamic State</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/45/10/8016412/7/square_gallery_thumb.jpg'></td><td>2015-05-21 01:13:57</td><td><a href='http://www.sfgate.com/news/crime/article/Embittered-Moroccan-leaves-family-for-Islamic-6276173.php'>site</a></td><td><table><tr><td>Embittered, Moroccan leaves family for Islamic State</td></tr><tr><td>But one day in December 2013, Haloui left behind his wife and children and quit Morocco to join a group linked to the Islamic State.</td></tr><tr><td>Anas majored in Islamic studies at Fez University in 1999, at a time of great intellectual ferment when Moroccan student life was dominated by Islamist groups.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 01:13:57</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/20/embittered-moroccan-leaves-family-for-islamic-state'>site</a></td><td>Everything changed after the 2003 Casablanca suicide bombings by young Islamic radicals that claimed 45 lives.</td></tr>
 </table></body></html>

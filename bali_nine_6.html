@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 07:10:51</td><td>At the same time, the lawyers' complaints against the original six judges in the Bali Nine pair's trial are being examined.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 07:10:51</td><td>Execution of Bali Nine duo in limbo</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81049000/jpg/_81049903_025433743-1.jpg'></td><td>2015-03-04 21:36:17</td><td>Bishop offers Bali Nine prisoner swap</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 07:10:51</td><td><a href='http://www.smh.com.au/world/execution-of-bali-nine-duo-in-limbo-20150220-13kqwk.html'>site</a></td><td><table><tr><td>Execution of Bali Nine duo in limbo</td></tr><tr><td>At the same time, the lawyers' complaints against the original six judges in the Bali Nine pair's trial are being examined.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/81049000/jpg/_81049903_025433743-1.jpg'></td><td>2015-03-04 21:36:17</td><td><a href='http://www.bbc.co.uk/news/world-australia-31741558#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Bishop offers Bali Nine prisoner swap</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,6 @@
     <h3>playstation</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/628x471.jpg'></td><td>2015-03-25 07:10:19</td><td>NEW YORK (AP) - Sony's new PlayStation Vue online TV service launched in three cities last week with more than 50 channels starting at $50.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/628x471.jpg'></td><td>2015-03-25 07:10:19</td><td>You'll be able to use the PlayStation Vue password.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/628x471.jpg'></td><td>2015-03-25 07:10:19</td><td>A $50-a-year PlayStation Plus subscription is normally needed.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/628x471.jpg'></td><td>2015-03-25 07:10:19</td><td>Three people can watch programs simultaneously - if each has a separate PlayStation 3 or 4 (only one can be a PS4).</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/622x350.jpg'></td><td>2015-03-25 07:10:19</td><td>Many shows from the past three days are automatically available for viewing, but only through the PlayStation, not on mobile.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/622x350.jpg'></td><td>2015-03-25 07:10:19</td><td>Details on PlayStation Vue, comparison with Sling TV</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/622x350.jpg'></td><td>2015-03-25 07:10:19</td><td>if each has a separate PlayStation 3 or 4 (only one can be a PS4).</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/628x471.jpg'></td><td>2015-03-25 07:10:19</td><td><a href='http://www.seattlepi.com/business/technology/article/Details-on-PlayStation-Vue-comparison-with-Sling-6157087.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Sony's new PlayStation Vue online TV service launched in three cities last week with more than 50 channels starting at $50.</td></tr><tr><td>Three people can watch programs simultaneously - if each has a separate PlayStation 3 or 4 (only one can be a PS4).</td></tr><tr><td>You'll be able to use the PlayStation Vue password.</td></tr><tr><td>A $50-a-year PlayStation Plus subscription is normally needed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/32/74/7712514/3/622x350.jpg'></td><td>2015-03-25 07:10:19</td><td><a href='http://www.chron.com/business/technology/article/Details-on-PlayStation-Vue-comparison-with-Sling-6157087.php'>site</a></td><td><table><tr><td>Details on PlayStation Vue, comparison with Sling TV</td></tr><tr><td>if each has a separate PlayStation 3 or 4 (only one can be a PS4).</td></tr><tr><td>Many shows from the past three days are automatically available for viewing, but only through the PlayStation, not on mobile.</td></tr></table></td></tr>
 </table></body></html>

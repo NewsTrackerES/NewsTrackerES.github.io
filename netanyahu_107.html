@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03293/Benjamin-Netanyahu_3293458b.jpg'></td><td>2015-05-06 20:40:47</td><td>Mr Netanyahu's Likud party announced plans to issue formal statements at Israel's parliament.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 21:13:05</td><td>* Netanyahu has demanded that coalition partners agree to vote in favour of all measures proposed by his government to rein in Israeli television stations and other media that require government licenses in order to operate.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 21:13:05</td><td>* Netanyahu's far-right partners want to increase the size of a government-named panel that selects judges to ensure there would be more lawmakers than judges on that committee.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03293/Benjamin-Netanyahu_3293458b.jpg'></td><td>2015-05-06 20:40:47</td><td><a href='http://www.telegraph.co.uk/news/worldnews/middleeast/israel/11587972/Benjamin-Netanyahu-clinches-deal-to-form-new-Israeli-government.html'>site</a></td><td>Mr Netanyahu's Likud party announced plans to issue formal statements at Israel's parliament.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 21:13:05</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3070891/Legislative-plans-Netanyahus-right-wing-coalition.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>* Netanyahu's far-right partners want to increase the size of a government-named panel that selects judges to ensure there would be more lawmakers than judges on that committee.</td></tr><tr><td>* Netanyahu has demanded that coalition partners agree to vote in favour of all measures proposed by his government to rein in Israeli television stations and other media that require government licenses in order to operate.</td></tr></table></td></tr>
 </table></body></html>

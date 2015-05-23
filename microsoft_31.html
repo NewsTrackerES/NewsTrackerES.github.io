@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 15:16:50</td><td>Microsoft is expected to make the announcement at its developer conference in San Francisco later on Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694024178_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 15:37:24</td><td>The move would mark a radical shift for Microsoft, which has struggled to attract users and has only 3% of the global smartphone market.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 17:33:39</td><td>The move would mark a radical shift in strategy for Microsoft, which still dominates the personal computer market but has failed to get any real traction on tablets and phones, partly because of a lack of apps.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-29 17:33:39</td><td>Microsoft CEO Satya Nadella delivers his keynote address at Microsoft Build in San Francisco, California April 29, 2015.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694024178_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 23:14:55</td><td>The apps will technically be Windows apps and available only through Microsoft's online app store.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 15:16:50</td><td><a href='http://www.reuters.com/article/2015/04/29/microsoft-windows-idUSL1N0XQ1RM20150429?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Microsoft is expected to make the announcement at its developer conference in San Francisco later on Wednesday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694024178_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 15:37:24</td><td><a href='http://www.torontosun.com/2015/04/29/android-apps-on-windows-phones'>site</a></td><td>The move would mark a radical shift for Microsoft, which has struggled to attract users and has only 3% of the global smartphone market.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 17:33:39</td><td><a href='http://www.reuters.com/article/2015/04/29/us-microsoft-windows-idUSKBN0NK1UZ20150429?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Microsoft CEO Satya Nadella delivers his keynote address at Microsoft Build in San Francisco, California April 29, 2015.</td></tr><tr><td>The move would mark a radical shift in strategy for Microsoft, which still dominates the personal computer market but has failed to get any real traction on tablets and phones, partly because of a lack of apps.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694024178_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 23:14:55</td><td><a href='http://www.torontosun.com/2015/04/29/android-apps-on-windows-phones'>site</a></td><td>The apps will technically be Windows apps and available only through Microsoft's online app store.</td></tr>
 </table></body></html>

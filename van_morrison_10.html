@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 15:29:30</td><td>James Morrison of England won the Spanish Open by four shots after shooting a 3-under 69 in Sunday's final round.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 15:32:37</td><td>It is Morrison's second victory on the European Tour and first since the 2010 Madeira Islands Open.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-17 15:32:37</td><td>Barcelona, Spain (SportsNetwork.com) - James Morrison shot a 3-under 69 in Sunday's final round and the Englishman went on to win by four shots at the Open de Espana.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-17 15:32:37</td><td>Morrison, who shared the third-round lead with David Howell, finished the week at 10-under-par 278.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-17 15:32:37</td><td>Morrison wins by 4 in Spain</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 15:29:30</td><td><a href='http://www.miamiherald.com/sports/article21228546.html#storylink=rss'>site</a></td><td>James Morrison of England won the Spanish Open by four shots after shooting a 3-under 69 in Sunday's final round.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 15:32:37</td><td><a href='http://www.miamiherald.com/sports/golf/article21228726.html#storylink=rss'>site</a></td><td><table><tr><td>Morrison wins by 4 in Spain</td></tr><tr><td>Barcelona, Spain (SportsNetwork.com) - James Morrison shot a 3-under 69 in Sunday's final round and the Englishman went on to win by four shots at the Open de Espana.</td></tr><tr><td>Morrison, who shared the third-round lead with David Howell, finished the week at 10-under-par 278.</td></tr><tr><td>It is Morrison's second victory on the European Tour and first since the 2010 Madeira Islands Open.</td></tr></table></td></tr>
 </table></body></html>

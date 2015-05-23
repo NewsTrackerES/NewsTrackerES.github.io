@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/25/40/7952402/7/mosaic_2.jpg'></td><td>2015-05-09 17:00:24</td><td>The World Health Organization on Saturday called the milestone a "monumental achievement for a country that reported the highest number of deaths in the largest, longest, and most complex outbreak since Ebola first emerged in 1976."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/mByc9qM0LxLPzfHnfc7Nug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ff0aa0c7c5f3ff14750f6a70670018b0.jpg'></td><td>2015-05-09 17:00:35</td><td>MONROVIA, Liberia (AP) - On the day Mercy Kennedy lost her mother to Ebola, it was hard to imagine a time when Liberia would be free from one of the world's deadliest viruses.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/mByc9qM0LxLPzfHnfc7Nug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ff0aa0c7c5f3ff14750f6a70670018b0.jpg'></td><td>2015-05-09 17:00:35</td><td>The disastrous epidemic in Monrovia and the capitals of Guinea and Sierra Leone marked the first time the Ebola virus had infiltrated major urban areas where it could spread quickly through densely populated, impoverished neighborhoods.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/mByc9qM0LxLPzfHnfc7Nug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ff0aa0c7c5f3ff14750f6a70670018b0.jpg'></td><td>2015-05-09 17:00:35</td><td>"Nobody wanted to pass on our road or have anything to do with us, everybody was afraid of the community. I thank God that Liberia is free from Ebola."</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/mByc9qM0LxLPzfHnfc7Nug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ff0aa0c7c5f3ff14750f6a70670018b0.jpg'></td><td>2015-05-09 17:00:35</td><td>Saturday marks 42 days since Liberia's last Ebola case - the benchmark used to declare the outbreak over because it represents two incubation periods of 21 days for new cases to emerge.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/mByc9qM0LxLPzfHnfc7Nug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ff0aa0c7c5f3ff14750f6a70670018b0.jpg'></td><td>2015-05-09 17:00:35</td><td>The fact they had never even sought treatment for Ebola means health officials lost critical time to track their relatives and other contacts.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/25/40/7952402/7/mosaic_2.jpg'></td><td>2015-05-09 17:00:24</td><td><a href='http://www.chron.com/news/medical/article/Liberia-cautiously-marks-end-of-Ebola-after-4-700-6252956.php'>site</a></td><td>The World Health Organization on Saturday called the milestone a "monumental achievement for a country that reported the highest number of deaths in the largest, longest, and most complex outbreak since Ebola first emerged in 1976."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/mByc9qM0LxLPzfHnfc7Nug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ff0aa0c7c5f3ff14750f6a70670018b0.jpg'></td><td>2015-05-09 17:00:35</td><td><a href='http://news.yahoo.com/liberia-cautiously-marks-end-ebola-4-700-deaths-151552442.html'>site</a></td><td><table><tr><td>MONROVIA, Liberia (AP) - On the day Mercy Kennedy lost her mother to Ebola, it was hard to imagine a time when Liberia would be free from one of the world's deadliest viruses.</td></tr><tr><td>"Nobody wanted to pass on our road or have anything to do with us, everybody was afraid of the community. I thank God that Liberia is free from Ebola."</td></tr><tr><td>Saturday marks 42 days since Liberia's last Ebola case - the benchmark used to declare the outbreak over because it represents two incubation periods of 21 days for new cases to emerge.</td></tr><tr><td>The fact they had never even sought treatment for Ebola means health officials lost critical time to track their relatives and other contacts.</td></tr><tr><td>The disastrous epidemic in Monrovia and the capitals of Guinea and Sierra Leone marked the first time the Ebola virus had infiltrated major urban areas where it could spread quickly through densely populated, impoverished neighborhoods.</td></tr></table></td></tr>
 </table></body></html>

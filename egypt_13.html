@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 10:34:48</td><td>Soma Bay is part of a string of resorts billed as Egypt's "Red Sea Riviera," known for world-class diving and sandy beaches that are open year-round.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 10:34:48</td><td>Americans and Western Europeans are still largely avoiding Egypt, in part because of government travel warnings.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 11:15:05</td><td>Egypt's resorts safe, German beauties say</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='https://s.yimg.com/bt/api/res/1.2/IZmTGtM3EnnrTsfEDpzS.A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9f1883253755aa086e0f6a706700fe9a.jpg'></td><td>2015-02-20 11:43:13</td><td>The Tourism Ministry says 9.9 million tourists came to Egypt in 2014, a slight increase from the previous year, driven by a 47 percent surge from Eastern Europe - notably 3.1 million Russians.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 10:34:48</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/02/20/egypts-resorts-safe-german-beauties-say'>site</a></td><td><table><tr><td>Soma Bay is part of a string of resorts billed as Egypt's "Red Sea Riviera," known for world-class diving and sandy beaches that are open year-round.</td></tr><tr><td>Americans and Western Europeans are still largely avoiding Egypt, in part because of government travel warnings.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 11:15:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11405496&ref=rss'>site</a></td><td>Egypt's resorts safe, German beauties say</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='https://s.yimg.com/bt/api/res/1.2/IZmTGtM3EnnrTsfEDpzS.A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9f1883253755aa086e0f6a706700fe9a.jpg'></td><td>2015-02-20 11:43:13</td><td><a href='https://news.yahoo.com/egypts-resorts-safe-german-beauties-103512503.html'>site</a></td><td>The Tourism Ministry says 9.9 million tourists came to Egypt in 2014, a slight increase from the previous year, driven by a 47 percent surge from Eastern Europe - notably 3.1 million Russians.</td></tr>
 </table></body></html>

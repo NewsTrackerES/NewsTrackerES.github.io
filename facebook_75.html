@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:05:02</td><td>"Facebook is already regulated in Europe and complies with European data protection law, so the applicability of the CBPL's efforts is unclear," she said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 12:05:02</td><td>"Facebook tramples on European and Belgian privacy laws", the Commission said after publishing a report analysing changes that the company made to its privacy policies in January.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 12:16:31</td><td>Brussels - Facebook tramples on European privacy laws by tracking people online without their consent and dodges questions from national regulators, Belgium's privacy watchdog said on Friday.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 12:16:31</td><td>It said Facebook had refused to recognise Belgian and other EU national jurisdictions, with the company insisting it was subject only to the law in Ireland, the site of its European headquarters.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 12:16:31</td><td>It urged internet users to install privacy software to shield themselves from Facebook's tracking systems, whether they have an account with the social network or not.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 12:16:31</td><td>Facebook later said this was a bug and it is working to fix it.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-15 12:16:31</td><td>A Facebook spokesperson questioned the Belgians' authority but said it would review the study's recommendations with the Irish data protection commissioner: "We work hard to make sure people have control over what they share and with whom."</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297700711823_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-05-15 12:38:58</td><td>The commission said Facebook would not explain in detail how it uses data it collects.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:05:02</td><td><a href='http://www.reuters.com/article/2015/05/15/facebook-eu-privacy-idUSL5N0Y62BE20150515?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td><table><tr><td>"Facebook tramples on European and Belgian privacy laws", the Commission said after publishing a report analysing changes that the company made to its privacy policies in January.</td></tr><tr><td>"Facebook is already regulated in Europe and complies with European data protection law, so the applicability of the CBPL's efforts is unclear," she said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 12:16:31</td><td><a href='http://www.fin24.com/Tech/News/Facebook-accused-of-trampling-on-privacy-20150515'>site</a></td><td><table><tr><td>Brussels - Facebook tramples on European privacy laws by tracking people online without their consent and dodges questions from national regulators, Belgium's privacy watchdog said on Friday.</td></tr><tr><td>It urged internet users to install privacy software to shield themselves from Facebook's tracking systems, whether they have an account with the social network or not.</td></tr><tr><td>It said Facebook had refused to recognise Belgian and other EU national jurisdictions, with the company insisting it was subject only to the law in Ireland, the site of its European headquarters.</td></tr><tr><td>A Facebook spokesperson questioned the Belgians' authority but said it would review the study's recommendations with the Irish data protection commissioner: "We work hard to make sure people have control over what they share and with whom."</td></tr><tr><td>Facebook later said this was a bug and it is working to fix it.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297700711823_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-05-15 12:38:58</td><td><a href='http://www.torontosun.com/2015/05/15/facebook-tramples-european-privacy-law-belgian-watchdog'>site</a></td><td>The commission said Facebook would not explain in detail how it uses data it collects.</td></tr>
 </table></body></html>

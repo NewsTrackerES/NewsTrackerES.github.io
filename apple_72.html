@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 15,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,19 +48,9 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 20:34:41</td><td>Apple sold more than 61 million iPhones in the quarter, accounting for more than two-thirds of its $58 billion in revenue for the quarter and the lion's share of its $13.6 billion in profit.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 20:34:41</td><td>Apple shares have gained more than 50 percent over the last year, making it the world's most valuable company.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 20:34:41</td><td>By some estimates, Apple outsold Samsung in the quarter that ended in December, and analysts will be watching closely when Samsung reports its latest results this week.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 20:34:41</td><td>As iPhone sales have surged, so has Apple's stock.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-27 21:32:00</td><td>"We're seeing a higher rate of people switching to iPhone than we've experienced in previous cycles, and we're off to an exciting start to the June quarter with the launch of Apple Watch."</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 23:08:36</td><td>Apple didn't report any results for the new Apple Watch, which it began selling this month after the quarter ended.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-27 23:08:36</td><td>The iPhone isn't just Apple's dominant product, said Frank Gillett, a tech industry analyst at Forrester Research.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-27 23:08:36</td><td>Since it began offering models with bigger screens last fall, Apple has vied with South Korea's Samsung for the No.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-04-27 23:08:36</td><td>That could make it difficult for Apple to maintain its recent pace.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 03:15:41</td><td>Apple ended the quarter with $193.5 billion in cash and short-term securities.</td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 03:15:41</td><td>Maestri said Apple will raise its quarterly dividend by 11 percent, to 52 cents a share, and has increased a $90 billion stock buyback program to $140 billion.</td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-04-28 04:31:43</td><td>Maestri, meanwhile, said the company is diversifying with new products like Apple Watch and Apple Pay, which on Monday added Discover to the list of payment cards that work with the service.</td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-04-28 04:31:43</td><td>While skeptics question whether the company's future is tied too much to one product, the iPhone's popularity was the reason Apple turned in another blow-out financial report Monday.</td></tr>
-  <tr><td style='display:none'>13</td><td></td><td>2015-04-28 04:31:43</td><td>While he acknowledged these currently provide minimal revenue to Apple, analysts say they have big potential.</td></tr>
-  <tr><td style='display:none'>14</td><td></td><td>2015-04-28 04:31:43</td><td>Cook said he's optimistic about new markets such as China, where Apple has made a strong showing against Samsung and China's Xiaomi by appealing to a growing middle class.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 20:34:41</td><td><a href='http://www.utsandiego.com/news/2015/apr/27/forget-the-watch-apples-iphones-are-still-the/'>site</a></td><td><table><tr><td>Apple sold more than 61 million iPhones in the quarter, accounting for more than two-thirds of its $58 billion in revenue for the quarter and the lion's share of its $13.6 billion in profit.</td></tr><tr><td>By some estimates, Apple outsold Samsung in the quarter that ended in December, and analysts will be watching closely when Samsung reports its latest results this week.</td></tr><tr><td>As iPhone sales have surged, so has Apple's stock.</td></tr><tr><td>Apple shares have gained more than 50 percent over the last year, making it the world's most valuable company.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-27 21:32:00</td><td><a href='http://www.cbc.ca/news/business/apple-profit-soars-40-on-strong-iphone-sales-1.3051139?cmp=rss'>site</a></td><td>"We're seeing a higher rate of people switching to iPhone than we've experienced in previous cycles, and we're off to an exciting start to the June quarter with the launch of Apple Watch."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 23:08:36</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/27/forget-the-watch-apples-iphones-are-still-the-main-event'>site</a></td><td><table><tr><td>Apple didn't report any results for the new Apple Watch, which it began selling this month after the quarter ended.</td></tr><tr><td>Since it began offering models with bigger screens last fall, Apple has vied with South Korea's Samsung for the No.</td></tr><tr><td>The iPhone isn't just Apple's dominant product, said Frank Gillett, a tech industry analyst at Forrester Research.</td></tr><tr><td>That could make it difficult for Apple to maintain its recent pace.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 03:15:41</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article19778211.html#storylink=rss'>site</a></td><td><table><tr><td>Maestri said Apple will raise its quarterly dividend by 11 percent, to 52 cents a share, and has increased a $90 billion stock buyback program to $140 billion.</td></tr><tr><td>Apple ended the quarter with $193.5 billion in cash and short-term securities.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 04:31:43</td><td><a href='http://www.ctvnews.ca/business/apple-s-iphones-still-the-main-draw-1.2347882'>site</a></td><td><table><tr><td>While skeptics question whether the company's future is tied too much to one product, the iPhone's popularity was the reason Apple turned in another blow-out financial report Monday.</td></tr><tr><td>Cook said he's optimistic about new markets such as China, where Apple has made a strong showing against Samsung and China's Xiaomi by appealing to a growing middle class.</td></tr><tr><td>Maestri, meanwhile, said the company is diversifying with new products like Apple Watch and Apple Pay, which on Monday added Discover to the list of payment cards that work with the service.</td></tr><tr><td>While he acknowledged these currently provide minimal revenue to Apple, analysts say they have big potential.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:46:49</td><td>Ushers check fans' tickets as they enter Orioles Park at Camden Yards before a baseball game between the Baltimore Orioles and the Toronto Blue Jays, Monday, May 11, 2015, in Baltimore.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 22:46:49</td><td>As the Baltimore Orioles prepared to play before their home fans for the first time in two weeks, the sights and sounds around Camden Yards on a lovely Monday afternoon were all about baseball.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 22:46:49</td><td>It was a stark contrast to their last game in Baltimore.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-12 01:14:07</td><td>Inside the stadium, the home team wore jerseys with the script word "Baltimore" across the front instead of the customary "Orioles."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:46:49</td><td><a href='http://abcnews.go.com/Sports/wireStory/orioles-return-launches-big-sports-week-baltimore-30967032'>site</a></td><td><table><tr><td>Ushers check fans' tickets as they enter Orioles Park at Camden Yards before a baseball game between the Baltimore Orioles and the Toronto Blue Jays, Monday, May 11, 2015, in Baltimore.</td></tr><tr><td>As the Baltimore Orioles prepared to play before their home fans for the first time in two weeks, the sights and sounds around Camden Yards on a lovely Monday afternoon were all about baseball.</td></tr><tr><td>It was a stark contrast to their last game in Baltimore.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-12 01:14:07</td><td><a href='http://www.usnews.com/news/sports/articles/2015/05/11/orioles-return-launches-big-sports-week-in-baltimore'>site</a></td><td>Inside the stadium, the home team wore jerseys with the script word "Baltimore" across the front instead of the customary "Orioles."</td></tr>
 </table></body></html>

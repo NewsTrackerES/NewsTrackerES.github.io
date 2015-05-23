@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 15:04:31</td><td>The attacks came in retaliation for the killing of Mohammed al-Aribi, a top commander under the Shura Council of Benghazi Revolutionaries who fought alongside Islamic State and al-Qaida-linked militants, the security official said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 15:04:31</td><td>In the central city of Sirte on Wednesday, Islamic State fighters killed five in clashes with a militia from the western city of Misrata, a militia commander said, speaking on condition of anonymity because he was not authorized to brief journalists.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 15:05:27</td><td>Islamic State group car bomb, clashes leave 17 dead in Libya</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 15:04:31</td><td><a href='http://abcnews.go.com/International/wireStory/islamic-state-affiliate-claims-libya-bombings-killed-12-29887901'>site</a></td><td><table><tr><td>The attacks came in retaliation for the killing of Mohammed al-Aribi, a top commander under the Shura Council of Benghazi Revolutionaries who fought alongside Islamic State and al-Qaida-linked militants, the security official said.</td></tr><tr><td>In the central city of Sirte on Wednesday, Islamic State fighters killed five in clashes with a militia from the western city of Misrata, a militia commander said, speaking on condition of anonymity because he was not authorized to brief journalists.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 15:05:27</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3010675/Islamic-State-affiliate-claims-Libya-bombings-killed-12.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Islamic State group car bomb, clashes leave 17 dead in Libya</td></tr>
 </table></body></html>

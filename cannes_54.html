@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 10:46:21</td><td>Emily Blunt poses for photographers upon arrival at the Calvin Klein Women in Film party at the 68th international film festival, Cannes, southern France, Monday, May 18, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-19 10:46:21</td><td>CANNES (AP) - The star-studded Calvin Klein Women in Film soiree could not have come at a more appropriate moment - at a Cannes Film Festival where the dearth of women directors has been a major theme.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-19 10:46:21</td><td>Others, like jury member Sienna Miller, used the evening to express how the experience of the Cannes Film Festival has affected them.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-19 10:46:21</td><td>"You'll have a hit movie that women are at the forefront of and people are like 'Oh, it's all changing.' And then I feel like it resorts back to what it was before ... But I do feel that things are changing," said Blunt, who stars in "Sicario," one of the 19 films competing this year for Cannes' top prize.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-19 10:46:21</td><td>Also at the event was Miller's fellow Cannes jury member, actor Jake Gyllenhaal, French actress Isabelle Huppert, as well as models Natalia Vodianova and Doutzen Kroes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 10:46:21</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/19/cannes-watch-star-studded-calvin-klein-event-honors-women'>site</a></td><td><table><tr><td>Emily Blunt poses for photographers upon arrival at the Calvin Klein Women in Film party at the 68th international film festival, Cannes, southern France, Monday, May 18, 2015.</td></tr><tr><td>CANNES (AP) - The star-studded Calvin Klein Women in Film soiree could not have come at a more appropriate moment - at a Cannes Film Festival where the dearth of women directors has been a major theme.</td></tr><tr><td>"You'll have a hit movie that women are at the forefront of and people are like 'Oh, it's all changing.' And then I feel like it resorts back to what it was before ... But I do feel that things are changing," said Blunt, who stars in "Sicario," one of the 19 films competing this year for Cannes' top prize.</td></tr><tr><td>Others, like jury member Sienna Miller, used the evening to express how the experience of the Cannes Film Festival has affected them.</td></tr><tr><td>Also at the event was Miller's fellow Cannes jury member, actor Jake Gyllenhaal, French actress Isabelle Huppert, as well as models Natalia Vodianova and Doutzen Kroes.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/10/6428864/Article%20Lead%20-%20narrow982547461mhxy9image.related.articleLeadNarrow.353x0.1mhxui.png1428609908850.jpg-300x0.jpg'></td><td>2015-04-09 20:05:25</td><td>Titled Battle for Sevastopol in Russia but Indestructible across the border in Ukraine, the movie - about a female sharpshooter who reportedly killed more than 300 Nazi troops - is a co-production between the two countries made just before relations nosedived.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://images.brisbanetimes.com.au/2015/04/10/6428864/Article%20Lead%20-%20narrow982547461mhxy9image.related.articleLeadNarrow.353x0.1mhxui.png1428609908850.jpg-300x0.jpg'></td><td>2015-04-09 20:05:25</td><td>Trained as a sharpshooter and sent to fight on the frontline in 1941, aged 25, Pavlichenko in less than a year was said to have killed 309 Nazis during battles in Odessa and the strategic city of Sevastopol on Ukraine's Crimea peninsula.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://images.brisbanetimes.com.au/2015/04/10/6428864/Article%20Lead%20-%20narrow982547461mhxy9image.related.articleLeadNarrow.353x0.1mhxui.png1428609908850.jpg-300x0.jpg'></td><td>2015-04-09 20:05:25</td><td>"Despite everything, it has been accepted both by the new Ukrainian authorities and our Russian ones," said director Sergei Mokritsky, who grew up in Ukraine but lives in Russia.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://images.brisbanetimes.com.au/2015/04/10/6428864/Article%20Lead%20-%20narrow982547461mhxy9image.related.articleLeadNarrow.353x0.1mhxui.png1428609908850.jpg-300x0.jpg'></td><td>2015-04-09 20:05:25</td><td>The differing titles for the film highlight some of the bitterest divisions between Russia and Ukraine.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://images.brisbanetimes.com.au/2015/04/10/6428864/Article%20Lead%20-%20narrow982547461mhxy9image.related.articleLeadNarrow.353x0.1mhxui.png1428609908850.jpg-300x0.jpg'></td><td>2015-04-09 20:05:25</td><td>'Lady Death' World War II sniper film aims to win over audiences in Russia and Ukraine</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://images.brisbanetimes.com.au/2015/04/10/6428864/Article%20Lead%20-%20narrow982547461mhxy9image.related.articleLeadNarrow.353x0.1mhxui.png1428609908850.jpg-300x0.jpg'></td><td>2015-04-09 20:05:25</td><td><a href='http://www.brisbanetimes.com.au/entertainment/movies/lady-death-world-war-ii-sniper-film-aims-to-win-over-audiences-in-russia-and-ukraine-20150410-1mhxui.html'>site</a></td><td><table><tr><td>'Lady Death' World War II sniper film aims to win over audiences in Russia and Ukraine</td></tr><tr><td>Titled Battle for Sevastopol in Russia but Indestructible across the border in Ukraine, the movie - about a female sharpshooter who reportedly killed more than 300 Nazi troops - is a co-production between the two countries made just before relations nosedived.</td></tr><tr><td>"Despite everything, it has been accepted both by the new Ukrainian authorities and our Russian ones," said director Sergei Mokritsky, who grew up in Ukraine but lives in Russia.</td></tr><tr><td>Trained as a sharpshooter and sent to fight on the frontline in 1941, aged 25, Pavlichenko in less than a year was said to have killed 309 Nazis during battles in Odessa and the strategic city of Sevastopol on Ukraine's Crimea peninsula.</td></tr><tr><td>The differing titles for the film highlight some of the bitterest divisions between Russia and Ukraine.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td>The report shows that 85 per cent of people subject to vehicle stops by Ferguson police were African-American; 90 percent of those who received citations were black; and 93 percent of people arrested were black.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td>Ferguson, Missouri police menaced African-American citizens for revenue, US federal investigation concludes</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td>Addressing reporters in Washington, DC, the Attorney General, Eric Holder, said many in Ferguson might be mistaken about the circumstances surrounding the shooting, but given the practices of the police and the city, he understood their anger and mistrust.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td>RAW VIDEO: US probe finds systematic racial bias and unconstitutional policing targeting black people in Ferguson, Missouri, but clears white officer in the killing of Michael Brown.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td>The Justice Department will now seek to work with the Ferguson police to reform its practices, though there has already been speculation that the mayor, police chief and city manager will be forced to resign.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td>A police tactical team moves in to disperse protesters in Ferguson, Missouri, in August 2014.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td><a href='http://www.theage.com.au/world/ferguson-missouri-police-menaced-africanamerican-citizens-for-revenue-us-federal-investigation-concludes-20150305-13vlb7.html'>site</a></td><td><table><tr><td>Ferguson, Missouri police menaced African-American citizens for revenue, US federal investigation concludes</td></tr><tr><td>RAW VIDEO: US probe finds systematic racial bias and unconstitutional policing targeting black people in Ferguson, Missouri, but clears white officer in the killing of Michael Brown.</td></tr><tr><td>Addressing reporters in Washington, DC, the Attorney General, Eric Holder, said many in Ferguson might be mistaken about the circumstances surrounding the shooting, but given the practices of the police and the city, he understood their anger and mistrust.</td></tr><tr><td>A police tactical team moves in to disperse protesters in Ferguson, Missouri, in August 2014.</td></tr><tr><td>The report shows that 85 per cent of people subject to vehicle stops by Ferguson police were African-American; 90 percent of those who received citations were black; and 93 percent of people arrested were black.</td></tr><tr><td>The Justice Department will now seek to work with the Ferguson police to reform its practices, though there has already been speculation that the mayor, police chief and city manager will be forced to resign.</td></tr></table></td></tr>
 </table></body></html>

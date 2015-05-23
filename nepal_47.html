@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/t/u/y/image.related.articleLeadwide.620x349.1mw3xn.png/1430292347274.jpg'></td><td>2015-04-29 07:25:55</td><td>When Alexander von Rospatt first heard of the magnitude 7.8 earthquake that rocked Nepal, his first call was to his Nepalese wife to make sure their relatives were OK.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/t/u/y/image.related.articleLeadwide.620x349.1mw3xn.png/1430292347274.jpg'></td><td>2015-04-29 07:25:55</td><td>"We think of Paris as historic and remarkable. But the Paris we know today is a creation of the 19th century. Nepal being a small kingdom up in the mountains and having a sense of its special ness, they tried to constantly keep and recreate the old centers."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/t/u/y/image.related.articleLeadwide.620x349.1mw3xn.png/1430292347274.jpg'></td><td>2015-04-29 07:25:55</td><td>When the recovery efforts have stopped, the population protected and the debris cleared, the focus in Nepal will turn to reconstruction.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/t/u/y/image.related.articleLeadwide.620x349.1mw3xn.png/1430292347274.jpg'></td><td>2015-04-29 07:25:55</td><td>Nepal earthquake ravages large collection of historic sites</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/t/t/u/y/image.related.articleLeadwide.620x349.1mw3xn.png/1430292347274.jpg'></td><td>2015-04-29 07:25:55</td><td><a href='http://www.brisbanetimes.com.au/world/nepal-earthquake-ravages-large-collection-of-historic-sites-20150429-1mw3xn.html'>site</a></td><td><table><tr><td>Nepal earthquake ravages large collection of historic sites</td></tr><tr><td>When Alexander von Rospatt first heard of the magnitude 7.8 earthquake that rocked Nepal, his first call was to his Nepalese wife to make sure their relatives were OK.</td></tr><tr><td>"We think of Paris as historic and remarkable. But the Paris we know today is a creation of the 19th century. Nepal being a small kingdom up in the mountains and having a sense of its special ness, they tried to constantly keep and recreate the old centers."</td></tr><tr><td>When the recovery efforts have stopped, the population protected and the debris cleared, the focus in Nepal will turn to reconstruction.</td></tr></table></td></tr>
 </table></body></html>

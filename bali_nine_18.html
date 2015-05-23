@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/2/i/g/y/image.related.articleLeadwide.620x349.1m0drr.png/1426491742275.jpg'></td><td>2015-03-16 07:51:35</td><td>Bali nine executions: Phone-tapping rumours surround delay</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/2/i/g/y/image.related.articleLeadwide.620x349.1m0drr.png/1426491742275.jpg'></td><td>2015-03-16 07:51:35</td><td>Indonesian parliamentarians are publicly questioning the fact that 10 prisoners on death row, including Bali nine organisers Andrew Chan and Myuran Sukumaran, have not yet been killed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/2/i/g/y/image.related.articleLeadwide.620x349.1m0drr.png/1426491742275.jpg'></td><td>2015-03-16 07:51:35</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-executions-phonetapping-rumours-surround-delay-20150316-1m0drr.html'>site</a></td><td><table><tr><td>Bali nine executions: Phone-tapping rumours surround delay</td></tr><tr><td>Indonesian parliamentarians are publicly questioning the fact that 10 prisoners on death row, including Bali nine organisers Andrew Chan and Myuran Sukumaran, have not yet been killed.</td></tr></table></td></tr>
 </table></body></html>

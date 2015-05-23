@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-26 23:50:58</td><td>According to a posting on the NFL's website, the league is building the roots of a season-ticket fan base in London with an eye to going from three to four Wembley Stadium games next year and targeting 2017 for games in Germany and Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-26 23:50:58</td><td>National Football League officials are looking at staging regular-season games in Germany and Mexico and adding more games in London in a bid to boost global growth.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-26 23:50:58</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3013817/eyes-Germany-Mexico-games-London.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>National Football League officials are looking at staging regular-season games in Germany and Mexico and adding more games in London in a bid to boost global growth.</td></tr><tr><td>According to a posting on the NFL's website, the league is building the roots of a season-ticket fan base in London with an eye to going from three to four Wembley Stadium games next year and targeting 2017 for games in Germany and Mexico.</td></tr></table></td></tr>
 </table></body></html>

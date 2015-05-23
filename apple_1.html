@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 01:52:32</td><td>SAN FRANCISCO (AP) - Millions of people may have been left vulnerable to hackers while surfing the web on Apple and Google devices, thanks to a newly discovered security flaw known as "FREAK attack."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 01:52:32</td><td>Apple Inc. and Google Inc. both said Tuesday they have created software updates to fix the "FREAK attack" flaw, which derives its name from an acronym of technical terms.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 02:45:04</td><td>Apple said its fix will be available next week and Google said it has provided an update to device makers and wireless carriers.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 01:52:32</td><td><a href='http://www.washingtontimes.com/news/2015/mar/3/freak-attack-flaw-affected-apple-android-browsers/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>SAN FRANCISCO (AP) - Millions of people may have been left vulnerable to hackers while surfing the web on Apple and Google devices, thanks to a newly discovered security flaw known as "FREAK attack."</td></tr><tr><td>Apple Inc. and Google Inc. both said Tuesday they have created software updates to fix the "FREAK attack" flaw, which derives its name from an acronym of technical terms.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 02:45:04</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411718&ref=rss'>site</a></td><td>Apple said its fix will be available next week and Google said it has provided an update to device makers and wireless carriers.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 11:35:13</td><td>Egypt's el-Sissi meets with Spain's king, PM</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/30/876/493/Spain Egypt-1.jpg?ve=1&tl=1'></td><td>2015-04-30 14:08:22</td><td>MADRID - Spain and Egypt have agreed to study the feasibility of a bullet-train link between the Egyptian capital of Cairo and the ancient southern city of Luxor.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 14:08:22</td><td>Egypt is keen on improving its rail links while Spain has one of the world's most developed high-speed train systems.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 14:08:22</td><td>Cairo and Luxor, two of Egypt's most popular tourist destinations, are 500 kilometers (300 miles) apart.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 11:35:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11441383&ref=rss'>site</a></td><td>Egypt's el-Sissi meets with Spain's king, PM</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 14:08:22</td><td><a href='http://www.utsandiego.com/news/2015/apr/30/spain-egypt-to-study-cairo-luxor-bullet-train-link/'>site</a></td><td><table><tr><td>Egypt is keen on improving its rail links while Spain has one of the world's most developed high-speed train systems.</td></tr><tr><td>Cairo and Luxor, two of Egypt's most popular tourist destinations, are 500 kilometers (300 miles) apart.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/30/876/493/Spain Egypt-1.jpg?ve=1&tl=1'></td><td>2015-04-30 14:08:22</td><td><a href='http://www.foxnews.com/world/2015/04/30/spain-egypt-to-study-bullet-train-link-between-egyptian-capital-and-luxor/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MADRID - Spain and Egypt have agreed to study the feasibility of a bullet-train link between the Egyptian capital of Cairo and the ancient southern city of Luxor.</td></tr>
 </table></body></html>

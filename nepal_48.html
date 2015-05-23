@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 00:24:38</td><td>Studios scrutinize disaster film marketing in wake of Nepal</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 00:24:38</td><td>In upcoming promos, the studio will be including information on how to help the relief efforts in Nepal and also how to prepare for natural disasters.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 00:24:38</td><td>LOS ANGELES (AP) - In light of the Nepal earthquake, Warner Bros.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-30 00:24:38</td><td>had already planned public service announcements about preparedness around the marketing of the film starring Dwayne Johnson and Carla Gugino but adjusted and accelerated those efforts after Nepal.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-30 00:24:38</td><td>The powerful earthquake Saturday in Nepal killed more than 5,000 people, injured twice that many and left tens of thousands of people homeless.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/25b970b/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2Fde%2F29%2Fb4d1311243bf8d987aef5582c75e%2Fresizes%2F500%2Fthumb-2.jpg'></td><td>2015-04-30 00:24:38</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/29/studios-scrutinize-disaster-film-marketing-in-wake-of-nepal'>site</a></td><td><table><tr><td>The powerful earthquake Saturday in Nepal killed more than 5,000 people, injured twice that many and left tens of thousands of people homeless.</td></tr><tr><td>had already planned public service announcements about preparedness around the marketing of the film starring Dwayne Johnson and Carla Gugino but adjusted and accelerated those efforts after Nepal.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 00:24:38</td><td><a href='http://www.seattlepi.com/news/article/Studios-scrutinize-disaster-film-marketing-in-6232178.php'>site</a></td><td><table><tr><td>Studios scrutinize disaster film marketing in wake of Nepal</td></tr><tr><td>LOS ANGELES (AP) - In light of the Nepal earthquake, Warner Bros.</td></tr><tr><td>In upcoming promos, the studio will be including information on how to help the relief efforts in Nepal and also how to prepare for natural disasters.</td></tr></table></td></tr>
 </table></body></html>

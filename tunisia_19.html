@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 16:18:33</td><td>Islamic State claimed responsibility for the museum attack and Tunisia's government said the two gunmen had trained at a jihadist camp in Libya.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 16:18:33</td><td>Tusk said he had invited EU foreign policy chief Federica Mogherini to join him on a visit to Tunisia, Malta and Italy at the end of March.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 16:18:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3004464/EU-leaders-pledge-security-cooperation-aid-Tunisia.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Islamic State claimed responsibility for the museum attack and Tunisia's government said the two gunmen had trained at a jihadist camp in Libya.</td></tr><tr><td>Tusk said he had invited EU foreign policy chief Federica Mogherini to join him on a visit to Tunisia, Malta and Italy at the end of March.</td></tr></table></td></tr>
 </table></body></html>

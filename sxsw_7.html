@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>sxsw</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/PZAKweSn3yhKyry5TEHqxA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4ec1abcf3fa10d0c710f6a7067008a8d.jpg'></td><td>2015-03-17 23:03:30</td><td>The music portion of SXSW kicked off Tuesday until Sunday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/PZAKweSn3yhKyry5TEHqxA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4ec1abcf3fa10d0c710f6a7067008a8d.jpg'></td><td>2015-03-17 23:03:30</td><td>Documentary about Tower Records debuts at SXSW festival</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/PZAKweSn3yhKyry5TEHqxA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4ec1abcf3fa10d0c710f6a7067008a8d.jpg'></td><td>2015-03-17 23:03:30</td><td><a href='http://news.yahoo.com/documentary-tower-records-debuts-sxsw-festival-224704118.html'>site</a></td><td><table><tr><td>Documentary about Tower Records debuts at SXSW festival</td></tr><tr><td>The music portion of SXSW kicked off Tuesday until Sunday.</td></tr></table></td></tr>
 </table></body></html>

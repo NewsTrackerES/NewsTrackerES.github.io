@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 18:03:43</td><td>The statement did not specify if Egypt's renewed mandate included the possibility of sending ground troops, and Saudi Arabia denied that any major ground operations in Yemen were underway.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-03 18:03:43</td><td>Egypt, which has one of the region's largest militaries, is a close ally of Saudi Arabia and has said it is participating in the Saudi-led coalition that has been targeting Iranian-allied Houthi rebels in Yemen with air strikes.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-03 18:03:43</td><td>Egypt extends for 3 months military mandate in Gulf, Red Sea, Strait of Mandeb</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-05-03 18:03:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3066438/Egypt-extends-3-months-military-mandate-Gulf-Red-Sea-Strait-Mandeb.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt extends for 3 months military mandate in Gulf, Red Sea, Strait of Mandeb</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 18:03:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3066447/Egypt-extends-3-months-military-mandate-Gulf-Red-Sea-Strait-Mandeb.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Egypt, which has one of the region's largest militaries, is a close ally of Saudi Arabia and has said it is participating in the Saudi-led coalition that has been targeting Iranian-allied Houthi rebels in Yemen with air strikes.</td></tr><tr><td>The statement did not specify if Egypt's renewed mandate included the possibility of sending ground troops, and Saudi Arabia denied that any major ground operations in Yemen were underway.</td></tr></table></td></tr>
 </table></body></html>

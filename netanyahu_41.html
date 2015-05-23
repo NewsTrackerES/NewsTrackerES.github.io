@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1595r-6X76l70ZKHSK2-776_634x422.jpg'></td><td>2015-03-17 07:16:38</td><td>Netanyahu made a last-minute call on his supporters to go to the polls to counter a high turnout among Arab Israelis.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1595r-6X76l70ZKHSK2-776_634x422.jpg'></td><td>2015-03-17 07:16:38</td><td>"I'd like to see Netanyahu disappear for many, many years. The most important issue is relations with the Palestinians," said Shulamit Laron.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-18 04:41:12</td><td>Netanyahu put security at the forefront of his campaign, arguing he is the only one capable of protecting Israel from an Iranian nuclear threat and vowing never to allow the Palestinians to establish a capital in east Jerusalem.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-1595r-6X76l70ZKHSK2-776_634x422.jpg'></td><td>2015-03-17 07:16:38</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-2998240/Israel-vote-seen-referendum-Netanyahu-years.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Netanyahu made a last-minute call on his supporters to go to the polls to counter a high turnout among Arab Israelis.</td></tr><tr><td>"I'd like to see Netanyahu disappear for many, many years. The most important issue is relations with the Palestinians," said Shulamit Laron.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-18 04:41:12</td><td><a href='http://www.news24.com/World/News/Netanyahu-claims-victory-in-knife-edge-Israel-vote-20150318'>site</a></td><td>Netanyahu put security at the forefront of his campaign, arguing he is the only one capable of protecting Israel from an Iranian nuclear threat and vowing never to allow the Palestinians to establish a capital in east Jerusalem.</td></tr>
 </table></body></html>

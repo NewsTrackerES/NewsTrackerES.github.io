@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0318/20150318__0319tesla~1.JPG'></td><td>2015-04-21 13:19:55</td><td>He insisted that Page let him run a Google-owned Tesla for eight years, or until it began pumping out such a car.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 14:17:54</td><td>Musk broke off his negotiations with Google.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 14:17:54</td><td>In the weeks that followed, Musk, Page, and Google's lawyers negotiated the specific terms of the deal.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 14:17:54</td><td>He also wanted guarantees that Google wouldn't break up or shut down his company before it produced a third- generation electric car aimed at the mainstream auto market.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.bizj.us/view/img/4282451/elon-musk-bloomberg-ubj*750xx3852-2167-0-215.jpg'></td><td>2015-04-22 11:44:08</td><td>Musk proposed that Google buy Tesla outright for $6 billion and provide another $5 billion in capital for factory expansions.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0318/20150318__0319tesla~1.JPG'></td><td>2015-04-21 13:19:55</td><td><a href='http://www.mercurynews.com/business/ci_27951872/google-owning-tesla-it-almost-happened-book-says?source=rss'>site</a></td><td>He insisted that Page let him run a Google-owned Tesla for eight years, or until it began pumping out such a car.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:17:54</td><td><a href='http://www.fin24.com/Tech/Companies/Google-said-to-have-brokered-deal-to-buy-Tesla-20150421'>site</a></td><td><table><tr><td>He also wanted guarantees that Google wouldn't break up or shut down his company before it produced a third- generation electric car aimed at the mainstream auto market.</td></tr><tr><td>In the weeks that followed, Musk, Page, and Google's lawyers negotiated the specific terms of the deal.</td></tr><tr><td>Musk broke off his negotiations with Google.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.bizj.us/view/img/4282451/elon-musk-bloomberg-ubj*750xx3852-2167-0-215.jpg'></td><td>2015-04-22 11:44:08</td><td><a href='http://www.bizjournals.com/nashville/morning_call/2015/04/how-tesla-almost-sold-to-google-in-2013.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+industry_7+%28Industry+Technology%29'>site</a></td><td>Musk proposed that Google buy Tesla outright for $6 billion and provide another $5 billion in capital for factory expansions.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/g/i/e/image.related.articleLeadwide.620x349.1megij.png/1428159528923.jpg'></td><td>2015-04-03 23:36:36</td><td>Rome: Pope Francis presided at two Good Friday services, praying for persecuted Christians a day after Islamist militants attacked a university in Kenya, killing at least 147 people.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/g/i/e/image.related.articleLeadwide.620x349.1megij.png/1428159528923.jpg'></td><td>2015-04-03 23:36:36</td><td>In their attack on the university in Kenya on Thursday, al Shabaab militants initially killed indiscriminately but later freed some Muslims and targeted Christian students during a siege that lasted about 15 hours..</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 14:59:37</td><td>The Vatican's official preacher, Father Raniero Cantalamessa, said on Friday there was a "disturbing indifference" among world institutions and in public opinion to the killing of Christians, mentioning the bloodshed in Kenya and Libya.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/g/i/e/image.related.articleLeadwide.620x349.1megij.png/1428159528923.jpg'></td><td>2015-04-03 23:36:36</td><td><a href='http://www.brisbanetimes.com.au/world/pope-decries-persecution-of-christians-including-in-kenya-20150404-1megij.html'>site</a></td><td><table><tr><td>Rome: Pope Francis presided at two Good Friday services, praying for persecuted Christians a day after Islamist militants attacked a university in Kenya, killing at least 147 people.</td></tr><tr><td>In their attack on the university in Kenya on Thursday, al Shabaab militants initially killed indiscriminately but later freed some Muslims and targeted Christian students during a siege that lasted about 15 hours..</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 14:59:37</td><td><a href='http://www.news24.com/World/News/Pope-calls-on-world-to-defend-modern-Christian-martyrs-20150406-6'>site</a></td><td>The Vatican's official preacher, Father Raniero Cantalamessa, said on Friday there was a "disturbing indifference" among world institutions and in public opinion to the killing of Christians, mentioning the bloodshed in Kenya and Libya.</td></tr>
 </table></body></html>

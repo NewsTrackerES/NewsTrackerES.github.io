@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-191jr-6XAvKBzv3-HSK1-753_634x458.jpg'></td><td>2015-03-20 18:06:24</td><td>"Over the coming weeks, the main challenge for Tunisia's political establishment is to avoid the temptation to revert to the old norm of authoritarian governance, which in the past has proved incapable of maintaining long-term stability," says Ayari.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-191jr-6XAvKBzv3-HSK1-753_634x458.jpg'></td><td>2015-03-20 18:06:24</td><td>Senior Tunisia analyst for the Crisis Group think-tank, Michael Bechir Ayari, said he believes that, in the short-term, "Tunisia remains open for business and its political transition remains hopeful."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-191jr-6XAvKBzv3-HSK1-753_634x458.jpg'></td><td>2015-03-20 18:06:24</td><td>Is democratic transition threatened in Tunisia?</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/20/article-doc-191jr-6XAvKBzv3-HSK1-753_634x458.jpg'></td><td>2015-03-20 18:06:24</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3004621/Museum-attack-threat-Tunisias-nascent-democracy.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Is democratic transition threatened in Tunisia?</td></tr><tr><td>Senior Tunisia analyst for the Crisis Group think-tank, Michael Bechir Ayari, said he believes that, in the short-term, "Tunisia remains open for business and its political transition remains hopeful."</td></tr><tr><td>"Over the coming weeks, the main challenge for Tunisia's political establishment is to avoid the temptation to revert to the old norm of authoritarian governance, which in the past has proved incapable of maintaining long-term stability," says Ayari.</td></tr></table></td></tr>
 </table></body></html>

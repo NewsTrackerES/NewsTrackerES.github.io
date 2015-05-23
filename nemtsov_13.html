@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 14:05:00</td><td>However, in the Putin era Nemtsov's party lost its seats in parliament.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 14:05:00</td><td>German Chancellor Angela Merkel, citing Nemtsov's murder, urged Russia to push for freedom of expression.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 10:06:00</td><td>MALGOBEK, Russia (AP) - The mother of two suspects in the slaying of Russian opposition leader Boris Nemtsov says is certain they didn't do it.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 14:05:00</td><td><a href='http://www.dw.de/kremlin-critic-nemtsov-laid-to-rest-in-moscow/a-18291197?maca=en-rss-en-world-4025-rdf'>site</a></td><td><table><tr><td>However, in the Putin era Nemtsov's party lost its seats in parliament.</td></tr><tr><td>German Chancellor Angela Merkel, citing Nemtsov's murder, urged Russia to push for freedom of expression.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 10:06:00</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3002192/Mother-2-suspects-Nemtsov-killing-defends-sons.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>MALGOBEK, Russia (AP) - The mother of two suspects in the slaying of Russian opposition leader Boris Nemtsov says is certain they didn't do it.</td></tr>
 </table></body></html>

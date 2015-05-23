@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/7/r/1/f/image.related.articleLeadwide.620x349.1m7wa5.png/1427292518658.jpg'></td><td>2015-03-25 23:46:57</td><td>He also called on Mr Netanyahu to restore public trust in the political system, after the outgoing government collapsed and turbulent elections were held two years ahead of schedule.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/7/r/1/f/image.related.articleLeadwide.620x349.1m7wa5.png/1427292518658.jpg'></td><td>2015-03-25 23:46:57</td><td>Israeli law does not oblige the president to assign the task of forming the government to the party that won the largest share of votes, in this case Mr Netanyahu's Likud.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/7/r/1/f/image.related.articleLeadwide.620x349.1m7wa5.png/1427292518658.jpg'></td><td>2015-03-25 23:46:57</td><td>Mr Netanyahu will have several weeks to negotiate with potential members of his coalition to reconcile demands over appointments and ideological positions and ensure a stable government.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/7/r/1/f/image.related.articleLeadwide.620x349.1m7wa5.png/1427292518658.jpg'></td><td>2015-03-25 23:46:57</td><td>In addition to the widening gap between the White House and Mr Netanyahu, Israel may be facing pressure from the European Union concerning policies in East Jerusalem.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/7/r/1/f/image.related.articleLeadwide.620x349.1m7wa5.png/1427292518658.jpg'></td><td>2015-03-25 23:46:57</td><td>Mr Netanyahu said that "Israel's hand remains extended in peace to our Palestinian neighbours" but that security was the basis for hope of a genuine peace.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/7/r/1/f/image.related.articleLeadwide.620x349.1m7wa5.png/1427292518658.jpg'></td><td>2015-03-25 23:46:57</td><td><a href='http://www.brisbanetimes.com.au/world/benjamin-netanyahu-asked-to-form-israels-government-20150325-1m7wa5.html'>site</a></td><td><table><tr><td>Israeli law does not oblige the president to assign the task of forming the government to the party that won the largest share of votes, in this case Mr Netanyahu's Likud.</td></tr><tr><td>He also called on Mr Netanyahu to restore public trust in the political system, after the outgoing government collapsed and turbulent elections were held two years ahead of schedule.</td></tr><tr><td>Mr Netanyahu said that "Israel's hand remains extended in peace to our Palestinian neighbours" but that security was the basis for hope of a genuine peace.</td></tr><tr><td>Mr Netanyahu will have several weeks to negotiate with potential members of his coalition to reconcile demands over appointments and ideological positions and ensure a stable government.</td></tr><tr><td>In addition to the widening gap between the White House and Mr Netanyahu, Israel may be facing pressure from the European Union concerning policies in East Jerusalem.</td></tr></table></td></tr>
 </table></body></html>

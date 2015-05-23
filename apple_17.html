@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/41/24/7738649/3/square_gallery_thumb.jpg'></td><td>2015-03-30 12:30:51</td><td>NEW YORK (AP) - Apple CEO Tim Cook said that so-called "religious objection" legislation being introduced in a number of states is dangerous and bad for business.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/35/41/24/7738649/3/square_gallery_thumb.jpg'></td><td>2015-03-30 12:30:51</td><td>Cook said he was opposing the legislation on behalf of Apple Inc. He came out as gay in October, saying that he wanted to make a difference for others.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 16:15:00</td><td>Apple CEO Tim Cook speaks at the Apple Worldwide Developers Conference event in San Francisco on June 2, 2014.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/41/24/7738649/3/square_gallery_thumb.jpg'></td><td>2015-03-30 12:30:51</td><td><a href='http://www.sfgate.com/news/texas/article/Cook-calls-religious-objection-laws-dangerous-6167388.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Apple CEO Tim Cook said that so-called "religious objection" legislation being introduced in a number of states is dangerous and bad for business.</td></tr><tr><td>Cook said he was opposing the legislation on behalf of Apple Inc. He came out as gay in October, saying that he wanted to make a difference for others.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 16:15:00</td><td><a href='http://www.latimes.com/business/technology/la-fi-tn-apples-tim-cook-religious-freedom-20150330-story.html'>site</a></td><td>Apple CEO Tim Cook speaks at the Apple Worldwide Developers Conference event in San Francisco on June 2, 2014.</td></tr>
 </table></body></html>

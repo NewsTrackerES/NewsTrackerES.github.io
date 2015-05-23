@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 01:04:06</td><td>Gov. Tom Wolf made his second official appearance on social media Tuesday at what was billed as a Facebook Town Hall but looked more like him being interviewed by an aide.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-01 01:04:06</td><td>Gov. Wolf renews case for his agenda in Facebook session</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 01:04:06</td><td><a href='http://www.miamiherald.com/news/business/article16998476.html#storylink=rss'>site</a></td><td><table><tr><td>Gov. Wolf renews case for his agenda in Facebook session</td></tr><tr><td>Gov. Tom Wolf made his second official appearance on social media Tuesday at what was billed as a Facebook Town Hall but looked more like him being interviewed by an aide.</td></tr></table></td></tr>
 </table></body></html>

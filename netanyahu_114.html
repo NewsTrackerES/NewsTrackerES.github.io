@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td>Israeli civil rights groups lauded Mr. Netanyahu's reversal but criticized the government for even considering the plan.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td>At a joint appearance, neither Mr. Netanyahu nor Ms. Mogherini mentioned the failed bus plan.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td>Netanyahu scraps plan to segregate West Bank buses</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td>Wednesday's uproar gave a glimpse of what could lie ahead for Mr. Netanyahu and his new government.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td>Mr. Netanyahu used the opportunity to deflect some of the criticism of his new hawkish government.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td>But after the public uproar, Mr. Netanyahu told Mr. Yaalon it was "unacceptable" and the two decided to freeze the plan, an official in the Prime Minister's Office said, speaking on condition of anonymity because he was discussing internal communications.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/e03/news/world/article24537613.ece/ALTERNATES/w220/web-nw-wo-israel-bus-0520.JPG'></td><td>2015-05-21 02:15:36</td><td><a href='http://www.theglobeandmail.com/news/world/netanyahu-scraps-plan-to-segregate-west-bank-buses/article24537614/?cmpid=rss1'>site</a></td><td><table><tr><td>Netanyahu scraps plan to segregate West Bank buses</td></tr><tr><td>But after the public uproar, Mr. Netanyahu told Mr. Yaalon it was "unacceptable" and the two decided to freeze the plan, an official in the Prime Minister's Office said, speaking on condition of anonymity because he was discussing internal communications.</td></tr><tr><td>Wednesday's uproar gave a glimpse of what could lie ahead for Mr. Netanyahu and his new government.</td></tr><tr><td>At a joint appearance, neither Mr. Netanyahu nor Ms. Mogherini mentioned the failed bus plan.</td></tr><tr><td>Mr. Netanyahu used the opportunity to deflect some of the criticism of his new hawkish government.</td></tr><tr><td>Israeli civil rights groups lauded Mr. Netanyahu's reversal but criticized the government for even considering the plan.</td></tr></table></td></tr>
 </table></body></html>

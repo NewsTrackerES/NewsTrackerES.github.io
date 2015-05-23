@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 19:15:13</td><td>Ex-CIA man convicted of Iran leak seeks lenient sentence</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 19:41:35</td><td>Former CIA veteran John Kiriakou received a sentence of 2 years for leaking a covert officer's identity in connection with discussions of the CIA's use of waterboarding of terror suspects.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 19:42:16</td><td>In their court papers Friday, Sterling's lawyers submitted a letter from former CIA station chief David Manners, who wrote that the government is exaggerating the harm caused by the leak.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-24 19:42:16</td><td>A jury convicted Sterling on all counts earlier this year after he was charged under the Espionage Act for leaking details of a CIA mission to New York Times journalist James Risen.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 19:15:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11438485&ref=rss'>site</a></td><td>Ex-CIA man convicted of Iran leak seeks lenient sentence</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 19:41:35</td><td><a href='http://www.sfgate.com/news/us/article/Ex-CIA-man-convicted-of-Iran-leak-seeks-lenient-6222169.php'>site</a></td><td>Former CIA veteran John Kiriakou received a sentence of 2 years for leaking a covert officer's identity in connection with discussions of the CIA's use of waterboarding of terror suspects.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 19:42:16</td><td><a href='http://abcnews.go.com/US/wireStory/cia-man-convicted-iran-leak-seeks-lenient-sentence-30563715'>site</a></td><td><table><tr><td>A jury convicted Sterling on all counts earlier this year after he was charged under the Espionage Act for leaking details of a CIA mission to New York Times journalist James Risen.</td></tr><tr><td>In their court papers Friday, Sterling's lawyers submitted a letter from former CIA station chief David Manners, who wrote that the government is exaggerating the harm caused by the leak.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-09 16:43:08</td><td>"Nobody got in nobody's way / So I guess you could say it was a good day / at least a little better than the day in Baltimore," Prince sings.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td>At one point, Prince invited onstage Baltimore State's Attorney Marilyn Mosby, who has charged six officers in Gray's death.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td>Longtime fan Luther Washington, stationed at Ft Meade, shows off his Prince tattoo while waiting for the doors to open for Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 11:07:30</td><td>Prince took the stage in Baltimore before thousands of fans who were dressed in gray in tribute to a man whose death in police custody prompted riots and drew international attention.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 11:09:06</td><td>Karen Howard of Washington, DC purchases a t-shirt prior to Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-09 16:43:08</td><td><a href='http://www.nydailynews.com/entertainment/music/prince-releases-freddie-gray-protest-song-baltimore-article-1.2216360'>site</a></td><td>"Nobody got in nobody's way / So I guess you could say it was a good day / at least a little better than the day in Baltimore," Prince sings.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/08/6YRHHLzOb-HSK1-3076291-Fans_line_up_outside_Royal_Farms_Arena_before_Prince_s_Baltimore-a-2_1431331165648.jpg'></td><td>2015-05-11 09:12:06</td><td><a href='http://www.dailymail.co.uk/news/article-3076291/Prince-debuts-song-Baltimore-Rally-4-Peace.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Longtime fan Luther Washington, stationed at Ft Meade, shows off his Prince tattoo while waiting for the doors to open for Prince's Baltimore concert Sunday, May 10, 2015.</td></tr><tr><td>At one point, Prince invited onstage Baltimore State's Attorney Marilyn Mosby, who has charged six officers in Gray's death.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 11:07:30</td><td><a href='http://abcnews.go.com/Entertainment/wireStory/prince-debuts-song-baltimore-rally-peace-30947766'>site</a></td><td>Prince took the stage in Baltimore before thousands of fans who were dressed in gray in tribute to a man whose death in police custody prompted riots and drew international attention.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 11:09:06</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20651754.html#storylink=rss'>site</a></td><td>Karen Howard of Washington, DC purchases a t-shirt prior to Prince's Baltimore concert Sunday, May 10, 2015.</td></tr>
 </table></body></html>

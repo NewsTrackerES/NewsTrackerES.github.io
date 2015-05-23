@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/6/u/x/image.related.articleLeadwide.620x349.13tof5.png/1425333861436.jpg'></td><td>2015-03-03 04:37:35</td><td>The strained relationship between the US and Israel faces one of its toughest tests as Israeli Prime Minister Benjamin Netanyahu prepares to address the US Congress over how to halt Iran's nuclear ambitions.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/6/u/x/image.related.articleLeadwide.620x349.13tof5.png/1425333861436.jpg'></td><td>2015-03-03 04:37:35</td><td>US-Israel ties sorely tested as Netanyahu's Congress speech draws near</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/6/u/x/image.related.articleLeadwide.620x349.13tof5.png/1425333861436.jpg'></td><td>2015-03-03 04:37:35</td><td>During his speech to AIPAC, Mr Netanyahu said that while US leaders were concerned for American safety, Israel's were forced to fear for their nation's very survival, and this perspective had lead to disagreements between the two nations in the past.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/6/u/x/image.related.articleLeadwide.620x349.13tof5.png/1425333861436.jpg'></td><td>2015-03-03 04:37:35</td><td>Though Mr Obama agreed - at least to the point of saying that the discord between the leaders is not "permanently destructive" - observers agree that Mr Netanyahu's speech has caused real damage to the relationship between the nations.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/6/u/x/image.related.articleLeadwide.620x349.13tof5.png/1425333861436.jpg'></td><td>2015-03-03 04:37:35</td><td>Last week Dr Rice told an interviewer: "What has happened over the last several weeks - by virtue of the invitation that was issued by the Speaker and the acceptance of it by Prime Minister Netanyahu two weeks in advance of his election - is that on both sides, there has now been injected a degree of partisanship.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/6/u/x/image.related.articleLeadwide.620x349.13tof5.png/1425333861436.jpg'></td><td>2015-03-03 04:37:35</td><td><a href='http://www.brisbanetimes.com.au/world/usisrael-ties-sorely-tested-as-netanyahus-congress-speech-draws-near-20150303-13tof5.html'>site</a></td><td><table><tr><td>US-Israel ties sorely tested as Netanyahu's Congress speech draws near</td></tr><tr><td>The strained relationship between the US and Israel faces one of its toughest tests as Israeli Prime Minister Benjamin Netanyahu prepares to address the US Congress over how to halt Iran's nuclear ambitions.</td></tr><tr><td>During his speech to AIPAC, Mr Netanyahu said that while US leaders were concerned for American safety, Israel's were forced to fear for their nation's very survival, and this perspective had lead to disagreements between the two nations in the past.</td></tr><tr><td>Though Mr Obama agreed - at least to the point of saying that the discord between the leaders is not "permanently destructive" - observers agree that Mr Netanyahu's speech has caused real damage to the relationship between the nations.</td></tr><tr><td>Last week Dr Rice told an interviewer: "What has happened over the last several weeks - by virtue of the invitation that was issued by the Speaker and the acceptance of it by Prime Minister Netanyahu two weeks in advance of his election - is that on both sides, there has now been injected a degree of partisanship.</td></tr></table></td></tr>
 </table></body></html>

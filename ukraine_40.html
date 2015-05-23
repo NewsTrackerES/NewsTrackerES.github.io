@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6284660-3x2-340x227.jpg'></td><td>2015-03-05 13:04:39</td><td>Throughout the fighting, the mine - one of Ukraine's biggest - had remained in operation.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6284660-3x2-340x227.jpg'></td><td>2015-03-05 13:04:39</td><td>Day of mourning to mark east Ukraine mine disaster</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6284660-3x2-340x227.jpg'></td><td>2015-03-05 13:04:39</td><td><a href='http://www.abc.net.au/news/2015-03-06/ukraine-mine-disaster-day-of-mourning-for-32-killed-in-zasyadko/6284658'>site</a></td><td><table><tr><td>Day of mourning to mark east Ukraine mine disaster</td></tr><tr><td>Throughout the fighting, the mine - one of Ukraine's biggest - had remained in operation.</td></tr></table></td></tr>
 </table></body></html>

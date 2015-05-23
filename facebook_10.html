@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 18:34:26</td><td>In 2010, Ceglia filed a multibillion-dollar lawsuit claiming that the 2003 software development contract included a provision entitling Ceglia to half ownership of Facebook in exchange for startup money.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-10 18:34:26</td><td>Facebook lawyers have said the two had a contract but that references to Facebook were added for purposes of the lawsuit.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 16:28:43</td><td>The father of a fugitive accused of falsely claiming he's owed a majority ownership in Facebook says his son doesn't trust the criminal justice system.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 18:34:26</td><td><a href='http://www.washingtontimes.com/news/2015/mar/10/judge-man-charged-in-facebook-fraud-case-apparentl/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>In 2010, Ceglia filed a multibillion-dollar lawsuit claiming that the 2003 software development contract included a provision entitling Ceglia to half ownership of Facebook in exchange for startup money.</td></tr><tr><td>Facebook lawyers have said the two had a contract but that references to Facebook were added for purposes of the lawsuit.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 16:28:43</td><td><a href='http://abcnews.go.com/US/wireStory/dad-fugitive-son-afraid-facebook-trial-fair-29871109'>site</a></td><td>The father of a fugitive accused of falsely claiming he's owed a majority ownership in Facebook says his son doesn't trust the criminal justice system.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XHzlIwa.gohfRGzMsTKtmg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504161347496385746'></td><td>2015-04-22 17:56:20</td><td>Oklahoma City Thunder fire coach Scott Brooks after 7 years (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/W.X5rfCGGRSLb3cYSYq88A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQxMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504292156789650052'></td><td>2015-04-30 04:47:51</td><td>AP Source: Thunder, Donovan in talks about coaching vacancy (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/W.X5rfCGGRSLb3cYSYq88A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQxMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504292156789650052'></td><td>2015-04-30 04:47:51</td><td>Yahoo Sports reported Donovan is ''enthusiastic'' about the possibility of coaching the Thunder and is seeking an annual salary around $6 million.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/XHzlIwa.gohfRGzMsTKtmg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504161347496385746'></td><td>2015-04-22 17:56:20</td><td><a href='http://sports.yahoo.com/news/oklahoma-city-thunder-fire-coach-scott-brooks-7-175620581--nba.html'>site</a></td><td>Oklahoma City Thunder fire coach Scott Brooks after 7 years (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/W.X5rfCGGRSLb3cYSYq88A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQxMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504292156789650052'></td><td>2015-04-30 04:47:51</td><td><a href='http://sports.yahoo.com/news/ap-source-thunder-donovan-talks-coaching-vacancy-034125274--nba.html'>site</a></td><td><table><tr><td>AP Source: Thunder, Donovan in talks about coaching vacancy (Yahoo Sports)</td></tr><tr><td>Yahoo Sports reported Donovan is ''enthusiastic'' about the possibility of coaching the Thunder and is seeking an annual salary around $6 million.</td></tr></table></td></tr>
 </table></body></html>

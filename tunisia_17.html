@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/20/434f7d86ba6f510c710f6a70670051bc_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-20 06:38:31</td><td>TUNIS, Tunisia (AP) - Around lunchtime, the crackle of gunfire broke the leisurely calm of a visit to one of Tunisia's best-known museums: At least two attackers went on a rampage targeting tourists.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 07:23:11</td><td>Plans for leisurely visit in Tunisia turn to horror</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 07:23:11</td><td>He noted that extremists had generally attacked security forces in Tunisia's rural west near Algeria in recent years.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 07:45:14</td><td>Rubio, who is pregnant, was uninjured and told Tunisia's health minister at a hospital maternity ward that tests showed that the baby girl on the way was OK.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/20/434f7d86ba6f510c710f6a70670051bc_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-20 06:38:31</td><td><a href='http://www.utsandiego.com/news/2015/mar/19/plans-for-leisurely-visit-in-tunisia-turn-to/'>site</a></td><td>TUNIS, Tunisia (AP) - Around lunchtime, the crackle of gunfire broke the leisurely calm of a visit to one of Tunisia's best-known museums: At least two attackers went on a rampage targeting tourists.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 07:23:11</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15436574.html#storylink=rss'>site</a></td><td><table><tr><td>Plans for leisurely visit in Tunisia turn to horror</td></tr><tr><td>He noted that extremists had generally attacked security forces in Tunisia's rural west near Algeria in recent years.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 07:45:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420667&ref=rss'>site</a></td><td>Rubio, who is pregnant, was uninjured and told Tunisia's health minister at a hospital maternity ward that tests showed that the baby girl on the way was OK.</td></tr>
 </table></body></html>

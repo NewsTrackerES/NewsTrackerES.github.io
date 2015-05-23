@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 16:50:51</td><td>The attack also targeted the forces of army Gen. Khalifa Hifter -- who has been leading an offensive against Islamic militias on behalf of the internationally recognized government.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 16:50:51</td><td>Egyptian warplanes conducted multiple airstrikes in Darna after militants linked to the Islamic State group beheaded 21 Egyptian Christian hostages.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 16:50:51</td><td><a href='http://www.mercurynews.com/nation-world/ci_27565934/libya-suicide-bombs-kill-45-islamic-state-claims?source=rss'>site</a></td><td><table><tr><td>Egyptian warplanes conducted multiple airstrikes in Darna after militants linked to the Islamic State group beheaded 21 Egyptian Christian hostages.</td></tr><tr><td>The attack also targeted the forces of army Gen. Khalifa Hifter -- who has been leading an offensive against Islamic militias on behalf of the internationally recognized government.</td></tr></table></td></tr>
 </table></body></html>

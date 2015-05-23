@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-01 22:47:07</td><td>A huge ball of flames engulfed an oil platform in the Gulf of Mexico on Wednesday, killing four people and sending terrified workers leaping into the sea.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-01 22:47:07</td><td>Mexico's worst major spill in the Gulf was in June 1979, when an offshore drilling rig in Mexican waters, the Ixtoc I, blew up, releasing 140 million gallons of oil.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 04:26:31</td><td>MEXICO CITY (AP) - A huge blaze twisted and blackened an oil platform in the Gulf of Mexico, but the state-run Pemex oil company said it managed to avert any significant oil spill.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-02 04:26:31</td><td>Mexico says oil spill avoided after deadly offshore blaze</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-05 19:44:20</td><td>MEXICO CITY (AP) - Officials at Mexico's state-run oil company say they are searching for three missing workers from a platform fire that killed four others, and are beginning to restore production at the damaged gulf facility.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 20:55:19</td><td>Hernandez said the Abkatun fire won't affect international confidence in Pemex just as the company is its first rounds of bidding after the country's energy reform, which opened Mexico's oil sector to foreign investment.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/r9Phzh5EbldaUjKX_w0PVw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/9ae1bd1ae362a5283aef007aa5d87f177ed779e9.jpg'></td><td>2015-05-05 19:05:59</td><td>Two dead in new Mexico oil rig accident</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-01 22:47:07</td><td><a href='http://www.miamiherald.com/news/business/article17108468.html#storylink=rss'>site</a></td><td><table><tr><td>A huge ball of flames engulfed an oil platform in the Gulf of Mexico on Wednesday, killing four people and sending terrified workers leaping into the sea.</td></tr><tr><td>Mexico's worst major spill in the Gulf was in June 1979, when an offshore drilling rig in Mexican waters, the Ixtoc I, blew up, releasing 140 million gallons of oil.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 04:26:31</td><td><a href='http://www.utsandiego.com/news/2015/apr/01/mexico-says-oil-spill-avoided-after-deadly/'>site</a></td><td><table><tr><td>Mexico says oil spill avoided after deadly offshore blaze</td></tr><tr><td>MEXICO CITY (AP) - A huge blaze twisted and blackened an oil platform in the Gulf of Mexico, but the state-run Pemex oil company said it managed to avert any significant oil spill.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-05 19:44:20</td><td><a href='http://www.sfgate.com/business/energy/article/Pemex-begins-to-restore-production-at-6180271.php'>site</a></td><td>MEXICO CITY (AP) - Officials at Mexico's state-run oil company say they are searching for three missing workers from a platform fire that killed four others, and are beginning to restore production at the damaged gulf facility.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 20:55:19</td><td><a href='http://www.startribune.com/world/298715871.html'>site</a></td><td>Hernandez said the Abkatun fire won't affect international confidence in Pemex just as the company is its first rounds of bidding after the country's energy reform, which opened Mexico's oil sector to foreign investment.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/r9Phzh5EbldaUjKX_w0PVw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/9ae1bd1ae362a5283aef007aa5d87f177ed779e9.jpg'></td><td>2015-05-05 19:05:59</td><td><a href='http://news.yahoo.com/one-dead-mexico-oil-rig-accident-181110841.html'>site</a></td><td>Two dead in new Mexico oil rig accident</td></tr>
 </table></body></html>

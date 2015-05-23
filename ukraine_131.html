@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,9 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 07:02:09</td><td>HOPTIVKA, Ukraine (AP) - The flimsy, razor wire-topped fences popping up along bare expanses of Ukraine's eastern frontier are the first line of defense against a much-feared Russian invasion.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 07:02:09</td><td>In this photo taken on Saturday, April 18, 2015, a Ukrainian national flag is attached to the fence on the Ukrainian-Russian border near Hoptivka, Kharkiv region, eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 07:02:09</td><td>With much of eastern Ukraine in the hands of Russian-backed separatists, large swaths of the border remain impossible to secure - meaning enemy troops can just sneak in through areas under rebel control.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-06 07:02:09</td><td>Ukraine accuses Russia of pouring its own army's equipment and manpower across the border to assist rebel offensives.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-06 07:02:09</td><td>As Ukraine erects defenses, critics fear expensive failure</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/KRusW1jk2ntqvUBCnW7RPw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a16f9c9d4806ac14750f6a706700d0f6.jpg'></td><td>2015-05-06 07:02:25</td><td>On top of creating physical barriers, Ukraine is also fortifying obstacles of red tape to deter the numerous Russian citizens known to have voluntarily joined forces with local separatists.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-06 07:05:17</td><td>Russian citizens can only enter Ukraine on their international travel passports, whereas they could formerly sail through with their national ID cards.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://wpmedia.news.nationalpost.com/2015/05/ukraine_defensive_wall-1.jpg?w=620'></td><td>2015-05-06 19:40:17</td><td>Rather than wait around for a laboriously negotiated agreement, Ukraine's security leadership last June unilaterally marked out what it sees as the country's eastern limits.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 07:02:09</td><td><a href='http://www.utsandiego.com/news/2015/may/06/as-ukraine-erects-defenses-critics-fear-expensive/'>site</a></td><td><table><tr><td>As Ukraine erects defenses, critics fear expensive failure</td></tr><tr><td>Ukraine accuses Russia of pouring its own army's equipment and manpower across the border to assist rebel offensives.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 07:02:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/06/as-ukraine-erects-defenses-critics-fear-expensive-failure'>site</a></td><td><table><tr><td>In this photo taken on Saturday, April 18, 2015, a Ukrainian national flag is attached to the fence on the Ukrainian-Russian border near Hoptivka, Kharkiv region, eastern Ukraine.</td></tr><tr><td>HOPTIVKA, Ukraine (AP) - The flimsy, razor wire-topped fences popping up along bare expanses of Ukraine's eastern frontier are the first line of defense against a much-feared Russian invasion.</td></tr><tr><td>With much of eastern Ukraine in the hands of Russian-backed separatists, large swaths of the border remain impossible to secure - meaning enemy troops can just sneak in through areas under rebel control.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/KRusW1jk2ntqvUBCnW7RPw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a16f9c9d4806ac14750f6a706700d0f6.jpg'></td><td>2015-05-06 07:02:25</td><td><a href='http://news.yahoo.com/ukraine-erects-defenses-critics-fear-expensive-failure-070225277.html'>site</a></td><td>On top of creating physical barriers, Ukraine is also fortifying obstacles of red tape to deter the numerous Russian citizens known to have voluntarily joined forces with local separatists.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-06 07:05:17</td><td><a href='http://www.startribune.com/world/302716551.html'>site</a></td><td>Russian citizens can only enter Ukraine on their international travel passports, whereas they could formerly sail through with their national ID cards.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://wpmedia.news.nationalpost.com/2015/05/ukraine_defensive_wall-1.jpg?w=620'></td><td>2015-05-06 19:40:17</td><td><a href='http://news.nationalpost.com/news/world/ukraine-erects-rickety-stretch-of-fences-along-eastern-border-in-first-world-war-style-defence-against-russia'>site</a></td><td>Rather than wait around for a laboriously negotiated agreement, Ukraine's security leadership last June unilaterally marked out what it sees as the country's eastern limits.</td></tr>
 </table></body></html>

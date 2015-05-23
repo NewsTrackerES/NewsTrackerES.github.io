@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/Eo.8Rxxnb4MJIbs7j2FtwA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3a640ad0b4691f16770f6a706700e09b.jpg'></td><td>2015-05-21 16:15:01</td><td>That is especially the case for members of the Cannes jury, who are holed up in a bunker before the awards ceremony, sequestered from the press.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/bt/api/res/1.2/Eo.8Rxxnb4MJIbs7j2FtwA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3a640ad0b4691f16770f6a706700e09b.jpg'></td><td>2015-05-21 16:15:01</td><td>CANNES, France (AP) - For most of the year, room 331 of the Martinez Hotel is just your run-of-the mill luxury five star hotel suite.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-21 16:25:23</td><td>That happened to Cannes best actress winner Berenice Bejo, star of "The Artist," who in 2013 had to be flown in at the eleventh hour from Paris.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/Eo.8Rxxnb4MJIbs7j2FtwA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3a640ad0b4691f16770f6a706700e09b.jpg'></td><td>2015-05-21 16:15:01</td><td><a href='https://news.yahoo.com/red-carpet-emergency-room-cannes-always-full-drama-155246036.html'>site</a></td><td><table><tr><td>CANNES, France (AP) - For most of the year, room 331 of the Martinez Hotel is just your run-of-the mill luxury five star hotel suite.</td></tr><tr><td>That is especially the case for members of the Cannes jury, who are holed up in a bunker before the awards ceremony, sequestered from the press.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-21 16:25:23</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21572190.html#storylink=rss'>site</a></td><td>That happened to Cannes best actress winner Berenice Bejo, star of "The Artist," who in 2013 had to be flown in at the eleventh hour from Paris.</td></tr>
 </table></body></html>

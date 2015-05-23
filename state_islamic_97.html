@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-27 01:39:29</td><td>"The message of this leaflet is that if you allow yourself to be recruited by Daesch (Islamic State), you will find yourself in a meat grinder," said Pentagon spokesman Colonel Steve Warren.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 01:53:39</td><td>WASHINGTON (Reuters) - The United States has dropped tens of thousands of graphic leaflets southwest of the Syrian city of Raqqa aimed at discouraging Islamic State recruitment, officials said on Thursday.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-27 01:53:39</td><td>U.S. drops graphic anti-Islamic State leaflets over Syria's Raqqa</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-27 01:39:29</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3013994/U-S-drops-graphic-anti-Islamic-State-leaflets-Syrias-Raqqa.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"The message of this leaflet is that if you allow yourself to be recruited by Daesch (Islamic State), you will find yourself in a meat grinder," said Pentagon spokesman Colonel Steve Warren.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:53:39</td><td><a href='http://news.yahoo.com/u-drops-graphic-anti-islamic-state-leaflets-over-015339374.html'>site</a></td><td><table><tr><td>U.S. drops graphic anti-Islamic State leaflets over Syria's Raqqa</td></tr><tr><td>WASHINGTON (Reuters) - The United States has dropped tens of thousands of graphic leaflets southwest of the Syrian city of Raqqa aimed at discouraging Islamic State recruitment, officials said on Thursday.</td></tr></table></td></tr>
 </table></body></html>

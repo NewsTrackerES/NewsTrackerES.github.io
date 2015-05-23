@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,9 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2lBDi9KFUffmTJv6t_C6rw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/ea7d17badc314817683bf453968d1a2e'></td><td>2015-03-17 02:18:01</td><td>Apple is in talks to launch an online TV service, the Wall Street Journal reported late Monday, citing sources familiar with the matter.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2lBDi9KFUffmTJv6t_C6rw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/ea7d17badc314817683bf453968d1a2e'></td><td>2015-03-17 02:18:01</td><td>The tech giant is working with programmers to offer a bundled service of about 25 channels anchored by broadcasters like ABC, CBS and Fox, on devices such as Apple TV.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2lBDi9KFUffmTJv6t_C6rw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/ea7d17badc314817683bf453968d1a2e'></td><td>2015-03-17 02:18:01</td><td>The service will not offer NBC broadcast network and cable channels such as USA and Bravo, after a fallout between Apple and Comcast, parent of NBC and CNBC, the report said.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-17 07:36:47</td><td>Apple Plans Web TV Service In Fall</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 11:14:00</td><td>Apple, which is aiming to price the new service at about $30 to $40 a month, plans to announce the service in June and launch it in September, the newspaper said.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-17 11:14:00</td><td>Apple and Comcast were in early-stage discussions last year to offer a streaming-television service that would allow Apple set-top boxes to bypass congestion on the web.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 11:14:00</td><td>Apple is not in talks with NBCUniversal, owner of the NBC broadcast network and cable channels like USA and Bravo, because of a falling-out between Apple and NBCUniversal parent company Comcast, the Journal said.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://wpmedia.business.financialpost.com/2015/03/apple-tv.jpg?w=620'></td><td>2015-03-17 11:55:51</td><td>Apple spokesman Tom Neumayr said the company does not comment on rumor and speculation.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-03-17 12:40:04</td><td>The approximately 25 channels would be available on all iOS operating system devices such as iPhones, iPads and Apple TV boxes.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2lBDi9KFUffmTJv6t_C6rw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/ea7d17badc314817683bf453968d1a2e'></td><td>2015-03-17 02:18:01</td><td><a href='http://finance.yahoo.com/news/apple-talks-launch-online-tv-021801813.html'>site</a></td><td><table><tr><td>Apple is in talks to launch an online TV service, the Wall Street Journal reported late Monday, citing sources familiar with the matter.</td></tr><tr><td>The tech giant is working with programmers to offer a bundled service of about 25 channels anchored by broadcasters like ABC, CBS and Fox, on devices such as Apple TV.</td></tr><tr><td>The service will not offer NBC broadcast network and cable channels such as USA and Bravo, after a fallout between Apple and Comcast, parent of NBC and CNBC, the report said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-17 07:36:47</td><td><a href='http://www.huffingtonpost.com/2015/03/17/apple-web-tv_n_6883486.html'>site</a></td><td>Apple Plans Web TV Service In Fall</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 11:14:00</td><td><a href='http://www.cnbc.com/id/102510938'>site</a></td><td><table><tr><td>Apple, which is aiming to price the new service at about $30 to $40 a month, plans to announce the service in June and launch it in September, the newspaper said.</td></tr><tr><td>Apple is not in talks with NBCUniversal, owner of the NBC broadcast network and cable channels like USA and Bravo, because of a falling-out between Apple and NBCUniversal parent company Comcast, the Journal said.</td></tr><tr><td>Apple and Comcast were in early-stage discussions last year to offer a streaming-television service that would allow Apple set-top boxes to bypass congestion on the web.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://wpmedia.business.financialpost.com/2015/03/apple-tv.jpg?w=620'></td><td>2015-03-17 11:55:51</td><td><a href='http://business.financialpost.com/2015/03/17/apple-inc-in-talks-to-offer-online-tv-service-for-iphone-ipad-and-set-top-box-report-says/'>site</a></td><td>Apple spokesman Tom Neumayr said the company does not comment on rumor and speculation.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-17 12:40:04</td><td><a href='http://www.fin24.com/Tech/Companies/Apple-in-talks-over-TV-service-report-says-20150317'>site</a></td><td>The approximately 25 channels would be available on all iOS operating system devices such as iPhones, iPads and Apple TV boxes.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/12/01/102228057-20141123-6193-903.530x298.jpg?v=1431709873'></td><td>2015-05-15 20:23:00</td><td>Top US hedge funds continue to dump Apple stakes</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 22:50:39</td><td>In the fourth quarter, David Einhorn's Greenlight Capital and Coatue Management reduced their stakes in Apple, which was a big winner in 2014, with its shares rising nearly 38 percent.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 22:50:39</td><td>At the end of 2014, Apple was one of the hedge fund community's favored positions, according to Goldman Sachs.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 22:50:39</td><td>Omega Advisors sold all of its 383,790 shares in Apple during the first quarter, while Rothschild Asset Management cut its stake by 107,953 to 938,693 shares, filings showed on Friday.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 22:50:39</td><td>Not every big hedge fund manager is souring on Apple.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 22:53:13</td><td>Top U.S. hedge funds continued to dump Apple amid rally</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/12/01/102228057-20141123-6193-903.530x298.jpg?v=1431709873'></td><td>2015-05-15 20:23:00</td><td><a href='http://www.cnbc.com/id/102683360'>site</a></td><td>Top US hedge funds continue to dump Apple stakes</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 22:50:39</td><td><a href='http://www.reuters.com/article/2015/05/15/investments-funds-apple-idUSL1N0Y62PB20150515?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td><table><tr><td>Omega Advisors sold all of its 383,790 shares in Apple during the first quarter, while Rothschild Asset Management cut its stake by 107,953 to 938,693 shares, filings showed on Friday.</td></tr><tr><td>In the fourth quarter, David Einhorn's Greenlight Capital and Coatue Management reduced their stakes in Apple, which was a big winner in 2014, with its shares rising nearly 38 percent.</td></tr><tr><td>At the end of 2014, Apple was one of the hedge fund community's favored positions, according to Goldman Sachs.</td></tr><tr><td>Not every big hedge fund manager is souring on Apple.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 22:53:13</td><td><a href='http://www.reuters.com/article/2015/05/15/us-investments-funds-apple-idUSKBN0O025020150515?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Top U.S. hedge funds continued to dump Apple amid rally</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-04-07 20:58:10</td><td>Police in Ebola-hit Sierra Leone have raided a funeral and arrested 13 people suspected of organising an unsafe burial, risking spreading the disease, officers said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-04-07 20:58:10</td><td>Alimamy Kamara, head of the National Ebola Response Centre (NERC) in charge of Freetown and the surrounding area, said last week that people organising unsafe burials risked two-year jail terms.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-04-07 20:58:10</td><td>The NERC said later on Tuesday that health authorities had wrongly reported Ebola as the cause of a baby's death in the eastern district of Kailahun, which was declared free of the virus weeks ago.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46844598,width-300,resizemode-4/Sierra-Leone-Ebola.jpg'></td><td>2015-04-07 22:13:56</td><td>Palo Conteh, the national Ebola response chief, said traditional funeral rights involving contact with the dead remained the biggest driver of Ebola transmission.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46844598,width-300,resizemode-4/Sierra-Leone-Ebola.jpg'></td><td>2015-04-07 22:13:56</td><td>"People should adhere to the government policy of safe and dignified burials so that we can end the high rate of transmission of the Ebola virus," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-04-07 20:58:10</td><td><a href='http://www.abc.net.au/news/2015-04-08/police-raid-funeral-in-sierra-leone/6376494'>site</a></td><td><table><tr><td>Police in Ebola-hit Sierra Leone have raided a funeral and arrested 13 people suspected of organising an unsafe burial, risking spreading the disease, officers said.</td></tr><tr><td>Alimamy Kamara, head of the National Ebola Response Centre (NERC) in charge of Freetown and the surrounding area, said last week that people organising unsafe burials risked two-year jail terms.</td></tr><tr><td>The NERC said later on Tuesday that health authorities had wrongly reported Ebola as the cause of a baby's death in the eastern district of Kailahun, which was declared free of the virus weeks ago.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46844598,width-300,resizemode-4/Sierra-Leone-Ebola.jpg'></td><td>2015-04-07 22:13:56</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Ebola-hit-Sierra-Leones-police-arrests-13-for-unsafe-burial/articleshow/46844541.cms'>site</a></td><td><table><tr><td>Palo Conteh, the national Ebola response chief, said traditional funeral rights involving contact with the dead remained the biggest driver of Ebola transmission.</td></tr><tr><td>"People should adhere to the government policy of safe and dignified burials so that we can end the high rate of transmission of the Ebola virus," he said.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x7PgNvZ.d9_8A427GpC1Nw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE4NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-04T183935Z_1_LYNXMPEB3309S_RTROPTP_2_MIDEAST-CRISIS-TIKRIT-LOOTING.JPG'></td><td>2015-04-04 18:39:35</td><td>BAGHDAD (Reuters) - Almost all Shi'ite paramilitaries had left Tikrit on Saturday after locals complained that some fighters had spent several days looting the Sunni city after helping retake it from Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 18:50:22</td><td>Prime Minister Haidar al-Abadi, a Shi'ite Islamist, met officials from Salahuddin province and took the decision that the paramilitaries had to leave Tikrit.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-04 18:50:22</td><td>A spokesman for the Shi'ite paramilitary fighters, Karim al-Noori, confirmed that 80 percent of the Shi'ite volunteer fighters had left Tikrit.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-04 18:50:22</td><td>The Sunni politician said that the looting and burning had stopped on Saturday after "the federal and local police along with (counter-terrorism) troops became responsible for Tikrit's security."</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-04 18:50:22</td><td>"The situation now is calm," said a police major in Tikrit, speaking on condition of anonymity.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x7PgNvZ.d9_8A427GpC1Nw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE4NjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-04T183935Z_1_LYNXMPEB3309S_RTROPTP_2_MIDEAST-CRISIS-TIKRIT-LOOTING.JPG'></td><td>2015-04-04 18:39:35</td><td><a href='http://news.yahoo.com/shiite-fighters-leave-tikrit-under-govt-deal-looting-161846448.html'>site</a></td><td>BAGHDAD (Reuters) - Almost all Shi'ite paramilitaries had left Tikrit on Saturday after locals complained that some fighters had spent several days looting the Sunni city after helping retake it from Islamic State.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 18:50:22</td><td><a href='http://www.huffingtonpost.com/2015/04/04/shiite-militias-tikrit-pull-out_n_7004366.html'>site</a></td><td><table><tr><td>Prime Minister Haidar al-Abadi, a Shi'ite Islamist, met officials from Salahuddin province and took the decision that the paramilitaries had to leave Tikrit.</td></tr><tr><td>The Sunni politician said that the looting and burning had stopped on Saturday after "the federal and local police along with (counter-terrorism) troops became responsible for Tikrit's security."</td></tr><tr><td>A spokesman for the Shi'ite paramilitary fighters, Karim al-Noori, confirmed that 80 percent of the Shi'ite volunteer fighters had left Tikrit.</td></tr><tr><td>"The situation now is calm," said a police major in Tikrit, speaking on condition of anonymity.</td></tr></table></td></tr>
 </table></body></html>

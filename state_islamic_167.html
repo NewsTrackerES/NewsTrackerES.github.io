@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 12:03:09</td><td>The Islamic State's push comes as IS was dealt a major blow this month, when Iraqi troops pushed the group out of Tikrit, Saddam Hussein's hometown.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>In late 2013, however, militants of the Islamic State group used the Syrian civil war to their advantage and began to push back into Iraq through Anbar province.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td>Gen. Tahseen Ibrahim acknowledged that Islamic State militants "gained a foothold in some areas" in Anbar.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k0wzVvuQ2YkSYzf0F.gRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/088b5eafe88ebc10730f6a7067004695.jpg'></td><td>2015-04-15 18:53:34</td><td>Al-Abadi said Iraqi forces will follow their victory in Tikrit with campaigns against Islamic State in the oil town of Beiji and western Anbar province.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>As Islamic State pushes on Iraq's Ramadi, 2000 families flee</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td>Al-Bayan, the Islamic State group's English-language radio station, claimed IS fighters had seized control of at least six areas and most of a seventh to the east of Ramadi since Wednesday, according to the SITE Intelligence Group, which monitors militant websites.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-15 21:28:47</td><td>He said his command had seen Islamic State social media postings of photos that depict a successful Ramadi offensive.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 12:03:09</td><td><a href='http://www.usatoday.com/story/news/world/2015/04/15/islamic-state-iraq-ramadi/25807263/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td>The Islamic State's push comes as IS was dealt a major blow this month, when Iraqi troops pushed the group out of Tikrit, Saddam Hussein's hometown.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/66/05/7823712/3/920x920.jpg'></td><td>2015-04-15 18:53:27</td><td><a href='http://www.sfgate.com/news/world/article/Fierce-clashes-in-Iraq-as-IS-seizes-villages-near-6200792.php'>site</a></td><td><table><tr><td>Gen. Tahseen Ibrahim acknowledged that Islamic State militants "gained a foothold in some areas" in Anbar.</td></tr><tr><td>In late 2013, however, militants of the Islamic State group used the Syrian civil war to their advantage and began to push back into Iraq through Anbar province.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/k0wzVvuQ2YkSYzf0F.gRvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/088b5eafe88ebc10730f6a7067004695.jpg'></td><td>2015-04-15 18:53:34</td><td><a href='http://news.yahoo.com/fierce-clashes-iraq-seizes-villages-near-ramadi-085410660.html'>site</a></td><td>Al-Abadi said Iraqi forces will follow their victory in Tikrit with campaigns against Islamic State in the oil town of Beiji and western Anbar province.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td><a href='http://www.sfgate.com/news/world/article/As-Islamic-State-pushes-on-Iraq-s-Ramadi-2000-6203588.php'>site</a></td><td><table><tr><td>As Islamic State pushes on Iraq's Ramadi, 2000 families flee</td></tr><tr><td>Al-Bayan, the Islamic State group's English-language radio station, claimed IS fighters had seized control of at least six areas and most of a seventh to the east of Ramadi since Wednesday, according to the SITE Intelligence Group, which monitors militant websites.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-15 21:28:47</td><td><a href='http://www.usnews.com/news/politics/articles/2015/05/15/us-plays-down-is-militants-gains-in-iraq'>site</a></td><td>He said his command had seen Islamic State social media postings of photos that depict a successful Ramadi offensive.</td></tr>
 </table></body></html>

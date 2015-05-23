@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 05:33:26</td><td>Australia's government says the combined force isn't being deployed in a combat role but rather to train Iraqi forces to fight the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 05:33:26</td><td>Another 400 Australian air force personnel are supporting air strikes against Islamic State targets from a base outside Dubai.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 05:33:26</td><td><a href='http://www.foxnews.com/world/2015/04/14/australia-to-deploy-300-additional-troops-to-iraq-to-train-local-forces-in/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Australia's government says the combined force isn't being deployed in a combat role but rather to train Iraqi forces to fight the Islamic State group.</td></tr><tr><td>Another 400 Australian air force personnel are supporting air strikes against Islamic State targets from a base outside Dubai.</td></tr></table></td></tr>
 </table></body></html>

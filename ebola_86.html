@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-04-25 19:54:25</td><td>UN chief names new head of Ebola mission as outbreak calms</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-04-25 19:54:25</td><td>Graaff had been serving since October as the U.N.'s Ebola crisis manager in Liberia, which has recorded more Ebola deaths than any other country.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e.VtF1re6sE7fgJAEvF65A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/23525b61ff5aeda8537330c6c2a21c0b657f1762.jpg.cf.jpg'></td><td>2015-04-25 19:54:35</td><td>The Ghana-based U.N. Mission for Ebola Emergency Response, or UNMEER, was established last September, near the height of the outbreak as an extraordinary response to a public health crisis.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 19:55:13</td><td>Ban thanked Ahmed "for his exceptional work and leadership of UNMEER, and for his commitment to ensuring the affected countries are on the road to recovery from the unprecedented Ebola outbreak," according to the statement.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 19:55:20</td><td>The U.N. chief on Saturday appointed a new head of the emergency mission responding to West Africa's Ebola crisis amid hopes that the world's deadliest outbreak of the virus will soon come to an end.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-04-25 19:54:25</td><td><a href='http://www.sfgate.com/news/world/article/UN-chief-names-new-head-of-Ebola-mission-as-6223855.php'>site</a></td><td><table><tr><td>UN chief names new head of Ebola mission as outbreak calms</td></tr><tr><td>Graaff had been serving since October as the U.N.'s Ebola crisis manager in Liberia, which has recorded more Ebola deaths than any other country.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e.VtF1re6sE7fgJAEvF65A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/23525b61ff5aeda8537330c6c2a21c0b657f1762.jpg.cf.jpg'></td><td>2015-04-25 19:54:35</td><td><a href='http://news.yahoo.com/un-chief-names-head-ebola-mission-outbreak-calms-194746427.html'>site</a></td><td>The Ghana-based U.N. Mission for Ebola Emergency Response, or UNMEER, was established last September, near the height of the outbreak as an extraordinary response to a public health crisis.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 19:55:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11438858&ref=rss'>site</a></td><td>Ban thanked Ahmed "for his exceptional work and leadership of UNMEER, and for his commitment to ensuring the affected countries are on the road to recovery from the unprecedented Ebola outbreak," according to the statement.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-25 19:55:20</td><td><a href='http://abcnews.go.com/International/wireStory/chief-names-head-ebola-mission-outbreak-calms-30583823'>site</a></td><td>The U.N. chief on Saturday appointed a new head of the emergency mission responding to West Africa's Ebola crisis amid hopes that the world's deadliest outbreak of the virus will soon come to an end.</td></tr>
 </table></body></html>

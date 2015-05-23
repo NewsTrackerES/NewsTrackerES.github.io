@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:42:01</td><td>Afghanistan could face a war with the Islamic State group if the government does not resolve internal differences and improve the security situation, one of the country's most powerful warlords warned in an interview with the AP.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 14:42:01</td><td>AP Interview: Afghan warlord warns of Islamic State rise</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-14 14:42:01</td><td>The Islamic State group, based in Iraq and Syria, is believed to have a small presence in Afghanistan, where the Taliban are the most powerful militant group and have been waging an insurgency against the government.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/64/22/7816343/3/square_gallery_thumb.jpg'></td><td>2015-04-14 14:42:01</td><td>"The differences that exist in the national unity government . are helping to boost the enemies' morale, the morale of Daesh and the Taliban," Khan told the AP, using an acronym for the Islamic State group.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/35/64/22/7816343/3/square_gallery_thumb.jpg'></td><td>2015-04-14 14:42:01</td><td>He argues that the mujahedeen warlords are the most effective way of keeping the Taliban - and Islamic State group - at bay.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/64/22/7816343/3/square_gallery_thumb.jpg'></td><td>2015-04-14 14:42:01</td><td><a href='http://www.sfgate.com/news/world/article/AP-Interview-Afghan-warlord-warns-of-Islamic-6198715.php'>site</a></td><td><table><tr><td>"The differences that exist in the national unity government . are helping to boost the enemies' morale, the morale of Daesh and the Taliban," Khan told the AP, using an acronym for the Islamic State group.</td></tr><tr><td>He argues that the mujahedeen warlords are the most effective way of keeping the Taliban - and Islamic State group - at bay.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:42:01</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/14/ap-interview-afghan-warlord-warns-of-islamic-state-rise'>site</a></td><td><table><tr><td>AP Interview: Afghan warlord warns of Islamic State rise</td></tr><tr><td>Afghanistan could face a war with the Islamic State group if the government does not resolve internal differences and improve the security situation, one of the country's most powerful warlords warned in an interview with the AP.</td></tr><tr><td>The Islamic State group, based in Iraq and Syria, is believed to have a small presence in Afghanistan, where the Taliban are the most powerful militant group and have been waging an insurgency against the government.</td></tr></table></td></tr>
 </table></body></html>

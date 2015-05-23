@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 16:15:24</td><td>Beck said an assistant Ferguson city prosecutor dismissed the ticket after she showed proof of insurance.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 01:25:55</td><td>"I don't see any discernible difference," said Michael-John Voss of the Arch City Defenders, a nonprofit legal clinic that is suing Ferguson and the adjacent town of Jennings over their municipal court practices.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 01:25:55</td><td>Local attorneys said they're optimistic that Richter's appointment will spur change not only in Ferguson's court system but also in the 80 other municipal courts spread across St. Louis County.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 01:25:55</td><td>Richter, who was also given the power to overhaul court practices in Ferguson, issued an order Wednesday barring cameras from the courtroom in response to heavy media interest.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-20 01:25:55</td><td>It also faulted Ferguson for issuing an excessive number of arrest warrants when traffic-court offenders failed to pay their fines on time or missed court dates, with relatively minor violations then leading to jail time.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-20 04:43:08</td><td>"If they keep it up, the people of Ferguson will have plenty to be happy about."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 16:15:24</td><td><a href='http://www.startribune.com/nation/296892241.html'>site</a></td><td>Beck said an assistant Ferguson city prosecutor dismissed the ticket after she showed proof of insurance.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 01:25:55</td><td><a href='http://news.yahoo.com/ferguson-municipal-court-resumes-doj-report-160956198.html'>site</a></td><td><table><tr><td>Richter, who was also given the power to overhaul court practices in Ferguson, issued an order Wednesday barring cameras from the courtroom in response to heavy media interest.</td></tr><tr><td>It also faulted Ferguson for issuing an excessive number of arrest warrants when traffic-court offenders failed to pay their fines on time or missed court dates, with relatively minor violations then leading to jail time.</td></tr><tr><td>Local attorneys said they're optimistic that Richter's appointment will spur change not only in Ferguson's court system but also in the 80 other municipal courts spread across St. Louis County.</td></tr><tr><td>"I don't see any discernible difference," said Michael-John Voss of the Arch City Defenders, a nonprofit legal clinic that is suing Ferguson and the adjacent town of Jennings over their municipal court practices.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-20 04:43:08</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article15353693.html#storylink=rss'>site</a></td><td>"If they keep it up, the people of Ferguson will have plenty to be happy about."</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-25 20:00:30</td><td>The upgraded Facebook Messenger app will add a wider range of video, voice and location-sharing capabilities, the company announced at its F8 developers' conference Wednesday.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-25 20:00:30</td><td>Among other partnerships, Facebook's Messenger will show users the best sports moments of the day from ESPN, said David Marcus, Facebook VP of messaging products.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-25 20:00:30</td><td>Already, Facebook serves about 3 billion videos per day, he noted.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-25 20:00:30</td><td><a href='http://www.torontosun.com/2015/03/24/live-facebooks-f8-developer-conference-keynote-address'>site</a></td><td><table><tr><td>The upgraded Facebook Messenger app will add a wider range of video, voice and location-sharing capabilities, the company announced at its F8 developers' conference Wednesday.</td></tr><tr><td>Already, Facebook serves about 3 billion videos per day, he noted.</td></tr><tr><td>Among other partnerships, Facebook's Messenger will show users the best sports moments of the day from ESPN, said David Marcus, Facebook VP of messaging products.</td></tr></table></td></tr>
 </table></body></html>

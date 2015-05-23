@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,6 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-doc-1c1a8-6XHk3sSuU-HSK1-636_634x395.jpg'></td><td>2015-03-25 05:41:07</td><td>A US-led coalition has targeted IS with air strikes and provided training and equipment to Iraqi forces, but had not previously announced direct assistance for the Tikrit operation, in which Iran has played a major role.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-doc-1c1a8-6XHk3sSuU-HSK1-636_634x395.jpg'></td><td>2015-03-25 05:41:07</td><td>The operation to retake Tikrit, which involves thousands of Iraqi soldiers, police and forces known as Popular Mobilisation units, which are dominated by Shiite militias, began on March 2.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-doc-1c1a8-6XHk3sSuU-HSK1-636_634x395.jpg'></td><td>2015-03-25 05:41:07</td><td>It has succeeded in retaking towns leading to Tikrit, and also in surrounding several hundred jihadists in the city.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td>BAGHDAD: Washington is considering launching air strikes, possibly within days, to back up Iraqi and Shia forces battling to recapture Tikrit from the Islamic State jihadist group, US officials said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td>Possible air strikes near Tikrit are "being discussed at a high level" and could be days or weeks away, a US official told AFP.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td>US mulls air strikes on Tikrit, aids Iraqis with 'eye in the sky'</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td>But the surveillance flights and discussions on possible US air raids in Tikrit illustrate how Washington is moving towards greater indirect collaboration with Tehran, despite the intense distrust between the two arch-foes.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td>But that was apparently not immediately done, with a Pentagon spokesman saying five days later that he was unaware of any official requests "to participate in operations around Tikrit".</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td>IS led a sweeping offensive last June that overran large areas north and west of Baghdad, including Tikrit, the capital of Salaheddin province and executed dictator Saddam Hussein's home town.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/article-doc-1c1a8-6XHk3sSuU-HSK1-636_634x395.jpg'></td><td>2015-03-25 05:41:07</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3010554/US-mulls-air-strikes-Tikrit-aids-Iraqis-eye-sky.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>A US-led coalition has targeted IS with air strikes and provided training and equipment to Iraqi forces, but had not previously announced direct assistance for the Tikrit operation, in which Iran has played a major role.</td></tr><tr><td>The operation to retake Tikrit, which involves thousands of Iraqi soldiers, police and forces known as Popular Mobilisation units, which are dominated by Shiite militias, began on March 2.</td></tr><tr><td>It has succeeded in retaking towns leading to Tikrit, and also in surrounding several hundred jihadists in the city.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46685353,width-300,resizemode-4/tikrit.jpg'></td><td>2015-03-25 06:01:47</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/US-mulls-air-strikes-on-Tikrit-aids-Iraqis-with-eye-in-the-sky/articleshow/46685348.cms'>site</a></td><td><table><tr><td>US mulls air strikes on Tikrit, aids Iraqis with 'eye in the sky'</td></tr><tr><td>BAGHDAD: Washington is considering launching air strikes, possibly within days, to back up Iraqi and Shia forces battling to recapture Tikrit from the Islamic State jihadist group, US officials said.</td></tr><tr><td>Possible air strikes near Tikrit are "being discussed at a high level" and could be days or weeks away, a US official told AFP.</td></tr><tr><td>But the surveillance flights and discussions on possible US air raids in Tikrit illustrate how Washington is moving towards greater indirect collaboration with Tehran, despite the intense distrust between the two arch-foes.</td></tr><tr><td>IS led a sweeping offensive last June that overran large areas north and west of Baghdad, including Tikrit, the capital of Salaheddin province and executed dictator Saddam Hussein's home town.</td></tr><tr><td>But that was apparently not immediately done, with a Pentagon spokesman saying five days later that he was unaware of any official requests "to participate in operations around Tikrit".</td></tr></table></td></tr>
 </table></body></html>

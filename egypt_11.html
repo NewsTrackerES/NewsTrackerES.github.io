@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/60/20/7537673/5/square_gallery_thumb.jpg'></td><td>2015-02-17 23:17:17</td><td>CAIRO - Egypt's president said in a radio interview aired on Tuesday that creating a U.N.-backed coalition was the best course of action to rid Libya of Islamic extremists.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/34/60/20/7537673/5/square_gallery_thumb.jpg'></td><td>2015-02-17 23:17:17</td><td>Egypt is making an ambitious bid to place itself at the center of the fight against extremism across the Middle East.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/60/20/7537673/5/square_gallery_thumb.jpg'></td><td>2015-02-17 23:17:17</td><td><a href='http://www.sfgate.com/world/article/Egypt-s-el-Sissi-wants-a-U-N-backed-coalition-on-6085998.php'>site</a></td><td><table><tr><td>Egypt is making an ambitious bid to place itself at the center of the fight against extremism across the Middle East.</td></tr><tr><td>CAIRO - Egypt's president said in a radio interview aired on Tuesday that creating a U.N.-backed coalition was the best course of action to rid Libya of Islamic extremists.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:56:23</td><td>Kenya asks the UN to shut down refugee camp for Somalis</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 19:56:23</td><td>"We have asked the UNHCR to relocate the refugees in three months, failure to which we shall relocate them ourselves. The way America changed after 9/11 is the way Kenya will change after Garissa," Ruto said in a statement distributed by his press office.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 19:56:23</td><td>Ruto said in a rally on Saturday that Kenya must be secured at all costs.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:56:23</td><td><a href='http://www.utsandiego.com/news/2015/apr/12/kenya-asks-the-un-to-shut-down-refugee-camp-for/'>site</a></td><td><table><tr><td>Kenya asks the UN to shut down refugee camp for Somalis</td></tr><tr><td>Ruto said in a rally on Saturday that Kenya must be secured at all costs.</td></tr><tr><td>"We have asked the UNHCR to relocate the refugees in three months, failure to which we shall relocate them ourselves. The way America changed after 9/11 is the way Kenya will change after Garissa," Ruto said in a statement distributed by his press office.</td></tr></table></td></tr>
 </table></body></html>

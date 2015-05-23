@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XCEbhaQYlamykCY0tAmZUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/5dc4cc2721419f14750f6a7067000087.jpg.cf.jpg'></td><td>2015-05-06 19:45:01</td><td>When Netanyahu called for snap elections in December, it was to put an end to the chronic instability in his existing coalition.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XCEbhaQYlamykCY0tAmZUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/5dc4cc2721419f14750f6a7067000087.jpg.cf.jpg'></td><td>2015-05-06 19:45:01</td><td>If Netanyahu can form a government, he is expected to continue his robust foreign policy -- marked by virulent attacks on Iran -- and to maintain a hard line on the issue of concessions to the Palestinians.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XCEbhaQYlamykCY0tAmZUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/5dc4cc2721419f14750f6a7067000087.jpg.cf.jpg'></td><td>2015-05-06 19:45:01</td><td>But Lieberman's last-minute about-face deprived Netanyahu of six seats and put Bennett in the role of kingmaker.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/XCEbhaQYlamykCY0tAmZUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/5dc4cc2721419f14750f6a7067000087.jpg.cf.jpg'></td><td>2015-05-06 19:45:01</td><td><a href='http://news.yahoo.com/netanyahu-races-form-govt-ahead-deadline-003702521.html'>site</a></td><td><table><tr><td>If Netanyahu can form a government, he is expected to continue his robust foreign policy -- marked by virulent attacks on Iran -- and to maintain a hard line on the issue of concessions to the Palestinians.</td></tr><tr><td>When Netanyahu called for snap elections in December, it was to put an end to the chronic instability in his existing coalition.</td></tr><tr><td>But Lieberman's last-minute about-face deprived Netanyahu of six seats and put Bennett in the role of kingmaker.</td></tr></table></td></tr>
 </table></body></html>

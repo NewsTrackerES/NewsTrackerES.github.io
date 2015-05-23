@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 16:12:35</td><td>Many European governments, however, oppose any U.S. move to provide military support for Ukraine's government, fearing that might spark a wider proxy war.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 16:12:35</td><td>U.S. lawmakers from both the Democratic and Republican parties have repeatedly urged Obama to provide Ukraine with lethal weapons.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 16:12:35</td><td>Nuland declined to say whether the State Department has advised the White House to send arms to Ukraine.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 16:12:35</td><td><a href='http://news.yahoo.com/us-official-obama-still-weighing-sending-arms-ukraine-161235976.html'>site</a></td><td><table><tr><td>U.S. lawmakers from both the Democratic and Republican parties have repeatedly urged Obama to provide Ukraine with lethal weapons.</td></tr><tr><td>Many European governments, however, oppose any U.S. move to provide military support for Ukraine's government, fearing that might spark a wider proxy war.</td></tr><tr><td>Nuland declined to say whether the State Department has advised the White House to send arms to Ukraine.</td></tr></table></td></tr>
 </table></body></html>

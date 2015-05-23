@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 17:01:19</td><td>Ferguson mulls replacing mid-street shrine to Michael Brown</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 17:01:19</td><td>(AP) - Leaders of the St. Louis suburb of Ferguson, Missouri, are considering removing or replacing a makeshift shrine to Michael Brown that has lined the middle of the street where he was killed since last summer.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 17:01:19</td><td><a href='http://www.sfgate.com/news/us/article/Ferguson-mulls-replacing-mid-street-shrine-to-6243441.php'>site</a></td><td><table><tr><td>Ferguson mulls replacing mid-street shrine to Michael Brown</td></tr><tr><td>(AP) - Leaders of the St. Louis suburb of Ferguson, Missouri, are considering removing or replacing a makeshift shrine to Michael Brown that has lined the middle of the street where he was killed since last summer.</td></tr></table></td></tr>
 </table></body></html>

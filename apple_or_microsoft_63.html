@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 15:01:49</td><td>Florida artist claims Apple stole his style</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-04-14T172914Z_1_LYNXMPEB3D0UI_RTROPTP_2_US-BRITTO.JPG'></td><td>2015-04-14 17:41:16</td><td>The suit demands Apple and the design firm Craig & Karl immediately cease using the images.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-04-14T172914Z_1_LYNXMPEB3D0UI_RTROPTP_2_US-BRITTO.JPG'></td><td>2015-04-14 17:41:16</td><td>Apple s work features a rainbow-colored hand emitting multicolor wisps of smoke on its website and at retail locations across the world, according to the lawsuit.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 15:01:49</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3038530/Florida-artist-claims-Apple-stole-style.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Florida artist claims Apple stole his style</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-04-14T172914Z_1_LYNXMPEB3D0UI_RTROPTP_2_US-BRITTO.JPG'></td><td>2015-04-14 17:41:16</td><td><a href='https://www.yahoo.com/tech/s/florida-artist-claims-apple-stole-style-172914380--finance.html?src=rss'>site</a></td><td><table><tr><td>Apple s work features a rainbow-colored hand emitting multicolor wisps of smoke on its website and at retail locations across the world, according to the lawsuit.</td></tr><tr><td>The suit demands Apple and the design firm Craig & Karl immediately cease using the images.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://gdb.rferl.org/77D044C0-CDC7-4BF5-BE46-334BA9C264E1_w113_h64.jpg'></td><td>2015-03-18 06:28:08</td><td>Some political rivals accused Netanyahu of racism over the remarks.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://gdb.rferl.org/77D044C0-CDC7-4BF5-BE46-334BA9C264E1_w113_h64.jpg'></td><td>2015-03-18 06:28:08</td><td>Netanyahu on election day accused left-wing groups of trying to remove him from power by busing Arab Israeli voters to polling stations, a statement that drew a sharp rebuke from Washington.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://gdb.rferl.org/77D044C0-CDC7-4BF5-BE46-334BA9C264E1_w113_h64.jpg'></td><td>2015-03-18 06:28:08</td><td><a href='http://www.rferl.org/content/israel-election-results/26906888.html'>site</a></td><td><table><tr><td>Netanyahu on election day accused left-wing groups of trying to remove him from power by busing Arab Israeli voters to polling stations, a statement that drew a sharp rebuke from Washington.</td></tr><tr><td>Some political rivals accused Netanyahu of racism over the remarks.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 15:44:57</td><td>Meanwhile, the video released by Nusra showed the seven men who are among some 20 Lebanese soldiers and police officers who have been held captive by the Nusra Front and the Islamic State group since August.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-05-05 15:45:21</td><td>Hezbollah fighters captured a Syrian village near the border with Lebanon on Tuesday after intense fighting with Islamic militants, the group's television station said, while an activist said battles are concentrating near a strategic Syrian hill.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-05-05 15:45:21</td><td>The battles also come amid reports in Lebanon that Hezbollah and the Syrian army are expected to launch an offensive against members of the Nusra Front and the Islamic State group in Qalamoun.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 09:59:55</td><td>Islamic State's targets included the town of al-Sukhna, some 220 km (140 miles) east of Homs city, the Observatory said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 15:44:57</td><td><a href='http://www.foxnews.com/world/2015/05/05/hezbollah-fighters-capture-syrian-village-near-border-with-lebanon-from-islamic/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Meanwhile, the video released by Nusra showed the seven men who are among some 20 Lebanese soldiers and police officers who have been held captive by the Nusra Front and the Islamic State group since August.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-05-05 15:45:21</td><td><a href='http://abcnews.go.com/International/wireStory/lebanese-held-hostage-syria-militants-video-30807953'>site</a></td><td><table><tr><td>Hezbollah fighters captured a Syrian village near the border with Lebanon on Tuesday after intense fighting with Islamic militants, the group's television station said, while an activist said battles are concentrating near a strategic Syrian hill.</td></tr><tr><td>The battles also come amid reports in Lebanon that Hezbollah and the Syrian army are expected to launch an offensive against members of the Nusra Front and the Islamic State group in Qalamoun.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 09:59:55</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3079388/Islamic-State-attacks-army-held-areas-central-Syria.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Islamic State's targets included the town of al-Sukhna, some 220 km (140 miles) east of Homs city, the Observatory said.</td></tr>
 </table></body></html>

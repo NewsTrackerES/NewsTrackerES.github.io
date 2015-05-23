@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:42:28</td><td>(AP) - Defense lawyers are asking a judge to go easy on a Virginia woman who pleaded guilty to lying to federal investigators about supporting the Islamic State militant group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 15:37:05</td><td>During that time she was in a relationship with an unidentified foreign national outside the United States, whom she tried to help travel to Syria to fight for Islamic State.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 15:37:05</td><td>An FBI undercover agent posing as an Islamic State sympathizer began meeting with Coffman last July.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 15:37:05</td><td>She admitted that between approximately June and November last year she used several Facebook accounts to promote the group and claimed to have Islamic State contacts in Syria.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 15:37:05</td><td>WASHINGTON (Reuters) - A Virginia woman was sentenced to 4-1/2 years in prison on Monday for lying to U.S. investigators about using social media to promote and recruit for the militant Islamic State group.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-11 15:37:05</td><td>U.S. supporter of Islamic State gets four-and-a-half-years in prison</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:42:28</td><td><a href='http://www.utsandiego.com/news/2015/apr/27/defense-seeks-light-sentence-in-virginia-terror/'>site</a></td><td>(AP) - Defense lawyers are asking a judge to go easy on a Virginia woman who pleaded guilty to lying to federal investigators about supporting the Islamic State militant group.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 15:37:05</td><td><a href='http://news.yahoo.com/u-supporter-islamic-state-gets-4-1-2-153646646.html'>site</a></td><td><table><tr><td>U.S. supporter of Islamic State gets four-and-a-half-years in prison</td></tr><tr><td>WASHINGTON (Reuters) - A Virginia woman was sentenced to 4-1/2 years in prison on Monday for lying to U.S. investigators about using social media to promote and recruit for the militant Islamic State group.</td></tr><tr><td>She admitted that between approximately June and November last year she used several Facebook accounts to promote the group and claimed to have Islamic State contacts in Syria.</td></tr><tr><td>During that time she was in a relationship with an unidentified foreign national outside the United States, whom she tried to help travel to Syria to fight for Islamic State.</td></tr><tr><td>An FBI undercover agent posing as an Islamic State sympathizer began meeting with Coffman last July.</td></tr></table></td></tr>
 </table></body></html>

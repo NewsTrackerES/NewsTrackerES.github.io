@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Soaring housing costs, in particular, became a prominent issue in this campaign, but Mr Netanyahu infuriated many voters by appearing to brush off their concerns in favour of a relentless focus on the Iranian nuclear threat.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>For Mr Netanyahu's main competition, a centre-left party known as the Zionist Union, the message was simple: It's time for the Prime Minister to go.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td>Tel Aviv: In 1996, a canny and polished politician named Benjamin Netanyahu stormed onto the electoral scene and became Israel's youngest prime minister.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td><a href='http://www.smh.com.au/world/israel-election-benjamin-netanyahu-may-be-on-his-way-out-20150316-1m02e6.html'>site</a></td><td>Tel Aviv: In 1996, a canny and polished politician named Benjamin Netanyahu stormed onto the electoral scene and became Israel's youngest prime minister.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/8/y/g/image.related.articleLeadwide.620x349.1m02e6.png/1426503479638.jpg'></td><td>2015-03-16 04:28:49</td><td><a href='http://www.theage.com.au/world/israel-election-benjamin-netanyahu-may-be-on-his-way-out-20150316-1m02e6.html'>site</a></td><td><table><tr><td>For Mr Netanyahu's main competition, a centre-left party known as the Zionist Union, the message was simple: It's time for the Prime Minister to go.</td></tr><tr><td>Soaring housing costs, in particular, became a prominent issue in this campaign, but Mr Netanyahu infuriated many voters by appearing to brush off their concerns in favour of a relentless focus on the Iranian nuclear threat.</td></tr></table></td></tr>
 </table></body></html>

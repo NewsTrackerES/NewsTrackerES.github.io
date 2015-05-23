@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>This year's Cannes Film Festival is about halfway through, but one thing is already clear: This festival belongs to les femmes.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>Each film played out of competition but both drew the heartiest, most gushing responses at Cannes: "Fury Road" for its relentless action-movie bravado and "Inside Out" for its thoughtful, tender story.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>Les femmes (and les blockbusters) are all the talk at Cannes</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>Cannes, in its 68th festival, is in some ways an unlikely place for an explosion of attention to sexism.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>Yearly topics regularly grip the festival, raging through the Cannes cacophony like wildfire.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>From the word go, this year's Cannes has been dominated by women and debate about gender equality in the movie industry.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>The first week of Cannes, which concludes Sunday with the presentation of the Palme d'Or by Joel and Ethan Coen's jury, has been largely defined by so-so entries and a handful of fantastical oddities.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td>This year, though, Cannes appeared to take a deliberate step toward leading the conversation.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21285954.html#storylink=rss'>site</a></td><td><table><tr><td>Les femmes (and les blockbusters) are all the talk at Cannes</td></tr><tr><td>This year's Cannes Film Festival is about halfway through, but one thing is already clear: This festival belongs to les femmes.</td></tr><tr><td>From the word go, this year's Cannes has been dominated by women and debate about gender equality in the movie industry.</td></tr><tr><td>Yearly topics regularly grip the festival, raging through the Cannes cacophony like wildfire.</td></tr><tr><td>Cannes, in its 68th festival, is in some ways an unlikely place for an explosion of attention to sexism.</td></tr><tr><td>This year, though, Cannes appeared to take a deliberate step toward leading the conversation.</td></tr><tr><td>Each film played out of competition but both drew the heartiest, most gushing responses at Cannes: "Fury Road" for its relentless action-movie bravado and "Inside Out" for its thoughtful, tender story.</td></tr><tr><td>The first week of Cannes, which concludes Sunday with the presentation of the Palme d'Or by Joel and Ethan Coen's jury, has been largely defined by so-so entries and a handful of fantastical oddities.</td></tr></table></td></tr>
 </table></body></html>

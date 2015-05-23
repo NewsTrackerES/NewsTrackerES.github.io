@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,8 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03242/netanyahu_3242928b.jpg'></td><td>2015-03-23 20:52:57</td><td>Backing for Mr Netanyahu to stay in the post came during two days of talks between President Reuven Rivlin and representatives of the 10 parties elected to parliament who told him whom they would recommend as prime minister.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150318001112759452-original.jpg?itok=iwXKhNol'></td><td>2015-03-23 21:48:57</td><td>Netanyahu is expected to be formally handed the task of building a coalition government on Wednesday after securing the backing of a solid majority of MPs in the 120-seat Knesset.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150318001112759452-original.jpg?itok=iwXKhNol'></td><td>2015-03-23 21:48:57</td><td>There will then follow weeks of hard-fought coalition horse trading as Netanyahu's potential partners battle for portfolios and prestige.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-24 07:55:35</td><td>"His excuses are not acceptable because not only does Benjamin Netanyahu plan to bring in racist legislation but his words challenged the very right of Arab Israelis to vote for the Knesset," Israel's parliament, he said on television.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-24 07:55:35</td><td>His chief of staff, Denis McDonough, on Monday took Netanyahu to task over another pre-election pledge, to block the creation of a Palestinian state.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-24 07:55:35</td><td>US President Barack Obama, commenting on Netanyahu's surprise election victory, said: "That kind of rhetoric was contrary to what is the best of Israel's traditions."</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b174-6XGMqqHRmHSK2-674_634x422.jpg'></td><td>2015-03-24 08:02:00</td><td>But after Netanyahu's decisive victory, Kahlon threw his support behind Netanyahu, in a move formalised in talks with Rivlin on Monday.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b174-6XGMqqHRmHSK2-674_634x422.jpg'></td><td>2015-03-24 08:02:00</td><td>Majority winner Netanyahu apologises to Arab Israelis</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03242/netanyahu_3242928b.jpg'></td><td>2015-03-23 20:52:57</td><td><a href='http://www.telegraph.co.uk/news/worldnews/middleeast/israel/11490945/Netanyahu-apologises-to-Arab-voters-in-Israel-election.html'>site</a></td><td>Backing for Mr Netanyahu to stay in the post came during two days of talks between President Reuven Rivlin and representatives of the 10 parties elected to parliament who told him whom they would recommend as prime minister.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150318001112759452-original.jpg?itok=iwXKhNol'></td><td>2015-03-23 21:48:57</td><td><a href='http://www.sbs.com.au/news/article/2015/03/24/netanyahu-apologises-arab-israelis'>site</a></td><td><table><tr><td>Netanyahu is expected to be formally handed the task of building a coalition government on Wednesday after securing the backing of a solid majority of MPs in the 120-seat Knesset.</td></tr><tr><td>There will then follow weeks of hard-fought coalition horse trading as Netanyahu's potential partners battle for portfolios and prestige.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-24 07:55:35</td><td><a href='http://news.yahoo.com/netanyahu-apologises-publicly-arab-israeli-remarks-182500804.html'>site</a></td><td><table><tr><td>"His excuses are not acceptable because not only does Benjamin Netanyahu plan to bring in racist legislation but his words challenged the very right of Arab Israelis to vote for the Knesset," Israel's parliament, he said on television.</td></tr><tr><td>US President Barack Obama, commenting on Netanyahu's surprise election victory, said: "That kind of rhetoric was contrary to what is the best of Israel's traditions."</td></tr><tr><td>His chief of staff, Denis McDonough, on Monday took Netanyahu to task over another pre-election pledge, to block the creation of a Palestinian state.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b174-6XGMqqHRmHSK2-674_634x422.jpg'></td><td>2015-03-24 08:02:00</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3008149/Netanyahu-apologises-publicly-Arab-Israeli-remarks.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Majority winner Netanyahu apologises to Arab Israelis</td></tr><tr><td>But after Netanyahu's decisive victory, Kahlon threw his support behind Netanyahu, in a move formalised in talks with Rivlin on Monday.</td></tr></table></td></tr>
 </table></body></html>

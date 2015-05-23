@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 15:59:43</td><td>One Direction determined to continue without Zayn Malik</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 15:59:43</td><td>Tomlinson tells British newspaper The Sun, "All four of us are 100% committed to One Direction. We want to thank the fans for being so incredible."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 15:59:43</td><td><a href='http://jam.canoe.ca/Music/2015/04/04/22326796-wenn-story.html?cid=rssentertainmentmusic'>site</a></td><td><table><tr><td>One Direction determined to continue without Zayn Malik</td></tr><tr><td>Tomlinson tells British newspaper The Sun, "All four of us are 100% committed to One Direction. We want to thank the fans for being so incredible."</td></tr></table></td></tr>
 </table></body></html>

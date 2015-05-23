@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>tamir rice</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>Tamir Rice case: Cleveland mayor apologises after city claims 12-year-old to blame for his own police shooting death</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>Killed: 12-year-old Tamir Rice.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>Tamir Rice was shot and killed after a caller reported he was pointing a gun at people.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>Now the city of Cleveland's response to a federal lawsuit bought against it by the Rice family has reopened the unhealed wounds.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>The Rice family is appalled.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>Twelve-year-old Tamir Rice, shot dead by police at a park in Cleveland in the US in November, 'failed to exercise due care to avoid injury', according to the City of Cleveland.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.theage.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td>Suddenly a police car appears, and without even leaving the driver's seat an officer shoots the boy, 12-year-old Tamir Rice in the stomach and torso.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td><a href='http://www.theage.com.au/world/tamir-rice-case-cleveland-mayor-apologises-after-city-claims-12yearold-to-blame-for-his-own-police-shooting-death-20150303-13tei9.html'>site</a></td><td><table><tr><td>Twelve-year-old Tamir Rice, shot dead by police at a park in Cleveland in the US in November, 'failed to exercise due care to avoid injury', according to the City of Cleveland.</td></tr><tr><td>Suddenly a police car appears, and without even leaving the driver's seat an officer shoots the boy, 12-year-old Tamir Rice in the stomach and torso.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td><a href='http://www.smh.com.au/world/tamir-rice-case-cleveland-mayor-apologises-after-city-claims-12yearold-to-blame-for-his-own-police-shooting-death-20150303-13tei9.html'>site</a></td><td><table><tr><td>Tamir Rice was shot and killed after a caller reported he was pointing a gun at people.</td></tr><tr><td>Killed: 12-year-old Tamir Rice.</td></tr><tr><td>Now the city of Cleveland's response to a federal lawsuit bought against it by the Rice family has reopened the unhealed wounds.</td></tr><tr><td>The Rice family is appalled.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/6/o/i/h/image.related.articleLeadNarrow.300x0.13tei9.png/1425347065603.jpg'></td><td>2015-03-02 23:28:51</td><td><a href='http://www.brisbanetimes.com.au/world/tamir-rice-case-cleveland-mayor-apologises-after-city-claims-12yearold-to-blame-for-his-own-police-shooting-death-20150303-13tei9.html'>site</a></td><td>Tamir Rice case: Cleveland mayor apologises after city claims 12-year-old to blame for his own police shooting death</td></tr>
 </table></body></html>

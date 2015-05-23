@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>courtney barnett</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.trbimg.com/img-53c97d61/turbine/la-bio-randall-roberts/150/100x150'></td><td>2015-03-24 02:15:00</td><td>Courtney Barnett's 'Sometimes I Sit' is incisive</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 15:22:05</td><td>In 2013, Courtney Barnett's "Lance Jr." popped on the radio and stopped me in my tracks.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 15:22:05</td><td>Pop music reviews: Courtney Barnett offers incisive, cutting songs in 'Sometimes I Sit and Think, and Sometimes I Just Sit'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.trbimg.com/img-53c97d61/turbine/la-bio-randall-roberts/150/100x150'></td><td>2015-03-24 02:15:00</td><td><a href='http://www.latimes.com/entertainment/la-et-ms-courtney-barnett-sometimes-sit-think-pop-review-20150323-column.html?track=rss'>site</a></td><td>Courtney Barnett's 'Sometimes I Sit' is incisive</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:22:05</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article16171211.html#storylink=rss'>site</a></td><td><table><tr><td>Pop music reviews: Courtney Barnett offers incisive, cutting songs in 'Sometimes I Sit and Think, and Sometimes I Just Sit'</td></tr><tr><td>In 2013, Courtney Barnett's "Lance Jr." popped on the radio and stopped me in my tracks.</td></tr></table></td></tr>
 </table></body></html>

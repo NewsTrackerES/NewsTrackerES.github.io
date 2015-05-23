@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/1/e/h/image.related.articleLeadwide.620x349.143yfx.png/1426303711002.jpg'></td><td>2015-03-14 03:28:52</td><td>Jerusalem: When Israeli Prime Minister Benjamin Netanyahu made an unannounced visit this week to the Mahane Yehuda market here, he did not invite the local news media.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/1/e/h/image.related.articleLeadwide.620x349.143yfx.png/1426303711002.jpg'></td><td>2015-03-14 03:28:52</td><td>Israel election: Netanyahu shifts tactics as Likud appears to slip</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/x/5/t/image.related.articleLeadwide.620x349.1m3srb.png/1426835267076.jpg'></td><td>2015-03-20 07:07:59</td><td>Copies of ballot papers and campaign posters for Israeli Prime Minister Benjamin Netanyahu's Likud Party abandoned after the nation's elections on Wednesday.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/9/k/x/image.related.articleLeadwide.620x349.1mpnj4.png/1429582416406.jpg'></td><td>2015-04-21 02:13:57</td><td>Mr Netanyahu is pursuing a government with hawkish, religious and centrist parties that will give him a coalition representing at least 61 members of Israel's 120-seat parliament, or Knesset, though he hopes for the more comfortable backing of 67 lawmakers.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/1/e/h/image.related.articleLeadwide.620x349.143yfx.png/1426303711002.jpg'></td><td>2015-03-14 03:28:52</td><td><a href='http://www.smh.com.au/world/israel-election-netanyahu-shifts-tactics-as-likud-appears-to-slip-20150314-143yfx.html'>site</a></td><td><table><tr><td>Israel election: Netanyahu shifts tactics as Likud appears to slip</td></tr><tr><td>Jerusalem: When Israeli Prime Minister Benjamin Netanyahu made an unannounced visit this week to the Mahane Yehuda market here, he did not invite the local news media.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/x/5/t/image.related.articleLeadwide.620x349.1m3srb.png/1426835267076.jpg'></td><td>2015-03-20 07:07:59</td><td><a href='http://www.smh.com.au/world/relations-with-us-strained-as-netanyahu-seizes-power-20150320-1m3srb.html'>site</a></td><td>Copies of ballot papers and campaign posters for Israeli Prime Minister Benjamin Netanyahu's Likud Party abandoned after the nation's elections on Wednesday.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/9/k/x/image.related.articleLeadwide.620x349.1mpnj4.png/1429582416406.jpg'></td><td>2015-04-21 02:13:57</td><td><a href='http://www.smh.com.au/world/israel-pm-benjamin-netanyahu-given-14-more-days-to-form-coalition-government-20150421-1mpnj4.html'>site</a></td><td>Mr Netanyahu is pursuing a government with hawkish, religious and centrist parties that will give him a coalition representing at least 61 members of Israel's 120-seat parliament, or Knesset, though he hopes for the more comfortable backing of 67 lawmakers.</td></tr>
 </table></body></html>

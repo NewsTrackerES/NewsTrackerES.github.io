@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:31:59</td><td>Report: Microsoft weighing Salesforce.com bid</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/j_bHJQ3.QiL9tyOG6NLkTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T195400Z_1_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 19:54:00</td><td>Microsoft is evaluating a bid after Salesforce was approached by another potential buyer, Bloomberg reported, citing people with knowledge of the matter.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/j_bHJQ3.QiL9tyOG6NLkTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T195400Z_1_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 19:54:00</td><td>Salesforce shares were up 2.7 percent at $73.53 on Tuesday after trading resumed, while Microsoft's shares were down 1 percent at $47.80.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/nqmX6ELN00IDe8H0hAiVCg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T204618Z_2_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 20:46:18</td><td>Microsoft declined to comment, while Salesforce could not immediately be reached.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:31:59</td><td><a href='http://www.usatoday.com/story/tech/2015/05/05/microsoft-salesforce/26931871/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Report: Microsoft weighing Salesforce.com bid</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/j_bHJQ3.QiL9tyOG6NLkTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T195400Z_1_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 19:54:00</td><td><a href='http://finance.yahoo.com/news/salesforce-shares-spike-report-microsoft-195400225.html'>site</a></td><td><table><tr><td>Microsoft is evaluating a bid after Salesforce was approached by another potential buyer, Bloomberg reported, citing people with knowledge of the matter.</td></tr><tr><td>Salesforce shares were up 2.7 percent at $73.53 on Tuesday after trading resumed, while Microsoft's shares were down 1 percent at $47.80.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/nqmX6ELN00IDe8H0hAiVCg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T204618Z_2_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 20:46:18</td><td><a href='http://finance.yahoo.com/news/salesforce-shares-spike-report-microsoft-195400225.html'>site</a></td><td>Microsoft declined to comment, while Salesforce could not immediately be reached.</td></tr>
 </table></body></html>

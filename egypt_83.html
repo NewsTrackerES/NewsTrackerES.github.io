@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,9 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/11/38d86ac618f33215760f6a70670000a7_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-11 18:38:27</td><td>CAIRO (AP) - Egypt's justice minister resigned on Monday after raising a public uproar by saying in a TV interview that the children of sanitation workers are too lowly to become judges.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/11/38d86ac618f33215760f6a70670000a7_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-11 18:38:27</td><td>Egypt's justice minister resigns after comments raise uproar</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 18:45:15</td><td>Egypt's subsequent presidents came from relatively humble origins " for example, the father of Gamal Abdel-Nasser, who was in office in the 1950s and 1960s, was a postman.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 18:45:15</td><td>It was Egypt's 1952 "revolution" " a coup by young army officers that toppled Egypt's Turkish monarchy " that first tried to bring a more egalitarian society.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/36/27/61/7961723/7/square_gallery_thumb.jpg'></td><td>2015-05-11 19:27:41</td><td>FILE - In this Oct. 23, 2014 file photo, Egyptian garbage collectors carry paper on a truck as they sift through garbage in Cairo, Egypt.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-11 19:27:41</td><td>The comments brought a heavy backlash on social media from Egyptians denouncing elitism -- and what some saw as the arrogance of Egypt's judiciary.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-11 19:30:47</td><td>Egypt's justice minister resigns after saying a cleaner's child could never be a judge</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/11/38d86ac618f33215760f6a70670000a7_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-11 18:38:27</td><td><a href='http://www.utsandiego.com/news/2015/may/11/egypts-justice-minister-resigns-after-comments/'>site</a></td><td><table><tr><td>Egypt's justice minister resigns after comments raise uproar</td></tr><tr><td>CAIRO (AP) - Egypt's justice minister resigned on Monday after raising a public uproar by saying in a TV interview that the children of sanitation workers are too lowly to become judges.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 18:45:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11447104&ref=rss'>site</a></td><td><table><tr><td>It was Egypt's 1952 "revolution" " a coup by young army officers that toppled Egypt's Turkish monarchy " that first tried to bring a more egalitarian society.</td></tr><tr><td>Egypt's subsequent presidents came from relatively humble origins " for example, the father of Gamal Abdel-Nasser, who was in office in the 1950s and 1960s, was a postman.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-11 19:27:41</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/11/egypts-justice-minister-resigns-after-comments-raise-uproar'>site</a></td><td>The comments brought a heavy backlash on social media from Egyptians denouncing elitism -- and what some saw as the arrogance of Egypt's judiciary.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/36/27/61/7961723/7/square_gallery_thumb.jpg'></td><td>2015-05-11 19:27:41</td><td><a href='http://www.sfgate.com/news/world/article/Egypt-s-justice-minister-resigns-after-comments-6255971.php'>site</a></td><td>FILE - In this Oct. 23, 2014 file photo, Egyptian garbage collectors carry paper on a truck as they sift through garbage in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-11 19:30:47</td><td><a href='http://www.startribune.com/egypt-s-justice-minister-resigns-after-comments-raise-uproar/303309521/'>site</a></td><td>Egypt's justice minister resigns after saying a cleaner's child could never be a judge</td></tr>
 </table></body></html>

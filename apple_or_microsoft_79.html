@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-23 21:17:40</td><td>Microsoft profit, revenue beats Wall Street view; shares up</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-23 21:17:40</td><td>Taking out the effects of the strong U.S. dollar on currency rates, Microsoft said revenue would have risen 9 percent.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-23 21:35:28</td><td>Nadella said in a statement that "customers continue to choose Microsoft to transform their business and as a result we saw incredible growth across our cloud services this quarter."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-24 01:41:41</td><td>Microsoft's overall revenue rose 6 percent to $21.7 billion, above Wall Street's average forecast of $21.1 billion, according to Thomson Reuters I/B/E/S.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-24 01:41:41</td><td>"The Street will cheer these results as it appears Microsoft is back on the right track after a head-scratching performance last quarter."</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://img.rasset.ie/0008bacd-642.jpg'></td><td>2015-04-24 06:53:18</td><td>Microsoft last night reported revenue and profit above Wall Street expectations, as sales of its hardware and cloud-computing services helped to offset a decline in the company's core Windows business.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://img.rasset.ie/0008bacd-642.jpg'></td><td>2015-04-24 06:53:18</td><td>This reflected a sharp dip from a year ago when Windows got a brief boost from consumers rushing to buy new machines after Microsoft stopped support for the 14-year-old XP operating system.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-23 21:17:40</td><td><a href='http://www.reuters.com/article/2015/04/23/us-microsoft-results-idUSKBN0NE2HE20150423?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Microsoft profit, revenue beats Wall Street view; shares up</td></tr><tr><td>Taking out the effects of the strong U.S. dollar on currency rates, Microsoft said revenue would have risen 9 percent.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-23 21:35:28</td><td><a href='http://www.usatoday.com/story/tech/2015/04/23/microsoft-beats-the-street-as-turnaround-gains-momentum/26252243/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Nadella said in a statement that "customers continue to choose Microsoft to transform their business and as a result we saw incredible growth across our cloud services this quarter."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-24 01:41:41</td><td><a href='http://finance.yahoo.com/news/microsoft-profit-revenue-beats-wall-014141055.html'>site</a></td><td><table><tr><td>"The Street will cheer these results as it appears Microsoft is back on the right track after a head-scratching performance last quarter."</td></tr><tr><td>Microsoft's overall revenue rose 6 percent to $21.7 billion, above Wall Street's average forecast of $21.1 billion, according to Thomson Reuters I/B/E/S.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/0008bacd-642.jpg'></td><td>2015-04-24 06:53:18</td><td><a href='http://www.rte.ie/news/business/2015/0424/696384-microsoft-results/'>site</a></td><td><table><tr><td>Microsoft last night reported revenue and profit above Wall Street expectations, as sales of its hardware and cloud-computing services helped to offset a decline in the company's core Windows business.</td></tr><tr><td>This reflected a sharp dip from a year ago when Windows got a brief boost from consumers rushing to buy new machines after Microsoft stopped support for the 14-year-old XP operating system.</td></tr></table></td></tr>
 </table></body></html>

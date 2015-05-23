@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a35/news/world/article23830552.ece/ALTERNATES/w220/AW02b-EGYPT-SECURITY+.JPG'></td><td>2015-04-08 07:57:08</td><td>In Egypt, ex-military men fire up Islamist insurgency</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/a35/news/world/article23830552.ece/ALTERNATES/w220/AW02b-EGYPT-SECURITY+.JPG'></td><td>2015-04-08 07:57:08</td><td>Ashmawy's neighbors in Cairo's Nasr City district, home to many army officers, never suspected he would become one of Egypt's most wanted men.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/a35/news/world/article23830552.ece/ALTERNATES/w220/AW02b-EGYPT-SECURITY+.JPG'></td><td>2015-04-08 07:57:08</td><td>Men like Ashmawy, who is on the run, are especially troubling for Egypt which is struggling to contain a complex web of militants who roam from the Sinai to Libya, another hub for extremists.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/a35/news/world/article23830552.ece/ALTERNATES/w220/AW02b-EGYPT-SECURITY+.JPG'></td><td>2015-04-08 07:57:08</td><td>They pose a danger to U.S. ally Egypt with their knowledge of the Arab world's biggest army, provide militants with training and strategic direction, and even carry out suicide bomb attacks against government officials.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/a35/news/world/article23830552.ece/ALTERNATES/w220/AW02b-EGYPT-SECURITY+.JPG'></td><td>2015-04-08 07:57:08</td><td><a href='http://www.theglobeandmail.com/news/world/in-egypt-ex-military-men-fire-up-islamist-insurgency/article23830553/?cmpid=rss1'>site</a></td><td><table><tr><td>In Egypt, ex-military men fire up Islamist insurgency</td></tr><tr><td>They pose a danger to U.S. ally Egypt with their knowledge of the Arab world's biggest army, provide militants with training and strategic direction, and even carry out suicide bomb attacks against government officials.</td></tr><tr><td>Men like Ashmawy, who is on the run, are especially troubling for Egypt which is struggling to contain a complex web of militants who roam from the Sinai to Libya, another hub for extremists.</td></tr><tr><td>Ashmawy's neighbors in Cairo's Nasr City district, home to many army officers, never suspected he would become one of Egypt's most wanted men.</td></tr></table></td></tr>
 </table></body></html>

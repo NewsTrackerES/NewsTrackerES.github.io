@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/v/p/h/image.related.articleLeadwide.620x349.13urpc.png/1425482322828.jpg'></td><td>2015-03-04 03:43:59</td><td>Indonesian police and security guard the fence of Ngurah Rai international airport during the transfer of Bali Nine duo Myuran Sukumaran and Andrew Chan.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/v/p/h/image.related.articleLeadwide.620x349.13urpc.png/1425482322828.jpg'></td><td>2015-03-04 03:43:59</td><td>Bali nine duo 'stoic' during heart-wrenching last moments in Kerobokan</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/v/p/h/image.related.articleLeadwide.620x349.13urpc.png/1425482322828.jpg'></td><td>2015-03-04 03:43:59</td><td><a href='http://www.theage.com.au/world/bali-nine-duo-stoic-during-heartwrenching-last-moments-in-kerobokan-20150304-13urpc.html'>site</a></td><td><table><tr><td>Bali nine duo 'stoic' during heart-wrenching last moments in Kerobokan</td></tr><tr><td>Indonesian police and security guard the fence of Ngurah Rai international airport during the transfer of Bali Nine duo Myuran Sukumaran and Andrew Chan.</td></tr></table></td></tr>
 </table></body></html>

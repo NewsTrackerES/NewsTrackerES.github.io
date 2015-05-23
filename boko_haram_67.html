@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/article-doc-215xu-6YAloNZZVHSK2-561_634x425.jpg'></td><td>2015-04-30 10:02:41</td><td>Nigerian troops have rescued about 160 more hostages from Boko Haram's Sambisa Forest stronghold, the army said on Thursday, taking the total number liberated this week alone to nearly 500.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/article-doc-215xu-6YAloNZZVHSK2-561_634x425.jpg'></td><td>2015-04-30 10:02:41</td><td>On Thursday, Usman said about 160 more hostages were freed in an operation involving troops from the army's 7th Division, which has been tasked with fighting Boko Haram.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 23:11:48</td><td>(Reuters) - Nigeria's military rescued another set of women and children who had been kidnapped by Boko Haram militia and were being detained in Sambisa forest where the Islamist group has been holed up, an army spokesman said on Thursday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/article-doc-215xu-6YAloNZZVHSK2-561_634x425.jpg'></td><td>2015-04-30 10:02:41</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3062190/About-160-Boko-Haram-hostages-rescued-says-Nigerian-army.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Nigerian troops have rescued about 160 more hostages from Boko Haram's Sambisa Forest stronghold, the army said on Thursday, taking the total number liberated this week alone to nearly 500.</td></tr><tr><td>On Thursday, Usman said about 160 more hostages were freed in an operation involving troops from the army's 7th Division, which has been tasked with fighting Boko Haram.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 23:11:48</td><td><a href='http://www.huffingtonpost.com/2015/04/30/boko-haram-rescue-women-c_n_7185702.html'>site</a></td><td>(Reuters) - Nigeria's military rescued another set of women and children who had been kidnapped by Boko Haram militia and were being detained in Sambisa forest where the Islamist group has been holed up, an army spokesman said on Thursday.</td></tr>
 </table></body></html>

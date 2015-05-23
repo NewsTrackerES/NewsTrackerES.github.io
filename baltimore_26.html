@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:08:55</td><td>Senator Rand Paul of Kentucky, a libertarian who launched his bid for the Republican nomination by condemning the "Washington machine that gobbles up our freedoms," said answers to the violence in Baltimore have to be found locally.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 02:08:55</td><td>He called the Baltimore violence a symbol of the "breakdown of the family structure, the lack of fathers, the lack of sort of a moral code."</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 02:08:55</td><td>Clinton, Republican presidential hopefuls, address Baltimore violence</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:08:55</td><td><a href='http://www.reuters.com/article/2015/04/29/usa-elections-baltimore-idUSKBN0NK04620150429?feedType=RSS&feedName=politicsNews'>site</a></td><td><table><tr><td>Clinton, Republican presidential hopefuls, address Baltimore violence</td></tr><tr><td>Senator Rand Paul of Kentucky, a libertarian who launched his bid for the Republican nomination by condemning the "Washington machine that gobbles up our freedoms," said answers to the violence in Baltimore have to be found locally.</td></tr><tr><td>He called the Baltimore violence a symbol of the "breakdown of the family structure, the lack of fathers, the lack of sort of a moral code."</td></tr></table></td></tr>
 </table></body></html>

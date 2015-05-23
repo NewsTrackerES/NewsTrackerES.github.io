@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/V3xesLyBT5f0Kocwvy8kEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI3NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7b1e14a15088e90a6f0f6a706700a282.jpg'></td><td>2015-03-05 07:07:48</td><td>At the very least, experts said Thursday, Ferguson must move quickly, and publicly, to prove it is serious about regaining public trust.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/V3xesLyBT5f0Kocwvy8kEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI3NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7b1e14a15088e90a6f0f6a706700a282.jpg'></td><td>2015-03-05 07:07:48</td><td>At a brief news conference Wednesday, the mayor tried to show that Ferguson is serious about reform, saying the city has been working for some time to find more black officers.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/V3xesLyBT5f0Kocwvy8kEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI3NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7b1e14a15088e90a6f0f6a706700a282.jpg'></td><td>2015-03-05 07:07:48</td><td>Most of Ferguson's police officers and city leaders are white, but two-thirds of the 21,000 residents are black.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/V3xesLyBT5f0Kocwvy8kEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI3NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7b1e14a15088e90a6f0f6a706700a282.jpg'></td><td>2015-03-05 07:07:48</td><td>"The chief has no credibility," said state Sen. Maria Chappelle-Nadal, a Democrat who represents Ferguson.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/V3xesLyBT5f0Kocwvy8kEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI3NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7b1e14a15088e90a6f0f6a706700a282.jpg'></td><td>2015-03-05 07:07:48</td><td>US finds racist, profit-driven practices in Ferguson</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/V3xesLyBT5f0Kocwvy8kEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI3NztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7b1e14a15088e90a6f0f6a706700a282.jpg'></td><td>2015-03-05 07:07:48</td><td><a href='http://news.yahoo.com/us-finds-racist-profit-driven-practices-ferguson-070033019.html'>site</a></td><td><table><tr><td>US finds racist, profit-driven practices in Ferguson</td></tr><tr><td>At the very least, experts said Thursday, Ferguson must move quickly, and publicly, to prove it is serious about regaining public trust.</td></tr><tr><td>Most of Ferguson's police officers and city leaders are white, but two-thirds of the 21,000 residents are black.</td></tr><tr><td>"The chief has no credibility," said state Sen. Maria Chappelle-Nadal, a Democrat who represents Ferguson.</td></tr><tr><td>At a brief news conference Wednesday, the mayor tried to show that Ferguson is serious about reform, saying the city has been working for some time to find more black officers.</td></tr></table></td></tr>
 </table></body></html>

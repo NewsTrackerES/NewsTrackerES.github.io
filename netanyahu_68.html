@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e0fzLYHeuKsvRjq1NJ6eyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T004343Z_640852806_GM1EB3I0MJG01_RTRMADP_3_ISRAEL-ELECTION.JPG'></td><td>2015-03-21 14:45:47</td><td>Activists at the headquarters of V-15, an initiative that called to unseat Netanyahu, silently bundled dozens of banners on Thursday, and one activist asked a journalist to leave.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e0fzLYHeuKsvRjq1NJ6eyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T004343Z_640852806_GM1EB3I0MJG01_RTRMADP_3_ISRAEL-ELECTION.JPG'></td><td>2015-03-21 14:45:47</td><td>Social media was full of embittered Israelis accusing Netanyahu's supporters of racism, and some vowed to stop donating charity to the underprivileged whom they perceived as being automatic supporters of the right.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e0fzLYHeuKsvRjq1NJ6eyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T004343Z_640852806_GM1EB3I0MJG01_RTRMADP_3_ISRAEL-ELECTION.JPG'></td><td>2015-03-21 14:45:47</td><td>But as the results trickled in on Wednesday, they showed Likud with a shocking lead that has all but guaranteed Netanyahu a third consecutive term.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-21 14:46:02</td><td>For Liberal Israelis, Netanyahu's Win Is a Reality Check</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-21 14:48:04</td><td>Netanyahu since has tried to contain the damage from his statements - saying he remains committed to Palestinian statehood if conditions throughout the region improve - and insisting he is not a racist.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-21 14:48:04</td><td>But in retrospect, it seems a tipping point in favor of Netanyahu occurred when artist Yair Garbuz took to the podium and railed against the "amulet kissers" who support Netanyahu.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-21 14:48:04</td><td>"Israel is split - between left and right, between Bibi and anti-Bibi, between aspirations for normalcy and aspirations for territory," Caspit wrote, using Netanyahu's nickname.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e0fzLYHeuKsvRjq1NJ6eyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-18T004343Z_640852806_GM1EB3I0MJG01_RTRMADP_3_ISRAEL-ELECTION.JPG'></td><td>2015-03-21 14:45:47</td><td><a href='http://news.yahoo.com/liberal-israelis-netanyahus-win-reality-check-115401998.html'>site</a></td><td><table><tr><td>But as the results trickled in on Wednesday, they showed Likud with a shocking lead that has all but guaranteed Netanyahu a third consecutive term.</td></tr><tr><td>Social media was full of embittered Israelis accusing Netanyahu's supporters of racism, and some vowed to stop donating charity to the underprivileged whom they perceived as being automatic supporters of the right.</td></tr><tr><td>Activists at the headquarters of V-15, an initiative that called to unseat Netanyahu, silently bundled dozens of banners on Thursday, and one activist asked a journalist to leave.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-21 14:46:02</td><td><a href='http://abcnews.go.com/International/wireStory/liberal-israelis-netanyahus-win-reality-check-29805756'>site</a></td><td>For Liberal Israelis, Netanyahu's Win Is a Reality Check</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-21 14:48:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15560450.html#storylink=rss'>site</a></td><td><table><tr><td>Netanyahu since has tried to contain the damage from his statements - saying he remains committed to Palestinian statehood if conditions throughout the region improve - and insisting he is not a racist.</td></tr><tr><td>But in retrospect, it seems a tipping point in favor of Netanyahu occurred when artist Yair Garbuz took to the podium and railed against the "amulet kissers" who support Netanyahu.</td></tr><tr><td>"Israel is split - between left and right, between Bibi and anti-Bibi, between aspirations for normalcy and aspirations for territory," Caspit wrote, using Netanyahu's nickname.</td></tr></table></td></tr>
 </table></body></html>

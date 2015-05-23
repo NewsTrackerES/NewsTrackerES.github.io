@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/m/0/8/image.related.articleLeadwide.620x349.1mjmfs.png/1428878963974.jpg'></td><td>2015-04-12 22:49:33</td><td>So what lucky 3rd grader won the Design the Hillary Clinton Campaign Logo contest?</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/m/0/8/image.related.articleLeadwide.620x349.1mjmfs.png/1428878963974.jpg'></td><td>2015-04-12 22:49:33</td><td>Social media reacts to Hillary Clinton's bid to become US president</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428882798333.jpg'></td><td>2015-04-12 22:49:33</td><td>Hillary Clinton's logo reminds me of the FedEx arrow.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428882798333.jpg'></td><td>2015-04-12 22:49:33</td><td>Hillary Clinton announces her campaign for president in a video posted to hillaryclinton.com on Sunday.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428882798333.jpg'></td><td>2015-04-12 22:49:33</td><td>Hillary Clinton's announcement that she will enter the 2016 race for the White House came in a two-minute video released in a social media blitz, in which she told the US public she wanted to be their "champion".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428882798333.jpg'></td><td>2015-04-12 22:49:33</td><td><a href='http://www.brisbanetimes.com.au/world/us-election/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150412-1mjmfs.html'>site</a></td><td><table><tr><td>Hillary Clinton's announcement that she will enter the 2016 race for the White House came in a two-minute video released in a social media blitz, in which she told the US public she wanted to be their "champion".</td></tr><tr><td>Hillary Clinton announces her campaign for president in a video posted to hillaryclinton.com on Sunday.</td></tr><tr><td>Hillary Clinton's logo reminds me of the FedEx arrow.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/m/0/8/image.related.articleLeadwide.620x349.1mjmfs.png/1428878963974.jpg'></td><td>2015-04-12 22:49:33</td><td><a href='http://www.brisbanetimes.com.au/world/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150412-1mjmfs.html'>site</a></td><td><table><tr><td>Social media reacts to Hillary Clinton's bid to become US president</td></tr><tr><td>So what lucky 3rd grader won the Design the Hillary Clinton Campaign Logo contest?</td></tr></table></td></tr>
 </table></body></html>

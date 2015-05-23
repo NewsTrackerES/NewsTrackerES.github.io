@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 13:52:05</td><td>Oliver pushed hard against Snowden, whom he described as "the most famous hero and/or traitor in recent American history," with a particular focus on Snowden's decision to leak unredacted documents.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td>Oliver eventually moved on to somewhat lighter fare, showing man-on-the street reactions by Americans who don't know who Snowden is and reacting to the news that the NSA is able to collect some of the naked selfies Americans send each other in a database.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td>"That is a problem," Snowden acknowledged.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td>He also confronted Snowden about the New York Times publishing information he provided that may have compromised an operation in Iraq.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td>The comedian asked Snowden if he had read every document he leaked and fired back when Snowden replied that he understands what he turned over.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-06 17:37:05</td><td>John Oliver interviews&#239;&#191;&#189;Edward Snowden, and real journalism breaks out</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 13:52:05</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article17497196.html#storylink=rss'>site</a></td><td>Oliver pushed hard against Snowden, whom he described as "the most famous hero and/or traitor in recent American history," with a particular focus on Snowden's decision to leak unredacted documents.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article17498507.html#storylink=rss'>site</a></td><td><table><tr><td>The comedian asked Snowden if he had read every document he leaked and fired back when Snowden replied that he understands what he turned over.</td></tr><tr><td>He also confronted Snowden about the New York Times publishing information he provided that may have compromised an operation in Iraq.</td></tr><tr><td>"That is a problem," Snowden acknowledged.</td></tr><tr><td>Oliver eventually moved on to somewhat lighter fare, showing man-on-the street reactions by Americans who don't know who Snowden is and reacting to the news that the NSA is able to collect some of the naked selfies Americans send each other in a database.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-06 17:37:05</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article17540168.html#storylink=rss'>site</a></td><td>John Oliver interviews&#239;&#191;&#189;Edward Snowden, and real journalism breaks out</td></tr>
 </table></body></html>

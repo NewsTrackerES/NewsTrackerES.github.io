@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:57:54</td><td>According to Netanyahu, the emerging agreement will "most likely leave Iran with underground facilities, the nuclear reactor in Arak, advanced centrifuges -- all those things that were just a few months ago rightly presented to us as not essential to a peaceful nuclear programme."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 18:57:54</td><td>"The agreement being formulated in Lausanne paves the way to that goal," Netanyahu said, referring to talks between Iran and world powers in the Swiss city on a framework deal which he opposes.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 18:57:54</td><td>Netanyahu said the "breakout time" for Iran to obtain fissile material for a bomb would not be "years" but rather "a year, possibly even much less than that," under the framework agreement.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:57:54</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3020133/Lausanne-deal-pave-way-nuclear-armed-Iran-Netanyahu.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>"The agreement being formulated in Lausanne paves the way to that goal," Netanyahu said, referring to talks between Iran and world powers in the Swiss city on a framework deal which he opposes.</td></tr><tr><td>According to Netanyahu, the emerging agreement will "most likely leave Iran with underground facilities, the nuclear reactor in Arak, advanced centrifuges -- all those things that were just a few months ago rightly presented to us as not essential to a peaceful nuclear programme."</td></tr><tr><td>Netanyahu said the "breakout time" for Iran to obtain fissile material for a bomb would not be "years" but rather "a year, possibly even much less than that," under the framework agreement.</td></tr></table></td></tr>
 </table></body></html>

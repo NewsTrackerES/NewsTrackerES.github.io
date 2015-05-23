@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 18:22:00</td><td>"We rejoice in this victory and we want al-Alam to be the launchpad for the liberation of Tikrit and Mosul," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-10 18:22:00</td><td>Shiite Iran's role and the prominence of Shiite militias has given rise to fears of possible sectarian cleansing should Tikrit - which is overwhelmingly Sunni - fall to the government troops.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 18:22:00</td><td><a href='http://www.dw.de/iraqi-troops-take-step-forward-in-bid-to-re-seize-tikrit/a-18306510?maca=en-rss-en-world-4025-rdf'>site</a></td><td><table><tr><td>"We rejoice in this victory and we want al-Alam to be the launchpad for the liberation of Tikrit and Mosul," he said.</td></tr><tr><td>Shiite Iran's role and the prominence of Shiite militias has given rise to fears of possible sectarian cleansing should Tikrit - which is overwhelmingly Sunni - fall to the government troops.</td></tr></table></td></tr>
 </table></body></html>

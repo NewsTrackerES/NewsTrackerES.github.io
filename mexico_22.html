@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/6611881/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F99%2F491bb256e123887aa464d387c27b5f%2Fmedia%3A5ef2cdefc5d44b03bdd874890af1de49MexicoTransplantVisa.JPEG'></td><td>2015-03-26 22:30:46</td><td>MEXICO CITY (AP) - A young Mexican man who is urgently trying to travel to the Mayo Clinic for a double-organ transplant has filed a third application for entry into the United States after twice being denied a visa.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/34/10/7717431/3/920x920.jpg'></td><td>2015-03-26 22:30:46</td><td>In this May 2, 2014 photo, Jose Chua Lopez, left, holds hands with his mother, Myra Lopez Martinez, during a news conference in Hermosillo, Mexico.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/34/10/7717431/3/920x920.jpg'></td><td>2015-03-26 22:30:46</td><td>Mexico double-transplant patient eyes US humanitarian entry</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 00:31:35</td><td>MEXICO CITY (AP) - The U.S. Department of Homeland Security gave a 90-day humanitarian pass to a 20-year-old Mexican man seeking a double heart and liver transplant, his mother said Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/34/10/7717431/3/920x920.jpg'></td><td>2015-03-26 22:30:46</td><td><a href='http://www.sfgate.com/news/world/article/US-denies-young-Mexican-visa-for-transplant-6159768.php'>site</a></td><td><table><tr><td>Mexico double-transplant patient eyes US humanitarian entry</td></tr><tr><td>In this May 2, 2014 photo, Jose Chua Lopez, left, holds hands with his mother, Myra Lopez Martinez, during a news conference in Hermosillo, Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/6611881/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F99%2F491bb256e123887aa464d387c27b5f%2Fmedia%3A5ef2cdefc5d44b03bdd874890af1de49MexicoTransplantVisa.JPEG'></td><td>2015-03-26 22:30:46</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/26/us-denies-young-mexican-visa-for-transplant-treatment-in-us'>site</a></td><td>MEXICO CITY (AP) - A young Mexican man who is urgently trying to travel to the Mayo Clinic for a double-organ transplant has filed a third application for entry into the United States after twice being denied a visa.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 00:31:35</td><td><a href='http://news.yahoo.com/mexico-double-transplant-patient-gets-us-humanitarian-pass-000722575.html'>site</a></td><td>MEXICO CITY (AP) - The U.S. Department of Homeland Security gave a 90-day humanitarian pass to a 20-year-old Mexican man seeking a double heart and liver transplant, his mother said Monday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5e_4NydwhIHqn17.ozZenQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/763966afe51fa115760f6a706700739d.jpg'></td><td>2015-05-18 15:59:34</td><td>"I've seen all kinds of crazy behavior," said Turturro, who won Cannes' best-actor prize in 1991 for "Barton Fink."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 16:39:19</td><td>John Turturro drew on three decades of experience in the movie business for his role as a disruptive, egomaniacal actor in Nanni Moretti's Cannes entry "My Mother."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 16:39:19</td><td>Moretti's tragicomedy, one of 19 competing for Cannes' Palme d'Or, centers on a director (Margherita Buy) whose latest project is coming unstuck even as her mother is dying.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 16:39:19</td><td>CANNES WATCH: John Turturro talks onset bad behavior</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5e_4NydwhIHqn17.ozZenQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/763966afe51fa115760f6a706700739d.jpg'></td><td>2015-05-18 15:59:34</td><td><a href='http://news.yahoo.com/cannes-watch-john-turturro-talks-onset-bad-behavior-155934015.html'>site</a></td><td>"I've seen all kinds of crazy behavior," said Turturro, who won Cannes' best-actor prize in 1991 for "Barton Fink."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 16:39:19</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21289353.html#storylink=rss'>site</a></td><td>CANNES WATCH: John Turturro talks onset bad behavior</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 16:39:19</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21289353.html#storylink=rss'>site</a></td><td><table><tr><td>John Turturro drew on three decades of experience in the movie business for his role as a disruptive, egomaniacal actor in Nanni Moretti's Cannes entry "My Mother."</td></tr><tr><td>Moretti's tragicomedy, one of 19 competing for Cannes' Palme d'Or, centers on a director (Margherita Buy) whose latest project is coming unstuck even as her mother is dying.</td></tr></table></td></tr>
 </table></body></html>

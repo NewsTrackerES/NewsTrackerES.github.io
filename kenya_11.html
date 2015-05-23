@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/02/article-doc-1i77v-6XUd3nu4SHSK2-532_634x476.jpg'></td><td>2015-04-02 18:03:00</td><td>A series of foreign travel warnings in response to the threat have crippled Kenya's economically important tourism industry.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/02/article-doc-1i77v-6XUd3nu4SHSK2-532_634x476.jpg'></td><td>2015-04-02 18:03:00</td><td>The university has several hundred students from different parts of Kenya.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/2wr_7P1sGsnd7eGpttxlEQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/theatlanticwire/The_Kenyan_School_Attack_in-c86e565704b055fff99a6e77932d80c7.cf.jpg'></td><td>2015-04-02 18:18:46</td><td>"Kenya is at war with Somalia," Rage said, referring to the thousands of Kenyan troops in Somalia as part of an African Union military mission.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/02/article-doc-1i77v-6XUd3nu4SHSK2-532_634x476.jpg'></td><td>2015-04-02 18:03:00</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3023424/At-70-Kenyan-students-killed-university-attack-minister.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The university has several hundred students from different parts of Kenya.</td></tr><tr><td>A series of foreign travel warnings in response to the threat have crippled Kenya's economically important tourism industry.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/2wr_7P1sGsnd7eGpttxlEQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/theatlanticwire/The_Kenyan_School_Attack_in-c86e565704b055fff99a6e77932d80c7.cf.jpg'></td><td>2015-04-02 18:18:46</td><td><a href='http://news.yahoo.com/least-70-kenyan-students-killed-university-attack-minister-161049460.html'>site</a></td><td>"Kenya is at war with Somalia," Rage said, referring to the thousands of Kenyan troops in Somalia as part of an African Union military mission.</td></tr>
 </table></body></html>

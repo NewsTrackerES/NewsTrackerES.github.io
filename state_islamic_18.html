@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td>Twitter co-founder Jack Dorsey threatened by Islamic State</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td>The Islamic State has declared a new target in its war on the West -- a co-founder of Twitter.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td>Twitter and other social media sites have been cracking down on Islamic State accounts since June, when a major offensive resulted in large swaths land falling into the militant group's hands.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td>The Islamic State is fighting to create an extremist state -- or caliphate -- across a wide area of Iraq and Syria.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td>The threat was posted in Arabic under a headline "Foundation for the conquest of Jerusalem for the Islamic State," and "Twitter a target for the caliphate."</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td>Twitter has routinely shut down Islamic State social media accounts, particularly those that threaten or link to beheadings and other atrocities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td><a href='http://www.smh.com.au/world/twitter-cofounder-jack-dorsey-threatened-by-islamic-state-20150303-13tjsb.html'>site</a></td><td><table><tr><td>Twitter has routinely shut down Islamic State social media accounts, particularly those that threaten or link to beheadings and other atrocities.</td></tr><tr><td>The threat was posted in Arabic under a headline "Foundation for the conquest of Jerusalem for the Islamic State," and "Twitter a target for the caliphate."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/i/1/k/h/image.related.articleLeadwide.620x349.13tjsb.png/1425349726219.jpg'></td><td>2015-03-03 01:17:09</td><td><a href='http://www.brisbanetimes.com.au/world/twitter-cofounder-jack-dorsey-threatened-by-islamic-state-20150303-13tjsb.html'>site</a></td><td><table><tr><td>Twitter co-founder Jack Dorsey threatened by Islamic State</td></tr><tr><td>The Islamic State has declared a new target in its war on the West -- a co-founder of Twitter.</td></tr><tr><td>The Islamic State is fighting to create an extremist state -- or caliphate -- across a wide area of Iraq and Syria.</td></tr><tr><td>Twitter and other social media sites have been cracking down on Islamic State accounts since June, when a major offensive resulted in large swaths land falling into the militant group's hands.</td></tr></table></td></tr>
 </table></body></html>

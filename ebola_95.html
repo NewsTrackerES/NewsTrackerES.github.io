@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:32:44</td><td>UN hails progress on Ebola as new weekly cases below 20</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 14:04:54</td><td>Nabarro said he was optimistic that Liberia would be declared Ebola-free on May 9, when it is due to reach the official World Health Organization (WHO) standard of 42 days without a new Ebola case.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 14:04:54</td><td>Nabarro said the share of new cases which have come into contact with previous identified Ebola victims - a key marker of how well health officials have isolated the epidemic - now exceeded 50 percent and was headed towards 75 percent.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-06 14:04:54</td><td>The U.N. mission for Ebola Emergency Response, established in September, is due to wind up at the end of July and Nabarro said its responsibilities would be handed over to other agencies of the United Nations.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-06 14:04:54</td><td>The WHO said in its latest update on Tuesday that the world's worst recorded Ebola outbreak - which erupted in remote southeastern Guinea in December 2013 - had killed a total of 10,980 people and infected more than 26,500.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:32:44</td><td><a href='http://www.reuters.com/article/2015/05/05/us-ebola-health-un-idUSKBN0NQ22R20150505?feedType=RSS&feedName=healthNews'>site</a></td><td>UN hails progress on Ebola as new weekly cases below 20</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 14:04:54</td><td><a href='http://www.nydailynews.com/life-style/health/20-new-cases-ebola-week-u-n-article-1.2212259'>site</a></td><td><table><tr><td>Nabarro said he was optimistic that Liberia would be declared Ebola-free on May 9, when it is due to reach the official World Health Organization (WHO) standard of 42 days without a new Ebola case.</td></tr><tr><td>The WHO said in its latest update on Tuesday that the world's worst recorded Ebola outbreak - which erupted in remote southeastern Guinea in December 2013 - had killed a total of 10,980 people and infected more than 26,500.</td></tr><tr><td>Nabarro said the share of new cases which have come into contact with previous identified Ebola victims - a key marker of how well health officials have isolated the epidemic - now exceeded 50 percent and was headed towards 75 percent.</td></tr><tr><td>The U.N. mission for Ebola Emergency Response, established in September, is due to wind up at the end of July and Nabarro said its responsibilities would be handed over to other agencies of the United Nations.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297458666742_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-02-17 18:42:43</td><td>AUSTIN, Texas - A man in his 50s was arrested for making threats on Tuesday to bomb an Islamic center in Austin and a restaurant specializing in Middle Eastern food, Austin police said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297458666742_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-02-17 18:42:43</td><td>On Monday in Houston, a homeless man was arrested and charged with setting a fire that destroyed a building at an Islamic institute in the city last week.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297458666742_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-02-17 18:42:43</td><td><a href='http://www.torontosun.com/2015/02/17/man-arrested-for-making-bomb-threat-at-islamic-centre-in-texas'>site</a></td><td><table><tr><td>AUSTIN, Texas - A man in his 50s was arrested for making threats on Tuesday to bomb an Islamic center in Austin and a restaurant specializing in Middle Eastern food, Austin police said.</td></tr><tr><td>On Monday in Houston, a homeless man was arrested and charged with setting a fire that destroyed a building at an Islamic institute in the city last week.</td></tr></table></td></tr>
 </table></body></html>

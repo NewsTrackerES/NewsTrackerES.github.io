@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ZPmh.qHVC331rz6HhK.GHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9513fa8ce0084d11740f6a7067000a73.jpg'></td><td>2015-04-21 13:52:58</td><td>NEW YORK (AP) - Toni Morrison has written 11 novels and won all the great prizes, but found herself struggling with her new book, "God Help the Child."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ZPmh.qHVC331rz6HhK.GHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9513fa8ce0084d11740f6a7067000a73.jpg'></td><td>2015-04-21 13:52:58</td><td>There are no stand-ins for Morrison in her novel, no one who lives even remotely like the world famous, 84-year-old Nobel laureate.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ZPmh.qHVC331rz6HhK.GHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9513fa8ce0084d11740f6a7067000a73.jpg'></td><td>2015-04-21 13:52:58</td><td>Writing is Morrison's path to outside of herself, but it's undertaken alone, in her imagination: The Civil War era in "Beloved," the 1920s in "Jazz," colonial times in "A Mercy."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ZPmh.qHVC331rz6HhK.GHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9513fa8ce0084d11740f6a7067000a73.jpg'></td><td>2015-04-21 13:52:58</td><td>"'I was pretty once,' she thought, 'real pretty, and I believed it was enough, " Morrison writes in the novel of Sweetness.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 13:55:12</td><td>Toni Morrison sets her new novel in an alien world: Today</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 13:55:12</td><td>Morrison believes her job as a writer is to upend conventional thinking, whether about race (a social construct, she calls it), or happiness.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 13:55:12</td><td>Romantic love or professional fulfillment is the ideal resolution for most stories; Morrison favors the "acquisition of knowledge."</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-21 13:55:12</td><td>Born in Lorain, Ohio, in 1931, Morrison has been a compulsive reader since childhood.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ZPmh.qHVC331rz6HhK.GHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9513fa8ce0084d11740f6a7067000a73.jpg'></td><td>2015-04-21 13:52:58</td><td><a href='http://news.yahoo.com/toni-morrison-sets-her-novel-alien-world-today-135258462.html'>site</a></td><td><table><tr><td>NEW YORK (AP) - Toni Morrison has written 11 novels and won all the great prizes, but found herself struggling with her new book, "God Help the Child."</td></tr><tr><td>There are no stand-ins for Morrison in her novel, no one who lives even remotely like the world famous, 84-year-old Nobel laureate.</td></tr><tr><td>"'I was pretty once,' she thought, 'real pretty, and I believed it was enough, " Morrison writes in the novel of Sweetness.</td></tr><tr><td>Writing is Morrison's path to outside of herself, but it's undertaken alone, in her imagination: The Civil War era in "Beloved," the 1920s in "Jazz," colonial times in "A Mercy."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 13:55:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11436396&ref=rss'>site</a></td><td><table><tr><td>Toni Morrison sets her new novel in an alien world: Today</td></tr><tr><td>Morrison believes her job as a writer is to upend conventional thinking, whether about race (a social construct, she calls it), or happiness.</td></tr><tr><td>Romantic love or professional fulfillment is the ideal resolution for most stories; Morrison favors the "acquisition of knowledge."</td></tr><tr><td>Born in Lorain, Ohio, in 1931, Morrison has been a compulsive reader since childhood.</td></tr></table></td></tr>
 </table></body></html>

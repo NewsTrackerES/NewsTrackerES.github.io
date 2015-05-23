@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:51:13</td><td>Insurgent groups including the Nusra Front took up arms against Islamic State early last year.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 14:51:13</td><td>An Islamic State news bulletin posted online said that one its members set off a car bomb in the Marea area.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 14:51:13</td><td>Islamic State bombs target Syria rivals, kill 31: monitors</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 15:01:58</td><td>Nusra Front said online that one of its leaders was killed in an Islamic State car bomb attack in the area and posted a picture of what appeared to be his body on a blanket.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-08 15:01:58</td><td>Islamic State, which has captured wide areas of Syria and Iraq, has frequently fought rival armed groups but in some cases has also coordinated with them, complicating the four-year insurgency against Syrian President Bashar al-Assad.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-08 15:01:58</td><td>Rebels say Islamic State halted its western advance last summer at Marea, which has become a battleground for rival forces.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:51:13</td><td><a href='http://www.reuters.com/article/2015/04/08/us-mideast-crisis-syria-idUSKBN0MZ1K720150408?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Islamic State bombs target Syria rivals, kill 31: monitors</td></tr><tr><td>An Islamic State news bulletin posted online said that one its members set off a car bomb in the Marea area.</td></tr><tr><td>Insurgent groups including the Nusra Front took up arms against Islamic State early last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 15:01:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3030549/Islamic-State-bombs-target-Syria-rivals-kill-31-monitors.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Islamic State, which has captured wide areas of Syria and Iraq, has frequently fought rival armed groups but in some cases has also coordinated with them, complicating the four-year insurgency against Syrian President Bashar al-Assad.</td></tr><tr><td>Rebels say Islamic State halted its western advance last summer at Marea, which has become a battleground for rival forces.</td></tr><tr><td>Nusra Front said online that one of its leaders was killed in an Islamic State car bomb attack in the area and posted a picture of what appeared to be his body on a blanket.</td></tr></table></td></tr>
 </table></body></html>

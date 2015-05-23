@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-30 06:20:48</td><td>Jordan's involvement in the anti-Islamic State coalition drew worldwide attention earlier this year, when it stepped up airstrikes against targets in Syria after the militants burned to death a Jordanian fighter pilot in a cage.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-30 06:20:48</td><td>Petra's slump is part of a sharp decline in tourism as Jordan's economy pays a price for regional turbulence and its high-profile role in the U.S.-led battle against Islamic State militants next door.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-30 06:20:48</td><td>But a quick recovery appears doubtful as neighboring Syria and Iraq sink deeper into violence and Islamic State militants continue to control large areas of both countries.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-30 06:20:48</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article16882637.html#storylink=rss'>site</a></td><td><table><tr><td>Petra's slump is part of a sharp decline in tourism as Jordan's economy pays a price for regional turbulence and its high-profile role in the U.S.-led battle against Islamic State militants next door.</td></tr><tr><td>Jordan's involvement in the anti-Islamic State coalition drew worldwide attention earlier this year, when it stepped up airstrikes against targets in Syria after the militants burned to death a Jordanian fighter pilot in a cage.</td></tr><tr><td>But a quick recovery appears doubtful as neighboring Syria and Iraq sink deeper into violence and Islamic State militants continue to control large areas of both countries.</td></tr></table></td></tr>
 </table></body></html>

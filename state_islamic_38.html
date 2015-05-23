@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/0/u/g/6/image.related.articleLeadwide.620x349.140t2w.png/1426044195502.jpg'></td><td>2015-03-11 03:23:26</td><td>London: A 13-year-old French boy has become the youngest known foreigner to die fighting for the so-called Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/0/u/g/6/image.related.articleLeadwide.620x349.140t2w.png/1426044195502.jpg'></td><td>2015-03-11 03:23:26</td><td>A Twitter picture of French boy Abu Bakr al-Faransi, 13, who is reported to be the youngest foreign fighter to die for Islamic State in Syria.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/0/u/g/6/image.related.articleLeadwide.620x349.140t2w.png/1426044195502.jpg'></td><td>2015-03-11 03:23:26</td><td><a href='http://www.brisbanetimes.com.au/world/french-boy-13-youngest-foreigner-to-die-for-islamic-state-20150311-140t2w.html'>site</a></td><td><table><tr><td>A Twitter picture of French boy Abu Bakr al-Faransi, 13, who is reported to be the youngest foreign fighter to die for Islamic State in Syria.</td></tr><tr><td>London: A 13-year-old French boy has become the youngest known foreigner to die fighting for the so-called Islamic State.</td></tr></table></td></tr>
 </table></body></html>

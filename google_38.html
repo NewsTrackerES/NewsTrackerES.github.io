@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 22:32:11</td><td>By some estimates, Google processes about nine out of 10 search requests in parts of Europe - even more than in the U.S., where it commands about two-thirds of the market.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>An antitrust case against Google would be Europe's biggest since regulators wrangled with Microsoft.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>Reports: Google facing antitrust showdown in Europe</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>The push to crack down on Google is being led by a group of publishers and technology companies that includes Microsoft Corp., which once tangled with Europe's antitrust regulators over the way it bundled products with its Windows operating system.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>Europe's looming showdown with Google also could intensify scrutiny of a similar U.S. antitrust investigation that the Federal Trade Commission settled in 2013 without finding any significant misbehavior.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>Google has previously offered to make some concessions in an attempt to settle Europe's antitrust probe, which began nearly five years ago, only to have the negotiations unravel.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>European regulators are poised to file charges alleging Google abused its dominance in Internet search to thwart competition and innovation, according to reports published Tuesday.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td>European regulators, like their U.S. peers, have been looking into complaints that Google improperly highlights its own digital maps and other services at the expense of its rivals.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-04-15 02:35:23</td><td>Kent Walker, Google's general counsel, wrote that a "statement of objections" to Google's business practices will be released Wednesday by Europe's top antitrust regulator, Margrethe Vestager.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-14 22:32:11</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/14/report-google-to-face-antitrust-charges-in-europe'>site</a></td><td><table><tr><td>Reports: Google facing antitrust showdown in Europe</td></tr><tr><td>European regulators are poised to file charges alleging Google abused its dominance in Internet search to thwart competition and innovation, according to reports published Tuesday.</td></tr><tr><td>Europe's looming showdown with Google also could intensify scrutiny of a similar U.S. antitrust investigation that the Federal Trade Commission settled in 2013 without finding any significant misbehavior.</td></tr><tr><td>Google has previously offered to make some concessions in an attempt to settle Europe's antitrust probe, which began nearly five years ago, only to have the negotiations unravel.</td></tr><tr><td>European regulators, like their U.S. peers, have been looking into complaints that Google improperly highlights its own digital maps and other services at the expense of its rivals.</td></tr><tr><td>The push to crack down on Google is being led by a group of publishers and technology companies that includes Microsoft Corp., which once tangled with Europe's antitrust regulators over the way it bundled products with its Windows operating system.</td></tr><tr><td>An antitrust case against Google would be Europe's biggest since regulators wrangled with Microsoft.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 22:32:11</td><td><a href='http://www.sfgate.com/business/technology/article/Report-Google-to-face-antitrust-charges-in-Europe-6199661.php'>site</a></td><td>By some estimates, Google processes about nine out of 10 search requests in parts of Europe - even more than in the U.S., where it commands about two-thirds of the market.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-15 02:35:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Report-Google-to-face-antitrust-charges-in-Europe-6199661.php'>site</a></td><td>Kent Walker, Google's general counsel, wrote that a "statement of objections" to Google's business practices will be released Wednesday by Europe's top antitrust regulator, Margrethe Vestager.</td></tr>
 </table></body></html>

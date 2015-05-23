@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/42/21/8004703/5/920x920.jpg'></td><td>2015-05-18 21:36:12</td><td>In 2012, a jury decided that Samsung had violated a series of Apple patents and needed to pay more than $1 billion in damages, an amount that was recalculated to $930 million by another jury in a separate trial in 2013.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/36/42/21/8004703/5/920x920.jpg'></td><td>2015-05-18 21:36:12</td><td>An appeals court Monday upheld the bulk of Apple's patent victory against Samsung Electronics in 2012, but overturned part of the decision and said that a lower court should reduce the total amount that Samsung would have to pay.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/42/21/8004703/5/920x920.jpg'></td><td>2015-05-18 21:36:12</td><td><a href='http://www.sfgate.com/business/article/Appeals-court-upholds-Apple-s-patent-victory-6271340.php'>site</a></td><td><table><tr><td>An appeals court Monday upheld the bulk of Apple's patent victory against Samsung Electronics in 2012, but overturned part of the decision and said that a lower court should reduce the total amount that Samsung would have to pay.</td></tr><tr><td>In 2012, a jury decided that Samsung had violated a series of Apple patents and needed to pay more than $1 billion in damages, an amount that was recalculated to $930 million by another jury in a separate trial in 2013.</td></tr></table></td></tr>
 </table></body></html>

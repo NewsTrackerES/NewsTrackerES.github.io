@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,8 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 13:50:05</td><td>Microsoft and Yahoo amend search deal</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td>The 10-year search partnership, crafted by former Microsoft CEO Steve Ballmer and former Yahoo CEO Carol Bartz, allowed the companies to amend or terminate it after five years.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td>Yahoo and Microsoft shares were down marginally in late-morning trading.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td>Microsoft Corp and Yahoo Inc amended a 2009 search partnership, giving Yahoo more control over how search results are displayed on desktops and mobile devices.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td>Yahoo was responsible for sales for Bing search ads.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td>Originally, the deal also included a revenue-sharing agreement where Microsoft paid Yahoo a percentage of Bing ads revenue delivered from Yahoo searches.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 15:30:22</td><td>Earlier, Microsoft controlled how Bing displayed search results on Yahoo websites accessed on PCs.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-16 15:30:22</td><td>Microsoft and Yahoo plan to transition sales responsibilities starting this summer.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297690506417_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-21 12:55:12</td><td>Yahoo Inc and Microsoft Corp added a termination clause to the terms of their search partnership agreement under which either company can end the deal on or after Oct. 1, 2015, according to a regulatory filing by Yahoo on Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 13:50:05</td><td><a href='http://www.reuters.com/article/2015/04/16/us-microsoft-yahoo-idUSKBN0N71MK20150416?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft and Yahoo amend search deal</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td><a href='http://www.torontosun.com/2015/04/16/microsoft-yahoo-amend-search-deal'>site</a></td><td><table><tr><td>Microsoft Corp and Yahoo Inc amended a 2009 search partnership, giving Yahoo more control over how search results are displayed on desktops and mobile devices.</td></tr><tr><td>The 10-year search partnership, crafted by former Microsoft CEO Steve Ballmer and former Yahoo CEO Carol Bartz, allowed the companies to amend or terminate it after five years.</td></tr><tr><td>Yahoo was responsible for sales for Bing search ads.</td></tr><tr><td>Originally, the deal also included a revenue-sharing agreement where Microsoft paid Yahoo a percentage of Bing ads revenue delivered from Yahoo searches.</td></tr><tr><td>Yahoo and Microsoft shares were down marginally in late-morning trading.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:30:22</td><td><a href='http://technology.canoe.ca/News/2015/04/16/22347756.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Earlier, Microsoft controlled how Bing displayed search results on Yahoo websites accessed on PCs.</td></tr><tr><td>Microsoft and Yahoo plan to transition sales responsibilities starting this summer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297690506417_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-21 12:55:12</td><td><a href='http://www.torontosun.com/2015/04/21/yahoo-microsoft-add-termination-clause-in-search-deal-filing'>site</a></td><td>Yahoo Inc and Microsoft Corp added a termination clause to the terms of their search partnership agreement under which either company can end the deal on or after Oct. 1, 2015, according to a regulatory filing by Yahoo on Monday.</td></tr>
 </table></body></html>

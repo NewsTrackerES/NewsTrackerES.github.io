@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,12 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:33:35</td><td>The activity came as Mexico celebrated the May 1 holiday and the federal government announced the implementation of "Operation Jalisco" to improve the state's security without providing further details.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 17:33:35</td><td>GUADALAJARA, Mexico (AP) - Authorities in western Mexico are asking residents to stay at home as they scramble to extinguish burning vehicles blocking roads in various parts of Guadalajara.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 17:40:26</td><td>Suspected 'narco blockades' close roads in Guadalajara, Mexico with burning vehicles</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 20:02:30</td><td>Twelve others - 10 soldiers and two federal police officers - were also injured and three soldiers remained missing, according to a statement from Mexico's defense ministry.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-01 21:51:15</td><td>7 dead in Mexico amid violence during anti-cartel operation</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/CEOZladGO6lrYPF6eOYnaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a5d63af47d264313750f6a7067004e00.jpg'></td><td>2015-05-01 21:51:29</td><td>Associated Press writer Elizabeth Rivera reported this story in Guadalajara and Christopher Sherman reported from Mexico City.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-01 21:55:28</td><td>State police stand next to a charred passenger bus, that was extinguished by firefighters in Guadalajara, Mexico, Friday, May 1, 2015.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-05-01 23:33:41</td><td>Alejandro Hope, a former official with Mexico's intelligence service, said the violent response to the government offensive showed the cartel is cohesive and capable of reacting to attacks.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://ww2.hdnux.com/photos/36/13/07/7909829/5/square_gallery_thumb.jpg'></td><td>2015-05-02 01:44:04</td><td>A policeman tries to control traffic next to a torched dump truck that was extinguished by firefighters, in Guadalajara, Mexico, Friday, May 1, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 17:33:35</td><td><a href='http://news.yahoo.com/burning-vehicles-block-roads-guadalajara-mexico-173335947.html'>site</a></td><td><table><tr><td>GUADALAJARA, Mexico (AP) - Authorities in western Mexico are asking residents to stay at home as they scramble to extinguish burning vehicles blocking roads in various parts of Guadalajara.</td></tr><tr><td>The activity came as Mexico celebrated the May 1 holiday and the federal government announced the implementation of "Operation Jalisco" to improve the state's security without providing further details.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 17:40:26</td><td><a href='http://www.startribune.com/world/302187781.html'>site</a></td><td>Suspected 'narco blockades' close roads in Guadalajara, Mexico with burning vehicles</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 20:02:30</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3064541/Burning-vehicles-block-roads-Guadalajara-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Twelve others - 10 soldiers and two federal police officers - were also injured and three soldiers remained missing, according to a statement from Mexico's defense ministry.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-01 21:51:15</td><td><a href='http://www.daytondailynews.com/ap/ap/international/7-dead-in-mexico-amid-violence-during-anti-cartel-/nk7Rn/'>site</a></td><td>7 dead in Mexico amid violence during anti-cartel operation</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/CEOZladGO6lrYPF6eOYnaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a5d63af47d264313750f6a7067004e00.jpg'></td><td>2015-05-01 21:51:29</td><td><a href='http://news.yahoo.com/burning-vehicles-block-roads-guadalajara-mexico-173335947.html'>site</a></td><td>Associated Press writer Elizabeth Rivera reported this story in Guadalajara and Christopher Sherman reported from Mexico City.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-01 21:55:28</td><td><a href='http://www.startribune.com/world/302187781.html'>site</a></td><td>State police stand next to a charred passenger bus, that was extinguished by firefighters in Guadalajara, Mexico, Friday, May 1, 2015.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-01 23:33:41</td><td><a href='http://abcnews.go.com/International/wireStory/burning-vehicles-block-roads-guadalajara-mexico-30736145'>site</a></td><td>Alejandro Hope, a former official with Mexico's intelligence service, said the violent response to the government offensive showed the cartel is cohesive and capable of reacting to attacks.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww2.hdnux.com/photos/36/13/07/7909829/5/square_gallery_thumb.jpg'></td><td>2015-05-02 01:44:04</td><td><a href='http://www.sfgate.com/news/crime/article/Burning-vehicles-block-roads-in-Guadalajara-6236303.php'>site</a></td><td>A policeman tries to control traffic next to a torched dump truck that was extinguished by firefighters, in Guadalajara, Mexico, Friday, May 1, 2015.</td></tr>
 </table></body></html>

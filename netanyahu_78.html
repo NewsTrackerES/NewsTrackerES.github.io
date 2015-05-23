@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td>WASHINGTON - When it comes to relations with President Barack Obama, Israeli Prime Minister Benjamin Netanyahu has been - elevated is not quite the right word - placed in rare company.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td>The vibe between Netanyahu and Obama has never been one of close friends.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td>So at least with Netanyahu, Obama kept the relationship description at "very businesslike."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td>Relations have cooled further since Netanyahu has been vocal in his criticism of the nuclear talks with Iran and since he declared that a Palestinian state would not be created as long as he was prime minister.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td>That appears to put Netanyahu on a par with Russian President Vladimir Putin.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td><a href='http://www.startribune.com/politics/297451211.html'>site</a></td><td><table><tr><td>WASHINGTON - When it comes to relations with President Barack Obama, Israeli Prime Minister Benjamin Netanyahu has been - elevated is not quite the right word - placed in rare company.</td></tr><tr><td>That appears to put Netanyahu on a par with Russian President Vladimir Putin.</td></tr><tr><td>The vibe between Netanyahu and Obama has never been one of close friends.</td></tr><tr><td>Relations have cooled further since Netanyahu has been vocal in his criticism of the nuclear talks with Iran and since he declared that a Palestinian state would not be created as long as he was prime minister.</td></tr><tr><td>So at least with Netanyahu, Obama kept the relationship description at "very businesslike."</td></tr></table></td></tr>
 </table></body></html>

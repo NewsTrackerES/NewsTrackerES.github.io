@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 04:40:24</td><td>A court in southern Nepal has sentenced a man to 35 years in prison for the rape and murder of a 7-year-old girl, officials said Wednesday, in a case that sparked outrage in the Himalayan nation.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 04:40:24</td><td>There are conflicting data on sexual crimes in Nepal, but rights groups say the number of rape cases in the country has increased in recent years.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-18 04:40:24</td><td>Nepal does not have capital punishment.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 04:40:24</td><td>The sentences are the maximum allowed for those offenses in Nepal.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-18 04:40:32</td><td>Menuka Thapa of Raksha Nepal, an organization that supports sexually exploited girls in Nepal, said people are also more educated now and more cases are being reported.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 04:40:24</td><td><a href='http://www.sfgate.com/news/crime/article/Nepal-jails-man-for-35-years-for-rape-murder-of-6141347.php'>site</a></td><td><table><tr><td>A court in southern Nepal has sentenced a man to 35 years in prison for the rape and murder of a 7-year-old girl, officials said Wednesday, in a case that sparked outrage in the Himalayan nation.</td></tr><tr><td>The sentences are the maximum allowed for those offenses in Nepal.</td></tr><tr><td>Nepal does not have capital punishment.</td></tr><tr><td>There are conflicting data on sexual crimes in Nepal, but rights groups say the number of rape cases in the country has increased in recent years.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-18 04:40:32</td><td><a href='http://news.yahoo.com/nepal-jails-man-35-years-rape-murder-7-044032229.html'>site</a></td><td>Menuka Thapa of Raksha Nepal, an organization that supports sexually exploited girls in Nepal, said people are also more educated now and more cases are being reported.</td></tr>
 </table></body></html>

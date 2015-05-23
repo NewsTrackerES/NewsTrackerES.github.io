@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 08:00:53</td><td>Nepal also pledged recently to improve weather forecasting, security and rescue efforts, and has cut climbing fees this year to $11,000 per climber from $25,000.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 08:00:53</td><td>The head of Nepal's tourism department, Tulasi Gautam, says the government is extending last year's permits without charging new fees.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 08:01:14</td><td>Nepal has cleared more than 300 mountaineers to climb Mount Everest after they had to abandon last year's efforts when an ice avalanche killed 16 guides in the mountain's deadliest disaster, an official said Friday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 08:00:53</td><td><a href='http://www.foxnews.com/world/2015/03/20/nepal-to-give-new-everest-climbing-permits-to-hundreds-forced-to-quit-after/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>The head of Nepal's tourism department, Tulasi Gautam, says the government is extending last year's permits without charging new fees.</td></tr><tr><td>Nepal also pledged recently to improve weather forecasting, security and rescue efforts, and has cut climbing fees this year to $11,000 per climber from $25,000.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 08:01:14</td><td><a href='http://abcnews.go.com/International/wireStory/everest-climbers-forced-quit-year-permits-29773760'>site</a></td><td>Nepal has cleared more than 300 mountaineers to climb Mount Everest after they had to abandon last year's efforts when an ice avalanche killed 16 guides in the mountain's deadliest disaster, an official said Friday.</td></tr>
 </table></body></html>

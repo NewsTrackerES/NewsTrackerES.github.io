@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,9 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://p1cdn02.thewrap.com/images/2015/04/Dan-Fredinburg-Instagram-.jpg'></td><td>2015-04-25 20:58:09</td><td>Google executive Dan Fredinburg was killed during an avalanche on Mount Everest early Saturday morning.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/GTY_sophia_bush_dan_fredinburg_jt_150425_4x3_992.jpg'></td><td>2015-04-25 22:30:43</td><td>Fredinburg's sister Megan wrote on his Instagram that the Google executive "suffered from a major head injury and didn't make it."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5kbXc0uUGJM6Un.Ripg5sQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/USWeekly/1429998923_dan-fredinburg-dies-in-mt.-everest_1.jpg.cf.jpg'></td><td>2015-04-25 23:25:15</td><td>Fredinburg, a Google veteran, was head of privacy at Google X, a research division at the Mountain View, California-based company.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5kbXc0uUGJM6Un.Ripg5sQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/USWeekly/1429998923_dan-fredinburg-dies-in-mt.-everest_1.jpg.cf.jpg'></td><td>2015-04-25 23:25:15</td><td>Fredinburg was climbing the world's tallest peak with three other Google employees when the avalanche struck.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150426001125877994-original_0.jpg?itok=d3xFUPtZ'></td><td>2015-04-26 00:02:27</td><td>Quake triggered avalanche kills Google engineer</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-26 00:02:28</td><td>April 25 (Reuters) - Dan Fredinburg, a Google Inc executive based in California, was among those killed on Saturday in an avalanche on Mount Everest caused by a devastating earthquake in Nepal, the company said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://p1cdn02.thewrap.com/images/2015/04/Dan-Fredinburg-Instagram-.jpg'></td><td>2015-04-25 20:58:09</td><td><a href='http://www.thewrap.com/google-executive-dan-fredinburg-killed-in-avalanche-on-mount-everest/'>site</a></td><td>Google executive Dan Fredinburg was killed during an avalanche on Mount Everest early Saturday morning.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/GTY_sophia_bush_dan_fredinburg_jt_150425_4x3_992.jpg'></td><td>2015-04-25 22:30:43</td><td><a href='http://abcnews.go.com/International/google-executive-daniel-fredinburg-killed-mt-everest-avalanche/story?id=30583825'>site</a></td><td>Fredinburg's sister Megan wrote on his Instagram that the Google executive "suffered from a major head injury and didn't make it."</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5kbXc0uUGJM6Un.Ripg5sQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/USWeekly/1429998923_dan-fredinburg-dies-in-mt.-everest_1.jpg.cf.jpg'></td><td>2015-04-25 23:25:15</td><td><a href='http://news.yahoo.com/google-executive-killed-mount-everest-avalanche-quake-232515765.html'>site</a></td><td><table><tr><td>Fredinburg was climbing the world's tallest peak with three other Google employees when the avalanche struck.</td></tr><tr><td>Fredinburg, a Google veteran, was head of privacy at Google X, a research division at the Mountain View, California-based company.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/20150426001125877994-original_0.jpg?itok=d3xFUPtZ'></td><td>2015-04-26 00:02:27</td><td><a href='http://www.sbs.com.au/news/article/2015/04/26/quake-triggered-avalanche-kills-google-engineer'>site</a></td><td>Quake triggered avalanche kills Google engineer</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-26 00:02:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3055708/Google-executive-killed-Mount-Everest-avalanche-quake.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>April 25 (Reuters) - Dan Fredinburg, a Google Inc executive based in California, was among those killed on Saturday in an avalanche on Mount Everest caused by a devastating earthquake in Nepal, the company said.</td></tr>
 </table></body></html>

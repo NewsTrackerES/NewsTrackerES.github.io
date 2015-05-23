@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/24/16/7685022/11/square_gallery_thumb.jpg'></td><td>2015-03-20 04:24:46</td><td>Internal emails and documents suggest the U.N. health agency was afraid of provoking conflict with the Ebola-stricken countries and wary that a declaration could interfere with the economy and the Muslim pilgrimage to Mecca.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/24/16/7685022/11/square_gallery_thumb.jpg'></td><td>2015-03-20 04:24:46</td><td>An Ebola-infected WHO consultant in Sierra Leone violated WHO health protocols, creating a rift with Doctors Without Borders that was only resolved when WHO was thrown out of a shared hotel.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/24/16/7685022/11/square_gallery_thumb.jpg'></td><td>2015-03-20 04:24:46</td><td>5 key findings from AP's story on WHO and the Ebola outbreak</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-03-20 12:14:14</td><td>4, 2014 file photo, people watch as a health worker, right, sprays a man suspected of dying from Ebola with disinfectant chemicals in Monrovia, Liberia.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-287oz-6YRqVhDRGHSK2-260_634x422.jpg'></td><td>2015-05-11 16:02:33</td><td>The experts stressed that it took WHO "until August or September 2014 to recognise that Ebola transmission would be brought under control only when surveillance, community mobilisation and the delivery of appropriate health care to affected communities were all put in place simultaneously."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/24/16/7685022/11/square_gallery_thumb.jpg'></td><td>2015-03-20 04:24:46</td><td><a href='http://www.sfgate.com/news/medical/article/5-key-findings-from-AP-s-story-on-WHO-and-the-6146808.php'>site</a></td><td><table><tr><td>5 key findings from AP's story on WHO and the Ebola outbreak</td></tr><tr><td>Internal emails and documents suggest the U.N. health agency was afraid of provoking conflict with the Ebola-stricken countries and wary that a declaration could interfere with the economy and the Muslim pilgrimage to Mecca.</td></tr><tr><td>An Ebola-infected WHO consultant in Sierra Leone violated WHO health protocols, creating a rift with Doctors Without Borders that was only resolved when WHO was thrown out of a shared hotel.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-03-20 12:14:14</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3003596/5-key-findings-APs-story-WHO-Ebola-outbreak.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>4, 2014 file photo, people watch as a health worker, right, sprays a man suspected of dying from Ebola with disinfectant chemicals in Monrovia, Liberia.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-287oz-6YRqVhDRGHSK2-260_634x422.jpg'></td><td>2015-05-11 16:02:33</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3076604/Experts-denounce-WHOs-slow-Ebola-response.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The experts stressed that it took WHO "until August or September 2014 to recognise that Ebola transmission would be brought under control only when surveillance, community mobilisation and the delivery of appropriate health care to affected communities were all put in place simultaneously."</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 12:10:51</td><td>French law-enforcement authorities say they don't know of any specific threat to Cannes, but they regard the festival - a magnet for the world's media - as a potential target.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 12:10:51</td><td>"It seems to be a magnet for all the potential criminals from the south of France," said film publicist Charles McDonald, a longtime Cannes-goer.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 12:10:51</td><td>"It's not a subject we want to talk about," said festival chief Thierry Fremaux, sitting on a sun-baked terrace overlooking Cannes' yacht-filled harbor.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 12:10:51</td><td>In February, a knifeman attacked three soldiers outside a Jewish community center in the southern city of Nice, about 20 miles (32 kilometers) miles from Cannes.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-13 12:10:51</td><td>CANNES, France (AP) - Gaudy, glamorous Cannes is a bubble inside a ring of steel.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 12:10:51</td><td>"Since Sept. 11 - since always - Cannes is a place which is very well protected," he added.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-13 12:10:51</td><td>The Croisette, Cannes' beachfront main drag, is lined with upscale boutiques: Prada, Bulgari, Hermes, Gucci.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-05-13 12:10:51</td><td>Behind the glitz, Cannes casts a tight security net</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 12:10:51</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/13/behind-the-glitz-cannes-casts-a-tight-security-net'>site</a></td><td><table><tr><td>Behind the glitz, Cannes casts a tight security net</td></tr><tr><td>CANNES, France (AP) - Gaudy, glamorous Cannes is a bubble inside a ring of steel.</td></tr><tr><td>"It's not a subject we want to talk about," said festival chief Thierry Fremaux, sitting on a sun-baked terrace overlooking Cannes' yacht-filled harbor.</td></tr><tr><td>"Since Sept. 11 - since always - Cannes is a place which is very well protected," he added.</td></tr><tr><td>In February, a knifeman attacked three soldiers outside a Jewish community center in the southern city of Nice, about 20 miles (32 kilometers) miles from Cannes.</td></tr><tr><td>French law-enforcement authorities say they don't know of any specific threat to Cannes, but they regard the festival - a magnet for the world's media - as a potential target.</td></tr><tr><td>"It seems to be a magnet for all the potential criminals from the south of France," said film publicist Charles McDonald, a longtime Cannes-goer.</td></tr><tr><td>The Croisette, Cannes' beachfront main drag, is lined with upscale boutiques: Prada, Bulgari, Hermes, Gucci.</td></tr></table></td></tr>
 </table></body></html>

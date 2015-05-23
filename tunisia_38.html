@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 21:31:23</td><td>Tunisia finds weapons, arrests jihadist with explosive belt</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 21:31:23</td><td>Last month, Tunisia seized two large arms caches, including Kalashnikovs, rockets and landmines, in the southern city of Ben Guerdan near the Libyan border.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:01:27</td><td>Tunisia has launched a campaign against hardline Islamist groups who emerged after a 2011 uprising against autocrat Zine El-Abidine Ben Ali that put the North African country on track to democracy.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 21:31:23</td><td><a href='http://www.reuters.com/article/2015/04/16/us-tuniisa-arms-idUSKBN0N72Q720150416?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Tunisia finds weapons, arrests jihadist with explosive belt</td></tr><tr><td>Last month, Tunisia seized two large arms caches, including Kalashnikovs, rockets and landmines, in the southern city of Ben Guerdan near the Libyan border.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:01:27</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3042666/Tunisia-finds-weapons-arrests-jihadist-explosive-belt.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tunisia has launched a campaign against hardline Islamist groups who emerged after a 2011 uprising against autocrat Zine El-Abidine Ben Ali that put the North African country on track to democracy.</td></tr>
 </table></body></html>

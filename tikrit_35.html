@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,6 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>If Sunnis dislike what they see in Tikrit, they may not back the government's efforts against Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>After Iraqi forces take Tikrit, a wave of looting and lynching</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>Sunni lawmakers who visited Tikrit complained that events have spun out of control since the security forces and militias retook the city.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>"I believe this happened on purpose to disrupt the government's achievement in Tikrit," Samarrai said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>Now, the looting and violence in Tikrit threaten to tarnish Abadi's victory.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>Parliamentarian Mutashar al-Samarrai credited the government with orchestrating a smooth entrance into Tikrit.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>In particular, the militias wanted revenge for Islamic State's killing in June of hundreds of Iraqi soldiers captured from Camp Speicher, a base near Tikrit.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td>On Wednesday, as Tikrit fell, militiamen were racing to stencil their names on houses in order to take credit for the victory.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/fp7AcQJ7VzL_h3PpuWPXVg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-03T203253Z_1_LYNXMPEB320L3_RTROPTP_2_MIDEAST-CRISIS-IRAQ-TIKRIT.JPG'></td><td>2015-04-03 22:05:24</td><td>(Reported by Reuters correspondents in Tikrit whose names have been withheld for security reasons, and by Ned Parker in Baghdad. Written by Ned Parker. Edited by Michael Williams.)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.pictures.reuters.com/Doc/RTR/Media/TR3_UNWATERMARKED/0/8/6/2/RTR4VRMI.jpg'></td><td>2015-04-03 20:32:53</td><td><a href='http://www.reuters.com/article/2015/04/03/us-mideast-crisis-iraq-tikrit-special-re-idUSKBN0MU1DP20150403?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>After Iraqi forces take Tikrit, a wave of looting and lynching</td></tr><tr><td>Now, the looting and violence in Tikrit threaten to tarnish Abadi's victory.</td></tr><tr><td>If Sunnis dislike what they see in Tikrit, they may not back the government's efforts against Islamic State.</td></tr><tr><td>Sunni lawmakers who visited Tikrit complained that events have spun out of control since the security forces and militias retook the city.</td></tr><tr><td>Parliamentarian Mutashar al-Samarrai credited the government with orchestrating a smooth entrance into Tikrit.</td></tr><tr><td>"I believe this happened on purpose to disrupt the government's achievement in Tikrit," Samarrai said.</td></tr><tr><td>In particular, the militias wanted revenge for Islamic State's killing in June of hundreds of Iraqi soldiers captured from Camp Speicher, a base near Tikrit.</td></tr><tr><td>On Wednesday, as Tikrit fell, militiamen were racing to stencil their names on houses in order to take credit for the victory.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/fp7AcQJ7VzL_h3PpuWPXVg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-03T203253Z_1_LYNXMPEB320L3_RTROPTP_2_MIDEAST-CRISIS-IRAQ-TIKRIT.JPG'></td><td>2015-04-03 22:05:24</td><td><a href='http://news.yahoo.com/special-report-iraqi-forces-tikrit-wave-looting-lynching-194001651.html'>site</a></td><td>(Reported by Reuters correspondents in Tikrit whose names have been withheld for security reasons, and by Ned Parker in Baghdad. Written by Ned Parker. Edited by Michael Williams.)</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:37:54</td><td>The paper also reports that the CIA's Pakistan drone strike program was initially exempted from the "imminent threat" requirement until the end of U.S. and NATO combat operations in Afghanistan.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 15:37:54</td><td>If the "imminent threat" requirement had been extended to Pakistan, the Journal reports, the CIA would have had to carry out more surveillance of the suspected militants, possibly preventing the fatal Jan. 15 mission from being launched.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 15:37:54</td><td>The CIA conducts drone strikes in Pakistan as well as in Yemen, where it works alongside the military.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 15:37:54</td><td>Drone strikes carried out by the CIA fall into two categories.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:37:54</td><td><a href='http://www.foxnews.com/politics/2015/04/27/obama-reportedly-exempted-pakistan-missions-from-tougher-drone-strike-rules-in/'>site</a></td><td><table><tr><td>The CIA conducts drone strikes in Pakistan as well as in Yemen, where it works alongside the military.</td></tr><tr><td>Drone strikes carried out by the CIA fall into two categories.</td></tr><tr><td>The paper also reports that the CIA's Pakistan drone strike program was initially exempted from the "imminent threat" requirement until the end of U.S. and NATO combat operations in Afghanistan.</td></tr><tr><td>If the "imminent threat" requirement had been extended to Pakistan, the Journal reports, the CIA would have had to carry out more surveillance of the suspected militants, possibly preventing the fatal Jan. 15 mission from being launched.</td></tr></table></td></tr>
 </table></body></html>

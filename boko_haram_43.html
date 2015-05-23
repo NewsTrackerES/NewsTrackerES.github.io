@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150403&t=2&i=1037797220&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB320M9'></td><td>2015-04-03 22:27:57</td><td>Boko Haram, 'Islam's worst enemy,' will be beaten: Niger president</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150403&t=2&i=1037797220&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB320M9'></td><td>2015-04-03 22:27:57</td><td>Issoufou said Niger's mostly Muslim population broadly supported the alliance, which he said had notched recent successes fighting Boko Haram, and rejected Boko Haram's attempts to carve out its own state in the border region.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150403&t=2&i=1037797220&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB320M9'></td><td>2015-04-03 22:27:57</td><td>"It shows the population of our countries reject terrorism, reject extremism. The population of our countries reject Boko Haram as a Muslim organization," he said.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46801455,width-300,resizemode-4/ana-s.jpg'></td><td>2015-04-03 23:21:33</td><td>Niger is taking part in a regional operation against Boko Haram in northern Nigeria, a militant group which has launched repeated bloody attacks and abductions in Nigeria and an increasing number of raids into neighboring countries.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46801455,width-300,resizemode-4/ana-s.jpg'></td><td>2015-04-03 23:21:33</td><td>"There is nothing Islamic about Boko Haram," Issoufou told students and faculty at the Harvard Institute of Politics John F. Kennedy Forum in Cambridge, Massachusetts, during a trip to the United States.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46801455,width-300,resizemode-4/ana-s.jpg'></td><td>2015-04-03 23:21:33</td><td>"Boko Haram has no future, Boko Haram will be defeated, God willing."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150403&t=2&i=1037797220&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB320M9'></td><td>2015-04-03 22:27:57</td><td><a href='http://www.reuters.com/article/2015/04/03/us-harvard-niger-idUSKBN0MU1H320150403?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Boko Haram, 'Islam's worst enemy,' will be beaten: Niger president</td></tr><tr><td>Issoufou said Niger's mostly Muslim population broadly supported the alliance, which he said had notched recent successes fighting Boko Haram, and rejected Boko Haram's attempts to carve out its own state in the border region.</td></tr><tr><td>"It shows the population of our countries reject terrorism, reject extremism. The population of our countries reject Boko Haram as a Muslim organization," he said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46801455,width-300,resizemode-4/ana-s.jpg'></td><td>2015-04-03 23:21:33</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/Niger-President-Boko-Haram-Islams-worst-enemy-will-be-beaten/articleshow/46801444.cms'>site</a></td><td><table><tr><td>"There is nothing Islamic about Boko Haram," Issoufou told students and faculty at the Harvard Institute of Politics John F. Kennedy Forum in Cambridge, Massachusetts, during a trip to the United States.</td></tr><tr><td>"Boko Haram has no future, Boko Haram will be defeated, God willing."</td></tr><tr><td>Niger is taking part in a regional operation against Boko Haram in northern Nigeria, a militant group which has launched repeated bloody attacks and abductions in Nigeria and an increasing number of raids into neighboring countries.</td></tr></table></td></tr>
 </table></body></html>

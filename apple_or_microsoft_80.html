@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 13,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,17 +48,8 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 21:30:47</td><td>Microsoft will report earnings Thursday April 23, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 21:30:47</td><td>CEO Satya Nadella has been investing in new services and redesigning Microsoft's most popular programs for smartphones and other mobile gadgets.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-23 21:30:47</td><td>That sent Microsoft's stock tumbling more than 10 percent in one day.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-23 21:30:47</td><td>Microsoft results show company's shift, but is it enough?</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td>Microsoft's latest report shows another decline in profit and revenue from the company's flagship Windows software for personal computers.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td>And Nadella has taken other steps to get Microsoft's software into the hands of consumers who prefer smartphones and tablets.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td>Microsoft's financial results underscore the importance of Nadella's efforts.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td>Revenue from cloud computing has grown rapidly, as more businesses are paying to use software housed in Microsoft's data centers.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td>While the apps are free for consumers, Microsoft hopes to gain revenue by charging for extra services and versions for business users.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td>Microsoft is hoping for a boost later this year when it releases a redesigned version of Windows with new features for PCs and mobile devices.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-04-23 23:13:00</td><td>Similarly, Microsoft has released new Office apps for devices that run on rival operating systems from Apple and Google.</td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-04-23 23:13:00</td><td>But a continuing slump in the PC industry has caused Microsoft's stock to flounder in recent months, marking the end of a honeymoon year in which shares rose steadily after Nadella took the reins in February 2014.</td></tr>
-  <tr><td style='display:none'>12</td><td></td><td>2015-04-23 23:13:00</td><td>But Microsoft still relies heavily on selling traditional software, which contributed the largest part of its $21.7 billion in sales for the quarter.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>Microsoft's latest report shows another decline in profit and revenue from the company's flagship Windows software for personal computers.</td></tr><tr><td>Microsoft's financial results underscore the importance of Nadella's efforts.</td></tr><tr><td>Revenue from cloud computing has grown rapidly, as more businesses are paying to use software housed in Microsoft's data centers.</td></tr><tr><td>Microsoft is hoping for a boost later this year when it releases a redesigned version of Windows with new features for PCs and mobile devices.</td></tr><tr><td>And Nadella has taken other steps to get Microsoft's software into the hands of consumers who prefer smartphones and tablets.</td></tr><tr><td>While the apps are free for consumers, Microsoft hopes to gain revenue by charging for extra services and versions for business users.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/23/microsoft-results-show-companys-shift-but-is-it-enough'>site</a></td><td><table><tr><td>Microsoft results show company's shift, but is it enough?</td></tr><tr><td>Microsoft will report earnings Thursday April 23, 2015.</td></tr><tr><td>CEO Satya Nadella has been investing in new services and redesigning Microsoft's most popular programs for smartphones and other mobile gadgets.</td></tr><tr><td>That sent Microsoft's stock tumbling more than 10 percent in one day.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 23:13:00</td><td><a href='http://www.sfgate.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>But a continuing slump in the PC industry has caused Microsoft's stock to flounder in recent months, marking the end of a honeymoon year in which shares rose steadily after Nadella took the reins in February 2014.</td></tr><tr><td>But Microsoft still relies heavily on selling traditional software, which contributed the largest part of its $21.7 billion in sales for the quarter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-23 23:13:00</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/23/microsoft-results-show-companys-shift-but-is-it-enough'>site</a></td><td>Similarly, Microsoft has released new Office apps for devices that run on rival operating systems from Apple and Google.</td></tr>
 </table></body></html>

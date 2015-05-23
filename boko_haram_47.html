@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/WFUV34ruH3JKF1BcEUilDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/3c8696c5cb7136415f0f5493f019035a9976652e.jpg.cf.jpg'></td><td>2015-04-09 17:01:54</td><td>In addition to the refugees, there are more than 1.1 million people displaced within northeast Nigeria by Boko Haram, the U.N. says.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/WFUV34ruH3JKF1BcEUilDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/3c8696c5cb7136415f0f5493f019035a9976652e.jpg.cf.jpg'></td><td>2015-04-09 17:01:54</td><td>U.N. seeks $174 million to support refugees fleeing Boko Haram</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 17:11:54</td><td>"Boko Haram has been so vicious in targeting civilians that there is a psychosis among the refugees," said Robert Piper, the U.N.'s Regional Humanitarian Coordinator for the Sahel region.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-09 17:11:54</td><td>Though a military campaign by Nigeria and its neighbours has driven Boko Haram out of many positions it previously held, the U.N. still expects refugee numbers to rise from 192,000 to 240,000 by the end of this year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/WFUV34ruH3JKF1BcEUilDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/3c8696c5cb7136415f0f5493f019035a9976652e.jpg.cf.jpg'></td><td>2015-04-09 17:01:54</td><td><a href='http://news.yahoo.com/u-n-seeks-174-million-support-refugees-fleeing-170154074.html'>site</a></td><td><table><tr><td>U.N. seeks $174 million to support refugees fleeing Boko Haram</td></tr><tr><td>In addition to the refugees, there are more than 1.1 million people displaced within northeast Nigeria by Boko Haram, the U.N. says.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 17:11:54</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032439/U-N-seeks-174-mln-support-refugees-fleeing-Boko-Haram.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Though a military campaign by Nigeria and its neighbours has driven Boko Haram out of many positions it previously held, the U.N. still expects refugee numbers to rise from 192,000 to 240,000 by the end of this year.</td></tr><tr><td>"Boko Haram has been so vicious in targeting civilians that there is a psychosis among the refugees," said Robert Piper, the U.N.'s Regional Humanitarian Coordinator for the Sahel region.</td></tr></table></td></tr>
 </table></body></html>

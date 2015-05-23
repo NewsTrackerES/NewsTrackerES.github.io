@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:03:06</td><td>Nigeria's president-elect Muhammadu Buhari on Monday denounced Boko Haram's claim to be a religious group, slamming its attacks on civilians and vowing a hard line against the Islamist militants.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/5700524-3x2-340x227.jpg'></td><td>2015-04-28 00:05:37</td><td>"The fraud called Boko Haram can be defeated by denying it a recruitment base," he said.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.abc.net.au/news/image/5700524-3x2-340x227.jpg'></td><td>2015-04-28 00:05:37</td><td>Mr Buhari, 72, won presidential elections last month with a promise of a tough stance against Boko Haram, whose insurgency has killed at least 15,000 since 2009.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 22:03:06</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3058197/Boko-Haram-bogus-religious-group-says-incoming-Nigerian-president.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Nigeria's president-elect Muhammadu Buhari on Monday denounced Boko Haram's claim to be a religious group, slamming its attacks on civilians and vowing a hard line against the Islamist militants.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/5700524-3x2-340x227.jpg'></td><td>2015-04-28 00:05:37</td><td><a href='http://www.abc.net.au/news/2015-04-28/hundreds-found-dead-in-nigeria-town-damasak-boko-haram/6426478'>site</a></td><td><table><tr><td>"The fraud called Boko Haram can be defeated by denying it a recruitment base," he said.</td></tr><tr><td>Mr Buhari, 72, won presidential elections last month with a promise of a tough stance against Boko Haram, whose insurgency has killed at least 15,000 since 2009.</td></tr></table></td></tr>
 </table></body></html>

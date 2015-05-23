@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/_Y2yIyYN6Ho1sV45WJIhNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_SILICONALLEY_H_LIVE/Jeb_Bush_just_made_his-12451c215d514188bd9a9b8b990e3953.cf.jpg'></td><td>2015-05-01 17:25:03</td><td>Jeb Bush on Baltimore police charges: 'The process works'</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/_Y2yIyYN6Ho1sV45WJIhNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_SILICONALLEY_H_LIVE/Jeb_Bush_just_made_his-12451c215d514188bd9a9b8b990e3953.cf.jpg'></td><td>2015-05-01 17:25:03</td><td>RALEIGH, N.C. (AP) - Former Florida Gov. Jeb Bush says he trusts the legal process that resulted in charges against six Baltimore officers in the death of a man from injuries sustained while in police custody.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-01 17:26:11</td><td>Commenting on the Baltimore case, Bush said: "The process works" and "people are innocent until proven guilty."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-01 18:46:18</td><td>Speaking shortly after charges were announced in Freddie Gray's death in Baltimore, Bush said "the process works, and it will go forward from here on out. People are innocent until proven guilty."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/_Y2yIyYN6Ho1sV45WJIhNg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_SILICONALLEY_H_LIVE/Jeb_Bush_just_made_his-12451c215d514188bd9a9b8b990e3953.cf.jpg'></td><td>2015-05-01 17:25:03</td><td><a href='http://news.yahoo.com/jeb-bush-baltimore-police-charges-process-works-172503020--election.html'>site</a></td><td><table><tr><td>Jeb Bush on Baltimore police charges: 'The process works'</td></tr><tr><td>RALEIGH, N.C. (AP) - Former Florida Gov. Jeb Bush says he trusts the legal process that resulted in charges against six Baltimore officers in the death of a man from injuries sustained while in police custody.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-01 17:26:11</td><td><a href='http://abcnews.go.com/Politics/wireStory/jeb-bush-baltimore-police-charges-process-works-30735942'>site</a></td><td>Commenting on the Baltimore case, Bush said: "The process works" and "people are innocent until proven guilty."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-01 18:46:18</td><td><a href='http://abcnews.go.com/Politics/wireStory/jeb-bush-baltimore-police-charges-process-works-30735942'>site</a></td><td>Speaking shortly after charges were announced in Freddie Gray's death in Baltimore, Bush said "the process works, and it will go forward from here on out. People are innocent until proven guilty."</td></tr>
 </table></body></html>

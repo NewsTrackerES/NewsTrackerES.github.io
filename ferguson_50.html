@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 14:48:00</td><td>But the Justice Department released a scathing report citing racial bias and racial profiling in the Ferguson Police Department and a profit-driven municipal court system that frequently targeted black residents.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 15:44:42</td><td>A Ferguson spokesman declined to publicly discuss the hiring of Webb.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 15:44:42</td><td>Ferguson to pay attorney $1,335 an hour to pursue reforms</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-04 20:02:33</td><td>Brian Fletcher, a Ferguson council member elected in April, said the city faces a $2 million to $3 million budget deficit for the fiscal year ending June 30, and will likely face a similar deficit next year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 14:48:00</td><td><a href='http://www.chicagotribune.com/news/local/breaking/ct-ferguson-to-pay-chicago-lawyer-dan-webb-1335-an-hour-to-pursue-reforms-20150504-story.html'>site</a></td><td>But the Justice Department released a scathing report citing racial bias and racial profiling in the Ferguson Police Department and a profit-driven municipal court system that frequently targeted black residents.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 15:44:42</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3067422/Ferguson-pay-attorney-1-335-hour-pursue-reforms.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Ferguson to pay attorney $1,335 an hour to pursue reforms</td></tr><tr><td>A Ferguson spokesman declined to publicly discuss the hiring of Webb.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-04 20:02:33</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3067422/Ferguson-pay-attorney-1-335-hour-pursue-reforms.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Brian Fletcher, a Ferguson council member elected in April, said the city faces a $2 million to $3 million budget deficit for the fiscal year ending June 30, and will likely face a similar deficit next year.</td></tr>
 </table></body></html>

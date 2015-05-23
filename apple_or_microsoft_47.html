@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,10 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 04:02:19</td><td>Apple store employees will show you the range of options, including different watch cases, bands and sizes.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 06:00:53</td><td>Consumers will have their first chance to see and hold the Apple Watch on Friday, April 10, 2015, as Apple stores in the U.S. and eight other markets start previews of Apple's latest product.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>Initially, it's available only to owners of an Apple TV, iPhone or iPad, or to Cablevision's Internet-access subscribers.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>Apple borrowed many design techniques from the iPad, including eliminating the fan.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>The new MacBook comes in silver, gold or gray - the first time there has been a color choice since Apple ditched plastic for metal on its laptops.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td>Apple's new laptop, simply called MacBook, debuts Friday.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-09 12:59:43</td><td>NEW YORK (AP) - The public will have its first chance to see, touch and buy the Apple Watch on Friday, as Apple stores in the U.S. and eight markets abroad start previews and online orders commence.</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-09 14:01:04</td><td>Thus product image provided by HBO shows the HBO Now Apple TV app.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/08/23/276300EE00000578-0-image-m-160_1428533779453.jpg'></td><td>2015-04-09 14:01:32</td><td>This product image provided by Microsoft shows local TV listings as seen on the Xbox One's TV guide.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 04:02:19</td><td><a href='http://www.foxbusiness.com/technology/2015/04/09/week-in-tech-apple-watch-isnt-only-gadget-this-week-samsung-htc-phones-in/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>Apple store employees will show you the range of options, including different watch cases, bands and sizes.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 06:00:53</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-04-09-US-TEC--Techbits-Gadgets%20For%20Sale/id-cb05f57b75d64049ae612c06a23652a4'>site</a></td><td>Consumers will have their first chance to see and hold the Apple Watch on Friday, April 10, 2015, as Apple stores in the U.S. and eight other markets start previews of Apple's latest product.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-09 12:59:43</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/09/apple-watch-isnt-the-only-gadget-out-this-week'>site</a></td><td>NEW YORK (AP) - The public will have its first chance to see, touch and buy the Apple Watch on Friday, as Apple stores in the U.S. and eight markets abroad start previews and online orders commence.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/55/51/7789130/3/gallery_thumb.jpg'></td><td>2015-04-09 12:59:43</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-Watch-isn-t-the-only-gadget-out-this-week-6188192.php'>site</a></td><td><table><tr><td>Apple's new laptop, simply called MacBook, debuts Friday.</td></tr><tr><td>Apple borrowed many design techniques from the iPad, including eliminating the fan.</td></tr><tr><td>The new MacBook comes in silver, gold or gray - the first time there has been a color choice since Apple ditched plastic for metal on its laptops.</td></tr><tr><td>Initially, it's available only to owners of an Apple TV, iPhone or iPad, or to Cablevision's Internet-access subscribers.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-09 14:01:04</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-04-09-US-TEC--Techbits-Gadgets%20For%20Sale/id-ef6192cabebb4bbca5df1cb8e46a0cef'>site</a></td><td>Thus product image provided by HBO shows the HBO Now Apple TV app.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/08/23/276300EE00000578-0-image-m-160_1428533779453.jpg'></td><td>2015-04-09 14:01:32</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3032057/Apple-Watch-isnt-gadget-week.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>This product image provided by Microsoft shows local TV listings as seen on the Xbox One's TV guide.</td></tr>
 </table></body></html>

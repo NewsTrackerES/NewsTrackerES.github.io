@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/4/14/073d09e9ef4c41f883ec3696660475f9_18.jpg'></td><td>2015-04-27 15:46:04</td><td>Suspected Boko Haram gunmen have shot dead 21 people in northeast Nigeria who were trying to return home to recover abandoned supplies, a local official and a victim's relative said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 16:02:44</td><td>"The men, 21 of them, were stopped at Bultaram (village) by gunmen we believe are Boko Haram who shot them dead," said Baba Nuhu, an official with the Gujba local government in Yobe state.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 16:02:44</td><td>Nuhu and Haruna Malam, the brother of one of the victims, spoke to AFP from Yobe's capital Damaturu, where many Gujba residents have fled to seek refuge from Boko Haram violence.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/4/14/073d09e9ef4c41f883ec3696660475f9_18.jpg'></td><td>2015-04-27 15:46:04</td><td><a href='http://www.aljazeera.com/news/2015/04/boko-haram-kill-21-civilians-northeast-nigeria-150427152409247.html'>site</a></td><td>Suspected Boko Haram gunmen have shot dead 21 people in northeast Nigeria who were trying to return home to recover abandoned supplies, a local official and a victim's relative said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 16:02:44</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3057682/Suspected-Boko-Haram-gunmen-kill-21-NE-Nigeria-official-relative.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>"The men, 21 of them, were stopped at Bultaram (village) by gunmen we believe are Boko Haram who shot them dead," said Baba Nuhu, an official with the Gujba local government in Yobe state.</td></tr><tr><td>Nuhu and Haruna Malam, the brother of one of the victims, spoke to AFP from Yobe's capital Damaturu, where many Gujba residents have fled to seek refuge from Boko Haram violence.</td></tr></table></td></tr>
 </table></body></html>

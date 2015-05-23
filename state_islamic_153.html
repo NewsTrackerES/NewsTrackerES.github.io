@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:10:55</td><td>RABAT (Reuters) - Morocco has broken up a militant cell it said was loyal to Islamic State and was planning to stage attacks at home and in the Netherlands, the Interior Ministry said on Monday.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 12:10:55</td><td>"The members of the cell were planning specific terrorist operations in the kingdom, including assassinations of people they accuse of being against the Islamic State beliefs," its statement said.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 13:04:13</td><td>Last month, Moroccan authorities said they arrested members of a militant cell planning to create an Islamic State affiliate in the North African kingdom, seizing guns and accusing its members of plotting attacks.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 13:04:13</td><td>Morocco says breaks up Islamic State cell with Dutch ties</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 12:10:55</td><td><a href='http://www.reuters.com/article/2015/04/13/us-mideast-crisis-morocco-idUSKBN0N416R20150413?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>RABAT (Reuters) - Morocco has broken up a militant cell it said was loyal to Islamic State and was planning to stage attacks at home and in the Netherlands, the Interior Ministry said on Monday.</td></tr><tr><td>"The members of the cell were planning specific terrorist operations in the kingdom, including assassinations of people they accuse of being against the Islamic State beliefs," its statement said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 13:04:13</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3036895/Morocco-says-breaks-Islamic-State-cell-Dutch-ties.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Morocco says breaks up Islamic State cell with Dutch ties</td></tr><tr><td>Last month, Moroccan authorities said they arrested members of a militant cell planning to create an Islamic State affiliate in the North African kingdom, seizing guns and accusing its members of plotting attacks.</td></tr></table></td></tr>
 </table></body></html>

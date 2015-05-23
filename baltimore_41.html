@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/O7aslQDRqUw31nMHliVW_g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a0f98a51a3234c13750f6a706700a55d.jpg'></td><td>2015-05-02 07:09:55</td><td>Asked whether the charges against the officers in the Baltimore case would have a chilling effect on law enforcement, Cohen said he thought there might be some but that it would be short-lived.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/O7aslQDRqUw31nMHliVW_g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a0f98a51a3234c13750f6a706700a55d.jpg'></td><td>2015-05-02 07:09:55</td><td>Across country, police scrutinized after Baltimore arrests</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/O7aslQDRqUw31nMHliVW_g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a0f98a51a3234c13750f6a706700a55d.jpg'></td><td>2015-05-02 07:09:55</td><td><a href='http://news.yahoo.com/across-country-police-scrutinized-baltimore-arrests-070805364.html'>site</a></td><td><table><tr><td>Across country, police scrutinized after Baltimore arrests</td></tr><tr><td>Asked whether the charges against the officers in the Baltimore case would have a chilling effect on law enforcement, Cohen said he thought there might be some but that it would be short-lived.</td></tr></table></td></tr>
 </table></body></html>

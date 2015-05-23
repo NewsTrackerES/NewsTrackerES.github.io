@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td>You won't find it in Apple's advertisements, but the new MacBook is a time machine.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td>Apple MacBook Isn't Ready for the Present</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td>Due to the thinness of the panel, Apple created a new mechanism under the keys to help with their feedback and bounce.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/MacBook_AllColors.jpg'></td><td>2015-04-09 16:16:56</td><td><a href='http://www.foxbusiness.com/technology/2015/04/09/apple-macbook-review-laptop-future-isnt-ready-for-present/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>Apple MacBook Isn't Ready for the Present</td></tr><tr><td>You won't find it in Apple's advertisements, but the new MacBook is a time machine.</td></tr><tr><td>Due to the thinness of the panel, Apple created a new mechanism under the keys to help with their feedback and bounce.</td></tr></table></td></tr>
 </table></body></html>

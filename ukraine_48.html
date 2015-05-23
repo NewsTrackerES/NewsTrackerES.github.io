@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/kSYbNo30FJuAGpErBg12uQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T213651Z_1_LYNXMPEB2G11J_RTROPTP_2_UKRAINE-CRISIS-IMF-YARESKO.JPG'></td><td>2015-03-17 21:36:51</td><td>WASHINGTON (Reuters) - Ukraine's finance minister on Tuesday said the country wants to be "flexible" in its discussions with sovereign bondholders over renegotiating its debt, and is not ruling out any form of an agreement, including maturity extension.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/kSYbNo30FJuAGpErBg12uQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T213651Z_1_LYNXMPEB2G11J_RTROPTP_2_UKRAINE-CRISIS-IMF-YARESKO.JPG'></td><td>2015-03-17 21:36:51</td><td>Ukraine seeks to gain $15.3 billion from its talks with creditors, as the terms of a wider $40 billion financing package from the IMF and other donors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/kSYbNo30FJuAGpErBg12uQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T213651Z_1_LYNXMPEB2G11J_RTROPTP_2_UKRAINE-CRISIS-IMF-YARESKO.JPG'></td><td>2015-03-17 21:36:51</td><td><a href='http://news.yahoo.com/ukraine-says-wants-flexible-bondholders-213651885--business.html'>site</a></td><td><table><tr><td>WASHINGTON (Reuters) - Ukraine's finance minister on Tuesday said the country wants to be "flexible" in its discussions with sovereign bondholders over renegotiating its debt, and is not ruling out any form of an agreement, including maturity extension.</td></tr><tr><td>Ukraine seeks to gain $15.3 billion from its talks with creditors, as the terms of a wider $40 billion financing package from the IMF and other donors.</td></tr></table></td></tr>
 </table></body></html>

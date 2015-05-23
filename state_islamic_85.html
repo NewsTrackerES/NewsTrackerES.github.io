@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427229355689.jpg'></td><td>2015-03-24 20:36:07</td><td>Later on Tuesday, the militants beheaded three young men on a street in central Mosul, accusing them of being the nephews of a political opponent of the so-called Islamic State.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427229355689.jpg'></td><td>2015-03-24 20:36:07</td><td>After a rumour got out that their uncle had met with the Kurdish leader Massoud Barzani, Islamic State militants came to the uncle's home and took the three young men to a public street where they were beheaded.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427229355689.jpg'></td><td>2015-03-24 20:36:07</td><td>Iraqi pro-government fighters celebrate as they advance into Tikrit,160 kms north of Baghdad, during a military operation to regain the city from Islamic State militants.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427229355689.jpg'></td><td>2015-03-24 20:36:07</td><td>Colonel al-Jiboori also said that Kurdish peshmerga fighters in the area stopped an Islamic State attack east of the city, on Bashiqa Mountain, on Tuesday, killing 11 of the militants.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427229355689.jpg'></td><td>2015-03-24 20:36:07</td><td>Islamic State militants use sledgehammers on a toppled statue in a museum at a location said to be Mosul in this image taken from an undated video.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427246158993.jpg'></td><td>2015-03-24 20:36:07</td><td>Islamic State militants stone Iraqi couple to death</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427246158993.jpg'></td><td>2015-03-24 20:36:07</td><td><a href='http://www.smh.com.au/world/islamic-state-militants-stone-iraqi-couple-to-death-20150325-1m6xkk.html'>site</a></td><td>Islamic State militants stone Iraqi couple to death</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/8/q/image.related.articleLeadwide.620x349.1m6xkk.png/1427229355689.jpg'></td><td>2015-03-24 20:36:07</td><td><a href='http://www.brisbanetimes.com.au/world/islamic-state-militants-stone-iraqi-couple-to-death-20150324-1m6xkk.html'>site</a></td><td><table><tr><td>Later on Tuesday, the militants beheaded three young men on a street in central Mosul, accusing them of being the nephews of a political opponent of the so-called Islamic State.</td></tr><tr><td>Islamic State militants use sledgehammers on a toppled statue in a museum at a location said to be Mosul in this image taken from an undated video.</td></tr><tr><td>Iraqi pro-government fighters celebrate as they advance into Tikrit,160 kms north of Baghdad, during a military operation to regain the city from Islamic State militants.</td></tr><tr><td>Colonel al-Jiboori also said that Kurdish peshmerga fighters in the area stopped an Islamic State attack east of the city, on Bashiqa Mountain, on Tuesday, killing 11 of the militants.</td></tr><tr><td>After a rumour got out that their uncle had met with the Kurdish leader Massoud Barzani, Islamic State militants came to the uncle's home and took the three young men to a public street where they were beheaded.</td></tr></table></td></tr>
 </table></body></html>

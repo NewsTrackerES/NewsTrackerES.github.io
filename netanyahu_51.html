@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 12:30:47</td><td>If they did participate, they may also not have been honest about the way they voted and as exit polls close earlier than the real polls, a last-minute surge in Likud votes, in response to a call from Netanyahu, may have been missed, he said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 12:30:47</td><td>Netanyahu's shock re-election leaves Israel's pollsters red-faced</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6lc5Zinq3Mwrsf.kA4iFpg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/huffingtonpost.com.rss/26d900ea595670d2a3fadeaa2cdd259a.cf.jpg'></td><td>2015-03-18 12:30:47</td><td><a href='http://news.yahoo.com/netanyahus-shock-election-leaves-israels-pollsters-red-faced-123047726.html'>site</a></td><td><table><tr><td>Netanyahu's shock re-election leaves Israel's pollsters red-faced</td></tr><tr><td>If they did participate, they may also not have been honest about the way they voted and as exit polls close earlier than the real polls, a last-minute surge in Likud votes, in response to a call from Netanyahu, may have been missed, he said.</td></tr></table></td></tr>
 </table></body></html>

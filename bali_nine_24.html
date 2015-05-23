@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>bali nine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/5/c/a/image.related.articleLeadwide.620x349.1mhv7v.png/1428576968950.jpg'></td><td>2015-04-09 11:00:12</td><td>Bali nine executions: Lawyers deny delay tactics as they lodge Constitutional Court action</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/5/c/a/image.related.articleLeadwide.620x349.1mhv7v.png/1428576968950.jpg'></td><td>2015-04-09 11:00:12</td><td>"We want to fight for their (the Bali nine duo's) rights ... there is still unfinished process. If the Constitutional Court accepts what we're lodging there may be a new mechanism to consider clemency."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/u/5/c/a/image.related.articleLeadwide.620x349.1mhv7v.png/1428576968950.jpg'></td><td>2015-04-09 11:00:12</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-executions-lawyers-deny-delay-tactics-as-they-lodge-constitutional-court-action-20150409-1mhv7v.html'>site</a></td><td><table><tr><td>Bali nine executions: Lawyers deny delay tactics as they lodge Constitutional Court action</td></tr><tr><td>"We want to fight for their (the Bali nine duo's) rights ... there is still unfinished process. If the Constitutional Court accepts what we're lodging there may be a new mechanism to consider clemency."</td></tr></table></td></tr>
 </table></body></html>

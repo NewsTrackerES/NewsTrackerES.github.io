@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-16 19:08:52</td><td>In a blog post Monday, Facebook said it is a challenge to maintain one set of standards that meet the needs of its entire community.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-16 19:08:52</td><td>Facebook restricts content in countries where it violates local laws, even if that content does not violate its community standards.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-16 19:08:52</td><td>FILE - In this June 11, 2014 file photo, a man walks past a mural in an office on the Facebook campus in Menlo Park, Calif.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-16 19:08:52</td><td>More than 80 percent of Facebook users are outside the U.S. and Canada.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td>Facebook users who believe that a particular page or content violates the site's standards can click a "report" link to notify Facebook.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td>NEW YORK (AP) - Facebook is trying to clarify what posts, images and other content it allows on its site and why.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td>Separately, Facebook also released its latest report on requests it gets from governments worldwide, covering the second half of 2014.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td>Facebook explains what posts are not allowed on its network</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td><a href='http://www.seattlepi.com/business/technology/article/Facebook-explains-what-posts-are-not-allowed-on-6137030.php'>site</a></td><td><table><tr><td>Facebook explains what posts are not allowed on its network</td></tr><tr><td>NEW YORK (AP) - Facebook is trying to clarify what posts, images and other content it allows on its site and why.</td></tr><tr><td>Facebook users who believe that a particular page or content violates the site's standards can click a "report" link to notify Facebook.</td></tr><tr><td>Separately, Facebook also released its latest report on requests it gets from governments worldwide, covering the second half of 2014.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-16 19:08:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/16/facebook-explains-what-posts-are-not-allowed-on-its-network'>site</a></td><td><table><tr><td>FILE - In this June 11, 2014 file photo, a man walks past a mural in an office on the Facebook campus in Menlo Park, Calif.</td></tr><tr><td>In a blog post Monday, Facebook said it is a challenge to maintain one set of standards that meet the needs of its entire community.</td></tr><tr><td>More than 80 percent of Facebook users are outside the U.S. and Canada.</td></tr><tr><td>Facebook restricts content in countries where it violates local laws, even if that content does not violate its community standards.</td></tr></table></td></tr>
 </table></body></html>

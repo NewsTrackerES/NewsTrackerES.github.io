@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/04/01/techpranks650.jpg&amp;size=200x112&amp;quality=85'></td><td>2015-04-01 14:37:54</td><td><a href='http://technology.canoe.ca/News/2015/04/01/22320961-relaxnews.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>The net firm played an April 1 prank with a TLD trick ending in .google.</td></tr><tr><td>Using its own Top Level Domain, all-comers were invited to visit com.google instead of the usual google.com.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03252/Googlepacman_3252204b.jpg'></td><td>2015-03-31 16:33:46</td><td><a href='http://www.telegraph.co.uk/technology/google/11507253/Google-Maps-launches-PacMan-on-real-streets.html'>site</a></td><td>The game is accessible on desktop computers and on the Google Maps app.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/31/21/272C87BC00000578-3020361-image-a-43_1427833670243.jpg'></td><td>2015-03-31 22:05:51</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3020361/Now-play-Pac-Man-GOOGLE-MAPS-Search-engine-transforms-streets-giant-version-1980s-Atari-game.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The company also featured an interactive Pac-Man game for its Google Doodle in 2010, the game's 30th anniversary.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/31/21/272C87BC00000578-3020361-image-a-43_1427833670243.jpg'></td><td>2015-03-31 23:12:27</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3020361/Now-play-Pac-Man-GOOGLE-MAPS-Search-engine-transforms-streets-giant-version-1980s-Atari-game.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Google Maps' support page includes a list of clues to find the best locations to play the game.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 17:30:37</td><td><a href='http://www.ctvnews.ca/health/sierra-leone-plans-another-3-day-shutdown-to-stop-ebola-s-spread-1.2286120'>site</a></td><td>FREETOWN, Sierra Leone -- Sierra Leone is planning another three-day, countrywide shutdown March 27 through 29 to ferret out Ebola cases, remind people how to protect themselves from the disease and control its transmission.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-18 17:43:27</td><td><a href='http://www.chron.com/news/medical/article/Sierra-Leone-plans-another-shutdown-to-stop-6142683.php'>site</a></td><td>Sierra Leone is "hoping it will be the last push to end Ebola outbreak. We want it to be community-owned and for people to do the proper things," said Fatoma.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-03-18 17:43:27</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/18/sierra-leone-plans-another-shutdown-to-stop-ebolas-spread'>site</a></td><td>In what Sierra Leone hopes will be a final push to zero cases, Alfred Palo Conteh, head of the country's Ebola response, said Wednesday that the government will again ask residents to stay in their homes for three days.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-19 15:57:43</td><td><a href='http://news.yahoo.com/guinea-says-number-ebola-patients-more-doubles-since-155743737.html'>site</a></td><td><table><tr><td>Dr Rafiou Diallo, a spokesman for Guinea's health ministry, said there were 91 suspected and confirmed Ebola patients in treatment centres compared with just 39 in February.</td></tr><tr><td>The number of Ebola cases in Guinea peaked in late December when there were nearly double current number of patients at 171, according to the World Health Organisation.</td></tr><tr><td>Officials in Guinea have previously said Ebola was under control, only to see the virus later spread further.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/c55c7a493c8df311730f6a70670081b3_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-20 04:36:41</td><td><a href='http://www.utsandiego.com/news/2015/apr/19/5-years-after-bp-spill-whats-changed-in-offshore/'>site</a></td><td>As oil gushed from BP's ruptured well five years ago and public outrage built by the day, the Obama administration issued a six-month moratorium on drilling in the Gulf of Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-20 04:40:29</td><td><a href='http://www.startribune.com/nation/300617641.html'>site</a></td><td>5 years after BP spill: A look at what's changed in offshore drilling in the Gulf of Mexico</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 16:07:17</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article19139034.html#storylink=rss'>site</a></td><td><table><tr><td>But the New Mexico Film Office finally announced Tuesday that filming will begin next month on the sequel to the alien invasion movie, "Independence Day."</td></tr><tr><td>Yet the production crew was ordered to remain silent so the New Mexico Film Office could make the announcement.</td></tr></table></td></tr>
 </table></body></html>

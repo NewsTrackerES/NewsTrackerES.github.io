@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/10/03/101085338-705900.80x60.jpg?v=1427127413'></td><td>2015-03-19 11:45:00</td><td><a href='http://www.cnbc.com/id/102518725'>site</a></td><td><table><tr><td>Yahoo turned over control of its China operations to its partner Alibaba Group in 2005 as part of a corporate tie-up.</td></tr><tr><td>Yahoo stopped offering services in China in 2013.</td></tr><tr><td>Yahoo's profit for the quarter ending in December fell 52 percent from a year earlier while revenue dipped 1 percent.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/9/11/u-s-government-strongarmedyahoototurnoveruserdata/_jcr_content/image.adapt.480.low.Yahoo_091114.jpg'></td><td>2015-03-19 15:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/19/yahoo-closing-last-china-operation-in-beijing.html'>site</a></td><td>In a new cost-cutting move, Yahoo Inc. announced that it's closing its Beijing research and development center and leaving China.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 10:00:32</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420081&ref=rss'>site</a></td><td>Yahoo closing last China operation in Beijing</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 11:02:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article15330362.html#storylink=rss'>site</a></td><td><table><tr><td>Yahoo didn't specify how many people will lose their jobs in China, but pledged to treat all the workers "with respect and fairness."</td></tr><tr><td>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005.</td></tr><tr><td>That $1 billion deal gave Yahoo a lucrative stake in Alibaba that is currently worth $33 billion.</td></tr><tr><td>Yahoo's revenue declined by 1 percent to $4.6 billion last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 19:15:39</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/19/yahoo-closing-last-china-operation-in-beijing'>site</a></td><td><table><tr><td>The Beijing operation's responsibilities will be shifted to other Yahoo Inc. offices, according to a company statement released late Wednesday.</td></tr><tr><td>Yahoo is preparing to spin off its Alibaba holdings into a separately traded company later this year, removing an asset that deflected attention from the challenges facing Yahoo's own businesses.</td></tr><tr><td>Yahoo hired Mayer in July 2012 to engineer a turnaround, but so far she hasn't been able to boost the company's revenue even though advertisers have been shifting more of their spending to the Internet and mobile devices.</td></tr><tr><td>New York hedge fund Starboard Value, an activist investor that owns a 0.8 percent stake in Yahoo, is among the shareholders who believe Mayer needs to trim expenses.</td></tr><tr><td>Smith is also among the Yahoo shareholders who called upon Mayer to spin off the Alibaba stake to avoid triggering a huge tax bill from sale of the stake.</td></tr><tr><td>In a January conference call, Mayer emphasized that Yahoo's payroll has remained roughly the same size since she arrived, even though the company had inherited more than 1,000 employees through acquisitions completed during her reign.</td></tr><tr><td>She also pointed out that Yahoo had closed about a dozen offices while phasing out about 75 products during her tenure.</td></tr></table></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-19 19:16:05</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3002104/Yahoo-closing-China-operation-Beijing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Yahoo is closing its research and development center in China as CEO Marissa Mayer tries to placate shareholders pressuring the Internet company to cut costs while it struggles to bring in more revenue.</td></tr>
 </table></body></html>

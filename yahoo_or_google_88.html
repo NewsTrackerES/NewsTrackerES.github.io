@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 22:29:34</td><td><a href='http://www.ft.com/cms/s/94fdf63c-f9b9-11e4-97b2-00144feab7de,Authorised=false.html?_i_location=http%3A%2F%2Fwww.ft.com%2Fcms%2Fs%2F0%2F94fdf63c-f9b9-11e4-97b2-00144feab7de.html%3Fftcamp%3Dpublished_links%252Frss%252Fhome_europe%252Ffeed%252F%252Fproduct%26siteedition%3Duk&siteedition=uk&ftcamp=published_links%2Frss%2Fhome_europe%2Ffeed%2F%2Fproduct&_i_referer='>site</a></td><td>Uber poaches Whetstone from Google</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/dcc982e8ed28edbe24141c93759ed7448c9e2642/c=58-0-965-682&amp;r=x404&amp;c=534x401/local/-/media/2015/05/13/USATODAY/USATODAY/635671447300872455-Google.JPG'></td><td>2015-05-14 00:38:11</td><td><a href='http://www.usatoday.com/story/tech/2015/05/13/google-uber-rachel-whetstone-david-plouffe/27273131/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>The public policy team will report to Google executive David Drummond as will Powell.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.bizj.us/view/img/4318111/uberscreen*304xx4000-2667-0-0.jpg'></td><td>2015-05-14 13:10:50</td><td><a href='http://www.bizjournals.com/sanfrancisco/blog/techflash/2015/05/rachel-whetstone-google-uber-david-plouff-policy.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+industry_7+%28Industry+Technology%29'>site</a></td><td>"A former political operative in the U.K., she's helped Google manage antitrust battles with the U.S. Federal Trade Commission and, more recently, the European Union during a decade at the search giant."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/03/25/googlecars650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-25 18:00:21</td><td><a href='http://technology.canoe.ca/News/2015/03/25/22307096-relaxnews.html?cid=rsstechnologynews'>site</a></td><td>Google's self-driving car could have external airbags</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b8b/news/world/article24451178.ece/ALTERNATES/w220/NYBZ903-Google+Car.JPG'></td><td>2015-05-15 07:52:59</td><td><a href='http://www.theglobeandmail.com/technology/tech-news/googles-two-seater-driverless-car-to-hit-public-roads-this-summer/article24451179/?cmpid=rss1'>site</a></td><td><table><tr><td>This prototype is the first vehicle built from scratch for the purpose of self-driving, Google says.</td></tr><tr><td>He says all but one of the accidents were caused by drivers in other cars; in the only incident caused by a Google car, a staffer was driving in manual mode.</td></tr><tr><td>Urmson says Google needs to do a better job of educating people about self-driving technology and updating them on Google's progress.</td></tr><tr><td>Unlike Google, automakers think self-driving cars will arrive feature-by-feature instead of all at once, giving people plenty of time to adapt to autonomous driving.</td></tr><tr><td>Google could make self-driving urban pods for universities or urban centres, for example, or sell its technology to automakers.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/36/35/24/7984433/3/square_gallery_thumb.jpg'></td><td>2015-05-15 10:21:19</td><td><a href='http://www.sfgate.com/business/technology/article/Latest-self-driving-Google-car-heading-to-public-6265158.php'>site</a></td><td><table><tr><td>Latest self-driving Google car heading to public streets</td></tr><tr><td>Dmitri Dolgov, the head of software for the self-driving car project, says Google's software has gotten much better over the last year at classifying objects, like trees and mailboxes, and predicting behavior of pedestrians and other cars.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:25:06</td><td><a href='http://www.miamiherald.com/news/business/article21065499.html#storylink=rss'>site</a></td><td>In this May 13, 2015 photo, Google's new self-driving prototype car drives around a parking lot during a demonstration at Google campus in Mountain View, Calif.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-16 12:30:06</td><td><a href='http://www.miamiherald.com/news/business/article21065499.html#storylink=rss'>site</a></td><td>Jessie Lorenz, of San Francisco, touches the new Google self-driving prototype car during a demonstration at the Google campus in Mountain View, Calif.</td></tr>
 </table></body></html>

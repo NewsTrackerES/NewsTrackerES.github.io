@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 11:38:00</td><td><a href='http://www.foxbusiness.com/markets/2015/04/06/google-capital-leads-60-million-funding-round-for-zenpayroll/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td><table><tr><td>Google Capital Leads $60 Million Funding Round For ZenPayroll</td></tr><tr><td>Other participants in the funding round include Emergence Capital Partners and Ribbit Capital, as well as existing investors General Catalyst, Kleiner Perkins Caulfield & Byers and Google Ventures.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 18:04:21</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-04-02-US--Google-Paying%20For%20Control/id-c5e42ac9271a4cf9bfce8f0b9810639d'>site</a></td><td>Google declined to comment.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0402/20150402__0403google~2.JPG'></td><td>2015-04-02 20:46:03</td><td><a href='http://www.mercurynews.com/business/ci_27834913/stock-split-could-cost-google-more-than-500?source=rss'>site</a></td><td><table><tr><td>A year ago Thursday, Google split its stock to create a new category of "C" stock with no voting power that would allow more Google shares to be issued without undercutting Page and Brin.</td></tr><tr><td>Google argued there wouldn't be much difference between the price of "C" and "A" shares because Page and Brin held majority control anyway with the "B" shares.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/45/16/7754628/5/square_gallery_thumb.jpg'></td><td>2015-04-02 21:19:25</td><td><a href='http://www.sfgate.com/business/technology/article/Stock-split-could-cost-Google-over-500-million-6174346.php'>site</a></td><td><table><tr><td>Stock split could cost Google over $500 million</td></tr><tr><td>Page, 42, and Brin, 41, have maintained control over Google since they started the company in a rented Silicon Valley garage in 1998.</td></tr><tr><td>The big spending is one reason Google's stock price is 3 percent below where it stood at the end of 2013, while the Standard & Poor's 500 index has climbed 12 percent.</td></tr><tr><td>To maintain the power to drive Google's direction, Page and Brin initially accumulated virtually all of the company's class "B'' shares, which have 10 votes for each "A'' share.</td></tr><tr><td>To settle a class-action lawsuit challenging the split, Google agreed to compensate "C'' shareholders if the average price of "C'' stock fell more than 1 percent below "A'' shares through the first year of trading.</td></tr><tr><td>The difference turned out to be between 1 percent and 2 percent through the first year, though the final gap won't be announced for up to 30 days as Google works with outside experts to determine the figures under a complex formula.</td></tr><tr><td>Google disclosed in a recent regulatory filing that it would have owed about $593 million to class C stockholders had the calculations been done on Dec. 31.</td></tr><tr><td>It's something that Google can easily afford, given the company holds $64 billion in cash.</td></tr><tr><td>And the damage could have been a lot worse: Google would have had to pay $7.5 billion, or about $22 per share, had the first-year spread between "A'' and "C'' shares was 5 percent or more.</td></tr></table></td></tr>
 </table></body></html>

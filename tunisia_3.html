@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,13 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:22:43</td><td><a href='http://ibnlive.in.com/news/19-killed-in-tunis-museum-attack-including-17-foreigners-tunisia-pm/534744-2.html'>site</a></td><td><table><tr><td>19 killed in Tunis museum attack, including 17 foreigners: Tunisia PM</td></tr><tr><td>"The EU is determined to mobilize all the tools it has to fully support Tunisia in the fight against terrorism," she added.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/df65e422b932cbad4bb83b0da9c9f6b4202f6e38/0_185_3887_2331/500.jpg'></td><td>2015-03-18 18:13:08</td><td><a href='http://www.theguardian.com/world/live/2015/mar/18/terror-attack-tunisia-bardo-museum-live-updates'>site</a></td><td>The French foreign minister Laurent Fabius has said Tunisia was targeted because it represents hope.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 09:06:29</td><td><a href='http://www.foxnews.com/world/2015/03/19/tunisia-president-says-country-is-in-war-with-terror-after-tunis-museum/'>site</a></td><td>"I want the people of Tunisia to understand firstly and lastly that we are in a war with terror, and these savage minority groups will not frighten us," said Essebsi in a televised address to the nation.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 08:51:20</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3008741/Tunisia-museum-reopen-following-massacre.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tunisia's national museum on Tuesday delayed a planned reopening after last week's attack on foreign tourists due to security concerns, its head of communications Hanene Srarfi told AFP.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:22:43</td><td><a href='http://ibnlive.in.com/news/19-killed-in-tunis-museum-attack-including-17-foreigners-tunisia-pm/534744-2.html'>site</a></td><td>19 killed in Tunis museum attack, including 17 foreigners: Tunisia PM</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/df65e422b932cbad4bb83b0da9c9f6b4202f6e38/0_185_3887_2331/500.jpg'></td><td>2015-03-18 18:13:08</td><td><a href='http://www.theguardian.com/world/live/2015/mar/18/terror-attack-tunisia-bardo-museum-live-updates'>site</a></td><td>The French foreign minister Laurent Fabius has said Tunisia was targeted because it represents hope.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/tunisia-attack-museum-3015-3-18.jpg'></td><td>2015-03-18 20:04:00</td><td><a href='http://www.globalpost.com/dispatch/news/regions/africa/150318/gunmen-storm-tunisia-museum-killing-17-foreign-tourists-and-two-'>site</a></td><td>Tunisia's uprising inspired "Arab Spring" revolts in neighboring Libya and in Egypt, Syria and Yemen.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://img.rasset.ie/000a502e-642.jpg'></td><td>2015-03-18 22:51:36</td><td><a href='http://www.rte.ie/news/2015/0318/687894-tunisia-attack/'>site</a></td><td>The local stock exchange dropped nearly 2.5% and two German tour operators said they were cancelling trips from Tunisia's beach resorts to Tunis for a few days.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 02:07:31</td><td><a href='http://ibnlive.in.com/news/couldnt-see-anything-except-blood-says-witness-of-tunisia-attack-which-left-19-dead/534788-2.html'>site</a></td><td>After a crisis between secular leaders and the Islamist party which won the country's first post-revolt election, Tunisia has emerged as a model of compromise politics and transition to democracy for the region.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 12:10:57</td><td><a href='http://nypost.com/2015/03/19/tunisia-gunmen-known-to-authorities-2-spaniards-hid-all-night-in-fear/'>site</a></td><td>TUNIS, Tunisia - One of the gunmen who killed tourists and others at a prominent Tunisian museum was known to the intelligence services but no formal links to a particular extremist group have been established, the prime minister said Thursday.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-20 09:06:29</td><td><a href='http://www.foxnews.com/world/2015/03/19/tunisia-president-says-country-is-in-war-with-terror-after-tunis-museum/'>site</a></td><td>"I want the people of Tunisia to understand firstly and lastly that we are in a war with terror, and these savage minority groups will not frighten us," said Essebsi in a televised address to the nation.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-20 13:36:00</td><td><a href='http://www.dw.de/eu-pledges-aid-to-tunisia-following-deadly-attack/a-18330477?maca=en-rss-en-world-4025-rdf'>site</a></td><td>"The European Union and its member states will intensify cooperation with Tunisia to counter this common terrorist threat, to strengthen Tunisia's promising democracy and to assist its economic and social development," the 28-nation bloc said in a statement.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-24 08:51:20</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3008741/Tunisia-museum-reopen-following-massacre.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tunisia's national museum on Tuesday delayed a planned reopening after last week's attack on foreign tourists due to security concerns, its head of communications Hanene Srarfi told AFP.</td></tr>
 </table></body></html>

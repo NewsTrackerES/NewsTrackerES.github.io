@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/30/876/493/baa9adaf4da0d410VgnVCM100000d7c1a8c0____-Apple IBM Aging-1.jpg?ve=1&tl=1'></td><td>2015-04-30 13:51:27</td><td><a href='http://www.foxbusiness.com/technology/2015/04/30/apple-ibm-japan-post-team-up-to-improve-elderly-care-in-japan-want-other-places/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Apple and IBM formed a partnership last year to create mobile apps for a broad range of industries.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Bg_I6s58PUgXnK6VTPlsBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4a6ac8d852ce2513750f6a7067002359.jpg'></td><td>2015-04-30 13:51:43</td><td><a href='http://news.yahoo.com/apple-ibm-japan-post-team-improve-elderly-care-132403587.html'>site</a></td><td><table><tr><td>NEW YORK (AP) - Apple, IBM and Japanese insurance and bank holding company Japan Post have formed a partnership to improve the lives of elderly people in the country.</td></tr><tr><td>Apple CEO Tim Cook, IBM CEO Ginni Rometty and Japan Post CEO Taizo Nishimuro announced the deal in New York on Thursday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 19:38:36</td><td><a href='http://abcnews.go.com/Technology/wireStory/apple-ibm-japan-post-team-improve-elderly-care-30698188'>site</a></td><td>Cook said Apple strives to make its products accessible and easy to use, and noted that a many of the company's recent products have focused on health.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:34:11</td><td><a href='http://www.reuters.com/article/2015/04/30/us-usa-apple-partnership-idUSKBN0NL1QK20150430?feedType=RSS&feedName=healthNews'>site</a></td><td>Apple, IBM announce partnership with Japan Post to improve elderly care</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/apple2.jpg?ve=1&tl=1'></td><td>2015-04-30 13:36:56</td><td><a href='http://www.foxbusiness.com/industries/2015/04/30/apple-ibm-partner-with-japan-post-for-elderly-care/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td><table><tr><td>Apple Inc and International Business Machine Corp have teamed up with Japan Post Holdings Co to improve caregiver and monitoring services for the elderly in Japan, the companies announced on Thursday.</td></tr><tr><td>Cook touted iPhone and iPad sales in Japan but notably made little mention of the Apple Watch, his first new product since taking over the company after Steve Jobs' death in 2011.</td></tr><tr><td>He touted the iPad as an integral tool for improving care of elderly family members and patients, and said Apple has seen a "significant uptake" of the iPhone and iPad in Japan.</td></tr></table></td></tr>
 </table></body></html>

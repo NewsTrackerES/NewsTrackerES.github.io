@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 15:18:29</td><td><a href='http://www.utsandiego.com/news/2015/may/01/inked-and-irked-apple-watch-users-report-tattoo/'>site</a></td><td><table><tr><td>Inked and irked: Apple Watch users report tattoo problems</td></tr><tr><td>NEW YORK (AP) - It's an annoying problem for the unlucky few: the Apple Watch's heart rate monitor might not work if you have a tattoo on your wrist.</td></tr><tr><td>Inked and irked Apple fans have dubbed the issue "TattooGate" on Twitter, complaining that they must choose between their body art and their stylish gadget.</td></tr><tr><td>While the issue might sound like one of those "1 percenter problems" some Twitter users wondered how it happened that Apple didn't have a single designer or tester with a wrist tattoo who would have noticed the problem.</td></tr><tr><td>Apple suggests that users who can't get a consistent heart rate reading connect their Apple Watch wirelessly to external heart rate monitors.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-01 19:27:30</td><td><a href='http://www.usnews.com/news/business/articles/2015/05/01/inked-and-irked-apple-watch-users-report-tattoo-problems'>site</a></td><td>This isn't Apple's first "-gate" problem.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-01 20:28:36</td><td><a href='http://www.seattlepi.com/business/technology/article/Inked-and-irked-Apple-Watch-users-report-tattoo-6235942.php'>site</a></td><td>He has a black tattoo on the inside of his wrist - but not the side where he has worn the Apple Watch.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 16:27:35</td><td><a href='http://news.yahoo.com/ge-ties-qualcomm-apple-lighting-business-bet-161733187--sector.html'>site</a></td><td><table><tr><td>GE ties up with Qualcomm, Apple in new lighting business bet</td></tr><tr><td>(Reuters) - General Electric Co on Monday announced collaborations with Qualcomm Inc and Apple Inc as it uses digital technology and the growing appetite for data to reinvigorate its 130-year-old lighting business.</td></tr><tr><td>GE also said it will produce an LED bulb compatible with Apple's yet-to-launch connected-device platform HomeKit.</td></tr></table></td></tr>
 </table></body></html>

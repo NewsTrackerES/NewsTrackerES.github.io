@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/p/q/a/5/image.related.articleLeadwide.620x349.1mpprj.png/1429598340692.jpg'></td><td>2015-04-21 06:06:34</td><td><a href='http://www.smh.com.au/world/fears-ebola-spreads-through-sex-prompt-us-warning-to-abstain-20150421-1mpprj.html'>site</a></td><td><table><tr><td>Fears Ebola spreads through sex prompt US warning to abstain</td></tr><tr><td>New York: The US Centres for Disease Control and Prevention has told Ebola survivors to abstain from all forms of sex or use condoms every time, until scientists know more about how the disease spreads.</td></tr><tr><td>The organisation revised its guidelines on Ebola transmission "until more information becomes available," rather than three months as previously recommended.</td></tr><tr><td>They were acting on evidence suggesting that a Liberian man who recovered from Ebola might have transmitted the virus to his female partner many months later.</td></tr><tr><td>Ebola genetic material was found in a semen sample the man provided 175 days after he developed symptoms, 74 days longer than ever before found in a survivor.</td></tr><tr><td>Experts said they had expected sexual transmission of Ebola to be rare.</td></tr><tr><td>"The problem is we haven't looked at a large number of cases," said Stuart Nichol, an Ebola researcher at the CDC.</td></tr><tr><td>Dr Bruce Aylward, the lead Ebola official at the WHO, said the agency was exploring the feasibility of just such a program.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 12:55:53</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3048749/Scientists-share-real-time-genetic-data-deadly-MERS-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Scientists to share real-time genetic data on deadly MERS, Ebola</td></tr><tr><td>The gene sequences, already available for MERS cases and soon to come in the case of Ebola, will be posted on the website virological.org for anyone to see, access and use.</td></tr><tr><td>As part of the same gene sequencing project, Ian Goodfellow from the University of Cambridge is in Sierra Leone working with the government there to make similar data on the Ebola virus available on virological.org as soon as possible.</td></tr><tr><td>He plans to collect samples from Ebola patients, sequence them in a matter of hours and process the data to make the viral genome sequences in weeks -- a process that could take months if samples were to be bought back to Britain for analysis.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 15:04:16</td><td><a href='http://www.torontosun.com/2015/04/21/scientists-to-share-real-time-genetic-data-on-deadly-mers-ebola'>site</a></td><td>LONDON - Genetic sequence data on two of the deadliest yet most poorly understood viruses are to be made available to researchers worldwide in real time as scientists seek to speed up understanding of Ebola and MERS infections.</td></tr>
 </table></body></html>

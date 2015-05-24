@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:21:43</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-official-surveymonkey-ceo-died-severe-head-trauma-30796760'>site</a></td><td>Mexico Official Says SurveyMonkey CEO Died of Severe Head Trauma in Exercise Accident</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 20:40:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443408&ref=rss'>site</a></td><td>Goldberg, husband of Facebook executive Sheryl Sandberg, was found lying next to a treadmill on Friday at the Four Seasons Resort Punta Mita near Puerto Vallarta on Mexico's Pacific coast.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 00:10:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443554&ref=rss'>site</a></td><td><table><tr><td>MEXICO CITY (AP) " Two metro trains carrying passengers crashed in Mexico City on Monday, leaving at least 12 people injured, authorities said.</td></tr><tr><td>The Mexico City Metro System said via its Twitter account that three of the 12 injured were hospitalized.</td></tr><tr><td>The Mexico City metro has 12 lines.</td></tr></table></td></tr>
 </table></body></html>

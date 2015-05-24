@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 05:20:18</td><td><a href='http://www.usnews.com/news/sports/articles/2015/05/17/leroux-and-wambach-each-score-twice-us-beats-mexico-5-1'>site</a></td><td><table><tr><td>Leroux and Wambach each score twice, US beats Mexico 5-1</td></tr><tr><td>She has scored 24 goals against Mexico, the most has against any nation.</td></tr><tr><td>Ariana Calderon scored on a header for Mexico late in the first half, snapping Hope Solo's shutout streak at five matches.</td></tr><tr><td>It was the first goal the U.S. conceded to Mexico since November 2010, when Las Tri surprised the Americans with a 2-1 victory in World Cup qualifying.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-18 05:31:20</td><td><a href='http://www.mercurynews.com/sports/ci_28137083/u-s-soccer-american-women-beat-mexico-5?source=rss'>site</a></td><td>Leroux made her first start of the year and scored twice in a 5-1 victory for the United States over Mexico on Sunday night.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/7ae/sports/soccer/world-cup/article24478464.ece/ALTERNATES/w220/so-usa18sp2.JPG'></td><td>2015-05-18 22:45:55</td><td><a href='http://www.theglobeandmail.com/sports/soccer/world-cup/us-women-cruise-to-a-5-1-win-over-mexico-in-world-cup-tune-up-match/article24478465/?cmpid=rss1'>site</a></td><td><table><tr><td>Mexico goalkeeper Cecilia Santiago was the star early on, fending off two tremendous attempts by Megan Rapinoe in the 14th minute.</td></tr><tr><td>Mexico coach Leo Cuellar told The Associated Press that he will likely wait to announce his World Cup roster until closer to the May 25 deadline, because of injuries that have impacted his squad.</td></tr><tr><td>Samarzich, who played for USC, was apparently injured in one of Mexico's closed-door matches.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 06:44:21</td><td><a href='http://www.miamiherald.com/sports/article21269778.html#storylink=rss'>site</a></td><td><table><tr><td>University of Texas Athletic Director Steve Patterson says the school could play football in Mexico City by 2020 as it considers expanding its brand internationally.</td></tr><tr><td>Patterson said the university has a natural advantage because of its proximity to what he considers to be a lucrative fan base in Mexico.</td></tr><tr><td>The University of Texas soccer team played Mexico's Monterrey Tech in an exhibition match in February and the volleyball team hosted a squad from China last fall.</td></tr></table></td></tr>
 </table></body></html>

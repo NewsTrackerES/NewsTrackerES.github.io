@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/5/22/1432260289783/a29cf511-cfbe-4436-a018-51b3d0f13ee3-300x180.jpeg'></td><td>2015-05-22 02:08:32</td><td><a href='http://www.theguardian.com/world/2015/may/22/russia-will-block-google-twitter-and-facebook-if-they-withhold-blogger-data'>site</a></td><td><table><tr><td>Russia's media watchdog has written to Google, Twitter and Facebook warning them against violating Russian internet laws and a spokesman said they risked being blocked if they did not comply.</td></tr><tr><td>In its semi-annual Transparency Report, Google said it provided some information on users in response to 5% of 134 Russian government requests made in the second half of 2014 - again far less than in the United States.</td></tr><tr><td>The company says it complies with requests that follow accepted legal procedures and Google policies.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:42:19</td><td></td><td><a href='yahoo_or_google_86.html'>Google co-founder Sergey listens to California Gov. Edmund G Brown Jr. during a bill signing for driverless cars at Google headquarters in Mountain View, Calif., Tuesday, Sept. (18)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 07:52:59</td><td></td><td><a href='yahoo_or_google_88.html'>Unlike Google, automakers think self-driving cars will arrive feature-by-feature instead of all at once, giving people plenty of time to adapt to autonomous driving. (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-16 02:52:04</td><td></td><td><a href='yahoo_or_google_85.html'>Google has long been testing its self-driving car technology with a fleet of Lexus sport-utility vehicles that have driven about 1 million miles on public roads, and that continue to put in 10,000 miles a week. (5)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/29/lockdown-welcomed-in-ebola-weary-sierra-leone/_jcr_content/image.adapt.480.low.SierraLeone_Lockdown_032815_2.jpg'></td><td>2015-04-14 14:43:00</td><td><a href='http://america.aljazeera.com/articles/2015/4/14/thousands-of-sierra-leone-schools-reopen.html'>site</a></td><td>"The skepticism is based on fear of Ebola because people are not very confident of sending their children if schools are not well prepared," he said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 15:01:49</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3038513/Sierra-Leone-schools-reopen-long-closure-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In all, more than 9,000 children were orphaned by Ebola in Sierra Leone, some of whom survived the disease themselves.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 15:50:34</td><td><a href='http://www.foxnews.com/health/2015/04/14/sierra-leone-schools-reopen-after-long-closure-due-to-ebola/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td><table><tr><td>Unicef has supplied schools with soap and water and thermometers to check for fever, an Ebola symptom.</td></tr><tr><td>At the Prince of Wales secondary school in the west of the city, hundreds of pupils showed up in a compound that medical charity Medicins Sans Frontieres used as an Ebola care center just a few weeks previously.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 16:32:01</td><td><a href='http://www.miamiherald.com/living/health-fitness/article18584123.html#storylink=rss'>site</a></td><td>President Barack Obama is citing major gains in fighting the Ebola outbreak in West Africa and says the goal now is to prevent any new cases.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 16:33:29</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3040300/Obama-says-Ebola-fighting-goal-prevent-new-cases.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The United States was part of an international effort to confront Ebola.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/35/65/63/7822545/5/mosaic_2.jpg'></td><td>2015-04-15 18:10:56</td><td><a href='http://www.chron.com/news/medical/article/Obama-says-Ebola-fighting-goal-is-to-prevent-any-6201464.php'>site</a></td><td>"This virus is unpredictable, we have to be vigilant and the international community has to be fully engaged in a partnership with these three countries until there are no cases of Ebola in these countries."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-04-15 18:10:56</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/15/obama-says-ebola-fighting-goal-is-to-prevent-any-new-cases'>site</a></td><td>On Capitol Hill, top government health officials echoed the president's message, saying that while recent efforts fighting Ebola have been encouraging, the threat is far from over,.</td></tr>
 </table></body></html>

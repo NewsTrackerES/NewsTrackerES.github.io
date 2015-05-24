@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 17:46:48</td><td><a href='http://www.utsandiego.com/news/2015/may/12/nurse-in-italy-tests-positive-for-ebola-was-in/'>site</a></td><td><table><tr><td>The nurse, who wasn't identified to protect his privacy, worked for the non-governmental aid group Emergency in Sierra Leone, one of the African countries hardest hit by often-fatal Ebola.</td></tr><tr><td>He will soon be transferred to Rome's Spallanzani infectious disease hospital, which last year successfully treated an Italian doctor who contracted Ebola after working in Sierra Leone, also for Emergency.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 06:57:43</td><td><a href='http://www.reuters.com/article/2015/05/14/us-ebola-usa-connecticut-idUSKBN0NY21A20150514?feedType=RSS&feedName=domesticNews'>site</a></td><td>He had been working at Ebola treatment centers as an administrator, said Paul Skolnik, chief of medicine at the University of Connecticut Health Center's Ebola Task Force.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 06:57:43</td><td><a href='http://www.reuters.com/article/2015/05/14/us-ebola-usa-connecticut-idUSKBN0NY21A20150514?feedType=RSS&feedName=healthNews'>site</a></td><td>Patient in Connecticut tests negative for Ebola</td></tr>
 </table></body></html>

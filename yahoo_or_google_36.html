@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 19:25:46</td><td><a href='http://www.mercurynews.com/business/ci_27873221/google-plans-ad-free-youtube-subscription-service-email?source=rss'>site</a></td><td><table><tr><td>Google is alerting content creators because it wants them to agree to new terms that would let it include clips in the subscription product.</td></tr><tr><td>The move to introduce subscriptions is part of a broader shift at Mountain View-based Google to generate more income that isn't based on advertising.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 19:24:06</td><td><a href='http://finance.yahoo.com/news/court-questions-google-patent-values-192406404.html'>site</a></td><td><table><tr><td>Court questions Google on patent values in Microsoft case</td></tr><tr><td>Google sold the Motorola handset business to Lenovo last year, but kept its patents.</td></tr><tr><td>Google asked the 9th U.S. Circuit Court of Appeals on Wednesday to rule that the patent rate should have been determined by a jury, not the judge.</td></tr><tr><td>However, all three members of the 9th Circuit panel suggested that Google's attorneys had not sought a jury trial on that issue at the time.</td></tr><tr><td>Google has asked that the 9th Circuit reverse that award as well.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-08 19:25:38</td><td><a href='http://www.reuters.com/article/2015/04/08/us-microsoft-google-patents-idUSKBN0MZ23Y20150408?feedType=RSS&feedName=businessNews'>site</a></td><td>The value of Google's patents can affect how it negotiates royalty rates with other tech companies, and firms including Apple Inc and Intel Corp filed court papers supporting Microsoft.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:16:18</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009760/US-STOCKS-Wall-St-near-unchanged-mark-Nasdaq-Google-lift.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>US STOCKS-Wall St near unchanged mark; Nasdaq up on Google lift</td></tr><tr><td>The Nasdaq outperformed other major indexes, boosted by a 2.6 percent gain in Google shares to $579.94.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/hMm7caf1yrktQYAYvzNtvA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/7e461f87d3f99d096f0f6a7067009272.jpg'></td><td>2015-03-02 15:25:14</td><td><a href='http://news.yahoo.com/google-offer-own-cellular-network-plan-152459439--finance.html'>site</a></td><td>Finding a way to provide a "seamless" Internet connection when a device moves from Wi-Fi to cellular coverage as one example of goals Google would like to target, Pichai said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:00:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11410692&ref=rss'>site</a></td><td><table><tr><td>Google to offer own cellular network plan</td></tr><tr><td>Pichai compared Google's latest move to its decision to launch its own line of Nexus smartphones, which he said Google uses not to compete with other smartphone makers, but to introduce innovations in mobile hardware.</td></tr><tr><td>Google plans to be a "mobile virtual network operator," which means it will lease space on an existing system.</td></tr><tr><td>Pichai didn't name Google's wireless partners, but previous media reports have identified Sprint Corp. and T-Mobile US Inc. Neither of those carriers has confirmed those plans yet.</td></tr><tr><td>Selling Google access to their wireless networks would help Sprint and T-Mobile recoup some of their extensive investments.</td></tr><tr><td>If Google's entry into the wireless market is successful, the company may even try to take over Sprint or T-Mobile, Menezes said.</td></tr><tr><td>Google is constantly looking for ways to get more people online in an effort to drive more traffic to its Internet-leading search engine, Gmail and YouTube video site.</td></tr><tr><td>All those services display the ads that generate most of Google's revenue.</td></tr><tr><td>Google also collects commissions on millions of ads distributed to other sites.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/34/76/24/7595281/9/square_gallery_thumb.jpg'></td><td>2015-03-02 22:30:49</td><td><a href='http://www.sfgate.com/business/technology/article/Google-to-offer-own-cellular-network-plan-6109906.php'>site</a></td><td><table><tr><td>More information will be released "in the coming months," Sundar Pichai, Google Inc.'s senior vice president of products, said during his presentation.</td></tr><tr><td>The move into the wireless market mirrors what Google has been trying to do for hard-wired Internet access at home.</td></tr><tr><td>"Any time there is a new entrant with the resources and imagination of Google, it most definitely could shake up the market," said Gartner analyst Bill Menezes.</td></tr><tr><td>Pichai downplayed the competitive threat that Google might pose.</td></tr></table></td></tr>
 </table></body></html>

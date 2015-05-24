@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 13:00:12</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3033615/Risk-Ebola-spreading-countries-seen--WHO.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The experts, who form WHO's Emergency Committee on Ebola, also made a strong recommendation that all countries "avoid any unnecessary interference with international trade and transport" beyond temporary restrictions already in place, Aylward said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 13:26:32</td><td><a href='http://www.reuters.com/article/2015/04/10/health-ebola-vaccine-idUSL5N0X72B620150410?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>The WHO believes West Africa's Ebola epidemic still poses a threat to other countries, but the risk of it spreading internationally appears to be diminishing.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150410&t=2&i=1039359770&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB390HP'></td><td>2015-04-10 16:58:31</td><td><a href='http://www.reuters.com/article/2015/04/10/us-health-ebola-who-idUSKBN0N114I20150410?feedType=RSS&feedName=healthNews'>site</a></td><td>The WHO's Emergency Committee, comprising independent experts who conferred on Thursday, was "absolutely firm" in maintaining that view, said Dr. Bruce Aylward, WHO Special Representative for the Ebola Response.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 16:58:31</td><td><a href='http://news.yahoo.com/risk-ebola-spreading-other-countries-seen-less-120519767.html'>site</a></td><td>Falling Ebola cases make completing big clinical trials on experimental vaccines a challenge, with the best hope resting on a study in Guinea, Aylward said.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 16:59:32</td><td><a href='http://www.news24.com/World/News/Risk-of-Ebola-spreading-reducing-20150410'>site</a></td><td>The UN agency declared in August 2014 that the world's worst Ebola outbreak - which began in December 2013 - represented a "public health emergency of international concern" that forced all health officials to shore up defences.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-10 13:16:07</td><td><a href='http://news.yahoo.com/fda-modifies-partial-clinical-hold-tekmira-ebola-study-131607008--finance.html'>site</a></td><td><table><tr><td>FDA modifies partial clinical hold on Tekmira Ebola study</td></tr><tr><td>The company's application to study the treatment, TKM-Ebola, remains on partial clinical hold for doses above 0.24 mg/kg per day, Tekmira said on Friday.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:25:16</td><td><a href='http://news.yahoo.com/5-charged-mexico-city-enslaving-woman-dry-cleaner-170400003.html'>site</a></td><td><table><tr><td>5 charged in Mexico City for enslaving woman at dry-cleaner</td></tr><tr><td>MEXICO CITY (AP) - Mexico City authorities say a woman was chained to an ironing station at a dry-cleaning shop and forced to work in slave-like conditions for two years.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 02:39:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article19806768.html#storylink=rss'>site</a></td><td>Jesse T. Coburn III, 48, of Texico, New Mexico, was pronounced dead at the scene, New Mexico State police said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:39:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article19806768.html#storylink=rss'>site</a></td><td><table><tr><td>A freight train struck another train head-on early Tuesday in southeastern New Mexico, killing one crew member on the moving train and injuring a second, a railroad official said.</td></tr><tr><td>An executive of Carlsbad, New Mexico-based Southwestern Railroad's parent company said both victims were Southwestern employees and moving a 79-car train that struck a parked 12-car train that was stationary on the siding and had no crew on board.</td></tr></table></td></tr>
 </table></body></html>

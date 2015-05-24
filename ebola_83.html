@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 12:55:53</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3048749/Scientists-share-real-time-genetic-data-deadly-MERS-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Scientists to share real-time genetic data on deadly MERS, Ebola</td></tr><tr><td>The gene sequences, already available for MERS cases and soon to come in the case of Ebola, will be posted on the website virological.org for anyone to see, access and use.</td></tr><tr><td>As part of the same gene sequencing project, Ian Goodfellow from the University of Cambridge is in Sierra Leone working with the government there to make similar data on the Ebola virus available on virological.org as soon as possible.</td></tr><tr><td>He plans to collect samples from Ebola patients, sequence them in a matter of hours and process the data to make the viral genome sequences in weeks -- a process that could take months if samples were to be bought back to Britain for analysis.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 15:04:16</td><td><a href='http://www.torontosun.com/2015/04/21/scientists-to-share-real-time-genetic-data-on-deadly-mers-ebola'>site</a></td><td>LONDON - Genetic sequence data on two of the deadliest yet most poorly understood viruses are to be made available to researchers worldwide in real time as scientists seek to speed up understanding of Ebola and MERS infections.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 17:03:08</td><td><a href='http://news.yahoo.com/tekmira-ebola-drug-succeeds-small-monkey-study-170308149--finance.html'>site</a></td><td><table><tr><td>Tekmira Ebola drug succeeds in small monkey study</td></tr><tr><td>Although other experimental treatments appeared to help Ebola patients last year, especially in the United States, those one-time uses cannot prove efficacy against the "Makona" strain, since patients' recovery might be due to other causes.</td></tr><tr><td>In March, scientists reported that both the NewLink-Merck vaccine and one from GlaxoSmithKline PLC appear safe and triggered an anti-Ebola immune response in volunteers in Liberia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 18:00:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3050992/Tekmira-Ebola-drug-succeeds-small-monkey-study.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Similarly, drugs, including Mapp Biopharmaceutical's ZMapp, cured monkeys in lab experiments, but in a strain of Ebola different from that responsible for the current outbreak, the worst ever recorded.</td></tr><tr><td>The study continues a string of encouraging news in Ebola research.</td></tr><tr><td>This month scientists reported that an improved version of a vaccine from NewLink Genetics Corp and Merck & Co Inc protected all eight lab monkeys injected with Ebola.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-23 04:23:52</td><td><a href='http://www.rferl.org/content/ebola-cure-virus-us-monkey/26973542.html'>site</a></td><td>U.S.-based scientists say an experimental drug has cured monkeys infected with the Ebola virus.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://img.rasset.ie/0009a60b-642.jpg'></td><td>2015-04-23 06:32:32</td><td><a href='http://www.rte.ie/news/2015/0423/696089-ebola/'>site</a></td><td>The drug, from Tekmira Pharmaceuticals Corp, is the first such success against the strain of Ebola in West Africa's 2014-2015 outbreak.</td></tr>
 </table></body></html>

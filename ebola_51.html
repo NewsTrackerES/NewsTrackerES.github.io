@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:00:11</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3022125/Merck-NewLink-Ebola-vaccine-appears-safe-effective-new-studies.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Merck, NewLink Ebola vaccine appears safe, effective in new studies</td></tr><tr><td>All 40 participants who received vaccine produced anti-Ebola antibodies within 28 days, with most responding sooner.</td></tr><tr><td>All 150 people who received vaccine developed antibodies to Ebola with higher responses to higher doses.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:06:14</td><td><a href='http://hosted2.ap.org/APDEFAULT/bbd825583c8542898e6fa7d440b9febc/Article_2015-04-01-AF--Ebola-West%20Africa/id-f0f7d3b306294333902f42eeb3d23287'>site</a></td><td><table><tr><td>Hundreds of sick people were identified on Friday, Saturday and Sunday as health teams went door-to-door in an operation that also aimed to remind people how to prevent Ebola.</td></tr><tr><td>Conteh said Sierra Leone had "conquered the Ebola disease and we are now at the tail end."</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 23:06:49</td><td><a href='http://www.cbsnews.com/news/new-ebola-cases-discovered-in-sierra-leone/'>site</a></td><td>That figure indicates that there were not hordes of hidden Ebola cases as some had feared.</td></tr>
 </table></body></html>

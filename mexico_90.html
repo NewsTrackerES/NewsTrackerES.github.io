@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/21/660/371/a26ac20a0acdc410VgnVCM200000d6c1a8c0____-Making Cars in Mexico-2.jpg?ve=1&tl=1'></td><td>2015-04-21 16:34:41</td><td><a href='http://www.foxbusiness.com/markets/2015/04/21/lured-by-low-wages-and-trade-deals-automakers-accelerate-factory-investments/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fmarkets+%28Internal+-+Markets+-+Text%29'>site</a></td><td><table><tr><td>Automakers now have 18 factories in Mexico, many built in the past 10 years.</td></tr><tr><td>The United Auto Workers complain that companies building in Mexico are taking advantage of "slave-like" wages.</td></tr><tr><td>Still, the auto industry's investments aren't limited to Mexico.</td></tr><tr><td>Car buyers should see benefits from lower costs in Mexico.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 16:37:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/21/low-wages-trade-deals-luring-auto-plants-and-jobs-to-mexico'>site</a></td><td>But companies with longtime factories in Mexico, such as Ford and Nissan, have resolved those issues, according to McAlinden.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 16:40:35</td><td><a href='http://www.startribune.com/business/300806901.html'>site</a></td><td>Despite shipping costs, it's still cheaper to build cars for the U.S. in Mexico, McAlinden says.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 16:40:35</td><td><a href='http://www.startribune.com/business/economy/300806901.html'>site</a></td><td>Lured by low wages and trade deals, automakers accelerate factory investments, jobs in Mexico</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-21 17:02:28</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3049181/Low-wages-trade-deals-luring-auto-plants-jobs-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Lured by low wages and tax-saving free trade agreements, auto companies from the U.S. and overseas are accelerating plans to build new factories and add jobs in Mexico.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/21/0465fc74e0925011740f6a706700e382_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-21 16:37:59</td><td><a href='http://www.utsandiego.com/news/2015/apr/21/low-wages-trade-deals-luring-auto-plants-and-jobs/'>site</a></td><td><table><tr><td>Low wages, trade deals luring auto plants and jobs to Mexico</td></tr><tr><td>DETROIT (AP) - Mexico has become the most attractive place in North America to build new automobile factories, a shift that has siphoned jobs from the U.S. and Canada, yet helped keep car and truck prices in check for consumers.</td></tr><tr><td>In the past two years, eight automakers have opened or announced new plants or expansions in Mexico.</td></tr><tr><td>A worker in Mexico costs car companies an average of $8 an hour, including wages and benefits.</td></tr><tr><td>Mexico also trumps the U.S. on free trade.</td></tr><tr><td>Audi also sells the Q5 in the U.S., where tariffs on cars built in Mexico were dropped under the North American Free Trade Agreement.</td></tr><tr><td>While Mexico's auto industry booms and workers welcome the above-average wages, they are speaking out more loudly about working conditions.</td></tr><tr><td>The number of auto-making jobs in Mexico has risen almost 40 percent since 2008, from 490,000 to 675,000 last year, according to government and industry statistics.</td></tr></table></td></tr>
 </table></body></html>

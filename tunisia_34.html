@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 14:16:39</td><td><a href='http://www.utsandiego.com/news/2015/apr/07/militant-ambush-kills-2-soldiers-in-tunisia-near/'>site</a></td><td><table><tr><td>Militant ambush kills 2 soldiers in Tunisia near border</td></tr><tr><td>TUNIS, Tunisia (AP) - Tunisia's army spokesman says an ambush by extremists in a mountainous region near the Algerian border has killed two soldiers and wounded three others.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 14:50:24</td><td><a href='http://www.foxnews.com/world/2015/04/08/5th-tunisian-soldier-dies-from-wounds-after-ambush-as-13-suspects-are-arrested/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>TUNIS, Tunisia - Tunisia's defense spokesman said a fifth soldier has died from wounds suffered in an ambush Tuesday that also wounded eight people.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 14:55:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11429788&ref=rss'>site</a></td><td>5th Tunisia soldier dies of wounds after ambush</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:01:30</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3027769/Tunisia-trial-deadly-ambush-suspects-adjourned.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The trial of 77 people in Tunisia charged with involvement in a jihadist attack that killed eight soldiers was adjourned Monday after the defence asked for more time to prepare.</td></tr><tr><td>One high-profile defendant is Seif Allah Ben Hassine, alias Abou Iyadh, a Tunisian jihadist chief and Afghanistan veteran Tunisia says has fled into neighbouring Libya.</td></tr><tr><td>If convicted, they could be sentenced to death, despite Tunisia no longer carrying out capital punishment.</td></tr><tr><td>Since the January 2011 revolution, Tunisia has experienced jihadist violence that has killed dozens of members of the security forces.</td></tr></table></td></tr>
 </table></body></html>

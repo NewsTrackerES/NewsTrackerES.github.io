@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0415/20150415__0416google~2_300.JPG'></td><td>2015-04-28 17:32:21</td><td><a href='http://www.mercurynews.com/business/ci_28004540/google-commits-millions-european-news-organizations?source=rss'>site</a></td><td><table><tr><td>BERLIN -- Google says it will give European publishers more than $162 million to help them adapt to the challenge of selling news online.</td></tr><tr><td>Google said in a statement Tuesday it is establishing the Digital News Initiative together with eight leading publishers, including the Financial Times and the Guardian.</td></tr><tr><td>Last year, Google blocked Spanish publishers' reports from more than 70 Google News international editions due to a new Spanish law requiring aggregators to pay to link content.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694044116_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 16:05:31</td><td><a href='http://www.torontosun.com/2015/04/29/google-launches-security-feature-for-chrome-web-browser'>site</a></td><td>Nearly 2% of messages sent through Gmail, Google's e-mail service, are designed to steal passwords.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-04-29T145926Z_1_LYNXMPEB3S0P1_RTROPTP_2_GOOGLE-EU.JPG'></td><td>2015-04-29 16:15:35</td><td><a href='https://www.yahoo.com/tech/s/google-launches-security-feature-chrome-browser-145926982--finance.html?src=rss'>site</a></td><td>Millions of phishing emails and websites are sent every day, Google said.</td></tr>
 </table></body></html>

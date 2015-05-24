@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:46:49</td><td><a href='http://news.yahoo.com/ohio-bridal-shop-linked-ebola-survivor-sell-building-114649470.html'>site</a></td><td><table><tr><td>AKRON, Ohio (AP) - A northeast Ohio bridal shop that was linked to an Ebola survivor and later announced plans to close has put its building up for sale.</td></tr><tr><td>Dallas nurse Amber Vinson visited Coming Attractions Bridal & Formal in Akron days before she was diagnosed with Ebola last fall.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/02/16/e0593df092b24a076e0f6a706700837a_c0-174-4288-2673_s561x327.jpg?51a83f0b5968219cd1828611227898c83abe077e'></td><td>2015-02-16 13:37:56</td><td><a href='http://www.washingtontimes.com/news/2015/feb/16/liberia-schools-reopen-after-6-month-ebola-closure/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>MONROVIA, Liberia (AP) - Students in Liberia began returning to the classroom Monday after a six-month closure during the Ebola epidemic that left thousands dead, lining up in their uniforms to have their temperatures taken before they could enter school gates.</td></tr><tr><td>"I am very happy to be counted among the living and I pray that Ebola be eradicated from this country."</td></tr><tr><td>A few, though, remained a bit fearful about returning even though there are just a handful of Ebola cases left in the country that once saw 100 new patients a week.</td></tr><tr><td>Nearly 9,200 people have died since the first Ebola deaths in rural Guinea in December 2013.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zR9qJsd.NSS0SroUla68OA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e0593df092b24a076e0f6a706700837a.jpg'></td><td>2015-02-16 13:38:03</td><td><a href='http://news.yahoo.com/liberia-schools-reopen-6-month-ebola-closure-102403539.html'>site</a></td><td><table><tr><td>Liberia schools reopen after 6-month Ebola closure</td></tr><tr><td>Liberia has seen the highest death toll from the Ebola epidemic, with 3,800 killed.</td></tr><tr><td>Since Ebola is spread through direct contact with bodily fluids, administrators want to minimize the potential spread.</td></tr><tr><td>In Sierra Leone on Monday, the government promised a full investigation after an internal audit found that nearly one-third of the money it received to fight Ebola was used without saving the necessary receipts and invoices to justify the spending.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/TdG_0FtxYQ3MxZGPdbZs2g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T001049Z_1_LYNXMPEB2M002_RTROPTP_2_HEALTH-EBOLA-AFRICA.JPG.cf.jpg'></td><td>2015-03-05 14:14:29</td><td><a href='http://news.yahoo.com/liberias-last-ebola-patient-discharged-government-134744552.html'>site</a></td><td>Massive efforts and funds have been poured into the fight to rid the three west African countries of the Ebola scourge, and a main focus has been to ensure that all those infected are isolated and cared for in treatment centres.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l.yimg.com/bt/api/res/1.2/W0it6bnKUdmhlQIo_.lPSg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8116428-1-1-0.jpg'></td><td>2015-04-22 22:33:05</td><td><a href='http://news.yahoo.com/more-26-000-infected-ebola-222428405.html'>site</a></td><td>"The decline in confirmed cases of Ebola virus disease has halted over the last three weeks," the WHO said in its latest report.</td></tr>
 </table></body></html>

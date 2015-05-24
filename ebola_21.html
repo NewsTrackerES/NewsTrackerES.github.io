@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/3/african-leaders-urge-ebola-marshall-plan.html'>site</a></td><td><table><tr><td>In addition, their health sectors have been partially wiped out by the epidemic, or forced to divert resources to fighting Ebola at the expense of other diseases like measles, malaria and AIDS.</td></tr><tr><td>The conference's lead participants stressed in their closing statements the "importance of maintaining international engagement with the recovery and development process in the Ebola-affected countries."</td></tr><tr><td>U.N. Ebola envoy David Nabarro said Monday that the number of new cases had declined from around 900 a week to 100 - but that cases appeared to be climbing back up in the coastal regions of Sierra Leone and Guinea.</td></tr><tr><td>Countries around the world have so far pledged $5.1 billion to fight Ebola, with $2.4 billion disbursed until now, according to the statement.</td></tr><tr><td>Ebola, one of the deadliest pathogens known to man, is spread through direct contact with the bodily fluids of an infected person showing symptoms such as fever or vomiting.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:31:40</td><td><a href='http://www.washingtontimes.com/news/2015/mar/5/after-ebola-ban-n-korea-opens-marathon-to-foreigne/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>Even though no cases of Ebola had been reported anywhere near North Korea, the country shut out foreign tourists in October with some of the strictest Ebola regulations in the world, including saying that only local runners would be allowed into the marathon in April.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:32:02</td><td><a href='http://news.yahoo.com/ebola-ban-n-korea-opens-marathon-foreigners-061942636.html'>site</a></td><td><table><tr><td>After Ebola ban, N. Korea opens marathon to foreigners</td></tr><tr><td>TOKYO (AP) - After lifting travel restrictions it imposed because of concerns over the Ebola virus, North Korea says foreigners can now take part in one of its most popular tourist events - the annual Pyongyang marathon, a travel agency said Thursday.</td></tr></table></td></tr>
 </table></body></html>

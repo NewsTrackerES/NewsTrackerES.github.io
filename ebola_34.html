@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 18:35:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420893&ref=rss'>site</a></td><td><table><tr><td>MONROVIA, Liberia (AP) " A patient has tested positive for Ebola in Liberia's capital, officials said Friday, deflating hopes that the West African nation had beaten the disease after weeks with no new cases.</td></tr><tr><td>Now, a new patient has tested positive, said Dr. Francis Kateh, the acting head of the country's Ebola Incident Management Team.</td></tr><tr><td>Tolbert Nyenswah, who runs Liberia's Ebola response, also said he had been told the test result was positive.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 23:54:34</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-officials-Patient-tests-positive-for-6147883.php'>site</a></td><td><table><tr><td>She was identified as a suspected Ebola case and put in the hospital's isolation unit while awaiting test results.</td></tr><tr><td>The Ebola virus can be found in the semen of survivors for up to three months, and health authorities recommend that survivors abstain from sex during that period.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-21 10:38:06</td><td><a href='http://www.charlotteobserver.com/living/health-family/article15560054.html#storylink=rss'>site</a></td><td><table><tr><td>Liberia investigates how latest Ebola patient got infected</td></tr><tr><td>Contacts of people who are sick with Ebola must be monitored for symptoms.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/cI.jNiewTzWoVhFE7FfzPA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T181812Z_1_LYNXMPEB2J0Y0_RTROPTP_2_HEALTH-EBOLA-LIBERIA.JPG'></td><td>2015-03-20 21:15:02</td><td><a href='http://news.yahoo.com/liberia-reports-first-ebola-case-weeks-181812734.html'>site</a></td><td><table><tr><td>Liberia reports first new case of Ebola in weeks</td></tr><tr><td>Liberian Information Minister Lewis Brown said that a 44-year-old woman had been transferred to the ELWA Ebola treatment unit in the capital Monrovia after testing positive for the virus.</td></tr></table></td></tr>
 </table></body></html>

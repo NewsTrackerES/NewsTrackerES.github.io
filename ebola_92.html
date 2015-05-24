@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 16:51:14</td><td><a href='http://www.utsandiego.com/news/2015/may/01/report-5-months-after-infection-man-spreads-ebola/'>site</a></td><td>A report Friday detailed the case of a Liberian woman whose infection likely came from a man who had Ebola symptoms last September.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 17:38:31</td><td><a href='http://www.ctvnews.ca/health/ebola-spread-via-sex-5-months-after-infection-report-1.2354283'>site</a></td><td>Based on the case, officials are now telling male Ebola survivors to avoid unprotected sex indefinitely.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 17:53:00</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3064503/5-months-infection-man-spreads-Ebola-sex.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>5 months after infection, man spreads Ebola via sex</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/36/13/15/7910258/3/622x350.jpg'></td><td>2015-05-01 19:24:59</td><td><a href='http://www.chron.com/news/medical/article/Report-5-months-after-infection-man-spreads-6236168.php'>site</a></td><td>In Guinea, Dr. Sakoba Keita, the national coordinator for Ebola response, said a woman in the southeastern town of Macenta contracted Ebola after having unprotected sex with her husband.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 19:24:59</td><td><a href='http://health.usnews.com/health-news/news/articles/2015/05/01/report-5-months-after-infection-man-spreads-ebola-via-sex'>site</a></td><td>The Ebola virus spreads through direct contact with an Ebola patient's blood or other bodily fluids like urine, saliva, semen and sweat.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-01 19:29:22</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article20030169.html#storylink=rss'>site</a></td><td>In a report released Friday, May 1, 2015, health officials think Ebola survivors can spread the disease through unprotected sex nearly twice as long as previously believed.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 21:19:36</td><td><a href='http://abcnews.go.com/US/wireStory/ebola-victims-family-hospitals-donation-falls-short-30798196'>site</a></td><td><table><tr><td>The family of the only person to die of Ebola in the United States said a Dallas hospital's donation to combat the disease in Africa fell far short of what they hoped.</td></tr><tr><td>SIM missionary Dr. Rick Sacra, who survived Ebola, has returned to Liberia.</td></tr></table></td></tr>
 </table></body></html>

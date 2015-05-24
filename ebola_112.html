@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 06:34:16</td><td></td><td><a href='ebola_85.html'>The fiancee of the first Ebola victim in the U.S., Thomas Eric Duncan, hopes "My Spirit Took You In" provides some resolution to a story that spanned two decades, from a border town in Ivory Coast to a Dallas hospital. (8)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-28 18:31:23</td><td></td><td><a href='ebola_88.html'>DALLAS (Reuters) - Thomas Eric Duncan became the face of a crisis when he was diagnosed with Ebola in the United States, but he was simply "Eric" to his fiancee, Louise Troh, who said she has endured threats and battled nightmares since his death in October. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 18:58:28</td><td></td><td><a href='ebola_89.html'>Duncan became ill shortly after arriving in Dallas at the height of an Ebola outbreak in West Africa. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 01:29:24</td><td></td><td><a href='ebola_17.html'>"We have been informed by Air Koryo that North Korea's borders are now open for travel and the four-month long Ebola travel ban was lifted as of Monday," Uri Tours said. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 06:32:02</td><td></td><td><a href='ebola_21.html'>TOKYO (AP) - After lifting travel restrictions it imposed because of concerns over the Ebola virus, North Korea says foreigners can now take part in one of its most popular tourist events - the annual Pyongyang marathon, a travel agency said Thursday. (3)</a></td></tr>
 </table></body></html>

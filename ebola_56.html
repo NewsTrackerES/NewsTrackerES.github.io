@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 22:13:12</td><td><a href='http://www.reuters.com/article/2015/04/04/us-health-ebola-leone-idUSKBN0MV0Q320150404?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>FREETOWN (Reuters) - Sierra Leone's eastern district of Kailahun, once a hotbed of Ebola, has recorded its first case in nearly four months, threatening progress made to stamp out the disease, officials said on Saturday.</td></tr><tr><td>A 9-month-old boy tested positive for Ebola after dying in Kailahun, the district on Guinea's border that recorded Sierra Leone's first Ebola case last May and was for months the epicenter of the crisis.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-04 23:01:34</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3025957/Eastern-Sierra-Leone-records-Ebola-case-months.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Nearly 3,800 people have died of Ebola in Sierra Leone but numbers of weekly cases are falling as steps to control the disease take hold.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 23:20:26</td><td><a href='http://news.yahoo.com/eastern-sierra-leone-records-first-ebola-case-months-221312992.html'>site</a></td><td><table><tr><td>Alex Bonapha, the Kailahun district council chairman, said it was not clear how the boy may have contracted Ebola as both his parents were healthy.</td></tr><tr><td>A ministry of health official expressed serious concern over the case, which came as the focus of local and international health officials is on the north and west of the country, the latest areas affected by Ebola.</td></tr><tr><td>As part of these measures, authorities closed all private medical clinics in Kindia, 135 km (84 miles) from the capital Conakry, after a new case of Ebola was recorded there.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 01:53:11</td><td><a href='http://www.sfgate.com/news/texas/article/Dallas-hospital-seeks-dismissal-of-Ebola-nurse-s-6179005.php'>site</a></td><td><table><tr><td>Dallas hospital seeks dismissal of nurse's suit over Ebola</td></tr><tr><td>"Nina Pham has gone through the unprecedented challenge of being the first nurse to whom the Ebola virus was transmitted while caring for a patient with Ebola in the U.S.," the statement said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 01:57:12</td><td><a href='http://www.miamiherald.com/living/health-fitness/article17383766.html#storylink=rss'>site</a></td><td>A hospital operator denied allegations of poor training and improper preparation in seeking dismissal of a lawsuit by a nurse who contracted Ebola while caring for the first U.S. patient to succumb to the deadly disease.</td></tr>
 </table></body></html>

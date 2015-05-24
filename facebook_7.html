@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-17 14:25:31</td><td><a href='http://www.startribune.com/business/296568601.html'>site</a></td><td><table><tr><td>? A Penn State University fraternity was suspended for a year Tuesday after police began investigating allegations that members used a private, invitation-only Facebook page to post photos of nude and partly nude women, some apparently asleep or passed out.</td></tr><tr><td>Facebook was contacted to disable the site and to obtain more information for the investigation, Robb said.</td></tr><tr><td>According to the ex-fraternity member who went to police, a second page dubbed "2.0" was started in about April 2014 after a woman depicted on the first Facebook page, called "Covert Business Transactions," complained.</td></tr><tr><td>The informant said the woman was visiting the fraternity when a member accidentally left his Facebook page logged in, and she noticed a topless photograph of her had been posted to the group.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 14:29:28</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article14986679.html#storylink=rss'>site</a></td><td>Penn State frat suspended over Facebook nudes</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-17 14:47:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Penn%20State%20Fraternity-Nude%20Photos/id-d6d55327c8124ffbaedd5d4e5664ce47'>site</a></td><td>"The evidence offered by the Facebook postings is appalling, offensive and inconsistent with the university community's values and expectations," Damon Sims, Penn State's vice president for student affairs, said in a news release.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 19:01:24</td><td><a href='http://www.cbsnews.com/news/penn-state-frat-suspended-over-secret-facebook-page/'>site</a></td><td>Police say some Facebook posts also related to hazing and drug deals.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix//promoboxes/btn_ipadapp_5_308x111.png'></td><td>2015-03-27 10:39:09</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3014434/Photo-Myanmars-reclusive-former-dictator-surfaces-Facebook.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>YANGON, March 27 (Reuters) - Myanmar's reclusive former military dictator, Than Shwe, appears to have surfaced in public for the first time in almost four years in a photograph on Facebook showing him being taught to use an iPad by a young girl.</td></tr><tr><td>The Facebook photo garnered more than 4,500 "likes", including one by Ye Htut, Myanmar's information minister.</td></tr><tr><td>The situation has changed dramatically over the past couple of years and many of Myanmar's citizens have embraced social media, especially Facebook.</td></tr></table></td></tr>
 </table></body></html>

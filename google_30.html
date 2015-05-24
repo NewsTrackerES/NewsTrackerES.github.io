@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,5 +50,4 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 05:01:33</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3029829/Google-probed-Senate-tax-enquiry.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Maile Carnegie has told a Senate enquiry into tax avoidance that Google Australia and New Zealand in 2013 made $58 million in revenue and profits of just over $46 million.</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-04-08 06:13:13</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3029829/Google-probed-Senate-tax-enquiry.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The managing director of Google Australia says the reason the tech giant pays so little tax in Australia is because the majority of risk and investment undertaken by the company is in the US.</td></tr><tr><td>"That explanation is also why Google pays most of its taxes in our US headquarters, because the US headquarters is where the majority of our costs are borne."</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 08:02:30</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3029829/Google-probed-Senate-tax-enquiry.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Google probed in Senate tax inquiry</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-04-14 11:58:02</td><td><a href='http://health.usnews.com/health-news/news/articles/2015/04/14/sierra-leone-schools-re-open-after-ebola-closed-for-9-months'>site</a></td><td><table><tr><td>FREETOWN, Sierra Leone (AP) - Children in Sierra Leone are returning to schools after the Ebola outbreak forced closures about nine months ago.</td></tr><tr><td>UNICEF Sierra Leone says it has facilitated the training of 9,000 teachers in Ebola prevention, safety guidelines and psycho-social support.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Nl41tjOBOJ1_ukY9CZkz8Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/e8ddcb097c8e40d25f416c7ef6bd6c10cdaabdc9.jpg.cf.jpg'></td><td>2015-04-14 11:58:11</td><td><a href='http://news.yahoo.com/sierra-leone-schools-open-ebola-closed-9-months-115811856.html'>site</a></td><td>The Ebola crisis is estimated to have infected more than 25,500 people and killed 10,587.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-04-14 13:33:31</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/14/sierra-leone-schools-re-open-after-ebola-closed-for-9-months'>site</a></td><td><table><tr><td>More than 8,000 schools are to reopen for about 1.8 million students and the government and U.N. children's agency promise to check temperatures regularly and will promote hand washing to discourage the spread of Ebola in the schools.</td></tr><tr><td>Since October 2014, UNICEF has supported the government in running daily emergency radio education programs to allow children to continue learning at home during the Ebola crisis.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-04-14 17:00:49</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/14/sierra-leone-schools-re-open-after-ebola-closed-for-9-months'>site</a></td><td>"I thank God I was not infected with the Ebola disease."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/29/lockdown-welcomed-in-ebola-weary-sierra-leone/_jcr_content/image.adapt.480.low.SierraLeone_Lockdown_032815_2.jpg'></td><td>2015-04-14 14:43:00</td><td><a href='http://america.aljazeera.com/articles/2015/4/14/thousands-of-sierra-leone-schools-reopen.html'>site</a></td><td>"The skepticism is based on fear of Ebola because people are not very confident of sending their children if schools are not well prepared," he said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 15:01:49</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3038513/Sierra-Leone-schools-reopen-long-closure-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In all, more than 9,000 children were orphaned by Ebola in Sierra Leone, some of whom survived the disease themselves.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 15:50:34</td><td><a href='http://www.foxnews.com/health/2015/04/14/sierra-leone-schools-reopen-after-long-closure-due-to-ebola/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td><table><tr><td>Unicef has supplied schools with soap and water and thermometers to check for fever, an Ebola symptom.</td></tr><tr><td>At the Prince of Wales secondary school in the west of the city, hundreds of pupils showed up in a compound that medical charity Medicins Sans Frontieres used as an Ebola care center just a few weeks previously.</td></tr></table></td></tr>
 </table></body></html>

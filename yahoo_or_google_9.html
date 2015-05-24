@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 15:14:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-03-24-US--Google-Morgan%20Stanley-CFO/id-e3d07d6017e24817a0bbe4edfadfc5e7'>site</a></td><td>Porat also sits on Stanford's board of trustees with two members of Google's board, K.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:14:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-03-24-US--Google-Morgan%20Stanley-CFO/id-e3d07d6017e24817a0bbe4edfadfc5e7'>site</a></td><td>Google has been at the forefront of upheaval during the past 15 years.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/31/50/7707199/3/920x920.jpg'></td><td>2015-03-24 21:02:38</td><td><a href='http://www.sfgate.com/business/technology/article/Google-hires-Morgan-Stanley-s-Ruth-Porat-as-CFO-6155047.php'>site</a></td><td><table><tr><td>Porat, 58, will become Google's highest-ranking female executive when she starts her new job on May 26.</td></tr><tr><td>The terms of Porat's contract at Google weren't immediately disclosed.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6Py4UxcQaRViTv9UnOf_1w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ed48cc945ed3af0d710f6a7067006c1d.jpg'></td><td>2015-03-24 21:03:07</td><td><a href='http://news.yahoo.com/google-hires-morgan-stanleys-ruth-porat-cfo-134206480--finance.html'>site</a></td><td><table><tr><td>Google imports new CFO Ruth Porat from Wall Street</td></tr><tr><td>The appointment announced Tuesday fills a void that opened earlier this month after Google's CFO of the past seven years, Patrick Pichette, announced his plans to retire.</td></tr><tr><td>Porat has California roots and connections on Google's board of directors.</td></tr><tr><td>Hennessy, who is also Stanford's president, is Google's lead independent director.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:16:18</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009760/US-STOCKS-Wall-St-near-unchanged-mark-Nasdaq-Google-lift.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>US STOCKS-Wall St near unchanged mark; Nasdaq up on Google lift</td></tr><tr><td>The Nasdaq outperformed other major indexes, boosted by a 2.6 percent gain in Google shares to $579.94.</td></tr></table></td></tr>
 </table></body></html>

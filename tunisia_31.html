@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,5 +50,4 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 15:45:41</td><td><a href='http://www.cbsnews.com/news/leading-suspect-in-attack-on-national-bardo-museum-killed-tunisia-prime-minister-habib-essid-says/'>site</a></td><td>Tunisian protesters unleashed revolts across the region known as the Arab Spring, and Tunisia is the only country to have built a democratic system as a result.</td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://si.wsj.net/public/resources/images/BN-HQ302_tunisi_P_20150329110830.jpg'></td><td>2015-03-29 18:56:17</td><td><a href='http://www.wsj.com/articles/leading-suspect-in-tunisia-museum-attack-killed-1427631047?mod=fox_australian'>site</a></td><td>The international visitors are showing solidarity with Tunisia, whose fragile new democracy was deeply shaken by the museum attack, for which Islamic State claimed responsibility.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 19:00:48</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3019137/Tunisia-attack-inquest-open.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A British tourist killed in a terror attack in Tunisia died of gunshot wounds to her abdomen and pelvis, a coroner has heard.</td></tr>
 </table></body></html>

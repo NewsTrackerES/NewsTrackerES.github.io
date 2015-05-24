@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 22:44:57</td><td><a href='http://www.reuters.com/article/2015/04/17/us-health-birdflu-trade-idUSKBN0N82L420150417?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>Government officials are aiming to limit the economic pain the H5N2 flu causes to producers and exporters by asking Mexico to restrict imports only from counties that are home to infected flocks.</td></tr><tr><td>So far, Mexico has imposed trade restrictions on entire states, including top U.S. turkey producer Minnesota, when infections have been detected.</td></tr><tr><td>Mexico has limited poultry imports from states with infections in commercial operations.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 18:59:42</td><td><a href='http://www.foxnews.com/world/2015/04/18/arrest-mexico-gulf-cartel-chief-others-sparks-gunfights-blockades-on-mexico-us/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MEXICO - Authorities say the arrest of the man who headed the once powerful Gulf Cartel sparked the gunfights and blockades of burning vehicles that left at least three people dead near Mexico's border with the United States.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297689578216_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-18 20:21:55</td><td><a href='http://www.torontosun.com/2015/04/18/mexico-confirms-capture-of-gulf-cartel-leader'>site</a></td><td><table><tr><td>MEXICO CITY - Mexican authorities on Saturday confirmed the capture of a leader of the Gulf Cartel, describing him as responsible for much of the violence in the U.S. border city of Reynosa in the northeastern state of Tamaulipas.</td></tr><tr><td>Reynosa has been one of the most violent cities in Mexico over the past year, racked by turf wars among the Gulf Cartel and the Zetas, two drug gangs fighting for control of border smuggling routes and crime rackets.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-18 21:34:18</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/04/18/22351891.html?cid=rssnewsworld'>site</a></td><td>Jose Tiburcio Hernandez Fuentes was captured on Friday and transferred to Mexico city, despite a shootout between the Mexican army and police and around 60 of Hernandez's gunmen who tried to rescue him.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-22 22:51:53</td><td><a href='http://www.reuters.com/article/2015/04/22/us-mexico-violence-idUSKBN0ND2QF20150422?feedType=RSS&feedName=worldNews'>site</a></td><td>The detainees, whose identity is still unknown, are from the Gulf Cartel, one of Mexico's oldest drug trafficking groups, also known for kidnappings and immigrant trafficking.</td></tr>
 </table></body></html>

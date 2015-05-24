@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td><a href='http://abcnews.go.com/US/wireStory/mexico-lobbying-storage-site-nuclear-waste-30599466'>site</a></td><td><table><tr><td>New Mexico is touting a rural area in the southeastern part of the state as an interim storage site for the country's high-level nuclear waste, according to a letter issued by Gov. Susana Martinez earlier this month.</td></tr><tr><td>"Time and time again, the citizens of southeastern New Mexico have impressed me with their hard work ethic and willingness to tackle national problems that many others consider to be unsolvable," Martinez wrote.</td></tr><tr><td>Others, however, have reservations about opening New Mexico to radioactive waste.</td></tr><tr><td>With no plans for a permanent repository facility, a site in New Mexico could end up being the final destination for spent fuel.</td></tr><tr><td>He also expressed concern that Martinez seems to be focused on just bolstering southeastern New Mexico.</td></tr><tr><td>New Mexico is not the only state competing to be the interim dumping ground for nuclear waste.</td></tr></table></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-26 21:16:10</td><td><a href='http://www.startribune.com/politics/301366241.html'>site</a></td><td>Martinez also praised southeastern New Mexico residents for being able to "carve out a niche in the nuclear industry."</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-30 05:08:51</td><td><a href='http://www.miamiherald.com/news/business/article19920498.html#storylink=rss'>site</a></td><td>Two counties in southeastern New Mexico have joined the race to build an interim storage site to house spent nuclear fuel from the nation's reactors.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:25:16</td><td><a href='http://news.yahoo.com/5-charged-mexico-city-enslaving-woman-dry-cleaner-170400003.html'>site</a></td><td><table><tr><td>5 charged in Mexico City for enslaving woman at dry-cleaner</td></tr><tr><td>MEXICO CITY (AP) - Mexico City authorities say a woman was chained to an ironing station at a dry-cleaning shop and forced to work in slave-like conditions for two years.</td></tr></table></td></tr>
 </table></body></html>

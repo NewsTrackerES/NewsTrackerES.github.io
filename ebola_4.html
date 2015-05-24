@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/h/1/v/b/image.related.articleLeadwide.620x349.13gnip.png/1424185844269.jpg'></td><td>2015-02-17 03:18:48</td><td><a href='http://www.brisbanetimes.com.au/world/liberia-reopens-schools-as-ebola-wanes-20150217-13gnip.html'>site</a></td><td><table><tr><td>Liberia reopens schools as Ebola wanes</td></tr><tr><td>A student has her body temperature checked as part of an Ebola screening at Don Bosco High School, as schools reopen in the Liberian capital, Monrovia.</td></tr><tr><td>Monrovia: Thousands of Liberian children in pristine uniforms flocked back to school for the first time in six months, after a after a closure designed to stem the spread of the worst Ebola outbreak in history.</td></tr><tr><td>At the peak, last summer, Ebola patients were collapsing outside overflowing hospitals.</td></tr><tr><td>"Authorities in the three countries are looking at catchup sessions and cancelling some school vacations. It will be challenging," said Sayo Aoki, education specialist in Ebola Emergencies at the UN Children's Fund.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/24/Obama_US_Afghanistan.JPEG-0f7e9_c0-154-4329-2667_s236x137.jpg?c920aae69721c0865ee1c85ba25085bb2cac5246'></td><td>2015-02-18 15:57:54</td><td><a href='http://www.washingtontimes.com/news/2015/feb/18/liberia-leader-to-visit-us-1st-visit-since-ebola-o/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>Liberia leader to visit US, 1st visit since Ebola outbreak</td></tr><tr><td>WASHINGTON (AP) - The president of Liberia will visit the United States later this month, her first trip to the country since the Ebola outbreak in West Africa.</td></tr><tr><td>Since an Ebola outbreak began in December 2013 in the West African country of Guinea, there have been about 7,900 deaths, mostly in Liberia, Guinea and Sierra Leone.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-02-20 22:40:58</td><td><a href='http://www.abc.net.au/news/2015-02-21/liberia-lifts-ebola-curfew2c-re-opens-borders/6171772'>site</a></td><td>Liberia lifts Ebola curfew and re-opens borders</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 16:04:32</td><td><a href='http://www.utsandiego.com/news/2015/may/11/liberias-government-holds-celebration-to-mark/'>site</a></td><td>Liberia's Chief Justice Francis Korkpor called the Ebola crisis "an unprovoked attack on our nation that posed a serious threat to the survival of our existence."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 16:04:32</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/liberias-government-holds-celebration-to-mark-ebol/nmDWX/'>site</a></td><td>Liberia's government holds celebration to mark Ebola's end</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-11 17:08:26</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3077031/Liberias-government-holds-celebration-mark-Ebolas-end.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A woman smiles as she celebrates Liberia being an Ebola-free nation in Monrovia, Liberia, Saturday, May 9, 2015.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/27/61/7961700/5/square_gallery_thumb.jpg'></td><td>2015-05-11 18:37:21</td><td><a href='http://www.sfgate.com/news/medical/article/Liberia-s-government-holds-celebration-to-mark-6255650.php'>site</a></td><td><table><tr><td>Liberians are gathering in the streets of the capital to celebrate the end of the Ebola epidemic in this West African country.</td></tr><tr><td>People display a representation of the Liberian flag as they celebrate Liberia being an Ebola free nation in Monrovia, Liberia, Monday, May 11, 2015.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 13:29:29</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3078231/As-Ebola-disappears-no-useful-data-seen-vaccine-trials-WHO.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>As Ebola disappears, no useful data seen from vaccine trials -WHO</td></tr><tr><td>But two experimental Ebola vaccines - developed by GlaxoSmithKline and jointly by Merck and NewLink Genetics - being tested on volunteers may not yield sufficient data on efficacy as case numbers fall, Kieny said.</td></tr><tr><td>The U.N. agency this week hosted a two-day experts' meeting on Ebola research and development after the world's largest epidemic that has killed more than 11,000 since December 2013.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-26 20:54:16</td><td><a href='http://www.reuters.com/article/2015/03/26/google-compensation-ruthporat-idUSL3N0WS5UN20150326?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Google to pay new CFO annual base salary of $650,000</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-03-26 20:59:55</td><td><a href='http://finance.yahoo.com/news/google-pay-cfo-annual-salary-205742067.html'>site</a></td><td>(Reuters) - Google Inc said it would pay its new chief financial officer an annual base salary of $650,000 and a special one-time $5 million sign-on bonus.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297680172167_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-26 21:52:45</td><td><a href='http://www.torontosun.com/2015/03/26/google-to-pay-new-cfo-annual-base-salary-of-us650000'>site</a></td><td>Porat, who will join Google on May 26, will also get a new hire grant of $25 million through restricted stock units and a $40 million biennial grant in 2016, the company said in a regulatory filing on Thursday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/h17dwamUiGXlwneF.dvlbw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMzNztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201503241713619933742'></td><td>2015-03-25 04:45:20</td><td><a href='http://sports.yahoo.com/news/butler-vogt-homer-14-2-win-over-cubs-001227308--mlb.html'>site</a></td><td><table><tr><td>Cubs RHP Edwin Jackson goes to wrong spring training park (Yahoo Sports)</td></tr><tr><td>Jackson said he entered 'Oakland Athletics spring training complex' into his Google Maps app on his phone and it directed him to Phoenix Muni, which is across the street from the Phoenix Zoo.</td></tr></table></td></tr>
 </table></body></html>

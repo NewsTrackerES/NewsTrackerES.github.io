@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:06:14</td><td><a href='http://hosted2.ap.org/APDEFAULT/bbd825583c8542898e6fa7d440b9febc/Article_2015-04-01-AF--Ebola-West%20Africa/id-f0f7d3b306294333902f42eeb3d23287'>site</a></td><td><table><tr><td>Hundreds of sick people were identified on Friday, Saturday and Sunday as health teams went door-to-door in an operation that also aimed to remind people how to prevent Ebola.</td></tr><tr><td>Conteh said Sierra Leone had "conquered the Ebola disease and we are now at the tail end."</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 23:06:49</td><td><a href='http://www.cbsnews.com/news/new-ebola-cases-discovered-in-sierra-leone/'>site</a></td><td>That figure indicates that there were not hordes of hidden Ebola cases as some had feared.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/01/article-doc-1i1i0-6XTQNmNL4HSK2-981_634x421.jpg'></td><td>2015-04-01 22:07:48</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3022231/Ebola-vaccine-tests-neutralise-virus-Geneva-hospital.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>An experimental Ebola vaccine tested on humans in Europe and Africa sparks the production of the antibodies needed to neutralise the deadly virus, a Geneva hospital said Wednesday.</td></tr><tr><td>There is no licensed treatment or vaccine for Ebola, and the World Health Organization last year endorsed rushing potential ones through trials in a bid to stem the epidemic still simmering in west Africa.</td></tr></table></td></tr>
 </table></body></html>

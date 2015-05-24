@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 03:15:15</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11441182&ref=rss'>site</a></td><td><table><tr><td>Mexico's Club America wins CONCACAF Champions League</td></tr><tr><td>MONTREAL (AP) " Dario Benedetto scored three goals and Club America of Mexico beat the Montreal Impact 4-2 on Wednesday night to win the CONCACAF Champions League title.</td></tr><tr><td>Club America won the two-game series 5-3 after tying Montreal 1-1 last week in Mexico City.</td></tr><tr><td>It was America's first victory in the Champions League era since 2009, but the Mexico City side won the previous version five times.</td></tr><tr><td>Andres Romero and substitute Jack McInerney scored for Montreal, the first Canadian team to reach the final after dramatic wins in the quarterfinals over Mexico's Pachuca and Costa Rica's Alajuelense.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:01:22</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-arrests-suspect-forced-prostitution-ring-30707907'>site</a></td><td><table><tr><td>Mexico Arrests Suspect in Forced-Prostitution Ring</td></tr><tr><td>Ramirez-Granados was allegedly part of a family group that tricked, threatened, beat and abused at least 25 women from Mexico to force them to work as prostitutes.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:05:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11441504&ref=rss'>site</a></td><td><table><tr><td>MEXICO CITY (AP) " U.S. officials say they have joined with Mexican authorities to arrest one of the leaders of a forced-prostitution ring that operated in the New York City area.</td></tr><tr><td>U.S. Immigration and Customs Enforcement said Thursday that Paulino Ramirez-Granados had been arrested in the small town of Tenancingo in central Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/30/02/2827725000000578-0-image-m-113_1430359016476.jpg'></td><td>2015-04-30 21:50:42</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3063076/Mexico-arrests-suspect-forced-prostitution-ring.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>According to ICE, the gang would befriend or romance young, uneducated women and then pressure or coerce them into prostitution in Mexico.</td></tr>
 </table></body></html>

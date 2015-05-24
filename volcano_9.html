@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,5 +50,6 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 22:47:08</td><td><a href='http://www.foxnews.com/us/2015/04/30/lava-lake-on-hawaii-kilauea-volcano-starts-to-overflow-its-rim-drawing-large/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>HONOLULU - A lake of lava on Hawaii's Kilauea volcano has been rising over the past week and, at times, overflowing in a spectacular show.</td></tr>
   <tr><td style='display:none'>1</td><td></td><td>2015-04-30 23:04:15</td><td><a href='http://www.usnews.com/news/us/articles/2015/04/30/lava-lake-on-hawaiis-volcano-overflows-in-spectacular-show'>site</a></td><td>Janet Babb, a geologist with the U.S. Geological Survey Hawaiian Volcano Observatory, said Thursday that this is the first time lava from this vent has come into view from a public platform within Hawaii Volcanoes National Park on Hawaii's Big Island.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/Y5ch10UbtgOF0IW3fmKfSQ--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.associatedpressfree.com/2f217b513f2400a981038e388bb99231'></td><td>2015-04-30 23:46:21</td><td><a href='http://news.yahoo.com/lava-lake-hawaiis-volcano-overflows-spectacular-show-224717394.html'>site</a></td><td><table><tr><td>But this past week, because of lava is rising inside the volcano, the lava lake rose high enough that it was visible, she said.</td></tr><tr><td>In 1924 there was a huge eruption inside the volcano that doubled the size of the crater.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 23:48:10</td><td><a href='http://abcnews.go.com/US/wireStory/lava-lake-hawaiis-volcano-overflows-spectacular-show-30714924'>site</a></td><td><table><tr><td>In this April 26, 2015 photo provided by U.S. Geological Survey Hawaiian Volcano Observatory, sparks rise from Kilauea volcano on Hawaii's Big Island.</td></tr><tr><td>But this past week, because of lava is rising inside the volcano, the lava lake rose high enough that it was visible, she said.</td></tr><tr><td>In 1924 there was a huge eruption inside the volcano that doubled the size of the crater.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-05 15:01:24</td><td><a href='http://nypost.com/2015/05/05/lava-explodes-from-hawaiis-kilauea-volcano-after-crater-collapses/'>site</a></td><td>Lava explodes from Hawaii?s Kilauea volcano after crater collapses</td></tr>
 </table></body></html>

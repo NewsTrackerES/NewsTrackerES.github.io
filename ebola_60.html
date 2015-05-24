@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/08/09/275B0F8C00000578-0-image-m-61_1428480922748.jpg'></td><td>2015-04-08 20:13:03</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3031000/30-new-Ebola-cases-lowest-weekly-figure-nearly-year--WHO.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>30 new Ebola cases, lowest weekly figure in nearly a year - WHO</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/PkuwRzqkjMjhllpsGQzbQQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-09T065645Z_1007970001_LYNXMPEB3808Q_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-WHO.JPG'></td><td>2015-04-09 06:56:45</td><td><a href='http://news.yahoo.com/30-ebola-cases-lowest-weekly-figure-nearly-065645764.html'>site</a></td><td><table><tr><td>The Ebola epidemic, which began in December 2013, has claimed 10,572 lives among 25,515 known cases, according to the United Nations health agency.</td></tr><tr><td>Ebola is still spreading in western Guinea, including the capital Conakry, but detection of the disease has improved, the WHO said.</td></tr><tr><td>The last known Ebola case in Liberia was a patient who died on March 27, and whose 332 contacts are being monitored but none have shown symptoms so far, it said.</td></tr><tr><td>Each country would retain a core capacity of high-quality Ebola treatment centres, strategically located to ensure complete geographic coverage, with additional rapid-response capacity held in reserve.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/09/article-doc-1m52c-6XedOwYi9-HSK1-902_634x422.jpg'></td><td>2015-04-09 07:01:41</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3031601/Japanese-Ebola-test-gives-results-11-minutes-researcher.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>A Japanese research team said on Thursday it had developed a field test for Ebola that gives results in just over 11 minutes -- down from the 90-minute test used now.</td></tr><tr><td>If Ebola is present, DNA specific to the virus is amplified by the action of the primers.</td></tr></table></td></tr>
 </table></body></html>

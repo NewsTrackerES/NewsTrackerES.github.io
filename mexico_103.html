@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 02:39:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article19806768.html#storylink=rss'>site</a></td><td>Jesse T. Coburn III, 48, of Texico, New Mexico, was pronounced dead at the scene, New Mexico State police said.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:39:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article19806768.html#storylink=rss'>site</a></td><td><table><tr><td>A freight train struck another train head-on early Tuesday in southeastern New Mexico, killing one crew member on the moving train and injuring a second, a railroad official said.</td></tr><tr><td>An executive of Carlsbad, New Mexico-based Southwestern Railroad's parent company said both victims were Southwestern employees and moving a 79-car train that struck a parked 12-car train that was stationary on the siding and had no crew on board.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/29/876/493/Mexico Drones-1.jpg?ve=1&tl=1'></td><td>2015-04-29 16:28:14</td><td><a href='http://www.foxnews.com/world/2015/04/29/mexico-issues-rules-on-use-drones-smallest-need-no-permit/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MEXICO CITY - Mexico has published rules governing the use of drones, allowing people to operate the smallest drones in daylight without a permit but with safety rules.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/29/11/28218AB500000578-0-image-m-33_1430302806230.jpg'></td><td>2015-04-29 17:29:24</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3061173/Mexico-moves-regulate-use-drones.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Mexico's Transportation Department has established three classes of drones according to size.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 19:16:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article19882968.html#storylink=rss'>site</a></td><td>Mexico moves to regulate use of drones</td></tr>
 </table></body></html>

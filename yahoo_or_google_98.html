@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:42:19</td><td></td><td><a href='yahoo_or_google_87.html'>Google co-founder Sergey listens to California Gov. Edmund G Brown Jr. during a bill signing for driverless cars at Google headquarters in Mountain View, Calif., Tuesday, Sept. (16)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 07:52:59</td><td></td><td><a href='yahoo_or_google_89.html'>Unlike Google, automakers think self-driving cars will arrive feature-by-feature instead of all at once, giving people plenty of time to adapt to autonomous driving. (10)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-16 02:52:04</td><td></td><td><a href='yahoo_or_google_86.html'>Google has long been testing its self-driving car technology with a fleet of Lexus sport-utility vehicles that have driven about 1 million miles on public roads, and that continue to put in 10,000 miles a week. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 13:20:17</td><td></td><td><a href='yahoo_or_google_8.html'>Morgan Stanley chief financial officer Ruth Porat is leaving the bank to join Google Inc. in the same position, the companies said on Tuesday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 21:02:38</td><td></td><td><a href='yahoo_or_google_13.html'>Kleiner Perkins, a venture capital firm that has financed Google and other prominent technology companies, is currently embroiled in a San Francisco trial that is airing embarrassing allegations of sexual discrimination. (10)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 21:49:39</td><td></td><td><a href='yahoo_or_google_7.html'>Morgan Stanley on Tuesday, March 24, 2015 announced that Porat is leaving the New York investment bank for the same job at Google. (8)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 20:59:55</td><td></td><td><a href='yahoo_or_google_17.html'>(Reuters) - Google Inc said it would pay its new chief financial officer an annual base salary of $650,000 and a special one-time $5 million sign-on bonus. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 22:31:27</td><td></td><td><a href='yahoo_or_google_21.html'>Google's current CFO, Patrick Pichette, received a $650,000 salary as part of compensation totaling $5.2 million in 2013. (8)</a></td></tr>
 </table></body></html>

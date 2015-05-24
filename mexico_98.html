@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 17:27:52</td><td><a href='http://www.reuters.com/article/2015/04/24/us-mexico-archeology-teotihuacan-idUSKBN0NF1US20150424?feedType=RSS&feedName=scienceNews'>site</a></td><td>Difficult to mine and prized for its reflective properties, mercury was rare in ancient Mexico.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 17:52:01</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054296/Hunt-ancient-royal-tomb-Mexico-takes-mercurial-twist.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Hunt for ancient royal tomb in Mexico takes mercurial twist</td></tr><tr><td>"It's something that completely surprised us," Gomez said at the entrance to the tunnel below Teotihuacan's Pyramid of the Plumed Serpent, about 30 miles (50 km) northeast of Mexico City.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 19:13:52</td><td><a href='http://news.yahoo.com/north-americas-largest-powwow-draws-thousands-mexico-191352940.html'>site</a></td><td>ALBUQUERQUE, N.M. (AP) - Droves of Native American and other indigenous performers and spectators have converged in New Mexico for the 32nd annual Gathering of Nations, North America's largest powwow.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 19:33:18</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article19403307.html#storylink=rss'>site</a></td><td>Creating a thunderous, rhythmic roar, their pounding feet keep time with beating drums as they funnel into the bottom of the University of New Mexico arena, better known as The Pit.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-24 23:19:04</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article19403307.html#storylink=rss'>site</a></td><td>Native American and indigenous dancers crowd the floor at the University of New Mexico Arena during the grand entrance at the 32nd annual Gathering of Nations in Albuquerque N.M., on Friday, April 24, 2015.</td></tr>
 </table></body></html>

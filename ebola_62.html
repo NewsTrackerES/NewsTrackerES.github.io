@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 20:13:48</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032573/Liberia-watchdog-says-Ebola-funds-unaccounted-for.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Liberia watchdog says some Ebola funds unaccounted for</td></tr><tr><td>The General Auditing Commission (GAC) report covering the period from August to October 2014 analysed more than $13 million spent by the National Ebola Trust Fund (NETF).</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 07:39:57</td><td><a href='http://www.sbs.com.au/news/article/2015/04/10/woman-isolated-possible-ebola-0'>site</a></td><td><table><tr><td>A health worker recently back from west Africa has been admitted to a Canberra hospital after displaying symptoms which could be the deadly Ebola disease.</td></tr><tr><td>"We believe that this patient has an extremely low risk of having Ebola," he told reporters.</td></tr><tr><td>"Here where the patient has an extremely low risk of Ebola, we know there is no risk to the public of Ebola."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 09:01:33</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3033268/Man-hospital-possible-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The unnamed woman returned to Australia on April 5 after working in an Ebola treatment centre in Liberia.</td></tr><tr><td>That country hasn't had any cases recently and she hadn't actually treated any Ebola patients.</td></tr><tr><td>Health officials say it's most unlikely she has Ebola and her symptoms - a fever and stomach upset - are consistent with many other conditions.</td></tr><tr><td>But she's being treated in complete isolation under the hospital's Ebola protocol.</td></tr><tr><td>"Ebola is not a particularly transmissible infection under normal circumstances. It's transmitted by direct contact with bodily fluids so we are confident there is no risk to the wider community," he said.</td></tr></table></td></tr>
 </table></body></html>

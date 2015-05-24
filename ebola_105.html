@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:25:08</td><td><a href='http://www.utsandiego.com/news/2015/may/18/merkel-global-catastrophe-plan-needed-after-ebola/'>site</a></td><td><table><tr><td>BERLIN (AP) - The Ebola crisis in western Africa showed the world in a painful way that a global catastrophe plan is needed to deal with future epidemics, German Chancellor Angela Merkel said Monday.</td></tr><tr><td>"The struggle (against Ebola) is only won if there are no new cases and if we have learned the lessons from this crisis: we should have reacted earlier," Merkel told the 68th World Health Assembly in Geneva.</td></tr><tr><td>"If we react faster, and act faster, we will manage to better prevent a crisis like Ebola the next time," Merkel told the assembly, which is the WHO's decision-making body.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 16:21:06</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3050847/Guinea-Ebola-health-team-killers-jailed-life.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Guinea Ebola health team killers jailed for life</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.3013714.1427570809!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/health-ebola-leone.jpg'></td><td>2015-05-19 17:43:10</td><td><a href='http://www.cbc.ca/news/health/ebola-won-t-go-quietly-who-says-as-cases-edge-up-1.3079215?cmp=rss'>site</a></td><td><table><tr><td>"It will take an extraordinary effort to finish the job," the WHO's special representative for Ebola, Bruce Aylward, told a briefing attended by health ministers.</td></tr><tr><td>The WHO said on Monday it is setting up a $100 million contingency fund to ensure that it will not be "overwhelmed" by a major crisis again as it was with Ebola, which has killed more than 11,000 people since December 2013.</td></tr></table></td></tr>
 </table></body></html>

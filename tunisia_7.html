@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-March/tunisia-attack-museum-3015-3-18.jpg'></td><td>2015-03-18 20:04:00</td><td><a href='http://www.globalpost.com/dispatch/news/regions/africa/150318/gunmen-storm-tunisia-museum-killing-17-foreign-tourists-and-two-'>site</a></td><td>Tunisia's uprising inspired "Arab Spring" revolts in neighboring Libya and in Egypt, Syria and Yemen.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000a502e-642.jpg'></td><td>2015-03-18 22:51:36</td><td><a href='http://www.rte.ie/news/2015/0318/687894-tunisia-attack/'>site</a></td><td>The local stock exchange dropped nearly 2.5% and two German tour operators said they were cancelling trips from Tunisia's beach resorts to Tunis for a few days.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 02:07:31</td><td><a href='http://ibnlive.in.com/news/couldnt-see-anything-except-blood-says-witness-of-tunisia-attack-which-left-19-dead/534788-2.html'>site</a></td><td>After a crisis between secular leaders and the Islamist party which won the country's first post-revolt election, Tunisia has emerged as a model of compromise politics and transition to democracy for the region.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/c22513a57dcad38d308c9c54e3c6526688670956/0_169_4096_2458/500.jpg'></td><td>2015-03-18 20:19:26</td><td><a href='http://www.theguardian.com/world/2015/mar/18/tunisia-shock-gunmen-target-tourists-capital-tunis'>site</a></td><td><table><tr><td>Overall, though, the violence that Tunisia has seen in recent years has been largely focused on security forces, not foreigners or tourist sites.</td></tr><tr><td>The US secretary of state, John Kerry, said Washington condemned the attack and continued "to support the Tunisian government's efforts to advance a secure, prosperous, and democratic Tunisia".</td></tr></table></td></tr>
 </table></body></html>

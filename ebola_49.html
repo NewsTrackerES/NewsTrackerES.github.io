@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 16:47:59</td><td><a href='http://www.utsandiego.com/news/2015/mar/30/guinea-shuts-border-with-sierra-leone-in-effort/'>site</a></td><td><table><tr><td>But Guinea is now ramping up efforts to eliminate Ebola, which is stubbornly entrenched in the country more than a year after the outbreak started.</td></tr><tr><td>By contrast, Liberia currently has no Ebola patients, and Sierra Leone has seen a fairly steady decline in cases.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 16:47:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/30/guinea-shuts-border-with-sierra-leone-in-effort-to-end-ebola'>site</a></td><td>CONAKRY, Guinea (AP) - Guinea has closed its border with Sierra Leone as part of new efforts to stamp out Ebola.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 18:19:13</td><td><a href='http://news.yahoo.com/guinea-shuts-border-sierra-leone-effort-end-ebola-164805136.html'>site</a></td><td>Guinea sent security forces to the border on Friday night in response to reports that Sierra Leoneans were streaming over to avoid a three-day, nationwide shutdown over the weekend to help end Ebola.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 18:07:09</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3018493/Sierra-Leone-Ebola-lockdown-exposes-hundreds-suspected-cases.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Sierra Leone Ebola lockdown exposes hundreds of suspected cases</td></tr><tr><td>Reports to authorities of sick people increased by 191 percent in Western Area, which includes the capital, during the lockdown compared with the previous weekend, said Obi Sesay of the National Ebola Response Center.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 11:47:04</td><td><a href='http://www.foxnews.com/health/2015/03/31/sierra-leone-ebola-lockdown-exposes-hundreds-suspected-cases/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td><table><tr><td>"Tests are being carried out on their blood samples, and the results will be in by Wednesday," Sesay said, adding that 173 of the patients in Freetown met an initial case definition for Ebola.</td></tr><tr><td>A source who declined to be identified said there were 961 death alerts nationwide during the lockdown's first two days and 495 reports of illness of which 235 were suspected Ebola.</td></tr></table></td></tr>
 </table></body></html>

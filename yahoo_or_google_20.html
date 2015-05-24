@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 21:56:21</td><td><a href='http://www.ctvnews.ca/business/google-pays-new-cfo-ruth-porat-70m-for-move-from-wall-street-to-silicon-valley-1.2299338'>site</a></td><td>The lucrative pay package disclosed in a Thursday regulatory filing underscored how much Google prized Porat, who is considered to be among the most powerful women on Wall Street.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 21:59:00</td><td><a href='http://www.latimes.com/business/la-fi-google-porat-pay-20150326-story.html'>site</a></td><td><table><tr><td>Google's new chief financial officer, Ruth Porat, is being paid more than $70 million for defecting from the same job at investment bank Morgan Stanley.</td></tr><tr><td>Shortly after her arrival, Google will award her stock valued at $25 million and then dole out another bundle of stock worth $40 million next year.</td></tr><tr><td>Google Inc. also is giving Porat a $5 million signing bonus to supplement her starting salary of $650,000.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:31:27</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-s-new-CFO-gets-70M-for-defecting-from-6161497.php'>site</a></td><td><table><tr><td>Google gave Pichette less stock than the company is giving Porat, though the company didn't specify the value of Pichette's award at the time of his hiring.</td></tr><tr><td>Investors also think that with Porat overseeing the company's finances, there is a better chance that Google might dip into its $64 billion cash pile to pay a dividend or buy back shares to boost its stock price.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:31:27</td><td><a href='http://www.sfgate.com/business/technology/article/Google-s-new-CFO-gets-70M-for-defecting-from-6161497.php'>site</a></td><td><table><tr><td>Google's current CFO, Patrick Pichette, received a $650,000 salary as part of compensation totaling $5.2 million in 2013.</td></tr><tr><td>Pichette, who is retiring, started out with a $450,000 salary when he became Google's CFO in 2008 and received $1 million in bonuses.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-says-it-will-buy-back-2-billion-in-stock-6161633.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba.</td></tr><tr><td>Investors were pushing Yahoo to use some of the proceeds from the Alibaba spinoff to buy back stock, and the company had said it would keep buying back stock to return cash to shareholders.</td></tr><tr><td>In January, Yahoo Inc. said it will spin off its stake in Alibaba Group Holding Ltd. later this year.</td></tr><tr><td>Yahoo owns 384 million shares of Alibaba, and as of Thursday's close its stake is worth about $32 billion.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:43:30</td><td><a href='http://www.usnews.com/news/technology/articles/2015/03/26/yahoo-says-it-will-buy-back-2-billion-in-stock'>site</a></td><td><table><tr><td>Yahoo has $726 million remaining on previous stock buyback plan, which was approved in 2013 and expires at the end of 2016.</td></tr><tr><td>The move will allow the new entity to pay lower taxes on Alibaba stock sales than Yahoo would have.</td></tr><tr><td>More recently it has called for Yahoo to spin off its Japanese business, cut costs, and get cash for its intellectual property and real estate holdings.</td></tr></table></td></tr>
 </table></body></html>

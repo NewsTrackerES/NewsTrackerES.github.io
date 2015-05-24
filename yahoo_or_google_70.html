@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-24 00:11:47</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/23/google-lavishes-chairman-with-109-million-pay-package'>site</a></td><td>SAN FRANCISCO (AP) - Google paid its billionaire Executive Chairman Eric Schmidt nearly $109 million last year while the company's stock slumped.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/32/55/76/7004094/7/landscape_32.jpg'></td><td>2015-04-24 00:11:47</td><td><a href='http://www.sfgate.com/business/technology/article/Google-lavishes-chairman-with-109-million-pay-6220492.php'>site</a></td><td><table><tr><td>His total pay last year soared by more than five-fold from 2013 when his Google compensation was valued at $19.3 million.</td></tr><tr><td>The hefty raise came in a year that saw Google's stock drop by 5 percent amid investor concerns about the company's big spending on far-flung projects.</td></tr><tr><td>Most of his wealth has been built on the Google stock that he began accumulating when he became the Mountain View, California, company's CEO in 2001.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-24 02:53:06</td><td><a href='http://www.miamiherald.com/news/business/article19355415.html#storylink=rss'>site</a></td><td>Analysts have also questioned whether Google will be able to maintain its dominance in Internet search as more people rely on smartphones instead of personal computers to access digital content.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/05/27ED7D9D00000578-3053376-image-a-62_1429849540353.jpg'></td><td>2015-04-24 05:30:47</td><td><a href='http://www.dailymail.co.uk/news/article-3053376/Google-s-billionaire-chairman-earned-nearly-109-million-year-tech-giant-s-stock-slumped.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The downturn in Google's stock contrasted with an 11 percent gain in the Standard & Poor's 500 index last year.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/25/102620184-AP855095418230.530x298.jpg?v=1429996903'></td><td>2015-04-25 21:17:00</td><td><a href='http://www.cnbc.com/id/102620183'>site</a></td><td>He described himself as an "Inventor, Adventurer, and Energetic Engineer" on his Google+ page.</td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/26/876/493/Nepal Earthquake-Google Executive-1.jpg?ve=1&tl=1'></td><td>2015-04-25 21:58:55</td><td><a href='http://www.foxnews.com/us/2015/04/26/google-executive-dan-fredinburg-among-hundreds-dead-from-nepal-earthquake/'>site</a></td><td><table><tr><td>Fredinburg, a Google executive who described himself as an adventurer, was among the hundreds who died in a massive earthquake that struck Nepal.</td></tr><tr><td>Lawrence You, the company's director of privacy, posted online that Fredinburg was in Nepal with three other Google employees climbing Mount Everest.</td></tr><tr><td>Google would not give further details.</td></tr><tr><td>According to the technology blog Re/Code, Fredinburg was an experienced climber who co-founded, in his spare time, Google Adventure.</td></tr><tr><td>Fredinburg started at Google in 2007.</td></tr><tr><td>Google said it has launched a "person finder" tool for Nepal to help people find loved ones in the aftermath of the quake and "is working to get updated satellite imagery to aid in the recovery effort."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/25/4794b682869fb612740f6a7067004ff2_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-25 21:58:55</td><td><a href='http://www.utsandiego.com/news/2015/apr/25/google-executive-among-hundreds-dead-from-nepal/'>site</a></td><td><table><tr><td>Google confirmed his death.</td></tr><tr><td>He served as product manager and the head of privacy at Google X, the company's secretive arm best known for "moonshot" projects such as the self-driving car.</td></tr><tr><td>Google says it is committing $1 million to the quake response.</td></tr></table></td></tr>
 </table></body></html>

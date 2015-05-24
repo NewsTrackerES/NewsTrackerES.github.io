@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/nwtjNvK0pcnsMg6KHMfvyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ac9f3af2fca7b2096f0f6a706700d2d8.jpg'></td><td>2015-03-03 10:25:36</td><td><a href='http://news.yahoo.com/liberia-calls-ebola-marshall-plan-rebuild-economies-102536086.html'>site</a></td><td><table><tr><td>BRUSSELS (AP) - Liberia's president on Tuesday called for an Ebola "Marshall Plan" to help rebuild economies in West African nations devastated by the virus.</td></tr><tr><td>"We are talking about a Marshall Plan because Ebola is like a war," Guinea President Alpha Conde said.</td></tr><tr><td>About $4.9 billion has been pledged internationally to the Ebola effort, but only around $2.4 billion has actually been disbursed.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:00:06</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411229&ref=rss'>site</a></td><td><table><tr><td>Sirleaf told fellow regional leaders and delegates at an international conference on Ebola in Brussels that restoring economic growth in Liberia, Guinea and Sierra Leone is a long-term and costly task.</td></tr><tr><td>Even if the number of new Ebola cases in Liberia, Guinea and Sierra Leone has dropped markedly, bringing it down to zero will still take a significant effort.</td></tr><tr><td>Ebola has undermined the three countries' already fragile economies, shifting resources resulting in other health care problems and hurting business as people grew scared to leave their homes or go to markets.</td></tr><tr><td>Nevertheless, important progress has been made as the number of new cases of Ebola has dropped to about 100 per week, down from 800-900 at the height of the outbreak in August and September.</td></tr></table></td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-03-03 16:13:32</td><td><a href='http://news.yahoo.com/ebola-hit-countries-seek-help-repair-economies-161332797.html'>site</a></td><td>International donors have pledged nearly $5 billion to help combat the Ebola outbreak, according to EU officials, although only about half of that has been disbursed so far.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/20/who-warns-of-measles-in-ebola-countries/_jcr_content/image.adapt.480.low.WHO_Ebola_032015.jpg'></td><td>2015-03-03 19:15:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/3/african-leaders-urge-ebola-marshall-plan.html'>site</a></td><td><table><tr><td>In addition, their health sectors have been partially wiped out by the epidemic, or forced to divert resources to fighting Ebola at the expense of other diseases like measles, malaria and AIDS.</td></tr><tr><td>The conference's lead participants stressed in their closing statements the "importance of maintaining international engagement with the recovery and development process in the Ebola-affected countries."</td></tr><tr><td>U.N. Ebola envoy David Nabarro said Monday that the number of new cases had declined from around 900 a week to 100 - but that cases appeared to be climbing back up in the coastal regions of Sierra Leone and Guinea.</td></tr><tr><td>Countries around the world have so far pledged $5.1 billion to fight Ebola, with $2.4 billion disbursed until now, according to the statement.</td></tr><tr><td>Ebola, one of the deadliest pathogens known to man, is spread through direct contact with the bodily fluids of an infected person showing symptoms such as fever or vomiting.</td></tr></table></td></tr>
 </table></body></html>

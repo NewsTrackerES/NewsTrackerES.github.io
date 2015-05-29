@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 01:33:52</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20064105.html#storylink=rss'>site</a></td><td><table><tr><td>Rio Grande Resources' underground mine in western New Mexico contains one of the largest stashes of uranium ore in the U.S., but it's idle and hasn't produced anything in years.</td></tr><tr><td>It could be weeks before the New Mexico Mining and Minerals Division makes a final decision.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 18:27:33</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/05/mexico-non-violence-art-features-guns-with-knotted-barrels'>site</a></td><td>MONTERREY, Mexico (AP) - Replicas of a sculpture of a knotted pistol that was designed in honor of the late musician John Lennon are being displayed this month in Monterrey, a northern industrial city that knows about gun violence.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 18:30:07</td><td><a href='http://www.startribune.com/world/298713781.html'>site</a></td><td><table><tr><td>Mexico non-violence art exhibit features guns with knotted barrels</td></tr><tr><td>Killings from firearms in Monterrey, Mexico's third-largest city, jumped from 91 in 2006, before the offensive started, to 532 in 2011, one of the most violent years, according to government statistics.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 18:30:07</td><td><a href='http://www.startribune.com/world/298713781.html'>site</a></td><td><table><tr><td>Mexico non-violence art exhibit features guns with knotted barrels</td></tr><tr><td>Killings from firearms in Monterrey, Mexico's third-largest city, jumped from 91 in 2006, before the offensive started, to 532 in 2011, one of the most violent years, according to government statistics.</td></tr></table></td></tr>
 </table></body></html>

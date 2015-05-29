@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 00:10:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443554&ref=rss'>site</a></td><td><table><tr><td>MEXICO CITY (AP) " Two metro trains carrying passengers crashed in Mexico City on Monday, leaving at least 12 people injured, authorities said.</td></tr><tr><td>The Mexico City Metro System said via its Twitter account that three of the 12 injured were hospitalized.</td></tr><tr><td>The Mexico City metro has 12 lines.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 15:20:13</td><td><a href='http://www.foxnews.com/world/2015/04/08/north-korea-says-mexico-forcibly-holding-its-ship-blames-us-for-not-allowing/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>It ran aground last July and damaged nearly an acre of coral reefs, and the North Korean embassy in Mexico was asked to post a $770,000 bond for any damage assessment.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 19:01:31</td><td></td><td><a href='mexico_114_116.html'>He said North Korea, officially known as the Democratic People's Republic of Korea (DPRK), had paid an undisclosed sum to Mexico for damages to the reef where the ship had run aground and now the ship and its crew should be released. (9)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 19:01:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3030952/North-Korea-warns-act-ship-held-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The 6,700-tonne freighter "Mu Du Bong," which had come from Cuba, ran aground on a reef in July, 8 miles (13 km) northeast of Tuxpan in Mexico's Veracruz state.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 20:50:07</td><td></td><td><a href='mexico_114_115.html'>The head of a U.N. panel of experts, however, said the ship, the Mu Du Bong, is owned by a North Korean company that is under U.N. sanctions and should be "frozen," and that the panel has received excellent cooperation from Mexico in tracking the company and its assets. (4)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-08 21:02:40</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3031037/North-Korea-warns-act-ship-held-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Mexico said the ship remains in the port of Tuxpan.</td></tr>
 </table></body></html>

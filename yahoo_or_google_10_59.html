@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 17,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 17 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 09:20:17</td><td><a href='http://www.startribune.com/world/296842551.html'>site</a></td><td>Yahoo's revenue declined by 1 percent to $4.6 billion last year.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/03/24/porat650afp.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-24 13:53:23</td><td><a href='http://technology.canoe.ca/News/2015/03/24/22304896.html?cid=rsstechnology'>site</a></td><td>Google shares were up 0.7% at $570.45 in early trading on the Nasdaq, while Morgan Stanley shares were down slightly at $36.16 on the New York Stock Exchange.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150324&t=2&i=1034933300&w=580&fh=&fw=&ll=&pl=&r=LYNXMPEB2N0KO'></td><td>2015-03-24 13:55:08</td><td><a href='http://www.reuters.com/article/2015/03/24/us-morgan-stanley-porat-idUSKBN0MK1G320150324?feedType=RSS&feedName=businessNews'>site</a></td><td>Google shares rose 1.8 percent in early trading, while Morgan Stanley shares slipped 0.7 percent.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 17:16:18</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009760/US-STOCKS-Wall-St-near-unchanged-mark-Nasdaq-Google-lift.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Nasdaq outperformed other major indexes, boosted by a 2.6 percent gain in Google shares to $579.94.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/45/16/7754628/5/mosaic_2.jpg'></td><td>2015-04-02 21:19:25</td><td><a href='http://www.chron.com/business/technology/article/Stock-split-could-cost-Google-over-500-million-6174346.php'>site</a></td><td>To settle a class-action lawsuit challenging the split, Google agreed to compensate "C'' shareholders if the average price of "C'' stock fell more than 1 percent below "A'' shares through the first year of trading.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150414&t=2&i=1040408064&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3D0WI'></td><td>2015-04-15 01:07:53</td><td><a href='http://www.reuters.com/article/2015/04/15/us-google-eu-idUSKBN0N523Q20150415?feedType=RSS&feedName=technologyNews'>site</a></td><td>The EU can impose fines of up to 10 percent of global turnover, or more than $6 billion in penalties in Google's case.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-16 06:18:49</td><td><a href='http://www.reuters.com/article/2015/04/16/us-google-eu-shares-idUSKBN0N60SB20150416?feedType=RSS&feedName=technologyNews'>site</a></td><td>Yahoo's Frankfurt-listed shares (YHOO.F) were up 1.1 percent, while Facebook's Frankfurt-listed stock (FB2A.F) rose 1.3 percent.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-21 20:26:03</td><td><a href='http://www.reuters.com/article/2015/04/21/us-yahoo-results-idUSKBN0NC2C520150421?feedType=RSS&feedName=topNews'>site</a></td><td>Yahoo said display advertising revenue rose 2.3 percent to $463.7 million in the quarter, accounting for roughly 40 percent of its total revenue.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-21 20:26:03</td><td><a href='http://finance.yahoo.com/news/yahoos-quarterly-revenue-drops-4-201714411.html'>site</a></td><td><table><tr><td>Yahoo's revenue drops 4 percent, misses estimates</td></tr><tr><td>(Reuters) - Yahoo Inc reported first-quarter revenue below analysts' estimates as the veteran internet company struggles to rev up its core online advertising business.</td></tr><tr><td>Yahoo's shares were down 2.1 percent at $43.72 in extended trading after the company also reported a lower-than-expected quarterly profit.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-21 20:26:03</td><td><a href='http://finance.yahoo.com/news/yahoos-quarterly-revenue-drops-4-201714411.html'>site</a></td><td><table><tr><td>Yahoo's revenue drops 4 percent, misses estimates</td></tr><tr><td>(Reuters) - Yahoo Inc reported first-quarter revenue below analysts' estimates as the veteran internet company struggles to rev up its core online advertising business.</td></tr><tr><td>Yahoo's shares were down 2.1 percent at $43.72 in extended trading after the company also reported a lower-than-expected quarterly profit.</td></tr></table></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-21 23:30:49</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/21/yahoos-1q-shows-company-remains-mired-in-revenue-rut'>site</a></td><td>Yahoo's stock rose 47 cents to $44.96 after Mayer's remarks in a webcast reviewing the financial results.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-22 02:28:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19182630.html#storylink=rss'>site</a></td><td>The shares initially fell by an additional 2 percent in extended trading, but then rebounded after the cost-cutting pledge and the Yahoo Japan remarks.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww1.hdnux.com/photos/36/00/70/7867944/3/628x471.jpg'></td><td>2015-04-23 20:36:34</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-posts-mixed-1Q-results-amid-new-threats-to-6219961.php'>site</a></td><td><table><tr><td>Google's first-quarter earnings rose 4 percent to $3.6 billion as the company's Internet-leading advertising network lifted revenue by 14 percent to $17.3 billion from the same time last year.</td></tr><tr><td>Google's stock nevertheless surged $14.54, or nearly 3 percent, to $572 in extended trading.</td></tr></table></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww1.hdnux.com/photos/36/00/70/7867944/3/628x471.jpg'></td><td>2015-04-23 20:36:34</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-posts-mixed-1Q-results-amid-new-threats-to-6219961.php'>site</a></td><td><table><tr><td>Google's first-quarter earnings rose 4 percent to $3.6 billion as the company's Internet-leading advertising network lifted revenue by 14 percent to $17.3 billion from the same time last year.</td></tr><tr><td>Google's stock nevertheless surged $14.54, or nearly 3 percent, to $572 in extended trading.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/uk/article31167341.ece/388e9/ALTERNATES/h342/PANews%20BT_P-0d36c9e0-0f0f-4d0f-9aa2-2a12abff3bfb_I1.jpg'></td><td>2015-04-23 23:16:06</td><td><a href='http://www.belfasttelegraph.co.uk/news/uk/google-reports-12-rise-in-revenue-31167342.html'>site</a></td><td><table><tr><td>Google reports 12% rise in revenue</td></tr><tr><td>In the technology giant's financial results for the first quarter of 2015, Google reported total revenue of 17.3 billion dollars ( 11.4 billion), a 12% rise on the same period last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/uk/article31167341.ece/388e9/ALTERNATES/h342/PANews%20BT_P-0d36c9e0-0f0f-4d0f-9aa2-2a12abff3bfb_I1.jpg'></td><td>2015-04-23 23:16:06</td><td><a href='http://www.belfasttelegraph.co.uk/news/uk/google-reports-12-rise-in-revenue-31167342.html'>site</a></td><td><table><tr><td>Google reports 12% rise in revenue</td></tr><tr><td>In the technology giant's financial results for the first quarter of 2015, Google reported total revenue of 17.3 billion dollars ( 11.4 billion), a 12% rise on the same period last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150424&t=2&i=1042900984&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3M0ZO'></td><td>2015-04-24 01:40:45</td><td><a href='http://www.reuters.com/article/2015/04/24/us-google-results-idUSKBN0NE2G820150424?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Google shares rise after online ad sales drive revenue higher</td></tr><tr><td>Google's ad revenue has been pressured as more consumers access its online services on mobiles devices such as smartphones and tablets, where ad rates are typically lower.</td></tr></table></td></tr>
+</table></body></html>

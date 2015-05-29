@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/20158/E_140x93.jpg'></td><td>2015-02-16 07:40:11</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11402976&ref=rss'>site</a></td><td><table><tr><td>The announcement on state radio represents Egypt's first public acknowledgement of military action in post-Moammar Gadhafi Libya, where there has been almost no government control.</td></tr><tr><td>France, a lead player in the campaign to oust Gadhafi, has campaigned for months for some kind of international action in Libya, and announced a deal Monday to sell fighter jets to Egypt.</td></tr><tr><td>Michael reported from el-Aour, Egypt.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/e6d/video/article22923078.ece/ALTERNATES/w140/2015-02-11T210235Z_1_LOVEB1A1MGAO6_RTRMADP_0_MIDEAST-CRISIS-OBAMA-AUTHORIZATION-ROUGH-CUT-O.XML'></td><td>2015-02-16 13:08:26</td><td><a href='http://www.theglobeandmail.com/news/world/egypt-retaliates-in-libya-after-christians-slain-in-grisly-video/article23011357/?cmpid=rss1'>site</a></td><td><table><tr><td>Egypt now faces threats on two fronts - a growing stronghold of radicals on its western border and a militant insurgency of Islamic State allies on its eastern flank in the Sinai Peninsula - as well as its own internal challenges.</td></tr><tr><td>Thirteen of the 21 came from Egypt's tiny Christian-majority village of el-Aour, where relatives wept in church and shouted the names of the dead on Monday.</td></tr><tr><td>Egypt already has been amassing intelligence on extremists in Libya in a joint effort with the Libyan armed forces and West European nations, including France.</td></tr><tr><td>Insurgents in Egypt's strategic Sinai Peninsula, who recently declared their allegiance to Islamic State, rely heavily on arms smuggled from Libya, which has slid into chaos since the 2011 uprising that toppled Col.</td></tr></table></td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/dXOw1_VbJAfIxWl0aJiTXQ--/YXBwaWQ9eW5ld3M7cT04NTt3PTYzMA--/http://l.yimg.com/os/publish-images/news/2015-02-16/2ff97c30-b5f2-11e4-bfa8-1d01e9d3760d_AP584016028766_11.jpg'></td><td>2015-02-16 15:03:11</td><td><a href='http://news.yahoo.com/egypt-strikes-group-libya-video-mass-killing-063546483.html'>site</a></td><td>The airstrikes bring Egypt overtly into Libya's turmoil, a reflection of Cairo's increasing alarm.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-02-16 22:29:26</td><td><a href='http://www.usnews.com/news/world/articles/2015/02/16/egypt-strikes-is-group-in-libya-after-video-of-mass-killing'>site</a></td><td>Without publicly acknowledging it, Egypt and the United Arab Emirates carried out airstrikes against Islamist-allied militias last year, according to U.S. officials.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 19:27:41</td><td><a href='http://www.daytondailynews.com/ap/ap/international/egypts-justice-minister-resigns-after-comments-rai/nmDcs/'>site</a></td><td>Egypt's justice minister resigns after comments raise uproar</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-16 17:31:23</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/key-events-in-egypt-since-the-2011-uprising/nmHnP/'>site</a></td><td>Key events in Egypt since the 2011 uprising</td></tr>
 </table></body></html>

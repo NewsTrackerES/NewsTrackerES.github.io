@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone pam</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 06:39:10</td><td></td><td><a href='cyclone_pam_6_7.html'>The unusual strength of Cyclone Pam, which devastated Vanuatu over the weekend, may stir debate about the need for a category-6 rating for storms to reflect their increasing severity. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-16 06:39:10</td><td></td><td><a href='cyclone_pam_6_8.html'>A University of South Pacific sign bent by the ferocity of Cyclone Pam. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td><a href='http://www.brisbanetimes.com.au/environment/climate-change/cyclone-pam-is-it-time-for-a-category6-cyclone-rating-20150316-1m04qv.html'>site</a></td><td>Residents stand near a bridge damaged by Cyclone Pam near Port Vila.</td></tr>
+</table></body></html>

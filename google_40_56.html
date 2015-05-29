@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 18,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td>Google and Facebook want more people online, searching around and clicking on ads.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-02 23:17:09</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article11951258.html#storylink=rss'>site</a></td><td>Google wants more people to get online so they can search around and click on its ads.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media3.s-nbcnews.com/j/newscms/2015_16/496056/findmyphone_e9750139d2aab521b1708207dfadb0ba.today-inline-large.jpg'></td><td>2015-04-16 14:08:30</td><td><a href='http://www.today.com/money/cant-find-your-android-phone-just-google-it-t15611'>site</a></td><td>Now you can find your lost phone with a Google search</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/2e5329a3392ee411730f6a7067007762_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-17 07:02:15</td><td><a href='http://www.utsandiego.com/news/2015/apr/17/google-embraces-mobile-friendly-sites-in-search/'>site</a></td><td><table><tr><td>Google embraces 'mobile-friendly' sites in search shake-up</td></tr><tr><td>SAN FRANCISCO (AP) - Google is about to change the way its influential search engine recommends websites on smartphones and tablets in a shift that's expected to sway where millions of people shop, eat and find information.</td></tr><tr><td>The revised formula, scheduled to be released Tuesday, will favor websites that Google defines as "mobile-friendly."</td></tr><tr><td>Websites that don't fit the description will be demoted in Google's search results on smartphones and tablets while those meeting the criteria will be more likely to appear at the top of the rankings - a prized position that can translate into more visitors and money.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/2e5329a3392ee411730f6a7067007762_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-17 07:02:15</td><td><a href='http://www.utsandiego.com/news/2015/apr/17/google-embraces-mobile-friendly-sites-in-search/'>site</a></td><td><table><tr><td>Google embraces 'mobile-friendly' sites in search shake-up</td></tr><tr><td>SAN FRANCISCO (AP) - Google is about to change the way its influential search engine recommends websites on smartphones and tablets in a shift that's expected to sway where millions of people shop, eat and find information.</td></tr><tr><td>The revised formula, scheduled to be released Tuesday, will favor websites that Google defines as "mobile-friendly."</td></tr><tr><td>Websites that don't fit the description will be demoted in Google's search results on smartphones and tablets while those meeting the criteria will be more likely to appear at the top of the rankings - a prized position that can translate into more visitors and money.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/35/70/37/7833559/3/622x350.jpg'></td><td>2015-04-17 07:36:57</td><td><a href='http://www.chron.com/business/technology/article/Google-embraces-mobile-friendly-sites-in-search-6205666.php'>site</a></td><td>While most major merchants and big companies already have websites likely to meet Google's mobile standard, the new formula threatens to hurt millions of small businesses that haven't had the money or incentive to adapt their sites for smartphones.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-17 07:48:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article18742272.html#storylink=rss'>site</a></td><td>Google has been urging websites to cater to mobile device for years, mainly because that is where people are increasingly searching for information.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-17 11:30:28</td><td><a href='http://nypost.com/2015/04/17/google-to-use-mobile-friendly-browsing-on-mobile-devices/'>site</a></td><td><table><tr><td>Although Google's new formula won't affect searches on desktop and laptop computers, it will have a huge influence on how and where people spend their money, given that more people are relying on their smartphones to compare products in stores and look for restaurants.</td></tr><tr><td>To stay in Google's good graces, websites must be designed so they load quickly on mobile devices.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-17 11:30:28</td><td><a href='http://nypost.com/2015/04/17/google-to-use-mobile-friendly-browsing-on-mobile-devices/'>site</a></td><td><table><tr><td>Although Google's new formula won't affect searches on desktop and laptop computers, it will have a huge influence on how and where people spend their money, given that more people are relying on their smartphones to compare products in stores and look for restaurants.</td></tr><tr><td>To stay in Google's good graces, websites must be designed so they load quickly on mobile devices.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-17 18:59:38</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/google-embraces-mobile-friendly-sites-in-search-sh/nkwzc/'>site</a></td><td>Google shaking up search recommendations on smartphones</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-21 14:00:53</td><td><a href='http://smallbusiness.foxbusiness.com/technology-web/2015/04/20/will-google-mobilegeddon-wreak-havoc-on-small-business/'>site</a></td><td>"As people increasingly search on their mobile devices, we want to make sure they can find content that's not only relevant and timely, but also easy to read and interact with on smaller mobile screens," the Google spokesperson said.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://ww2.hdnux.com/photos/35/75/61/7855205/3/square_gallery_thumb.jpg'></td><td>2015-04-21 20:54:20</td><td><a href='http://www.sfgate.com/business/article/Google-opens-door-to-Mobilegeddon-by-changing-6214598.php'>site</a></td><td>"While the mobile-friendly change is important, we still use a variety of signals to rank search results," Google said in a blog post.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-23 20:45:14</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11437851&ref=rss'>site</a></td><td>Even as Google sows new fields, the company faces changes in how people find information and peruse digital content.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-24 02:53:06</td><td><a href='http://www.miamiherald.com/news/business/article19355415.html#storylink=rss'>site</a></td><td>Analysts have also questioned whether Google will be able to maintain its dominance in Internet search as more people rely on smartphones instead of personal computers to access digital content.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0505/20150505__0506google~1_300.JPG'></td><td>2015-05-05 18:24:59</td><td><a href='http://www.mercurynews.com/business/ci_28052661/google-hits-mobile-tipping-point-mobile-searches-pass?source=rss'>site</a></td><td>More Google search requests are now being made on mobile devices than personal computers in the U.S. and many other parts of the world.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0505/20150505__0506google~1_300.JPG'></td><td>2015-05-05 20:32:52</td><td><a href='http://www.mercurynews.com/business/ci_28052661/google-hits-mobile-tipping-point-mobile-searches-pass?source=rss'>site</a></td><td>Besides in the U.S., Google's mobile search requests are outstripping requests in nine other countries.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-05-13 13:02:26</td><td><a href='http://www.foxnews.com/tech/2015/05/13/hungry-google-it-to-get-delivery/'>site</a></td><td>Now, when a restaurant shows up in Google's search results on your phone, you can place an order with one of six different restaurant middlemen right away.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-19 21:12:24</td><td><a href='https://www.yahoo.com/tech/tweets-fly-back-into-google-search-results-after-119387533429.html?src=rss'>site</a></td><td>Tweets Fly Back into Google Search Results After Four Years of Exile</td></tr>
+</table></body></html>

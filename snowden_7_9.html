@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>snowden</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td><a href='http://abcnews.go.com/US/wireStory/bust-edward-snowden-sneaked-removed-nyc-park-30126638'>site</a></td><td><table><tr><td>Bust of Edward Snowden Sneaked Into, Removed From NYC Park</td></tr><tr><td>Suddenly, in the middle of the New York night, Edward Snowden's face appeared - deep in a public park.</td></tr><tr><td>At daybreak, police said city parks officials ordered the sculpted Snowden removed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td><a href='http://abcnews.go.com/US/wireStory/bust-edward-snowden-sneaked-removed-nyc-park-30126638'>site</a></td><td><table><tr><td>Bust of Edward Snowden Sneaked Into, Removed From NYC Park</td></tr><tr><td>Suddenly, in the middle of the New York night, Edward Snowden's face appeared - deep in a public park.</td></tr><tr><td>At daybreak, police said city parks officials ordered the sculpted Snowden removed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 00:29:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article17546378.html#storylink=rss'>site</a></td><td>After several mysterious artists put a sculpted bust of Snowden on a New York City war memorial, parks officials have ordered the bust removed.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/n/n/e/image.related.articleLeadwide.620x349.1mfjyl.png/1428370370263.jpg'></td><td>2015-04-07 01:33:04</td><td><a href='http://www.brisbanetimes.com.au/world/statue-that-cast-edward-snowden-as-a-hero-removed-and-held-by-new-york-police-20150407-1mfjyl.html'>site</a></td><td>New York City Parks workers work to remove a covered large molded bust of Edward Snowden at Fort Greene Park in Brooklyn.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-14 17:40:59</td><td><a href='http://www.startribune.com/politics/299714111.html'>site</a></td><td>Artists to NYPD: Return Edward Snowden bust we put on park's Revolutionary War monument</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww3.hdnux.com/photos/35/64/75/7819074/5/landscape_32.jpg'></td><td>2015-04-14 20:53:55</td><td><a href='http://www.sfgate.com/news/crime/article/Artists-to-NYPD-Return-Edward-Snowden-bust-we-6199064.php'>site</a></td><td>For now, downtown Manhattan gallery Postmasters hopes to show the Snowden bust next month.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-14 20:54:04</td><td><a href='http://news.yahoo.com/artists-nypd-return-edward-snowden-bust-put-park-185816679.html'>site</a></td><td>Parks activist Geoffrey Croft feels the bust deserves a place in the city's public space, regardless how viewers may feel about Snowden.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-14 20:55:23</td><td><a href='http://abcnews.go.com/Weird/wireStory/artists-nypd-return-edward-snowden-bust-put-park-30314480'>site</a></td><td>The mysterious artists who planted a bust of Edward Snowden on a Revolutionary War monument now want to free their sculpture from police custody and display it again, saying it was intended as a thought-provoking "gift to the city."</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-06 19:43:29</td><td><a href='http://www.usnews.com/news/offbeat/articles/2015/05/06/artists-who-put-ed-snowden-bust-on-nyc-monument-are-ticketed'>site</a></td><td><table><tr><td>Artists who put Ed Snowden bust on NYC monument are ticketed</td></tr><tr><td>NEW YORK (AP) - The mystery artists who put a bust of Edward Snowden on a Revolutionary War memorial have been ticketed but not criminally charged, and the city has given back their confiscated statue, their lawyer said Wednesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-06 19:43:29</td><td><a href='http://www.usnews.com/news/offbeat/articles/2015/05/06/artists-who-put-ed-snowden-bust-on-nyc-monument-are-ticketed'>site</a></td><td><table><tr><td>Artists who put Ed Snowden bust on NYC monument are ticketed</td></tr><tr><td>NEW YORK (AP) - The mystery artists who put a bust of Edward Snowden on a Revolutionary War memorial have been ticketed but not criminally charged, and the city has given back their confiscated statue, their lawyer said Wednesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-07 02:54:07</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20355699.html#storylink=rss'>site</a></td><td>Two activists who put a bust of Edward Snowden on a Revolutionary War memorial were ticketed and got their confiscated sculpture back Wednesday, saying they felt the episode had sparked conversation about freedom.</td></tr>
+</table></body></html>

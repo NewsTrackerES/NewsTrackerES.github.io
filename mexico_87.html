@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/c55c7a493c8df311730f6a70670081b3_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-20 04:36:41</td><td><a href='http://www.utsandiego.com/news/2015/apr/19/5-years-after-bp-spill-whats-changed-in-offshore/'>site</a></td><td>As oil gushed from BP's ruptured well five years ago and public outrage built by the day, the Obama administration issued a six-month moratorium on drilling in the Gulf of Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-20 04:40:29</td><td><a href='http://www.startribune.com/nation/300617641.html'>site</a></td><td>5 years after BP spill: A look at what's changed in offshore drilling in the Gulf of Mexico</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 03:20:33</td><td><a href='http://www.seattlepi.com/entertainment/article/Mexico-City-closes-some-historic-streets-for-6141275.php'>site</a></td><td>The Sam Mendes-directed movie starring Daniel Craig is scheduled to film in London, Italy, Morocco, Mexico and Austria.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 03:20:33</td><td><a href='http://www.sfgate.com/entertainment/article/Mexico-City-closes-some-historic-streets-for-6141275.php'>site</a></td><td>MEXICO CITY (AP) - Officials in Mexico City says they will close off some parts of the historic downtown district to allow a production team to film parts of the new James Bond thriller "Spectre."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 23:06:07</td><td><a href='http://news.yahoo.com/mexico-city-businesses-cite-losses-during-bond-filming-230607359.html'>site</a></td><td><table><tr><td>Mexico City businesses cite losses during Bond filming</td></tr><tr><td>MEXICO CITY (AP) - The leader of small businesses in Mexico City's historic downtown district says owners have complained of a 60 percent drop in sales during the first week of filming of the new James Bond movie, "Spectre."</td></tr></table></td></tr>
 </table></body></html>

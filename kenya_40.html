@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 13:56:25</td><td><a href='http://www.foxnews.com/world/2015/04/08/kenya-freezes-assets-groups-and-individuals-suspected-funding-islamic/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>NAIROBI, Kenya - A senior Kenyan official says the government is freezing assets of dozens of organizations and individuals that he said are suspected of financing Islamic extremist activities.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 14:02:30</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3030468/Kenya-freezes-assets-suspected-funding-Islamic-extremists.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Kenya freezes assets suspected of funding Islamic extremists</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 14:00:26</td><td><a href='http://www.startribune.com/world/294988901.html'>site</a></td><td><table><tr><td>Kenya: Businessmen, ex-officials charged for fraud and abuse of office</td></tr><tr><td>Al-Shabab extremists from Somalia have carried out 129 attacks in Kenya since Oct. 2011 saying its retribution for the Kenyan troop presence in Somalia.</td></tr></table></td></tr>
 </table></body></html>

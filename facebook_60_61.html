@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 21:14:33</td><td><a href='http://news.yahoo.com/facebook-posts-job-land-us-contractor-emirates-jail-210644583.html'>site</a></td><td>"I never even entertained the fact that I would wind up in prison out here for something I put on Facebook in the United States."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-04 21:20:25</td><td><a href='http://www.startribune.com/nation/295051021.html'>site</a></td><td>Ryan Pate, a helicopter mechanic from Belleair Bluffs, Florida, took to Facebook after a dispute over sick leave with the company he was working for in the United Arab Emirates.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 21:30:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11412190&ref=rss'>site</a></td><td>Facebook posts about job land US contractor in Emirates jail</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 10:23:00</td><td><a href='http://news.yahoo.com/american-uae-facebook-case-may-charges-dismissed-102300664.html'>site</a></td><td><table><tr><td>DUBAI, United Arab Emirates (AP) - An American helicopter mechanic whose Facebook post complaining about his employer in the United Arab Emirates got him arrested said Tuesday he has been told the company is seeking to dismiss the charges against him.</td></tr><tr><td>Pate's Facebook post has since been deleted.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 10:23:00</td><td><a href='http://news.yahoo.com/american-uae-facebook-case-may-charges-dismissed-102300664.html'>site</a></td><td><table><tr><td>DUBAI, United Arab Emirates (AP) - An American helicopter mechanic whose Facebook post complaining about his employer in the United Arab Emirates got him arrested said Tuesday he has been told the company is seeking to dismiss the charges against him.</td></tr><tr><td>Pate's Facebook post has since been deleted.</td></tr></table></td></tr>
+</table></body></html>

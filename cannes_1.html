@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 11:13:32</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/10/isabella-rossellini-to-head-cannes-un-certain-regard-jury'>site</a></td><td><table><tr><td>Isabella Rossellini to head Cannes' Un Certain Regard jury</td></tr><tr><td>PARIS (AP) - The Cannes Film Festival says Italian-American actress Isabella Rossellini will head the jury for its sidebar competition, Un Certain Regard.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/etPtwbDF__1PW2S.wZODYA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f2769da01a364210730f6a7067002a49.jpg'></td><td>2015-04-10 11:13:38</td><td><a href='http://news.yahoo.com/isabella-rossellini-head-cannes-un-certain-regard-jury-111338735.html'>site</a></td><td>The festival said Friday she will also attend a Cannes screening of a documentary about her mother.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://news.sky.com/story/1482264/data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></td><td>2015-05-12 07:53:49</td><td><a href='http://news.sky.com/story/1482264/cannes-pays-tribute-to-ingrid-bergman'>site</a></td><td>Cannes Pays Tribute To Ingrid Bergman</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 22:07:11</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/11/diors-cruise-show-draws-celebrity-crowd-before-cannes'>site</a></td><td><table><tr><td>Dior's cruise show draws celebrity crowd before Cannes</td></tr><tr><td>This year, Dior selected the Palais Bulles owned by fashion designer Pierre Cardin, nestled in the mountain tops outside of Cannes, which plays host to the film festival that kicks off Wednesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 22:07:11</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/11/diors-cruise-show-draws-celebrity-crowd-before-cannes'>site</a></td><td><table><tr><td>Dior's cruise show draws celebrity crowd before Cannes</td></tr><tr><td>This year, Dior selected the Palais Bulles owned by fashion designer Pierre Cardin, nestled in the mountain tops outside of Cannes, which plays host to the film festival that kicks off Wednesday.</td></tr></table></td></tr>
 </table></body></html>

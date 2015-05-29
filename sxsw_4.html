@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>sxsw</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/cd/resizer/2.0/FIT_TO_WIDTH-w500/23e43fc6342acb7c7543c8851b07a67dbf80469a.jpg'></td><td>2015-03-20 00:18:02</td><td><a href='https://www.yahoo.com/music/at-sxsw-folk-roots-mother-son-duo-build-buzz-114080934071.html?src=rss'>site</a></td><td>At SXSW, Folk-Roots Mother-Son Duo Build Buzz</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-20 00:38:11</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article15411179.html#storylink=rss'>site</a></td><td>Madisen Ward and the Mama Bear, a mother and son duo consisting of Madisen Ward, left, and Ruth Ward, pose for a photograph during the SXSW Music Festival on Wednesday, March 18, 2015 in Austin, Texas.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 21:02:05</td><td><a href='http://www.cbsnews.com/news/live-streaming-apps-dominate-buzz-at-sxsw/'>site</a></td><td><table><tr><td>Meanwhile, rival live-streaming app Stre.am is a finalist for SXSW's innovation awards.</td></tr><tr><td>Gore called upon SXSW attendees to get involved in supporting climate change legislation ahead of environmental talks in Paris in December.</td></tr></table></td></tr>
 </table></body></html>

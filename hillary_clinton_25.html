@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-10 14:46:50</td><td><a href='http://finance.yahoo.com/news/hillary-clinton-plans-campaign-kickoff-144650099.html'>site</a></td><td>"I think it's important, and Hillary does too, that she go out there as if she's never run for anything before and establish her connection with the voters," he said in a recent interview with Town & Country magazine.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 06:23:24</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/us-awaits-hillarys-presidential-bid-20150412-3tx19.html'>site</a></td><td>Hillary Clinton is expected to announce her candidacy for US president, ending prolonged speculation that she once again seeks to become the first woman elected to the White House.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/9DKhXZHTH2Cf97aNJRLQ3w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-WAS-Was8910027-1-1-0.jpg'></td><td>2015-04-12 06:32:30</td><td><a href='http://news.yahoo.com/hillary-clinton-stepping-back-presidential-fray-031201140.html'>site</a></td><td>The 2016 campaign goal, the memo adds, is "to give every family, every small business, and every American a path to lasting prosperity by electing Hillary Clinton the next president of the United States."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/k/g/g/image.related.articleLeadwide.620x349.1mjkcc.png/1428838039513.jpg'></td><td>2015-04-12 11:31:27</td><td><a href='http://www.brisbanetimes.com.au/world/us-election/hillary-clinton-poised-to-step-back-into-us-presidential-fray-20150412-1mjkcc.html'>site</a></td><td>Hillary Clinton poised to step back into US presidential fray</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/article-doc-1o5fp-6XjmuQaao-HSK1-674_634x405.jpg'></td><td>2015-04-12 17:01:36</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3035894/Hillary-hungry-White-House-set-launch-Clinton-2-0.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Hillary, hungry for White House, set to launch Clinton 2.0</td></tr><tr><td>On his website, Paul called Clinton "unfit to serve as president."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 00:24:32</td><td><a href='http://news.yahoo.com/gravestone-hillary-clintons-dad-toppled-pennsylvania-002432437--election.html'>site</a></td><td>(AP) - The gravestone of Hillary Rodham Clinton's father has been found toppled over at a Pennsylvania cemetery.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 12:09:48</td><td><a href='http://www.cbsnews.com/news/hillary-clintons-fathers-tombstone-toppled/'>site</a></td><td>Hillary Clinton's father's tombstone toppled</td></tr>
 </table></body></html>

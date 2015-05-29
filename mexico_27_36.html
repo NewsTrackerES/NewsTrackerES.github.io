@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 02:45:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411063&ref=rss'>site</a></td><td><table><tr><td>Mexico condemns run of Mexican citizens killed by US police</td></tr><tr><td>MEXICO CITY (AP) " For the third time in less than a month, the Mexican government has condemned the killing of one of its citizens by police in the United States.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 02:45:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411063&ref=rss'>site</a></td><td><table><tr><td>Mexico condemns run of Mexican citizens killed by US police</td></tr><tr><td>MEXICO CITY (AP) " For the third time in less than a month, the Mexican government has condemned the killing of one of its citizens by police in the United States.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 03:22:16</td><td><a href='http://www.foxnews.com/world/2015/05/14/mayoral-candidate-shot-to-death-in-mexico-restive-michoacan-state-2nd-killing/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>MEXICO CITY - A Mexican political party says one of its members running for mayor in a town in the restive state of Michoacan was shot to death during a political rally.</td></tr><tr><td>It was the second killing of a candidate in western Mexico this month heading into the country's midterm elections June 7.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-15 03:22:16</td><td><a href='http://www.foxnews.com/world/2015/05/14/mayoral-candidate-shot-to-death-in-mexico-restive-michoacan-state-2nd-killing/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>MEXICO CITY - A Mexican political party says one of its members running for mayor in a town in the restive state of Michoacan was shot to death during a political rally.</td></tr><tr><td>It was the second killing of a candidate in western Mexico this month heading into the country's midterm elections June 7.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 20:55:29</td><td><a href='http://news.yahoo.com/mayoral-candidate-fatally-shot-restive-mexico-state-032226104.html'>site</a></td><td>MEXICO CITY (AP) - A candidate for mayor was shot to death in western Mexico and a man running for city council was gunned downed in southern Mexico, bringing to at least three the number of candidates killed in the run-up to the June 7 midterm elections.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-21 13:40:16</td><td><a href='http://www.news24.com/World/News/Police-tied-to-killing-of-mayoral-candidate-in-Mexico-20150521'>site</a></td><td>Mexico City - The top prosecutor in a western Mexican state says his investigation has tied the local police chief, his deputy and another underling to the killing last week of a mayoral candidate.</td></tr>
+</table></body></html>

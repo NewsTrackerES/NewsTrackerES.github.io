@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boston marathon bombing</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/2.6N_FXq_nopcsz4Wtk53g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/1991a844f4a3460a700f6a7067000561.jpg.cf.jpg'></td><td>2015-02-16 15:35:17</td><td><a href='http://news.yahoo.com/things-know-boston-marathon-bombing-trial-153517979.html'>site</a></td><td>Tsarnaev, 21, faces 30 federal charges in connection with the twin explosions at the finish line of the marathon on April 15, 2013.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/uu/api/res/1.2/nZ.k75hSngnN8VTMR5tJ.A--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/f38b32cccc5071740916476912ffa471'></td><td>2015-03-04 06:46:02</td><td><a href='http://news.yahoo.com/different-views-bombing-suspect-given-trial-063434741--spt.html'>site</a></td><td>BOSTON (AP) - The question, for all practical purposes, is no longer whether Dzhokhar Tsarnaev took part in the Boston Marathon bombing.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 20:02:30</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article16980455.html#storylink=rss'>site</a></td><td>FILE - This undated file photo provided by the Federal Bureau of Investigation shows Dzhokhar Tsarnaev, charged in the Boston Marathon bombing.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 18:15:11</td><td><a href='http://nypost.com/2015/04/08/dzhokhar-tsarnaev-convicted-in-boston-marathon-bombing/'>site</a></td><td>Dzhokhar Tsarnaev convicted in Boston Marathon bombing</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-08 18:40:43</td><td><a href='http://www.foxnews.com/us/2015/04/08/latest-on-boston-marathon-bombing-trial-dzhokhar-tsarnaev-convicted-on-all-30/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>Dzhokhar Tsarnaev (joh-HAHR' tsahr-NEYE'-ehv) has been convicted in the 2013 bombing of the Boston Marathon.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2014/07/07/f4/07/boston_bombing.jpg'></td><td>2015-04-08 18:43:38</td><td><a href='http://www.daytondailynews.com/ap/ap/sports/jurors-to-deliberate-for-2nd-day-in-boston-maratho/nkpgz/'>site</a></td><td>Dzhokhar Tsarnaev was convicted on all charges Wednesday in the Boston Marathon bombing by a federal jury that now must decide whether the 21-year-old former college student should be executed.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-08 20:44:20</td><td><a href='http://www.usnews.com/news/sports/articles/2015/04/08/jurors-to-deliberate-for-2nd-day-in-boston-marathon-trial'>site</a></td><td>BOSTON (AP) - Dzhokhar Tsarnaev was convicted on all charges Wednesday in the Boston Marathon bombing by a jury that will now decide whether the 21-year-old should be executed or shown mercy for what his lawyer says was a crime masterminded by his big brother.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-08 20:46:17</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article17818763.html#storylink=rss'>site</a></td><td>Boston Marathon bombing survivor Karen Brassard speaks outside federal court, Wednesday, April 8, 2015, in Boston where Dzhokhar Tsarnaev was convicted on multiple charges in the 2013 Boston Marathon bombing.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-13 15:15:34</td><td><a href='http://www.startribune.com/nation/299565471.html'>site</a></td><td>- Tight security will be in place again for the Boston Marathon - the second since the deadly 2013 bombing at the finish line.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-23 17:48:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article19288293.html#storylink=rss'>site</a></td><td>Liz Norden, who had two sons lose legs in the 2013 Boston Marathon bombing, arrives at federal court, Thursday, April 23, 2015, in Boston.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-23 17:48:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article19288293.html#storylink=rss'>site</a></td><td>Boston Marathon bombing survivor Heather Abbott arrives at federal court, Thursday, April 23, 2015, in Boston.</td></tr>
+</table></body></html>

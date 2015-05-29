@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 25,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 25 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple watch</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td><a href='http://news.yahoo.com/3-reasons-apples-watch-wont-change-game-050300890.html'>site</a></td><td>The stakes are big for Apple CEO Tim Cook: the watch is the first brand-new Apple product to be launched without legendary co-founder Steve Jobs.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-07 05:05:20</td><td><a href='http://www.startribune.com/nation/295450771.html'>site</a></td><td>Of the Apple Watch, he says, "people need to understand more about what this product is, and what it does, and I think that will evolve over time."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 18:53:00</td><td><a href='http://www.ctvnews.ca/sci-tech/tag-heuer-to-make-smartwatches-with-google-and-intel-1.2288122'>site</a></td><td>The Apple Watch will start at $350 when it goes on sale April 24, but ones made with 18-karat gold begin at $10,000.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/04/04/apple_watch_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-04 18:45:27</td><td><a href='http://technology.canoe.ca/News/2015/04/04/22326996.html?cid=rsstechnologynews'>site</a></td><td>The Apple Watch, the firm's first new device since Tim Cook became CEO, will be available in stores in nine countries on April 24.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/IKCqgvzK6smEwwN4nRMhtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-08T142000Z_2_LYNXMPEB370KG_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-04-08 14:20:00</td><td><a href='http://finance.yahoo.com/news/apple-watch-sleek-stylish-not-141208902.html'>site</a></td><td>The watch, the first new product to be launched by Apple under Chief Executive Tim Cook, will hit stores on April 24.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/04/29906170001_4160369361001_AplWatch-3Up-Communication-PR-PRINT.jpg'></td><td>2015-04-08 14:34:43</td><td><a href='http://www.usatoday.com/videos/tech/2015/04/08/25451799/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomtech-personaltalk'>site</a></td><td>It's almost here! First look at the Apple Watch</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-09 04:02:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/08/apple-watch-isnt-the-only-gadget-out-this-week/'>site</a></td><td><table><tr><td>Apple store employees will show you the range of options, including different watch cases, bands and sizes.</td></tr><tr><td>But the Apple Watch isn't the only gadget available this week.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-09 04:02:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/08/apple-watch-isnt-the-only-gadget-out-this-week/'>site</a></td><td><table><tr><td>Apple store employees will show you the range of options, including different watch cases, bands and sizes.</td></tr><tr><td>But the Apple Watch isn't the only gadget available this week.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-09 12:46:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/09/your-guide-to-trying-on-ordering-apple-watch/'>site</a></td><td>The smartwatch is Apple's first new product category in five years and comes in 54 configurations - more than any other Apple gadget.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://cdn.mos.techradar.com/art/Watches/Apple%20Watch/Press/Watch-Press-05-320-80.jpg'></td><td>2015-04-09 15:06:00</td><td><a href='http://www.techradar.com/us/news/wearables/apple-if-you-want-to-buy-a-watch-stay-at-home-1290668?src=rss&attr=all'>site</a></td><td>"To provide the best experience and selection to as many customers as we can, we will be taking orders for Apple Watch exclusively online during the initial launch period."</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>NEW YORK (AP) - Apple Watch comes with a choice of watch case, band and size - there are 54 possible configurations in all.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-09 15:42:23</td><td><a href='http://www.chron.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>Apple Watch options: 54 combinations of case, band, size</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/JLVlTNDLtJ0O33Ev0sVrqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/d0ba21d8f1b92e0f730f6a7067001210_original.jpg'></td><td>2015-04-09 15:43:02</td><td><a href='http://finance.yahoo.com/news/apple-watch-options-54-combinations-125305012.html'>site</a></td><td>Apple Watch, available for pre-order on Friday, April 10, comes with a choice of watch case, band and size _ there are 54 possible configurations in all.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-10 05:01:26</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032788/Apple-expects-strong-demand-smartwatch-consumer-debut.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Apple Watch, CEO Tim Cook's first new major product, was available for pre-order online and to try out in stores - but not take home.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://ww3.hdnux.com/photos/35/57/33/7796462/3/square_gallery_thumb.jpg'></td><td>2015-04-10 08:45:37</td><td><a href='http://www.sfgate.com/business/personal-finance/article/APPLE-WATCH-LIVE-Try-on-visits-online-orders-6190868.php'>site</a></td><td><table><tr><td>A customer tries on an Apple Watch at an Apple Store in Hong Kong Friday, April 10, 2015.</td></tr><tr><td>Customers and staff look at models of Apple Watch displayed in a glass case at an Apple Store in Tokyo as Apple Watch made its debut Friday, April 10, 2015.</td></tr><tr><td>A customers wears an Apple Watch as the public have its first chance to see, touch and pre-order the watch in Sydney, Friday, April 10, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://ww3.hdnux.com/photos/35/57/33/7796462/3/square_gallery_thumb.jpg'></td><td>2015-04-10 08:45:37</td><td><a href='http://www.sfgate.com/business/personal-finance/article/APPLE-WATCH-LIVE-Try-on-visits-online-orders-6190868.php'>site</a></td><td><table><tr><td>A customer tries on an Apple Watch at an Apple Store in Hong Kong Friday, April 10, 2015.</td></tr><tr><td>Customers and staff look at models of Apple Watch displayed in a glass case at an Apple Store in Tokyo as Apple Watch made its debut Friday, April 10, 2015.</td></tr><tr><td>A customers wears an Apple Watch as the public have its first chance to see, touch and pre-order the watch in Sydney, Friday, April 10, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-10 10:51:52</td><td><a href='http://www.ctvnews.ca/sci-tech/apple-watch-begins-its-debut-around-the-world-1.2320387'>site</a></td><td><table><tr><td>The watch is Apple's first new product category since the iPad came out five years ago.</td></tr><tr><td>People can try the watch on in Apple stores, but for now all orders are being handled online.</td></tr></table></td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://ww3.hdnux.com/photos/35/57/64/7798070/3/square_gallery_thumb.jpg'></td><td>2015-04-10 18:25:24</td><td><a href='http://www.sfgate.com/business/personal-finance/article/APPLE-WATCH-LIVE-Try-on-visits-online-orders-6190868.php'>site</a></td><td>Ricky Lea examines Apple's new watch, which could only be bought as a pre-order online, Friday, April 10, 2015, in New York.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-04-11 00:11:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034432/Backlogged-orders-shoppers-close-look-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Backlogged orders as shoppers get close-up look at Apple Watch</td></tr><tr><td>People flocked to Apple's stores around the world to get a close-up look at the Apple Watch, the tech company's foray into the personal luxury goods market, with Apple predicting demand would exceed supply at product launch.</td></tr></table></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-04-11 00:11:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034432/Backlogged-orders-shoppers-close-look-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Backlogged orders as shoppers get close-up look at Apple Watch</td></tr><tr><td>People flocked to Apple's stores around the world to get a close-up look at the Apple Watch, the tech company's foray into the personal luxury goods market, with Apple predicting demand would exceed supply at product launch.</td></tr></table></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-04-17 17:44:20</td><td><a href='http://www.seattlepi.com/business/technology/article/Don-t-plan-to-line-up-for-Apple-Watch-next-week-6206538.php'>site</a></td><td><table><tr><td>Apple, which began accepting advance orders for the watch last week, had previously said it would be "available" for sale in stores on April 24, at least for customers who made reservations to come in for a personal demonstration.</td></tr><tr><td>But with supplies limited, Apple's retail chief has told store workers that the watch will continue to be sold only through online orders for at least the next several weeks.</td></tr></table></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-04-17 17:44:20</td><td><a href='http://www.seattlepi.com/business/technology/article/Don-t-plan-to-line-up-for-Apple-Watch-next-week-6206538.php'>site</a></td><td><table><tr><td>Apple, which began accepting advance orders for the watch last week, had previously said it would be "available" for sale in stores on April 24, at least for customers who made reservations to come in for a personal demonstration.</td></tr><tr><td>But with supplies limited, Apple's retail chief has told store workers that the watch will continue to be sold only through online orders for at least the next several weeks.</td></tr></table></td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-P-d9ebe874-4bac-4bc9-9f7b-ab331dc82a26-6Y0zPDZNQ-HSK1-759_634x356.jpg'></td><td>2015-04-24 00:01:58</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3053177/Fashion-stores-sell-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Apple retail chief Angela Ahrendts has previously stated the selling process would be different for the watch than the huge queues normally seen outside the company's store for other products.</td></tr>
+  <tr><td style='display:none'>23</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Tzorog39kI59R.SG_LJT5Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-24T035829Z_1_LYNXMPEB3N03U_RTROPTP_3_APPLE-WATCH-LAUNCH_original.jpg'></td><td>2015-04-24 02:50:16</td><td><a href='http://finance.yahoo.com/news/low-key-launch-apple-watch-025016287.html'>site</a></td><td>Low-key launch as Apple Watch finally goes on sale</td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-04-24 03:48:44</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3053384/Low-key-launch-Apple-Watch-finally-goes-sale.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>About 50 people lined up to buy the watch at electronic store Bic Camera in Tokyo's Ginza district, while at the nearby Apple Store it was like any other Friday, according to Reuters reporters at the shops.</td></tr>
+</table></body></html>

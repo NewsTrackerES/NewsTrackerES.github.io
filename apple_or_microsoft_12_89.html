@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article16368737.html#storylink=rss'>site</a></td><td><table><tr><td>Now Microsoft is taking one small step toward narrowing that gap: requiring all its vendors with more than 50 workers to offer those detailed to Microsoft contracts no fewer than 15 days of paid leave.</td></tr><tr><td>But this isn't the first time Microsoft has asked vendors to treat employees better.</td></tr><tr><td>Microsoft might be the first large tech company to require its suppliers to offer paid leave, but the movement to improve conditions for contracted service workers has been percolating in Silicon Valley as well.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article16368737.html#storylink=rss'>site</a></td><td><table><tr><td>Now Microsoft is taking one small step toward narrowing that gap: requiring all its vendors with more than 50 workers to offer those detailed to Microsoft contracts no fewer than 15 days of paid leave.</td></tr><tr><td>But this isn't the first time Microsoft has asked vendors to treat employees better.</td></tr><tr><td>Microsoft might be the first large tech company to require its suppliers to offer paid leave, but the movement to improve conditions for contracted service workers has been percolating in Silicon Valley as well.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 19:32:28</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-wants-US-suppliers-to-give-employees-6161231.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Microsoft said Thursday that it will push its U.S. suppliers to give their employees paid time off - but that only applies for the staffers that do work for Microsoft.</td></tr><tr><td>Microsoft Corp. said suppliers with 50 or more employees will be asked to provide at least 15 days of paid time off for employees that mainly work with the Redmond, Washington, company.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 19:32:28</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-wants-US-suppliers-to-give-employees-6161231.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Microsoft said Thursday that it will push its U.S. suppliers to give their employees paid time off - but that only applies for the staffers that do work for Microsoft.</td></tr><tr><td>Microsoft Corp. said suppliers with 50 or more employees will be asked to provide at least 15 days of paid time off for employees that mainly work with the Redmond, Washington, company.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 20:55:44</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td>During the next 12 months, the company will require its U.S. suppliers -- which provide workers who do everything from serving food and driving buses to testing software -- to give 15 days paid leave a year to their employees who work on Microsoft projects.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/AW10.jpg?ve=1&tl=1'></td><td>2015-04-29 23:11:02</td><td><a href='http://www.foxbusiness.com/technology/2015/04/29/report-defective-component-slowed-apple-watch-rollout/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>The company is one of two suppliers of these components to Apple, it said.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-01 19:27:30</td><td><a href='http://www.usnews.com/news/business/articles/2015/05/01/inked-and-irked-apple-watch-users-report-tattoo-problems'>site</a></td><td>This isn't Apple's first "-gate" problem.</td></tr>
+</table></body></html>

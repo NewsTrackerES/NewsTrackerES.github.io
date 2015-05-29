@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/449/report-on-business/international-business/european-business/article23215879.ece/ALTERNATES/w220/Facebook+Privacy.JPG'></td><td>2015-03-16 14:53:36</td><td><a href='http://www.theglobeandmail.com/technology/tech-news/six-things-that-facebooks-new-community-rules-wont-allow/article23469480/?cmpid=rss1'>site</a></td><td>On Monday, Facebook released its updated Facebook community standards.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-16 17:56:32</td><td><a href='http://www.ctvnews.ca/sci-tech/facebook-clarifies-guidelines-on-acceptable-posts-1.2282173'>site</a></td><td>The new guidelines say Facebook will take down "graphic images when they are shared for sadistic pleasure or to celebrate or glorify violence."</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/03/16/facebook650afp4.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-16 17:58:41</td><td><a href='http://technology.canoe.ca/News/2015/03/16/22289951-relaxnews.html?cid=rsstechnologynews'>site</a></td><td>Facebook said earlier this year it was putting warnings on "graphic content," which would also be banned for users under 18.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/03/16/facebook650afp4.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-16 17:58:41</td><td><a href='http://technology.canoe.ca/News/2015/03/16/22289951-relaxnews.html?cid=rsstechnology'>site</a></td><td><table><tr><td>Facebook clarifies guidelines on acceptable posts</td></tr><tr><td>Facebook on Monday updated its "community standards" guidelines, giving users more clarity on acceptable posts relating to nudity, violence, hate speech and other contentious topics.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/03/16/facebook650afp4.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-16 17:58:41</td><td><a href='http://technology.canoe.ca/News/2015/03/16/22289951-relaxnews.html?cid=rsstechnology'>site</a></td><td><table><tr><td>Facebook clarifies guidelines on acceptable posts</td></tr><tr><td>Facebook on Monday updated its "community standards" guidelines, giving users more clarity on acceptable posts relating to nudity, violence, hate speech and other contentious topics.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td><a href='http://www.seattlepi.com/business/technology/article/Facebook-explains-what-posts-are-not-allowed-on-6137030.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Facebook is trying to clarify what posts, images and other content it allows on its site and why.</td></tr><tr><td>Facebook users who believe that a particular page or content violates the site's standards can click a "report" link to notify Facebook.</td></tr><tr><td>Facebook restricts content in countries where it violates local laws, even if that content does not violate its community standards.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td><a href='http://www.seattlepi.com/business/technology/article/Facebook-explains-what-posts-are-not-allowed-on-6137030.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Facebook is trying to clarify what posts, images and other content it allows on its site and why.</td></tr><tr><td>Facebook users who believe that a particular page or content violates the site's standards can click a "report" link to notify Facebook.</td></tr><tr><td>Facebook restricts content in countries where it violates local laws, even if that content does not violate its community standards.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-16 20:49:03</td><td><a href='http://www.torontosun.com/2015/03/16/facebook-clarifies-rules-on-banned-content'>site</a></td><td>Facebook clarifies rules on banned content</td></tr>
+</table></body></html>

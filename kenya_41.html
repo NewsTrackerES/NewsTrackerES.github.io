@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/h/3/2/r/image.related.articleLeadwide.620x349.1mh310.png/1428518705781.jpg'></td><td>2015-04-08 18:45:12</td><td><a href='http://www.smh.com.au/world/kenya-freezes-key-money-transfers-to-somalia-after-university-terror-attack-20150408-1mh310.html'>site</a></td><td>Kenya freezes key money transfers to Somalia after university terror attack</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/h/3/2/r/image.related.articleLeadwide.620x349.1mh310.png/1428518705781.jpg'></td><td>2015-04-08 18:45:12</td><td><a href='http://www.brisbanetimes.com.au/world/kenya-freezes-key-money-transfers-to-somalia-after-university-terror-attack-20150408-1mh310.html'>site</a></td><td><table><tr><td>Kenya has frozen key money transfer companies vital for Somalia after the police chief issued a list of 85 people and businesses with suspected links to the Al-Qaeda-linked group al-Shabab.</td></tr><tr><td>Their suspension in Kenya would have major impact on money transfers, with aid agencies warning in the past their suspension would hit some of poorest people the hardest.</td></tr><tr><td>The notice, issued under Kenya's prevention of terrorism act and which gives the names listed 24 hours to demonstrate why they "should not be declared a specified entity," was signed by Kenya's police chief Joseph Boinett.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 17:28:07</td><td><a href='http://www.theguardian.com/sport/2015/apr/13/athletics-kenya-doping-bans-agents'>site</a></td><td><table><tr><td>Athletics Kenya bans agents of Dennis Kimetto pending doping investigations</td></tr><tr><td>Kenya's athletics federation has suspended the agents of marathon world record holder Dennis Kimetto and other top stars while it investigates the spike in doping among the country's runners.</td></tr></table></td></tr>
 </table></body></html>

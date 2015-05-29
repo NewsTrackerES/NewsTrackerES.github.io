@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 20:14:34</td><td><a href='http://www.reuters.com/article/2015/04/22/us-facebook-results-idUSKBN0ND2F020150422?feedType=RSS&feedName=businessNews'>site</a></td><td>Facebook revenue jumps as mobile ad sales surge</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 20:14:34</td><td><a href='http://finance.yahoo.com/news/facebook-revenue-jumps-mobile-ad-201434136.html'>site</a></td><td><table><tr><td>(Reuters) - Facebook Inc posted its slowest growth in quarterly revenue in two years and higher spending on research and development ate into profits.</td></tr><tr><td>Facebook's operating expenses rose 83 percent in the first quarter as R&D costs jumped 133 percent and marketing and sales spending nearly doubled.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691241734_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-22 21:42:17</td><td><a href='http://www.torontosun.com/2015/04/22/facebook-revenue-growth-slows'>site</a></td><td><table><tr><td>Facebook's net income attributable to stockholders fell to US$509 million, or 18 cents per share, in the three months ended March 31, from $639 million, or 25 cents per share, a year earlier.</td></tr><tr><td>Facebook said revenue rose to $3.54 billion from $2.50 billion.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150422&i=107129172&w=240&r=107129172-1&t=2'></td><td>2015-04-23 08:56:09</td><td><a href='http://www.reuters.com/article/2015/04/23/us-facebook-results-idUSKBN0ND2F020150423?feedType=RSS&feedName=technologyNews'>site</a></td><td>Facebook revenue growth slows, costs weigh on profit</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/04/f9ad17c54d0cd90a6f0f6a706700b5e6_c0-335-3073-2126_s561x327.jpg?73d7f747f38ce2e9b4a59a94ff7b69f8f36cc1ea'></td><td>2015-03-05 00:47:08</td><td><a href='http://www.washingtontimes.com/news/2015/mar/4/facebook-exec-nba-team-up-to-get-men-to-lean-in-fo/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>Facebook exec, NBA team up to get men to 'lean in' for women</td></tr><tr><td>Sandberg, Facebook's second-highest ranking executive behind CEO Mark Zuckerberg, is counting on the NBA's appeal to connect with millions of sports-loving men who haven't read her book.</td></tr></table></td></tr>
 </table></body></html>

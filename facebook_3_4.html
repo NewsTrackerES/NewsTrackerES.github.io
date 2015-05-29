@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:42:36</td><td><a href='http://www.nydailynews.com/news/national/facebook-host-news-new-york-times-buzzfeed-article-1.2160717?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>Facebook to host news from New York Times, BuzzFeed</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-03-24 22:31:36</td><td><a href='http://www.mercurynews.com/business/ci_27777942/facebook-said-talks-publishers-hosting-content?source=rss'>site</a></td><td>Facebook is in talks with the New York Times, BuzzFeed and National Geographic about hosting their articles or videos directly on the social network, the New York Times reported Monday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 04:17:37</td><td><a href='http://www.startribune.com/facebook-ready-to-test-news-project/303549391/'>site</a></td><td>Publishers have little choice but to cooperate with Facebook, said Vivian Schiller, a former executive at NBC, the New York Times and Twitter who now advises media companies and brands.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 12:10:15</td><td><a href='http://www.charlotteobserver.com/entertainment/books/article21274368.html#storylink=rss'>site</a></td><td><table><tr><td>The natural order of the universe was disrupted recently when BuzzFeed, NBC News, The New York Times and a number of other media companies ceded to Facebook the marketing and monetization of portions of their valuable content.</td></tr><tr><td>The choice to throw in with Facebook could not have been easy for the proud media companies.</td></tr></table></td></tr>
+</table></body></html>

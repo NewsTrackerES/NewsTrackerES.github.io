@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:00:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11410692&ref=rss'>site</a></td><td>He also noted that Google is also working on "Android Pay," a mobile payment system similar to "Apple Pay," that will work across all Android-powered devices.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/google650afp3.jpg&size=104x59&quality=85'></td><td>2015-03-31 02:35:15</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/30/22318121-relaxnews.html?cid=rsstechnology'>site</a></td><td>Google said Monday it was updating its mobile Gmail app for Android device users to allow them to manage multiple e-mail accounts from a single program.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03252/Googlepacman_3252204b.jpg'></td><td>2015-03-31 16:33:46</td><td><a href='http://www.telegraph.co.uk/technology/google/11507253/Google-Maps-launches-PacMan-on-real-streets.html'>site</a></td><td>The game is accessible on desktop computers and on the Google Maps app.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 18:54:06</td><td><a href='http://www.miamiherald.com/news/business/article16985768.html#storylink=rss'>site</a></td><td>Like the company's Android software for mobile devices, the Chrome system is set up so users will automatically begin using Google's search engine and other services, such as Gmail and YouTube.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 20:57:04</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-Maps-turns-into-Pac-Man-s-chomping-grounds-6170944.php'>site</a></td><td>The game can be played in Google Maps on desktop computers or mobile devices that have the latest app update for Apple's iOS or Google's Android software.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150414&t=2&i=1040408064&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3D0WI'></td><td>2015-04-15 01:07:53</td><td><a href='http://www.reuters.com/article/2015/04/15/us-google-eu-idUSKBN0N523Q20150415?feedType=RSS&feedName=technologyNews'>site</a></td><td>Separately, Vestager will launch an investigation into Google's Android mobile software business, the FT said.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-17 00:35:14</td><td><a href='http://www.usatoday.com/story/tech/2015/04/16/google-find-my-phone-android-app-search/25907829/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>"If you know where your computer is, you can now ask Google to find your Android phone from your desktop."</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/2e5329a3392ee411730f6a7067007762_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-17 07:02:15</td><td><a href='http://www.utsandiego.com/news/2015/apr/17/google-embraces-mobile-friendly-sites-in-search/'>site</a></td><td>That's why Google's new rating system is being billed by some search experts as "Mobile-geddon."</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/Apple-Logo-Weed-on-in-Google-Maps-572673.jpg'></td><td>2015-04-24 13:51:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/572673/Google-Maps-Android-Lollipop-Mascot-PEES-Apple-Logo-Taunt-Watch-Launch?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-life-and-style-news+%28Daily+Express+%3A%3A+Life+%26+Style+Feed%29'>site</a></td><td>An obscene image of the Android mascot urinating on the Apple logo has been spotted in Google Maps.</td></tr>
+</table></body></html>

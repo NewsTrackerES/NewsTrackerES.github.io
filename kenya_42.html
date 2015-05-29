@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 09:53:59</td><td><a href='http://www.reuters.com/article/2015/04/09/us-kenya-weather-forecasting-idUSKBN0N00W420150409?feedType=RSS&feedName=environmentNews'>site</a></td><td><table><tr><td>Nganyi RANET - it stands for "Radio Internet" - is a community radio station set up by the Kenya Meteorological Service to target communities particularly vulnerable to climate extremes.</td></tr><tr><td>There are now five RANET radio stations in Kenya where the climate change impacts are particularly strong.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 17:28:07</td><td><a href='http://www.theguardian.com/sport/2015/apr/13/athletics-kenya-doping-bans-agents'>site</a></td><td>Kiplagat also said he would be stepping aside from his post at Athletic Kenya from 1 May to campaign for a seat in the IAAF.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 18:02:36</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3037343/Athletics-Two-agents-suspended-Athletics-Kenya-doping-probe.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Kiplagat said Athletics Kenya would work with the international athletics body, the IAAF, and would meet promoters of the Diamond League to agree on how to manage athletes handled by the two agencies to ensure they did not miss competitions.</td></tr>
 </table></body></html>

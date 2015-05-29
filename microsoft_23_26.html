@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-23 21:17:40</td><td><a href='http://www.reuters.com/article/2015/04/23/us-microsoft-results-idUSKBN0NE2HE20150423?feedType=RSS&feedName=businessNews'>site</a></td><td>Microsoft profit, revenue beats Wall Street view; shares up</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td>Revenue from cloud computing has grown rapidly, as more businesses are paying to use software housed in Microsoft's data centers.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td>Microsoft's latest report shows another decline in profit and revenue from the company's flagship Windows software for personal computers.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://img.rasset.ie/0008bacd-642.jpg'></td><td>2015-04-24 06:53:18</td><td><a href='http://www.rte.ie/news/business/2015/0424/696384-microsoft-results/'>site</a></td><td>Microsoft last night reported revenue and profit above Wall Street expectations, as sales of its hardware and cloud-computing services helped to offset a decline in the company's core Windows business.</td></tr>
+</table></body></html>

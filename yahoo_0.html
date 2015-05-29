@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 09:20:17</td><td></td><td><a href='yahoo_0_2.html'>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005. (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-19 09:20:17</td><td><a href='http://www.startribune.com/world/296842551.html'>site</a></td><td>Yahoo didn't specify how many people will lose their jobs in China, but pledged to treat all the workers "with respect and fairness."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 15:10:00</td><td></td><td><a href='yahoo_0_1.html'>In a new cost-cutting move, Yahoo Inc. announced Thursday that it's closing its Beijing research and development center and leaving China. (5)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-19 19:15:39</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-closing-last-China-operation-in-Beijing-6144429.php'>site</a></td><td>Yahoo is preparing to spin off its Alibaba holdings into a separately traded company later this year, removing an asset that deflected attention from the challenges facing Yahoo's own businesses.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-27 05:46:05</td><td></td><td><a href='yahoo_0_6.html'>Yahoo has $726 million remaining on previous stock buyback plan, which was approved in 2013 and expires at the end of 2016. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 17:08:00</td><td></td><td><a href='yahoo_0_7.html'>"Yahoo is amidst a multi-year transformation to return an iconic company to greatness," Mayer said Tuesday in a statement. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-21 20:24:40</td><td><a href='http://www.bbc.co.uk/news/business-32406831#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Yahoo earnings miss expectations</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 20:26:03</td><td></td><td><a href='yahoo_0_3.html'>Yahoo said display advertising revenue rose 2.3 percent to $463.7 million in the quarter, accounting for roughly 40 percent of its total revenue. (9)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 20:26:03</td><td></td><td><a href='yahoo_0_4.html'>(Reuters) - Yahoo Inc reported first-quarter revenue below analysts' estimates as the veteran internet company struggles to rev up its core online advertising business. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 23:10:13</td><td></td><td><a href='yahoo_0_5.html'>Activist shareholder Starboard Value L.P., which owns a nearly 1 percent stake in Yahoo, has been urging Mayer to slash expenses and spin off the Yahoo Japan stake to lift the company's stock. (18)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-21 23:30:49</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/21/yahoos-1q-shows-company-remains-mired-in-revenue-rut'>site</a></td><td>Yahoo's stock rose 47 cents to $44.96 after Mayer's remarks in a webcast reviewing the financial results.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-22 02:28:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19182630.html#storylink=rss'>site</a></td><td>The latest evidence of Yahoo's financial malaise emerged Tuesday with the release the company's first-quarter earnings report.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-29 23:23:04</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-CEO-s-pay-package-climbs-in-2014-due-to-6231863.php'>site</a></td><td>Yahoo hired Mayer away from Google Inc. in July 2012.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-05-20 18:35:24</td><td><a href='http://www.wsj.com/articles/yahoo-shares-tumble-on-concern-over-regulatory-treatment-of-alibaba-stock-spinoff-1432076650?mod=rss_Technology'>site</a></td><td>Yahoo Shares Fall on Concern Over Spinoff</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://blog.sfgate.com/techchron/files/2014/04/Earns-Yahoo.JPEG-05119-300x185.jpg'></td><td>2015-05-20 18:55:36</td><td><a href='http://blog.seattlepi.com/techchron/2015/05/20/yahoo-says-irs-statement-wont-stop-its-spin-off/'>site</a></td><td>Yahoo said its understanding is that the statement from the IRS was "not specific" to its spin-off plans and "reflects no change in applicable law and does not affect previously filed ruling requests."</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td><a href='http://www.foxbusiness.com/technology/2015/05/20/tax-scare-on-yahoo-alibaba-stake-spin-off-seen-premature/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>"Anything can happen, but I'm going with the bet that this won't impact spin-off of Alibaba shares for Yahoo," Axiom Capital analyst Victor Anthony told Reuters.</td></tr><tr><td>If taxed at the full 40 percent rate, Yahoo shares would be worth just about $20 billion, SunTrust Robinson Humphrey analyst Robert Peck wrote.</td></tr></table></td></tr>
+</table></body></html>

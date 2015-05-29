@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone or volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 06:36:18</td><td></td><td><a href='cyclone_or_volcano_22.html'>Cyclone Pam's impact may not be restricted to devastating the island nation of Vanuatu - it may also have boosted the likelihood of an El Nino event for later this year, the Bureau of Meteorology said. (6)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 01:26:27</td><td></td><td><a href='cyclone_or_volcano_15.html'>The Volvo Ocean Race's six-strong fleet finally set sail for the most daunting leg of the nine-month offshore marathon on Wednesday after the threat of Cyclone Pam subsided. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-30 00:31:04</td><td></td><td><a href='cyclone_or_volcano_0.html'>Witnesses tell the Daily News (http://nydn.us/1IbCmov ) about 24 passengers on the first run of the Cyclone at Luna Park on Sunday were readying for the initial drop when it suddenly stopped. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 21:40:48</td><td></td><td><a href='cyclone_or_volcano_1.html'>Volcano Calbuco erupted on Wednesday in southern Chile, sending a plume of ash and smoke several miles up into the sky, local television images showed. (140)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 21:09:01</td><td></td><td><a href='cyclone_or_volcano_16.html'>Scientists are closely watching a volcano on Hawaii's Big Island for a possible eruption after volatile changes in the level of a lake of lava on its summit and a series of earthquakes, the U.S. Geological Survey said on Monday. (18)</a></td></tr>
+</table></body></html>

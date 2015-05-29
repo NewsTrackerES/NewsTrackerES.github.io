@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/B.8Q3FKz6R0CjpZwCpV98g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504041600576432730'></td><td>2015-04-04 22:09:33</td><td><a href='http://sports.yahoo.com/news/breanna-stewart-sue-semrau-ap-player-coach-204251751--ncaaw.html'>site</a></td><td>Breanna Stewart and Sue Semrau are AP Player, Coach of Year (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/EbunjYdBPc0PVWBFLo3FiA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504191449533984485'></td><td>2015-04-19 20:20:59</td><td><a href='http://sports.yahoo.com/news/florida-football-player-jackson-arrested-armed-robbery-194301001--ncaaf.html'>site</a></td><td>Florida football player Jackson arrested for armed robbery (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/T8EK5SYYo6WWUu7QIFyhLA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQwNjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504291239455838517'></td><td>2015-04-30 09:12:47</td><td><a href='http://sports.yahoo.com/news/ex-louisville-basketball-player-cleared-rape-charge-091041656--ncaab.html'>site</a></td><td>Ex-Louisville basketball player cleared of rape charge (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/42IFiPRbhKOy5tCjw7MVRw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQyOTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201505121209437929822'></td><td>2015-05-12 19:36:24</td><td><a href='http://sports.yahoo.com/news/apnewsbreak-former-player-arrested-nc-sports-agent-probe-143625118--ncaaf.html'>site</a></td><td>APNewsBreak: Former player arrested in NC sports agent probe (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/7uOdky_nOU0tCidTe1lqYQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nflhighlights.com/98ebb8fd6e1bb6cc1f7d90ccb828b340'></td><td>2015-05-25 18:51:39</td><td><a href='http://sports.yahoo.com/news/nfl-player-ray-mcdonald-arrested-domestic-violence-case-183110026--nfl.html'>site</a></td><td>NFL player Ray McDonald arrested in domestic violence case (Yahoo Sports)</td></tr>
+</table></body></html>

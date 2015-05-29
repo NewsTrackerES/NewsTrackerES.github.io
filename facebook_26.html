@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 01:04:06</td><td><a href='http://www.miamiherald.com/news/business/article16998476.html#storylink=rss'>site</a></td><td><table><tr><td>Gov. Wolf renews case for his agenda in Facebook session</td></tr><tr><td>Gov. Tom Wolf made his second official appearance on social media Tuesday at what was billed as a Facebook Town Hall but looked more like him being interviewed by an aide.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 20:00:42</td><td></td><td><a href='facebook_26_27.html'>Facebook's entry, announced Tuesday, is free, works with debit cards and is available on Apple and Android mobile devices and on desktop computers. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 20:00:42</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11419038&ref=rss'>site</a></td><td>To help allay concerns about security, Facebook noted that it handles more than a million payments transactions on its site every day for its advertisers and game players.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:39:14</td><td></td><td><a href='facebook_26_28.html'>NEW YORK (AP) - Facebook's Messenger app will soon let you send your friends money, the latest in a crowded field of services aimed at an increasingly wireless and cashless generation. (4)</a></td></tr>
 </table></body></html>

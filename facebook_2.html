@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N37WJLq7CLbAR5nBe0oKKA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/998fa37e3923b2086e0f6a7067005cd9.jpg'></td><td>2015-02-20 19:11:38</td><td><a href='http://news.yahoo.com/french-minister-meets-google-facebook-twitter-190508388.html'>site</a></td><td><table><tr><td>French minister meets with Google, Facebook, Twitter</td></tr><tr><td>SAN FRANCISCO (AP) - The French interior minister said Friday he asked Google, Facebook and Twitter to work directly with French officials during investigations and to immediately remove terrorist propaganda when authorities alert them to it.</td></tr><tr><td>"We regularly host ministers and other governmental officials from across the world at Facebook, and were happy to welcome Mr. Cazeneuve today," a Facebook spokesperson said.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-02-20 19:30:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11405623&ref=rss'>site</a></td><td>Twitter and Facebook spokespeople said they do everything they can to stop material that incites violence but didn't say whether they would heed the minister's request for direct cooperation with French authorities.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 19:28:18</td><td><a href='http://www.mercurynews.com/nation-world/ci_27941866/veterinarian-investigated-cat-death-shown-bragging-about-it?source=rss'>site</a></td><td><table><tr><td>Veterinarian investigated for cat death shown bragging about it on Facebook</td></tr><tr><td>BRENHAM, Texas (AP) -- Authorities are investigating whether animal cruelty charges should be pursued against a Texas veterinarian shown in a Facebook posting bragging about killing a cat with a bow and arrow.</td></tr><tr><td>The operators of the Brenham clinic where Lindsey worked said Friday she was fired after they learned of the posting, which first appeared Wednesday night and has since been removed, along with her Facebook account.</td></tr></table></td></tr>
 </table></body></html>

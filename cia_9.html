@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:57:15</td><td><a href='http://www.foxnews.com/us/2015/04/21/prosecutors-urge-severe-sentence-in-cia-leak-case-guidelines-call-for-20-years/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>- A former CIA officer convicted of leaking classified details of an operation to derail Iran's nuclear ambitions would spend 20 years in prison if a judge follows federal sentencing guidelines.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 14:57:21</td><td><a href='http://news.yahoo.com/guidelines-call-20-sentence-cia-leak-case-145721893.html'>site</a></td><td>Guidelines call for 20-year sentence in CIA leak case</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 20:42:03</td><td><a href='http://news.yahoo.com/guidelines-call-20-sentence-cia-leak-case-145721893.html'>site</a></td><td><table><tr><td>Prosecutors said Sterling leaked information about the program and falsely portrayed it to Risen as a botched operation because he felt he had been mistreated during his time in the CIA, and because it refused to settle his racial discrimination lawsuit.</td></tr><tr><td>"When he disclosed facts about Classified Program No. 1 - and distorted them to maximize the damage to the CIA, an entity he had grown to despise - he did so out of selfishness, not love of his country," prosecutors wrote in their sentencing memo.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-21 21:01:54</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3048970/Guidelines-call-20-year-sentence-CIA-leak-case.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Officials seek long sentence for ex-CIA officer in leak case</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 18:55:41</td><td></td><td><a href='cia_9_10.html'>Morell, who retired in 2013 as deputy CIA director after years in leadership posts, offers the most detailed account of the episode to date in a book obtained by The Associated Press ahead of its May 12 publication. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 19:59:46</td><td><a href='http://hosted2.ap.org/APDEFAULT/89ae8247abe8493fae24405546e9a1aa/Article_2015-05-04-US--CIA-Morell%20Book/id-a3f9cbe32c6e4a119e588bb248c16d11'>site</a></td><td>While Morell says he is personally troubled by the harshest technique the CIA used on detainees, water boarding, he makes a case that agency leaders had no choice but to use what many consider torture in the years after the 9/11 attacks.</td></tr>
 </table></body></html>

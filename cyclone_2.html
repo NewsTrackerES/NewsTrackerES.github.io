@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,7 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/3024/cdbab4a0201d4c5eaf652b95ae07e147.jpg'></td><td>2015-03-13 10:42:41</td><td><a href='http://www.news24.com/World/News/Flooding-in-Vanuatu-as-cyclone-hits-with-maximum-strength-20150313'>site</a></td><td>Cyclone-Pam.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/6327390-3x2-700x467.jpg'></td><td>2015-03-13 12:02:05</td><td><a href='http://www.abc.net.au/news/2015-03-13/flooding-destructive-winds-as-cyclone-pam-bears-down-on-vanuatu/6316590'>site</a></td><td>He said they could be more destructive than Cyclone Uma, which killed at least 30 people when it sank two ferries off Port Vila.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 17:45:54</td><td><a href='http://ibnlive.in.com/news/small-pacific-nation-of-vanuatu-hit-by-powerful-cyclone-pam/533808-2.html'>site</a></td><td>The cyclone has already destroyed some homes and caused damage to other Pacific islands including Kiribati and the Solomon Islands.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-13 22:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/13/cyclone-pam-hits-small-pacific-nation-of-vanuatu.html'>site</a></td><td>Cyclone Pam hits small Pacific nation of Vanuatu</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/3/15/98283b6acc0140fb8f45d55cc40d6ea3_18.jpg'></td><td>2015-03-17 03:24:52</td><td><a href='http://www.aljazeera.com/news/asia-pacific/2015/03/death-toll-rises-cyclone-hit-vanuatu-150317004135046.html'>site</a></td><td>Disaster management officials and relief workers are still struggling to establish contact with remote outer islands that bore the brunt of Cyclone Pam's winds of more than 300 kph on Friday and Saturday.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/f/3/g/image.related.articleLeadwide.620x349.1m2c2h.png/1426823984253.jpg'></td><td>2015-03-18 09:42:14</td><td><a href='http://www.smh.com.au/world/cyclone-pam-at-least-eight-australians-missing-in-vanuatu-20150318-1m2c2h.html'>site</a></td><td>Cyclone Pam: At least eight Australians missing in Vanuatu</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 14:22:44</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/19/22296461.html?cid=rssnewsworld'>site</a></td><td>Vanuatu provides lessons in cyclone survival</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-20 05:45:03</td><td><a href='http://www.ctvnews.ca/world/thousands-wait-for-relief-in-vanuatu-as-death-toll-hits-13-1.2289009'>site</a></td><td>The cyclone wiped out gardens, killed livestock and contaminated the water supply in many areas, and agricultural experts estimate that those displaced by the storm will run out of food in less than a week.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-03-21 03:06:08</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3005077/Half-Vanuatus-population-affected-Cyclone-Pam-UN.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"Around 166,000 people, more than half of Vanuatu's population, have been affected by Tropical Cyclone Pam on 22 islands," the Office for the Coordination of Humanitarian Affairs (OCHA) said in a situation report.</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150324&t=2&i=1035004509&w=580&fh=&fw=&ll=&pl=&r=LYNXMPEB2N0XF'></td><td>2015-03-24 18:17:04</td><td><a href='http://www.reuters.com/article/2015/03/24/us-weather-vanuatu-aid-unappeal-idUSKBN0MK2AE20150324?feedType=RSS&feedName=environmentNews'>site</a></td><td>U.N. targets shelter, water in $29.9 million appeal for cyclone-hit Vanuatu</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 05:59:54</td><td></td><td><a href='cyclone_2_4.html'>While south-east Queensland and northern NSW have been hit by big storms in the past - including the "Great Gold Coast Cyclone" of February 1954 - it is likely such events were "hybrids or intense east coast lows" rather than cyclones, he said. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 05:59:54</td><td></td><td><a href='cyclone_2_3.html'>Waves crash into a breakwall after Tropical Cyclone Marcia made landfall near Yeppoon. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/k/f/v/2/image.related.articleLeadwide.620x349.13kdfi.png/1424412062792.jpg'></td><td>2015-02-20 05:59:54</td><td><a href='http://www.smh.com.au/environment/climate-change/cyclone-marcia-climate-change-is-expanding-the-tropics-20150220-13kdfi.html'>site</a></td><td>Gold Coast residents are "scared of the cyclone", with more than 300mm of rain expected to cause widespread flooding.</td></tr>
 </table></body></html>

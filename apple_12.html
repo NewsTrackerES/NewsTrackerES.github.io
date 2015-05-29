@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 19:23:20</td><td><a href='http://www.foxnews.com/tech/2015/03/25/apple-retail-employees-to-be-trained-to-give-fashion-advice-for-apple-watch/'>site</a></td><td><table><tr><td>The job description of Apple retail employees will soon change.</td></tr><tr><td>On that day, people will be able to try on the Apple Watch for 15 minutes.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-26 22:06:12</td><td><a href='http://www.reuters.com/article/2015/03/26/us-apple-ceo-tim-cook-idUSKBN0MM2YM20150326?feedType=RSS&feedName=technologyNews'>site</a></td><td>Fortune estimated Cook's net worth, based on his holdings of Apple stock, at about $120 million.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZOaqqlK7hCNaT5Xv8nVsWA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-03-26T220612Z_1_LYNXMPEB2P1CM_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-03-26 23:27:19</td><td><a href='http://finance.yahoo.com/news/apples-tim-cook-donate-wealth-220612776.html'>site</a></td><td>While Cook's largesse could not begin to approach the scale of a Gates or Zuckerberg, both worth billions of dollars, the Apple CEO told Fortune he hopes to make a difference.</td></tr>
 </table></body></html>

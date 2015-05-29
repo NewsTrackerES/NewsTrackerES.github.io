@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 18:25:58</td><td></td><td><a href='facebook_19.html'>Facebook CEO Mark Zuckerberg touted the Messenger expansion Wednesday during his opening speech at a two-day conference for developers in San Francisco. (5)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-25 18:42:25</td><td></td><td><a href='facebook_23.html'>Facebook unveiled the new features at its annual developer conference in San Francisco, for the first time allowing developers to create apps that function inside the Messenger app, which has more than 600 million users. (5)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-25 20:00:30</td><td></td><td><a href='facebook_20.html'>The upgraded Facebook Messenger app will add a wider range of video, voice and location-sharing capabilities, the company announced at its F8 developers' conference Wednesday. (3)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-25 20:08:51</td><td></td><td><a href='facebook_21.html'>Facebook also announced "Businesses on Messenger," which lets users have personal conversations with businesses. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 23:29:24</td><td></td><td><a href='facebook_22.html'>The push to diversify Messenger addresses a potential threat to Facebook's ubiquitous social network posed by a variety of mobile messaging maps offering more intimate and direct ways to connect with friends. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 20:08:47</td><td></td><td><a href='facebook_55.html'>At Facebook's annual developer conference in March, Chief Executive Mark Zuckerburg said the social network would introduce myriad features within Messenger. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='facebook_77_79.html'>Facebook CEO Mark Zuckerberg arrives for a press conference at the Mobile World Congress, the world's largest mobile phone trade show in Barcelona, Spain, Monday, March 2, 2015. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='facebook_77_78.html'>Internet.org is Facebook's fledgling effort to create new users in countries with little or low Internet use. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td>Google and Facebook want more people online, searching around and clicking on ads.</td></tr>
 </table></body></html>

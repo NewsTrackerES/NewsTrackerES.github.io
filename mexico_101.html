@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 17:25:16</td><td><a href='http://news.yahoo.com/5-charged-mexico-city-enslaving-woman-dry-cleaner-170400003.html'>site</a></td><td><table><tr><td>5 charged in Mexico City for enslaving woman at dry-cleaner</td></tr><tr><td>MEXICO CITY (AP) - Mexico City authorities say a woman was chained to an ironing station at a dry-cleaning shop and forced to work in slave-like conditions for two years.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/61/13/7803640/3/square_gallery_thumb.jpg'></td><td>2015-04-11 19:51:17</td><td><a href='http://www.sfgate.com/news/world/article/Latest-on-Americas-Summit-Formal-summit-session-6193396.php'>site</a></td><td>Latest on Americas Summit: Mexico backs US-Cuba talks</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-04-11 19:51:17</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/11/latest-on-americas-summit-formal-summit-session-starts-late'>site</a></td><td>President Enrique Pena Nieto of Mexico is expressing support for negotiations to improve relations between Cuba and the United States, countries he describes as "two great friends of Mexico."</td></tr>
 </table></body></html>

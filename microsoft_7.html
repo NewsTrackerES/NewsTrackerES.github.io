@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 17:34:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-03-26-US-Microsoft-Paid-Time-Off/id-3a10446411e04dd6a055790181f83f6b'>site</a></td><td>Microsoft said it will give suppliers 12 months to make the changes.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 19:32:28</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-wants-US-suppliers-to-give-employees-6161231.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Microsoft said Thursday that it will push its U.S. suppliers to give their employees paid time off - but that only applies for the staffers that do work for Microsoft.</td></tr><tr><td>Microsoft said it has about 2,000 U.S. suppliers, who provide services such as maintenance and security.</td></tr><tr><td>Microsoft Corp. said suppliers with 50 or more employees will be asked to provide at least 15 days of paid time off for employees that mainly work with the Redmond, Washington, company.</td></tr><tr><td>A Microsoft spokeswoman said the rules will be written into future contracts and those that don't comply may be dropped as a supplier.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 08:39:19</td><td></td><td><a href='microsoft_7_9.html'>Executives from Apple, Google and Microsoft, under questioning at the hearing in Sydney on Wednesday, confirmed they were being investigated. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 08:51:34</td><td></td><td><a href='microsoft_7_8.html'>Microsoft's Bill Sample said there had been $2 billion in software product and service revenue booked in Singapore but only $100 million in Australia. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 04:31:42</td><td><a href='http://www.theguardian.com/australia-news/2015/apr/22/tax-boss-rebukes-google-apple-and-microsoft-over-senate-inquiry-evidence'>site</a></td><td>"We further understand that much of [Microsoft's] Singapore profits are paid out as technology fees and end up in Microsoft Bermuda," Jordan said.</td></tr>
 </table></body></html>

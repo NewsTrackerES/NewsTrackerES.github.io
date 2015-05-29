@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone pam</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-03-14 03:03:14</td><td><a href='http://abcnews.go.com/International/wireStory/small-pacific-nation-vanuatu-braces-strong-cyclone-29603982'>site</a></td><td>A westward change of course put populated areas directly in the path of Cyclone Pam's 270 kilometer (168 mile) -per-hour winds.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-14 05:01:22</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/13/cyclone-pam-leaves-trail-of-destruction-in-pacifics-vanuatu'>site</a></td><td>Communication systems in many of the hard-hit outer islands remained down, meaning it could take some time before the full extent of the damage caused by Cyclone Pam is known.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-15 02:24:34</td><td></td><td><a href='cyclone_pam_0_1.html'>RAW VISION: Dozens are feared dead as Cyclone Pam brings devastating winds, torrential rain and huge waves destroyed much of Efate and surrounding islands. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/8/1/h/image.related.articleLeadwide.620x349.144bun.png/1426391249045.jpg'></td><td>2015-03-15 02:24:34</td><td><a href='http://www.brisbanetimes.com.au/environment/weather/cyclone-pam-death-toll-to-increase-significantly-in-vanuatu-20150315-144bun.html'>site</a></td><td>A Nasa satellite image of cyclone Pam as the eye of the storm passes just east of Vanuatu.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/r/4/1/image.related.articleLeadwide.620x349.144nhi.png/1426410648246.jpg'></td><td>2015-03-15 09:10:57</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-it-was-like-a-velociraptor-as-australians-survive-vanuatu-cyclone-20150315-144nhi.html'>site</a></td><td>They face long queues, piles of debris and patchy phone reception - but two Australian television producers are thankful they survived Tropical Cyclone Pam in one piece.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-16 02:30:26</td><td></td><td><a href='cyclone_pam_0_3.html'>A: "Cyclone Pam has devastated Port Vila. More than 90 percent of the buildings and houses in Port Vila have been destroyed or damaged. The state of emergency that has been issued is only for Port Vila. Once we receive an update on the extent of the damage in the provinces then another state of emergency will be issued for the outer islands." (7)</a></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/2/i/z/o/image.related.articleLeadwide.620x349.1m2i1t.png/1426698611239.jpg'></td><td>2015-03-18 11:19:49</td><td><a href='http://www.brisbanetimes.com.au/world/vanuatu-after-cyclone-pam-risk-of-hunger-and-disease-rises-20150318-1m2i1t.html'>site</a></td><td>Vanuatu after Cyclone Pam: Risk of hunger and disease rises</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-21 03:06:08</td><td></td><td><a href='cyclone_pam_0_4.html'>"Around 166,000 people, more than half of Vanuatu's population, have been affected by Tropical Cyclone Pam on 22 islands," the Office for the Coordination of Humanitarian Affairs (OCHA) said in a situation report. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 22:12:29</td><td></td><td><a href='cyclone_pam_0_2.html'>UNITED NATIONS (AP) - The United Nations is appealing for nearly $20 million for victims of Cyclone Pam which tore through the South Pacific island nation of Vanuatu last month. (13)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-10 22:12:29</td><td><a href='http://www.utsandiego.com/news/2015/apr/10/un-appeals-for-20-million-for-vanuatu-cyclone/'>site</a></td><td>A U.N. appeal for about $30 million was launched on March 24 to cover the needs of 166,000 cyclone-affected people for three months but Dujarric said that to date donors have given only $10.7 million, just 36 per cent.</td></tr>
+</table></body></html>

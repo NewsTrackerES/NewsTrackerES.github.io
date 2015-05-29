@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 05:05:20</td><td><a href='http://www.startribune.com/nation/295450771.html'>site</a></td><td>The stakes are big for Apple CEO Tim Cook: the watch is the first brand-new Apple product to be launched without legendary co-founder Steve Jobs.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/569e5f4096a6e55dbb9fd153e9460a7ad730ab76_140x91.jpg'></td><td>2015-03-26 03:52:48</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11423626&ref=rss'>site</a></td><td><table><tr><td>Apple CEO Tim Cook still remembers the last movie he ever saw with Steve Jobs before he succumbed to cancer: the sentimental sports flick Remember the Titans.</td></tr><tr><td>Five days after Cook and Jobs' movie night, the co-founder of Apple passed away at his Palo Alto, California, estate from complications from pancreatic cancer.</td></tr><tr><td>In the memoir, which was released this week, Tim Cook did not miss an opportunity to take a swipe at the unauthorized Steve Jobs biography by Walter Isaacson, which debuted just weeks after the Apple co-founder's death.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/569e5f4096a6e55dbb9fd153e9460a7ad730ab76_140x91.jpg'></td><td>2015-03-26 03:52:48</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11423626&ref=rss'>site</a></td><td><table><tr><td>Apple CEO Tim Cook still remembers the last movie he ever saw with Steve Jobs before he succumbed to cancer: the sentimental sports flick Remember the Titans.</td></tr><tr><td>Five days after Cook and Jobs' movie night, the co-founder of Apple passed away at his Palo Alto, California, estate from complications from pancreatic cancer.</td></tr><tr><td>In the memoir, which was released this week, Tim Cook did not miss an opportunity to take a swipe at the unauthorized Steve Jobs biography by Walter Isaacson, which debuted just weeks after the Apple co-founder's death.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ZOaqqlK7hCNaT5Xv8nVsWA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-03-26T220612Z_1_LYNXMPEB2P1CM_RTROPTP_3_APPLE-WATCH_original.jpg'></td><td>2015-03-26 23:27:19</td><td><a href='http://finance.yahoo.com/news/apples-tim-cook-donate-wealth-220612776.html'>site</a></td><td><table><tr><td>Apple's Tim Cook will give away all his money: Fortune</td></tr><tr><td>(Reuters) - Apple Inc (AAPL.O) Chief Executive Tim Cook is joining the roster of the very rich who are giving away their wealth.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww4.hdnux.com/photos/34/34/25/7456075/13/landscape_32.jpg'></td><td>2015-03-27 16:58:49</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-CEO-Tim-Cook-plans-to-give-away-most-of-his-6163260.php'>site</a></td><td>Most of Cook's wealth is tied up in an Apple stock grant he received in 2011 when he succeeded Steve Jobs as Apple Inc.'s CEO.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/35/41/24/7738649/3/square_gallery_thumb.jpg'></td><td>2015-03-30 12:30:51</td><td><a href='http://www.sfgate.com/news/texas/article/Cook-calls-religious-objection-laws-dangerous-6167388.php'>site</a></td><td>NEW YORK (AP) - Apple CEO Tim Cook said that so-called "religious objection" legislation being introduced in a number of states is dangerous and bad for business.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-10 05:01:26</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032788/Apple-expects-strong-demand-smartwatch-consumer-debut.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Apple Watch, CEO Tim Cook's first new major product, was available for pre-order online and to try out in stores - but not take home.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-30 13:34:11</td><td><a href='http://www.reuters.com/article/2015/04/30/us-usa-apple-partnership-idUSKBN0NL1QK20150430?feedType=RSS&feedName=technologyNews'>site</a></td><td>Cook touted iPhone and iPad sales in Japan but notably made little mention of the Apple Watch, his first new product since taking over the company after Steve Jobs' death in 2011.</td></tr>
+</table></body></html>

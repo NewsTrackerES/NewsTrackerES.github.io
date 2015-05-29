@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 23:19:18</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3078975/2-Florida-dead-chase-Colorado-New-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Investigators said shots were fired at the deputies, and the driver fled toward the Colorado-New Mexico border about 30 miles away.</td></tr><tr><td>The chase ended on the Navajo Nation in northwestern New Mexico when the driver lost control on a sharp turn and high-centered the SUV on the edge of the roadway.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 00:10:10</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article20780748.html#storylink=rss'>site</a></td><td>A Florida man and his 14-year-old niece were found dead with gunshot wounds to the head after a wild car chase across the Southwest in which multiple shots were fired at officers, New Mexico authorities said Tuesday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 01:08:15</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3021630/Mexicos-Pemex-fights-fire-oil-platform-300-workers-evacuated.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In 2013, at least 37 people were killed by a blast at Pemex's Mexico City headquarters, and another 26 people died in a fire at a Pemex natural gas facility in northern Mexico in September 2012.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 02:40:04</td><td></td><td><a href='mexico_124_126.html'>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-02 02:40:04</td><td><a href='http://www.reuters.com/article/2015/04/02/us-pemex-fire-idUSKBN0MS4MU20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Pemex has had a number of accidents in recent years and the latest one comes as Mexico seeks to lure private investors to revive its flagging oil industry.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:30:19</td><td></td><td><a href='mexico_124_125.html'>MEXICO CITY (AP) - An accident on an oil maintenance platform Tuesday killed two workers and injured another in the Gulf of Mexico, state oil company Petroleos Mexicanos reported. (13)</a></td></tr>
 </table></body></html>

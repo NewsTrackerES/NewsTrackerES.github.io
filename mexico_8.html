@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 21:39:17</td><td><a href='http://www.utsandiego.com/news/2015/mar/17/mexico-seizes-quarter-ton-of-opium-paste-in/'>site</a></td><td>MEXICO CITY (AP) - The Mexican army says soldiers have seized 229 kilograms (505 pounds) of opium paste hidden in buried containers in the mountains of southern Guerrero state.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 21:41:25</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-seizes-quarter-ton-opium-paste-guerrero-state-29709132'>site</a></td><td>Mexico Seizes Quarter-Ton of Opium Paste in Guerrero State</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 17:47:00</td><td><a href='http://www.ctvnews.ca/world/pope-francis-predicts-papacy-will-only-last-4-5-years-1.2278756'>site</a></td><td><table><tr><td>He said Mexico has had many martyrs because of the religious persecution it has endured, and because of its "privileged" place in the church thanks to the role the beloved Virgin of Guadalupe plays in its popular faith.</td></tr><tr><td>"I think that the devil has punished Mexico with a lot of anger," Francis said, referring to the country's problems with violence and drugs.</td></tr><tr><td>"I think the devil can't forgive Mexico."</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-03-24 16:55:12</td><td><a href='http://abcnews.go.com/US/wireStory/videographer-arrested-covering-ferguson-faces-court-hearing-29860223'>site</a></td><td><table><tr><td>Timm said there are ample witnesses, along with plenty of video evidence, showing that most of the journalists arrested in Ferguson were simply trying to do their jobs.</td></tr><tr><td>Ron Johnson, in charge of security in Ferguson in the weeks after the shooting, said some journalists were repeatedly asked to return to sidewalks or safe areas for their own well-being.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td><a href='http://www.usnews.com/news/us/articles/2015/03/24/trial-set-for-videographer-arrested-covering-ferguson'>site</a></td><td><table><tr><td>Freelance journalist Mary Moore poses for a portrait before entering Ferguson Municipal Court Tuesday, March 24, 2015, in Ferguson, Mo.</td></tr><tr><td>Ferguson's city attorney said Tuesday that Moore was "was participating in the protest and attempted to interfere ... by locking arms with other protesters."</td></tr><tr><td>The Missouri Supreme Court appointed a state appeals court judge to hear cases in Ferguson's courtroom following the ouster of the private-practice attorney who previously presided there.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:03:09</td><td><a href='http://www.sfgate.com/news/crime/article/Videographer-arrested-covering-Ferguson-faces-6154334.php'>site</a></td><td><table><tr><td>Trial set for videographer arrested covering Ferguson</td></tr><tr><td>Moore was charged with municipal violations after an arrest on Oct. 3., while covering a demonstration outside Ferguson police headquarters.</td></tr><tr><td>(AP) - A video journalist arrested while covering the unrest in Ferguson, Missouri, after Michael Brown was fatally shot last summer plans to fight the charges at trial.</td></tr><tr><td>Moore is one of an estimated two dozen journalists from around the world and among the hundreds of people who've been arrested in Ferguson.</td></tr><tr><td>Missouri's online court reporting system does not show state charges against any of the arrested journalists, but Ferguson city charges would not appear there.</td></tr><tr><td>A Ferguson spokesman did not return messages seeking comment.</td></tr><tr><td>Forty-eight media organizations, including the AP, sent a letter to Ferguson law enforcement officials in August, criticizing treatment of reporters.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/4/240315m_MartinFerguson_800x600.jpg?itok=chlxVK0f'></td><td>2015-03-23 23:47:15</td><td><a href='http://www.sbs.com.au/news/article/2015/03/24/labors-ferguson-praises-bairds-courage'>site</a></td><td><table><tr><td>Ferguson wrong on privatisation: ALP MP</td></tr><tr><td>Labor heavyweight Martin Ferguson has heaped praise on conservative Premier Mike Baird and urged the ALP to reconsider its opposition to electricity privatisation should it lose the NSW election.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/2/4/240315m_MartinFerguson_800x600.jpg?itok=chlxVK0f'></td><td>2015-03-23 23:47:15</td><td><a href='http://www.sbs.com.au/news/article/2015/03/24/labors-ferguson-praises-bairds-courage'>site</a></td><td><table><tr><td>Ferguson wrong on privatisation: ALP MP</td></tr><tr><td>Labor heavyweight Martin Ferguson has heaped praise on conservative Premier Mike Baird and urged the ALP to reconsider its opposition to electricity privatisation should it lose the NSW election.</td></tr></table></td></tr>
 </table></body></html>

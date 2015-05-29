@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-02 15:46:19</td><td><a href='http://news.yahoo.com/mexico-students-planning-walkouts-over-tests-152312919.html'>site</a></td><td><table><tr><td>ALBUQUERQUE, N.M. (AP) - New assessment tests that have angered parents and teachers across the nation prompted walkouts Monday by hundreds of high school students in New Mexico who had been set to take the exams.</td></tr><tr><td>New Mexico is among a dozen states debuting the tests this year.</td></tr><tr><td>In New Mexico, a few hundred students at Albuquerque High School joined the walkout despite warnings from administrators that they could face discipline.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 19:48:03</td><td><a href='http://www.usnews.com/news/us/articles/2015/03/02/new-mexico-students-walk-out-over-new-tests-contested-in-us'>site</a></td><td><table><tr><td>New Mexico students walk out over new tests contested in US</td></tr><tr><td>Things went fairly smoothly for the thousands of New Mexico students who did take the test, although some computer glitches were reported, state officials said.</td></tr><tr><td>The walkouts and demonstrations in New Mexico began last week in Santa Fe then continued in Carlsbad on Friday.</td></tr><tr><td>New Mexico Education Secretary Hanna Skandera said the exams would provide useful results.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IuS127H_vo2Dmu0Vbm1xYg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4c8c9b20bab48415760f6a706700426c.jpg'></td><td>2015-05-15 04:18:33</td><td><a href='http://news.yahoo.com/mexicos-odd-green-party-reaping-success-criticism-041833471.html'>site</a></td><td><table><tr><td>Mexico's odd Green Party reaping success _ and criticism</td></tr><tr><td>In December, Greenpeace Mexico called the Green Party "offensive" for claiming it had been working with the NGO on environmental protection.</td></tr></table></td></tr>
 </table></body></html>

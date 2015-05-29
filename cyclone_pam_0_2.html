@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone pam</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/13/cyclone-pam-hits-small-pacific-nation-of-vanuatu.html'>site</a></td><td>Cyclone Pam hits small Pacific nation of Vanuatu</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 03:03:14</td><td><a href='http://abcnews.go.com/International/wireStory/small-pacific-nation-vanuatu-braces-strong-cyclone-29603982'>site</a></td><td>Cyclone Pam Leaves Trail of Destruction in Pacific's Vanuatu</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/8/1/h/image.related.articleLeadwide.620x349.144bun.png/1426391249045.jpg'></td><td>2015-03-15 02:24:34</td><td><a href='http://www.brisbanetimes.com.au/environment/weather/cyclone-pam-death-toll-to-increase-significantly-in-vanuatu-20150315-144bun.html'>site</a></td><td>Cyclone Pam death toll to 'increase significantly' in Vanuatu</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/r/4/1/image.related.articleLeadwide.620x349.144nhi.png/1426410648246.jpg'></td><td>2015-03-15 09:10:57</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-it-was-like-a-velociraptor-as-australians-survive-vanuatu-cyclone-20150315-144nhi.html'>site</a></td><td>Cyclone Pam: 'It was like a velociraptor', as Australians survive Vanuatu cyclone</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/c/w/3/image.related.articleLeadNarrow.300x0.144f23.png/1426433667339.jpg'></td><td>2015-03-15 15:34:39</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-australia-gives-vanuatu-5-million-in-aid-20150315-144f23.html'>site</a></td><td>Cyclone Pam left a trail of devastation across the Pacific island nation on Saturday, with 250 km/h winds levelling entire villages in the capital, Port Vila.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/c/w/3/image.related.articleLeadNarrow.300x0.144f23.png/1426433667339.jpg'></td><td>2015-03-15 15:34:39</td><td><a href='http://www.smh.com.au/environment/weather/cyclone-pam-australia-gives-vanuatu-5-million-in-aid-20150315-144f23.html'>site</a></td><td>Cyclone Pam: Australia gives Vanuatu $5 million in aid</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/HalfofVanuatu_140x93.jpeg'></td><td>2015-03-16 03:00:42</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11418124&ref=rss'>site</a></td><td>Vanuatu president speaks of devastation from Cyclone Pam</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/7636a3583f24c36e6b447db985c0c70db0c7998f/0_0_2700_1619/500.jpg'></td><td>2015-03-18 00:35:50</td><td><a href='http://www.theguardian.com/world/2015/mar/18/food-concerns-mount-in-vanuatu-after-cyclone-pam'>site</a></td><td>Food concerns mount in Vanuatu after cyclone Pam</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/f/3/g/image.related.articleLeadwide.620x349.1m2c2h.png/1426823984253.jpg'></td><td>2015-03-18 09:42:14</td><td><a href='http://www.smh.com.au/world/cyclone-pam-at-least-eight-australians-missing-in-vanuatu-20150318-1m2c2h.html'>site</a></td><td><table><tr><td>Cyclone Pam: At least eight Australians missing in Vanuatu</td></tr><tr><td>Eight Australians are among 19 volunteer teachers missing in Vanuatu, five days after Cyclone Pam tore through the Pacific nation.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/f/3/g/image.related.articleLeadwide.620x349.1m2c2h.png/1426823984253.jpg'></td><td>2015-03-18 09:42:14</td><td><a href='http://www.smh.com.au/world/cyclone-pam-at-least-eight-australians-missing-in-vanuatu-20150318-1m2c2h.html'>site</a></td><td><table><tr><td>Cyclone Pam: At least eight Australians missing in Vanuatu</td></tr><tr><td>Eight Australians are among 19 volunteer teachers missing in Vanuatu, five days after Cyclone Pam tore through the Pacific nation.</td></tr></table></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-21 03:06:08</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3005077/Half-Vanuatus-population-affected-Cyclone-Pam-UN.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Half of Vanuatu's population affected by Cyclone Pam: UN</td></tr><tr><td>More than half of the South Pacific island nation Vanuatu's population has been affected by Cyclone Pam, the UN said Saturday as the death toll rose to 16.</td></tr></table></td></tr>
+</table></body></html>

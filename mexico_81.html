@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 22:44:57</td><td><a href='http://www.reuters.com/article/2015/04/17/us-health-birdflu-trade-idUSKBN0N82L420150417?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>Government officials are aiming to limit the economic pain the H5N2 flu causes to producers and exporters by asking Mexico to restrict imports only from counties that are home to infected flocks.</td></tr><tr><td>So far, Mexico has imposed trade restrictions on entire states, including top U.S. turkey producer Minnesota, when infections have been detected.</td></tr><tr><td>Mexico has limited poultry imports from states with infections in commercial operations.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 23:13:31</td><td><a href='http://news.yahoo.com/mexico-oil-spill-affects-drinking-water-tabasco-city-231331426.html'>site</a></td><td><table><tr><td>Mexico oil spill affects drinking water for Tabasco city</td></tr><tr><td>Illegal pipeline taps have caused fires, explosions and spills in Mexico in the past.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 23:13:31</td><td><a href='http://news.yahoo.com/mexico-oil-spill-affects-drinking-water-tabasco-city-231331426.html'>site</a></td><td><table><tr><td>Mexico oil spill affects drinking water for Tabasco city</td></tr><tr><td>Illegal pipeline taps have caused fires, explosions and spills in Mexico in the past.</td></tr></table></td></tr>
 </table></body></html>

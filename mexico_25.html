@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 21:22:09</td><td><a href='http://www.miamiherald.com/news/politics-government/article17319293.html#storylink=rss'>site</a></td><td><table><tr><td>Gov. Susana Martinez announced Friday she had chosen a Republican to fill a New Mexico Senate seat left vacant by the abrupt resignation of Democrat Phil Griego.</td></tr><tr><td>Griego said his resignation was necessary "to avoid a major distraction to the important work that needs to be accomplished for the families and children throughout the state of New Mexico."</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-03 23:52:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article17319293.html#storylink=rss'>site</a></td><td>Martinez picks Republican for New Mexico Senate vacancy</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 05:08:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19920498.html#storylink=rss'>site</a></td><td><table><tr><td>New Mexico joins race to build storage for nuclear waste</td></tr><tr><td>Two counties in southeastern New Mexico have joined the race to build an interim storage site to house spent nuclear fuel from the nation's reactors.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 16:33:08</td><td><a href='http://news.yahoo.com/judge-puts-ags-attempt-investigate-google-hold-163308193.html'>site</a></td><td><table><tr><td>(AP) - The Mississippi attorney general's attempt to investigate Google is on hold for at least four more months.</td></tr><tr><td>U.S. District Judge Henry T. Wingate on Monday granted Google's request for a preliminary injunction.</td></tr><tr><td>Wingate said that, at this point, Google has the stronger argument.</td></tr><tr><td>However, Hood says he wants to investigate Google's own conduct.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 18:26:11</td><td></td><td><a href='google_8_9.html'>Google argued Garcia had no claim to the film because the film-maker wrote the dialogue, managed the production and dubbed over her lines. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 21:52:46</td><td></td><td><a href='google_8_10.html'>Google was joined in the case by an unusual alliance of filmmakers, other Internet companies and prominent news media organizations that didn't want the court to alter copyright law or infringe on First Amendment rights. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/36/42/00/8003597/3/square_gallery_thumb.jpg'></td><td>2015-05-18 21:52:46</td><td><a href='http://www.sfgate.com/business/technology/article/Appeals-court-sides-with-Google-in-anti-Muslim-6270731.php'>site</a></td><td>President Barack Obama and other world leaders asked Google to take it down.</td></tr>
 </table></body></html>

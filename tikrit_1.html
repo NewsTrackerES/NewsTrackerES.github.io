@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2978/ed01b029384645478577279cdc50d187.jpg'></td><td>2015-03-02 10:22:47</td><td><a href='http://www.news24.com/World/News/Operation-to-retake-Tikrit-from-ISIS-begins-20150302'>site</a></td><td><table><tr><td>Al-Iraqiya television said on Monday that the forces were attacking the city of Tikrit, backed by artillery and airstrikes by Iraqi fighter jets.</td></tr><tr><td>Tikrit, some 130km north of Baghdad, fell into the hands of ISIS last summer along with the country's second-largest city of Mosul and other areas in Sunni heartland.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 06:56:10</td><td><a href='http://www.daytondailynews.com/ap/ap/international/top-us-general-optimistic-about-outcome-of-tikrit-/nkQTC/'>site</a></td><td>Top US general optimistic about outcome of Tikrit battle</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 17:20:20</td><td><a href='http://www.daytondailynews.com/ap/ap/international/after-expelling-is-iraqi-bomb-squads-begin-clearin/nkkr2/'>site</a></td><td>After expelling IS, Iraqi bomb squads begin clearing Tikrit</td></tr>
 </table></body></html>

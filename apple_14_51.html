@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:34:11</td><td><a href='http://www.reuters.com/article/2015/04/30/us-usa-apple-partnership-idUSKBN0NL1QK20150430?feedType=RSS&feedName=healthNews'>site</a></td><td>Apple, IBM announce partnership with Japan Post to improve elderly care</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/apple2.jpg?ve=1&tl=1'></td><td>2015-04-30 13:36:56</td><td><a href='http://www.foxbusiness.com/industries/2015/04/30/apple-ibm-partner-with-japan-post-for-elderly-care/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Apple Inc and International Business Machine Corp have teamed up with Japan Post Holdings Co to improve caregiver and monitoring services for the elderly in Japan, the companies announced on Thursday.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Bg_I6s58PUgXnK6VTPlsBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4a6ac8d852ce2513750f6a7067002359.jpg'></td><td>2015-04-30 13:51:43</td><td><a href='http://news.yahoo.com/apple-ibm-japan-post-team-improve-elderly-care-132403587.html'>site</a></td><td>NEW YORK (AP) - Apple, IBM and Japanese insurance and bank holding company Japan Post have formed a partnership to improve the lives of elderly people in the country.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 13:53:35</td><td><a href='http://abcnews.go.com/Technology/wireStory/apple-ibm-japan-post-team-improve-elderly-care-30698188'>site</a></td><td>Apple CEO Tim Cook, IBM CEO Ginni Rometty and Japan Post CEO Taizo Nishimuro announced the deal in New York on Thursday.</td></tr>
+</table></body></html>

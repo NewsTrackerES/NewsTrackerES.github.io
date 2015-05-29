@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 15:39:24</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/kenyan-authorities-say-survivor-of-school-killings/nkmwM/'>site</a></td><td>Kenya's president vows harsh action against Somali rebels</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 16:12:28</td><td><a href='http://www.daytondailynews.com/ap/ap/international/kenyan-authorities-say-survivor-of-school-killings/nkmwM/'>site</a></td><td>Kenya: Extremists vows more attacks; president responds</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-06 16:48:37</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/kenya-attack-victims-had-big-plans-for-life/nkngH/'>site</a></td><td>Kenya attack victims had big plans for life</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/2b4/sports/more-sports/article24029910.ece/ALTERNATES/w220/USATSI_211088_ATHLETICS.JPG'></td><td>2015-04-20 17:26:56</td><td><a href='http://www.theglobeandmail.com/sports/more-sports/ethiopias-desisa-kenyas-rotich-winners-at-boston-marathon/article24029911/?cmpid=rss1'>site</a></td><td><table><tr><td>Ethiopia?s Desisa, Kenya?s Rotich winners at Boston Marathon</td></tr><tr><td>Kenya's Rotich had a more dramatic finish, besting Ethiopia's Mare DiBaba in a sprint down Boylston Street, turning in a time of 2 hours, 24 minutes and 55 seconds.</td></tr></table></td></tr>
 </table></body></html>

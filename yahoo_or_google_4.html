@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/1935/1745097732_4132932850001_0de3d582eb5f0d48596a1bd15e33b226-tmb1.jpg?pubId=1745097732'></td><td>2015-03-17 16:23:02</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/17/22291851.html?cid=rsstechnology'>site</a></td><td><table><tr><td>The change brings Google Play, a bazaar for digital games, social media apps and entertainment software, closer to Apple Inc's tightly controlled App Store.</td></tr><tr><td>The new process will not create bottlenecks, Google said in a post, promising that approved apps will become available on Google Play within "a matter of hours" after submission.</td></tr><tr><td>Developers must answer special questionnaires about their apps to help independent ratings organizations assign age-based ratings, Google said.</td></tr><tr><td>"We know that people in different countries have different ideas about what content is appropriate for kids, teens and adults, so today's announcement will help developers better label their apps for the right audience," Google said in the blog post.</td></tr><tr><td>As of May, apps submitted without the questionnaire will not be published in Google Play, and existing apps that do not seek a rating could be blocked in certain markets or for certain users, Google said.</td></tr><tr><td>Until now, Google has let developers rate their own apps using a system created by Google.</td></tr><tr><td>Google, whose Android software runs most of the world's smartphones, and Apple each manage online hubs with more than one million apps ranging from calendars to video games.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 11:18:21</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-2999654/Google-Play-overhauls-store-Firm-cracks-bad-apps-new-age-ratings-stricter-screening-process.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>But Google added that it will not be adopting Apple's practice of only approving apps that meet its stringent quality standards.</td></tr><tr><td>Google said in its official blog today that its expert team will screen each app submitted by developers to spot earlier anything that runs afoul of its rules.</td></tr><tr><td>Google had only used automated technology for screening at the time of submission.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/4/g/8/w/image.related.articleLeadwide.620x349.1m4g80.png/1426952764564.jpg'></td><td>2015-03-20 23:19:06</td><td><a href='http://www.brisbanetimes.com.au/world/spanish-towns-revert-to-islamic-names-on-google-maps-20150321-1m4g80.html'>site</a></td><td><table><tr><td>Towns and cities in Spain are being renamed on Google Maps after their former incarnations as Islamic kingdoms almost 10 centuries ago.</td></tr><tr><td>"We have fixed it now," a Google spokesman in Madrid said.</td></tr><tr><td>Google encourages users to moderate incorrect material and bars those found to have acted maliciously or to have given wrong information three times.</td></tr></table></td></tr>
 </table></body></html>

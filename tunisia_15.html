@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 00:15:43</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420479&ref=rss'>site</a></td><td>The White House says Obama offered to keep providing assistance to Tunisia as the investigation proceeds.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 02:47:50</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article15420293.html#storylink=rss'>site</a></td><td><table><tr><td>President Barack Obama is pledging close counterterrorism cooperation with Tunisia in the wake of an attack that killed 21 people at a museum in Tunis.</td></tr><tr><td>Obama also commended Tunisians for their response and called Tunisia's democracy a "powerful example" for the region.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 17:23:24</td><td><a href='http://news.yahoo.com/200-egyptians-flee-libya-tunisia-172324704.html'>site</a></td><td><table><tr><td>200 Egyptians flee Libya through Tunisia</td></tr><tr><td>TUNIS, Tunisia (AP) - A group of almost 200 Egyptians have crossed into Tunisia from Libya, the first of thousands expected to flee the turmoil in the country.</td></tr></table></td></tr>
 </table></body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/06/3-reasons-apples-watch-will-or-wont-change-the-game'>site</a></td><td>Cook will make his case for the Apple Watch at a press event Monday, where he's expected to show off more features and apps.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 23:27:19</td><td><a href='http://www.reuters.com/article/2015/03/26/us-apple-ceo-tim-cook-idUSKBN0MM2YM20150326?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Apple CEO Tim Cook shows the new MacBook during an Apple event in San Francisco, California March 9, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/square_gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>FILE - In this March 9, 2015 file photo, event attendees get a look at varieties of Apple Watch on display in the demo room after an Apple event in San Francisco.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/35/55/51/7789127/5/square_gallery_thumb.jpg'></td><td>2015-04-09 20:37:30</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-isn-t-the-only-gadget-out-this-week-6188192.php'>site</a></td><td>9, 2014 file photo, the new Apple Watch is modeled during a media event in Cupertino, Calif.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-13 17:28:05</td><td><a href='http://www.foxbusiness.com/markets/2015/04/13/microsoft-hires-back-kurt-delbene-for-corporate-strategy-job-will-report-to-ceo/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>In his new position, DelBene will report to Microsoft Corp. CEO Satya Nadella.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.sfgate.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td>Microsoft will report earnings Thursday April 23, 2015.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694024178_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 15:37:24</td><td><a href='http://www.torontosun.com/2015/04/29/android-apps-on-windows-phones'>site</a></td><td>Microsoft is expected to make the announcement at its developer conference in San Francisco later on Wednesday.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/36/07/74/7896870/3/square_gallery_thumb.jpg'></td><td>2015-04-29 19:53:19</td><td><a href='http://www.sfgate.com/business/article/Microsoft-makes-its-case-for-Windows-10-at-S-F-6231595.php'>site</a></td><td>Microsoft CEO Satya Nadella speaks at Microsoft's annual "Build" conference in San Francisco, Wednesday, April 29, 2015.</td></tr>
+</table></body></html>

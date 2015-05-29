@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/81e/report-on-business/international-business/article23959342.ece/ALTERNATES/w220/AUSTRALIA+FORD.JPG'></td><td>2015-04-14 17:45:52</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/ford-plans-25-billion-investment-in-mexico-sources-say/article23959343/?cmpid=rss1'>site</a></td><td><table><tr><td>Ford Motor Co on Friday will announce an investment of about $2.5-billion in Mexico, industry sources said, the latest multibillion-dollar outlay in the country's booming auto sector.</td></tr><tr><td>The U.S. automaker will announce the investment in Mexico City on Friday to celebrate the 90th anniversary of its presence in Mexico.</td></tr><tr><td>Ford announced its last major investment in Mexico in 2008, $3-billion to update its Cuautitlan plant in central Mexico to produce its popular Fiesta model.</td></tr><tr><td>In recent years, foreign automakers have expanded their presence in Mexico, lured by its cheap labor, myriad free trade agreements and proximity to the United States.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 04:05:14</td><td></td><td><a href='mexico_65_67.html'>In Mexico, these types of fairs date back to Spanish colonial times, and in some smaller communities they are organized around the feast days of Roman Catholic saints. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 04:05:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11436810&ref=rss'>site</a></td><td>Although it began as a celebration of horses, it now resembles many county or state fairs in Mexico and even the United States, with game booths, traditional foods, beer and musical performances.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 11:45:00</td><td></td><td><a href='mexico_65_66.html'>In this April 11, 2015 photo, a family poses for a portrait photographer with a live Brahman bull at the Texcoco Fair on the outskirts of Mexico City. (7)</a></td></tr>
 </table></body></html>

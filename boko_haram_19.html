@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 03:57:50</td><td><a href='http://www.cbsnews.com/news/isis-accepts-boko-haram-allegiance-pledge/'>site</a></td><td>Al-Adnani also urged foreign fighters from around the world to migrate and join Boko Haram.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/13/24/7648522/9/square_gallery_thumb.jpg'></td><td>2015-03-13 09:48:48</td><td><a href='http://www.sfgate.com/news/world/article/IS-accepts-Boko-Haram-pledge-of-allegiance-6131881.php'>site</a></td><td>Also Thursday, Nigeria acknowledged it is getting help from regional security operatives following reports that South African and other foreign contractors are assisting in the fight against Boko Haram.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/12/Islamic_State_Boko_Haram.JPEG-0cbaf_c0-0-5556-3238_s561x327.jpg?86a77fcba965719a818b08b868ba2856f554e725'></td><td>2015-03-13 10:42:38</td><td><a href='http://www.washingtontimes.com/news/2015/mar/13/islamic-state-group-accepts-boko-haram-pledge-alle/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>BEIRUT (AP) - Islamic State militants have accepted a pledge of allegiance by the Nigerian-grown Boko Haram extremist group, according to a spokesman for the Islamic State movement.</td></tr><tr><td>"The prompt - one might even say 'fast-tracked' - acceptance by the so-called Islamic State of Boko Haram's pledge of allegiance" underscores that both needed the propaganda boost from the affiliation, Pham added.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 22:30:31</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/niger-troops-prevent-boko-haram-attack-destroy-bas/nkjjx/'>site</a></td><td>Niger: Troops prevent Boko Haram attack, destroy base</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 13:45:39</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/nigerian-leader-to-un-no-need-for-international-fo/nkwkh/'>site</a></td><td>CORRECTION: Boko Haram-UN story</td></tr>
 </table></body></html>

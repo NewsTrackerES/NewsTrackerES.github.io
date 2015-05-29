@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.business.financialpost.com/2015/04/apple-inc-earnings.jpg?w=620'></td><td>2015-04-27 21:42:21</td><td><a href='http://business.financialpost.com/fp-tech-desk/apple-inc-sells-61-2-million-iphones-in-latest-quarter-blowing-past-expectations'>site</a></td><td><table><tr><td>That signals enduring demand for the iPhone and optimism for Apple Watch - the company's first new gadget under Chief Executive Officer Tim Cook - which reached consumers last week.</td></tr><tr><td>Renewed investor optimism for new products, including the Apple Watch, has helped boost shares to record levels this year.</td></tr><tr><td>That's driving Apple's increase to its capital return program, which now totals US$200 billion.</td></tr><tr><td>His optimism for Apple is driven in part by his expectations for the larger-screened iPhone and new products, including the Watch.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:19:11</td><td></td><td><a href='apple_75_77.html'>That's according to proverb-busting research that found daily apple eaters had just as many doctor visits as those who ate fewer or no apples. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 15:19:11</td><td><a href='http://health.usnews.com/health-news/news/articles/2015/03/30/an-apple-a-day-may-not-keep-the-doctor-away-study-says'>site</a></td><td>Those who ate less than that were considered apple shunners.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 19:47:18</td><td></td><td><a href='apple_75_76.html'>An apple a day might not keep the doctor away, but it might help keep the pharmacist at bay, a new study suggests. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 19:47:18</td><td></td><td><a href='apple_75_78.html'>Apple eaters in the study had higher educational attainment, were more likely to be from a racial or ethnic minority, and were less likely to smoke. (2)</a></td></tr>
 </table></body></html>

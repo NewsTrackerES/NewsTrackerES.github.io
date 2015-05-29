@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 19:45:47</td><td></td><td><a href='mexico_16.html'>New Mexico Energy, Minerals and Natural Resources Secretary David Martin spoke Tuesday at an energy conference in Farmington. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 00:06:08</td><td></td><td><a href='mexico_17.html'>"So far we haven't seen a decrease in oil production in New Mexico, but we expect it to begin leveling off and that means lost revenue and jobs in the coming months," he said Tuesday during an annual energy conference in Farmington. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 13:05:48</td><td><a href='http://www.miamiherald.com/news/business/article16888682.html#storylink=rss'>site</a></td><td><table><tr><td>New Mexico nuclear enrichment plant OK'd for expansion</td></tr><tr><td>The Nuclear Regulatory Commission has given its approval for URENCO USA to expand it nuclear enrichment facility east of Eunice in southeastern New Mexico.</td></tr></table></td></tr>
 </table></body></html>

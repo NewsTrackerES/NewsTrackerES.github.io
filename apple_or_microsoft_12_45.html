@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 02:08:36</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032788/Apple-expects-strong-demand-smartwatch-consumer-debut.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Strong turnout in Australia for first glimpse at Apple Watch</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 10:51:00</td><td><a href='http://www.ctvnews.ca/sci-tech/shoppers-get-to-know-apple-watch-on-first-day-of-sales-1.2320387'>site</a></td><td>Apple hasn't offered any estimates of how many watches it expects to sell, but some analysts have predicted sales could reach 10 million to 20 million units in the first year.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 10:51:52</td><td><a href='http://www.ctvnews.ca/sci-tech/apple-watch-begins-its-debut-around-the-world-1.2320387'>site</a></td><td>Analysts are waiting to see how well the watch will sell beyond devoted Apple fans.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/e0OhLik5DNnAqNc2Y2_4Pg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/2076c3d08835d5c61f280d664fd1716f'></td><td>2015-04-13 07:51:35</td><td><a href='http://finance.yahoo.com/news/apple-watch-us-pre-orders-075135746.html'>site</a></td><td>Apple Watch US pre-orders estimated at 1M</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td><a href='http://www.reuters.com/article/2015/04/13/us-apple-watch-idUSKBN0N410Z20150413?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Apple likely to boost watch production quickly: analysts</td></tr><tr><td>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040028207&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0EG'></td><td>2015-04-13 11:11:35</td><td><a href='http://www.reuters.com/article/2015/04/13/us-apple-watch-idUSKBN0N410Z20150413?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Apple likely to boost watch production quickly: analysts</td></tr><tr><td>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150413&i=106739636&w=240&r=106739636-2&t=2'></td><td>2015-04-14 03:47:43</td><td><a href='http://www.reuters.com/article/2015/04/14/us-apple-watch-idUSKBN0N410Z20150414?feedType=RSS&feedName=businessNews'>site</a></td><td>However, analysts said Apple could sell between 2.3 million and 4 million watches in the quarter ending June.Apple was widely expected to disclose pre-orders on Monday, following its usual pattern after a product launch.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/13/102581901-RTR4WTY9.80x60.jpg?v=1429544480'></td><td>2015-04-22 23:55:00</td><td><a href='http://www.cnbc.com/id/102611990'>site</a></td><td>In a note to clients on Wednesday, FDR analyst Daniel Ives estimated Apple would take over 2 million pre-orders for the watch and ship 20 million of them in 2015.</td></tr>
+</table></body></html>

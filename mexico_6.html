@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/8mt7EJgc4xTbRm4ohdkHzQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/797fdb49ed9dde0b700f6a7067003028.jpg'></td><td>2015-03-15 23:07:07</td><td><a href='http://news.yahoo.com/father-slain-aid-worker-speaks-mexico-conference-213712379.html'>site</a></td><td>The father of an international aid worker killed while being held captive by Islamic State militants spoke about his daughter Saturday at a service organization's conference in New Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-15 23:09:51</td><td><a href='http://abcnews.go.com/US/wireStory/father-slain-aid-worker-speaks-mexico-conference-29654915'>site</a></td><td>Father of Slain Aid Worker Speaks at New Mexico Conference</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 05:31:20</td><td><a href='http://www.mercurynews.com/sports/ci_28137083/u-s-soccer-american-women-beat-mexico-5?source=rss'>site</a></td><td><table><tr><td>She has scored 24 goals against Mexico, the most has against any nation.</td></tr><tr><td>Ariana Calderon scored on a header for Mexico late in the first half, snapping Hope Solo's shutout streak at five matches.</td></tr></table></td></tr>
 </table></body></html>

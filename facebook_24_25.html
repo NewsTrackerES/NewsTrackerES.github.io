@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.2522313.1427926167!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/facebook-smartphone.jpg'></td><td>2015-05-04 13:07:59</td><td><a href='http://www.cbc.ca/news/technology/facebook-opens-internet-org-to-developers-amid-net-neturality-controversy-1.3059810?cmp=rss'>site</a></td><td>Facebook Chief Executive Mark Zuckerberg said in a video post: "Access equals opportunity. Net neutrality should not prevent access. We need both, it's not an equal internet if the majority of people can't participate."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297695991507_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-05-04 13:52:35</td><td><a href='http://www.torontosun.com/2015/05/04/facebook-opens-internetorg-to-developers-amid-open-web-debate-in-india'>site</a></td><td>However, the decision drew criticism from some online activists in India who expressed concern over Facebook's control over all data accessed on the service and said it violated the principles of an open web.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/05/04/102646055-mark-zuckerberg.530x298.jpg?v=1430758984'></td><td>2015-05-04 17:33:00</td><td><a href='http://www.cnbc.com/id/102645988'>site</a></td><td>Facebook opens Internet.org amid India web debate</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/images/Technology/HT_mark_zuckerberg_jef_150504_16x9_992.jpg'></td><td>2015-05-04 17:48:19</td><td><a href='http://abcnews.go.com/Technology/facebook-opens-free-internet-platform-amid-net-neutrality/story?id=30792367'>site</a></td><td>Facebook Opens Up Free Internet Platform</td></tr>
+</table></body></html>

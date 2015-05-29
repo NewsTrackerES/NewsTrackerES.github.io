@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/04/08/jlo650afp.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-08 19:14:08</td><td><a href='http://technology.canoe.ca/News/2015/04/08/22333811-wenn-story.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Singer/actress Jennifer Lopez was responsible for the birth of Google Images following her appearance at the 2000 Grammy Awards.</td></tr><tr><td>Google Images was introduced in 2001.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.images.express.co.uk/img/page/placeholder-horizontal.gif'></td><td>2015-04-21 18:01:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/571952/Google-Search-History-Download-List-Archive-Drive?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-life-and-style-news+%28Daily+Express+%3A%3A+Life+%26+Style+Feed%29'>site</a></td><td>Google now lets you download a list of every search you have ever made</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/21/20/27D424B400000578-3049387-image-a-2_1429645220671.jpg'></td><td>2015-04-21 20:02:22</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3049387/What-searching-time-year-Google-lets-download-entire-search-history.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>To download your history visit history.google.com and log in with your Google account.</td></tr>
 </table></body></html>

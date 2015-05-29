@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150428&t=2&i=1044165587&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3R11G'></td><td>2015-04-28 22:24:22</td><td><a href='http://www.reuters.com/article/2015/04/28/us-usa-clinton-emails-idUSKBN0NJ2OX20150428?feedType=RSS&feedName=politicsNews'>site</a></td><td>But there was no evidence Clinton held detailed discussions about security at U.S. installations in Benghazi in the months before the attacks, the sources said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Jrrm5KGARgakwr_4JRJGMw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI0MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-28T222422Z_1_LYNXMPEB3R11G_RTROPTP_2_USA-CLINTON-ELECTION.JPG'></td><td>2015-04-28 22:24:22</td><td><a href='http://news.yahoo.com/hillary-clintons-benghazi-emails-contain-few-revelations-sources-222422131.html'>site</a></td><td><table><tr><td>Hillary Clinton's Benghazi emails contain few revelations: sources</td></tr><tr><td>Two people familiar with the material said this week that the 300 emails do not demonstrate that Clinton, who was secretary of state at the time of the attacks, was personally involved in decisions that resulted in weak security at the Benghazi outposts.</td></tr><tr><td>The emails show Clinton received updates about the situation in Benghazi after the attacks and about possible U.S. responses, the sources said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Jrrm5KGARgakwr_4JRJGMw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTI0MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-28T222422Z_1_LYNXMPEB3R11G_RTROPTP_2_USA-CLINTON-ELECTION.JPG'></td><td>2015-04-28 22:24:22</td><td><a href='http://news.yahoo.com/hillary-clintons-benghazi-emails-contain-few-revelations-sources-222422131.html'>site</a></td><td><table><tr><td>Hillary Clinton's Benghazi emails contain few revelations: sources</td></tr><tr><td>Two people familiar with the material said this week that the 300 emails do not demonstrate that Clinton, who was secretary of state at the time of the attacks, was personally involved in decisions that resulted in weak security at the Benghazi outposts.</td></tr><tr><td>The emails show Clinton received updates about the situation in Benghazi after the attacks and about possible U.S. responses, the sources said.</td></tr></table></td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 18:55:28</td><td><a href='http://www.nydailynews.com/news/politics/hillary-clinton-officially-announces-2016-presidential-run-article-1.2182287'>site</a></td><td>It's official: Hillary Clinton is running for president.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://www.canoe.ca/Canoe/Includes/TopHeadlines/2015/04/12/clinton650.jpg&amp;size=234x132&amp;quality=85'></td><td>2015-04-12 19:08:52</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/04/12/22340126.html?cid=rssnewsworld'>site</a></td><td>NEW YORK/WASHINGTON - Hillary Clinton promised to be a champion for everyday Americans on Sunday as she kicked off a long-awaited second run for the White House as the commanding Democratic front runner.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46900825,width-300,resizemode-4/Hillary-Clinton.jpg'></td><td>2015-04-12 19:23:32</td><td><a href='http://timesofindia.indiatimes.com/articleshow/46900818.cms'>site</a></td><td>"It's official: Hillary's running for president," John Podesta, a top aide to Clinton, said in an email sent to supporters of her failed 2008 bid.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/hillary-clinton-2014.jpg'></td><td>2015-04-12 19:38:20</td><td><a href='http://www.foxbusiness.com/economy-policy/2015/04/12/hillary-clinton-announces-presidential-campaign/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>Hillary Clinton Announces Presidential Campaign</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://images.brisbanetimes.com.au/2015/04/09/6426603/Baker169-92x52.jpg'></td><td>2015-04-12 19:45:21</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/im-running-for-president-hillary-clinton-20150413-3ty3l.html'>site</a></td><td>Hillary Clinton has launched her bid to become the first woman to win the White House, and announced a campaign tour to showcase her support for "everyday Americans".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 19:22:13</td><td><a href='http://www.miamiherald.com/news/nation-world/article18926169.html#storylink=rss'>site</a></td><td><table><tr><td>NC man's obituary urges readers to reject Hillary Clinton</td></tr><tr><td>And don't vote for Hillary Rodham Clinton in 2016.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 19:22:13</td><td><a href='http://www.miamiherald.com/news/nation-world/article18926169.html#storylink=rss'>site</a></td><td><table><tr><td>NC man's obituary urges readers to reject Hillary Clinton</td></tr><tr><td>And don't vote for Hillary Rodham Clinton in 2016.</td></tr></table></td></tr>
 </table></body></html>

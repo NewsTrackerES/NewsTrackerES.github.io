@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>robert durst</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/US/HBO_susan_berman_robert_durst_jt_150315_4x3_992.jpg'></td><td>2015-03-17 06:42:56</td><td><a href='http://abcnews.go.com/US/robert-durst-audio-chilling-discover-director/story?id=29665073'>site</a></td><td>PHOTO: Robert Durst was arrested in New Orleans, Saturday night, March 14, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__durst~1_300.JPG'></td><td>2015-03-17 18:09:56</td><td><a href='http://www.mercurynews.com/crime-courts/ci_27728367/jinx-serial-robert-durst-murder-case-highlights-journalists?source=rss'>site</a></td><td>Robert Durst after his arraignment in New Orleans, March 17, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 19:47:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Real%20Estate%20Heir-Unsolved%20Murder/id-0872799854b74793806b775e0043284e'>site</a></td><td>HOUSTON (AP) - Police on Tuesday were searching the Houston home of millionaire Robert Durst after his arrest over the weekend in New Orleans.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 21:58:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Real%20Estate%20Heir-Unsolved%20Murder/id-f2603cd348cc4657bbf01c52b6e3df06'>site</a></td><td><table><tr><td>A car passes the building where millionaire Robert Durst lives hours before police began a search Tuesday, March 17, 2015, in Houston.</td></tr><tr><td>Law enforcement officers walk toward the building where Robert Durst owns some condominiums Tuesday, March 17, 2015, in Houston.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 21:58:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Real%20Estate%20Heir-Unsolved%20Murder/id-f2603cd348cc4657bbf01c52b6e3df06'>site</a></td><td><table><tr><td>A car passes the building where millionaire Robert Durst lives hours before police began a search Tuesday, March 17, 2015, in Houston.</td></tr><tr><td>Law enforcement officers walk toward the building where Robert Durst owns some condominiums Tuesday, March 17, 2015, in Houston.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 23:03:52</td><td><a href='http://abcnews.go.com/US/wireStory/durst-money-back-police-161k-30379219'>site</a></td><td>Lawyers for jailed millionaire Robert Durst say he wants authorities to return more than $161,000 in cash now held by New Orleans police.</td></tr>
+</table></body></html>

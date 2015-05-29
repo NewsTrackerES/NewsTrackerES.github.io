@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>xbox or playstation or nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-167ks-6X6u7HFCw-HSK1-38_634x421.jpg'></td><td>2015-03-18 02:41:04</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-2999917/Nintendo-shares-marked-21-smartphone-gaming-plan.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Nintendo, based in the ancient city of Kyoto, announced Tuesday it was teaming up with Tokyo-based mobile gaming company DeNA to develop games for smartphones.</td></tr><tr><td>"We have been waiting for Nintendo to make this move and this will offer large upside."</td></tr><tr><td>Nintendo and DeNA did not release any details about which characters would be made available to play on smartphones or tablets.</td></tr><tr><td>But Iwata added that the announcement did not mark a move away from consoles, saying Nintendo would release a new system as a successor to its Wii U home console, which came on to the market in late 2012.</td></tr><tr><td>Nintendo has struggled as rivals Sony and Microsoft outpaced it in console sales by embracing hard-core gamers.</td></tr><tr><td>Robust PlayStation console businesses helped improve Sony's earnings along with a weak yen, increased sales of smartphones, and image sensors for cameras, Sony said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-26 11:11:56</td><td><a href='http://news.yahoo.com/austrian-boy-faces-terrorism-charges-playstation-case-081005754.html'>site</a></td><td>Teenager in Austrian 'Playstation' terrorism case gets two years</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-26 11:28:53</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3097324/Teenager-Austrian-Playstation-terrorism-case-gets-2-years.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Those charges were based on data found on the boy's Playstation, including bomb-building plans downloaded from the internet, prosecutors said.</td></tr>
 </table></body></html>

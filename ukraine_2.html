@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-13 12:44:37</td><td><a href='http://news.yahoo.com/fighting-rages-run-ukraine-ceasefire-112920563.html'>site</a></td><td>Russia denies arming the rebels and sending troops to fight alongside them, despite what Ukraine and its Western allies say is overwhelming evidence.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-13 14:10:52</td><td><a href='http://www.news24.com/World/News/Fighting-raging-in-run-up-to-Ukraine-ceasefire-20150213'>site</a></td><td>Ukraine, for its part, said it had not agreed to an amnesty for all rebels, drawing an angry response from the separatists.</td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297663947180_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-13 14:12:29</td><td><a href='http://www.torontosun.com/2015/02/13/fighting-rages-in-run-up-to-ukraine-ceasefire'>site</a></td><td><table><tr><td>Fighting rages in run-up to Ukraine ceasefire</td></tr><tr><td>DONETSK, Ukraine - Ukraine and Russian-backed rebels fought fiercely across the east of the country on Friday despite a new peace deal brokered by Germany and France.</td></tr><tr><td>Ukraine's pro-Western president said he was not naive and wanted to make clear the country was a long way from peace.</td></tr><tr><td>On Thursday, German Chancellor Angela Merkel described the agreement with Russia on Ukraine as a good start but said undertakings must now be respected.</td></tr><tr><td>Ukraine reported a new, mass influx of Russian armour into rebel-held eastern Ukraine as the agreement was being finalised.</td></tr><tr><td>The deal calls for the withdrawal of heavy weapons from the front line when and if the ceasefire has taken hold, and constitutional reform to give eastern Ukraine more autonomy.</td></tr><tr><td>The White House, under pressure from Congress to provide arms to the stretched Ukrainian military, said the deal was "potentially significant" but urged Russia to withdraw soldiers and equipment, and give Ukraine back control over its border.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a29a5-219.jpg'></td><td>2015-02-13 14:47:51</td><td><a href='http://www.rte.ie/news/2015/0213/679827-ukraine/'>site</a></td><td><table><tr><td>Ukraine said pro-Russian rebels had built up their forces across separatist-held zones since the deal and both sides accused each other of killing civilians.</td></tr><tr><td>"The town's heating system is broken, power lines are damaged as well as the water supply ... So this is how a comprehensive ceasefire is prepared for," the head of the Ukraine-controlled administration, Hennadiy Moskal, said online.</td></tr></table></td></tr>
-  <tr><td style='display:none'>11</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/XYvOVgKOHtHXIkBEaqWhRg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/video/video.wochit.com/550f8bd85759838f2988d9008dffa579.cf.jpg'></td><td>2015-04-28 09:51:01</td><td><a href='http://news.yahoo.com/ukraine-says-rebels-using-rocket-launchers-080102990.html'>site</a></td><td>U.S. State Department spokesman Jeff Rathke said in Washington that Russia has deployed more air defense systems into eastern Ukraine and positioned several near the front lines.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/vbmz4Dh9_mgDYgOI8UJM4g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8128391-1-1-0.jpg.cf.jpg'></td><td>2015-03-03 14:52:42</td><td><a href='http://news.yahoo.com/ukraine-hikes-benchmark-interest-rate-30-percent-145218923--finance.html'>site</a></td><td><table><tr><td>Ukraine's central bank has sharply hiked its benchmark rate to 30 percent, from 19.5 percent, as financial authorities seek to reverse the rapid devaluation of the national currency.</td></tr><tr><td>Ukraine's central bank last raised the refinancing rate last month, from 14 percent.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/vbmz4Dh9_mgDYgOI8UJM4g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8128391-1-1-0.jpg.cf.jpg'></td><td>2015-03-03 14:52:42</td><td><a href='http://news.yahoo.com/ukraine-hikes-benchmark-interest-rate-30-percent-145218923--finance.html'>site</a></td><td><table><tr><td>Ukraine's central bank has sharply hiked its benchmark rate to 30 percent, from 19.5 percent, as financial authorities seek to reverse the rapid devaluation of the national currency.</td></tr><tr><td>Ukraine's central bank last raised the refinancing rate last month, from 14 percent.</td></tr></table></td></tr>
 </table></body></html>

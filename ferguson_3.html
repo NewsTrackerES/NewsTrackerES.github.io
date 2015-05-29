@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/00/05/7602517/5/920x920.jpg'></td><td>2015-03-03 22:04:15</td><td><a href='http://www.sfgate.com/news/politics/article/Ferguson-officials-to-meet-with-Justice-Department-6112111.php'>site</a></td><td>Associated Press writers Jim Salter and Jim Suhr in St. Louis and Alan Scher Zagier in Ferguson contributed to this report.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.cbc.ca/1.2865397.1418101347!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/michael-brown-sr.jpg'></td><td>2015-03-03 22:51:19</td><td><a href='http://www.cbc.ca/news/world/ferguson-police-department-routinely-displayed-racial-bias-investigation-finds-1.2980442?cmp=rss'>site</a></td><td>Several messages seeking comment from Ferguson Police Chief Tom Jackson and Mayor James Knowles III were not returned.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 00:21:34</td><td><a href='http://news.yahoo.com/ferguson-reviewing-federal-report-police-force-002134988.html'>site</a></td><td>Ferguson reviewing federal report on police force</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/michael_brown.jpg?w=300&#038;h=450'></td><td>2015-03-04 18:18:19</td><td><a href='http://news.nationalpost.com/2015/03/04/no-federal-charges-darren-wilson-did-not-infringe-on-michael-browns-civil-rights-when-he-fatally-shot-him/'>site</a></td><td>The report said blacks in Ferguson are disproportionately subject to excessive police force, baseless traffic stops and citations for infractions as petty as walking down the middle of the street.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 02:08:50</td><td><a href='http://www.sbs.com.au/news/article/2015/03/27/pearce-going-bash-raider-nuuausala'>site</a></td><td>No ill feelings toward Ferguson: Raiders</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 02:08:50</td><td><a href='http://www.sbs.com.au/news/article/2015/03/27/no-ill-feelings-toward-ferguson-raiders'>site</a></td><td>Canberra skipper Jarrod Croker says there will be no hard feelings when he marks up on Sydney Roosters centre Blake Ferguson in the NRL match at Allianz Stadium on Sunday.</td></tr>
 </table></body></html>

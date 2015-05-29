@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b79/report-on-business/international-business/us-business/article23590076.ece/ALTERNATES/w220/web-google-0324.JPG'></td><td>2015-03-24 13:20:17</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/us-business/morgan-stanley-cfo-leaves-for-same-position-at-google/article23590077/?cmpid=rss1'>site</a></td><td><table><tr><td>Morgan Stanley chief financial officer Ruth Porat is leaving the bank to join Google Inc. in the same position, the companies said on Tuesday.</td></tr><tr><td>Porat will join Google on May 26, the company said in a blog post.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/qlMavaI72Refgbjqjz5Nxw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-03-24T132217Z_2_LYNXMPEB2N0KO_RTROPTP_3_MORGAN-STANLEY-RESULTS_original.jpg'></td><td>2015-03-24 13:55:08</td><td><a href='http://finance.yahoo.com/news/morgan-stanley-cfo-ruth-porat-130044318.html'>site</a></td><td>Google shares rose 1.8 percent in early trading, while Morgan Stanley shares slipped 0.7 percent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:37:45</td><td><a href='http://news.yahoo.com/bird-plane-google-balloon-crash-panics-town-223055674.html'>site</a></td><td><table><tr><td>It's a bird! It's a plane! Google balloon crash alarms town</td></tr><tr><td>Veracruz authorities have notified Google to come pick up the remains of the balloon and the transmission equipment.</td></tr></table></td></tr>
 </table></body></html>

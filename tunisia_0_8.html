@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c8ccc1d/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fe7%2Ff367d481a9c69e7cd914c7711ccf7f%2Fmedia%3A4fcadcbc5fb5437ea0f4d7146ea74660APTOPIXTunisiaAttack.JPEG'></td><td>2015-03-19 17:09:58</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/19/radical-militants-suspected-to-be-behind-tunisia-attacks'>site</a></td><td>In Tunisia, Ansar al-Shariah has since gone underground and its diffuse networks of support are believed to be behind isolated attacks over the years, including failed suicide bombings in October 2013 at Tunisian tourist sites.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 07:27:12</td><td><a href='http://www.reuters.com/article/2015/05/17/us-tunisia-attack-gunmen-specialreport-idUSKBN0O205F20150517?feedType=RSS&feedName=wtMostRead'>site</a></td><td>In May 2013, Tunisia's then Islamist-led government banned Ansar al-Sharia, forcing its leadership and members underground.</td></tr>
+</table></body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150414&t=2&i=1040408064&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3D0WI'></td><td>2015-04-15 01:07:53</td><td><a href='http://www.reuters.com/article/2015/04/15/us-google-eu-idUSKBN0N523Q20150415?feedType=RSS&feedName=technologyNews'>site</a></td><td>The EU can impose fines of up to 10 percent of global turnover, or more than $6 billion in penalties in Google's case.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/36/00/70/7867944/3/628x471.jpg'></td><td>2015-04-23 20:36:34</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-posts-mixed-1Q-results-amid-new-threats-to-6219961.php'>site</a></td><td>Google's first-quarter earnings rose 4 percent to $3.6 billion as the company's Internet-leading advertising network lifted revenue by 14 percent to $17.3 billion from the same time last year.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/news/uk/article31167341.ece/388e9/ALTERNATES/h342/PANews%20BT_P-0d36c9e0-0f0f-4d0f-9aa2-2a12abff3bfb_I1.jpg'></td><td>2015-04-23 23:16:06</td><td><a href='http://www.belfasttelegraph.co.uk/news/uk/google-reports-12-rise-in-revenue-31167342.html'>site</a></td><td>In the technology giant's financial results for the first quarter of 2015, Google reported total revenue of 17.3 billion dollars ( 11.4 billion), a 12% rise on the same period last year.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-23 23:35:35</td><td><a href='http://finance.yahoo.com/news/google-first-quarter-revenue-rises-200834727.html'>site</a></td><td>"Excluding the net impact of foreign currency headwinds, revenue grew a healthy 17 percent year on year," Google Chief Financial Officer Patrick Pichette said in a statement.</td></tr>
+</table></body></html>

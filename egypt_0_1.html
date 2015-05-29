@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:37:39</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3007526/Egypt-Ethiopia-Sudan-sign-accord-Nile-waters.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt previously had voiced fears that Ethiopia's $4.2 billion hydro-electric project would diminish its share of the Nile, which provides almost all of the desert nation's water needs.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 11:37:39</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-ethiopia-sudan-sign-accord-nile-waters-29836365'>site</a></td><td>Egypt, Ethiopia and Sudan Sign Accord Over Nile Waters</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 11:37:57</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article16070666.html#storylink=rss'>site</a></td><td><table><tr><td>The dam had been an issue of contention among the three countries, with Egypt concerned it would reduce its share of the Nile established under a colonial-era agreement that gave Egypt and Sudan the main rights to exploit the river's water.</td></tr><tr><td>They said at the time that work on the dam, some 20 kilometers (12 miles) from Sudan's eastern border, will continue during consultations with Cairo, and that experts had already agreed that the dam would not significantly affect water flow to both Egypt and Sudan.</td></tr><tr><td>Experts have estimated that Egypt could lose as much as 20 percent of its Nile water in the three to five years needed for Ethiopia to fill the dam's massive reservoir.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-23 11:37:57</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article16070666.html#storylink=rss'>site</a></td><td><table><tr><td>The dam had been an issue of contention among the three countries, with Egypt concerned it would reduce its share of the Nile established under a colonial-era agreement that gave Egypt and Sudan the main rights to exploit the river's water.</td></tr><tr><td>They said at the time that work on the dam, some 20 kilometers (12 miles) from Sudan's eastern border, will continue during consultations with Cairo, and that experts had already agreed that the dam would not significantly affect water flow to both Egypt and Sudan.</td></tr><tr><td>Experts have estimated that Egypt could lose as much as 20 percent of its Nile water in the three to five years needed for Ethiopia to fill the dam's massive reservoir.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/03/24/876/493/Egypt Ethiopia-2.jpg?ve=1&tl=1'></td><td>2015-03-24 14:36:12</td><td><a href='http://www.foxnews.com/world/2015/03/24/egypt-ethiopia-say-there-hope-for-long-term-nile-river-cooperation-following/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Egyptian President Abdel-Fattah el-Sissi told reporters in the Ethiopian capital of Addis Ababa, where he is on an official visit, that Ethiopia and Egypt are "on the right path to cooperation."</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-24 14:37:09</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-ethiopia-hope-long-term-nile-river-cooperation-29867253'>site</a></td><td><table><tr><td>Egypt, Ethiopia Hope for Long-Term Nile River Cooperation</td></tr><tr><td>The leaders of Ethiopia and Egypt said on Tuesday that they are hopeful talks over sharing Nile River waters will end in agreement.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-24 14:37:09</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-ethiopia-hope-long-term-nile-river-cooperation-29867253'>site</a></td><td><table><tr><td>Egypt, Ethiopia Hope for Long-Term Nile River Cooperation</td></tr><tr><td>The leaders of Ethiopia and Egypt said on Tuesday that they are hopeful talks over sharing Nile River waters will end in agreement.</td></tr></table></td></tr>
+</table></body></html>

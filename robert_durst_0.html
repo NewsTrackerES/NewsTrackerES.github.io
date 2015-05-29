@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 22,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 22 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>robert durst</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-03-15 17:24:20</td><td></td><td><a href='robert_durst_0_1.html'>In December 2014, Durst appeared in a New York courtroom on charges of trespassing on property owned by his estranged family. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-15 17:24:20</td><td><a href='http://news.yahoo.com/york-real-estate-baron-durst-arrested-murder-warrant-154115590.html'>site</a></td><td>Robert Durst, who has lived in Texas after getting about $65 million from the settlement of a lawsuit he brought against family trusts, was charged in 2014 with urinating on a drugstore candy rack in Houston.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-15 19:11:45</td><td><a href='http://www.huffingtonpost.com/2015/03/15/robert-durst-arrested-_n_6873416.html'>site</a></td><td>"Years in the making, their thorough research and dogged reporting reignited interest in Robert Durst's story with the public and law enforcement."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-15 21:24:37</td><td></td><td><a href='robert_durst_0_8.html'>HBO airs the first episode of a six-week documentary, "''The Jinx: The Life and Deaths of Robert Durst." (10)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-16 03:37:31</td><td></td><td><a href='robert_durst_0_2.html'>The arrest of Robert Durst, a wealthy eccentric linked to two killings and his wife's disappearance, came just before the finale in an HBO show about his life in which he said he "killed them all." (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/0/7/x/8/image.related.articleLeadwide.620x349.1m07ia.png/1426479635488.jpg'></td><td>2015-03-16 04:19:24</td><td><a href='http://www.smh.com.au/world/straight-from-tv-to-jail-robert-durst-charged-in-killing-20150316-1m07ia.html'>site</a></td><td>Since his first wife vanished more than three decades ago, Robert A. Durst, the eccentric and estranged son of one of New York's most prominent real estate dynasties, has lived under the suspicious gaze of law enforcement officials in three states.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/7/x/8/image.related.articleLeadwide.620x349.1m07ia.png/1426479635488.jpg'></td><td>2015-03-16 04:19:24</td><td><a href='http://www.theage.com.au/world/straight-from-tv-to-jail-robert-durst-charged-in-killing-20150316-1m07ia.html'>site</a></td><td>"We are relieved and also grateful to everyone who assisted in the arrest of Robert Durst," Douglas Durst said in a statement on Sunday.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 00:32:33</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article14723018.html#storylink=rss'>site</a></td><td>Robert Durst couldn't explain away similarities between his handwriting and a letter he said "only the killer could have written" that alerted police to his friend's shooting 15 years ago.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-17 05:32:43</td><td></td><td><a href='robert_durst_0_3.html'>Robert Durst charged with murder, movie confession likely admissible (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 16:39:19</td><td></td><td><a href='robert_durst_0_5.html'>Authorities found more than a quarter-pound of marijuana and a revolver in millionaire Robert Durst?s hotel room when he was arrested over the weekend, a prosecutor said Tuesday. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 21:58:00</td><td></td><td><a href='robert_durst_0_9.html'>A car passes the building where millionaire Robert Durst lives hours before police began a search Tuesday, March 17, 2015, in Houston. (7)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-03-17 22:50:50</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/03/17/twists-turns-mark-bizarre-life-of-robert-durst'>site</a></td><td>Twists, turns mark bizarre life of Robert Durst</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-18 18:08:12</td><td></td><td><a href='robert_durst_0_6.html'>Robert Durst is ?suicidal,' moved to jail for mentally ill (3)</a></td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 18:08:12</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article15256331.html#storylink=rss'>site</a></td><td>A trail of clues led to Durst's arrest.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:45:24</td><td></td><td><a href='robert_durst_0_4.html'>Durst, the real estate scion awaiting extradition to California to face a murder charge, was denied bail on Monday after a judge deemed him to be a potential danger to others and a likely flight risk. (21)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 01:43:47</td><td></td><td><a href='robert_durst_0_7.html'>Also on Monday, police in Middlebury, Vermont, said they were probing a link between Lynne Schulze, a college student who vanished 44 years ago, and Durst, who owned a health food store in town. (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-02 17:55:21</td><td><a href='http://www.startribune.com/nation/298488471.html'>site</a></td><td><table><tr><td>Last weekend, she was portrayed in a "Saturday Night Live" skit as telling Durst, "I'm always right behind you, Robert, and I'm gonna catch you with my own two gorgeously manicured hands."</td></tr><tr><td>"The first person I thought of was Robert Durst," Pirro said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-02 17:55:21</td><td><a href='http://www.startribune.com/nation/298488471.html'>site</a></td><td><table><tr><td>Last weekend, she was portrayed in a "Saturday Night Live" skit as telling Durst, "I'm always right behind you, Robert, and I'm gonna catch you with my own two gorgeously manicured hands."</td></tr><tr><td>"The first person I thought of was Robert Durst," Pirro said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/09/22/2769696100000578-3032543-image-a-87_1428614491430.jpg'></td><td>2015-04-09 23:01:43</td><td><a href='http://www.dailymail.co.uk/news/article-3032543/Murder-suspect-Robert-Durst-sends-bizarre-letter-reporter-covering-case-discusses-opera-football-not-upcoming-trial.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Robert Durst sends bizarre letter to Los Angeles Times reporter</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-04-10 02:34:00</td><td><a href='http://www.latimes.com/local/lanow/la-me-ln-robert-durst-letter-20150409-story.html'>site</a></td><td>New letter from Robert Durst talks of football, opera, but not murder</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-04-16 23:03:52</td><td><a href='http://abcnews.go.com/US/wireStory/durst-money-back-police-161k-30379219'>site</a></td><td>Durst Wants His Money Back; Police Have $161K</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 23:16:26</td><td></td><td><a href='robert_durst_0_10.html'>U.S. District Judge Helen Berrigan signed an order Monday to move Robert Durst from a prison 70 miles away from the city to a jail in St. Charles Parish, about 25 miles away. (2)</a></td></tr>
+</table></body></html>

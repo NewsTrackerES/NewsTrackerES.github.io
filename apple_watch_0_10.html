@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple watch</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/6uGrjx.GJ8t5gCgl3.1yLw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://globalfinance.zenfs.com/images/US_AHTTP_AP_FINANCIALTIMES/69cc32a359a18c12740f6a7067005a36_original.jpg.cf.jpg'></td><td>2015-04-24 15:54:18</td><td><a href='http://news.yahoo.com/review-getting-apple-watch-heres-043643261.html'>site</a></td><td>To add apps, visit the phone's Apple Watch app.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/EE14v6TBjjN1tbpfjOpFqw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/sbnation1.vox.com/7d33ea169d9b4e23b08a42eebdeee352.cf.jpg'></td><td>2015-04-25 01:18:53</td><td><a href='http://news.yahoo.com/software-developers-try-apple-watch-see-more-apps-011853014--finance.html'>site</a></td><td>Software developers try on Apple watch, see more apps coming</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 02:02:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054832/Software-developers-try-Apple-watch-apps-coming.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging.</td></tr><tr><td>Tracking firm App Annie counted 3,061 total apps supporting Apple Watch on Friday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 02:02:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054832/Software-developers-try-Apple-watch-apps-coming.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging.</td></tr><tr><td>Tracking firm App Annie counted 3,061 total apps supporting Apple Watch on Friday.</td></tr></table></td></tr>
+</table></body></html>

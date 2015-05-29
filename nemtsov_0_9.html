@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 09:57:35</td><td><a href='http://www.foxnews.com/world/2015/05/12/nemtsov-report-at-least-220-russian-soldiers-died-in-2-battles-in-eastern/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MOSCOW - A report containing material compiled by slain Russian opposition leader Boris Nemtsov says at least 220 Russian soldiers died in two battles in eastern Ukraine within the past year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-12 09:57:35</td><td><a href='http://www.utsandiego.com/news/2015/may/12/nemtsov-report-220-russian-soldiers-died-in/'>site</a></td><td>Nemtsov report: 220 Russian soldiers died in Ukraine battles</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31215148.ece/ad8c3/ALTERNATES/h342/PANews%20BT_P-6e69324d-31d1-4207-8cf6-c67e92cd1c1d_I1.jpg'></td><td>2015-05-12 10:16:21</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/russian-troops-died-in-ukraine-31215149.html'>site</a></td><td>Around 70 more Russian soldiers died in January and February in fighting around the city of Debaltseve, the report said, adding that family members were unable to receive compensation and appealed to Mr Nemtsov for help.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://cdn4.belfasttelegraph.co.uk/news/world-news/article31215148.ece/ad8c3/ALTERNATES/h342/PANews%20BT_P-6e69324d-31d1-4207-8cf6-c67e92cd1c1d_I1.jpg'></td><td>2015-05-12 10:16:21</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/russian-soldiers-died-in-ukraine-31215149.html'>site</a></td><td>According to Mr Nemtsov's sources, at least 150 Russian soldiers died in August.</td></tr>
+</table></body></html>

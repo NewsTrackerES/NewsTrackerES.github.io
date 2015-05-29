@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:08:53</td><td><a href='http://www.cbc.ca/news/world/hillary-clinton-promises-to-release-more-emails-1.2982395?cmp=rss'>site</a></td><td>"I want the public to see my email. I asked State to release them," according to the tweet from (at)Hillary Clinton.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/hbsPOb95VlBfE.SRAwiKKg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5d11aab72789d20a6f0f6a706700a14d.jpg'></td><td>2015-03-06 03:19:45</td><td><a href='http://news.yahoo.com/experts-clinton-email-practices-risked-data-disclosures-081106082--election.html'>site</a></td><td>Hillary Clinton email trove reviewed for release, security</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-07 06:20:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11413586&ref=rss'>site</a></td><td>" Was Clinton's email too secret?</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-10 20:16:16</td><td><a href='http://www.npr.org/2015/03/10/392142420/clinton-says-she-didnt-think-private-email-would-be-an-issue?utm_medium=RSS&utm_campaign=us'>site</a></td><td>HILLARY CLINTON: Looking back, it would have been better for me to use two separate phones and two email accounts.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 13:46:16</td><td><a href='http://www.cbsnews.com/news/hillary-clinton-ipad-phone-email-despite-preference-single-device/'>site</a></td><td>Hillary Clinton used her iPad for email at State</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 10:58:57</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article18561794.html#storylink=rss'>site</a></td><td>Hillary Clinton Was Asked About Email 2 Years Ago</td></tr>
+</table></body></html>

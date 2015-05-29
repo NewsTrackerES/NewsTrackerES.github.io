@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/PgfUD0nslEDnGooWDTDnrg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/de4231e8bdeb9315760f6a706700966f.jpg'></td><td>2015-05-15 19:09:20</td><td><a href='https://news.yahoo.com/cannes-watch-ghouls-ensemble-enjoys-fun-camaraderie-190920021.html'>site</a></td><td><table><tr><td>CANNES WATCH: 'The Ghouls' ensemble enjoys fun camaraderie</td></tr><tr><td>CANNES, France (AP) - The bond between the A-list stars of the new Chinese fantasy film "The Ghouls" clearly didn't stop when the group stopped filming.</td></tr><tr><td>Huang Bo, Chen Kun, Shu Qi, Angela Baby, and Xia Yu poked fun at one another as they promoted the film in Cannes this week.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/33/64/7978290/3/gallery_thumb.jpg'></td><td>2015-05-14 12:14:08</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Salma-Hayek-eats-Cannes-heart-out-6263036.php'>site</a></td><td><table><tr><td>CANNES WATCH: Salma Hayek eats Cannes' heart out</td></tr><tr><td>Hayek exclaimed Thursday morning after it showed for critics at the Cannes Film Festival.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/33/64/7978290/3/gallery_thumb.jpg'></td><td>2015-05-14 12:14:08</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Salma-Hayek-eats-Cannes-heart-out-6263036.php'>site</a></td><td><table><tr><td>CANNES WATCH: Salma Hayek eats Cannes' heart out</td></tr><tr><td>Hayek exclaimed Thursday morning after it showed for critics at the Cannes Film Festival.</td></tr></table></td></tr>
 </table></body></html>

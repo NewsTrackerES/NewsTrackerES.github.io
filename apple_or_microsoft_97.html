@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.business.financialpost.com/2015/04/apple-inc-earnings.jpg?w=620'></td><td>2015-04-27 21:42:21</td><td><a href='http://business.financialpost.com/fp-tech-desk/apple-inc-sells-61-2-million-iphones-in-latest-quarter-blowing-past-expectations'>site</a></td><td><table><tr><td>Renewed investor optimism for new products, including the Apple Watch, has helped boost shares to record levels this year.</td></tr><tr><td>That's driving Apple's increase to its capital return program, which now totals US$200 billion.</td></tr><tr><td>His optimism for Apple is driven in part by his expectations for the larger-screened iPhone and new products, including the Watch.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 15:53:35</td><td><a href='http://www.chron.com/business/technology/article/Russian-lawmaker-sees-Apple-s-U2-album-as-gay-6233343.php'>site</a></td><td>MOSCOW (AP) - A member of Russia's parliament has asked prosecutors to determine whether Apple violated Russia's ban on gay "propaganda" when it delivered U2's latest album to a half-billion iTunes users for free last year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 15:53:35</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/30/russian-lawmaker-sees-apples-u2-album-as-gay-propaganda'>site</a></td><td>Russian lawmaker sees Apple's U2 album as gay 'propaganda'</td></tr>
 </table></body></html>

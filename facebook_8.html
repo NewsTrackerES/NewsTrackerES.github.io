@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 18:34:26</td><td><a href='http://www.washingtontimes.com/news/2015/mar/10/judge-man-charged-in-facebook-fraud-case-apparentl/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>In 2010, Ceglia filed a multibillion-dollar lawsuit claiming that the 2003 software development contract included a provision entitling Ceglia to half ownership of Facebook in exchange for startup money.</td></tr><tr><td>Facebook lawyers have said the two had a contract but that references to Facebook were added for purposes of the lawsuit.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 17:36:56</td><td></td><td><a href='facebook_8_9.html'>Dave Goldberg, the husband of Facebook COO Sheryl Sandberg, died Friday night, according to a Facebook post from Goldberg's brother. (15)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-02 22:02:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3065624/SurveyMonkey-CEO-husband-Facebooks-Sandberg-dies.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Television and movie writer John Quaintance said on Facebook that Goldberg was the first person to encourage him to write professionally, changing the course of his career.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 01:29:46</td><td><a href='http://www.reuters.com/article/2015/05/06/us-surveymonkey-goldberg-memorial-idUSKBN0NQ2HF20150506?feedType=RSS&feedName=technologyNews'>site</a></td><td>Sandberg in turn took to Facebook, thanking Obama for his friendship.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-06 02:05:11</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3069601/Facebooks-Sandberg-emerges-speak-husbands-memorial.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"We had 11 truly joyful years of the deepest love, happiest marriage, and truest partnership that I could imagine," Sandberg posted on Facebook.</td></tr>
 </table></body></html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 13:44:30</td><td><a href='http://www.cbc.ca/news/world/boko-haram-attacks-chad-village-as-revolt-spreads-1.2957708?cmp=rss'>site</a></td><td>A video still shows Boko Haram leader Abubakar Shekau speaking to the camera.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-07 22:30:04</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/07/22274536.html?cid=rssnewsworld'>site</a></td><td>The pledge of allegiance was attributed to Boko Haram leader Abubakar Shekau.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-08 02:23:50</td><td><a href='http://ibnlive.in.com/news/nigerias-boko-haram-pledges-allegiance-to-islamic-state/532627-2.html'>site</a></td><td>The pledge to Islamic State came in an Arabic audio message with English subtitles alleged to have come from Boko Haram leader Abubakar Shekau and posted on Twitter, according to the SITE Intelligence monitoring service.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/y/e/z/h/image.related.articleLeadwide.620x349.13y5o6.png/1425807909107.jpg'></td><td>2015-03-08 06:20:18</td><td><a href='http://www.brisbanetimes.com.au/world/boko-haram-is-said-to-have-pledged-allegiance-to-islamic-state-20150308-13y5o6.html'>site</a></td><td>In the message published on his Twitter account on Saturday, Abubakar Shekau, Boko Haram's leader, announced that he had sworn allegiance to the Islamic State, also known as ISIS.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/e53df78/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fff%2F807410d4d5f21398ccaf81e1b5dcd4%2Fmedia%3A5d8e93e77d44444b987f34eb876ee21aIslamicStateBokoHaram.JPEG'></td><td>2015-03-13 06:07:28</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/12/is-accepts-boko-haram-allegiance-pledge'>site</a></td><td>IS accepts Boko Haram pledge of allegiance</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/12/Islamic_State_Boko_Haram.JPEG-0cbaf_c0-0-5556-3238_s561x327.jpg?86a77fcba965719a818b08b868ba2856f554e725'></td><td>2015-03-13 10:42:38</td><td><a href='http://www.washingtontimes.com/news/2015/mar/13/islamic-state-group-accepts-boko-haram-pledge-alle/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>BEIRUT (AP) - Islamic State militants have accepted a pledge of allegiance by the Nigerian-grown Boko Haram extremist group, according to a spokesman for the Islamic State movement.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03160/boko_haram_3160853g.jpg'></td><td>2015-03-20 12:03:21</td><td><a href='http://www.telegraph.co.uk/news/worldnews/africaandindianocean/nigeria/11485024/We-will-eradicate-Boko-Haram-within-a-months-says-Nigeria-president.html'>site</a></td><td>Fears remain about the safety of voters on polling day, after a spate of suicide attacks in the north in recent weeks and after Boko Haram leader Abubakar Shekau vowed to disrupt the election.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/23/article-doc-1a9rr-6XFU93QB1HSK2-503_634x421.jpg'></td><td>2015-03-23 18:06:44</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3008100/Displaced-fear-Boko-Haram-violence-elections-approach.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Now, it is feared that internally displaced people (IDP) could be next, after Boko Haram leader Abubakar Shekau vowed to disrupt this Saturday's elections, which the group views as "un-Islamic".</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/876/493/bring back our girls rally apr 13.jpg?ve=1&tl=1'></td><td>2015-04-13 23:56:41</td><td><a href='http://www.foxnews.com/world/2015/04/13/50-schoolgirls-kidnapped-by-boko-haram-reportedly-seen-in-nigeria-three-weeks/'>site</a></td><td>Boko Haram leader Abubakar Shekau has said the girls have been converted to Islam and married off.</td></tr>
+</table></body></html>

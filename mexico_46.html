@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-02 17:27:08</td><td><a href='http://www.miamiherald.com/living/health-fitness/article17190383.html#storylink=rss'>site</a></td><td><table><tr><td>New Mexico pushes claims of poor care at nursing home chain</td></tr><tr><td>With too few nursing assistants, New Mexico alleged residents were not getting the care they needed and the state and federal government were being improperly billed.</td></tr><tr><td>Preferred Care Management Partners has argued that New Mexico is targeting practices at facilities that occurred before the company bought them.</td></tr><tr><td>New Mexico's lawsuit relies on an industrial simulation of how long it takes to complete basic care tasks.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 01:33:06</td><td></td><td><a href='mexico_46_48.html'>Mexico's immigration agency said Monday it was respecting the migrants' rights, and that its nearest checkpoint was 5.5 kms (3 miles) from the shelter. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-15 01:33:06</td><td><a href='http://www.utsandiego.com/news/2015/apr/14/migrants-hope-to-re-start-protest-convoy-in-mexico/'>site</a></td><td>For several years, migrants have carried wooden crosses in protest marches in Mexico around Easter week to illustrate their suffering at the hands of criminals and corrupt police.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 00:05:13</td><td></td><td><a href='mexico_46_47.html'>MEXICO CITY - About 200 participants in a protest convoy of Central American migrants have arrived in Mexico's capital and filed abuse complaints with the government's National Human Rights Commission. (5)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-19 00:10:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11435071&ref=rss'>site</a></td><td>He called for an investigation of events at a road checkpoint in the southern state of Oaxaca, where he has said officers tried to prevent the protest convoy from heading to Mexico City.</td></tr>
 </table></body></html>

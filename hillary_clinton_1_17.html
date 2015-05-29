@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 12:01:34</td><td><a href='http://www.cbsnews.com/news/is-hillary-clinton-announcing-her-candidacy-soon/'>site</a></td><td>Is Hillary Clinton announcing her candidacy soon?</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://edition.cnn.com/2015/04/29/politics/hillary-clinton-police-body-cameras/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-29 11:01:32</td><td><a href='http://edition.cnn.com/2015/04/29/politics/hillary-clinton-police-body-cameras/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>Hillary Clinton to call for mandatory police body cameras</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 11:28:25</td><td><a href='http://www.sfgate.com/news/politics/article/AP-source-Clinton-to-outline-criminal-justice-6230582.php'>site</a></td><td>WASHINGTON (AP) - Hillary Rodham Clinton says a wave of unrest in Baltimore shows the need to "restore order and security" and find ways to reform the criminal justice system.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-29 11:39:03</td><td><a href='http://news.yahoo.com/clinton-call-criminal-justice-reform-york-speech-101832216.html'>site</a></td><td>Clinton to call for criminal justice reform in New York speech</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 15:38:23</td><td><a href='http://www.miamiherald.com/news/politics-government/article19854036.html#storylink=rss'>site</a></td><td>Pointing to a wave of violence in Baltimore, Hillary Rodham Clinton said Wednesday that the nation's criminal justice system has gotten "out of balance" and must be restored through steps such as the use of body cameras by every police department in the country.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-29 18:02:33</td><td><a href='http://www.cbsnews.com/news/hillary-clinton-baltimore-riots-to-end-the-era-of-mass-incarceration/'>site</a></td><td>Hillary Clinton: Time to "end the era of mass incarceration"</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/w/g/8/7/image.related.articleLeadwide.620x349.1mwgpr.png/1430344522044.jpg'></td><td>2015-04-29 21:58:06</td><td><a href='http://www.smh.com.au/world/hillary-clinton-sets-sights-on-law-and-order-20150429-1mwgpr.html'>site</a></td><td>Washington: As the people of Baltimore set about cleaning up stricken suburbs Hillary Clinton has given her first major policy speech since announcing her candidacy, calling for major criminal justice reform and an end to mass incarceration.</td></tr>
+</table></body></html>

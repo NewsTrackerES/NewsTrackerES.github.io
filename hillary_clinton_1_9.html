@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428887216717.jpg'></td><td>2015-04-12 22:49:33</td><td><a href='http://www.smh.com.au/world/us-election/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150413-1mjmfs.html'>site</a></td><td>Hillary Clinton's campaign website with that logo.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428887216717.jpg'></td><td>2015-04-12 23:53:24</td><td><a href='http://www.brisbanetimes.com.au/world/us-election/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150413-1mjmfs.html'>site</a></td><td><table><tr><td>Hillary Clinton has stolen our innovative WikiLeaks twitter logo design.</td></tr><tr><td>So what lucky 3rd grader won the Design the Hillary Clinton Campaign Logo contest?</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/13/18/27889B6500000578-3036301-image-a-12_1428947803814.jpg'></td><td>2015-04-13 19:01:55</td><td><a href='http://www.dailymail.co.uk/news/article-3036301/WikiLeaks-accuses-Hillary-Clinton-stealing-innovative-Twitter-logo-design-campaign.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>WikiLeaks accused Hillary Clinton of stealing their Twitter design in her campaign logo.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-19 21:40:49</td><td><a href='https://news.yahoo.com/exclusive-despite-hillary-clinton-promise-charity-did-not-192353450.html'>site</a></td><td>A spokesman for Hillary Clinton declined to comment.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 18:50:54</td><td><a href='http://www.reuters.com/article/2015/04/22/us-usa-politics-bush-clinton-idUSKBN0ND2AF20150422?feedType=RSS&feedName=politicsNews'>site</a></td><td><table><tr><td>"I haven't changed in my view even though Hillary Clinton has," Bush wrote in a post on the blog publishing site Medium.</td></tr><tr><td>A Clinton spokesman did not immediately respond to a request for comment on Bush's post.</td></tr></table></td></tr>
 </table></body></html>

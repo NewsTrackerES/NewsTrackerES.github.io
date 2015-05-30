@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 00:24:32</td><td><a href='http://news.yahoo.com/gravestone-hillary-clintons-dad-toppled-pennsylvania-002432437--election.html'>site</a></td><td>(AP) - The gravestone of Hillary Rodham Clinton's father has been found toppled over at a Pennsylvania cemetery.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 12:09:48</td><td><a href='http://www.cbsnews.com/news/hillary-clintons-fathers-tombstone-toppled/'>site</a></td><td>Hillary Clinton's father's tombstone toppled</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 22:27:49</td><td><a href='http://www.daytondailynews.com/ap/ap/political/clinton-advisers-traveling-to-new-hampshire-iowa/nkh5Z/'>site</a></td><td>Clinton advisers traveling to New Hampshire, Iowa</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 21:13:49</td><td></td><td><a href='hillary_clinton_25_26.html'>GOP hopefuls give NRA event an earful on Hillary Clinton (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:48:19</td><td></td><td><a href='hillary_clinton_25_27.html'>AP-GfK Poll: Doubts about Clinton's honesty after emails (2)</a></td></tr>
 </table></body></html>

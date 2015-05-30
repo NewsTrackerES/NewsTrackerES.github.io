@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/2/14/1423903544020/b4fbc748-a869-4f49-9d7d-95d5533b0cf4-300x180.jpeg'></td><td>2015-02-14 08:46:27</td><td><a href='http://www.theguardian.com/world/2015/feb/14/bus-and-train-in-fatal-mexico-crash'>site</a></td><td><table><tr><td>Bus and train in fatal Mexico crash</td></tr><tr><td>At least 16 people have been killed and 22 others injured after a bus and a freight train collided at a level crossing in northern Mexico.</td></tr><tr><td>The train's operator, Kansas City Southern de Mexico, issued a statement confirming there had been "a lamentable accident" between one of its trains and a passenger bus at about 5.25pm on Friday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/a292f2c/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Faf%2F36bbeb98f4923a9394ee5be124bcb5%2Fmedia%3A9a89c6ad67ef4c5ca4f9181815494cc6MexicoBusTrainCollision.JPEG'></td><td>2015-02-14 10:58:05</td><td><a href='http://www.usnews.com/news/world/articles/2015/02/14/official-at-least-16-dead-in-mexico-bus-train-crash'>site</a></td><td>MONTERREY, Mexico (AP) - A passenger bus and a freight train collided at a grade crossing in northern Mexico, killing at least 16 people and injuring 22, a Mexican official said.</td></tr>
+</table></body></html>

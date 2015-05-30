@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 9,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,13 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-03-24 16:27:59</td><td></td><td><a href='facebook_66_68.html'>Dad: Fugitive son afraid his Facebook trial wouldn't be fair (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 16:30:37</td><td></td><td><a href='facebook_66_69.html'>NEW YORK - A fugitive facing charges he falsely claimed he's owed a majority ownership in Facebook fled after complaining he was being treated unfairly in courts, his father said Tuesday. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 03:52:13</td><td></td><td><a href='facebook_66_70.html'>U.S. District Judge Vernon Broderick ordered Facebook and Mark Zuckerberg to relinquish documents by Monday that were requested by Paul Ceglia's lawyer, Robert Ross Fogg. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-04 03:52:13</td><td></td><td><a href='facebook_66_71.html'>Ceglia's father told Broderick at a hearing last week that he believed his son might have fled because he believed Facebook and Zuckerberg were working together with prosecutors against him, jeopardizing his chance for a fair trial. (3)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 18:15:46</td><td></td><td><a href='facebook_66_72.html'>Accused Facebook fraud fugitive still missing, U.S. appeals court hears (2)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 18:15:46</td><td><a href='http://www.reuters.com/article/2015/04/16/us-facebook-ceglia-idUSKBN0N72A720150416?feedType=RSS&feedName=domesticNews'>site</a></td><td>Ceglia was charged in 2012 with fraud for forging documents to extort Zuckerberg out of 50 percent of Facebook, whose market value as of Wednesday's close was about $231 billion.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/bt/api/res/1.2/fQkVlGXqVISrXct7iVs9kA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-16T225717Z_1_LYNXMPEB3F189_RTROPTP_2_CTECH-US-FACEBOOK-CONFERENCE.JPG.cf.jpg'></td><td>2015-04-16 18:15:46</td><td><a href='http://news.yahoo.com/accused-facebook-fraud-fugitive-still-missing-u-appeals-181546425--finance.html'>site</a></td><td>Orin Snyder, Facebook's lawyer, countered that Arcara had authority to dismiss the "litigation fraud" that Ceglia was pursuing.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 16:27:59</td><td></td><td><a href='facebook_66_68.html'>Dad: Fugitive son afraid his Facebook trial wouldn't be fair (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 16:30:37</td><td></td><td><a href='facebook_66_69.html'>NEW YORK - A fugitive facing charges he falsely claimed he's owed a majority ownership in Facebook fled after complaining he was being treated unfairly in courts, his father said Tuesday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 03:52:13</td><td></td><td><a href='facebook_66_71.html'>U.S. District Judge Vernon Broderick ordered Facebook and Mark Zuckerberg to relinquish documents by Monday that were requested by Paul Ceglia's lawyer, Robert Ross Fogg. (8)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 18:15:46</td><td></td><td><a href='facebook_66_70.html'>Accused Facebook fraud fugitive still missing, U.S. appeals court hears (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 18:15:46</td><td><a href='http://www.reuters.com/article/2015/04/16/us-facebook-ceglia-idUSKBN0N72A720150416?feedType=RSS&feedName=domesticNews'>site</a></td><td>Ceglia was charged in 2012 with fraud for forging documents to extort Zuckerberg out of 50 percent of Facebook, whose market value as of Wednesday's close was about $231 billion.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/fQkVlGXqVISrXct7iVs9kA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-04-16T225717Z_1_LYNXMPEB3F189_RTROPTP_2_CTECH-US-FACEBOOK-CONFERENCE.JPG.cf.jpg'></td><td>2015-04-16 18:15:46</td><td><a href='http://news.yahoo.com/accused-facebook-fraud-fugitive-still-missing-u-appeals-181546425--finance.html'>site</a></td><td>Orin Snyder, Facebook's lawyer, countered that Arcara had authority to dismiss the "litigation fraud" that Ceglia was pursuing.</td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-04-20 21:54:10</td><td></td><td><a href='facebook_66_67.html'>Ceglia alleged that an April 2003 contract with Zuckerberg, then a Harvard University freshman who had done programming work for Ceglia's StreetFax.com, entitled him to half of Facebook. (8)</a></td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/04/20/ceglia650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-20 21:54:10</td><td><a href='http://technology.canoe.com/News/2015/04/20/22355031.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Fugitive fails to revive Facebook lawsuit, block criminal case</td></tr><tr><td>The 2nd U.S. Circuit Court of Appeals in New York said "overwhelming forensic evidence" showed that a 2003 "Work for Hire" contract that Ceglia claimed entitled him to a 50 percent stake in Facebook was forged.</td></tr></table></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-05-12 07:17:12</td><td><a href='http://www.fin24.com/Tech/News/Facebook-allowed-to-sue-law-firms-over-fake-case-20150512'>site</a></td><td>Facebook in statement said it was pleaded with the ruling and would "continue to hold accountable DLA Piper and the other firms who pursued Paul Ceglia's fraudulent claims against Facebook".</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/04/20/ceglia650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-20 21:54:10</td><td><a href='http://technology.canoe.com/News/2015/04/20/22355031.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Fugitive fails to revive Facebook lawsuit, block criminal case</td></tr><tr><td>The 2nd U.S. Circuit Court of Appeals in New York said "overwhelming forensic evidence" showed that a 2003 "Work for Hire" contract that Ceglia claimed entitled him to a 50 percent stake in Facebook was forged.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-12 07:17:12</td><td><a href='http://www.fin24.com/Tech/News/Facebook-allowed-to-sue-law-firms-over-fake-case-20150512'>site</a></td><td>Facebook in statement said it was pleaded with the ruling and would "continue to hold accountable DLA Piper and the other firms who pursued Paul Ceglia's fraudulent claims against Facebook".</td></tr>
 </table></body></html>

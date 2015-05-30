@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td><a href='http://news.yahoo.com/microsoft-outlines-plan-bridge-xbox-pc-video-gaming-033532212.html'>site</a></td><td><table><tr><td>SAN FRANCISCO (AP) - Microsoft is attempting to break down the walls surrounding console gaming.</td></tr><tr><td>That includes HoloLens, Microsoft's wearable headset that gives wearers the ability to interact with three-dimensional images.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 21:45:41</td><td></td><td><a href='microsoft_24_26.html'>Microsoft didn't invent the web browser, but it has invested heavily to promote Explorer since it was first launched in 1995. (3)</a></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td><a href='http://www.chron.com/business/technology/article/As-Explorer-loses-ground-Microsoft-readies-new-6143211.php'>site</a></td><td>After 20 years of competing against rival web browsers, Microsoft is gearing up to launch its own alternative to its once-dominant Internet surfing program.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/23/microsoft-results-show-companys-shift-but-is-it-enough'>site</a></td><td>Microsoft will report earnings Thursday April 23, 2015.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-23 21:57:48</td><td><a href='http://www.mercurynews.com/business/ci_27975895/microsoft-s-healthy-earnings-show-company-s-shift?source=rss'>site</a></td><td>SAN FRANCISCO -- Microsoft is changing its business.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-23 23:13:00</td><td></td><td><a href='microsoft_24_28.html'>But a continuing slump in the PC industry has caused Microsoft's stock to flounder in recent months, marking the end of a honeymoon year in which shares rose steadily after Nadella took the reins in February 2014. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-23 23:13:00</td><td></td><td><a href='microsoft_24_29.html'>Microsoft's financial results underscore the importance of Nadella's efforts. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-24 01:41:41</td><td><a href='http://www.reuters.com/article/2015/04/24/us-microsoft-results-idUSKBN0NE2HE20150424?feedType=RSS&feedName=technologyNews'>site</a></td><td>"The Street will cheer these results as it appears Microsoft is back on the right track after a head-scratching performance last quarter."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 01:41:41</td><td></td><td><a href='microsoft_24_27.html'>Microsoft's overall revenue rose 6 percent to $21.7 billion, above Wall Street's average forecast of $21.1 billion, according to Thomson Reuters I/B/E/S. (8)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 14:04:57</td><td></td><td><a href='microsoft_24_30.html'>To combat the strong dollar, Microsoft (NASDAQ: MSFT) engaged in about $15 billion in currency hedging in the latest quarter, longtime Microsoft analyst Rick Sherlund said Friday. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-24 14:04:57</td><td></td><td><a href='microsoft_24_31.html'>In its earnings statement, Microsoft pointed to increasing usage of its enterprise cloud service Azure, cloud-based Office 365, search engine Bing and Xbox Live gaming. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-24 14:04:57</td><td><a href='http://finance.yahoo.com/news/microsofts-15b-hedge-against-dollar-140457003.html'>site</a></td><td><table><tr><td>What's behind Microsoft's big beat?</td></tr><tr><td>Microsoft was trading at $46.11 a share Friday morning, up more than 6 percent from Thursday's close.</td></tr><tr><td>Going forward, the Nomura analyst sees tough comparisons for Microsoft in the next two quarters.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 10:22:46</td><td></td><td><a href='microsoft_24_25.html'>Microsoft hopes it has solved that problem by designing Windows 10 so it's easier for developers to build "universal" apps that work on a variety of Windows devices, from phones to PCs and other gadgets, Gownder said. (27)</a></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694024178_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 15:37:24</td><td><a href='http://www.torontosun.com/2015/04/29/android-apps-on-windows-phones'>site</a></td><td>The move would mark a radical shift for Microsoft, which has struggled to attract users and has only 3% of the global smartphone market.</td></tr>
+</table></body></html>

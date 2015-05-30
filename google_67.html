@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150408&t=2&i=1038872786&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB370QV'></td><td>2015-04-08 17:18:54</td><td><a href='http://www.reuters.com/article/2015/04/08/us-usa-election-clinton-digital-idUSKBN0MZ1TF20150408?feedType=RSS&feedName=technologyNews'>site</a></td><td>Hillary Clinton hires Google executive as tech chief</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/08/20/2761096600000578-3030840-image-a-4_1428521829396.jpg'></td><td>2015-04-08 21:00:45</td><td><a href='http://www.dailymail.co.uk/news/article-3030840/Hillary-Clinton-hires-Google-executive-tech-chief.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Hannon previously worked on Gmail and Google Maps.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 07:36:57</td><td></td><td><a href='google_67_68.html'>While most major merchants and big companies already have websites likely to meet Google's mobile standard, the new formula threatens to hurt millions of small businesses that haven't had the money or incentive to adapt their sites for smartphones. (12)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 11:30:28</td><td><a href='http://nypost.com/2015/04/17/google-to-use-mobile-friendly-browsing-on-mobile-devices/'>site</a></td><td>Here are a few things to know about what's happening and why Google is doing it.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/67/65/7830848/3/landscape_32.jpg'></td><td>2015-04-17 18:59:38</td><td><a href='http://www.sfgate.com/business/technology/article/Google-embraces-mobile-friendly-sites-in-search-6205666.php'>site</a></td><td>FILE - In this Tuesday, March 23, 2010, file photo, the Google logo is seen at the Google headquarters in Brussels.</td></tr>
 </table></body></html>

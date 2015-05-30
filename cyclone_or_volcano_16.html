@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,5 @@
     <h3>cyclone or volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 22:47:08</td><td></td><td><a href='cyclone_or_volcano_16_21.html'>HONOLULU - A lake of lava on Hawaii's Kilauea volcano has been rising over the past week and, at times, overflowing in a spectacular show. (3)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-04 21:36:12</td><td></td><td><a href='cyclone_or_volcano_16_18.html'>HONOLULU - Molten lava and rocks went flying through the air on Hawaii's Kilauea (kih-luh-WAY'-uh) volcano after an explosion caused by the partial collapse of a crater wall. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/05/06/2836439F00000578-3068288-image-a-82_1430804994943.jpg'></td><td>2015-05-05 07:07:55</td><td><a href='http://www.dailymail.co.uk/news/article-3068288/Hawaii-s-Kilauea-volcano-eruption-sends-lava-rocks-gas-air-crater-wall-collapses.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In 1924, there was a huge eruption inside the volcano that doubled the size of the crater.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 02:26:06</td><td></td><td><a href='cyclone_or_volcano_16_17.html'>"Clearly the lava, by dropping out of sight, it has to be going somewhere," said Steven Brantley, deputy scientist in charge of Hawaiian Volcano Observatory of the U.S. Geological Survey. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-17 02:26:06</td><td></td><td><a href='cyclone_or_volcano_16_19.html'>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour, and scientists' tilt meters detected that the ground was deforming. (2)</a></td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://ww2.hdnux.com/photos/36/37/76/7995289/3/622x350.jpg'></td><td>2015-05-17 02:26:06</td><td><a href='http://www.chron.com/news/science/article/Earthquakes-on-Hawaii-volcano-could-signal-new-6268464.php'>site</a></td><td>The earthquake activity had slowed Saturday morning, and scientists were continuing to watch the volcano closely, Brantley said.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 21:09:01</td><td></td><td><a href='cyclone_or_volcano_16_20.html'>Scientists are closely watching a volcano on Hawaii's Big Island for a possible eruption after volatile changes in the level of a lake of lava on its summit and a series of earthquakes, the U.S. Geological Survey said on Monday. (4)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-05-18 21:09:01</td><td><a href='http://www.reuters.com/article/2015/05/18/us-usa-hawaii-volcano-idUSKBN0O326920150518?feedType=RSS&feedName=environmentNews'>site</a></td><td>An eruption in the Southwest Rift Zone would not pose a risk to people because that side of the volcano is not inhabited.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:52:37</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3009954/Ex-cyclone-cause-wild-weather-NT.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Ex-tropical Cyclone Nathan is forecast to cause wild weather across some parts of Northern Territory as it continues to move west across the Top End.</td></tr><tr><td>Early on Wednesday morning, the Bureau of Meteorology warned of damaging winds and heavy rain in the Arnhem and Daly districts as the ex-cyclone moved west.</td></tr></table></td></tr>
 </table></body></html>

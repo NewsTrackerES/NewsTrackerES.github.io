@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 18,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 18 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boston marathon bombing</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/2.6N_FXq_nopcsz4Wtk53g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/1991a844f4a3460a700f6a7067000561.jpg.cf.jpg'></td><td>2015-02-16 15:35:17</td><td><a href='http://news.yahoo.com/things-know-boston-marathon-bombing-trial-153517979.html'>site</a></td><td>So it goes in the trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/9jFlrhtoB2i.w1de4EdKOA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1cd7b567fecebc096f0f6a7067007b3d.jpg'></td><td>2015-03-03 06:39:22</td><td><a href='http://news.yahoo.com/final-jury-chosen-boston-marathon-bombing-trial-063922662.html'>site</a></td><td>Final jury to be chosen in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 18:10:28</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article12243920.html#storylink=rss'>site</a></td><td>After two months of jury selection, a panel of 12 jurors and six alternates was seated Tuesday for the federal death penalty trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='https://s.yimg.com/uu/api/res/1.2/nZ.k75hSngnN8VTMR5tJ.A--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.cbsboston.com/f38b32cccc5071740916476912ffa471'></td><td>2015-03-04 06:46:02</td><td><a href='http://news.yahoo.com/different-views-bombing-suspect-given-trial-063434741--spt.html'>site</a></td><td>Different views of bombing suspect to be given at trial</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/LCi5etQwJOiW6ed4uxmaqQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/65f14d0927fdd40a6f0f6a7067000155.jpg'></td><td>2015-03-04 13:58:54</td><td><a href='http://news.yahoo.com/latest-boston-bombing-trial-victims-arrive-court-135854486--spt.html'>site</a></td><td><table><tr><td>Latest on Boston bombing trial: Victims arrive at court</td></tr><tr><td>Victims of the Boston Marathon bombing have arrived at court for opening statements in Tsarnaev's trial.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2014/4/21/201442103221838734_20.jpg'></td><td>2015-03-04 16:05:51</td><td><a href='http://www.aljazeera.com/news/2015/03/boston-marathon-bombing-trial-begins-150304145305346.html'>site</a></td><td>Boston Marathon bombing trial begins</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-04 23:25:20</td><td><a href='http://www.startribune.com/nation/295072591.html'>site</a></td><td>Lawyer: Tsarnaev widow not ID'd as witness in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/35/17/22/7664782/7/920x920.jpg'></td><td>2015-03-20 18:51:33</td><td><a href='http://www.sfgate.com/news/crime/article/1st-phase-of-Boston-Marathon-bombing-trial-6148052.php'>site</a></td><td>1st phase of Boston Marathon bombing trial winding down</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-30 06:18:18</td><td><a href='http://www.sfgate.com/news/crime/article/Feds-to-wrap-up-case-in-1st-phase-of-marathon-6167057.php'>site</a></td><td>Feds to wrap up case in 1st phase of marathon bombing trial</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://i.cbc.ca/1.3015025.1427734935!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/boston-marathon-bombing.jpg'></td><td>2015-03-30 17:11:17</td><td><a href='http://www.cbc.ca/news/world/boston-marathon-bombing-trial-prosecutors-rest-their-case-against-dzhokhar-tsarnaev-1.3014972?cmp=rss'>site</a></td><td>Prosecutors in Boston Marathon bombing trial rest their case</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-31 18:48:50</td><td><a href='http://news.yahoo.com/defense-rests-1st-phase-boston-marathon-bombing-trial-184850642.html'>site</a></td><td>Defense rests in 1st phase of Boston Marathon bombing trial after calling just 4 witnesses</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-05 12:00:00</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article17487302.html#storylink=rss'>site</a></td><td>Closing arguments set in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.gannett-cdn.com/-mm-/716083e9b45915fce63ddd8e55917244e64f69ee/c=0-0-3208-2412&amp;r=x404&amp;c=534x401/local/-/media/USATODAY/WiresImages/2015/04/06/cfcbb9625654400e720f6a7067008ebb.jpg'></td><td>2015-04-07 07:53:07</td><td><a href='http://www.usatoday.com/story/news/nation/2015/04/07/boston-marathon-bombing-trial-deliberations/25399203/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-newstopstories'>site</a></td><td>Jury deliberations to begin in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-08 17:29:38</td><td><a href='http://www.nbcnews.com/storyline/boston-bombing-trial/boston-bombing-trial-jury-reaches-verdict-trial-dzhokhar-tsarnaev-n337946'>site</a></td><td>Jury Reaches Verdict in Boston Bombing Trial</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-08 17:44:08</td><td><a href='http://nypost.com/2015/04/08/verdict-reached-in-boston-marathon-bombing-trial/'>site</a></td><td>Verdict reached in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297687486774_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-14 15:16:13</td><td><a href='http://www.torontosun.com/2015/04/14/boston-bomb-trial-jurors-barred-from-this-years-marathon'>site</a></td><td>BOSTON - Jurors hearing the Boston Marathon bombing trial are barred from attending this year's race, a federal judge told the panel on Tuesday as part of instructions ahead of the trial's sentencing phase.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-23 17:27:10</td><td><a href='http://www.usnews.com/news/us/articles/2015/04/23/latest-on-boston-bombing-trial-man-in-wheelchair-testifies'>site</a></td><td>Latest on Boston bombing trial: Prosecution rests its case</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-01 21:19:55</td><td><a href='http://news.yahoo.com/man-fined-missing-end-jury-selection-bombing-trial-203213151.html'>site</a></td><td>BOSTON (AP) - A man who skipped the final stages of jury selection in the Boston Marathon bombing trial has been fined $400 and sentenced to 40 hours of community service.</td></tr>
+</table></body></html>

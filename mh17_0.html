@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,8 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-03-03 15:50:35</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/03/mh17-next-of-kin-finally-view-wreckage-of-downed-flight'>site</a></td><td>Yasmine Calehr, the grandmother of two brothers who died on MH17, lives in Houston, Texas, and decided not to go see the wreckage.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:36:21</td><td></td><td><a href='mh17_0_3.html'>Relatives of those killed when Malaysia Airlines Flight MH17 was downed over eastern Ukraine have visited a Dutch air base to view the wreckage of the plane. (14)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-30 13:17:22</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/30/probe-into-ukraine-plane-disaster-eyes-buk-missile-launchers'>site</a></td><td>The cause of the MH17 disaster last summer is a subject of major diplomatic disputes.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 06:26:17</td><td></td><td><a href='mh17_0_1.html'>"This appeal for witnesses does not mean that police and prosecutors have definitively concluded what caused MH17 to crash," the address said. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 15:59:58</td><td></td><td><a href='mh17_0_5.html'>Dutch shift focus in MH17 crash to investigating culprits (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-23 09:25:08</td><td></td><td><a href='mh17_0_2.html'>Police criticize anthropologist for showing images of victims of Malaysia Airlines flight MH17 (2)</a></td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/os/publish-images/news/2013-08-26/d19448d6-6aaa-4359-a768-eadacf5fbca9_afp-gif_new.gif'></td><td>2015-04-23 23:03:06</td><td><a href='http://news.yahoo.com/dutch-expert-suspended-showing-mh17-victim-photos-143516869.html'>site</a></td><td>Dutch expert fired after showing MH17 victim photos</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://rt.com/files/news/3d/ac/d0/00/2.jpg'></td><td>2015-04-24 09:28:53</td><td><a href='http://rt.com/news/252621-mh17-dutch-expert-fired/?utm_source=rss&utm_medium=rss&utm_campaign=RSS'>site</a></td><td>The photos exposure became "shameful and very shocking for victims' relatives, this adds to the grief," said the deputy head of the MH17 Air Disaster Association, Evert van Zijtveld.</td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-05-06 15:52:59</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3070450/Russian-report-blames-Kiev-downing-MH17-airliner-newspaper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Russian report blames Kiev for downing of MH17 airliner-newspaper</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 23:55:11</td><td></td><td><a href='mh17_0_4.html'>A new report has presented detailed evidence linking a Russian military convoy to the Buk missile launcher believed to have brought down MH17, killing all 298 people on board. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 13:17:22</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/30/probe-into-ukraine-plane-disaster-eyes-buk-missile-launchers'>site</a></td><td>The cause of the MH17 disaster last summer is a subject of major diplomatic disputes.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 06:26:17</td><td></td><td><a href='mh17_0_1.html'>"This appeal for witnesses does not mean that police and prosecutors have definitively concluded what caused MH17 to crash," the address said. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:52:56</td><td></td><td><a href='mh17_0_2.html'>The Hague - Dutch and international investigators have finished recovering human remains and wreckage from the MH17 plane crash site in eastern Ukraine, the mission's head said on Thursday. (10)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-06 15:52:59</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3070450/Russian-report-blames-Kiev-downing-MH17-airliner-newspaper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Russian report blames Kiev for downing of MH17 airliner-newspaper</td></tr>
 </table></body></html>

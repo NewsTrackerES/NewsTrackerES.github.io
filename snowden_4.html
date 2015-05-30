@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -50,6 +50,5 @@
     <div class="container theme-showcase" role="main">
     <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 11:55:37</td><td></td><td><a href='snowden_4_6.html'>"You will never be completely free from risk if you if you're free. The only time you can be free from risk are if you're in prison," Snowden said. (2)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-04-06 14:15:05</td><td></td><td><a href='snowden_4_5.html'>Oliver eventually moved on to somewhat lighter fare, showing man-on-the street reactions by Americans who don't know who Snowden is and reacting to the news that the NSA is able to collect some of the naked selfies Americans send each other in a database. (10)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article17498507.html#storylink=rss'>site</a></td><td>"That is a problem," Snowden acknowledged.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-06 15:39:45</td><td><a href='http://abcnews.go.com/Technology/edward-snowden-discusses-surveillance-tactics-hot-pockets-john/story?id=30113732'>site</a></td><td>"That is a problem," Snowden conceded.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-06 14:15:05</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article17498507.html#storylink=rss'>site</a></td><td><table><tr><td>He also confronted Snowden about the New York Times publishing information he provided that may have compromised an operation in Iraq.</td></tr><tr><td>"That is a problem," Snowden acknowledged.</td></tr></table></td></tr>
 </table></body></html>

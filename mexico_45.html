@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 00:09:20</td><td><a href='http://www.miamiherald.com/news/business/article20786715.html#storylink=rss'>site</a></td><td><table><tr><td>New Mexico regulators have signed off on an agreement brokered by dairy farmers, state officials and environmental groups.</td></tr><tr><td>Settlement talks began earlier this year as regulators prepared for a public hearing to consider changes to New Mexico's dairy regulations.</td></tr><tr><td>Attorney General Hector Balderas says the agreement is critical to southern New Mexico's economy and water quality.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 23:30:03</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411615&ref=rss'>site</a></td><td><table><tr><td>MEXICO CITY (AP) " Mexican authorities said Tuesday they staged 153 raids over the last year on a train known as "La Bestia" that rolled toward the U.S. border crowded with hundreds of Central American migrants.</td></tr><tr><td>Following a big surge in child migrants reaching the U.S. border last year, Mexico's government cracked down on routes commonly used by migrants to travel from Guatemala to the U.S. border.</td></tr><tr><td>While some suspected the first raids on the train in August were merely for show, Vargas said Mexico intends to keep migrants off the boxcars.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 00:43:11</td><td><a href='http://www.sfgate.com/news/world/article/Mexico-raided-migrant-train-153-times-in-last-year-6113080.php'>site</a></td><td>Mexico raided migrant train 153 times in last year</td></tr>
 </table></body></html>

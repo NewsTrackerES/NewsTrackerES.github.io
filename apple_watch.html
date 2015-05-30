@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,12 @@
     <h3>apple watch</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 18:25:24</td><td></td><td><a href='apple_watch_0.html'>Ricky Lea examines Apple's new watch, which could only be bought as a pre-order online, Friday, April 10, 2015, in New York. (122)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-04-04 18:45:27</td><td></td><td><a href='apple_watch_23.html'>ZURICH - Apple is not able to launch its new smartwatch in Switzerland until at least the end of this year because of an intellectual property rights issue, Swiss broadcaster RTS reported on its website. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 18:16:01</td><td></td><td><a href='apple_watch_6.html'>According to the poll, adults aged between 30 and 39 were the most likely buyers, with 13 percent saying they planed to buy an Apple Watch, followed by 10 percent of 18-to-29-year-olds. (90)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-25 02:02:33</td><td></td><td><a href='apple_watch_3.html'>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging. (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-29 20:51:03</td><td></td><td><a href='apple_watch_4.html'>(Reuters) - Apple Inc (AAPL.O) has found defects with the Apple watch, the Wall Street Journal reported, citing sources. (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-29 23:11:02</td><td></td><td><a href='apple_watch_5.html'>Report: Defective Component Slowed Apple Watch Rollout (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 07:09:18</td><td></td><td><a href='apple_watch_0.html'>An Apple support article says the watch uses green LED lights paired with light-sensitive photodiodes to detect the amount of blood flowing through the wrist and calculate the frequency of heart beats. (10)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-06 07:02:14</td><td></td><td><a href='apple_watch_21.html'>While fitness trackers typically focus on counting steps, Apple Watch tracks calories burned and minutes of exercise. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-06 12:44:06</td><td></td><td><a href='apple_watch_22.html'>9 2014 file photo, an Apple Watch featuring a Mickey Mouse face is tried out during an event in Cupertino, Calif. (4)</a></td></tr>
 </table></body></html>

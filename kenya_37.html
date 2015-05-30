@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 10:32:59</td><td><a href='http://www.charlotteobserver.com/sports/article20126244.html#storylink=rss'>site</a></td><td><table><tr><td>Kenya's Kandie wins Prague international marathon</td></tr><tr><td>Felix Kipchirchir Kandie of Kenya won the Prague International Marathon on Sunday while Yebrgual Melese of Ethiopia claimed the women's race.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 05:23:25</td><td><a href='http://abcnews.go.com/International/wireStory/thailand-seizes-tons-elephant-tusks-smuggled-kenya-30603868'>site</a></td><td>He said Monday that the ivory was shipped out of Kenya last month and arrived at the Thai port on Saturday.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 06:06:39</td><td></td><td><a href='kenya_37_38.html'>Thailand seized 3 tons of ivory hidden in tea leaf sacks from Kenya in the second-biggest bust in the country's history, one week after the biggest seizure, customs officials said Monday. (4)</a></td></tr>
 </table></body></html>

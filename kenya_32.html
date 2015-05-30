@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 11:38:37</td><td><a href='http://www.sport24.co.za/OtherSport/Athletics/International/Africa-hits-jackpot-at-London-Marathon-20150426'>site</a></td><td>The 28-year-old Tufa won her first major marathon in 2 hours, 23 minutes, 22 seconds, with two-time winner Mary Keitany of Kenya reaching Buckingham Palace 18 seconds later.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 13:06:04</td><td><a href='http://abcnews.go.com/Sports/wireStory/tufa-1st-ethiopian-winner-london-marathon-14-years-30592173'>site</a></td><td>But while Kenya dominated the men's race, a four-year winning streak for the East African nation ended in the women's event.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/26/13/28060AA900000578-0-image-m-10_1430052404036.jpg'></td><td>2015-04-26 13:08:04</td><td><a href='http://www.dailymail.co.uk/sport/othersports/article-3056054/Ethiopian-Tigist-Tufa-wins-London-Marathon-end-four-years-Kenyan-domination.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Ethiopia's Tigist Tufa ended Kenya's domination of the women's race at the Virgin Money London Marathon with a shock victory on Sunday.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-26 13:08:05</td><td><a href='http://www.charlotteobserver.com/sports/article19579680.html#storylink=rss'>site</a></td><td>Eliud Kipchoge of Kenya wins the Men's race in the 35th London Marathon, Sunday, April 26, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297695976463_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-05-04 13:06:49</td><td><a href='http://www.torontosun.com/2015/05/04/no-room-for-gays-in-kenya-says-deputy-president'>site</a></td><td><table><tr><td>NAIROBI - Kenya's deputy president has said there is "no room" for homosexuality in Kenyan society, the latest comments from an African government to anger activists and likely also to annoy Western donors who say gays are targetted on the continent.</td></tr><tr><td>"Kenya's deputy president joins an important tradition by Africans in power to spread hate in church on a Sunday," Binyavanga Wainana, a prominent Kenyan writer who is openly gay, said on his Twitter account.</td></tr><tr><td>Last week, Kenya's High Court ruled that a prominent gay rights group could register as a non-governmental organisation after a board overseeing such applications refused its request.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 13:17:25</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3067255/No-room-gays-Kenya-says-deputy-president.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"The Republic of Kenya is a republic that worships God. We have no room for gays and those others," Ruto told a Nairobi church congregation in the national Swahili language, according to an online video posted by Kenyan broadcaster KTN.</td></tr>
 </table></body></html>

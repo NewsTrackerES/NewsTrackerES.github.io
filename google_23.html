@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 18:44:58</td><td><a href='http://abcnews.go.com/Health/wireStory/tag-heuer-make-smartwatches-google-intel-29758745'>site</a></td><td>Tag Heuer to Make Smartwatches With Google and Intel</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 19:15:34</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11420300&ref=rss'>site</a></td><td><table><tr><td>NEW YORK (AP) " Watch out Apple: Swiss company Tag Heuer is developing its own smartwatch with tech rivals Google and Intel.</td></tr><tr><td>It will run Google Inc.'s Android Wear system, which is already used in smartwatches by Motorola, Sony, LG and others.</td></tr><tr><td>Tag Heuer, Google and Intel made the announcement at Baselworld, a watch and jewelry trade show in Switzerland.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-27 10:37:37</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014439/Google-loses-appeal-bid-suing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>They accuse Google of collecting private information without their knowledge and consent by the use of "cookies" - a small string of text saved on the user's device.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 16:55:00</td><td></td><td><a href='google_23_24.html'>A High Court judge previously rejected an attempt by Google to block the litigation, and today three appeal judges upheld his decision, saying the claims "raise serious issues which merit a trial". (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-28 15:02:35</td><td></td><td><a href='google_23_25.html'>The claimants, known as Safari Users Against Google's Secret Tracking, all used Apple's Safari browser and have accused Google of bypassing security settings in order to track their online browsing and target them with adverts. (4)</a></td></tr>
 </table></body></html>

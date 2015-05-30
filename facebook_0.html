@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/1/j/j/x/image.related.articleLeadwide.620x349.gh15sy.png/1431576215064.jpg'></td><td>2015-05-14 04:06:36</td><td><a href='http://www.smh.com.au/world/burundi-takes-to-facebook-to-declare-coup-fanciful-20150514-gh15sy.html'>site</a></td><td><table><tr><td>Burundi takes to Facebook to declare coup 'fanciful'</td></tr><tr><td>The presidency then issued a statement on Facebook, declaring the coup to be "fanciful" and announcing those responsible would be arrested and face justice.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-04-22 20:51:18</td><td><a href='http://www.chron.com/business/technology/article/Still-got-it-Facebook-mobile-ad-revenue-6217266.php'>site</a></td><td>He said Facebook will continue to experiment with apps for mobile.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 08:56:09</td><td></td><td><a href='facebook_0_2.html'>However, Facebook said monthly active users grew 13 percent over a year ago to 1.44 billion, with 87 percent of them accessing its service on smartphones and other mobile devices. (14)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 09:54:56</td><td></td><td><a href='facebook_0_1.html'>As a result, Facebook's operating expenses rose 83% in the first quarter as R&D costs jumped 133% and marketing and sales spending nearly doubled. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td><a href='http://www.reuters.com/article/2015/04/23/us-facebook-video-idUSKBN0NE1N520150423?feedType=RSS&feedName=businessNews'>site</a></td><td>As YouTube marks tenth year, Facebook emerges as video threat</td></tr>
 </table></body></html>

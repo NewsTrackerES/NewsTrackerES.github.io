@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_or_microsoft_2_3.html'>Bromwich said Apple was making progress before significant setbacks arose since October. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_or_microsoft_2_4.html'>He said Apple's cooperation with his team deteriorated as the company rejected requests to interview business personnel, refused to turn over certain documents and information and only let Bromwich's team look at a small sample of training sessions. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 22:41:09</td><td><a href='http://www.seattlepi.com/business/technology/article/Monitor-Apple-antitrust-cooperation-sharply-6204962.php'>site</a></td><td>Apple's program still lacked an independent antitrust compliance officer and adequate board oversight, he said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0319/20150319__0320apple~4_300.JPG'></td><td>2015-04-17 00:35:20</td><td><a href='http://www.mercurynews.com/business/ci_27930471/court-monitor-apple-antitrust-cooperation-has-declined?source=rss'>site</a></td><td>Since then, he said, "Apple's communications with us reverted to the more adversarial tone taken in the first few months of the monitorship, including attempts to prescribe and limit how the monitor should conduct his reviews and write his reports."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-28 14:38:29</td><td></td><td><a href='apple_or_microsoft_2_5.html'>NEW YORK (AP) - A federal appeals panel has refused to disqualify a court-appointed monitor after a judge found Apple colluded with book publishers in 2010 to raise electronic book prices. (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 04:26:41</td><td></td><td><a href='apple_or_microsoft_2_3.html'>While releasing few details, Apple said it will work with the World Wildlife Fund on an effort to get up to 1 million acres of Chinese commercial timberland certified as being managed under sustainable environmental practices. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 04:26:41</td><td><a href='http://www.sfgate.com/business/energy/article/Apple-steps-up-efforts-to-go-green-in-China-6254843.php'>site</a></td><td>PALO ALTO, California (AP) - Apple says it's boosting efforts to go green in China by partnering with conservationists to promote sustainable forestry for paper production.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-04-07 07:36:39</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/07/obama-presents-climate-change-as-hazard-to-your-health'>site</a></td><td><table><tr><td>Obama on Tuesday was to announce a series of steps that private entities like Google and Microsoft are taking to better prepare the nation's health systems for the inevitable effects of a warmer, more erratic climate.</td></tr><tr><td>Google's camera cars that gather photos for its "Street View" function will start measuring methane emissions and natural gas leaks in some cities this year.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/google650afp3.jpg&size=104x59&quality=85'></td><td>2015-03-31 02:35:15</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/30/22318121-relaxnews.html?cid=rsstechnology'>site</a></td><td>Google said Monday it was updating its mobile Gmail app for Android device users to allow them to manage multiple e-mail accounts from a single program.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 11:25:55</td><td><a href='http://www.ctvnews.ca/sci-tech/google-unveils-unified-email-for-android-users-1.2305331'>site</a></td><td>Google unveils unified email for Android users</td></tr>
 </table></body></html>

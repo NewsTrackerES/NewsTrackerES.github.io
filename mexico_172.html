@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 18:30:16</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11432824&ref=rss'>site</a></td><td><table><tr><td>Celtics and Kings to play regular-season game in Mexico City</td></tr><tr><td>NEW YORK (AP) " The Boston Celtics will play the Sacramento Kings in Mexico City in December, the NBA's third regular-season game in Mexico.</td></tr><tr><td>It will be the league's 22nd game in Mexico overall, the most for any country outside the U.S. and Canada.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 19:00:18</td><td><a href='http://www.charlotteobserver.com/sports/nba/article18508631.html#storylink=rss'>site</a></td><td>"Basketball is more popular than ever, and Global Games Mexico 2015 is part of our ongoing dedication to growing the game around the world," said NBA commissioner Adam Silver in a statement Tuesday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-24 02:07:09</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16086401.html#storylink=rss'>site</a></td><td><table><tr><td>The public works package included more than $6 million for school buses around the state and money for a northeastern New Mexico hospital to make repairs in its emergency department.</td></tr><tr><td>Rep. Debbie Rodella, D-Espanola, examines a proposal during a state capital funding debate on the New Mexico House floor at the capitol in Santa Fe Saturday, March 21, 2015.</td></tr><tr><td>The New Mexico Legislature wrapped up Saturday with dozens of bills languishing amid partisan fighting.</td></tr></table></td></tr>
 </table></body></html>

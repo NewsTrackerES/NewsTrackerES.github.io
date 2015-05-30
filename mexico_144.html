@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 15:46:19</td><td></td><td><a href='mexico_144_145.html'>ALBUQUERQUE, N.M. (AP) - New assessment tests that have angered parents and teachers across the nation prompted walkouts Monday by hundreds of high school students in New Mexico who had been set to take the exams. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 19:48:03</td><td><a href='http://www.usnews.com/news/us/articles/2015/03/02/new-mexico-students-walk-out-over-new-tests-contested-in-us'>site</a></td><td>Things went fairly smoothly for the thousands of New Mexico students who did take the test, although some computer glitches were reported, state officials said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 01:08:15</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3021630/Mexicos-Pemex-fights-fire-oil-platform-300-workers-evacuated.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In 2013, at least 37 people were killed by a blast at Pemex's Mexico City headquarters, and another 26 people died in a fire at a Pemex natural gas facility in northern Mexico in September 2012.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 02:40:04</td><td></td><td><a href='mexico_144_146.html'>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-02 02:40:04</td><td><a href='http://www.reuters.com/article/2015/04/02/us-pemex-fire-idUSKBN0MS4MU20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Pemex has had a number of accidents in recent years and the latest one comes as Mexico seeks to lure private investors to revive its flagging oil industry.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:30:19</td><td></td><td><a href='mexico_144_145.html'>MEXICO CITY (AP) - An accident on an oil maintenance platform Tuesday killed two workers and injured another in the Gulf of Mexico, state oil company Petroleos Mexicanos reported. (13)</a></td></tr>
 </table></body></html>

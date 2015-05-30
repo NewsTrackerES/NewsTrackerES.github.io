@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/30/22316876-relaxnews.html?cid=rsstechnology'>site</a></td><td>Apple trade-ins open up to Android, BB, Windows phones</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 19:35:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-04-29-US--Microsoft-Big%20Show/id-d8e98730eea64f39aeb16b6e8872c7b5'>site</a></td><td>Microsoft opens Windows 10 to Apple, Android apps</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 20:35:17</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/29/microsoft-makes-its-case-for-windows-10'>site</a></td><td><table><tr><td>Today, after losing ground to smartphones and tablets that run software from rivals Apple and Google, Microsoft wants to make Windows 10 the universal software for PCs, phones and other Internet-connected gadgets.</td></tr><tr><td>Microsoft's move to help developers adapt their Apple and Android apps for Windows 10 is a major change from the past, when each company maintained rigid differences in their software platforms.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww4.hdnux.com/photos/36/07/57/7896027/3/gallery_thumb.jpg'></td><td>2015-04-29 20:35:17</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-makes-its-case-for-Windows-10-6230616.php'>site</a></td><td><table><tr><td>SAN FRANCISCO (AP) - Microsoft hopes to get more people using the next version of its Windows software on all kinds of devices, by giving them access to many of the same apps they're already using on Apple or Android phones.</td></tr><tr><td>Currently, there are more than 1.4 million apps for Android phones and about the same for Apple devices, while there are only a few hundred thousand apps that work on Windows phones and tablets.</td></tr></table></td></tr>
+</table></body></html>

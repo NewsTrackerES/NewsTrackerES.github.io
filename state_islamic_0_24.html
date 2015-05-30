@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/reroPigniebTKgXeonWn.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f75788f2fddfb8096f0f6a7067008e28.jpg'></td><td>2015-03-03 15:38:49</td><td><a href='http://news.yahoo.com/general-8-500-islamic-state-fighters-killed-iraq-153849879.html'>site</a></td><td>Austin made the remarks in his prepared statement at a hearing on President Barack Obama's request for new legal authority to execute the military campaign against the Islamic State.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150325&t=2&i=1035308908&w=580&fh=&fw=&ll=&pl=&r=LYNXMPEB2O0ZH'></td><td>2015-03-25 18:52:16</td><td><a href='http://www.reuters.com/article/2015/03/25/us-afghanistan-usa-idUSKBN0ML27220150325?feedType=RSS&feedName=worldNews'>site</a></td><td>Lawmakers also are considering President Barack Obama's request for authorization of his military campaign against Islamic State, which has met stiff resistance on Capitol Hill.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040090921&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0NN'></td><td>2015-04-13 16:25:11</td><td><a href='http://www.reuters.com/article/2015/04/13/us-mideast-crisis-congress-idUSKBN0N41Q320150413?feedType=RSS&feedName=politicsNews'>site</a></td><td>WASHINGTON (Reuters) - U.S. President Barack Obama's request for congressional authorization of military force to fight the Islamic State does not have enough support to pass the U.S. House of Representatives, the chamber's second-ranking Republican said on Monday.</td></tr>
+</table></body></html>

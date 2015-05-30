@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/34/10/7717431/3/920x920.jpg'></td><td>2015-03-26 22:30:46</td><td><a href='http://www.sfgate.com/news/world/article/US-denies-young-Mexican-visa-for-transplant-6159768.php'>site</a></td><td>Mexico double-transplant patient eyes US humanitarian entry</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/HoDSw8N7X5K0VpES_H0FXw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/720b41abae6ed20d710f6a706700e4ff.jpg'></td><td>2015-03-26 22:31:04</td><td><a href='http://news.yahoo.com/us-denies-young-mexican-visa-transplant-treatment-us-045647931.html'>site</a></td><td>MEXICO CITY (AP) - A young Mexican man who is urgently trying to travel to the Mayo Clinic for a double-organ transplant has filed a third application for entry into the United States after twice being denied a visa.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 00:31:35</td><td><a href='http://news.yahoo.com/mexico-double-transplant-patient-gets-us-humanitarian-pass-000722575.html'>site</a></td><td>MEXICO CITY (AP) - The U.S. Department of Homeland Security gave a 90-day humanitarian pass to a 20-year-old Mexican man seeking a double heart and liver transplant, his mother said Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 02:33:21</td><td><a href='http://www.chron.com/news/medical/article/2-babies-die-29-sickened-from-bad-vaccines-in-6254645.php'>site</a></td><td><table><tr><td>2 babies die, 29 sickened from bad vaccines in south Mexico</td></tr><tr><td>MEXICO CITY (AP) - Mexico's public health system has suspended infant vaccines and mounted an investigation after two babies died and 29 were sickened in an impoverished community in southern Mexico.</td></tr></table></td></tr>
 </table></body></html>

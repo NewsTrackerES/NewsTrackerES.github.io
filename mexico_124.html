@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 01:08:15</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3021630/Mexicos-Pemex-fights-fire-oil-platform-300-workers-evacuated.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In 2013, at least 37 people were killed by a blast at Pemex's Mexico City headquarters, and another 26 people died in a fire at a Pemex natural gas facility in northern Mexico in September 2012.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 02:40:04</td><td></td><td><a href='mexico_124_126.html'>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-02 02:40:04</td><td><a href='http://www.reuters.com/article/2015/04/02/us-pemex-fire-idUSKBN0MS4MU20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Pemex has had a number of accidents in recent years and the latest one comes as Mexico seeks to lure private investors to revive its flagging oil industry.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:30:19</td><td></td><td><a href='mexico_124_125.html'>MEXICO CITY (AP) - An accident on an oil maintenance platform Tuesday killed two workers and injured another in the Gulf of Mexico, state oil company Petroleos Mexicanos reported. (13)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 02:39:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article19806768.html#storylink=rss'>site</a></td><td><table><tr><td>A freight train struck another train head-on early Tuesday in southeastern New Mexico, killing one crew member on the moving train and injuring a second, a railroad official said.</td></tr><tr><td>An executive of Carlsbad, New Mexico-based Southwestern Railroad's parent company said both victims were Southwestern employees and moving a 79-car train that struck a parked 12-car train that was stationary on the siding and had no crew on board.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/nBPni3F2VQalSQaaALghUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4169ad1e27420213750f6a7067002561.jpg'></td><td>2015-04-29 02:58:00</td><td><a href='http://news.yahoo.com/railroad-freight-train-hits-parked-train-mexico-204138019.html'>site</a></td><td>Jesse T. Coburn III, 48, of Texico, New Mexico, was pronounced dead at the scene, New Mexico State police said.</td></tr>
 </table></body></html>

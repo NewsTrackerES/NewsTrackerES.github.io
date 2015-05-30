@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple watch</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/06/3-reasons-apples-watch-will-or-wont-change-the-game'>site</a></td><td>Is the Apple Watch going to be able to do the same?</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 13:44:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-04-17-US-TEC--Apple%20Watch/id-9bb3cb661ca2401fa63a38a054c5cff9'>site</a></td><td>Don't plan to line up for Apple Watch next week</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-17 17:44:20</td><td><a href='http://www.seattlepi.com/business/technology/article/Don-t-plan-to-line-up-for-Apple-Watch-next-week-6206538.php'>site</a></td><td>SAN FRANCISCO (AP) - If you're planning on buying the new Apple Watch, don't expect to walk into a store and leave with one next week.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/24/article-P-d9ebe874-4bac-4bc9-9f7b-ab331dc82a26-6Y0zPDZNQ-HSK1-759_634x356.jpg'></td><td>2015-04-24 00:01:58</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3053177/Fashion-stores-sell-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Apple Watch buyers will not be able to walk out of an Apple Store with the new wearable when it launches today, but that does not mean you cannot get it elsewhere.</td></tr>
+</table></body></html>

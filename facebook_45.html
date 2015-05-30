@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://resources2.news.com.au/images/2015/04/01/1227287/229222-de6e598c-d7f5-11e4-91d8-f0bc1d307f16.jpg'></td><td>2015-04-01 02:23:00</td><td><a href='http://www.news.com.au/technology/online/a-mothers-public-apology-for-her-daughters-bad-behaviour-towards-a-stranger-at-the-cinemas-goes-viral/story-fnjwnhzf-1227287229330?from=news.com.au_rss'>site</a></td><td><table><tr><td>Facebook apology gripping the world</td></tr><tr><td>Mum Kyesha Smith Wood has been called a great mum after she posted a Facebook apology to a cinema patron on behalf of her daughters.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-05 00:40:54</td><td><a href='http://www.startribune.com/nation/295086541.html'>site</a></td><td>Several technology companies, including Facebook Inc., Google Inc., Yahoo Inc. and Microsoft Corp., are backing a campaign that will be punctuated with (hashtag) LeanInTogether.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/04/f9ad17c54d0cd90a6f0f6a706700b5e6_c0-335-3073-2126_s561x327.jpg?73d7f747f38ce2e9b4a59a94ff7b69f8f36cc1ea'></td><td>2015-03-05 00:47:08</td><td><a href='http://www.washingtontimes.com/news/2015/mar/4/facebook-exec-nba-team-up-to-get-men-to-lean-in-fo/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>Facebook is among a long list of major Silicon Valley companies with a dearth of women in engineering and other technical positions, where the best-paying jobs are found.</td></tr><tr><td>Women hold just 15 to 20 percent of the technology jobs at Google, Apple, Facebook and Yahoo, according to company disclosures made during the past nine months.</td></tr></table></td></tr>
 </table></body></html>

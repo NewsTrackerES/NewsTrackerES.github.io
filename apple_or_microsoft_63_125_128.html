@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 10:25:20</td><td><a href='http://news.yahoo.com/iphone-6s-popularity-drives-apples-china-share-record-095407664.html'>site</a></td><td>SEOUL, South Korea (AP) - A consumer survey showed the popularity of the iPhone 6 has driven Apple's market share in China to its highest ever while Samsung has continued to lose ground.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-06 14:33:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/06/3-reasons-apples-watch-will-or-wont-change-the-game'>site</a></td><td>By comparison, Apple sold 74.6 million iPhones in just the last quarter.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 06:01:01</td><td><a href='http://www.reuters.com/article/2015/03/26/apple-foxconn-idUSL3N0WS1UE20150326?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>Chinese demand for larger-screen iPhones helped fuel Apple's record profit of $18 billion in the final quarter last year.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 20:40:16</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11439631&ref=rss'>site</a></td><td>Apple sold more than 61 million iPhones in the quarter, accounting for more than two-thirds of its $58 billion in revenue for the quarter and the lion's share of its $13.6 billion in profit.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-28 03:15:41</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article19778211.html#storylink=rss'>site</a></td><td>As expected, the numbers were down from the previous quarter, when holiday shoppers bought a record 74 million of Apple's new iPhone 6, 6 Plus and older models.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/yxxpwwTOa0Ik3RVgsgfdVA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-27T203731Z_1_LYNXMPEB3Q0XA_RTROPTP_3_APPLE-IPHONE_original.jpg'></td><td>2015-04-28 07:09:25</td><td><a href='http://finance.yahoo.com/news/china-iphone-sales-boost-apple-051142782.html'>site</a></td><td>Apple's big screen iPhone 6 and 6 Plus have been popular with customers worldwide, helping the company overtake rival Samsung in global smartphone sales last quarter.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-29 01:05:57</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3059997/Chinese-demand-Apples-big-screen-phones-fuel-sales-growth.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In the first three months of the year, for the first time, Apple sold more iPhones in China than in the United States.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/v/u/a/a/image.related.articleLeadwide.620x349.1mvtn5.png/1430274037877.jpg'></td><td>2015-04-29 02:20:42</td><td><a href='http://www.smh.com.au/business/world-business/samsung-overtakes-apple-as-biggest-smartphone-maker-but-profits-slump-20150429-1mvtn5.html'>site</a></td><td>It said Samsung shipped 83.2 million smartphones worldwide and captured 24 per cent market share in the quarter, down from 31 per cent a year earlier, but better than Apple's 18 per cent.</td></tr>
+</table></body></html>

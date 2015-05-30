@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 18:08:18</td><td></td><td><a href='ferguson_0_1.html'>Ferguson crossed for two second-half tries in Monday's 20-12 win over Penrith - his first scores for the club in only his third game since ending his exile from the game following his sacking by Canberra in 2013. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 18:08:18</td><td><a href='http://www.smh.com.au//breaking-news-sport/robinson-pleased-with-ferguson-progress-20150324-3sqml.html'>site</a></td><td>Ferguson spoke on Sunday about his desire to put his wild ways behind him and, with a child on the way, is fully aware of the consequences that will follow should he mess up off the field again.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 00:54:32</td><td></td><td><a href='ferguson_0_2.html'>Sydney Roosters coach Trent Robinson believes Blake Ferguson is mature enough to handle any extra attention that inevitably comes his way in Sunday's NRL showdown with Canberra. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:39:07</td><td><a href='http://www.miamiherald.com/news/nation-world/article14046791.html#storylink=rss'>site</a></td><td><table><tr><td>Giuliani blames Obama for Ferguson shootings, other unrest</td></tr><tr><td>Former New York Mayor Rudolph Giuliani (joo-lee-AH'-nee) says President Barack Obama is to blame for the police shootings in Ferguson, Missouri, and other disturbing events because he sets the tone for the nation.</td></tr></table></td></tr>
 </table></body></html>

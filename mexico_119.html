@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 05:13:52</td><td><a href='http://news.yahoo.com/wrong-kitty-litter-led-radiation-leak-mexico-nuke-051352066.html'>site</a></td><td>New Mexico slapped the Energy Department with $54 million in fines in December for violations of state hazardous waste permits tied to WIPP and the Los Alamos lab.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 23:11:55</td><td></td><td><a href='mexico_119_120.html'>The Energy Department will funnel more than $73 million toward road and water projects around New Mexico as part of a settlement over a radiation leak that forced the indefinite closure of a troubled nuclear waste dump. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 00:02:55</td><td></td><td><a href='mexico_119_121.html'>Department Secretary Ernest Moniz said in a statement that the projects outlined in the settlement will benefit New Mexico communities and will not detract from cleanup at Los Alamos or the Waste Isolation site. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 00:23:34</td><td></td><td><a href='mexico_119_122.html'>The deal struck between the department and New Mexico forgoes fines and instead applies funds to upgrades to federal nuclear facilities and surrounding communities in the state, according to settlement documents. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 19:25:33</td><td><a href='http://abcnews.go.com/International/wireStory/musician-playing-mexico-bar-kidnapped-killed-29653497'>site</a></td><td>A musician was kidnapped early Sunday as he played for a crowd of about 400 people at a bar in northern Mexico, and his dead body was found shortly thereafter, a state official said.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-15 20:25:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417921&ref=rss'>site</a></td><td>Musician playing in Mexico bar is kidnapped, then killed</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:01:22</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-arrests-suspect-forced-prostitution-ring-30707907'>site</a></td><td>Ramirez-Granados was allegedly part of a family group that tricked, threatened, beat and abused at least 25 women from Mexico to force them to work as prostitutes.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 19:06:12</td><td><a href='http://www.startribune.com/world/301922121.html'>site</a></td><td>U.S. Immigration and Customs Enforcement said Thursday that Paulino Ramirez-Granados had been arrested in the small town of Tenancingo in central Mexico.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:20:55</td><td><a href='http://www.utsandiego.com/news/2015/mar/26/2-us-funds-to-invest-900-million-in-mexican-gas/'>site</a></td><td>The Los Ramones pipeline will transport natural gas from Texas to Mexico and is intended to facilitate imports of cheap U.S. gas and lower Mexico's high commercial electricity rates.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:21:12</td><td><a href='http://news.yahoo.com/2-us-funds-invest-900-million-mexican-gas-222112624.html'>site</a></td><td>Mexico built the first part of the Los Ramones project, from the U.S. border to the northern Mexico village of Los Ramones in Nuevo Leon state.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 22:25:30</td><td><a href='http://www.startribune.com/world/297716851.html'>site</a></td><td>MEXICO CITY - Mexico's state-owned petroleum company Pemex has signed an agreement giving two investment funds a 45 percent stake in a natural gas pipeline in exchange for $900 million.</td></tr>
 </table></body></html>

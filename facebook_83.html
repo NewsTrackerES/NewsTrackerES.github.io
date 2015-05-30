@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 11:19:36</td><td><a href='http://www.foxnews.com/us/2015/05/12/mississippi-subway-employee-fired-after-celebrating-hattiesburg-police-deaths/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td><table><tr><td>Mississippi Subway employee fired after celebrating Hattiesburg police deaths on Facebook</td></tr><tr><td>- A Mississippi Subway restaurant employee has been fired after posting a photo on Facebook that appeared to show her in uniform celebrating the killing of two police officers in Hattiesburg.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 18:52:00</td><td></td><td><a href='facebook_83_84.html'>Also designed by Gehry, the two office buildings would total 985,719 square feet and have a similar look, feel and height to the new Facebook building across from its main headquarters. (5)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 18:52:00</td><td><a href='http://www.latimes.com/business/la-fi-tn-facebook-expansion-20150407-story.html?track=rss'>site</a></td><td>Facebook's expansion in Menlo Park, Calif., is showing no signs of slowing down.</td></tr>
 </table></body></html>

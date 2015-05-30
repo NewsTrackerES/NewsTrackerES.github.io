@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-February/nemtsov_memorial_feb._28_2015_0.jpg'></td><td>2015-02-28 13:32:00</td><td><a href='http://www.globalpost.com/dispatch/news/regions/europe/russia/150228/russian-opposition-mourns-murdered-leader-nemtsov'>site</a></td><td>Organizers of Sunday's march were divided after Nemtsov's death over whether to hold the rally or turn it into a demonstration of mourning in central Moscow.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-01 21:34:38</td><td><a href='http://www.torontosun.com/2015/03/01/russians-march-in-memory-of-murdered-putin-critic'>site</a></td><td>Some young people walking in central Moscow asked: "Who is Nemtsov anyway?"</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HE623_nemtso_P_20150302101744.jpg'></td><td>2015-03-02 16:58:22</td><td><a href='http://www.wsj.com/articles/key-witness-to-boris-nemtsovs-murder-didnt-see-killer-1425310506?mod=fox_australian'>site</a></td><td>>>>>Mr. Nemtsov's funeral is scheduled for Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 17:23:27</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/02/polish-top-senator-russia-banned-me-from-nemtsovs-funeral'>site</a></td><td>Bogdan Borusewicz - Poland's leading opposition activist under communism - was to lead a delegation of Polish politicians and lawmakers attending Nemtsov's funeral Tuesday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-02 22:53:13</td><td><a href='http://www.sfgate.com/news/world/article/Polish-top-senator-Russia-banned-me-from-6109975.php'>site</a></td><td>Polish top senator: Russia banned me from Nemtsov's funeral</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/34/77/20/7599138/7/square_gallery_thumb.jpg'></td><td>2015-03-03 13:06:15</td><td><a href='http://www.sfgate.com/news/world/article/EU-condemns-Russia-over-Nemtsov-funeral-bans-6111820.php'>site</a></td><td>EU condemns Russia over Nemtsov funeral bans</td></tr>
 </table></body></html>

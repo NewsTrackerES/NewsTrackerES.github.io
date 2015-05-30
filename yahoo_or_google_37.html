@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 09:20:17</td><td><a href='http://www.startribune.com/world/296842551.html'>site</a></td><td><table><tr><td>Yahoo didn't specify how many people will lose their jobs in China, but pledged to treat all the workers "with respect and fairness."</td></tr><tr><td>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 10:00:32</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420081&ref=rss'>site</a></td><td>The Beijing operation's responsibilities will be shifted to other Yahoo Inc. offices, according to a company statement released late Wednesday.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 19:16:12</td><td><a href='http://abcnews.go.com/Technology/wireStory/yahoo-closing-china-operation-beijing-29747049'>site</a></td><td>Yahoo hired Mayer in July 2012 to engineer a turnaround, but so far she hasn't been able to boost the company's revenue even though advertisers have been shifting more of their spending to the Internet and mobile devices.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 05:46:05</td><td></td><td><a href='yahoo_or_google_37_40.html'>Yahoo has $726 million remaining on previous stock buyback plan, which was approved in 2013 and expires at the end of 2016. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 17:08:00</td><td></td><td><a href='yahoo_or_google_37_39.html'>"Yahoo is amidst a multi-year transformation to return an iconic company to greatness," Mayer said Tuesday in a statement. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 20:24:40</td><td><a href='http://www.bbc.co.uk/news/business-32406831#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Yahoo earnings miss expectations</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-04-21 20:26:03</td><td><a href='http://finance.yahoo.com/news/yahoos-quarterly-revenue-drops-4-201714411.html'>site</a></td><td>Net income attributable to Yahoo fell to $21.2 million, or 2 cents per share, for the quarter ended March 31, from $311.6 million, or 29 cents per share, a year earlier.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 23:10:13</td><td></td><td><a href='yahoo_or_google_37_38.html'>Activist shareholder Starboard Value L.P., which owns a nearly 1 percent stake in Yahoo, has been urging Mayer to slash expenses and spin off the Yahoo Japan stake to lift the company's stock. (26)</a></td></tr>
+</table></body></html>

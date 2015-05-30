@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 09:22:11</td><td><a href='http://news.yahoo.com/anthropologist-criticized-showing-images-mh17-victims-092211159.html'>site</a></td><td>Anthropologist criticized for showing images of MH17 victims</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 09:25:08</td><td><a href='http://www.startribune.com/world/301032591.html'>site</a></td><td>Police criticize anthropologist for showing images of victims of Malaysia Airlines flight MH17</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/3/i/u/x/image.related.articleLeadwide.620x349.142smj.png/1426224034053.jpg'></td><td>2015-03-13 05:20:44</td><td><a href='http://www.smh.com.au/world/mh17-new-evidence-on-downing-of-passenger-plane-over-ukraine-20150313-142smj.html'>site</a></td><td>MH17: New evidence on downing of passenger plane over Ukraine</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/1/s/d/i/a/image.related.articleLeadwide.620x349.1mbksh.png/1427756985859.jpg'></td><td>2015-03-30 23:10:07</td><td><a href='http://www.brisbanetimes.com.au/world/crash-investigators-seek-missile-witnesses-in-malaysia-airlines-flight-mh17-probe-20150330-1mbksh.html'>site</a></td><td><table><tr><td>Crash investigators seek missile witnesses in Malaysia Airlines flight MH17 probe</td></tr><tr><td>Sunflowers grow around the wreckage and debris at the crash site of Malaysia Airlines Flight MH17 near the village of Hrabove (Grabovo), Donetsk region.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ItTUBhYNOr3iR3N2lDGvnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-16T155958Z_1_LYNXMPEB3F0UW_RTROPTP_2_UKRAINE-CRISIS-MH17-INVESTIGATION.JPG'></td><td>2015-04-16 15:59:58</td><td><a href='http://news.yahoo.com/dutch-shift-focus-mh17-crash-investigating-culprits-155958674--finance.html'>site</a></td><td><table><tr><td>Dutch shift focus in MH17 crash to investigating culprits</td></tr><tr><td>Malaysia Airlines Flight MH17 was shot down over rebel-held territory in eastern Ukraine on July 17, and all 298 aboard were killed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 21:01:32</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3042551/Dutch-team-finds-remains-Ukraine-MH17-crash-site.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Dutch team finds more remains at Ukraine MH17 crash site</td></tr><tr><td>Dutch investigators have recovered more body parts at the MH17 plane crash site in Ukraine after searching a location that was previously inaccessible, the Netherlands announced on Thursday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47071496,width-300,resizemode-4/mh-17.jpg'></td><td>2015-04-27 12:48:25</td><td><a href='http://timesofindia.indiatimes.com/world/europe/Germany-knew-Ukraine-flight-dangers-before-MH17-crash-Reports/articleshow/47071475.cms'>site</a></td><td>Wreckage of the MH17 aircraft.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/13/213493F500000578-3057371-image-a-18_1430136345071.jpg'></td><td>2015-04-27 13:31:37</td><td><a href='http://www.dailymail.co.uk/news/article-3057371/Germany-told-risk-flying-Ukraine-just-flight-MH17-shot-FAILED-pass-warning.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Germany was told of risk of flying over Ukraine just before flight MH17 was shot down</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-30 13:52:56</td><td><a href='http://www.news24.com/World/News/Search-of-Ukraine-MH17-crash-site-over-20150430'>site</a></td><td>The Hague - Dutch and international investigators have finished recovering human remains and wreckage from the MH17 plane crash site in eastern Ukraine, the mission's head said on Thursday.</td></tr>
 </table></body></html>

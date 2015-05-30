@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone or volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:25:00</td><td></td><td><a href='cyclone_or_volcano_29_30.html'>Cyclone Pam hits small Pacific nation of Vanuatu (39)</a></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/jERgZFDrel8zQP.5HvF2AA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T181704Z_1_LYNXMPEB2N0XF_RTROPTP_2_WEATHER-VANUATU-CYCLONE.JPG.cf.jpg'></td><td>2015-03-15 00:18:32</td><td><a href='http://news.yahoo.com/devastating-storm-pounds-pacific-island-vanuatu-235637066.html'>site</a></td><td>Fiji Weather Service meteorologist Neville Koop said the cyclone was weakening as it slowly moved away from Vanuatu, and would pass between Fiji and New Caledonia before brushing the North Island of New Zealand on Monday.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/r/4/1/image.related.articleLeadwide.620x349.144nhi.png/1426410648246.jpg'></td><td>2015-03-15 09:10:57</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-it-was-like-a-velociraptor-as-australians-survive-vanuatu-cyclone-20150315-144nhi.html'>site</a></td><td><table><tr><td>They face long queues, piles of debris and patchy phone reception - but two Australian television producers are thankful they survived Tropical Cyclone Pam in one piece.</td></tr><tr><td>While the worst of the storm lasted for just twelve hours, the cyclone has left a lasting mark on the people and infrastructure of Vanuatu, Mr Ang told Fairfax Media while he queued for petrol on the Kumul Highway.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-16 02:30:26</td><td></td><td><a href='cyclone_or_volcano_29_31.html'>A: "This is a very devastating cyclone in Vanuatu. I term it as a monster, a monster. It's a setback for the government and for the people of Vanuatu. After all the development that has taken place, all this development has been wiped out. So it means we will have to start anew again." (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-19 04:38:00</td><td><a href='http://www.dw.de/great-barrier-reef-region-braces-for-cyclone-nathan/a-18324391?maca=en-rss-en-world-4025-rdf'>site</a></td><td><table><tr><td>Great Barrier Reef region braces for Cyclone Nathan</td></tr><tr><td>Northeastern Australia has battened down the hatches as it prepares for a strong cyclone forecast to hit coastal areas north of Cairns.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 06:16:16</td><td></td><td><a href='cyclone_or_volcano_29_33.html'>With power, phones and Internet still down across much of the country, officials faced logistical headaches in sorting out where to send supplies, particularly in Tanna Island, which was hit hard by Cyclone Pam's 168mph winds. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31078977.ece/6c0ef/ALTERNATES/h342/PANews%20BT_P-0b0c985e-58e1-4edc-b7b5-a39a1102574f_I1.jpg'></td><td>2015-03-19 06:16:16</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/cyclone-survivors-desperate-for-aid-31078978.html'>site</a></td><td>Many locals rode out the cyclone in larger buildings such as schools and churches - a practice that relief groups have impressed upon Vanuatuans as a life-saving measure during storms.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-20 05:45:03</td><td><a href='http://www.ctvnews.ca/world/thousands-wait-for-relief-in-vanuatu-as-death-toll-hits-13-1.2289009'>site</a></td><td>The cyclone wiped out gardens, killed livestock and contaminated the water supply in many areas, and agricultural experts estimate that those displaced by the storm will run out of food in less than a week.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://l.yimg.com/bt/api/res/1.2/L230lz2zUfe7TQnMdx.qCg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T101633Z_1_LYNXMPEB2J0EV_RTROPTP_2_WEATHER-VANUATU-CYCLONE.JPG'></td><td>2015-03-20 10:11:05</td><td><a href='http://news.yahoo.com/week-vanuatu-cyclone-homeless-still-await-help-101105814.html'>site</a></td><td>"People came in on the evening of the cyclone with their own food, water and whatever they need for the night of the cyclone," Regina said.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-20 16:00:32</td><td></td><td><a href='cyclone_or_volcano_29_34.html'>Aid agencies, many of which were active in Vanuatu before the cyclone, have arrived in sometimes overwhelming numbers. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-20 16:00:32</td><td></td><td><a href='cyclone_or_volcano_29_32.html'>The agencies do much-needed work by getting supplies to those affected by the cyclone. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-20 16:00:32</td><td><a href='http://www.utsandiego.com/news/2015/mar/20/5-things-to-know-about-vanuatus-devastating/'>site</a></td><td>The cyclone has knocked down fruit-bearing trees and destroyed crops across the country.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/quVMHU9aHyVbPneiKj3ZOw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1882af54b94b4c0c710f6a70670089f9.jpg'></td><td>2015-03-20 16:00:47</td><td><a href='http://news.yahoo.com/5-things-know-vanuatus-devastating-cyclone-160047169.html'>site</a></td><td>Cyclone Pam transformed much of Vanuatu from a tropical green to a dirty brown overnight, as coconut trees were stripped of their foliage and snapped like matchsticks and even some mighty banyan trees were toppled.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150324&t=2&i=1035004509&w=580&fh=&fw=&ll=&pl=&r=LYNXMPEB2N0XF'></td><td>2015-03-24 18:17:04</td><td><a href='http://www.reuters.com/article/2015/03/24/us-weather-vanuatu-aid-unappeal-idUSKBN0MK2AE20150324?feedType=RSS&feedName=environmentNews'>site</a></td><td>U.N. targets shelter, water in $29.9 million appeal for cyclone-hit Vanuatu</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-10 22:12:29</td><td><a href='http://www.utsandiego.com/news/2015/apr/10/un-appeals-for-20-million-for-vanuatu-cyclone/'>site</a></td><td>A U.N. appeal for about $30 million was launched on March 24 to cover the needs of 166,000 cyclone-affected people for three months but Dujarric said that to date donors have given only $10.7 million, just 36 per cent.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 22:12:39</td><td></td><td><a href='cyclone_or_volcano_29_35.html'>The cyclone's winds of 270 kilometers (168 miles) per hour devastated much of the archipelago on March 13, killing 17 people and leaving about 65,000 homeless. (2)</a></td></tr>
+</table></body></html>

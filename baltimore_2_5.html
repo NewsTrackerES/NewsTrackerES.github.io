@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/35/55/25/7787849/3/628x471.jpg'></td><td>2015-04-09 07:23:18</td><td><a href='http://www.seattlepi.com/business/technology/article/Baltimore-police-often-surveil-cellphones-amid-US-6188354.php'>site</a></td><td><table><tr><td>BALTIMORE (AP) - The Baltimore Police Department has an agreement with the U.S. government to withhold certain information about secretive cellphone surveillance technology from the public and even the courts, according to a confidential agreement obtained by The Associated Press.</td></tr><tr><td>The Baltimore police entered into an agreement with the Justice Department in 2011, which calls for the department to withhold information about the device in "press releases, court documents, during judicial hearings or during other public forums and proceedings."</td></tr><tr><td>In practice, Baltimore police officers are interpreting the non-disclosure agreement as instructing them to withhold evidence from the court, and ignore subpoenas relating to the technology.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:00:53</td><td><a href='http://www.foxnews.com/us/2015/04/21/report-video-show-baltimore-man-who-died-spinal-injury-was-arrested-without/arrested-without/'>site</a></td><td>"This is a very, very tense time for Baltimore City."</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-28 23:42:16</td><td><a href='http://abcnews.go.com/US/wireStory/things-city-baltimore-30658264'>site</a></td><td>Baltimore was once a prosperous city, celebrated by journalist H.L. Mencken.</td></tr>
 </table></body></html>

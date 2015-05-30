@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 07:55:57</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-06-ML--Emirates-Supporting%20Egypt/id-19a0a248fd2b476182da6db157c715c3'>site</a></td><td>In this Wednesday, March 5, 2015 photo, Egyptians walk in front of Sheikh Zayed Al Nahyan hospital in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-10 17:42:48</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/10/egypt-conference-to-tell-world-egypt-is-ready-for-investment'>site</a></td><td>FILE - In this Feb. 11, 2015 file photo, young students walk to their homes during a sandstorm in 6 October city, a suburb southwest of Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/03/10/85/c5/2adf7acae8d24bbd99a1031b558e2a6d-e69ba9f4a542458b8e0c70f152f9a0fb-0.jpg'></td><td>2015-03-10 17:42:48</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/egypt-conference-to-tell-world-egypt-is-ready-for-/nkSGc/'>site</a></td><td><table><tr><td>FILE - In this Dec. 6, 2010 file photo, tourists perform their exercises on the sandy beach, at the Egyptian Red Sea resort of Sharm el-Sheikh, Egypt.</td></tr><tr><td>FILE - In this March 5, 2015 file photo, a homeless Egyptian child sleeps under a bridge in Cairo, Egypt.</td></tr><tr><td>FILE - In this Feb. 3, 2015 file photo, stray dogs rest in front of the Pyramids of Giza on the outskirts of Cairo, Egypt.</td></tr><tr><td>FILE - In this March 4, 2015 file photo, an Egyptian broom vender drives his motorized tricycle in Cairo, Egypt.</td></tr></table></td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>nepal</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 06:29:35</td><td><a href='http://www.foxnews.com/world/2015/04/07/opposition-called-general-strike-shuts-down-nepal-as-protesters-clash-with/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Schools were closed and markets shuttered across Nepal.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 07:42:25</td><td></td><td><a href='nepal_4_5.html'>General strikes are a common tactic for the opposition in Nepal, and it is common for protesters to attack vehicles, shops and businesses that defy the calls to strike. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 04:11:21</td><td></td><td><a href='nepal_4_6.html'>KATHMANDU, Nepal - Life has returned to normal in Nepal after an opposition alliance cut short a crippling general strike over an impasse about how to approve the Himalayan nation's constitution. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 15:22:09</td><td></td><td><a href='nepal_4_5.html'>Thousands of doctors in Nepal stayed away from work at clinics and hospitals Wednesday to support a colleague who has been on a hunger strike for 10 days demanding reforms in medical education and services. (8)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-01 15:22:09</td><td><a href='http://www.charlotteobserver.com/living/health-family/article17079965.html#storylink=rss'>site</a></td><td>Only three of Nepal's 20 medical colleges are run by the government.</td></tr>
 </table></body></html>

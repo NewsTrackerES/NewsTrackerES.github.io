@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 20:40:16</td><td></td><td><a href='apple_or_microsoft_63_125_128.html'>Apple sold more than 61 million iPhones in the quarter, accounting for more than two-thirds of its $58 billion in revenue for the quarter and the lion's share of its $13.6 billion in profit. (8)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 07:09:25</td><td></td><td><a href='apple_or_microsoft_63_125_130.html'>Apple's iPhone sales in China soared, increasing its revenue in the country 71 percent to $16.8 billion, although that was helped by gift-buying for Chinese New Year. (4)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-29 00:09:04</td><td></td><td><a href='apple_or_microsoft_63_125_127.html'>Apple's distribution and marketing in China has now also clicked into place, analysts said. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 01:05:57</td><td></td><td><a href='apple_or_microsoft_63_125_129.html'>Consumer demand for the newest electronics pushed sales in China to 29 percent of total global sales for Apple in the first quarter, compared with 21 percent a year ago. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-27 20:07:06</td><td></td><td><a href='apple_or_microsoft_63_125_126.html'>International Data Corp. is forecasting Android will have a 79 percent share of the smartphone market this year with Apple (iOS) a distant second at 16 percent. (2)</a></td></tr>
+</table></body></html>

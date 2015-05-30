@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/f/p/m/f/image.related.articleLeadwide.620x349.13fpcu.png/1424049691034.jpg'></td><td>2015-02-16 01:21:46</td><td><a href='http://www.smh.com.au/world/catchmeifyoucan-criminal-who-taunted-police-on-facebook-caught-20150216-13fpcu.html'>site</a></td><td><table><tr><td>Catch-me-if-you-can criminal who taunted police on Facebook caught</td></tr><tr><td>London: A wanted criminal who taunted British police on Facebook to "catch me if you can" has been arrested.</td></tr><tr><td>Just hours later a comment appeared, from James' profile, on the force's Facebook page saying: "Haha catch me if you can wont (sic) see me slipping".</td></tr><tr><td>Facebook users took delight at the news - which received more than 600 likes on Gwent Police's page.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/5/22/1432260289783/a29cf511-cfbe-4436-a018-51b3d0f13ee3-300x180.jpeg'></td><td>2015-05-22 02:08:32</td><td><a href='http://www.theguardian.com/world/2015/may/22/russia-will-block-google-twitter-and-facebook-if-they-withhold-blogger-data'>site</a></td><td>A company website that publishes statistics on how Facebook handles data requests shows it rejected both of two Russian government requests for information on its users in 2014.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-22 07:51:37</td><td><a href='http://www.fin24.com/Tech/News/Russia-warns-Google-Twitter-Facebook-on-web-laws-20150522'>site</a></td><td>Moscow - Russia's media watchdog has written to Google, Twitter and Facebook warning them against violating Russian internet laws and a spokesman said on Thursday they risk being blocked if they do not comply with the rules.</td></tr>
 </table></body></html>

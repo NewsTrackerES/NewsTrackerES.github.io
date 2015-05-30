@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 04:01:02</td><td><a href='http://www.utsandiego.com/news/2015/may/16/movie-shot-in-mexico-city-takes-on-trotskys/'>site</a></td><td>MEXICO CITY (AP) - It's a tale of love, betrayal and history's most famous murder by ice pick.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 04:04:25</td><td></td><td><a href='mexico_43_44.html'>In this May 12, 2015 photo, an actor listens to instructions on the set of the movie "El Elegido," or "The Chosen," a film about Trotsky's assassination, in Mexico City. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 09:14:25</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20805510.html#storylink=rss'>site</a></td><td><table><tr><td>A television pilot based on a comic book series about a conflicted preacher in a small Texas town who is inhabited by a powerful entity will be filmed in New Mexico.</td></tr><tr><td>New Mexico Film Office Director Nick Maniatis announced Tuesday that AMC-TV and Sony Pictures Television will produce the pilot "Preacher" in the state May through the beginning of June.</td></tr></table></td></tr>
 </table></body></html>

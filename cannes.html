@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 10,
+            max: 24,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 24 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,14 +48,28 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 22:07:11</td><td></td><td><a href='cannes_1.html'>This year, Dior selected the Palais Bulles owned by fashion designer Pierre Cardin, nestled in the mountain tops outside of Cannes, which plays host to the film festival that kicks off Wednesday. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 12:25:06</td><td></td><td><a href='cannes_6.html'>Members of the media surround workers laying down the red carpet on the steps of the Palais des Festivals ahead of the 68th international film festival, Cannes, southern France, Wednesday, May 13, 2015. (252)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-05-14 12:14:08</td><td></td><td><a href='cannes_29.html'>Hayek exclaimed Thursday morning after it showed for critics at the Cannes Film Festival. (3)</a></td></tr>
-  <tr><td style='display:none'>9</td><td></td><td>2015-05-15 05:58:00</td><td></td><td><a href='cannes_3.html'>Miranda flashes the flesh at Cannes (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-15 19:09:20</td><td></td><td><a href='cannes_0.html'>Huang Bo, Chen Kun, Shu Qi, Angela Baby, and Xia Yu poked fun at one another as they promoted the film in Cannes this week. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-16 13:27:29</td><td></td><td><a href='cannes_2.html'>CANNES, France (AP) - Celebrity-worshipping Cannes got a sobering reminder of fame's dark side Saturday with "Amy," a powerful documentary about the late singer Amy Winehouse. (4)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-17 13:35:06</td><td></td><td><a href='cannes_28.html'>Sylvester Stallone, the artiste, eschews Cannes this year for his exhibit at the Museum of Modern and Contemporary Art in Nice. (4)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-05-19 08:42:53</td><td></td><td><a href='cannes_5.html'>CANNES WATCH: DiCaprio buys $13,600 bag for charity (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-19 13:30:18</td><td></td><td><a href='cannes_30.html'>The rally began in Paris, and went on to Lyon and Milan to arrive at the finish line in Cannes " 1,067 Miles (1,717 km) and five days later. (3)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-24 10:31:33</td><td></td><td><a href='cannes_4.html'>Aggressive gulls have for years been the bane of stars on Cannes' famed Croisette promenade - swooping in to snatch pieces of food, hurting clients, knocking tables over and smashing glasses. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td></td><td>2015-05-11 22:07:11</td><td></td><td><a href='cannes_2.html'>This year, Dior selected the Palais Bulles owned by fashion designer Pierre Cardin, nestled in the mountain tops outside of Cannes, which plays host to the film festival that kicks off Wednesday. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 12:25:06</td><td></td><td><a href='cannes_8.html'>Members of the media surround workers laying down the red carpet on the steps of the Palais des Festivals ahead of the 68th international film festival, Cannes, southern France, Wednesday, May 13, 2015. (203)</a></td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-05-14 12:14:08</td><td></td><td><a href='cannes_32.html'>Hayek exclaimed Thursday morning after it showed for critics at the Cannes Film Festival. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-14 18:30:24</td><td></td><td><a href='cannes_30.html'>CANNES, France (AP) " Harvey Weinstein offered a peek at Quentin Tarantino's film "The Hateful Eight" at the Cannes Film Festival on Thursday as the movie mogul previewed the Weinstein Co.'s upcoming slate. (3)</a></td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-05-15 05:58:00</td><td></td><td><a href='cannes_6.html'>Miranda flashes the flesh at Cannes (2)</a></td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-05-15 13:25:45</td><td></td><td><a href='cannes_7.html'>January's terrorist attack on the Paris offices of satirical magazine Charlie Hebdo continues to cast a shadow over France, and the Cannes Film Festival. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-15 19:09:20</td><td></td><td><a href='cannes_0.html'>Huang Bo, Chen Kun, Shu Qi, Angela Baby, and Xia Yu poked fun at one another as they promoted the film in Cannes this week. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-16 13:27:29</td><td></td><td><a href='cannes_3.html'>CANNES, France (AP) - Celebrity-worshipping Cannes got a sobering reminder of fame's dark side Saturday with "Amy," a powerful documentary about the late singer Amy Winehouse. (4)</a></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-05-16 14:20:14</td><td></td><td><a href='cannes_29.html'>In "Mad Max: Fury Road," which hit theaters this weekend after a wave of critical excitement and a glitzy premiere at the Cannes Film Festival, Hardy is again on the road. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-17 13:35:06</td><td></td><td><a href='cannes_31.html'>Sylvester Stallone, the artiste, eschews Cannes this year for his exhibit at the Museum of Modern and Contemporary Art in Nice. (4)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-18 14:20:10</td><td></td><td><a href='cannes_42.html'>Jeff Koons is about to generate some major cash for AIDS charity amfAR: He's agreed to auction off his massive "Coloring Book" sculpture for the group's annual gala outside Cannes this week. (3)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-18 19:54:47</td><td></td><td><a href='cannes_35.html'>"When I was growing up, everyone's parents got divorced and suddenly came 'Kramer vs. Kramer' or 'Ordinary People, " he told reporters at a Cannes press conference Monday. (3)</a></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-05-19 08:42:53</td><td></td><td><a href='cannes_28.html'>CANNES WATCH: DiCaprio buys $13,600 bag for charity (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-19 13:30:18</td><td></td><td><a href='cannes_41.html'>The rally began in Paris, and went on to Lyon and Milan to arrive at the finish line in Cannes " 1,067 Miles (1,717 km) and five days later. (3)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-05-20 11:56:08</td><td></td><td><a href='cannes_1.html'>It focuses on a handful of victims who were willing to speak on camera, but former Olympic diving champion Greg Louganis, who is in Cannes to support the movie, said this is "the tip of the iceberg in Hollywood." (2)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-05-21 13:04:20</td><td></td><td><a href='cannes_33.html'>MacDowell, who stars in the Hallmark television series "Cedar Cove" and is in this summer's "Magic Mike XXL," was in Cannes as a brand ambassador for L'Oreal. (3)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-05-21 16:25:23</td><td></td><td><a href='cannes_27.html'>That happened to Cannes best actress winner Berenice Bejo, star of "The Artist," who in 2013 had to be flown in at the eleventh hour from Paris. (3)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-21 18:16:00</td><td></td><td><a href='cannes_36.html'>That's not something that can be said about director Gaspar Noe, whose new film "Love" brings graphic sex - in myriad positions and permutations, in twosomes, threesomes and groups - to the Cannes Film Festival. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-21 23:53:06</td><td></td><td><a href='cannes_4.html'>Kloss has been consistently dazzling during the Cannes Film Festival since it began last week, including a standout Oscar de la Renta powder blue embellished mermaid gown at the glitzy de Grisogono party earlier this week. (6)</a></td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-05-22 15:32:35</td><td></td><td><a href='cannes_39.html'>An unofficial part of the Cannes Film Festival, the Palm Dog was founded in 2001 and is judged by a panel of film critics. (2)</a></td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-05-22 15:32:35</td><td></td><td><a href='cannes_40.html'>CANNES, France (AP) - A small white dog named Lucky has taken the award for Cannes' best performance on four legs. (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-24 08:21:32</td><td></td><td><a href='cannes_37.html'>The actor and director met at Cannes in 2012, when a jury headed by Roth awarded a prize to Franco's "After Lucia." (5)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-24 10:31:33</td><td></td><td><a href='cannes_26.html'>Aggressive gulls have for years been the bane of stars on Cannes' famed Croisette promenade - swooping in to snatch pieces of food, hurting clients, knocking tables over and smashing glasses. (2)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-05-24 11:40:28</td><td></td><td><a href='cannes_34.html'>A person poses for a photograph with a box containing the Palme d'Or award, which will be presented on Sunday, at the 68th international film festival, Cannes, southern France, Saturday, May 23, 2015. (2)</a></td></tr>
 </table></body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/840/news/world/article24589846.ece/ALTERNATES/w220/web-mexico-tornado-0525'></td><td>2015-05-25 15:47:52</td><td><a href='http://www.theglobeandmail.com/news/world/tornado-kills-10-people-in-mexican-city-on-border-with-texas/article24589483/?cmpid=rss1'>site</a></td><td>A tornado raged through a Mexico border city early Monday, destroying homes, flinging cars like matchsticks and ripping an infant from its mother's arms.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/K8RzxmpP4CfhV5XkZ2mF9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/85b8cd4a31286d17770f6a706700c2d9.jpg'></td><td>2015-05-25 19:01:01</td><td><a href='http://news.yahoo.com/latest-weather-more-rain-store-memorial-day-061533025.html'>site</a></td><td>A tornado raged through the northern Mexico border city of Ciudad Acuna early Monday, killing at least 10 people, destroying homes and upending cars and other vehicles.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/36/52/62/8039552/5/square_gallery_thumb.jpg'></td><td>2015-05-25 19:04:35</td><td><a href='http://www.sfgate.com/news/texas/article/Deadly-storms-swamp-Plains-Midwest-force-Texans-6284771.php'>site</a></td><td>A bulldozer cleans up debris after a powerful tornado swept past in Ciudad Acuna, northern Mexico, Monday, May 25, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/9/v/r/h/image.related.articleLeadwide.620x349.gh9vbl.png/1432619221103.jpg'></td><td>2015-05-26 04:25:50</td><td><a href='http://www.smh.com.au/world/mexico-hit-by-tornado-floods-leaving-13-dead-20150526-gh9vbl.html'>site</a></td><td>Mexico City: A tornado ripped into a town in northern Mexico, killing at least 13 people and flattening hundreds of homes in a deadly six-second blast of carnage.</td></tr>
+</table></body></html>

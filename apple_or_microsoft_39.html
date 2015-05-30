@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 01:52:32</td><td><a href='http://www.washingtontimes.com/news/2015/mar/3/freak-attack-flaw-affected-apple-android-browsers/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>SAN FRANCISCO (AP) - Millions of people may have been left vulnerable to hackers while surfing the web on Apple and Google devices, thanks to a newly discovered security flaw known as "FREAK attack."</td></tr><tr><td>Apple Inc. and Google Inc. both said Tuesday they have created software updates to fix the "FREAK attack" flaw, which derives its name from an acronym of technical terms.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 02:45:04</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411718&ref=rss'>site</a></td><td>Apple said its fix will be available next week and Google said it has provided an update to device makers and wireless carriers.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/277_QpkpICSk6Dpg1_8HJQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-us/homerun/video.wpvi.abc.news.com/155fbed42b9a05e46ddb90734fe95cac'></td><td>2015-03-04 03:35:30</td><td><a href='http://news.yahoo.com/apple-android-browsers-vulnerable-freak-033530839.html'>site</a></td><td>Apple, Android browsers vulnerable to 'FREAK attack'</td></tr>
+</table></body></html>

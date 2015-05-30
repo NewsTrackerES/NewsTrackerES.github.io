@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:58</td><td><a href='http://www.cbsnews.com/news/elizabeth-warren-hillary-clinton-2016-politics-middle-class/'>site</a></td><td>Elizabeth Warren has little to say about Hillary Clinton in 2016</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://edition.cnn.com/2015/04/16/politics/hillary-clinton-elizabeth-warren-time-100/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-16 11:43:50</td><td><a href='http://edition.cnn.com/2015/04/16/politics/hillary-clinton-elizabeth-warren-time-100/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>Clinton also made Time's 100 list.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 13:42:41</td><td><a href='http://www.theguardian.com/us-news/2015/apr/16/hillary-clinton-praises-elizabeth-warren-time'>site</a></td><td>Hillary Clinton praises Elizabeth Warren in Time's most influential list</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/11/5f2df87a43b15c10730f6a706700a8c5_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-11 14:32:42</td><td><a href='http://www.utsandiego.com/news/2015/apr/11/potential-dem-rivals-to-hillary-clinton-plug-away/'>site</a></td><td>Potential Dem rivals to Hillary Clinton plug away in Iowa</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 00:01:19</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3042813/Hillary-Clinton-heads-New-Hampshire-Iowa-kickoff.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Hillary Clinton heads to New Hampshire after Iowa kickoff</td></tr>
 </table></body></html>

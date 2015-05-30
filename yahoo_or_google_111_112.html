@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/02963/google_2963432b.jpg'></td><td>2015-03-24 13:32:47</td><td><a href='http://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/digital-media/11492051/Silicon-Valleys-Google-turns-to-Wall-Streets-Morgan-Stanley-for-CFO-role.html'>site</a></td><td>Mr Pichette announced his retirement from Google on 10 March.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 13:53:00</td><td><a href='http://www.ctvnews.ca/business/google-says-morgan-stanley-s-ruth-porat-is-its-new-chief-financial-officer-1.2294527'>site</a></td><td>Porat will replace 52-year-old Patrick Pichette, who announced plans to retire from Google about two weeks ago.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 22:10:14</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11422746&ref=rss'>site</a></td><td>The appointment announced Tuesday fills a void that opened earlier this month after Google's CFO of the past seven years, Patrick Pichette, announced his plans to retire.</td></tr>
+</table></body></html>

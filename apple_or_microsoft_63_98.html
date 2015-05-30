@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/2lBDi9KFUffmTJv6t_C6rw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/ea7d17badc314817683bf453968d1a2e'></td><td>2015-03-17 02:18:01</td><td><a href='http://finance.yahoo.com/news/apple-talks-launch-online-tv-021801813.html'>site</a></td><td>Apple is in talks to launch an online TV service, the Wall Street Journal reported late Monday, citing sources familiar with the matter.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/salesforce2.jpg?ve=1&tl=1'></td><td>2015-05-05 19:31:10</td><td><a href='http://www.foxbusiness.com/industries/2015/05/05/report-microsoft-mulling-bid-for-salesforce/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Report: Microsoft Mulling Bid for Salesforce</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/j_bHJQ3.QiL9tyOG6NLkTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T195400Z_1_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 19:54:00</td><td><a href='http://finance.yahoo.com/news/salesforce-shares-spike-report-microsoft-195400225.html'>site</a></td><td><table><tr><td>Salesforce shares spike on report of Microsoft evaluating bid</td></tr><tr><td>Microsoft is evaluating a bid after Salesforce was approached by another potential buyer, Bloomberg reported, citing people with knowledge of the matter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2014/0520/20140520_043710_0521salesforce2_300.jpg'></td><td>2015-05-05 19:55:09</td><td><a href='http://www.mercurynews.com/business/ci_28053191/microsoft-reportedly-considering-bid-salesforce?source=rss'>site</a></td><td><table><tr><td>Microsoft isn't in talks with Salesforce, and no deal is imminent, the people said.</td></tr><tr><td>Still, Redmond, Washington-based Microsoft has long expected it might compete for Salesforce if it was for sale, one of the people said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://wpmedia.business.financialpost.com/2010/06/marc-benioff1.jpg?w=620'></td><td>2015-05-05 20:07:27</td><td><a href='http://business.financialpost.com/fp-tech-desk/microsoft-is-reportedly-evaluating-possible-bid-for-salesforce-com-inc'>site</a></td><td>Microsoft Corp. is evaluating a bid for Salesforce.com Inc., after the cloud software provider was approached by another would-be buyer, people with knowledge of the matter said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-22 18:46:15</td><td><a href='http://www.reuters.com/article/2015/05/22/us-salesforce-com-m-a-microsoft-idUSKBN0O722520150522?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Microsoft, Salesforce talks fell through on pricing: CNBC</td></tr><tr><td>Microsoft Corp (MSFT.O) and Salesforce.com Inc (CRM.N) held "significant talks" this spring but failed to agree on a price, CNBC reported, citing people familiar with the matter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/WnbWaocLNfMYkm4.F4eLEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-22T171417Z_1_LYNXMPEB4L0X9_RTROPTP_3_USA-SALESFORCE-EARNINGS_original.jpg'></td><td>2015-05-22 18:46:15</td><td><a href='http://finance.yahoo.com/news/microsoft-salesforce-held-significant-talks-172813127.html'>site</a></td><td>Microsoft is currently not weighing an offer for Salesforce, Reuters reported this month, citing two people familiar with the matter.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-27 06:22:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16355027.html#storylink=rss'>site</a></td><td><table><tr><td>Aside from highlighting the growth in southeastern New Mexico's oil and gas country, the latest figures suggest a continued trend of New Mexico losing population.</td></tr><tr><td>A portion of southeastern New Mexico's oil patch is again among the top 10 fastest growing areas in the nation, according to new data released Thursday, March 26, 2015 by the U.S. Census Bureau.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 16:34:56</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/25/independent-candidate-rides-hated-of-politics-in-mexico'>site</a></td><td><table><tr><td>"This breath of fresh air could be just the shock the parties need, at least in Nuevo Leon," Luis Carlos Ugalde, former head of the Mexico's national election commission, told local media.</td></tr><tr><td>People are so fed up that parties have trouble giving away pens and T-shirts on the streets, and youthful brigades have organized on the Internet to rip down campaign posters from lampposts and trees in some Mexico City neighborhoods.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/53/44/8042762/7/920x920.jpg'></td><td>2015-05-25 18:29:08</td><td><a href='http://www.sfgate.com/news/crime/article/Independent-candidate-rides-hated-of-politics-in-6285121.php'>site</a></td><td>FILE - In this March 30, 2011 file photo, Jaime Rodriguez, mayor of the Mexican town Villa Garcia, speaks on a cellphone in Monterrey, Mexico, a day after he survived an assassination attempt.</td></tr>
 </table></body></html>

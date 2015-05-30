@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/03/26/7878072/3/square_gallery_thumb.jpg'></td><td>2015-04-26 13:10:17</td><td><a href='http://www.sfgate.com/news/crime/article/Freddie-Gray-protests-turn-violent-in-Baltimore-6224531.php'>site</a></td><td><table><tr><td>Batts said he believes the "very violent agitators" are not from Baltimore.</td></tr><tr><td>"Unfortunately a small group of agitators turned what was otherwise a peaceful demonstration into a violent protest. This is something that's unacceptable to me and everyone who lives in Baltimore," she said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 07:35:00</td><td><a href='http://www.ctvnews.ca/world/questions-raised-about-police-response-to-baltimore-riots-1.2347899'>site</a></td><td>Singh said they will be acting at the direction of Baltimore police.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s1.yimg.com/bt/api/res/1.2/zXxtDDVOOT0sp_TkWCKsgw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3596ccd1f97d8e13750f6a706700ae0e.jpg'></td><td>2015-05-05 04:51:54</td><td><a href='https://news.yahoo.com/fox-anchor-report-police-shooting-error-031755681.html'>site</a></td><td>But Baltimore police denied that a shooting had occurred.</td></tr>
 </table></body></html>

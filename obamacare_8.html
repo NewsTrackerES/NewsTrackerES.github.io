@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>obamacare</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/18/26F50F0F00000578-0-image-m-42_1427223548449.jpg'></td><td>2015-03-24 20:03:43</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3009952/GOP-moves-ahead-budget-plans-eyes-Obamacare-repeal-bill.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"I campaigned ... with my heart and soul to get rid of Obamacare and it's the one shot that we've got to get something on his desk," said Rep.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 21:30:35</td><td></td><td><a href='obamacare_8_11.html'>But Republicans are focused more on repealing so-called "Obamacare" than they are cutting spending elsewhere in the budget and following through on their promise to balance the budget within a decade. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 21:30:35</td><td></td><td><a href='obamacare_8_10.html'>The measure would pave the way to finally deliver a bill to repeal "Obamacare" to the president's desk under special budget rules. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 21:22:20</td><td></td><td><a href='obamacare_8_9.html'>House to adopt compromise GOP budget targeting 'Obamacare' (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 22:12:52</td><td></td><td><a href='obamacare_8_12.html'>It also retains large Obamacare cuts to health care providers such as Medicare Advantage plans even though Republicans criticized the cuts in past campaigns. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/17/gop-set-to-unveil-budget-blueprint-with-cuts-to-safety-net-programs/_jcr_content/image.adapt.480.low.mike_enzi_16mar2015.jpg'></td><td>2015-05-06 02:00:00</td><td><a href='http://america.aljazeera.com/articles/2015/5/5/senate-passes-gop-budget-plan-targeting-obamacare.html'>site</a></td><td>Instead, the "reconciliation" instructions are focused on easing the way to repealing the Affordable Care Act, or "Obamacare."</td></tr>
+</table></body></html>

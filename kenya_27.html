@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-20 20:26:52</td><td><a href='http://time.com/3891265/stone-tools-research-kenya/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+time%2Fscienceandhealth+%28TIME%3A+Top+Science+Stories%29'>site</a></td><td>Oldest Known Stone Tools Discovered in Kenya</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/6/e/p/1/image.related.articleLeadwide.620x349.gh69wu.png/1432171083546.jpg'></td><td>2015-05-21 01:18:14</td><td><a href='http://www.brisbanetimes.com.au/world/oldest-known-stone-tools-found-in-kenya-20150521-gh69wu.html'>site</a></td><td>New York: By taking a wrong turn in a dry riverbed in Kenya, scientists discovered a trove of stone tools far older than any ever found before.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 17:04:33</td><td></td><td><a href='kenya_27_28.html'>The report names the president and his deputy as being among those suspected of planning and financing Kenya's 2007-08 postelection violence in which more than 1,000 people died. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 17:04:33</td><td><a href='http://www.foxnews.com/world/2015/03/26/kenya-president-apologizes-for-past-wrongs-by-his-government-and-previous/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>NAIROBI, Kenya - Kenya's president has apologized to the Kenyan people for past wrongs committed both by his government and past regimes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:04:16</td><td></td><td><a href='kenya_27_29.html'>The government-funded report found that Kenya's second and third presidents, Daniel Arap Moi and Mwai Kibaki, headed governments that were responsible for massacres, economic crimes and grand corruption, among other violations. (2)</a></td></tr>
 </table></body></html>

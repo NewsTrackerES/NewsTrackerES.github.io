@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/5/22/1432260289783/a29cf511-cfbe-4436-a018-51b3d0f13ee3-300x180.jpeg'></td><td>2015-05-22 02:08:32</td><td><a href='http://www.theguardian.com/world/2015/may/22/russia-will-block-google-twitter-and-facebook-if-they-withhold-blogger-data'>site</a></td><td>A company website that publishes statistics on how Facebook handles data requests shows it rejected both of two Russian government requests for information on its users in 2014.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-22 07:51:37</td><td><a href='http://www.fin24.com/Tech/News/Russia-warns-Google-Twitter-Facebook-on-web-laws-20150522'>site</a></td><td>Moscow - Russia's media watchdog has written to Google, Twitter and Facebook warning them against violating Russian internet laws and a spokesman said on Thursday they risk being blocked if they do not comply with the rules.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 14:25:31</td><td></td><td><a href='facebook_51_52.html'>? A Penn State University fraternity was suspended for a year Tuesday after police began investigating allegations that members used a private, invitation-only Facebook page to post photos of nude and partly nude women, some apparently asleep or passed out. (9)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 14:47:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Penn%20State%20Fraternity-Nude%20Photos/id-d6d55327c8124ffbaedd5d4e5664ce47'>site</a></td><td>"The evidence offered by the Facebook postings is appalling, offensive and inconsistent with the university community's values and expectations," Damon Sims, Penn State's vice president for student affairs, said in a news release.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 19:01:24</td><td><a href='http://www.cbsnews.com/news/penn-state-frat-suspended-over-secret-facebook-page/'>site</a></td><td>Police say some Facebook posts also related to hazing and drug deals.</td></tr>
 </table></body></html>

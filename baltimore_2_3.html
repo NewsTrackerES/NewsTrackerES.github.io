@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://assets.rollingstone.com/assets/2014/article/ray-rice-released-by-ravens-suspended-indefinitely-by-nfl-20140908/167577/small_square/100x100-459735313.jpg'></td><td>2015-02-14 19:52:00</td><td><a href='http://www.rollingstone.com/culture/news/ray-rice-apologizes-to-baltimore-for-horrible-mistake-20150214'>site</a></td><td><table><tr><td>The last seven years that my family and I have spent in Baltimore have by far been the best of our lives.</td></tr><tr><td>Thank you, Baltimore Ravens, for all you have done for my family and I.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 20:30:49</td><td><a href='http://www.foxnews.com/us/2015/04/21/justice-department-probes-baltimore-police-custody-death/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>Kim Deachilla, a spokeswoman for the Baltimore Fraternal Order of Police Lodge 3, said a law firm that contracts with the union is representing them.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 19:45:14</td><td><a href='http://www.startribune.com/nation/301316901.html'>site</a></td><td>A statement from the Baltimore Fraternal Order of Police Lodge 3 on Saturday called Batts' comments "politically driven, and in direct contrast to the commissioner's own request not to jump to any conclusions."</td></tr>
 </table></body></html>

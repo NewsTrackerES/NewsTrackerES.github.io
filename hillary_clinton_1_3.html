@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:08:53</td><td><a href='http://www.cbc.ca/news/world/hillary-clinton-promises-to-release-more-emails-1.2982395?cmp=rss'>site</a></td><td>"I want the public to see my email. I asked State to release them," according to the tweet from (at)Hillary Clinton.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/hbsPOb95VlBfE.SRAwiKKg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5d11aab72789d20a6f0f6a706700a14d.jpg'></td><td>2015-03-06 03:19:45</td><td><a href='http://news.yahoo.com/experts-clinton-email-practices-risked-data-disclosures-081106082--election.html'>site</a></td><td>Hillary Clinton email trove reviewed for release, security</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-07 06:20:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11413586&ref=rss'>site</a></td><td>" Was Clinton's email too secret?</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-10 20:16:16</td><td><a href='http://www.npr.org/2015/03/10/392142420/clinton-says-she-didnt-think-private-email-would-be-an-issue?utm_medium=RSS&utm_campaign=us'>site</a></td><td>HILLARY CLINTON: Looking back, it would have been better for me to use two separate phones and two email accounts.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 13:46:16</td><td><a href='http://www.cbsnews.com/news/hillary-clinton-ipad-phone-email-despite-preference-single-device/'>site</a></td><td>Hillary Clinton used her iPad for email at State</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-15 10:58:57</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article18561794.html#storylink=rss'>site</a></td><td>Hillary Clinton Was Asked About Email 2 Years Ago</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 22:01:58</td><td><a href='http://www.cbsnews.com/news/elizabeth-warren-hillary-clinton-2016-politics-middle-class/'>site</a></td><td>Elizabeth Warren has little to say about Hillary Clinton in 2016</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://edition.cnn.com/2015/04/16/politics/hillary-clinton-elizabeth-warren-time-100/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-16 11:43:50</td><td><a href='http://edition.cnn.com/2015/04/16/politics/hillary-clinton-elizabeth-warren-time-100/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>Clinton also made Time's 100 list.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 13:42:41</td><td><a href='http://www.theguardian.com/us-news/2015/apr/16/hillary-clinton-praises-elizabeth-warren-time'>site</a></td><td>Hillary Clinton praises Elizabeth Warren in Time's most influential list</td></tr>
 </table></body></html>

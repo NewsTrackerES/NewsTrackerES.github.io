@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 11,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,15 +48,5 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-03-25 16:43:00</td><td></td><td><a href='one_direction_3_4.html'>One Direction, which is currently on a world tour, said it would continue with the four remaining members and would record a new album later this year. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 16:45:10</td><td></td><td><a href='one_direction_3_5.html'>"I have seen him grow in confidence and I am truly sorry to see him leave. As for One Direction, fans can rest assured that Niall, Liam, Harry and Louis are hugely excited about the future of the band." (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 23:45:48</td><td></td><td><a href='one_direction_3_6.html'>One Direction formed in 2010 after five teenagers - Harry Styles, Liam Payne, Niall Horan, Tomlinson and Malik - auditioned individually for the British TV talent show "The X Factor." (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 23:47:37</td><td></td><td><a href='one_direction_3_7.html'>Zayn Malik delivered a shocker to his fans when he announced he was quitting the chart-topping band One Direction. (20)</a></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/23/26FEA74900000578-0-image-m-40_1427325044207.jpg'></td><td>2015-03-26 01:06:11</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3012044/The-former-Fab-Five-A-look-One-Direction-were.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In the wake of Malik's departure, The Associated Press offers a look at One Direction's best moments in pictures.</td></tr>
-  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/18/26D4A32F00000578-3011374-image-a-35_1427308873799.jpg'></td><td>2015-03-26 02:21:13</td><td><a href='http://www.dailymail.co.uk/tvshowbiz/article-3011645/WATCH-Emotional-Harry-Styles-breaks-tears-stage-Jakarta-just-hours-Zayn-Malik-confirms-quit-One-Direction.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>One Direction added in a second statement released to MailOnline: 'We're really sad to see Zayn go, but we totally respect his decision and send him all our love for the future.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/FUtKDs6EVa_B.ZXYmbxufQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/deb07c46892fcc0d710f6a706700b002.jpg'></td><td>2015-03-26 05:52:26</td><td><a href='http://news.yahoo.com/way-one-direction-maliks-departure-054650179.html'>site</a></td><td>Unlike Van Halen, which started over when it replaced Roth with a new lead singer (Sammy Hagar); or Oasis, which essentially disbanded when Gallagher left, One Direction is all vocalists, making it easier to absorb a loss.</td></tr>
-  <tr><td style='display:none'>8</td><td><img src='http://cdn2.belfasttelegraph.co.uk/entertainment/news/article31098987.ece/428b0/ALTERNATES/h342/PANews%20BT_P-a80b4a47-aec9-4e3d-ace8-7502f268d4b6_I1.jpg'></td><td>2015-03-27 08:31:09</td><td><a href='http://www.belfasttelegraph.co.uk/entertainment/news/zayn-upset-for-one-direction-fans-31098988.html'>site</a></td><td>"I guess what I'm really trying to say is it's far from over. When we very first became successful we all agreed that One Direction had become much bigger than each individual member. That's why I feel like right now it's OK to be sad and upset but I do ask everyone who is a fan of us to please keep your faith in us. I'm sure there's a lot more to come."</td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/27/article-P-a80b4a47-aec9-4e3d-ace8-7502f268d4b6-6XKzz3tC5HSK2-790_634x356.jpg'></td><td>2015-03-27 09:02:14</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014278/Zayn-upset-One-Direction-fans.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The 21-year-old singer posted a heartfelt message on Twitter saying he felt "deeply saddened" but promised there was more to come from One Direction.</td></tr><tr><td>The news has shocked One Direction fans, with charities voicing concern after pictures emerged on social media of some who appeared to have harmed themselves and were asking others to do so.</td></tr></table></td></tr>
-  <tr><td style='display:none'>10</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03272/zayn_3272051b.jpg'></td><td>2015-04-17 19:43:34</td><td><a href='http://www.telegraph.co.uk/news/celebritynews/11546803/Zayn-Malik-shaves-his-head.html'>site</a></td><td>Zayn Malik took a step in a new direction tonight, as he debuted a shaved head hairdo at the Annual Asian Awards in London.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-19 13:53:47</td><td></td><td><a href='one_direction_3_8.html'>One Direction star Louis Tomlinson is taking the first steps to become a music mogul, like his band's mentor Simon Cowell, by launching his own record label. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://jam.canoe.ca/Music/2015/04/19/WEN_wenn21513143.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-19 13:53:47</td><td><a href='http://jam.canoe.ca/Music/2015/04/19/22352711-wenn-story.html?cid=rssentertainmentmusic'>site</a></td><td><table><tr><td>One Direction's Louis Tomlinson launches own record label</td></tr><tr><td>One Direction star Louis Tomlinson is taking the first steps to become a music mogul, like his band's mentor Simon Cowell, by launching his own record label.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-05-04 21:32:49</td><td><a href='http://www.usnews.com/news/technology/articles/2015/05/04/google-tractor-beams-star-wars-universe-into-knowledge-graph'>site</a></td><td>The search engine and the Lucasfilm movie franchise said Monday they have put information from the Star Wars universe into Google's Knowledge Graph, the first time for a fictional universe.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 21:35:20</td><td><a href='http://www.sfgate.com/business/technology/article/Google-tractor-beams-Star-Wars-universe-into-6241594.php'>site</a></td><td>After typing, "Who is Luke's father?" for example, Google now presents the answer, Darth Vader, in a box that offers a short summary with clickable links for more information.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 18:04:21</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-04-02-US--Google-Paying%20For%20Control/id-c5e42ac9271a4cf9bfce8f0b9810639d'>site</a></td><td>Google declined to comment.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 20:46:03</td><td></td><td><a href='google_30_31.html'>Google argued there wouldn't be much difference between the price of "C" and "A" shares because Page and Brin held majority control anyway with the "B" shares. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 21:19:25</td><td></td><td><a href='google_30_32.html'>To settle a class-action lawsuit challenging the split, Google agreed to compensate "C'' shareholders if the average price of "C'' stock fell more than 1 percent below "A'' shares through the first year of trading. (2)</a></td></tr>
 </table></body></html>

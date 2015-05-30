@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:42:36</td><td><a href='http://www.nydailynews.com/news/national/facebook-host-news-new-york-times-buzzfeed-article-1.2160717?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>Facebook to host news from New York Times, BuzzFeed</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-03-24 22:31:36</td><td><a href='http://www.mercurynews.com/business/ci_27777942/facebook-said-talks-publishers-hosting-content?source=rss'>site</a></td><td><table><tr><td>Facebook is in talks with the New York Times, BuzzFeed and National Geographic about hosting their articles or videos directly on the social network, the New York Times reported Monday.</td></tr><tr><td>Last month, Facebook's chief product officer, Chris Cox, said at a media conference that the social network had early conversations with publishers about hosting their content.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 04:17:37</td><td><a href='http://www.startribune.com/facebook-ready-to-test-news-project/303549391/'>site</a></td><td>Publishers have little choice but to cooperate with Facebook, said Vivian Schiller, a former executive at NBC, the New York Times and Twitter who now advises media companies and brands.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-05-13 05:43:42</td><td><a href='http://www.reuters.com/article/2015/05/13/facebook-launch-idUSL3N0Y42NI20150513?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>The news publishers can either sell and embed advertisements in the articles and keep all of the revenue, or allow Facebook to sell ads.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-13 05:45:00</td><td><a href='http://www.huffingtonpost.com/2015/05/13/facebook-instant-articles_n_7271596.html'>site</a></td><td><table><tr><td>(Reuters) - Facebook Inc tied up with nine news publishers to launch "Instant Articles" that will let them publish articles directly to the social network's mobile news feeds.</td></tr><tr><td>"Instant Articles lets them deliver fast, interactive articles while maintaining control of their content and business models," said Facebook Chief Product Officer Chris Cox.</td></tr><tr><td>The other launch partners for Instant Articles are NBC, The Atlantic, The Guardian, BBC News, Spiegel and Bild, Facebook said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://static.ctvnews.ca/bellmedia/common/img/logos/footer-logo_bnn.jpg'></td><td>2015-05-13 11:33:45</td><td><a href='http://www.ctvnews.ca/sci-tech/facebook-works-with-publishers-to-launch-instant-articles-1.2371359'>site</a></td><td>Sharing articles on Facebook's mobile app is more and more common.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,9 @@
     <h3>holmes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 18:04:44</td><td></td><td><a href='holmes_10.html'>Tom Cruise and Katie Holmes are no longer speaking to each other, according to TMZ. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 23:01:30</td><td></td><td><a href='holmes_7.html'>April 5 (Reuters) - Americans Jordan Spieth, J.B. Holmes and Johnson Wagner are headed to a playoff after finishing in a three-way tie at the Houston Open in Texas. (10)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 03:01:45</td><td></td><td><a href='holmes_5.html'>Other winners on the final night were Thomas Fraser-Holmes (men's 400m IM), Keryn McMaster (women's 400m IM), Leiston Pickett (50m breaststroke) and Ben Treffers (50m backstroke). (10)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 18:04:44</td><td></td><td><a href='holmes_11.html'>Tom Cruise and Katie Holmes are no longer speaking to each other, according to TMZ. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-05 23:01:30</td><td></td><td><a href='holmes_6.html'>April 5 (Reuters) - Americans Jordan Spieth, J.B. Holmes and Johnson Wagner are headed to a playoff after finishing in a three-way tie at the Houston Open in Texas. (10)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 03:01:45</td><td></td><td><a href='holmes_5.html'>Other winners on the final night were Thomas Fraser-Holmes (men's 400m IM), Keryn McMaster (women's 400m IM), Leiston Pickett (50m breaststroke) and Ben Treffers (50m backstroke). (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 03:01:48</td><td></td><td><a href='holmes_9.html'>But alarm bells were ringing when Fraser-Holmes remarkably failed to earn a 200m world titles berth after finishing a distant third in the national final. (8)</a></td></tr>
   <tr><td style='display:none'>0</td><td></td><td>2015-04-27 19:14:53</td><td></td><td><a href='holmes_0.html'>Opening statements begin in death penalty trial of Colorado movie theater gunman James Holmes (69)</a></td></tr>
 </table></body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 16:32:55</td><td><a href='http://www.utsandiego.com/news/2015/apr/07/pakistan-judge-orders-former-cia-lawyer-agent-be/'>site</a></td><td>ISLAMABAD (AP) - A judge in Pakistan has ordered a former CIA station chief and a CIA lawyer be charged criminally over America's drone program targeting suspected militants in the country.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 16:32:55</td><td><a href='http://www.sfgate.com/news/world/article/Pakistan-judge-orders-former-CIA-lawyer-agent-be-6183940.php'>site</a></td><td><table><tr><td>Pakistan judge orders former CIA lawyer, agent be charged</td></tr><tr><td>Rizzo was the CIA's acting general counsel overseeing its drone program.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 16:35:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11429224&ref=rss'>site</a></td><td>The CIA's drone strike program killed Pakistani Taliban fighters and other militants hiding in its tribal regions, but caused major anger across Pakistan over civilian casualties from the strikes.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 16:35:45</td><td><a href='http://www.startribune.com/world/298917711.html'>site</a></td><td>ISLAMABAD - A Pakistani judge on Tuesday ordered criminal charges be filed against a former top CIA lawyer who oversaw its drone program and a former station chief in Islamabad over a 2009 strike that killed two people.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 17:54:12</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article17637608.html#storylink=rss'>site</a></td><td>The CIA rarely publicly discusses its drone program.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/9hBcpVm8Kj2YLn0KbePhZQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/7f60c9e79fde000f730f6a7067004b9b.jpg'></td><td>2015-04-07 19:13:41</td><td><a href='http://news.yahoo.com/pakistan-judge-orders-former-cia-lawyer-agent-charged-163114646.html'>site</a></td><td>The legal action comes as the number of CIA drone strikes in Pakistan has fallen precipitously from their 2010 high, amid signs that the U.S. and Pakistan have been more closely cooperating on counterterrorism issues after years of tensions.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-30 07:19:00</td><td><a href='http://www.ctvnews.ca/world/pakistan-drops-case-against-ex-cia-chief-1.2351540'>site</a></td><td><table><tr><td>Pakistan drops case against ex-CIA chief</td></tr><tr><td>ISLAMABAD - Pakistani police dropped a case that was recently registered against a former CIA station chief and a former agency lawyer over a 2009 drone strike that killed two people in a tribal region, police said Thursday.</td></tr><tr><td>The CIA drone strikes have taken out a number of senior al-Qaida and Taliban operatives, but are deeply unpopular in Pakistan because they have also killed civilians.</td></tr></table></td></tr>
+</table></body></html>

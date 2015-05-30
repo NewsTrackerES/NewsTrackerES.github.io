@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 19:03:14</td><td></td><td><a href='mexico_16_17.html'>Mexico marks 6 months since 43 students disappeared (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 20:20:07</td><td><a href='http://news.yahoo.com/mexico-marks-6-months-since-43-students-disappeared-181149584.html'>site</a></td><td>26, to collect money and hijack buses - a common practice - so that they could attend upcoming commemoration events in Mexico City.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 01:26:05</td><td></td><td><a href='mexico_16_18.html'>An emergency worker tries to extinguish a burning passenger van after protesters set it ablaze in the city of Chilpancingo, Mexico, Thursday, March 26, 2015. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:26:35</td><td></td><td><a href='mexico_16_19.html'>MEXICO CITY (AP) - Parents of 43 missing students marked the six-month anniversary of their disappearance with a march of a few thousand supporters Thursday, urging the country not to abandon them but drawing far smaller numbers than rallies last year. (4)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/14/27041D5A00000578-0-image-m-121_1427381409462.jpg'></td><td>2015-03-27 01:26:35</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3013573/Mexico-marks-6-months-43-students-disappeared.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>At the march's conclusion, Maria Elena Guerrero, the mother of a missing student, stood atop a stage and said her pain had turned to fury against Mexico's government in the months since her son disappeared.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/34/10/7717431/3/920x920.jpg'></td><td>2015-03-26 22:30:46</td><td><a href='http://www.sfgate.com/news/world/article/US-denies-young-Mexican-visa-for-transplant-6159768.php'>site</a></td><td>Mexico double-transplant patient eyes US humanitarian entry</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/HoDSw8N7X5K0VpES_H0FXw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/720b41abae6ed20d710f6a706700e4ff.jpg'></td><td>2015-03-26 22:31:04</td><td><a href='http://news.yahoo.com/us-denies-young-mexican-visa-transplant-treatment-us-045647931.html'>site</a></td><td>MEXICO CITY (AP) - A young Mexican man who is urgently trying to travel to the Mayo Clinic for a double-organ transplant has filed a third application for entry into the United States after twice being denied a visa.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 00:31:35</td><td><a href='http://news.yahoo.com/mexico-double-transplant-patient-gets-us-humanitarian-pass-000722575.html'>site</a></td><td>MEXICO CITY (AP) - The U.S. Department of Homeland Security gave a 90-day humanitarian pass to a 20-year-old Mexican man seeking a double heart and liver transplant, his mother said Monday.</td></tr>
 </table></body></html>

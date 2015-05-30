@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 17:27:52</td><td><a href='http://www.reuters.com/article/2015/04/24/us-mexico-archeology-teotihuacan-idUSKBN0NF1US20150424?feedType=RSS&feedName=scienceNews'>site</a></td><td>Difficult to mine and prized for its reflective properties, mercury was rare in ancient Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 17:52:01</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054296/Hunt-ancient-royal-tomb-Mexico-takes-mercurial-twist.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Hunt for ancient royal tomb in Mexico takes mercurial twist</td></tr><tr><td>"It's something that completely surprised us," Gomez said at the entrance to the tunnel below Teotihuacan's Pyramid of the Plumed Serpent, about 30 miles (50 km) northeast of Mexico City.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 21:16:53</td><td><a href='http://news.yahoo.com/blind-vendors-scuffle-mexico-city-police-211653571.html'>site</a></td><td><table><tr><td>Blind vendors scuffle with Mexico City police</td></tr><tr><td>MEXICO CITY (AP) - Blind vendors angry about having their stalls removed from a downtown Mexico City subway station this week clashed with police outside city hall Thursday.</td></tr></table></td></tr>
 </table></body></html>

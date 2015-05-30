@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-26 09:45:39</td><td></td><td><a href='apple_4_5.html'>LONDON (AP) - Apple innovator Jonathan Ive says he's been promoted to the company's chief design officer, making him one of the most powerful people in the world's most valuable company. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-26 10:01:04</td><td><a href='http://www.miamiherald.com/news/business/article22323300.html#storylink=rss'>site</a></td><td>The designer from northeast London has led Apple's design team since the mid-1990s and was considered a confidante of the late Steve Jobs.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 03:52:48</td><td></td><td><a href='apple_4_6.html'>In the memoir, which was released this week, Tim Cook did not miss an opportunity to take a swipe at the unauthorized Steve Jobs biography by Walter Isaacson, which debuted just weeks after the Apple co-founder's death. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 03:52:48</td><td></td><td><a href='apple_4_5.html'>The book, based on numerous in-depth interviews with Jobs' colleagues, friends and competitors, also allows a glimpse into the Apple CEO's inner sanctum in the final weeks of his life. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/569e5f4096a6e55dbb9fd153e9460a7ad730ab76_140x91.jpg'></td><td>2015-03-26 03:52:48</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11423626&ref=rss'>site</a></td><td>In an interesting titbit, the book reveals that Jobs' favorite Beatle was John Lennon, and that he reportedly named his company after Beatles' Apple Corps Record.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_7_8.html'>Bromwich said Apple was making progress before significant setbacks arose since October. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_7_9.html'>He said Apple's cooperation with his team deteriorated as the company rejected requests to interview business personnel, refused to turn over certain documents and information and only let Bromwich's team look at a small sample of training sessions. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 22:41:09</td><td><a href='http://www.seattlepi.com/business/technology/article/Monitor-Apple-antitrust-cooperation-sharply-6204962.php'>site</a></td><td>Apple's program still lacked an independent antitrust compliance officer and adequate board oversight, he said.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0319/20150319__0320apple~4_300.JPG'></td><td>2015-04-17 00:35:20</td><td><a href='http://www.mercurynews.com/business/ci_27930471/court-monitor-apple-antitrust-cooperation-has-declined?source=rss'>site</a></td><td>Since then, he said, "Apple's communications with us reverted to the more adversarial tone taken in the first few months of the monitorship, including attempts to prescribe and limit how the monitor should conduct his reviews and write his reports."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-28 14:38:29</td><td></td><td><a href='apple_7_10.html'>NEW YORK (AP) - A federal appeals panel has refused to disqualify a court-appointed monitor after a judge found Apple colluded with book publishers in 2010 to raise electronic book prices. (8)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:19:11</td><td></td><td><a href='apple_7_9.html'>That's according to proverb-busting research that found daily apple eaters had just as many doctor visits as those who ate fewer or no apples. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 15:19:11</td><td></td><td><a href='apple_7_8.html'>CHICAGO (AP) - An apple a day doesn't necessarily keep the doctor away. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 16:20:29</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3018282/An-apple-day-not-doctor-away-study-says.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>About 9 percent of adults studied ate the equivalent of at least one small apple daily.</td></tr>
 </table></body></html>

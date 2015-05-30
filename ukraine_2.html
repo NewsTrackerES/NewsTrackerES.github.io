@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/vbmz4Dh9_mgDYgOI8UJM4g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/Part-PAR-Par8128391-1-1-0.jpg.cf.jpg'></td><td>2015-03-03 14:52:42</td><td><a href='http://news.yahoo.com/ukraine-hikes-benchmark-interest-rate-30-percent-145218923--finance.html'>site</a></td><td><table><tr><td>Ukraine's central bank has sharply hiked its benchmark rate to 30 percent, from 19.5 percent, as financial authorities seek to reverse the rapid devaluation of the national currency.</td></tr><tr><td>Ukraine's central bank last raised the refinancing rate last month, from 14 percent.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 15:45:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411312&ref=rss'>site</a></td><td>Gontareva has previously projected that inflation in Ukraine this year will reach 26 percent.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/01/26F70FD100000578-0-image-m-79_1427245835598.jpg'></td><td>2015-03-21 09:05:11</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3005297/Georgians-hit-fallout-trouble-Russia-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Georgia's currency, the lari, has lost more than 20 percent of its value against the dollar since August - but Ukraine's hryvnia currency has lost about 60 percent against the dollar and the Russian ruble roughly 50 percent.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-21 09:10:18</td><td></td><td><a href='ukraine_2_3.html'>The 64-year-old woman spends much of her meager pension of 150 lari ($68) a month on medicine and has long lived off selling cheap jewelry at a flea market to tourists, mainly from Russia and Ukraine. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-21 10:10:15</td><td></td><td><a href='ukraine_2_4.html'>As the war in eastern Ukraine, international sanctions against Russia and the sinking price of oil price worldwide have ravaged the economies of those two countries, Georgia has become collateral damage. (3)</a></td></tr>
 </table></body></html>

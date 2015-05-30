@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://resources1.news.com.au/images/2015/05/15/1227355/885809-778194c6-fa84-11e4-8350-bd0ae55feeaa.jpg'></td><td>2015-05-15 01:18:00</td><td><a href='http://www.news.com.au/entertainment/awards/miranda-kerr-flashes-the-flesh-at-the-cannes-film-festival/story-fnil5php-1227355886177?from=public_rss'>site</a></td><td>STARS bring the glamour at the 2015 Cannes Film Festival.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://resources1.news.com.au/images/2015/05/15/1227355/885809-778194c6-fa84-11e4-8350-bd0ae55feeaa.jpg'></td><td>2015-05-15 05:58:00</td><td><a href='http://www.news.com.au/entertainment/awards/miranda-kerr-flashes-the-flesh-at-the-cannes-film-festival/story-fnil5php-1227355886177?from=public_rss'>site</a></td><td>Miranda flashes the flesh at Cannes</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:55:27</td><td><a href='http://www.startribune.com/world/301365651.html'>site</a></td><td>LONDON - The family of Amy Winehouse has criticized a documentary about the late singer that is due to have its premiere at next month's Cannes Film Festival.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/37/17/7992298/5/628x471.jpg'></td><td>2015-05-16 13:27:29</td><td><a href='http://www.seattlepi.com/news/world/article/CANNES-WATCH-Winehouse-documentary-shows-fame-s-6267683.php'>site</a></td><td>The sense that the singer foresaw her fate lends extra poignancy to the film, which is getting its world premiere at a Cannes midnight screening.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww3.hdnux.com/photos/36/37/17/7992298/5/920x920.jpg'></td><td>2015-05-16 13:27:29</td><td><a href='http://www.sfgate.com/news/world/article/CANNES-WATCH-Winehouse-documentary-shows-fame-s-6267683.php'>site</a></td><td>CANNES, France (AP) - Celebrity-worshipping Cannes got a sobering reminder of fame's dark side Saturday with "Amy," a powerful documentary about the late singer Amy Winehouse.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-16 13:27:29</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/16/cannes-watch-winehouse-documentary-shows-fames-dark-side'>site</a></td><td>CANNES WATCH: Winehouse documentary shows fame's dark side</td></tr>
 </table></body></html>

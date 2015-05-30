@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.ctvnews.ca/polopoly_fs/1.2294373!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg'></td><td>2015-03-24 10:58:00</td><td><a href='http://www.ctvnews.ca/world/plane-crashes-in-french-alps-with-150-on-board-1.2294208'>site</a></td><td>Germanwings planes at the airport in Cologne, Germany in 2014.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 18:11:05</td><td><a href='http://www.utsandiego.com/news/2015/apr/12/germanwings-plane-evacuated-after-police-receive/'>site</a></td><td><table><tr><td>Germanwings plane evacuated after police receive bomb threat</td></tr><tr><td>BERLIN (AP) - Germanwings says a plane headed for Milan was evacuated at Cologne-Bonn airport after German police received a bomb threat against the flight.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/FxlXdFMOstT1PcIpSNaLJQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-12T203230Z_3_LYNXMPEB3B0F5_RTROPTP_2_GERMANY-STRIKE-LUFTHANSA.JPG'></td><td>2015-04-12 21:57:58</td><td><a href='http://news.yahoo.com/germanwings-plane-evacuated-bomb-scare-195923947--finance.html'>site</a></td><td>BERLIN (Reuters) - A Germanwings flight bound for Italy from Germany was evacuated late on Sunday due to a bomb threat, the airline said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/3/26/1427355770778/c93a96ae-5466-40e3-bf5e-c2d477cec644-300x180.jpeg'></td><td>2015-03-26 07:12:47</td><td><a href='http://www.theguardian.com/world/2015/mar/26/one-pilot-locked-out-germanwings-planes-cockpit-4u9525-claims-new-york-times'>site</a></td><td>The co-pilot joined Greenwings in September 2013, directly after training, and had flown 630 hours, Lufthansa, the parent airline of Germanwings, said.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/34/33/7718628/3/920x920.jpg'></td><td>2015-03-26 07:55:17</td><td><a href='http://www.sfgate.com/news/world/article/Official-1-pilot-locked-out-of-crash-plane-6159869.php'>site</a></td><td>The captain had more than 6,000 hours of flying time and been Germanwings pilot since May 2014, having previously flown for Lufthansa and Condor, Lufthansa said.</td></tr>
 </table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HHIn5C9f6jD1vKX.tFOtwA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-03-20T093618Z_2_LYNXMPEB2J0CL_RTROPTP_3_UKRAINE-CRISIS-GAS-TALKS_original.jpg'></td><td>2015-03-20 09:36:18</td><td><a href='http://finance.yahoo.com/news/ukraines-naftogaz-transfers-15-million-090958654.html'>site</a></td><td>MOSCOW (Reuters) - Ukraine's state gas company Naftogaz said on Friday that it had paid $15 million to Russia's Gazprom (GAZP.MM) for March gas supplies, Naftogaz said on Friday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-23 12:10:58</td><td><a href='http://news.yahoo.com/ukraine-stop-buying-russian-gas-april-1-energy-121058294--finance.html'>site</a></td><td>On Saturday, he said that Ukraine was confident Russia would have to lower the price it charges Kiev for gas as increased imports from the European Union have greatly reduced Ukraine's reliance on supplies from Gazprom.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/E0M6x0hykWwxdItfKxoeaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-02T045026Z_1_LYNXMPEB3105W_RTROPTP_3_UKRAINE-ENERGY_original.jpg'></td><td>2015-04-02 04:50:26</td><td><a href='http://finance.yahoo.com/news/ukraine-signs-three-month-deal-045026517.html'>site</a></td><td>Apart from the price, the agreement extended all the other terms of the 'winter package' which has just lapsed between Ukraine's state gas concern Naftogaz and Russia's gas giant Gazprom (GAZP.MM), the statement said.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/01/14/2732AABA00000578-0-image-m-83_1427895323124.jpg'></td><td>2015-04-02 07:07:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3022621/Ukraine-says-signs-deal-buy-Russian-gas-lower-price.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Previous gas disputes between Ukraine and Russia have affected European Union markets, where Gazprom covers a third of gas demand.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-10 17:57:39</td><td><a href='http://www.rferl.org/content/ukraine-russia-gas-talks-postponed/26949505.html'>site</a></td><td>Ukraine-Russia Gas Talks Postponed</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-18 06:41:11</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3085939/Ukraines-Naftogaz-transfers-32-mln-Russias-Gazprom-pre-payment-gas.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>KIEV, May 18 (Reuters) - Ukraine's state-run gas company Naftogaz has transferred $32 million to Russia's gas monopoly Gazprom as a further pre-payment for gas deliveries, a spokeswoman for the company said on Monday.</td></tr>
+</table></body></html>

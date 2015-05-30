@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-10 02:12:32</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article13156937.html#storylink=rss'>site</a></td><td><table><tr><td>A Missouri appeals court judge was appointed Monday to take over Ferguson?s municipal court and make ?needed reforms?</td></tr><tr><td>The Missouri Supreme Court said it is assigning state appeals Judge Roy L. Richter to hear all of Ferguson?s pending and future municipal court cases.</td></tr><tr><td>The Supreme Court said it also is assigning staff from the state court administrator?s office to aid Richter in reviewing Ferguson?s municipal court practices.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 00:59:01</td><td><a href='http://abcnews.go.com/US/wireStory/court-report-raises-conflict-interest-concern-ferguson-30968922'>site</a></td><td>After the federal review, the Missouri Supreme Court in March appointed appeals Judge Roy Richter to take over the Ferguson court and asked court administration experts to take a look at how things were working.</td></tr>
+</table></body></html>

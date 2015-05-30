@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 16,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td><a href='http://news.yahoo.com/microsoft-outlines-plan-bridge-xbox-pc-video-gaming-033532212.html'>site</a></td><td><table><tr><td>"Our goal with gaming at Microsoft is to allow people to play games wherever they are," Spencer told game makers Wednesday at the Game Developers Conference.</td></tr><tr><td>Spencer also teased that Microsoft will release an adapter later this year that will allow PCs to use wireless Xbox One controllers.</td></tr><tr><td>Microsoft is investing heavily in training developers on how to create games that work across its platforms this week by sponsoring such GDC sessions as "Developing with Xbox Live for Windows 10" and "Gaming Consumer Experience on Windows 10."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676589440_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 13:09:06</td><td><a href='http://www.torontosun.com/2015/03/18/microsoft-tackles-china-piracy-with-free-windows-10-upgrade'>site</a></td><td><table><tr><td>Microsoft said in January it would offer free upgrades to Windows 10 for users of Windows 7 or later in an attempt to hold onto users and make up for lost revenue by selling services such as Office over the Internet.</td></tr><tr><td>Microsoft is working with Lenovo Group Ltd, the world's biggest PC maker, to help roll out Windows 10 in China to current Windows users, Myerson said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td><a href='http://www.chron.com/business/technology/article/As-Explorer-loses-ground-Microsoft-readies-new-6143211.php'>site</a></td><td>Microsoft has built a new web browser designed for the modern web and mobile devices to go with its new Windows 10 operating system that's coming later this year.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0302/20150302__0303samsung~4.JPG'></td><td>2015-03-23 21:20:24</td><td><a href='http://www.mercurynews.com/business/ci_27770077/microsoft-apps-coming-samsung-phones-tablets?source=rss'>site</a></td><td>Microsoft apps coming to Samsung phones, tablets</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 23:13:00</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>CEO Satya Nadella has been investing in new services and redesigning Microsoft's most popular programs for smartphones and other mobile gadgets.</td></tr><tr><td>And Nadella has taken other steps to get Microsoft's software into the hands of consumers who prefer smartphones and tablets.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-29 10:22:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/29/microsoft-makes-its-case-for-windows-10'>site</a></td><td><table><tr><td>SAN FRANCISCO (AP) - Microsoft figures one way to get people psyched about Windows 10 is to make sure there are plenty of cool features and apps for smartphones and tablets that use the new operating system.</td></tr><tr><td>While Microsoft has already previewed some aspects of the new Windows, a parade of top executives will use Microsoft's annual "Build" conference to demonstrate more software features and app-building tools, with an emphasis on mobile devices as well as PCs.</td></tr><tr><td>But perhaps most importantly, this year's conference is an opportunity for Microsoft to persuade an audience of more than 5,000 techies and independent programmers that it's worth their time to create new apps and programs for Windows 10.</td></tr><tr><td>He said Microsoft has struggled with a "chicken-and-egg" problem, in which developers have been reluctant to build mobile apps for Windows because relatively few people use Windows phones and tablets.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-29 10:22:46</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-makes-its-case-for-Windows-10-6230616.php'>site</a></td><td><table><tr><td>Microsoft hopes it has solved that problem by designing Windows 10 so it's easier for developers to build "universal" apps that work on a variety of Windows devices, from phones to PCs and other gadgets, Gownder said.</td></tr><tr><td>Microsoft has not said exactly when Windows 10 is coming, and some analysts are hoping the company will announce a release date at the conference, along with details about how it will distribute future upgrades.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-29 10:30:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11440696&ref=rss'>site</a></td><td>The company also has a big carrot to wave in front of those developers: Microsoft has already said it will release Windows 10 as a free upgrade to people who now have PCs or other gadgets running the previous two versions of Windows, provided they upgrade in the coming year.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-29 13:07:59</td><td><a href='http://www.charlotteobserver.com/living/article19854693.html#storylink=rss'>site</a></td><td>That's why the tech giant is making its case Wednesday before an army of software developers who may be crucial allies in its campaign to build enthusiasm among consumers for the next version of Microsoft's flagship operating system, coming later this year.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://wpmedia.business.financialpost.com/2015/04/microsoft-windows-10.jpg?w=620'></td><td>2015-04-29 18:24:17</td><td><a href='http://business.financialpost.com/fp-tech-desk/microsoft-corp-expects-1-billion-users-on-windows-10-devices-within-three-years'>site</a></td><td>The company also said it will make it easier to turn websites into Windows applications, as well as older apps that use Microsoft's .Net and Win32.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-29 18:52:49</td><td><a href='http://abcnews.go.com/Technology/wireStory/microsoft-makes-case-windows-10-30667719'>site</a></td><td>"Our goal is to make Windows 10 the most attractive development platform ever," Microsoft executive Terry Myerson told an audience of several thousand programmers and app developers.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-29 19:34:06</td><td><a href='http://www.miamiherald.com/news/business/article19854693.html#storylink=rss'>site</a></td><td>Microsoft hopes to lure more people to use its new Windows 10 software on a variety of computers and gadgets by making it easy to use many of the same apps they're already using on Apple or Android phones.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-29 20:35:17</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/29/microsoft-makes-its-case-for-windows-10'>site</a></td><td><table><tr><td>Today, after losing ground to smartphones and tablets that run software from rivals Apple and Google, Microsoft wants to make Windows 10 the universal software for PCs, phones and other Internet-connected gadgets.</td></tr><tr><td>Although Microsoft has previously shown off some features of Windows 10, it's hoping to enlist an army of software developers as allies in its campaign to build enthusiasm for the new release.</td></tr><tr><td>Microsoft's move to help developers adapt their Apple and Android apps for Windows 10 is a major change from the past, when each company maintained rigid differences in their software platforms.</td></tr></table></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww4.hdnux.com/photos/36/07/57/7896027/3/gallery_thumb.jpg'></td><td>2015-04-29 23:35:34</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-makes-its-case-for-Windows-10-6230616.php'>site</a></td><td>Microsoft is also hoping to entice developers by promising that apps for Windows 10 will work equally well on PCs, mobile gadgets, Xbox game consoles and even the HoloLens.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://ww4.hdnux.com/photos/36/07/57/7896027/3/mosaic_2.jpg'></td><td>2015-04-29 23:35:34</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-makes-its-case-for-Windows-10-6230616.php'>site</a></td><td>To win over consumers who use competing software, Microsoft needs to persuade outside developers, who create software for consumers and corporate clients, it's worth their time to create new apps and programs for Windows 10.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://www.gannett-cdn.com/media/2015/04/29/USATODAY/USATODAY/635659365020665327-AP-Microsoft-Big-Show.8.jpg'></td><td>2015-04-30 00:43:36</td><td><a href='http://www.usatoday.com/picture-gallery/tech/2015/04/29/microsofts-annual-build-conference/26609809/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Joe Belfiore, Microsoft Corporate Vice President of Operating Systems Group, demonstrates Continuum for phones at the Microsoft Build conference.</td></tr>
+</table></body></html>

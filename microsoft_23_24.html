@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/11/06/102160051-RTR4AVSL.530x298.jpg?v=1415284674'></td><td>2015-03-17 19:01:00</td><td><a href='http://www.cnbc.com/id/102511899'>site</a></td><td>What Microsoft needs to do after Internet Explorer</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/22/14/7676711/3/622x350.jpg'></td><td>2015-03-18 21:45:41</td><td><a href='http://www.chron.com/business/technology/article/As-Explorer-loses-ground-Microsoft-readies-new-6143211.php'>site</a></td><td><table><tr><td>As Explorer loses ground, Microsoft readies new web browser</td></tr><tr><td>Explorer will still be available, but Microsoft hinted this week that its new - and as-yet unnamed - browser will get top billing in the future.</td></tr><tr><td>Microsoft didn't invent the web browser, but it has invested heavily to promote Explorer since it was first launched in 1995.</td></tr></table></td></tr>
+</table></body></html>

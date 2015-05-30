@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/Google-Search-Nigger-House-Washington-DC-King-President-White-House-Barack-Obama-APology-578605.jpg'></td><td>2015-05-20 15:03:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/578605/Google-Maps-Racist-Search-Barack-Obama-Racism-Apology?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-tech+%28Daily+Express+%3A%3A+Science+%26+Tech+Feed%29'>site</a></td><td><table><tr><td>Google Maps: Search for a racial slur and Google will point you to the White House</td></tr><tr><td>A spokesperson for Google said: "Some inappropriate results are surfacing in Google Maps that should not be, and we apologise for any offence this may have caused.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 21:06:36</td><td></td><td><a href='google_48_50.html'>"Cause" is a key word: Like Delphi Automotive, a parts supplier which suffered an accident in October with one of its two test cars, Google says it was not at fault. (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 08:40:23</td><td></td><td><a href='google_48_49.html'>LOS ANGELES - The self-driving cars that Google Inc. has been testing on California's roads and highways were involved in 11 minor accidents over the past six years, according to the tech giant. (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://stmedia.stimg.co/ows_143139662623195.jpg?h=150&amp;w=300&amp;fit=crop&amp;bg=999&amp;crop=faces'></td><td>2015-05-12 08:40:23</td><td><a href='http://www.startribune.com/self-driving-cars-can-t-avoid-accidents-on-california-roads/303381371/'>site</a></td><td>It was not possible to independently verify Google's assertions about the fault and nature of the collisions.</td></tr>
 </table></body></html>

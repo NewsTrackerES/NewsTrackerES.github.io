@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 10:57:00</td><td></td><td><a href='germanwings_0.html'>PARIS -- The co-pilot of the doomed Germanwings flight repeatedly sped up the plane as he used the automatic pilot to descend the A320 into the Alps, the French air accident investigation agency said Friday. (180)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 18:14:56</td><td></td><td><a href='germanwings_18.html'>Lufthansa says better results at Germanwings, along with lower fuel costs, should boost earnings for its airlines division - which also includes Swiss, Eurowings, Lufthansa CityLine, Air Dolomiti and Austrian Airlines - this year. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 14:39:09</td><td></td><td><a href='germanwings_0.html'>On Thursday, French prosecutors said Lubitz, the co-pilot of Germanwings Flight 9525, "intentionally" crashed the jet into the side of a mountain. (172)</a></td></tr>
 </table></body></html>

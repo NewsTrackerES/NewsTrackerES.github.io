@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 02:40:04</td><td><a href='http://www.reuters.com/article/2015/04/02/us-pemex-fire-idUSKBN0MS4MU20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 20:55:19</td><td><a href='http://www.startribune.com/world/298715871.html'>site</a></td><td>Hernandez said the Abkatun fire won't affect international confidence in Pemex just as the company is its first rounds of bidding after the country's energy reform, which opened Mexico's oil sector to foreign investment.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 13:58:50</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/04/official-mexico-arrests-zetas-leader-omar-trevino-morales'>site</a></td><td>Official: Mexico arrests Zetas leader Omar Trevino Morales</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 13:59:03</td><td><a href='http://news.yahoo.com/official-mexico-arrests-zetas-leader-omar-trevino-morales-135903251.html'>site</a></td><td>The suspect is the brother of Miguel Angel Trevino Morales, described as the most bloodthirsty leader of Mexico's most violent cartel.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/04/1297671045383.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-04 14:06:26</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/04/22268341.html?cid=rssnewsworld'>site</a></td><td>Trevino's arrest came just days after the capture of Servando Gomez, leader of the Knights Templar drug gang, who was the most-wanted crime boss still at large in Mexico.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 18:42:08</td><td></td><td><a href='egypt_8_9.html'>Is a flashy Dubai-style city feasible in impoverished Egypt? (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 18:42:08</td><td><a href='http://www.utsandiego.com/news/2015/mar/20/egypt-emirati-developers-tout-nebulous-plan-for/'>site</a></td><td>It's everything missing from Egypt today - with a price tag of up to $80 billion.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 18:46:26</td><td></td><td><a href='egypt_8_10.html'>"Egypt is facing a housing shortage and serious population growth pressures, so the move to meet that demand in new urban areas outside of Cairo is a good idea," Cairo-based urban planner Josh Drake said. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/b.X3hSHKb8uP8qCw2D8JOg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0b8ecae09f88ff0f720f6a706700ab59.jpg'></td><td>2015-04-07 15:12:43</td><td><a href='http://news.yahoo.com/egypt-photojournalist-describes-detention-over-600-days-151243696.html'>site</a></td><td>Egypt photojournalist describes detention of over 600 days</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/b.X3hSHKb8uP8qCw2D8JOg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0b8ecae09f88ff0f720f6a706700ab59.jpg'></td><td>2015-04-07 16:44:36</td><td><a href='http://news.yahoo.com/egypt-photojournalist-describes-detention-over-600-days-151243696.html'>site</a></td><td>The Committee to Protect Journalists said in December that at least 12 journalists, including three Al-Jazeera journalists are detained in Egypt.</td></tr>
 </table></body></html>

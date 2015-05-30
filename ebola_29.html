@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 12,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 12 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td></td><td>2015-03-20 04:30:29</td><td><a href='http://www.startribune.com/world/296977581.html'>site</a></td><td>An Ebola-infected WHO consultant in Sierra Leone violated WHO health protocols, creating a rift with Doctors Without Borders that was only resolved when WHO was thrown out of a shared hotel.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-20 05:10:15</td><td></td><td><a href='ebola_29_32.html'>"I told her, 'Dr. Chan, the Ebola epidemic in West Africa is out of control,'" Liu recalled telling Chan in a July 30 meeting in Geneva. (3)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-20 05:10:15</td><td></td><td><a href='ebola_29_30.html'>The Ebola outbreak erupted at a difficult time for the agency. (3)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-20 11:51:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/bbd825583c8542898e6fa7d440b9febc/Article_2015-03-20-UN--WHO-Bungling%20Ebola/id-50b2f1f5d15845dd8382c021c9e71923'>site</a></td><td>"We really struggled to keep the (Ebola clinic) open," Stals said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-20 14:02:55</td><td></td><td><a href='ebola_29_33.html'>WHO's Ebola response leader, Dr. Bruce Aylward, couldn't say whether an earlier declaration would have made a difference, noting that "the overall response slowed down" after the emergency was declared. (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww4.hdnux.com/photos/35/30/37/7702483/7/square_gallery_thumb.jpg'></td><td>2015-03-23 23:47:01</td><td><a href='http://www.sfgate.com/news/medical/article/WHO-denies-politics-swayed-Ebola-emergency-6152749.php'>site</a></td><td>In this photo taken on Friday, Feb. 27, 2015, Health workers carry the remains of a person that they suspect died from the Ebola virus near the village of Gbah on the outskirts of Monrovia, Liberia.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://ww1.hdnux.com/photos/35/30/36/7702460/7/622x350.jpg'></td><td>2015-03-23 23:47:01</td><td><a href='http://www.chron.com/news/medical/article/WHO-denies-politics-swayed-Ebola-emergency-6152749.php'>site</a></td><td>A June 10 memo sent to WHO Director-General Dr. Margaret Chan says declaring an emergency - or convening a committee to discuss the issue - could be seen as a "hostile act" by Ebola-affected countries.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 12:04:00</td><td></td><td><a href='ebola_29_36.html'>During a press briefing in Geneva on Friday, Aylward said WHO's Ebola emergency committee believes the risk of the virus spreading globally appears to be dropping even though officials still don't know where the virus is spreading in most cases in Guinea and Sierra Leone. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-10 12:04:00</td><td></td><td><a href='ebola_29_34.html'>He said the designation of Ebola as a global emergency is also necessary to speed up paperwork for the ongoing experimental drug and vaccine trials in West Africa. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-10 12:05:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11430985&ref=rss'>site</a></td><td>"It is just that we are used to (seeing) large numbers of cases and deaths," said Oyewale Tomori, a Nigerian virologist who sits on WHO's Ebola emergency committee.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 14:08:00</td><td></td><td><a href='ebola_29_35.html'>DAKAR, Senegal -- An independent panel of experts said Monday that "deep and substantial" change is needed at the World Health Organization following its slow response to early warnings about West Africa's Ebola outbreak. (5)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 15:37:23</td><td></td><td><a href='ebola_29_31.html'>Internal documents obtained by The Associated Press earlier this year detail how WHO resisted declaring the Ebola outbreak a public health emergency until months after staff considered raising the alarm. (7)</a></td></tr>
+</table></body></html>

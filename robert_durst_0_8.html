@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 08:38:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-03-23-US--Real%20Estate%20Heir-Weapons%20Charges/id-a20708a699cc44118e564409b16e13ac'>site</a></td><td>Durst is going back to court in New Orleans after nearly a week in a prison mental ward 70 miles away.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 23:16:26</td><td><a href='http://abcnews.go.com/US/wireStory/robert-durst-moved-jail-closer-orleans-30626798'>site</a></td><td>U.S. District Judge Helen Berrigan signed an order Monday to move Robert Durst from a prison 70 miles away from the city to a jail in St. Charles Parish, about 25 miles away.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 03:53:40</td><td></td><td><a href='robert_durst_0_8_9.html'>Robert Durst is escorted from Orleans Parish Criminal District Court, Monday, March 16, 2015, in New Orleans. (22)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 16:39:19</td><td></td><td><a href='robert_durst_0_8_10.html'>Authorities found more than a quarter-pound of marijuana and a revolver in millionaire Robert Durst?s hotel room when he was arrested over the weekend, a prosecutor said Tuesday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 21:58:00</td><td></td><td><a href='robert_durst_0_8_11.html'>A car passes the building where millionaire Robert Durst lives hours before police began a search Tuesday, March 17, 2015, in Houston. (5)</a></td></tr>
 </table></body></html>

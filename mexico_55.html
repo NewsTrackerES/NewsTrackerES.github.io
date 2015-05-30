@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td><a href='http://news.yahoo.com/mexico-groups-ask-un-list-monarch-danger-203414979.html'>site</a></td><td><table><tr><td>Mexico groups ask UN to list Monarch reserve as in danger</td></tr><tr><td>Activists from Mexico, the United States and Canada have filed a request to the U.N. World Heritage Committee to place the Monarch Butterfly Reserve wintering sites on the list of sites considered in danger.</td></tr><tr><td>UNESCO designated the 139,000-acre (56,259 hectare) reserve in the mountains west of Mexico City a World Heritage site in 2008.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:20:55</td><td><a href='http://www.utsandiego.com/news/2015/mar/26/2-us-funds-to-invest-900-million-in-mexican-gas/'>site</a></td><td>The Los Ramones pipeline will transport natural gas from Texas to Mexico and is intended to facilitate imports of cheap U.S. gas and lower Mexico's high commercial electricity rates.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:21:12</td><td><a href='http://news.yahoo.com/2-us-funds-invest-900-million-mexican-gas-222112624.html'>site</a></td><td>Mexico built the first part of the Los Ramones project, from the U.S. border to the northern Mexico village of Los Ramones in Nuevo Leon state.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 22:25:30</td><td><a href='http://www.startribune.com/world/297716851.html'>site</a></td><td>MEXICO CITY - Mexico's state-owned petroleum company Pemex has signed an agreement giving two investment funds a 45 percent stake in a natural gas pipeline in exchange for $900 million.</td></tr>
 </table></body></html>

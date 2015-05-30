@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/4/g/8/w/image.related.articleLeadwide.620x349.1m4g80.png/1426952764564.jpg'></td><td>2015-03-20 23:19:06</td><td><a href='http://www.brisbanetimes.com.au/world/spanish-towns-revert-to-islamic-names-on-google-maps-20150321-1m4g80.html'>site</a></td><td><table><tr><td>Towns and cities in Spain are being renamed on Google Maps after their former incarnations as Islamic kingdoms almost 10 centuries ago.</td></tr><tr><td>Taifa was the term used to describe about 30 small Islamic kingdoms which formed after the Caliphate of Cordoba descended into civil war in the 11th century.</td></tr><tr><td>Andalusia's Islamic past is still a live political issue for some in Spain.</td></tr><tr><td>Both al-Qaeda and the Islamic State have stated their aim to "liberate" Spain, which they refer to as al-Andalus, from what they consider Christian rule.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 01:47:00</td><td><a href='http://www.utsandiego.com/news/2015/apr/17/judge-oks-bail-for-2-accused-of-supporting/'>site</a></td><td>ST. LOUIS (AP) - A federal judge in St. Louis has approved the release on bail of two people who are accused of supporting Islamic State fighters overseas.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/VhGDiVpZDrwQQM9PUcACmg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/sbnation1.vox.com/7537e232abf5b0741cdf5f9b963b965a.cf.jpg'></td><td>2015-04-18 01:47:05</td><td><a href='http://news.yahoo.com/judge-oks-bail-2-accused-supporting-islamic-state-014705162.html'>site</a></td><td>An indictment says those two and four others - who remain jailed - supplied money to Hodzic's husband, Ramiz Hodzic, who sent cash and supplies to Islamic State fighters and others overseas.</td></tr>
 </table></body></html>

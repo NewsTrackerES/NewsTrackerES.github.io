@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 08:42:53</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/19/cannes-watch-dicaprio-buys-13-600-for-bag-for-charity'>site</a></td><td><table><tr><td>CANNES WATCH: DiCaprio buys $13,600 bag for charity</td></tr><tr><td>CANNES, France (AP) - Who knew Leonardo DiCaprio had an eye for Chanel bags?</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:52:55</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Colin-Farrell-happy-to-be-single-6270102.php'>site</a></td><td>CANNES, France (AP) - In his new sci-fi movie "The Lobster," Colin Farrell plays a single man desperate to get into a committed relationship or risk being transformed into an animal.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/4got7Yu3ILFCfu1JM99g0g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ed133e8fe511a115760f6a706700c3ac.jpg'></td><td>2015-05-18 10:53:02</td><td><a href='http://news.yahoo.com/cannes-watch-colin-farrell-happy-single-105302352.html'>site</a></td><td>CANNES WATCH: Colin Farrell happy to be single</td></tr>
 </table></body></html>

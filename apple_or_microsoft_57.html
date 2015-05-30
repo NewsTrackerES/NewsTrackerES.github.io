@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 17:28:05</td><td></td><td><a href='apple_or_microsoft_57_58.html'>DelBene was president of Microsoft's Office unit when he left the company in 2013. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 17:28:05</td><td><a href='http://www.foxbusiness.com/markets/2015/04/13/microsoft-hires-back-kurt-delbene-for-corporate-strategy-job-will-report-to-ceo/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>After Microsoft, he was put in charge of HealthCare.org, the website used as an insurance portal for President Barack Obama's health care law.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 17:57:01</td><td></td><td><a href='apple_or_microsoft_57_59.html'>Microsoft hires back Kurt DelBene for corporate strategy job (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 17:05:07</td><td><a href='http://www.foxbusiness.com/technology/2015/04/16/yahoo-decides-to-stick-with-microsoft-in-search-new-deal-gives-it-more-control/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>An agreement announced Thursday extends a search partnership that Yahoo Inc. and Microsoft Corp. forged in 2009 while they were being led by different CEOs.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 17:35:38</td><td></td><td><a href='apple_or_microsoft_57_58.html'>Yahoo and Microsoft will keep working together on search, but Yahoo is getting more control over the how its search page looks and works. (4)</a></td></tr>
 </table></body></html>

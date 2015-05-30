@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/09/2676E1D100000578-2986641-The_Apple_Watch_is_available_in_three_models_the_Apple_Watch_App-a-33_1425926709082.jpg'></td><td>2015-03-13 21:11:35</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-2993809/The-secret-app-iPhone-revealed-New-fitness-app-visible-pair-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Overall, the Apple Watch is by far the best wearable device on the market.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676778488_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 19:59:14</td><td><a href='http://www.torontosun.com/2015/03/18/only-39-of-iphone-interested-in-apple-watch-poll'>site</a></td><td>Owners of the iPhone are a particularly important market for Apple as it launches the new watch, which goes on sale April 24.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 04:02:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/08/apple-watch-isnt-the-only-gadget-out-this-week/'>site</a></td><td>But the Apple Watch isn't the only gadget available this week.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-17 17:44:20</td><td><a href='http://www.seattlepi.com/business/technology/article/Don-t-plan-to-line-up-for-Apple-Watch-next-week-6206538.php'>site</a></td><td>Apple, which began accepting advance orders for the watch last week, had previously said it would be "available" for sale in stores on April 24, at least for customers who made reservations to come in for a personal demonstration.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/iGqcseS4wo_qOsnGCLf0HQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-23T210914Z_1_LYNXMPEB3M11O_RTROPTP_3_CTECH-US-APPLE-WATCH_original.jpg'></td><td>2015-04-23 21:09:14</td><td><a href='http://finance.yahoo.com/news/apple-watch-goes-sale-worldwide-210914654.html'>site</a></td><td>Apple Watch goes on sale worldwide amid supply shortage</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Tzorog39kI59R.SG_LJT5Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-24T035829Z_1_LYNXMPEB3N03U_RTROPTP_3_APPLE-WATCH-LAUNCH_original.jpg'></td><td>2015-04-24 02:50:16</td><td><a href='http://finance.yahoo.com/news/low-key-launch-apple-watch-025016287.html'>site</a></td><td>Low-key launch as Apple Watch finally goes on sale</td></tr>
+</table></body></html>

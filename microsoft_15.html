@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 15:10:55</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article16368737.html#storylink=rss'>site</a></td><td><table><tr><td>"The research shows that employees who get this kind of benefits are not just happier personally, but more productive," Microsoft general counsel Brad Smith said in an interview.</td></tr><tr><td>And second, the more nebulous social implications: Microsoft's new chief executive, Satya Nadella, has been putting his stamp on many things, not just hololenses.</td></tr><tr><td>"I think this step reflects a recognition that we want people who do substantial work for Microsoft to enjoy good benefits, even if they don't work for Microsoft."</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 19:32:28</td><td></td><td><a href='microsoft_15_16.html'>Microsoft said it has about 2,000 U.S. suppliers, who provide services such as maintenance and security. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:55:44</td><td></td><td><a href='microsoft_15_17.html'>During the next 12 months, the company will require its U.S. suppliers -- which provide workers who do everything from serving food and driving buses to testing software -- to give 15 days paid leave a year to their employees who work on Microsoft projects. (14)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428483086797.jpg'></td><td>2015-04-08 08:51:34</td><td><a href='http://www.smh.com.au/business/the-economy/apple-google-microsoft-cop-tax-audit-20150408-1mgsma.html'>site</a></td><td><table><tr><td>Microsoft global vice president for tax Bill Sample.</td></tr><tr><td>Microsoft's Bill Sample said there had been $2 billion in software product and service revenue booked in Singapore but only $100 million in Australia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428665901614.jpg'></td><td>2015-04-08 14:07:07</td><td><a href='http://www.smh.com.au/business/the-economy/apple-google-microsoft-cop-tax-audit-20150410-1mgsma.html'>site</a></td><td>Apple, Google, Microsoft audited</td></tr>
 </table></body></html>

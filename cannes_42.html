@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 14:20:10</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21274680.html#storylink=rss'>site</a></td><td><table><tr><td>Jeff Koons is about to generate some major cash for AIDS charity amfAR: He's agreed to auction off his massive "Coloring Book" sculpture for the group's annual gala outside Cannes this week.</td></tr><tr><td>Organizers at amfAR are hoping "Coloring Book" can generate similar numbers for its Thursday gala at Hotel du Cap-Eden-Roc, just outside of Cannes in d'Antibes.</td></tr><tr><td>The annual amfAR "Cinema Against AIDS" gala is the glitziest event during the Cannes Film Festival.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/f8ulWwC3gRPywErfEu10tQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ2MDtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/efc770b7e713aa15760f6a7067007abb.jpg'></td><td>2015-05-17 19:30:40</td><td><a href='http://news.yahoo.com/cannes-watch-jane-fonda-says-gender-pay-gap-193040184.html'>site</a></td><td><table><tr><td>CANNES WATCH: Jane Fonda says gender pay gap 'unacceptable'</td></tr><tr><td>CANNES, France (AP) - Jane Fonda is starring in a film at Cannes, but she also came to the film festival to pick up an honor.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 19:34:19</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21238914.html#storylink=rss'>site</a></td><td>Fonda was celebrated by the Cannes Film Festival and luxury goods company Kering for her contribution to cinema Sunday as the first honoree of the "Women in Motion" program.</td></tr>
 </table></body></html>

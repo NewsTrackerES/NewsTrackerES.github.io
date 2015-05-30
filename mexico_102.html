@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-27 06:22:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16355027.html#storylink=rss'>site</a></td><td><table><tr><td>Lea County, where Hobbs is located, was one of six counties in New Mexico to see a population gain between 2013 and 2014 thanks to shifting migration patterns.</td></tr><tr><td>"Lea County is kind of in a boom," said Jack Baker, a senior research scientist with Geospatial and Population Studies at the University of New Mexico.</td></tr><tr><td>Census figures that take into account the number of births and deaths between 2013 and 2014 show eight New Mexico counties gained population, including Lea County.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 01:50:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11430708&ref=rss'>site</a></td><td>Crash of band's tour bus in Mexico kills 4, injures 10</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 01:50:12</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11430708&ref=rss'>site</a></td><td>MEXICO CITY (AP) " Mexican authorities say a tour bus carrying the Tropa Chicana band has crashed in the western state of Jalisco, killing four people and injuring 10.</td></tr>
 </table></body></html>

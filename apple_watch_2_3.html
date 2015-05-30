@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple watch</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 15:18:29</td><td><a href='http://www.utsandiego.com/news/2015/may/01/inked-and-irked-apple-watch-users-report-tattoo/'>site</a></td><td><table><tr><td>Inked and irked: Apple Watch users report tattoo problems</td></tr><tr><td>NEW YORK (AP) - It's an annoying problem for the unlucky few: the Apple Watch's heart rate monitor might not work if you have a tattoo on your wrist.</td></tr><tr><td>Apple suggests that users who can't get a consistent heart rate reading connect their Apple Watch wirelessly to external heart rate monitors.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 19:59:55</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-05-01-APFN-US-TEC--Apple-TattooGate/id-1442fad66f9b42e7a42c87498d05722f'>site</a></td><td>That was a relief for Nick Borelli, a 34-year-old marketing executive in Cleveland who has a black tattoo on the inside of his wrist - not the side where he has worn the Apple Watch.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 21:57:29</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-05-01-US-TEC--Apple-TattooGate/id-98f5de27a29e490baff2741748c4af76'>site</a></td><td><table><tr><td>That was frustrating and "a bit embarrassing" for Graham Edgell, a Los Angeles printing broker who loves Apple products and was eager to show off his new watch to friends after his wife bought it for him.</td></tr><tr><td>As for the Apple Watch issue, some social media users have mocked it as a complaint from spoiled hipsters.</td></tr></table></td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 10,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,14 @@
     <h3>cyclone vanuatu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150422&t=2&i=1042476889&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3L0SR'></td><td>2015-04-22 15:31:35</td><td><a href='http://www.reuters.com/article/2015/04/22/us-vanuatu-water-unicef-idUSKBN0ND1VJ20150422?feedType=RSS&feedName=environmentNews'>site</a></td><td><table><tr><td>Almost half Vanuatu people lack clean water, month after cyclone: UNICEF</td></tr><tr><td>"There is water but quality is not that good because of the contamination," Ketsamay Rajphangthong, chief of UNICEF Vanuatu field office, told the Thomson Reuters Foundation in a phone interview from Vanuatu.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/13/cyclone-pam-hits-small-pacific-nation-of-vanuatu.html'>site</a></td><td>Cyclone Pam hits small Pacific nation of Vanuatu</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 03:03:14</td><td><a href='http://abcnews.go.com/International/wireStory/small-pacific-nation-vanuatu-braces-strong-cyclone-29603982'>site</a></td><td><table><tr><td>Cyclone Pam Leaves Trail of Destruction in Pacific's Vanuatu</td></tr><tr><td>The U.N. Office for the Coordination of Humanitarian Affairs said there were unconfirmed reports of deaths in Vanuatu's northeastern islands after Cyclone Pam moved off its expected track.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-14 04:00:37</td><td><a href='http://www.cbsnews.com/news/cyclone-pam-leaves-swath-of-destruction-in-pacifics-vanuatu/'>site</a></td><td>WELLINGTON, New Zealand -- Winds from an extremely powerful cyclone that blew through the Pacific's Vanuatu archipelago were beginning to subside Saturday, revealing widespread destruction and unconfirmed reports of dozens of deaths.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/4/8/3/image.related.articleLeadwide.620x349.143y5a.png/1426410235087.jpg'></td><td>2015-03-14 05:43:17</td><td><a href='http://www.brisbanetimes.com.au/world/cyclone-pam-dozens-feared-dead-in-vanuatu-20150314-143y5a.html'>site</a></td><td>Cyclone Pam: Dozens feared dead in Vanuatu</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.nzherald.co.nz/themes/1/img/printLogo.png'></td><td>2015-03-14 21:23:58</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417574&ref=rss'>site</a></td><td>Aid workers say 8 people confirmed dead after cyclone hits Vanuatu in South Pacific</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/8/1/h/image.related.articleLeadwide.620x349.144bun.png/1426391249045.jpg'></td><td>2015-03-15 02:24:34</td><td><a href='http://www.brisbanetimes.com.au/environment/weather/cyclone-pam-death-toll-to-increase-significantly-in-vanuatu-20150315-144bun.html'>site</a></td><td>Cyclone Pam death toll to 'increase significantly' in Vanuatu</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/634aca43fcf6563d8d56c698b7d141f87347c8ee/0_0_1024_766/500.jpg'></td><td>2015-03-15 10:27:57</td><td><a href='http://www.theguardian.com/world/live/2015/mar/15/cyclone-pam-aid-agencies-head-to-vanuatu-as-death-toll-rises'>site</a></td><td>The first shipments of aid headed for Vanuatu on Sunday as authorities declared a state of emergency and global relief agencies geared up after a powerful cyclone tore through the vulnerable Pacific island nation.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/c/w/3/image.related.articleLeadNarrow.300x0.144f23.png/1426433667339.jpg'></td><td>2015-03-15 15:34:39</td><td><a href='http://www.smh.com.au/environment/weather/cyclone-pam-australia-gives-vanuatu-5-million-in-aid-20150315-144f23.html'>site</a></td><td>Cyclone Pam: Australia gives Vanuatu $5 million in aid</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-21 03:06:08</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3005077/Half-Vanuatus-population-affected-Cyclone-Pam-UN.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>More than half of the South Pacific island nation Vanuatu's population has been affected by Cyclone Pam, the UN said Saturday as the death toll rose to 16.</td></tr><tr><td>"Around 166,000 people, more than half of Vanuatu's population, have been affected by Tropical Cyclone Pam on 22 islands," the Office for the Coordination of Humanitarian Affairs (OCHA) said in a situation report.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-10 22:12:29</td><td><a href='http://www.utsandiego.com/news/2015/apr/10/un-appeals-for-20-million-for-vanuatu-cyclone/'>site</a></td><td>UNITED NATIONS (AP) - The United Nations is appealing for nearly $20 million for victims of Cyclone Pam which tore through the South Pacific island nation of Vanuatu last month.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 19:03:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11423943&ref=rss'>site</a></td><td><table><tr><td>Mexico marks 6 months since 43 students disappeared</td></tr><tr><td>MEXICO CITY (AP) " Mexico is marking six months since 43 students disappeared after being taken into police custody, events that captured national and international attention.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 15:55:40</td><td><a href='http://www.startribune.com/world/298320471.html'>site</a></td><td><table><tr><td>MEXICO CITY - Mexico's state-owned oil company says firefighting boats are battling a blaze on an oil platform off the coast.</td></tr><tr><td>According to Pemex's official Twitter account, the platform, called Abkatun Permanente, caught fire early Wednesday in Campeche Sound in the Gulf of Mexico.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Ql4pf8PbZIncroK2xjPOog--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6a6d156657eeebe412d128662f8489c81916fce7.jpg.cf.jpg'></td><td>2015-04-01 22:30:19</td><td><a href='http://news.yahoo.com/mexican-oil-rig-burns-off-coast-155233258.html'>site</a></td><td><table><tr><td>Flames engulf Mexico oil platform in Gulf, killing 4 workers</td></tr><tr><td>MEXICO CITY (AP) - A huge ball of flames engulfed an oil platform in the Gulf of Mexico on Wednesday, killing four people and sending terrified workers leaping into the sea.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 04:26:31</td><td><a href='http://www.utsandiego.com/news/2015/apr/01/mexico-says-oil-spill-avoided-after-deadly/'>site</a></td><td>MEXICO CITY (AP) - A huge blaze twisted and blackened an oil platform in the Gulf of Mexico, but the state-run Pemex oil company said it managed to avert any significant oil spill.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-02 04:26:51</td><td><a href='http://news.yahoo.com/mexico-says-oil-spill-avoided-deadly-offshore-blaze-042651796.html'>site</a></td><td>Mexico says oil spill avoided after deadly offshore blaze</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-05 19:44:20</td><td><a href='http://www.sfgate.com/business/energy/article/Pemex-begins-to-restore-production-at-6180271.php'>site</a></td><td>MEXICO CITY (AP) - Officials at Mexico's state-run oil company say they are searching for three missing workers from a platform fire that killed four others, and are beginning to restore production at the damaged gulf facility.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 20:55:19</td><td><a href='http://www.startribune.com/world/298715871.html'>site</a></td><td>Hernandez said the Abkatun fire won't affect international confidence in Pemex just as the company is its first rounds of bidding after the country's energy reform, which opened Mexico's oil sector to foreign investment.</td></tr>
 </table></body></html>

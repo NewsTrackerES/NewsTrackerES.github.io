@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>snowden</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-04-06 22:39:55</td><td><a href='http://abcnews.go.com/US/wireStory/bust-edward-snowden-sneaked-removed-nyc-park-30126638'>site</a></td><td><table><tr><td>Bust of Edward Snowden Sneaked Into, Removed From NYC Park</td></tr><tr><td>Suddenly, in the middle of the New York night, Edward Snowden's face appeared - deep in a public park.</td></tr><tr><td>At daybreak, police said city parks officials ordered the sculpted Snowden removed.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 00:17:53</td><td><a href='http://www.usnews.com/news/us/articles/2015/04/06/bust-of-edward-snowden-sneaked-into-removed-from-nyc-park'>site</a></td><td>Animal New York, a city news website, reported that the activists sneaked the 4-foot-tall, 100-pound bust of Snowden before dawn Monday.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 00:29:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article17546378.html#storylink=rss'>site</a></td><td>After several mysterious artists put a sculpted bust of Snowden on a New York City war memorial, parks officials have ordered the bust removed.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/f/n/n/e/image.related.articleLeadwide.620x349.1mfjyl.png/1428370370263.jpg'></td><td>2015-04-07 01:33:04</td><td><a href='http://www.brisbanetimes.com.au/world/statue-that-cast-edward-snowden-as-a-hero-removed-and-held-by-new-york-police-20150407-1mfjyl.html'>site</a></td><td>New York City Parks workers work to remove a covered large molded bust of Edward Snowden at Fort Greene Park in Brooklyn.</td></tr>
+</table></body></html>

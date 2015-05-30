@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/LvHUEfZSVWP9uULQ39C1Lw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e88be1bc461b720b700f6a7067001daf.jpg'></td><td>2015-03-11 10:20:02</td><td><a href='http://news.yahoo.com/father-palestinian-killed-syria-says-son-duped-102002462.html'>site</a></td><td>Musalam said he wished the same fate upon the family of Islamic State group's leader Abu Bakr al-Baghdadi.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/q/k/i/5/image.related.articleLeadwide.620x349.1mycir.png/1430516284636.jpg'></td><td>2015-05-01 22:00:00</td><td><a href='http://www.smh.com.au/world/wounded-islamic-state-leader-abu-bakr-albaghdadi-may-have-to-give-up-control-of-jihadists-20150501-1mycir.html'>site</a></td><td><table><tr><td>Future in doubt ... The leader of the Islamic State, Abu Bakr al-Baghdadi, was reportedly paralysed by a US air strike in Iraq on March 18.</td></tr><tr><td>Cairo: The leader of the Islamic State, Abu Bakr al-Baghdadi, has been so badly wounded by a US air strike in Iraq that he may never resume control of the group he masterminded to power.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 14:35:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11448332&ref=rss'>site</a></td><td>It described al-Afari as senior deputy to the Islamic State group's leader, Abu Bakr al-Baghdadi.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-14 21:49:52</td><td><a href='http://news.yahoo.com/fbi-accuses-north-texas-man-lying-islamic-state-214952046.html'>site</a></td><td>Bilal Abood, 37, of Mesquite, admitted he posted an oath on Twitter to Abu Bakr al-Baghdadi, the leader of the Islamic State, according to a criminal complaint.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/2/5/5/v/image.related.articleLeadwide.620x349.gh24zh.png/1431644615965.jpg'></td><td>2015-05-14 23:03:55</td><td><a href='http://www.brisbanetimes.com.au/world/islamic-state-issues-audio-of-baghdadi-calling-supporters-to-join-him-20150514-gh24zh'>site</a></td><td>Thought to be wounded and incapacitated, this is an image of the militant leader of Islamic State, Abu Bakr al-Baghdadi, taken from a propaganda video.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-15 00:04:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3082531/FBI-arrests-ex-military-translator-lies-Islamic-State-ties.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>When the FBI, armed with a search warrant, seized his computer last year, it discovered that Abood had "pledged an oath to Islamic State leader Abu Bakr al-Baghdadi," according to the complaint.</td></tr><tr><td>It said that on July 19, 2014, using an Islamic pseudonym, Abood tweeted: "I pledge obedience to the Caliphate Abu Bakr al-Baghdadi."</td></tr></table></td></tr>
+</table></body></html>

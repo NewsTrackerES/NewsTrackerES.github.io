@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 22:02:47</td><td><a href='http://news.yahoo.com/defrocked-northern-california-priest-faces-deportation-220247772.html'>site</a></td><td>(AP) - Federal immigration authorities have arrested a former Northern California priest and are preparing to deport him to Mexico after he admitted having unlawful sex with a 16-year-old altar girl.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 22:05:08</td><td><a href='http://www.startribune.com/nation/297078221.html'>site</a></td><td>Defrocked Northern California priest faces deportation to Mexico after sex conviction</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-24 02:07:09</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16086401.html#storylink=rss'>site</a></td><td><table><tr><td>The public works package included more than $6 million for school buses around the state and money for a northeastern New Mexico hospital to make repairs in its emergency department.</td></tr><tr><td>Rep. Debbie Rodella, D-Espanola, examines a proposal during a state capital funding debate on the New Mexico House floor at the capitol in Santa Fe Saturday, March 21, 2015.</td></tr><tr><td>The New Mexico Legislature wrapped up Saturday with dozens of bills languishing amid partisan fighting.</td></tr></table></td></tr>
 </table></body></html>

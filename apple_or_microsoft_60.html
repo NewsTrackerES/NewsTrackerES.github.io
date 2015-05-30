@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 19:47:18</td><td><a href='http://www.nydailynews.com/life-style/health/apple-day-pharmacist-study-article-1.2167423'>site</a></td><td><table><tr><td>An apple a day might not keep the doctor away, but it might help keep the pharmacist at bay, a new study suggests.</td></tr><tr><td>Apple eaters in the study had higher educational attainment, were more likely to be from a racial or ethnic minority, and were less likely to smoke.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428483086797.jpg'></td><td>2015-04-08 08:51:34</td><td><a href='http://www.smh.com.au/business/the-economy/apple-google-microsoft-cop-tax-audit-20150408-1mgsma.html'>site</a></td><td><table><tr><td>Apple Australia managing director Tony King.</td></tr><tr><td>Microsoft global vice president for tax Bill Sample.</td></tr><tr><td>Microsoft's Bill Sample said there had been $2 billion in software product and service revenue booked in Singapore but only $100 million in Australia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/g/t/v/z/image.related.articleLeadwide.620x349.1mgsma.png/1428665901614.jpg'></td><td>2015-04-08 14:07:07</td><td><a href='http://www.smh.com.au/business/the-economy/apple-google-microsoft-cop-tax-audit-20150410-1mgsma.html'>site</a></td><td>Apple, Google, Microsoft audited</td></tr>
 </table></body></html>

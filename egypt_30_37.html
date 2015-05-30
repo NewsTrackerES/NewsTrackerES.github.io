@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-10 17:42:48</td><td></td><td><a href='egypt_30_37_41.html'>A much-hyped investment conference opens in Egypt's Red Sea resort of Sharm el-Sheikh Friday, March 13, 2015. (7)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-10 17:42:48</td><td></td><td><a href='egypt_30_37_39.html'>FILE - In this March 5, 2015 file photo, a homeless Egyptian child sleeps under a bridge in Cairo, Egypt. (6)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-14 10:05:11</td><td></td><td><a href='egypt_30_37_40.html'>SHARM EL-SHEIKH, Egypt - U.S. Secretary of State John Kerry says the U.S. will make a decision "very soon" on how to unfreeze hundreds of millions of dollars in suspended American military assistance to Egypt. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 00:55:21</td><td></td><td><a href='egypt_30_37_38.html'>Egypt announced at least 509 death sentences last year, many of them in the mass trials that have been held since the ouster of Islamist President Mohammed Morsi in 2013. (192)</a></td></tr>
+</table></body></html>

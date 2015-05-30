@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 19:36:40</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3004728/10-dead-Mexico-shootout-include-5-police-2-bystanders.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>10 dead in Mexico shootout include 5 police, 2 bystanders</td></tr><tr><td>MEXICO CITY (AP) - Mexico's federal police say gunmen have ambushed a convoy of officers, leading to a shootout in which 10 people died, including five officers and two bystanders.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 19:36:46</td><td><a href='http://abcnews.go.com/International/wireStory/10-dead-mexico-shootout-include-police-bystanders-29790746'>site</a></td><td>A police statement says the members of Mexico's new gendarmerie special force were ambushed late Thursday while patrolling in the town of Ocotlan in the western state of Jalisco.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 15:07:35</td><td><a href='http://www.foxnews.com/world/2015/04/07/attack-in-western-mexico-leaves-police-officers-wounded-in-latest-clash-with/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>MEXICO CITY - An attack on a police convoy in the western Mexico state of Jalisco has left at least some officers wounded, marking the latest in a growing series of confrontations between law enforcement and criminal gangs.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 19:01:35</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3029020/Attack-western-Mexico-leaves-police-officers-wounded.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Jalisco is home to a drug cartel known as "Jalisco New Generation," which experts say is now among Mexico's most powerful.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-07 19:55:09</td><td><a href='http://abcnews.go.com/International/wireStory/attack-western-mexico-leaves-police-officers-wounded-30136873'>site</a></td><td>An attack on a police convoy in the western Mexico state of Jalisco killed 15 state police officers and wounded five, marking the deadliest single attack on police in Mexico in recent memory.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-08 04:02:03</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/08/ambush-that-killed-15-police-in-western-mexico-a-rarity'>site</a></td><td><table><tr><td>Federal police stand next to a bullet riddled and burned car after a criminal gang ambushed a police convoy near the town of Soyatlan, near Puerto Vallarta, Mexico, Monday, April 6, 2015.</td></tr><tr><td>MEXICO CITY (AP) - An ambush that killed 15 state police officers in western Mexico appears to be a drug cartel's revenge attack and could herald a military-style offensive against government authorities.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww4.hdnux.com/photos/35/53/65/7781747/7/920x920.jpg'></td><td>2015-04-08 04:02:03</td><td><a href='http://www.sfgate.com/news/crime/article/Ambush-that-killed-15-police-in-western-Mexico-a-6185439.php'>site</a></td><td>Ambush that killed 15 police in western Mexico a rarity</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-01 03:06:24</td><td><a href='http://abcnews.go.com/International/wireStory/reported-killed-southern-mexico-gunbattle-30719070'>site</a></td><td>8 Reported Killed in Southern Mexico Gunbattle</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-01 19:23:10</td><td><a href='http://www.startribune.com/world/302187781.html'>site</a></td><td>GUADALAJARA, Mexico - Mexico's defense department said that three soldiers were killed Friday in the western state of Jalisco when gunmen fired on a helicopter.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-01 20:02:30</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3064541/Burning-vehicles-block-roads-Guadalajara-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Twelve others - 10 soldiers and two federal police officers - were also injured and three soldiers remained missing, according to a statement from Mexico's defense ministry.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-05-05 04:05:16</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443646&ref=rss'>site</a></td><td>CIUDAD VICTORIA, Mexico (AP) " An official says nine police officers were kidnapped by a criminal gang in northern Mexico and later rescued, though one was killed in the confrontation.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-16 21:32:36</td><td><a href='http://www.foxnews.com/world/2015/05/16/mexican-state-disarms-cops-in-2-towns-near-where-helicopter-shot-down-in-anti/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>The attack on the helicopter by a convoy of suspected cartel gunmen came during an operation aimed at Jalisco New Generation, which has emerged as one of Mexico's stronger and most aggressive cartels.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-16 21:32:48</td><td><a href='http://news.yahoo.com/mexico-disarms-cops-2-towns-near-copter-attack-213248422.html'>site</a></td><td>Mexico disarms cops in 2 towns near site of copter attack</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/r/c/i/1/image.related.articleLeadwide.620x349.gh7yoi.png/1432325775989.jpg'></td><td>2015-05-22 20:16:22</td><td><a href='http://www.brisbanetimes.com.au/world/gunfight-in-western-mexico-kills-at-least-39-officials-20150522-gh7yoi'>site</a></td><td><table><tr><td>Gunfight in western Mexico kills at least 39: officials</td></tr><tr><td>Mexico City: At least 39 people were killed on Friday in western Mexico during a fight between armed civilians and security forces, two government officials said, the latest bloodshed in an area that has been plagued by violent drug gangs.</td></tr><tr><td>The officials, speaking on condition of anonymity, said 37 civilians had been killed in the clash near to Tanhuato in the state of Michoacan, near the border with Jalisco, a region home to Mexico's second-biggest city, Guadalajara.</td></tr></table></td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31245845.ece/10cb3/ALTERNATES/h342/PANews%20BT_P-629c9d60-f86a-4ba3-8dd1-81a60ef5a263_I1.jpg'></td><td>2015-05-22 20:36:07</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/40-killed-in-mexico-gunfight-31245846.html'>site</a></td><td>About 40 people have been killed in a large-scale firefight between law enforcement officers and criminal suspects in western Mexico.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-05-23 02:45:27</td><td><a href='http://www.reuters.com/article/2015/05/23/us-mexico-violence-idUSKBN0O729M20150523?feedType=RSS&feedName=worldNews'>site</a></td><td>Mexico gunfight kills 43 as government hits gang hard</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/YWTxjI.Re_Uq6iFqaPR9Eg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5NDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-05-23T002430Z_1_LYNXMPEB4M009_RTROPTP_2_MEXICO-VIOLENCE.JPG'></td><td>2015-05-23 02:45:27</td><td><a href='http://news.yahoo.com/gunfight-western-mexico-kills-least-44-officials-000337185.html'>site</a></td><td>Then, the government first reported that 22 gang members were killed in a shootout with soldiers in central Mexico.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-23 03:46:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article21702333.html#storylink=rss'>site</a></td><td><table><tr><td>Rubido said the suspects were members of "a criminal organization operating in Jalisco state," but did not mention the Jalisco New Generation, the drug cartel that dominates the area where the battle erupted and has grown rapidly in recent years to become one of Mexico's biggest organized crime groups.</td></tr><tr><td>Mexican Federal Police stand guard near the entrance of Rancho del Sol, near Ecuanduero, in western Mexico, Friday, May 22, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://ww4.hdnux.com/photos/36/51/06/8032675/5/square_gallery_thumb.jpg'></td><td>2015-05-23 04:05:27</td><td><a href='http://www.sfgate.com/news/crime/article/Fierce-gunbattle-kills-43-in-west-Mexico-cartel-6282457.php'>site</a></td><td><table><tr><td>Fierce gunbattle kills 43 in west Mexico cartel territory</td></tr><tr><td>Vehicles burn, that authorities say caught fire during a gunbattle, in a warehouse at Rancho del Sol, near Ecuanduero, in western Mexico, Friday, May 22, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/22/f4e5aef304244317770f6a706700dcde_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-23 04:05:27</td><td><a href='http://www.utsandiego.com/news/2015/may/22/fierce-gunbattle-kills-43-in-west-mexico-cartel/'>site</a></td><td>The battle on Friday followed two other recent unprecedented attacks by the cartel, one that killed 15 state police officers and another that shot down an army helicopter with a rocket launcher for the first time in Mexico's history.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-05-23 17:39:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-mexico-shootout-20150522-story.html'>site</a></td><td>A federal official on Saturday said the area around the ranch has been a Jalisco New Generation stronghold in the last couple of years as the cartel has expanded outside of Jalisco and grown rapidly into one of Mexico's most powerful organized crime groups.</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-05-23 22:37:48</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/23/fierce-gunbattle-kills-43-in-west-mexico-cartel-territory'>site</a></td><td>ECUANDUREO, Mexico (AP) - The call for backup went out to local police after 8 a.m. There was a shootout underway at a ranch in the western reaches of Michoacan state and the federal authorities needed help.</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-05-23 23:39:46</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3093726/Fierce-gunbattle-kills-43-west-Mexico-cartel-territory.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Police drive along a road inside the Rancho del Sol, a ranch that was the site of clashes between Mexican authorities and a drug cartel, in the municipality of Ecuandureo, Mexico, Saturday, May 23, 2015.</td></tr>
+</table></body></html>

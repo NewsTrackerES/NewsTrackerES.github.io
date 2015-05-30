@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/1655/1745097732_4131932127001_df25de1e69759667600b1b57422e4171-tmb1.jpg?pubId=1745097732'></td><td>2015-03-18 14:19:50</td><td><a href='http://technology.canoe.ca/News/2015/03/18/22294011.html?cid=rsstechnology'>site</a></td><td><table><tr><td>LOS ANGELES - Facebook is poised to siphon off a large chunk of spending from TV budgets in the next two years.</td></tr><tr><td>By 2017, Facebook and YouTube's combined share of global online video spending will increase to 36% (from 34% in 2014).</td></tr><tr><td>"In contrast to YouTube, because users are logged into Facebook's service while viewing their newsfeed, Facebook can leverage all of a user's data to offer advertisers unmatched targeting at scale," DiClemente said.</td></tr><tr><td>Moreover, DiClemente noted, "YouTube audiences are more likely to be watching ads with sound, again due to users' intention of watching video content," whereas Facebook video ads autoplay in its users' feeds with the audio muted by default.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 14:22:34</td><td></td><td><a href='facebook_40_41.html'>Facebook Inc said on Wednesday that its users were watching 4 billion videos a day, compared with 3 billion in January and just 1 billion in September. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 14:22:34</td><td></td><td><a href='facebook_40_42.html'>"More than 75 percent of global video views on Facebook occur on mobile, and we believe mobile video will become more important to marketers over time," she said. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td><a href='http://www.reuters.com/article/2015/04/23/us-facebook-video-idUSKBN0NE1N520150423?feedType=RSS&feedName=businessNews'>site</a></td><td>Facebook shares were down about 1 percent at $83.92 in early trading on Thursday.</td></tr>
 </table></body></html>

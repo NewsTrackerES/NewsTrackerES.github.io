@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 13,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,17 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-03-19 15:10:00</td><td></td><td><a href='yahoo_4.html'>In a new cost-cutting move, Yahoo Inc. announced Thursday that it's closing its Beijing research and development center and leaving China. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:04:50</td><td></td><td><a href='yahoo_0.html'>NEW YORK (AP) - Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba. (39)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 15:04:14</td><td></td><td><a href='yahoo_51.html'>Microsoft Corp and Yahoo Inc amended a 2009 search partnership, giving Yahoo more control over how search results are displayed on desktops and mobile devices. (5)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 17:05:07</td><td></td><td><a href='yahoo_49.html'>As has been the case since the companies formed their alliance, Microsoft's technology will power most of the search results on Yahoo's sites. (7)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-16 20:43:16</td><td></td><td><a href='yahoo_53.html'>Appeals panel rules RCR intentionally altered Newman's tires (Yahoo Sports) (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 02:30:57</td><td></td><td><a href='yahoo_5.html'>Duda's 3 hits lead Mets over Marlins for 5th straight win (Yahoo Sports) (216)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-05-12 18:39:52</td><td></td><td><a href='yahoo_52.html'>Mayweather-Pacquiao sets PPV mark with 4.4 million buys (Yahoo Sports) (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-20 18:55:36</td><td></td><td><a href='yahoo_47.html'>Yahoo said its understanding is that the statement from the IRS was "not specific" to its spin-off plans and "reflects no change in applicable law and does not affect previously filed ruling requests." (5)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-20 22:19:19</td><td></td><td><a href='yahoo_48.html'>If taxed at the full 40 percent rate, Yahoo shares would be worth just about $20 billion, SunTrust Robinson Humphrey analyst Robert Peck wrote. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>9</td><td></td><td>2015-03-19 15:10:00</td><td></td><td><a href='yahoo_0.html'>In a new cost-cutting move, Yahoo Inc. announced Thursday that it's closing its Beijing research and development center and leaving China. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 19:16:05</td><td></td><td><a href='yahoo_15.html'>Yahoo is closing its research and development center in China as CEO Marissa Mayer tries to placate shareholders pressuring the Internet company to cut costs while it struggles to bring in more revenue. (8)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-26 22:04:50</td><td></td><td><a href='yahoo_18.html'>NEW YORK (AP) - Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba. (7)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-29 23:40:43</td><td></td><td><a href='yahoo_13.html'>Denny Hamlin races to 25th Cup win, 5th at Martinsville (Yahoo Sports) (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 04:52:22</td><td></td><td><a href='yahoo_20.html'>Keith scores as Blackhawks beat Predators 4-3 in double OT (Yahoo Sports) (157)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 15:04:14</td><td></td><td><a href='yahoo_14.html'>The 10-year search partnership, crafted by former Microsoft CEO Steve Ballmer and former Yahoo CEO Carol Bartz, allowed the companies to amend or terminate it after five years. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 17:05:07</td><td></td><td><a href='yahoo_11.html'>As has been the case since the companies formed their alliance, Microsoft's technology will power most of the search results on Yahoo's sites. (7)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-16 20:43:16</td><td></td><td><a href='yahoo_17.html'>Appeals panel rules RCR intentionally altered Newman's tires (Yahoo Sports) (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-19 19:14:29</td><td></td><td><a href='yahoo_5.html'>Team Penske cars wreck each other at rain-soaked Bristol (Yahoo Sports) (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 20:26:03</td><td></td><td><a href='yahoo_9.html'>Yahoo said display advertising revenue rose 2.3 percent to $463.7 million in the quarter, accounting for roughly 40 percent of its total revenue. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 23:10:13</td><td></td><td><a href='yahoo_2.html'>Activist shareholder Starboard Value L.P., which owns a nearly 1 percent stake in Yahoo, has been urging Mayer to slash expenses and spin off the Yahoo Japan stake to lift the company's stock. (10)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-30 04:44:14</td><td></td><td><a href='yahoo_6.html'>The value of Yahoo CEO Marissa Mayer's pay package surged last year, mostly due to gains in the Internet company's stock price that came despite concerns about the overall health of Yahoo's business. (6)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-20 22:19:19</td><td></td><td><a href='yahoo_1.html'>"Anything can happen, but I'm going with the bet that this won't impact spin-off of Alibaba shares for Yahoo," Axiom Capital analyst Victor Anthony told Reuters. (4)</a></td></tr>
 </table></body></html>

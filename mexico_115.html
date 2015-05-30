@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 13:14:52</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3050552/Mexicos-Congress-passes-anti-corruption-law.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Mexico's Congress passes anti-corruption law</td></tr><tr><td>MEXICO CITY, April 22 (Reuters) - Mexico's Congress has approved an anti-corruption law that could help relieve pressure on President Enrique Pena Nieto's scandal-plagued government.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 18:27:33</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/05/mexico-non-violence-art-features-guns-with-knotted-barrels'>site</a></td><td>MONTERREY, Mexico (AP) - Replicas of a sculpture of a knotted pistol that was designed in honor of the late musician John Lennon are being displayed this month in Monterrey, a northern industrial city that knows about gun violence.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-05 18:30:07</td><td><a href='http://www.startribune.com/world/298713781.html'>site</a></td><td><table><tr><td>Mexico non-violence art exhibit features guns with knotted barrels</td></tr><tr><td>Killings from firearms in Monterrey, Mexico's third-largest city, jumped from 91 in 2006, before the offensive started, to 532 in 2011, one of the most violent years, according to government statistics.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-05 18:31:49</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article17455550.html#storylink=rss'>site</a></td><td>A knotted gun sculpture painted by Japanese artist and peace activist Yoko Ono is displayed at a park in the city of Monterrey, Mexico, Thursday April 2, 2015.</td></tr>
 </table></body></html>

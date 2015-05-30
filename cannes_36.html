@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/AI1t9xuA6vpJ6cEh0e7m9Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5f1b419db44a1f16770f6a706700e3f0.jpg'></td><td>2015-05-21 18:16:00</td><td><a href='https://news.yahoo.com/gaspar-noes-explicit-love-sets-cannes-atwitter-141947066.html'>site</a></td><td><table><tr><td>Gaspar Noe's explicit 'Love' sets Cannes atwitter</td></tr><tr><td>CANNES, France (AP) - The movies are in love with love, but they're often squeamish about sex.</td></tr><tr><td>That's not something that can be said about director Gaspar Noe, whose new film "Love" brings graphic sex - in myriad positions and permutations, in twosomes, threesomes and groups - to the Cannes Film Festival.</td></tr><tr><td>"Love" was - unsurprisingly - one of the most anticipated films at Cannes, where it is playing as an out-of-competition entry.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/33/64/7978290/3/gallery_thumb.jpg'></td><td>2015-05-14 12:14:08</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Salma-Hayek-eats-Cannes-heart-out-6263036.php'>site</a></td><td><table><tr><td>CANNES WATCH: Salma Hayek eats Cannes' heart out</td></tr><tr><td>Hayek exclaimed Thursday morning after it showed for critics at the Cannes Film Festival.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/eLHmqLePnj.dTdgJfpawEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_US/Entertainment/Variety/hayek.jpg.cf.jpg'></td><td>2015-05-14 12:14:16</td><td><a href='http://news.yahoo.com/cannes-watch-salma-hayek-eats-cannes-heart-121416945.html'>site</a></td><td>Critics mostly responded rapturously to its baroque weirdness at Cannes.</td></tr>
 </table></body></html>

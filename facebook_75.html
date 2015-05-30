@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 18:00:25</td><td></td><td><a href='facebook_75_77.html'>NEW YORK - Facebook is pushing for higher pay and improved benefits for the janitors, cooks and other workers who support its employees. (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 18:05:13</td><td></td><td><a href='facebook_75_76.html'>The world's largest online social network says it is implementing a set of new standards for its U.S.-based contractors who do a "substantial amount of work" with Facebook. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 20:40:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20851917.html#storylink=rss'>site</a></td><td>In Silicon Valley, where the wealth gap between tech industry luminaries and the workers who serve their lunches and clean their bathroom can be especially jarring, the movement has focused on tech giants like Apple, Google and Facebook.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:27:59</td><td><a href='http://www.utsandiego.com/news/2015/mar/24/dad-fugitive-son-afraid-his-facebook-trial/'>site</a></td><td>Dad: Fugitive son afraid his Facebook trial wouldn't be fair</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-24 16:30:37</td><td><a href='http://www.startribune.com/business/297400701.html'>site</a></td><td><table><tr><td>Fugitive's father tells NY judge his son thought he could not get fair trial in Facebook case</td></tr><tr><td>NEW YORK - A fugitive facing charges he falsely claimed he's owed a majority ownership in Facebook fled after complaining he was being treated unfairly in courts, his father said Tuesday.</td></tr></table></td></tr>
 </table></body></html>

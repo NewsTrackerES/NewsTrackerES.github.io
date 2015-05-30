@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 08:42:53</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/19/cannes-watch-dicaprio-buys-13-600-for-bag-for-charity'>site</a></td><td><table><tr><td>CANNES WATCH: DiCaprio buys $13,600 bag for charity</td></tr><tr><td>CANNES, France (AP) - Who knew Leonardo DiCaprio had an eye for Chanel bags?</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:07:11</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/11/diors-cruise-show-draws-celebrity-crowd-before-cannes'>site</a></td><td><table><tr><td>Dior's cruise show draws celebrity crowd before Cannes</td></tr><tr><td>This year, Dior selected the Palais Bulles owned by fashion designer Pierre Cardin, nestled in the mountain tops outside of Cannes, which plays host to the film festival that kicks off Wednesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 23:19:36</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20706126.html#storylink=rss'>site</a></td><td>Fashion Designer Pierre Cardin arrives at the Dior Resort catwalk show presented in Cannes, southeastern France, Monday, May 11, 2015.</td></tr>
 </table></body></html>

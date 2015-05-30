@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 18:30:24</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11449042&ref=rss'>site</a></td><td>CANNES, France (AP) " Harvey Weinstein offered a peek at Quentin Tarantino's film "The Hateful Eight" at the Cannes Film Festival on Thursday as the movie mogul previewed the Weinstein Co.'s upcoming slate.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 19:19:17</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/14/harvey-weinstein-offers-peek-at-hateful-eight-at-cannes'>site</a></td><td>One of the Cannes festival jury members, Jake Gyllenhaal, was also on hand to preview his boxing drama with director Antoine Fuqua: "Southpaw."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-14 20:35:09</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21018153.html#storylink=rss'>site</a></td><td>The film was picked up by The Weinstein Company for U.S. distribution rights during the Cannes International Film Festival.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-24 10:31:33</td><td><a href='http://news.yahoo.com/cannes-celebrities-protected-seagull-deterrent-falcons-103133686.html'>site</a></td><td><table><tr><td>Cannes celebrities protected by seagull-deterrent falcons</td></tr><tr><td>Aggressive gulls have for years been the bane of stars on Cannes' famed Croisette promenade - swooping in to snatch pieces of food, hurting clients, knocking tables over and smashing glasses.</td></tr></table></td></tr>
 </table></body></html>

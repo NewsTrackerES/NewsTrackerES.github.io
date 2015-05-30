@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td><table><tr><td>Internet.org is Facebook's fledgling effort to create new users in countries with little or low Internet use.</td></tr><tr><td>That is the reason why Internet.org does not include the WhatsApp messaging service, bought by Facebook last year.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-05-13 05:43:42</td><td><a href='http://www.reuters.com/article/2015/05/13/facebook-launch-idUSL3N0Y42NI20150513?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>The news publishers can either sell and embed advertisements in the articles and keep all of the revenue, or allow Facebook to sell ads.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 05:45:00</td><td><a href='http://www.huffingtonpost.com/2015/05/13/facebook-instant-articles_n_7271596.html'>site</a></td><td><table><tr><td>(Reuters) - Facebook Inc tied up with nine news publishers to launch "Instant Articles" that will let them publish articles directly to the social network's mobile news feeds.</td></tr><tr><td>The other launch partners for Instant Articles are NBC, The Atlantic, The Guardian, BBC News, Spiegel and Bild, Facebook said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.ctvnews.ca/bellmedia/common/img/logos/footer-logo_bnn.jpg'></td><td>2015-05-13 11:33:45</td><td><a href='http://www.ctvnews.ca/sci-tech/facebook-works-with-publishers-to-launch-instant-articles-1.2371359'>site</a></td><td>Sharing articles on Facebook's mobile app is more and more common.</td></tr>
 </table></body></html>

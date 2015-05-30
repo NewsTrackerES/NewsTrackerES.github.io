@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 02:02:29</td><td><a href='http://www.sbs.com.au/news/article/2015/05/03/morrison-wants-jobs-young-vulnerable'>site</a></td><td><table><tr><td>Morrison wants jobs for young, vulnerable</td></tr><tr><td>Social Services Minister Scott Morrison says the government's jobs package in the May 12 budget is aimed at getting young people into work, particularly those in vulnerable communities.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/ZPmh.qHVC331rz6HhK.GHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9513fa8ce0084d11740f6a7067000a73.jpg'></td><td>2015-04-21 13:52:58</td><td><a href='http://news.yahoo.com/toni-morrison-sets-her-novel-alien-world-today-135258462.html'>site</a></td><td>Morrison believes her job as a writer is to upend conventional thinking, whether about race (a social construct, she calls it), or happiness.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 13:55:12</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11436396&ref=rss'>site</a></td><td>Writing is Morrison's path to outside of herself, but it's undertaken alone, in her imagination: The Civil War era in "Beloved," the 1920s in "Jazz," colonial times in "A Mercy."</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-21 20:59:51</td><td><a href='http://news.yahoo.com/tunisia-releases-video-attackers-entering-bardo-museum-205951165.html'>site</a></td><td><table><tr><td>Tunisia releases video of attackers entering Bardo museum</td></tr><tr><td>TUNIS, Tunisia (AP) - Tunisia's Interior Ministry has released security camera footage of the gunmen walking through the Bardo museum during the attack that killed 21 people.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-03 16:02:05</td><td></td><td><a href='tunisia_5_6.html'>Tunisia said Sunday security measures have already been taken to protect Jewish pilgrims at a religious festival next week on the island of Djerba, after Israel warned of "concrete threats". (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-03 16:02:05</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3066350/Tunisia-says-Jewish-pilgrims-safe-Israel-warning.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tunisian Jews now number around 1,500, compared with an estimated 100,000 when Tunisia gained independence in 1956.</td></tr>
 </table></body></html>

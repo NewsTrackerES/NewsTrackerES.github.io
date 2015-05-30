@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 18:00:18</td><td></td><td><a href='apple_77_79.html'>Officials at Apple and Craig & Karl did not immediately respond Monday to emails seeking comment. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-13 18:00:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11432207&ref=rss'>site</a></td><td>The lawsuit seeks unspecified damages from Cupertino, California-based Apple and the design duo Craig Redman of New York and Karl Maier of London, whose company is called Craig & Karl.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:09:12</td><td></td><td><a href='apple_77_81.html'>MIAMI -- Artist Romero Britto is suing Apple Inc. and a design firm in Miami federal court for allegedly misusing his colour-splashed images and distinctive style in marketing campaigns. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 20:13:06</td><td></td><td><a href='apple_77_78.html'>After investigating the source of the Apple image, according to the lawsuit, Britto's lawyers noticed apparent similarities between Craig & Karl's work and that of Britto. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 22:01:47</td><td></td><td><a href='apple_77_80.html'>In fact, when the Apple "Start Something New" campaign appeared, Britto received messages congratulating him, incorrectly, for what appeared to be a new business deal with Apple. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/03/30/iphone6-6plus650d.jpg&size=104x59&quality=85'></td><td>2015-03-31 13:40:48</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/30/22316876-relaxnews.html?cid=rsstechnology'>site</a></td><td><table><tr><td>Apple trade-ins open up to Android, BB, Windows phones</td></tr><tr><td>Apple Store trade-ins are run in partnership with an external company.</td></tr></table></td></tr>
 </table></body></html>

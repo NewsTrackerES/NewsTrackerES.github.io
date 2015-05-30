@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 12:02:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3057335/US-STOCKS-Futures-ahead-Apple-earnings-Fed-meeting-later-week.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>US STOCKS-Futures up ahead of Apple earnings, Fed meeting later this week</td></tr><tr><td>April 27 (Reuters) - U.S. stock index futures were up slightly on Monday after the Nasdaq Composite and S&P 500 chalked up record high closes on Friday and ahead of Apple's results after the close.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 15:44:46</td><td><a href='http://www.nytimes.com/2015/04/28/business/daily-stock-market-activity.html?partner=rss&emc=rss&_r=0'>site</a></td><td>Wall St. Is Higher Ahead of Apple Earnings</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/a6e97e2/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F21%2F7c%2F942036bc4dfea7736325ea8baa21%2Fresizes%2F500%2F150401-dip-aprilfools-editorial.jpg'></td><td>2015-04-27 16:13:10</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/27/stocks-edge-up-at-midday-as-investors-wait-for-apple-results'>site</a></td><td><table><tr><td>Stocks edge up at midday as investors wait for Apple results</td></tr><tr><td>NEW YORK (AP) - U.S. stocks are barely higher at midday as investors look ahead to Apple's results later today and a meeting by the Federal Reserve on interest rates.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 16:14:13</td><td><a href='http://abcnews.go.com/Business/wireStory/stocks-edge-midday-investors-wait-apple-results-30615325'>site</a></td><td>Along with Apple, more than 150 companies in the S&P 500 will report their quarterly results this week, including Ford and Exxon Mobil.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-27 18:51:51</td><td><a href='http://finance.yahoo.com/news/stock-futures-ahead-apple-earnings-112704163.html'>site</a></td><td>Apple shares were up 1.1 percent at $13.59 ahead of its results, due after the close.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 19:51:09</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3057970/US-STOCKS-Wall-St-slips-biotechs-drop-Apple-shares-up.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>US STOCKS-Wall St slips as biotechs drop; Apple shares up</td></tr>
+</table></body></html>

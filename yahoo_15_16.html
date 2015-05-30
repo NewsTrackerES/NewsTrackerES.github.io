@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 09:20:17</td><td><a href='http://www.startribune.com/world/296842551.html'>site</a></td><td><table><tr><td>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005.</td></tr><tr><td>That $1 billion deal gave Yahoo a lucrative stake in Alibaba that is currently worth $33 billion.</td></tr><tr><td>Yahoo's revenue declined by 1 percent to $4.6 billion last year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 10:00:32</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420081&ref=rss'>site</a></td><td>The Beijing operation's responsibilities will be shifted to other Yahoo Inc. offices, according to a company statement released late Wednesday.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 19:15:39</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-closing-last-China-operation-in-Beijing-6144429.php'>site</a></td><td><table><tr><td>Yahoo is preparing to spin off its Alibaba holdings into a separately traded company later this year, removing an asset that deflected attention from the challenges facing Yahoo's own businesses.</td></tr><tr><td>Smith is also among the Yahoo shareholders who called upon Mayer to spin off the Alibaba stake to avoid triggering a huge tax bill from sale of the stake.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 19:16:05</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3002104/Yahoo-closing-China-operation-Beijing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Yahoo is closing its research and development center in China as CEO Marissa Mayer tries to placate shareholders pressuring the Internet company to cut costs while it struggles to bring in more revenue.</td></tr>
+</table></body></html>

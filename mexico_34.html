@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 16,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 16 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,20 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 19:55:09</td><td></td><td><a href='mexico_34_40.html'>An attack on a police convoy in the western Mexico state of Jalisco killed 15 state police officers and wounded five, marking the deadliest single attack on police in Mexico in recent memory. (37)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-07 19:55:09</td><td><a href='http://abcnews.go.com/International/wireStory/attack-western-mexico-leaves-police-officers-wounded-30136873'>site</a></td><td>Raul Benitez, a security expert at Mexico's National Autonomous University, "the serious thing about this attack was that it was very well planned and orchestrated, with a military-style strategy."</td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-04-09 00:59:01</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-08-LT--Mexico-Violence/id-ac715f59b86546ce9c309f7bc9407e72'>site</a></td><td>A girl weeps during a ceremony to honor slain policemen in Tlaquepaque, Mexico, Wednesday, April 8, 2015.</td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-05-01 17:33:35</td><td><a href='http://news.yahoo.com/burning-vehicles-block-roads-guadalajara-mexico-173335947.html'>site</a></td><td>The activity came as Mexico celebrated the May 1 holiday and the federal government announced the implementation of "Operation Jalisco" to improve the state's security without providing further details.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-01 17:40:26</td><td></td><td><a href='mexico_34_35.html'>Suspected 'narco blockades' close roads in Guadalajara, Mexico with burning vehicles (3)</a></td></tr>
-  <tr><td style='display:none'>9</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/CEOZladGO6lrYPF6eOYnaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a5d63af47d264313750f6a7067004e00.jpg'></td><td>2015-05-01 21:51:29</td><td><a href='http://news.yahoo.com/burning-vehicles-block-roads-guadalajara-mexico-173335947.html'>site</a></td><td>Associated Press writer Elizabeth Rivera reported this story in Guadalajara and Christopher Sherman reported from Mexico City.</td></tr>
-  <tr><td style='display:none'>10</td><td></td><td>2015-05-01 23:33:41</td><td><a href='http://abcnews.go.com/International/wireStory/burning-vehicles-block-roads-guadalajara-mexico-30736145'>site</a></td><td>Alejandro Hope, a former official with Mexico's intelligence service, said the violent response to the government offensive showed the cartel is cohesive and capable of reacting to attacks.</td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-05-02 01:44:04</td><td></td><td><a href='mexico_34_36.html'>A policeman tries to control traffic next to a torched dump truck that was extinguished by firefighters, in Guadalajara, Mexico, Friday, May 1, 2015. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-12 17:27:32</td><td></td><td><a href='mexico_34_37.html'>A violent attempted jailbreak and the discovery of three hacked-up bodies on a train are raising new fears that provincial drug cartel violence is finding its way into Mexico City. (2)</a></td></tr>
-  <tr><td style='display:none'>11</td><td></td><td>2015-05-21 01:35:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11452475&ref=rss'>site</a></td><td>A statement issued late Wednesday by Mexico's security Cabinet says the shooting happened earlier in the day in the town of Tlacotepec.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-23 02:45:27</td><td></td><td><a href='mexico_34_38.html'>The death toll was one of the heaviest to hit Mexico since President Enrique Pena Nieto took office in December 2012 pledging to put an end to years of gangland violence that have claimed more than 100,000 lives since 2007 alone. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-23 03:44:33</td><td></td><td><a href='mexico_34_39.html'>The lop-sided results were similar to a controversial case last June 30 in which Mexico's army said its troops had engaged in a shootout with alleged criminals in which 22 suspects were killed but only one soldier injured. (2)</a></td></tr>
-  <tr><td style='display:none'>12</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-23 03:46:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article21702333.html#storylink=rss'>site</a></td><td>New Generation's quick rise reflects a rapidly changing organized-crime landscape in Mexico as the government targets top leaders of established cartels.</td></tr>
-  <tr><td style='display:none'>13</td><td><img src='http://static.euronews.com/articles/287428/137x77_287428.jpg?1415257802'></td><td>2015-05-23 09:30:31</td><td><a href='http://www.euronews.com/2015/05/23/mexico-shoot-out-leaves-at-least-43-dead/'>site</a></td><td>Mexico shoot-out leaves at least 43 dead</td></tr>
-  <tr><td style='display:none'>14</td><td></td><td>2015-05-23 22:37:48</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/23/fierce-gunbattle-kills-43-in-west-mexico-cartel-territory'>site</a></td><td><table><tr><td>"There are many, many still obscure pieces of information," said Hope, who formerly worked for Mexico's national intelligence agency.</td></tr><tr><td>The Mexican government is suffering a "serious credibility deficit" with its people and needs to get information out as quickly as possible, said Guillermo Trejo, political science professor who studies Mexico at the University of Notre Dame.</td></tr></table></td></tr>
-  <tr><td style='display:none'>15</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-25 04:30:35</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article22171563.html#storylink=rss'>site</a></td><td>Relatives doubt that 42 men died in shootout on Mexico ranch</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 05:08:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19920498.html#storylink=rss'>site</a></td><td><table><tr><td>New Mexico joins race to build storage for nuclear waste</td></tr><tr><td>Two counties in southeastern New Mexico have joined the race to build an interim storage site to house spent nuclear fuel from the nation's reactors.</td></tr></table></td></tr>
 </table></body></html>

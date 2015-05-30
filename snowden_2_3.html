@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/399/news/national/article18410740.ece/ALTERNATES/w140/snowden.jpg'></td><td>2015-03-03 16:26:19</td><td><a href='http://www.theglobeandmail.com/news/world/snowden-in-talks-on-returning-to-us-russian-lawyer-says/article23261304/?cmpid=rss1'>site</a></td><td><table><tr><td>Snowden in talks on returning to U.S., Russian lawyer says</td></tr><tr><td>Snowden has said in the past he would like to return home if he was assured he would be given a fair trial.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670562248_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 16:28:53</td><td><a href='http://www.torontosun.com/2015/03/03/fugitive-ex-us-spy-snowden-in-talks-on-returning-home-lawyer'>site</a></td><td><table><tr><td>Fugitive ex-U.S. spy Snowden in talks on returning home: Lawyer</td></tr><tr><td>Snowden's lawyer, Anatoly Kucherena, who has links to the Kremlin, was speaking at a news conference to present a book he has written about his client.</td></tr><tr><td>The United States wants Snowden to stand trial for leaking extensive secrets of electronic surveillance programmes by the National Security Agency (NSA).</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 20:39:21</td><td><a href='http://www.rferl.org/content/russia-snowden-return-home/26880556.html'>site</a></td><td>Lawyer: Edward Snowden Wants To Return Home</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-03 20:47:34</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/03/lawyer-nsa-leaker-edward-snowden-wants-to-return-home'>site</a></td><td><table><tr><td>Snowden's Russian lawyer, Anatoly Kucherena, said Tuesday March 3, 2015 he was eager to return to the U.S. if given security guarantees, and German and U.S. lawyers were working on the issue.</td></tr><tr><td>MOSCOW (AP) - NSA systems analyst Edward Snowden wants to return to the United States from Russia if he's guaranteed a fair trial, his Russian lawyer said Tuesday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/294/d3cc69b5d71c48cfa3032f6cda12ec4e.jpg'></td><td>2015-03-04 03:00:07</td><td><a href='http://www.news24.com/World/News/Snowden-in-talks-on-returning-home-lawyer-20150304'>site</a></td><td>Kucherena said last August Snowden had been granted a three-year residence permit in Russia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/610/img/photos/2015/04/06/1d/6a/snowden.jpg'></td><td>2015-04-06 10:27:11</td><td><a href='http://www.daytondailynews.com/news/news/national/watch-john-oliver-grills-edward-snowden-last-week-/nknTh/'>site</a></td><td>John Oliver and Edward Snowden.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/sJwHM53Uq3umE1jI.fMjHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://l.yimg.com/os/publish-images/news/2015-04-06/1940e4b0-dc5d-11e4-9a65-83fe19549761_snowden-oliver.jpg'></td><td>2015-04-06 11:44:29</td><td><a href='http://news.yahoo.com/edward-snowden-john-oliver-interview-video-114438027.html'>site</a></td><td>"The good news is there's no program named 'The D--- Pic program,'" Snowden said.</td></tr>
 </table></body></html>

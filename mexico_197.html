@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 00:02:26</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3077562/Mexico-Copa-squad-save-Chicharito-Gold-Cup.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Herrera has placed priority on the CONCACAF competition because a win would take Mexico into a playoff with the United States for a place at the 2017 Confederations Cup in Russia.</td></tr><tr><td>Mexico are part of the CONCACAF region but were invited to take part in the South American Copa America from June 11 to July 4 along with Jamaica.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 02:08:30</td><td><a href='http://news.yahoo.com/1-migrant-killed-1-wounded-attack-train-mexico-020830204.html'>site</a></td><td>MEXICO CITY (AP) - One Honduran youth was shot to death and another migrant was wounded when assailants attacked Central American migrants riding a freight train in the central Mexico state of Puebla.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 02:10:32</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-2999961/1-migrant-killed-1-wounded-attack-train-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>1 migrant killed, 1 wounded in attack on train in Mexico</td></tr><tr><td>The shootings in Puebla may indicate gangs are following Central American migrants in their changing routes through Mexico.</td></tr><tr><td>The Puebla state prosecutor's office said Tuesday the attackers apparently boarded the train around Tierra Blanca, Veracruz, before the line turns inland and heads toward the center of Mexico.</td></tr></table></td></tr>
 </table></body></html>

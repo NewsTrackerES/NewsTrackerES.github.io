@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/59e/news/world/article23303948.ece/ALTERNATES/w220/web-wo-nz-spying05nw2.jpg'></td><td>2015-03-05 11:54:22</td><td><a href='http://www.theglobeandmail.com/news/world/new-zealand-shared-spy-data-on-pacific-states-with-allies-snowden-documents-allege/article23303949/?cmpid=rss1'>site</a></td><td>The role of the agency, which has a large eavesdropping facility at the top of the country's South Island, was an issue in last year's general election, with documents released by Snowden suggesting the GCSB was planning to conduct mass domestic surveillance.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 17:00:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/5/new-zealand-spying-on-south-pacific-neighbors.html'>site</a></td><td>New Zealand spying on South Pacific neighbors, Snowden documents show</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 19:43:29</td><td></td><td><a href='snowden_11_12.html'>NEW YORK (AP) - The mystery artists who put a bust of Edward Snowden on a Revolutionary War memorial have been ticketed but not criminally charged, and the city has given back their confiscated statue, their lawyer said Wednesday. (8)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 20:00:32</td><td><a href='http://hosted2.ap.org/APDEFAULT/aa9398e6757a46fa93ed5dea7bd3729e/Article_2015-05-06-US--Snowden%20Statue%20Mystery/id-d6262f3fe8b64a68856a4fd75d8073eb'>site</a></td><td>Snowden is living in exile in Russia after divulging the secret U.S. government collection of phone records, among other intelligence gathering.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-07 02:54:07</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20355699.html#storylink=rss'>site</a></td><td>"The ideal that Snowden seemed to be fighting for with his actions seemed to be in line with the ideals the revolutionaries, who might also have been called traitors, were fighting for," Tider said by phone.</td></tr>
 </table></body></html>

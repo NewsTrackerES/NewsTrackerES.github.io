@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 20:00:42</td><td></td><td><a href='facebook_16_17.html'>Facebook's entry, announced Tuesday, is free, works with debit cards and is available on Apple and Android mobile devices and on desktop computers. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 20:00:42</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11419038&ref=rss'>site</a></td><td>To help allay concerns about security, Facebook noted that it handles more than a million payments transactions on its site every day for its advertisers and game players.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 20:39:14</td><td></td><td><a href='facebook_16_18.html'>NEW YORK (AP) - Facebook's Messenger app will soon let you send your friends money, the latest in a crowded field of services aimed at an increasingly wireless and cashless generation. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn4.belfasttelegraph.co.uk/breakingnews/offbeat/article31189073.ece/886aa/ALTERNATES/h342/PANews%20BT_P-18ba346b-7d9a-42e7-828b-12e4db31c39f_I1.jpg'></td><td>2015-05-01 20:51:03</td><td><a href='http://www.belfasttelegraph.co.uk/breakingnews/offbeat/eye-lit-up-by-facebook-for-election-31189074.html'>site</a></td><td><table><tr><td>The London Eye is to be lit up every night between now and the General Election with data reflecting the conversation taking place on Facebook.</td></tr><tr><td>Studies have shown that conversation on Facebook ahead of an election can increase voter turnout.</td></tr></table></td></tr>
 </table></body></html>

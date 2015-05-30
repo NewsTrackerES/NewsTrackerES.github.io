@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/06/c547a0877572e30f720f6a7067006e52_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-06 11:04:37</td><td><a href='http://www.utsandiego.com/news/2015/apr/06/framework-for-iran-nuclear-deal-may-sideline-hard/'>site</a></td><td>But the country has long been divided between those determined to maintain the fervor of the 1979 Islamic revolution and reformers who want to ease restrictions inside Iran and soften its foreign policy.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 11:04:37</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/06/framework-for-iran-nuclear-deal-may-sideline-hard-liners'>site</a></td><td>As Iran's nuclear negotiators returned home with the framework of a deal with world powers, joyous revelers joked that "still, there is no whiskey" in the Islamic Republic, a jab at its theocratic government.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 05:43:37</td><td><a href='http://www.utsandiego.com/news/2015/apr/09/carter-says-us-has-made-progress-against-islamic/'>site</a></td><td><table><tr><td>Carter says US has made progress against Islamic State</td></tr><tr><td>SEOUL, South Korea (AP) - U.S. Defense Secretary Ash Carter says the U.S. has made progress against the Islamic State group in Iraq but cannot predict how long the fight will take.</td></tr></table></td></tr>
 </table></body></html>

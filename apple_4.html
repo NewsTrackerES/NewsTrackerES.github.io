@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 03:52:48</td><td></td><td><a href='apple_4_6.html'>In the memoir, which was released this week, Tim Cook did not miss an opportunity to take a swipe at the unauthorized Steve Jobs biography by Walter Isaacson, which debuted just weeks after the Apple co-founder's death. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 03:52:48</td><td></td><td><a href='apple_4_5.html'>The book, based on numerous in-depth interviews with Jobs' colleagues, friends and competitors, also allows a glimpse into the Apple CEO's inner sanctum in the final weeks of his life. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/569e5f4096a6e55dbb9fd153e9460a7ad730ab76_140x91.jpg'></td><td>2015-03-26 03:52:48</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11423626&ref=rss'>site</a></td><td>In an interesting titbit, the book reveals that Jobs' favorite Beatle was John Lennon, and that he reportedly named his company after Beatles' Apple Corps Record.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:34:11</td><td><a href='http://www.reuters.com/article/2015/04/30/us-usa-apple-partnership-idUSKBN0NL1QK20150430?feedType=RSS&feedName=healthNews'>site</a></td><td>Apple, IBM announce partnership with Japan Post to improve elderly care</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/apple2.jpg?ve=1&tl=1'></td><td>2015-04-30 13:36:56</td><td><a href='http://www.foxbusiness.com/industries/2015/04/30/apple-ibm-partner-with-japan-post-for-elderly-care/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Apple Inc and International Business Machine Corp have teamed up with Japan Post Holdings Co to improve caregiver and monitoring services for the elderly in Japan, the companies announced on Thursday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/O0ZjpDyvDQqgAEkcqX1bnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2e4d554cd582a4096f0f6a706700afd5.jpg'></td><td>2015-03-02 14:30:11</td><td><a href='http://news.yahoo.com/next-google-maps-adventure-soaring-amazon-jungle-070127034.html'>site</a></td><td><table><tr><td>Google is renowned for going out on a technological limb, but even this project made the company nervous at first, said Karin Tuxen-Bettman, who oversees Google's Street View partnerships.</td></tr><tr><td>"One of the things that I love about working at Google is that if a partner comes to us with a crazy idea, we will probably try it," Tuxen-Bettman said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/920x920.jpg'></td><td>2015-03-31 18:00:15</td><td><a href='http://www.sfgate.com/business/technology/article/Microsoft-makes-cheaper-version-of-Surface-Pro-3-6170030.php'>site</a></td><td>Besides the $149 laptops, Google also is attacking Microsoft on other fronts.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/622x350.jpg'></td><td>2015-03-31 18:00:15</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-makes-cheaper-version-of-Surface-Pro-3-6170030.php'>site</a></td><td>SAN FRANCISCO (AP) - Google is releasing its cheapest Chromebook laptops yet, two versions priced at $149 aimed at undercutting Microsoft's Windows franchise and gaining ground in even more classrooms.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-31 18:54:06</td><td><a href='http://www.miamiherald.com/news/business/article16985768.html#storylink=rss'>site</a></td><td>Google is releasing two $149 laptops in an effort to undercut Microsoft's Windows franchise and drive down already falling personal computer prices.</td></tr>
 </table></body></html>

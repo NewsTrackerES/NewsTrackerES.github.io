@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 15:07:00</td><td><a href='http://www.cnbc.com/id/102413693'>site</a></td><td>Gov't sent 800K customers wrong Obamacare tax info</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 07:19:55</td><td><a href='http://www.foxnews.com/politics/2015/04/06/filing-deadline-extended-for-obamacare-customers-given-wrong-tax-forms/'>site</a></td><td>Tax filing deadline extended for ObamaCare customers given wrong form</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 21:07:06</td><td></td><td><a href='obamacare_0_1.html'>Ted Cruz, who once spent 21 straight hours speaking on the Senate floor railing against President Barack Obama's Affordable Care Act, plans to sign up for Obamacare. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-24 21:07:06</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article16203797.html#storylink=rss'>site</a></td><td>"What is problematic about Obamacare is that it is killing millions of jobs in this country and has killed millions of jobs," Cruz told CNN.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 22:28:41</td><td></td><td><a href='obamacare_0_2.html'>The Democrats' health care law, also known as Obamacare, created the exchange system. (2)</a></td></tr>
 </table></body></html>

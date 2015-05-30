@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 17:20:31</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/07/moodys-raises-egypts-credit-rating-says-economy-improved'>site</a></td><td>CAIRO (AP) - Moody's Investor Service has upgraded Egypt's credit rating, saying macroeconomic performance has improved and external vulnerabilities have been reduced.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 17:21:44</td><td><a href='http://news.yahoo.com/moodys-raises-egypts-credit-rating-says-economy-improved-172144262.html'>site</a></td><td>In a statement, it ranked Egypt at B3 on its scale - speculative and subject to high credit risk - with a stable outlook, an improvement from its previous classification of Caa1.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 18:42:08</td><td></td><td><a href='egypt_11_12.html'>Is a flashy Dubai-style city feasible in impoverished Egypt? (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-20 18:42:08</td><td><a href='http://www.utsandiego.com/news/2015/mar/20/egypt-emirati-developers-tout-nebulous-plan-for/'>site</a></td><td>It's everything missing from Egypt today - with a price tag of up to $80 billion.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 18:46:26</td><td></td><td><a href='egypt_11_13.html'>"Egypt is facing a housing shortage and serious population growth pressures, so the move to meet that demand in new urban areas outside of Cairo is a good idea," Cairo-based urban planner Josh Drake said. (3)</a></td></tr>
 </table></body></html>

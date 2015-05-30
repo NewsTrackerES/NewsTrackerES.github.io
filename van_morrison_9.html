@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 20:55:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11444023&ref=rss'>site</a></td><td>The young Morrison attended Monroe and Wilson middle schools.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 20:55:13</td><td></td><td><a href='van_morrison_9_10.html'>ALBUQUERQUE, N.M. (AP) " Fans of Jim Morrison, the late singer for The Doors, are in a push to preserve his childhood home in New Mexico. (7)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 15:17:04</td><td></td><td><a href='van_morrison_9_10.html'>Morrison has spent the vast majority of his career looking ahead, writing and recording a string of studio albums that now numbers more than three dozen; "Duets: Re-Working the Catalogue" represents a rare dip into his past. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 15:17:04</td><td></td><td><a href='van_morrison_9_11.html'>"I first heard him in the '60s at a show with Aretha Franklin and Dr. John and I thought then, 'Who is this guy?'" Mahal told The Times at a performance Morrison gave last summer outside his hometown of Belfast. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 15:17:04</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article16170860.html#storylink=rss'>site</a></td><td>The album is produced by Morrison with Don Was and Bob Rock.</td></tr>
 </table></body></html>

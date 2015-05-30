@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>nintendo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 10:36:26</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-2998511/Super-Mario-mobile-Nintendo-ventures-smartphone-games.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>He also said Nintendo was currently developing NX, a new gaming platform, but declined to give further details.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 11:26:12</td><td></td><td><a href='nintendo_0_1.html'>Nintendo, which already warned its annual operating profit would halve on weak console sales, said on Tuesday it was teaming up with online gaming firm DeNA Co. Ltd. to develop and operate gaming apps. (16)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-doc-167ks-6X6u7HFCw-HSK1-38_634x421.jpg'></td><td>2015-03-18 02:41:04</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-2999917/Nintendo-shares-marked-21-smartphone-gaming-plan.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"We have been waiting for Nintendo to make this move and this will offer large upside."</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.abc.net.au/news/image/3948032-3x2-340x227.jpg'></td><td>2015-03-19 08:30:27</td><td><a href='http://www.abc.net.au/news/2015-03-19/investors-cheer-nintendo-move-into-smartphone-games/6333406'>site</a></td><td>Nintendo is now worth $31 billion.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 10:36:26</td><td></td><td><a href='nintendo_0_1.html'>For DeNA, which grew from a startup launched in 1999 to a major online gaming company, a tie-up with Nintendo will help it regain momentum lost in the past two years as users moved on to more popular gaming apps. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/3948032-3x2-340x227.jpg'></td><td>2015-03-19 08:30:27</td><td><a href='http://www.abc.net.au/news/2015-03-19/investors-cheer-nintendo-move-into-smartphone-games/6333406'>site</a></td><td>Nintendo is now worth $31 billion.</td></tr>
 </table></body></html>

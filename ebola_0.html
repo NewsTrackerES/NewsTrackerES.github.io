@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 11:46:45</td><td><a href='http://www.washingtontimes.com/news/2015/mar/3/ohio-bridal-shop-linked-to-ebola-survivor-will-sel/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>AKRON, Ohio (AP) - A northeast Ohio bridal shop that was linked to an Ebola survivor and later announced plans to close has put its building up for sale.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 11:46:49</td><td><a href='http://news.yahoo.com/ohio-bridal-shop-linked-ebola-survivor-sell-building-114649470.html'>site</a></td><td>Dallas nurse Amber Vinson visited Coming Attractions Bridal & Formal in Akron days before she was diagnosed with Ebola last fall.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-11 00:11:43</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3034437/Woman-returns-negative-Ebola-test.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Woman returns negative Ebola test</td></tr><tr><td>The health worker began showing possible symptoms of the virus on Friday afternoon, shortly after arriving back in Australia from an Ebola treatment centre in Liberia.</td></tr><tr><td>The woman, who has not been named, did not treat any cases of Ebola during her time in Liberia.</td></tr></table></td></tr>
 </table></body></html>

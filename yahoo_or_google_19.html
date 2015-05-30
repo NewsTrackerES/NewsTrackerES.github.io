@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-22 07:51:37</td><td><a href='http://www.fin24.com/Tech/News/Russia-warns-Google-Twitter-Facebook-on-web-laws-20150522'>site</a></td><td><table><tr><td>Moscow - Russia's media watchdog has written to Google, Twitter and Facebook warning them against violating Russian internet laws and a spokesman said on Thursday they risk being blocked if they do not comply with the rules.</td></tr><tr><td>In its semi-annual Transparency Report, Google said it provided some information on users in response to 5% of 134 Russian government requests made in the second half of 2014 - again far less than in the US.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 17:48:13</td><td></td><td><a href='yahoo_or_google_19_22.html'>NEW YORK, April 22 (Reuters) - Google Inc on Wednesday launched a new U.S. wireless service that will enable customers to pay only for the data they use and use Wi-Fi networks to curb data use and keep phone bills low. (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 18:03:01</td><td></td><td><a href='yahoo_or_google_19_20.html'>Google, though, is hoping Project Fi reshapes the market. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 19:03:52</td><td></td><td><a href='yahoo_or_google_19_21.html'>In this April 24, 2015 photo, Nick Fox, Vice President for Communications Products at Google, prepares a presentation on Project Fi, in Mountain View, Calif. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-04 19:03:52</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3067608/Google-starting-small-thinking-big-Project-Fi.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Project Fi is Google's recently launched attempt to usher in new ways to keep smartphones online while lowering the cost for streaming video, listening to music, getting directions and searching for information.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-04 19:27:52</td><td><a href='http://www.miamiherald.com/news/business/article20198724.html#storylink=rss'>site</a></td><td>"Wireless connectivity has become so essential that it's kind of like our lifeblood," says Nick Fox, the Google Inc. executive overseeing Project Fi.</td></tr>
 </table></body></html>

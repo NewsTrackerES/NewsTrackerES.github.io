@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 18:15:46</td><td><a href='http://www.reuters.com/article/2015/04/16/us-facebook-ceglia-idUSKBN0N72A720150416?feedType=RSS&feedName=domesticNews'>site</a></td><td>Ceglia was charged in 2012 with fraud for forging documents to extort Zuckerberg out of 50 percent of Facebook, whose market value as of Wednesday's close was about $231 billion.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/17/08/27A82FD000000578-0-image-m-2_1429254724174.jpg'></td><td>2015-04-16 19:02:49</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3042350/Accused-Facebook-fraud-fugitive-missing-U-S-appeals-court-hears.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>That case stemmed from a 2010 lawsuit against Facebook and Zuckerberg in Buffalo, New York, in which Ceglia said Zuckerberg, then a student at Harvard University, signed a contract giving him half of a planned social networking website.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.com/v1/dynamic_resize/?src=http://technology.canoe.com/News/2015/04/20/ceglia650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-20 21:54:10</td><td><a href='http://technology.canoe.com/News/2015/04/20/22355031.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>The 2nd U.S. Circuit Court of Appeals in New York said "overwhelming forensic evidence" showed that a 2003 "Work for Hire" contract that Ceglia claimed entitled him to a 50 percent stake in Facebook was forged.</td></tr><tr><td>Ceglia alleged that an April 2003 contract with Zuckerberg, then a Harvard University freshman who had done programming work for Ceglia's StreetFax.com, entitled him to half of Facebook.</td></tr><tr><td>It also said the discovery of the real StreetFax contract between Ceglia and Zuckerberg for a project unrelated to Facebook "puts the lie" to Ceglia's claim.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/04/20/ceglia650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-20 21:54:10</td><td><a href='http://technology.canoe.ca/News/2015/04/20/22355031.html?cid=rsstechnologynews'>site</a></td><td>The criminal case arose from Ceglia's June 2010 civil lawsuit in upstate New York against Menlo Park, California-based Facebook and Zuckerberg.</td></tr>
+</table></body></html>

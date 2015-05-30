@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 20:50:44</td><td><a href='http://www.washingtontimes.com/news/2015/mar/3/wireless-show-highlights-eyes-on-apple-blackberry/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>NEW YORK (AP) - As a major wireless show continues this week in Barcelona, Spain, Apple is highlighting the capabilities of its iPhone cameras with a gallery of photos taken by its users around the world.</td></tr><tr><td>Apple Inc. isn't at the Mobile World Congress show this week, but is making its presence felt, as new phones are inevitably compared with iPhones.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/34/77/55/7600993/3/square_gallery_thumb.jpg'></td><td>2015-03-03 20:50:44</td><td><a href='http://www.sfgate.com/business/technology/article/WIRELESS-SHOW-HIGHLIGHTS-Eyes-on-Apple-6112736.php'>site</a></td><td><table><tr><td>Apple's campaign comes as Samsung unveiled new phones with improved photo-taking capabilities.</td></tr><tr><td>Apple is featuring 57 photos and three videos from those users at http://apple.com/worldgallery.</td></tr></table></td></tr>
+</table></body></html>

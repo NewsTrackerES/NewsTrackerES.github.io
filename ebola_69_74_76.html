@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 27,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 27 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 03:00:18</td><td><a href='http://www.startribune.com/world/296122621.html'>site</a></td><td>The patient had been volunteering at an Ebola treatment center in Sierra Leone.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 11:38:07</td><td><a href='http://www.sfgate.com/news/medical/article/American-who-contracted-Ebola-arrives-at-Maryland-6131991.php'>site</a></td><td>American who contracted Ebola arrives at Maryland hospital</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 12:30:07</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417094&ref=rss'>site</a></td><td>The patient is the 11th person with Ebola to be treated in the U.S. and the second admitted to the NIH Clinical Center.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-13 12:31:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-13-US--Ebola-American%20Patient/id-2c0629b7b32a4c6fa72dc763df0f9a99'>site</a></td><td>(AP) - An American healthcare worker who contracted Ebola while volunteering in a Sierra Leone treatment unit arrived safely at the National Institutes of Health's hospital in Maryland, officials said Friday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-13 20:34:01</td><td><a href='http://news.yahoo.com/american-contracted-ebola-arrives-maryland-hospital-112639295.html'>site</a></td><td>None of the volunteers in Sierra Leone who had contact with the NIH patient have tested positive for Ebola.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/14/22287636.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>At least 10 Americans possibly exposed to the deadly Ebola virus were being flown to the United States from Sierra Leone for observation, the U.S. Centers for Disease Control and Prevention said on Saturday.</td></tr><tr><td>CDC spokesman Thomas Skinner said 10 people who may have been exposed to the unidentified Ebola patient or who had a similar exposure to the virus as the patient were being flown to the United States.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/g/8/b/image.related.articleLeadwide.620x349.144euk.png/1426386476141.jpg'></td><td>2015-03-15 02:28:11</td><td><a href='http://www.brisbanetimes.com.au/world/americans-evacuated-after-possible-ebola-contact-20150315-144euk.html'>site</a></td><td><table><tr><td>A health care worker prepares a colleague's protective gear at an Ebola virus clinic operated by the International Medical Corps in Makeni, Sierra Leone.</td></tr><tr><td>Another aid worker, who was showing signs of illness, arrived in the US on Friday evening, hours after a colleague with Ebola was flown from Sierra Leone to the clinical centre of the National Institutes of Health in Bethesda, Maryland.</td></tr><tr><td>The workers served at an Ebola treatment unit run by the US charity Partners in Health in the Port Loko district in northern Sierra Leone.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-15 11:40:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417774&ref=rss'>site</a></td><td><table><tr><td>The 10 have not shown signs of Ebola and Partners in Health said the evacuations were ordered "out of an abundance of caution."</td></tr><tr><td>In both countries there are still regular attacks against Western aid workers and officials are unable to track where the Ebola virus is spreading.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/35/16/06/7659954/11/920x920.jpg'></td><td>2015-03-15 17:07:48</td><td><a href='http://www.sfgate.com/news/medical/article/10-US-charity-staff-to-leave-Sierra-Leone-amid-6135103.php'>site</a></td><td><table><tr><td>10 US charity staff to leave Sierra Leone amid Ebola scare</td></tr><tr><td>Partners in Health said in a statement Saturday that the 10, the largest group to be evacuated to the United States over possible Ebola exposure, would travel on non-commercial aircraft and be isolated in Ebola treatment facilities.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/a412d73deb3cd30b700f6a7067005e41_c0-235-5616-3508_s561x327.jpg?d07e7ac6d40d8803c5ccf3780bf643d99c27297e'></td><td>2015-03-15 17:07:48</td><td><a href='http://www.washingtontimes.com/news/2015/mar/15/10-us-charity-staff-to-leave-sierra-leone-amid-ebo/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>On March 11, a Partners in Health medical worker in Sierra Leone tested positive for Ebola, and the 10 fellow workers "came to the aid of their ailing colleague," the organization's statement said.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/panel-quarantine-of-ebola-health-workers-returning-to-us-was-mistake/_jcr_content/image.adapt.480.low.Ebola_Kaci-Hickox_nurse_102614.jpg'></td><td>2015-03-16 18:52:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/16/american-who-contracted-ebola-now-in-critical-condition.html'>site</a></td><td>The latest NIH patient is the 11th person with Ebola to be treated in the U.S. Two patients in the U.S. have died: a man treated in Dallas after contracting the virus in Africa and a doctor evacuated from Africa to Nebraska when he was already critically ill.</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.usnews.com/dims4/USNEWS/4f71b3c/2147483647/crop/367x330%2B60%2B0/resize/300x270/quality/85/?url=%2Fcmsmedia%2F3e%2Fd1%2Fd0171ee44dcab92626dedabf76d1%2Fresizes%2F500%2F150122-hippacomposite-stock.jpg'></td><td>2015-03-16 20:00:00</td><td><a href='http://health.usnews.com/health-news/articles/2015/03/16/american-with-ebola-now-in-critical-condition'>site</a></td><td>American With Ebola Now in Critical Condition</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='https://s1.yimg.com/bt/api/res/1.2/g0ju0lZzB262Q6jVYAHQpw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://l.yimg.com/os/publish-images/news/2015-03-16/eda5e270-cc02-11e4-a9fe-4556b2e965b1_AP220148595177crop.jpg'></td><td>2015-03-16 20:01:43</td><td><a href='https://news.yahoo.com/american-contracted-ebola-now-critical-condition-172202213.html'>site</a></td><td>The National Institutes of Health said it has no other pending admissions of additional patients with the Ebola virus or who have been exposed to Ebola.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-16 21:44:46</td><td><a href='http://www.cbsnews.com/news/american-ebola-patient-takes-a-turn-for-the-worse/'>site</a></td><td>"At this point, this person has not tested positive for the Ebola virus," Phil Smith, M.D., medical director of the Biocontainment Unit at Nebraska Medicine, said in a press statement Monday.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-17 20:42:50</td><td><a href='http://news.yahoo.com/another-four-u-ebola-aid-workers-flown-back-204250158.html'>site</a></td><td><table><tr><td>CHICAGO (Reuters) - Another four U.S. healthcare workers were flown back to the United States for monitoring for possible exposure to the Ebola virus, U.S. Centers for Disease Control and Prevention said on Tuesday.</td></tr><tr><td>That includes a healthcare worker in critical condition who is being treated for Ebola in a Maryland biocontainment unit run by the National Institutes of Health.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-03-17 21:00:51</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11419066&ref=rss'>site</a></td><td>Since last summer, several U.S. aid workers have gotten Ebola and have been flown back to the U.S. for care.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/B6XoNPyDSIIGi.USqNQVjA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/6f4c10e09090774b7306c58a80c185f635d3a919.jpg.cf.jpg'></td><td>2015-03-19 01:36:43</td><td><a href='http://news.yahoo.com/2-more-aid-workers-flown-back-us-ebola-013643045.html'>site</a></td><td>NEW YORK (AP) - Health officials say two more American aid workers arrived in the United States on Wednesday night to be monitored for Ebola.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-03-19 04:29:26</td><td><a href='http://news.yahoo.com/two-more-u-healthcare-workers-repatriated-ebola-monitoring-042926715.html'>site</a></td><td>Neither of the two healthcare workers brought back Wednesday has tested positive for Ebola, but they are being monitored because they might have been exposed to a colleague who has contracted it.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-03-19 18:55:04</td><td><a href='http://news.yahoo.com/healthcare-worker-nebraska-tests-negative-ebola-185504251.html'>site</a></td><td><table><tr><td>Healthcare worker in Nebraska tests negative for Ebola</td></tr><tr><td>CHICAGO (Reuters) - A U.S. healthcare worker who was admitted to the biocontainment unit at Nebraska Medicine on Sunday has been released after testing negative for Ebola, the hospital said on Thursday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-26 16:47:07</td><td><a href='http://news.yahoo.com/u-ebola-patients-condition-improved-serious-nih-164707604.html'>site</a></td><td>U.S. Ebola patient's condition improved to serious: NIH</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-03-26 19:39:44</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3013307/American-contracted-Ebola-improves-condition.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>American who contracted Ebola improves, in serious condition</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-03-30 15:20:18</td><td><a href='http://news.yahoo.com/american-caught-ebola-improves-fair-condition-152018088.html'>site</a></td><td>American who caught Ebola improves to fair condition</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-03-31 23:09:24</td><td><a href='http://news.yahoo.com/5-us-aid-workers-monitored-ebola-nebraska-released-230924175.html'>site</a></td><td>(AP) - All five American aid workers being monitored in Nebraska for exposure to Ebola have completed their quarantine periods free from symptoms of the deadly virus.</td></tr>
+  <tr><td style='display:none'>23</td><td></td><td>2015-04-04 03:30:18</td><td><a href='http://www.smh.com.au//breaking-news-national/nsw-health-worker-cleared-of-ebola-20150404-3th2s.html'>site</a></td><td>NSW health worker undergoes Ebola testing</td></tr>
+  <tr><td style='display:none'>24</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/FmvyjuDnVgCZThIeJbMZDw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE4MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-07T142022Z_1_LYNXMPEB360K2_RTROPTP_2_HEALTH-EBOLA-USA.JPG'></td><td>2015-04-07 14:20:22</td><td><a href='http://news.yahoo.com/u-ebola-patients-condition-improves-good-nih-142022291.html'>site</a></td><td>WASHINGTON (Reuters) - A U.S. patient in treatment for the Ebola virus at a National Institutes of Health facility in Maryland has improved to good condition from fair, the NIH said on Tuesday.</td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-05-12 17:35:42</td><td><a href='http://www.reuters.com/article/2015/05/12/us-italy-ebola-idUSKBN0NX25B20150512?feedType=RSS&feedName=healthNews'>site</a></td><td>ROME An Italian nurse who returned to Italy last week after working in Sierra Leone has tested positive for Ebola, the health ministry said on Tuesday.</td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-05-12 17:46:48</td><td><a href='http://www.utsandiego.com/news/2015/may/12/nurse-in-italy-tests-positive-for-ebola-was-in/'>site</a></td><td>He will soon be transferred to Rome's Spallanzani infectious disease hospital, which last year successfully treated an Italian doctor who contracted Ebola after working in Sierra Leone, also for Emergency.</td></tr>
+</table></body></html>

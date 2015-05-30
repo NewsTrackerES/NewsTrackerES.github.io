@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 10:05:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11450792&ref=rss'>site</a></td><td>Ratings giant Standard & Poor's revised its outlook on Egypt from stable to positive last week in light of "a stabilizing political landscape and growth-supporting reforms."</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 10:30:15</td><td></td><td><a href='egypt_3_4.html'>Tourists -- one of Egypt's main sources of revenue -- fled, while growth rates fell from more than 7 percent before the uprising to around 2 percent after Mubarak's ouster. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 10:45:06</td><td></td><td><a href='egypt_3_5.html'>On Monday, May 18, 2015, Egypt's government suspended a tax imposed on the market's capital gains for two years, causing shares to rise in early trading. (5)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/19/a567be9e8eb62211740f6a7067001392_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-19 18:55:02</td><td><a href='http://www.utsandiego.com/news/2015/apr/19/egypts-president-meets-cia-director-in-cairo-for/'>site</a></td><td>CAIRO (AP) - Egypt's president has held talks with CIA director John Brennan in Cairo that touched on regional conflicts and terrorism.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 18:55:14</td><td><a href='http://news.yahoo.com/egypts-president-meets-cia-director-cairo-talks-185514319.html'>site</a></td><td>Egypt remains a key U.S. regional partner, despite tensions following el-Sissi's overthrow of Islamist President Mohammed Morsi in 2013.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-19 19:00:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11435327&ref=rss'>site</a></td><td>Egypt increasingly has been targeted by Islamic militants and its strategic Sinai Peninsula is home to an extremist group that has pledged its loyalty to the Islamic State group.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46981310,width-300,resizemode-4/a-.jpg'></td><td>2015-04-19 19:30:20</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Egypts-president-meets-CIA-director-in-Cairo-for-talks/articleshow/46981305.cms'>site</a></td><td>Egyptian President Abdel-Fattah el-Sissi, right, meets with CIA director John Brennan, center, and the director of Egypt?s General Intelligence Directorate Khaled Fawzy in Cairo.</td></tr>
 </table></body></html>

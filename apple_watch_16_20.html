@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple watch</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/d4d/news/world/article23522204.ece/ALTERNATES/w220/FX144-Apple+Event.JPG'></td><td>2015-03-18 18:46:27</td><td><a href='http://www.theglobeandmail.com/news/world/us-poll-shows-40-per-cent-of-iphone-owners-would-buy-apple-watch/article23522205/?cmpid=rss1'>site</a></td><td><table><tr><td>U.S. poll shows 40 per cent of iPhone owners would buy Apple Watch Add to...</td></tr><tr><td>About 40 percent of adult Apple iPhone owners in the United States are interested in buying the company?s new Apple Watch, according to a new Reuters/Ipsos poll.</td></tr><tr><td>Among the iPhone owners, 39 per cent were interested in purchasing the Apple watch, including 17 per cent describing themselves as very interested.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676778488_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 19:59:14</td><td><a href='http://www.torontosun.com/2015/03/18/only-39-of-iphone-interested-in-apple-watch-poll'>site</a></td><td>Only 39% of iPhone users interested in Apple Watch: poll</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.bizj.us/view/img/4134861/ogapplewatch*304xx1200-800-0-200.jpg'></td><td>2015-04-14 10:13:44</td><td><a href='http://www.bizjournals.com/orlando/morning_call/2015/04/what-apple-watch-pre-orders-tell-us-about-their.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+industry_7+%28Industry+Technology%29'>site</a></td><td>Almost 43 percent of those ordering Apple's latest MacBook also bought an Apple Watch.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-15 18:16:01</td><td><a href='http://www.reuters.com/article/2015/04/15/us-apple-watch-idUSKBN0N628820150415?feedType=RSS&feedName=businessNews'>site</a></td><td>Among those polled who do not own an iPhone, 8 percent said they would consider switching to an iPhone in order to purchase an Apple Watch.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/26X8r7RTspBZNZz5HL9hsQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-15T181601Z_1_LYNXMPEB3E0X6_RTROPTP_3_USA-APPLE-WATCH_original.jpg'></td><td>2015-04-15 18:16:01</td><td><a href='http://finance.yahoo.com/news/exclusive-six-percent-u-adults-181601218.html'>site</a></td><td><table><tr><td>The poll showed the watch, marketed by Apple as a high-fashion item as well as a new frontier in technology, appealed to fewer than 4 percent of women compared with 9 percent of men.</td></tr><tr><td>As far as overall interest in the watch as opposed to intending to buy it, the poll showed that 18 percent of respondents were "very" or "somewhat" interested versus 76 percent who showed no interest.</td></tr><tr><td>According to the poll, adults aged between 30 and 39 were the most likely buyers, with 13 percent saying they planed to buy an Apple Watch, followed by 10 percent of 18-to-29-year-olds.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Mobile/News/2015/04/16/applewatchback650.jpg&size=104x59&quality=85'></td><td>2015-04-16 15:29:03</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/04/16/22347761.html?cid=rsstechnology'>site</a></td><td>6% of U.S. adults plan to buy Apple Watch: Poll</td></tr>
+</table></body></html>

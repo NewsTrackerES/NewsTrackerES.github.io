@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 21,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 21 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple watch</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-06 14:33:12</td><td></td><td><a href='apple_watch_16_17.html'>A recent Forrester survey found some respondents didn't see a reason to buy one because they already owned a less-expensive fitness band or a full-featured smartphone (although it also found Apple fans ready to buy the new watch). (2)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-06 14:33:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/06/3-reasons-apples-watch-will-or-wont-change-the-game'>site</a></td><td>Cook will make his case for the Apple Watch at a press event Monday, where he's expected to show off more features and apps.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/NXUq37naGTa0peiinAOoeQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/racked.vox.com/b463588138db499b232baa9f2509c32d.cf.jpg'></td><td>2015-03-07 05:03:00</td><td><a href='http://news.yahoo.com/3-reasons-apples-watch-wont-change-game-050300890.html'>site</a></td><td>3 reasons Apple's watch will _ or won't _ change the game</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/09/2676E1D100000578-2986641-The_Apple_Watch_is_available_in_three_models_the_Apple_Watch_App-a-33_1425926709082.jpg'></td><td>2015-03-13 21:11:35</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-2993809/The-secret-app-iPhone-revealed-New-fitness-app-visible-pair-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Overall, the Apple Watch is by far the best wearable device on the market.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://cdn0.mos.techradar.futurecdn.net//art/Watches/Apple%20Watch/styles/apple-watch-link-bracelet-colors-50-80.jpg'></td><td>2015-04-02 02:01:00</td><td><a href='http://www.techradar.com/us/news/wearables/apple-iwatch-release-date-news-and-rumours-1131043?src=rss&attr=all'>site</a></td><td>Why Apple Watch costs so much?</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-08 13:01:54</td><td><a href='http://www.cbsnews.com/videos/is-apple-watch-a-must-have-cnet-reviews/'>site</a></td><td>Is Apple Watch a must-have? CNET reviews</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/03/09/turlington_cook650.jpg&size=104x59&quality=85'></td><td>2015-04-08 18:15:07</td><td><a href='http://technology.canoe.ca/Mobile/Features/2015/04/08/22333561.html?cid=rsstechnology'>site</a></td><td>Apple Watch stylish but not for everyone, reviewers say</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-09 12:46:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/09/your-guide-to-trying-on-ordering-apple-watch'>site</a></td><td>Your guide to trying on, ordering Apple Watch</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-09 12:52:31</td><td></td><td><a href='apple_watch_16_18.html'>No smartwatch has gotten as much attention as the Apple Watch, given Apple's devoted fan base and the company's knack for designing products consumers can't live without. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 05:01:26</td><td></td><td><a href='apple_watch_16_23.html'>The Apple Watch, CEO Tim Cook's first new major product, was available for pre-order online and to try out in stores - but not take home. (20)</a></td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-10 05:01:26</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032788/Apple-expects-strong-demand-smartwatch-consumer-debut.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Strong turnout for world's first glimpse at Apple Watch</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 10:51:52</td><td></td><td><a href='apple_watch_16_19.html'>The watch is Apple's first new product category since the iPad came out five years ago. (2)</a></td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-04-10 10:51:52</td><td><a href='http://www.ctvnews.ca/sci-tech/apple-watch-begins-its-debut-around-the-world-1.2320387'>site</a></td><td>Analysts are waiting to see how well the watch will sell beyond devoted Apple fans.</td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/e0OhLik5DNnAqNc2Y2_4Pg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-US/homerun/cnbc.com/2076c3d08835d5c61f280d664fd1716f'></td><td>2015-04-13 08:39:49</td><td><a href='http://finance.yahoo.com/news/apple-watch-us-pre-orders-075135746.html'>site</a></td><td>Slice Intelligence looked at sample data from 9,080 online shoppers, and said each Apple Watch buyer ordered an average of 1.3 watches and spent an average of $503.83 per device.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 11:11:35</td><td></td><td><a href='apple_watch_16_25.html'>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 18:16:01</td><td></td><td><a href='apple_watch_16_20.html'>According to the poll, adults aged between 30 and 39 were the most likely buyers, with 13 percent saying they planed to buy an Apple Watch, followed by 10 percent of 18-to-29-year-olds. (10)</a></td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/10/102576379-RTR4WS9F.530x298.jpg?v=1428670320'></td><td>2015-04-15 20:04:00</td><td><a href='http://www.cnbc.com/id/102590135'>site</a></td><td>The Apple Watch, priced from $349 for a basic Sport model to a $17,000 gold timepiece, lets users check email, listen to music and make phone calls when paired with an iPhone.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-17 17:44:20</td><td></td><td><a href='apple_watch_16_21.html'>SAN FRANCISCO (AP) - If you're planning on buying the new Apple Watch, don't expect to walk into a store and leave with one next week. (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-22 23:55:00</td><td></td><td><a href='apple_watch_16_22.html'>In a note to clients on Wednesday, FDR analyst Daniel Ives estimated Apple would take over 2 million pre-orders for the watch and ship 20 million of them in 2015. (2)</a></td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/13/102581901-RTR4WTY9.80x60.jpg?v=1429544480'></td><td>2015-04-22 23:55:00</td><td><a href='http://www.cnbc.com/id/102611990'>site</a></td><td>Will the Apple Watch end up on your wrist?</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-23 21:09:14</td><td></td><td><a href='apple_watch_16_24.html'>Apple Watch goes on sale worldwide amid supply shortage (2)</a></td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 10:37:37</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014439/Google-loses-appeal-bid-suing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Google loses appeal bid over suing</td></tr><tr><td>Google has lost a Court of Appeal bid to prevent British consumers having the right to sue it in the UK.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/British-Safari-Users-Can-Now-Sue-Google-Safari-Internet-Browser-Users-Can-Now-Sue-Google-269851.jpg'></td><td>2015-03-27 16:55:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/566819/Google-Court-of-Appeal-MacBook-iPhone-iPad-UK-Sue-Litigation?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-life-and-style-news+%28Daily+Express+%3A%3A+Life+%26+Style+Feed%29'>site</a></td><td>A High Court judge previously rejected an attempt by Google to block the litigation, and today three appeal judges upheld his decision, saying the claims "raise serious issues which merit a trial".</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/04/336fe616f85f8913750f6a7067007a88_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-04 18:03:01</td><td><a href='http://www.utsandiego.com/news/2015/may/04/google-is-starting-small-thinking-big-with/'>site</a></td><td><table><tr><td>Google is starting small, thinking big with 'Project Fi'</td></tr><tr><td>Google, though, is hoping Project Fi reshapes the market.</td></tr></table></td></tr>
 </table></body></html>

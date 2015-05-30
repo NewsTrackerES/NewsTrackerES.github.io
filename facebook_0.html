@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://www.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-04-22 20:51:18</td><td><a href='http://www.chron.com/business/technology/article/Still-got-it-Facebook-mobile-ad-revenue-6217266.php'>site</a></td><td>He said Facebook will continue to experiment with apps for mobile.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 08:56:09</td><td></td><td><a href='facebook_0_2.html'>However, Facebook said monthly active users grew 13 percent over a year ago to 1.44 billion, with 87 percent of them accessing its service on smartphones and other mobile devices. (14)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 09:54:56</td><td></td><td><a href='facebook_0_1.html'>As a result, Facebook's operating expenses rose 83% in the first quarter as R&D costs jumped 133% and marketing and sales spending nearly doubled. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td><a href='http://www.reuters.com/article/2015/04/23/us-facebook-video-idUSKBN0NE1N520150423?feedType=RSS&feedName=businessNews'>site</a></td><td>As YouTube marks tenth year, Facebook emerges as video threat</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-16 15:38:16</td><td><a href='http://www.torontosun.com/2015/03/16/facebook-report-shows-slight-rise-in-government-requests-for-data'>site</a></td><td><table><tr><td>Facebook Inc recorded a slight increase in government requests for account data in the second half of 2014, according to its Global Government Requests Report, which includes information about content removal.</td></tr><tr><td>Facebook said it restricted 9,707 pieces of content for violating local laws, 11% more than in the first half, with access restricted to 5,832 pieces in India and 3,624 in Turkey.</td></tr><tr><td>Bickert said Facebook challenges requests that appear to be "unreasonable" or "overbroad" and if a country requests content be removed because it is illegal, Facebook may restrict access only in that country.</td></tr><tr><td>Facebook, Microsoft, Yahoo and Google last year began publishing details about the number of government requests for data they receive.</td></tr></table></td></tr>
 </table></body></html>

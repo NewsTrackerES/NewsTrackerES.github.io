@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nemtsov</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-February/nemtsov_memorial_feb._28_2015_0.jpg'></td><td>2015-02-28 13:32:00</td><td><a href='http://www.globalpost.com/dispatch/news/regions/europe/russia/150228/russian-opposition-mourns-murdered-leader-nemtsov'>site</a></td><td>Nemtsov briefly served as a deputy prime minister under President Boris Yeltsin in the late 1990s, when he gained a reputation as a leading liberal economic reformer.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/2/27/russian-opposition-leader-boris-nemtsov-shot-dead-in-moscow/_jcr_content/image.adapt.480.low.Boris_Nemtsov_022815.jpg'></td><td>2015-03-01 14:19:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/1/thousands-march-in-russia-to-mourn-putin-critic-boris-nemtsov.html'>site</a></td><td>Putin has been Russia's dominant leader since 2000, when ailing President Boris Yeltsin chose the former KGB spy as his successor, a role Nemtsov had once been destined to play.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-03 07:45:03</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411158&ref=rss'>site</a></td><td>Nemtsov had been a deputy prime minister under Russia's first elected president, Boris Yeltsin, who touted him as his likely successor before opting instead for Putin.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/4/nemtsov-killing-stirs-fears-putins-nationalism-has-gone-rogue/_jcr_content/image.adapt.480.low.boris_nemtsov_030415.jpg'></td><td>2015-03-11 15:30:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/11/nemtsov-murder-suspect-coerced-into-making-confession.html'>site</a></td><td>Aides to Nemtsov, a former deputy prime minister, suspect Russia's state security apparatus is complicit in the crime.</td></tr>
+</table></body></html>

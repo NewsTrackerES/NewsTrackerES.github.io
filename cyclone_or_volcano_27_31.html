@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone or volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn2.belfasttelegraph.co.uk/news/world-news/article31078977.ece/6c0ef/ALTERNATES/h342/PANews%20BT_P-0b0c985e-58e1-4edc-b7b5-a39a1102574f_I1.jpg'></td><td>2015-03-19 06:16:16</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/cyclone-survivors-desperate-for-aid-31078978.html'>site</a></td><td>With power, phones and Internet still down across much of the country, officials faced logistical headaches in sorting out where to send supplies, particularly in Tanna Island, which was hit hard by Cyclone Pam's 168mph winds.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/ad7ce6a/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fcb%2F13d23fb09a969f306aa91e870ffc59%2Fmedia%3A43d3c72102d6499caf23e2b755578c30VanuatuCyclonePam.JPEG'></td><td>2015-03-20 16:00:32</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/20/5-things-to-know-about-vanuatus-devastating-cyclone'>site</a></td><td>People living on hard-hit Tanna and many of the other islands may have survived the cyclone, but they have no way of knowing how their relatives or friends are faring elsewhere.</td></tr>
+</table></body></html>

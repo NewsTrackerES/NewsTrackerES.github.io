@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/24/876/493/45ebcadfb8bec410VgnVCM200000d6c1a8c0____-Earns Microsoft -1.jpg?ve=1&tl=1'></td><td>2015-04-23 21:30:47</td><td><a href='http://www.foxbusiness.com/technology/2015/04/23/after-year-honeymoon-microsoft-boss-nadella-faces-pressure-to-show-results/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Similarly, Microsoft has released Office apps for Apple and Android smartphones, which are far more popular today than Windows-based phones.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td>And Nadella has taken other steps to get Microsoft's software into the hands of consumers who prefer smartphones and tablets.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.sfgate.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>Microsoft results show company's shift, but is it enough?</td></tr><tr><td>Microsoft will report earnings Thursday April 23, 2015.</td></tr><tr><td>Revenue from cloud computing has grown rapidly, as more businesses are paying to use software housed in Microsoft's data centers.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 21:30:47</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td>Microsoft's latest report shows another decline in profit and revenue from the company's flagship Windows software for personal computers.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 23:13:00</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td>CEO Satya Nadella has been investing in new services and redesigning Microsoft's most popular programs for smartphones and other mobile gadgets.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-23 23:13:00</td><td><a href='http://www.sfgate.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>Microsoft's financial results underscore the importance of Nadella's efforts.</td></tr><tr><td>But Microsoft still relies heavily on selling traditional software, which contributed the largest part of its $21.7 billion in sales for the quarter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-23 23:13:44</td><td><a href='http://abcnews.go.com/Technology/wireStory/microsoft-results-show-companys-shift-30540823'>site</a></td><td>This Jan. 21, 2015 photo shows Microsoft CEO Satya Nadella speaking at an event demonstrating new features of its flagship operating system Windows at the company's headquarters in Redmond, Wash.</td></tr>
+</table></body></html>

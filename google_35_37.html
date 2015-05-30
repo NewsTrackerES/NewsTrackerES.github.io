@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/O0ZjpDyvDQqgAEkcqX1bnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2e4d554cd582a4096f0f6a706700afd5.jpg'></td><td>2015-03-02 14:30:11</td><td><a href='http://news.yahoo.com/next-google-maps-adventure-soaring-amazon-jungle-070127034.html'>site</a></td><td><table><tr><td>Google is renowned for going out on a technological limb, but even this project made the company nervous at first, said Karin Tuxen-Bettman, who oversees Google's Street View partnerships.</td></tr><tr><td>"One of the things that I love about working at Google is that if a partner comes to us with a crazy idea, we will probably try it," Tuxen-Bettman said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0402/20150402__0403google~2.JPG'></td><td>2015-04-02 20:46:03</td><td><a href='http://www.mercurynews.com/business/ci_27834913/stock-split-could-cost-google-more-than-500?source=rss'>site</a></td><td>The big spending is one reason Google's stock price is about 2 percent below where it stood at the end of 2013, while the Standard & Poor's 500 index has climbed 11 percent.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/45/16/7754628/5/square_gallery_thumb.jpg'></td><td>2015-04-02 21:19:25</td><td><a href='http://www.sfgate.com/business/technology/article/Stock-split-could-cost-Google-over-500-million-6174346.php'>site</a></td><td>To settle a class-action lawsuit challenging the split, Google agreed to compensate "C'' shareholders if the average price of "C'' stock fell more than 1 percent below "A'' shares through the first year of trading.</td></tr>
 </table></body></html>

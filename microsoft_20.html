@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 17:28:05</td><td></td><td><a href='microsoft_20_21.html'>DelBene was president of Microsoft's Office unit when he left the company in 2013. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 17:28:05</td><td></td><td><a href='microsoft_20_22.html'>NEW YORK - Microsoft said Monday that it has hired back Kurt DelBene to head its corporate strategy and planning. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 17:57:01</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article18410993.html#storylink=rss'>site</a></td><td>After Microsoft, he was put in charge of HealthCare.org, the website used as an insurance portal for President Barack Obama's health care law.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-22 18:46:15</td><td><a href='http://www.reuters.com/article/2015/05/22/us-salesforce-com-m-a-microsoft-idUSKBN0O722520150522?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>Microsoft, Salesforce talks fell through on pricing: CNBC</td></tr><tr><td>Microsoft Corp (MSFT.O) and Salesforce.com Inc (CRM.N) held "significant talks" this spring but failed to agree on a price, CNBC reported, citing people familiar with the matter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/WnbWaocLNfMYkm4.F4eLEg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-22T171417Z_1_LYNXMPEB4L0X9_RTROPTP_3_USA-SALESFORCE-EARNINGS_original.jpg'></td><td>2015-05-22 18:46:15</td><td><a href='http://finance.yahoo.com/news/microsoft-salesforce-held-significant-talks-172813127.html'>site</a></td><td>Microsoft is currently not weighing an offer for Salesforce, Reuters reported this month, citing two people familiar with the matter.</td></tr>
 </table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 23:38:42</td><td><a href='http://www.nydailynews.com/news/politics/bill-hillary-clinton-25m-100-speeches-official-article-1.2224309'>site</a></td><td>Hillary Clinton also earned more than $5 million for her 2014 book, "Hard Choices," according to her campaign.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 23:40:19</td><td><a href='http://www.startribune.com/clintons-to-report-making-25m-for-speeches-since-jan-2014/303956621/'>site</a></td><td>The report, required of every candidate for the White House, also shows Hillary Clinton earned more than $5 million from her 2014 memoirs, "Hard Choices."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-16 00:02:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3084000/Hillary-Bill-Clinton-earned-25-mln-speeches-2014-reports.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Hillary Clinton, who is the front-runner for the Democratic presidential nomination in 2016, also earned $5 million in royalties for her book, "Hard Choices," which was released in June, according to the newspapers.</td></tr>
+</table></body></html>

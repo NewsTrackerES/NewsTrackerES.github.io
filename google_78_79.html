@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 19:40:07</td><td><a href='http://www.sfgate.com/business/technology/article/Google-Maps-turns-into-Pac-Man-s-chomping-grounds-6170944.php'>site</a></td><td>Google Maps turns into Pac-Man's chomping grounds</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 20:57:04</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-Maps-turns-into-Pac-Man-s-chomping-grounds-6170944.php'>site</a></td><td><table><tr><td>SAN FRANCISCO (AP) - The virtual streets of Google Maps are being transformed into Pac-Man's chomping grounds in celebration of April Fools' Day.</td></tr><tr><td>Google added the option to convert its popular navigation service into the Pac-Man video game on Tuesday morning, around the same day the calendar turned to April 1 in Asia.</td></tr><tr><td>The gag on Google Maps enables visitors to click on a Pac-Man symbol in the lower left of the screen to play the video game on whatever location is listed in the address bar.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/00/70/7867944/3/628x471.jpg'></td><td>2015-04-23 20:36:34</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-posts-mixed-1Q-results-amid-new-threats-to-6219961.php'>site</a></td><td><table><tr><td>Google's first-quarter earnings rose 4 percent to $3.6 billion as the company's Internet-leading advertising network lifted revenue by 14 percent to $17.3 billion from the same time last year.</td></tr><tr><td>It marked the sixth consecutive quarter that Google's earnings have fallen below the analysts' targets that shape investors' expectations.</td></tr></table></td></tr>
 </table></body></html>

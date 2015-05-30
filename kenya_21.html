@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 08:30:57</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3010690/No-blacks-Chinese-restaurant-shut-Kenya.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>'No blacks' Chinese restaurant shut down in Kenya</td></tr><tr><td>Reports said the restaurant's Chinese owners and managers had also been summoned by Kenya's immigration authorities.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 16:12:10</td><td></td><td><a href='kenya_21_22.html'>A firefighter controls the flames as 15 tons of elephant tusks are set on fire during an anti-poaching ceremony at Nairobi National Park in Nairobi, Kenya Tuesday, March 3, 2015. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 16:12:10</td><td></td><td><a href='kenya_21_23.html'>The years 2011, 2012 and 2013 witnessed the highest levels of poaching since a poaching crisis in the 1980s, Kenya's Wildlife Service has said. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/EuwlrTk4MVIFdMG.ZeuNZQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/8776eae0fe13b9096f0f6a70670026f6.jpg'></td><td>2015-03-03 16:12:20</td><td><a href='http://news.yahoo.com/kenya-destroy-15-tons-ivory-taken-poachers-161220234.html'>site</a></td><td>"We would like to tell the world to stop the trade in ivory because it is destroying our economy, our heritage, our environment," said Paul Udoto, a spokesman for the Kenya Wildlife Service.</td></tr>
 </table></body></html>

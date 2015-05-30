@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:55:44</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td>During the next 12 months, the company will require its U.S. suppliers -- which provide workers who do everything from serving food and driving buses to testing software -- to give 15 days paid leave a year to their employees who work on Microsoft projects.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2014/0915/20140915__0916microsoft~1.JPG'></td><td>2015-03-26 21:25:22</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td><table><tr><td>Microsoft tells vendors to give contract workers basic benefits</td></tr><tr><td>SEATTLE -- For the first time, Microsoft will mandate a basic level of benefits for the tens of thousands of contract workers employed on the software giant's behalf.</td></tr><tr><td>Microsoft has had an occasionally testy relationship with its contract workers.</td></tr><tr><td>Adding benefits may raise costs for some Microsoft vendors and, in turn, the company itself.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/aoUd5rcBWRz52Kx68uqcJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f660ef63283ed60a6f0f6a70670096c0.jpg'></td><td>2015-03-05 03:35:32</td><td><a href='http://news.yahoo.com/microsoft-outlines-plan-bridge-xbox-pc-video-gaming-033532212.html'>site</a></td><td><table><tr><td>Microsoft outlines plan to bridge Xbox and PC video gaming</td></tr><tr><td>SAN FRANCISCO (AP) - Microsoft is attempting to break down the walls surrounding console gaming.</td></tr><tr><td>"Our goal with gaming at Microsoft is to allow people to play games wherever they are," Spencer told game makers Wednesday at the Game Developers Conference.</td></tr><tr><td>Spencer also teased that Microsoft will release an adapter later this year that will allow PCs to use wireless Xbox One controllers.</td></tr><tr><td>Microsoft is investing heavily in training developers on how to create games that work across its platforms this week by sponsoring such GDC sessions as "Developing with Xbox Live for Windows 10" and "Gaming Consumer Experience on Windows 10."</td></tr></table></td></tr>
 </table></body></html>

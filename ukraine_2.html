@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/01/26F70FD100000578-0-image-m-79_1427245835598.jpg'></td><td>2015-03-21 09:05:11</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3005297/Georgians-hit-fallout-trouble-Russia-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Georgia's currency, the lari, has lost more than 20 percent of its value against the dollar since August - but Ukraine's hryvnia currency has lost about 60 percent against the dollar and the Russian ruble roughly 50 percent.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-21 09:10:18</td><td></td><td><a href='ukraine_2_3.html'>The 64-year-old woman spends much of her meager pension of 150 lari ($68) a month on medicine and has long lived off selling cheap jewelry at a flea market to tourists, mainly from Russia and Ukraine. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-21 10:10:15</td><td></td><td><a href='ukraine_2_4.html'>As the war in eastern Ukraine, international sanctions against Russia and the sinking price of oil price worldwide have ravaged the economies of those two countries, Georgia has become collateral damage. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 12:10:07</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3007561/Ukraine-stop-buying-Russian-gas-April-1-energy-minister.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>KIEV, March 23 (Reuters) - Ukraine plans to stop buying Russian gas from April 1, Ukrainian Energy Minister Volodymyr Demchyshyn said in a briefing on Monday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-23 12:10:58</td><td><a href='http://news.yahoo.com/ukraine-stop-buying-russian-gas-april-1-energy-121058294--finance.html'>site</a></td><td><table><tr><td>On Saturday, he said that Ukraine was confident Russia would have to lower the price it charges Kiev for gas as increased imports from the European Union have greatly reduced Ukraine's reliance on supplies from Gazprom.</td></tr><tr><td>Russia and Ukraine are discussing a new pricing arrangement once the current package expires at the end of March.</td></tr></table></td></tr>
 </table></body></html>

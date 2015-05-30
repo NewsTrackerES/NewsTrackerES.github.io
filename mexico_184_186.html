@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/840/news/world/article24589846.ece/ALTERNATES/w220/web-mexico-tornado-0525'></td><td>2015-05-25 15:47:52</td><td><a href='http://www.theglobeandmail.com/news/world/tornado-kills-10-people-in-mexican-city-on-border-with-texas/article24589483/?cmpid=rss1'>site</a></td><td>In Texas, 12 people were reported missing after flash flooding from a line of storms that stretched from the Gulf of Mexico to the Great Lakes.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-25 19:01:19</td><td><a href='http://www.usnews.com/news/us/articles/2015/05/25/deadly-storms-swamp-plains-midwest-force-texans-from-homes'>site</a></td><td>Twister kills 13 in Mexico border city; 12 missing in Texas</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/36/52/62/8039552/5/square_gallery_thumb.jpg'></td><td>2015-05-25 19:04:35</td><td><a href='http://www.sfgate.com/news/texas/article/Deadly-storms-swamp-Plains-Midwest-force-Texans-6284771.php'>site</a></td><td>Stevenson reported from Mexico City.</td></tr>
+</table></body></html>

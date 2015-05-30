@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td><a href='http://news.yahoo.com/mexico-groups-ask-un-list-monarch-danger-203414979.html'>site</a></td><td>But the number of butterflies wintering in Mexico has dropped steeply in recent years, leading to worries the migration might end.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 20:35:23</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-groups-list-monarch-reserve-danger-30316999'>site</a></td><td>FILE - In this Jan. 4, 2015, file photo, rabbles of Monarch butterflies cling to tree branches, in the Piedra Herrada sanctuary, near Valle de Bravo, Mexico.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-22 23:38:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19204215.html#storylink=rss'>site</a></td><td><table><tr><td>Months after confusion and threats of ordered closures, New Mexico regulators approved new rules on Wednesday to allow ride-booking services Lyft and Uber to operate in the state.</td></tr><tr><td>In a statement after the vote, Uber spokeswoman Taylor Patterson said: "We look forward to working with the PRC and are hopeful they are committed to bringing ridesharing to New Mexico with regulations that recognize this innovative business model."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 19:38:59</td><td><a href='http://www.miamiherald.com/news/business/article19884273.html#storylink=rss'>site</a></td><td>New Mexico Attorney General Hector Balderas says drivers of ride-booking services Lyft and Uber in the state should face drug testing requirements like taxi drivers.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 19:41:53</td><td><a href='http://www.sfgate.com/news/article/New-Mexico-AG-Uber-Lyft-drivers-need-drug-6231201.php'>site</a></td><td>Both had been operating in New Mexico despite complaints for taxi companies.</td></tr>
 </table></body></html>

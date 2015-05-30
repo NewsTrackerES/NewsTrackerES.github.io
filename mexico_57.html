@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 20:55:29</td><td></td><td><a href='mexico_57_58.html'>MEXICO CITY (AP) - A candidate for mayor was shot to death in western Mexico and a man running for city council was gunned downed in southern Mexico, bringing to at least three the number of candidates killed in the run-up to the June 7 midterm elections. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 20:55:29</td><td><a href='http://news.yahoo.com/mayoral-candidate-fatally-shot-restive-mexico-state-032226104.html'>site</a></td><td>Jose Antonio Crespo, a political analyst at Mexico's Center for Economic Research and Instruction, said: "This is all very regrettable, but it is not unusual. That's the way Mexican elections are nowadays."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/mbIAFHG4hKnbeudkZq1CRQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4fbb0254c104ac10730f6a706700e59f.jpg'></td><td>2015-04-14 20:34:14</td><td><a href='http://news.yahoo.com/mexico-groups-ask-un-list-monarch-danger-203414979.html'>site</a></td><td><table><tr><td>Mexico groups ask UN to list Monarch reserve as in danger</td></tr><tr><td>Activists from Mexico, the United States and Canada have filed a request to the U.N. World Heritage Committee to place the Monarch Butterfly Reserve wintering sites on the list of sites considered in danger.</td></tr><tr><td>UNESCO designated the 139,000-acre (56,259 hectare) reserve in the mountains west of Mexico City a World Heritage site in 2008.</td></tr></table></td></tr>
 </table></body></html>

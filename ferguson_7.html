@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ferguson</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 05:09:08</td><td><a href='http://www.daytondailynews.com/ap/ap/us/man-accused-in-ferguson-police-shooting-to-seek-lo/nkjFJ/'>site</a></td><td>Man accused in Ferguson police shooting to seek lower bond</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 15:56:41</td><td><a href='http://www.daytondailynews.com/ap/ap/political/focus-in-ferguson-shifts-to-election-of-city-counc/nkmyZ/'>site</a></td><td>Focus in Ferguson shifts to election of City Council members</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 21:39:18</td><td><a href='http://www.daytondailynews.com/ap/ap/us/activists-seek-probe-of-prosecutors-role-in-fergus/nk3Qn/'>site</a></td><td>Activists seek probe of prosecutor's role in Ferguson case</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-13 03:28:13</td><td><a href='http://news.yahoo.com/obama-banters-kimmel-reflects-ferguson-024826936.html'>site</a></td><td>Obama banters with Kimmel, reflects on Ferguson</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 04:40:23</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11416865&ref=rss'>site</a></td><td><table><tr><td>During a more subdued segment, Obama reflected on Wednesday night's shooting of two police officers in racially tense Ferguson, Missouri, just days after he had delivered a speech on racial healing in Selma, Alabama.</td></tr><tr><td>"What had been happening in Ferguson was oppressive and objectionable and was worthy of protest, but there was no excuse for criminal acts," he said.</td></tr></table></td></tr>
 </table></body></html>

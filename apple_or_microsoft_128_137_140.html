@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/06/3-reasons-apples-watch-will-or-wont-change-the-game'>site</a></td><td>Is the Apple Watch going to be able to do the same?</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/cd/resizer/2.0/FIT_TO_WIDTH-w540/d0e4544a164f18f13e5d10d68fffaace0a808fe8.jpg'></td><td>2015-04-07 19:45:15</td><td><a href='https://www.yahoo.com/style/angela-ahrendts-is-changing-the-way-you-shop-for-115783775498.html?src=rss'>site</a></td><td>The Apple Store app and our online store make it much easier to purchase Apple Watch and the new MacBook.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 04:02:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/08/apple-watch-isnt-the-only-gadget-out-this-week/'>site</a></td><td>Apple store employees will show you the range of options, including different watch cases, bands and sizes.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-09 12:46:19</td><td><a href='http://www.utsandiego.com/news/2015/apr/09/your-guide-to-trying-on-ordering-apple-watch/'>site</a></td><td>Starting Friday, Apple Store staff will be able to help you choose from the array of options.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>The Apple Store app also has sizing guides, images of the watch cases in actual size and animation of buckles and clasps, which you can open and close by pinching in and out.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/square_gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>Apple Watch options: 54 combinations of case, band, size</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/JLVlTNDLtJ0O33Ev0sVrqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/d0ba21d8f1b92e0f730f6a7067001210_original.jpg'></td><td>2015-04-09 15:43:02</td><td><a href='http://finance.yahoo.com/news/apple-watch-options-54-combinations-125305012.html'>site</a></td><td>Apple Watch, available for pre-order on Friday, April 10, comes with a choice of watch case, band and size _ there are 54 possible configurations in all.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 07:01:29</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3033199/Apple-Watch-unveiled-customers.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Apple watch unveiled to customers</td></tr><tr><td>Customers will be able to order a Watch while in a store, but this will be done through an Apple store employee and via the company's internal online store.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/35/57/33/7796462/3/square_gallery_thumb.jpg'></td><td>2015-04-10 08:45:37</td><td><a href='http://www.sfgate.com/business/personal-finance/article/APPLE-WATCH-LIVE-Try-on-visits-online-orders-6190868.php'>site</a></td><td><table><tr><td>A customer tries on an Apple Watch at an Apple Store in Hong Kong Friday, April 10, 2015.</td></tr><tr><td>Customers and staff look at models of Apple Watch displayed in a glass case at an Apple Store in Tokyo as Apple Watch made its debut Friday, April 10, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/35/57/64/7798070/3/square_gallery_thumb.jpg'></td><td>2015-04-10 18:25:24</td><td><a href='http://www.sfgate.com/business/personal-finance/article/APPLE-WATCH-LIVE-Try-on-visits-online-orders-6190868.php'>site</a></td><td>Ricky Lea examines Apple's new watch, which could only be bought as a pre-order online, Friday, April 10, 2015, in New York.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-10 20:37:26</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/10/online-excitement-but-no-long-lines-for-apple-watch-debut'>site</a></td><td>Online excitement but no long lines for Apple Watch debut</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-10 22:30:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article18222050.html#storylink=rss'>site</a></td><td>Apple has started taking orders for the watch on its website and the Apple Store app.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-11 00:11:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034432/Backlogged-orders-shoppers-close-look-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Backlogged orders as shoppers get close-up look at Apple Watch</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td><a href='http://www.foxbusiness.com/technology/2015/04/11/review-apple-watch-try-on-visits-with-many-choices-lead-to-indecision/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Both sessions at the Apple store began with indecision: What size do I want?</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/13/102581901-RTR4WTY9.80x60.jpg?v=1429544480'></td><td>2015-04-22 23:55:00</td><td><a href='http://www.cnbc.com/id/102611990'>site</a></td><td>When online pre-orders for Apple's first smartwatch started on April 10, many customers were surprised to see delivery times as far out as June instead of on April 24, when the devices officially go on sale.</td></tr>
+</table></body></html>

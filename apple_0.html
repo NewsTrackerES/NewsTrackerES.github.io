@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:34:11</td><td><a href='http://www.reuters.com/article/2015/04/30/us-usa-apple-partnership-idUSKBN0NL1QK20150430?feedType=RSS&feedName=healthNews'>site</a></td><td>Apple, IBM announce partnership with Japan Post to improve elderly care</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/apple2.jpg?ve=1&tl=1'></td><td>2015-04-30 13:36:56</td><td><a href='http://www.foxbusiness.com/industries/2015/04/30/apple-ibm-partner-with-japan-post-for-elderly-care/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Apple Inc and International Business Machine Corp have teamed up with Japan Post Holdings Co to improve caregiver and monitoring services for the elderly in Japan, the companies announced on Thursday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/03/09/turlington_cook650.jpg&size=104x59&quality=85'></td><td>2015-03-19 15:35:15</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/19/22296736.html?cid=rsstechnology'>site</a></td><td><table><tr><td>Tag Heuer, Intel challenge Apple with Android smartwatch</td></tr><tr><td>"With Apple Watch hitting the market it's no longer viable for Swiss watchmakers to bury their heads in the sand. Now Tag Heuer has signalled its intention to enter the smartwatch market we are certain others will follow."</td></tr></table></td></tr>
 </table></body></html>

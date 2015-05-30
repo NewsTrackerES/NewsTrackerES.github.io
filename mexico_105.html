@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e2BGj2S1coNq_m94FuSppA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-20T025103Z_1_LYNXMPEB2J034_RTROPTP_2_MEXICO-POLITICS.JPG'></td><td>2015-03-20 02:51:03</td><td><a href='http://news.yahoo.com/mexico-finance-minister-nothing-add-house-purchase-report-025103506--sector.html'>site</a></td><td><table><tr><td>ACAPULCO (Reuters) - Mexico's Finance Minister Luis Videgaray said on Thursday he would not comment further on a report that a contractor who has embroiled the government in a conflict-of-interest scandal sold him a house without making a profit.</td></tr><tr><td>"I have nothing to add to the comments I already gave to the newspaper before publication ... I will not make any more comments," Videgaray told reporters at Mexico's annual banking conference in the beach resort of Acapulco.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/61/13/7803640/3/square_gallery_thumb.jpg'></td><td>2015-04-11 19:51:17</td><td><a href='http://www.sfgate.com/news/world/article/Latest-on-Americas-Summit-Formal-summit-session-6193396.php'>site</a></td><td>Latest on Americas Summit: Mexico backs US-Cuba talks</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-04-11 19:51:17</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/11/latest-on-americas-summit-formal-summit-session-starts-late'>site</a></td><td>President Enrique Pena Nieto of Mexico is expressing support for negotiations to improve relations between Cuba and the United States, countries he describes as "two great friends of Mexico."</td></tr>
 </table></body></html>

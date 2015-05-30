@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mh17</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 13:17:22</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/30/probe-into-ukraine-plane-disaster-eyes-buk-missile-launchers'>site</a></td><td>The cause of the MH17 disaster last summer is a subject of major diplomatic disputes.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 06:26:17</td><td></td><td><a href='mh17_0_1.html'>"This appeal for witnesses does not mean that police and prosecutors have definitively concluded what caused MH17 to crash," the address said. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:52:56</td><td></td><td><a href='mh17_0_2.html'>The Hague - Dutch and international investigators have finished recovering human remains and wreckage from the MH17 plane crash site in eastern Ukraine, the mission's head said on Thursday. (10)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-06 15:52:59</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3070450/Russian-report-blames-Kiev-downing-MH17-airliner-newspaper.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Russian report blames Kiev for downing of MH17 airliner-newspaper</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 21:01:32</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3042551/Dutch-team-finds-remains-Ukraine-MH17-crash-site.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Dutch team finds more remains at Ukraine MH17 crash site</td></tr><tr><td>Dutch investigators have recovered more body parts at the MH17 plane crash site in Ukraine after searching a location that was previously inaccessible, the Netherlands announced on Thursday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 13:52:56</td><td><a href='http://www.news24.com/World/News/Search-of-Ukraine-MH17-crash-site-over-20150430'>site</a></td><td>The Hague - Dutch and international investigators have finished recovering human remains and wreckage from the MH17 plane crash site in eastern Ukraine, the mission's head said on Thursday.</td></tr>
 </table></body></html>

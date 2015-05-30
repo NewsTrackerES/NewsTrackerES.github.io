@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn0.mos.techradar.futurecdn.net//art/Watches/Apple%20Watch/styles/apple-watch-link-bracelet-colors-50-80.jpg'></td><td>2015-04-02 02:01:00</td><td><a href='http://www.techradar.com/us/news/wearables/apple-iwatch-release-date-news-and-rumours-1131043?src=rss&attr=all'>site</a></td><td>Why Apple Watch costs so much?</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/97cfbab16e0a740feb5a77c3a23ed8cec2e2342a/c=295-191-1860-1367&amp;r=x404&amp;c=534x401/local/-/media/2015/04/08/USATODAY/USATODAY/635640846522207595-watchxDMSKKx010.jpg'></td><td>2015-04-08 14:34:23</td><td><a href='http://www.usatoday.com/story/tech/personal/2015/04/08/apple-watch-reviews/25456489/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Let's review the reviews of Apple Watch</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 14:40:32</td><td><a href='http://business.financialpost.com/fp-tech-desk/apple-watch-review-youll-want-one-but-you-dont-need-one'>site</a></td><td>So Apple has succeeded in its first big task with its watch.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297685025447_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-08 17:13:47</td><td><a href='http://www.torontosun.com/2015/04/08/apple-watch-stylish-but-not-for-everyone-reviewers-say'>site</a></td><td>Apple Watch stylish but not for everyone, reviewers say</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/03/09/turlington_cook650.jpg&size=104x59&quality=85'></td><td>2015-04-08 18:15:07</td><td><a href='http://technology.canoe.ca/Mobile/Features/2015/04/08/22333561.html?cid=rsstechnology'>site</a></td><td>"But among smartwatches, Apple Watch is second to none. I want one."</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-09 12:46:19</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/09/your-guide-to-trying-on-ordering-apple-watch'>site</a></td><td>Your guide to trying on, ordering Apple Watch</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-09 19:08:20</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/09/apple-watch-isnt-the-only-gadget-out-this-week'>site</a></td><td>And no surprise, there's an Apple Watch as a character now.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-10 03:58:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-04-10-TEC--Apple%20Watch%20Debuts/id-3148688fdf124eb9a6f7ea8d57b65e38'>site</a></td><td>Currently, this is the only way Apple is selling the watch.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://a.abcnews.com/images/Technology/abc_apple_watch_02_jc_150410_4x3_992.jpg'></td><td>2015-04-10 19:48:14</td><td><a href='http://abcnews.go.com/Technology/apple-watch-fitting-appointment-1st-day/story?id=30227788'>site</a></td><td>What It's Like to Get an Apple Watch Fitting</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/11/660/371/6aa66a4bc56ac410VgnVCM100000d7c1a8c0____-Apple Watch Debuts NYC-4.jpg?ve=1&tl=1'></td><td>2015-04-11 12:01:19</td><td><a href='http://www.foxbusiness.com/technology/2015/04/11/review-apple-watch-try-on-visits-with-many-choices-lead-to-indecision/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Review: Many choices, indecision with Apple Watch</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-15 14:41:44</td><td><a href='http://www.ctvnews.ca/sci-tech/teens-not-keen-on-apple-watch-1.2328233'>site</a></td><td>Teens not keen on Apple Watch</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/13/102581901-RTR4WTY9.80x60.jpg?v=1429544480'></td><td>2015-04-22 23:55:00</td><td><a href='http://www.cnbc.com/id/102611990'>site</a></td><td>Will the Apple Watch end up on your wrist?</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://ww1.hdnux.com/photos/36/01/40/7870516/3/mosaic_2.jpg'></td><td>2015-04-24 04:56:08</td><td><a href='http://www.chron.com/business/technology/article/Review-Getting-your-Apple-Watch-Here-s-how-to-6220900.php'>site</a></td><td>Review: Getting your Apple Watch? Here's how to use it</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ww1.hdnux.com/photos/35/60/01/7798860/3/mosaic_2.jpg'></td><td>2015-04-24 22:22:31</td><td><a href='http://www.chron.com/business/technology/article/Review-Getting-your-Apple-Watch-Here-s-how-to-6220900.php'>site</a></td><td>Select your language on the watch and open the Apple Watch app on the iPhone.</td></tr>
+</table></body></html>

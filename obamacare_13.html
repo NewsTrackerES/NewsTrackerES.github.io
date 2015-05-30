@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/9e87116f54a93114e415cd1bcd302f7663d1c06f/c=220-0-3667-2592&amp;r=x404&amp;c=534x401/local/-/media/2015/04/30/USATODAY/USATODAY/635660024577349375-XXX-140904HOSPITALSCLOSING017.jpg'></td><td>2015-05-04 14:49:53</td><td><a href='http://www.usatoday.com/story/news/nation/2015/05/04/emergency-room-visits-rise-under-affordable-care-act/26625571/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomnation-topstories'>site</a></td><td><table><tr><td>Contrary to goals, ER visits rise under Obamacare</td></tr><tr><td>There are more than a half-million people in the state newly insured through Obamacare.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:13:50</td><td><a href='http://www.reuters.com/article/2015/04/27/us-usa-court-obamacare-idUSKBN0NI1I920150427?feedType=RSS&feedName=healthNews'>site</a></td><td>U.S. top court throws out Obamacare contraception ruling</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 15:05:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3057553/U-S-court-throws-Obamacare-contraception-ruling.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Obama's healthcare law, known as Obamacare, requires employers to provide health insurance policies that cover preventive services for women including access to contraception and sterilization.</td></tr>
 </table></body></html>

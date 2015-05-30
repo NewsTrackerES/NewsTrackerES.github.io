@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 1,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cannes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HwynNYOANx9x6k_OsAz8aw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTUwMDtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/549b9b9694257815760f6a706700c506.jpg'></td><td>2015-05-14 18:20:14</td><td><a href='http://news.yahoo.com/model-fashion-film-industries-moving-slowly-diversity-163307868.html'>site</a></td><td><table><tr><td>CANNES WATCH: Model says fashion moving slowly on diversity</td></tr><tr><td>CANNES, France (AP) - Liya Kebede is one of the top models in fashion, but the Ethiopian stunner still sees the fashion industry as lagging when it comes to featuring people of color - and it's not the only one.</td></tr><tr><td>"Diversity is an issue - not just in fashion but in general, even in cinema. Especially when you're here, you also see it," Kebede, a L'Oreal ambassador for the Cannes Film Festival, said in an interview on Thursday.</td></tr><tr><td>"It was super exciting actually. I think we were all very nervous, I think it was kind of nerve-wracking, but Cannes is always full of magic and full of excitement and that red carpet is pretty special," she said.</td></tr></table></td></tr>
+</table></body></html>

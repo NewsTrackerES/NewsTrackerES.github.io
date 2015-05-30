@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:21:43</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-official-surveymonkey-ceo-died-severe-head-trauma-30796760'>site</a></td><td>Mexico official says SurveyMonkey CEO died of severe head trauma in exercise accident.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 20:40:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443408&ref=rss'>site</a></td><td>Goldberg, husband of Facebook executive Sheryl Sandberg, was found lying next to a treadmill on Friday at the Four Seasons Resort Punta Mita near Puerto Vallarta on Mexico's Pacific coast.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 20:51:37</td><td><a href='http://www.foxbusiness.com/markets/2015/05/04/mexico-state-official-says-surveymonkey-ceo-died-severe-head-trauma-in-exercise/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>MEXICO CITY - SurveyMonkey CEO David Goldberg died of severe head trauma in an exercise accident in the Mexican resort town of Punta Mita, a Mexican state official said Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 17:47:00</td><td><a href='http://www.ctvnews.ca/world/pope-francis-predicts-papacy-will-only-last-4-5-years-1.2278756'>site</a></td><td><table><tr><td>He said Mexico has had many martyrs because of the religious persecution it has endured, and because of its "privileged" place in the church thanks to the role the beloved Virgin of Guadalupe plays in its popular faith.</td></tr><tr><td>"I think that the devil has punished Mexico with a lot of anger," Francis said, referring to the country's problems with violence and drugs.</td></tr><tr><td>"I think the devil can't forgive Mexico."</td></tr></table></td></tr>
 </table></body></html>

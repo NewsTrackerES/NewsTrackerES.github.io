@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 03:22:07</td><td><a href='http://www.miamiherald.com/news/business/article18650490.html#storylink=rss'>site</a></td><td><table><tr><td>The Los Angeles Unified School District is telling Apple it's dissatisfied with the Pearson Education curriculum for student iPads and wants reimbursement for all the learning materials schools haven't been able to use.</td></tr><tr><td>In a letter Monday, the district said it won't accept or compensate Apple for new deliveries of Pearson's English and math software.</td></tr><tr><td>Apple's contract with Pearson added about $200 to the cost of each device.</td></tr><tr><td>A message seeking comment from Apple wasn't immediately returned.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://si.wsj.net/public/resources/images/BN-HE983_APPLEP_P_20150302192013.jpg'></td><td>2015-04-17 22:18:37</td><td><a href='http://www.wsj.com/articles/apple-pay-plans-to-launch-in-canada-this-fall-1429280816?mod=rss_Technology'>site</a></td><td>A base case for Canadian banks could be in the range of 15 to 25 basis points on credit card transactions to Apple, according to one of those people.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://si.wsj.net/public/resources/images/BN-HE983_APPLEP_P_20150302192013.jpg'></td><td>2015-04-17 22:18:37</td><td><a href='http://www.wsj.com/articles/apple-pay-plans-to-launch-in-canada-this-fall-1429280816?mod=pls_whats_news_us_business_f'>site</a></td><td>In the U.S., Apple charges 15 basis points per credit card transaction and half-a-cent per debit transaction on Apple Pay, according to people in the payments industry.</td></tr>
 </table></body></html>

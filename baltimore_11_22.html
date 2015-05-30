@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/nlNAkeeEp.HOLGNXjF2.kg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-us/homerun/video.wpvi.abc.news.com/d7c0d56e53fc2fd5b28e90a12971b978'></td><td>2015-05-03 14:53:07</td><td><a href='http://news.yahoo.com/baltimore-mayor-lifts-citywide-curfew-145307964.html'>site</a></td><td>Baltimore mayor lifts citywide curfew</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-03 14:57:18</td><td><a href='http://www.foxnews.com/us/2015/05/03/baltimore-mayor-lifts-curfew-after-days-tension/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>Baltimore mayor lifts curfew after days of tension</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/z/3/j/7/image.related.articleLeadwide.620x349.1mz3j3.png/1430753138328.jpg'></td><td>2015-05-03 19:00:47</td><td><a href='http://www.smh.com.au/world/we-want-to-heal-our-city--baltimores-mayor-lifts-curfew-20150504-1mz3j3.html'>site</a></td><td>'We want to heal our city' &#8211; Baltimore's mayor lifts curfew</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-11 04:48:23</td><td><a href='http://www.reuters.com/article/2015/05/11/us-usa-police-baltimore-prince-idUSKBN0NV0YB20150511?feedType=RSS&feedName=domesticNews'>site</a></td><td>Returning to the stage for one of many encores, Prince said, "No curfew," a reference to the citywide curfew put in place after rioting in Baltimore last month.</td></tr>
+</table></body></html>

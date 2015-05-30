@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 11:35:46</td><td><a href='http://www.washingtontimes.com/news/2015/mar/5/who-to-test-ebola-vaccine-in-guinea-might-stop-out/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>The West African nations of Sierra Leone, Liberia and Guinea have been hardest hit in the yearlong Ebola outbreak, which is estimated to have left more than 9,800 people dead.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/05/20e48c565004e70a6f0f6a7067002a00_c0-174-4288-2673_s561x327.jpg?51a83f0b5968219cd1828611227898c83abe077e'></td><td>2015-03-05 13:50:29</td><td><a href='http://www.washingtontimes.com/news/2015/mar/5/last-ebola-patient-to-be-released-in-liberia/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>Yardolo's release brings Liberia hope after about a year of battling the deadly Ebola virus, which killed more than 4,100 people in this West African country.</td></tr>
+</table></body></html>

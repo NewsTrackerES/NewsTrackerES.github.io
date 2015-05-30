@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 14:10:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-03-19-US-Ferguson-Facebook-Threats/id-655f209e055f4ba9aa0aaa5c1ef7efd9'>site</a></td><td><table><tr><td>Man who threatened Ferguson officer must stay off Facebook</td></tr><tr><td>SEATTLE (AP) - A judge says a Washington state man who posted threatening comments on Facebook against a former Ferguson, Missouri, police officer can avoid prison but must stay off from social media sites.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 19:58:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article15329216.html#storylink=rss'>site</a></td><td>Ferguson Facebook case part of debate about online threats</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td><table><tr><td>Internet.org is Facebook's fledgling effort to create new users in countries with little or low Internet use.</td></tr><tr><td>That is the reason why Internet.org does not include the WhatsApp messaging service, bought by Facebook last year.</td></tr></table></td></tr>
 </table></body></html>

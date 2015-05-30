@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Qb6r1VCskNVBDb0DdSBDwg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/858cf7d8dd7d3716770f6a706700b581.jpg'></td><td>2015-05-22 15:32:35</td><td><a href='http://news.yahoo.com/cannes-watch-arabian-nights-canine-named-cannes-top-153235120.html'>site</a></td><td>CANNES, France (AP) - A small white dog named Lucky has taken the award for Cannes' best performance on four legs.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-22 15:55:27</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21676560.html#storylink=rss'>site</a></td><td>CANNES WATCH: 'Arabian Nights' canine named Cannes' top dog</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/bt/api/res/1.2/rJdRkRyORMkJQteYahhb6g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/791f051f92a27115760f6a706700fd73.jpg'></td><td>2015-05-15 16:31:20</td><td><a href='https://news.yahoo.com/q-reilly-aims-european-stardom-3-films-cannes-163120173.html'>site</a></td><td><table><tr><td>Q&A: Reilly aims for European stardom with 3 films at Cannes</td></tr><tr><td>CANNES, France (AP) - John C. Reilly has come to the Cannes Film Festival not just fashionably attired, but outfitted with three of the most adventurous films at the festival.</td></tr><tr><td>"When in Cannes," he says stretching out on a rooftop patio in a gleaming white suit, accessorized with a matching hat, two-tone leather brogues and a cane.</td></tr></table></td></tr>
 </table></body></html>

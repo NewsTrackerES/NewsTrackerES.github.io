@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-01 21:34:38</td><td><a href='http://www.torontosun.com/2015/03/01/russians-march-in-memory-of-murdered-putin-critic'>site</a></td><td><table><tr><td>Putin has vowed to pursue those who killed Nemtsov, calling the murder a "provocation."</td></tr><tr><td>They say they are pursuing several lines of inquiry, including the possibility that Nemtsov, a Jew, was killed by radical Islamists or that the opposition killed him to blacken Putin's name.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-February/nemtsov_memorial_feb._28_2015_0.jpg'></td><td>2015-02-28 13:32:00</td><td><a href='http://www.globalpost.com/dispatch/news/regions/europe/russia/150228/russian-opposition-mourns-murdered-leader-nemtsov'>site</a></td><td>Organizers of Sunday's march were divided after Nemtsov's death over whether to hold the rally or turn it into a demonstration of mourning in central Moscow.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-01 21:34:38</td><td><a href='http://www.torontosun.com/2015/03/01/russians-march-in-memory-of-murdered-putin-critic'>site</a></td><td>Some young people walking in central Moscow asked: "Who is Nemtsov anyway?"</td></tr>
 </table></body></html>

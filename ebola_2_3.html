@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.dw.de/image/0,,18230915_303,00.jpg'></td><td>2015-02-20 12:12:00</td><td><a href='http://www.dw.de/who-approves-15-minute-ebola-test/a-18270673?maca=en-rss-en-world-4025-rdf'>site</a></td><td>WHO approves 15-minute Ebola test</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 16:48:46</td><td><a href='http://news.yahoo.com/world-health-organization-approves-1st-quick-test-ebola-143136358--finance.html'>site</a></td><td>The new test can provide results within 15 minutes by detecting an Ebola protein.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/09/article-doc-1m52c-6XedOwYi9-HSK1-902_634x422.jpg'></td><td>2015-04-09 07:01:41</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3031601/Japanese-Ebola-test-gives-results-11-minutes-researcher.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Japanese Ebola test gives results in 11 minutes: researcher</td></tr><tr><td>A Japanese research team said on Thursday it had developed a field test for Ebola that gives results in just over 11 minutes -- down from the 90-minute test used now.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww2.hdnux.com/photos/33/14/44/7129393/9/landscape_32.jpg'></td><td>2015-04-25 19:54:25</td><td><a href='http://www.sfgate.com/news/world/article/UN-chief-names-new-head-of-Ebola-mission-as-6223855.php'>site</a></td><td>UN chief names new head of Ebola mission as outbreak calms</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e.VtF1re6sE7fgJAEvF65A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/23525b61ff5aeda8537330c6c2a21c0b657f1762.jpg.cf.jpg'></td><td>2015-04-25 19:54:35</td><td><a href='http://news.yahoo.com/un-chief-names-head-ebola-mission-outbreak-calms-194746427.html'>site</a></td><td>The Ghana-based U.N. Mission for Ebola Emergency Response, or UNMEER, was established last September, near the height of the outbreak as an extraordinary response to a public health crisis.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-25 19:55:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11438858&ref=rss'>site</a></td><td>Ban thanked Ahmed "for his exceptional work and leadership of UNMEER, and for his commitment to ensuring the affected countries are on the road to recovery from the unprecedented Ebola outbreak," according to the statement.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 19:55:20</td><td><a href='http://abcnews.go.com/International/wireStory/chief-names-head-ebola-mission-outbreak-calms-30583823'>site</a></td><td>The U.N. chief on Saturday appointed a new head of the emergency mission responding to West Africa's Ebola crisis amid hopes that the world's deadliest outbreak of the virus will soon come to an end.</td></tr>
 </table></body></html>

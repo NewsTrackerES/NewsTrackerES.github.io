@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/Technology/HT_mark_zuckerberg_jef_150504_16x9_992.jpg'></td><td>2015-05-04 17:48:19</td><td><a href='http://abcnews.go.com/Technology/facebook-opens-free-internet-platform-amid-net-neutrality/story?id=30792367'>site</a></td><td>Facebook Opens Up Free Internet Platform</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/19/15/28DC904400000578-3087843-Internet_org_launched_in_August_2013_The_project_was_set_up_to_c-a-32_1432044200409.jpg'></td><td>2015-05-20 10:29:08</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3087843/Facebook-s-Internet-org-slammed-critics-claim-project-violates-principles-free-speech-privacy.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A Facebook spokesperson told MailOnline: 'We and our critics share a common vision of helping more people gain access to the broadest possible range of experiences and services on the internet.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 11:15:00</td><td><a href='http://www.ctvnews.ca/sci-tech/facebook-moves-into-new-gehry-designed-headquarters-1.2305310'>site</a></td><td><table><tr><td>(San Francisco-AFP) - Facebook moved into its new Frank Gehry-designed headquarters in Silicon Valley, with a rooftop park and "the largest open floor plan in the world."</td></tr><tr><td>"That's on purpose," Zuckerberg said on his Facebook timeline.</td></tr></table></td></tr>
 </table></body></html>

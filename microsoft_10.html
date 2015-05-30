@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 13:01:11</td><td><a href='http://www.foxbusiness.com/technology/2015/03/31/microsoft-makes-cheaper-version-surface-pro-3-with-smaller-screen-less-flexible/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>Microsoft bills the Surface line as a laptop replacement when used with the cover.</td></tr><tr><td>Microsoft Corp. expects to ship the new device around May 5.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 13:02:05</td><td></td><td><a href='microsoft_10_11.html'>NEW YORK (AP) - Microsoft is making a cheaper version of its Surface Pro 3 tablet computer in an effort to reach students and budget-conscious families. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 18:00:15</td><td></td><td><a href='microsoft_10_13.html'>SAN FRANCISCO (AP) - Google is releasing its cheapest Chromebook laptops yet, two versions priced at $149 aimed at undercutting Microsoft's Windows franchise and gaining ground in even more classrooms. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 18:00:15</td><td></td><td><a href='microsoft_10_12.html'>"We cannot be happier that Microsoft is helping drive down the prices of PCs," said Caesar Sengupta, Google's vice president of product management for Chromebooks. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 10:14:23</td><td><a href='http://www.fin24.com/Tech/Companies/Microsoft-pushes-deep-into-Android-territory-20150324'>site</a></td><td><table><tr><td>Microsoft said it was expanding a deal with Samsung - which had already agreed on pre-installing Microsoft services on its high-end smartphones - to include some tablets.</td></tr><tr><td>The deal will provide Microsoft Word, Excel, PowerPoint, OneNote, OneDrive and Skype on "select Samsung Android tablets", a statement from the Redmond, Washington, group said.</td></tr></table></td></tr>
 </table></body></html>

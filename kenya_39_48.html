@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>kenya</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 14:12:48</td><td><a href='http://www.reuters.com/article/2015/04/11/us-kenya-attacks-idUSKBN0N20DQ20150411?feedType=RSS&feedName=worldNews'>site</a></td><td>Kenya orders U.N. to move massive Somali refugee camp after attack</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-11 16:02:46</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034933/Kenya-demands-UN-removes-massive-Somali-refugee-camp.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Kenya demands UN removes massive Somali refugee camp</td></tr><tr><td>Kenya has in the past accused Islamist militants of hiding out in Dadaab camp which it now wants the U.N. refugee agency UNHCR to move across the border to inside Somalia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/4/3/why-is-al-shabab-attacking-kenya/_jcr_content/image.adapt.480.low.040315_AlShabab2.jpg'></td><td>2015-04-11 19:45:00</td><td><a href='http://america.aljazeera.com/articles/2015/4/11/kenya-asks-un-to-remove-dadaab-refugee-camp.html'>site</a></td><td>Dadaab hosts more than 600,000 thousand Somali refugees, according to Ruto, in a remote, dry corner in northeast Kenya.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/article-doc-1o7tg-6XjpWSyOv-HSK1-149_634x438.jpg'></td><td>2015-04-12 17:01:36</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3035891/One-killed-150-hurt-Kenya-university-stampede-blast.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Kenya has responded by asking the UN refugee agency to repatriate hundreds of thousands of Somali refugees by July, a move criticised by the UN refugee agency and rights groups.</td></tr><tr><td>Somali refugees in Kenya number around 450,000, most of them at Dadaab, the world's largest refugee camp, the UNHCR said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-12 19:56:23</td><td><a href='http://www.utsandiego.com/news/2015/apr/12/kenya-asks-the-un-to-shut-down-refugee-camp-for/'>site</a></td><td>Kenya asks the UN to shut down refugee camp for Somalis</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-14 13:58:48</td><td><a href='http://www.reuters.com/article/2015/04/14/us-kenya-security-rights-idUSKBN0N51GF20150414?feedType=RSS&feedName=worldNews'>site</a></td><td>The U.N. refugee agency UNHCR urged Kenya on Tuesday to reconsider the demand.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-14 14:05:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11432742&ref=rss'>site</a></td><td>BERLIN (AP) " The United Nations' refugee agency urged Kenya on Tuesday to reconsider its demand for the closure of a vast camp for Somali refugees within three months.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-14 14:38:11</td><td><a href='http://www.sfgate.com/news/world/article/UN-urges-Kenya-to-reconsider-demand-to-shut-6198639.php'>site</a></td><td>Kenyan Deputy President William Ruto made the demand Saturday, urging the agency to send the more than 400,000 refugees living at the Dadaab camp back home or see Kenya relocate them itself.</td></tr>
+</table></body></html>

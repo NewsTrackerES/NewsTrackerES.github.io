@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>5</td><td></td><td>2015-03-13 12:30:07</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417094&ref=rss'>site</a></td><td>It has one of the few specialized isolation units nationwide set up to treat Ebola patients.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 12:31:00</td><td></td><td><a href='ebola_69_74.html'>(AP) - An American healthcare worker who contracted Ebola while volunteering in a Sierra Leone treatment unit arrived safely at the National Institutes of Health's hospital in Maryland, officials said Friday. (36)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-13 20:32:31</td><td><a href='http://www.usnews.com/news/us/articles/2015/03/13/american-who-contracted-ebola-arrives-at-maryland-hospital'>site</a></td><td>That person has shown no symptoms, is not diagnosed with Ebola and is expected to "voluntarily self-isolate" for a 21-day incubation period.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/03/14/doctors650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-14 21:20:09</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/14/22287636.html?cid=rssnewsworld'>site</a></td><td>If someone shows symptoms, they will be transported to an Ebola treatment center for evaluation and care, the CDC said.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/3/14/1426365178318/b8e2b0fa-a347-4325-8b95-30eb4b2d2eb1-300x180.jpeg'></td><td>2015-03-14 21:34:56</td><td><a href='http://www.theguardian.com/world/2015/mar/14/ebola-10-us-citizens-possibly-exposed-flown-back-africa'>site</a></td><td>The CDC said one patient was being sent to Emory University Hospital's special isolation unit, where several Ebola patients have already been treated.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-15 11:40:14</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11417774&ref=rss'>site</a></td><td><table><tr><td>Both countries are still reporting dozens of new cases every week and the number of Ebola deaths taking place outside of hospitals remains high, suggesting that people are wary of seeking help or are hiding cases.</td></tr><tr><td>On Feb. 28, state media reported that Sam-Sumana had placed himself under voluntary quarantine for 21 days after one of his security personnel died of Ebola.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-16 12:13:20</td><td></td><td><a href='ebola_69_70.html'>Four Americans arrive in Nebraska for Ebola monitoring (3)</a></td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://ww4.hdnux.com/photos/35/20/52/7670447/5/622x350.jpg'></td><td>2015-03-17 21:44:07</td><td><a href='http://www.chron.com/news/medical/article/4-more-aid-workers-flown-back-to-US-for-Ebola-6139065.php'>site</a></td><td>None of them have been diagnosed with Ebola, but they will be isolated and monitored during the next three weeks for signs of the disease.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 21:44:07</td><td></td><td><a href='ebola_69_72.html'>But all are connected to - or had direct physical contact with - another American who came down with Ebola last week in Africa. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 21:47:14</td><td></td><td><a href='ebola_69_71.html'>But medical superintendent Dr. Peter George said the hospital hasn't had any Ebola cases for quite some time. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/EQCS43bNVv6lKscDqhmhyg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_ZA/News/Reuters/2015-04-02T060704Z_1007970001_LYNXMPEB3107Y_RTROPTP_2_OZATP-UK-HEALTH-EBOLA-LEONE.JPG.cf.jpg'></td><td>2015-04-02 09:31:27</td><td><a href='http://news.yahoo.com/patient-evaluated-ebola-colorado-hospital-seeing-symptoms-091648207.html'>site</a></td><td>Patient evaluated for Ebola at Colorado hospital after seeing symptoms</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-09 21:30:57</td><td><a href='http://www.reuters.com/article/2015/04/09/us-health-ebola-usa-idUSKBN0N02BS20150409?feedType=RSS&feedName=domesticNews'>site</a></td><td>Sheila Davis, chief of Ebola response for Boston-based Partners In Health, said the group is "heartened by the news that our colleague is heading home, free of Ebola, and making his way toward a full recovery."</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 22:01:54</td><td></td><td><a href='ebola_69_73.html'>According to the group, their colleague was declared Ebola free after two consecutive negative tests, and has been declared no longer contagious and able to return home. (2)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-05-12 17:46:48</td><td><a href='http://www.utsandiego.com/news/2015/may/12/nurse-in-italy-tests-positive-for-ebola-was-in/'>site</a></td><td>The nurse, who wasn't identified to protect his privacy, worked for the non-governmental aid group Emergency in Sierra Leone, one of the African countries hardest hit by often-fatal Ebola.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-05-14 06:57:43</td><td><a href='http://www.reuters.com/article/2015/05/14/us-ebola-usa-connecticut-idUSKBN0NY21A20150514?feedType=RSS&feedName=domesticNews'>site</a></td><td>He had been working at Ebola treatment centers as an administrator, said Paul Skolnik, chief of medicine at the University of Connecticut Health Center's Ebola Task Force.</td></tr>
+</table></body></html>

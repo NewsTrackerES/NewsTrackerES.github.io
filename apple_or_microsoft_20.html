@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_or_microsoft_20_21.html'>Bromwich said Apple was making progress before significant setbacks arose since October. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:41:09</td><td><a href='http://www.seattlepi.com/business/technology/article/Monitor-Apple-antitrust-cooperation-sharply-6204962.php'>site</a></td><td>Apple's program still lacked an independent antitrust compliance officer and adequate board oversight, he said.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0319/20150319__0320apple~4_300.JPG'></td><td>2015-04-17 00:35:20</td><td><a href='http://www.mercurynews.com/business/ci_27930471/court-monitor-apple-antitrust-cooperation-has-declined?source=rss'>site</a></td><td>Since then, he said, "Apple's communications with us reverted to the more adversarial tone taken in the first few months of the monitorship, including attempts to prescribe and limit how the monitor should conduct his reviews and write his reports."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-28 14:38:29</td><td></td><td><a href='apple_or_microsoft_20_22.html'>NEW YORK (AP) - A federal appeals panel has refused to disqualify a court-appointed monitor after a judge found Apple colluded with book publishers in 2010 to raise electronic book prices. (10)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 03:52:48</td><td></td><td><a href='apple_or_microsoft_20_22.html'>Five days after Cook and Jobs' movie night, the co-founder of Apple passed away at his Palo Alto, California, estate from complications from pancreatic cancer. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 03:52:48</td><td></td><td><a href='apple_or_microsoft_20_21.html'>The book, based on numerous in-depth interviews with Jobs' colleagues, friends and competitors, also allows a glimpse into the Apple CEO's inner sanctum in the final weeks of his life. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/569e5f4096a6e55dbb9fd153e9460a7ad730ab76_140x91.jpg'></td><td>2015-03-26 03:52:48</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11423626&ref=rss'>site</a></td><td>In an interesting titbit, the book reveals that Jobs' favorite Beatle was John Lennon, and that he reportedly named his company after Beatles' Apple Corps Record.</td></tr>
 </table></body></html>

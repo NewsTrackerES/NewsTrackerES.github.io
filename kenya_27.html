@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 17:04:33</td><td></td><td><a href='kenya_27_28.html'>The report names the president and his deputy as being among those suspected of planning and financing Kenya's 2007-08 postelection violence in which more than 1,000 people died. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 17:04:33</td><td><a href='http://www.foxnews.com/world/2015/03/26/kenya-president-apologizes-for-past-wrongs-by-his-government-and-previous/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>NAIROBI, Kenya - Kenya's president has apologized to the Kenyan people for past wrongs committed both by his government and past regimes.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:04:16</td><td></td><td><a href='kenya_27_29.html'>The government-funded report found that Kenya's second and third presidents, Daniel Arap Moi and Mwai Kibaki, headed governments that were responsible for massacres, economic crimes and grand corruption, among other violations. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/hCjB4guSSIdsl2aR2l0STA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2992a66631b47a12740f6a706700c440.jpg'></td><td>2015-04-24 13:42:10</td><td><a href='http://news.yahoo.com/doping-cases-cast-shadow-kenya-rivalry-london-marathon-134210624.html'>site</a></td><td>Wilson Kipsang, the 2014 winner in London, acknowledged that Kenya's reputation in athletics has been damaged by the positive doping tests, even though he says 99 percent of its athletes are clean.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-24 13:43:10</td><td><a href='http://www.charlotteobserver.com/sports/article19370079.html#storylink=rss'>site</a></td><td>A German TV documentary in 2012 alleged doping was common in Kenya.</td></tr>
 </table></body></html>

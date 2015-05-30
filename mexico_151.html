@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/36/52/63/8039671/9/square_gallery_thumb.jpg'></td><td>2015-05-25 19:00:53</td><td><a href='http://www.sfgate.com/news/texas/article/The-Latest-on-weather-More-rain-in-store-for-6284770.php'>site</a></td><td>The head of Mexico's national civil defense agency, Luis Felipe Puente, told local media that 230 people had been injured and that shelters are being set up.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 19:01:01</td><td></td><td><a href='mexico_151_152.html'>A tornado raged through the northern Mexico border city of Ciudad Acuna early Monday, killing at least 10 people, destroying homes and upending cars and other vehicles. (4)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/52/62/8039552/5/square_gallery_thumb.jpg'></td><td>2015-05-25 19:04:35</td><td><a href='http://www.sfgate.com/news/texas/article/Deadly-storms-swamp-Plains-Midwest-force-Texans-6284771.php'>site</a></td><td>Stevenson reported from Mexico City.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-26 04:25:50</td><td></td><td><a href='mexico_151_153.html'>The tornado came as ferocious weather battered swaths of Mexico and the southern United States, where rescuers hunted for 12 people missing in flash floods across Texas and Oklahoma that left three people dead. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td></td><td><a href='mexico_151_152.html'>New Mexico is touting a rural area in the southeastern part of the state as an interim storage site for the country's high-level nuclear waste, according to a letter issued by Gov. Susana Martinez earlier this month. (6)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 21:10:54</td><td><a href='http://abcnews.go.com/US/wireStory/mexico-lobbying-storage-site-nuclear-waste-30599466'>site</a></td><td>"Time and time again, the citizens of southeastern New Mexico have impressed me with their hard work ethic and willingness to tackle national problems that many others consider to be unsolvable," Martinez wrote.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-26 09:45:39</td><td></td><td><a href='apple_or_microsoft_95_96.html'>Ive, who as a lead designer with the company helped conceive the iconic Apple looks of products like the iPod, iPad and Apple Watch, confirmed the promotion in an interview published Tuesday in the Daily Telegraph. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-26 10:01:04</td><td><a href='http://www.miamiherald.com/news/business/article22323300.html#storylink=rss'>site</a></td><td>The designer from northeast London has led Apple's design team since the mid-1990s and was considered a confidante of the late Steve Jobs.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150429&t=2&i=1044470812&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3S11N'></td><td>2015-04-29 22:30:30</td><td><a href='http://www.reuters.com/article/2015/04/29/us-microsoft-windows-cloud-idUSKBN0NK2PJ20150429?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Microsoft targets $20 billion in annual cloud revenue by 2018</td></tr><tr><td>Microsoft said last week that its total commercial cloud revenue, which includes online versions of its Office and Dynamics applications, is running at $6.3 billion per year.</td></tr></table></td></tr>
 </table></body></html>

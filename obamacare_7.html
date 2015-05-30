@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/hxkxMcnfbw1q4y.SRHtm0Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIxMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-23T221847Z_2_LYNXMPEB2M0YF_RTROPTP_2_USA-HEALTHCARE-ENROLLMENT.JPG'></td><td>2015-03-23 22:18:47</td><td><a href='http://news.yahoo.com/obamacare-subsidies-likely-expanded-insurance-coverage-report-221802922.html'>site</a></td><td><table><tr><td>Obamacare subsidies likely expanded insurance coverage: report</td></tr><tr><td>The GAO also said its findings on the first year of the Obamacare insurance exchanges could not be generalized to future years because other factors, including health care costs, could affect the affordability of insurance going forward.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/18/26F50F0F00000578-0-image-m-42_1427223548449.jpg'></td><td>2015-03-24 20:03:43</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3009952/GOP-moves-ahead-budget-plans-eyes-Obamacare-repeal-bill.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"I campaigned ... with my heart and soul to get rid of Obamacare and it's the one shot that we've got to get something on his desk," said Rep.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 21:30:35</td><td></td><td><a href='obamacare_7_10.html'>But Republicans are focused more on repealing so-called "Obamacare" than they are cutting spending elsewhere in the budget and following through on their promise to balance the budget within a decade. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 21:30:35</td><td></td><td><a href='obamacare_7_9.html'>The measure would pave the way to finally deliver a bill to repeal "Obamacare" to the president's desk under special budget rules. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 21:22:20</td><td></td><td><a href='obamacare_7_8.html'>House to adopt compromise GOP budget targeting 'Obamacare' (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 22:12:52</td><td></td><td><a href='obamacare_7_11.html'>It also retains large Obamacare cuts to health care providers such as Medicare Advantage plans even though Republicans criticized the cuts in past campaigns. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/17/gop-set-to-unveil-budget-blueprint-with-cuts-to-safety-net-programs/_jcr_content/image.adapt.480.low.mike_enzi_16mar2015.jpg'></td><td>2015-05-06 02:00:00</td><td><a href='http://america.aljazeera.com/articles/2015/5/5/senate-passes-gop-budget-plan-targeting-obamacare.html'>site</a></td><td>Instead, the "reconciliation" instructions are focused on easing the way to repealing the Affordable Care Act, or "Obamacare."</td></tr>
 </table></body></html>

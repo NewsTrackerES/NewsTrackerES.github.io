@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>snowden</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 13:48:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/10/apple-phones.html'>site</a></td><td>Both companies said the moves were aimed at protecting the privacy of users of their products and that this was partly a response to wide scale U.S. government spying on Internet users revealed by Snowden in the summer of 2013.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-10 16:00:54</td><td><a href='http://rt.com/usa/239341-cia-targets-apple-security/'>site</a></td><td>CIA worked to break into Apple devices for years ? Snowden docs</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/10/2648CF8E00000578-2987851-image-a-22_1426012260351.jpg'></td><td>2015-03-10 19:14:55</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-2987851/CIA-sought-hack-Apple-iPhones-earliest-days-The-Intercept.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Intercept has in the past published a number of reports from documents released by whistleblower Snowden.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/59e/news/world/article23303948.ece/ALTERNATES/w220/web-wo-nz-spying05nw2.jpg'></td><td>2015-03-05 11:54:22</td><td><a href='http://www.theglobeandmail.com/news/world/new-zealand-shared-spy-data-on-pacific-states-with-allies-snowden-documents-allege/article23303949/?cmpid=rss1'>site</a></td><td>The role of the agency, which has a large eavesdropping facility at the top of the country's South Island, was an issue in last year's general election, with documents released by Snowden suggesting the GCSB was planning to conduct mass domestic surveillance.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 17:00:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/5/new-zealand-spying-on-south-pacific-neighbors.html'>site</a></td><td>New Zealand spying on South Pacific neighbors, Snowden documents show</td></tr>
 </table></body></html>

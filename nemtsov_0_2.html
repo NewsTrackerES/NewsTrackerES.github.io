@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>nemtsov</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-February/nemtsov_memorial_feb._28_2015_0.jpg'></td><td>2015-02-28 13:32:00</td><td><a href='http://www.globalpost.com/dispatch/news/regions/europe/russia/150228/russian-opposition-mourns-murdered-leader-nemtsov'>site</a></td><td>Organizers of Sunday's march were divided after Nemtsov's death over whether to hold the rally or turn it into a demonstration of mourning in central Moscow.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-01 21:34:38</td><td><a href='http://www.torontosun.com/2015/03/01/russians-march-in-memory-of-murdered-putin-critic'>site</a></td><td>Some young people walking in central Moscow asked: "Who is Nemtsov anyway?"</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/121/1745097732_4132378077001_d4673403511fb37c73a6dc8c334db995-tmb2.jpg?pubId=1745097732'></td><td>2015-03-02 15:25:12</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/02/22263736.html?cid=rssnewsworld'>site</a></td><td>Speaking largely without emotion in deadened monosyllables, Ukrainian fashion model Anna Duritskaya said she had little recollection of what happened in the moments after Nemtsov was shot dead on Friday night.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 15:29:02</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/02/russian-opposition-leader-asks-for-early-release'>site</a></td><td>Duritskaya said didn't see the man who shot Nemtsov, only a car speeding up.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/t/r/7/5/image.related.articleLeadwide.620x349.13th6x.png/1425353852068.jpg'></td><td>2015-03-03 03:37:48</td><td><a href='http://www.brisbanetimes.com.au/world/security-cameras-at-boris-nemtsov-murder-scene-switched-off-20150303-13th6x.html'>site</a></td><td>Mr Nemtsov, 55, an opposition politician who had once been deputy prime minister, was murdered as he walked home from dinner with his 23-year-old Ukrainian girlfriend, Anna Duritskaya.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.cbc.ca/1.2978549.1425640999!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/ukraine-russia-opposition.jpg'></td><td>2015-03-06 11:24:28</td><td><a href='http://www.cbc.ca/news/world/anna-duritskaya-witness-to-boris-nemtsov-s-murder-gets-death-threats-1.2984114?cmp=rss'>site</a></td><td>The General Prosecutor's office in Kyiv said in a statement Friday that Anna Duritskaya, the 23-year old model who was walking with Nemtsov at the time of his killing, is being provided with protection.</td></tr>
 </table></body></html>

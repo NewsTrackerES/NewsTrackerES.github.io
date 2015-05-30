@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 07:56:35</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/18/egypt-runners-defy-cairo-mayhem-as-sports-popularity-grows'>site</a></td><td>The group began organizing runs nearly two years after Egypt's popular uprising toppled longtime autocrat Hosni Mubarak.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-18 07:57:00</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article18847224.html#storylink=rss'>site</a></td><td><table><tr><td>But when the runners describe how the sport has brought them together, and how they have reclaimed their city's squares and streets, one hears an echo of the early days of Egypt's 2011 uprising, when a spirit of inclusiveness prevailed in Cairo's Tahrir Square.</td></tr><tr><td>FILE - In this Friday, April 10, 2015 file photo, young Egyptian women run in the Mohandiseen district in Cairo, Egypt.</td></tr><tr><td>In this Friday, April 17, 2015 photo, Egyptian volunteers hold balloons to support passing runners participating in Cairo's annual Half Marathon in the Heliopolis district in Cairo, Egypt.</td></tr><tr><td>In this Thursday, April 9, 2015 picture, An Egyptian runs in a dark street in Al Gazera district in Cairo, Egypt.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-18 09:58:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-18-ML--Egypt-Running%20Cairo/id-6abf0df86c664d3ab365eb7a13ff0b79'>site</a></td><td>Runners take advantage of Cairo's empty streets during an organized run in the Mohandisseen district of Egypt's capital on Friday, April 10, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 08:01:21</td><td></td><td><a href='egypt_21_22_23.html'>MINYA, Egypt (AP) - In the desert of southern Egypt, workers in limestone pits look as though they stepped out of a blizzard, covered in the white powder of the stones that are the economic lifeblood of this region. (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 08:22:10</td><td></td><td><a href='egypt_21_22_24.html'>In this Wednesday, March 18, 2015 photo, a quarry worker uses a machine with sharp rotor blades to cut through limestone pits at a quarry in the desert of Minya, southern Egypt. (2)</a></td></tr>
 </table></body></html>

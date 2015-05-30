@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 16:58:49</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-CEO-Tim-Cook-plans-to-give-away-most-of-his-6163260.php'>site</a></td><td>SAN FRANCISCO (AP) - Apple CEO Tim Cook is joining a long list of magnates promising to give away most of the wealth that they amass during their careers.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/34/34/25/7456075/13/landscape_32.jpg'></td><td>2015-03-27 16:58:49</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-CEO-Tim-Cook-plans-to-give-away-most-of-his-6163260.php'>site</a></td><td>Most of Cook's wealth is tied up in an Apple stock grant he received in 2011 when he succeeded Steve Jobs as Apple Inc.'s CEO.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/fba00b6/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F29%2F0e20c601c70a230a5012e92de831e6%2Fmedia%3Ad075ff8135b4490e977bb9023da159acTaylorSwiftTax.JPEG'></td><td>2015-03-23 18:25:01</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/23/taylor-swift-microsoft-among-those-buying-up-porn-suffixes'>site</a></td><td><table><tr><td>According to the site, Microsoft has bought not only Microsoft.porn but Office.porn and Office.adult as well.</td></tr><tr><td>Representatives for Taylor Swift, Microsoft and Harvard could not immediately be reached for comment.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 18:25:01</td><td><a href='http://www.foxbusiness.com/technology/2015/03/23/taylor-swift-harvard-microsoft-among-those-buying-up-porn-adult-suffixes-as/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Taylor Swift, Microsoft among those buying up .porn suffixes</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 18:30:44</td><td><a href='http://www.startribune.com/entertainment/celebrities/297274421.html'>site</a></td><td>NEW YORK - The singer Taylor Swift, Microsoft Corp. and Harvard University are among those buying up .porn and .adult Web suffixes as a pre-emptive move before those domain names become available this summer.</td></tr>
 </table></body></html>

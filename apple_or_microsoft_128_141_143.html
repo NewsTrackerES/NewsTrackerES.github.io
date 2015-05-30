@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 2,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/d4d/news/world/article23522204.ece/ALTERNATES/w220/FX144-Apple+Event.JPG'></td><td>2015-03-18 18:46:27</td><td><a href='http://www.theglobeandmail.com/news/world/us-poll-shows-40-per-cent-of-iphone-owners-would-buy-apple-watch/article23522205/?cmpid=rss1'>site</a></td><td><table><tr><td>About 40 percent of adult Apple iPhone owners in the United States are interested in buying the company?s new Apple Watch, according to a new Reuters/Ipsos poll.</td></tr><tr><td>Among the iPhone owners, 39 per cent were interested in purchasing the Apple watch, including 17 per cent describing themselves as very interested.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/26X8r7RTspBZNZz5HL9hsQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-15T181601Z_1_LYNXMPEB3E0X6_RTROPTP_3_USA-APPLE-WATCH_original.jpg'></td><td>2015-04-15 18:16:01</td><td><a href='http://finance.yahoo.com/news/exclusive-six-percent-u-adults-181601218.html'>site</a></td><td><table><tr><td>According to the poll, adults aged between 30 and 39 were the most likely buyers, with 13 percent saying they planed to buy an Apple Watch, followed by 10 percent of 18-to-29-year-olds.</td></tr><tr><td>Among those polled who do not own an iPhone, 8 percent said they would consider switching to an iPhone in order to purchase an Apple Watch.</td></tr></table></td></tr>
+</table></body></html>

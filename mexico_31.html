@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 17:18:08</td><td><a href='http://www.sfgate.com/news/crime/article/Mass-killing-of-dogs-shocks-city-in-northern-6175117.php'>site</a></td><td>Mass killing of dogs shocks city in northern Mexico</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 17:18:08</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/02/mass-killing-of-dogs-shocks-city-in-northern-mexico'>site</a></td><td>MEXICO CITY (AP) - Somebody is systematically poisoning the dogs of Hermosillo, an industrial city in northern Mexico, and not just strays: At least 64 dogs - all with owners - have died of a similar poison since mid-March.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 13:29:49</td><td><a href='http://www.usatoday.com/story/news/world/2015/03/20/globalpost-pope-francis-mexico/25073539/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td><table><tr><td>For the pope, Mexico had become the reference point for drug war mayhem.</td></tr><tr><td>When the Vatican sent a reply that it meant no offense and Mexico's top diplomat said things were "completely settled," the matter seemed to be over.</td></tr><tr><td>Until Pope Francis gave a follow-up interview to Mexico's biggest TV network and made an even more provocative comment.</td></tr></table></td></tr>
 </table></body></html>

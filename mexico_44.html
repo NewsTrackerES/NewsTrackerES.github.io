@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 05:08:51</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19920498.html#storylink=rss'>site</a></td><td><table><tr><td>New Mexico joins race to build storage for nuclear waste</td></tr><tr><td>Two counties in southeastern New Mexico have joined the race to build an interim storage site to house spent nuclear fuel from the nation's reactors.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 01:33:06</td><td><a href='http://www.utsandiego.com/news/2015/apr/14/migrants-hope-to-re-start-protest-convoy-in-mexico/'>site</a></td><td>For several years, migrants have carried wooden crosses in protest marches in Mexico around Easter week to illustrate their suffering at the hands of criminals and corrupt police.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 01:33:17</td><td></td><td><a href='mexico_44_45.html'>MEXICO CITY (AP) - Activists for migrants and rights groups in Mexico say about 200 Central American migrants hope to restart their journey to hold a "Viacrucis" protest in Mexico City that has been stymied by highway immigration checkpoints. (8)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-19 00:10:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11435071&ref=rss'>site</a></td><td>He called for an investigation of events at a road checkpoint in the southern state of Oaxaca, where he has said officers tried to prevent the protest convoy from heading to Mexico City.</td></tr>
 </table></body></html>

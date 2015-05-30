@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-27 21:46:36</td><td><a href='http://www.reuters.com/article/2015/05/27/us-health-birdflu-mexico-idUSKBN0OC2T120150527?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>MEXICO CITY Mexico is working hard to prevent outbreaks of a bird flu epidemic that has stricken the U.S. poultry and egg industry in recent months, a senior Mexican agriculture ministry official said on Wednesday.</td></tr><tr><td>A strain of the bird flu virus spread across Mexico's poultry industry in 2012 and 2013 and led to the death of nearly 20 million birds over two years.</td></tr><tr><td>The official added: "This risk is there due to our shared border and the trade on the border ... but all countries that trade with the United States are in danger not just Mexico."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:01:22</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-arrests-suspect-forced-prostitution-ring-30707907'>site</a></td><td>Mexico Arrests Suspect in Forced-Prostitution Ring</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 19:05:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11441504&ref=rss'>site</a></td><td>MEXICO CITY (AP) " U.S. officials say they have joined with Mexican authorities to arrest one of the leaders of a forced-prostitution ring that operated in the New York City area.</td></tr>
 </table></body></html>

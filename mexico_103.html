@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-27 06:22:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16355027.html#storylink=rss'>site</a></td><td><table><tr><td>Aside from highlighting the growth in southeastern New Mexico's oil and gas country, the latest figures suggest a continued trend of New Mexico losing population.</td></tr><tr><td>A portion of southeastern New Mexico's oil patch is again among the top 10 fastest growing areas in the nation, according to new data released Thursday, March 26, 2015 by the U.S. Census Bureau.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 23:54:18</td><td></td><td><a href='mexico_103_104.html'>New Mexico wildlife officials recently denied the Ladder Ranch's bid to renew its permit for holding wolves in captivity as part of the U.S. Fish and Wildlife Service's wolf reintroduction program. (4)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 23:54:18</td><td><a href='http://abcnews.go.com/Technology/wireStory/ted-turner-ranch-mexico-caught-wolf-debate-31134611'>site</a></td><td>Environmentalists say the New Mexico Game Commission's decision raises questions about private property rights.</td></tr>
 </table></body></html>

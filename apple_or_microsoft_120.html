@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>apple or microsoft</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>6</td><td></td><td>2015-03-06 14:45:53</td><td><a href='http://www.startribune.com/nation/295337251.html'>site</a></td><td>Apple rose 1 percent early Friday after it was announced that the company would be joining the Dow Jones industrial average, replacing AT&T.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 17:21:42</td><td></td><td><a href='apple_or_microsoft_120_125.html'>(Reuters) - The Nasdaq Composite extended its gains in early afternoon trading on Friday, hitting a 15-year intraday high, propelled by strong results from tech behemoths Google, Amazon and Microsoft. (5)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 12:02:28</td><td></td><td><a href='apple_or_microsoft_120_121.html'>US STOCKS-Futures up ahead of Apple earnings, Fed meeting later this week (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 15:05:03</td><td></td><td><a href='apple_or_microsoft_120_122.html'>Apple trades at 14.3 times forward 12-month earnings, while the S&P 500 trades at 16.7 times, according to Thomson Reuters StarMine data. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-27 16:13:10</td><td></td><td><a href='apple_or_microsoft_120_123.html'>NEW YORK (AP) - U.S. stocks are barely higher at midday as investors look ahead to Apple's results later today and a meeting by the Federal Reserve on interest rates. (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-27 16:14:13</td><td><a href='http://abcnews.go.com/Business/wireStory/stocks-edge-midday-investors-wait-apple-results-30615325'>site</a></td><td>Along with Apple, more than 150 companies in the S&P 500 will report their quarterly results this week, including Ford and Exxon Mobil.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-28 20:34:45</td><td></td><td><a href='apple_or_microsoft_120_124.html'>(Reuters) - The Dow and S&P 500 ended a volatile session higher on Tuesday, helped by strong earnings from Merck and gains in IBM after it boosted its dividend, while the Nasdaq fell with Apple. (2)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-28 20:34:45</td><td><a href='http://finance.yahoo.com/news/stock-futures-down-ahead-fed-112905827.html'>site</a></td><td>"Apple's numbers were phenomenal, but yet the stock is down," he added.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 17:28:58</td><td></td><td><a href='apple_or_microsoft_120_126.html'>April 30 (Reuters) - Wall Street was lower in afternoon trading on Thursday as Apple weighed on major indexes and investors digested a mixed batch of economic data. (2)</a></td></tr>
+</table></body></html>

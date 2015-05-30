@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 09:33:21</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/ex-ukraine-minister-arrested-in-spain-for-embezzle/nkPBR/'>site</a></td><td>Ex-Ukraine minister arrested in Spain for embezzlement</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 09:33:21</td><td><a href='http://www.sfgate.com/news/world/article/Ex-Ukraine-minister-arrested-in-Spain-for-6116219.php'>site</a></td><td>MADRID (AP) - Spanish police have arrested former Ukraine finance minister Yuri Kolobov, who is accused of embezzling millions of euros in state funds.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/01/26F70FD100000578-0-image-m-79_1427245835598.jpg'></td><td>2015-03-21 09:05:11</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3005297/Georgians-hit-fallout-trouble-Russia-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Now their numbers are shrinking as this former Soviet republic becomes a casualty of the economic turbulence in Russia and Ukraine.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-21 09:10:18</td><td><a href='http://www.startribune.com/nation/297116761.html'>site</a></td><td>While it has been 24 years since Georgia voted for independence from the Soviet Union, the country retains close business links to Russia and Ukraine.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-21 10:10:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11421121&ref=rss'>site</a></td><td>As the war in eastern Ukraine, international sanctions against Russia and the sinking price of oil price worldwide have ravaged the economies of those two countries, Georgia has become collateral damage.</td></tr>
 </table></body></html>

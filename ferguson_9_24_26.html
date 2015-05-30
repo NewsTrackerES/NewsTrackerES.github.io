@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/BCGUIPSpVsA.nKv.TbK35A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/596d141c3585a1086e0f6a70670068ee.jpg'></td><td>2015-02-20 05:33:55</td><td><a href='http://news.yahoo.com/ferguson-officials-no-word-federal-investigations-233901761.html'>site</a></td><td>FILE - In this Dec. 9, 2014, file photo, Ferguson mayor James Knowles III listens during a meeting of the Ferguson City Council in Ferguson, Mo.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 18:37:01</td><td><a href='http://abcnews.go.com/US/wireStory/part-time-ferguson-mayor-full-time-spotlight-29638062'>site</a></td><td>Knowles, who grew up in Ferguson, was just a few years out of Truman State University when he defeated an incumbent for election to the city council in 2005.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-04 15:56:41</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/04/focus-in-ferguson-shifts-to-election-of-city-council-members'>site</a></td><td>Ferguson staggers elections for three-year terms, so three council members and Mayor James Knowles III are not facing election this year.</td></tr>
+</table></body></html>

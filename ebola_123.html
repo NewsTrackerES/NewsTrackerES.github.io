@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-03-05 11:35:46</td><td><a href='http://www.washingtontimes.com/news/2015/mar/5/who-to-test-ebola-vaccine-in-guinea-might-stop-out/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>WHO said only about half of new Ebola patients in Guinea are connected to known cases, meaning that health officials are unable to track where the disease is spreading in the other half of cases.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 11:36:11</td><td></td><td><a href='ebola_123_124.html'>The health agency's vaccination strategy in Guinea aims to create a buffer zone around an Ebola case to prevent its further spread? (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-05 13:50:29</td><td></td><td><a href='ebola_123_126.html'>Yardolo's release brings Liberia hope after about a year of battling the deadly Ebola virus, which killed more than 4,100 people in this West African country. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-05 13:50:29</td><td></td><td><a href='ebola_123_125.html'>There are no other confirmed cases of Ebola in the country, and as such Liberia can begin to count up to 42 days to be declared Ebola free in keeping with World Health Organization protocols and standards, Nyenswah said Wednesday. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://ww2.hdnux.com/photos/35/02/11/7610969/5/square_gallery_thumb.jpg'></td><td>2015-03-05 13:50:29</td><td><a href='http://www.sfgate.com/news/medical/article/Last-Ebola-patient-to-be-released-in-Liberia-6116220.php'>site</a></td><td>Yardolo said she had been admitted to the Chinese-run Ebola treatment center in the Paynesville district of Monrovia on Feb. 18.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 19:43:18</td><td><a href='http://www.huffingtonpost.com/lindsay-coates/ebola-the-fight-to-reach_b_7042988.html'>site</a></td><td><table><tr><td>Ebola: The Fight To Reach Zero And The Road To Recovery</td></tr><tr><td>To learn more about the NGO response and the continued efforts, listen to my segment on Fighting Ebola, an online audio series hosted by the U.S. Department of State.</td></tr></table></td></tr>
 </table></body></html>

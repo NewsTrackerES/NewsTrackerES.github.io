@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/zyPPFTDmjsqPaiyADZbfog--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/e7f7cb0f55d13e0e720f6a706700acda.jpg.cf.jpg'></td><td>2015-03-31 11:17:14</td><td><a href='http://news.yahoo.com/us-forces-hold-exercises-ukraine-111714149.html'>site</a></td><td>Avakov said the training will begin April 20 at a base in western Ukraine near the Polish border and would involve about 290 American paratroopers and some 900 Ukrainian guardsmen.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.news.nationalpost.com/2015/04/ukraine_322324371.jpg?w=620'></td><td>2015-04-14 15:21:56</td><td><a href='http://news.nationalpost.com/news/canada/canadian-politics/canada-rushing-200-troops-to-ukraine-to-help-counter-putin-regimes-ongoing-aggression-stephen-harper-says'>site</a></td><td>As well, some of the training will occur at the Ukrainian Ministry of Defence Demining Centre in Kamyanets-Podilsky, in western Ukraine.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Z.wnnxnMebxyhb4b76UizA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/c06a80733ac5eb11730f6a7067000ed7.jpg.cf.jpg'></td><td>2015-04-17 10:29:04</td><td><a href='http://news.yahoo.com/u-military-trainers-ukraine-may-destabilize-situation-kremlin-090108855.html'>site</a></td><td>He was referring to the arrival of the U.S. paratroopers in western Ukraine this week to begin a six-month training rotation with three battalions.</td></tr>
+</table></body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ebola</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 13:54:43</td><td></td><td><a href='ebola_81_83.html'>DALLAS - A 26-year-old nurse said in a newspaper interview that a hospital where she had worked in Dallas and its parent company failed her when she contracted Ebola while caring for the first person in the U.S. diagnosed with the deadly disease. (13)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-02 18:00:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11410731&ref=rss'>site</a></td><td>Pham says in her lawsuit that the hospital was unprepared to treat Ebola cases and that she was an unwitting pawn in its public relations campaign to restore its reputation.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 19:34:42</td><td></td><td><a href='ebola_81_82.html'>"I was hoping that THR would be more open and honest about everything that happened at the hospital, and the things they didn't do that led to me getting infected with Ebola. But that didn't happen and I felt I was left with no choice but to turn to the courts for help," Pham said in a statement. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/02/d8e0d884d4f3a1096f0f6a706700de0b_c0-780-2327-2136_s561x327.jpg?3f72b1c7adaf76af83a508bea8298e3e3b177cee'></td><td>2015-03-02 22:22:58</td><td><a href='http://www.washingtontimes.com/news/2015/mar/2/nurse-who-survived-ebola-sues-dallas-hospital-syst/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>On the first day Pham treated Duncan, when Ebola was suspected but not yet diagnosed, she wore a regular isolation gown, double gloves, a surgical mask with a plastic shield and double booties.</td></tr><tr><td>She says he falsely claimed that the hospital was trained to manage Ebola and that he misrepresented the type of protective equipment that nurses wore while caring for Duncan.</td></tr></table></td></tr>
+</table></body></html>

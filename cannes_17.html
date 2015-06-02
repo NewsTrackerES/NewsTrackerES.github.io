@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/42/00/8003614/3/gallery_thumb.jpg'></td><td>2015-05-18 21:05:00</td><td><a href='http://www.seattlepi.com/entertainment/article/After-a-Cannes-drubbing-Van-Sant-reflects-on-6270861.php'>site</a></td><td><table><tr><td>CANNES, France (AP) - The full-throated passions of the Cannes Film Festival can elevate, just as they can humble.</td></tr><tr><td>Though its official red-carpet premiere on Saturday went down better, the Cannes fate of "The Sea of Trees" was already sealed as (at least thus far) the festival's most rudely received film.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 18:20:14</td><td></td><td><a href='cannes_17_18.html'>"Diversity is an issue - not just in fashion but in general, even in cinema. Especially when you're here, you also see it," Kebede, a L'Oreal ambassador for the Cannes Film Festival, said in an interview on Thursday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/HwynNYOANx9x6k_OsAz8aw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTUwMDtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/549b9b9694257815760f6a706700c506.jpg'></td><td>2015-05-14 18:20:14</td><td><a href='http://news.yahoo.com/model-fashion-film-industries-moving-slowly-diversity-163307868.html'>site</a></td><td><table><tr><td>CANNES, France (AP) - Liya Kebede is one of the top models in fashion, but the Ethiopian stunner still sees the fashion industry as lagging when it comes to featuring people of color - and it's not the only one.</td></tr><tr><td>"It was super exciting actually. I think we were all very nervous, I think it was kind of nerve-wracking, but Cannes is always full of magic and full of excitement and that red carpet is pretty special," she said.</td></tr></table></td></tr>
 </table></body></html>

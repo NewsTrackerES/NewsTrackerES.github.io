@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 26,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 26 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td><a href='http://www.brisbanetimes.com.au/world/egypt-strikes-back-at-islamic-state-militants-after-beheading-video-killing-dozens-20150216-13ghv2.html'>site</a></td><td>Security officials say militants based in Libya have established ties with Sinai Province, a group operating from Egypt's Sinai Peninsula that has pledged allegiance to Islamic State.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/aiNTFpe2o7Csv13juTaVCA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/Part-NIC-Nic6423699-1-1-0.jpg'></td><td>2015-03-02 15:30:25</td><td><a href='http://news.yahoo.com/one-dead-bomb-blast-near-egypt-supreme-court-134109169.html'>site</a></td><td>Those bombs and several others that killed policemen in Cairo were claimed by the Ajnad Misr (Soldiers of Egypt) jihadist group.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 09:54:57</td><td><a href='http://www.reuters.com/article/2015/03/24/us-egypt-violence-idUSKBN0MK0VN20150324?feedType=RSS&feedName=worldNews'>site</a></td><td>Bomb kills two soldiers in Egypt's Sinai: sources</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 10:05:22</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11422435&ref=rss'>site</a></td><td>2 soldiers killed by roadside bomb in Egypt's Sinai</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-02 06:45:54</td><td><a href='http://www.reuters.com/article/2015/04/02/us-egypt-violence-idUSKBN0MT0HO20150402?feedType=RSS&feedName=worldNews'>site</a></td><td>ISMAILIA, Egypt (Reuters) - Gunmen attacked several checkpoints in Egypt's Sinai Peninsula on Thursday, killing at least five soldiers, security sources said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-02 06:53:00</td><td><a href='http://www.ctvnews.ca/world/militant-attacks-kill-10-egyptian-soldiers-1.2308819'>site</a></td><td>The two attacks, which also wounded 11 soldiers and several civilians, come as Egypt battles a growing insurgency in the northern Sinai, which borders Israel and the Gaza Strip.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-02 08:08:29</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3022708/Militant-attacks-kill-7-soldiers-Egypts-Sinai.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Militant attacks kill 7 soldiers in Egypt's Sinai</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-02 10:01:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3022652/Gunmen-kill-seven-soldiers-Egypts-Sinai-security-sources.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In January, Islamic State's Egypt wing, Sinai Province, claimed responsibility for a series of attacks that killed at least 30 people.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-03 14:15:54</td><td><a href='http://www.foxnews.com/world/2015/04/03/egypt-islamic-state-branch-claims-responsibility-for-sinai-attack-that-killed/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>CAIRO - The Islamic State's branch in Egypt has claimed responsibility for a wave of deadly attacks that killed 15 Egyptian soldiers and three civilians the previous day in volatile northern Sinai.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww2.hdnux.com/photos/35/50/74/7769857/5/920x920.jpg'></td><td>2015-04-05 09:55:02</td><td><a href='http://www.sfgate.com/news/world/article/Explosion-hits-bridge-in-central-Cairo-killing-6179909.php'>site</a></td><td>Last week, a militant group known as Ajnad Misr, or "Egypt's soldiers," claimed responsibility for a bombing in front of Cairo University that wounded eight people, including four police officers.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-10 12:25:47</td><td><a href='http://abcnews.go.com/International/wireStory/egyptian-militant-group-cairo-blast-names-leader-30217420'>site</a></td><td>Egypt Militants Behind Cairo Blast Name New Leader</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-12 09:59:20</td><td><a href='http://www.utsandiego.com/news/2015/apr/12/officials-roadside-bomb-kills-5-soldiers-in/'>site</a></td><td>EL-ARISH, Egypt (AP) - Military officials say a roadside bomb has hit an armored vehicle in Egypt's restive northern Sinai, killing five soldiers, including an officer.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/l/5/0/image.related.articleLeadwide.620x349.1mjl51.png/1428854704765.jpg'></td><td>2015-04-12 16:05:17</td><td><a href='http://www.smh.com.au/world/suicide-attack-kills-two-on-egypts-sinai-peninsula-20150412-1mjl51.html'>site</a></td><td>Cairo: A suicide car bomb targeting a police station in Egypt's restive Sinai Peninsula has killed two people and wounded 30 others, police and medics say.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-04-12 17:01:36</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3035596/Bomb-Egypts-North-Sinai-kills-five-soldiers-security-sources.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Two bomb attacks in Egypt's Sinai kill 13, wound dozens</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-12 19:04:37</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/12/egypt-officials-huge-explosion-hits-sinai-police-station'>site</a></td><td>Attacks on troops in Egypt's Sinai kill at least 14</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://ww4.hdnux.com/photos/35/62/63/7810287/3/square_gallery_thumb.jpg'></td><td>2015-04-13 11:44:15</td><td><a href='http://www.sfgate.com/news/world/article/Egypt-official-Sniper-kills-soldier-in-north-6195897.php'>site</a></td><td>EL-ARISH, Egypt (AP) - An Egyptian security official says a sniper using a silenced weapon has killed a soldier in the restive northern part of the Sinai Peninsula.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/20/article-doc-1u3hj-6XvVRd2O0HSK2-217_634x418.jpg'></td><td>2015-04-20 10:02:16</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3046790/CIA-chief-holds-talks-Egypt-president.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt has been battling jihadists in the Sinai Peninsula who have pledged allegiance to the Islamic State group which controls swathes of Iraq and Syria.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-03 16:25:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11442756&ref=rss'>site</a></td><td>The Islamic State group gained a foothold in Egypt last November when a Sinai-based militant group declared itself an affiliate of the extremists.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-05-04 14:50:37</td><td><a href='http://www.startribune.com/world/302424921.html'>site</a></td><td>Egypt officials: Militants attack security forces' base in Sinai, no word on casualties</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-16 17:34:18</td><td><a href='http://www.miamiherald.com/news/nation-world/article21170391.html#storylink=rss'>site</a></td><td>- Nov. 10, 2014: A Sinai-based jihadi organization called Ansar Beit al-Maqdis pledges allegiance to the Islamic State group, giving the organization a foothold in Egypt.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-05-17 10:02:36</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3085046/Egypt-executes-6-militants-attack-soldiers.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>CAIRO, May 17 (Reuters) - Egypt has executed six members of a Sinai-based militant group with links to Islamic State for carrying out an attack on soldiers near Cairo in 2014, the state news agency reported on Sunday.</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/83050000/jpg/_83050076_05073e85-a1bc-44af-8ad5-0e4d5094c7c5.jpg'></td><td>2015-05-17 11:11:58</td><td><a href='http://www.bbc.co.uk/news/world-middle-east-32771728#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Egypt hangs six convicted militants</td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/3/t/1/b/image.related.articleLeadwide.620x349.gh3shl.png/1431916388603.jpg'></td><td>2015-05-17 17:20:44</td><td><a href='http://www.smh.com.au/world/egypt-executes-six-men-convicted-of-killing-soldiers-despite-grossly-unfair-trial-20150518-gh3shl.html'>site</a></td><td>Beirut: Egypt has executed six men convicted of carrying out an attack on a checkpoint in the Sinai that killed several soldiers, despite evidence at least three of the accused were already in detention at the time of the assault.</td></tr>
+  <tr><td style='display:none'>23</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/h/v/f/l/l/image.related.articleLeadwide.620x349.gh3shl.png/1431883226916.jpg'></td><td>2015-05-17 17:20:44</td><td><a href='http://www.brisbanetimes.com.au/world/egypt-executes-six-men-convicted-of-killing-soldiers-despite-grossly-unfair-trial-20150517-gh3shl'>site</a></td><td>Egypt executes six men convicted of killing soldiers despite "grossly unfair" trial</td></tr>
+  <tr><td style='display:none'>24</td><td></td><td>2015-05-21 13:51:54</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3091168/IS-affiliate-Egypt-vows-attack-judges-executions.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>CAIRO (AP) - The leader of an Islamic State affiliate in Egypt has vowed to kill judges and security forces in retaliation for the execution of six suspected militants earlier this week.</td></tr><tr><td>On Sunday, Egypt executed six suspected Islamic militants convicted by a military court last year over the killing of two military officers during a raid north of Cairo in March 2014.</td></tr></table></td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-05-25 15:40:29</td><td><a href='http://www.startribune.com/egypt-official-says-sinai-extremists-kill-soldier-in-clashes/304909011/'>site</a></td><td>Egypt official says extremists in northern Sinai kill soldier in shootout, wound officer</td></tr>
+</table></body></html>

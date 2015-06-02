@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 18:30:56</td><td><a href='http://www.cbsnews.com/news/ukraine-pro-russia-rebels-deabltseve-cease-fire-heavy-weapons-deadline/'>site</a></td><td>Fighting has stopped or subsided in some parts of war-torn eastern Ukraine, however.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/6f3/news/world/article23281410.ece/ALTERNATES/w220/XVG116-Ukraine+Mine+Explosi.JPG'></td><td>2015-03-04 07:36:13</td><td><a href='http://www.theglobeandmail.com/news/world/more-than-30-killed-in-mine-blast-in-rebel-east-ukraine-official-says/article23278082/?cmpid=rss1'>site</a></td><td>Mine officials said the explosion was most likely caused by gas and not fighting in the war between Moscow-backed rebels and Ukraine government forces.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 09:00:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411872&ref=rss'>site</a></td><td>KIEV, Ukraine (AP) " Ukraine parliament speaker says 32 killed in mine blast in war-torn eastern Ukraine.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.abc.net.au/news/image/6284660-3x2-340x227.jpg'></td><td>2015-03-05 13:04:39</td><td><a href='http://www.abc.net.au/news/2015-03-06/ukraine-mine-disaster-day-of-mourning-for-32-killed-in-zasyadko/6284658'>site</a></td><td>Throughout the fighting, the mine - one of Ukraine's biggest - had remained in operation.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/8mHL8a_Rphe1iwUjuw8u5g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e1b645e440bd4315760f6a70670083f1.jpg'></td><td>2015-05-12 13:17:54</td><td><a href='http://news.yahoo.com/nemtsov-report-220-russian-soldiers-died-ukraine-battles-095749865.html'>site</a></td><td>Many Russian citizens engaged in fighting in eastern Ukraine have freely admitted where they come from, but stopped short of confirming they are fighting under Moscow's orders.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201504/526/1745097732_4170822491001_f8415e958a6c904242b584c26e5f2d84-tmb1.jpg?pubId=1745097732'></td><td>2015-04-14 13:15:17</td><td><a href='http://technology.canoe.ca/News/2015/04/14/22342786-relaxnews.html?cid=rsstechnology'>site</a></td><td><table><tr><td>IBM teams with Apple on AI health program</td></tr><tr><td>IBM on Monday announced alliances with Apple and others to put artificial intelligence to work drawing potentially life-saving insights from the booming amount of health data generated on personal devices.</td></tr><tr><td>Under the partnership it will be able to handle data collected using health applications from Apple mobile devices, according to IBM.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 17:57:07</td><td></td><td><a href='apple_or_microsoft_42_43.html'>HBO Now, the stand-alone streaming service, launched Tuesday morning on Apple products, HBO said. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 17:57:07</td><td><a href='http://www.charlotteobserver.com/entertainment/article17681228.html#storylink=rss'>site</a></td><td>The groundbreaking move has been anticipated since HBO Chief Executive Richard Plepler unveiled the service during an Apple product conference last month in San Francisco.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 18:37:05</td><td><a href='http://www.charlotteobserver.com/entertainment/tv/article17696318.html#storylink=rss'>site</a></td><td>Apple, in an effort to woo new customers, lowered the price of its Apple TV device to $69.</td></tr>
 </table></body></html>

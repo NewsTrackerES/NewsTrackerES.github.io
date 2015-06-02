@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/x/9/s/image.related.articleLeadwide.620x349.1mex7t.png/1428230373453.jpg'></td><td>2015-04-05 11:05:56</td><td><a href='http://www.smh.com.au/world/pope-francis-prays-for-kenya-students-decries-persecution-20150405-1mex7t.html'>site</a></td><td>"May constant prayer rise up from all people of goodwill for those who lost their lives - I think in particular of the young people who were killed last Thursday at Garissa University College in Kenya - for all who have been kidnapped, and for those forced to abandon their homes and their dear ones."</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000a656a-642.jpg'></td><td>2015-04-05 11:42:55</td><td><a href='http://www.rte.ie/news/2015/0405/692190-pope-francis/'>site</a></td><td>Pope Francis prayed for an end to the persecution of Christians in his Easter Sunday address, commemorating the students massacred by Islamist militants at Garissa University in Kenya.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 09:07:42</td><td><a href='http://www.reuters.com/article/2015/04/16/us-kenya-energy-solar-idUSKBN0N70TK20150416?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Tapping into Kenya's abundance of sunshine, the company has installed high-capacity solar panels at power hubs, where energy is stored in high-voltage batteries.</td></tr><tr><td>To help get power to those who have never had it before, SteamaCo is utilizing Kenya's reputation as a nation that lives and works by mobile phone.</td></tr><tr><td>By tapping into Kenya's fast-evolving mobile culture, the company can also instantly communicate with its customers, sending text reminders when users' accounts are running low so they can top up.</td></tr></table></td></tr>
 </table></body></html>

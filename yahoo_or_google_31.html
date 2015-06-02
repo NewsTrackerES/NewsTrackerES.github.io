@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 23:35:35</td><td><a href='http://finance.yahoo.com/news/google-first-quarter-revenue-rises-200834727.html'>site</a></td><td>"Excluding the net impact of foreign currency headwinds, revenue grew a healthy 17 percent year on year," Google Chief Financial Officer Patrick Pichette said in a statement.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/PtL8ZpY8AmaE9FG.KRr84Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-24T014045Z_5_LYNXMPEB3M0ZO_RTROPTP_3_GOOGLE-RESULTS_original.jpg'></td><td>2015-04-24 01:40:45</td><td><a href='http://finance.yahoo.com/news/google-shares-rise-online-ad-014045090.html'>site</a></td><td>The rising dollar took a toll on results at Google, which generates about half of its revenue overseas.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150424&t=2&i=1042900984&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3M0ZO'></td><td>2015-04-24 01:40:45</td><td><a href='http://www.reuters.com/article/2015/04/24/us-google-results-idUSKBN0NE2G820150424?feedType=RSS&feedName=technologyNews'>site</a></td><td><table><tr><td>Google shares rise after online ad sales drive revenue higher</td></tr><tr><td>Google's ad revenue has been pressured as more consumers access its online services on mobiles devices such as smartphones and tablets, where ad rates are typically lower.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 23:00:56</td><td></td><td><a href='yahoo_or_google_31_32.html'>NEW YORK (AP) " Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 05:46:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16448177.html#storylink=rss'>site</a></td><td><table><tr><td>Yahoo has $726 million remaining on previous stock buyback plan, which was approved in 2013 and expires at the end of 2016.</td></tr><tr><td>The move will allow the new entity to pay lower taxes on Alibaba stock sales than Yahoo would have.</td></tr></table></td></tr>
 </table></body></html>

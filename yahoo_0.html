@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 08:54:42</td><td><a href='http://abcnews.go.com/International/wireStory/yahoo-closing-china-operation-beijing-29747014'>site</a></td><td>Yahoo Closing Last China Operation in Beijing</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 09:22:03</td><td><a href='http://www.ctvnews.ca/business/yahoo-closing-beijing-office-and-leaving-china-1.2287242'>site</a></td><td>Yahoo closing Beijing office and leaving China</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/9/11/u-s-government-strongarmedyahoototurnoveruserdata/_jcr_content/image.adapt.480.low.Yahoo_091114.jpg'></td><td>2015-03-19 15:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/19/yahoo-closing-last-china-operation-in-beijing.html'>site</a></td><td><table><tr><td>In a new cost-cutting move, Yahoo Inc. announced Thursday that it's closing its Beijing research and development center and leaving China.</td></tr><tr><td>Yahoo turned over control of its China operations to its partner Alibaba Group in 2005 as part of a corporate tie-up.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 15:10:00</td><td></td><td><a href='yahoo_0_1.html'>In a new cost-cutting move, Yahoo Inc. announced Thursday that it's closing its Beijing research and development center and leaving China. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2014/9/11/u-s-government-strongarmedyahoototurnoveruserdata/_jcr_content/image.adapt.480.low.Yahoo_091114.jpg'></td><td>2015-03-19 15:10:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/19/yahoo-closing-last-china-operation-in-beijing.html'>site</a></td><td>Yahoo turned over control of its China operations to its partner Alibaba Group in 2005 as part of a corporate tie-up.</td></tr>
 </table></body></html>

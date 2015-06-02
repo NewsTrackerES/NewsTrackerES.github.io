@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 13:34:35</td><td><a href='http://www.foxnews.com/world/2015/04/07/islamic-state-group-launches-english-language-radio-news-bulletins/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>BAGHDAD - The Islamic State group has launched English-language radio news bulletins on its al-Bayan radio network.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 13:34:35</td><td><a href='http://www.utsandiego.com/news/2015/apr/07/islamic-state-launches-english-language-radio/'>site</a></td><td>Islamic State launches English-language radio bulletins</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/67/15/7828297/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:13:32</td><td><a href='http://www.sfgate.com/news/world/article/As-Islamic-State-pushes-on-Iraq-s-Ramadi-2000-6203588.php'>site</a></td><td>Al-Bayan, the Islamic State group's English-language radio station, claimed IS fighters had seized control of at least six areas and most of a seventh to the east of Ramadi since Wednesday, according to the SITE Intelligence Group, which monitors militant websites.</td></tr>
+</table></body></html>

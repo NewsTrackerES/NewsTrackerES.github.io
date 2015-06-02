@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>apple patent</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 18:34:29</td><td></td><td><a href='apple_patent_1.html'>ZURICH - Apple is not able to launch its new smartwatch in Switzerland until at least the end of this year because of an intellectual property rights issue, Swiss broadcaster RTS reported on its website. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 18:54:43</td><td></td><td><a href='apple_patent_0.html'>The case is Apple Inc v Samsung Electronics Co, Ltd, in the U.S. Court of Appeals for the Federal Circuit, No. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-04-02 00:55:35</td><td></td><td><a href='apple_patent_0.html'>New Apple patent may soon let you unlock your iPhone with a selfie (1)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 18:34:29</td><td></td><td><a href='apple_patent_3.html'>ZURICH - Apple is not able to launch its new smartwatch in Switzerland until at least the end of this year because of an intellectual property rights issue, Swiss broadcaster RTS reported on its website. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-18 18:54:43</td><td></td><td><a href='apple_patent_1.html'>The case is Apple Inc v Samsung Electronics Co, Ltd, in the U.S. Court of Appeals for the Federal Circuit, No. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 21:36:12</td><td></td><td><a href='apple_patent_2.html'>An appeals court Monday upheld the bulk of Apple's patent victory against Samsung Electronics in 2012, but overturned part of the decision and said that a lower court should reduce the total amount that Samsung would have to pay. (1)</a></td></tr>
 </table></body></html>

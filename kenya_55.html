@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 15:34:06</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/06/kenya-red-cross-54-killed-in-cattle-raid-attacks'>site</a></td><td>Kenya Red Cross: 54 killed in cattle raid attacks</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 15:35:26</td><td><a href='http://abcnews.go.com/International/wireStory/kenya-red-cross-54-killed-cattle-raid-attacks-30843429'>site</a></td><td>Livestock-keeping nomadic tribes in Kenya's north routinely engage in the traditional practice of cattle raids which experts say has become more deadly because the tribes have moved from using spear and arrows to guns.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 18:36:10</td><td><a href='http://abcnews.go.com/International/wireStory/kenya-red-cross-54-killed-cattle-raid-attacks-30843429'>site</a></td><td>Kenya's interior minister said Wednesday he is deeply disappointed over the killings that happened even after regional politicians signed a peace accord in January.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 19:33:54</td><td><a href='http://www.reuters.com/article/2015/04/27/us-usa-kerry-travel-idUSKBN0NI23W20150427?feedType=RSS&feedName=worldNews'>site</a></td><td>WASHINGTON (Reuters) - Secretary of State John Kerry will travel to Sri Lanka, Kenya and Djibouti from May 2, the State Department said on Monday.</td></tr>
 </table></body></html>

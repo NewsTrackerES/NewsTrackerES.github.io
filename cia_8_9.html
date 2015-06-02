@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:57:15</td><td><a href='http://www.foxnews.com/us/2015/04/21/prosecutors-urge-severe-sentence-in-cia-leak-case-guidelines-call-for-20-years/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>- A former CIA officer convicted of leaking classified details of an operation to derail Iran's nuclear ambitions would spend 20 years in prison if a judge follows federal sentencing guidelines.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 14:57:21</td><td><a href='http://news.yahoo.com/guidelines-call-20-sentence-cia-leak-case-145721893.html'>site</a></td><td>Guidelines call for 20-year sentence in CIA leak case</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 21:01:54</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3048970/Guidelines-call-20-year-sentence-CIA-leak-case.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Officials seek long sentence for ex-CIA officer in leak case</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-24 19:15:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11438485&ref=rss'>site</a></td><td>Ex-CIA man convicted of Iran leak seeks lenient sentence</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 11:34:17</td><td><a href='http://news.yahoo.com/former-cia-officer-could-face-long-prison-term-113417055.html'>site</a></td><td><table><tr><td>Former CIA officer could face long prison term in leaks case</td></tr><tr><td>(AP) - A former CIA officer convicted of leaking details of a secret mission to thwart Iran's nuclear ambitions is making his final pitch for a lenient sentence.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 13:39:07</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20652453.html#storylink=rss'>site</a></td><td>FILE - In this Jan. 26, 2015 file photo, former CIA officer Jeffrey Sterling leaves federal court in Alexandria, Va.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/11/article-doc-29210-6YS8p9e5XHSK2-604_634x454.jpg'></td><td>2015-05-11 21:01:59</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3077344/Ex-CIA-officer-3-5-years-NY-Times-leak.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Ex-CIA officer get 3.5 years for NY Times leak</td></tr><tr><td>Former CIA officer Jeffrey Sterling was sentenced Monday to 3.5 years in prison for leaking classified information to a New York Times journalist.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/36/27/22/7959686/3/square_gallery_thumb.jpg'></td><td>2015-05-12 09:24:46</td><td><a href='http://www.sfgate.com/news/crime/article/Former-CIA-officer-sentenced-to-3-years-in-Iran-6257442.php'>site</a></td><td>(AP) - The list of leakers sent to prison for exposing government secrets is one name longer with Monday's 3 -year sentence for former CIA officer Jeffrey Sterling.</td></tr>
+</table></body></html>

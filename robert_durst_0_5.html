@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Px3E4Km7pDhwSEoww3Q5sw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIzNjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T014347Z_2_LYNXMPEB2M0VZ_RTROPTP_2_USA-DURST.JPG'></td><td>2015-03-24 01:43:47</td><td><a href='http://news.yahoo.com/robert-durst-denied-bail-orleans-linked-vermont-cold-014347253.html'>site</a></td><td>Also on Monday, police in Middlebury, Vermont, said they were probing a link between Lynne Schulze, a college student who vanished 44 years ago, and Durst, who owned a health food store in town.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 13:51:19</td><td><a href='http://www.nydailynews.com/news/national/robert-durst-linked-1971-missing-college-student-police-article-1.2160348?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td>Robert Durst linked to 1971 missing college student: police</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-15 15:04:07</td><td><a href='http://nypost.com/2015/03/15/real-estate-heir-robert-durst-arrested-in-new-orleans/'>site</a></td><td>Real estate heir Robert Durst arrested in New Orleans</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-15 17:24:20</td><td><a href='http://news.yahoo.com/york-real-estate-baron-durst-arrested-murder-warrant-154115590.html'>site</a></td><td>(Reuters) - Robert Durst, scion of one of New York's largest real estate empires, has been arrested in New Orleans on a murder warrant issued by Los Angeles County, the Orleans Parish Sheriff's Office said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297675795819_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-17 05:32:43</td><td><a href='http://www.torontosun.com/2015/03/16/new-york-real-estate-scion-robert-durst-agrees-to-extradition-on-murder-charge'>site</a></td><td>NEW ORLEANS - New York real estate scion and accused murderer Robert Durst's bathroom muttering that he "killed them all" would likely be admissible evidence in a murder trial, legal experts said on Monday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-23 18:38:15</td><td><a href='http://www.nydailynews.com/news/crime/robert-durst-denied-bail-called-flight-risk-judge-article-1.2159614?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>Robert Durst denied bail, called flight risk by judge</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/Crime/2015/03/23/Robert-Durst.png&amp;size=650x366&amp;quality=85'></td><td>2015-03-23 19:45:24</td><td><a href='http://cnews.canoe.ca/CNEWS/Crime/2015/03/23/22303741.html?cid=rssnewscrime'>site</a></td><td><table><tr><td>New Orleans judge declares Robert Durst major flight risk, denies bail</td></tr><tr><td>Durst, the real estate scion awaiting extradition to California to face a murder charge, was denied bail on Monday after a judge deemed him to be a potential danger to others and a likely flight risk.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150324&t=2&i=1034807531&w=&fh=&fw=&ll=580&pl=378&r=LYNXMPEB2M0VZ'></td><td>2015-03-24 12:20:27</td><td><a href='http://www.reuters.com/article/2015/03/24/us-usa-durst-bond-idUSKBN0MJ20E20150324?feedType=RSS&feedName=domesticNews'>site</a></td><td>Robert Durst denied bail in New Orleans, linked to Vermont cold case</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-10 21:01:32</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article18211049.html#storylink=rss'>site</a></td><td>Robert Durst indicted on weapon charge in New Orleans</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l.yimg.com/bt/api/res/1.2/7KGCIsSuUokai1KmfXi2qg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/nola.curbed.vox.com/9282c91e99e5c1ab13173bdaa6206391.cf.jpg'></td><td>2015-04-14 20:28:11</td><td><a href='http://news.yahoo.com/durst-due-arraignment-federal-gun-charge-orleans-154535997.html'>site</a></td><td>NEW ORLEANS (Reuters) - Real estate scion Robert Durst, who has been charged with murder in California, pleaded not guilty on Tuesday to a federal gun charge stemming from his arrest last month in New Orleans.</td></tr>
 </table></body></html>

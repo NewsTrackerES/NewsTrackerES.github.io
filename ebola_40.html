@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,9 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 20:15:38</td><td><a href='http://www.usnews.com/news/world/articles/2015/02/20/liberia-to-end-ebola-curfew-open-land-border-crossings'>site</a></td><td><table><tr><td>Liberia to end Ebola curfew, open land border crossings</td></tr><tr><td>MONROVIA, Liberia (AP) - Liberia's president on Friday ordered officials to lift an overnight curfew put in place six months ago to fight the Ebola epidemic and to reopen the country's land border crossings.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/vKEshzA1LNBLBKNj7xMi0w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/68cc0d8e92e84b076e0f6a70670019fe.jpg'></td><td>2015-02-20 20:15:53</td><td><a href='http://news.yahoo.com/liberia-end-ebola-curfew-open-land-border-crossings-201553519.html'>site</a></td><td>Once the center of the worst Ebola outbreak in history, Liberia has recorded more than 9,000 confirmed, suspected and probable cases and 3,900 deaths.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 20:45:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11405652&ref=rss'>site</a></td><td>In a statement, the White House said President Barack Obama and Sirleaf would discuss the current Ebola response and the region's economic recovery plans during their Feb. 27 meeting.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 07:39:57</td><td><a href='http://www.sbs.com.au/news/article/2015/04/10/woman-isolated-possible-ebola-0'>site</a></td><td>A health worker recently back from west Africa has been admitted to a Canberra hospital after displaying symptoms which could be the deadly Ebola disease.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-10 08:01:33</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3033268/Man-hospital-possible-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>ACT Health Acting Chief Health Officer Dr Andrew Pengilley said he worked as a medical professional in Liberia where there had been a large number of Ebola cases.</td></tr><tr><td>"Due to the low number of cases in Liberia recently, the person did not treat any cases of Ebola," he said in a statement.</td></tr><tr><td>Dr Pengilley said he would be treated for Ebola and until that proved negative, it would be handled as a worst-case scenario.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 08:38:17</td><td></td><td><a href='ebola_40_41.html'>"We believe that this patient has an extremely low risk of having Ebola," he told reporters. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 09:01:33</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3033268/Man-hospital-possible-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>But she's being treated in complete isolation under the hospital's Ebola protocol.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/images/1/0/100415m_EbolaCanberra_800x600.jpg?itok=I_puMz8j'></td><td>2015-04-10 09:01:35</td><td><a href='http://www.sbs.com.au/news/article/2015/04/10/woman-isolated-possible-ebola'>site</a></td><td>Health officials say it's most unlikely she has Ebola and her symptoms - a fever and stomach upset - are consistent with many other conditions.</td></tr>
 </table></body></html>

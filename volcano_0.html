@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6399564-3x2-340x227.jpg'></td><td>2015-04-16 22:38:31</td><td><a href='http://www.abc.net.au/news/2015-04-17/volcano-colima-fire-spews-ash-on-mexican-city/6399572'>site</a></td><td><table><tr><td>Mexico's Colima volcano has spewed a giant 3.5-kilometre-high column of ash that rained down on a nearby city, authorities say.</td></tr><tr><td>The Jalisco state civil protection agency said a "moderate" quantity of ash fell on Ciudad Guzman, a town near the western state of Colima, where the volcano is located.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 02:26:06</td><td></td><td><a href='volcano_0_1.html'>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour, and scientists' tilt meters detected that the ground was deforming. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-17 02:26:06</td><td></td><td><a href='volcano_0_3.html'>"Clearly the lava, by dropping out of sight, it has to be going somewhere," said Steven Brantley, deputy scientist in charge of Hawaiian Volcano Observatory of the U.S. Geological Survey. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/37/76/7995289/3/622x350.jpg'></td><td>2015-05-17 02:26:06</td><td><a href='http://www.chron.com/news/science/article/Earthquakes-on-Hawaii-volcano-could-signal-new-6268464.php'>site</a></td><td>The earthquake activity had slowed Saturday morning, and scientists were continuing to watch the volcano closely, Brantley said.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 21:09:01</td><td></td><td><a href='volcano_0_2.html'>Scientists are closely watching a volcano on Hawaii's Big Island for a possible eruption after volatile changes in the level of a lake of lava on its summit and a series of earthquakes, the U.S. Geological Survey said on Monday. (3)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-18 21:09:01</td><td><a href='http://www.reuters.com/article/2015/05/18/us-usa-hawaii-volcano-idUSKBN0O326920150518?feedType=RSS&feedName=environmentNews'>site</a></td><td>An eruption in the Southwest Rift Zone would not pose a risk to people because that side of the volcano is not inhabited.</td></tr>
 </table></body></html>

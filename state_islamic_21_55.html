@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/g/k/a/k/image.related.articleLeadwide.620x349.13gk70.png/1424119819185.jpg'></td><td>2015-02-16 19:58:15</td><td><a href='http://www.smh.com.au/world/egypt-conducts-second-wave-of-strikes-against-islamic-state-in-libya-in-retaliation-for-mass-beheading-of-christians-20150217-13gk70.html'>site</a></td><td>The Coptic labourers were kidnapped by Islamic State militants in Sirt, on Libya's coast, in two attacks in December and January.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/k/w/l/m/image.related.articleLeadwide.620x349.13kwk7.png/1424450608407.jpg'></td><td>2015-02-20 16:51:59</td><td><a href='http://www.theage.com.au/world/islamic-state-militants-claim-suicide-attacks-in-libya-that-kill-40-20150221-13kwk7.html'>site</a></td><td>Islamic State militants claim suicide attacks in Libya that kill 40</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-18 10:22:48</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article15222713.html#storylink=rss'>site</a></td><td>In Libya, clash with Islamic State militants kills 10 troops</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 12:39:46</td><td><a href='http://news.yahoo.com/islamic-state-militants-target-moroccan-embassy-libya-123946876.html'>site</a></td><td>Islamic State militants target Moroccan Embassy in Libya</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-19 15:03:32</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3045814/A-history-Islamic-State-group-Ethiopians-killed.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The militants rename themselves the Islamic State group.</td></tr>
+</table></body></html>

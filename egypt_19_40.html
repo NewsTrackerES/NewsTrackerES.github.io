@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 10:01:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3022652/Gunmen-kill-seven-soldiers-Egypts-Sinai-security-sources.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt is gradually recovering from years of political turmoil following the ouster of autocrat Hosni Mubarak in 2011 and foreign investors are starting to return.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 16:03:16</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3025707/Egypt-try-48-killing-journalist-two-civilians.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Ashraf is among 10 Egyptian journalists killed in Egypt since the 2011 uprising that ousted former president Hosni Mubarak, according to New York-based Committee to Protect Journalist (CPJ).</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 22:43:59</td><td><a href='http://www.reuters.com/article/2015/04/08/us-egypt-court-idUSKBN0MZ2EY20150408?feedType=RSS&feedName=worldNews'>site</a></td><td>Prosecutions against members of the security forces are rare in Egypt where the police have reasserted powers eroded since the 2011 popular uprising that ousted autocrat Hosni Mubarak.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-12 01:01:29</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3034695/Egypt-sentences-Muslim-Brotherhood-leader-death.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Rights groups say Egypt, where a popular uprising toppled veteran autocrat Hosni Mubarak in 2011 and started years of political turmoil, is now cracking down on all dissent.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/15/10/27972F2400000578-0-image-m-45_1429089885758.jpg'></td><td>2015-04-15 18:26:23</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3040477/Egypt-demolish-headquarters-Mubaraks-old-party.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt to demolish headquarters of Mubarak's old party</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-15 19:03:33</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3040558/Egypt-demolish-party-HQ-ousted-president-Mubarak.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt's government on Wednesday approved the demolition of the headquarters of the once-dominant party of toppled president Hosni Mubarak that was torched during the 2011 uprising.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 10:47:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-21-ML-Egypt/id-d42365aaf9cb4c27adbbdcc1df42300c'>site</a></td><td>The ruling, which can be appealed, reflects the dramatic downfall of Morsi and the drastic challenges facing Egypt since its 2011 uprising that forced longtime autocrat Hosni Mubarak from power.</td></tr>
+</table></body></html>

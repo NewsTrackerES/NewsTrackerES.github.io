@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:35:16</td><td><a href='http://www.startribune.com/world/296273061.html'>site</a></td><td>MEXICO CITY - The host of Mexico's top-rated national morning news and commentary radio show is demanding that her station reinstate two investigative reporters who were fired for misusing its image.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/2e1/news/world/article23468001.ece/ALTERNATES/w220/SIN003-CNEWS-US-MEXICO-JOUR.JPG'></td><td>2015-03-16 07:45:52</td><td><a href='http://www.theglobeandmail.com/news/world/mexican-radio-station-fires-journalist-who-exposed-presidential-scandal/article23468002/?cmpid=rss1'>site</a></td><td>One of Mexico's most prominent journalists, whose team revealed a conflict-of-interest scandal ensnaring President Enrique Pena Nieto last year, has been fired, her employer MVS Radio said on Sunday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 19:25:10</td><td><a href='http://abcnews.go.com/International/wireStory/hundreds-taxi-drivers-march-mexico-uber-31293987'>site</a></td><td><table><tr><td>Hundreds of taxi drivers marched through Mexico City chanting "Uber Out!" and demanding city authorities ban the online ride service.</td></tr><tr><td>Uber responded on its blog by offering Mexico City commuters free rides on Monday, with a hashtag that roughly translates as "If Mexico won't stop, Uber won't stop."</td></tr></table></td></tr>
 </table></body></html>

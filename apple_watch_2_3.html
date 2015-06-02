@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple watch</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 15:18:29</td><td><a href='http://www.utsandiego.com/news/2015/may/01/inked-and-irked-apple-watch-users-report-tattoo/'>site</a></td><td><table><tr><td>Inked and irked: Apple Watch users report tattoo problems</td></tr><tr><td>NEW YORK (AP) - It's an annoying problem for the unlucky few: the Apple Watch's heart rate monitor might not work if you have a tattoo on your wrist.</td></tr><tr><td>Apple suggests that users who can't get a consistent heart rate reading connect their Apple Watch wirelessly to external heart rate monitors.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 19:59:55</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-05-01-APFN-US-TEC--Apple-TattooGate/id-1442fad66f9b42e7a42c87498d05722f'>site</a></td><td>That was a relief for Nick Borelli, a 34-year-old marketing executive in Cleveland who has a black tattoo on the inside of his wrist - not the side where he has worn the Apple Watch.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 21:57:29</td><td><a href='http://hosted2.ap.org/APDEFAULT/495d344a0d10421e9baa8ee77029cfbd/Article_2015-05-01-US-TEC--Apple-TattooGate/id-98f5de27a29e490baff2741748c4af76'>site</a></td><td><table><tr><td>That was frustrating and "a bit embarrassing" for Graham Edgell, a Los Angeles printing broker who loves Apple products and was eager to show off his new watch to friends after his wife bought it for him.</td></tr><tr><td>As for the Apple Watch issue, some social media users have mocked it as a complaint from spoiled hipsters.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/EE14v6TBjjN1tbpfjOpFqw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/sbnation1.vox.com/7d33ea169d9b4e23b08a42eebdeee352.cf.jpg'></td><td>2015-04-25 01:18:53</td><td><a href='http://news.yahoo.com/software-developers-try-apple-watch-see-more-apps-011853014--finance.html'>site</a></td><td>Software developers try on Apple watch, see more apps coming</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 02:02:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054832/Software-developers-try-Apple-watch-apps-coming.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging.</td></tr>
 </table></body></html>

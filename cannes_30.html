@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-24 10:31:33</td><td><a href='http://news.yahoo.com/cannes-celebrities-protected-seagull-deterrent-falcons-103133686.html'>site</a></td><td><table><tr><td>Cannes celebrities protected by seagull-deterrent falcons</td></tr><tr><td>Aggressive gulls have for years been the bane of stars on Cannes' famed Croisette promenade - swooping in to snatch pieces of food, hurting clients, knocking tables over and smashing glasses.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 13:04:20</td><td></td><td><a href='cannes_30_31.html'>CANNES, France (AP) - Andie MacDowell's has great memories of the Cannes Film Festival, but also one big regret - the year she decided to skip it. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-21 13:04:20</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Andie-MacDowell-speaks-on-her-6278146.php'>site</a></td><td>MacDowell, who stars in the Hallmark television series "Cedar Cove" and is in this summer's "Magic Mike XXL," was in Cannes as a brand ambassador for L'Oreal.</td></tr>
 </table></body></html>

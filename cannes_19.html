@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 17:41:01</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/16/cannes-watch-natalie-portman-dazzles-in-dior'>site</a></td><td><table><tr><td>CANNES WATCH: Natalie Portman dazzles in Dior</td></tr><tr><td>CANNES, France (AP) - Natalie Portman is at home on the Cannes red carpet, but her appearance Saturday was her first as director as well as star.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 14:20:55</td><td></td><td><a href='cannes_19_20.html'>Jury member Miller had a cinematic comeback this year - after roles in "American Sniper" and "Foxcatcher" - but it was an off year for her on the Cannes red carpet. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-25 14:20:55</td><td><a href='http://www.utsandiego.com/news/2015/may/25/fashions-greatest-hits-misses-on-the-cannes-red/'>site</a></td><td>Here are the 68th Cannes Film Festival's fashion hits and misses.</td></tr>
 </table></body></html>

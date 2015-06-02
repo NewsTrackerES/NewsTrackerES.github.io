@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td></td><td><a href='mexico_133_134.html'>New Mexico is touting a rural area in the southeastern part of the state as an interim storage site for the country's high-level nuclear waste, according to a letter issued by Gov. Susana Martinez earlier this month. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 21:10:54</td><td></td><td><a href='mexico_133_135.html'>Martinez also praised southeastern New Mexico residents for being able to "carve out a niche in the nuclear industry." (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-26 21:10:54</td><td><a href='http://abcnews.go.com/US/wireStory/mexico-lobbying-storage-site-nuclear-waste-30599466'>site</a></td><td>"Time and time again, the citizens of southeastern New Mexico have impressed me with their hard work ethic and willingness to tackle national problems that many others consider to be unsolvable," Martinez wrote.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 15:47:52</td><td></td><td><a href='mexico_133_134.html'>A tornado raged through a Mexico border city early Monday, destroying homes, flinging cars like matchsticks and ripping an infant from its mother's arms. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-25 15:47:52</td><td></td><td><a href='mexico_133_135.html'>In Texas, 12 people were reported missing after flash flooding from a line of storms that stretched from the Gulf of Mexico to the Great Lakes. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/36/52/63/8039671/9/square_gallery_thumb.jpg'></td><td>2015-05-25 19:00:53</td><td><a href='http://www.sfgate.com/news/texas/article/The-Latest-on-weather-More-rain-in-store-for-6284770.php'>site</a></td><td>The head of Mexico's national civil defense agency, Luis Felipe Puente, told local media that 230 people had been injured and that shelters are being set up.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/52/62/8039552/5/square_gallery_thumb.jpg'></td><td>2015-05-25 19:04:35</td><td><a href='http://www.sfgate.com/news/texas/article/Deadly-storms-swamp-Plains-Midwest-force-Texans-6284771.php'>site</a></td><td>A bulldozer cleans up debris after a powerful tornado swept past in Ciudad Acuna, northern Mexico, Monday, May 25, 2015.</td></tr>
 </table></body></html>

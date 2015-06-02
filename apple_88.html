@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 12:32:05</td><td></td><td><a href='apple_88_89.html'>Still, the Chinese project will produce more than the amount of energy consumed by Apple's 19 corporate offices and 21 retail stores in China and Hong Kong, Jackson said. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 12:32:05</td><td></td><td><a href='apple_88_90.html'>The new solar project in China has a capacity of 40 megawatts, which is smaller than some projects Apple has announced in the United States. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/67/07/7827925/3/square_gallery_thumb.jpg'></td><td>2015-04-16 12:32:05</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-invests-in-China-solar-project-US-forest-6203601.php'>site</a></td><td>She added that Apple uses renewable energy for 87 percent of the power at its facilities worldwide.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-17 12:43:46</td><td><a href='http://www.washingtontimes.com/news/2015/feb/17/apple-gives-green-light-to-marijuana-app-massroots/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>Apple gives green light to marijuana app, Massroots</td></tr>
 </table></body></html>

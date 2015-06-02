@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 21:00:13</td><td><a href='http://www.reuters.com/article/2015/04/09/us-usa-healthcare-medicaid-idUSKBN0N02AN20150409?feedType=RSS&feedName=politicsNews'>site</a></td><td>Obamacare push on last chance in Montana, fading in other states</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 21:00:13</td><td><a href='http://news.yahoo.com/obamacare-push-last-chance-montana-fading-other-states-210013607--sector.html'>site</a></td><td><table><tr><td>(Reuters) - A legislative push in Montana to extend Obamacare health coverage to the working poor got a last-minute reprieve this week thanks to a procedural play by supporters, and similar efforts in other conservative states are flagging.</td></tr><tr><td>That would require providing coverage to working adults who fall into a so-called coverage gap under Obamacare - too poor to purchase plans under its health insurance exchanges, but unable to qualify for traditional state Medicaid programs.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/YvbdytJ7zh9w8vwUDi4Lyw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE5MjtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T030005Z_1_LYNXMPEB39031_RTROPTP_2_USA.JPG'></td><td>2015-04-10 03:00:05</td><td><a href='http://news.yahoo.com/obamacare-push-powers-ahead-montana-fading-other-states-030005774--sector.html'>site</a></td><td>Obamacare push powers ahead in Montana, fading in other states</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 20:03:01</td><td><a href='http://news.yahoo.com/gop-moves-ahead-budget-plans-eyes-obamacare-repeal-194332399.html'>site</a></td><td>GOP moves ahead on budget plans; eyes Obamacare repeal bill</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 21:30:35</td><td><a href='http://www.startribune.com/business/economy/301711281.html'>site</a></td><td>The measure would pave the way to finally deliver a bill to repeal "Obamacare" to the president's desk under special budget rules.</td></tr>
 </table></body></html>

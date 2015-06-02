@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-12 08:21:09</td><td><a href='http://www.sabc.co.za/news/a/a8da8c00479d1698926bf642d945d4b0/Two-officers-shot-outside-Ferguson-police-HQ--20150312'>site</a></td><td>Two police officers were shot during a protest outside the Ferguson, Missouri police headquarters early on Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/2/m/a/9/image.related.articleLeadwide.620x349.142y77.png/1426223407403.jpg'></td><td>2015-03-13 05:10:21</td><td><a href='http://www.theage.com.au/world/shot-ferguson-police-officers-released-from-us-hospital-20150313-142y77.html'>site</a></td><td>Police shine a light on a helmet as they investigate the scene where two police officers were shot outside the Ferguson Police Department.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/images/US/WireAP_5380b4f619b244d68c9449d421e3da83_16x9_992.jpg'></td><td>2015-03-13 12:02:30</td><td><a href='http://abcnews.go.com/US/wireStory/calm-prevails-ferguson-shooting-police-officers-29605776'>site</a></td><td>Two police officers were shot early Thursday morning in front of the Ferguson Police Department during a protest following the resignation of the city's police chief in the wake of damning U.S. Justice Department report.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/2/a/l/image.related.articleLeadwide.620x349.1lzvyr.png/1426476231997.jpg'></td><td>2015-03-15 21:46:36</td><td><a href='http://www.theage.com.au/world/ferguson-suspect-arrested-in-shooting-of-police-officers-20150316-1lzvyr.html'>site</a></td><td>Authorities say they have arrested 20-year old Jeffrey Williams in the shooting of two officers outside the Ferguson Police Department.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/15/Ferguson.JPEG-099c4_c0-435-5184-3456_s561x327.jpg?658a13f7c956493d99294310e7680401422c0abd'></td><td>2015-03-16 00:40:32</td><td><a href='http://www.washingtontimes.com/news/2015/mar/15/police-to-announce-arrest-in-ferguson-police-shoot/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>- A 20-year-old man charged Sunday with shooting two police officers watching over a demonstration outside the Ferguson Police Department had attended a protest there earlier that night but told investigators he wasn't targeting the officers, authorities said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297458666742_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-16 04:27:43</td><td><a href='http://www.torontosun.com/2015/03/15/arrest-made-in-shooting-of-ferguson-missouri-police-officers'>site</a></td><td>FERGUSON, Missouri - A 20-year-old man was charged on Sunday with first-degree assault in last week's shooting of two policemen during a protest rally in Ferguson, Missouri, a crime that shocked a city that has been devastated by months of racial strife.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-16 05:50:22</td><td><a href='http://www.startribune.com/nation/296401781.html'>site</a></td><td>But Ferguson activist Derrick Robinson said Sunday that Williams told him during a jail visit that he had been robbed earlier on the day of the shooting and returned to the protest zone to retaliate.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 00:44:42</td><td><a href='http://www.charlotteobserver.com/mobile/m-top-stories/article14727542.html#storylink=rss'>site</a></td><td>A man accused of shooting two officers last week in Ferguson was not targeting police or aiming at demonstrators at a late-night protest, his attorney said Monday as he countered an earlier police description of the crime.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-24 19:03:09</td><td><a href='http://www.sfgate.com/news/crime/article/Videographer-arrested-covering-Ferguson-faces-6154334.php'>site</a></td><td>Moore was among 13 people taken into custody during a demonstration outside Ferguson police headquarters in early October, and was charged with municipal violations.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.usnews.com/dims4/USNEWS/8800c3b/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F27%2F7ce357b1aaeffd00a389436b0a7154%2Fmedia%3A0cd1a40fd1a84e579740c309b8413617Ferguson.JPEG'></td><td>2015-03-31 05:09:08</td><td><a href='http://www.usnews.com/news/us/articles/2015/03/31/man-accused-in-ferguson-police-shooting-to-seek-lower-bond'>site</a></td><td>Williams is accused of wounding the officers on March 12, during an early morning rally sparked by the resignation of Ferguson's police chief.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-03-31 18:27:06</td><td><a href='http://abcnews.go.com/US/wireStory/man-accused-ferguson-police-shooting-denied-lower-bond-30028718'>site</a></td><td>A Missouri judge on Tuesday refused to reduce the bond of a 20-year-old man accused of shooting and wounding two police officers during a Ferguson protest, despite an attorney's insistence that the man was beaten by police into wrongly confessing.</td></tr>
+</table></body></html>

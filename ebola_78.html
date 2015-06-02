@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31099092.ece/76ae1/ALTERNATES/h342/PANews%20BT_P-43096483-5197-4b29-b890-4bc8cc33795d_I1.jpg'></td><td>2015-03-27 09:31:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/lockdown-bid-to-stamp-out-ebola-31099093.html'>site</a></td><td>In the hot spots - the regions around the capital, Freetown, and in the north - health workers will also search for Ebola cases.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 17:51:04</td><td></td><td><a href='ebola_78_79.html'>A Sierra Leone Policeman guards a road block forming part of a three day country wide lockdown on movement of people due to the Ebola virus in the city of Freetown, Sierra Leone, Friday, March. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:02:42</td><td></td><td><a href='ebola_78_79.html'>Authorities launched a four day, door-to-door campaign in Forecariah on April 12 to improve community participation in reporting suspected cases and as part of an emergency 45-day drive to tackle Ebola in the west of the country. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/17/11/27A8DFA100000578-0-image-m-83_1429266918131.jpg'></td><td>2015-04-16 15:02:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3042024/Guinea-finds-nine-new-Ebola-cases-near-border-Sierra-Leone.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"We have been able to find nine sick people (with Ebola) hiding in Forecariah," Keita told a news conference.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/876/493/660_ebola_guinea_tents.jpg?ve=1&tl=1'></td><td>2015-04-16 15:19:08</td><td><a href='http://www.foxnews.com/health/2015/04/16/guinea-finds-nine-new-ebola-cases-near-border-with-sierra-leone/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td>Guinean authorities have confirmed at least nine new cases of Ebola in the southwest region of Forecariah near the border with Sierra Leone, the area hardest hit by the year-old outbreak, a senior health official said on Thursday.</td></tr>
 </table></body></html>

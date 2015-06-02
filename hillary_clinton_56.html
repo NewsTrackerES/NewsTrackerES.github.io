@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 22:27:49</td><td><a href='http://www.daytondailynews.com/ap/ap/political/clinton-advisers-traveling-to-new-hampshire-iowa/nkh5Z/'>site</a></td><td>Clinton advisers traveling to New Hampshire, Iowa</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 21:13:49</td><td></td><td><a href='hillary_clinton_56_57.html'>GOP hopefuls give NRA event an earful on Hillary Clinton (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 19:48:19</td><td></td><td><a href='hillary_clinton_56_58.html'>AP-GfK Poll: Doubts about Clinton's honesty after emails (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 15:46:49</td><td><a href='http://www.startribune.com/politics/298010521.html'>site</a></td><td><table><tr><td>Clinton said the U.S. and Israel need to get back to shared concerns and interests, including a negotiated two-state solution, according to the Conference of Presidents of Major American Jewish Organizations.</td></tr><tr><td>"Secretary Clinton thinks we need to all work together to return the special US-Israel relationship to constructive footing," the group's executive vice chairman, Malcolm Hoenlein, said in the statement quoting Clinton's comments.</td></tr></table></td></tr>
 </table></body></html>

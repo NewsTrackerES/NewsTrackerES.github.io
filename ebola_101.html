@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/x2vrPotoR1K6C7L2.niNXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-US/homerun/techrepublic.cbs.com/2021344561035a6bda6dc3f5dcc65a6c.cf.jpg'></td><td>2015-03-19 15:57:43</td><td><a href='http://news.yahoo.com/guinea-says-number-ebola-patients-more-doubles-since-155743737.html'>site</a></td><td><table><tr><td>Dr Rafiou Diallo, a spokesman for Guinea's health ministry, said there were 91 suspected and confirmed Ebola patients in treatment centres compared with just 39 in February.</td></tr><tr><td>The number of Ebola cases in Guinea peaked in late December when there were nearly double current number of patients at 171, according to the World Health Organisation.</td></tr><tr><td>Officials in Guinea have previously said Ebola was under control, only to see the virus later spread further.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-16 13:37:56</td><td></td><td><a href='ebola_101_102.html'>MONROVIA, Liberia (AP) - Students in Liberia began returning to the classroom Monday after a six-month closure during the Ebola epidemic that left thousands dead, lining up in their uniforms to have their temperatures taken before they could enter school gates. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/02/16/e0593df092b24a076e0f6a706700837a_c0-174-4288-2673_s561x327.jpg?51a83f0b5968219cd1828611227898c83abe077e'></td><td>2015-02-16 13:37:56</td><td><a href='http://www.washingtontimes.com/news/2015/feb/16/liberia-schools-reopen-after-6-month-ebola-closure/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>A few, though, remained a bit fearful about returning even though there are just a handful of Ebola cases left in the country that once saw 100 new patients a week.</td></tr><tr><td>Nearly 9,200 people have died since the first Ebola deaths in rural Guinea in December 2013.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zR9qJsd.NSS0SroUla68OA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e0593df092b24a076e0f6a706700837a.jpg'></td><td>2015-02-16 13:38:03</td><td><a href='http://news.yahoo.com/liberia-schools-reopen-6-month-ebola-closure-102403539.html'>site</a></td><td><table><tr><td>"I am very happy to be counted among the living and I pray that Ebola be eradicated from this country."</td></tr><tr><td>Liberia has seen the highest death toll from the Ebola epidemic, with 3,800 killed.</td></tr></table></td></tr>
 </table></body></html>

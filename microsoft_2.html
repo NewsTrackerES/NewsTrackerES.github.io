@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,10 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 10:22:46</td><td></td><td><a href='microsoft_2_3.html'>Microsoft hopes it has solved that problem by designing Windows 10 so it's easier for developers to build "universal" apps that work on a variety of Windows devices, from phones to PCs and other gadgets, Gownder said. (15)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/y.jKx8PGAVpdCVNNCtnqrA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b97df3cf2a621113750f6a7067004c40.jpg'></td><td>2015-04-29 18:26:50</td><td><a href='http://finance.yahoo.com/news/in-nadella-s-riskiest-move-yet--microsoft-embraces-android-apps-182654472.html'>site</a></td><td>Microsoft CEO Satya Nadella speaks about Windows at the annual Microsoft Build conference in San Francisco, Wednesday, April 29, 2015.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 18:52:49</td><td><a href='http://abcnews.go.com/Technology/wireStory/microsoft-makes-case-windows-10-30667719'>site</a></td><td>"Our goal is to make Windows 10 the most attractive development platform ever," Microsoft executive Terry Myerson told an audience of several thousand programmers and app developers.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.gannett-cdn.com/media/2015/04/29/USATODAY/USATODAY/635659365020665327-AP-Microsoft-Big-Show.8.jpg'></td><td>2015-04-30 00:43:36</td><td><a href='http://www.usatoday.com/picture-gallery/tech/2015/04/29/microsofts-annual-build-conference/26609809/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Joe Belfiore, Microsoft Corporate Vice President of Operating Systems Group, demonstrates Continuum for phones at the Microsoft Build conference.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 10:22:46</td><td></td><td><a href='microsoft_2_4.html'>But perhaps most importantly, this year's conference is an opportunity for Microsoft to persuade an audience of more than 5,000 techies and independent programmers that it's worth their time to create new apps and programs for Windows 10. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-29 10:22:46</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/29/microsoft-makes-its-case-for-windows-10'>site</a></td><td>While Microsoft has already previewed some aspects of the new Windows, a parade of top executives will use Microsoft's annual "Build" conference to demonstrate more software features and app-building tools, with an emphasis on mobile devices as well as PCs.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 10:22:46</td><td></td><td><a href='microsoft_2_3.html'>Microsoft hopes it has solved that problem by designing Windows 10 so it's easier for developers to build "universal" apps that work on a variety of Windows devices, from phones to PCs and other gadgets, Gownder said. (10)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 13:07:59</td><td></td><td><a href='microsoft_2_5.html'>That's why the tech giant is making its case Wednesday before an army of software developers who may be crucial allies in its campaign to build enthusiasm among consumers for the next version of Microsoft's flagship operating system, coming later this year. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/y.jKx8PGAVpdCVNNCtnqrA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/b97df3cf2a621113750f6a7067004c40.jpg'></td><td>2015-04-29 18:26:50</td><td><a href='http://finance.yahoo.com/news/in-nadella-s-riskiest-move-yet--microsoft-embraces-android-apps-182654472.html'>site</a></td><td>Microsoft CEO Satya Nadella speaks about Windows at the annual Microsoft Build conference in San Francisco, Wednesday, April 29, 2015.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.gannett-cdn.com/media/2015/04/29/USATODAY/USATODAY/635659365020665327-AP-Microsoft-Big-Show.8.jpg'></td><td>2015-04-30 00:43:36</td><td><a href='http://www.usatoday.com/picture-gallery/tech/2015/04/29/microsofts-annual-build-conference/26609809/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Joe Belfiore, Microsoft Corporate Vice President of Operating Systems Group, demonstrates Continuum for phones at the Microsoft Build conference.</td></tr>
 </table></body></html>

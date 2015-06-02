@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/g/u/2/8/m/image.related.articleLeadwide.620x349.ggu26d.png/1430772668632.jpg'></td><td>2015-05-04 19:39:03</td><td><a href='http://www.brisbanetimes.com.au/world/australian-twitter-user-encouraged-islamic-state-fighters-to-attack-prophet-mohammad-cartoon-contest-in-texas-report-20150504-ggu26d.html'>site</a></td><td>Australian Twitter user encouraged Islamic State fighters to attack prophet Mohammad cartoon contest in Texas: report</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-05 09:10:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443769&ref=rss'>site</a></td><td>CAIRO (AP) " The Islamic State group claimed responsibility on Tuesday for a weekend attack at a center near Dallas, Texas, exhibiting cartoon depictions of the Prophet Muhammad.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-05 09:12:50</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article20242788.html#storylink=rss'>site</a></td><td>It was the first time the Islamic State, which frequently calls for attacks against the West, had claimed responsibility for one in the United States.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/05/10/6YIJwniaX-HSK1-3068445-Debris_of_a_car_blown_up_by_police_as_a_precaution_near_the_Curt-a-1_1430817577689.jpg'></td><td>2015-05-05 10:02:43</td><td><a href='http://www.dailymail.co.uk/news/article-3068445/IS-claims-attack-US-soil.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Islamic State terrorist group claimed its first attack on US soil, a shooting at an anti-Muslim event in Texas over the weekend showcasing cartoons mocking the Prophet Mohammed.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297696456939_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-05-05 14:38:56</td><td><a href='http://www.torontosun.com/2015/05/05/islamic-state-takes-responsibility-for-texas-cartoon-exhibit-attack'>site</a></td><td>PHOENIX - The Islamic State militant group claimed responsibility on Tuesday for an attack on a Texas exhibit of caricatures of the Prophet Mohammad in which the two gunmen were killed.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww1.hdnux.com/photos/36/20/10/7930380/3/square_gallery_thumb.jpg'></td><td>2015-05-05 19:45:53</td><td><a href='http://www.sfgate.com/news/texas/article/Accused-Texas-gunman-was-former-target-of-FBI-6242335.php'>site</a></td><td>PHOENIX (AP) - The Islamic State group claimed responsibility Tuesday for the assault on a Texas cartoon contest that featured images of the Prophet Muhammad, marking the first time the terror group has taken credit for an attack in the United States.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-05 21:04:15</td><td><a href='http://www.miamiherald.com/news/politics-government/article20242158.html#storylink=rss'>site</a></td><td>The Islamic State group claimed responsibility Tuesday for the assault on a Texas cartoon contest that featured images of the Prophet Muhammad, but counterterrorism experts said IS has a history of asserting involvement in attacks in which it had no operational role.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 00:14:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article20242158.html#storylink=rss'>site</a></td><td>Doubts raised about Islamic State's claim in Texas attack</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-06 20:26:13</td><td><a href='http://abcnews.go.com/US/wireStory/texas-incident-fuels-concern-lone-wolf-terror-attacks-30853882'>site</a></td><td>Concerns have been intensifying since the rise of the Islamic State group and were heightened this week after two gunmen were killed while trying to attack the cartoon contest that featured images of the Prophet Muhammad.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-14 21:49:52</td><td><a href='http://news.yahoo.com/fbi-accuses-north-texas-man-lying-islamic-state-214952046.html'>site</a></td><td>The Islamic State rules parts of Iraq and Syria and has taken responsibility for attacks including a shooting earlier this month outside a controversial Prophet Muhammad cartoon contest in Garland.</td></tr>
+</table></body></html>

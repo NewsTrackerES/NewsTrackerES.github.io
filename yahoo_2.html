@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 23:10:13</td><td></td><td><a href='yahoo_2_3.html'>Activist shareholder Starboard Value L.P., which owns a nearly 1 percent stake in Yahoo, has been urging Mayer to slash expenses and spin off the Yahoo Japan stake to lift the company's stock. (6)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 23:30:49</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/21/yahoos-1q-shows-company-remains-mired-in-revenue-rut'>site</a></td><td>Yahoo's stock rose 47 cents to $44.96 after Mayer's remarks in a webcast reviewing the financial results.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 02:28:04</td><td></td><td><a href='yahoo_2_4.html'>The latest evidence of Yahoo's financial malaise emerged Tuesday with the release the company's first-quarter earnings report. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-22 02:28:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19182630.html#storylink=rss'>site</a></td><td>The shares initially fell by an additional 2 percent in extended trading, but then rebounded after the cost-cutting pledge and the Yahoo Japan remarks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-20 22:19:19</td><td></td><td><a href='yahoo_2_3.html'>"Anything can happen, but I'm going with the bet that this won't impact spin-off of Alibaba shares for Yahoo," Axiom Capital analyst Victor Anthony told Reuters. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td><a href='http://www.foxbusiness.com/technology/2015/05/20/tax-scare-on-yahoo-alibaba-stake-spin-off-seen-premature/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>If taxed at the full 40 percent rate, Yahoo shares would be worth just about $20 billion, SunTrust Robinson Humphrey analyst Robert Peck wrote.</td></tr>
 </table></body></html>

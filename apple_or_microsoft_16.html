@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:54:00</td><td></td><td><a href='apple_or_microsoft_16_17.html'>Microsoft is evaluating a bid after Salesforce was approached by another potential buyer, Bloomberg reported, citing people with knowledge of the matter. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 19:54:00</td><td></td><td><a href='apple_or_microsoft_16_17.html'>Microsoft is evaluating a bid after Salesforce was approached by another potential buyer, Bloomberg reported, citing people with knowledge of the matter. (3)</a></td></tr>
   <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/j_bHJQ3.QiL9tyOG6NLkTw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-05T195400Z_1_LYNXMPEB440V1_RTROPTP_3_USA-BUSINESS_original.jpg'></td><td>2015-05-05 19:54:00</td><td><a href='http://finance.yahoo.com/news/salesforce-shares-spike-report-microsoft-195400225.html'>site</a></td><td>Salesforce shares were up 2.7 percent at $73.53 on Tuesday after trading resumed, while Microsoft's shares were down 1 percent at $47.80.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150505&t=2&i=1045986134&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB440V1'></td><td>2015-05-05 20:46:18</td><td><a href='http://www.reuters.com/article/2015/05/05/us-salesforce-com-m-a-microsoft-idUSKBN0NQ24920150505?feedType=RSS&feedName=technologyNews'>site</a></td><td>Microsoft declined to comment, while Salesforce could not immediately be reached.</td></tr>
 </table></body></html>

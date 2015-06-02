@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/ccf/video/article23699536.ece/ALTERNATES/w140/2015-03-31T001418Z_1_LOVEB2U00NTZI_RTRMADP_0_FRANCE-CRASH-LUBITZ-VIDEO-ROUGH-CUT-O.XML'></td><td>2015-05-06 07:19:27</td><td><a href='http://www.theglobeandmail.com/news/world/germanwings-co-pilot-practiced-before-crash-report/article24277770/?cmpid=rss1'>site</a></td><td>Lufthansa, which owns Germanwings, declined to comment on the Bild report, pointing to the ongoing investigation.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/a369526/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F9c%2Ff70839167fd5ddd67e521bf642fa81%2Fmedia%3A055e9386701f43338713db7d8767037bFrancePlaneCrash.JPEG'></td><td>2015-05-06 13:30:11</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/06/french-investigators-to-release-report-on-germanwings-crash'>site</a></td><td>Germanwings said it "welcomed any new information that can help clarify what happened" but said it would not comment on the BEA report because of the ongoing investigation.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 10:58:00</td><td><a href='http://www.ctvnews.ca/world/no-survivors-in-crash-of-germanwings-jet-carrying-150-black-box-recovered-1.2294208'>site</a></td><td>The Airbus A320 operated by Germanwings, a budget subsidiary of Lufthansa, was less than an hour from landing in Duesseldorf on a flight from Barcelona when it unexpectedly went into a rapid descent.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/3/26/1427355770778/c93a96ae-5466-40e3-bf5e-c2d477cec644-300x180.jpeg'></td><td>2015-03-26 07:12:47</td><td><a href='http://www.theguardian.com/world/2015/mar/26/one-pilot-locked-out-germanwings-planes-cockpit-4u9525-claims-new-york-times'>site</a></td><td>The co-pilot joined Greenwings in September 2013, directly after training, and had flown 630 hours, Lufthansa, the parent airline of Germanwings, said.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-03-26 18:52:05</td><td><a href='http://abcnews.go.com/International/wireStory/pilot-learned-fly-glider-teen-happy-job-29921971'>site</a></td><td>After completing his training, Lubitz spent an 11-month waiting period working as a flight attendant before becoming a co-pilot on the Germanwings A320 fleet.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/42/54/7744262/5/gallery_thumb.jpg'></td><td>2015-03-31 17:50:50</td><td><a href='http://www.seattlepi.com/news/crime/article/French-eye-cockpit-entry-psychological-screening-6169752.php'>site</a></td><td>The revelation that officials Lufthansa had been informed of Lubitz's psychological problems raises further questions about why he was allowed to become a pilot for its subsidiary, Germanwings, in September 2013.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 18:23:52</td><td><a href='http://nymag.com/daily/intelligencer/2015/03/lufthansa-knew-of-germanwings-pilots-depression.html'>site</a></td><td>Germanwings Pilot Told Lufthansa of His Depression in 2009</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/9/p/l/5/image.related.articleLeadwide.620x349.1mce9i.png/1427838304348.jpg'></td><td>2015-03-31 21:32:13</td><td><a href='http://www.smh.com.au/world/germanwings-copilot-andreas-lubitz-admitted-depression-20150331-1mce9i.html'>site</a></td><td>Lufthansa which owns Germanwings, said 27-year-old Andreas Lubitz had told the company in 2009 about his illness after interrupting his flight training.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-02 07:07:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3022635/Germanwings-pilot-lied-doctors-sick-leave-Bild.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Germanwings parent Lufthansa said on Tuesday that when Lubitz resumed pilot training in 2009 he provided the flight school with medical documents showing he had gone through a "previous episode of severe depression".</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://ww3.hdnux.com/photos/35/50/21/7767106/5/square_gallery_thumb.jpg'></td><td>2015-04-04 21:56:01</td><td><a href='http://www.sfgate.com/world/article/Lufthansa-CEO-Spohr-treading-cautiously-after-6179382.php'>site</a></td><td>The disaster during the flight from Barcelona to Duesseldorf has subjected the airline to scrutiny over whether Lubitz should have been allowed to join its budget subsidiary Germanwings in 2013.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 23:41:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-exec-says-immigration-changes-would-help-6143315.php'>site</a></td><td>Schmidt served as CEO at Google for a decade and his role now includes government outreach.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 23:41:40</td><td><a href='http://abcnews.go.com/Technology/wireStory/google-exec-immigration-economy-29737513'>site</a></td><td><table><tr><td>Google Exec Says Immigration Changes Would Help Economy</td></tr><tr><td>The executive chairman at Google urged Congress on Wednesday to increase the number of high-skilled work visas made available to foreigners and to deal with other immigration issues later on.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/b8b/news/world/article24451178.ece/ALTERNATES/w220/NYBZ903-Google+Car.JPG'></td><td>2015-05-15 07:52:59</td><td><a href='http://www.theglobeandmail.com/technology/tech-news/googles-two-seater-driverless-car-to-hit-public-roads-this-summer/article24451179/?cmpid=rss1'>site</a></td><td><table><tr><td>Google?s two-seater driverless car to hit public roads this summer</td></tr><tr><td>It has more capabilities than the prototype Google introduced last May, which was so rudimentary it had fake headlights.</td></tr><tr><td>And the pod can only drive in areas that have been thoroughly mapped by Google.</td></tr><tr><td>But Google is lobbying for more flexible regulations.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/36/35/24/7984433/3/mosaic_2.jpg'></td><td>2015-05-15 10:21:19</td><td><a href='http://www.chron.com/business/technology/article/Latest-self-driving-Google-car-heading-to-public-6265158.php'>site</a></td><td>Dmitri Dolgov, the head of software for the self-driving car project, says Google's software has gotten much better over the last year at classifying objects, like trees and mailboxes, and predicting behavior of pedestrians and other cars.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 10:25:06</td><td></td><td><a href='google_22_23.html'>In this May 13, 2015 photo, Google's new self-driving prototype car drives around a parking lot during a demonstration at Google campus in Mountain View, Calif. (5)</a></td></tr>
 </table></body></html>

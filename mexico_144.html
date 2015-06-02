@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 18:59:42</td><td><a href='http://www.foxnews.com/world/2015/04/18/arrest-mexico-gulf-cartel-chief-others-sparks-gunfights-blockades-on-mexico-us/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Arrest of Mexico's Gulf Cartel chief, others sparks gunfights, blockades on Mexico-US border</td></tr><tr><td>MEXICO - Authorities say the arrest of the man who headed the once powerful Gulf Cartel sparked the gunfights and blockades of burning vehicles that left at least three people dead near Mexico's border with the United States.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 18:30:16</td><td></td><td><a href='mexico_144_145.html'>Celtics and Kings to play regular-season game in Mexico City (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 18:30:16</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11432824&ref=rss'>site</a></td><td>It will be the league's 22nd game in Mexico overall, the most for any country outside the U.S. and Canada.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-14 19:00:18</td><td><a href='http://www.charlotteobserver.com/sports/nba/article18508631.html#storylink=rss'>site</a></td><td>"Basketball is more popular than ever, and Global Games Mexico 2015 is part of our ongoing dedication to growing the game around the world," said NBA commissioner Adam Silver in a statement Tuesday.</td></tr>
 </table></body></html>

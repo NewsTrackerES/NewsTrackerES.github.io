@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>7</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 03:32:47</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article12018794.html#storylink=rss'>site</a></td><td>A spokesman for Clinton, Nick Merrill, defended her use of the personal email account and said she has been complying with the "letter and spirit of the rules."</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-03 11:37:46</td><td><a href='http://nypost.com/2015/03/03/hillary-clinton-used-private-e-mail-for-state-department-business/'>site</a></td><td>"Hillary Clinton should release her e-mails. Hopefully she hasn't already destroyed them," said Bush spokeswoman Kristy Campbell.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-03 23:35:47</td><td></td><td><a href='hillary_clinton_2_4.html'>Republican Representative Jason Chaffetz of Utah said the House Oversight Committee, which he chairs, will work with the Benghazi committee "to further explore Hillary Clinton's use of personal emails while at the State Department." (3)</a></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/a/x/image.related.articleLeadwide.620x349.13uj0h.png/1425442672638.jpg'></td><td>2015-03-03 23:35:47</td><td><a href='http://www.theage.com.au/world/hillary-clinton-email-flap-puts-democrats-in-scramble-mode-20150304-13uj0h.html'>site</a></td><td>Hillary Clinton email flap puts Democrats in scramble mode</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/j69Xid0_4iS0wikHm4nGCg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fdf734eefeebbd096f0f6a706700e1b0.jpg'></td><td>2015-03-04 08:16:11</td><td><a href='http://news.yahoo.com/clinton-ran-homebrew-computer-system-official-emails-081111269--politics.html'>site</a></td><td>Clinton ran homebrew computer system for official emails</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-05 06:27:54</td><td></td><td><a href='hillary_clinton_2_9.html'>WASHINGTON, D.C. - A growing controversy over Democrat Hillary Clinton's use of personal email for work while she was U.S. secretary of state could drag on for months, threatening to cloud the expected launch of her 2016 presidential campaign. (2)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-06 03:19:45</td><td></td><td><a href='hillary_clinton_2_5.html'>Hillary Clinton email trove reviewed for release, security (5)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-07 08:06:38</td><td></td><td><a href='hillary_clinton_2_7.html'>WASHINGTON (AP) - Once again, Hillary Rodham Clinton did it her way, and it could cost her. (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-10 20:16:16</td><td><a href='http://www.npr.org/2015/03/10/392142420/clinton-says-she-didnt-think-private-email-would-be-an-issue?utm_medium=RSS&utm_campaign=us'>site</a></td><td>HILLARY CLINTON: Looking back, it would have been better for me to use two separate phones and two email accounts.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/15/26A8EE1000000578-0-image-m-30_1426437201764.jpg'></td><td>2015-03-15 18:23:46</td><td><a href='http://www.dailymail.co.uk/news/article-2995891/John-Boehner-expected-launch-new-investigation-Hillary-Clinton-s-email-practices.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>John Boehner to launch new investigation into Hillary Clinton's emails</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.gannett-cdn.com/-mm-/eef41bdb8585a496a25ce067dddb5114e072b2b1/c=0-20-2551-3421&amp;r=537&amp;c=0-0-534-712/local/-/media/2015/03/31/USATODAY/USATODAY/635633671179129498-AP-DEM-2016-Clinton.jpg'></td><td>2015-03-31 06:56:03</td><td><a href='http://www.usatoday.com/story/news/nation/2015/03/31/hilary-clinton-email/70708314/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomnation-topstories'>site</a></td><td><table><tr><td>Clinton at that time could have potentially split her accounts, reverting to an official State.gov e-mail account and BlackBerry for work and leaving her personal e-mail on her iPad.</td></tr><tr><td>It's not clear how Clinton handled e-mails that mixed personal and official business, such as the exchange with Abedin.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 17:59:04</td><td></td><td><a href='hillary_clinton_2_3.html'>WASHINGTON (Reuters) - A U.S. House committee is seeking a private interview with former Secretary of State Hillary Clinton over her use of private email and a personal computer server while at the State Department, the panel said in a letter released on Tuesday. (12)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 22:24:22</td><td></td><td><a href='hillary_clinton_2_6.html'>Two people familiar with the material said this week that the 300 emails do not demonstrate that Clinton, who was secretary of state at the time of the attacks, was personally involved in decisions that resulted in weak security at the Benghazi outposts. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 20:30:19</td><td></td><td><a href='hillary_clinton_2_8.html'>WASHINGTON (AP) " Hillary Rodham Clinton is willing to testify on Capitol Hill later this month about the attacks in Benghazi, Libya, and about her email practices, her attorney told lawmakers in a letter Monday. (5)</a></td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/7/z/y/o/image.related.articleLeadwide.620x349.gh7zgi.png/1432342404512.jpg'></td><td>2015-05-23 00:53:34</td><td><a href='http://www.smh.com.au/world/redacted-words-more-trouble-for-hillary-clinton-than-released-emails-20150523-gh7zgi.html'>site</a></td><td><table><tr><td>Redacted words more trouble for Hillary Clinton than released emails</td></tr><tr><td>Hillary Clinton orders ice cream during a stop at in Derry, New Hampshire on Saturday.</td></tr></table></td></tr>
+</table></body></html>

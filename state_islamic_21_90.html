@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:39:15</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article15076697.html#storylink=rss'>site</a></td><td>The Department of Justice has charged roughly 20 people in the past year with planning to travel to the Middle East to fight alongside militants like the Islamic State group, which controls parts of Syria and Iraq.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 21:52:16</td><td><a href='http://www.foxnews.com/us/2015/04/06/us-prosecutors-charge-4th-man-in-conspiracy-to-recruit-islamic-state-fighters/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>NEW YORK - A fourth man was charged on Monday in a terrorism case accusing him and others with plotting to have U.S. residents travel overseas to fight for the Islamic state.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 17:02:46</td><td><a href='http://www.dailymail.co.uk/news/article-3042205/Ohio-man-trained-Islamic-State-charged-supporting-terrorism.html'>site</a></td><td>Ohio man who trained with Islamic State charged with supporting terrorism</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Li6lRbBD3FRdvo_7QJR0og--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en-us/homerun/deadline.com/adde87c4064f35058ab176d5e7d9c789.cf.jpg'></td><td>2015-04-16 17:39:45</td><td><a href='http://news.yahoo.com/ohio-man-trained-islamic-state-charged-supporting-terrorism-163702359.html'>site</a></td><td>WASHINGTON (Reuters) - A Columbus, Ohio, man who trained with Islamic militants in Syria has been arrested and charged with supporting terrorism and making false statements, the U.S. Justice Department said on Thursday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/35/74/70/7851570/3/square_gallery_thumb.jpg'></td><td>2015-04-21 11:51:46</td><td><a href='http://www.sfgate.com/news/crime/article/Minnesota-men-charged-with-trying-to-join-Islamic-6212851.php'>site</a></td><td>Musse is one off six Minnesota men charged with terrorism in a criminal complaint unsealed Monday, April 20, 2015, the latest Westerners accused of traveling or attempting to travel to Syria to join the Islamic State group.</td></tr>
+</table></body></html>

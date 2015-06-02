@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/11/5f2df87a43b15c10730f6a706700a8c5_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-11 14:32:42</td><td><a href='http://www.utsandiego.com/news/2015/apr/11/potential-dem-rivals-to-hillary-clinton-plug-away/'>site</a></td><td><table><tr><td>Potential Dem rivals to Hillary Clinton plug away in Iowa</td></tr><tr><td>DES MOINES, Iowa (AP) - The Hillary Rodham Clinton juggernaut is coming to Iowa.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/yasHqZc297WWyRlG5cBpMQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/5f2df87a43b15c10730f6a706700a8c5.jpg'></td><td>2015-04-11 14:33:02</td><td><a href='http://news.yahoo.com/potential-dem-rivals-hillary-clinton-plug-away-iowa-143210284--election.html'>site</a></td><td>"Because from the news media, Hillary Clinton's already been elected."</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-11 14:34:58</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article18263894.html#storylink=rss'>site</a></td><td>Jim Webb and Martin O'Malley are both in Iowa, trying to establish themselves as the alternative to Hillary Rodham Clinton.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 02:02:28</td><td><a href='http://www.reuters.com/article/2015/05/13/us-usa-election-billclinton-idUSKBN0NY04K20150513?feedType=RSS&feedName=politicsNews'>site</a></td><td>Bill Clinton says if Hillary wins, he'll move back to White House -'if asked'</td></tr>
 </table></body></html>

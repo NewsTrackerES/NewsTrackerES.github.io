@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/0DW0y_Qfk0RjC6y2BCTfAw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQwODtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/7cafdcd611e1d511730f6a706700128d.jpg'></td><td>2015-04-16 11:50:30</td><td><a href='http://news.yahoo.com/pro-russian-journalist-gunned-down-ukraines-capital-115030449.html'>site</a></td><td>Pro-Russian journalist gunned down in Ukraine's capital</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a.abcnews.com/images/International/WireAP_11b10354de534157b37160228cb3a3b3_16x9_992.jpg'></td><td>2015-04-16 11:51:36</td><td><a href='http://abcnews.go.com/International/wireStory/pro-russian-journalist-gunned-ukraines-capital-30358885'>site</a></td><td>Russian President Vladimir Putin, during his annual televised call-in show, was informed by the moderator of reports of Buzyna's death and immediately said "this is not the first political killing in Ukraine, there's a series of such killings."</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 11:55:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11433925&ref=rss'>site</a></td><td>The minister said the killings "could be" orchestrated by Russia in order to "destabilize the situation in Ukraine from within."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 11:55:43</td><td><a href='http://www.startribune.com/world/300062551.html'>site</a></td><td>"How many more victims will it take for the world to realize that in Ukraine there are deliberate political killings time after time," said Konstantin Kosachev.</td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/m/v/s/g/image.related.articleLeadwide.620x349.1mmvgl.png/1429194488316.jpg'></td><td>2015-04-16 12:29:03</td><td><a href='http://www.brisbanetimes.com.au/world/ukraine-journalist-oles-buzina-killed-by-masked-gunmen-in-kiev-interior-ministry-20150416-1mmvgl.html'>site</a></td><td>Russian President Vladimir Putin: "This is not the first political assassination. Ukraine is dealing with a whole string of such murders."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 13:17:22</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/30/probe-into-ukraine-plane-disaster-eyes-buk-missile-launchers'>site</a></td><td>Probe into Ukraine plane disaster eyes Buk missile launchers</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/03/30/876/493/Ukraine Netherlands Plane-1.jpg?ve=1&tl=1'></td><td>2015-03-30 13:17:22</td><td><a href='http://www.foxnews.com/world/2015/03/30/international-probe-in-mh17-ukraine-plane-disaster-looks-for-more-on-buk/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>THE HAGUE, Netherlands - An international investigation into the Malaysia Airlines Flight 17 disaster is officially looking into a scenario that the plane was downed by a missile fired from conflict-ridden eastern Ukraine.</td></tr>
 </table></body></html>

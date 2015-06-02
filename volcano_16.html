@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 16:32:41</td><td></td><td><a href='volcano_16_17.html'>QUITO A volcano perched atop one of Ecuador's Galapagos islands erupted in the early hours of Monday, the National Park said, potentially threatening a unique species of pink iguanas. (9)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-25 18:09:14</td><td><a href='http://www.foxnews.com/world/2015/05/25/galapagos-island-volcano-erupts-after-33-years-threatening-fragile-ecosystem/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>QUITO, Ecuador - A volcano atop one of the Galapagos Islands has erupted for the first time in 33 years, threatening a fragile ecosystem that inspired Charles Darwin's theory of evolution.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-25 23:32:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3096682/Volcano-erupts-Galapagos-Islands-home-unique-pink-iguanas.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The lava is flowing down the volcano's southern face while the iguanas, officially an endangered species, inhabit the opposite side, the Environment Ministry said in a statement, adding it expected the animals to escape harm.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/6399564-3x2-340x227.jpg'></td><td>2015-04-16 22:38:31</td><td><a href='http://www.abc.net.au/news/2015-04-17/volcano-colima-fire-spews-ash-on-mexican-city/6399572'>site</a></td><td><table><tr><td>Mexico's Colima volcano has spewed a giant 3.5-kilometre-high column of ash that rained down on a nearby city, authorities say.</td></tr><tr><td>The Jalisco state civil protection agency said a "moderate" quantity of ash fell on Ciudad Guzman, a town near the western state of Colima, where the volcano is located.</td></tr></table></td></tr>
 </table></body></html>

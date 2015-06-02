@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/UL5dlVqFnDZDSeynAyGOJA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-us/homerun/video.wpvi.abc.news.com/2d047b0cb6b12151d4eafaf0574106a7'></td><td>2015-03-16 03:37:31</td><td><a href='http://news.yahoo.com/wealthy-eccentric-robert-durst-says-021128401.html'>site</a></td><td><table><tr><td>Wealthy eccentric Robert Durst says in HBO finale he 'killed them all'</td></tr><tr><td>The arrest of Robert Durst, a wealthy eccentric linked to two killings and his wife's disappearance, came just before the finale in an HBO show about his life in which he said he "killed them all."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/navigation/abc-logo.png'></td><td>2015-03-17 01:35:21</td><td><a href='http://abcnews.go.com/US/robert-durst-real-estate-heir-gun-arrested-police/story?id=29669587'>site</a></td><td>Robert Durst Charged With First-Degree Murder</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297675795819_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-17 05:32:43</td><td><a href='http://www.torontosun.com/2015/03/16/new-york-real-estate-scion-robert-durst-agrees-to-extradition-on-murder-charge'>site</a></td><td>Robert Durst charged with murder, movie confession likely admissible</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://edition.cnn.com/2015/04/11/us/robert-durst-gun-charge/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-04-11 11:15:29</td><td><a href='http://edition.cnn.com/2015/04/11/us/robert-durst-gun-charge/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td>Robert Durst charged in handgun case</td></tr>
 </table></body></html>

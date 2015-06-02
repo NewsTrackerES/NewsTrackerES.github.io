@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple watch</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 07:02:14</td><td><a href='http://www.foxbusiness.com/technology/2015/05/06/review-apple-watch-enhances-life-in-many-small-ways-but-it-not-yet-essential/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>While fitness trackers typically focus on counting steps, Apple Watch tracks calories burned and minutes of exercise.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 07:18:54</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20323509.html#storylink=rss'>site</a></td><td>Apple Watch is good at the basics, so I'm now demanding more.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>NEW YORK (AP) - Apple Watch comes with a choice of watch case, band and size - there are 54 possible configurations in all.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 15:42:23</td><td><a href='http://www.chron.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>Apple Watch options: 54 combinations of case, band, size</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/JLVlTNDLtJ0O33Ev0sVrqg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_AP_HEADLINES_BUSINESS/d0ba21d8f1b92e0f730f6a7067001210_original.jpg'></td><td>2015-04-09 15:43:02</td><td><a href='http://finance.yahoo.com/news/apple-watch-options-54-combinations-125305012.html'>site</a></td><td>Apple Watch, available for pre-order on Friday, April 10, comes with a choice of watch case, band and size _ there are 54 possible configurations in all.</td></tr>
 </table></body></html>

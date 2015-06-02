@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>hillary clinton</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-03 03:32:47</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article12018794.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton exclusively used a personal email account to conduct government business as secretary of state, State Department officials said, and may have violated federal requirements that officials' correspondence be retained as part of the agency's record.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/1ef20197c082e5eb0f8b09dd63d00a1c97c51e94/0_0_3000_1803/500.jpg'></td><td>2015-03-03 06:03:03</td><td><a href='http://www.theguardian.com/us-news/2015/mar/03/hillary-clinton-used-personal-email-account-for-all-government-business-report-claims'>site</a></td><td>Former US secretary of state Hillary Clinton may have violated federal records laws by using a personal email account for all of her work messages, the New York Times reported on Monday.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670480998_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 06:09:15</td><td><a href='http://www.torontosun.com/2015/03/03/hillary-clinton-may-have-broken-federal-record-keeping-laws'>site</a></td><td>Hillary Clinton may have broken federal record-keeping laws</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/u/j/a/x/image.related.articleLeadwide.620x349.13uj0h.png/1425442672638.jpg'></td><td>2015-03-03 23:35:47</td><td><a href='http://www.theage.com.au/world/hillary-clinton-email-flap-puts-democrats-in-scramble-mode-20150304-13uj0h.html'>site</a></td><td><table><tr><td>Hillary Clinton's office insists there was nothing improper about her use of a personal email account during her time as Secretary of State.</td></tr><tr><td>Then-Secretary of State Hillary Rodham Clinton speaks at the State Department in Washington in 2012.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww1.hdnux.com/photos/35/03/72/7618232/3/square_gallery_thumb.jpg'></td><td>2015-03-07 08:06:38</td><td><a href='http://www.sfgate.com/news/politics/article/What-we-know-about-Hillary-Clinton-s-private-6120547.php'>site</a></td><td>What we know about Hillary Clinton's private email account</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.upi.com/img/clear.gif'></td><td>2015-03-10 19:49:13</td><td><a href='http://www.upi.com/Top_News/US/2015/03/10/Hillary-Clinton-Private-email-server-a-matter-of-convenience/5091426014547/'>site</a></td><td>Hillary Clinton: Private email server 'a matter of convenience'</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/EppqJXPP1BBHeO_JkSHfjQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-31T145240Z_1_LYNXMPEB2U0QO_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-03-31 17:59:04</td><td><a href='http://news.yahoo.com/u-house-committee-seeks-interview-hillary-clinton-over-145240379.html'>site</a></td><td>WASHINGTON (Reuters) - A U.S. House committee is seeking a private interview with former Secretary of State Hillary Clinton over her use of private email and a personal computer server while at the State Department, the panel said in a letter released on Tuesday.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-02 17:41:54</td><td><a href='http://www.utsandiego.com/news/2015/apr/02/senate-republicans-clinton-emails-probably-broke/'>site</a></td><td>WASHINGTON (AP) - Two high-ranking Republican senators are criticizing Hillary Rodham Clinton's use of a personal email server, and one says Clinton likely violated federal law.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-02 17:41:54</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/02/senate-republicans-clinton-emails-probably-broke-law'>site</a></td><td>Cornyn says he wants the State Department's inspector general to investigate whether Clinton violated federal law or policy.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-23 19:30:15</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11437813&ref=rss'>site</a></td><td>House Benghazi panel calls Clinton to testify</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://wpmedia.news.nationalpost.com/2015/05/474390304_38101803.jpg?w=620'></td><td>2015-05-22 18:07:00</td><td><a href='http://news.nationalpost.com/news/world/hillary-clinton-got-an-email-about-the-benghazi-consulate-attack-on-her-private-server'>site</a></td><td>WASHINGTON - Former Secretary of State Hillary Rodham Clinton received information on her private email server that has now been classified about the deadly attack on U.S. diplomatic facilities in Benghazi.</td></tr>
+</table></body></html>

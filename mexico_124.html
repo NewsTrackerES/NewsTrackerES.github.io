@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 13:59:03</td><td></td><td><a href='mexico_124_126.html'>The suspect is the brother of Miguel Angel Trevino Morales, described as the most bloodthirsty leader of Mexico's most violent cartel. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 14:06:26</td><td></td><td><a href='mexico_124_127.html'>"The truth is that this is a group that has been fragmented," Javier Oliva, an expert on the drug war at Mexico's National Autonomous University, said of the Zetas. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-04 14:06:26</td><td><a href='http://www.startribune.com/world/294990721.html'>site</a></td><td>All six were walked across the tarmac from a military plane at Mexico City's airport and loaded into armored personnel carriers.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 16:14:00</td><td></td><td><a href='mexico_124_125.html'>Founded by elite army deserters in 1999, the Zetas initially acted as enforcers for the Gulf Cartel, based along the border with Texas and one of the oldest organized crime groups in Mexico. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 14:55:35</td><td></td><td><a href='mexico_124_125.html'>ANGEL FIRE, N.M. (AP) - Authorities say a Texas man is dead after his paraglider crashed outside a northern New Mexico airport. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 14:55:35</td><td><a href='http://www.utsandiego.com/news/2015/may/17/texas-man-dies-in-paraglider-crash-in-northern/'>site</a></td><td>New Mexico State Police say 46-year-old Paul Johnson was found in a field just north of Angel Fire Airport on Saturday morning.</td></tr>
 </table></body></html>

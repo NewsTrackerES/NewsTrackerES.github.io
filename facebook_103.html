@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 18:30:36</td><td><a href='http://www.sfgate.com/news/us/article/Woman-Ex-beau-charged-in-Facebook-killing-told-6110094.php'>site</a></td><td><table><tr><td>Woman: Ex-beau charged in Facebook killing told me he did it</td></tr><tr><td>BANGOR, Maine (AP) - The ex-girlfriend of a man accused of using Facebook to lure a 15-year-old to her death testified Monday that he confessed to committing the killing.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.business.financialpost.com/2015/03/facebook-messenger.jpg?w=620'></td><td>2015-03-25 18:42:25</td><td><a href='http://business.financialpost.com/2015/03/25/facebook-inc-expands-messenger-app-features-to-reinvent-the-way-people-are-communicating/'>site</a></td><td>Facebook unveiled the new features at its annual developer conference in San Francisco, for the first time allowing developers to create apps that function inside the Messenger app, which has more than 600 million users.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/news/facebook-app-screen.jpg'></td><td>2015-03-25 18:53:47</td><td><a href='http://www.foxbusiness.com/technology/2015/03/25/facebook-expands-messenger-service-features/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Facebook Inc (FB) on Wednesday opened up its Messenger service for developers to create apps and for consumers to communicate directly with retailers, in the social media network's latest effort to expand its reach.</td></tr>
 </table></body></html>

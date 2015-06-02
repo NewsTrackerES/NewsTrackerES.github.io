@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-15 20:55:11</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11402681&ref=rss'>site</a></td><td>Video purports to show Islamic State militants in Libya beheading Christian hostages</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-16 07:46:44</td><td><a href='http://ibnlive.in.com/news/egypt-strikes-is-group-in-libya-after-video-of-mass-beheading-surfaces/528731-2.html'>site</a></td><td>The video purporting to show the mass beheading of Coptic Christian hostages was released late on Sunday by militants in Libya affiliated with the Islamic State group.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-02-16 09:21:39</td><td><a href='http://www.washingtontimes.com/news/2015/feb/16/egypt-strikes-islamic-state-group-libya-after-vide/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>Egypt strikes Islamic State group in Libya after video of mass killing</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/f/w/s/l/image.related.articleLeadwide.620x349.13ghv2.png/1424736393055.jpg'></td><td>2015-02-16 11:51:00</td><td><a href='http://www.brisbanetimes.com.au/world/egypt-strikes-back-at-islamic-state-militants-after-beheading-video-killing-dozens-20150216-13ghv2.html'>site</a></td><td>CAIRO: Egypt said it bombed Islamic State targets inside Libya, a day after the group released a video appearing to show the beheading of 21 Egyptians there.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/g/k/a/k/image.related.articleLeadwide.620x349.13gk70.png/1424119819185.jpg'></td><td>2015-02-16 19:58:15</td><td><a href='http://www.smh.com.au/world/egypt-conducts-second-wave-of-strikes-against-islamic-state-in-libya-in-retaliation-for-mass-beheading-of-christians-20150217-13gk70.html'>site</a></td><td><table><tr><td>Egypt conducts second wave of strikes against Islamic State in Libya in retaliation for mass beheading of Christians</td></tr><tr><td>Striking back ... Egyptian President Abdel-Fattah el-Sissi continues to target Islamic State jihadists in Libya after they beheaded 21 Egyptian Coptic Christians.</td></tr><tr><td>Grief ... A man is comforted as he mourns the Egyptian Coptic Christians who were captured in Libya and beheaded by Islamic State jihadists, outside of the Virgin Mary church in the village of el-Aour, Egypt.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-19 11:03:49</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article18908868.html#storylink=rss'>site</a></td><td>A video released by the Islamic State group on Sunday appears to show the killing of two different groups of captured Ethiopian Christians by the extremist group's Libyan affiliates.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://images.smh.com.au/2014/12/02/6050581/90418-_BeachVilla-172x115.jpg'></td><td>2015-04-19 12:03:58</td><td><a href='http://www.smh.com.au/world/islamic-state-executes-ethiopian-christians-in-libya-20150419-1moig4.html'>site</a></td><td>Islamic State executes Ethiopian Christians in Libya</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-19 14:45:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/19/un-90-000-people-have-fled-is-advance-in-iraqs-anbar'>site</a></td><td>It shows one group of captives, identified as Ethiopian Christians, purportedly held by an Islamic State affiliate in eastern Libya known as Barqa Province.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-19 15:01:58</td><td><a href='http://www.reuters.com/article/2015/04/19/us-mideast-crisis-islamicstate-killings-idUSKBN0NA0IE20150419?feedType=RSS&feedName=wtMostRead'>site</a></td><td>CAIRO (Reuters) - A video purportedly made by Islamic State and posted on social media sites on Sunday appeared to show militants shooting and beheading about 30 Ethiopian Christians in Libya.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-20 01:02:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3045723/Islamic-State-shot-beheaded-30-people-Libya--video.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The killing of the Egyptians prompted Egyptian President Abdel Fattah al-Sisi to order air strikes on Islamic State targets in Libya.</td></tr>
+</table></body></html>

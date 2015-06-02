@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-11 15:52:55</td><td></td><td><a href='google_84_85.html'>(AP) - A federal judge has ruled against Mississippi Attorney General Jim Hood in his effort to keep Google from getting its hands on correspondence between Hood and lobbyists for the movie industry. (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-11 19:46:35</td><td></td><td><a href='google_84_86.html'>Google then sued Hood in Wingate's court in Jackson. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-11 19:46:35</td><td><a href='http://abcnews.go.com/Technology/wireStory/judge-rules-mississippi-attorney-general-google-30247492'>site</a></td><td>That written opinion was highly critical of Hood, saying he couldn't issue a subpoena to "wage an unduly burdensome fishing expedition into Google's operations."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 14:00:53</td><td><a href='http://smallbusiness.foxbusiness.com/technology-web/2015/04/20/will-google-mobilegeddon-wreak-havoc-on-small-business/'>site</a></td><td>"As people increasingly search on their mobile devices, we want to make sure they can find content that's not only relevant and timely, but also easy to read and interact with on smaller mobile screens," the Google spokesperson said.</td></tr>
 </table></body></html>

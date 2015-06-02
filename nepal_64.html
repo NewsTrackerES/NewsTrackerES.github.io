@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 07:14:43</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/02/nepals-devout-see-divine-anger-in-quakes-devastation'>site</a></td><td>But among many of Nepal's most devoutly religious, the chaos and destruction wrought a week ago by a massive earthquake makes one thing clear: The gods are angry.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/NZMxMZJ3XwPSv_XHHeX7eA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/6efa797e7d4a4313750f6a706700a7a6.jpg'></td><td>2015-05-02 07:14:55</td><td><a href='http://news.yahoo.com/nepals-devout-see-divine-anger-quakes-devastation-071455706.html'>site</a></td><td>Nepal's devout see divine anger in quake's devastation</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-02 07:20:39</td><td><a href='http://www.startribune.com/world/302290961.html'>site</a></td><td><table><tr><td>Now, in the shadow of some of Nepal's holiest mountaintop temples, many find comfort in the notion that there was a divine and just cause behind the tragedy that has killed thousands and left hundreds of thousands more homeless and destitute.</td></tr><tr><td>"It's a warning from the gods to the politicians: Change yourselves, or who knows what will happen," said Ishwar Nath Yogi, the 51-year-old high priest at Gorkha Kalika, a revered temple to the goddess Kali and the birthplace of Nepal's first king.</td></tr><tr><td>Three-fourths of Nepal's 27 million people consider themselves Hindu, and the religion has a deep connection to this rugged Himalayan land dotted with countless temples and shrines.</td></tr></table></td></tr>
+</table></body></html>

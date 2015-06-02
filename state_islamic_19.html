@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 20:14:44</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/us-drops-graphic-leaflet-to-possible-islamic-state/nkf4y/'>site</a></td><td><table><tr><td>US drops graphic leaflet to possible Islamic State recruits</td></tr><tr><td>The United States military dropped 60,000 copies of a graphic leaflet near the northern Syrian city of Raqqah that depict potential Islamic State recruits being fed into a meat grinder.</td></tr><tr><td>And it's not beneficial to your health," said Army Col. Steve Warren, a Pentagon spokesman who released a copy of the leaflet Thursday in response to media requests. Daesh is the Arabic acronym for the Islamic State group.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/11/27032B0A00000578-0-image-m-29_1427370786681.jpg'></td><td>2015-03-27 01:39:29</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3013994/U-S-drops-graphic-anti-Islamic-State-leaflets-Syrias-Raqqa.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"The message of this leaflet is that if you allow yourself to be recruited by Daesch (Islamic State), you will find yourself in a meat grinder," said Pentagon spokesman Colonel Steve Warren.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:53:39</td><td></td><td><a href='state_islamic_19_20.html'>WASHINGTON (Reuters) - The United States has dropped tens of thousands of graphic leaflets southwest of the Syrian city of Raqqa aimed at discouraging Islamic State recruitment, officials said on Thursday. (2)</a></td></tr>
 </table></body></html>

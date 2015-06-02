@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://resources2.news.com.au/images/2015/04/01/1227287/229222-de6e598c-d7f5-11e4-91d8-f0bc1d307f16.jpg'></td><td>2015-04-01 02:23:00</td><td><a href='http://www.news.com.au/technology/online/a-mothers-public-apology-for-her-daughters-bad-behaviour-towards-a-stranger-at-the-cinemas-goes-viral/story-fnjwnhzf-1227287229330?from=news.com.au_rss'>site</a></td><td><table><tr><td>Facebook apology gripping the world</td></tr><tr><td>Mum Kyesha Smith Wood has been called a great mum after she posted a Facebook apology to a cinema patron on behalf of her daughters.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 19:07:20</td><td></td><td><a href='facebook_39_40.html'>He uploaded to Facebook and Twitter a video of a well-known song called "Zingara" by Italian singer Iva Zanicchi, asking if Facebook would block that too. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150409&t=2&i=1039178086&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB380WI'></td><td>2015-04-09 19:07:20</td><td><a href='http://www.reuters.com/article/2015/04/09/us-italy-politics-facebook-idUSKBN0N024R20150409?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>A Facebook spokeswoman said there was a temporary block on Salvini's page because it violated Facebook policies around "hate speech".</td></tr><tr><td>"Facebook blocked my personal profile for 24 hours because of the presence of the words "zin*ari" e "zin*are" in two posts. This is madness!"</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 20:04:17</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3032598/Italian-right-wing-leader-says-Facebook-blocks-personal-page.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Italian right-wing leader says Facebook blocks his personal page</td></tr>
 </table></body></html>

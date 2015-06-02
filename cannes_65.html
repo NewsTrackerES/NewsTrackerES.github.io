@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 13:30:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11451432&ref=rss'>site</a></td><td><table><tr><td>Celebrity charity rally roars past Cannes finish line</td></tr><tr><td>The rally began in Paris, and went on to Lyon and Milan to arrive at the finish line in Cannes " 1,067 Miles (1,717 km) and five days later.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=4971&amp;contextPath=3179-4968-4971-&amp;pubId=7&amp;cat=&amp;meta=read-wirestory&amp;objId=21369072&amp;type=article&amp;title=Celebrity+charity+rally+roars+past+Cannes+finish+line&amp;url=http%3a%2f%2fwww.miamiherald.com%2fentertainment%2fcelebrities%2farticle21369072.html'></td><td>2015-05-19 13:35:23</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21369072.html#storylink=rss'>site</a></td><td>The celebrity charity car rally "Cash & Rocket" roared into Cannes Tuesday, with its band of stars that this year included actress Michelle Rodriguez, model Jodie Kidd and singer Natalie Imbruglia.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-22 14:01:07</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21665838.html#storylink=rss'>site</a></td><td><table><tr><td>CANNES WATCH: Longoria a success behind the camera</td></tr><tr><td>There's been much talk at the Cannes Film Festival about how to boost the ranks of women directors and producers.</td></tr><tr><td>Longoria, who is in Cannes in part as an ambassador for L'Oreal, said the new digital age of TV, and various streaming services are helping to improve diversity in Hollywood.</td></tr></table></td></tr>
 </table></body></html>

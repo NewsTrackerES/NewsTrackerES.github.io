@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://america.aljazeera.com/content/ajam/articles/2015/3/24/wsj-israel-spies-on-us-iran-nuclear-talks/_jcr_content/image.adapt.480.low.Israel_Netanyahu_032415.jpg'></td><td>2015-02-16 19:12:00</td><td><a href='http://america.aljazeera.com/articles/2015/2/16/israeli-election-chief-puts-curbs-on-netanyahu-speech-to-congress.html'>site</a></td><td>Overall, however, Netanyahu's Likud party remains marginally ahead, with most polls expecting it to win 24 or 25 seats in the 120-seat parliament, just ahead of the center-left opposition.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/34/77/66/7601565/5/square_gallery_thumb.jpg'></td><td>2015-03-04 05:47:31</td><td><a href='http://www.sfgate.com/news/world/article/After-speech-White-House-could-determine-6113722.php'>site</a></td><td>Polls show Netanyahu's Likud party slightly trailing the Zionist Union, which is the main grouping of the center-left opposition.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-13 14:26:16</td><td><a href='http://www.sfgate.com/news/world/article/PM-Netanyahu-trails-in-last-polls-before-Israel-s-6132125.php'>site</a></td><td><table><tr><td>PM Netanyahu's party trails in polls before Israel election</td></tr><tr><td>Poll results in the Yediot Ahronot newspaper on Friday gave the Zionist Union, comprised of labor and a center-left party, 26 seats over 22 for Netanyahu's hawkish Likud party.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/1/e/h/image.related.articleLeadwide.620x349.143yfx.png/1426303711002.jpg'></td><td>2015-03-14 03:28:52</td><td><a href='http://www.smh.com.au/world/israel-election-netanyahu-shifts-tactics-as-likud-appears-to-slip-20150314-143yfx.html'>site</a></td><td>Israel election: Netanyahu shifts tactics as Likud appears to slip</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-15 21:27:42</td><td><a href='http://www.theguardian.com/world/2015/mar/15/netanyahu-rightwing-tel-aviv-rally-vote-israel-campaign'>site</a></td><td>Kahlon, a former member of Netanyahu?s Likud party whose newly formed centrist party could be a deciding factor in who becomes prime minister, dismissed the offer as a pre-election stunt.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/0/1/6/s/image.related.articleLeadwide.620x349.1m0dbb.png/1426580441911.jpg'></td><td>2015-03-16 06:09:24</td><td><a href='http://www.theage.com.au/world/benjamin-netanyahu-plays-the-hardline-settlement-expansion-card-to-capture-rightwing-voters-20150316-1m0dbb.html'>site</a></td><td>they estimate the Zionist Union would win between 24 and 26 seats in the 120-seat Knesset, compared to 20-22 seats for Mr Netanyahu's Likud Party.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.theage.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td><a href='http://www.theage.com.au/world/no-palestinian-state-while-i-am-pm-says-faltering-netanyahu-20150317-1m18xt.html'>site</a></td><td>the centre-left coalition may win the most seats, but Mr Netanyahu's Likud may be able to form a coalition with the centrist Kulanu party, headed by former Likud minister Moshe Kahlon, and other parties to the right.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/1/b/x/l/image.related.articleLeadwide.620x349.1m18xt.png/1426607556922.jpg'></td><td>2015-03-17 07:06:24</td><td><a href='http://www.smh.com.au/world/no-palestinian-state-while-i-am-pm-says-faltering-netanyahu-20150317-1m18xt.html'>site</a></td><td>In 2009 - the election in which Mr Netanyahu took the prime ministership for a second time - the centrist Kadima party won the most seats but was unable to form a coalition and in the end, Mr Netanyahu took power.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/18/article-urn:publicid:ap.org:fa5919120900409f98658f078e88e294-6X6lS5Zr1-HSK1-788_634x416.jpg'></td><td>2015-03-17 07:15:26</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-2998293/Israelis-vote-parliament-campaign-focused-economy.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>But with the sides nearly evenly divided, a victory by Netanyahu's Likud Party still was not guaranteed.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/hk9w7eLKehcmJNufqLk0NA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/Reuters/2015-03-17T204841Z_1421125006_GM1EB3I0D8401_RTRMADP_3_ISRAEL-ELECTION-EXITPOLLS.JPG'></td><td>2015-03-17 20:50:56</td><td><a href='http://news.yahoo.com/netanyahu-twitter-says-won-great-victory-israels-election-205056583.html'>site</a></td><td>"Against all odds: a great victory for Likud, a great victory for the national camp led by Likud, a great victory for the people of Israel," Netanyahu wrote on his official Twitter account.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-17 22:22:23</td><td><a href='http://news.yahoo.com/netanyahus-chief-challenger-zionist-unions-herzog-says-everything-222223383.html'>site</a></td><td><table><tr><td>Netanyahu's chief challenger, Zionist Union's Herzog, says 'everything open'</td></tr><tr><td>"This result allows us to return to power," Herzog told supporters at party headquarters in Tel Aviv after exit polls showed a tie between the center-left Zionist Union and Netanyahu's right-wing Likud.</td></tr></table></td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://i.huffpost.com/gen/2733192/images/n-NETANYAHU-large570.jpg'></td><td>2015-03-17 23:17:53</td><td><a href='http://www.huffingtonpost.com/2015/03/17/netanyahu-form-government_n_6889742.html'>site</a></td><td>"Reality does not take a break," Netanyahu said in a speech to supporters after two television exit polls gave Likud a narrow lead over his center-left challenger in the ballot.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-18 04:41:12</td><td><a href='http://www.news24.com/World/News/Netanyahu-claims-victory-in-knife-edge-Israel-vote-20150318'>site</a></td><td>Figures published by public Channel 1 and private Channel 10 television both gave Netanyahu's Likud and Isaac Herzog's Zionist Union 27 seats each in the 120-member parliament.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-18 05:34:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-18-ML--Israel-Election/id-025da881f1594597a89a26ae3e9ddd2b'>site</a></td><td>"Against all odds, we achieved a great victory for the Likud," Netanyahu told supporters at his election night headquarters, declaring victory even before final results were known.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://a.abcnews.com/images/International/WireAP_65daac09b0b74775b9271903cefa7dca_16x9_992.jpg'></td><td>2015-03-18 18:14:46</td><td><a href='http://abcnews.go.com/International/wireStory/israeli-election-results-show-victory-netanyahu-29731607'>site</a></td><td>Netanyahu's right-wing Likud Party scored a resounding victory in Israel's election, final results showed Wednesday, a stunning turnaround after a tight race that had put his lengthy rule in jeopardy.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297676564806_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-18 20:07:03</td><td><a href='http://www.torontosun.com/2015/03/18/netanyahu-sweeps-past-main-challenger-in-israeli-election'>site</a></td><td>The result was a dramatic and unexpected victory for Netanyahu - the last opinion polls four days before the vote had shown Likud trailing the Zionist Union by four seats.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-03-23 11:15:31</td><td><a href='http://www.utsandiego.com/news/2015/mar/23/israels-netanyahu-appears-poised-to-build/'>site</a></td><td>It became a formality after the new centrist party Kulanu gave its nod to Netanyahu as well, giving him 61 backers out of the 120 in parliament.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-03-25 18:23:58</td><td><a href='http://www.utsandiego.com/news/2015/mar/25/israels-netanyahu-tapped-to-form-new-government/'>site</a></td><td>Netanyahu's Likud Party captured 30 seats in last week's national election, making it the largest party in the 120-seat parliament.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-20 07:58:27</td><td><a href='http://news.yahoo.com/israeli-leader-gets-2-week-extension-form-coalition-075827822.html'>site</a></td><td>Netanyahu looks close to finalizing deals with two ultra-Orthodox parties and the centrist, economics-focused Kulanu party.</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/e/9/k/x/image.related.articleLeadwide.620x349.1mpnj4.png/1429582416406.jpg'></td><td>2015-04-21 02:13:57</td><td><a href='http://www.smh.com.au/world/israel-pm-benjamin-netanyahu-given-14-more-days-to-form-coalition-government-20150421-1mpnj4.html'>site</a></td><td>Mr Netanyahu is pursuing a government with hawkish, religious and centrist parties that will give him a coalition representing at least 61 members of Israel's 120-seat parliament, or Knesset, though he hopes for the more comfortable backing of 67 lawmakers.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-04-29 19:20:01</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3061306/Netanyahu-signs-partners-new-Israeli-coalition.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The deals with the ultra-Orthodox United Torah Judaism (UTJ) party and centrist Kulanu give Netanyahu's right-wing Likud control of 46 of parliament's 120 seats.</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-05-04 14:17:27</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/04/israeli-foreign-minister-steps-down-to-join-opposition'>site</a></td><td>Last week, Netanyahu signed up his first two partners, the center-right Kulanu party, led by influential newcomer Moshe Kahlon, and the ultra-Orthodox party United Torah Judaism.</td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 08:48:47</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article20324139.html#storylink=rss'>site</a></td><td>Netanyahu was holding furious consultations Wednesday with the hawkish Jewish Home Party in order to secure a narrow 61-seat majority in the 120-seat parliament.</td></tr>
+</table></body></html>

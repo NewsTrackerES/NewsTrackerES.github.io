@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>van morrison</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 14:00:06</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/14/glee-star-matthew-morrison-finds-himself-back-on-broadway'>site</a></td><td><table><tr><td>The show ended earlier this year and Morrison's last scene was of him singing "Teach Your Children" by Crosby Stills, Nash & Young in dedication to all his fictional students, many who are in tears by the end of the song.</td></tr><tr><td>Morrison barely had time to say goodbye to Schuester before it was time to tackle Barrie.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/VKHOxTAoPLPxltyqafainA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1d46694e98329610730f6a706700ac73.jpg'></td><td>2015-04-14 14:00:22</td><td><a href='http://news.yahoo.com/glee-star-matthew-morrison-finds-himself-back-broadway-140022713.html'>site</a></td><td>Morrison, 36, plays J.M. Barrie, the "Peter Pan" author, in the adaptation from the 2004 whimsical film of the same name about a widow whose four young sons inspired Barrie to write the children's classic.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 16:20:16</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11450013&ref=rss'>site</a></td><td>TERRASA, Spain (AP) " English duo James Morrison and David Howell shared a two-shot lead Saturday after the third round of the Spanish Open.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-16 17:13:17</td><td><a href='http://news.yahoo.com/englands-morrison-howell-lead-spanish-open-3-rounds-161503985.html'>site</a></td><td>England's Morrison, Howell lead Spanish Open after 3 rounds</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-16 18:02:25</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3084562/Britons-Morrison-Howell-lead-way-Sergio-surges.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Britons Morrison and Howell lead way as Sergio surges</td></tr><tr><td>BARCELONA, May 16 (Reuters) - Britons James Morrison and David Howell both overcame double-bogeys to share the lead after the third round of the Spanish Open on Saturday.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-07 00:00:49</td><td><a href='http://news.yahoo.com/mexico-blames-drug-gangs-string-killings-near-border-000049735.html'>site</a></td><td><table><tr><td>Mexico blames drug gangs for string of killings near border</td></tr><tr><td>HERMOSILLO, Mexico (AP) - Authorities in the northern Mexican state of Sonora say drug cartel groups are behind a string of murders in a disputed corridor along the U.S. border.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-27 05:13:52</td><td><a href='http://news.yahoo.com/wrong-kitty-litter-led-radiation-leak-mexico-nuke-051352066.html'>site</a></td><td>New Mexico slapped the Energy Department with $54 million in fines in December for violations of state hazardous waste permits tied to WIPP and the Los Alamos lab.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 23:11:55</td><td></td><td><a href='mexico_106_107.html'>The Energy Department will funnel more than $73 million toward road and water projects around New Mexico as part of a settlement over a radiation leak that forced the indefinite closure of a troubled nuclear waste dump. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 23:11:55</td><td><a href='http://abcnews.go.com/US/wireStory/mexico-feds-reach-73m-settlement-nuke-mishap-30712135'>site</a></td><td>More than half of the settlement funds will pay for repairs and improvements for roads in southeastern New Mexico that are used to haul waste to the Waste Isolation Pilot Plant.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-01 00:02:55</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3063278/New-Mexico-feds-reach-73M-settlement-nuke-mishap.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Department Secretary Ernest Moniz said in a statement that the projects outlined in the settlement will benefit New Mexico communities and will not detract from cleanup at Los Alamos or the Waste Isolation site.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 00:23:34</td><td></td><td><a href='mexico_106_108.html'>The deal struck between the department and New Mexico forgoes fines and instead applies funds to upgrades to federal nuclear facilities and surrounding communities in the state, according to settlement documents. (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 14:40:28</td><td><a href='http://www.nydailynews.com/life-style/microsoft-hire-autistic-employees-article-1.2176054?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td><table><tr><td>"People with autism bring strengths that we need at Microsoft," Mary Ellen Smith, Microsoft's corporate vice president for worldwide operations, wrote in a blog post.</td></tr><tr><td>"Some have amazing ability to retain information, think at a level of detail and depth or excel in math or code. It's a talent pool that we want to continue to bring to Microsoft."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 17:28:05</td><td><a href='http://www.foxbusiness.com/markets/2015/04/13/microsoft-hires-back-kurt-delbene-for-corporate-strategy-job-will-report-to-ceo/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td><table><tr><td>DelBene was president of Microsoft's Office unit when he left the company in 2013.</td></tr><tr><td>After Microsoft, he was put in charge of HealthCare.org, the website used as an insurance portal for President Barack Obama's health care law.</td></tr><tr><td>In his new position, DelBene will report to Microsoft Corp. CEO Satya Nadella.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 17:57:01</td><td></td><td><a href='apple_or_microsoft_87_88.html'>Microsoft hires back Kurt DelBene for corporate strategy job (2)</a></td></tr>
 </table></body></html>

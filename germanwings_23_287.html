@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 12:10:33</td><td></td><td><a href='germanwings_23_287_383.html'>The co-pilot of a Germanwings jet that went down in the French Alps, killing 150 people, appears to have crashed the plane deliberately, a Marseille prosecutor said. (102)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 15:08:24</td><td></td><td><a href='germanwings_23_287_351.html'>Lufthansa CEO Carsten Spohr says the Lufthansa Group, which includes Germanwings, Austrian Airlines, Swiss Air and Eurowings, will require two crew members to be in the cockpit at all times. (4)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-31 12:45:18</td><td></td><td><a href='germanwings_23_287_415.html'>BERLIN/PARIS - French air accident authority BEA said its probe into the Germanwings crash would study "systemic weaknesses" that might have led to the disaster, such as psychological profiling and cockpit door locks. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 17:09:36</td><td></td><td><a href='germanwings_23_287_319.html'>BRUSSELS - European Union authorities were looking into German airline safety procedures on "a number of issues" well ahead of the March 24 Germanwings crash after a standard inspection by its aviation safety agency questioned some procedures. (3)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-08 18:37:35</td><td></td><td><a href='germanwings_23_287_479.html'>The subsequent investigation has focused in large part on the pilot's history of depression and procedures at Germanwings and its parent company, Lufthansa, for screening pilots for mental health issues. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 16:34:53</td><td></td><td><a href='germanwings_23_287_447.html'>However, it said the aeromedical centre of Lufthansa, the parent company of Germanwings, twice refused to renew his medical certificate in 2009 when he was undergoing treatment for depression. (5)</a></td></tr>
+</table></body></html>

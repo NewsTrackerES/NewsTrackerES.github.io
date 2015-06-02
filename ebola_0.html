@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-11 00:11:43</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3034437/Woman-returns-negative-Ebola-test.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Woman returns negative Ebola test</td></tr><tr><td>The health worker began showing possible symptoms of the virus on Friday afternoon, shortly after arriving back in Australia from an Ebola treatment centre in Liberia.</td></tr><tr><td>The woman, who has not been named, did not treat any cases of Ebola during her time in Liberia.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-01 22:07:48</td><td></td><td><a href='ebola_0_1.html'>An experimental Ebola vaccine tested on humans in Europe and Africa sparks the production of the antibodies needed to neutralise the deadly virus, a Geneva hospital said Wednesday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/01/article-doc-1i1i0-6XTQNmNL4HSK2-981_634x421.jpg'></td><td>2015-04-01 22:07:48</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3022231/Ebola-vaccine-tests-neutralise-virus-Geneva-hospital.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>There is no licensed treatment or vaccine for Ebola, and the World Health Organization last year endorsed rushing potential ones through trials in a bid to stem the epidemic still simmering in west Africa.</td></tr>
 </table></body></html>

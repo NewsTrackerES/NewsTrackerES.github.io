@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-02 16:27:54</td><td><a href='http://news.yahoo.com/major-offensive-under-way-retake-iraqs-tikrit-army-081036649.html'>site</a></td><td>Iraqi forces have tried and failed several times to wrest back Tikrit, a Sunni Arab city on the Tigris river about 160 kilometres (100 miles) north of Baghdad.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/H486AMYH2Fm4jUzy14TYgg--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.wochit.com/984a190afe07c7466cf7674d09cedf41'></td><td>2015-03-24 18:21:44</td><td><a href='http://news.yahoo.com/official-us-led-force-flying-over-islamic-state-115153587.html'>site</a></td><td>The Sunni city of Tikrit lies about 130 kilometers (80 miles) north of Baghdad.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 20:06:35</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3011265/US-discussed-possible-Tikrit-airstrikes-Iraq.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A member of an Iraqi Shiite militant group called Imam Ali Brigades patrols in Tikrit, 130 kilometers (80 miles) north of Baghdad, Iraq, Wednesday, March 25, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-01 15:25:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11426770&ref=rss'>site</a></td><td>The monthlong offensive to retake Tikrit, the hometown of Saddam Hussein some 80 miles (130 kilometers) north of Baghdad, is the biggest victory yet for Iraq since the extremists' campaign last summer.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-04 06:12:06</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article17375771.html#storylink=rss'>site</a></td><td>People inspect one of Saddam Hussein's palaces in Tikrit, 80 miles (130 kilometers) north of Baghdad, Iraq, Friday, April 3, 2015.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 04:26:41</td><td><a href='http://www.usnews.com/news/business/articles/2015/05/11/apple-steps-up-efforts-to-go-green-in-china'>site</a></td><td><table><tr><td>CEO Tim Cook also said in a statement Sunday that he will try to get Apple's Chinese suppliers and contract manufacturers to use renewable energy to power their factories.</td></tr><tr><td>While releasing few details, Apple said it will work with the World Wildlife Fund on an effort to get up to 1 million acres of Chinese commercial timberland certified as being managed under sustainable environmental practices.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 04:26:41</td><td><a href='http://www.sfgate.com/business/energy/article/Apple-steps-up-efforts-to-go-green-in-China-6254843.php'>site</a></td><td><table><tr><td>But Apple hopes to set an example by investing in two Chinese solar projects that will produce more power than Apple uses in its Chinese stores and offices.</td></tr><tr><td>Apple has undertaken similar projects in the United States.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/569e5f4096a6e55dbb9fd153e9460a7ad730ab76_140x91.jpg'></td><td>2015-03-26 03:52:48</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11423626&ref=rss'>site</a></td><td><table><tr><td>Apple CEO Tim Cook still remembers the last movie he ever saw with Steve Jobs before he succumbed to cancer: the sentimental sports flick Remember the Titans.</td></tr><tr><td>Five days after Cook and Jobs' movie night, the co-founder of Apple passed away at his Palo Alto, California, estate from complications from pancreatic cancer.</td></tr><tr><td>In the memoir, which was released this week, Tim Cook did not miss an opportunity to take a swipe at the unauthorized Steve Jobs biography by Walter Isaacson, which debuted just weeks after the Apple co-founder's death.</td></tr></table></td></tr>
 </table></body></html>

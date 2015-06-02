@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 06:50:21</td><td><a href='http://www.startribune.com/world/295299281.html'>site</a></td><td>The Emirates, Saudi Arabia and Kuwait pumped billions of dollars into Egypt following the military's ouster of Islamist President Mohammed Morsi in July 2013.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-07 14:25:01</td><td><a href='http://www.sfgate.com/news/world/article/Bomb-explodes-at-Emirati-bank-in-northern-Egypt-6120601.php'>site</a></td><td>CAIRO (AP) - Egypt executed a man by hanging on Saturday, the first capital punishment carried out in connection with violence that followed the ouster of the country's Islamist president in 2013.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b4o2-6XGbvp1FSHSK2-728_634x397.jpg'></td><td>2015-03-24 11:52:10</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3009255/Roadside-bomb-kills-two-soldiers-Egypts-Sinai.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Egypt has been battling an Islamist insurgency in North Sinai since the army ousted president Mohamed Morsi in July 2013.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/Gd8LUfzArCfHNb5nMKSihA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c6858f77a51b600e720f6a706700f25a.jpg'></td><td>2015-04-01 00:55:21</td><td><a href='http://news.yahoo.com/report-egypt-nigeria-led-world-death-sentences-2014-000329242.html'>site</a></td><td>Egypt announced at least 509 death sentences last year, many of them in the mass trials that have been held since the ouster of Islamist President Mohammed Morsi in 2013.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-17 15:07:34</td><td><a href='http://abcnews.go.com/International/wireStory/egypt-executes-men-convicted-killing-soldiers-31102048'>site</a></td><td>Egypt has been struggling to contain violence by militants, but the scattered attacks have evolved into a full-fledged insurgency following Morsi's July 2013 ouster by the military.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.smh.com.au/content/dam/images/g/h/3/t/1/b/image.related.articleLeadwide.620x349.gh3shl.png/1431916388603.jpg'></td><td>2015-05-17 17:20:44</td><td><a href='http://www.smh.com.au/world/egypt-executes-six-men-convicted-of-killing-soldiers-despite-grossly-unfair-trial-20150518-gh3shl.html'>site</a></td><td>Egypt's State Information Service condemned the barrage of criticism the country has endured following Morsi's death sentence on Saturday.</td></tr>
+</table></body></html>

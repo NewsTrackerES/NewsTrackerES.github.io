@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/images/Technology/WireAP_d8b854adadd246059c96159ad5a49a83_16x9_992.jpg'></td><td>2015-03-31 17:37:05</td><td><a href='http://abcnews.go.com/Technology/wireStory/microsoft-makes-cheaper-version-surface-pro-tablet-30025251'>site</a></td><td>Google, Microsoft Battle Drives Down Prices for PCs, Tablets</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/43/11/7746122/3/622x350.jpg'></td><td>2015-03-31 18:00:15</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-makes-cheaper-version-of-Surface-Pro-3-6170030.php'>site</a></td><td>"We cannot be happier that Microsoft is helping drive down the prices of PCs," said Caesar Sengupta, Google's vice president of product management for Chromebooks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2014/0915/20140915__0916microsoft~1.JPG'></td><td>2015-03-26 21:25:22</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td><table><tr><td>Microsoft tells vendors to give contract workers basic benefits</td></tr><tr><td>SEATTLE -- For the first time, Microsoft will mandate a basic level of benefits for the tens of thousands of contract workers employed on the software giant's behalf.</td></tr><tr><td>Microsoft has had an occasionally testy relationship with its contract workers.</td></tr></table></td></tr>
 </table></body></html>

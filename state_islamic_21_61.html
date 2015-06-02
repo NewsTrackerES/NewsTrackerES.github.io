@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 11,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 11 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-February/airstrikes-islamic-state.jpg'></td><td>2015-02-16 09:05:14</td><td><a href='http://www.globalpost.com/dispatch/news/regions/middle-east/egypt/150216/egypt-bombs-islamic-state-targets-libya-after-beheadi'>site</a></td><td>Egypt, the most populous Arab state, has not taken part directly in the U.S.-led air strikes against Islamic State targets in Iraq and Syria, focusing instead on the increasingly complex insurgency within its own borders.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-16 09:21:39</td><td><a href='http://www.washingtontimes.com/news/2015/feb/16/egypt-strikes-islamic-state-group-libya-after-vide/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>Libya's air force meanwhile announced it had launched strikes in the eastern city of Darna, an extremist stronghold that was taken over by an Islamic State affiliate last year.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-23 18:54:03</td><td><a href='http://news.yahoo.com/u-allies-conduct-14-air-strikes-against-islamic-185403152.html'>site</a></td><td>U.S., allies conduct 14 air strikes against Islamic State: task force</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-23 22:55:39</td><td><a href='http://news.yahoo.com/pentagon-notifying-100-u-troops-threatened-islamic-state-225539821.html'>site</a></td><td>The New York Times quoted officials as saying the list appeared to have been drawn from personnel mentioned in news articles about air strikes on Islamic State.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-24 14:42:04</td><td><a href='http://news.yahoo.com/canada-says-launch-air-strikes-against-isis-syria-133704262.html'>site</a></td><td>Canada says to launch air strikes against Islamic State in Syria</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/masthead-logo.gif'></td><td>2015-03-24 14:48:36</td><td><a href='http://www.reuters.com/article/2015/03/24/us-mideast-crisis-usa-airstrikes-idUSKBN0MK1RY20150324?feedType=RSS&feedName=worldNews'>site</a></td><td>WASHINGTON (Reuters) - The United States and its allies staged 14 air strikes on Islamic State targets in Syria and Iraq in the latest round of daily attacks, the Combined Joint Task Force said on Tuesday.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-25 13:30:35</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/25/22306931.html?cid=rssnewsworld'>site</a></td><td>U.S., allies hit Islamic State with 19 air strikes</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-30 03:30:59</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3017410/Syrias-Assad-says-Islamic-State-expanded-start-U-S-air-strikes.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Syria's Assad says Islamic State has expanded since start of U.S. air strikes</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.nzherald.co.nz/themes/1/img/printLogo.png'></td><td>2015-04-14 05:40:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11432553&ref=rss'>site</a></td><td>Another 400 Australian air force personnel are supporting air strikes against Islamic State targets from a base outside Dubai.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-16 18:02:25</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3084541/U-S-hits-Islamic-State-Syria-jihadists-press-attacks.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Assad said in February he had been informed about U.S.-led air strikes against Islamic State in Syria via third parties including Iraq, with which his government has close ties.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150525&t=2&i=1051022429&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4O09B'></td><td>2015-05-25 10:20:45</td><td><a href='http://www.reuters.com/article/2015/05/25/us-mideast-crisis-idUSKBN0OA0MR20150525?feedType=RSS&feedName=worldNews'>site</a></td><td>In Palmyra, the Syrian air force launched strikes at buildings captured by Islamic State, whose occupation of the city has raised fears that the insurgents will destroy its famed Roman ruins.</td></tr>
+</table></body></html>

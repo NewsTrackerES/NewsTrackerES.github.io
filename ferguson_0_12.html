@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 21,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 21 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ferguson</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-19 10:56:31</td><td><a href='http://www.upi.com/Top_News/US/2015/02/19/Justice-Dept-examining-Ferguson-racial-discrimination/6031424340081/'>site</a></td><td>In August, Ferguson was thrust into the limelight when white police officer Darren Wilson shot and killed unarmed black teen Michael Brown.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670696194_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-03 20:36:19</td><td><a href='http://www.torontosun.com/2015/03/03/us-justice-department-finds-racial-bias-in-ferguson-police-practices'>site</a></td><td>The investigation into the police department began in August after the shooting of unarmed African-American teen Michael Brown by a white police officer in Ferguson sparked national protests.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/v/z/6/p/image.related.articleLeadwide.620x349.13vlb7.png/1425563985304.jpg'></td><td>2015-03-04 22:54:30</td><td><a href='http://www.theage.com.au/world/ferguson-missouri-police-menaced-africanamerican-citizens-for-revenue-us-federal-investigation-concludes-20150305-13vlb7.html'>site</a></td><td>RAW VIDEO: US probe finds systematic racial bias and unconstitutional policing targeting black people in Ferguson, Missouri, but clears white officer in the killing of Michael Brown.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/killings_by_police_ferguson-1.jpg?w=620&#038;h=465'></td><td>2015-03-12 13:55:58</td><td><a href='http://news.nationalpost.com/2015/03/12/video-captures-exact-moment-two-police-officers-were-shot-last-night-in-ferguson/'>site</a></td><td>The protest was a familiar scene in Ferguson, which saw similar and much larger demonstrations after the shooting death of black 18-year-old Michael Brown last summer by city police officer Darren Wilson.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-13 06:39:00</td><td><a href='http://tvnz.co.nz/world-news/calls-calm-hunt-continues-ferguson-shooter-6254699?ref=rss'>site</a></td><td>Tensions have been high in Ferguson since August and escalated in November after a grand jury declined to prosecute officer Darren Wilson for Brown's killing.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/0/s/8/image.related.articleLeadwide.620x349.1440nv.png/1426302303355.jpg'></td><td>2015-03-14 03:05:16</td><td><a href='http://www.theage.com.au/world/ferguson-shooting-no-arrests-yet-as-police-continue-hunt-for-gunman-20150314-1440nv.html'>site</a></td><td>One protester stood opposite the Ferguson police department with a sign "Cops Lives Matter," playing on the "Black Lives Matter" slogan that sprang up in the wake of the deaths of Mr Brown and an unarmed black man in New York City.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww1.hdnux.com/photos/35/32/70/7712308/23/landscape_32.jpg'></td><td>2015-03-16 00:40:32</td><td><a href='http://www.sfgate.com/news/us/article/Police-to-announce-arrest-in-Ferguson-police-6135313.php'>site</a></td><td>But several activists who've been involved in the protests since the Aug. 9 fatal shooting of 18-year-old Michael Brown by a Ferguson police officer told The Associated Press they were not familiar with Williams.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297458666742_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-16 04:27:43</td><td><a href='http://www.torontosun.com/2015/03/15/arrest-made-in-shooting-of-ferguson-missouri-police-officers'>site</a></td><td>The gunfire rang out just after midnight at the end of a rally to call for sweeping reforms in Ferguson, where an unarmed black 18-year-old was shot to death by a white officer last summer.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-26 21:39:04</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3013664/Settlement-reached-lawsuit-filed-Ferguson-protesters.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Protesters sued over the "unified command" that handled security at the protests sparked by the fatal police shooting of 18-year-old Michael Brown in Ferguson in August.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-30 19:56:49</td><td><a href='http://news.yahoo.com/4-journalists-arrested-during-ferguson-protests-sue-police-195649855.html'>site</a></td><td>4 journalists arrested during Ferguson protests sue police</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-30 19:57:48</td><td><a href='http://abcnews.go.com/US/wireStory/journalists-arrested-ferguson-protests-sue-police-30015904'>site</a></td><td>Four journalists arrested during last summer's protests over the Ferguson shooting death of Michael Brown are suing St. Louis County's police department for civil rights violations and unlawful detention.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-02 18:14:59</td><td><a href='http://news.yahoo.com/2-men-accused-bomb-plot-during-ferguson-protests-181459356.html'>site</a></td><td>The indictment says the men were arrested in November, about a week before prosecutors announced they wouldn't charge the white Ferguson police officer who last summer fatally shot 18-year-old Michael Brown, who was black and unarmed.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/k/b/2/image.related.articleLeadwide.620x349.1mer7m.png/1428207648342.jpg'></td><td>2015-04-05 03:18:15</td><td><a href='http://www.smh.com.au/world/released-ferguson-police-emails-likened-welfare-recipients-to-dogs-20150405-1mer7m.html'>site</a></td><td>A protester wears tape over her mouth during a silent demonstration against what they say is police brutality after the Ferguson shooting of Michael Brown, an unarmed black teenager, by a white police officer, in March.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/k/b/2/image.related.articleLeadwide.620x349.1mer7m.png/1426395787685.jpg'></td><td>2015-04-05 03:18:15</td><td><a href='http://www.brisbanetimes.com.au/world/ferguson-releases-racist-emails-cited-by-justice-department-20150405-1mer7m.html'>site</a></td><td>A protester demonstrates against police brutality after the Ferguson shooting of Michael Brown.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-07 11:39:39</td><td><a href='https://news.yahoo.com/race-reforms-eyed-ferguson-missouri-voters-head-polls-111419103.html'>site</a></td><td>Community activists say a lack of adequate representation for African-Americans in Ferguson has contributed to a range of problems that were exposed when a white police officer killed an unarmed black teenager in August.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-23 05:39:14</td><td><a href='http://abcnews.go.com/US/wireStory/civil-lawsuit-set-filed-michael-browns-death-30519005'>site</a></td><td>Lawyers for the parents of an unarmed, black 18-year-old who was fatally shot by a white police officer in a St. Louis suburb say they plan to file a civil lawsuit Thursday against the city of Ferguson.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-23 11:32:53</td><td><a href='http://news.yahoo.com/timeline-events-fatal-police-shooting-ferguson-113253427.html'>site</a></td><td>He places the Ferguson Police Department in charge of security in Ferguson, with orders to work as a unified command with St. Louis city police and the Missouri Highway Patrol.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-24 17:14:51</td><td><a href='http://news.yahoo.com/man-pleads-guilty-attempted-arson-during-ferguson-riots-171451111.html'>site</a></td><td>The riots followed the announcement that a state grand jury would not indict Ferguson police officer Darren Wilson, who fatally shot Michael Brown in a confrontation on Aug. 9.</td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150429&i=107378726&w=240&r=107378726-1&t=2'></td><td>2015-04-29 04:55:11</td><td><a href='http://www.reuters.com/article/2015/04/29/us-usa-police-baltimore-idUSKBN0NI1N720150429?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Police in Ferguson, Missouri, were widely criticized last year for an aggressive, militarized response to demonstrations and rioting after a white police officer shot dead an unarmed black teenager.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-05-05 17:01:19</td><td><a href='http://www.sfgate.com/news/us/article/Ferguson-mulls-replacing-mid-street-shrine-to-6243441.php'>site</a></td><td><table><tr><td>Ferguson mulls replacing mid-street shrine to Michael Brown</td></tr><tr><td>(AP) - Leaders of the St. Louis suburb of Ferguson, Missouri, are considering removing or replacing a makeshift shrine to Michael Brown that has lined the middle of the street where he was killed since last summer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-05-05 19:14:38</td><td><a href='http://news.yahoo.com/ferguson-mulls-replacing-mid-street-shrine-michael-brown-170128393.html'>site</a></td><td>(AP) - To some, a makeshift shrine in the middle of the Ferguson street where Michael Brown was killed last summer is a hallowed symbol of a new civil rights movement over race and policing.</td></tr>
+</table></body></html>

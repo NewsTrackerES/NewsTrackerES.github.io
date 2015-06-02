@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 09:10:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11437579&ref=rss'>site</a></td><td>Mexico brothers lose final death sentence appeal in Malaysia</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/_aMiUtp3a_6jOG11M5vKfw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e3fd2aa6314a7812740f6a7067007dbb.jpg'></td><td>2015-04-23 09:47:12</td><td><a href='http://news.yahoo.com/mexico-brothers-lose-final-death-sentence-appeal-malaysia-090422810.html'>site</a></td><td>They worked making and selling bricks in Mexico, and their family said they left for a job opportunity abroad.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 13:18:43</td><td><a href='http://www.cbc.ca/news/business/mcewen-mining-says-armed-robbers-stole-7-000-ounces-of-gold-from-their-mexican-mine-1.3024579?cmp=rss'>site</a></td><td>The Toronto-based company has operations in Mexico, Nevada and Argentina.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:47:35</td><td></td><td><a href='mexico_120_121.html'>CULIACAN, Mexico (AP) - The director of the mining company robbed of $8.5 million in gold in Mexico has made the rare revelation it has a "good relationship" with area drug traffickers. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 19:26:34</td><td><a href='http://www.startribune.com/world/299351941.html'>site</a></td><td>It is the third hit against mining interests in Mexico in recent months.</td></tr>
 </table></body></html>

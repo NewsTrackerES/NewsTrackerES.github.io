@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 19:30:58</td><td><a href='http://news.yahoo.com/russia-slams-ukrainian-law-banning-communist-era-symbols-193058244.html'>site</a></td><td><table><tr><td>MOSCOW (AP) - The Russian Foreign Ministry has denounced Ukraine for new laws that ban symbols of the former Communist regime and recognize partisans who fought against the Red Army as freedom-fighters.</td></tr><tr><td>A ministry statement said Friday that the laws "match the distorted ideas that are being propagated by the incumbent authorities in Ukraine" and that they are a pretext for "introducing totalitarian methods to liquidate unsuitable parties."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 10:09:21</td><td></td><td><a href='ukraine_40_41.html'>KIEV, Ukraine (AP) - A leading politician in Ukraine has accused the country's richest man of inciting public unrest to ensure the government steers clear of reforms that would hurt his businesses. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 12:42:06</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19363761.html#storylink=rss'>site</a></td><td><table><tr><td>The concern among supporters of Ukraine's coal industry is that cheaper foreign fuel could undermine the viability of domestic production.</td></tr><tr><td>Akhmetov's DTEK holding company controls the bulk of Ukraine's coal industry, much of which is located in conflict-hit areas in the east.</td></tr><tr><td>DTEK has since its creation in 2006 steadily acquired large chunks of Ukraine's power and coal production sector.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 12:42:06</td><td><a href='http://www.miamiherald.com/news/business/article19363761.html#storylink=rss'>site</a></td><td>DTEK described Nayyem's claims as an attempt to divert public attention from poor management of Ukraine's energy sector.</td></tr>
 </table></body></html>

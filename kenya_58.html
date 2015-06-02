@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/k/d/5/7/image.related.articleLeadwide.620x349.1mkd3z.png/1428927713112.jpg'></td><td>2015-04-13 12:22:02</td><td><a href='http://www.brisbanetimes.com.au/world/punishment-for-kenyan-gang-rapists-lifted-from-cutting-grass-to-15-years-jail-20150413-1mkd3z.html'>site</a></td><td>Rape is a serious problem in Kenya but is seldom taken seriously by the police, rights groups say.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 16:08:05</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3036824/Kenya-grass-cutter-gang-rapists-jailed-15-years.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Kenya 'grass cutter' gang rapists jailed for 15 years</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 07:15:06</td><td><a href='http://www.reuters.com/article/2015/05/05/us-kenya-attacks-idUSKBN0NQ0HR20150505?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>ISIOLO, Kenya (Reuters) - Suspected cattle rustlers ambushed and killed at least 45 people in a village in northwest Kenya, then drove away hundreds of livestock, a regional administrator said.</td></tr><tr><td>At least 14 people also died in a fight between two pastoralist communities on Monday, on the borders of Kenya's northern Samburu and Marsabit counties, the regional manager for the Kenya Red Cross, Mugambi Gitonga, said.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/03/26/7878072/3/square_gallery_thumb.jpg'></td><td>2015-04-26 13:10:17</td><td><a href='http://www.sfgate.com/news/crime/article/Freddie-Gray-protests-turn-violent-in-Baltimore-6224531.php'>site</a></td><td><table><tr><td>Batts said he believes the "very violent agitators" are not from Baltimore.</td></tr><tr><td>"Unfortunately a small group of agitators turned what was otherwise a peaceful demonstration into a violent protest. This is something that's unacceptable to me and everyone who lives in Baltimore," she said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/fn2/feeds/Associated Press/2015/04/25/876/493/Suspect Dies Baltimore-1.jpg?ve=1&tl=1'></td><td>2015-04-25 06:16:11</td><td><a href='http://www.foxnews.com/us/2015/04/25/protesters-plan-to-shut-down-baltimore-as-questions-remain-unanswered-about/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>BALTIMORE - Protesters are promising their biggest march yet a day after the Baltimore Police Department acknowledged that it failed to get Freddie Gray the medical attention he needed after his arrest.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/body_image/public/20150426001125937807-original.jpg?itok=pdM8w0GG&amp;mtime=1430002915'></td><td>2015-04-26 00:02:27</td><td><a href='http://www.sbs.com.au/news/article/2015/04/26/thousands-march-baltimore-protest-freddie-grays-death-custody'>site</a></td><td>Saturday's protests came a day after Baltimore's police commissioner conceded that police had failed to provide Gray with timely medical attention for a spinal injury he had suffered sometime after he was apprehended and put inside a transport van.</td></tr>
 </table></body></html>

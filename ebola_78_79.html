@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31099092.ece/76ae1/ALTERNATES/h342/PANews%20BT_P-43096483-5197-4b29-b890-4bc8cc33795d_I1.jpg'></td><td>2015-03-27 09:31:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/lockdown-bid-to-stamp-out-ebola-31099093.html'>site</a></td><td><table><tr><td>Sierra Leone's six million people are being confined to their homes for three days from today as the West African nation resorts again to a sweeping shutdown in a final push to stamp out Ebola.</td></tr><tr><td>Thousands of teams will fan out around the country, knocking on doors to remind people how Ebola is spread and how to prevent it.</td></tr><tr><td>Alfred Palo Conteh, the head of Sierra Leone's Ebola response, said a major goal of the campaign is to fight complacency, more than a year after the outbreak was declared in West Africa.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 10:12:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/27/sierra-leoneans-stay-home-in-final-push-to-stop-ebola'>site</a></td><td><table><tr><td>Sierra Leoneans to stay home in final push to stop Ebola</td></tr><tr><td>Ebola has infected nearly 12,000 people in Sierra Leone, more than in any other country, and it has resorted to some of the most stringent measures to stop the disease.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-27 17:51:04</td><td><a href='http://www.charlotteobserver.com/living/health-family/article16457591.html#storylink=rss'>site</a></td><td>A Sierra Leone Policeman guards a road block forming part of a three day country wide lockdown on movement of people due to the Ebola virus in the city of Freetown, Sierra Leone, Friday, March.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:01:10</td><td><a href='http://www.reuters.com/article/2015/04/16/us-health-ebola-guinea-idUSKBN0N71TO20150416?feedType=RSS&feedName=healthNews'>site</a></td><td><table><tr><td>Sakoba Keita, national coordinator for the fight against Ebola in the West African country, said authorities had also detected 10 suspicious deaths in the community but only one of these had been confirmed as Ebola.</td></tr><tr><td>The WHO said that 17 confirmed Ebola cases had been detected in Forecariah in the week to April 12.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/17/11/27A8DFA100000578-0-image-m-83_1429266918131.jpg'></td><td>2015-04-16 15:02:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3042024/Guinea-finds-nine-new-Ebola-cases-near-border-Sierra-Leone.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Authorities launched a four day, door-to-door campaign in Forecariah on April 12 to improve community participation in reporting suspected cases and as part of an emergency 45-day drive to tackle Ebola in the west of the country.</td></tr>
 </table></body></html>

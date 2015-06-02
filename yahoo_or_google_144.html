@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/90vL.pT3tixz5ytrg1mukg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3MTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201503271433524291254'></td><td>2015-04-02 17:24:14</td><td><a href='http://sports.yahoo.com/news/rcr-appeals-penalty-against-newmans-team-tire-bleeding-171129724--nascar.html'>site</a></td><td>RCR appeals penalty against Newman's team for tire bleeding (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='https://s.yimg.com/bt/api/res/1.2/gfitmyr.8s3sLPxs.twatw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504101414512617845'></td><td>2015-04-16 20:43:16</td><td><a href='https://sports.yahoo.com/news/appeals-panel-rules-rcr-intentionally-altered-newmans-tires-204316049--nascar.html'>site</a></td><td>Appeals panel rules RCR intentionally altered Newman's tires (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 17:16:18</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009760/US-STOCKS-Wall-St-near-unchanged-mark-Nasdaq-Google-lift.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>US STOCKS-Wall St near unchanged mark; Nasdaq up on Google lift</td></tr><tr><td>The Nasdaq outperformed other major indexes, boosted by a 2.6 percent gain in Google shares to $579.94.</td></tr></table></td></tr>
 </table></body></html>

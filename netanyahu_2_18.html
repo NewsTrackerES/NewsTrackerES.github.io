@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.2963883.1424382394!/cpImage/httpImage/image.jpg_gen/derivatives/original_220/benjamin-netanyahu.jpg'></td><td>2015-02-19 21:49:41</td><td><a href='http://www.cbc.ca/news/world/netanyahu-israel-knows-details-of-proposed-u-s-iran-deal-1.2963848?cmp=rss'>site</a></td><td>Benjamin Netanyahu's remarks come a day after the Obama administration said it is keeping some specifics from Israel because it fears the close U.S. ally has leaked sensitive information to try to scuttle the talks - and will continue to do so.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 22:40:44</td><td><a href='http://www.cbc.ca/news/world/white-house-seeks-to-blunt-netanyahu-address-to-congress-1.2965531?cmp=rss'>site</a></td><td>The administration has already ruled out meetings between Netanyahu and Obama, saying it would be inappropriate for the two to meet so close to Israel's March 17 elections.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://stmedia.startribune.com/designimages/btn_close.png'></td><td>2015-03-24 22:40:42</td><td><a href='http://www.startribune.com/politics/297451211.html'>site</a></td><td>The vibe between Netanyahu and Obama has never been one of close friends.</td></tr>
+</table></body></html>

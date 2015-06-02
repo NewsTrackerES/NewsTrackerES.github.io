@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150330&t=2&i=1036555438&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB2T0KP'></td><td>2015-03-30 13:50:44</td><td><a href='http://www.reuters.com/article/2015/03/30/us-usa-court-obamacare-idUSKBN0MQ1EU20150330?feedType=RSS&feedName=domesticNews'>site</a></td><td>U.S. Supreme Court rejects Obamacare 'death panel' challenge</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 14:07:36</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3018138/U-S-Supreme-Court-rejects-Obamacare-death-panel-challenge.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The court's action in an unsigned order was a victory for Obama administration, which has faced a barrage of legal challenges to the 2010 Affordable Care Act, often called Obamacare.</td></tr><tr><td>The court is currently weighing a separate case challenging health insurance subsidies that are key to Obamacare's implementation.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 00:30:28</td><td><a href='http://www.cbsnews.com/videos/5-years-of-obamacare/'>site</a></td><td>5 years of Obamacare</td></tr>
 </table></body></html>

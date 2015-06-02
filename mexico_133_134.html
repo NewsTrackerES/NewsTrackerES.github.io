@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td><a href='http://abcnews.go.com/US/wireStory/mexico-lobbying-storage-site-nuclear-waste-30599466'>site</a></td><td><table><tr><td>New Mexico Lobbying to Be Storage Site for Nuclear Waste</td></tr><tr><td>New Mexico is touting a rural area in the southeastern part of the state as an interim storage site for the country's high-level nuclear waste, according to a letter issued by Gov. Susana Martinez earlier this month.</td></tr><tr><td>Others, however, have reservations about opening New Mexico to radioactive waste.</td></tr><tr><td>New Mexico is not the only state competing to be the interim dumping ground for nuclear waste.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/840/news/world/article24589846.ece/ALTERNATES/w220/web-mexico-tornado-0525'></td><td>2015-05-25 15:47:52</td><td><a href='http://www.theglobeandmail.com/news/world/tornado-kills-10-people-in-mexican-city-on-border-with-texas/article24589483/?cmpid=rss1'>site</a></td><td>A tornado raged through a Mexico border city early Monday, destroying homes, flinging cars like matchsticks and ripping an infant from its mother's arms.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/K8RzxmpP4CfhV5XkZ2mF9A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/85b8cd4a31286d17770f6a706700c2d9.jpg'></td><td>2015-05-25 19:01:01</td><td><a href='http://news.yahoo.com/latest-weather-more-rain-store-memorial-day-061533025.html'>site</a></td><td>A tornado raged through the northern Mexico border city of Ciudad Acuna early Monday, killing at least 10 people, destroying homes and upending cars and other vehicles.</td></tr>
 </table></body></html>

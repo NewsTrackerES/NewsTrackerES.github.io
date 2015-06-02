@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 06:00:58</td><td><a href='http://www.utsandiego.com/news/2015/mar/23/nusra-front-quietly-rises-in-syria-as-islamic/'>site</a></td><td>Nusra Front quietly rises in Syria as Islamic State targeted</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/31/31/7706210/3/square_gallery_thumb.jpg'></td><td>2015-03-24 06:00:58</td><td><a href='http://www.sfgate.com/news/world/article/Nusra-Front-quietly-rises-in-Syria-as-Islamic-6154315.php'>site</a></td><td>The Islamic State group helped create the Nusra Front, providing financing, manpower and military hardware in 2012.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s2.reutersmedia.net/resources/r/?d=20150402&i=106282824&w=240&r=106282824-1&t=2'></td><td>2015-04-02 04:11:52</td><td><a href='http://www.reuters.com/article/2015/04/02/us-mideast-crisis-syria-idUSKBN0MS50S20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Mirroring the way Islamic State has grown elsewhere in Syria, its fighters seized control of areas of the camp from other insurgents, helped by rebels from the rival al Qaeda-linked Nusra Front who switched sides, a political activist in the area said.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 15:01:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3030549/Islamic-State-bombs-target-Syria-rivals-kill-31-monitors.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Insurgent groups including the Nusra Front took up arms against Islamic State early last year.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-05 15:44:57</td><td><a href='http://www.foxnews.com/world/2015/05/05/hezbollah-fighters-capture-syrian-village-near-border-with-lebanon-from-islamic/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>Meanwhile, the video released by Nusra showed the seven men who are among some 20 Lebanese soldiers and police officers who have been held captive by the Nusra Front and the Islamic State group since August.</td></tr>
+</table></body></html>

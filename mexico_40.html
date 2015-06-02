@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 04:01:02</td><td><a href='http://www.utsandiego.com/news/2015/may/16/movie-shot-in-mexico-city-takes-on-trotskys/'>site</a></td><td>MEXICO CITY (AP) - It's a tale of love, betrayal and history's most famous murder by ice pick.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-17 04:04:25</td><td></td><td><a href='mexico_40_41.html'>In this May 12, 2015 photo, an actor listens to instructions on the set of the movie "El Elegido," or "The Chosen," a film about Trotsky's assassination, in Mexico City. (6)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 19:01:22</td><td><a href='http://abcnews.go.com/International/wireStory/mexico-arrests-suspect-forced-prostitution-ring-30707907'>site</a></td><td>Ramirez-Granados was allegedly part of a family group that tricked, threatened, beat and abused at least 25 women from Mexico to force them to work as prostitutes.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 19:05:13</td><td></td><td><a href='mexico_40_41.html'>MEXICO CITY (AP) " U.S. officials say they have joined with Mexican authorities to arrest one of the leaders of a forced-prostitution ring that operated in the New York City area. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 19:06:12</td><td><a href='http://www.startribune.com/world/301922121.html'>site</a></td><td>U.S. Immigration and Customs Enforcement said Thursday that Paulino Ramirez-Granados had been arrested in the small town of Tenancingo in central Mexico.</td></tr>
 </table></body></html>

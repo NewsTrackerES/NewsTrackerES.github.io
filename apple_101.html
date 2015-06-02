@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td></td><td>2015-03-06 14:45:53</td><td><a href='http://www.startribune.com/nation/295337251.html'>site</a></td><td>Apple rose 1 percent early Friday after it was announced that the company would be joining the Dow Jones industrial average, replacing AT&T.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 15:05:03</td><td></td><td><a href='apple_101_102.html'>Apple trades at 14.3 times forward 12-month earnings, while the S&P 500 trades at 16.7 times, according to Thomson Reuters StarMine data. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 16:13:10</td><td></td><td><a href='apple_101_103.html'>NEW YORK (AP) - U.S. stocks are barely higher at midday as investors look ahead to Apple's results later today and a meeting by the Federal Reserve on interest rates. (8)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-28 20:34:45</td><td></td><td><a href='apple_101_104.html'>(Reuters) - The Dow and S&P 500 ended a volatile session higher on Tuesday, helped by strong earnings from Merck and gains in IBM after it boosted its dividend, while the Nasdaq fell with Apple. (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-28 20:34:45</td><td><a href='http://finance.yahoo.com/news/stock-futures-down-ahead-fed-112905827.html'>site</a></td><td><table><tr><td>Apple (AAPL.O) swung between gains and losses a day after reporting results.</td></tr><tr><td>"Apple's numbers were phenomenal, but yet the stock is down," he added.</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-30 17:28:58</td><td></td><td><a href='apple_101_105.html'>April 30 (Reuters) - Wall Street was lower in afternoon trading on Thursday as Apple weighed on major indexes and investors digested a mixed batch of economic data. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/01/06/27F2755800000578-3063192-image-a-118_1430456412880.jpg'></td><td>2015-05-01 09:13:42</td><td><a href='http://www.dailymail.co.uk/news/article-3063192/Dark-tattoos-daunt-Apple-Watch.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>'Permanent or temporary changes to your skin, such as some tattoos, can also impact heart rate sensor performance,' Apple said.</td></tr>
 </table></body></html>

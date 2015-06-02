@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone vanuatu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/14/77/7655363/5/square_gallery_thumb.jpg'></td><td>2015-03-14 05:01:22</td><td><a href='http://www.sfgate.com/news/world/article/Small-Pacific-nation-of-Vanuatu-braces-for-strong-6131676.php'>site</a></td><td>In this photo provided by non-governmental organization 350.org, debris is scattered over a building in Port Vila, Vanuatu, Saturday, March 14, 2015, in the aftermath of Cyclone Pam.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/2855/688f0c130c814a37b961d968b07aff6e.jpg'></td><td>2015-03-14 20:26:04</td><td><a href='http://www.news24.com/World/News/Britain-donates-2m-to-cyclone-struck-Vanuatu-20150314'>site</a></td><td>Residents look through storm damage caused by Cyclone Pam, in the Vanuatu capital of Port Vila.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/8/1/h/image.related.articleLeadwide.620x349.144bun.png/1426391249045.jpg'></td><td>2015-03-15 02:24:34</td><td><a href='http://www.brisbanetimes.com.au/environment/weather/cyclone-pam-death-toll-to-increase-significantly-in-vanuatu-20150315-144bun.html'>site</a></td><td>Residents look through the remains of a small shelter in Port Vila, the capital city of Vanuatu.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/17/31/7665218/3/square_gallery_thumb.jpg'></td><td>2015-03-17 06:59:21</td><td><a href='http://www.sfgate.com/news/world/article/Vanuatu-struggles-to-account-for-cyclone-damage-6136156.php'>site</a></td><td>Damage to houses in Port Vila, Vanuatu is seen from the air in the aftermath of Cyclone Pam Monday, March 16, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 07:02:50</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-2996620/Vanuatu-president-says-nation-start-anew-cyclone.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In this Monday, March 16, 2015 photo, clothes are seen laid out to dry as Adrian Banga surveys his destroyed house in Vanuatu's capital Port Vila.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 07:03:04</td><td><a href='http://www.charlotteobserver.com/living/health-family/article14547779.html#storylink=rss'>site</a></td><td>In this March 15, 2015 photo provided by UNICEF Pacific, a man works to recover from Cyclone Pam in Mele village, on the outskirts of the capital Port Vila, Vanuatu.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/2/i/z/o/image.related.articleLeadwide.620x349.1m2i1t.png/1426698611239.jpg'></td><td>2015-03-18 11:19:49</td><td><a href='http://www.brisbanetimes.com.au/world/vanuatu-after-cyclone-pam-risk-of-hunger-and-disease-rises-20150318-1m2i1t.html'>site</a></td><td>A young boy looks at the debris of his home, badly damaged by Cyclone Pam on the Vanuatu island of Tanna on March 18.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://a.abcnews.com/images/International/WireAP_43d3c72102d6499caf23e2b755578c30_16x9_992.jpg'></td><td>2015-03-20 16:01:01</td><td><a href='http://abcnews.go.com/International/wireStory/things-vanuatus-devastating-cyclone-29783834'>site</a></td><td>This aerial view of a small island in Vanuatu's north shows the extent to which the island has been denuded by Cyclone Pam, on Friday, March 20, 2015.</td></tr>
+</table></body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>mexico</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 19:01:35</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3029020/Attack-western-Mexico-leaves-police-officers-wounded.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Jalisco is home to a drug cartel known as "Jalisco New Generation," which experts say is now among Mexico's most powerful.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-23 03:46:05</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article21702333.html#storylink=rss'>site</a></td><td>Rubido said the suspects were members of "a criminal organization operating in Jalisco state," but did not mention the Jalisco New Generation, the drug cartel that dominates the area where the battle erupted and has grown rapidly in recent years to become one of Mexico's biggest organized crime groups.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-23 17:39:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/ct-mexico-shootout-20150522-story.html'>site</a></td><td>A federal official on Saturday said the area around the ranch has been a Jalisco New Generation stronghold in the last couple of years as the cartel has expanded outside of Jalisco and grown rapidly into one of Mexico's most powerful organized crime groups.</td></tr>
+</table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46772812,width-300,resizemode-4/Yarmuk-refugeeCamp-Damascus.jpg'></td><td>2015-04-01 13:44:23</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/IS-seizes-most-of-Yarmuk-refugee-camp-in-Damascus-PLO/articleshow/46772674.cms'>site</a></td><td>Militants from the Islamic State jihadist group seized control of most of the Yarmuk Palestinian refugee camp in southern Damascus Wednesday, a local Palestinian official told AFP.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-04 10:52:52</td><td><a href='http://www.reuters.com/article/2015/04/04/us-mideast-crisis-syria-yarmouk-idUSKBN0MV08520150404?feedType=RSS&feedName=worldNews'>site</a></td><td>Islamic State takes 90 percent of Damascus refugee camp: monitor</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-46806153,width-300,resizemode-4/Bashar-al-Assad-I.jpg'></td><td>2015-04-04 11:49:26</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Islamic-State-takes-90-percent-of-Damascus-refugee-camp/articleshow/46806129.cms'>site</a></td><td>BEIRUT: Islamic State has taken control of 90 percent of a Palestinian refugee camp on the Damascus outskirts where 18,000 civilians have suffered years of bombing, army siege and militia control, a monitoring group said on Saturday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-09 09:33:37</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/09/red-cross-calls-for-immediate-aid-for-syrias-yarmouk-camp'>site</a></td><td>The ICRC says emergency medical care is "urgently needed" for the estimated 18,000 people still inside the Yarmouk camp, which has been engulfed by fighting since Islamic State militants last week overran much of the sprawling camp.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://static.theglobeandmail.ca/7e5/news/world/article23854277.ece/ALTERNATES/w220/BEI505-Mideast+Syria+Fight-1.JPG'></td><td>2015-04-09 09:34:59</td><td><a href='http://www.theglobeandmail.com/news/world/red-cross-demands-access-to-islamic-state-held-palestinian-refugee-camp-in-syria/article23854278/?cmpid=rss1'>site</a></td><td>The International Committee of the Red Cross called on Thursday for immediate access to a Palestinian refugee camp in Syria which has largely been seized by Islamic State and where 18,000 people are caught up in fighting.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-12 12:01:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3035679/UN-calls-safe-passage-Damascus-refugee-camp-Islamic-State-attack.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>UN calls for safe passage from Damascus refugee camp under Islamic State attack</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,11 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-01 12:31:10</td><td><a href='http://abcnews.go.com/US/wireStory/baltimores-prosecutor-faces-big-test-months-job-30722227'>site</a></td><td>She accused him of being too cozy with officers and too out of touch with the citizens of Baltimore.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-28 08:43:46</td><td><a href='http://www.usnews.com/news/us/articles/2015/05/28/baltimore-residents-fearful-amid-rash-of-homicides'>site</a></td><td>Now West Baltimore residents worry they've been abandoned by the officers they once accused of harassing them.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/04/22/8f/33/2f4924e08bde48b29254dc3204d8f58f-4de84a75ecb4446f87bbdf28aafcdb9d-2.jpg'></td><td>2015-04-22 07:58:59</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/protesters-take-to-baltimore-streets-after-mans-de/nkzZc/'>site</a></td><td>Protesters take to Baltimore streets after man's death</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-22 22:53:08</td><td><a href='http://www.miamiherald.com/news/nation-world/article19203975.html#storylink=rss'>site</a></td><td>Protesters in Baltimore took to the streets in 2013 and 2014 over three other deaths in police custody.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/obnkuDQqjCZROhVXzBi7hA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/homerun/vox.com/db2732de9066d174a26f539ba0d515f3.cf.jpg'></td><td>2015-04-24 23:22:52</td><td><a href='http://news.yahoo.com/marchers-scuffle-baltimore-police-over-death-man-custody-004242803.html'>site</a></td><td><table><tr><td>More than 1,000 protesters are expected in Baltimore for a march from the site of his arrest to City Hall on Saturday, police said.</td></tr><tr><td>Unlike in Ferguson, where police turned to paramilitary tactics, donning riot helmets and vests and rolling out armored vehicles to confront protesters, Baltimore police have remained in patrol uniforms and given protesters a wide berth.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-25 06:16:11</td><td><a href='http://www.usnews.com/news/us/articles/2015/04/25/protesters-plan-to-shut-down-baltimore-as-questions-remain'>site</a></td><td>Protesters plan to 'shut down' Baltimore as questions remain</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-28 00:01:59</td><td><a href='http://www.cbsnews.com/videos/protesters-and-police-clash-in-baltimore/'>site</a></td><td>Protesters and police clash in Baltimore</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww4.hdnux.com/photos/36/10/56/7900043/3/square_gallery_thumb.jpg'></td><td>2015-04-30 05:45:14</td><td><a href='http://www.sfgate.com/news/us/article/Baltimore-death-sparks-protests-in-New-York-6232543.php'>site</a></td><td>The rally and march, held in support of Baltimore protesters angered by the death of a black man in police custody, was organized by Mass Action Against Police Brutality.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/05/01/6e/b7/6768e66455394bd08ade8de29cdc5e87-08677d41053a48a7badd3d7de846cf71-0.jpg'></td><td>2015-05-02 03:21:27</td><td><a href='http://www.daytondailynews.com/ap/ap/general/latest-on-may-day-marches-protests-planned-across-/nk7BG/'>site</a></td><td>About 1,000 protesters decrying police brutality marched in Manhattan at a May Day rally that took on a new message amid national outrage over a Baltimore man's death in police custody.</td></tr>
 </table></body></html>

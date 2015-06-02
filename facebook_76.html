@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:27:59</td><td><a href='http://www.utsandiego.com/news/2015/mar/24/dad-fugitive-son-afraid-his-facebook-trial/'>site</a></td><td>Prosecutors say Ceglia added a page to a two-page contract he signed in 2003 with Facebook founder Mark Zuckerberg to make it seem he was entitled to be part owner of the Menlo Park, California social media giant.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-24 16:30:37</td><td><a href='http://www.startribune.com/business/297400701.html'>site</a></td><td>Carmine Ceglia said his son found it "really upsetting" when he was told lawyers hired by Facebook were working with prosecutors on the criminal case against him.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 20:32:27</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11412140&ref=rss'>site</a></td><td><table><tr><td>Nonetheless, Facebook's goal of connecting people globally is "pretty broad," Zuckerberg said.</td></tr><tr><td>Facebook is also trying to get more people in developing countries online through its Internet.org push and developing its virtual-reality technology.</td></tr></table></td></tr>
 </table></body></html>

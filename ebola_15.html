@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 16:21:06</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3050847/Guinea-Ebola-health-team-killers-jailed-life.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Guinea Ebola health team killers jailed for life</td></tr><tr><td>Eleven people have been sentenced to life in prison in Guinea for murdering eight Ebola workers, while another 15 have been acquitted, judicial sources told AFP on Wednesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 09:21:17</td><td></td><td><a href='ebola_15_16.html'>It found that 28 countries were worse off than Liberia, which has seen the most deaths from the Ebola epidemic that began in December 2013. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/34/77/21/7599205/5/square_gallery_thumb.jpg'></td><td>2015-03-03 09:21:17</td><td><a href='http://www.sfgate.com/news/medical/article/Report-As-Ebola-wanes-other-countries-remain-6111635.php'>site</a></td><td><table><tr><td>Report: As Ebola wanes, other countries remain vulnerable</td></tr><tr><td>Impoverished countries like Chad know the only way to stay Ebola-free is to keep any infected people out.</td></tr><tr><td>The report said only Somalia is worse prepared than Chad for an epidemic such as Ebola.</td></tr></table></td></tr>
 </table></body></html>

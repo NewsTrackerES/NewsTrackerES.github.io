@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>apple tv</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 02:18:01</td><td></td><td><a href='apple_tv_1.html'>The service will not offer NBC broadcast network and cable channels such as USA and Bravo, after a fallout between Apple and Comcast, parent of NBC and CNBC, the report said. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 22:03:22</td><td></td><td><a href='apple_tv_0.html'>"Apple occupies 13 percent of spending in the smartphone category, while generating 40 percent of the buzz garnered from TV ads", said Sean Muller, CEO of iSpot.tv. (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 02:18:01</td><td></td><td><a href='apple_tv_6.html'>The service will not offer NBC broadcast network and cable channels such as USA and Bravo, after a fallout between Apple and Comcast, parent of NBC and CNBC, the report said. (6)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-17 22:38:28</td><td></td><td><a href='apple_tv_0.html'>Last week, Apple dropped the price of the Apple TV from $99 to $69. (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-18 17:33:49</td><td></td><td><a href='apple_tv_7.html'>You'll need a smart TV with the right apps included or a streaming device such as Roku, Apple TV, Xbox or PlayStation. (1)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-18 21:26:52</td><td></td><td><a href='apple_tv_5.html'>The Apple TV set is coming. (1)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-04-07 15:50:00</td><td></td><td><a href='apple_tv_3.html'>HBO Now available ? now on Apple TV (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 22:03:22</td><td></td><td><a href='apple_tv_4.html'>"Apple occupies 13 percent of spending in the smartphone category, while generating 40 percent of the buzz garnered from TV ads", said Sean Muller, CEO of iSpot.tv. (4)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 11:11:35</td><td></td><td><a href='apple_tv_1.html'>(Reuters) - Apple Inc (AAPL.O) is likely to quickly ramp production of the Apple Watch after strong pre-orders outstripped limited supply in the first weekend following its launch, some Wall Street analysts said. (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-05 12:59:42</td><td></td><td><a href='apple_tv_2.html'>The new Apple TV may feature a redesigned remote with a touchpad (1)</a></td></tr>
 </table></body></html>

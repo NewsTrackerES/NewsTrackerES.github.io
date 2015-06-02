@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>cyclone or volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 15:28:40</td><td></td><td><a href='cyclone_or_volcano_0_2_3.html'>SANTIAGO - Volcano Calbuco in southern Chile that erupted unexpectedly on Wednesday was still pouring ash into the sky on Thursday, forcing the cancellation of flights from nearby towns in both Chile and neighbouring Argentina. (49)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 05:05:24</td><td></td><td><a href='cyclone_or_volcano_0_2_4.html'>The head of the National Mining and Geology Service said the volcano's eruptive process could last weeks and even months and warned that a third eruption was possible. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/00/15/7865208/5/square_gallery_thumb.jpg'></td><td>2015-04-23 13:33:03</td><td><a href='http://www.sfgate.com/news/world/article/Calbuco-volcano-erupts-anew-ash-causing-concern-6218958.php'>site</a></td><td>The Calbuco volcano is seen erupting from Puerto Varas, Chile, Wednesday, April 22, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/23/04/27E2BBFF00000578-0-image-m-72_1429758660252.jpg'></td><td>2015-04-23 18:02:39</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3052318/Calbuco-volcano-erupts-anew-ash-causing-concern.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A bus drives along an ash covered road, caused by the eruption of Chile's Calbuco volcano in Villa La Angostura, in southern Argentina, Thursday, April 23, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/23/15/27E7526D00000578-0-image-m-16_1429798227254.jpg'></td><td>2015-04-23 23:14:00</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3052318/Calbuco-volcano-erupts-anew-ash-causing-concern.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Men remove ash from a building's roof, left by the Calbuco volcano, in Ensenada, Chile, Thursday, April 23, 2015.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/36/00/15/7865210/7/square_gallery_thumb.jpg'></td><td>2015-04-24 02:17:26</td><td><a href='http://www.sfgate.com/news/science/article/Calbuco-volcano-erupts-anew-ash-causing-concern-6218958.php'>site</a></td><td>A woman holds a mask to her face as she stands with her belongings before evacuating the town of Ensenada, Chile after the Calbuco volcano erupted, Thursday, April 23, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/27/02/280AC48900000578-0-image-m-85_1430098005160.jpg'></td><td>2015-04-27 05:05:24</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3056944/Soldiers-clear-ash-Chiles-Calbuco-volcano.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Soldiers help clean the yard of a house covered by volcanic ash from the Calbuco volcano eruption, in Puerto Varas, Chile, Sunday, April 26, 2015.</td></tr>
 </table></body></html>

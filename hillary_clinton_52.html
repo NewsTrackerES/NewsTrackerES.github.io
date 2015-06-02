@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/32/45/7973238/7/landscape_32.jpg'></td><td>2015-05-14 21:02:32</td><td><a href='http://www.sfgate.com/news/politics/article/Hillary-Clinton-woos-donors-visiting-campaign-6264246.php'>site</a></td><td>Hillary Clinton woos donors visiting campaign headquarters</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 23:55:11</td><td><a href='http://www.miamiherald.com/news/politics-government/article21042066.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton promised her most loyal supporters Thursday she will present a more authentic version of herself during her 2016 campaign for president than she did eight years ago.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 01:28:00</td><td><a href='http://www.chicagotribune.com/news/chi-hillary-clintons-2016-campaign-its-not-about-me-its-about-you-20150412-story.html?track=rss'>site</a></td><td><table><tr><td>If Hillary Rodham Clinton gets her way, there will be stark differences between her failed 2008 run for president and the White House campaign she embarked upon Sunday -- and not just the end result.</td></tr><tr><td>Hillary Rodham Clinton jumped back into presidential politics on Sunday, making a much-awaited announcement she will again seek the White House with a promise to serve as the "champion" of everyday Americans.</td></tr></table></td></tr>
 </table></body></html>

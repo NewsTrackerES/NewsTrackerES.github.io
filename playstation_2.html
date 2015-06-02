@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>playstation</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 09:01:54</td><td><a href='http://www.usatoday.com/story/tech/columnist/baig/2015/03/30/sony-playstation-music-launches-with-spotify/70649922/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td><table><tr><td>Sony's PlayStation Music launches with Spotify</td></tr><tr><td>You can also use the PlayStation controller.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-30 09:03:15</td><td></td><td><a href='playstation_2_4.html'>Spotify is coming to the PlayStation, replacing Sony's own Music Unlimited service, as the company continues to expand the game console into an entertainment hub beyond video games. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-30 09:03:15</td><td></td><td><a href='playstation_2_3.html'>Spotify hits the PlayStation 3 and 4 on Monday, with a new app adapted for large television screens. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-30 09:03:15</td><td><a href='http://abcnews.go.com/Technology/wireStory/playstation-spotify-replacing-sonys-music-service-30000661'>site</a></td><td>Just two weeks ago, Sony launched an online television service, PlayStation Vue, offering more than 50 over-the-air and cable channels starting at $50 a month.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 14:07:30</td><td><a href='http://www.cbsnews.com/news/spotify-comes-to-playstation/'>site</a></td><td>PlayStation users have long been able to watch DVDs and stream Netflix, Amazon and YouTube shows with the console.</td></tr>
 </table></body></html>

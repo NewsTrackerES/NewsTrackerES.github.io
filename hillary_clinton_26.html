@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 09:02:52</td><td><a href='http://news.yahoo.com/china-peeved-hillary-clinton-denounces-womens-detention-082932184.html'>site</a></td><td>BEIJING (Reuters) - China called on other countries on Tuesday to respect its judicial sovereignty after U.S. former Secretary of State Hillary Clinton denounced as "inexcusable" the detention of five women activists.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 09:03:08</td><td><a href='http://www.theglobeandmail.com/news/world/china-peeved-as-hillary-clinton-denounces-womens-detention/article23818901/?cmpid=rss1'>site</a></td><td>China peeved as Hillary Clinton denounces women?s detention</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/03/25/f78e68558754c40d710f6a706700e528_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-03-25 15:56:18</td><td><a href='http://www.utsandiego.com/news/2015/mar/25/preparing-for-2016-campaign-hillary-clinton/'>site</a></td><td>Preparing for 2016 campaign, Hillary Clinton embracing Obama</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 15:57:23</td><td><a href='http://abcnews.go.com/Politics/wireStory/preparing-2016-campaign-hillary-clinton-embracing-obama-29897618'>site</a></td><td>Hillary and Bill Clinton know firsthand what it's like to be in the White House when an ally is running for the Oval Office.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 16:02:52</td><td></td><td><a href='hillary_clinton_26_27.html'>12, 2012 file photo, President Barack Obama, accompanied by then-Secretary of State Hillary Rodham Clinton, speaks in the Rose Garden of the White House in Washington. (2)</a></td></tr>
 </table></body></html>

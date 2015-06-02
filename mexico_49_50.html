@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 03:22:16</td><td></td><td><a href='mexico_49_50_52.html'>It was the second killing of a candidate in western Mexico this month heading into the country's midterm elections June 7. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 03:22:16</td><td></td><td><a href='mexico_49_50_51.html'>MEXICO CITY - A Mexican political party says one of its members running for mayor in a town in the restive state of Michoacan was shot to death during a political rally. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 03:50:12</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11433740&ref=rss'>site</a></td><td><table><tr><td>Morris scores in US 2-0 win over Mexico in friendly</td></tr><tr><td>SAN ANTONIO (AP) " Jordan Morris scored early in the second half and Juan Agudelo added his first international goal in four years as the United States downed Mexico 2-0 in an international friendly Wednesday.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 04:48:37</td><td><a href='http://www.sfgate.com/sports/article/Barcelona-gets-leg-up-on-Paris-Saint-Germain-6202645.php'>site</a></td><td>The 20-year-old Stanford sophomore scored his first international goal early in the second half, Juan Agudelo added his first international goal in four years, and the Americans dispatched Mexico 2-0 in an exhibition game Wednesday night.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-16 05:13:05</td><td><a href='http://www.charlotteobserver.com/sports/article18649746.html#storylink=rss'>site</a></td><td>U.S. players congratulate forward Juan Agudelo (17) on a goal during the second half of an international friendly soccer match against Mexico, Wednesday, April 15, 2015, in San Antonio.</td></tr>
 </table></body></html>

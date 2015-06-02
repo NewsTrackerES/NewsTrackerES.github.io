@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 20:11:29</td><td></td><td><a href='facebook_47_48.html'>Levi Charles Reardon of Great Falls was arrested on April 24, three weeks after an acquaintance pointed out his picture on the Great Falls/Cascade County Crimestoppers Facebook page and Reardon liked it. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-05-12 20:11:29</td><td><a href='http://www.usnews.com/news/offbeat/articles/2015/05/12/man-arrested-after-liking-mug-shot-on-facebook-posts-bond'>site</a></td><td>(AP) - A Montana man who was arrested after "liking" his mug shot on a Crimestoppers Facebook page has posted bond in a felony forgery case.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 21:14:33</td><td><a href='http://news.yahoo.com/facebook-posts-job-land-us-contractor-emirates-jail-210644583.html'>site</a></td><td>"I never even entertained the fact that I would wind up in prison out here for something I put on Facebook in the United States."</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 21:30:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11412190&ref=rss'>site</a></td><td><table><tr><td>Facebook posts about job land US contractor in Emirates jail</td></tr><tr><td>There was disagreement with his bosses about extending his leave to see a doctor, he said, and after a particularly unsatisfactory phone call with them, he took to a Facebook.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 10:23:00</td><td></td><td><a href='facebook_47_48.html'>DUBAI, United Arab Emirates (AP) - An American helicopter mechanic whose Facebook post complaining about his employer in the United Arab Emirates got him arrested said Tuesday he has been told the company is seeking to dismiss the charges against him. (4)</a></td></tr>
 </table></body></html>

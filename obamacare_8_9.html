@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>obamacare</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:48:29</td><td><a href='http://www.utsandiego.com/news/2015/apr/27/compromise-gop-budget-hikes-war-funds-targets/'>site</a></td><td>Compromise GOP budget hikes war funds, targets 'Obamacare'</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 21:22:20</td><td><a href='http://www.sfgate.com/news/politics/article/House-to-adopt-compromise-GOP-budget-targeting-6233993.php'>site</a></td><td>House to adopt compromise GOP budget targeting 'Obamacare'</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-05 22:10:49</td><td><a href='http://www.usnews.com/news/politics/articles/2015/05/05/senate-slated-to-vote-on-gop-budget-compromise'>site</a></td><td>Senate adopts GOP budget targeting 'Obamacare'</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150420&t=2&i=1041773530&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3J05K'></td><td>2015-04-20 05:29:35</td><td><a href='http://www.reuters.com/article/2015/04/20/us-usa-healthcare-republicans-idUSKBN0NB0BZ20150420?feedType=RSS&feedName=politicsNews'>site</a></td><td><table><tr><td>"It's not going to be like Obamacare, in my opinion," said Senate Finance Committee Chairman Orrin Hatch, whose plan includes a refundable tax credit for low-and middle-income Americans.</td></tr><tr><td>The refundable tax credits in both their plans would be available to those who pay little or no tax, similar to the Obamacare subsidies for low-income Americans.</td></tr></table></td></tr>
 </table></body></html>

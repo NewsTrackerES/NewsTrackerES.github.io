@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 18:26:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/google-backed-over-antimuslim-film-31232789.html'>site</a></td><td><table><tr><td>Google backed over anti-Muslim film</td></tr><tr><td>Google argued Garcia had no claim to the film because the film-maker wrote the dialogue, managed the production and dubbed over her lines.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-19 07:29:36</td><td><a href='http://www.utsandiego.com/news/2015/may/19/appellate-judges-side-with-google-in-anti-muslim/'>site</a></td><td>Appellate judges side with Google in anti-Muslim film case</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 10:37:37</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014439/Google-loses-appeal-bid-suing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Google loses appeal bid over suing</td></tr><tr><td>Google has lost a Court of Appeal bid to prevent British consumers having the right to sue it in the UK.</td></tr></table></td></tr>
 </table></body></html>

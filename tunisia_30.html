@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 18:01:30</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3027769/Tunisia-trial-deadly-ambush-suspects-adjourned.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The trial of 77 people in Tunisia charged with involvement in a jihadist attack that killed eight soldiers was adjourned Monday after the defence asked for more time to prepare.</td></tr><tr><td>If convicted, they could be sentenced to death, despite Tunisia no longer carrying out capital punishment.</td></tr><tr><td>Since the January 2011 revolution, Tunisia has experienced jihadist violence that has killed dozens of members of the security forces.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 12:45:38</td><td></td><td><a href='tunisia_30_31.html'>"(He) is a weapons smuggler ... he brought weapons for the Bardo Museum attackers from Libya to Tunisia before the date of the attack," the official, who asked not to be named, said. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-21 12:45:38</td><td><a href='http://www.reuters.com/article/2015/05/21/us-tunisia-security-idUSKBN0O61IM20150521?feedType=RSS&feedName=worldNews'>site</a></td><td>Tunisia has said it has arrested the great majority of those responsible for the attack, which it says was a cell of 23 militants with overlapping allegiances to a number of hardline Islamist groups.</td></tr>
 </table></body></html>

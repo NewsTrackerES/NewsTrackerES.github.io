@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-15 00:02:55</td><td><a href='http://nypost.com/2015/02/14/cease-fire-begins-in-ukraine-after-intense-fighting-persists/'>site</a></td><td>KIEV, Ukraine - The cease-fire period for fighting in Ukraine began one minute after midnight Sunday, but there are no immediate indications of whether either side in the conflict that has killed more than 5,300 people is observing it.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 14:03:14</td><td><a href='http://nypost.com/2015/02/20/ukraine-rebels-open-fire-russia-sending-tanks-despite-cease-fire/'>site</a></td><td>The war in eastern Ukraine has killed more than 5,600 people and forced over a million to flee their homes since fighting began in April, a month after Russia annexed Crimea.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 14:43:09</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/02/20/22246711.html?cid=rssnewsworld'>site</a></td><td>More than 5,600 people have been killed in fighting since mid-April last year, soon after Russia annexed Crimea from Ukraine following Yanukovich's overthrow.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 10:01:56</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3041526/Russia-says-U-S-forced-act-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Russia says U.S. forced it to act on Ukraine</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/1/k/c/i/image.related.articleLeadwide.620x349.ggyjc0.png/1431319431304.jpg'></td><td>2015-05-11 04:45:24</td><td><a href='http://www.brisbanetimes.com.au/world/ukraine-port-of-mariupol-braces-for-war-20150511-ggyjc0.html'>site</a></td><td>An industrial hub of half a million people, Mariupol sits on the fringe of Ukraine's year-long insurgency, which has killed more than 6000 people and ruined Russia's ties with its Cold War foes.</td></tr>
+</table></body></html>

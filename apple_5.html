@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:34:11</td><td><a href='http://www.reuters.com/article/2015/04/30/us-usa-apple-partnership-idUSKBN0NL1QK20150430?feedType=RSS&feedName=technologyNews'>site</a></td><td>Cook touted iPhone and iPad sales in Japan but notably made little mention of the Apple Watch, his first new product since taking over the company after Steve Jobs' death in 2011.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/news/876/493/apple2.jpg?ve=1&tl=1'></td><td>2015-04-30 13:36:56</td><td><a href='http://www.foxbusiness.com/industries/2015/04/30/apple-ibm-partner-with-japan-post-for-elderly-care/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>He touted the iPad as an integral tool for improving care of elderly family members and patients, and said Apple has seen a "significant uptake" of the iPhone and iPad in Japan.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/000a1464-642.jpg'></td><td>2015-04-28 06:34:20</td><td><a href='http://www.rte.ie/news/business/2015/0428/697232-apple-results/'>site</a></td><td>Apple gave no sales figures for its recently released Apple Watch, but did say the current quarter was off to "an exciting start".</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 07:09:25</td><td></td><td><a href='apple_5_6.html'>Apple's iPhone sales in China soared, increasing its revenue in the country 71 percent to $16.8 billion, although that was helped by gift-buying for Chinese New Year. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/yxxpwwTOa0Ik3RVgsgfdVA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSBUS_WRAPPER_H_LIVE_NEW/2015-04-27T203731Z_1_LYNXMPEB3Q0XA_RTROPTP_3_APPLE-IPHONE_original.jpg'></td><td>2015-04-28 07:09:25</td><td><a href='http://finance.yahoo.com/news/china-iphone-sales-boost-apple-051142782.html'>site</a></td><td><table><tr><td>(Reuters) - Apple Inc beat Wall Street's revenue and profit forecasts on Monday as it sold more iPhones in China than the United States for the first time, but the company gave no sales figures for its new Apple Watch.</td></tr><tr><td>Apple's big screen iPhone 6 and 6 Plus have been popular with customers worldwide, helping the company overtake rival Samsung in global smartphone sales last quarter.</td></tr></table></td></tr>
 </table></body></html>

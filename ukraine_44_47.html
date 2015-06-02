@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/OlF1P3EDwOZtPa1zo_LQCw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e6fbca96697332076e0f6a706700d5a9.jpg'></td><td>2015-02-16 13:42:56</td><td><a href='http://news.yahoo.com/eu-puts-19-more-individuals-ukraine-sanctions-list-092654204--finance.html'>site</a></td><td>There was a week's lapse in the publishing of the list because of the negotiations which led to an agreement between Ukraine and Russia last Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/5724160-3x2-340x227.jpg'></td><td>2015-02-20 10:27:22</td><td><a href='http://www.abc.net.au/news/2015-02-20/fighting-continuing-in-eastern-ukraine/6166680'>site</a></td><td>The foreign ministers of Russia, France, Germany and Ukraine will meet in Paris on Tuesday to discuss the conflict.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-09 09:13:15</td><td><a href='http://www.reuters.com/article/2015/04/09/us-ukraine-crisis-germany-idUSKBN0N00SV20150409?feedType=RSS&feedName=worldNews'>site</a></td><td>BERLIN (Reuters) - Germany hopes that the foreign ministers of France, Germany, Russia and Ukraine will meet in Berlin early next week to discuss the implementation of the Minsk ceasefire agreement, an official from the German foreign ministry said on Thursday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-13 09:26:00</td><td><a href='http://www.ctvnews.ca/world/fighting-picks-up-in-eastern-ukraine-after-weeks-of-calm-1.2324058'>site</a></td><td>Foreign policy chiefs from Russia, Ukraine, France and Germany are meeting to discuss the crisis in Ukraine later on Monday.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/bt/api/res/1.2/MbZqa0IC2PyJkrzt3BNnfg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/86e0bf8c96048b10730f6a7067004a93.jpg'></td><td>2015-04-13 15:17:45</td><td><a href='http://news.yahoo.com/german-fm-russias-return-g-8-depends-ukraine-151745400.html'>site</a></td><td><table><tr><td>German FM: Russia's return to G-8 depends on Ukraine deal</td></tr><tr><td>BERLIN (AP) - Germany's foreign minister says Russia's return to the top diplomatic table depends on the success of a peace initiative for Ukraine.</td></tr></table></td></tr>
+</table></body></html>

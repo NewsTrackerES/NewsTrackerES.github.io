@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 18:02:45</td><td></td><td><a href='ebola_90_91.html'>WASHINGTON (Reuters) - There is no sign the Ebola virus is mutating in an accelerated way that could make it more virulent or thwart vaccines or drugs under development despite some earlier fears to the contrary, researchers said on Thursday. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 18:02:45</td><td><a href='http://www.reuters.com/article/2015/03/26/us-health-ebola-mutation-idUSKBN0MM2J020150326?feedType=RSS&feedName=healthNews'>site</a></td><td>The biggest Ebola outbreak to date, centered in three West African countries, has killed more than 10,000 people but is showing signs of waning.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 12:55:53</td><td></td><td><a href='ebola_90_91.html'>As part of the same gene sequencing project, Ian Goodfellow from the University of Cambridge is in Sierra Leone working with the government there to make similar data on the Ebola virus available on virological.org as soon as possible. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 12:55:53</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3048749/Scientists-share-real-time-genetic-data-deadly-MERS-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>He plans to collect samples from Ebola patients, sequence them in a matter of hours and process the data to make the viral genome sequences in weeks -- a process that could take months if samples were to be bought back to Britain for analysis.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 15:04:16</td><td></td><td><a href='ebola_90_92.html'>LONDON - Genetic sequence data on two of the deadliest yet most poorly understood viruses are to be made available to researchers worldwide in real time as scientists seek to speed up understanding of Ebola and MERS infections. (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/22/102610869-coverimage.530x298.jpg?v=1429726086'></td><td>2015-04-22 18:20:00</td><td><a href='http://www.cnbc.com/id/102610850'>site</a></td><td>Facebook tests mobile calling app 'Hello'</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297691162601_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-22 19:15:54</td><td><a href='http://www.torontosun.com/2015/04/22/facebook-starts-testing-mobile-calling-app-hello'>site</a></td><td><table><tr><td>Facebook starts testing mobile calling app Hello</td></tr><tr><td>Facebook Inc said it started testing its mobile calling app Hello on Android, which allows users to connect with Facebook to see the identity and information about callers even if the number is not saved on the phone.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 18:00:25</td><td></td><td><a href='facebook_55_56.html'>NEW YORK - Facebook is pushing for higher pay and improved benefits for the janitors, cooks and other workers who support its employees. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 18:05:13</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11448382&ref=rss'>site</a></td><td>The world's largest online social network says it is implementing a set of new standards for its U.S.-based contractors who do a "substantial amount of work" with Facebook.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 19:03:55</td><td><a href='http://www.seattlepi.com/business/technology/article/Facebook-pushes-to-improve-benefits-pay-for-6261076.php'>site</a></td><td>Facebook had originally planned to announce the changes last Monday, as the standards are already in place for some workers.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 20:40:08</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article20851917.html#storylink=rss'>site</a></td><td><table><tr><td>Sheryl Sandberg, Facebook's chief operating officer, announced the changes in a blog post late Tuesday.</td></tr><tr><td>In Silicon Valley, where the wealth gap between tech industry luminaries and the workers who serve their lunches and clean their bathroom can be especially jarring, the movement has focused on tech giants like Apple, Google and Facebook.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.chron.com/img/hdn/share/fb_share_2.png'></td><td>2015-05-13 21:51:33</td><td><a href='http://www.chron.com/business/technology/article/Facebook-pushes-to-improve-benefits-pay-for-6261076.php'>site</a></td><td>" If Facebook can raise pay to $15, so can McDonald's."</td></tr>
 </table></body></html>

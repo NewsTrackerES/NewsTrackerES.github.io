@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 13:01:11</td><td><a href='http://www.foxbusiness.com/technology/2015/03/31/microsoft-makes-cheaper-version-surface-pro-3-with-smaller-screen-less-flexible/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td>Microsoft bills the Surface line as a laptop replacement when used with the cover.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 13:02:05</td><td><a href='http://www.seattlepi.com/business/technology/article/Microsoft-makes-cheaper-version-of-Surface-Pro-3-6170030.php'>site</a></td><td>The new Surface model is thinner and lighter, partly because it gets rid of the fan - similar to Apple's new MacBook laptop.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201440/SCCZEN_AP140110073339_140x93.jpg'></td><td>2015-04-08 02:05:00</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11429476&ref=rss'>site</a></td><td><table><tr><td>Microsoft pilot program aimed at adding people with autism to workforce</td></tr><tr><td>Microsoft is looking to recruit yet another type of diverse employee: The Redmond, Washington-based technology giant is piloting a program focused on hiring people with autism for full-time positions in the company's headquarters.</td></tr></table></td></tr>
 </table></body></html>

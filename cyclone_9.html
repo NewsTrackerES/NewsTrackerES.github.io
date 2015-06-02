@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 05:59:54</td><td></td><td><a href='cyclone_9_11.html'>While south-east Queensland and northern NSW have been hit by big storms in the past - including the "Great Gold Coast Cyclone" of February 1954 - it is likely such events were "hybrids or intense east coast lows" rather than cyclones, he said. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-20 05:59:54</td><td></td><td><a href='cyclone_9_10.html'>Waves crash into a breakwall after Tropical Cyclone Marcia made landfall near Yeppoon. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/k/f/v/2/image.related.articleLeadwide.620x349.13kdfi.png/1424412062792.jpg'></td><td>2015-02-20 05:59:54</td><td><a href='http://www.smh.com.au/environment/climate-change/cyclone-marcia-climate-change-is-expanding-the-tropics-20150220-13kdfi.html'>site</a></td><td>Gold Coast residents are "scared of the cyclone", with more than 300mm of rain expected to cause widespread flooding.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/z/1/1/image.related.thumbnail.90x60.1m733u.png/1427245753610.jpg'></td><td>2015-03-19 11:35:33</td><td><a href='http://www.brisbanetimes.com.au/world/cyclone-pam-rips-through-vanuatus-manua-school-20150319-1m35k1.html'>site</a></td><td>As Cyclone Pam ripped at the roof of Manua School, a group of men, women and children pulled desperately on electrical cable keeping them from harm.</td></tr>
 </table></body></html>

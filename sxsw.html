@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 9,
+            max: 15,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,13 +48,19 @@
     <h3>sxsw</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-15 19:59:16</td><td></td><td><a href='sxsw_7.html'>LOS ANGELES - The seventh installment of the "Fast & Furious" franchise, "Furious 7," will get a surprise screening Sunday night at the SXSW Film Festival, sources confirm. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-15 21:02:05</td><td></td><td><a href='sxsw_4.html'>Gore called upon SXSW attendees to get involved in supporting climate change legislation ahead of environmental talks in Paris in December. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-03-16 20:18:55</td><td></td><td><a href='sxsw_2.html'>Festival goers needing a break from the hubbub of SXSW can take a trip back in time with an immersive audio tour from startup Detour that lets listeners discover Austin in 1885, "the year that broke Austin." (2)</a></td></tr>
-  <tr><td style='display:none'>7</td><td></td><td>2015-03-17 15:13:04</td><td></td><td><a href='sxsw_0.html'>What exactly are these artists seeking at SXSW, which began in 1987 as a kind of low-key regional expo? (2)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 19:48:04</td><td></td><td><a href='sxsw_1.html'>Before the Will Ferrell-Kevin Hart comedy "Get Hard" was unveiled at SXSW Monday night, the crowd inside the Paramount Theater was in good spirits. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 00:38:11</td><td></td><td><a href='sxsw_6.html'>Madisen Ward and the Mama Bear, a mother and son duo consisting of Madisen Ward, left, and Ruth Ward, pose for a photograph during the SXSW Music Festival on Wednesday, March 18, 2015 in Austin, Texas. (2)</a></td></tr>
-  <tr><td style='display:none'>8</td><td></td><td>2015-03-20 06:16:36</td><td></td><td><a href='sxsw_3.html'>Miley Cyrus surprises crowd at SXSW event starring rappers (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 19:35:22</td><td></td><td><a href='sxsw_5.html'>The R&B singer performed Thursday on the second night of the "YouTube at SXSW" event at the Coppertank Events Center. (4)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-03-23 20:52:06</td><td></td><td><a href='sxsw_8.html'>Having spent the better part of a week trudging around downtown Austin - from concerts to parties to panel discussions - I agree that SXSW has changed. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-15 19:59:16</td><td></td><td><a href='sxsw_13.html'>LOS ANGELES - The seventh installment of the "Fast & Furious" franchise, "Furious 7," will get a surprise screening Sunday night at the SXSW Film Festival, sources confirm. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-15 21:02:05</td><td></td><td><a href='sxsw_10.html'>Gore called upon SXSW attendees to get involved in supporting climate change legislation ahead of environmental talks in Paris in December. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-16 20:18:55</td><td></td><td><a href='sxsw_7.html'>Festival goers needing a break from the hubbub of SXSW can take a trip back in time with an immersive audio tour from startup Detour that lets listeners discover Austin in 1885, "the year that broke Austin." (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-17 00:10:26</td><td></td><td><a href='sxsw_4.html'>Molly Ringwald joins Ally Sheedy to celebrate The Breakfast Club's 30th anniversary?at SXSW festival (1)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-03-17 11:22:18</td><td></td><td><a href='sxsw_9.html'>SXSW 2015 Music Preview (1)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-17 15:13:04</td><td></td><td><a href='sxsw_3.html'>What exactly are these artists seeking at SXSW, which began in 1987 as a kind of low-key regional expo? (2)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-17 19:48:04</td><td></td><td><a href='sxsw_6.html'>Before the Will Ferrell-Kevin Hart comedy "Get Hard" was unveiled at SXSW Monday night, the crowd inside the Paramount Theater was in good spirits. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-03-18 01:12:53</td><td></td><td><a href='sxsw_0.html'>The music portion of SXSW kicked off Tuesday until Sunday. (1)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-18 06:13:22</td><td></td><td><a href='sxsw_2.html'>Mary J. Blige shines at unofficial SXSW show (1)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 00:38:11</td><td></td><td><a href='sxsw_12.html'>Madisen Ward and the Mama Bear, a mother and son duo consisting of Madisen Ward, left, and Ruth Ward, pose for a photograph during the SXSW Music Festival on Wednesday, March 18, 2015 in Austin, Texas. (2)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-20 06:16:36</td><td></td><td><a href='sxsw_8.html'>Miley Cyrus surprises crowd at SXSW event starring rappers (2)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-20 07:37:51</td><td></td><td><a href='sxsw_1.html'>Miley Cyrus appears onstage for a Mike Will Made It performance at the Fader Fort Presented by Converse during the SXSW Music Festival on Thursday, March 19, 2015 in Austin, Texas. (1)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 19:35:22</td><td></td><td><a href='sxsw_11.html'>The R&B singer performed Thursday on the second night of the "YouTube at SXSW" event at the Coppertank Events Center. (4)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-20 19:37:46</td><td></td><td><a href='sxsw_5.html'>Snoop Dogg takes part in the "Keynote Conversation with Snoop Dogg" during the SXSW Music Festival on Friday, March 20, 2015 in Austin, Texas. (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-23 20:52:06</td><td></td><td><a href='sxsw_14.html'>Having spent the better part of a week trudging around downtown Austin - from concerts to parties to panel discussions - I agree that SXSW has changed. (3)</a></td></tr>
 </table></body></html>

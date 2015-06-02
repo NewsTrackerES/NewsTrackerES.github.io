@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/j/d/k/o/image.related.articleLeadwide.620x349.13kulo.png/1424912515090.jpg'></td><td>2015-02-20 10:08:11</td><td><a href='http://www.brisbanetimes.com.au/world/joko-widodo-says-execution-of-bali-nine-pair-andrew-chan-and-myuran-sukumaran-will-not-be-delayed-20150220-13kulo.html'>site</a></td><td>Joko Widodo says execution of Bali Nine pair Andrew Chan and Myuran Sukumaran will not be delayed</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/3/6/e/s/image.related.articleLeadwide.620x349.1m2zu8.png/1426744085485.jpg'></td><td>2015-03-19 04:01:12</td><td><a href='http://www.smh.com.au/world/bali-nine-andrew-chan-and-myuran-sukumarans-latest-appeal-adjourned-until-next-week-20150319-1m2zu8.html'>site</a></td><td><table><tr><td>Presiding Judge Ujang Abdullah: Adjourned the appeal case of Bali Nine duo Andrew Chan and Myuran Sukumaran till March 25th.</td></tr><tr><td>Jakarta: Bali nine organisers Andrew Chan and Myuran Sukumaran have had their latest appeal against the death penalty adjourned until next week so their lawyers can present evidence to support their argument.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/s/s/u/image.related.articleLeadwide.620x349.1mer5b.png/1428222014511.jpg'></td><td>2015-04-05 10:00:00</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-executions-andrew-chan-and-myuran-sukumaran-to-learn-monday-afternoon-if-final-legal-challenge-allowed-20150405-1mer5b.html'>site</a></td><td>An anxious wait for the Bali nine pair, Andrew Chan and Myuran Sukumaran, will be over on Monday afternoon when the Administrative Court announces whether it will hear the latest?</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/e/s/s/u/image.related.articleLeadwide.620x349.1mfdfp.png/1428310739554.jpg'></td><td>2015-04-06 08:33:32</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-myuran-sukumaran-and-andrew-chan-lose-appeal-20150406-1mfdfp.html'>site</a></td><td>It is unlikely the lives of Bali nine organisers Myuran Sukumaran and Andrew Chan will be spared after the pair lost lost their last ditch legal appeal.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/3/5/m/k/6/image.related.articleLeadwide.620x349.1mu618.png/1430123064050.jpg'></td><td>2015-04-27 08:24:36</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-pair-chan-and-sukumaran-choose-their-execution-witnesses-20150427-1mu618.html'>site</a></td><td><table><tr><td>Bali nine pair Chan and Sukumaran choose their execution witnesses</td></tr><tr><td>The families of Bali nine pair Myuran Sukumaran and Andrew Chan have received the news they were dreading - they will be forced to say their final farewells on Tuesday afternoon.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 12:04:15</td><td><a href='http://www.theguardian.com/world/2015/apr/27/bali-nine-pairs-appeal-execution-indonesian-court-australians-myuran-sukumaran-and-andrew-chan'>site</a></td><td>"For the Bali Nine (pair), we have the constitutional court appeal, we have the registration number and we have the schedule fixed on 12 May," Leonard Arpan, lawyer for Myuran Sukumaran and Andrew Chan, told reporters on Monday.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/u/n/5/9/image.related.articleLeadwide.620x349.1mumf8.png/1430142743391.jpg'></td><td>2015-04-27 13:46:05</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nines-andrew-chan-marries-febyanti-as-execution-looms-20150427-1mumf8.html'>site</a></td><td>Bali nine's Andrew Chan marries Febyanti as execution looms</td></tr>
+</table></body></html>

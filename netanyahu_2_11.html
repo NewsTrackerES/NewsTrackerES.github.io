@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/35/20/70/7671310/5/square_gallery_thumb.jpg'></td><td>2015-03-17 23:23:26</td><td><a href='http://www.sfgate.com/news/world/article/Despite-tie-Netanyahu-secures-shot-at-4th-term-6140229.php'>site</a></td><td>Israel's parliament election ended in a deadlock, according to TV exit polls, but Prime Minister Benjamin Netanyahu seems to hold the advantage ahead of coalition talks.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 17:06:09</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3011394/Netanyahu-form-government-US-spat.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Netanyahu to form next government after US spat</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-20 09:10:22</td><td><a href='http://www.reuters.com/article/2015/04/20/us-israel-politics-idUSKBN0NB0RW20150420?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>Netanyahu receives two-week extension to form government</td></tr><tr><td>Their slow pace has raised speculation that Netanyahu, who would serve a fourth term as prime minister, could opt for a broader coalition with Zionist Union.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-04 21:11:31</td><td><a href='http://www.smh.com.au/world/israels-foreign-minister-avigdor-lieberman-snubs-netanyahu-coalition-invite-20150505-ggu2bo.html'>site</a></td><td>Mr Netanyahu still has a good chance of presenting his fourth government by the deadline.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-04 21:11:31</td><td><a href='http://www.smh.com.au/world/israels-foreign-minister-avigdor-lieberman-snubs-netanyahu-coalition-invite-20150504-ggu2bo.html'>site</a></td><td>The next Netanyahu government would not be a nationalist one, "but the personification of opportunism", he charged.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-05 15:58:12</td><td><a href='http://abcnews.go.com/International/wireStory/israels-netanyahu-scrambles-form-governing-coalition-30816867'>site</a></td><td>Israel's Netanyahu Scrambles to Form Governing Coalition</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150506&t=2&i=1046139716&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB450F8'></td><td>2015-05-06 10:27:32</td><td><a href='http://www.reuters.com/article/2015/05/06/us-israel-politics-idUSKBN0NR11Y20150506?feedType=RSS&feedName=topNews'>site</a></td><td>Netanyahu's efforts to form Israeli government go down to wire</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47175601,width-300,resizemode-4/NetanyahuS.jpg'></td><td>2015-05-06 10:53:29</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Netanyahus-efforts-to-form-Israeli-government-go-down-to-wire/articleshow/47175549.cms'>site</a></td><td>JERUSALEM: Benjamin Netanyahu, locked in down-to-the-wire coalition talks, faces a midnight deadline to form a government or risk being denied a fourth term as Israel's prime minister.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://s1.reutersmedia.net/resources/r/?m=02&d=20150506&t=2&i=1046259870&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB450ZA'></td><td>2015-05-06 19:37:13</td><td><a href='http://www.reuters.com/article/2015/05/06/us-israel-politics-idUSKBN0NR29R20150506?feedType=RSS&feedName=worldNews'>site</a></td><td>Israel's Netanyahu clinches deal for new coalition government - sources</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww4.hdnux.com/photos/36/17/64/7929099/11/square_gallery_thumb.jpg'></td><td>2015-05-06 20:43:51</td><td><a href='http://www.sfgate.com/news/world/article/Israel-s-Netanyahu-races-to-form-narrow-coalition-6245253.php'>site</a></td><td>Israel's Netanyahu completes formation of government</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47182281,width-300,resizemode-4/Benjamin-Netanyahu.jpg'></td><td>2015-05-06 21:55:02</td><td><a href='http://timesofindia.indiatimes.com/world/middle-east/Netanyahu-forms-new-government-just-ahead-of-deadline/articleshow/47182272.cms'>site</a></td><td>Netanyahu forms new government just ahead of deadline</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-13 14:04:41</td><td><a href='http://www.utsandiego.com/news/2015/may/13/israeli-parliament-votes-to-expand-number-of/'>site</a></td><td>JERUSALEM (AP) - Israel's parliament has approved a contentious legislation that expands the number of government ministers - clearing the way for Prime Minister Benjamin Netanyahu's new government to take office.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/14/article-doc-2b1k0-6YWWoWiYn-HSK1-215_634x422.jpg'></td><td>2015-05-14 18:03:36</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3081972/Israels-Netanyahu-finalises-cabinet-lineup-vote.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Israeli Prime Minister Benjamin Netanyahu was preparing on Thursday to present his proposed government for the approval of parliament, where his coalition commands a razor-thin majority.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150526&t=2&i=1051257206&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4P0DX'></td><td>2015-05-26 10:26:28</td><td><a href='http://www.reuters.com/article/2015/05/26/us-israel-palestinians-idUSKBN0OB0Y720150526?feedType=RSS&feedName=topNews'>site</a></td><td>It could also appease hardliners in Netanyahu's government who want to see more construction.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/03/09/turlington_cook650.jpg&size=104x59&quality=85'></td><td>2015-03-19 15:35:15</td><td><a href='http://technology.canoe.ca/Mobile/News/2015/03/19/22296736.html?cid=rsstechnology'>site</a></td><td><table><tr><td>Tag Heuer, Intel challenge Apple with Android smartwatch</td></tr><tr><td>"With Apple Watch hitting the market it's no longer viable for Swiss watchmakers to bury their heads in the sand. Now Tag Heuer has signalled its intention to enter the smartwatch market we are certain others will follow."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 13:36:56</td><td></td><td><a href='apple_0_1.html'>He touted the iPad as an integral tool for improving care of elderly family members and patients, and said Apple has seen a "significant uptake" of the iPhone and iPad in Japan. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 13:36:56</td><td></td><td><a href='apple_0_2.html'>Apple Inc and International Business Machine Corp have teamed up with Japan Post Holdings Co to improve caregiver and monitoring services for the elderly in Japan, the companies announced on Thursday. (2)</a></td></tr>
 </table></body></html>

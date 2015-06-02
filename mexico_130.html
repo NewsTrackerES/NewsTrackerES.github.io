@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 02:40:10</td><td><a href='http://www.startribune.com/world/295100811.html'>site</a></td><td><table><tr><td>Effort planned to recover mummified body found buried in snow on Mexico's highest peak</td></tr><tr><td>MEXICO CITY - An effort was planned for Thursday to recover a body found buried in snow and ice high on Mexico's tallest peak, officials said.</td></tr><tr><td>The volcano on the border of Puebla and Veracruz states in south-central Mexico stands at an elevation of 18,406-foot (5,610-meter), according to Mexico's National Institute of Statistics and Geography.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 07:10:59</td><td><a href='http://www.news24.com/World/News/Mexico-issues-alert-over-stolen-radioactive-material-20150416'>site</a></td><td><table><tr><td>Mexico - Authorities issued an alert for several Mexican states on Wednesday after thieves snatched potentially deadly radioactive material used for industrial radiography.</td></tr><tr><td>It was the latest case of radioactive material being stolen in Mexico.</td></tr><tr><td>More recently, in February, authorities recovered in central Mexico three stolen trucks that had been transporting radioactive material for industrial use.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.abc.net.au/news/image/5135810-3x2-340x227.jpg'></td><td>2015-04-16 08:30:47</td><td><a href='http://www.abc.net.au/news/2015-04-16/mexico-issues-alert-over-stolen-radioactive-material/6398458'>site</a></td><td>It is the latest case of radioactive material being stolen in Mexico, after thieves took a truck containing a cancer-treating medical device with highly radioactive cobalt-60 near Mexico City in 2013.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 12:40:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11433943&ref=rss'>site</a></td><td><table><tr><td>Mexico reports another theft of radioactive material</td></tr><tr><td>MEXICO CITY (AP) " Mexican authorities have issued an alert for five states over the theft of a container of hazardous radioactive material used for industrial inspection in the country's southeast.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-23 00:24:59</td><td><a href='http://www.foxnews.com/world/2015/04/22/mexico-recovers-stolen-radioactive-material-safeguards-intact/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>It was the fifth theft of radioactive material in Mexico in little over a year.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-23 00:30:05</td><td><a href='http://www.startribune.com/world/301002131.html'>site</a></td><td>Mexico recovers stolen radioactive material, safeguards intact</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 03:15:15</td><td></td><td><a href='mexico_147_148.html'>MONTREAL (AP) " Dario Benedetto scored three goals and Club America of Mexico beat the Montreal Impact 4-2 on Wednesday night to win the CONCACAF Champions League title. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/JIY1949Hm_N_R9iTcP7eXg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/d27da826509b1b13750f6a706700e227.jpg'></td><td>2015-04-30 04:13:36</td><td><a href='http://news.yahoo.com/mexicos-club-america-wins-concacaf-champions-league-021117954.html'>site</a></td><td>Andres Romero and substitute Jack McInerney scored for Montreal, the first Canadian team to reach the final after dramatic wins in the quarterfinals over Mexico's Pachuca and Costa Rica's Alajuelense.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 19:03:37</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/14/mexico-to-give-33m-to-victims-of-army-slayings-relatives'>site</a></td><td><table><tr><td>Mexico to give $3.3M to victims of army slayings, relatives</td></tr><tr><td>In most cases, the government will not authorize victims' payments until the perpetrators are convicted and sentenced, which in Mexico's clunky legal system often takes years.</td></tr></table></td></tr>
 </table></body></html>

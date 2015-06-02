@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-09 07:00:36</td><td><a href='http://www.startribune.com/world/299151201.html'>site</a></td><td>PARIS - A French television network has been hacked by people claiming allegiance to the Islamic State group.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-09 07:01:41</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3031606/French-networks-channels-hacked-group-claiming-IS-ties.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Islamic extremist group has claimed complex hackings before, but the seizure of the French network appeared to be a new step in its information warfare tactics.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 17:23:24</td><td></td><td><a href='state_islamic_4_5.html'>DHAKA (Reuters) - One of two men arrested in Bangladesh as a suspected member of Islamic State was an IT manager at a subsidiary of Coca-Cola Co, police and company sources told Reuters on Monday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-05-25 18:41:18</td><td><a href='http://news.yahoo.com/bangladesh-arrests-two-suspected-islamic-state-activists-071253743.html'>site</a></td><td>One man, Aminul Islam, was the information technology head of a multinational company, and worked as a regional coordinator for Islamic State, while the other, Sakib Bin Kamal, was a teacher at a school in Dhaka, he added.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/6/0/b/r/image.related.articleLeadwide.620x349.gh9gq7.png/1432588630244.jpg'></td><td>2015-05-25 19:24:33</td><td><a href='http://www.brisbanetimes.com.au/world/islamic-state-probe-it-chief-at-bangladesh-cocacola-unit-arrested-20150525-gh9gq7'>site</a></td><td>Islamic State's influence is extending into south Asia.</td></tr>
 </table></body></html>

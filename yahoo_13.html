@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/wkTpEtusYzQ29alWKLb64g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201503291638599050781'></td><td>2015-03-29 23:40:43</td><td><a href='http://sports.yahoo.com/news/hamlin-wins-25th-time-fifth-time-martinsville-213240278--nascar.html'>site</a></td><td>Denny Hamlin races to 25th Cup win, 5th at Martinsville (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='https://s1.yimg.com/bt/api/res/1.2/3LyhHeCDX6VWN6QLQApOHA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQyNztxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504112241816634143'></td><td>2015-04-12 05:00:39</td><td><a href='https://sports.yahoo.com/news/jimmie-johnson-gets-5th-sprint-cup-win-texas-033629730--nascar.html'>site</a></td><td>Jimmie Johnson gets 5th Sprint Cup win at Texas (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/iuEN6mGJ7TTjVavQXVB0ww--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nascar.com/42fae9d92791b0be248c52e639d2cf74'></td><td>2015-05-25 03:50:38</td><td><a href='http://sports.yahoo.com/news/carl-edwards-races-first-victory-jgr-team-025316882--nascar.html'>site</a></td><td>Carl Edwards races to first victory for new JGR team (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-29 23:40:43</td><td></td><td><a href='yahoo_13_14.html'>Denny Hamlin races to 25th Cup win, 5th at Martinsville (Yahoo Sports) (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/iuEN6mGJ7TTjVavQXVB0ww--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nascar.com/42fae9d92791b0be248c52e639d2cf74'></td><td>2015-05-25 03:50:38</td><td><a href='http://sports.yahoo.com/news/carl-edwards-races-first-victory-jgr-team-025316882--nascar.html'>site</a></td><td>Carl Edwards races to first victory for new JGR team (Yahoo Sports)</td></tr>
 </table></body></html>

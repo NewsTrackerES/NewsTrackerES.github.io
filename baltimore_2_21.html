@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 23:31:09</td><td><a href='http://news.yahoo.com/man-injured-confrontation-baltimore-police-233109608.html'>site</a></td><td>BALTIMORE (AP) - Baltimore police say a man is in critical condition at a hospital after a confrontation with officers.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 16:56:02</td><td><a href='http://www.utsandiego.com/news/2015/apr/19/baltimore-hospital-says-man-injured-in-police/'>site</a></td><td>Baltimore hospital says man injured in police encounter dies</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/?src=http://brightcove.canoe.com.edgesuite.net/2/1749345207/201504/448/1749345207_4163515533001_vs-5526c3eae4b0c3d5e1f8cea0-672293882001.jpg?pubId=1749345207?pubId=1749345207&size=65x'></td><td>2015-04-19 22:58:50</td><td><a href='http://www.torontosun.com/2015/04/19/death-of-baltimore-man-in-police-custody-raises-questions'>site</a></td><td>Representatives of the hospital and the Baltimore police were not immediately available for further comments.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-24 21:47:06</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054554/Baltimore-mayor-praises-marchers-peaceful-protests-mans-death.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Ken Jones, a police spokesman, said Baltimore police had taken lessons from the Ferguson unrest.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/U2XNBa938Rs9knnoth0gDg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/7aaf800bab99ba12740f6a70670045d4.jpg'></td><td>2015-04-26 21:35:24</td><td><a href='http://news.yahoo.com/photographer-says-baltimore-police-beat-him-during-protest-203611903.html'>site</a></td><td>A Baltimore police spokesman hasn't immediately commented.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-28 07:35:00</td><td><a href='http://www.ctvnews.ca/world/questions-raised-about-police-response-to-baltimore-riots-1.2347899'>site</a></td><td>Singh said they will be acting at the direction of Baltimore police.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='https://s1.yimg.com/bt/api/res/1.2/zXxtDDVOOT0sp_TkWCKsgw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/3596ccd1f97d8e13750f6a706700ae0e.jpg'></td><td>2015-05-05 04:51:54</td><td><a href='https://news.yahoo.com/fox-anchor-report-police-shooting-error-031755681.html'>site</a></td><td>But Baltimore police denied that a shooting had occurred.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-06 14:51:26</td><td><a href='http://www.miamiherald.com/news/nation-world/national/article20335014.html#storylink=rss'>site</a></td><td>Baltimore mayor asks feds to investigate police</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://s1.huffpost.com/images/blank.gif'></td><td>2015-05-13 01:00:04</td><td><a href='http://www.huffingtonpost.com/2015/05/12/baltimore-polices-handlin_n_7270670.html'>site</a></td><td>Baltimore Police's Handling Of Injured Suspects Questioned</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 18:26:11</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/google-backed-over-antimuslim-film-31232789.html'>site</a></td><td><table><tr><td>Google backed over anti-Muslim film</td></tr><tr><td>Google argued Garcia had no claim to the film because the film-maker wrote the dialogue, managed the production and dubbed over her lines.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-19 07:29:36</td><td><a href='http://www.utsandiego.com/news/2015/may/19/appellate-judges-side-with-google-in-anti-muslim/'>site</a></td><td>Appellate judges side with Google in anti-Muslim film case</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.business.financialpost.com/2015/04/google-wireless.jpg?w=620'></td><td>2015-04-22 17:47:40</td><td><a href='http://business.financialpost.com/fp-tech-desk/google-inc-seen-unveiling-its-new-wireless-mobile-service-in-the-u-s-today'>site</a></td><td>The service, Google's first entry into the wireless industry, will work only on the company's Nexus 6 phones and will be hosted through Sprint Corp and T-Mobile's networks, Google said in a statement.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 17:48:13</td><td><a href='http://www.reuters.com/article/2015/04/22/usa-google-wireless-idUSWNAB06MKM20150422?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>NEW YORK, April 22 (Reuters) - Google Inc on Wednesday launched a new U.S. wireless service that will enable customers to pay only for the data they use and use Wi-Fi networks to curb data use and keep phone bills low.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-22 18:44:36</td><td><a href='http://www.seattlepi.com/news/article/Google-wireless-phone-service-challenges-major-6217002.php'>site</a></td><td>Google's service initially will be available only on the Nexus 6, a Motorola phone made with Google's help.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-22 18:50:25</td><td><a href='http://www.startribune.com/nation/300959871.html'>site</a></td><td>Google launches low-cost wireless phone services that won't charge customers for unused data</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/04/336fe616f85f8913750f6a7067007a88_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-04 18:03:01</td><td><a href='http://www.utsandiego.com/news/2015/may/04/google-is-starting-small-thinking-big-with/'>site</a></td><td>In a break from the status quo, Project Fi will cost just $20 for basic service and then only charge for the amount of data consumed over cellular networks that Google is leasing from T-Mobile and Sprint.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/36/16/43/7923917/3/square_gallery_thumb.jpg'></td><td>2015-05-04 18:03:01</td><td><a href='http://www.sfgate.com/business/technology/article/Google-is-starting-small-thinking-big-with-6241054.php'>site</a></td><td>Google's service is also promising to automatically switch customers to publicly available Wi-Fi networks to avoid incurring charges for using data on the cellular networks.</td></tr>
 </table></body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 1,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201503/1655/1745097732_4131932127001_df25de1e69759667600b1b57422e4171-tmb1.jpg?pubId=1745097732'></td><td>2015-03-18 14:19:50</td><td><a href='http://technology.canoe.ca/News/2015/03/18/22294011.html?cid=rsstechnology'>site</a></td><td><table><tr><td>LOS ANGELES - Facebook is poised to siphon off a large chunk of spending from TV budgets in the next two years.</td></tr><tr><td>By 2017, Facebook and YouTube's combined share of global online video spending will increase to 36% (from 34% in 2014).</td></tr><tr><td>"In contrast to YouTube, because users are logged into Facebook's service while viewing their newsfeed, Facebook can leverage all of a user's data to offer advertisers unmatched targeting at scale," DiClemente said.</td></tr><tr><td>Moreover, DiClemente noted, "YouTube audiences are more likely to be watching ads with sound, again due to users' intention of watching video content," whereas Facebook video ads autoplay in its users' feeds with the audio muted by default.</td></tr></table></td></tr>
+</table></body></html>

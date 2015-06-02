@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 15:14:36</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11413331&ref=rss'>site</a></td><td><table><tr><td>Apple is the world's most valuable company.</td></tr><tr><td>Apple won't get top billing in the Dow, though.</td></tr><tr><td>That gives Apple more influence on daily moves in the index than any other stock.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:43:45</td><td></td><td><a href='apple_or_microsoft_63_64.html'>Apple's new Photos app for Mac computers, available Wednesday as a free software update, makes it easy to organize and edit your pictures. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/54/15/7783268/3/square_gallery_thumb.jpg'></td><td>2015-04-08 07:43:45</td><td><a href='http://www.sfgate.com/business/technology/article/Review-New-Apple-Photos-app-makes-fixing-6185567.php'>site</a></td><td>You may need to buy more iCloud storage through Apple, as the 5 free gigabytes only translates to roughly 3,000 iPhone photos, not to mention video or larger files from stand-alone cameras.</td></tr>
 </table></body></html>

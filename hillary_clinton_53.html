@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-04-13 16:59:54</td><td><a href='http://news.yahoo.com/hillary-clintons-long-road-back-presidential-politics-165954282--election.html'>site</a></td><td>WASHINGTON (AP) - Hillary Rodham Clinton spent nearly two years tiptoeing around a decision to run for president that much of the political world assumed was a done deal.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-13 17:10:08</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article18406703.html#storylink=rss'>site</a></td><td><table><tr><td>FILE - In this April 2, 2013, file photo Vice President Joe Biden and former Secretary of State Hillary Rodham Clinton are seen in Washington.</td></tr><tr><td>FILE - In this Dec. 1, 2008, file photo, then-Secretary of State-designate Sen. Hillary Rodham Clinton speaks during a news conference with President-elect Barack Obama in Chicago.</td></tr><tr><td>FILE - In this July 7, 2012, file photo, U.S. Secretary of State Hillary Rodham Clinton, left, speaks during a news conference with then-President of Afghanistan Hamid Karzai, at the Presidential Palace in Kabul.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.fbnstatic.com/static/managed/img/fb2/markets/hillary-clinton-2014.jpg'></td><td>2015-04-12 19:38:20</td><td><a href='http://www.foxbusiness.com/economy-policy/2015/04/12/hillary-clinton-announces-presidential-campaign/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Fsection%2Fnews+%28Internal+-+News+-+Text%29'>site</a></td><td>Hillary Clinton Announces Presidential Campaign</td></tr>
 </table></body></html>

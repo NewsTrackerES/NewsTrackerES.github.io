@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-22 14:01:07</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21665838.html#storylink=rss'>site</a></td><td><table><tr><td>CANNES WATCH: Longoria a success behind the camera</td></tr><tr><td>There's been much talk at the Cannes Film Festival about how to boost the ranks of women directors and producers.</td></tr><tr><td>Longoria, who is in Cannes in part as an ambassador for L'Oreal, said the new digital age of TV, and various streaming services are helping to improve diversity in Hollywood.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 17:14:22</td><td></td><td><a href='cannes_0_1.html'>After a two-year hiatus, Pixar has made a sensational return to the Cannes Film Festival with "Inside Out," the kind of fresh take on animation that the studio built itself on. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 17:14:22</td><td></td><td><a href='cannes_0_2.html'>The reception to "Inside Out" was so good that some at Cannes wondered whether it should have been included in the festival's prestigious Palme d'Or competition. (2)</a></td></tr>
 </table></body></html>

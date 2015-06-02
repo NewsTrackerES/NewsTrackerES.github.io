@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>egypt</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-15 16:47:33</td><td><a href='http://news.yahoo.com/ousted-egypt-president-starts-latest-trial-spying-charge-142705198.html'>site</a></td><td>Morsi, overthrown in July 2013 following mass protests demanding his resignation, does not recognize the court, and insists Egypt's current leadership came to power in a coup d'etat and is thus illegitimate.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-18 05:59:40</td><td><a href='http://www.ctvnews.ca/world/ex-president-hasn-t-been-referred-to-military-tribunal-egypt-official-1.2241246'>site</a></td><td>CAIRO - A judicial official in Egypt has denied that the country's toppled Islamist president and a deputy leader of the Muslim Brotherhood have been referred to a military tribunal.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/s/r/7/t/image.related.articleLeadwide.620x349.13s9j4.png/1425270773537.jpg'></td><td>2015-03-02 04:34:12</td><td><a href='http://www.theage.com.au/world/egypt-parliamentary-poll-set-for-delay-after-court-ruling-20150302-13s9j4.html'>site</a></td><td>The latest development highlights Egypt's rocky path towards democracy since the ousting of Islamist president Mohamed Morsi in 2013 by the army after mass protests against the rule of Egypt's first democratically elected leader.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-05 19:41:09</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/05/egypts-el-sissi-replaces-interior-minister-in-reshuffle'>site</a></td><td>It was the first Cabinet reshuffle since el-Sissi took office in June, nearly a year after he ousted Morsi amid widespread protests against Egypt's first freely elected leader.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.abc.net.au/news/image/6288712-3x2-340x227.jpg'></td><td>2015-03-07 22:17:33</td><td><a href='http://www.abc.net.au/news/2015-03-08/egypt-carries-out-hanging-over-violence-after-morsis-ousting/6288708'>site</a></td><td>Egypt has carried out the first death sentence handed down over the violence that erupted after the army overthrew former president Mohamed Morsi in 2013, the interior ministry said.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-13 20:40:14</td><td><a href='http://abcnews.go.com/International/wireStory/egypts-el-sissi-inaugurates-day-economic-conference-29613267'>site</a></td><td>Egypt Rakes Billions in Gulf Aid That Boosts Its President</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://global.fncstatic.com/static/v/fn2/img/politics/approval-president.png'></td><td>2015-03-31 19:07:02</td><td><a href='http://www.foxnews.com/politics/2015/03/31/us-releases-military-aid-to-egypt-cites-national-security/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fpolitics+%28Internal+-+Politics+-+Text%29'>site</a></td><td>The funds were suspended 21 months ago when el-Sissi, then military chief, overthrew Egypt's first democratically elected leader, Islamist President Mohammed Morsi.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-31 23:12:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3020262/Obama-lifts-hold-U-S-military-aid-Egypt.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Obama has been reviewing military aid to Egypt since 2013 when the Egyptian army ousted former president Mohamed Mursi.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.usnews.com/dims4/USNEWS/4a2c21b/2147483647/thumbnail/204x136%3E/quality/85/?url=%2Fcmsmedia%2F56%2Fbd%2F53c7917345d3a14110a1d1a64a0a%2Fresizes%2F500%2Fap278800513483-9.jpg'></td><td>2015-04-01 12:57:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/01/egypt-president-welcomes-return-of-us-military-aid'>site</a></td><td>Egypt president welcomes release of withheld US military aid</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://img.rasset.ie/000a6c2c-642.jpg'></td><td>2015-04-11 18:17:58</td><td><a href='http://www.rte.ie/news/2015/0411/693498-egypt-sentences/'>site</a></td><td>The group says it is committed to peaceful activism and had nothing to do with Islamist militant violence in Egypt since Morsi's fall following mass protests against his rule.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-12 18:42:06</td><td><a href='http://www.reuters.com/article/2015/04/12/us-egypt-court-brotherhood-idUSKBN0N30RF20150412?feedType=RSS&feedName=worldNews'>site</a></td><td>Egypt Muslim Brotherhood verdicts 'blatantly unjust': Human Rights Watch</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='http://static.theglobeandmail.ca/6ae/news/world/article24041024.ece/ALTERNATES/w220/CAITH101-Mideast+Egypt.JPG'></td><td>2015-04-21 08:32:36</td><td><a href='http://www.theglobeandmail.com/news/world/egypt-court-sentences-ousted-president-morsi-to-20-years-in-prison-over-2012-killings/article24041025/?cmpid=rss1'>site</a></td><td>The ruling, which can be appealed, and muted Islamist reaction following it underscore the dramatic downfall of Morsi and Egypt's once-powerful Muslim Brotherhood group.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-21 08:42:41</td><td><a href='http://www.independent.co.uk/news/world/middle-east/ousted-egyptian-president-mohammed-morsi-jailed-for-20-years-over-the-death-of-protesters-10191546.html'>site</a></td><td>Mohamed Morsi, Egypt's first elected leader who was later ousted, has been sentenced to 20 years in prison over the killing of protesters in 2012.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82451000/jpg/_82451313_019863962-1.jpg'></td><td>2015-04-21 11:32:27</td><td><a href='http://www.bbc.co.uk/news/world-middle-east-32391891#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Egypt's Morsi jailed for 20 years</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/vOX4mGo38kqpY5paHGSzBQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/c532de3b026aa619d59c0111531ee0ac69eb5ed3.jpg.cf.jpg'></td><td>2015-04-21 17:42:40</td><td><a href='http://news.yahoo.com/us-concerned-sentencing-egypts-morsi-14-more-172425596.html'>site</a></td><td>Morsi was convicted of ordering the arrest and torture of demonstrators involved in clashes in 2012 when he was still Egypt's elected president.</td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/21/article-doc-1v2bp-6XxZ0skk7-HSK1-21_634x422.jpg'></td><td>2015-04-21 18:02:25</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3049219/Egypts-Morsi-Muslim-Brotherhood-figurehead.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Nicknamed "The Spare Tyre" after he emerged as a compromise candidate to be Egypt's first freely elected president, Morsi nonetheless had a long history of activism with the Brotherhood.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://ww1.hdnux.com/photos/35/75/22/7853244/7/square_gallery_thumb.jpg'></td><td>2015-04-21 18:40:22</td><td><a href='http://www.sfgate.com/news/crime/article/Court-sentences-ousted-Egypt-president-to-20-6213106.php'>site</a></td><td>The Brotherhood was the biggest winner in subsequent parliament elections, and Morsi - running as its candidate - became Egypt's first freely elected president in 2012.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-04-21 18:40:53</td><td><a href='http://abcnews.go.com/International/wireStory/court-sentences-ousted-egypt-president-20-years-prison-30464470'>site</a></td><td>Egypt's ousted Islamist president, Mohammed Morsi, was convicted of using force against protesters and sentenced to 20 years in prison on Tuesday, the first verdict against him since he was removed by the military nearly two years ago.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-29 14:02:01</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3060845/Egypt-jails-69-Islamists-torching-church.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Egypt jails 69 Islamists for torching church</td></tr><tr><td>Egypt jailed 69 Islamists for life Wednesday for torching a church near Cairo in August 2013 during a crackdown on supporters of ousted president Mohamed Morsi, a judicial official said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/06/article-doc-253ku-6YJsASoGcHSK2-969_634x448.jpg'></td><td>2015-05-06 10:02:48</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3069987/Egypt-policeman-killed-clashes-Morsi-backers.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>One policeman was killed and five others wounded in clashes with supporters of Egypt's ousted Islamist president Mohamed Morsi in a Nile Delta city, police said on Wednesday.</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-05-16 09:23:48</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/16/court-sentences-egypts-ousted-president-to-death'>site</a></td><td>Morsi, Egypt's first freely elected president, was ousted by the military in July 2013 following days of mass street protests by Egyptians demanding that he be removed because of his divisive policies.</td></tr>
+  <tr><td style='display:none'>21</td><td></td><td>2015-05-16 09:44:32</td><td><a href='http://www.sfgate.com/news/world/article/Court-sentences-Egypt-s-ousted-president-to-death-6267587.php'>site</a></td><td>FILE - In this May 8, 2014 file photo, Egypt's ousted Islamist President Mohammed Morsi sits in a defendant cage in the Police Academy courthouse in Cairo, Egypt.</td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/RFZsKxckHCXcI6iC06WREA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3ODtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-05-19T065823Z_1_LYNXMPEB4I08N_RTROPTP_2_EGYPT-HARASSMENT.JPG'></td><td>2015-05-19 06:58:23</td><td><a href='http://news.yahoo.com/egypt-security-forces-step-sexual-violence-since-mursis-065823281.html'>site</a></td><td>Egypt's human rights record has come under scrutiny since then-army chief Abdel Fattah al-Sisi toppled Islamist President Mohamed Mursi after mass protests against his rule.</td></tr>
+</table></body></html>

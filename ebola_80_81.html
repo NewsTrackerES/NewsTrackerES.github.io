@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/6KDlH4JeVlclb0srYFB44g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/d8e0d884d4f3a1096f0f6a706700de0b.jpg'></td><td>2015-03-02 17:14:25</td><td><a href='http://news.yahoo.com/nurse-survived-ebola-sues-dallas-hospital-system-171425737.html'>site</a></td><td>"I was hoping that THR would be more open and honest about everything that happened at the hospital, and the things they didn't do that led to me getting infected with Ebola," she said.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297670212354_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-02 19:34:42</td><td><a href='http://www.torontosun.com/2015/03/02/ebola-survivor-sues-dallas-hospital-over-infection'>site</a></td><td>"I was hoping that THR would be more open and honest about everything that happened at the hospital, and the things they didn't do that led to me getting infected with Ebola. But that didn't happen and I felt I was left with no choice but to turn to the courts for help," Pham said in a statement.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-179wu-6X9LbSUAdHSK2-533_634x650.jpg'></td><td>2015-03-19 17:16:13</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3002349/Ebola-hit-Sierra-Leone-lock-2-5-million-people.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Ebola-hit Sierra Leone to lock down 2.5 million people</td></tr><tr><td>Sierra Leone said Thursday it will confine around 2.5 million people to their homes across the capital and in the north in a three-day shutdown aimed at stemming the Ebola epidemic.</td></tr></table></td></tr>
 </table></body></html>

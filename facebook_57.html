@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/04/f9ad17c54d0cd90a6f0f6a706700b5e6_c0-335-3073-2126_s561x327.jpg?73d7f747f38ce2e9b4a59a94ff7b69f8f36cc1ea'></td><td>2015-03-05 00:47:08</td><td><a href='http://www.washingtontimes.com/news/2015/mar/4/facebook-exec-nba-team-up-to-get-men-to-lean-in-fo/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>Facebook exec, NBA team up to get men to 'lean in' for women</td></tr><tr><td>Sandberg, Facebook's second-highest ranking executive behind CEO Mark Zuckerberg, is counting on the NBA's appeal to connect with millions of sports-loving men who haven't read her book.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='facebook_57_58.html'>Facebook CEO Mark Zuckerberg arrives for a press conference at the Mobile World Congress, the world's largest mobile phone trade show in Barcelona, Spain, Monday, March 2, 2015. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='facebook_57_59.html'>Internet.org is Facebook's fledgling effort to create new users in countries with little or low Internet use. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td>Google and Facebook want more people online, searching around and clicking on ads.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5.1gFl3zOg_P_OXT3VwPYA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a5d3f058d4efa1096f0f6a706700abd1.jpg'></td><td>2015-03-02 21:45:23</td><td><a href='http://news.yahoo.com/google-facebook-contrasting-plans-connect-world-214523950--finance.html'>site</a></td><td>Google, Facebook update contrasting plans to connect world</td></tr>
 </table></body></html>

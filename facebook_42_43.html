@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>facebook</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-17 14:25:31</td><td><a href='http://www.startribune.com/business/296568601.html'>site</a></td><td>? A Penn State University fraternity was suspended for a year Tuesday after police began investigating allegations that members used a private, invitation-only Facebook page to post photos of nude and partly nude women, some apparently asleep or passed out.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-17 14:29:28</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article14986679.html#storylink=rss'>site</a></td><td>Penn State frat suspended over Facebook nudes</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/4KVamuWHjyg.r26.1OISPQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9fed94d56952270c710f6a706700b20d.jpg'></td><td>2015-03-18 06:47:33</td><td><a href='http://news.yahoo.com/penn-state-seeks-frat-members-posted-nude-photos-064424524--finance.html'>site</a></td><td><table><tr><td>(AP) - A now-suspended Pennsylvania State University fraternity's Facebook posting of photos of nude and partly nude women, some of them asleep or passed out, is sad and offensive and could lead to some students being expelled, the university's president said Wednesday.</td></tr><tr><td>Police in State College, home to Penn State's main campus, are investigating allegations the fraternity operated a private Facebook page on which members shared frat house pictures of the women.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 18:19:31</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3012913/Women-pictured-Penn-St-frats-Facebook-page-talk-cops.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>(AP) - Some women pictured nude or seminude in photos posted to a Penn State fraternity's secret Facebook page have come forward, and some frat members are now cooperating with an ongoing criminal investigation, police said.</td></tr><tr><td>The warrant targeted an invitation-only Facebook page run by the fraternity members that showed pictures of women, some apparently passed out or sleeping, nude or partially dressed, and screenshots of text messages discussing sex with the women, among other things.</td></tr></table></td></tr>
+</table></body></html>

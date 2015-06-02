@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 07:37:40</td><td></td><td><a href='hillary_clinton_22_23.html'>The State Department and financial disclosure documents show the agency sped through Bill Clinton's steady stream of requests for events while rarely raising concerns about potential conflicts. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/09/18/285B1B9C00000578-0-image-m-19_1431193617081.jpg'></td><td>2015-05-12 19:35:39</td><td><a href='http://www.dailymail.co.uk/news/article-3077838/US-OKd-Bill-Clinton-speech-requests-days.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>On Thursday, Saban hosted a fundraiser for Hillary Clinton's campaign at his Beverly Hills home, raising at least $1.2 million from 450 attendees.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 21:13:49</td><td></td><td><a href='hillary_clinton_22_23.html'>(AP) - The specter of Hillary Rodham Clinton's imminent presidential campaign dropped like a gift from the heavens at the National Rifle Association's annual convention Friday. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/60/07/7799236/3/920x920.jpg'></td><td>2015-04-10 21:13:49</td><td><a href='http://www.sfgate.com/news/politics/article/Parade-of-likely-GOP-presidential-candidates-to-6190889.php'>site</a></td><td>"People like Hillary Clinton seem to think you measure success in government by how many people are dependent on the government," he said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 21:13:49</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/10/parade-of-likely-gop-presidential-candidates-to-speak-to-nra'>site</a></td><td>"Hillary Clinton has already made it clear she'll be on the side of elitism."</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 22:35:39</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/10/parade-of-likely-gop-presidential-candidates-to-speak-to-nra'>site</a></td><td><table><tr><td>"Hillary Rodham Clinton will bring a permanent darkness of deceit and despair forced upon the American people to endure," LaPierre said.</td></tr><tr><td>Former Florida Gov. Jeb Bush decried the "liberal, progressive worldview of Barack Obama and Hillary Clinton and Eric Holder, and all of the other people who want to take the guns out of the hands of the good guys."</td></tr></table></td></tr>
 </table></body></html>

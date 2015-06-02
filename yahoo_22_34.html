@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/Pi3qyXASl7nl2Wl4Z7Sh3w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-us/video/video.nhlgamehighlights.com/ed776d7b4528619e76d6e66b02d741fd'></td><td>2015-03-27 03:43:21</td><td><a href='http://sports.yahoo.com/news/rangers-clinch-playoff-spot-5-1-win-over-025631230--nhl.html'>site</a></td><td>Rangers clinch playoff spot with 5-1 win over Senators (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/DbM_rJ4PebW5BvnePliVkg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504100856322177294'></td><td>2015-04-10 14:29:53</td><td><a href='http://sports.yahoo.com/news/els-course-spieth-set-start-masters-2nd-round-140537126--golf.html'>site</a></td><td>Louis Oosthuizen makes early move in 2nd round of Masters (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-11 19:27:50</td><td><a href='http://sports.yahoo.com/news/senators-cap-sizzling-2nd-half-rally-east-playoff-192155544--nhl.html'>site</a></td><td>Senators cap sizzling 2nd-half rally with East playoff spot (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/r9mZL_jlmcBP4WDXFJRoxA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nba.com/56b67cb3170779cd4266d87b2bcaac15'></td><td>2015-05-03 08:28:28</td><td><a href='http://sports.yahoo.com/news/clippers-2-days-rest-facing-rockets-2nd-round-060448554--nba.html'>site</a></td><td>Clippers have 2 days rest before facing Rockets in 2nd round (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/q_EG_patiYR5rQMdJrjXcA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201505241420516070175'></td><td>2015-05-25 06:51:58</td><td><a href='http://sports.yahoo.com/news/kirk-makes-par-putt-18-win-colonial-spieth-065158846--golf.html'>site</a></td><td>Kirk makes par putt at 18 to win Colonial; Spieth 2nd again (Yahoo Sports)</td></tr>
+</table></body></html>

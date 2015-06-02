@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/34/76/20/7595028/3/920x920.jpg'></td><td>2015-03-02 13:11:06</td><td><a href='http://www.sfgate.com/news/world/article/How-Islamic-is-Islamic-State-group-Not-very-6109702.php'>site</a></td><td>President Barack Obama has insisted the militants behind a brutal campaign of beheadings, kidnappings and enslavement are "not Islamic" and only use a veneer of Islam for their own ends.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/C2SRMG.6oM8YwGwJpfwPqA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_US/News/TheWrap/Fired_Univision_Reporter_s_Lawyer_Takes-7f50132ea104b580df462d18b06f93e4.cf.jpg'></td><td>2015-03-13 21:37:43</td><td><a href='http://news.yahoo.com/obama-meets-kayla-muellers-family-arizona-213743358.html'>site</a></td><td>PHOENIX (AP) - President Barack Obama is paying his condolences to the family of the American aid worker who died after being taken hostage by the Islamic State group.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150325&t=2&i=1035308908&w=580&fh=&fw=&ll=&pl=&r=LYNXMPEB2O0ZH'></td><td>2015-03-25 18:52:16</td><td><a href='http://www.reuters.com/article/2015/03/25/us-afghanistan-usa-idUSKBN0ML27220150325?feedType=RSS&feedName=worldNews'>site</a></td><td>Lawmakers also are considering President Barack Obama's request for authorization of his military campaign against Islamic State, which has met stiff resistance on Capitol Hill.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://s3.reutersmedia.net/resources/r/?m=02&d=20150413&t=2&i=1040090921&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3C0NN'></td><td>2015-04-13 16:25:11</td><td><a href='http://www.reuters.com/article/2015/04/13/us-mideast-crisis-congress-idUSKBN0N41Q320150413?feedType=RSS&feedName=politicsNews'>site</a></td><td>WASHINGTON (Reuters) - U.S. President Barack Obama's request for congressional authorization of military force to fight the Islamic State does not have enough support to pass the U.S. House of Representatives, the chamber's second-ranking Republican said on Monday.</td></tr>
+</table></body></html>

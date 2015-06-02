@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 01:20:01</td><td><a href='http://www.wsj.com/articles/facebooks-spending-weighs-on-profits-1429733315?mod=rss_Technology'>site</a></td><td>At Facebook, Big Growth and Bigger Spending</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://img.rasset.ie/0006c9fe-642.jpg'></td><td>2015-04-23 09:54:56</td><td><a href='http://www.rte.ie/news/business/2015/0423/696101-facebook-results/'>site</a></td><td>As a result, Facebook's operating expenses rose 83% in the first quarter as R&D costs jumped 133% and marketing and sales spending nearly doubled.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297605464011_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-16 15:38:16</td><td><a href='http://www.torontosun.com/2015/03/16/facebook-report-shows-slight-rise-in-government-requests-for-data'>site</a></td><td><table><tr><td>Facebook Inc recorded a slight increase in government requests for account data in the second half of 2014, according to its Global Government Requests Report, which includes information about content removal.</td></tr><tr><td>Facebook, Microsoft, Yahoo and Google last year began publishing details about the number of government requests for data they receive.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-13 18:00:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11432207&ref=rss'>site</a></td><td>Officials at Apple and Craig & Karl did not immediately respond Monday to emails seeking comment.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 22:01:47</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3037474/Artist-Britto-sues-Apple-design-firm-use-art-style.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Officials at Apple declined to comment Monday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 10:51:00</td><td><a href='http://www.ctvnews.ca/sci-tech/shoppers-get-to-know-apple-watch-on-first-day-of-sales-1.2320387'>site</a></td><td>Apple hasn't offered any estimates of how many watches it expects to sell, but some analysts have predicted sales could reach 10 million to 20 million units in the first year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 16:05:54</td><td><a href='http://www.cbc.ca/news/technology/apple-watch-sales-expected-in-the-millions-this-quarter-1.3030641?cmp=rss'>site</a></td><td>Munster, who thinks Apple will sell 2.3 million watches in the April-June quarter, expects the company to ramp up production between mid-May and June.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://s3.reutersmedia.net/resources/r/?d=20150413&i=106739636&w=240&r=106739636-2&t=2'></td><td>2015-04-14 03:47:43</td><td><a href='http://www.reuters.com/article/2015/04/14/us-apple-watch-idUSKBN0N410Z20150414?feedType=RSS&feedName=businessNews'>site</a></td><td>However, analysts said Apple could sell between 2.3 million and 4 million watches in the quarter ending June.Apple was widely expected to disclose pre-orders on Monday, following its usual pattern after a product launch.</td></tr>
 </table></body></html>

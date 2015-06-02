@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>boko haram</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-28 14:41:06</td><td><a href='http://news.yahoo.com/spain-investigates-boko-haram-leader-terror-charges-144106017.html'>site</a></td><td><table><tr><td>Spain investigates Boko Haram leader on terror charges</td></tr><tr><td>MADRID (AP) - Spain is opening a probe into Boko Haram leader Abubakar Shekau on suspicion of terrorism and crimes against humanity, under the legal principle of universal justice.</td></tr><tr><td>The court ruling asked authorities to locate the nun and requested information on Boko Haram from the United Nations.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-28 14:41:06</td><td></td><td><a href='boko_haram_0_1.html'>MADRID (AP) - Spain is opening a probe into Boko Haram leader Abubakar Shekau on suspicion of terrorism and crimes against humanity, under the legal principle of universal justice. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-28 14:41:06</td><td><a href='http://news.yahoo.com/spain-investigates-boko-haram-leader-terror-charges-144106017.html'>site</a></td><td>The court ruling asked authorities to locate the nun and requested information on Boko Haram from the United Nations.</td></tr>
 </table></body></html>

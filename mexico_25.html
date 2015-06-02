@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 16:37:59</td><td></td><td><a href='mexico_25_28.html'>While Mexico's auto industry booms and workers welcome the above-average wages, they are speaking out more loudly about working conditions. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 16:37:59</td><td></td><td><a href='mexico_25_27.html'>Audi also sells the Q5 in the U.S., where tariffs on cars built in Mexico were dropped under the North American Free Trade Agreement. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 16:37:59</td><td></td><td><a href='mexico_25_26.html'>In the past two years, eight automakers have opened or announced new plants or expansions in Mexico. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/21/0465fc74e0925011740f6a706700e382_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-21 16:37:59</td><td><a href='http://www.utsandiego.com/news/2015/apr/21/low-wages-trade-deals-luring-auto-plants-and-jobs/'>site</a></td><td><table><tr><td>DETROIT (AP) - Mexico has become the most attractive place in North America to build new automobile factories, a shift that has siphoned jobs from the U.S. and Canada, yet helped keep car and truck prices in check for consumers.</td></tr><tr><td>A worker in Mexico costs car companies an average of $8 an hour, including wages and benefits.</td></tr></table></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 17:13:04</td><td></td><td><a href='mexico_25_29.html'>Lured by low wages and tax-saving free trade agreements, auto companies from the U.S. and overseas are accelerating plans to build new factories and add jobs in Mexico. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 23:30:03</td><td></td><td><a href='mexico_25_26.html'>While some suspected the first raids on the train in August were merely for show, Vargas said Mexico intends to keep migrants off the boxcars. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 23:30:03</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411615&ref=rss'>site</a></td><td>Following a big surge in child migrants reaching the U.S. border last year, Mexico's government cracked down on routes commonly used by migrants to travel from Guatemala to the U.S. border.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 00:43:11</td><td><a href='http://www.sfgate.com/news/world/article/Mexico-raided-migrant-train-153-times-in-last-year-6113080.php'>site</a></td><td>Mexico raided migrant train 153 times in last year</td></tr>
 </table></body></html>

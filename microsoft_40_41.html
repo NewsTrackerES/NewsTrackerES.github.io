@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -53,4 +53,5 @@
   <tr><td style='display:none'>2</td><td></td><td>2015-04-23 21:30:47</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/23/microsoft-results-show-companys-shift-but-is-it-enough'>site</a></td><td><table><tr><td>Microsoft results show company's shift, but is it enough?</td></tr><tr><td>Microsoft will report earnings Thursday April 23, 2015.</td></tr></table></td></tr>
   <tr><td style='display:none'>3</td><td><img src='http://ww2.hdnux.com/photos/36/01/02/7868581/3/622x350.jpg'></td><td>2015-04-23 23:13:00</td><td><a href='http://www.chron.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>CEO Satya Nadella has been investing in new services and redesigning Microsoft's most popular programs for smartphones and other mobile gadgets.</td></tr><tr><td>And Nadella has taken other steps to get Microsoft's software into the hands of consumers who prefer smartphones and tablets.</td></tr></table></td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-04-23 23:13:00</td><td><a href='http://www.sfgate.com/business/technology/article/Microsoft-results-show-company-s-shift-but-is-it-6220179.php'>site</a></td><td><table><tr><td>Microsoft's financial results underscore the importance of Nadella's efforts.</td></tr><tr><td>But Microsoft still relies heavily on selling traditional software, which contributed the largest part of its $21.7 billion in sales for the quarter.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/NIxGSHlCGfx4UMLqKFjsqA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/be1551fb316c7912740f6a706700159c.jpg'></td><td>2015-04-23 23:13:19</td><td><a href='http://news.yahoo.com/microsoft-results-show-companys-shift-enough-213116607.html'>site</a></td><td>This Jan. 21, 2015 photo shows Microsoft CEO Satya Nadella speaking at an event demonstrating new features of its flagship operating system Windows at the company's headquarters in Redmond, Wash.</td></tr>
 </table></body></html>

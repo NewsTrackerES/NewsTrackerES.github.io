@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/j/assets/i/us/sp/v/nba/teams/83/70x70/mem.png'></td><td>2015-03-26 02:47:49</td><td><a href='http://sports.yahoo.com/news/irving-scores-24-lead-cavaliers-past-grizzlies-111-022949043--nba.html'>site</a></td><td>Irving scores 24 to lead Cavaliers past Grizzlies 111-89 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/oREcIa7Kd2tnPJdBsbDL8A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nba.com/acd266feb4e9d56147f0b9a89b32d896'></td><td>2015-04-13 19:21:59</td><td><a href='http://sports.yahoo.com/news/playoffs-near-spurs-rounding-top-form-192159219--nba.html'>site</a></td><td>As playoffs near, the Spurs rounding into top form (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/j/assets/ipt/70x70.1.png'></td><td>2015-04-16 04:33:12</td><td><a href='http://sports.yahoo.com/news/davis-leads-pelicans-past-spurs-108-103-playoffs-023341132--nba.html'>site</a></td><td>Davis leads Pelicans past Spurs, 108-103 and into playoffs (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/XeNVBd31Nbwe23sEWqYFlQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201505052328845154368'></td><td>2015-05-06 06:37:10</td><td><a href='http://sports.yahoo.com/news/conley-comes-back-leads-grizzlies-past-warriors-97-052730105--nba.html'>site</a></td><td>Conley comes back, leads Grizzlies past Warriors 97-90 (Yahoo Sports)</td></tr>
+</table></body></html>

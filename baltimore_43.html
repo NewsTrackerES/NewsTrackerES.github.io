@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,11 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-03-27 17:25:37</td><td><a href='http://news.yahoo.com/feds-baltimore-jail-illegally-keeping-juveniles-solitary-172537707.html'>site</a></td><td><table><tr><td>Feds: Baltimore jail illegally keeping juveniles in solitary</td></tr><tr><td>BALTIMORE (AP) - The U.S. Justice Department says teenagers awaiting trial on adult charges in Baltimore are being kept in solitary confinement for far too long - up to 143 days in one case.</td></tr><tr><td>The State of Maryland says juvenile detainees accused of breaking jail rules should spend no longer than a week in solitary, and yet teenagers inside the Baltimore City Detention Center are being isolated for 13 days on average, and in some cases, far longer.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 14:41:37</td><td><a href='http://www.daytondailynews.com/ap/ap/political/high-court-to-hear-appeal-from-baltimore-police-of/nkL9r/'>site</a></td><td>High court to hear appeal from Baltimore police officer</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 22:58:32</td><td></td><td><a href='baltimore_43_44.html'>Justice Dept. opens Baltimore police probe; hundreds protest (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-23 21:34:23</td><td><a href='http://www.daytondailynews.com/ap/ap/us/latest-on-baltimore-police-custody-death-group-to-/nk2b2/'>site</a></td><td>Latest on Baltimore police-custody death: March blocks roads</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-27 23:21:08</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/orioles-game-in-baltimore-postponed-due-to-safety-/nk4fW/'>site</a></td><td>Orioles' game in Baltimore postponed due to safety concerns</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-02 07:05:42</td><td><a href='http://www.daytondailynews.com/ap/ap/general/thousands-expected-in-baltimore-rallies-now-celebr/nk7gy/'>site</a></td><td>Thousands expected in Baltimore rallies, now celebratory</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-05 08:26:32</td><td><a href='http://www.daytondailynews.com/ap/ap/general/reforming-baltimore-police-will-be-expensive-costl/nk8yM/'>site</a></td><td>Reforming Baltimore police will be expensive, costly</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-06 07:03:01</td><td><a href='http://www.daytondailynews.com/ap/ap/entertainment/prince-announces-rally-4-peace-concert-sunday-in-b/nk9YH/'>site</a></td><td>Prince announces 'Rally 4 Peace' concert Sunday in Baltimore</td></tr>
 </table></body></html>

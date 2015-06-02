@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 16:09:40</td><td><a href='http://www.utsandiego.com/news/2015/apr/19/kenya-official-i-did-not-cause-delay-in-ending/'>site</a></td><td>Kenya official: I did not cause delay in ending attack</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-19 16:27:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article18918603.html#storylink=rss'>site</a></td><td>A Kenyan police official says his use of a plane for a personal errand did not delay the deployment of the police tactical team which ended the extremist attack in eastern Kenya where 148 people, the majority of them university students, were killed.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-19 16:55:45</td><td><a href='http://abcnews.go.com/International/wireStory/kenya-official-delay-ending-attack-30428993'>site</a></td><td>On the day of the attack the helicopter had taken a police commander to northern Kenya and the plane had gone to Mombasa for a training exercise.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 09:10:58</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3051947/Kenya-kicks-anti-corruption-officials.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Kenya kicks out top anti-corruption officials</td></tr><tr><td>Kenya's top anti-corruption officials were suspended Thursday following a bitter stand-off with parliament and after they alleged widespread graft in the east African nation.</td></tr></table></td></tr>
 </table></body></html>

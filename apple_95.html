@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:03:40</td><td></td><td><a href='apple_95_97.html'>March 26 (Reuters) - Apple Inc Chief Executive Tim Cook said he planned to give away all his wealth, the Fortune magazine reported. (4)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 23:27:19</td><td><a href='http://www.reuters.com/article/2015/03/26/us-apple-ceo-tim-cook-idUSKBN0MM2YM20150326?feedType=RSS&feedName=wtMostRead'>site</a></td><td>Apple CEO Tim Cook shows the new MacBook during an Apple event in San Francisco, California March 9, 2015.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 23:27:19</td><td></td><td><a href='apple_95_96.html'>While Cook's largesse could not begin to approach the scale of a Gates or Zuckerberg, both worth billions of dollars, the Apple CEO told Fortune he hopes to make a difference. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/YiO6AcZXZrsJ0.2a0P7A8Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-04-02T093106Z_1_LYNXMPEB310DS_RTROPTP_3_APPLE-ATTACK_original.jpg'></td><td>2015-04-02 09:31:06</td><td><a href='http://finance.yahoo.com/news/eu-regulators-probe-apples-music-093106544.html'>site</a></td><td>The commission has sought details from several music labels and digital streaming companies on their agreements with Apple, as the iPhone maker gears up to launch its own music streaming service this summer, the report said.</td></tr>
 </table></body></html>

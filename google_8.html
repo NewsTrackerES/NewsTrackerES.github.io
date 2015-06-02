@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-04-29T145926Z_1_LYNXMPEB3S0P1_RTROPTP_2_GOOGLE-EU.JPG'></td><td>2015-04-29 16:15:35</td><td><a href='https://www.yahoo.com/tech/s/google-launches-security-feature-chrome-browser-145926982--finance.html?src=rss'>site</a></td><td><table><tr><td>Millions of phishing emails and websites are sent every day, Google said.</td></tr><tr><td>Nearly 2 percent of messages sent through Gmail, Google s email service, are designed to steal passwords.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 10:37:37</td><td></td><td><a href='google_8_9.html'>Google has lost a Court of Appeal bid to prevent British consumers having the right to sue it in the UK. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 10:37:37</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014439/Google-loses-appeal-bid-suing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>They say Google's ''clandestine'' tracking and collation of internet usage between summer 2011 and early 2012 led to distress and embarrassment among UK users.</td></tr><tr><td>They accuse Google of collecting private information without their knowledge and consent by the use of "cookies" - a small string of text saved on the user's device.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/British-Safari-Users-Can-Now-Sue-Google-Safari-Internet-Browser-Users-Can-Now-Sue-Google-269851.jpg'></td><td>2015-03-27 16:55:00</td><td><a href='http://www.express.co.uk/life-style/science-technology/566819/Google-Court-of-Appeal-MacBook-iPhone-iPad-UK-Sue-Litigation?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-life-and-style-news+%28Daily+Express+%3A%3A+Life+%26+Style+Feed%29'>site</a></td><td><table><tr><td>A High Court judge previously rejected an attempt by Google to block the litigation, and today three appeal judges upheld his decision, saying the claims "raise serious issues which merit a trial".</td></tr><tr><td>Jonathan Hawker represents the Google Action Group, a not-for-profit company set up to manage claims against the internet giant for breach of privacy through the Safari workaround.</td></tr><tr><td>"We urge all Safari users to join us in this battle to hold Google to account for its actions in the only way it understands."</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/27/11/19421765000005DC-0-image-m-21_1427454665393.jpg'></td><td>2015-03-28 15:02:35</td><td><a href='http://www.dailymail.co.uk/news/article-3014557/Google-users-sue-internet-giant-British-courts-clandestine-tracking-browsing-appeal-court-rules.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The claimants, known as Safari Users Against Google's Secret Tracking, all used Apple's Safari browser and have accused Google of bypassing security settings in order to track their online browsing and target them with adverts.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>tamir rice</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 13:22:24</td><td></td><td><a href='tamir_rice_2.html'>The court documents filed late last week by the city said Tamir's injuries and the subsequent complaints for damages stemmed from his actions and failure "to exercise due care to avoid injury." (3)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 23:28:51</td><td></td><td><a href='tamir_rice_0.html'>Suddenly a police car appears, and without even leaving the driver's seat an officer shoots the boy, 12-year-old Tamir Rice in the stomach and torso. (7)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 13:22:24</td><td></td><td><a href='tamir_rice_5.html'>The court documents filed late last week by the city said Tamir's injuries and the subsequent complaints for damages stemmed from his actions and failure "to exercise due care to avoid injury." (3)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 23:28:51</td><td></td><td><a href='tamir_rice_0.html'>Twelve-year-old Tamir Rice, shot dead by police at a park in Cleveland in the US in November, 'failed to exercise due care to avoid injury', according to the City of Cleveland. (7)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-12 15:43:24</td><td></td><td><a href='tamir_rice_4.html'>'Majority of Our Work Is Complete' on Tamir Rice, Sheriff Says (1)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-14 02:58:32</td><td></td><td><a href='tamir_rice_3.html'>Family attorney Walter Madison says Tamir Rice's mother made the decision last week. (1)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-06 14:33:12</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/06/3-reasons-apples-watch-will-or-wont-change-the-game'>site</a></td><td>Cook will make his case for the Apple Watch at a press event Monday, where he's expected to show off more features and apps.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww1.hdnux.com/photos/35/56/03/7790788/5/square_gallery_thumb.jpg'></td><td>2015-04-09 15:42:23</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-options-54-combinations-of-case-6188819.php'>site</a></td><td>FILE - In this March 9, 2015 file photo, event attendees get a look at varieties of Apple Watch on display in the demo room after an Apple event in San Francisco.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/55/51/7789127/5/square_gallery_thumb.jpg'></td><td>2015-04-09 20:37:30</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-Watch-isn-t-the-only-gadget-out-this-week-6188192.php'>site</a></td><td>9, 2014 file photo, the new Apple Watch is modeled during a media event in Cupertino, Calif.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/35/54/15/7783268/3/square_gallery_thumb.jpg'></td><td>2015-04-08 07:43:45</td><td><a href='http://www.sfgate.com/business/technology/article/Review-New-Apple-Photos-app-makes-fixing-6185567.php'>site</a></td><td><table><tr><td>Review: New Apple Photos app makes fixing, cropping easy</td></tr><tr><td>Apple's new Photos app for Mac computers, available Wednesday as a free software update, makes it easy to organize and edit your pictures.</td></tr></table></td></tr>
 </table></body></html>

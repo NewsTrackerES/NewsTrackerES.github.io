@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>netanyahu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i1.huffpost.com/gen/2621670/images/n-NETANYAHU-large.jpg'></td><td>2015-02-17 16:59:03</td><td><a href='http://www.huffingtonpost.com/2015/02/17/netanyahu-expenses-scandal_n_6698550.html'>site</a></td><td>The uproar jolted an election campaign in which Netanyahu's opponents have tried to portray him as enjoying a lavish lifestyle and being out of touch with the struggles of average Israelis.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-02-17 17:09:59</td><td><a href='http://www.usnews.com/news/world/articles/2015/02/17/israels-netanyahu-facing-new-scandal-over-bloated-expenses'>site</a></td><td><table><tr><td>Israel's Netanyahu facing new scandal over bloated expenses</td></tr><tr><td>Netanyahu's allies angrily dismissed the allegations as part of a campaign to deflect attention from important national security issues.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 13:52:58</td><td></td><td><a href='netanyahu_0_1.html'>Wisconsin Gov. Scott Walker says he "absolutely" expects to meet with Prime Minister Benjamin Netanyahu during his first visit to Israel next month. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 13:52:58</td><td><a href='http://news.yahoo.com/walker-says-expects-meet-netanyahu-israel-135258409--election.html'>site</a></td><td>Walker, a Republican, told The Associated Press in an interview ahead of his departure on a European trade mission that the Netanyahu meeting in mid-May is not yet confirmed, but that it's his "hope and expectation" it will happen.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 14:10:11</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11431029&ref=rss'>site</a></td><td>Walker said his goal is to meet with Netanyahu and other members of the Israeli government to get an understanding of the issues facing the Middle East.</td></tr>
 </table></body></html>

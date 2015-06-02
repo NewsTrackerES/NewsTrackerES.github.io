@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boston marathon bombing</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/9jFlrhtoB2i.w1de4EdKOA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/1cd7b567fecebc096f0f6a7067007b3d.jpg'></td><td>2015-03-03 06:39:22</td><td><a href='http://news.yahoo.com/final-jury-chosen-boston-marathon-bombing-trial-063922662.html'>site</a></td><td>Final jury to be chosen in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.gannett-cdn.com/-mm-/716083e9b45915fce63ddd8e55917244e64f69ee/c=0-0-3208-2412&amp;r=x404&amp;c=534x401/local/-/media/USATODAY/WiresImages/2015/04/06/cfcbb9625654400e720f6a7067008ebb.jpg'></td><td>2015-04-07 07:53:07</td><td><a href='http://www.usatoday.com/story/news/nation/2015/04/07/boston-marathon-bombing-trial-deliberations/25399203/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-newstopstories'>site</a></td><td>Jury deliberations to begin in Boston Marathon bombing trial</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 21:19:55</td><td><a href='http://news.yahoo.com/man-fined-missing-end-jury-selection-bombing-trial-203213151.html'>site</a></td><td>BOSTON (AP) - A man who skipped the final stages of jury selection in the Boston Marathon bombing trial has been fined $400 and sentenced to 40 hours of community service.</td></tr>
+</table></body></html>

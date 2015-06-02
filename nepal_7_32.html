@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 6,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/ooUJB6_sNhxNrDxOzyOHnQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/517c288983e8a912740f6a7067008992.jpg.cf.jpg'></td><td>2015-04-25 11:12:47</td><td><a href='http://news.yahoo.com/nepal-police-449-people-confirmed-dead-earthquake-including-111247715.html'>site</a></td><td>Nepal police: 449 people confirmed dead in earthquake, including 181 in Kathmandu</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://wpmedia.news.nationalpost.com/2015/04/540086743_37648165.jpg?w=620'></td><td>2015-04-25 14:33:07</td><td><a href='http://news.nationalpost.com/news/world/nepal-earthquake-753492'>site</a></td><td>KATHMANDU, Nepal - A top Nepalese police official says at least 876 people are confirmed dead in the wake of the massive earthquake that struck outside Kathmandu.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-26 04:54:03</td><td><a href='http://www.utsandiego.com/news/2015/apr/25/nepal-police-official-says-at-least-1910-have/'>site</a></td><td>KATHMANDU, Nepal (AP) - Nepal police official says at least 1,910 have died, including 721 in Kathmandu, in the quake.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-26 05:00:37</td><td><a href='http://abcnews.go.com/Technology/wireStory/nepal-quake-1400-dead-everest-shaken-30584543'>site</a></td><td>A Nepal police official says at least 1,910 people have been killed, including at least 721 in Kathmandu, in the immense weekend earthquake centered outside of the capital of the Himalayan nation.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-28 04:42:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-28-AS--Nepal-Earthquake-The%20Latest/id-469a8274f9ea4d028f1243301da058a1'>site</a></td><td>A Nepal police official says at least 4,352 bodies have so far been recovered after last week's massive earthquake that struck just outside of capital Kathmandu.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-28 13:51:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-04-28-AS--Nepal-Earthquake/id-47d2f9b6c4394856bf2d919ae1b918e8'>site</a></td><td>The country's confirmed death toll rose to 4,680, said police Inspector Sharad Thapa at the Nepal Police Control Room in Kathmandu.</td></tr>
+</table></body></html>

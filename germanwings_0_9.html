@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 18:37:35</td><td><a href='http://news.yahoo.com/airline-official-germanwings-probe-shouldnt-set-precedent-183424981.html'>site</a></td><td>The subsequent investigation has focused in large part on the pilot's history of depression and procedures at Germanwings and its parent company, Lufthansa, for screening pilots for mental health issues.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 21:27:20</td><td><a href='http://www.utsandiego.com/news/2015/apr/29/faa-had-questioned-mental-health-of-germanwings/'>site</a></td><td>FAA had questioned mental health of Germanwings pilot</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/7/t/9/r/image.related.articleLeadwide.620x349.1m7t5a.png/1427294619072.jpg'></td><td>2015-03-25 15:03:46</td><td><a href='http://www.smh.com.au/world/germanwings-flight-4u9525-disaster-laborious-black-box-inquiry-aims-to-unlock-crash-cause-20150325-1m7t5a.html'>site</a></td><td>Germanwings said 72 Germans were killed in Tuesday's crash, the first major air passenger disaster on French soil since the 2000 Concorde accident just outside Paris.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297681793981_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-31 12:45:18</td><td><a href='http://www.torontosun.com/2015/03/31/psychological-profiling-doors-focus-of-french-germanwings-probe'>site</a></td><td>BERLIN/PARIS - French air accident authority BEA said its probe into the Germanwings crash would study "systemic weaknesses" that might have led to the disaster, such as psychological profiling and cockpit door locks.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 13:24:12</td><td><a href='http://www.reuters.com/article/2015/03/31/us-france-crash-pilot-idUSKBN0MR1EJ20150331?feedType=RSS&feedName=worldNews'>site</a></td><td>Psychological profiling, doors focus of French Germanwings probe</td></tr>
 </table></body></html>

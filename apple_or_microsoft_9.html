@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 5,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,9 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>4</td><td><img src='http://www.usnews.com/dims4/USNEWS/3d6c05d/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F80%2Fc65ae2a4ed5a56d226019e8cc5722e%2Fmedia%3Ad8b854adadd246059c96159ad5a49a83MicrosoftCheaperSurface.JPEG'></td><td>2015-03-31 13:02:05</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/31/microsoft-makes-cheaper-version-of-surface-pro-3-tablet'>site</a></td><td>In the past, Microsoft has used a lightweight version called RT in its cheaper tablets.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 13:02:05</td><td></td><td><a href='apple_or_microsoft_9_11.html'>NEW YORK (AP) - Microsoft is making a cheaper version of its Surface Pro 3 tablet computer in an effort to reach students and budget-conscious families. (5)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-31 13:02:05</td><td></td><td><a href='apple_or_microsoft_9_10.html'>The new Surface model is thinner and lighter, partly because it gets rid of the fan - similar to Apple's new MacBook laptop. (2)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 18:00:15</td><td></td><td><a href='apple_or_microsoft_9_13.html'>SAN FRANCISCO (AP) - Google is releasing its cheapest Chromebook laptops yet, two versions priced at $149 aimed at undercutting Microsoft's Windows franchise and gaining ground in even more classrooms. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-31 18:00:15</td><td></td><td><a href='apple_or_microsoft_9_12.html'>"We cannot be happier that Microsoft is helping drive down the prices of PCs," said Caesar Sengupta, Google's vice president of product management for Chromebooks. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201440/SCCZEN_AP140110073339_140x93.jpg'></td><td>2015-04-08 02:00:00</td><td><a href='http://www.nzherald.co.nz/technology/news/article.cfm?c_id=5&objectid=11429476&ref=rss'>site</a></td><td>What's more, Microsoft's move appears to demonstrate the real need that the tech industry has for certain kinds of talent.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 02:05:00</td><td></td><td><a href='apple_or_microsoft_9_10.html'>Microsoft is looking to recruit yet another type of diverse employee: The Redmond, Washington-based technology giant is piloting a program focused on hiring people with autism for full-time positions in the company's headquarters. (2)</a></td></tr>
 </table></body></html>

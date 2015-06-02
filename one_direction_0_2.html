@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 14,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 14 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>one direction</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 16:36:17</td><td><a href='http://news.sky.com/story/1452523/zayn-malik-has-left-one-direction'>site</a></td><td>Zayn Malik Has Left One Direction</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdn3.belfasttelegraph.co.uk/entertainment/news/article31082325.ece/b17c0/ALTERNATES/h342/cover_media_cmg10844bb6-2207-473d-ab82-1c4ec3d0a48b_0'></td><td>2015-03-25 16:37:07</td><td><a href='http://www.belfasttelegraph.co.uk/entertainment/news/zayn-malik-leaves-one-direction-31094551.html'>site</a></td><td>Zayn Malik leaves One Direction</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn3.belfasttelegraph.co.uk/entertainment/music/news/article31094560.ece/fd79d/ALTERNATES/h342/PANews%20BT_P-a4fc1f0a-4c96-45fe-ac1d-321e6a5fd80f_I1.jpg'></td><td>2015-03-25 16:41:30</td><td><a href='http://www.belfasttelegraph.co.uk/news/uk/zayn-quitting-1d-at-right-time-31094561.html'>site</a></td><td>Malik said: " My life with One Direction has been more than I could ever have imagined. But, after five years, I feel like it is now the right time for me to leave the band. I'd like to apologise to the fans if I've let anyone down, but I have to do what feels right in my heart.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a57.foxnews.com/global.fncstatic.com/static/managed/img/Entertainment/876/493/zayn malik one direction.jpg?ve=1&tl=1'></td><td>2015-03-25 16:45:10</td><td><a href='http://www.foxnews.com/entertainment/2015/03/25/zayn-malik-leaves-one-direction/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fentertainment+%28Internal+-+Entertainment+-+Mixed%29'>site</a></td><td>Zayn Malik has left One Direction, saying he wants to feel like a "normal 22-year-old."</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.thedailybeast.com/articles/2015/03/25/zayn-malik-quits-one-direction-what-it-means-for-the-world-s-biggest-pop-group/_jcr_content/image.img.410.273.jpg/1427309654409.cached.jpg'></td><td>2015-03-25 17:04:00</td><td><a href='http://www.rollingstone.com/music/news/zayn-malik-quits-one-direction-20150325'>site</a></td><td><table><tr><td>Zayn Malik Quits One Direction</td></tr><tr><td>After five incredible years Zayn Malik has decided to leave One Direction.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-25 17:05:00</td><td><a href='http://www.chicagotribune.com/entertainment/music/chi-one-direction-zayn-malik-quits-band-20150325-story.html'>site</a></td><td>Chart-topping boy band One Direction says Zayn Malik has left the group.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://www.gannett-cdn.com/-mm-/ba3dc27cd316dc0cedec920d66fbc6bf9ae97774/r=x60&amp;c=60x60/http/videos.usatoday.net/Brightcove2/29906170001/2015/03/29906170001_4134512808001_thumb-7a9a8c808992ce0d710f6a706700f7cd.jpg'></td><td>2015-03-25 22:57:34</td><td><a href='http://www.usatoday.com/videos/life/2015/03/25/70459196/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-lifetopstories'>site</a></td><td>Fans react to Zayn Malik quitting One Direction</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/23/26FEA74900000578-0-image-m-40_1427325044207.jpg'></td><td>2015-03-25 23:47:37</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3012044/The-former-Fab-Five-A-look-One-Direction-were.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Zayn Malik delivered a shocker to his fans when he announced he was quitting the chart-topping band One Direction.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-26 05:30:51</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article16350071.html#storylink=rss'>site</a></td><td>Malik said Wednesday, March 25, 2015, he is leaving chart-topping boy band One Direction "to be a normal 22-year-old."</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-03-26 11:16:31</td><td><a href='http://www.startribune.com/entertainment/music/297542041.html'>site</a></td><td>Cowell, who manages One Direction, thanked Malik for his serving five years with the band.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/27/article-P-a80b4a47-aec9-4e3d-ace8-7502f268d4b6-6XL65a6cWHSK2-943_634x356.jpg'></td><td>2015-03-27 10:39:20</td><td><a href='http://www.dailymail.co.uk/wires/pa/article-3014354/Zayn-upset-One-Direction-fans.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Zayn Malik has spoken out for the first time since he announced he was leaving One Direction and said he feels "upset" for letting the fans down.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-04 15:59:43</td><td><a href='http://jam.canoe.ca/Music/2015/04/04/22326796-wenn-story.html?cid=rssentertainmentmusic'>site</a></td><td>One Direction determined to continue without Zayn Malik</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://news.sky.com/story/1464499/data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'></td><td>2015-04-14 07:28:59</td><td><a href='http://news.sky.com/story/1464499/one-directions-first-official-photo-without-zayn'>site</a></td><td>One Direction's First Official Photo Without Zayn</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201520/SCCZEN_A_AP1405290350422_140x93.jpg'></td><td>2015-05-24 22:00:00</td><td><a href='http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11454288&ref=rss'>site</a></td><td>Is this why Zayn Malik quit One Direction?</td></tr>
+</table></body></html>

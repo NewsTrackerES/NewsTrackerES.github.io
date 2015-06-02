@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 18:14:56</td><td></td><td><a href='germanwings_18.html'>Lufthansa says better results at Germanwings, along with lower fuel costs, should boost earnings for its airlines division - which also includes Swiss, Eurowings, Lufthansa CityLine, Air Dolomiti and Austrian Airlines - this year. (5)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 14:39:09</td><td></td><td><a href='germanwings_0.html'>On Thursday, French prosecutors said Lubitz, the co-pilot of Germanwings Flight 9525, "intentionally" crashed the jet into the side of a mountain. (172)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 18:14:56</td><td></td><td><a href='germanwings_22.html'>Lufthansa says better results at Germanwings, along with lower fuel costs, should boost earnings for its airlines division - which also includes Swiss, Eurowings, Lufthansa CityLine, Air Dolomiti and Austrian Airlines - this year. (5)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-25 07:04:55</td><td></td><td><a href='germanwings_26.html'>A Melbourne family is "crippled with sadness" after mother and son Carol Friday and Greig Friday were among the 150 killed when Germanwings flight 4U9525 came down in southern France. (1)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 16:46:50</td><td></td><td><a href='germanwings_0.html'>Montabaur, Germany: Co-pilot Andreas Lubitz was silent as Germanwings Flight 9525 from Barcelona to Dusseldorf descended for eight minutes before crashing in the French Alps on Tuesday, authorities said. (174)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-30 16:22:59</td><td></td><td><a href='germanwings_25.html'>Melbourne Germanwings plan crash victims Carol Friday and son Greig Friday. (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-17 06:45:23</td><td></td><td><a href='germanwings_24.html'>But following the intentional crashing of Germanwings Flight 9525 by the co-pilot, a long-running debate over autonomous jets is resurfacing. (1)</a></td></tr>
 </table></body></html>

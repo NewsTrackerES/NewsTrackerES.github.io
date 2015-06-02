@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.3013675.1427567880!/fileImage/httpImage/image.jpg_gen/derivatives/original_300/andreas-lubitz.jpg'></td><td>2015-03-31 11:29:05</td><td><a href='http://www.cbc.ca/news/world/germanwings-flight-4u9525-france-eyes-cockpit-entry-rules-change-1.3015984?cmp=rss'>site</a></td><td>Several airlines and the European aviation regulator have already changed procedures after the Germanwings crash, announcing last week that they now recommend having two people in the cockpit at all times.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-01 04:35:40</td><td><a href='http://www.foxnews.com/world/2015/03/31/french-accident-investigators-examine-cockpit-entry-psychological-screening/'>site</a></td><td>The Germanwings crash has already produced some changes in aviation procedures.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://cdn.images.express.co.uk/img/dynamic/78/590x/secondary/andreas-lubitz-272900.jpg'></td><td>2015-04-05 18:42:00</td><td><a href='http://www.express.co.uk/news/world/568607/Germanwings-crash-European-Union-non-conformity-German-air-safety-rules?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-world-news+%28Daily+Express+%3A%3A+World+Feed%29'>site</a></td><td>EU agency noted 'non-conformity? with Germany's air safety rules before Germanwings crash</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 17:09:36</td><td><a href='http://www.foxnews.com/world/2015/04/08/eu-was-looking-into-airline-safety-regulations-prior-to-germanwings-crash-in/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>BRUSSELS - European Union authorities were looking into German airline safety procedures on "a number of issues" well ahead of the March 24 Germanwings crash after a standard inspection by its aviation safety agency questioned some procedures.</td></tr>
+</table></body></html>

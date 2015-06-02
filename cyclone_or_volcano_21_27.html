@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cyclone or volcano</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 17:45:54</td><td><a href='http://ibnlive.in.com/news/small-pacific-nation-of-vanuatu-hit-by-powerful-cyclone-pam/533808-2.html'>site</a></td><td>The cyclone has already destroyed some homes and caused damage to other Pacific islands including Kiribati and the Solomon Islands.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/r/4/1/image.related.articleLeadwide.620x349.144nhi.png/1426410648246.jpg'></td><td>2015-03-15 09:10:57</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-it-was-like-a-velociraptor-as-australians-survive-vanuatu-cyclone-20150315-144nhi.html'>site</a></td><td>A woman carrying a baby stands with children outside homes damaged by Cyclone Pam in Port Vila.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-16 02:30:26</td><td><a href='http://www.startribune.com/world/296391831.html'>site</a></td><td>A: "Cyclone Pam has devastated Port Vila. More than 90 percent of the buildings and houses in Port Vila have been destroyed or damaged. The state of emergency that has been issued is only for Port Vila. Once we receive an update on the extent of the damage in the provinces then another state of emergency will be issued for the outer islands."</td></tr>
+</table></body></html>

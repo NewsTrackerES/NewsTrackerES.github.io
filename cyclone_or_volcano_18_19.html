@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>cyclone or volcano</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/22/61/7941226/6/pageart_n.jpg'></td><td>2015-05-17 00:28:39</td><td><a href='http://www.chron.com/news/science/article/Earthquakes-on-Hawaii-volcano-could-signal-new-6268464.php'>site</a></td><td>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-17 02:26:06</td><td><a href='http://www.usnews.com/news/science/news/articles/2015/05/16/earthquakes-on-hawaii-volcano-could-signal-new-eruption'>site</a></td><td>Meanwhile, a rash of earthquakes rattled the volcano with as many as 20 to 25 quakes per hour, and scientists' tilt meters detected that the ground was deforming.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 22:47:08</td><td><a href='http://www.foxnews.com/us/2015/04/30/lava-lake-on-hawaii-kilauea-volcano-starts-to-overflow-its-rim-drawing-large/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>HONOLULU - A lake of lava on Hawaii's Kilauea volcano has been rising over the past week and, at times, overflowing in a spectacular show.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://s1.yimg.com/uu/api/res/1.2/Y5ch10UbtgOF0IW3fmKfSQ--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.associatedpressfree.com/2f217b513f2400a981038e388bb99231'></td><td>2015-04-30 23:46:21</td><td><a href='http://news.yahoo.com/lava-lake-hawaiis-volcano-overflows-spectacular-show-224717394.html'>site</a></td><td>But this past week, because of lava is rising inside the volcano, the lava lake rose high enough that it was visible, she said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 21:36:12</td><td><a href='http://www.startribune.com/nation/302481041.html'>site</a></td><td>HONOLULU - Molten lava and rocks went flying through the air on Hawaii's Kilauea (kih-luh-WAY'-uh) volcano after an explosion caused by the partial collapse of a crater wall.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-05 15:01:24</td><td><a href='http://nypost.com/2015/05/05/lava-explodes-from-hawaiis-kilauea-volcano-after-crater-collapses/'>site</a></td><td><table><tr><td>Lava explodes from Hawaii?s Kilauea volcano after crater collapses</td></tr><tr><td>Smoke and lava explode from Kilauea volcano on 's Big Island.</td></tr></table></td></tr>
 </table></body></html>

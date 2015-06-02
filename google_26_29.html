@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b79/report-on-business/international-business/us-business/article23590076.ece/ALTERNATES/w220/web-google-0324.JPG'></td><td>2015-03-24 13:20:17</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/us-business/morgan-stanley-cfo-leaves-for-same-position-at-google/article23590077/?cmpid=rss1'>site</a></td><td>Porat will join Google on May 26, the company said in a blog post.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/31/50/7707199/3/920x920.jpg'></td><td>2015-03-24 21:02:38</td><td><a href='http://www.sfgate.com/business/technology/article/Google-hires-Morgan-Stanley-s-Ruth-Porat-as-CFO-6155047.php'>site</a></td><td>Porat, 58, will become Google's highest-ranking female executive when she starts her new job on May 26.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297680172167_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-26 21:52:45</td><td><a href='http://www.torontosun.com/2015/03/26/google-to-pay-new-cfo-annual-base-salary-of-us650000'>site</a></td><td>Porat, who will join Google on May 26, will also get a new hire grant of $25 million through restricted stock units and a $40 million biennial grant in 2016, the company said in a regulatory filing on Thursday.</td></tr>
+</table></body></html>

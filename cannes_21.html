@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://resources1.news.com.au/images/2015/05/15/1227355/885809-778194c6-fa84-11e4-8350-bd0ae55feeaa.jpg'></td><td>2015-05-15 01:18:00</td><td><a href='http://www.news.com.au/entertainment/awards/miranda-kerr-flashes-the-flesh-at-the-cannes-film-festival/story-fnil5php-1227355886177?from=public_rss'>site</a></td><td>STARS bring the glamour at the 2015 Cannes Film Festival.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://resources1.news.com.au/images/2015/05/15/1227355/885809-778194c6-fa84-11e4-8350-bd0ae55feeaa.jpg'></td><td>2015-05-15 05:58:00</td><td><a href='http://www.news.com.au/entertainment/awards/miranda-kerr-flashes-the-flesh-at-the-cannes-film-festival/story-fnil5php-1227355886177?from=public_rss'>site</a></td><td>Miranda flashes the flesh at Cannes</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-20 17:55:31</td><td></td><td><a href='cannes_21_22.html'>The Pixar and Disney Animation chief creative officer presented footage to a Cannes Film Festival audience of Pixar's delayed movie "The Good Dinosaur," which he called the studio's biggest "What if?" (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-20 23:53:40</td><td></td><td><a href='cannes_21_23.html'>CANNES WATCH: A mermaid dress and wedding bells for Brolin (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/XvWwMniPByePRA6aYPed_Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/9854dc7162d5f316760f6a7067004b7b.jpg'></td><td>2015-05-20 23:53:47</td><td><a href='http://news.yahoo.com/cannes-watch-mermaid-dress-wedding-bells-brolin-235347835.html'>site</a></td><td>Romanian model-turned-actress Madalina Ghenea had already grabbed attention at the Cannes Film Festival by featuring nude on the provocative poster for the film "Youth."</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-21 02:51:09</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21537372.html#storylink=rss'>site</a></td><td>"In the mid-1990s, there were a lot of discos popping up in China," the 45-year-old director told reporters Wednesday in Cannes, where his film is competing for the Palme d'Or.</td></tr>
 </table></body></html>

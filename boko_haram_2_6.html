@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/01/73/7610103/5/square_gallery_thumb.jpg'></td><td>2015-03-05 13:57:02</td><td><a href='http://www.sfgate.com/news/world/article/Boko-Haram-refugees-risk-lives-to-cross-lake-to-6116274.php'>site</a></td><td>"If I had stayed there they would have killed me too," she said softly inside a tent at a refugee camp now home to more than 6,000 Nigerians who have fled Boko Haram's violence.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-06 07:55:57</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-05-AF--Chad-Boko%20Haram-Refugees/id-e85740bcd632465bae342fb0702cdc95'>site</a></td><td>Nigerians who fled Boko Haram to Chad sit outside their tent at the Baga Solo refugee camp in Chad, Wednesday March 4, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.smh.com.au/content/dam/images/1/4/4/0/4/m/image.related.articleLeadwide.620x349.143yck.png/1426312009057.jpg'></td><td>2015-03-14 01:55:35</td><td><a href='http://www.smh.com.au/world/children-rescued-from-boko-haram-so-traumatised-they-have-forgotten-their-names-20150314-143yck.html'>site</a></td><td>Nigerian girls who fled Boko Haram to Chad gather in a school set up by UNICEF at the Baga Sola refugee camp.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/36/16/03/7921898/5/landscape_32.jpg'></td><td>2015-05-06 16:57:05</td><td><a href='http://www.sfgate.com/news/world/article/3-000-Nigerian-refugees-from-Boko-Haram-deported-6246099.php'>site</a></td><td>Niger is hosting more than 100,000 other Nigerian refugees who have fled Boko Haram and who apparently are being allowed to remain in camps outside the Lake Chad area.</td></tr>
+</table></body></html>

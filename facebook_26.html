@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 09:48:24</td><td><a href='http://www.sbs.com.au/news/article/2015/05/06/facebooks-sandberg-remembers-late-husband'>site</a></td><td><table><tr><td>Facebook&#039;s Sandberg remembers late husband</td></tr><tr><td>Facebook's Sheryl Sandberg says she is devastated by the sudden death of her husband, but lucky to have known him and shared her life with him.</td></tr><tr><td>In a post on Facebook on Tuesday, Sandberg paid tribute to her late husband.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 14:22:34</td><td></td><td><a href='facebook_26_27.html'>The brokerage expects Facebook's revenue from video advertising to reach about $1 billion this year. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://s3.reutersmedia.net/resources_v2/images/btn_rel_video.gif'></td><td>2015-04-23 14:22:34</td><td><a href='http://www.reuters.com/article/2015/04/23/us-facebook-video-idUSKBN0NE1N520150423?feedType=RSS&feedName=businessNews'>site</a></td><td><table><tr><td>As YouTube marks tenth year, Facebook emerges as video threat</td></tr><tr><td>Facebook Inc said on Wednesday that its users were watching 4 billion videos a day, compared with 3 billion in January and just 1 billion in September.</td></tr><tr><td>Facebook shares were down about 1 percent at $83.92 in early trading on Thursday.</td></tr><tr><td>"More than 75 percent of global video views on Facebook occur on mobile, and we believe mobile video will become more important to marketers over time," she said.</td></tr></table></td></tr>
 </table></body></html>

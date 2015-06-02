@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/c55c7a493c8df311730f6a70670081b3_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-20 04:36:41</td><td><a href='http://www.utsandiego.com/news/2015/apr/19/5-years-after-bp-spill-whats-changed-in-offshore/'>site</a></td><td>As oil gushed from BP's ruptured well five years ago and public outrage built by the day, the Obama administration issued a six-month moratorium on drilling in the Gulf of Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-20 04:40:29</td><td><a href='http://www.startribune.com/nation/300617641.html'>site</a></td><td>5 years after BP spill: A look at what's changed in offshore drilling in the Gulf of Mexico</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 16:34:56</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/25/independent-candidate-rides-hated-of-politics-in-mexico'>site</a></td><td><table><tr><td>"This breath of fresh air could be just the shock the parties need, at least in Nuevo Leon," Luis Carlos Ugalde, former head of the Mexico's national election commission, told local media.</td></tr><tr><td>People are so fed up that parties have trouble giving away pens and T-shirts on the streets, and youthful brigades have organized on the Internet to rip down campaign posters from lampposts and trees in some Mexico City neighborhoods.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/36/53/44/8042762/7/920x920.jpg'></td><td>2015-05-25 16:34:56</td><td><a href='http://www.sfgate.com/news/crime/article/Independent-candidate-rides-hated-of-politics-in-6285121.php'>site</a></td><td>MEXICO CITY (AP) - Mexicans' disgust with corrupt, aloof, high-living politicians has a name, and it's El Bronco.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/05/25/f0/e6/c4a07f150f5646598511bc7390ea0eba-825b0898dcb64757b4d1df1ceeedb075-0_1.jpg'></td><td>2015-05-25 18:29:08</td><td><a href='http://www.daytondailynews.com/ap/ap/international/independent-candidate-rides-hated-of-politics-in-m/nmNTx/'>site</a></td><td>Independent candidate rides hatred of politics in Mexico</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/36/53/44/8042762/7/920x920.jpg'></td><td>2015-05-25 18:29:08</td><td><a href='http://www.sfgate.com/news/crime/article/Independent-candidate-rides-hated-of-politics-in-6285121.php'>site</a></td><td>FILE - In this March 30, 2011 file photo, Jaime Rodriguez, mayor of the Mexican town Villa Garcia, speaks on a cellphone in Monterrey, Mexico, a day after he survived an assassination attempt.</td></tr>
 </table></body></html>

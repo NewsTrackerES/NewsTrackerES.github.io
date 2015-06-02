@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 21:13:49</td><td></td><td><a href='hillary_clinton_40_41.html'>(AP) - The specter of Hillary Rodham Clinton's imminent presidential campaign dropped like a gift from the heavens at the National Rifle Association's annual convention Friday. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 21:13:49</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/10/parade-of-likely-gop-presidential-candidates-to-speak-to-nra'>site</a></td><td>"Hillary Clinton has already made it clear she'll be on the side of elitism."</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 22:35:39</td><td></td><td><a href='hillary_clinton_40_42.html'>Former Florida Gov. Jeb Bush decried the "liberal, progressive worldview of Barack Obama and Hillary Clinton and Eric Holder, and all of the other people who want to take the guns out of the hands of the good guys." (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/uu/api/res/1.2/dk00D4U_KfbwwBPlLCOH5A--/dz02NDA7c209MTtmaT1maWxsO3B5b2ZmPTA7aD0zNjA7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/video/video.associatedpressfree.com/677432d8cc46a68e725949bbfad7d520'></td><td>2015-04-21 16:56:18</td><td><a href='http://news.yahoo.com/amid-gop-criticism-clinton-defends-family-foundation-070721691--election.html'>site</a></td><td><table><tr><td>Campaigning Clinton has qualms about trade deal</td></tr><tr><td>CONCORD, N.H. (AP) - Hillary Rodham Clinton is expressing qualms about the sweeping trade deal the Obama administration is negotiating with Pacific nations.</td></tr></table></td></tr>
 </table></body></html>

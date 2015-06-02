@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/thumb_small/public/baltimore_4.jpg?itok=xJaJ8EPD'></td><td>2015-04-27 20:59:00</td><td><a href='http://www.sbs.com.au/news/article/2015/04/28/state-emergency-declared-over-baltimore-violence'>site</a></td><td>Youths stoned a city bus and passing police vehicles outside the Mondawmin Mall in northwest Baltimore just a few blocks from the site of the funeral of 25-year-old Freddie Gray.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 22:40:18</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11439695&ref=rss'>site</a></td><td>Obama pledges help for Baltimore riots after Gray funeral</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47077254,width-300,resizemode-4/violence.jpg'></td><td>2015-04-27 23:10:46</td><td><a href='http://timesofindia.indiatimes.com/world/us/Violence-flares-in-Baltimore/articleshow/47077240.cms'>site</a></td><td>The riots broke out just a few blocks from the funeral of Freddie Gray and then spread through parts of Baltimore in the most violent US demonstrations since looting in Ferguson, Missouri, last year.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-01 12:31:10</td><td><a href='http://abcnews.go.com/US/wireStory/baltimores-prosecutor-faces-big-test-months-job-30722227'>site</a></td><td>Mosby and her husband, a Baltimore city councilman, are black and live just blocks from the poverty-stricken community where riots broke out Monday following Gray's funeral.</td></tr>
+</table></body></html>

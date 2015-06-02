@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/feeds/Associated Press/2015/04/16/660/371/45095441c40cc410VgnVCM100000d7c1a8c0____-DEM 2016 Clinton Foundation-1.jpg?ve=1&tl=1'></td><td>2015-04-16 02:33:12</td><td><a href='http://www.foxbusiness.com/markets/2015/04/15/clinton-foundation-to-continue-accepting-some-foreign-donations-disclose-donors/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Hillary Clinton had previously agreed with the Obama administration to limit new foreign donations to the foundation while she served as secretary of state, but at least six nations that previously contributed still donated to the charity during her four-year stint.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/35/66/50/7825961/3/920x920.jpg'></td><td>2015-04-16 02:57:08</td><td><a href='http://www.sfgate.com/news/politics/article/Clinton-Foundation-to-continue-accepting-some-6202841.php'>site</a></td><td>Last month, while she was still a foundation board member, Hillary Clinton defended the family charity to questions about its reliance on donations from foreign governments, saying the foundation had "hundreds of thousands of donors."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/22/281271A600000578-3059787-image-a-27_1430257655425.jpg'></td><td>2015-04-28 22:02:18</td><td><a href='http://www.dailymail.co.uk/news/article-3059787/Vermont-Sen-Bernie-Sanders-run-president.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Sanders will become the second major Democrat in the race, joining former Secretary of State Hillary Rodham Clinton.</td></tr>
 </table></body></html>

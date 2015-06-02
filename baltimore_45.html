@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-16 03:40:08</td><td><a href='http://www.startribune.com/student-wins-62-900-literary-prize/303976601/'>site</a></td><td><table><tr><td>BALTIMORE - A senior at Washington College has been awarded a $62,900 literary prize.</td></tr><tr><td>Alexander Vidiani, who grew up in Hunt Valley, a Baltimore suburb, was named the Sophie Kerr winner Friday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-14 19:52:00</td><td></td><td><a href='baltimore_45_46.html'>The last seven years that my family and I have spent in Baltimore have by far been the best of our lives. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://assets.rollingstone.com/assets/2014/article/ray-rice-released-by-ravens-suspended-indefinitely-by-nfl-20140908/167577/small_square/100x100-459735313.jpg'></td><td>2015-02-14 19:52:00</td><td><a href='http://www.rollingstone.com/culture/news/ray-rice-apologizes-to-baltimore-for-horrible-mistake-20150214'>site</a></td><td>I love you all very much, and I'll always be proud to say I played for the Baltimore Ravens.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-11 22:07:11</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/11/diors-cruise-show-draws-celebrity-crowd-before-cannes'>site</a></td><td><table><tr><td>Dior's cruise show draws celebrity crowd before Cannes</td></tr><tr><td>This year, Dior selected the Palais Bulles owned by fashion designer Pierre Cardin, nestled in the mountain tops outside of Cannes, which plays host to the film festival that kicks off Wednesday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-11 23:19:36</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20706126.html#storylink=rss'>site</a></td><td>Fashion Designer Pierre Cardin arrives at the Dior Resort catwalk show presented in Cannes, southeastern France, Monday, May 11, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-19 10:46:21</td><td></td><td><a href='cannes_5_6.html'>CANNES WATCH: Star-studded Calvin Klein event honors women (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/2eSmtpptPnlXuXO21JK0LQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtpbD1wbGFuZTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/ap_webfeeds/3025135539f7dd16760f6a70670073de.jpg'></td><td>2015-05-19 10:46:43</td><td><a href='http://news.yahoo.com/cannes-watch-star-studded-calvin-klein-event-honors-100557710.html'>site</a></td><td>Others, like jury member Sienna Miller, used the evening to express how the experience of the Cannes Film Festival has affected them.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-19 10:55:06</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21357993.html#storylink=rss'>site</a></td><td>"You'll have a hit movie that women are at the forefront of and people are like 'Oh, it's all changing.' And then I feel like it resorts back to what it was before ... But I do feel that things are changing," said Blunt, who stars in "Sicario," one of the 19 films competing this year for Cannes' top prize.</td></tr>
 </table></body></html>

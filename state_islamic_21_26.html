@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>state islamic</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/sUKzb6CBkUxIvn94.MHENw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-24T094048Z_1007000001_LYNXMPEB2N0BX_RTROPTP_2_CNEWS-US-MIDEAST-CRISIS-SYRIA-CHILDREN.JPG'></td><td>2015-03-24 09:40:48</td><td><a href='http://news.yahoo.com/islamic-state-recruits-400-children-since-january-syria-094048997.html'>site</a></td><td>The Syrian Observatory for Human Rights said the children, all aged under 18, were recruited near schools, mosques and in public areas where Islamic State carries out killings and brutal punishments on local people.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-31 13:46:12</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3019702/Islamic-State-attacks-Syrian-village-kills-37-monitor.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Syrian Observatory for Human Rights, which uses a network of contacts to monitor the four-year-old civil war, said Islamic State fighters had killed entire families and the dead included people who had been burnt to death.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/7e5/news/world/article23854277.ece/ALTERNATES/w220/BEI505-Mideast+Syria+Fight-1.JPG'></td><td>2015-04-09 09:34:59</td><td><a href='http://www.theglobeandmail.com/news/world/red-cross-demands-access-to-islamic-state-held-palestinian-refugee-camp-in-syria/article23854278/?cmpid=rss1'>site</a></td><td>Islamic State has taken most of Yarmouk from rival groups while the Syrian army surrounds the district, according to the Syrian Observatory for Human Rights.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-11 13:05:41</td><td><a href='http://www.reuters.com/article/2015/04/11/us-mideast-crisis-syria-idUSKBN0N20CA20150411?feedType=RSS&feedName=worldNews'>site</a></td><td>The Syrian Observatory for Human Rights, a UK-based organization that monitors the war using a network of sources on the ground, said two dozen Islamic State fighters had been killed in fierce battles in the area.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-12 12:01:28</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3035679/UN-calls-safe-passage-Damascus-refugee-camp-Islamic-State-attack.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Syrian Observatory for Human Rights, a Britain-based group that monitors the four-year-old civil war via sources on the ground, has reported army air strikes on the camp since Islamic State moved in.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-21 13:28:38</td><td><a href='http://www.reuters.com/article/2015/04/21/us-mideast-crisis-syria-kurds-idUSKBN0NC1G320150421?feedType=RSS&feedName=worldNews'>site</a></td><td>The Syrian Observatory, which monitors the Syrian civil war, reports daily clashes between the YPG and Islamic State fighters near Tel Tamr, and clashes between the Syrian military and Islamic State in areas west and east of Hasaka city.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-21 14:02:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3048865/Syrian-Kurds-Islamic-State-threat-city-northeast.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Syrian Kurds see Islamic State threat to city in northeast</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-16 11:31:23</td><td><a href='http://www.utsandiego.com/news/2015/may/16/activists-islamic-state-on-edge-of-syrias/'>site</a></td><td>The new gain, confirmed by the Britain-based Syria Observatory for Human Rights, leaves the Deir el-Zour military air base in the clear path of Islamic State fighters.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150525&t=2&i=1051022429&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4O09B'></td><td>2015-05-25 10:20:45</td><td><a href='http://www.reuters.com/article/2015/05/25/us-mideast-crisis-idUSKBN0OA0MR20150525?feedType=RSS&feedName=topNews'>site</a></td><td>Islamic state has killed at least 217 people execution-style, including children, since it moved into the Palmyra area 10 days ago, according to the British-based Syrian Observatory for Human Rights.</td></tr>
+</table></body></html>

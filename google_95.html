@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 19:10:43</td><td><a href='http://www.washingtontimes.com/news/2015/feb/20/french-minister-meets-with-google-facebook-twitter/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>French minister meets with Google, Facebook, Twitter</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/N37WJLq7CLbAR5nBe0oKKA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/998fa37e3923b2086e0f6a7067005cd9.jpg'></td><td>2015-02-20 19:11:38</td><td><a href='http://news.yahoo.com/french-minister-meets-google-facebook-twitter-190508388.html'>site</a></td><td>SAN FRANCISCO (AP) - The French interior minister said Friday he asked Google, Facebook and Twitter to work directly with French officials during investigations and to immediately remove terrorist propaganda when authorities alert them to it.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-02-20 19:30:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11405623&ref=rss'>site</a></td><td>An email to Google requesting comment was not immediately answered.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 21:24:52</td><td><a href='http://www.wsj.com/articles/googles-self-driving-cars-hit-regulatory-traffic-1426717776?mod=pls_whats_news_us_business_f'>site</a></td><td>Google's Self-Driving Cars Hit Traffic</td></tr>
 </table></body></html>

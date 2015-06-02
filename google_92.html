@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-17 07:36:57</td><td></td><td><a href='google_92_93.html'>While most major merchants and big companies already have websites likely to meet Google's mobile standard, the new formula threatens to hurt millions of small businesses that haven't had the money or incentive to adapt their sites for smartphones. (10)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 11:30:28</td><td><a href='http://nypost.com/2015/04/17/google-to-use-mobile-friendly-browsing-on-mobile-devices/'>site</a></td><td>Here are a few things to know about what's happening and why Google is doing it.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://ww1.hdnux.com/photos/35/67/65/7830848/3/landscape_32.jpg'></td><td>2015-04-17 18:59:38</td><td><a href='http://www.sfgate.com/business/technology/article/Google-embraces-mobile-friendly-sites-in-search-6205666.php'>site</a></td><td>FILE - In this Tuesday, March 23, 2010, file photo, the Google logo is seen at the Google headquarters in Brussels.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='https://s.yimg.com/os/en_us/News/Reuters/2015-04-29T145926Z_1_LYNXMPEB3S0P1_RTROPTP_2_GOOGLE-EU.JPG'></td><td>2015-04-29 16:15:35</td><td><a href='https://www.yahoo.com/tech/s/google-launches-security-feature-chrome-browser-145926982--finance.html?src=rss'>site</a></td><td><table><tr><td>Millions of phishing emails and websites are sent every day, Google said.</td></tr><tr><td>Nearly 2 percent of messages sent through Gmail, Google s email service, are designed to steal passwords.</td></tr></table></td></tr>
 </table></body></html>

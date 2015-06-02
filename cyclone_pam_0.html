@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cyclone pam</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/f/3/g/image.related.articleLeadwide.620x349.1m2c2h.png/1426823984253.jpg'></td><td>2015-03-18 09:42:14</td><td><a href='http://www.smh.com.au/world/cyclone-pam-at-least-eight-australians-missing-in-vanuatu-20150318-1m2c2h.html'>site</a></td><td><table><tr><td>Cyclone Pam: At least eight Australians missing in Vanuatu</td></tr><tr><td>Zoe Marshall was in Vanuatu when cyclone Pam devastated the region.</td></tr><tr><td>Eight Australians are among 19 volunteer teachers missing in Vanuatu, five days after Cyclone Pam tore through the Pacific nation.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 09:42:14</td><td></td><td><a href='cyclone_pam_0_1.html'>Eight Australians are among 19 volunteer teachers missing in Vanuatu, five days after Cyclone Pam tore through the Pacific nation. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/2/f/3/g/image.related.articleLeadwide.620x349.1m2c2h.png/1426823984253.jpg'></td><td>2015-03-18 09:42:14</td><td><a href='http://www.smh.com.au/world/cyclone-pam-at-least-eight-australians-missing-in-vanuatu-20150318-1m2c2h.html'>site</a></td><td>Zoe Marshall was in Vanuatu when cyclone Pam devastated the region.</td></tr>
 </table></body></html>

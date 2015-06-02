@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-21 23:46:00</td><td><a href='http://www.independent.co.uk/news/world/australasia/more-people-moving-from-australia-to-new-zealand-than-in-the-other-direction-for-first-time-in-24-years-10268060.html'>site</a></td><td><table><tr><td>Last month, for the first time in 24 years, more people headed east across the Tasman Sea than in the opposite direction.</td></tr><tr><td>In April, according to new government figures, 100 more people crossed The Ditch - as the Tasman Sea is known colloquially - in an easterly direction than those going west.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 03:30:44</td><td></td><td><a href='one_direction_4_5.html'>After the lecture, one audience member asked, "What do you think is the cosmological effect of Zayn leaving One Direction and consequently breaking the hearts of millions of teenage girls across the world?" (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 10:57:20</td><td></td><td><a href='one_direction_4_6.html'>Scientist Hawking tells upset fans Malik may be in parallel One Direction (2)</a></td></tr>
 </table></body></html>

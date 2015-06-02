@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-04 13:59:03</td><td></td><td><a href='mexico_131_133.html'>The suspect is the brother of Miguel Angel Trevino Morales, described as the most bloodthirsty leader of Mexico's most violent cartel. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 14:06:26</td><td></td><td><a href='mexico_131_134.html'>"The truth is that this is a group that has been fragmented," Javier Oliva, an expert on the drug war at Mexico's National Autonomous University, said of the Zetas. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-04 14:06:26</td><td><a href='http://www.startribune.com/world/294990721.html'>site</a></td><td>All six were walked across the tarmac from a military plane at Mexico City's airport and loaded into armored personnel carriers.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 16:14:00</td><td></td><td><a href='mexico_131_132.html'>Founded by elite army deserters in 1999, the Zetas initially acted as enforcers for the Gulf Cartel, based along the border with Texas and one of the oldest organized crime groups in Mexico. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-03 21:22:09</td><td></td><td><a href='mexico_131_132.html'>Gov. Susana Martinez announced Friday she had chosen a Republican to fill a New Mexico Senate seat left vacant by the abrupt resignation of Democrat Phil Griego. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-03 21:22:09</td><td><a href='http://www.miamiherald.com/news/politics-government/article17319293.html#storylink=rss'>site</a></td><td>Griego said his resignation was necessary "to avoid a major distraction to the important work that needs to be accomplished for the families and children throughout the state of New Mexico."</td></tr>
 </table></body></html>

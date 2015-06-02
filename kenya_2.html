@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 09:10:58</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3051947/Kenya-kicks-anti-corruption-officials.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Kenya kicks out top anti-corruption officials</td></tr><tr><td>Kenya's top anti-corruption officials were suspended Thursday following a bitter stand-off with parliament and after they alleged widespread graft in the east African nation.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 15:34:24</td><td></td><td><a href='kenya_2_3.html'>UNHCR has urged Kenya to rethink its plan, warning that it is illegal under the 1951 U.N. Refugee Convention to force refugees back to areas where their lives are threatened. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-21 15:34:24</td><td><a href='http://www.reuters.com/article/2015/04/21/us-kenya-somalia-refugees-idUSKBN0NC1SO20150421?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>UNHCR, Kenya and Somalia will ensure that returning refugees have access to healthcare, education and jobs, he added.</td></tr><tr><td>Kenya hosts the second largest number of refugees in Africa after Ethiopia.</td></tr></table></td></tr>
 </table></body></html>

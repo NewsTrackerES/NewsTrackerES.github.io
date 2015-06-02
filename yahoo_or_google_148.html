@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='yahoo_or_google_148_149.html'>Earlier, Pichai announced Google's plans to start testing the use of solar-powered drone aircraft as "floating cell towers" that could bring coverage to remote areas or even disaster zones. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td>He also said that Google's "Project Loon" - which uses high-altitude air balloons to provide coverage for rural areas - had advanced to the point that the balloons are expected to be ready in two years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Ml9xiQ6bxVT6GaffjQDQ2A--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nflhighlights.com/1f496a3820d5fc7059e075477edd4c80'></td><td>2015-04-20 00:33:45</td><td><a href='http://sports.yahoo.com/news/ap-sources-tim-tebow-expected-sign-eagles-monday-233700009--nfl.html'>site</a></td><td>AP Sources: Tim Tebow expected to sign with Eagles on Monday (Yahoo Sports)</td></tr>
 </table></body></html>

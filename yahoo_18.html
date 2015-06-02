@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td></td><td><a href='yahoo_18_19.html'>NEW YORK (AP) - Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:43:30</td><td><a href='http://www.usnews.com/news/technology/articles/2015/03/26/yahoo-says-it-will-buy-back-2-billion-in-stock'>site</a></td><td>Shares of Yahoo rose 93 cents, or 2 percent, to $45.40 in aftermarket trading.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 09:20:17</td><td></td><td><a href='yahoo_18_19.html'>That $1 billion deal gave Yahoo a lucrative stake in Alibaba that is currently worth $33 billion. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 09:20:17</td><td><a href='http://www.startribune.com/world/296842551.html'>site</a></td><td><table><tr><td>Yahoo didn't specify how many people will lose their jobs in China, but pledged to treat all the workers "with respect and fairness."</td></tr><tr><td>The closure will mark Yahoo's exit from China, where the Sunnyvale, California, company has been winding down since turning over its operations to Alibaba Group in 2005.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 10:00:32</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420081&ref=rss'>site</a></td><td>The Beijing operation's responsibilities will be shifted to other Yahoo Inc. offices, according to a company statement released late Wednesday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-19 19:15:39</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-closing-last-China-operation-in-Beijing-6144429.php'>site</a></td><td><table><tr><td>Yahoo is preparing to spin off its Alibaba holdings into a separately traded company later this year, removing an asset that deflected attention from the challenges facing Yahoo's own businesses.</td></tr><tr><td>Smith is also among the Yahoo shareholders who called upon Mayer to spin off the Alibaba stake to avoid triggering a huge tax bill from sale of the stake.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-19 19:16:05</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3002104/Yahoo-closing-China-operation-Beijing.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Yahoo is closing its research and development center in China as CEO Marissa Mayer tries to placate shareholders pressuring the Internet company to cut costs while it struggles to bring in more revenue.</td></tr>
 </table></body></html>

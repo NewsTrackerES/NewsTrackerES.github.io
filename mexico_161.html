@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 17:47:35</td><td></td><td><a href='mexico_161_162.html'>CULIACAN, Mexico (AP) - The director of the mining company robbed of $8.5 million in gold in Mexico has made the rare revelation it has a "good relationship" with area drug traffickers. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 19:26:34</td><td><a href='http://www.startribune.com/world/299351941.html'>site</a></td><td>It is the third hit against mining interests in Mexico in recent months.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:35:46</td><td><a href='http://news.yahoo.com/middle-school-student-rebuked-wearing-rosary-class-173546700.html'>site</a></td><td>FARMINGTON, N.M. (AP) - A middle school student in northwest New Mexico says she was sent to the principal's office and asked if she sold drugs or was involved with a gang after she wore her rosary to school.</td></tr>
 </table></body></html>

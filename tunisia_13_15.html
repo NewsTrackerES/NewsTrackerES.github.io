@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 25,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 25 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tunisia</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-18 12:21:17</td><td><a href='http://news.yahoo.com/tunisia-says-security-forces-surround-2-militants-inside-122117754.html'>site</a></td><td>Tunisia says its security forces surround 2 militants inside museum at parliament</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-03-18 12:44:52</td><td><a href='http://news.yahoo.com/least-8-tourists-killed-others-hostage-tunisia-parliament-124003430.html'>site</a></td><td>At least 8 tourists killed, others hostage in Tunisia parliament attack: official</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/21/45/7674201/3/square_gallery_thumb.jpg'></td><td>2015-03-18 15:28:29</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-Tunisian-police-storm-museum-2-6142223.php'>site</a></td><td><table><tr><td>The office of French President Francois Hollande has issued a statement mourning the victims of attack at Tunisia's Bardo Museum.</td></tr><tr><td>Tunisia's prime minister says a total of 21 people have died in the attack against the Bardo museum, including 17 tourists, two Tunisians and two gunmen.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 15:34:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article15241373.html#storylink=rss'>site</a></td><td><table><tr><td>The Latest: 21 killed in Tunisia attack; 2-3 gunmen at large</td></tr><tr><td>Gunmen opened fire at a leading museum in Tunisia's capital, killing at least eight people and wounding six, including foreign tourists, authorities said.</td></tr><tr><td>Tourists and visitors from the Bardo museum are evacuated in Tunis, Wednesday, March 18, 2015 in Tunis, Tunisia.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-18 18:33:35</td><td><a href='http://news.yahoo.com/latest-tunisian-police-storm-museum-2-gunmen-killed-143327507.html'>site</a></td><td><table><tr><td>The U.N. Security Council has condemned the Bardo museum attack saying that no terrorist action can reverse the path of Tunisia toward democracy.</td></tr><tr><td>The United States, the United Nations, France and the UAE are among the nations condemning the attack on a top museum in Tunisia that left 22 people dead, including 17 tourists and 2 gunmen.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 18:39:04</td><td><a href='http://www.miamiherald.com/news/nation-world/article15241373.html#storylink=rss'>site</a></td><td>Poland's prime minister has revealed that some of the Polish victims of Tunisia's museum attack were on a tour bus in front of the building when the gunmen opened fire.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/uE1_geNzQkvzCcJF3LpSLQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/afp.com/d2e11feb78fbc4f9c4b7030e085ee5d2aa2cb759.jpg'></td><td>2015-03-19 02:58:49</td><td><a href='http://news.yahoo.com/shots-fired-near-tunisia-parliament-afp-001038186.html'>site</a></td><td>Tunis (AFP) - Gunmen stormed Tunisia's national museum, killing 17 tourists of various nationalities and two Tunisians in an attack that raised fears for the birthplace of the Arab Spring.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://static.theglobeandmail.ca/e87/news/world/article23533522.ece/ALTERNATES/w220/MEU112-Tunisia+Attack.JPG'></td><td>2015-03-19 08:04:35</td><td><a href='http://www.theglobeandmail.com/news/world/japan-says-three-nationals-killed-three-injured-in-tunisia-museum-attack/article23533523/?cmpid=rss1'>site</a></td><td>Three Japanese were killed, and three others injured, in the militant attack on tourists in Tunisia, the Japanese government said Thursday.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 08:53:04</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15327995.html#storylink=rss'>site</a></td><td>Japan confirms deaths of 3 nationals in Tunisia attack</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 11:27:51</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15330893.html#storylink=rss'>site</a></td><td>Poland sent a plane with doctors and diplomats to Tunisia on Thursday to help and bring back Poles injured in a gun attack in a museum in Tunis.</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-03-19 12:10:57</td><td><a href='http://nypost.com/2015/03/19/tunisia-gunmen-known-to-authorities-2-spaniards-hid-all-night-in-fear/'>site</a></td><td>TUNIS, Tunisia - One of the gunmen who killed tourists and others at a prominent Tunisian museum was known to the intelligence services but no formal links to a particular extremist group have been established, the prime minister said Thursday.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-19 15:34:17</td><td><a href='http://ibnlive.in.com/news/islamic-state-group-claims-responsibility-for-tunisia-museum-attack/534995-2.html'>site</a></td><td>Islamic State group claims responsibility for Tunisia museum attack</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-19 19:08:07</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article15329921.html#storylink=rss'>site</a></td><td><table><tr><td>The Islamic State group issued a statement Thursday claiming responsibility for the deadly attack on Tunisia's national museum that killed 23 people, mostly tourists.</td></tr><tr><td>A woman cries as she demonstrates in front of the National Bardo Museum a day after gunmen attacked the museum and killed scores of people in Tunis, Tunisia, Thursday, March 19, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/19/article-doc-171tt-6X9fYBWZd-HSK1-183_634x418.jpg'></td><td>2015-03-19 22:19:57</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3001853/Tunisia-vows-merciless-war-against-terrorism-museum-attack.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The Islamic State jihadist group claimed responsibility Thursday for an attack on foreign tourists at Tunisia's national museum that killed 21 people, as the security forces swooped on suspects.</td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-03-20 02:47:50</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article15420293.html#storylink=rss'>site</a></td><td><table><tr><td>Obama pledges security cooperation after Tunisia attack</td></tr><tr><td>President Barack Obama is pledging close counterterrorism cooperation with Tunisia in the wake of an attack that killed 21 people at a museum in Tunis.</td></tr></table></td></tr>
+  <tr><td style='display:none'>15</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150323&t=2&i=1034746702&w=&fh=&fw=&ll=580&pl=378&r=LYNXMPEB2M0WE'></td><td>2015-03-23 19:54:28</td><td><a href='http://www.reuters.com/article/2015/03/23/us-tunisia-security-tourism-idUSKBN0MJ1ZO20150323?feedType=RSS&feedName=lifestyleMolt'>site</a></td><td>Japanese, Spanish, Italian and Colombian tourists were among the victims when at least two gunmen opened fire on their buses as they arrived at the Tunis Bardo Museum, which houses some of the Roman artifacts that are one of Tunisia's major draws.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-03-24 08:51:20</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3008741/Tunisia-museum-reopen-following-massacre.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tunisia's national museum on Tuesday delayed a planned reopening after last week's attack on foreign tourists due to security concerns, its head of communications Hanene Srarfi told AFP.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-03-24 09:17:00</td><td><a href='http://www.ctvnews.ca/world/tunisian-museum-hit-by-terrorist-attack-delays-reopening-1.2294157'>site</a></td><td>TUNIS, Tunisia - The curator of the Tunisian museum targeted by a terrorist attack announced Tuesday it is postponing its reopening, for logistical and security reasons.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-03-24 10:10:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11422438&ref=rss'>site</a></td><td>Tunisia: Museum hit by terrorist attack delays reopening</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-03-24 12:17:18</td><td><a href='http://www.reuters.com/article/2015/03/24/us-tunisia-security-idUSKBN0MK1B020150324?feedType=RSS&feedName=worldNews'>site</a></td><td>Tunisia's Bardo museum in symbolic reopening after attacks</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/24/article-doc-1b3ne-6XGjEHk8w-HSK1-391_634x908.jpg'></td><td>2015-03-24 13:41:39</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3008985/Tunis-museum-reopening-delayed-amid-security-concerns.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Tunisia ups massacre museum security, reopening delayed</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/26/article-doc-1d1t0-6XK3AxX2m-HSK1-544_634x394.jpg'></td><td>2015-03-26 18:06:15</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3013276/Tunisia-arrests-23-terror-cell-museum-attack.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Tunisia arrests 23 in 'terror cell' over museum attack</td></tr><tr><td>Tunisia said Thursday that it has arrested 23 suspects in connection with last week's jihadist massacre at the country's national museum.</td></tr></table></td></tr>
+  <tr><td style='display:none'>22</td><td><img src='http://www.gannett-cdn.com/-mm-/a494acd65d14cc9ac5b31075fc260bb2b5e0190f/c=122-0-2356-1680&amp;r=x404&amp;c=534x401/local/-/media/2015/03/29/USATODAY/USATODAY/635632047080660249-AP-Tunisia-Bardo-Museum.jpg'></td><td>2015-03-29 19:34:22</td><td><a href='http://www.usatoday.com/story/news/world/2015/03/29/tunisia-terror-suspects-killed/70625606/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatodaycomworld-topstories'>site</a></td><td>The international visitors are showing solidarity with Tunisia, whose fragile new democracy was deeply shaken by the museum attack, for which the Islamic State group claimed responsibility.</td></tr>
+  <tr><td style='display:none'>23</td><td><img src='http://ww2.hdnux.com/photos/35/41/50/7739905/5/square_gallery_thumb.jpg'></td><td>2015-03-30 16:51:39</td><td><a href='http://www.sfgate.com/news/world/article/Tunisian-museum-reopens-after-deadly-attack-6167413.php'>site</a></td><td>Tunisians look at a mosaic in Tunisia's National Bardo Museum Monday, March 30, 2015.</td></tr>
+  <tr><td style='display:none'>24</td><td><img src='http://s4.reutersmedia.net/resources_v2/images/rcom-logo-hdr.png'></td><td>2015-04-24 13:27:02</td><td><a href='http://www.reuters.com/article/2015/04/24/us-tunisia-security-idUSKBN0NF1FR20150424?feedType=RSS&feedName=worldNews'>site</a></td><td>Tunisia's military has been carrying out operations in the area since last month's Islamist militant attack on the Bardo museum in Tunis where gunmen killed more than 20 foreign tourists.</td></tr>
+</table></body></html>

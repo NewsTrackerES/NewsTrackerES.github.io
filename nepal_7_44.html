@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 09:51:56</td><td><a href='http://abcnews.go.com/International/wireStory/latest-nepal-deaths-reported-latest-quake-30974227'>site</a></td><td>Norway's Red Cross says there were "many injured, several killed" in a strong earthquake that hit Nepal on Tuesday, less than three weeks after a massive quake struck the South Asian country.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://stmedia.startribune.com/images/1000*667/bNepal+EarthquakeG.jpg'></td><td>2015-05-12 11:55:50</td><td><a href='http://www.startribune.com/another-deadly-earthquake-spreads-fear-and-misery-in-nepal/303376981/'>site</a></td><td>A major earthquake hit a remote mountainous region of Nepal on Tuesday, triggering landslides and toppling buildings less than three weeks after the country was ravaged by another deadly quake.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 07:13:41</td><td><a href='http://ibnlive.in.com/news/hundreds-search-for-missing-us-helicopter-after-second-nepal-quake-kills-scores/545354-2.html'>site</a></td><td>Hundreds search for missing US helicopter after second Nepal quake kills scores</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/3187/a54b49f54d8644f3979198002ffe8cb6.jpg'></td><td>2015-05-13 18:41:07</td><td><a href='http://www.news24.com/World/News/Rescuers-battle-to-reach-Nepal-survivors-20150513'>site</a></td><td>Chautara - Rescuers battled on Wednesday to reach survivors of a deadly new earthquake in Nepal that triggered landslides and brought down buildings, as hundreds of troops searched for a missing US military helicopter.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/g/h/1/5/n/b/image.related.thumbnail.90x60.gh15h4.png/1431548792822.jpg'></td><td>2015-05-13 18:46:48</td><td><a href='http://www.brisbanetimes.com.au/world/nepal-fails-to-find-crashed-us-helicopter-amid-fears-search-diverts-from-rescue-operation-20150513-gh15g6'>site</a></td><td>Charikot: A daylong search failed to find a missing US Marine helicopter on Wednesday, a day after the second Nepal earthquake in less than three weeks killed scores and triggered landslides across the Himalayan nation.</td></tr>
+</table></body></html>

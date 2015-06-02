@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 7,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,11 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 14:01:56</td><td></td><td><a href='cannes_9_12.html'>Deneuve's message fits with the mood of a Cannes festival that is trying to eradicate selfies - another symbol of our oversharing age - from the red carpet. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 14:01:56</td><td></td><td><a href='cannes_9_10.html'>Deneuve told reporters in Cannes Wednesday that glamour needs mystery, and that's hard to achieve now that social media has blurred the boundary between private and public. (2)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-05-13 18:12:47</td><td></td><td><a href='cannes_9_13.html'>CANNES WATCH: Naomi Watts resplendent in feathers (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 14:01:56</td><td></td><td><a href='cannes_9_10.html'>Deneuve's message fits with the mood of a Cannes festival that is trying to eradicate selfies - another symbol of our oversharing age - from the red carpet. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-13 14:01:56</td><td></td><td><a href='cannes_9_11.html'>Deneuve told reporters in Cannes Wednesday that glamour needs mystery, and that's hard to achieve now that social media has blurred the boundary between private and public. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/13/04/2899FC4700000578-0-International_Duggars-m-101_1431486515154.jpg'></td><td>2015-05-13 14:01:56</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3079921/CANNES-WATCH-Deneuve-sad-death-glamour.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>CANNES, France (AP) - French acting icon Catherine Deneuve is a cinema supernova.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 18:12:47</td><td></td><td><a href='cannes_9_12.html'>CANNES WATCH: Naomi Watts resplendent in feathers (2)</a></td></tr>
   <tr><td style='display:none'>4</td><td></td><td>2015-05-13 18:12:47</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/13/cannes-watch-naomi-watts-resplendent-in-feathers'>site</a></td><td>The flame-haired actress, who won Cannes' best-actress prize last year for "Maps to the Stars," offset the look with bold emerald earrings.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 23:08:10</td><td></td><td><a href='cannes_9_11.html'>Deneuve made her Cannes debut in 1964 in multicolored musical "The Umbrellas of Cherbourg." (2)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-05-14 00:49:10</td><td><a href='http://www.utsandiego.com/news/2015/may/13/cannes-watch-watts-into-feathers-coens-not-into-tv/'>site</a></td><td>CANNES, France (AP) - Premieres, parties, pretty people and paparazzi.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 23:08:10</td><td><a href='http://www.utsandiego.com/news/2015/may/13/cannes-watch-watts-into-feathers-coens-not-into-tv/'>site</a></td><td>Deneuve made her Cannes debut in 1964 in multicolored musical "The Umbrellas of Cherbourg."</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-14 00:49:10</td><td><a href='http://www.utsandiego.com/news/2015/may/13/cannes-watch-watts-into-feathers-coens-not-into-tv/'>site</a></td><td><table><tr><td>CANNES, France (AP) - Premieres, parties, pretty people and paparazzi.</td></tr><tr><td>EDITOR'S NOTE - "Cannes Watch" brings you the Cannes Film Festival and related events through the eyes and ears of AP reporters around Cannes and around the world.</td></tr></table></td></tr>
 </table></body></html>

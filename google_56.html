@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 8,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,12 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-04-15 01:06:33</td><td><a href='http://www.reuters.com/article/2015/04/15/google-eu-idUSL5N0XB4SH20150415?type=companyNews&feedType=RSS&feedName=companyNews'>site</a></td><td>However, industry and EU sources played down earlier on Tuesday suggestions that Vestager was about to announce charges against the Google.</td></tr>
-  <tr><td style='display:none'>3</td><td><img src='http://s2.reutersmedia.net/resources/r/?m=02&d=20150414&t=2&i=1040408064&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3D0WI'></td><td>2015-04-15 01:07:53</td><td><a href='http://www.reuters.com/article/2015/04/15/us-google-eu-idUSKBN0N523Q20150415?feedType=RSS&feedName=technologyNews'>site</a></td><td>The EU can impose fines of up to 10 percent of global turnover, or more than $6 billion in penalties in Google's case.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-15 13:22:20</td><td></td><td><a href='google_56_58.html'>Google has 10 weeks to respond to all the allegations. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-15 14:40:46</td><td></td><td><a href='google_56_57.html'>EU competition commissioner Margrethe Vestager said Google has given "an unfair advantage to its own comparison shopping service". (25)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://s1.reutersmedia.net/resources/r/?d=20150415&i=106839742&w=240&r=106839742-2&t=2'></td><td>2015-04-15 17:52:43</td><td><a href='http://www.reuters.com/article/2015/04/15/us-google-eu-idUSKBN0N610E20150415?feedType=RSS&feedName=technologyNews'>site</a></td><td>U.S. authorities that looked at Google's business have taken no action.</td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://img.rasset.ie/000a70e4-642.jpg'></td><td>2015-04-15 22:04:11</td><td><a href='http://www.rte.ie/news/business/2015/0415/694185-google-probe/'>site</a></td><td>Rather, by firing a shot across Google's bows, it may favour competitors in new areas as technology develops, a priority for the new European Commission led by Jean-Claude Juncker, which wants to foster home-grown enterprise.</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-04-15 23:01:00</td><td><a href='http://www.express.co.uk/finance/city/570752/Google-EU-abuse?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-express-finance-news+%28Daily+Express+%3A%3A+Money+Feed%29'>site</a></td><td>"Google now has the opportunity to convince the Commission to the contrary.</td></tr>
-  <tr><td style='display:none'>7</td><td><img src='http://www.gannett-cdn.com/-mm-/012c92707abc581ec9d0e996c046221b05aa6fa2/c=45-0-979-702&amp;r=x404&amp;c=534x401/local/-/media/2015/03/02/USATODAY/USATODAY/635609117448160528-google-2.JPG'></td><td>2015-04-16 16:38:22</td><td><a href='http://www.usatoday.com/story/tech/2015/04/16/google-antitrust-probe-european-commission/25836609/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>The EU has been investigating Google for five years.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 14:30:11</td><td></td><td><a href='google_56_57.html'>SAN FRANCISCO (AP) - For its next technological trick, Google will show you what it's like to zip through trees in the Amazon jungle. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/O0ZjpDyvDQqgAEkcqX1bnA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/2e4d554cd582a4096f0f6a706700afd5.jpg'></td><td>2015-03-02 14:30:11</td><td><a href='http://news.yahoo.com/next-google-maps-adventure-soaring-amazon-jungle-070127034.html'>site</a></td><td><table><tr><td>Google is renowned for going out on a technological limb, but even this project made the company nervous at first, said Karin Tuxen-Bettman, who oversees Google's Street View partnerships.</td></tr><tr><td>"One of the things that I love about working at Google is that if a partner comes to us with a crazy idea, we will probably try it," Tuxen-Bettman said.</td></tr><tr><td>Since Google developed the Trekker camera in 2012, the device has been dispatched on other unusual journeys.</td></tr></table></td></tr>
 </table></body></html>

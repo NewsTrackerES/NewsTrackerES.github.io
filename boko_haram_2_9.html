@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/fa1/news/world/article23043873.ece/ALTERNATES/w220/web-wo-boko-nigeria18nw1.jpg'></td><td>2015-03-07 20:38:06</td><td><a href='http://www.theglobeandmail.com/news/world/nigerias-boko-haram-pledges-allegiance-to-islamic-state/article23350858/?cmpid=rss1'>site</a></td><td>Nigeria?s Boko Haram pledges allegiance to Islamic State</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 20:10:28</td><td><a href='http://www.cbc.ca/news/world/boko-haram-pushed-out-of-all-but-3-areas-of-northeast-nigeria-1.2998741?cmp=rss'>site</a></td><td>At the start of this year, Boko Haram controlled around 20 local government areas, a territory the size of Belgium, in its bloody six-year-old campaign to carve out an Islamic state in religiously mixed Nigeria.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 19:04:26</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/24/22305631.html?cid=rssnewsworld'>site</a></td><td>Boko Haram wants to carve out a caliphate in northern Nigeria and a sharp increase in violence forced a delay in planned elections last month in Africa's most populous country.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/30/article-doc-1g43t-6XQ7rbmFt-HSK1-568_634x422.jpg'></td><td>2015-03-30 18:07:09</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3018475/Boko-Haram-failed-disrupt-Nigeria-elections-UN.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Boko Haram failed to disrupt Nigeria elections: UN</td></tr><tr><td>Boko Haram was unable to disrupt elections in Nigeria but its allegiance to Islamic State shows the group has an agenda that reaches well beyond Africa's most populous country, a UN envoy said Monday.</td></tr></table></td></tr>
+</table></body></html>

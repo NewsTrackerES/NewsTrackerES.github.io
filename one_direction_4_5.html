@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>one direction</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 08:55:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11420057&ref=rss'>site</a></td><td>Philippines imposes 'weed bond' on One Direction</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/35/22/64/7679257/7/square_gallery_thumb.jpg'></td><td>2015-03-19 11:24:06</td><td><a href='http://www.sfgate.com/entertainment/article/Philippines-imposes-weed-bond-on-One-Direction-6144362.php'>site</a></td><td><table><tr><td>MANILA, Philippines (AP) - The Philippines is imposing a "weed bond" on One Direction.</td></tr><tr><td>Following the leak of the video last year, One Direction's Liam Payne twitted an apology, saying "I love my boys and maybe things have gone a little sideways. I apologize for that."</td></tr></table></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://jam.canoe.ca/Celebrities/2015/03/19/1D.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-03-19 15:03:39</td><td><a href='http://jam.canoe.ca/Celebrities/2015/03/19/22296576-wenn-story.html?cid=rssentertainment'>site</a></td><td>One Direction stars Zayn Malik and Louis Tomlinson must hand nearly $5,000 each to immigration officials in the Philippines following their weed video scandal.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 03:30:44</td><td><a href='http://time.com/3836129/stephen-hawking-one-direction-zayn-malik-multiple-universes/'>site</a></td><td>After the lecture, one audience member asked, "What do you think is the cosmological effect of Zayn leaving One Direction and consequently breaking the hearts of millions of teenage girls across the world?"</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/0UKY2Q65x7zk4uXpdoVLrg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_US/News/The%20Verge/GettyImages-459496616.0.jpg.cf.jpg'></td><td>2015-04-27 13:31:40</td><td><a href='http://news.yahoo.com/scientist-hawking-tells-upset-fans-malik-may-parallel-105720433.html'>site</a></td><td>(Reuters) - What is the cosmological effect of singer Zayn Malik leaving the best-selling boy band One Direction and consequently disappointing millions of teenage girls around the world?</td></tr>
 </table></body></html>

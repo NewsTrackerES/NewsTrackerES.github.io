@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-26 09:45:39</td><td><a href='http://www.utsandiego.com/news/2015/may/26/apple-promotes-tech-guru-jonathan-ive-as-head-of/'>site</a></td><td>The role is a newly created position within Apple and will establish Ive's leadership.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-26 09:45:39</td><td><a href='http://www.sfgate.com/business/technology/article/Apple-promotes-tech-guru-Jonathan-Ive-as-head-of-6286131.php'>site</a></td><td>Ive, who as a lead designer with the company helped conceive the iconic Apple looks of products like the iPod, iPad and Apple Watch, confirmed the promotion in an interview published Tuesday in the Daily Telegraph.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-26 09:45:39</td><td><a href='http://www.seattlepi.com/business/technology/article/Apple-promotes-tech-guru-Jonathan-Ive-as-head-of-6286131.php'>site</a></td><td><table><tr><td>Apple promotes tech guru Jonathan Ive as head of design</td></tr><tr><td>LONDON (AP) - Apple innovator Jonathan Ive says he's been promoted to the company's chief design officer, making him one of the most powerful people in the world's most valuable company.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 07:36:47</td><td><a href='http://www.huffingtonpost.com/2015/03/17/apple-web-tv_n_6883486.html'>site</a></td><td>Apple Plans Web TV Service In Fall</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 11:14:00</td><td><a href='http://www.cnbc.com/id/102510938'>site</a></td><td>Apple, which is aiming to price the new service at about $30 to $40 a month, plans to announce the service in June and launch it in September, the newspaper said.</td></tr>
 </table></body></html>

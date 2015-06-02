@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/sitelogos/logo_mol.gif'></td><td>2015-04-10 08:01:33</td><td><a href='http://www.dailymail.co.uk/wires/aap/article-3033268/Man-hospital-possible-Ebola.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>ACT Health Acting Chief Health Officer Dr Andrew Pengilley said he worked as a medical professional in Liberia where there had been a large number of Ebola cases.</td></tr><tr><td>Dr Pengilley said he would be treated for Ebola and until that proved negative, it would be handled as a worst-case scenario.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.npr.org/assets/img/2015/03/02/ap365449530608-e71a07171670b18ebaf7ff3ec62ce655bb871f8b-s800-c15.jpg'></td><td>2015-03-02 10:09:20</td><td><a href='http://www.npr.org/blogs/thetwo-way/2015/03/02/390082857/nurse-treated-for-ebola-to-sue-texas-hospital?utm_medium=RSS&utm_campaign=us'>site</a></td><td>Nurse Treated For Ebola To Sue Texas Hospital</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='https://nationalpostcom.files.wordpress.com/2015/03/ebola_nurse-2.jpg?w=620'></td><td>2015-03-02 13:54:43</td><td><a href='http://news.nationalpost.com/2015/03/02/used-as-a-pr-pawn-nurse-who-survived-ebola-infection-says-texas-hospital-failed-her/'>site</a></td><td><table><tr><td>DALLAS - A 26-year-old nurse said in a newspaper interview that a hospital where she had worked in Dallas and its parent company failed her when she contracted Ebola while caring for the first person in the U.S. diagnosed with the deadly disease.</td></tr><tr><td>Pham and another nurse who worked at Texas Health Presbyterian, Amber Vinson, both became infected with Ebola after caring for Duncan, according to medical records released to The Associated Press.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-02 17:59:20</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-02-US--Ebola-Nurse/id-8ac2a143a4c44075b08565ddfc0c18c9'>site</a></td><td><table><tr><td>Nurse who survived Ebola sues Dallas hospital system</td></tr><tr><td>She contracted Ebola last fall while caring for Thomas Eric Duncan at Texas Health Presbyterian Hospital Dallas.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-02 19:41:17</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/03/02/22264336.html?cid=rssnewsworld'>site</a></td><td><table><tr><td>Ebola survivor sues Dallas hospital over infection</td></tr><tr><td>DALLAS - The first person infected with Ebola in the United States, nurse Nina Pham, sued a Texas hospital on Monday, saying it did not do enough to prevent her from contracting the deadly virus and invaded her privacy after she was diagnosed with it.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-05 01:53:11</td><td><a href='http://www.sfgate.com/news/texas/article/Dallas-hospital-seeks-dismissal-of-Ebola-nurse-s-6179005.php'>site</a></td><td><table><tr><td>Dallas hospital seeks dismissal of nurse's suit over Ebola</td></tr><tr><td>"Nina Pham has gone through the unprecedented challenge of being the first nurse to whom the Ebola virus was transmitted while caring for a patient with Ebola in the U.S.," the statement said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-05 01:57:12</td><td><a href='http://www.miamiherald.com/living/health-fitness/article17383766.html#storylink=rss'>site</a></td><td>A hospital operator denied allegations of poor training and improper preparation in seeking dismissal of a lawsuit by a nurse who contracted Ebola while caring for the first U.S. patient to succumb to the deadly disease.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/lq75JPtG5jAypvguR2qnkQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://globalfinance.zenfs.com/images/US_AHTTP_REUTERS_OLUSTECH_WRAPPER_H_LIVE_NEW/2015-05-13T214254Z_1_LYNXMPEB4C18W_RTROPTP_3_USA-APPLE_original.jpg'></td><td>2015-05-13 21:42:54</td><td><a href='http://finance.yahoo.com/news/apple-a123-close-settling-battery-214254039.html'>site</a></td><td><table><tr><td>Apple, A123 close to settling battery hiring lawsuit</td></tr><tr><td>The case in U.S. District Court, District of Massachusetts is A123 Systems LLC vs. Apple Inc et al., 15-10438.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82994000/jpg/_82994027_495316187.jpg'></td><td>2015-05-14 11:36:37</td><td><a href='http://www.bbc.co.uk/news/technology-32736194#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Apple denied the claims.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/money/dam/assets/150128171831-carl-icahn-1024x576.jpg'></td><td>2015-05-18 16:24:14</td><td><a href='http://money.cnn.com/2015/05/18/investing/apple-carl-icahn-tim-cook/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fmoney_latest+%28CNNMoney%3A+Latest+News%29'>site</a></td><td><table><tr><td>Apple has $194 billion in cash.</td></tr><tr><td>Apple did not have a comment about Icahn's latest letter.</td></tr></table></td></tr>
 </table></body></html>

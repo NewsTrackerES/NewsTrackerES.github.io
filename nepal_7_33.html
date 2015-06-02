@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 13,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 13 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://wpmedia.news.nationalpost.com/2015/04/540086743_37648165.jpg?w=620'></td><td>2015-04-25 14:33:07</td><td><a href='http://news.nationalpost.com/news/world/nepal-earthquake-753492'>site</a></td><td>Nepal police say death toll from earthquake has reached at least 876</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww2.hdnux.com/photos/36/03/00/7876625/3/square_gallery_thumb.jpg'></td><td>2015-04-26 04:58:58</td><td><a href='http://www.sfgate.com/news/science/article/Strong-earthquake-felt-in-Nepal-s-capital-6223321.php'>site</a></td><td>Nepal quake death toll climbs to 1,910</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-26 15:26:53</td><td><a href='http://abcnews.go.com/International/wireStory/death-toll-nepal-earthquake-tops-2500-30594896'>site</a></td><td>Death toll from Nepal earthquake tops 2,500.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-27 03:02:56</td><td><a href='http://news.yahoo.com/aid-starts-coming-nepal-quake-kills-nearly-2-050207892.html'>site</a></td><td>Death toll in Nepal quake rises to more than 3,200</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://ww3.hdnux.com/photos/36/03/62/7879866/7/landscape_32.jpg'></td><td>2015-04-27 08:14:58</td><td><a href='http://www.sfgate.com/news/world/article/Rescuers-struggle-to-reach-many-in-Nepal-quake-6225529.php'>site</a></td><td>Nepal police said in a statement Monday that the country's death toll had risen to 3,617 people.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-27 23:12:11</td><td><a href='http://www.brisbanetimes.com.au//breaking-news-world/battle-to-reach-nepal-quake-victims-20150428-3uyhs.html'>site</a></td><td>Nepal quake toll passes 4000</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-29 15:00:14</td><td><a href='http://www.startribune.com/world/301689671.html'>site</a></td><td>Death toll from Nepal quake-triggered Everest avalanche rises to 19; most victims identified</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47119498,width-300,resizemode-4/Reconstruction.jpg'></td><td>2015-05-01 07:32:10</td><td><a href='http://timesofindia.indiatimes.com/world/south-asia/Nepal-quake-toll-passes-6200-2-billion-needed-for-reconstruction/articleshow/47119491.cms'>site</a></td><td>Nepal quake toll passes 6,200, $2 billion needed for reconstruction</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-05 13:45:44</td><td><a href='http://www.foxnews.com/world/2015/05/05/1-spaniard-confirmed-dead-in-nepal-earthquake-8-still-missing-foreign-ministry/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td>A ministry statement said Tuesday eight other Spaniards who were in Nepal at the time of the quake are still missing.</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww2.hdnux.com/photos/36/30/56/7965577/3/920x920.jpg'></td><td>2015-05-12 13:34:07</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-on-Nepal-Some-deaths-reported-in-6257399.php'>site</a></td><td>Nepal's Home Ministry has raised the death toll from Tuesday's quake to at least 42, while saying another 1,117 people had been injured.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://a.abcnews.com/assets/images/v3/pixel_eee.gif'></td><td>2015-05-12 13:35:21</td><td><a href='http://abcnews.go.com/International/wireStory/latest-nepal-deaths-reported-latest-quake-30974227'>site</a></td><td>Tuesday's quake in Nepal caused at least one death in neighboring Tibet.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-12 15:16:21</td><td><a href='http://ibnlive.in.com/news/53-dead-as-74-magnitude-aftershock-jolts-earthquakehit-nepal-after-17-days-triggers-panic/545235-2.html'>site</a></td><td>In Nepal the death toll reached 37, with 1,066 injured, police spokesman Kamal Singh Bam said.</td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-05-14 13:54:32</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3081244/Choppers-drone-hunt-missing-U-S-Huey-Nepal-quake-toll-rises.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Choppers and drone hunt for missing U.S. Huey, Nepal quake toll rises</td></tr>
+</table></body></html>

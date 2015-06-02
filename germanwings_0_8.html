@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,10 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 18:11:05</td><td></td><td><a href='germanwings_0_8_9.html'>BERLIN (AP) - Germanwings says a plane headed for Milan was evacuated at Cologne-Bonn airport after German police received a bomb threat against the flight. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 22:28:26</td><td></td><td><a href='germanwings_0_8_10.html'>Germanwings said the pilot of Flight 4U 826 to Milan was taxiing to the runway when he received a call from the air traffic tower at Cologne/Bonn airport to abort the flight. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/r/h/image.related.articleLeadwide.620x349.1m6vie.png/1427262577846.jpg'></td><td>2015-03-24 10:59:51</td><td><a href='http://www.brisbanetimes.com.au/world/germanwings-airbus-a320-plane-crashes-in-french-alps-killing-all-on-board-20150324-1m6vie.html'>site</a></td><td>The location of the Germanwings flight 4U9525 crash in the French Alps.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://cdnph.upi.com/sv/em/i/UPI-6831427194250/2015/1/14271944777305/Black-box-found-from-Germanwings-plane-crash-in-French-Alps.jpg'></td><td>2015-03-24 11:05:13</td><td><a href='http://www.upi.com/Top_News/World-News/2015/03/24/Black-box-found-from-Germanwings-plane-crash-in-French-Alps/6831427194250/'>site</a></td><td>Black box found from Germanwings plane crash in French Alps</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-24 15:50:15</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3009598/Germanwings-says-no-problem-crashed-plane-takeoff.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>COLOGNE, March 24 (Reuters) - Germanwings said it was unclear what caused its Airbus A320 aircraft to crash in the French Alps on Tuesday but that there had been no problems with the plane before takeoff.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 02:53:00</td><td><a href='http://www.latimes.com/world/europe/la-fg-captain-yelled-at-lubitz-20150329-story.html'>site</a></td><td>Horrifying transcript gives timeline of Germanwings plane crash in Alps</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/a/1/0/n/image.related.articleLeadwide.620x349.1mchpk.png/1427847243232.jpg'></td><td>2015-04-01 00:14:15</td><td><a href='http://www.smh.com.au/world/germanwings-plane-crash-passenger-video-found-20150401-1mchpk.html'>site</a></td><td>London: A video of the last moments on the doomed Germanwings plane has been found on a mobile phone memory card at the crash site in the French Alps, according to reports.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/a/o/0/t/image.related.articleLeadwide.620x349.1miazq.png/1428637325394.jpg'></td><td>2015-04-10 03:42:15</td><td><a href='http://www.brisbanetimes.com.au/world/germanwings-plane-crash-fake-relative-claims-free-flights-to-french-alps-20150410-1miazq.html'>site</a></td><td>Germanwings plane crash: 'Fake relative' claims free flights to French Alps</td></tr>
 </table></body></html>

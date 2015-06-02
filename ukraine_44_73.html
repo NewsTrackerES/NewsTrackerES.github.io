@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 21:21:48</td><td><a href='http://www.rferl.org/content/ukraine-us-commander-hodges-12000-russian-troops/26880574.html'>site</a></td><td>Hodges also said some 29,000 Russian troops are in Crimea, which Moscow annexed from Ukraine last year.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 13:53:59</td><td><a href='http://www.utsandiego.com/news/2015/apr/17/us-troops-arrive-in-ukraine-for-training-exercises/'>site</a></td><td>US troops arrive in Ukraine for training exercises</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-20 23:41:14</td><td><a href='http://www.usnews.com/news/politics/articles/2015/04/20/us-to-send-ukraine-18-million-in-food-health-shelter-aid'>site</a></td><td>The call came as U.S. and Ukraine troops kicked off joint training exercises intended to help bolster Ukraine's defenses against incursions from the Russian-backed separatists in the east.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-30 19:34:02</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3063060/Russia-readying-new-Ukraine-offensive-NATO-commander.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"We do see a very distinct Russian set of command and control in the eastern part of Ukraine," he said.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-12 10:00:17</td><td><a href='http://www.startribune.com/russian-opposition-220-russian-soldiers-died-in-ukraine/303384701/'>site</a></td><td>Nemtsov report: At least 220 Russian soldiers died in 2 battles in eastern Ukraine</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-12 10:02:29</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3078045/Nemtsov-report-220-Russian-soldiers-died-Ukraine-battles.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>MOSCOW (AP) - A report containing material compiled by slain Russian opposition leader Boris Nemtsov says at least 220 Russian soldiers died in two battles in eastern Ukraine within the past year.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-12 10:52:05</td><td><a href='http://www.reuters.com/article/2015/05/12/us-ukraine-crisis-russia-report-idUSKBN0NX0WA20150512?feedType=RSS&feedName=topNews'>site</a></td><td><table><tr><td>MOSCOW Moscow spent more than 53 billion rubles ($1.04 billion) supplying a separatist rebellion in east Ukraine and at least 220 Russian soldiers have been killed there, a report by Russian opposition activists said on Tuesday.</td></tr><tr><td>The report, which Nemtsov started after families of Russian troops killed in east Ukraine asked for his help, said at least 150 Russian servicemen were killed in fighting around the village of Ilovaisk and elsewhere in the region last summer.</td></tr></table></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-12 11:03:26</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3077971/Scores-Russian-soldiers-killed-east-Ukraine--opposition-report.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Authors said Russian soldiers were mostly forced to quit the army officially before heading to east Ukraine, a move to support Moscow's argument that there are no serving Russian troops there, only volunteers.</td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-18 10:37:15</td><td><a href='http://www.sfgate.com/news/world/article/Russians-troops-captured-in-Ukraine-on-their-way-6269966.php'>site</a></td><td>"We have said repeatedly that there are no Russian troops in Donbass," Peskov said, referring to eastern Ukraine.</td></tr>
+</table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/9zgCZMre5f1KhV45UOd71w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-10T002047Z_2_LYNXMPEB3812L_RTROPTP_2_USA-POLITICS-CLINTON.JPG'></td><td>2015-04-10 00:20:47</td><td><a href='http://news.yahoo.com/hillary-clinton-expected-announce-presidential-run-soon-weekend-002047543.html'>site</a></td><td><table><tr><td>Hillary Clinton expected to announce presidential run as soon as this weekend</td></tr><tr><td>A variety of sources in the Clinton orbit said they were anticipating an imminent announcement but would not confirm a report in the New York Daily News that the announcement was expected on Sunday.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-10 00:46:49</td><td><a href='http://www.cbc.ca/news/world/hillary-clinton-expected-to-announce-2016-presidential-run-this-weekend-1.3027372?cmp=rss'>site</a></td><td>Hillary Clinton is expected to announce her campaign for the Democratic presidential nomination in 2016 as early as this weekend, facing no substantial competition but needing to get her organization in place for the long battle to come.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 19:15:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11431723&ref=rss'>site</a></td><td>Hillary Clinton says she's running for president in 2016, wants to be country's 'champion'</td></tr>
 </table></body></html>

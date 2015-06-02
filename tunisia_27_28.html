@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>tunisia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td><a href='http://www.reuters.com/article/2015/04/08/us-tunisia-security-rights-idUSKBN0MZ1G620150408?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>"Yes, Tunisia has been hit hard, but we can't let that hurt our rights and freedoms."</td></tr><tr><td>"All these declarations are quite disturbing," Amna Guellali director of the Human Rights Watch Tunisia.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 14:16:30</td><td><a href='http://www.reuters.com/article/2015/04/08/us-tunisia-security-rights-idUSKBN0MZ1G620150408?feedType=RSS&feedName=worldNews'>site</a></td><td>Four years after its revolt, Tunisia is unlikely to slide back to the days of Ben Ali's oppressive state.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 15:01:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3030503/After-Bardo-attack-Tunisia-treads-line-security-freedoms.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>But last month's attack is testing Tunisia's tricky balance between security and the new liberties since the revolt, which ousted long-running autocrat Zine El-Abidine Ben Ali.</td></tr>
 </table></body></html>

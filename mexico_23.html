@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 19:25:10</td><td><a href='http://abcnews.go.com/International/wireStory/hundreds-taxi-drivers-march-mexico-uber-31293987'>site</a></td><td><table><tr><td>Hundreds of taxi drivers marched through Mexico City chanting "Uber Out!" and demanding city authorities ban the online ride service.</td></tr><tr><td>Uber responded on its blog by offering Mexico City commuters free rides on Monday, with a hashtag that roughly translates as "If Mexico won't stop, Uber won't stop."</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-02 01:08:15</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3021630/Mexicos-Pemex-fights-fire-oil-platform-300-workers-evacuated.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In 2013, at least 37 people were killed by a blast at Pemex's Mexico City headquarters, and another 26 people died in a fire at a Pemex natural gas facility in northern Mexico in September 2012.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 02:40:04</td><td><a href='http://www.reuters.com/article/2015/04/02/us-pemex-fire-idUSKBN0MS4MU20150402?feedType=RSS&feedName=wtMostRead'>site</a></td><td><table><tr><td>Pemex has had a number of accidents in recent years and the latest one comes as Mexico seeks to lure private investors to revive its flagging oil industry.</td></tr><tr><td>Last year, Mexico finalized a reform to end Pemex's 75-year-old oil and gas monopoly, but expectations of a boom in private investment have been tempered by the plunge in global crude prices.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 02:40:04</td><td></td><td><a href='mexico_23_24.html'>MEXICO CITY (Reuters) - At least four people died after a fire broke out on a Pemex oil processing platform in the Gulf of Mexico early on Wednesday, leading to the evacuation of 302 workers, the Mexican state-run oil company said. (2)</a></td></tr>
 </table></body></html>

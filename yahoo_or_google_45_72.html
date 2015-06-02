@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/nD0STH1FVIo0R5W.ZvpdMw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504041319479882428'></td><td>2015-04-04 22:43:35</td><td><a href='http://sports.yahoo.com/news/alex-rodriguez-booed-ks-3-times-yankees-beat-195758111--mlb.html'>site</a></td><td>Alex Rodriguez booed, Ks 3 times; Yankees beat Nationals 4-3 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/bt/api/res/1.2/sFXbUzInNVqsKoMCIIDBtg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504082322841584560'></td><td>2015-04-09 06:38:54</td><td><a href='http://sports.yahoo.com/news/gonzalez-homers-3-times-lead-dodgers-past-padres-053625736--mlb.html'>site</a></td><td>Gonzalez homers 3 times to lead Dodgers past Padres 7-4 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='https://s.yimg.com/bt/api/res/1.2/.WF6kPzMyO3vmtX.QC6J5Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.campusinsiders.com/fa79304127dbb78908df01f66f553c33'></td><td>2015-04-19 00:06:45</td><td><a href='https://sports.yahoo.com/news/bryant-gets-1st-hit-reaches-5-times-cubs-225315121--mlb.html'>site</a></td><td>Bryant gets 1st hit, reaches 5 times as Cubs beat Padres 7-6 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/j/assets/i/us/sp/v/nhl/teams/83/70x70/van.png'></td><td>2015-04-26 05:11:11</td><td><a href='http://sports.yahoo.com/news/flames-beat-canucks-7-4-advance-stanley-cup-035737113--nhl.html'>site</a></td><td>Flames beat Canucks 7-4 to advance in Stanley Cup playoffs (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/7dYsHcHngm9_f.WbolUmvQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMzMTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201505061525555375416'></td><td>2015-05-06 21:49:05</td><td><a href='http://sports.yahoo.com/news/harpers-3-hrs-5-rbis-lift-nationals-over-195741764--mlb.html'>site</a></td><td>Harper's 3 HRs, 5 RBIs lift Nationals over Marlins 7-5 (Yahoo Sports)</td></tr>
+</table></body></html>

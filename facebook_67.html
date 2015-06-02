@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 11:52:05</td><td><a href='http://ibnlive.in.com/news/los-angeles-man-arrested-after-he-likes-own-most-wanted-facebook-poster/543893-2.html'>site</a></td><td><table><tr><td>Los Angeles: Man arrested after he likes own 'most wanted' Facebook poster</td></tr><tr><td>Los Angeles: In a bizarre case, a 23-year-old man in the US was arrested after he liked his own "most wanted" poster on a Facebook page.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-19 09:17:48</td><td><a href='http://www.miamiherald.com/news/business/technology/article15329216.html#storylink=rss'>site</a></td><td><table><tr><td>He noted that in a separate case - the recent killings of two New York police officers - the gunman posted Facebook threats before shooting the officers.</td></tr><tr><td>Abdul-Jabbaar pleaded guilty Feb. 2 for posting a threat against Wilson on Facebook that included a call to "give back those bullets that Police Officer Darren Wilson fired into the body of Mike Brown."</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 14:10:00</td><td></td><td><a href='facebook_67_68.html'>SEATTLE (AP) - A judge says a Washington state man who posted threatening comments on Facebook against a former Ferguson, Missouri, police officer can avoid prison but must stay off from social media sites. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-19 22:20:47</td><td><a href='http://www.mercurynews.com/business/ci_27746670/man-sentenced-facebook-threat-case-tied-larger-debate?source=rss'>site</a></td><td>A Nevada man was indicted in January for posting threats on Facebook to kill an African American police officer.</td></tr>
 </table></body></html>

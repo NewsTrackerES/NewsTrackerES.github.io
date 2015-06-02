@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='facebook_84_86.html'>Facebook CEO Mark Zuckerberg arrives for a press conference at the Mobile World Congress, the world's largest mobile phone trade show in Barcelona, Spain, Monday, March 2, 2015. (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 21:44:59</td><td></td><td><a href='facebook_84_85.html'>Internet.org is Facebook's fledgling effort to create new users in countries with little or low Internet use. (2)</a></td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/926d82f/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Ff9%2Fc6%2F77b52fad43989c86af1be633e5ca%2Fgoogle-icon.png'></td><td>2015-03-02 21:44:59</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/02/google-facebook-update-contrasting-plans-to-connect-world'>site</a></td><td>Google and Facebook want more people online, searching around and clicking on ads.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 11:15:00</td><td><a href='http://www.ctvnews.ca/sci-tech/facebook-moves-into-new-gehry-designed-headquarters-1.2305310'>site</a></td><td><table><tr><td>(San Francisco-AFP) - Facebook moved into its new Frank Gehry-designed headquarters in Silicon Valley, with a rooftop park and "the largest open floor plan in the world."</td></tr><tr><td>"That's on purpose," Zuckerberg said on his Facebook timeline.</td></tr></table></td></tr>
 </table></body></html>

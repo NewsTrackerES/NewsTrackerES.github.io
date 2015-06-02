@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-24 00:11:47</td><td></td><td><a href='google_98_100.html'>The hefty raise came in a year that saw Google's stock drop by 5 percent amid investor concerns about the company's big spending on far-flung projects. (2)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-24 00:11:47</td><td></td><td><a href='google_98_99.html'>SAN FRANCISCO (AP) - Google paid its billionaire Executive Chairman Eric Schmidt nearly $109 million last year while the company's stock slumped. (3)</a></td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-24 02:53:06</td><td><a href='http://www.miamiherald.com/news/business/article19355415.html#storylink=rss'>site</a></td><td>Analysts have also questioned whether Google will be able to maintain its dominance in Internet search as more people rely on smartphones instead of personal computers to access digital content.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 23:41:23</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-exec-says-immigration-changes-would-help-6143315.php'>site</a></td><td>Schmidt served as CEO at Google for a decade and his role now includes government outreach.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 23:41:40</td><td><a href='http://abcnews.go.com/Technology/wireStory/google-exec-immigration-economy-29737513'>site</a></td><td><table><tr><td>Google Exec Says Immigration Changes Would Help Economy</td></tr><tr><td>The executive chairman at Google urged Congress on Wednesday to increase the number of high-skilled work visas made available to foreigners and to deal with other immigration issues later on.</td></tr></table></td></tr>
 </table></body></html>

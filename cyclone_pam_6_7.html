@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>cyclone pam</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/0/5/3/f/image.related.articleLeadwide.620x349.1m04qv.png/1426487936286.jpg'></td><td>2015-03-16 06:39:10</td><td><a href='http://www.brisbanetimes.com.au/environment/climate-change/cyclone-pam-is-it-time-for-a-category6-cyclone-rating-20150316-1m04qv.html'>site</a></td><td><table><tr><td>Cyclone Pam: Is it time for a category-6 cyclone rating?</td></tr><tr><td>The unusual strength of Cyclone Pam, which devastated Vanuatu over the weekend, may stir debate about the need for a category-6 rating for storms to reflect their increasing severity.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:25:00</td><td><a href='http://america.aljazeera.com/articles/2015/3/13/cyclone-pam-hits-small-pacific-nation-of-vanuatu.html'>site</a></td><td>Cyclone Pam hits small Pacific nation of Vanuatu</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-14 03:03:14</td><td><a href='http://abcnews.go.com/International/wireStory/small-pacific-nation-vanuatu-braces-strong-cyclone-29603982'>site</a></td><td>Cyclone Pam Leaves Trail of Destruction in Pacific's Vanuatu</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/8/1/h/image.related.articleLeadwide.620x349.144bun.png/1426391249045.jpg'></td><td>2015-03-15 02:24:34</td><td><a href='http://www.brisbanetimes.com.au/environment/weather/cyclone-pam-death-toll-to-increase-significantly-in-vanuatu-20150315-144bun.html'>site</a></td><td>Cyclone Pam death toll to 'increase significantly' in Vanuatu</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/c/w/3/image.related.articleLeadNarrow.300x0.144f23.png/1426433667339.jpg'></td><td>2015-03-15 15:34:39</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-australia-gives-vanuatu-5-million-in-aid-20150315-144f23.html'>site</a></td><td>Cyclone Pam left a trail of devastation across the Pacific island nation on Saturday, with 250 km/h winds levelling entire villages in the capital, Port Vila.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/HalfofVanuatu_140x93.jpeg'></td><td>2015-03-16 03:00:42</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11418124&ref=rss'>site</a></td><td>Vanuatu president speaks of devastation from Cyclone Pam</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-03-21 03:06:08</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3005077/Half-Vanuatus-population-affected-Cyclone-Pam-UN.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Half of Vanuatu's population affected by Cyclone Pam: UN</td></tr><tr><td>More than half of the South Pacific island nation Vanuatu's population has been affected by Cyclone Pam, the UN said Saturday as the death toll rose to 16.</td></tr></table></td></tr>
 </table></body></html>

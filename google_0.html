@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/16/20/27A3EBC900000578-3042250-The_California_search_giant_claims_the_latest_update_to_its_Andr-a-1_1429212570539.jpg'></td><td>2015-04-16 20:32:29</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-3042250/Forget-typing-Google-says-understand-handwriting-draw-emoji.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>The same Google account must be signed into on the phone.</td></tr><tr><td>'If you know where your computer is you can now ask Google to find your Android phone from your desktop.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td><img src='http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/04/25/102620184-AP855095418230.530x298.jpg?v=1429996903'></td><td>2015-04-25 21:17:00</td><td><a href='http://www.cnbc.com/id/102620183'>site</a></td><td>He described himself as an "Inventor, Adventurer, and Energetic Engineer" on his Google+ page.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 00:02:28</td><td></td><td><a href='google_0_1.html'>April 25 (Reuters) - Dan Fredinburg, a Google Inc executive based in California, was among those killed on Saturday in an avalanche on Mount Everest caused by a devastating earthquake in Nepal, the company said. (2)</a></td></tr>
 </table></body></html>

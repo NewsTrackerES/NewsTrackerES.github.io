@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/t/0/d/c/image.related.articleLeadwide.620x349.1mt0ba.png/1429932988390.jpg'></td><td>2015-04-25 03:34:57</td><td><a href='http://www.smh.com.au/world/arctic-council-summit-environment-consensus-ruffled-by-russiaukraine-tensions-20150425-1mt0ba.html'>site</a></td><td><table><tr><td>Leona , Canada's minister for the Arctic Council, met Mr on Thursday and condemned Russia's actions in Ukraine, she said.</td></tr><tr><td>Sentiment: Russia's environmental minister Sergei Donskoi alluded to the need to rise above tensions over Ukraine.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 08:45:17</td><td><a href='http://www.foxnews.com/world/2015/04/12/chechen-commander-in-ukraine-drawn-into-russian-intrigue-over-nemtsov-murder/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Adam Osmayev hailed Nemtsov as a "true hero" both for condemning Russia's war against separatists in Chechnya and for decrying Russian intervention in the current conflict in Ukraine.</td></tr><tr><td>"Watch them try to tie Ukraine to this (murder) in some way," Osmayev added.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-12 08:45:30</td><td><a href='http://news.yahoo.com/chechen-commander-ukraine-drawn-russian-intrigue-084530080.html'>site</a></td><td>The Osmayevs fled to Ukraine.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-12 08:50:13</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11431571&ref=rss'>site</a></td><td>Ukraine at the time had a pro-Kremlin government.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-12 09:19:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/12/chechen-commander-in-ukraine-drawn-into-russian-intrigue'>site</a></td><td>In this photo taken on Monday March 2, 2015, Adam Osmayev, the commander of a battalion of Chechens fighting against Russia-backed rebels, is in the town of Lysychansk, Ukraine.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 09:19:50</td><td></td><td><a href='ukraine_26_27.html'>Shortly after his release, he joined a battalion formed by prominent Chechen commander Isa Munayev to fight against Russia-backed separatists in eastern Ukraine. (2)</a></td></tr>
 </table></body></html>

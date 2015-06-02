@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/449/report-on-business/international-business/european-business/article23215879.ece/ALTERNATES/w220/Facebook+Privacy.JPG'></td><td>2015-03-16 14:53:36</td><td><a href='http://www.theglobeandmail.com/technology/tech-news/six-things-that-facebooks-new-community-rules-wont-allow/article23469480/?cmpid=rss1'>site</a></td><td>On Monday, Facebook released its updated Facebook community standards.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/16/0A2617AF00000514-2997164-image-a-1_1426527793457.jpg'></td><td>2015-03-16 20:11:06</td><td><a href='http://www.dailymail.co.uk/sciencetech/article-2997164/Facebook-slaps-ban-buttocks.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>As a result, Facebook said: 'We remove photographs of people displaying genitals or focusing in on fully exposed buttocks.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-23 01:20:01</td><td><a href='http://www.wsj.com/articles/facebooks-spending-weighs-on-profits-1429733315?mod=rss_Technology'>site</a></td><td>At Facebook, Big Growth and Bigger Spending</td></tr>
 </table></body></html>

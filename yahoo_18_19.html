@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 22:04:50</td><td><a href='http://www.chron.com/business/technology/article/Yahoo-says-it-will-buy-back-2-billion-in-stock-6161633.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba.</td></tr><tr><td>Investors were pushing Yahoo to use some of the proceeds from the Alibaba spinoff to buy back stock, and the company had said it would keep buying back stock to return cash to shareholders.</td></tr><tr><td>In January, Yahoo Inc. said it will spin off its stake in Alibaba Group Holding Ltd. later this year.</td></tr><tr><td>Yahoo owns 384 million shares of Alibaba, and as of Thursday's close its stake is worth about $32 billion.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 22:43:30</td><td><a href='http://www.usnews.com/news/technology/articles/2015/03/26/yahoo-says-it-will-buy-back-2-billion-in-stock'>site</a></td><td>The move will allow the new entity to pay lower taxes on Alibaba stock sales than Yahoo would have.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-27 05:46:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16448177.html#storylink=rss'>site</a></td><td>Yahoo has $726 million remaining on previous stock buyback plan, which was approved in 2013 and expires at the end of 2016.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 09:20:17</td><td><a href='http://www.startribune.com/world/296842551.html'>site</a></td><td><table><tr><td>That $1 billion deal gave Yahoo a lucrative stake in Alibaba that is currently worth $33 billion.</td></tr><tr><td>Yahoo's revenue declined by 1 percent to $4.6 billion last year.</td></tr></table></td></tr>
 </table></body></html>

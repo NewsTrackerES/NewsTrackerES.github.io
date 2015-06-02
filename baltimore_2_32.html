@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>baltimore</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww3.hdnux.com/photos/36/03/56/7879578/5/square_gallery_thumb.jpg'></td><td>2015-04-26 21:35:14</td><td><a href='http://www.sfgate.com/news/crime/article/Photographer-says-Baltimore-police-beat-him-6225026.php'>site</a></td><td>J.M. Giordano, who works at the City Paper, says Baltimore police "swarmed over" him and hit him repeatedly.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-27 00:24:05</td><td><a href='http://www.miamiherald.com/news/nation-world/article19578579.html#storylink=rss'>site</a></td><td>Earlier Sunday, J.M. Giordano - a photo editor at Baltimore's City Paper - said Baltimore police beat him as he covered one of the protests in west Baltimore.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/21/281D3C3300000578-0-image-m-8_1430254626706.jpg'></td><td>2015-04-29 02:02:56</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3059789/In-tense-Baltimore-mayors-response-rioting-comes-scrutiny.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Baltimore police Captain John Kowalczyk told reporters that the city had prepared for protests by teenagers on Monday.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/UeN4XzkZwLrEDpvXBAzdtA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en-US/video/video.associatedpressfree.com/d950ad1ce87ce89a6fb55dfe6bd3cf19.cf.jpg'></td><td>2015-05-04 19:45:16</td><td><a href='http://news.yahoo.com/baltimore-police-man-arrested-near-scene-recent-riots-194516542.html'>site</a></td><td>A Baltimore police officer who briefed reporters at the scene said police did not fire their weapons and that no one was wounded.</td></tr>
+</table></body></html>

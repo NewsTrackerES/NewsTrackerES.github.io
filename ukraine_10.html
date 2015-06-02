@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 18:01:58</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3059488/Forest-fire-threatens-Ukraines-Chernobyl-nuclear-zone.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Forest fire threatens Ukraine's Chernobyl nuclear zone</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693571635_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-28 21:00:36</td><td><a href='http://www.torontosun.com/2015/04/28/forest-fire-threatens-ukraines-chernobyl-nuclear-zone'>site</a></td><td>Earlier, the interior ministry had warned that high winds were blowing the fire in northern Ukraine towards Chernobyl, where in 1986 a reactor fire led to the world's worst nuclear disaster.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-29 11:56:21</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3060678/Forest-fire-near-Ukraines-Chernobyl-nuclear-zone-control-PM.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Emergency services deployed more than 300 firefighters, three planes and one helicopter to tackle the fire which Yatseniuk said was the largest in Ukraine since 1992.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 14:52:42</td><td></td><td><a href='ukraine_10_11.html'>Ukraine's central bank has sharply hiked its benchmark rate to 30 percent, from 19.5 percent, as financial authorities seek to reverse the rapid devaluation of the national currency. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 15:45:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411312&ref=rss'>site</a></td><td>Gontareva has previously projected that inflation in Ukraine this year will reach 26 percent.</td></tr>
 </table></body></html>

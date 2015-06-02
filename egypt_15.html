@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 8,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,12 @@
     <h3>egypt</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-12 15:23:36</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/12/egypt-police-says-it-has-arrested-critical-journalist'>site</a></td><td>CAIRO (AP) - Egypt has arrested a journalist on claims he is wanted in seven different cases - just days after he published a series of critical articles about the police.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-12 15:23:36</td><td><a href='http://www.utsandiego.com/news/2015/apr/12/egypt-police-says-it-has-arrested-critical/'>site</a></td><td>Egypt police says it has arrested critical journalist</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-13 20:25:00</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/egypt-announces-plans-to-build-new-capital/nkWX3/'>site</a></td><td>Egypt announces plans to build new capital</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 10:00:21</td><td></td><td><a href='egypt_15_16.html'>Kerry: Decision soon on unfreezing US military aid to Egypt (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-17 15:06:19</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/egypt-to-try-police-officer-for-killing-female-pro/nkYDq/'>site</a></td><td>Egypt to try police officer for killing female protester</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 19:34:47</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/saudi-arabia-egypt-show-discord-over-syria/nkhzF/'>site</a></td><td>Saudi Arabia, Egypt show discord over Syria</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-18 07:56:35</td><td><a href='http://www.daytondailynews.com/ap/ap/international/egypt-runners-defy-cairo-mayhem-as-sports-populari/nkxds/'>site</a></td><td>Egypt runners defy Cairo mayhem as sport's popularity grows</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-22 09:37:38</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/turkey-criticizes-egypts-sentencing-of-ousted-lead/nkzbZ/'>site</a></td><td>Turkey criticizes Egypt's sentencing of ousted leader Morsi</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-11 19:27:41</td><td><a href='http://www.daytondailynews.com/ap/ap/international/egypts-justice-minister-resigns-after-comments-rai/nmDcs/'>site</a></td><td>Egypt's justice minister resigns after comments raise uproar</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-16 17:31:23</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/key-events-in-egypt-since-the-2011-uprising/nmHnP/'>site</a></td><td>Key events in Egypt since the 2011 uprising</td></tr>
 </table></body></html>

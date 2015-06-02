@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 17:08:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/f70471f764144b2fab526d39972d37b3/Article_2015-04-21-US-Yahoo-Challenge/id-76b9fd79e03b4b6ba7f224d824050c3b'>site</a></td><td>"Yahoo is amidst a multi-year transformation to return an iconic company to greatness," Mayer said Tuesday in a statement.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-22 02:28:04</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article19182630.html#storylink=rss'>site</a></td><td>The latest evidence of Yahoo's financial malaise emerged Tuesday with the release the company's first-quarter earnings report.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td><a href='http://www.torontosun.com/2015/04/16/microsoft-yahoo-amend-search-deal'>site</a></td><td>Microsoft Corp and Yahoo Inc amended a 2009 search partnership, giving Yahoo more control over how search results are displayed on desktops and mobile devices.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 15:30:22</td><td><a href='http://technology.canoe.ca/News/2015/04/16/22347756.html?cid=rsstechnologynews'>site</a></td><td>Earlier, Microsoft controlled how Bing displayed search results on Yahoo websites accessed on PCs.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/Microgalleries/2015/04/01/techpranks650.jpg&amp;size=200x112&amp;quality=85'></td><td>2015-04-21 13:36:55</td><td><a href='http://technology.canoe.ca/News/2015/04/21/22355991.html?cid=rsstechnologynews'>site</a></td><td>Yahoo Inc and Microsoft Corp added a termination clause to the terms of their search partnership agreement under which either company can end the deal on or after Oct. 1, 2015, according to a regulatory filing by Yahoo on Monday.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/05/13/8352f9b36c536615760f6a7067004dca_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-05-13 22:43:26</td><td><a href='http://www.utsandiego.com/news/2015/may/13/official-says-ecuador-and-mexico-talking-about/'>site</a></td><td>QUITO, Ecuador (AP) - A high-ranking Ecuadorean official said Wednesday his government is talking with Mexico about establishing a bank of DNA material from some of the migrants from his country who have disappeared trying to reach the U.S. illegally.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/5uYRnmTz2A4A_59nkvhjrw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/8352f9b36c536615760f6a7067004dca.jpg'></td><td>2015-05-13 22:49:21</td><td><a href='http://news.yahoo.com/official-says-ecuador-mexico-talking-dna-bank-224342295.html'>site</a></td><td>Humberto Cordero, undersecretary for the Community of Returned Ecuadorean Migrants, told The Associated Press the genetic material could help determine if Ecuadoreans are among unidentified remains found in Mexico.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 23:06:07</td><td><a href='http://news.yahoo.com/mexico-city-businesses-cite-losses-during-bond-filming-230607359.html'>site</a></td><td><table><tr><td>Mexico City businesses cite losses during Bond filming</td></tr><tr><td>MEXICO CITY (AP) - The leader of small businesses in Mexico City's historic downtown district says owners have complained of a 60 percent drop in sales during the first week of filming of the new James Bond movie, "Spectre."</td></tr></table></td></tr>
 </table></body></html>

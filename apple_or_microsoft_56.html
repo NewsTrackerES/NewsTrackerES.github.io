@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-06 02:39:28</td><td><a href='http://www.reuters.com/article/2015/05/06/us-apple-regulator-idUSKBN0NR04Y20150506?feedType=RSS&feedName=technologyNews'>site</a></td><td>Apple and the FTC did not immediately respond to requests seeking comment outside regular business hours.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 02:39:28</td><td><a href='http://www.reuters.com/article/2015/05/06/us-apple-regulator-idUSKBN0NR04Y20150506?feedType=RSS&feedName=businessNews'>site</a></td><td>Apple's Beats Music deals under U.S. scrutiny: Bloomberg</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 15:04:14</td><td></td><td><a href='apple_or_microsoft_56_58.html'>Microsoft Corp and Yahoo Inc amended a 2009 search partnership, giving Yahoo more control over how search results are displayed on desktops and mobile devices. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297674744457_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-16 15:04:14</td><td><a href='http://www.torontosun.com/2015/04/16/microsoft-yahoo-amend-search-deal'>site</a></td><td><table><tr><td>The 10-year search partnership, crafted by former Microsoft CEO Steve Ballmer and former Yahoo CEO Carol Bartz, allowed the companies to amend or terminate it after five years.</td></tr><tr><td>Yahoo and Microsoft shares were down marginally in late-morning trading.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 13:19:00</td><td></td><td><a href='apple_or_microsoft_56_57.html'>Yahoo and Microsoft added a termination clause to the terms of their search partnership agreement under which either company can end the deal on or after Oct. 1, 2015, according to a regulatory filing by Yahoo on Monday. (3)</a></td></tr>
 </table></body></html>

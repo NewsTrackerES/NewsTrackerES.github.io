@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 11:50:59</td><td><a href='http://www.ctvnews.ca/world/gold-worth-8-5m-stolen-from-mexican-mine-with-canadian-connection-1.2316772'>site</a></td><td>MEXICO CITY -- Canada-based McEwen Mining Inc. says armed robbers took $8.5 million in gold from a refinery at a mine in Mexico's western Sinaloa state.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 13:18:43</td><td><a href='http://www.cbc.ca/news/business/mcewen-mining-says-armed-robbers-stole-7-000-ounces-of-gold-from-their-mexican-mine-1.3024579?cmp=rss'>site</a></td><td>The Toronto-based company has operations in Mexico, Nevada and Argentina.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-10 17:47:35</td><td><a href='http://www.utsandiego.com/news/2015/apr/10/mining-co-in-mexico-has-good-relationship-with/'>site</a></td><td>CULIACAN, Mexico (AP) - The director of the mining company robbed of $8.5 million in gold in Mexico has made the rare revelation it has a "good relationship" with area drug traffickers.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-10 17:47:52</td><td><a href='http://news.yahoo.com/mining-co-mexico-good-relationship-cartels-174752144.html'>site</a></td><td>Mining co. in Mexico has 'good relationship' with cartels</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 02:08:30</td><td><a href='http://news.yahoo.com/1-migrant-killed-1-wounded-attack-train-mexico-020830204.html'>site</a></td><td>MEXICO CITY (AP) - One Honduran youth was shot to death and another migrant was wounded when assailants attacked Central American migrants riding a freight train in the central Mexico state of Puebla.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 02:10:32</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-2999961/1-migrant-killed-1-wounded-attack-train-Mexico.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>1 migrant killed, 1 wounded in attack on train in Mexico</td></tr><tr><td>The shootings in Puebla may indicate gangs are following Central American migrants in their changing routes through Mexico.</td></tr></table></td></tr>
 </table></body></html>

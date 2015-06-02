@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-25 14:20:55</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/25/fashions-greatest-hits-misses-on-the-cannes-red-carpet'>site</a></td><td>Jury member Miller had a cinematic comeback this year - after roles in "American Sniper" and "Foxcatcher" - but it was an off year for her on the Cannes red carpet.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-25 14:20:55</td><td><a href='http://www.utsandiego.com/news/2015/may/25/fashions-greatest-hits-misses-on-the-cannes-red/'>site</a></td><td>Here are the 68th Cannes Film Festival's fashion hits and misses.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-25 14:31:05</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article22177299.html#storylink=rss'>site</a></td><td>Cannes' red carpet can be as kind as it is cruel when it comes to fashion.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 18:30:24</td><td></td><td><a href='cannes_24_25.html'>CANNES, France (AP) " Harvey Weinstein offered a peek at Quentin Tarantino's film "The Hateful Eight" at the Cannes Film Festival on Thursday as the movie mogul previewed the Weinstein Co.'s upcoming slate. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 19:19:17</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/14/harvey-weinstein-offers-peek-at-hateful-eight-at-cannes'>site</a></td><td>One of the Cannes festival jury members, Jake Gyllenhaal, was also on hand to preview his boxing drama with director Antoine Fuqua: "Southpaw."</td></tr>
 </table></body></html>

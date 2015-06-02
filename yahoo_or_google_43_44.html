@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 23:00:56</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11424075&ref=rss'>site</a></td><td>NEW YORK (AP) " Yahoo says it will buy back $2 billion in company stock as it prepares to spin off its stake in Chinese e-commerce company Alibaba.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 04:55:48</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16448177.html#storylink=rss'>site</a></td><td>In January, Yahoo Inc. said it will spin off its stake in Alibaba into a separate company later this year.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-27 05:46:05</td><td><a href='http://www.charlotteobserver.com/news/business/national-business/article16448177.html#storylink=rss'>site</a></td><td><table><tr><td>Investors were pushing Yahoo to use some of the proceeds from the Alibaba spinoff to buy back stock, and the company had said it would keep buying back stock to return cash to shareholders.</td></tr><tr><td>The move will allow the new entity to pay lower taxes on Alibaba stock sales than Yahoo would have.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/17/2e5329a3392ee411730f6a7067007762_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-17 07:02:15</td><td><a href='http://www.utsandiego.com/news/2015/apr/17/google-embraces-mobile-friendly-sites-in-search/'>site</a></td><td><table><tr><td>Google embraces 'mobile-friendly' sites in search shake-up</td></tr><tr><td>That's why Google's new rating system is being billed by some search experts as "Mobile-geddon."</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-17 11:54:54</td><td><a href='http://www.nydailynews.com/news/national/new-google-formula-favor-mobile-friendly-websites-article-1.2188704?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nydnrss%2Fnews%2Fnational+%28News%2FNational%29'>site</a></td><td>But new pecking order in Google's mobile search may relegate some sites to the back pages of the search results, even if their content is more relevant to a search request than other sites that happen to be easier to access on smartphones.</td></tr>
 </table></body></html>

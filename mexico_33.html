@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 09:14:25</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20805510.html#storylink=rss'>site</a></td><td><table><tr><td>A television pilot based on a comic book series about a conflicted preacher in a small Texas town who is inhabited by a powerful entity will be filmed in New Mexico.</td></tr><tr><td>New Mexico Film Office Director Nick Maniatis announced Tuesday that AMC-TV and Sony Pictures Television will produce the pilot "Preacher" in the state May through the beginning of June.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-15 03:22:16</td><td></td><td><a href='mexico_33_35.html'>It was the second killing of a candidate in western Mexico this month heading into the country's midterm elections June 7. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 03:22:16</td><td></td><td><a href='mexico_33_34.html'>MEXICO CITY - A Mexican political party says one of its members running for mayor in a town in the restive state of Michoacan was shot to death during a political rally. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 20:55:29</td><td><a href='http://news.yahoo.com/mayoral-candidate-fatally-shot-restive-mexico-state-032226104.html'>site</a></td><td>Jose Antonio Crespo, a political analyst at Mexico's Center for Economic Research and Instruction, said: "This is all very regrettable, but it is not unusual. That's the way Mexican elections are nowadays."</td></tr>
 </table></body></html>

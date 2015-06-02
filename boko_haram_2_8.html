@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>boko haram</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-19 16:56:25</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3002773/Boko-Haram-attacks-Nigeria-town-Gamboru-kills-11-witnesses.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Boko Haram militants killed 11 people in an attack on Gamboru, northeast Nigeria, as hundreds of Islamists flooded the town following the withdrawal of Chadian troops, witnesses said Thursday.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-20 11:31:14</td><td><a href='http://www.theguardian.com/world/2015/mar/20/boko-haram-weaker-nigeria-president-goodluck-jonathan'>site</a></td><td>A Boko Haram attack on the border town of Gamboru on Wednesday and Thursday killed 11 civilians and gave an indication of the difficulties in bringing a definitive end to the violence.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/0JRqM0776_b8YF3SrVbREg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTEw/http://media.zenfs.com/en_us/News/afp.com/0186df1bdbc9b02bfff02a51f568265597a568fe.jpg.cf.jpg'></td><td>2015-04-06 16:59:14</td><td><a href='http://news.yahoo.com/boko-haram-disguised-preachers-kill-least-24-nigeria-162212642.html'>site</a></td><td>Boko Haram disguised as preachers kill at least 24 in Nigeria</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/768/news/world/article23808802.ece/ALTERNATES/w220/3416_539477872.JPG'></td><td>2015-04-06 17:53:44</td><td><a href='http://www.theglobeandmail.com/news/world/boko-haram-disguised-as-preachers-kill-at-least-24-in-nigeria/article23808803/?cmpid=rss1'>site</a></td><td>Islamist Boko Haram militants disguised as preachers killed at least 24 people and wounded several others in an attack near a mosque in northeast Nigeria's Borno state, a military source and witness said on Monday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-17 18:49:38</td><td><a href='http://www.reuters.com/article/2015/04/17/us-nigeria-violence-idUSKBN0N827320150417?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>MAIDUGURI, Nigeria (Reuters) - Boko Haram militants have slit the throats of 12 people in northeast Nigeria as the army was trying to evacuate civilians from the area, a military source and a witness said on Friday.</td></tr><tr><td>"Just as troops were trying to evacuate some civilians from the hills so as to safeguard them from a planned air strike ... some Boko Haram attacked them and slit the throats of 12 people," a military source said of Wednesday's attack.</td></tr></table></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-18 23:02:34</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3045023/Boko-Haram-Cameroon-attack-toll-rises-19-beheaded.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Nineteen people were killed in Thursday night's attack on a Cameroonian village by Nigeria-based Boko Haram militants, a security source said in an updated toll, adding that most of the victims were beheaded.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-27 20:02:25</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3057682/Suspected-Boko-Haram-gunmen-kill-21-NE-Nigeria-official-relative.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Dozens of soldiers, civilians killed in fresh Boko Haram violence</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-11 22:40:46</td><td><a href='http://abcnews.go.com/International/wireStory/student-shot-boko-haram-school-attack-dies-nigeria-30966982'>site</a></td><td><table><tr><td>Student Shot in Boko Haram School Attack Dies in Nigeria</td></tr><tr><td>One of five students wounded by gunfire in a Boko Haram attack on a school in northeast Nigeria died of his injuries on Monday, the college said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-05-13 20:02:22</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3080474/Suspected-Boko-Haram-militants-attack-Nigerias-Maiduguri.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>MAIDUGURI, Nigeria, May 13 (Reuters) - Suspected Boko Haram militants attacked Nigeria's northern city of Maiduguri in Borno state on Wednesday from a cashew plantation a few kilometres from the Giwa barracks, military sources said.</td></tr>
+</table></body></html>

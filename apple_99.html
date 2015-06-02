@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150404&t=2&i=1037902408&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3303T'></td><td>2015-04-04 11:50:14</td><td><a href='http://www.reuters.com/article/2015/04/04/us-applewatch-swiss-idUSKBN0MV0AJ20150404?feedType=RSS&feedName=technologyNews'>site</a></td><td>Apple did not immediately respond to a Reuters request for comment.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://technology.canoe.ca/News/2015/04/04/apple_watch_650.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-04 18:45:27</td><td><a href='http://technology.canoe.ca/News/2015/04/04/22326996.html?cid=rsstechnologynews'>site</a></td><td><table><tr><td>Swiss launch of Apple Watch hit by patent issue</td></tr><tr><td>ZURICH - Apple is not able to launch its new smartwatch in Switzerland until at least the end of this year because of an intellectual property rights issue, Swiss broadcaster RTS reported on its website.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/12/16/276824FA00000578-0-image-a-6_1428851668812.jpg'></td><td>2015-04-12 18:01:36</td><td><a href='http://www.dailymail.co.uk/news/article-3035864/Apple-trying-entice-musicians-including-Taylor-Swift-exclusive-deals-Beats-streaming.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Apple has also approached Taylor Swift and others about partnerships, the report said.</td></tr>
 </table></body></html>

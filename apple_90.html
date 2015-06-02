@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Bg_I6s58PUgXnK6VTPlsBw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4a6ac8d852ce2513750f6a7067002359.jpg'></td><td>2015-04-30 13:51:43</td><td><a href='http://news.yahoo.com/apple-ibm-japan-post-team-improve-elderly-care-132403587.html'>site</a></td><td>NEW YORK (AP) - Apple, IBM and Japanese insurance and bank holding company Japan Post have formed a partnership to improve the lives of elderly people in the country.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-30 13:53:35</td><td><a href='http://abcnews.go.com/Technology/wireStory/apple-ibm-japan-post-team-improve-elderly-care-30698188'>site</a></td><td>Apple CEO Tim Cook, IBM CEO Ginni Rometty and Japan Post CEO Taizo Nishimuro announced the deal in New York on Thursday.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03249/appledrone_3249508f.jpg'></td><td>2015-04-24 13:46:24</td><td><a href='http://www.telegraph.co.uk/technology/google/11561203/Android-peeing-on-Apple-logo-spotted-on-Google-Maps.html'>site</a></td><td>Android peeing on Apple logo spotted on Google Maps</td></tr>
 </table></body></html>

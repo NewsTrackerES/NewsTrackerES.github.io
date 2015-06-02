@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 10,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 10 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-04 12:11:43</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3025519/Russias-Lavrov-calls-pull-weapons-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Russia's Lavrov calls for pull-back of weapons in Ukraine</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-11 11:10:31</td><td><a href='http://www.reuters.com/article/2015/05/11/us-ukraine-crisis-russia-usa-idUSKBN0NW0VX20150511?feedType=RSS&feedName=worldNews'>site</a></td><td>Lavrov, Kerry to discuss Ukraine on Tuesday in Sochi, Russia: RIA</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/1l6mkDyP.bZRItaK6qhEVQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-05-11T135242Z_1007000002_LYNXMPEB4A0G8_RTROPTP_2_CNEWS-US-UKRAINE-CRISIS-RUSSIA-USA.JPG'></td><td>2015-05-11 13:52:42</td><td><a href='http://news.yahoo.com/lavrov-kerry-meet-tuesday-moscow-sees-no-breakthrough-101932057.html'>site</a></td><td>Putin, Kerry to discuss Ukraine, Syria, Iran, U.S. says</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/27/21/7959624/5/920x920.jpg'></td><td>2015-05-11 15:43:25</td><td><a href='http://www.sfgate.com/news/politics/article/Reports-US-Russian-foreign-ministers-to-hold-6255091.php'>site</a></td><td><table><tr><td>Kerry set to make first trip to Russia since Ukraine crisis</td></tr><tr><td>WASHINGTON (AP) - Secretary of State John Kerry is heading to Russia on his first visit to the country since relations between Washington and Moscow plummeted to post-Cold War lows amid disagreements over Ukraine and Syria.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/VVN42egvd2I5TzvRIu9bng--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0ea67ca617a42c15760f6a7067001833.jpg'></td><td>2015-05-11 17:39:43</td><td><a href='http://news.yahoo.com/reports-us-russian-foreign-ministers-hold-talks-tuesday-100002176.html'>site</a></td><td>He first visited Moscow in May 2013 and had meetings with Putin and Lavrov before the Ukraine crisis erupted and Russia annexed the Ukrainian territory of Crimea in early 2014.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-12 07:41:28</td><td><a href='http://www.usnews.com/news/politics/articles/2015/05/12/kerry-to-meet-russias-putin-amid-ukraine-syria-tensions'>site</a></td><td>SOCHI, Russia (AP) - U.S. Secretary of State John Kerry is in Russia to meet President Vladimir Putin with an eye on easing badly strained relations over conflicts in Ukraine and Syria.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150512&t=2&i=1047654655&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB4B07S'></td><td>2015-05-12 07:44:26</td><td><a href='http://www.reuters.com/article/2015/05/12/us-russia-usa-idUSKBN0NX0LG20150512?feedType=RSS&feedName=worldNews'>site</a></td><td>Kerry to explore Putin's flexibility on Ukraine, Syria</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-12 09:31:18</td><td><a href='http://abcnews.go.com/International/wireStory/kerry-meet-russias-putin-amid-ukraine-syria-tensions-30973610'>site</a></td><td>Later, he was to meet Putin on the brief visit, his first to Russia since May 2013 and the advent of the Ukraine crisis.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l.yimg.com/bt/api/res/1.2/BaNCsTUExic2E9Rb8J24cA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTE1NjtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/Reuters/2015-05-12T100938Z_1007000001_LYNXMPEB4B0CG_RTROPTP_2_CNEWS-US-UKRAINE-CRISIS-RUSSIA-REPORT.JPG.cf.jpg'></td><td>2015-05-12 14:22:57</td><td><a href='http://news.yahoo.com/kerry-explore-putins-flexibility-ukraine-syria-074102063.html'>site</a></td><td>Kerry met Russian Foreign Minister Sergei Lavrov for more than four hours before he sat down with Putin in the Black Sea resort of Sochi in what was the highest-level U.S. visit to Russia since the Ukraine crisis began in the autumn of 2013.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-12 15:19:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3078380/Kerry-meets-Putin-gauge-flexibility-Ukraine-Syria.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Kerry meets Putin to gauge flexibility on Ukraine, Syria</td></tr>
+</table></body></html>

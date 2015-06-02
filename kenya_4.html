@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 07:15:06</td><td><a href='http://www.reuters.com/article/2015/05/05/us-kenya-attacks-idUSKBN0NQ0HR20150505?feedType=RSS&feedName=worldNews'>site</a></td><td><table><tr><td>ISIOLO, Kenya (Reuters) - Suspected cattle rustlers ambushed and killed at least 45 people in a village in northwest Kenya, then drove away hundreds of livestock, a regional administrator said.</td></tr><tr><td>At least 14 people also died in a fight between two pastoralist communities on Monday, on the borders of Kenya's northern Samburu and Marsabit counties, the regional manager for the Kenya Red Cross, Mugambi Gitonga, said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 15:24:23</td><td><a href='http://abcnews.go.com/International/wireStory/kerry-honors-victims-kenya-talks-focus-al-shabaab-30780943'>site</a></td><td>Kerry said he received assurances Monday from Kenya's once-shunned president, Uhuru Kenyatta, that the camp would stay open while an international plan is devised to make Somalia safe enough for its citizens to return.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-04 15:59:34</td><td><a href='http://hosted2.ap.org/APDEFAULT/89ae8247abe8493fae24405546e9a1aa/Article_2015-05-04-AF-United-States-Kenya/id-2c1a80173e36409ea9f81e0542fbaeaa'>site</a></td><td>Kenya's burden is only a piece of a larger refugee challenge that has grown more acute with fighting in South Sudan - whose leaders Kerry publicly lambasted Monday - and more recently across the Gulf of Aden in Yemen.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 16:51:59</td><td></td><td><a href='kenya_4_5.html'>U.S. Secretary of State John Kerry helps feed a baby elephant while touring the Sheldrick Center Elephant Orphanage at the Nairobi National Park, Sunday, May 3, 2015, in Nairobi, Kenya. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/16/31/7923264/5/square_gallery_thumb.jpg'></td><td>2015-05-04 16:51:59</td><td><a href='http://www.sfgate.com/news/politics/article/Kerry-honors-victims-in-Kenya-as-talks-focus-on-6240157.php'>site</a></td><td>Earlier Monday, Kerry laid a wreath for the victims of the deadly 1998 bombing of the U.S. Embassy in Kenya.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://timesofindia.indiatimes.com/thumb/msid-47153773,width-300,resizemode-4/Kenya-warned-over-closing-worlds-biggest-refugee-camp.jpg'></td><td>2015-05-04 17:10:48</td><td><a href='http://timesofindia.indiatimes.com/world/rest-of-world/US-gives-45-million-to-help-Kenya-with-refugee-crisis/articleshow/47153736.cms'>site</a></td><td><table><tr><td>He said he came away from the discussions with a deeper appreciation for the refugee burden Kenya carries.</td></tr><tr><td>The U.S. has provided Kenya hundreds of millions of dollars in counterterrorism and refugee assistance in recent years.</td></tr></table></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>boston marathon bombing</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-20 14:28:32</td><td><a href='http://news.yahoo.com/tsarnaev-friend-says-gave-him-gun-marathon-bombing-051814429--spt.html'>site</a></td><td><table><tr><td>Correction: Boston Marathon Bombing story</td></tr><tr><td>BOSTON (AP) - In a story March 18 about the Boston Marathon bombing trial, The Associated Press, relying on information provided by a prosecutor in court, misidentified the brand of plastic container used by the bombers.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/2.6N_FXq_nopcsz4Wtk53g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDt3aWR0aD0zMDA7aGVpZ2h0PTEyMDtxPTc1O3B5b2ZmPTMw/http://media.zenfs.com/en_us/News/ap_webfeeds/1991a844f4a3460a700f6a7067000561.jpg.cf.jpg'></td><td>2015-02-16 15:35:17</td><td><a href='http://news.yahoo.com/things-know-boston-marathon-bombing-trial-153517979.html'>site</a></td><td>Tsarnaev's lawyers have argued repeatedly that he cannot get a fair trial in Massachusetts because of the emotional impact the bombings had here and the many people who have personal connections to the marathon, people injured in the attack and the first responders who helped them.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/g/a/3/c/image.related.articleLeadwide.620x349.1mga3n.png/1428407876584.jpg'></td><td>2015-04-07 11:54:53</td><td><a href='http://www.brisbanetimes.com.au/world/boston-marathon-bombing-jury-to-begin-weighing-whether-dzhokhar-tsarnaev-is-guilty-20150407-1mga3n.html'>site</a></td><td>The jury that will determine whether Dzhokhar Tsarnaev is guilty of carrying out the 2013 bombing attack on the Boston Marathon that killed three people and injured 264 is due to begin deliberations in Boston on Tuesday.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2015/4/8/6092f9a8c08f4b9aa855d596b3270837_18.jpg'></td><td>2015-04-08 19:35:31</td><td><a href='http://www.aljazeera.com/news/2015/04/dzhokhar-tsarnaev-boston-marathon-bombing-150408182611668.html'>site</a></td><td>Dzhokhar Tsarnaev has been found guilty of killing three people and injuring 264 in the 2013 bombing of the Boston Marathon, as well as fatally shooting a police officer four days later.</td></tr>
 </table></body></html>

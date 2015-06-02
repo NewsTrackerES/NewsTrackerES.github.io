@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-18 19:28:18</td><td><a href='http://www.mercurynews.com/nation-world/ci_27941866/veterinarian-investigated-cat-death-shown-bragging-about-it?source=rss'>site</a></td><td><table><tr><td>Veterinarian investigated for cat death shown bragging about it on Facebook</td></tr><tr><td>BRENHAM, Texas (AP) -- Authorities are investigating whether animal cruelty charges should be pursued against a Texas veterinarian shown in a Facebook posting bragging about killing a cat with a bow and arrow.</td></tr><tr><td>The operators of the Brenham clinic where Lindsey worked said Friday she was fired after they learned of the posting, which first appeared Wednesday night and has since been removed, along with her Facebook account.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-05-02 18:01:21</td><td></td><td><a href='facebook_4_7.html'>Facebook exec's husband dies suddenly (2)</a></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-02 20:38:00</td><td></td><td><a href='facebook_4_6.html'>Family members say tech executive David Goldberg, head of the online SurveyMonkey site and husband of Facebook executive Sheryl Sandberg, died Friday night. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-02 20:38:00</td><td></td><td><a href='facebook_4_5.html'>"Dave Goldberg was an amazing person and I am glad I got to know him," Facebook founder Mark Zuckerberg wrote on his own page. (3)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-05-02 22:02:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3065624/SurveyMonkey-CEO-husband-Facebooks-Sandberg-dies.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Television and movie writer John Quaintance said on Facebook that Goldberg was the first person to encourage him to write professionally, changing the course of his career.</td></tr>
 </table></body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-31 18:23:52</td><td><a href='http://nymag.com/daily/intelligencer/2015/03/lufthansa-knew-of-germanwings-pilots-depression.html'>site</a></td><td>Germanwings Pilot Told Lufthansa of His Depression in 2009</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/9/p/l/5/image.related.articleLeadwide.620x349.1mce9i.png/1427838304348.jpg'></td><td>2015-03-31 21:32:13</td><td><a href='http://www.smh.com.au/world/germanwings-copilot-andreas-lubitz-admitted-depression-20150331-1mce9i.html'>site</a></td><td>Lufthansa which owns Germanwings, said 27-year-old Andreas Lubitz had told the company in 2009 about his illness after interrupting his flight training.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 07:07:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3022635/Germanwings-pilot-lied-doctors-sick-leave-Bild.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Germanwings parent Lufthansa said on Tuesday that when Lubitz resumed pilot training in 2009 he provided the flight school with medical documents showing he had gone through a "previous episode of severe depression".</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l.yimg.com/bt/api/res/1.2/7RbClJ_SnQMaohEOVvr6hQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE3NTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-30T162029Z_1007000001_LYNXMPEB3T0VC_RTROPTP_2_CNEWS-US-FRANCE-CRASH-FAA.JPG'></td><td>2015-04-30 16:20:29</td><td><a href='http://news.yahoo.com/germanwings-pilot-briefly-refused-medical-certificate-u-162029559--finance.html'>site</a></td><td>Germanwings pilot was briefly refused medical certificate in U.S.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297681793981_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-05-06 16:34:53</td><td><a href='http://www.torontosun.com/2015/05/06/germanwings-pilot-rehearsed-for-crash-on-previous-flight-investigators'>site</a></td><td>However, it said the aeromedical centre of Lufthansa, the parent company of Germanwings, twice refused to renew his medical certificate in 2009 when he was undergoing treatment for depression.</td></tr>
+</table></body></html>

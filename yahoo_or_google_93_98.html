@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://static.theglobeandmail.ca/b79/report-on-business/international-business/us-business/article23590076.ece/ALTERNATES/w220/web-google-0324.JPG'></td><td>2015-03-24 13:20:17</td><td><a href='http://www.theglobeandmail.com/report-on-business/international-business/us-business/morgan-stanley-cfo-leaves-for-same-position-at-google/article23590077/?cmpid=rss1'>site</a></td><td>Morgan Stanley chief financial officer Ruth Porat is leaving the bank to join Google Inc. in the same position, the companies said on Tuesday.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.usnews.com/dims4/USNEWS/e82a2de/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F04%2F0ae2513b8831ef87b216c468426912%2Fmedia%3A9604840846cd4abdab8197d308f0a7c9GoogleMorganStanleyCFO.JPEG'></td><td>2015-03-24 19:14:35</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/24/google-hires-morgan-stanleys-ruth-porat-as-cfo'>site</a></td><td>SAN FRANCISCO (AP) - Google has hired Morgan Stanley's chief financial officer, Ruth Porat, as its CFO, at a time when Silicon Valley is under fire for hiring and promoting too few women.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.zenfs.com/284/2011/06/21/reuters-85x27_113626.gif'></td><td>2015-03-26 20:59:55</td><td><a href='http://finance.yahoo.com/news/google-pay-cfo-annual-salary-205742067.html'>site</a></td><td><table><tr><td>Google to pay new CFO annual base salary of $650,000</td></tr><tr><td>(Reuters) - Google Inc said it would pay its new chief financial officer an annual base salary of $650,000 and a special one-time $5 million sign-on bonus.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 21:59:00</td><td><a href='http://www.latimes.com/business/la-fi-google-porat-pay-20150326-story.html'>site</a></td><td><table><tr><td>Google's new chief financial officer, Ruth Porat, is being paid more than $70 million for defecting from the same job at investment bank Morgan Stanley.</td></tr><tr><td>Google Inc. also is giving Porat a $5 million signing bonus to supplement her starting salary of $650,000.</td></tr></table></td></tr>
+</table></body></html>

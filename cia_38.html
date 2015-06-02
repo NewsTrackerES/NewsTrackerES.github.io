@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 6,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,10 +48,5 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>3</td><td></td><td>2015-04-07 16:32:55</td><td><a href='http://www.sfgate.com/news/world/article/Pakistan-judge-orders-former-CIA-lawyer-agent-be-6183940.php'>site</a></td><td>Bank fled Pakistan in 2010 after his cover was blown when the man named Kareem Khan initially threatened to sue the CIA over the deaths of his brother and his son in a purported 2009 strike.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 16:35:45</td><td></td><td><a href='cia_38_40.html'>ISLAMABAD - A Pakistani judge on Tuesday ordered criminal charges be filed against a former top CIA lawyer who oversaw its drone program and a former station chief in Islamabad over a 2009 strike that killed two people. (10)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 17:46:22</td><td></td><td><a href='cia_38_39.html'>The disclosure didn't prevent Mr Bank from landing another sensitive job: He became chief of the Iran operations division at CIA headquarters at Langley. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://cdn1.belfasttelegraph.co.uk/news/world-news/article31125419.ece/a09c8/ALTERNATES/h342/PANews%20BT_P-e7ba88cd-d5a4-4322-85c8-553be4c86c43_I1.jpg'></td><td>2015-04-07 17:46:22</td><td><a href='http://www.belfasttelegraph.co.uk/news/world-news/cia-men-face-drone-strike-charge-31125420.html'>site</a></td><td>He later was removed from that post after CIA officials concluded he created a hostile work environment in the division.</td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-07 20:07:09</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-04-07-Pakistan-CIA/id-0cf4f386e98141d5af9d45cd11ce0820'>site</a></td><td>The case recalls legal charges brought by an independent magistrate in Italy against CIA officers involved in the 2003 kidnapping of a terror suspect.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 21:58:26</td><td></td><td><a href='cia_38_41.html'>The CIA will have no comment, spokesman Chris White told The Associated Press. (2)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.aljazeera.com/mritems/imagecache/mbdresplarge/mritems/Images/2013/2/7/201327223134345734_20.jpg'></td><td>2015-03-14 12:50:53</td><td><a href='http://www.aljazeera.com/news/2015/03/cia-chief-social-media-hampers-fight-terror-150314093054095.html'>site</a></td><td>Social media and other technology are making it increasingly difficult to combat "extremists" who are using such modern resources to share information and conduct operations, the head of the US Central Intelligence Agency (CIA) has said.</td></tr>
 </table></body></html>

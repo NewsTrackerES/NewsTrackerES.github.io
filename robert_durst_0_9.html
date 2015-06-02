@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>robert durst</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 21:58:00</td><td></td><td><a href='robert_durst_0_9_11.html'>A car passes the building where millionaire Robert Durst lives hours before police began a search Tuesday, March 17, 2015, in Houston. (7)</a></td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 19:45:24</td><td></td><td><a href='robert_durst_0_9_10.html'>Durst, the real estate scion awaiting extradition to California to face a murder charge, was denied bail on Monday after a judge deemed him to be a potential danger to others and a likely flight risk. (21)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-17 19:47:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Real%20Estate%20Heir-Unsolved%20Murder/id-0872799854b74793806b775e0043284e'>site</a></td><td>HOUSTON (AP) - Police on Tuesday were searching the Houston home of millionaire Robert Durst after his arrest over the weekend in New Orleans.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-17 21:58:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/386c25518f464186bf7a2ac026580ce7/Article_2015-03-17-US--Real%20Estate%20Heir-Unsolved%20Murder/id-f2603cd348cc4657bbf01c52b6e3df06'>site</a></td><td><table><tr><td>A car passes the building where millionaire Robert Durst lives hours before police began a search Tuesday, March 17, 2015, in Houston.</td></tr><tr><td>Law enforcement officers walk toward the building where Robert Durst owns some condominiums Tuesday, March 17, 2015, in Houston.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/21/04/7672069/7/square_gallery_thumb.jpg'></td><td>2015-03-18 05:08:39</td><td><a href='http://www.sfgate.com/news/texas/article/Durst-s-letter-helped-prosecutors-bring-murder-6138260.php'>site</a></td><td>Police carry 2 boxes from home of millionaire Robert Durst</td></tr>
 </table></body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.cbc.ca/1.2955038.1423773763!/cpImage/httpImage/image.jpg_gen/derivatives/original_300/ukraine.jpg'></td><td>2015-02-12 21:30:06</td><td><a href='http://www.cbc.ca/news/ukraine-ceasefire-includes-foreign-troop-withdrawals-constitutional-reforms-1.2954636?cmp=rss'>site</a></td><td>Russian President Vladimir Putin said that the rebels consider the Ukrainian forces surrounded and expect them to surrender, while Ukraine says its troops have not been blocked.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-17 21:10:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11403829&ref=rss'>site</a></td><td>MOSCOW (AP) " Russian President Vladimir Putin is suggesting that the United States is already delivering weapons to Ukraine.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297665109450_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-17 21:57:01</td><td><a href='http://www.torontosun.com/2015/02/17/ukraine-truce-unravels-as-battle-rages-arms-pullback-stalls'>site</a></td><td>Putin tells Kiev to let troops surrender as Ukraine ceasefire unravels</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theage.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td><a href='http://www.theage.com.au/world/ukraine-pulls-troops-out-of-the-flashpoint-town-of-debaltseve-20150218-13ints.html'>site</a></td><td>Russian President Vladimir Putin, who insists his country plays no direct role in Ukraine, has called on the Ukrainian soldiers fighting in Debaltseve to surrender.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297666445865_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-02-20 14:34:48</td><td><a href='http://www.torontosun.com/2015/02/20/kiev-accuses-russia-of-sending-more-tanks-to-east-ukraine'>site</a></td><td>Ukraine's President Petro Poroshenko accused a top aide to Russia's Vladimir Putin of being behind the sniper killings of 100 Ukrainian protesters on the streets of Kiev during the uprising a year ago.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-02-20 15:56:47</td><td><a href='http://news.yahoo.com/troubled-ukraine-marks-since-protest-bloodbath-kiev-155647472.html'>site</a></td><td>Poroshenko on Friday claimed Ukraine has evidence that Vladislav Surkov, one of Russian President Vladimir Putin's advisers, organized the snipers.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-19 09:25:07</td><td><a href='http://www.startribune.com/world/296844051.html'>site</a></td><td>Ukrainian Prime Minister Arseniy Yatsenyuk met Thursday with Tusk ahead of the summit and accused Russian President Vladimir Putin of trying to divide Europe over Ukraine.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/DQxANXJIYgGeiHtaCHqgDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-04-14T145235Z_2_LYNXMPEB3D0OF_RTROPTP_2_CANADA-POLITICS.JPG'></td><td>2015-04-14 15:47:58</td><td><a href='http://news.yahoo.com/canada-send-around-200-military-trainers-ukraine-145150021.html'>site</a></td><td>Harper has taken a hard line in public against President Vladimir Putin over what he calls blatant Russian interference in Ukraine.</td></tr>
+</table></body></html>

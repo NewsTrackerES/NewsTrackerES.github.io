@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-14 16:58:06</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article18469022.html#storylink=rss'>site</a></td><td>Democratic presidential candidate Hillary Rodham Clinton arrives as she meets with local residents at the Jones St. Java House, Tuesday, April 14, 2015, in LeClaire, Iowa.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 17:10:17</td><td><a href='http://abcnews.go.com/Politics/wireStory/clinton-starts-iowa-campaign-small-town-meetings-30299684'>site</a></td><td>During its first call with donors Monday, Hillary Clinton's team noted that some of those listening in helped President Barack Obama's campaigns, while others had raised money for Clinton's own White House bid in 2008.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-04-14 17:23:08</td><td><a href='http://www.miamiherald.com/news/politics-government/article18469022.html#storylink=rss'>site</a></td><td>Hillary Rodham Clinton is getting her 2016 campaign for president started with a few caffeinated beverages and says she's ready to "drink my way across Iowa."</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-14 19:38:21</td><td><a href='http://www.startribune.com/politics/299655871.html'>site</a></td><td>"Everyone knows that over time Hillary Clinton will raise enough to be competitive," said Tom Nides, a top Wall Street supporter and former State Department adviser to Clinton.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 13:08:10</td><td><a href='http://www.nydailynews.com/news/politics/hillary-clinton-defends-family-foundation-article-1.2192717?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td>Hillary Clinton defends family foundation</td></tr>
 </table></body></html>

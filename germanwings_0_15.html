@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 23,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 23 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 08:37:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-24-EU--France-Plane%20Crash-The%20Latest/id-0ca151333cba4e04a7fc16ee978aa4ea'>site</a></td><td>The Latest: Germanwings says 150 aboard crash plane</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-03-24 10:54:25</td><td><a href='http://news.yahoo.com/airbus-a320-crash-in-french-alps--live-blog-105426285.html'>site</a></td><td>A Germanwings Airbus A320 with 144 passengers and six crew on board has crashed in the French Alps on Tuesday morning.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/y/r/h/image.related.articleLeadwide.620x349.1m6vie.png/1427262577846.jpg'></td><td>2015-03-24 10:59:51</td><td><a href='http://www.brisbanetimes.com.au/world/germanwings-airbus-a320-plane-crashes-in-french-alps-killing-all-on-board-20150324-1m6vie.html'>site</a></td><td>Two Australians are confirmed as being among 150 people killed when an Airbus operated by Lufthansa's Germanwings budget airline crashed in a remote snowy area of the French Alps on Tuesday.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-24 11:24:36</td><td><a href='http://www.sbs.com.au/news/article/2015/03/24/german-airbus-crashes-french-alps-150-dead-black-box-found'>site</a></td><td>Airbus confirmed that the plane was 24 years old, having first been delivered to Germanwings parent Lufthansa in 1991.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/6/v/p/w/image.related.articleLeadwide.620x349.1m6vmf.png/1427205063453.jpg'></td><td>2015-03-24 11:25:06</td><td><a href='http://www.smh.com.au/world/germanwings-airbus-a320-crashes-in-french-alps-20150324-1m6vmf.html'>site</a></td><td>A Germanwings Airbus A320 operated by Lufthansa's Germanwings budget airline crashed in southern France on Tuesday en route from Barcelona to Duesseldorf, police and aviation officials said.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297678985473_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-03-24 13:35:29</td><td><a href='http://www.torontosun.com/2015/03/24/germanwings-plane-crashes-in-southern-france-police'>site</a></td><td>Germanwings Airbus crashes in French Alps, 150 feared dead</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-03-24 14:58:00</td><td><a href='http://www.chicagotribune.com/news/nationworld/chi-france-alps-airplane-crash-20150324-story.html'>site</a></td><td>French President Francois Hollande said he believed none of the 148 people on board the Germanwings plane that crashed on Tuesday (March 24) had survived.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-24 20:16:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-03-24-EU--France-Plane%20Crash-The%20Latest/id-7d531143cfdb4405923c94477b7e5c8f'>site</a></td><td>German Chancellor Angela Merkel says she will head to the remote mountain in the French Alps where a Germanwings passenger plane crashed with 150 people aboard.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/35/31/52/7707294/3/square_gallery_thumb.jpg'></td><td>2015-03-24 21:49:29</td><td><a href='http://www.sfgate.com/news/world/article/The-Latest-A320-has-good-safety-record-6154903.php'>site</a></td><td><table><tr><td>French Interior Minister Bernard Cazeneuve says 10 helicopters and a military plane have been mobilized to the site in the French Alps where a Germanwings plane crashed en route from Barcelona to Duesseldorf.</td></tr><tr><td>A German official says a high school group returning from an exchange in Spain was on board the Germanwings plane that crashed in the French Alps, killing all 150 people onboard.</td></tr></table></td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://ww3.hdnux.com/photos/35/31/52/7707294/3/gallery_thumb.jpg'></td><td>2015-03-24 21:49:29</td><td><a href='http://www.seattlepi.com/news/world/article/The-Latest-A320-has-good-safety-record-6154903.php'>site</a></td><td>It said there will be a minute of silence before kick-off for the 150 people who died when a Germanwings plane crashed in the French Alps en route from Barcelona to Duesseldorf.</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-24 22:45:06</td><td><a href='http://www.charlotteobserver.com/entertainment/music-news-reviews/article16202915.html#storylink=rss'>site</a></td><td>A Germanwings plane from Barcelona crashed on its way to Duesseldorf over the French alps today, 16 school children and 2 teachers from Haltern are among the victims.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-03-25 15:14:03</td><td><a href='http://abcnews.go.com/International/wireStory/latest-helicopter-searches-resume-alpine-jet-crash-29886475'>site</a></td><td>The Latest: Germanwings Crash Victims From Spain up to 51</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/25/08/26F83DEF00000578-0-image-m-26_1427271953419.jpg'></td><td>2015-03-25 23:23:12</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3011293/Details-victims-crash-Germanwings-Flight-9525.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A Spanish opera house said Tuesday, March 24, 2015 German contralto Maria Radner along with her husband and baby, were among the 150 victims of the Germanwings plane crash in the French Alps.</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://www.sbs.com.au/news/sites/sbs.com.au.news/files/styles/full/public/20150326001115581098-minihighres.jpg?itok=YjPohlYO&amp;mtime=1427312785'></td><td>2015-03-26 12:10:33</td><td><a href='http://www.sbs.com.au/news/storystream/german-co-pilot-appears-have-crashed-plane-deliberately'>site</a></td><td>The co-pilot of a Germanwings jet that went down in the French Alps, killing 150 people, appears to have crashed the plane deliberately, a Marseille prosecutor said.</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297679877802_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 16:45:58</td><td><a href='http://www.torontosun.com/2015/03/26/recording-shows-pilot-locked-out-of-crashed-airbus-cockpit-report'>site</a></td><td>Family members of passengers killed in Germanwings plane crash are escorted by a helper as they arrive at Barcelona's El Prat airport on March 24, 2015.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-04-06 00:22:22</td><td><a href='http://www.brisbanetimes.com.au/world/germanwings-crash-aviation-watchdog-unaware-of-copilot-andreas-lubitzs-medical-history-20150406-1mf00c.html'>site</a></td><td>Berlin: The German aviation authority did not know about co-pilot Andreas Lubitz's medical background prior to the Germanwings crash that killed 150 people, raising more questions over medical oversight of pilots.</td></tr>
+  <tr><td style='display:none'>16</td><td></td><td>2015-04-06 20:22:47</td><td><a href='http://www.sbs.com.au/news/article/2015/04/07/german-pilots-doctors-urge-more-tests'>site</a></td><td>German aviation industry doctors say that pilots should undergo more extensive medical checks in the wake of the Germanwings crash in the French Alps that killed 150 people.</td></tr>
+  <tr><td style='display:none'>17</td><td><img src='http://cdn.24.co.za/files/Cms/General/d/3058/372239fef87649bf8191477444d32af0.jpg'></td><td>2015-04-17 08:33:38</td><td><a href='http://www.news24.com/World/News/Cathedral-service-to-mourn-victims-of-Germanwings-crash-20150417'>site</a></td><td>The Germanwings Airbus 320 was on route from Barcelona to Duesseldorf when it crashed in the French Alps on 24 March, killing everyone aboard, including 72 Germans and 50 Spaniards.</td></tr>
+  <tr><td style='display:none'>18</td><td></td><td>2015-04-17 10:52:56</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/17/relatives-dignitaries-remembering-german-plane-crash-dead'>site</a></td><td>A mourning ceremony is held in the Cathedral in memory of the 150 victims of the Germanwings plane crash last month in the French Alps.</td></tr>
+  <tr><td style='display:none'>19</td><td></td><td>2015-04-17 12:41:51</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/17/relatives-dignitaries-remembering-german-plane-crash-dead'>site</a></td><td>German president: Germanwings crash an 'unbelievable horror'</td></tr>
+  <tr><td style='display:none'>20</td><td></td><td>2015-04-17 13:46:19</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3043643/Germanwings-crash-victims-remembered-candles-angels.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Germanwings crash victims remembered with candles and angels</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/World/2015/04/17/main-germ.jpg&amp;size=650x366&amp;quality=85'></td><td>2015-04-17 14:51:22</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/04/17/22349846.html?cid=rssnewsworld'>site</a></td><td>COLOGNE, Germany - The passengers and crew killed in the Germanwings plane that crashed into the French Alps were remembered on Friday at a memorial service in which 150 candles were lit on the steps of the altar of Cologne Cathedral.</td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-04-19 15:21:13</td><td><a href='http://www.brisbanetimes.com.au/world/germanwings-crash-families-could-seek-damages-in-the-us-lawyer-says-20150419-1moj9c.html'>site</a></td><td>Almost half of the victims of the Germanwings Barcelona to Duesseldorf flight were German, with the remaining passengers hailing from a range of countries including Australia, Spain and Argentina.</td></tr>
+</table></body></html>

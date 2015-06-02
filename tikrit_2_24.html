@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>tikrit</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201511/c0927189a0ef8bbdcc28f7c3eb9d99b8b68de08c_140x91.jpg'></td><td>2015-04-01 23:07:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11426948&ref=rss'>site</a></td><td>Iraqi forces which retook Tikrit from the Islamic State group found burial sites Wednesday believed to hold victims of a June massacre in which hundreds of army cadets were executed.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82151000/jpg/_82151731_026605491-1.jpg'></td><td>2015-04-06 23:36:29</td><td><a href='http://www.bbc.co.uk/news/world-middle-east-32199244#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Iraqi mass graves found in Tikrit</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-07 07:56:54</td><td><a href='http://www.utsandiego.com/news/2015/apr/07/iraqi-teams-start-exhuming-mass-grave-of-soldiers/'>site</a></td><td>Iraqi teams start exhuming mass grave of soldiers in Tikrit</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-07 07:58:47</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article17609579.html#storylink=rss'>site</a></td><td>An Iraqi official says forensic teams in the newly liberated city of Tikrit have started exhuming bodies from a mass grave believed to contain hundreds of soldiers killed by Islamic State militants last year.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/k/d/u/o/image.related.articleLeadwide.620x349.1mkdu9.png/1428946312081.jpg'></td><td>2015-04-13 17:32:10</td><td><a href='http://www.brisbanetimes.com.au/world/iraq-exhumes-remains-of-164-from-mass-graves-in-saddam-husseins-palace-compound-in-tikrit-20150413-1mkdu9.html'>site</a></td><td>The mass grave sites were discovered after Iraqi forces retook the northern city of Tikrit earlier this month in their biggest victory so far against IS.</td></tr>
+</table></body></html>

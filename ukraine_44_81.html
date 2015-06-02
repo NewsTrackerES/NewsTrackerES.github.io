@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 9,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 9 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>ukraine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://img.rasset.ie/000a29a5-219.jpg'></td><td>2015-02-13 14:47:51</td><td><a href='http://www.rte.ie/news/2015/0213/679827-ukraine/'>site</a></td><td>Ukraine said pro-Russian rebels had built up their forces across separatist-held zones since the deal and both sides accused each other of killing civilians.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-02-14 02:07:35</td><td><a href='http://www.usnews.com/news/world/articles/2015/02/13/ukraine-says-8-troops-killed-in-past-day-despite-peace-deal'>site</a></td><td>Ukraine says Debaltseve should remain in government control under the terms of a September peace deal.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.globalpost.com/sites/default/files/imagecache/gp3_small_article/photos/2015-February/ukraine_ceasefire.jpg'></td><td>2015-02-15 03:07:02</td><td><a href='http://www.globalpost.com/dispatch/news/regions/europe/150214/ukraine-ceasefire-begins-after-fierce-fighting-besieged-town'>site</a></td><td>The road between Artemivsk and the embattled town of Debaltseve on Feb. 14, 2015, in Artemivsk, Ukraine.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/9ab44faf98aa16182c9fde188d17561626e1b9b5/0_102_3500_2100/500.jpg'></td><td>2015-02-17 08:36:19</td><td><a href='http://www.theguardian.com/world/2015/feb/17/ukraine-rebels-say-they-cannot-morally-stop-fighting-government-troops'>site</a></td><td>Ukraine troops and rebels miss deadline to start weapons pullback</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-02-17 21:53:58</td><td><a href='http://www.news24.com/World/News/Security-Council-calls-for-Ukraine-fighting-to-stop-20150217'>site</a></td><td>Pro-Russian rebels in Ukraine fought their way into an encircled government bastion and were battling street to street on Tuesday.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-02-18 07:44:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-02-18-EU--Ukraine/id-f11a9d80d1a34c409b51358f528cf1a0'>site</a></td><td>Embattled Debaltseve falls to Ukraine rebels; troops retreat</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-02-18 08:30:21</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11404185&ref=rss'>site</a></td><td>Ukraine says rebels continue their onslaught on Debaltseve</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/i/n/v/q/image.related.articleLeadwide.620x349.13ints.png/1424288087329.jpg'></td><td>2015-02-18 11:17:41</td><td><a href='http://www.smh.com.au/world/ukraine-pulls-troops-out-of-the-flashpoint-town-of-debaltseve-20150218-13ints.html'>site</a></td><td><table><tr><td>Ukraine pulls troops out of the flashpoint town of Debaltseve</td></tr><tr><td>Ukraine's President Petro Poroshenko says government forces have withdrawn from the flashpoint town of Debaltseve, where pro-Russian rebels have been battling troops for control for weeks.</td></tr></table></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-03-23 23:15:08</td><td><a href='http://www.startribune.com/politics/297311061.html'>site</a></td><td>There is bipartisan support in Congress to provide the arms to Ukraine forces battling the rebels.</td></tr>
+</table></body></html>

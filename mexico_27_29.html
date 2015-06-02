@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://cdnph.upi.com/sv/em/i/UPI-3111425475335/2015/1/14254754567806/Los-Zetas-drug-cartel-leader-Omar-Trevino-Morales-arrested-in-Mexico.jpg'></td><td>2015-03-04 13:46:41</td><td><a href='http://www.upi.com/Top_News/World-News/2015/03/04/Los-Zetas-drug-cartel-leader-Omar-Trevino-Morales-arrested-in-Mexico/3111425475335/'>site</a></td><td>The Los Zetas group is believed to be behind rising violence in Mexico.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-04 14:03:00</td><td><a href='http://www.huffingtonpost.com/2015/03/04/omar-trevino-morales-captured_n_6799228.html'>site</a></td><td>But much of the violence along Mexico's northeast border now is due to internal battles among Gulf cartel factions.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-03-04 16:14:00</td><td><a href='http://www.dw.de/mexico-police-arrest-trevino-zetas-cartel-chief/a-18293735?maca=en-rss-en-world-4025-rdf'>site</a></td><td>Founded by elite army deserters in 1999, the Zetas initially acted as enforcers for the Gulf Cartel, based along the border with Texas and one of the oldest organized crime groups in Mexico.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-18 18:59:42</td><td><a href='http://www.foxnews.com/world/2015/04/18/arrest-mexico-gulf-cartel-chief-others-sparks-gunfights-blockades-on-mexico-us/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fworld+%28Internal+-+World+Latest+-+Text%29'>site</a></td><td><table><tr><td>Arrest of Mexico's Gulf Cartel chief, others sparks gunfights, blockades on Mexico-US border</td></tr><tr><td>MEXICO - Authorities say the arrest of the man who headed the once powerful Gulf Cartel sparked the gunfights and blockades of burning vehicles that left at least three people dead near Mexico's border with the United States.</td></tr></table></td></tr>
-  <tr><td style='display:none'>4</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297689578216_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-18 20:21:55</td><td><a href='http://www.torontosun.com/2015/04/18/mexico-confirms-capture-of-gulf-cartel-leader'>site</a></td><td><table><tr><td>MEXICO CITY - Mexican authorities on Saturday confirmed the capture of a leader of the Gulf Cartel, describing him as responsible for much of the violence in the U.S. border city of Reynosa in the northeastern state of Tamaulipas.</td></tr><tr><td>Reynosa has been one of the most violent cities in Mexico over the past year, racked by turf wars among the Gulf Cartel and the Zetas, two drug gangs fighting for control of border smuggling routes and crime rackets.</td></tr></table></td></tr>
-  <tr><td style='display:none'>5</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/CEOZladGO6lrYPF6eOYnaQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/a5d63af47d264313750f6a7067004e00.jpg'></td><td>2015-05-01 21:51:29</td><td><a href='http://news.yahoo.com/burning-vehicles-block-roads-guadalajara-mexico-173335947.html'>site</a></td><td>7 dead in Mexico amid violence during anti-cartel operation</td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-07 00:00:49</td><td><a href='http://news.yahoo.com/mexico-blames-drug-gangs-string-killings-near-border-000049735.html'>site</a></td><td><table><tr><td>Mexico blames drug gangs for string of killings near border</td></tr><tr><td>HERMOSILLO, Mexico (AP) - Authorities in the northern Mexican state of Sonora say drug cartel groups are behind a string of murders in a disputed corridor along the U.S. border.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-17 04:04:25</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21216132.html#storylink=rss'>site</a></td><td><table><tr><td>In this May 12, 2015 photo, an actor listens to instructions on the set of the movie "El Elegido," or "The Chosen," a film about Trotsky's assassination, in Mexico City.</td></tr><tr><td>In this April 22, 2015 photo, the cast of "El Elegido," or "The Chosen," pose for a picture after a press conference on the set of the film in Mexico City.</td></tr></table></td></tr>
 </table></body></html>

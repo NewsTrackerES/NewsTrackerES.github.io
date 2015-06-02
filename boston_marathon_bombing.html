@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 7,
+            max: 15,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,11 +48,19 @@
     <h3>boston marathon bombing</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 18:10:28</td><td></td><td><a href='boston_marathon_bombing_4.html'>After two months of jury selection, a panel of 12 jurors and six alternates was seated Tuesday for the federal death penalty trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev. (40)</a></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 11:35:25</td><td></td><td><a href='boston_marathon_bombing_2.html'>Boston woman charged with fraudulently accepting benefits for marathon bombing injuries (3)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-29 22:32:23</td><td></td><td><a href='boston_marathon_bombing_1.html'>This undated photo released by the Boston Police Department shows Officer John Moynihan, 34, who was shot in the face during a traffic stop on Friday night. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 18:10:28</td><td></td><td><a href='boston_marathon_bombing_2.html'>After two months of jury selection, a panel of 12 jurors and six alternates was seated Tuesday for the federal death penalty trial of Boston Marathon bombing suspect Dzhokhar Tsarnaev. (40)</a></td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-03-25 17:08:00</td><td></td><td><a href='boston_marathon_bombing_13.html'>Boston Marathon Bombing: Tale of the Gun (1)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-27 11:35:25</td><td></td><td><a href='boston_marathon_bombing_1.html'>Boston woman charged with fraudulently accepting benefits for marathon bombing injuries (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-29 22:32:23</td><td></td><td><a href='boston_marathon_bombing_0.html'>This undated photo released by the Boston Police Department shows Officer John Moynihan, 34, who was shot in the face during a traffic stop on Friday night. (3)</a></td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-03-31 18:48:50</td><td></td><td><a href='boston_marathon_bombing_20.html'>Defense rests in 1st phase of Boston Marathon bombing trial after calling just 4 witnesses (1)</a></td></tr>
   <tr><td style='display:none'>2</td><td></td><td>2015-04-01 21:19:46</td><td></td><td><a href='boston_marathon_bombing_9.html'>Wahlberg will coproduce "Patriots' Day, " a film chronicling the events surrounding the 2013 Boston Marathon Bombing, based on the first-hand account of Boston Police Commissioner Ed Davis. (3)</a></td></tr>
-  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 16:51:20</td><td></td><td><a href='boston_marathon_bombing_3.html'>BOSTON - Police are searching for a thief who stole nearly a dozen pairs of donated sneakers and athletic items from two Boston Marathon bombing survivors. (2)</a></td></tr>
-  <tr><td style='display:none'>4</td><td></td><td>2015-04-23 05:10:46</td><td></td><td><a href='boston_marathon_bombing_0.html'>Victims describe injuries, loss at marathon bombing trial (4)</a></td></tr>
-  <tr><td style='display:none'>6</td><td></td><td>2015-05-15 21:50:25</td><td></td><td><a href='boston_marathon_bombing_10.html'>"I think every time somebody runs the marathon, it will be impossible for this to be too far from their minds. The marathon has certainly changed forever ... and that by definition, I suppose, changes Boston." (2)</a></td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-04-07 15:19:21</td><td></td><td><a href='boston_marathon_bombing_18.html'>A look at the jury in the Boston Marathon bombing trial (1)</a></td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-04-08 17:29:38</td><td></td><td><a href='boston_marathon_bombing_17.html'>Jury Reaches Verdict in Boston Bombing Trial (1)</a></td></tr>
+  <tr><td style='display:none'>8</td><td></td><td>2015-04-13 15:15:34</td><td></td><td><a href='boston_marathon_bombing_12.html'>- Tight security will be in place again for the Boston Marathon - the second since the deadly 2013 bombing at the finish line. (1)</a></td></tr>
+  <tr><td style='display:none'>14</td><td></td><td>2015-04-15 03:44:36</td><td></td><td><a href='boston_marathon_bombing_11.html'>2 Years After Marathon Bombing, We Are ?One Boston? (1)</a></td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-04-15 06:52:05</td><td></td><td><a href='boston_marathon_bombing_15.html'>Subdued remembrance will mark 2 years since marathon bombing (1)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-04-16 16:51:20</td><td></td><td><a href='boston_marathon_bombing_16.html'>BOSTON - Police are searching for a thief who stole nearly a dozen pairs of donated sneakers and athletic items from two Boston Marathon bombing survivors. (2)</a></td></tr>
+  <tr><td style='display:none'>12</td><td></td><td>2015-04-20 05:21:24</td><td></td><td><a href='boston_marathon_bombing_14.html'>High security for Boston Marathon as bombing trial pauses (1)</a></td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-23 05:10:46</td><td></td><td><a href='boston_marathon_bombing_10.html'>Victims describe injuries, loss at marathon bombing trial (4)</a></td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-05-15 21:50:25</td><td></td><td><a href='boston_marathon_bombing_19.html'>"I think every time somebody runs the marathon, it will be impossible for this to be too far from their minds. The marathon has certainly changed forever ... and that by definition, I suppose, changes Boston." (2)</a></td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>cyclone</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 01:01:20</td><td><a href='http://www.nzherald.co.nz/sport/news/article.cfm?c_id=4&objectid=11419235&ref=rss'>site</a></td><td>Volvo Ocean Race boats depart Auckland after cyclone delay</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 01:26:27</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-2999916/Round-world-fleet-sails-cyclone-subsides.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Round-world fleet sails again as cyclone subsides</td></tr><tr><td>The Volvo Ocean Race's six-strong fleet finally set sail for the most daunting leg of the nine-month offshore marathon on Wednesday after the threat of Cyclone Pam subsided.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/6/z/1/1/image.related.thumbnail.90x60.1m733u.png/1427245753610.jpg'></td><td>2015-03-19 11:35:33</td><td><a href='http://www.brisbanetimes.com.au/world/cyclone-pam-rips-through-vanuatus-manua-school-20150319-1m35k1.html'>site</a></td><td>As Cyclone Pam ripped at the roof of Manua School, a group of men, women and children pulled desperately on electrical cable keeping them from harm.</td></tr>
 </table></body></html>

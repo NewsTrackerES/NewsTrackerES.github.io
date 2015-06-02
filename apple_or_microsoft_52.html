@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 03:22:07</td><td><a href='http://www.miamiherald.com/news/business/article18650490.html#storylink=rss'>site</a></td><td><table><tr><td>The Los Angeles Unified School District is telling Apple it's dissatisfied with the Pearson Education curriculum for student iPads and wants reimbursement for all the learning materials schools haven't been able to use.</td></tr><tr><td>In a letter Monday, the district said it won't accept or compensate Apple for new deliveries of Pearson's English and math software.</td></tr><tr><td>Apple's contract with Pearson added about $200 to the cost of each device.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-25 02:02:33</td><td></td><td><a href='apple_or_microsoft_52_53.html'>SAN FRANCISCO, April 24 (Reuters) - Software developers who tried on an Apple Watch for the first time on Friday predicted a rush of new apps over the next few months, particularly in areas including health and messaging. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-25 02:02:33</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3054832/Software-developers-try-Apple-watch-apps-coming.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"Health, transportation and social media will be the three main industries that will utilize the Apple Watch."</td></tr>
 </table></body></html>

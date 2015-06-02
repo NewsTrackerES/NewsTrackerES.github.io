@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 18:00:31</td><td></td><td><a href='ebola_135_136.html'>Similarly, drugs, including Mapp Biopharmaceutical's ZMapp, cured monkeys in lab experiments, but in a strain of Ebola different from that responsible for the current outbreak, the worst ever recorded. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-22 18:00:31</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3050992/Tekmira-Ebola-drug-succeeds-small-monkey-study.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>The study continues a string of encouraging news in Ebola research.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-10 16:02:41</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3033872/Progress-Ebola-fight-substantial-risks-remain-WHO.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Such measures not only interfere with international travel and impact local economies, but also hamper Ebola response and recovery efforts because they make it more difficult for aid workers to move in and out of the affected countries, Aylward said.</td></tr>
 </table></body></html>

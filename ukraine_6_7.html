@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>ukraine</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:56:49</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/08/misery-tuberculosis-in-prisons-of-war-torn-east-ukraine'>site</a></td><td><table><tr><td>ZHDANIVKA, Ukraine (AP) - The colony of cats living on the grounds of the Zhdanivka penitentiary disappeared when battles in east Ukraine peaked.</td></tr><tr><td>MSF says that while the official death rate from tuberculosis in Ukraine is 15 per 100,000 people, the number is 10 times higher among prisoners.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/08/ea85f8e0c83b140f730f6a706700bfd7_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-08 12:56:49</td><td><a href='http://www.utsandiego.com/news/2015/apr/08/misery-tuberculosis-in-prisons-of-war-torn-east/'>site</a></td><td>Misery, tuberculosis in prisons of war-torn east Ukraine</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-08 13:00:13</td><td><a href='http://hosted2.ap.org/APDEFAULT/cae69a7523db45408eeb2b3a98c0c9c5/Article_2015-04-08-EU--Ukraine-Tuberculosis%20Prisons/id-9c9df41e0d1e463496ff0e245d6a90eb'>site</a></td><td>In this photo taken on Thursday, March 26, 2015 prisoners of Zhdanivskaya prison are having lunch in the village of Zhdanivka, eastern Ukraine.</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-08 13:02:03</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3030393/Misery-tuberculosis-prisons-war-torn-east-Ukraine.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In this photo taken on Thursday, March 26, 2015 Zhdanivka prison guard guards the prisoner, background, who waits for the tuberculosis test to be taken in the village of Zhdanivka, eastern Ukraine.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-21 15:10:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11436423&ref=rss'>site</a></td><td><table><tr><td>EU gives Ukraine $267 million in low interest loans</td></tr><tr><td>BRUSSELS (AP) " The European Union has given Ukraine 250 million euros ($267 million) in low interest loans as part of a package to help revive the country's lackluster economy.</td></tr></table></td></tr>
 </table></body></html>

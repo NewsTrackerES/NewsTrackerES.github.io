@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:49:41</td><td><a href='http://www.reuters.com/article/2015/04/08/us-apple-payments-international-idUSKBN0MZ18F20150408?feedType=RSS&feedName=technologyNews'>site</a></td><td>"Apple Pay is available in the U.S.," the official site simply states.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 12:49:41</td><td><a href='http://www.reuters.com/article/2015/04/08/us-apple-payments-international-idUSKBN0MZ18F20150408?feedType=RSS&feedName=businessNews'>site</a></td><td>Apple itself is not giving any clues about where it might move next.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297694299035_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-29 23:10:26</td><td><a href='http://www.torontosun.com/2015/04/29/defective-component-slowed-apple-watch-rollout-report'>site</a></td><td><table><tr><td>Apple declined to comment on the story.</td></tr><tr><td>The company is one of two suppliers of these components to Apple, it said.</td></tr></table></td></tr>
 </table></body></html>

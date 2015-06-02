@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>kenya</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://edition.cnn.com/2015/05/13/entertainment/kenya-moore-boyfriend-married-feat/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-05-13 15:39:19</td><td><a href='http://edition.cnn.com/2015/05/13/entertainment/kenya-moore-boyfriend-married-feat/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fcnn_latest+%28RSS%3A+CNN+-+Most+Recent%29'>site</a></td><td><table><tr><td>Kenya Moore's new 'boyfriend' is a married man</td></tr><tr><td>Well dayummnn #ToxicTrick Kenya Moore strikes again!</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 15:27:22</td><td></td><td><a href='kenya_14_15.html'>The Non-Governmental Organization Co-ordination Board had refused to register Lesbian Gay Bisexual Transsexual Intersex Queer-Kenya rights group on religious and moral grounds. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 19:32:30</td><td><a href='http://www.usnews.com/news/world/articles/2015/04/27/kenya-court-orders-government-to-register-gay-rights-group'>site</a></td><td>The Kenya gay community has complained of harassment, which in some cases is violent.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 19:34:23</td><td><a href='http://abcnews.go.com/International/wireStory/kenya-court-orders-government-register-gay-rights-group-30613530'>site</a></td><td>"In Kenya, the Constitution is supreme," stated the ruling of Judges Isaac Lenaola, Mumbi Ngugi and George Odunga.</td></tr>
 </table></body></html>

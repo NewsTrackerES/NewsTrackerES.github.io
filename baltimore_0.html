@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-01 05:52:17</td><td><a href='http://www.reuters.com/article/2015/05/01/us-usa-police-baltimore-barber-insight-idUSKBN0NM34I20150501?feedType=RSS&feedName=lifestyleMolt'>site</a></td><td>"Most people under 50 have never seen this before," he said of the clashes between young Baltimore residents and police.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-01 05:52:17</td><td><a href='http://www.reuters.com/article/2015/05/01/us-usa-police-baltimore-barber-insight-idUSKBN0NM34I20150501?feedType=RSS&feedName=domesticNews'>site</a></td><td>Lenny Clay stands outside his barbershop in Baltimore, Maryland April 29, 2015.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 15:04:11</td><td></td><td><a href='baltimore_0_1.html'>Police in Maryland say Baltimore Ravens running back Bernard Pierce has been charged with drunken driving. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-18 15:04:11</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3000769/Baltimore-Ravens-RB-Pierce-charged-drunken-driving.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Baltimore County police say an officer stopped a Ford Mustang that was speeding around 2 a.m. Wednesday, March 18, 2015, in Towson, north of Baltimore.</td></tr><tr><td>He was released by Baltimore as soon as the investigation began.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-03-18 16:13:07</td><td><a href='http://www.charlotteobserver.com/entertainment/celebrities/article15234032.html#storylink=rss'>site</a></td><td>Drafted in the third round of the 2002 draft out of Temple, Pierce started three games in three years with Baltimore.</td></tr>
 </table></body></html>

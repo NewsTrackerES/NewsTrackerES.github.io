@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,8 @@
     <h3>cyclone vanuatu</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://s4.reutersmedia.net/resources/r/?m=02&d=20150422&t=2&i=1042476889&w=644&fh=&fw=&ll=&pl=&r=LYNXMPEB3L0SR'></td><td>2015-04-22 15:31:35</td><td><a href='http://www.reuters.com/article/2015/04/22/us-vanuatu-water-unicef-idUSKBN0ND1VJ20150422?feedType=RSS&feedName=environmentNews'>site</a></td><td><table><tr><td>Almost half Vanuatu people lack clean water, month after cyclone: UNICEF</td></tr><tr><td>"There is water but quality is not that good because of the contamination," Ketsamay Rajphangthong, chief of UNICEF Vanuatu field office, told the Thomson Reuters Foundation in a phone interview from Vanuatu.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/4/4/4/8/3/image.related.articleLeadwide.620x349.143y5a.png/1426410235087.jpg'></td><td>2015-03-14 05:43:17</td><td><a href='http://www.brisbanetimes.com.au/world/cyclone-pam-dozens-feared-dead-in-vanuatu-20150314-143y5a.html'>site</a></td><td>Cyclone Pam: Dozens feared dead in Vanuatu</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theage.com.au/content/dam/images/1/4/4/r/4/1/image.related.articleLeadwide.620x349.144nhi.png/1426410648246.jpg'></td><td>2015-03-15 09:10:57</td><td><a href='http://www.theage.com.au/environment/weather/cyclone-pam-it-was-like-a-velociraptor-as-australians-survive-vanuatu-cyclone-20150315-144nhi.html'>site</a></td><td>Cyclone Pam: 'It was like a velociraptor', as Australians survive Vanuatu cyclone</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://media.nzherald.co.nz/webcontent/image/jpg/201512/HalfofVanuatu_140x93.jpeg'></td><td>2015-03-16 03:00:42</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11418124&ref=rss'>site</a></td><td>Vanuatu president speaks of devastation from Cyclone Pam</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.theguardian.com//i.guim.co.uk/media/w-300/h--/q-95/7636a3583f24c36e6b447db985c0c70db0c7998f/0_0_2700_1619/500.jpg'></td><td>2015-03-18 00:35:50</td><td><a href='http://www.theguardian.com/world/2015/mar/18/food-concerns-mount-in-vanuatu-after-cyclone-pam'>site</a></td><td>Food concerns mount in Vanuatu after cyclone Pam</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-13 22:37:45</td><td><a href='http://news.yahoo.com/bird-plane-google-balloon-crash-panics-town-223055674.html'>site</a></td><td><table><tr><td>But the crash of one of Google's "Loon" balloons for relaying Internet service was enough to have security forces summoned to a mountain township in central Mexico.</td></tr><tr><td>They found one of the huge, jellyfish-shaped balloons that Google is using to carry antennas to deliver online access in remote areas.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/00/70/7867944/3/628x471.jpg'></td><td>2015-04-23 20:36:34</td><td><a href='http://www.seattlepi.com/business/technology/article/Google-posts-mixed-1Q-results-amid-new-threats-to-6219961.php'>site</a></td><td><table><tr><td>Google posts mixed 1Q results amid new threats to company</td></tr><tr><td>SAN FRANCISCO (AP) - Google has been looking more vulnerable as a technological upheaval nibbles at its dominance in Internet search, while the company also deals with a potentially massive regulatory headache in Europe.</td></tr><tr><td>But those threats haven't done much to undercut Google's power or profits yet.</td></tr><tr><td>Google's first-quarter earnings rose 4 percent to $3.6 billion as the company's Internet-leading advertising network lifted revenue by 14 percent to $17.3 billion from the same time last year.</td></tr><tr><td>It marked the sixth consecutive quarter that Google's earnings have fallen below the analysts' targets that shape investors' expectations.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-23 20:45:14</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11437851&ref=rss'>site</a></td><td>Even as Google sows new fields, the company faces changes in how people find information and peruse digital content.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/zILhvaSpMkBkQp4.mYpKcQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/e8afae84316b7912740f6a7067005c57.jpg'></td><td>2015-04-23 21:38:20</td><td><a href='http://news.yahoo.com/google-posts-mixed-1q-results-amid-threats-company-203639109--finance.html'>site</a></td><td>That reluctance contributed to a 7 percent drop in Google's average ad price during the first three months of the year.</td></tr>
 </table></body></html>

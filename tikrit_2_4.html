@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-03-14 16:04:25</td><td><a href='http://news.yahoo.com/iraqi-offensive-tikrit-hold-second-day-104447361.html'>site</a></td><td>More "well-trained forces" were needed for the street-by-street battles that recapturing the city would require, the source said, speaking by phone from Tikrit.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/02/0d8b2a94cffc7f0e720f6a706700dcdf_r620x349.JPEG?75d51d0aea2efce5189afce216053cbc530c46a8'></td><td>2015-04-02 17:20:20</td><td><a href='http://www.utsandiego.com/news/2015/apr/02/after-expelling-is-iraqi-bomb-squads-begin/'>site</a></td><td>"The street linking the city center to the Tikrit University has been secured," he said.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-03 09:40:39</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/03/fierce-clashes-outside-iraqs-tikrit-after-new-offensive'>site</a></td><td>Tuesday marked the second day of the Iraqi advance on Tikrit, with soldiers supported by Iranian-backed Shiite militias and advisers, along with some Sunni tribal fighters who reject the Islamic State group.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.theguardian.com//i.guim.co.uk/static/w-300/h--/q-95/sys-images/Guardian/Pix/pictures/2015/3/7/1425711053115/4e6d510a-0e0e-47c1-91bd-f4dd8d04d882-300x180.jpeg'></td><td>2015-03-07 06:37:47</td><td><a href='http://www.theguardian.com/world/2015/mar/07/islamic-state-will-be-forced-out-of-tikrit-says-top-us-general'>site</a></td><td>In the Tikrit offensive, which began Monday, the US is on the sidelines.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww4.hdnux.com/photos/35/04/70/7622151/5/square_gallery_thumb.jpg'></td><td>2015-03-07 06:56:10</td><td><a href='http://www.sfgate.com/news/politics/article/Top-US-general-optimistic-about-outcome-of-Tikrit-6120444.php'>site</a></td><td>But in the Tikrit offensive, which began Monday, the U.S. is on the sidelines, watching as Iran asserts influence by providing training, weapons and leadership for Iraqi Shiite militias leading the charge on Tikrit.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww3.hdnux.com/photos/35/34/52/7719602/7/square_gallery_thumb.jpg'></td><td>2015-03-26 17:51:31</td><td><a href='http://www.sfgate.com/news/world/article/Iraq-official-Troops-launch-final-phase-of-6160241.php'>site</a></td><td>Iranian military advisers have been providing significant support since the Tikrit offensive began on March 2, arming and training the Iraqi Shiite militias, which have played a prominent role on the battlefield.</td></tr>
 </table></body></html>

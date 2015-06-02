@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03291/Langtang_Nepal_3291446b.jpg'></td><td>2015-05-05 10:16:34</td><td><a href='http://www.telegraph.co.uk/news/worldnews/asia/nepal/11582868/Nine-foreign-trekkers-among-dead-found-at-Nepal-village-buried-by-earthquake.html'>site</a></td><td>The valley and its little village of Langtang are about 35 miles north of Nepal's capital, Kathmandu.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/eOU9Mutwcv.PWahg6yj7TA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/c64563d421159f14750f6a706700ba8f.jpg'></td><td>2015-05-05 17:50:58</td><td><a href='http://news.yahoo.com/nepali-police-villagers-dig-mud-pull-bodies-061857671.html'>site</a></td><td>The Langtang Valley, about 60 kilometers (35 miles) north of Nepal's capital, Kathmandu, is now about a two-day hike from the nearest town because the landslide has blocked nearby roads.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-15 08:13:00</td><td><a href='http://www.ctvnews.ca/world/nepal-rescuers-find-3-bodies-near-crashed-u-s-marine-helicopter-1.2375266'>site</a></td><td>The area is near Gothali village in the district of Dolakha, about 80 kilometres (50 miles) northeast of Nepal's capital, Kathmandu.</td></tr>
+</table></body></html>

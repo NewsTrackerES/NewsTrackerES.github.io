@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>bali nine</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/2/t/f/d/q/image.related.articleLeadwide.620x349.13ii16.png/1424918119208.jpg'></td><td>2015-02-18 13:15:00</td><td><a href='http://www.brisbanetimes.com.au/world/bali-nine-executions-indonesias-president-did-not-have-all-the-documents-when-he-refused-clemency-20150218-13ii16.html'>site</a></td><td>Indonesia's President Joko Widodo refused clemency for the Bali nine duo facing execution without all the documentation of their cases due to the chaotic handover to his office from his predecessor.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/3/j/d/i/x/image.related.articleLeadwide.620x349.13kkcl.png/1424469702740.jpg'></td><td>2015-02-20 07:30:24</td><td><a href='http://www.smh.com.au/world/bali-nine-executions-julie-bishop-phones-indonesia-to-ease-tensions-20150220-13kkcl.html'>site</a></td><td>Bali nine executions: Firm-minded President Joko Widodo will push...</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.theage.com.au/content/dam/images/z/s/v/4/h/image.related.articleLeadwide.620x349.143ls0.png/1426262679646.jpg'></td><td>2015-03-13 13:43:52</td><td><a href='http://www.theage.com.au/world/cabinet-members-urge-indonesias-president-joko-widodo-to-show-mercy-to-bali-nine-duo-20150313-143ls0.html'>site</a></td><td><table><tr><td>Standing firm: Despite government figures urging him to reconsider the execution of the Bali nine duo, President Joko Widodo remains unswayed.</td></tr><tr><td>Prominent figures in the Indonesian government, including senior cabinet members, have been urging President Joko Widodo to reconsider the executions of the Bali nine duo, Fairfax Media has learned.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/w/7/r/i/image.related.articleLeadwide.620x349.1mvyzj.png/1430295188422.jpg'></td><td>2015-04-29 08:15:13</td><td><a href='http://www.brisbanetimes.com.au/world/how-the-worlds-media-reported-the-bali-nine-executions-20150429-1mvyzj.html'>site</a></td><td>How the world's media reported the Bali nine executions</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/o/5/g/8/image.related.articleLeadwide.620x349.1my9rx.png/1430475475103.jpg'></td><td>2015-05-01 10:18:01</td><td><a href='http://www.smh.com.au/world/former-candidate-prabowo-urged-indonesian-president-to-indefinitely-postpone-bali-nine-executions-20150501-1my9rx.html'>site</a></td><td>Former candidate Prabowo urged Indonesian President to indefinitely postpone Bali nine executions</td></tr>
+</table></body></html>

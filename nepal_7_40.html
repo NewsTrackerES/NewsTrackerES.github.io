@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 7,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 7 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-01 06:24:10</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article19922190.html#storylink=rss'>site</a></td><td>Kathmandu municipal workers sweep a pavement near earthquake damaged buildings in Kathmandu, Nepal, Friday, May 1, 2015.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-01 07:59:02</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article20000340.html#storylink=rss'>site</a></td><td>A Nepalese couple rides past while carrying a sack of wheat flour through earthquake damaged buildings in Kathmandu, Nepal, Friday, May 1, 2015.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-01 11:44:20</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3064042/Life-crawling-normal-Nepals-quake-hit-capital.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>A Nepalese man carries sacks of onions and potatoes on his bicycle as he walks past buildings damaged in an earthquake in Kathmandu, Nepal, Friday, May 1, 2015.</td></tr><tr><td>A Nepalese man feeds pigeons as other walkd across the rubble in Kathmandu, Nepal, Friday, May 1, 2015.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/05/01/article-urn:publicid:ap.org:d45b8d883f714eb6ba7972204d391f00-6YCZlZD70HSK2-144_634x422.jpg'></td><td>2015-05-01 13:39:24</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3063880/The-Latest-Nepal-Rescuers-search-rubble-survivors.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>A Nepalese woman who lost her house in a strong earthquake sits at a makeshift camp on the side of a road in Kathmandu, Nepal, Friday, May 1, 2015.</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://edition.cnn.com/videos/world/2015/05/12/data:image/gif;base64,R0lGODlhEAAJAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAAQAAkAAAIKlI+py+0Po5yUFQA7'></td><td>2015-05-12 16:33:58</td><td><a href='http://edition.cnn.com/videos/world/2015/05/12/lv-building-collapse-nepal-earthquake.cnn'>site</a></td><td>Buildings collapse during Nepal earthquake</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-14 11:04:47</td><td><a href='http://www.charlotteobserver.com/news/nation-world/world/article20967327.html#storylink=rss'>site</a></td><td>A Nepalese woman brushes her teeth next to quake damaged houses in Bhaktapur, Nepal, Thursday, May 14, 2015.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww3.hdnux.com/photos/36/33/74/7978790/3/square_gallery_thumb.jpg'></td><td>2015-05-14 16:23:01</td><td><a href='http://www.sfgate.com/news/world/article/Nepal-villagers-demand-help-after-2nd-quake-6262505.php'>site</a></td><td>A Nepalese farmer carries a bundle of harvested wheat in Nalinchowk, near Kathmandu, Nepal, Thursday, May 14, 2015.</td></tr>
+</table></body></html>

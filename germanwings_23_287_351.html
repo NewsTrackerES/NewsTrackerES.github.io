@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 4,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>germanwings</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.telegraph.co.uk/multimedia/archive/03243/germanwings-police_3243979g.jpg'></td><td>2015-03-25 05:56:59</td><td><a href='http://www.telegraph.co.uk/news/aviation/11493549/Germanwings-crash-mother-from-Manchester-and-baby-son-feared-dead.html'>site</a></td><td>Lufthansa, the parent company of Germanwings, said it was working on the assumption the crash was an "accident".</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297679877802_ORIGINAL.jpg?quality=80&size=65x'></td><td>2015-03-26 16:45:58</td><td><a href='http://www.torontosun.com/2015/03/26/recording-shows-pilot-locked-out-of-crashed-airbus-cockpit-report'>site</a></td><td>The CEO of Lufthansa, parent company of Germanwings, said its air crew were picked carefully and subjected to psychological vetting.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/9/r/h/h/image.related.articleLeadwide.620x349.1m9rg3.png/1427468075833.jpg'></td><td>2015-03-27 15:08:24</td><td><a href='http://www.brisbanetimes.com.au/world/germanwings-plane-crash-lufthansa-to-require-two-crew-members-in-cockpit-at-all-times-20150327-1m9rg3.html'>site</a></td><td>Lufthansa CEO Carsten Spohr says the Lufthansa Group, which includes Germanwings, Austrian Airlines, Swiss Air and Eurowings, will require two crew members to be in the cockpit at all times.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-30 18:07:09</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3018446/Lufthansa-CEO-faces-tough-test-Germanwings-crash.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Lufthansa CEO faces tough test after Germanwings crash</td></tr>
+</table></body></html>

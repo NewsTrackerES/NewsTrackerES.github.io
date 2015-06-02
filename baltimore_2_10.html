@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,9 @@
     <h3>baltimore</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-22 00:53:00</td><td><a href='http://www.japantimes.co.jp/news/2015/04/22/world/crime-legal-world/baltimore-police-custody-death-justice-department-probe/?utm_source=feedburner&amp%3Butm_medium=rss&amp%3Butm_campaign=baltimore-police-custody-death-justice-department-probe&utm_medium=feed&utm_campaign=Feed%3A+japantimes_news+%28The+Japan+Times+-+News+%26+Business%29'>site</a></td><td>The Baltimore Sun first reported the meeting.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 10:35:43</td><td><a href='http://www.charlotteobserver.com/news/nation-world/national/article21067047.html#storylink=rss'>site</a></td><td>The Baltimore Sun recently reported that from 1989 to 1999, at least $130 million in public and private money was spent to build or refurbish houses in Sandtown-Winchester.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/36/15/16/7918527/3/square_gallery_thumb.jpg'></td><td>2015-05-03 06:42:17</td><td><a href='http://www.sfgate.com/news/us/article/Baltimore-relieved-by-charges-weary-of-curfew-6239003.php'>site</a></td><td>Baltimore relieved by charges, weary of curfew</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/nlNAkeeEp.HOLGNXjF2.kg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en-us/homerun/video.wpvi.abc.news.com/d7c0d56e53fc2fd5b28e90a12971b978'></td><td>2015-05-03 14:53:07</td><td><a href='http://news.yahoo.com/baltimore-mayor-lifts-citywide-curfew-145307964.html'>site</a></td><td>Baltimore mayor lifts citywide curfew</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-03 14:57:18</td><td><a href='http://www.foxnews.com/us/2015/05/03/baltimore-mayor-lifts-curfew-after-days-tension/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>Baltimore mayor lifts curfew after days of tension</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/z/3/j/7/image.related.articleLeadwide.620x349.1mz3j3.png/1430753138328.jpg'></td><td>2015-05-03 19:00:47</td><td><a href='http://www.smh.com.au/world/we-want-to-heal-our-city--baltimores-mayor-lifts-curfew-20150504-1mz3j3.html'>site</a></td><td>'We want to heal our city' &#8211; Baltimore's mayor lifts curfew</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-05-11 04:48:23</td><td><a href='http://www.reuters.com/article/2015/05/11/us-usa-police-baltimore-prince-idUSKBN0NV0YB20150511?feedType=RSS&feedName=domesticNews'>site</a></td><td>Returning to the stage for one of many encores, Prince said, "No curfew," a reference to the citywide curfew put in place after rioting in Baltimore last month.</td></tr>
 </table></body></html>

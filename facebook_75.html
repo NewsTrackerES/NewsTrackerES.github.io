@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 16:27:59</td><td><a href='http://www.utsandiego.com/news/2015/mar/24/dad-fugitive-son-afraid-his-facebook-trial/'>site</a></td><td>Dad: Fugitive son afraid his Facebook trial wouldn't be fair</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://stmedia.startribune.com/designimages/shareBarIconFacebook_122112.png'></td><td>2015-03-24 16:30:37</td><td><a href='http://www.startribune.com/business/297400701.html'>site</a></td><td><table><tr><td>Fugitive's father tells NY judge his son thought he could not get fair trial in Facebook case</td></tr><tr><td>NEW YORK - A fugitive facing charges he falsely claimed he's owed a majority ownership in Facebook fled after complaining he was being treated unfairly in courts, his father said Tuesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0317/20150317__0318facebook~2_300.JPG'></td><td>2015-03-24 22:31:36</td><td><a href='http://www.mercurynews.com/business/ci_27777942/facebook-said-talks-publishers-hosting-content?source=rss'>site</a></td><td><table><tr><td>Facebook is in talks with the New York Times, BuzzFeed and National Geographic about hosting their articles or videos directly on the social network, the New York Times reported Monday.</td></tr><tr><td>Last month, Facebook's chief product officer, Chris Cox, said at a media conference that the social network had early conversations with publishers about hosting their content.</td></tr></table></td></tr>
 </table></body></html>

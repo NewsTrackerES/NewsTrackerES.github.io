@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>georgia execution</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 21:42:07</td><td><a href='http://news.yahoo.com/expert-georgia-execution-drug-problem-cause-low-temp-214207557.html'>site</a></td><td><table><tr><td>Expert: Georgia execution drug problem cause by low temp</td></tr><tr><td>ATLANTA (AP) - A pharmaceutical expert says a problem with a lethal injection drug that caused the last-minute postponement of an execution in Georgia was likely caused by shipping and storing the drug at a temperature that was too low.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/b_O1MCY7rjyKYRoOHmb1Ug--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/bdc783d7fa96a9096f0f6a706700b2d9.jpg'></td><td>2015-03-03 09:38:36</td><td><a href='http://news.yahoo.com/concerns-over-drug-prompt-delay-georgia-womans-execution-093205305.html'>site</a></td><td><table><tr><td>Concerns over drug prompt delay of Georgia woman's execution</td></tr><tr><td>Georgia and other death penalty states have bought execution drugs from compounding pharmacies in recent years after pharmaceutical companies stopped selling to U.S. prisons.</td></tr></table></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://twt-thumbs.washtimes.com/media/image/2015/03/03/fde91fa3fd6bb6096f0f6a7067004dcc_c0-0-2100-1224_s561x327.jpg?8bc4fc9145dd55df7b6a2c4c42b5038656b19636'></td><td>2015-03-04 10:10:24</td><td><a href='http://www.washingtontimes.com/news/2015/mar/4/lawyers-georgia-waffles-on-execution-with-cloudy-d/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td>Georgia waffles on execution with cloudy drug, lawyers say</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/vA.We8UuICL6g1aWTAJjlg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/fde91fa3fd6bb6096f0f6a7067004dcc.jpg'></td><td>2015-03-04 10:10:34</td><td><a href='http://news.yahoo.com/lawyers-georgia-waffles-execution-cloudy-drug-095853841.html'>site</a></td><td>ATLANTA (AP) - Georgia officials waffled on whether to proceed with an execution when the lethal injection drug was discovered to have a cloudy appearance, according to a court filing, and one expert said their decision to postpone it was the right move.</td></tr>
 </table></body></html>

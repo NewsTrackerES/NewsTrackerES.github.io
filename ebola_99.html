@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 15:02:42</td><td></td><td><a href='ebola_99_100.html'>Authorities launched a four day, door-to-door campaign in Forecariah on April 12 to improve community participation in reporting suspected cases and as part of an emergency 45-day drive to tackle Ebola in the west of the country. (4)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/17/11/27A8DFA100000578-0-image-m-83_1429266918131.jpg'></td><td>2015-04-16 15:02:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3042024/Guinea-finds-nine-new-Ebola-cases-near-border-Sierra-Leone.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>"We have been able to find nine sick people (with Ebola) hiding in Forecariah," Keita told a news conference.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 18:31:23</td><td><a href='http://www.reuters.com/article/2015/04/28/us-usa-ebola-texas-idUSKBN0NJ1Y820150428?feedType=RSS&feedName=lifestyleMolt'>site</a></td><td><table><tr><td>Fianc?e chronicles love, life with man who died of Ebola in Texas</td></tr><tr><td>Duncan became ill shortly after arriving in Dallas at the height of an Ebola outbreak in West Africa.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 18:58:28</td><td></td><td><a href='ebola_99_100.html'>DALLAS - Thomas Eric Duncan became the face of a crisis when he was diagnosed with Ebola in the United States, but he was simply "Eric" to his fiancee, Louise Troh, who said she has endured threats and battled nightmares since his death in October. (2)</a></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297693640141_ORIGINAL.jpg?quality=80&size=420x'></td><td>2015-04-28 18:58:28</td><td><a href='http://www.torontosun.com/2015/04/28/fiancee-chronicles-love-life-with-man-who-died-of-ebola-in-texas'>site</a></td><td>"He did not mean to come here with Ebola," said Troh.</td></tr>
 </table></body></html>

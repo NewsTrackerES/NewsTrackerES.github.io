@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/EiwK3KoDgzzmhoXT6GrI_w--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIyNTtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201503241442529593533'></td><td>2015-03-24 20:28:54</td><td><a href='http://sports.yahoo.com/news/rich-richer-mayweather-pacquiao-purses-soar-192028914--box.html'>site</a></td><td>Rich get richer: Mayweather and Pacquiao purses soar (Yahoo Sports)</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/FwnCOOiDzK361IFpY0We.g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtpbD1wbGFuZTtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.pd2upload.com/video.yahoosports.com@1a28c762-78ed-3791-88c9-9154fdef0f6c_FULL.jpg'></td><td>2015-05-12 18:39:52</td><td><a href='http://sports.yahoo.com/news/mayweather-pacquiao-sets-ppv-mark-4-4-million-173231921--box.html'>site</a></td><td>Mayweather-Pacquiao sets PPV mark with 4.4 million buys (Yahoo Sports)</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/03/264952A600000578-2978022-Out_of_this_world_Fans_will_likely_be_happy_to_see_the_trailer_h-a-34_1425418332822.jpg'></td><td>2015-03-03 21:32:18</td><td><a href='http://www.dailymail.co.uk/tvshowbiz/article-2978022/Community-debuts-new-trailer-Yahoo-spoofs-Avengers-Age-Ultron-canceled-NBC.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Season six of Community will air on Yahoo!</td></tr>
 </table></body></html>

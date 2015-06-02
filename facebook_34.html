@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,8 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 07:41:00</td><td><a href='http://www.cnbc.com/id/102529294'>site</a></td><td>Nothing attracts news organizations like Facebook.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-05-13 04:17:37</td><td><a href='http://www.startribune.com/facebook-ready-to-test-news-project/303549391/'>site</a></td><td>For publishers, the Facebook initiative represents the latest in a series of existential balancing acts.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-05-13 05:45:00</td><td></td><td><a href='facebook_34_35.html'>(Reuters) - Facebook Inc tied up with nine news publishers to launch "Instant Articles" that will let them publish articles directly to the social network's mobile news feeds. (9)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 19:08:52</td><td></td><td><a href='facebook_34_35.html'>Facebook restricts content in countries where it violates local laws, even if that content does not violate its community standards. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/17/22/7664787/3/628x471.jpg'></td><td>2015-03-16 19:08:52</td><td><a href='http://www.seattlepi.com/business/technology/article/Facebook-explains-what-posts-are-not-allowed-on-6137030.php'>site</a></td><td>NEW YORK (AP) - Facebook is trying to clarify what posts, images and other content it allows on its site and why.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-16 19:08:52</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/16/facebook-explains-what-posts-are-not-allowed-on-its-network'>site</a></td><td><table><tr><td>FILE - In this June 11, 2014 file photo, a man walks past a mural in an office on the Facebook campus in Menlo Park, Calif.</td></tr><tr><td>In a blog post Monday, Facebook said it is a challenge to maintain one set of standards that meet the needs of its entire community.</td></tr><tr><td>More than 80 percent of Facebook users are outside the U.S. and Canada.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-17 06:40:00</td><td><a href='http://www.forbes.com/sites/amitchowdhry/2015/03/17/facebook-community-standards/'>site</a></td><td>Facebook's policies are not changing.</td></tr>
 </table></body></html>

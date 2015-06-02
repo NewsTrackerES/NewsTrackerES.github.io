@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 5,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,9 @@
     <h3>microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 10:14:23</td><td><a href='http://www.fin24.com/Tech/Companies/Microsoft-pushes-deep-into-Android-territory-20150324'>site</a></td><td><table><tr><td>Microsoft said it was expanding a deal with Samsung - which had already agreed on pre-installing Microsoft services on its high-end smartphones - to include some tablets.</td></tr><tr><td>The deal will provide Microsoft Word, Excel, PowerPoint, OneNote, OneDrive and Skype on "select Samsung Android tablets", a statement from the Redmond, Washington, group said.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 20:51:04</td><td><a href='http://www.miamiherald.com/news/business/workplace/article16387559.html#storylink=rss'>site</a></td><td>He emphasized that many Microsoft contractors already have paid time off.</td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-03-26 20:55:44</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td>During the next 12 months, the company will require its U.S. suppliers -- which provide workers who do everything from serving food and driving buses to testing software -- to give 15 days paid leave a year to their employees who work on Microsoft projects.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 21:25:22</td><td></td><td><a href='microsoft_10_12.html'>SEATTLE -- For the first time, Microsoft will mandate a basic level of benefits for the tens of thousands of contract workers employed on the software giant's behalf. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 21:25:22</td><td></td><td><a href='microsoft_10_11.html'>It's also unclear how many people will be affected by the new policy, which applies to Microsoft vendors with 50 or more employees. (2)</a></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2014/0915/20140915__0916microsoft~1.JPG'></td><td>2015-03-26 21:25:22</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td>Adding benefits may raise costs for some Microsoft vendors and, in turn, the company itself.</td></tr>
 </table></body></html>

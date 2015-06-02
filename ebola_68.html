@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 00:05:00</td><td><a href='http://www.dailymail.co.uk/wires/afp/article-3022331/Last-Cuban-Ebola-medics-leave-S-Leone-new-clampdown-Easter.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>A total of 256 Cuban medics had been mobilised in the three countries worst hit by Ebola - Sierra Leone, Liberia and Guinea.</td></tr><tr><td>The latest World Health Organization (WHO) figures published on Wednesday showed that the number of new Ebola infections in Sierra Leone fell for the fourth consecutive week.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-23 11:55:26</td><td></td><td><a href='ebola_68_69.html'>Trial begins in Guinea for suspects accused of killing journalists and Ebola workers (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-23 11:55:26</td><td><a href='http://www.startribune.com/world/297220301.html'>site</a></td><td>The killings happened when a delegation of health care workers, including top health officials from the nearby town, visited Womey last September to raise awareness about how to combat Ebola.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-23 13:03:04</td><td><a href='http://www.charlotteobserver.com/living/health-family/article16070897.html#storylink=rss'>site</a></td><td>The current Ebola outbreak, which was officially confirmed exactly a year ago.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 4,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,8 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 17:49:11</td><td><a href='http://news.yahoo.com/airline-official-germanwings-probe-shouldnt-set-precedent-174911829--finance.html'>site</a></td><td>Airline official: Germanwings probe shouldn't set precedent</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-08 18:22:01</td><td><a href='http://www.foxbusiness.com/markets/2015/04/08/airline-industry-official-expresses-concern-about-handling-germanwings/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Flatest+%28Internal+-+Latest+News+-+Text%29'>site</a></td><td>Airline industry official expresses concern about the handling of Germanwings investigation</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.ctvnews.ca/polopoly_fs/1.2294373!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg'></td><td>2015-03-24 10:58:00</td><td><a href='http://www.ctvnews.ca/world/plane-crashes-in-french-alps-with-150-on-board-1.2294208'>site</a></td><td>The arrivals board shows flight 4U 9525 without a status at the airport in Duesseldorf, Tuesday, March 24, 2015, after the Germanwings passenger jet crashed in the French Alps as it traveled from Barcelona to Duesseldorf.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-24 11:35:24</td><td><a href='http://www.startribune.com/nation/297359381.html'>site</a></td><td>The CEO of Lufthansa, the parent company of Germanwings, says he doesn't yet have any information about what happened to its flight from Barcelona to Duesseldorf that French officials say has crashed in the Alps.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/a369526/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F9c%2Ff70839167fd5ddd67e521bf642fa81%2Fmedia%3A055e9386701f43338713db7d8767037bFrancePlaneCrash.JPEG'></td><td>2015-05-06 13:30:11</td><td><a href='http://www.usnews.com/news/world/articles/2015/05/06/french-investigators-to-release-report-on-germanwings-crash'>site</a></td><td>Germanwings' parent company Lufthansa technically could have known about Lubitz' apparent rehearsal on the outbound flight, but only if it had looked at the flight data in the short period while the plane was unloading and loading passengers in Barcelona.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://ww1.hdnux.com/photos/36/21/03/7934196/3/gallery_thumb.jpg'></td><td>2015-05-06 20:24:15</td><td><a href='http://www.seattlepi.com/news/crime/article/French-investigators-to-release-report-on-6245268.php'>site</a></td><td>With the Barcelona-bound Germanwings flight data, "we have here the previous proof."</td></tr>
 </table></body></html>

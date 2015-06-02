@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,5 @@
     <h3>yahoo</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww4.hdnux.com/photos/35/75/74/7855911/3/square_gallery_thumb.jpg'></td><td>2015-04-21 21:08:47</td><td><a href='http://www.sfgate.com/business/technology/article/Yahoo-s-1Q-shows-company-remains-mired-in-revenue-6214617.php'>site</a></td><td><table><tr><td>Yahoo's 1Q shows company remains mired in revenue rut</td></tr><tr><td>After accounting for ad commissions, Yahoo's revenue fell 4 percent from the same time last year to $1.04 billion, extending a troubling trend that began before Mayer took over.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/75/74/7855911/3/square_gallery_thumb.jpg'></td><td>2015-04-21 22:09:36</td><td><a href='http://www.sfgate.com/business/technology/article/Yahoo-s-1Q-shows-company-remains-mired-in-revenue-6214617.php'>site</a></td><td>Although Yahoo's stock has nearly tripled under Mayer's leadership, most of the increase has been tied to Yahoo's 24 percent stake in Alibaba Group and 35 percent stake in Yahoo Japan - not Yahoo's core business.</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 23:10:13</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11436682&ref=rss'>site</a></td><td><table><tr><td>Activist shareholder Starboard Value L.P., which owns a nearly 1 percent stake in Yahoo, has been urging Mayer to slash expenses and spin off the Yahoo Japan stake to lift the company's stock.</td></tr><tr><td>If the Yahoo Japan is spun off, it would mirror what Mayer has already started to do with an even more valuable stake in Alibaba Group, an e-commerce star in China.</td></tr></table></td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-21 23:30:49</td><td><a href='http://www.usnews.com/news/business/articles/2015/04/21/yahoos-1q-shows-company-remains-mired-in-revenue-rut'>site</a></td><td>Yahoo's 1Q disappoints, but stock rises on Yahoo Japan hopes</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://a57.foxnews.com/global.fbnstatic.com/static/managed/img/fb2/markets/876/493/yahoo-new-logo.jpg?ve=1&tl=1'></td><td>2015-05-20 22:19:19</td><td><a href='http://www.foxbusiness.com/technology/2015/05/20/tax-scare-on-yahoo-alibaba-stake-spin-off-seen-premature/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxbusiness%2Ftechnology+%28Internal+-+Technology+-+Mixed%29'>site</a></td><td><table><tr><td>Scare on Yahoo's Alibaba Spin-Off Seen Premature</td></tr><tr><td>"Anything can happen, but I'm going with the bet that this won't impact spin-off of Alibaba shares for Yahoo," Axiom Capital analyst Victor Anthony told Reuters.</td></tr><tr><td>Yahoo plans to spin off a $34 billion stake in Alibaba into a public company along with Yahoo Small Business that provides domain names and local marketing.</td></tr></table></td></tr>
 </table></body></html>

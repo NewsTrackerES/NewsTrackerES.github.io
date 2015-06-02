@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>yahoo or google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-02 07:13:45</td><td></td><td><a href='yahoo_or_google_155_156.html'>CNNIC, which plays a central role in administering China's Internet by allocating and certifying IP addresses and web domain names, urged Google to consider user rights and interests. (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://static.theglobeandmail.ca/5a7/news/world/article23760245.ece/ALTERNATES/w220/-CTECH-US-GOOGLE-EU.JPG'></td><td>2015-04-02 07:13:45</td><td><a href='http://www.theglobeandmail.com/technology/china-internet-authority-denounces-google-certificate-rejection/article23760246/?cmpid=rss1'>site</a></td><td>"The decision that Google has made is unacceptable and unintelligible," the agency said in a statement on its website.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/pUIyJ5YzTz4RWi1w2YsAmg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504271740636094865'></td><td>2015-04-27 23:23:27</td><td><a href='http://sports.yahoo.com/news/orioles-game-baltimore-postponed-due-safety-concerns-224004275--mlb.html'>site</a></td><td>Orioles' game in Baltimore postponed due to safety concerns (Yahoo Sports)</td></tr>
 </table></body></html>

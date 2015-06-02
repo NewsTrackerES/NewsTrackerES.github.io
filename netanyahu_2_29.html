@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 5,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 5 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>netanyahu</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-02-20 21:45:54</td><td><a href='http://www.huffingtonpost.com/2015/02/20/white-house-netanyahu-speech_n_6723898.html'>site</a></td><td>Vice President Joe Biden will be away, his absence behind Netanyahu conspicuous in coverage of the speech to Congress.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-02 05:27:45</td><td><a href='http://www.cbsnews.com/news/kerry-attempts-to-ease-u-s-israel-tensions-before-netanyahu-speech/'>site</a></td><td>Netanyahu will press his opposition to a diplomatic accommodation of Iran's program in his speech Tuesday to Congress.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-02 16:00:05</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11410691&ref=rss'>site</a></td><td>Netanyahu says his speech to Congress not intended to show disrespect to Obama</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/FNx6bJRLRS.hncH61goAUw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/0dfd9d88d5aaa5096f0f6a706700ae55.jpg'></td><td>2015-03-03 00:03:56</td><td><a href='http://news.yahoo.com/foreign-talks-congress-often-yawn-not-netanyahus-000356122.html'>site</a></td><td>The closest comparison to Netanyahu's latest speech to Congress may be Netanyahu's last speech to Congress.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-03-04 08:55:13</td><td><a href='http://www.startribune.com/world/294965891.html'>site</a></td><td>Still the Netanyahu speech is likely to further embolden critics in U.S. Congress who fear the U.S. may accept terms too lenient on Iran.</td></tr>
+</table></body></html>

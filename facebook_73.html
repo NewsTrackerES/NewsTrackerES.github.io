@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-06 11:38:40</td><td><a href='http://www.sfgate.com/news/us/article/Court-NYC-woman-can-serve-divorce-papers-via-6180997.php'>site</a></td><td>The ruling says Blood-Dzraku has only been in touch with his wife via phone and Facebook.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-04-06 17:35:12</td><td></td><td><a href='facebook_73_74.html'>Manhattan Supreme Court Justice Matthew Cooper ruled last week that a Brooklyn nurse is "granted permission to serve defendant with the divorce summons using a private message through Facebook." (4)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ichef.bbci.co.uk/news/200/media/images/82200000/jpg/_82200492_pamessenger.jpg'></td><td>2015-04-09 08:16:39</td><td><a href='http://www.bbc.co.uk/newsbeat/32230891#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'>site</a></td><td>Facebook Messenger app for browsers</td></tr>
 </table></body></html>

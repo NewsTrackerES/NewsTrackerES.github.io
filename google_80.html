@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>google</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-14 08:01:42</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3038056/Google-Malaysia-service-disrupted-hackers.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Google Malaysia service disrupted by hackers</td></tr><tr><td>The company has reached out to the organization that manages the domain name to resolve the issue, MYNIC, a Google Malaysia spokesperson said in a statement to Reuters.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-14 08:58:45</td><td><a href='http://www.wsj.com/articles/googles-malaysia-website-disrupted-1428984851?mod=rss_Technology'>site</a></td><td>Access to Google Inc.'s Malaysia website was disrupted Tuesday, the company said, with some users redirected to a website saying "Google Malaysia Hacked."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:44:00</td><td><a href='http://www.cnbc.com/id/102568467'>site</a></td><td>Next from Google: Teleconferencing?</td></tr>
 </table></body></html>

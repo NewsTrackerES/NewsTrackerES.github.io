@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>facebook</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.gannett-cdn.com/-mm-/2346f9764db43112faad059618a2c34e6c58ab16/c=242-0-1678-1080&amp;r=x383&amp;c=540x380/local/-/media/2015/03/25/USATODAY/USATODAY/635628887514868497-zuckerberg.jpg'></td><td>2015-03-25 20:08:51</td><td><a href='http://www.usatoday.com/story/tech/2015/03/25/facebook-f8-mark-zuckerberg-messenger/70408194/?utm_source=feedblitz&utm_medium=FeedBlitzRss&utm_campaign=usatoday-techtopstories'>site</a></td><td>Facebook is opening up Messenger to third-party apps.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/33/44/7715090/3/mosaic_2.jpg'></td><td>2015-03-25 23:29:24</td><td><a href='http://www.chron.com/business/technology/article/Facebook-s-Messenger-app-adding-more-ways-to-6158441.php'>site</a></td><td>The push to diversify Messenger addresses a potential threat to Facebook's ubiquitous social network posed by a variety of mobile messaging maps offering more intimate and direct ways to connect with friends.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.usnews.com/dims4/USNEWS/490a609/2147483647/thumbnail/55x55/quality/85/?url=%2Fcmsmedia%2Fc4%2F39%2F677999944687ac9ad6e43d137456%2Ffacebook-icon.png'></td><td>2015-03-25 23:29:24</td><td><a href='http://www.usnews.com/news/business/articles/2015/03/25/facebooks-messenger-app-adding-more-ways-to-connect'>site</a></td><td>Younger people, in particular, are increasingly using a wide range of mobile messaging apps to communicate while spending less time broadcasting their activities on Facebook's more expansive social network.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 16:53:13</td><td><a href='http://news.yahoo.com/turkey-lifts-youtube-ban-followed-court-order-hostage-065154258--finance.html'>site</a></td><td>Facebook said it had complied with the court order and appeared to have avoided the ban.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 17:01:50</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3028794/Twitter-Facebook-vow-challenge-Turkey-ban.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Turkish academics to fight Twitter and Facebook ban in court</td></tr>
 </table></body></html>

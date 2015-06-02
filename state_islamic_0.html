@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>state islamic</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 12:52:19</td><td></td><td><a href='state_islamic_0_1.html'>CHICAGO - An Illinois Army National Guard soldier and his cousin are scheduled for arraignment on charges they plotted terrorist attacks in a conspiracy to provide material support to the Islamic State group. (8)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 18:02:42</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3070665/Illinois-cousins-appear-court-Islamic-State-case.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Illinois cousins appear in court in Islamic State case</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 03:14:55</td><td></td><td><a href='state_islamic_0_1.html'>Washington: A US Army National Guard soldier and his cousin have been arrested on charges of conspiring to support Islamic State in a plot that included an attack on a military installation in Illinois, the US Department of Justice said. (7)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-06 17:35:12</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11444525&ref=rss'>site</a></td><td>CHICAGO (AP) " Prosecutors have told a federal judge in Chicago they'll soon start turning over evidence to lawyers for two suburban cousins accused of plotting terrorist attacks to support the Islamic State group.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-05-06 18:02:42</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3070665/Illinois-cousins-appear-court-Islamic-State-case.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Illinois cousins appear in court in Islamic State case</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://i2.cdn.turner.com/money/dam/assets/150128171831-carl-icahn-1024x576.jpg'></td><td>2015-05-18 16:24:14</td><td><a href='http://money.cnn.com/2015/05/18/investing/apple-carl-icahn-tim-cook/index.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rss%2Fmoney_latest+%28CNNMoney%3A+Latest+News%29'>site</a></td><td><table><tr><td>Apple has $194 billion in cash.</td></tr><tr><td>Apple did not have a comment about Icahn's latest letter.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-29 20:35:17</td><td></td><td><a href='apple_20_21.html'>Today, after losing ground to smartphones and tablets that run software from rivals Apple and Google, Microsoft wants to make Windows 10 the universal software for PCs, phones and other Internet-connected gadgets. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-29 20:35:17</td><td></td><td><a href='apple_20_22.html'>Microsoft's move to help developers adapt their Apple and Android apps for Windows 10 is a major change from the past, when each company maintained rigid differences in their software platforms. (2)</a></td></tr>
 </table></body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 31,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 31 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cannes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/etPtwbDF__1PW2S.wZODYA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/f2769da01a364210730f6a7067002a49.jpg'></td><td>2015-04-10 11:13:38</td><td><a href='http://news.yahoo.com/isabella-rossellini-head-cannes-un-certain-regard-jury-111338735.html'>site</a></td><td>The festival said Friday she will also attend a Cannes screening of a documentary about her mother.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 16:19:32</td><td><a href='http://www.thewrap.com/cannes-film-festival-opening-with-a-film-directed-by-a-woman-for-first-time-ever/'>site</a></td><td>"The choice of this film may seem surprising, given the rules generally applied to the Festival de Cannes Opening Ceremony," Thierry Fremaux, general delegate of the event, said.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-13 17:39:35</td><td><a href='http://www.seattlepi.com/news/article/La-Tete-Haute-to-open-Cannes-Film-Festival-6196589.php'>site</a></td><td><table><tr><td>NEW YORK (AP) - For the first time, a female director will kick off the Cannes Film Festival.</td></tr><tr><td>The festival announced Monday that "La Tete Haute," a French drama directed by Emmanuelle Bercot, will open the 68th Cannes Film Festival on May 13.</td></tr></table></td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://media.utsandiego.com/img/photos/2015/04/13/UTI1846347_r142x90.JPG?a4c645db5e0d43838ff6d631be583dfe8b15e757'></td><td>2015-04-13 17:39:35</td><td><a href='http://www.utsandiego.com/news/2015/apr/13/la-tete-haute-to-open-cannes-film-festival/'>site</a></td><td>'La Tete Haute' to open Cannes Film Festival</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-16 10:37:39</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/16/jia-sorrentino-van-sant-in-cannes-festival-lineup'>site</a></td><td>Cannes International Film Festival poster for the upcoming 68th edition featuring Swedish actress Ingrid Bergman, is set up, in Paris, France, Thursday, April 16, 2015.</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://ww2.hdnux.com/photos/35/67/10/7827973/3/square_gallery_thumb.jpg'></td><td>2015-04-16 10:37:39</td><td><a href='http://www.sfgate.com/entertainment/article/Jia-Sorrentino-Van-Sant-in-Cannes-festival-6203471.php'>site</a></td><td>Cannes Film festival President Pierre Lescure, left, and festival general delegate Thierry Fremaux, give a press conference to announce this year's line up, in Paris, France, Tuesday, April 16, 2015.</td></tr>
+  <tr><td style='display:none'>6</td><td></td><td>2015-04-16 13:43:01</td><td><a href='http://jam.canoe.ca/Movies/2015/04/16/22347431.html?cid=rssentertainmentmovies'>site</a></td><td>Docter was previously in Cannes with "Up," the first animated film ever to open the festival.</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/21/09/27CDD81900000578-0-image-m-34_1429604823184.jpg'></td><td>2015-04-21 21:01:53</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3049085/Jake-Gyllenhaal-Sienna-Miller-Cannes-Film-Festival-jury.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>FILE - In this May 17, 2014 file photo, actress Rossy de Palma poses for photographers as she arrives for the screening of Saint-Laurent at the 67th international film festival, Cannes, southern France.</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://ww3.hdnux.com/photos/36/27/25/7959902/3/628x471.jpg'></td><td>2015-05-11 14:34:53</td><td><a href='http://www.seattlepi.com/news/article/Macbeth-to-Mad-Max-set-to-invade-Cannes-Film-6255485.php'>site</a></td><td>NEW YORK (AP) - There will be no selfies on the red carpet at the Cannes Film Festival this year, but, rest assured, there will be every other type of image-making at the French Riviera extravaganza.</td></tr>
+  <tr><td style='display:none'>9</td><td></td><td>2015-05-11 14:34:53</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/11/macbeth-to-mad-max-set-to-invade-cannes-film-festival'>site</a></td><td>'Macbeth' to 'Mad Max' set to invade Cannes Film Festival</td></tr>
+  <tr><td style='display:none'>10</td><td></td><td>2015-05-11 15:38:14</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3076871/Macbeth-Mad-Max-set-invade-Cannes-Film-Festival.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Workers place a banner depicting actress Ingrid Bergman on the Palais during preparations for the 68th international film festival in Cannes, southern France, Monday, May 11, 2015.</td></tr>
+  <tr><td style='display:none'>11</td><td></td><td>2015-05-12 16:58:52</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/12/cannes-chief-seeks-sun-more-female-directors-fewer-selfies'>site</a></td><td>CANNES, France (AP) - As the Cannes Film Festival gets set to open, two trends seem clear: The women are coming - and the selfies are going.</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-12 17:54:21</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20752305.html#storylink=rss'>site</a></td><td>Moryba Konate, a worker from Ivory Coast, works to extend a beach during preparations ahead of the 68th international film festival, Cannes, southern France, Tuesday, May 12, 2015.</td></tr>
+  <tr><td style='display:none'>13</td><td></td><td>2015-05-12 21:14:05</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article20770689.html#storylink=rss'>site</a></td><td>Majestic meets 'Mad Max' in the maelstrom that's the Cannes film fest</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://ww1.hdnux.com/photos/36/32/13/7971552/3/gallery_thumb.jpg'></td><td>2015-05-13 11:00:48</td><td><a href='http://www.seattlepi.com/entertainment/article/Cannes-kicks-off-with-a-more-socially-minded-tone-6260225.php'>site</a></td><td>CANNES, France (AP) - The Cannes Film Festival unrolled its red carpet with a socially minded French drama, striking a more serious tone than the high dose of glamour the festival often opens with.</td></tr>
+  <tr><td style='display:none'>15</td><td></td><td>2015-05-13 12:02:13</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/13/cannes-kicks-off-with-a-more-socially-minded-tone'>site</a></td><td>Catherine Deneuve poses for photographers during a photo call for La Tete Haute (Standing Tall), at the 68th international film festival, Cannes, southern France, Wednesday, May 13, 2015.</td></tr>
+  <tr><td style='display:none'>16</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-13 12:25:06</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article20806659.html#storylink=rss'>site</a></td><td>Members of the media surround workers laying down the red carpet on the steps of the Palais des Festivals ahead of the 68th international film festival, Cannes, southern France, Wednesday, May 13, 2015.</td></tr>
+  <tr><td style='display:none'>17</td><td></td><td>2015-05-15 19:05:04</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/15/cannes-watch-man-flouts-no-selfie-guidelines-on-red-carpet'>site</a></td><td><table><tr><td>CANNES WATCH: Man flouts no-selfie guidelines on red carpet</td></tr><tr><td>CANNES, France (AP) - The organizers of the Cannes Film Festival aren't going to like these pictures.</td></tr></table></td></tr>
+  <tr><td style='display:none'>18</td><td><img src='http://www.usnews.com/dims4/USNEWS/feba0bd/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2Fa9%2Ff98211f644d8fd31f8ea5b636caca9%2Fmedia%3Ad33ceb9df8e14321858663ad9f762f61FranceCannesTheLobsterPressConference.JPEG'></td><td>2015-05-15 19:13:32</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/05/15/cannes-watch-a-first-time-for-colin-farrell-at-cannes'>site</a></td><td>CANNES, France (AP) - Colin Farrell is no longer a Cannes Film Festival virgin.</td></tr>
+  <tr><td style='display:none'>19</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-15 20:00:11</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21106563.html#storylink=rss'>site</a></td><td>An unidentified person takes a selfie with actress Emma Stone, right, as they arrive for the screening of the film Irrational Man at the 68th international film festival, Cannes, southern France, Friday, May 15, 2015.</td></tr>
+  <tr><td style='display:none'>20</td><td><img src='http://ww3.hdnux.com/photos/36/40/57/7998438/3/gallery_thumb.jpg'></td><td>2015-05-17 17:00:58</td><td><a href='http://www.seattlepi.com/entertainment/article/CANNES-WATCH-Portman-says-new-Israeli-isn-t-6269107.php'>site</a></td><td>The film, adapted from an autobiographical novel by Amos Oz, premiered over the weekend at the Cannes Film Festival.</td></tr>
+  <tr><td style='display:none'>21</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-18 15:54:29</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21285954.html#storylink=rss'>site</a></td><td><table><tr><td>This year's Cannes Film Festival is about halfway through, but one thing is already clear: This festival belongs to les femmes.</td></tr><tr><td>Cannes, in its 68th festival, is in some ways an unlikely place for an explosion of attention to sexism.</td></tr></table></td></tr>
+  <tr><td style='display:none'>22</td><td></td><td>2015-05-19 13:04:30</td><td><a href='http://www.reuters.com/article/2015/05/19/us-filmfestival-cannes-women-idUSKBN0O41JD20150519?feedType=RSS&feedName=entertainmentNews'>site</a></td><td>Cast member Emily Blunt poses during a photocall for the film 'Sicario' in competition at the 68th Cannes Film Festival in Cannes, southern France, May 19, 2015.</td></tr>
+  <tr><td style='display:none'>23</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-05-20 14:00:28</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article21459924.html#storylink=rss'>site</a></td><td>Actors Michael Caine, left, and Rachel Weisz arrive for a press conference for the film Youth at the 68th international film festival, Cannes, southern France, Wednesday, May 20, 2015.</td></tr>
+  <tr><td style='display:none'>24</td><td><img src='http://media.cmgdigital.com/shared/lt/lt_cache/thumbnail/188/img/photos/2015/05/23/06/f9/490cc4ac366f42bfa3e706c4e4e41ffe-6bcd7dc0c3324b5386e7b8b212ced5fe-0.jpg'></td><td>2015-05-23 19:11:16</td><td><a href='http://www.1073theeagle.com/ap/ap/entertainment/palme-dor-up-for-grabs-ahead-of-cannes-film-festiv/nmMwk/'>site</a></td><td>Palme d'Or up for grabs ahead of Cannes Film Festival finale</td></tr>
+  <tr><td style='display:none'>25</td><td></td><td>2015-05-24 14:43:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/4e67281c3f754d0696fbfdee0f3f1469/Article_2015-05-24-EU--France-Cannes-Awards/id-4fe52f347c014daaabb267b43219e8ae'>site</a></td><td>Audiard's 'Dheepan' wins Palme d'Or in upset Cannes finale</td></tr>
+  <tr><td style='display:none'>26</td><td></td><td>2015-05-24 18:25:35</td><td><a href='http://www.cbc.ca/news/arts/cannes-film-festival-dheepan-wins-palme-d-or-1.3085694?cmp=rss'>site</a></td><td>Jacques Audiard's immigrant drama Dheepan has won the Palme d'Or, the top honour of the Cannes Film Festival.</td></tr>
+  <tr><td style='display:none'>27</td><td></td><td>2015-05-24 18:43:55</td><td><a href='http://www.reuters.com/article/2015/05/24/us-filmfestival-cannes-winner-idUSKBN0O90ST20150524?feedType=RSS&feedName=entertainmentNews'>site</a></td><td>Director Jacques Audiard, Palme d'Or award winner for his film ''Dheepan'', delivers a speech on stage during the closing ceremony of the 68th Cannes Film Festival in Cannes, southern France, May 24, 2015.</td></tr>
+  <tr><td style='display:none'>28</td><td></td><td>2015-05-24 19:55:05</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article22142274.html#storylink=rss'>site</a></td><td>Refugee drama 'Dheepan' named best film at Cannes</td></tr>
+  <tr><td style='display:none'>29</td><td><img src='http://ww1.hdnux.com/photos/36/53/02/8040620/3/square_gallery_thumb.jpg'></td><td>2015-05-24 22:45:09</td><td><a href='http://www.sfgate.com/world/article/Sri-Lankan-refugee-film-Dheepan-takes-6284434.php'>site</a></td><td>CANNES, France - The 68th Cannes Film Festival was brought to a surprising close Sunday with Jacques Audiard's Sri Lankan refugee film taking the festival's coveted top honor, the Palme d'Or.</td></tr>
+  <tr><td style='display:none'>30</td><td><img src='http://ww1.hdnux.com/photos/36/53/36/8042408/3/628x471.jpg'></td><td>2015-05-25 12:37:27</td><td><a href='http://www.seattlepi.com/entertainment/article/The-movies-that-will-keep-buzzing-after-Cannes-6284907.php'>site</a></td><td>And so there was a strange fittingness that the scandal of the 68th Cannes Film Festival, where all status is measured, came down to the importance of a few inches.</td></tr>
+</table></body></html>

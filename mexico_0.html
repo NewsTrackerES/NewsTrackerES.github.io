@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-25 18:45:01</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3011577/Mexico-says-arson-US-company-linked-extortion.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Mexico says arson at US company linked to extortion</td></tr><tr><td>MEXICO CITY (AP) - An arson attack on a subsidiary of a U.S. energy-services firm was part of an extortion attempt, prosecutors in southern Mexico said Wednesday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-16 21:55:37</td><td></td><td><a href='mexico_0_1.html'>"The United States has a long history of support for the Mexican government's efforts to save the vaquita and welcomes opportunities to work with Mexico to support the president's announced plan and other efforts to protect the totoaba and the vaquita marina," the embassy said in a statement. (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 22:01:27</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3042701/Mexico-implements-plan-save-endangered-vaquita-porpoise.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>There are fewer than 100 vaquitas left and the head of the World Wildlife Fund in Mexico, Omar Vidal, called the shy, elusive porpoise "an emblematic species for Mexico, the equivalent of the panda for China."</td></tr>
 </table></body></html>

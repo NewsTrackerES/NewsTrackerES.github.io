@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 3,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>nepal</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-12 15:16:21</td><td><a href='http://ibnlive.in.com/news/53-dead-as-74-magnitude-aftershock-jolts-earthquakehit-nepal-after-17-days-triggers-panic/545235-2.html'>site</a></td><td>Nepal had barely begun to recover from the devastation caused by last month's 7.8-magnitude earthquake, the country's worst in more than 80 years, which killed at least 8,046 people and injured more than 17,800.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-16 05:35:32</td><td><a href='http://www.startribune.com/brick-business-booms-as-nepal-readies-to-rebuild-after-quake/303981621/'>site</a></td><td>Nepal was crippled by last month's magnitude-7.8 earthquake, which killed more than 8,000, while a string of strong aftershocks has further terrified the survivors.</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://l.yimg.com/a/p/us/news/editorial/d/0c/d0c3eb8ca18907492a4b337b5cec5193.jpeg'></td><td>2015-05-25 15:06:34</td><td><a href='http://news.yahoo.com/donor-fatigue-hits-nepal-one-month-mega-earthquake-150634503.html'>site</a></td><td>Donor fatigue hits Nepal one month after mega earthquake: U.N.</td></tr>
+</table></body></html>

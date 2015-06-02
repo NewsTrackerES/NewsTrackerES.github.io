@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.abc.net.au/news/image/5636480-16x9-220x124.jpg'></td><td>2015-04-07 20:58:10</td><td><a href='http://www.abc.net.au/news/2015-04-08/police-raid-funeral-in-sierra-leone/6376494'>site</a></td><td><table><tr><td>Police in Ebola-hit Sierra Leone have raided a funeral and arrested 13 people suspected of organising an unsafe burial, risking spreading the disease, officers said.</td></tr><tr><td>Alimamy Kamara, head of the National Ebola Response Centre (NERC) in charge of Freetown and the surrounding area, said last week that people organising unsafe burials risked two-year jail terms.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 17:20:28</td><td></td><td><a href='ebola_38_39.html'>The Chinese-made MIL 77 is a close relative of another experimental medicine ZMapp - which British nurse William Pooley received when he was treated at the Royal Free for Ebola last year. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 17:57:13</td><td><a href='http://www.foxnews.com/health/2015/03/27/british-ebola-patient-cured-after-experimental-treatment-1986060969/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fhealth+%28Internal+-+Health+-+Text%29'>site</a></td><td>British Ebola patient cured after experimental treatment</td></tr>
 </table></body></html>

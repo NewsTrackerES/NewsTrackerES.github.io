@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://brightcove.canoe.com.edgesuite.net/2/1745097732/201504/526/1745097732_4170822491001_f8415e958a6c904242b584c26e5f2d84-tmb1.jpg?pubId=1745097732'></td><td>2015-04-14 13:15:17</td><td><a href='http://technology.canoe.ca/News/2015/04/14/22342786-relaxnews.html?cid=rsstechnology'>site</a></td><td><table><tr><td>IBM teams with Apple on AI health program</td></tr><tr><td>IBM on Monday announced alliances with Apple and others to put artificial intelligence to work drawing potentially life-saving insights from the booming amount of health data generated on personal devices.</td></tr><tr><td>Under the partnership it will be able to handle data collected using health applications from Apple mobile devices, according to IBM.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-27 13:24:46</td><td><a href='http://www.usnews.com/news/technology/articles/2015/04/27/discover-to-have-apple-pay-available-for-us-cardholders'>site</a></td><td>Discover customers will also be able to use Apple Pay with iPad Air 2 and iPad mini 3 when paying for goods and services within apps starting in the fall.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 13:24:46</td><td></td><td><a href='apple_12_13.html'>NEW YORK (AP) - U.S. users of Discover cards are getting their Apple Pay, the last holdout among major credit card networks in the country. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-27 13:24:46</td><td><a href='http://www.chron.com/business/technology/article/Discover-to-have-Apple-Pay-available-for-US-6225920.php'>site</a></td><td>Apple Pay launched in October.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/IuS127H_vo2Dmu0Vbm1xYg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/4c8c9b20bab48415760f6a706700426c.jpg'></td><td>2015-05-15 04:18:33</td><td><a href='http://news.yahoo.com/mexicos-odd-green-party-reaping-success-criticism-041833471.html'>site</a></td><td><table><tr><td>Mexico's odd Green Party reaping success _ and criticism</td></tr><tr><td>In December, Greenpeace Mexico called the Green Party "offensive" for claiming it had been working with the NGO on environmental protection.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 05:20:18</td><td></td><td><a href='mexico_4_5.html'>Leroux and Wambach each score twice, US beats Mexico 5-1 (2)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-05-18 05:31:20</td><td><a href='http://www.mercurynews.com/sports/ci_28137083/u-s-soccer-american-women-beat-mexico-5?source=rss'>site</a></td><td><table><tr><td>She has scored 24 goals against Mexico, the most has against any nation.</td></tr><tr><td>Ariana Calderon scored on a header for Mexico late in the first half, snapping Hope Solo's shutout streak at five matches.</td></tr><tr><td>It was the first goal the U.S. conceded to Mexico since November 2010, when Las Tri surprised the Americans with a 2-1 victory in World Cup qualifying.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://static.theglobeandmail.ca/7ae/sports/soccer/world-cup/article24478464.ece/ALTERNATES/w220/so-usa18sp2.JPG'></td><td>2015-05-18 22:45:55</td><td><a href='http://www.theglobeandmail.com/sports/soccer/world-cup/us-women-cruise-to-a-5-1-win-over-mexico-in-world-cup-tune-up-match/article24478465/?cmpid=rss1'>site</a></td><td>Canada beat Mexico 1-0 on Thursday.</td></tr>
 </table></body></html>

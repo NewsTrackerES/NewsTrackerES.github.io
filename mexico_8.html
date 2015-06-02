@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-18 05:31:20</td><td><a href='http://www.mercurynews.com/sports/ci_28137083/u-s-soccer-american-women-beat-mexico-5?source=rss'>site</a></td><td><table><tr><td>She has scored 24 goals against Mexico, the most has against any nation.</td></tr><tr><td>Ariana Calderon scored on a header for Mexico late in the first half, snapping Hope Solo's shutout streak at five matches.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-05-04 20:40:19</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11443408&ref=rss'>site</a></td><td>Goldberg, husband of Facebook executive Sheryl Sandberg, was found lying next to a treadmill on Friday at the Four Seasons Resort Punta Mita near Puerto Vallarta on Mexico's Pacific coast.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 20:51:37</td><td></td><td><a href='mexico_8_9.html'>MEXICO CITY - SurveyMonkey CEO David Goldberg died of severe head trauma in an exercise accident in the Mexican resort town of Punta Mita, a Mexican state official said Monday. (2)</a></td></tr>
 </table></body></html>

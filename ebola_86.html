@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>ebola</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.usnews.com/dims4/USNEWS/c4d4ea1/2147483647/thumbnail/300x270/quality/85/?url=%2Fcmsmedia%2F99%2Ff6%2F9a426cda41ee8d10f88becc0cddc%2F141230-10000stepsbadge-stock.jpg'></td><td>2015-03-29 17:30:54</td><td><a href='http://www.usnews.com/news/world/articles/2015/03/29/guinea-president-reinforces-emergency-ebola-measures'>site</a></td><td><table><tr><td>Sierra Leone, which has seen the most cases, imposed a three-day lockdown that officials hoped would help the country get "total control" over Ebola.</td></tr><tr><td>In Liberia, the government issued a statement Sunday warning survivors of Ebola to abstain from unprotected sex even beyond the 90-day period earlier recommended.</td></tr></table></td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://ww4.hdnux.com/photos/35/40/37/7735287/7/mosaic_2.jpg'></td><td>2015-03-29 17:30:54</td><td><a href='http://www.chron.com/news/medical/article/Guinea-president-reinforces-emergency-Ebola-6166068.php'>site</a></td><td>3 West African countries increase fight to end Ebola</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/46SQFs9t68AR3v1r8ctwJw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/ea81fbdc2cf5280e720f6a706700a71b.jpg'></td><td>2015-03-29 17:31:01</td><td><a href='http://news.yahoo.com/guinea-president-reinforces-emergency-ebola-measures-094647285.html'>site</a></td><td>The statement was prompted by continued confusion over how the country's latest Ebola patient - its first in weeks - came down with the disease.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-03 01:45:04</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11411042&ref=rss'>site</a></td><td><table><tr><td>Officials in Pyongyang said the restrictions and quarantines would continue for visitors from Ebola-affected countries in Africa and those countries that have borders with them.</td></tr><tr><td>North Korean media had suggested the Ebola virus was created by the U.S. military for use as a biological weapon.</td></tr></table></td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-05 06:32:02</td><td></td><td><a href='ebola_86_87.html'>TOKYO (AP) - After lifting travel restrictions it imposed because of concerns over the Ebola virus, North Korea says foreigners can now take part in one of its most popular tourist events - the annual Pyongyang marathon, a travel agency said Thursday. (5)</a></td></tr>
 </table></body></html>

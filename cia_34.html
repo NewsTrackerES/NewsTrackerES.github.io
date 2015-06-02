@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 21:00:38</td><td><a href='http://www.cbsnews.com/news/report-cia-money-given-to-al-qaeda/'>site</a></td><td>Report: CIA money was given to al Qaeda</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/14/2677F79300000578-2995125-Afghan_President_Ashraf_Ghani_center_former_President_Hamid_Karz-m-5_1426371089447.jpg'></td><td>2015-03-14 22:44:35</td><td><a href='http://www.dailymail.co.uk/news/article-2995125/Al-Qaeda-got-1million-CIA-money-fund-free-Afghan-diplomat.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Bin Laden had at first been concerned about the ransom payment, fearing the CIA knew how the money would be used and had tainted it with poison, radiation or a tracking device.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/4Wi8kOeBnD13PY4JB_HIDQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTIwMDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/News/Reuters/2015-03-22T170949Z_1_LYNXMPEB2L0AW_RTROPTP_2_USA-SECURITY-BRENNAN.JPG'></td><td>2015-03-22 17:06:51</td><td><a href='http://news.yahoo.com/cias-brennan-islamic-states-momentum-blunted-syria-iraq-135141779.html'>site</a></td><td>WASHINGTON (Reuters) - The momentum of Islamic State in Iraq and Syria has been blunted and the extremist group is not "on the march" as it was previously, CIA Director John Brennan said on Sunday.</td></tr>
 </table></body></html>

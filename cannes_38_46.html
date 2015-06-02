@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 8,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 8 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>cannes</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 03:00:12</td><td><a href='http://www.channel24.co.za/Movies/News/Mad-Max-to-make-comeback-at-Cannes-Film-Festival-20150327'>site</a></td><td>The 68th Cannes Film Festival will take place between May 13 and 24, with US filmmakers Joel and Ethan Cohen presiding over the jury.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-13 19:06:59</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/13/la-tete-haute-to-open-cannes-film-festival'>site</a></td><td>Cannes runs May 13-24.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-21 15:54:46</td><td><a href='http://www.usnews.com/news/entertainment/articles/2015/04/21/jake-gyllenhaal-sienna-miller-on-cannes-film-festival-jury'>site</a></td><td>Jake Gyllenhaal, Sienna Miller on Cannes Film Festival jury</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://static.theglobeandmail.ca/804/arts/awards-and-festivals/article24043723.ece/ALTERNATES/w220/FILM+Cannes+Dolan+20150421.JPG'></td><td>2015-04-21 16:40:03</td><td><a href='http://www.theglobeandmail.com/arts/awards-and-festivals/quebec-filmmaker-xavier-dolan-joins-jury-at-cannes-film-festival/article24043724/?cmpid=rss1'>site</a></td><td>Quebec filmmaker Xavier Dolan joins jury at Cannes film festival Add to...</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://www.charlotteobserver.com/static/img/placeholder/FREE.gif'></td><td>2015-04-21 20:03:14</td><td><a href='http://www.charlotteobserver.com/entertainment/movies-news-reviews/article19140972.html#storylink=rss'>site</a></td><td>Prize winners at the Cannes Film Festival will be chosen by a jury that includes American actor Jake Gyllenhaal, Mexican director Guillermo del Toro and Canadian filmmaker Xavier Dolan.</td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-13 11:11:00</td><td><a href='http://www.ctvnews.ca/entertainment/cannes-film-festival-kicks-off-with-a-more-socially-minded-tone-1.2371313'>site</a></td><td>Joel and Ethan Coen are presiding over the jury that will decide Cannes' prestigious Palme d'Or this year.</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://ww1.hdnux.com/photos/36/32/27/7972332/3/square_gallery_thumb.jpg'></td><td>2015-05-13 15:37:10</td><td><a href='http://www.sfgate.com/news/world/article/Cannes-kicks-off-with-a-more-socially-minded-tone-6260225.php'>site</a></td><td>Joel and Ethan Coen, co-presidents of the Cannes jury this year, also presented their colleagues - including Jake Gyllenhaal, Guillermo del Toro and Sienna Miller - who will decide Cannes' prestigious Palme d'Or top prize.</td></tr>
+  <tr><td style='display:none'>7</td><td></td><td>2015-05-24 14:43:00</td><td><a href='http://hosted2.ap.org/APDEFAULT/4e67281c3f754d0696fbfdee0f3f1469/Article_2015-05-24-EU--France-Cannes-Awards/id-4fe52f347c014daaabb267b43219e8ae'>site</a></td><td>The others on the Cannes jury were: Guillermo del Toro, Jake Gyllenhaal, Sienna Miller, Sophie Marceau, Xavier Dolan, Rokia Traore and Rossy de Palma.</td></tr>
+</table></body></html>

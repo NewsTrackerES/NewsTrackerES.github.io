@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>cannes</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/Qb6r1VCskNVBDb0DdSBDwg--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/858cf7d8dd7d3716770f6a706700b581.jpg'></td><td>2015-05-22 15:32:35</td><td><a href='http://news.yahoo.com/cannes-watch-arabian-nights-canine-named-cannes-top-153235120.html'>site</a></td><td>CANNES, France (AP) - A small white dog named Lucky has taken the award for Cannes' best performance on four legs.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.miamiherald.com/static/img/placeholder/FREE.gif'></td><td>2015-05-22 15:55:27</td><td><a href='http://www.miamiherald.com/entertainment/celebrities/article21676560.html#storylink=rss'>site</a></td><td>CANNES WATCH: 'Arabian Nights' canine named Cannes' top dog</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 17:00:54</td><td><a href='http://www.utsandiego.com/news/2015/apr/30/global-warming-documentary-to-close-cannes-film/'>site</a></td><td>NEW YORK (AP) - The global warming documentary "Ice and Sky" will close out the 68th Cannes Film Festival.</td></tr>
 </table></body></html>

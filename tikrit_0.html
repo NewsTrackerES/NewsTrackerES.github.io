@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 4,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 4 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,8 +48,7 @@
     <h3>tikrit</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-10 17:54:42</td><td><a href='http://www.daytondailynews.com/ap/ap/international/in-battle-against-is-iraqi-forces-retake-town-near/nkR3j/'>site</a></td><td>Iraq seizes town on outskirts of Islamic State-held Tikrit</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-25 15:31:38</td><td><a href='http://www.daytondailynews.com/ap/ap/political/us-has-discussed-possible-tikrit-airstrikes-with-i/nkfBs/'>site</a></td><td>US has discussed possible Tikrit airstrikes with Iraq</td></tr>
-  <tr><td style='display:none'>2</td><td></td><td>2015-04-01 14:03:48</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/iraqi-minister-says-tikrit-to-be-recaptured-within/nkjxw/'>site</a></td><td>Iraq declares victory over Islamic State group in Tikrit</td></tr>
-  <tr><td style='display:none'>3</td><td></td><td>2015-04-05 13:02:25</td><td><a href='http://www.daytondailynews.com/ap/ap/top-news/after-tikrit-victory-iraqs-new-challenge-win-over-/nknD6/'>site</a></td><td>After Tikrit victory, Iraq's new challenge: Win over Sunnis</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-07 06:56:10</td><td><a href='http://www.daytondailynews.com/ap/ap/international/top-us-general-optimistic-about-outcome-of-tikrit-/nkQTC/'>site</a></td><td>Top US general optimistic about outcome of Tikrit battle</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-02 17:20:20</td><td><a href='http://www.daytondailynews.com/ap/ap/international/after-expelling-is-iraqi-bomb-squads-begin-clearin/nkkr2/'>site</a></td><td>After expelling IS, Iraqi bomb squads begin clearing Tikrit</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-04-05 13:02:25</td><td></td><td><a href='tikrit_0_1.html'>After Tikrit victory, Iraq's new challenge: Win over Sunnis (4)</a></td></tr>
 </table></body></html>

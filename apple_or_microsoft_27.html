@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,7 @@
     <h3>apple or microsoft</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-04 16:27:35</td><td><a href='http://news.yahoo.com/ge-ties-qualcomm-apple-lighting-business-bet-161733187--sector.html'>site</a></td><td><table><tr><td>GE ties up with Qualcomm, Apple in new lighting business bet</td></tr><tr><td>(Reuters) - General Electric Co on Monday announced collaborations with Qualcomm Inc and Apple Inc as it uses digital technology and the growing appetite for data to reinvigorate its 130-year-old lighting business.</td></tr><tr><td>GE also said it will produce an LED bulb compatible with Apple's yet-to-launch connected-device platform HomeKit.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-03-26 20:51:04</td><td><a href='http://www.miamiherald.com/news/business/workplace/article16387559.html#storylink=rss'>site</a></td><td>He emphasized that many Microsoft contractors already have paid time off.</td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 20:55:44</td><td><a href='http://www.mercurynews.com/business/ci_27792776/microsoft-tells-vendors-give-contract-workers-basic-benefits?source=rss'>site</a></td><td>During the next 12 months, the company will require its U.S. suppliers -- which provide workers who do everything from serving food and driving buses to testing software -- to give 15 days paid leave a year to their employees who work on Microsoft projects.</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-03-26 21:25:22</td><td></td><td><a href='apple_or_microsoft_27_28.html'>Microsoft tells vendors to give contract workers basic benefits (4)</a></td></tr>
 </table></body></html>

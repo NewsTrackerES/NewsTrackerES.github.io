@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 3,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,7 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://ww1.hdnux.com/photos/36/35/26/7984568/3/square_gallery_thumb.jpg'></td><td>2015-05-15 10:06:50</td><td><a href='http://www.sfgate.com/news/world/article/Poland-makes-payout-to-alleged-victims-of-CIA-6265347.php'>site</a></td><td>It's a limbo that was predicted in 2002 by CIA terror experts, according to the Senate report.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-15 10:15:17</td><td><a href='http://www.nzherald.co.nz/world/news/article.cfm?c_id=2&objectid=11449534&ref=rss'>site</a></td><td>In a 2002 email to CIA headquarters, the CIA's interrogators said they wanted assurances that Zubaydah would never be allowed to publicly describe what they were doing to him, recommending that he should "remain incommunicado for the remainder of his life."</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 17:02:59</td><td></td><td><a href='cia_30_31.html'>Earlier this month, a Pakistani judge ordered Bank and former CIA general counsel John Rizzo to face murder charges in that country over a drone attack. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-28 17:02:59</td><td><a href='http://www.charlotteobserver.com/news/politics-government/article19804470.html#storylink=rss'>site</a></td><td><table><tr><td>A top CIA manager who had been removed from his job last year for abusive management has been named to a senior role in the agency department that conducts drone strikes.</td></tr><tr><td>He was barred from CIA management for a year.</td></tr></table></td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/04/28/17/281C005E00000578-3059280-image-a-1_1430239860775.jpg'></td><td>2015-04-28 18:02:07</td><td><a href='http://www.dailymail.co.uk/news/article-3059280/CIA-manager-removed-job-back.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>In a move officials said was without precedent, Bank was sent home from CIA headquarters in Langley, Virginia, and transferred to a liaison job at the Pentagon.</td></tr>
 </table></body></html>

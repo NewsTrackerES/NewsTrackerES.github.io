@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-27 14:03:01</td><td><a href='http://www.dailymail.co.uk/wires/ap/article-3057466/Ex-president-OKd-CIA-site-denies-knowing-for.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>Rights groups, European officials and media have reported there were also CIA sites in Poland and Lithuania.</td></tr><tr><td>Polish leaders also denied the existence of CIA sites until the U.S. Senate' Intelligence Committee released a report in December on the CIA's practices.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-07 16:34:11</td><td><a href='http://news.yahoo.com/pakistan-judge-orders-former-cia-lawyer-agent-charged-163114646.html'>site</a></td><td>The CIA declined to immediately comment when reached by The Associated Press.</td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-04-07 21:58:26</td><td><a href='http://hosted2.ap.org/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305/Article_2015-04-07-Pakistan-CIA/id-0cf4f386e98141d5af9d45cd11ce0820'>site</a></td><td>The CIA will have no comment, spokesman Chris White told The Associated Press.</td></tr>
 </table></body></html>

@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-30 07:09:18</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3061996/Tattoo-snafu-irks-inked-Apple-Watch-wearers.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td><table><tr><td>An Apple support article says the watch uses green LED lights paired with light-sensitive photodiodes to detect the amount of blood flowing through the wrist and calculate the frequency of heart beats.</td></tr><tr><td>"We have been hearing suppliers encountering some bottleneck issues for Apple Watch's production such as problems with its displays, haptics or assembly," he told Reuters, adding that those issues were quite common for new products.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-16 14:10:13</td><td></td><td><a href='apple_55_56.html'>Burnham and the 174 fund managers like him who hold large stakes of their diversified portfolios in Apple are pulled in two directions: hoping to prevent an unforeseen drop in Apple shares from upending their portfolios, while also benefiting from a company whose shares are up 12% this year so far. (3)</a></td></tr>
+  <tr><td style='display:none'>1</td><td></td><td>2015-03-16 14:10:13</td><td><a href='http://www.torontosun.com/2015/03/16/liking-apple-too-much-a-big-problem-for-fund-managers'>site</a></td><td>Mark Mulholland, whose Matthew 25 fund is classified as a non-diversified fund, has 15.3% of his portfolio's assets in Apple.</td></tr>
 </table></body></html>

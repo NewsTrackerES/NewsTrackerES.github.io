@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-14 14:10:09</td><td><a href='http://www.nydailynews.com/news/politics/martin-o-malley-announce-presidential-plans-30-article-1.2221789?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+NydnRss+%28Top+Stories+-+NY+Daily+News%29'>site</a></td><td>If O'Malley enters the race with Clinton, as expected, he will join Vermont Sen. Bernie Sanders, an independent, who has courted liberal voters in the party.</td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-05-14 14:10:09</td><td><a href='http://www.nydailynews.com/news/politics/martin-o-malley-announce-presidential-plans-30-article-1.2221789'>site</a></td><td>Martin O'Malley plans to announce his presidential intentions on May 30 in Baltimore, a move that could present another Democratic challenger to Hillary Rodham Clinton.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-18 00:45:24</td><td><a href='http://www.startribune.com/politics/296659421.html'>site</a></td><td>WASHINGTON - Hillary Rodham Clinton is taking on a tried and true foil - House Republicans - as she prepares for a likely 2016 Democratic presidential campaign.</td></tr>
 </table></body></html>

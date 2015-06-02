@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>apple</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-08 07:03:49</td><td><a href='http://www.miamiherald.com/news/business/article17819504.html#storylink=rss'>site</a></td><td><table><tr><td>Things to know about Apple's new photo-storage service</td></tr><tr><td>On Wednesday, Apple is expected to release a free update to its Mac operating system.</td></tr><tr><td>You can also access your photos on Windows computers with Apple's free iCloud for Windows software.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>1</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_46_49.html'>NEW YORK - A court-appointed monitor says Apple Inc.'s cooperation with efforts in a New York federal case to improve its compliance with antitrust laws took on an "adversarial tone" recently. (3)</a></td></tr>
+  <tr><td style='display:none'>2</td><td></td><td>2015-04-16 22:41:09</td><td></td><td><a href='apple_46_47.html'>Bromwich said Apple was making progress before significant setbacks arose since October. (2)</a></td></tr>
+  <tr><td style='display:none'>3</td><td></td><td>2015-04-16 22:41:09</td><td><a href='http://www.seattlepi.com/business/technology/article/Monitor-Apple-antitrust-cooperation-sharply-6204962.php'>site</a></td><td><table><tr><td>He said Apple's cooperation with his team deteriorated as the company rejected requests to interview business personnel, refused to turn over certain documents and information and only let Bromwich's team look at a small sample of training sessions.</td></tr><tr><td>Apple's program still lacked an independent antitrust compliance officer and adequate board oversight, he said.</td></tr></table></td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://extras.mnginteractive.com/live/media/site568/2015/0319/20150319__0320apple~4_300.JPG'></td><td>2015-04-17 00:35:20</td><td><a href='http://www.mercurynews.com/business/ci_27930471/court-monitor-apple-antitrust-cooperation-has-declined?source=rss'>site</a></td><td>Since then, he said, "Apple's communications with us reverted to the more adversarial tone taken in the first few months of the monitorship, including attempts to prescribe and limit how the monitor should conduct his reviews and write his reports."</td></tr>
+  <tr><td style='display:none'>0</td><td></td><td>2015-05-28 14:38:29</td><td></td><td><a href='apple_46_48.html'>NEW YORK (AP) - A federal appeals panel has refused to disqualify a court-appointed monitor after a judge found Apple colluded with book publishers in 2010 to raise electronic book prices. (4)</a></td></tr>
+  <tr><td style='display:none'>5</td><td></td><td>2015-05-28 14:38:29</td><td><a href='http://www.usnews.com/news/business/articles/2015/05/28/appeals-court-apple-must-submit-to-imposition-of-monitor'>site</a></td><td>The 2nd U.S. Circuit Court of Appeals in Manhattan ruled against Apple Inc. Thursday.</td></tr>
 </table></body></html>

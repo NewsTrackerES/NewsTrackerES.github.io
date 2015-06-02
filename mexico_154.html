@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 2,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,6 +48,5 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-26 21:10:54</td><td></td><td><a href='mexico_154_155.html'>New Mexico is touting a rural area in the southeastern part of the state as an interim storage site for the country's high-level nuclear waste, according to a letter issued by Gov. Susana Martinez earlier this month. (6)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-04-26 21:10:54</td><td><a href='http://abcnews.go.com/US/wireStory/mexico-lobbying-storage-site-nuclear-waste-30599466'>site</a></td><td>"Time and time again, the citizens of southeastern New Mexico have impressed me with their hard work ethic and willingness to tackle national problems that many others consider to be unsolvable," Martinez wrote.</td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-28 22:42:19</td><td><a href='http://www.foxnews.com/us/2015/04/28/suspected-drug-tunnel-found-leading-from-mexico-with-lighting-rail-car-system/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+foxnews%2Fnational+%28Internal+-+US+Latest+-+Text%29'>site</a></td><td>SAN DIEGO - U.S. Border Patrol agents have found a suspected drug tunnel with lighting and a rail-car system that connected to a home across the border in Tijuana, Mexico.</td></tr>
 </table></body></html>

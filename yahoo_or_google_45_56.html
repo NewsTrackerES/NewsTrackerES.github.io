@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <style>img { width: 150px; height: auto; }</style>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $( "#slider-range" ).slider({
+            range: false,
+            min: 0,
+            max: 15,
+            values: [ getParameterByName("pos") ],
+            slide: function( event, ui ) {
+              showRows( ui.values[0] );
+            }
+          });
+          showRows(getParameterByName("pos"));
+        });
+      });
+      function showRows( threshold ) {
+        var table = document.getElementById("MyTable");
+              for (var i = 0, row; row = table.rows[i]; i++) {
+                if ($(row.cells[0]).html() <= threshold ) {
+                  $(row).show();
+                } else {
+                  $(row).hide();
+                }
+              }
+      }
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results === null ? 15 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+      }
+    </script>
+  </head>
+  <body role="document">
+    <h3>yahoo or google</h3>
+    <div id="slider-range"></div>
+    <div class="container theme-showcase" role="main">
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://l.yimg.com/bt/api/res/1.2/7q_myg4ocqPLi5zWwNzxTQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504012159791697512'></td><td>2015-04-02 05:30:03</td><td><a href='http://sports.yahoo.com/news/paul-scores-41-clippers-rally-beat-blazers-126-045609977--nba.html'>site</a></td><td>Paul scores 41, Clippers rally to beat Blazers 126-122 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/DDA.a6N30A6xA.rcBHrwtw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504051347496775562'></td><td>2015-04-05 20:14:59</td><td><a href='http://sports.yahoo.com/news/hardens-41-points-helps-houston-beat-oklahoma-city-200737091--nba.html'>site</a></td><td>Harden's 41 points helps Houston beat Oklahoma City 115-112 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='https://sp.yimg.com/j/assets/i/us/sp/v/nba/teams/83/70x70/okc.png'></td><td>2015-04-14 04:06:46</td><td><a href='https://sports.yahoo.com/news/westbrook-scores-36-thunder-beat-trail-blazers-101-023711902--nba.html'>site</a></td><td>Westbrook scores 36; Thunder beat Trail Blazers 101-90 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://l3.yimg.com/bt/api/res/1.2/USdYPIy264sF4pSBZwFn9g--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTQ1MDtxPTc1O3c9MzAw/http://media.zenfs.com/en_us/Sports/ap/201504142348856881801'></td><td>2015-04-15 05:23:27</td><td><a href='http://sports.yahoo.com/news/paul-griffin-shoot-clippers-past-suns-112-101-052013928--nba.html'>site</a></td><td>Paul, Griffin shoot Clippers past Suns, 112-101 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>4</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/_QvI0zB7W_kNtOtB2HmEUA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-us/video/video.nhlgamehighlights.com/b56c1ab85051e662fc59b7fddd634fef'></td><td>2015-04-16 03:10:16</td><td><a href='http://sports.yahoo.com/news/young-forwards-halak-lift-islanders-past-caps-4-015506685--nhl.html'>site</a></td><td>Young forwards, Halak lift Islanders past Caps 4-1 in Game 1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/e_zYugupIv7e_uNxmhXx.Q--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-us/video/video.nhlgamehighlights.com/1ef8c138654d262605cfe03eadee7646'></td><td>2015-04-16 03:54:00</td><td><a href='http://sports.yahoo.com/news/flynn-scores-winner-canadiens-senators-3-1-game-021218977--nhl.html'>site</a></td><td>Flynn scores winner, Canadiens take Senators 4-3 in Game 1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>6</td><td><img src='http://l.yimg.com/bt/api/res/1.2/hLQ2pq4LY7ExbCS2irM0HQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://d.yimg.com/hd/nhlhighlights/3/8/a6268f16-889f-4a8d-af12-1730c941b18e_DXDf26ZyX5kWnjjVCUoscRr2NDe2mv9LOv9FuRUiPETdFhCnwdjOvAuvNRUolKdI7SuTm4Z50Uk-_2_0.jpg?s=972d1894a8cf7ca0f166a4016ae21a6c&c=ecea71ae19081b0c6e057126b5f37b69&a=nhlhighlights&mr=0'></td><td>2015-04-16 05:01:04</td><td><a href='http://sports.yahoo.com/news/russell-scores-lift-flames-over-canucks-2-1-044704965--nhl.html'>site</a></td><td>Russell scores late to lift Flames over Canucks 2-1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>7</td><td><img src='http://l1.yimg.com/bt/api/res/1.2/B474wCmIHZsXpiFJtirJVQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504152024734483506'></td><td>2015-04-16 17:03:38</td><td><a href='http://sports.yahoo.com/news/crawford-back-net-blackhawks-game-2-vs-nashville-170338826--nhl.html'>site</a></td><td>Crawford back in net for Blackhawks in Game 2 vs. Nashville (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>8</td><td><img src='http://l.yimg.com/os/mit/ape/m/81f43c2/t.gif'></td><td>2015-04-17 02:46:59</td><td><a href='http://sports.yahoo.com/news/mrazek-passes-big-test-red-wings-beat-lightning-023619002--nhl.html'>site</a></td><td>Mrazek passes big test, Red Wings beat Lightning in Game 1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>9</td><td><img src='http://l.yimg.com/j/assets/i/us/sp/v/nba/teams/83/70x70/hou.png'></td><td>2015-04-19 04:31:09</td><td><a href='http://sports.yahoo.com/news/harden-24-points-rockets-beat-mavs-118-108-042903365--nba.html'>site</a></td><td>Harden has 24 points, Rockets beat Mavs 118-108 in Game 1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>10</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/2iRONYRydcQ9hqGz57iInQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-US/video/video.nba.com/ad13a2a592eef0aac9a7efffca88e08d'></td><td>2015-04-20 00:21:08</td><td><a href='http://sports.yahoo.com/news/korver-scores-21-hawks-hold-off-pesky-nets-001036812--nba.html'>site</a></td><td>Korver scores 21, Hawks hold off pesky Nets 99-92 in Game 1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>11</td><td><img src='https://s.yimg.com/bt/api/res/1.2/G4IDQK4Cj0RvFrybztpmxQ--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/Sports/ap/201504192040744195847'></td><td>2015-04-20 02:45:02</td><td><a href='https://sports.yahoo.com/news/grizzlies-never-trail-rout-trail-blazers-100-86-024256862--nba.html'>site</a></td><td>Grizzlies never trail, rout Trail Blazers 100-86 in Game 1 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>12</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-26 06:56:41</td><td><a href='http://sports.yahoo.com/news/grizzlies-hold-off-trail-blazers-rally-3-0-053855277--nba.html'>site</a></td><td>Grizzlies hold off Blazers rally to win 115-109, go up 3-0 (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>13</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-649ba6f.png'></td><td>2015-04-30 03:20:47</td><td><a href='http://sports.yahoo.com/news/horford-teague-help-hawks-hold-off-nets-107-014844749--nba.html'>site</a></td><td>Horford, Teague help Hawks hold off Nets 107-97 for 3-2 lead (Yahoo Sports)</td></tr>
+  <tr><td style='display:none'>14</td><td><img src='http://l2.yimg.com/bt/api/res/1.2/YZ2DH7bbJL0msnsWqOcTFA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTMwMDtweW9mZj0yNTtxPTc1O3c9MzAw/http://media.zenfs.com/en-us/video/video.nhlgamehighlights.com/726ba1aef0c1e87f284fd2b752491af7'></td><td>2015-05-05 03:34:54</td><td><a href='http://sports.yahoo.com/news/holtbys-shutout-beagles-goal-lift-caps-over-rangers-021301029--nhl.html'>site</a></td><td>Holtby's shutout, Beagle's goal lift Caps over Rangers 1-0 (Yahoo Sports)</td></tr>
+</table></body></html>

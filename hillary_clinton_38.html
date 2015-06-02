@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 1,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,5 @@
     <h3>hillary clinton</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428887216717.jpg'></td><td>2015-04-12 22:49:33</td><td><a href='http://www.smh.com.au/world/us-election/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150413-1mjmfs.html'>site</a></td><td>Hillary Clinton's campaign website with that logo.</td></tr>
-  <tr><td style='display:none'>1</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428887216717.jpg'></td><td>2015-04-12 23:53:24</td><td><a href='http://www.smh.com.au/world/us-election/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150413-1mjmfs.html'>site</a></td><td>Hillary Clinton's logo reminds me of the FedEx arrow.</td></tr>
-  <tr><td style='display:none'>2</td><td><img src='http://www.brisbanetimes.com.au/content/dam/images/1/m/j/n/p/h/image.related.articleLeadwide.620x349.1mjmfs.png/1428887216717.jpg'></td><td>2015-04-12 23:53:24</td><td><a href='http://www.brisbanetimes.com.au/world/us-election/social-media-reacts-to-hillary-clintons-bid-to-become-us-president-20150413-1mjmfs.html'>site</a></td><td><table><tr><td>Hillary Clinton has stolen our innovative WikiLeaks twitter logo design.</td></tr><tr><td>So what lucky 3rd grader won the Design the Hillary Clinton Campaign Logo contest?</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-05-05 16:08:07</td><td><a href='http://www.upi.com/Top_News/US/2015/05/05/Hillary-Clinton-to-support-citizenship-path-for-immigrants/1751430839484/'>site</a></td><td>"She will say that the standard for a true solution is nothing less than a full and equal path to citizenship," said a Clinton aide, previewing her remarks.</td></tr>
 </table></body></html>

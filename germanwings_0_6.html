@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 6,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 6 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,10 @@
     <h3>germanwings</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-04-19 14:00:40</td><td><a href='http://news.yahoo.com/germanwings-crash-families-could-seek-damages-u-lawyer-140040694--sector.html'>site</a></td><td><table><tr><td>Germanwings crash families could seek damages in the U.S.: lawyer</td></tr><tr><td>FRANKFURT (Reuters) - Families of the victims of the Germanwings crash are considering filing a claim for damages in the United States if they cannot reach agreement with parent airline Lufthansa in Germany, a lawyer representing the families said on Sunday.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td><img src='http://www.smh.com.au/content/dam/images/1/m/6/y/r/h/image.related.articleLeadwide.620x349.1m6vie.png/1427262577846.jpg'></td><td>2015-03-24 10:59:51</td><td><a href='http://www.smh.com.au/world/germanwings-airbus-a320-plane-crashes-in-french-alps-killing-all-on-board-20150324-1m6vie.html'>site</a></td><td>Germanwings plane crashes in southern France - police</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://l.yimg.com/os/mit/media/m/base/images/transparent-1093278.png'></td><td>2015-03-25 07:44:53</td><td><a href='http://news.yahoo.com/search-resumes-germanwings-plane-crash-073946881.html'>site</a></td><td>Search Resumes At Germanwings Plane Crash Site</td></tr>
+  <tr><td style='display:none'>2</td><td><img src='http://ww2.hdnux.com/photos/35/33/20/7713829/3/628x471.jpg'></td><td>2015-03-25 18:51:28</td><td><a href='http://www.seattlepi.com/news/crime/article/The-Latest-Helicopter-searches-resume-in-Alpine-6157044.php'>site</a></td><td>The director of France's aviation investigative agency says audio has been recovered from the cockpit recorder salvaged from the crash of the Germanwings plane in the Alps.</td></tr>
+  <tr><td style='display:none'>3</td><td><img src='http://storage.canoe.ca/v1/dynamic_resize/?src=http://cnews.canoe.ca/CNEWS/Microgalleries/2015/03/29/wing650.jpg&amp;size=200x112&amp;quality=85'></td><td>2015-04-02 15:26:54</td><td><a href='http://cnews.canoe.ca/CNEWS/World/2015/04/02/22323571.html?cid=rssnewsworld'>site</a></td><td>PARIS - The second 'black box' data recorder from the site of last week's Germanwings plane crash has been found, France's Gendarmerie police authority said on Thursday.</td></tr>
+  <tr><td style='display:none'>4</td><td></td><td>2015-04-04 16:03:16</td><td><a href='http://www.dailymail.co.uk/wires/reuters/article-3025678/France-halts-search-bodies-Germanwings-crash-site.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>France halts search for bodies at Germanwings crash site</td></tr>
+  <tr><td style='display:none'>5</td><td><img src='http://l.yimg.com/bt/api/res/1.2/dE1JJ37A1DlAwr1.5AtVgw--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTM3NztpbD1wbGFuZTtweG9mZj01MDtweW9mZj0wO3E9NzU7dz02NzA-/http://media.zenfs.com/en_us/News/ap_webfeeds/449bd9f1c9ad1b0f730f6a7067009ece.jpg'></td><td>2015-04-08 20:17:24</td><td><a href='http://news.yahoo.com/airline-official-germanwings-probe-shouldnt-set-precedent-174911829--finance.html'>site</a></td><td>FILE - In this March 26, 2015 file photo, rescue workers work at debris of the Germanwings jet at the crash site near Seyne-les-Alpes, France.</td></tr>
 </table></body></html>

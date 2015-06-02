@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 3,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 3 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,7 +48,6 @@
     <h3>mexico</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>2</td><td></td><td>2015-03-26 20:20:07</td><td><a href='http://news.yahoo.com/mexico-marks-6-months-since-43-students-disappeared-181149584.html'>site</a></td><td>26, to collect money and hijack buses - a common practice - so that they could attend upcoming commemoration events in Mexico City.</td></tr>
-  <tr><td style='display:none'>0</td><td></td><td>2015-03-27 01:26:35</td><td></td><td><a href='mexico_189_190.html'>MEXICO CITY (AP) - Parents of 43 missing students marked the six-month anniversary of their disappearance with a march of a few thousand supporters Thursday, urging the country not to abandon them but drawing far smaller numbers than rallies last year. (5)</a></td></tr>
-  <tr><td style='display:none'>1</td><td></td><td>2015-03-27 01:26:35</td><td></td><td><a href='mexico_189_191.html'>At the march's conclusion, Maria Elena Guerrero, the mother of a missing student, stood atop a stage and said her pain had turned to fury against Mexico's government in the months since her son disappeared. (3)</a></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-24 19:20:17</td><td><a href='http://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=11422640&ref=rss'>site</a></td><td>Mexico's National Human Rights Commission said Tuesday it has started an investigation into possible human rights violations, after protesters complained of police abuse and detentions.</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://ww3.hdnux.com/photos/35/31/67/7708114/7/square_gallery_thumb.jpg'></td><td>2015-03-24 21:16:27</td><td><a href='http://www.sfgate.com/news/world/article/Mexico-s-Baja-farmworkers-strike-for-better-6155694.php'>site</a></td><td>25, 2014 photo, day laborers work in a strawberry field as they prepare the field for planting in the Valle de San Quintin, part of the municipality of Ensenada, south of Tijuana in Baja California, Mexico.</td></tr>
 </table></body></html>

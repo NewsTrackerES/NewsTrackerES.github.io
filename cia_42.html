@@ -17,7 +17,7 @@
           $( "#slider-range" ).slider({
             range: false,
             min: 0,
-            max: 1,
+            max: 2,
             values: [ getParameterByName("pos") ],
             slide: function( event, ui ) {
               showRows( ui.values[0] );
@@ -40,7 +40,7 @@
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
           results = regex.exec(location.search);
-        return results === null ? 1 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        return results === null ? 2 : parseInt(decodeURIComponent(results[1].replace(/\+/g, " ")));
       }
     </script>
   </head>
@@ -48,5 +48,6 @@
     <h3>cia</h3>
     <div id="slider-range"></div>
     <div class="container theme-showcase" role="main">
-    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-07 09:33:14</td><td><a href='http://www.washingtontimes.com/news/2015/mar/7/carrie-no-longer-cia-officer-in-next-season-of-hom/?utm_source=RSS_Feed&utm_medium=RSS'>site</a></td><td><table><tr><td>Carrie no longer CIA officer in next season of 'Homeland'</td></tr><tr><td>Gansa later told the PaleyFest audience that CIA officer Carrie Mathison, played by series star Claire Danes, will no longer be an intelligence officer.</td></tr></table></td></tr>
+    <table id="MyTable">  <tr><td style='display:none'>0</td><td></td><td>2015-03-14 21:00:38</td><td><a href='http://www.cbsnews.com/news/report-cia-money-given-to-al-qaeda/'>site</a></td><td>Report: CIA money was given to al Qaeda</td></tr>
+  <tr><td style='display:none'>1</td><td><img src='http://i.dailymail.co.uk/i/pix/2015/03/14/2677F79300000578-2995125-Afghan_President_Ashraf_Ghani_center_former_President_Hamid_Karz-m-5_1426371089447.jpg'></td><td>2015-03-14 22:44:35</td><td><a href='http://www.dailymail.co.uk/news/article-2995125/Al-Qaeda-got-1million-CIA-money-fund-free-Afghan-diplomat.html?ITO=1490&ns_mchannel=rss&ns_campaign=1490'>site</a></td><td>Bin Laden had at first been concerned about the ransom payment, fearing the CIA knew how the money would be used and had tainted it with poison, radiation or a tracking device.</td></tr>
 </table></body></html>
